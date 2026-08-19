@@ -7,9 +7,11 @@
    · this.tree 는 항상 '현재 버전'의 트리 배열과 같은 객체를 가리킨다.
    · 모든 구조 변경은 run() 트랜잭션을 통해서만 일어난다.
    ============================================================ */
-import * as M from "./model.js?v=20260822v";
+import * as M from "./model.js?v=20260822z";
+import { revLabel, nextRevLabel, revValue, verPrefixOf } from "./targets.js?v=20260822z";
+import { regFingerprint } from "./xrefs.js?v=20260822z";
 import { numbersOf, planFrom, planStayed, remapCitations, articleIdsIn,
-         planTermFixes, TERM_RULES } from "./xrefs.js?v=20260822v";
+         planTermFixes, TERM_RULES } from "./xrefs.js?v=20260822z";
 
 const MAX_HISTORY = 100;
 const BASE_ID = "base";
@@ -35,6 +37,10 @@ export class Project {
     this.dirty = false;
     this.targetIds = [];         // 담고 있는 개정 대상 (등록부의 id)
     this.activeTargetId = null;  // 지금 손대고 있는 규정 — 참조 창이 이걸 따라온다
+    /* 규정마다 제 판을 가리킨다 — 작업규정은 vA-1.01 을 보면서 무인비행장치는
+       vC-1.00 을 볼 수 있다. 판 하나가 세 규정을 함께 담고 있으므로, 트리는
+       규정마다 제 판에서 그 규정 가지만 꺼내 모아 세운다. */
+    this.currentByTarget = {};   // 대상 id -> 판 id
     this._undoByV = new Map();   // versionId -> {undo:[], redo:[]}
     this._log = [];
     this._listeners = new Set();
@@ -220,20 +226,25 @@ export class Project {
 
     // 규정마다 판을 늘어놓는다 — [기준, v1, v2, …]
     const lanes = list.map((e) => {
+      /* 판 이름은 규정마다 머리글자를 달리하고 1.00 에서 0.01 씩 올린다
+         (등록부의 ver — 작업규정 A · 성과심사 B · 무인비행장치 C).
+         초안 파일에 적힌 v1·v2 는 그 규칙으로 갈음한다. */
+      const pre = e.target.ver || "X";
+      let ri = 0;
       const revs = [{
         label: "기준", title: `현행 ${e.doc.name}`, note: "국가법령정보센터 원문",
         readonly: true, tree: baseTreeOf(e.doc),
       }];
       if (e.draft && Array.isArray(e.draft.tree) && e.draft.tree.length) {
         revs.push({
-          label: e.draft.label || "v1", title: e.draft.title || `${e.target.word} 초안`,
+          label: revLabel(pre, ri++), title: e.draft.title || `${e.target.word} 초안`,
           note: e.draft.note || "", readonly: e.draft.readonly !== false,
           tree: draftTreeOf(e.draft.tree, e.target),
         });
         for (const more of (Array.isArray(e.draft.next) ? e.draft.next : [])) {
           if (!Array.isArray(more.tree) || !more.tree.length) continue;
           revs.push({
-            label: more.label || `v${revs.length}`, title: more.title || `${e.target.word} 초안`,
+            label: revLabel(pre, ri++), title: more.title || `${e.target.word} 초안`,
             note: more.note || "", readonly: !!more.readonly,
             tree: draftTreeOf(more.tree, e.target),
           });
@@ -278,10 +289,22 @@ export class Project {
     };
     this.targetIds = list.map((e) => e.target.id);
 
+    /* 규정마다 제 마지막 판을 가리킨다 — 무인비행장치는 vC-1.01 이 있고
+       작업규정은 vA-1.00 뿐이면 각자 그것을 본다. */
+    this.currentByTarget = {};
+    for (const e of list) {
+      let pick = this.versions[0];
+      for (const v of this.versions) {
+        const reg = this.regIn(v, e.target.id);
+        if (reg && !v.readonly) pick = v;
+      }
+      this.currentByTarget[e.target.id] = pick.id;
+    }
     const last = this.versions[this.versions.length - 1];
-    this.currentId = last.id;
+    this.currentId = this.currentByTarget[list[0].target.id] || last.id;
     this.tree = last.tree;
     this.activeTargetId = list[0].target.id;
+    this.composeTree();
     this.selectedId = null;
     this._undoByV = new Map();
     this._log = [];
@@ -373,6 +396,132 @@ ${line}` : line;
     return true;
   }
 
+  /**
+   * 옛 판 이름을 규칙대로 갈음한다 — v1 · v2 · 이어받음 → vA-1.00 · vA-1.01 …
+   *
+   * 판 이름을 규정마다 매기기 전에 담아 둔 프로젝트가 있다. 열 때 한 번
+   * 갈아 준다. 판 차례대로 매기되 기준(현행)은 건드리지 않는다.
+   */
+  _normalizeRevLabels() {
+    /* 머리글자는 등록부에서 가져온다 — 예전에 담아 둔 규정 노드에는 ver 가
+       없어 X 로 앉는다. 여기서 채워 넣어 분기할 때에도 쓰이게 한다. */
+    for (const v of this.versions) {
+      for (const reg of (v.tree || []).filter(M.isRegNode)) {
+        if (!reg.ver) reg.ver = verPrefixOf(reg.targetId);
+      }
+    }
+    /* 번호는 그 규정의 내용이 실제로 달라질 때만 올라간다.
+       판은 세 규정을 한꺼번에 담으므로, 작업규정만 놓고 보면 여러 판이 글자
+       하나 다르지 않다. 판마다 번호를 올리면 작업규정 개정안이 두 벌뿐인데
+       vA-1.03 까지 가 버린다. 같은 내용이면 같은 이름을 쓴다.
+
+       판을 차례대로 훑으며 셈하므로 몇 번을 열어도 같은 이름이 나온다. */
+    const seenByTarget = new Map();               // 대상 id -> Map(지문 -> 이름)
+    for (const v of this.versions) {
+      if (v.readonly) continue;
+      for (const reg of (v.tree || []).filter(M.isRegNode)) {
+        if (reg.revLabel === "기준") continue;
+        let seen = seenByTarget.get(reg.targetId);
+        if (!seen) { seen = new Map(); seenByTarget.set(reg.targetId, seen); }
+        const fp = regFingerprint(reg);
+        const had = seen.get(fp);
+        if (had) { reg.revLabel = had; continue; }   // 앞서 나온 것과 같은 내용
+        reg.revLabel = revLabel(reg.ver, seen.size);
+        seen.set(fp, reg.revLabel);
+      }
+    }
+  }
+
+  /**
+   * 변경 이력을 비운다 — 시험 삼아 돌려 본 자취를 걷어 낼 때.
+   *
+   * 판마다의 이벤트 원장(events), 조문마다의 이력(history), 그리고 작업
+   * 기록(_log)을 함께 지운다. 되돌릴 수 없다 — 부르는 쪽이 먼저 묻는다.
+   *
+   * @param {string} targetId 이 규정만 비운다. 없으면 모두.
+   * @returns {{events:number, nodes:number, log:number}} 지운 수
+   */
+  clearHistory(targetId = null) {
+    let events = 0, nodes = 0;
+    for (const v of this.versions) {
+      if (Array.isArray(v.events) && v.events.length) {
+        if (targetId) {
+          const reg = this.regIn(v, targetId);
+          const ids = new Set();
+          if (reg) { ids.add(reg.id); M.walk(reg.children || [], (n) => ids.add(n.id)); }
+          const keep = v.events.filter((e) => !ids.has(e.nodeId));
+          events += v.events.length - keep.length;
+          v.events = keep;
+        } else {
+          events += v.events.length;
+          v.events = [];
+        }
+      }
+      const roots = targetId
+        ? [this.regIn(v, targetId)].filter(Boolean)
+        : (v.tree || []);
+      for (const r of roots) {
+        const wipe = (n) => { if (n.history && n.history.length) { nodes += 1; n.history = []; } };
+        wipe(r);
+        M.walk(r.children || [], wipe);
+      }
+    }
+    const log = this._log.length;
+    if (!targetId) this._log = [];
+    this.dirty = true;
+    this.emit("변경 이력을 비웠습니다.");
+    return { events, nodes, log: targetId ? 0 : log };
+  }
+
+  /* ---------- 규정마다 제 판 ---------- */
+
+  /** 그 규정이 지금 보고 있는 판 */
+  versionOf(targetId) {
+    return this.version(this.currentByTarget[targetId]) || this.current;
+  }
+
+  /** 판 하나에서 그 규정 가지를 꺼낸다 */
+  regIn(version, targetId) {
+    return ((version && version.tree) || []).find(
+      (n) => M.isRegNode(n) && n.targetId === targetId) || null;
+  }
+
+  /**
+   * 트리를 다시 모아 세운다.
+   *
+   * 규정 노드는 제 판의 트리에 든 그 객체를 그대로 쓴다 — 복제하지 않는다.
+   * 그래야 여기서 고친 것이 그 판에 그대로 남는다.
+   */
+  composeTree() {
+    const out = [];
+    for (const id of this.targetIds) {
+      const reg = this.regIn(this.versionOf(id), id);
+      if (reg) out.push(reg);
+    }
+    if (out.length) this.tree = out;
+    return this.tree;
+  }
+
+  /** 그 규정만 다른 판으로 옮긴다 — 나머지 규정은 그대로 둔다 */
+  switchTargetVersion(targetId, versionId) {
+    const v = this.version(versionId);
+    if (!v || !this.regIn(v, targetId)) return false;
+    if (this.currentByTarget[targetId] === versionId) return false;
+    this.currentByTarget[targetId] = versionId;
+    if (targetId === this.activeTargetId) this.currentId = versionId;
+    this.composeTree();
+    const reg = this.regIn(v, targetId);
+    this.selectedId = null;
+    this.emit(`${M.shortLabel(reg)} ${reg.revLabel || v.label} 개정안을 엽니다`);
+    return true;
+  }
+
+  /** 손대는 규정을 바꾸면 판 가리킴도 그 규정의 것으로 */
+  _syncCurrentToActive() {
+    const vid = this.currentByTarget[this.activeTargetId];
+    if (vid && this.version(vid)) this.currentId = vid;
+  }
+
   /* ---------- 규정 경계 ---------- */
 
   /** 트리 최상위의 규정 노드들 */
@@ -396,6 +545,7 @@ ${line}` : line;
     if (!targetId || targetId === this.activeTargetId) return false;
     if (!this.regNode(targetId)) return false;
     this.activeTargetId = targetId;
+    this._syncCurrentToActive();
     this.emit("");
     return true;
   }
@@ -436,6 +586,7 @@ ${line}` : line;
       currentId: this.currentId,
       targetIds: this.targetIds || [],
       activeTargetId: this.activeTargetId || null,
+      currentByTarget: this.currentByTarget || {},
       author: this.author || "",
       refDocs: this.refDocs,
       assets: this.assets,
@@ -461,6 +612,8 @@ ${line}` : line;
     if (o.author && !this.author) this.author = o.author;
     this.targetIds = Array.isArray(o.targetIds) ? o.targetIds : [];
     this.activeTargetId = o.activeTargetId || null;
+    this.currentByTarget = (o.currentByTarget && typeof o.currentByTarget === "object")
+      ? { ...o.currentByTarget } : {};
 
     if (Array.isArray(o.versions) && o.versions.length) {
       this.versions = o.versions;
@@ -500,6 +653,7 @@ ${line}` : line;
     }
     this.tree = this.current.tree;
     this.selectedId = null;
+    this._normalizeRevLabels();
     // 담고 있는 대상을 트리에서 다시 읽어 둔다 (예전 파일에는 targetIds 가 없다)
     const regs = this.regNodes;
     if (regs.length) {
@@ -507,6 +661,19 @@ ${line}` : line;
       if (!this.activeTargetId || !this.regNode(this.activeTargetId)) {
         this.activeTargetId = this.targetIds[0] || null;
       }
+      /* 규정마다 제 판을 가리킨다. 예전 파일에는 가리킴이 없으므로,
+         그 규정을 담은 마지막 고칠 수 있는 판으로 세운다. */
+      for (const id of this.targetIds) {
+        const has = this.version(this.currentByTarget[id]);
+        if (has && this.regIn(has, id)) continue;
+        let pick = this.current;
+        for (const v of this.versions) {
+          if (!v.readonly && this.regIn(v, id)) pick = v;
+        }
+        this.currentByTarget[id] = pick.id;
+      }
+      this._syncCurrentToActive();
+      this.composeTree();
     }
     this._undoByV = new Map();
     this.dirty = false;
@@ -543,29 +710,51 @@ ${line}` : line;
     if (act) {
       const reg = (v.tree || []).find((n) => M.isRegNode(n) && n.targetId === act);
       if (reg) {
-        const used = new Set();
+        const used = [];
         for (const ov of this.versions) {
           const r = (ov.tree || []).find((n) => M.isRegNode(n) && n.targetId === act);
-          if (r && r.revLabel) used.add(r.revLabel);
+          if (r && r.revLabel) used.push(r.revLabel);
         }
-        let k = 2;
-        while (used.has(`v${k}`)) k += 1;
-        reg.revLabel = `v${k}`;
-        reg.revTitle = reg.revTitle || `${reg.word || "개정안"} (${k}판)`;
+        reg.revLabel = nextRevLabel(reg.ver || "X", used);
       }
     }
     this.versions.push(v);
+    /* 갈라 나온 판은 손대는 규정만 그리로 옮긴다 — 나머지 규정은 보던 판을
+       그대로 본다. 규정마다 제 판을 가리키므로 서로 끌려다니지 않는다. */
     this.dirty = true;
     this._log.push({ at: v.createdAt, label: `버전 생성: ${v.label} (${src.label} 에서 분기)` });
-    if (switchTo) this.switchVersion(v.id, `버전 ${v.label} 을(를) 만들었습니다.`);
+    /* 갈라 나온 판은 손대는 규정만 그리로 옮긴다 — 나머지 규정은 보던 판을
+       그대로 본다. 규정마다 제 판을 가리키므로 서로 끌려다니지 않는다. */
+    if (switchTo) {
+      if (this.targetIds && this.targetIds.length && this.activeTargetId) {
+        this.currentByTarget[this.activeTargetId] = v.id;
+        this.currentId = v.id;
+        this.composeTree();
+        this.selectedId = null;
+        const reg = this.regNode(this.activeTargetId);
+        this.emit(`${M.shortLabel(reg)} ${reg ? reg.revLabel : v.label} 을(를) 만들었습니다.`);
+      } else {
+        this.switchVersion(v.id, `버전 ${v.label} 을(를) 만들었습니다.`);
+      }
+    }
     else this.emit(`버전 ${v.label} 을(를) 만들었습니다.`);
     return v;
   }
 
+  /** 판 전체 전환 — 세 규정을 모두 이 판으로 옮긴다 (메뉴바 판 고르개) */
   switchVersion(id, msg = null) {
     const v = this.version(id);
     if (!v || id === this.currentId) return false;
     this.currentId = id;
+    if (this.targetIds && this.targetIds.length) {
+      for (const t of this.targetIds) {
+        if (this.regIn(v, t)) this.currentByTarget[t] = id;
+      }
+      this.composeTree();
+      this.selectedId = null;
+      this.emit(msg || `버전 전환: ${v.label}${v.readonly ? " (읽기 전용)" : ""}`);
+      return true;
+    }
     this.tree = v.tree;
     this.selectedId = v.tree.length ? v.tree[0].id : null;
     this.emit(msg || `버전 전환: ${v.label}${v.readonly ? " (읽기 전용)" : ""}`);
@@ -687,7 +876,22 @@ ${line}` : line;
   _snapshot() {
     return { tree: JSON.parse(JSON.stringify(this.tree)), selectedId: this.selectedId };
   }
-  _restore(s) { this._setTree(s.tree); this.selectedId = s.selectedId; }
+  /**
+   * 되돌리기 — 트리 배열을 통째로 갈아 끼우지 않고 규정 가지를 자리에서 되돌린다.
+   *
+   * 트리가 여러 판에서 모아 세운 것이므로, 배열을 갈아 끼우면 어느 판의 것이
+   * 어느 것인지 잃는다. 규정 노드는 그 판의 트리에 든 객체 그대로여야 한다.
+   */
+  _restore(s) {
+    const live = this.tree || [];
+    for (const snap of s.tree || []) {
+      const cur = live.find((n) => n.id === snap.id);
+      if (!cur) continue;
+      for (const k of Object.keys(cur)) if (!(k in snap)) delete cur[k];
+      Object.assign(cur, snap);
+    }
+    this.selectedId = s.selectedId;
+  }
 
   run(label, fn) {
     if (this.isReadonly) { this.emit("⚠ 기준(현행) 버전은 편집할 수 없습니다. 새 버전을 만드세요."); return false; }
@@ -742,7 +946,10 @@ ${line}` : line;
     this.selectedId = id;
     // 고른 조문이 속한 규정으로 손대는 규정을 옮긴다 — 참조 창이 이걸 따라온다
     const reg = this.regionOf(id);
-    if (reg && reg.targetId) this.activeTargetId = reg.targetId;
+    if (reg && reg.targetId && reg.targetId !== this.activeTargetId) {
+      this.activeTargetId = reg.targetId;
+      this._syncCurrentToActive();
+    }
     this.emit("");
   }
   get selected() { return this.selectedId ? M.findNode(this.tree, this.selectedId) : null; }
@@ -1251,6 +1458,8 @@ function makeRegNode(target, rev, open) {
     targetId: target.id,
     top: target.top,
     word: target.word,
+    ver: target.ver || "X",        // 판 이름 머리글자 — vA-1.00 의 A
+
     title: target.base,
     short: target.short,
     body: "",

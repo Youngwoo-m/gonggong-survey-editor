@@ -1,29 +1,29 @@
 /* ============================================================
    main.js — 앱 조립 (1단계 프로토타입)
    ============================================================ */
-import * as M from "./core/model.js?v=20260822v";
-import { Project } from "./core/project.js?v=20260822v";
-import * as FS from "./adapters/fileio.js?v=20260822v";
-import * as AUTO from "./adapters/autosave.js?v=20260822v";
-import { TreeView } from "./ui/tree.js?v=20260822v";
-import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260822v";
-import { CompareView } from "./ui/compare.js?v=20260822v";
-import { VersionsView } from "./ui/versions.js?v=20260822v";
-import { HistoryView } from "./ui/history.js?v=20260822v";
-import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260822v";
-import { ValidateView } from "./ui/validate.js?v=20260822v";
-import { RefPicker } from "./ui/refpicker.js?v=20260822v";
-import { AIView } from "./ui/ai.js?v=20260822v";
-import { CiteCheckView } from "./ui/citecheck.js?v=20260822v";
-import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260822v";
-import * as GH from "./adapters/github.js?v=20260822v";
-import { extractLines } from "./core/importer.js?v=20260822v";
-import { buildAuto } from "./core/structure.js?v=20260822v";
-import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260822v";
-import { ObjectStore, fitTable } from "./core/objects.js?v=20260822v";
-import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260822v";
-import { regFingerprint } from "./core/xrefs.js?v=20260822v";
-import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260822v";
+import * as M from "./core/model.js?v=20260822z";
+import { Project } from "./core/project.js?v=20260822z";
+import * as FS from "./adapters/fileio.js?v=20260822z";
+import * as AUTO from "./adapters/autosave.js?v=20260822z";
+import { TreeView } from "./ui/tree.js?v=20260822z";
+import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260822z";
+import { CompareView } from "./ui/compare.js?v=20260822z";
+import { VersionsView } from "./ui/versions.js?v=20260822z";
+import { HistoryView } from "./ui/history.js?v=20260822z";
+import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260822z";
+import { ValidateView } from "./ui/validate.js?v=20260822z";
+import { RefPicker } from "./ui/refpicker.js?v=20260822z";
+import { AIView } from "./ui/ai.js?v=20260822z";
+import { CiteCheckView } from "./ui/citecheck.js?v=20260822z";
+import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260822z";
+import * as GH from "./adapters/github.js?v=20260822z";
+import { extractLines } from "./core/importer.js?v=20260822z";
+import { buildAuto } from "./core/structure.js?v=20260822z";
+import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260822z";
+import { ObjectStore, fitTable } from "./core/objects.js?v=20260822z";
+import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260822z";
+import { regFingerprint } from "./core/xrefs.js?v=20260822z";
+import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260822z";
 
 const $ = (s) => document.querySelector(s);
 const NL = "\n";
@@ -374,7 +374,11 @@ function paintRevPicker(targetId) {
   if (!row || !sel) return;
   const revs = targetId ? revsOfTarget(targetId) : [];
   // 개정안이 한 벌뿐이면 고를 것이 없다
-  if (revs.length < 2) { row.classList.add("hidden"); return; }
+  if (revs.length < 2) {
+    row.classList.add("hidden");
+    sel.innerHTML = ""; sel.dataset.sig = "";   // 옛 목록을 남기지 않는다
+    return;
+  }
   row.classList.remove("hidden");
   const sig = revs.map((r) => r.versionId + "|" + r.label).join("~") + "@" + targetId;
   if (sel.dataset.sig !== sig) {
@@ -1149,12 +1153,14 @@ function wire() {
     if (b && !b.disabled) doCommand(b.dataset.cmd);
   });
 
+  // 메뉴바 판 고르개는 세 규정을 한꺼번에 옮긴다 (규정 하나만 옮기려면 ③ 창의 개정안 고르개)
   $("#versionSelect").addEventListener("change", (e) => project.switchVersion(e.target.value));
   // 그 규정의 개정안 고르개 — 그 개정안을 담은 판으로 옮겨 간다
   $("#editRevSelect").addEventListener("change", (e) => {
     const v = project.version(e.target.value);
     if (!v) return;
-    project.switchVersion(v.id);
+    // 그 규정만 옮긴다 — 나머지 규정은 보던 판을 그대로 본다
+    project.switchTargetVersion(scopedTargetId(), v.id);
     const t = targetById(scopedTargetId());
     const reg = project.regNode(scopedTargetId());
     toast(`${t ? t.short + " " : ""}${reg?.revLabel || v.label} 개정안을 엽니다`

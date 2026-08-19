@@ -79,6 +79,7 @@ export class HistoryView {
     <input id="hvQ" class="search" type="search" placeholder="조문·내용·작성자 검색" value="${esc(this.filter.q)}">
     <div class="spacer"></div>
     <button data-x="csv">CSV 내보내기</button>
+    <button data-x="wipe" class="danger" title="시험 삼아 돌려 본 자취를 걷어 냅니다 — 되돌릴 수 없습니다">이력 비우기</button>
   </div>
 
   <div class="cmp-body">
@@ -106,6 +107,7 @@ export class HistoryView {
 
     this.el.querySelector('[data-x="close"]').onclick = () => this.close();
     this.el.querySelector('[data-x="csv"]').onclick = () => this.exportCsv(rows);
+    this.el.querySelector('[data-x="wipe"]').onclick = () => this.wipe();
     this.el.querySelector("#hvVer").onchange = (e) => { this.filter.versionId = e.target.value; this.render(); };
     this.el.querySelector("#hvCascade").onchange = (e) => { this.filter.hideCascade = e.target.checked; this.render(); };
     const q = this.el.querySelector("#hvQ");
@@ -126,6 +128,27 @@ export class HistoryView {
         this.onJump?.(id, this.filter.versionId);
       };
     });
+  }
+
+  /**
+   * 변경 이력 비우기 — 시험 삼아 돌려 본 자취를 걷어 낸다.
+   * 되돌릴 수 없으므로 먼저 묻고, 무엇이 지워지는지 세어 보인다.
+   */
+  wipe() {
+    const p = this.project;
+    const nEv = p.versions.reduce((a, v) => a + ((v.events || []).length), 0);
+    const ask = [
+      "변경 이력을 비웁니다.", "",
+      `  판마다의 이력  ${nEv}건`,
+      `  작업 기록      ${(p._log || []).length}건`,
+      "  조문마다 달린 이력도 함께 지웁니다.", "",
+      "되돌릴 수 없습니다. 조문 본문과 개정안은 그대로 남습니다.",
+    ].join("\n");
+    if (!confirm(ask)) return;
+    const r = p.clearHistory();
+    this.close();
+    this.open();
+    alert(`이력을 비웠습니다 — 이력 ${r.events}건 · 조문 ${r.nodes}개 · 작업 기록 ${r.log}건`);
   }
 
   exportCsv(rows) {

@@ -121,3 +121,44 @@ export function sameRegion(tree, aId, bId) {
 export function topLevelOf(target) {
   return (target && target.top) || "편";
 }
+
+/* ---------- 개정안 판 이름 ----------
+   규정마다 머리글자를 달리하고 1.00 에서 0.01 씩 올린다.
+
+     작업규정        vA-1.00 · vA-1.01 · vA-1.02 …
+     성과심사 규정    vB-1.00 · vB-1.01 …
+     무인비행장치 규정 vC-1.00 · vC-1.01 …
+
+   백분의 일 자리까지 쓰므로 셈은 정수(1/100 단위)로 한다 — 소수로 더하면
+   1.00 + 0.01 이 1.0099999… 로 앉는 일이 생긴다. */
+
+const HUNDREDTH = 100;
+
+/** n 번째 판 이름 (n = 0 이면 첫 판 vA-1.00) */
+export function revLabel(prefix, n) {
+  const cents = HUNDREDTH + Math.max(0, n | 0);
+  return `v${prefix}-${(cents / HUNDREDTH).toFixed(2)}`;
+}
+
+/** 이 이름이 그 규정의 판 이름인가 — 맞으면 1/100 단위 값, 아니면 null */
+export function revValue(prefix, label) {
+  const m = new RegExp(`^v${prefix}-(\\d+)\\.(\\d{2})$`).exec(String(label || "").trim());
+  return m ? (+m[1]) * HUNDREDTH + (+m[2]) : null;
+}
+
+/** 이미 쓰인 이름들 다음 판 */
+export function nextRevLabel(prefix, used) {
+  let max = HUNDREDTH - 1;                      // 아무것도 없으면 첫 판이 1.00
+  for (const u of used || []) {
+    const v = revValue(prefix, u);
+    if (v !== null && v > max) max = v;
+  }
+  const cents = max + 1;
+  return `v${prefix}-${(cents / HUNDREDTH).toFixed(2)}`;
+}
+
+/** 대상 id 로 머리글자 (등록부에 없으면 이름 첫 글자) */
+export function verPrefixOf(targetId) {
+  const t = targetById(targetId);
+  return (t && t.ver) || "X";
+}
