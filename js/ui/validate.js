@@ -1,7 +1,7 @@
 /* ============================================================
    ui/validate.js — 정합성 검증 결과 화면
    ============================================================ */
-import { validate } from "../core/validate.js?v=20260823e";
+import { validate } from "../core/validate.js?v=20260823f";
 
 const CLS = { "오류": "k-del", "경고": "k-edit", "정보": "k-keep" };
 

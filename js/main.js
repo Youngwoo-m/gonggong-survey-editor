@@ -1,30 +1,30 @@
 /* ============================================================
    main.js — 앱 조립 (1단계 프로토타입)
    ============================================================ */
-import * as M from "./core/model.js?v=20260823e";
-import { Project } from "./core/project.js?v=20260823e";
-import * as FS from "./adapters/fileio.js?v=20260823e";
-import * as AUTO from "./adapters/autosave.js?v=20260823e";
-import { TreeView } from "./ui/tree.js?v=20260823e";
-import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260823e";
-import { CompareView } from "./ui/compare.js?v=20260823e";
-import { VersionsView } from "./ui/versions.js?v=20260823e";
-import { HistoryView } from "./ui/history.js?v=20260823e";
-import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260823e";
-import { ValidateView } from "./ui/validate.js?v=20260823e";
-import { RefPicker } from "./ui/refpicker.js?v=20260823e";
-import { AIView } from "./ui/ai.js?v=20260823e";
-import { CiteCheckView } from "./ui/citecheck.js?v=20260823e";
-import { TermsView } from "./ui/terms.js?v=20260823e";
-import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260823e";
-import * as GH from "./adapters/github.js?v=20260823e";
-import { extractLines } from "./core/importer.js?v=20260823e";
-import { buildAuto } from "./core/structure.js?v=20260823e";
-import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260823e";
-import { ObjectStore, fitTable } from "./core/objects.js?v=20260823e";
-import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260823e";
-import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260823e";
-import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260823e";
+import * as M from "./core/model.js?v=20260823f";
+import { Project } from "./core/project.js?v=20260823f";
+import * as FS from "./adapters/fileio.js?v=20260823f";
+import * as AUTO from "./adapters/autosave.js?v=20260823f";
+import { TreeView } from "./ui/tree.js?v=20260823f";
+import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260823f";
+import { CompareView } from "./ui/compare.js?v=20260823f";
+import { VersionsView } from "./ui/versions.js?v=20260823f";
+import { HistoryView } from "./ui/history.js?v=20260823f";
+import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260823f";
+import { ValidateView } from "./ui/validate.js?v=20260823f";
+import { RefPicker } from "./ui/refpicker.js?v=20260823f";
+import { AIView } from "./ui/ai.js?v=20260823f";
+import { CiteCheckView } from "./ui/citecheck.js?v=20260823f";
+import { TermsView } from "./ui/terms.js?v=20260823f";
+import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260823f";
+import * as GH from "./adapters/github.js?v=20260823f";
+import { extractLines } from "./core/importer.js?v=20260823f";
+import { buildAuto } from "./core/structure.js?v=20260823f";
+import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260823f";
+import { ObjectStore, fitTable } from "./core/objects.js?v=20260823f";
+import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260823f";
+import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260823f";
+import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260823f";
 
 const $ = (s) => document.querySelector(s);
 const NL = "\n";
@@ -686,14 +686,22 @@ const normName = (s) => String(s || "").replace(/[\s·ㆍ・,()]/g, "");
 /** 본문이 인용한 이름이 우리가 가진 규정인가 */
 function resolveRegName(name) {
   const n = normName(name);
-  if (n.length < 4) return null;
+  /* 「도로법」·「수도법」은 세 글자다. 네 글자 미만을 버리던 탓에 제127조에서
+     그 둘만 링크가 걸리지 아니하였다(「하수도법」은 네 글자라 걸렸다).
+     이 함수를 부르는 곳은 모두 「」 안의 이름이거나 약칭표의 편 이름이므로
+     아무 글이나 들어오지 아니한다. */
+  if (n.length < 2) return null;
   // 이름이 바뀐 규정 — 옛 이름으로 한 인용도 잇는다 (scripts/gencites.py 가 만든다)
   for (const [old, id] of Object.entries(library.nameAlias || {})) {
     if (normName(old) === n) return id;
   }
   const pool = library.regulations.filter((r) => r.hasFullText);
   let hit = pool.find((r) => normName(r.name) === n);
-  if (!hit) hit = pool.find((r) => { const k = normName(r.name); return k.includes(n) || n.includes(k); });
+  /* 짧은 이름은 담김 맞춤을 쓰지 아니한다 — 「수도법」이 「하수도법」에 담기므로
+     라이브러리에 없는 이름이 엉뚱한 규정으로 이어질 수 있다. */
+  if (!hit && n.length > 4) {
+    hit = pool.find((r) => { const k = normName(r.name); return k.includes(n) || n.includes(k); });
+  }
   if (!hit || hit.category === "core") return null;      // 자기 자신은 링크하지 않는다
   return hit.id;
 }
