@@ -1,29 +1,29 @@
 /* ============================================================
    main.js — 앱 조립 (1단계 프로토타입)
    ============================================================ */
-import * as M from "./core/model.js?v=20260822z";
-import { Project } from "./core/project.js?v=20260822z";
-import * as FS from "./adapters/fileio.js?v=20260822z";
-import * as AUTO from "./adapters/autosave.js?v=20260822z";
-import { TreeView } from "./ui/tree.js?v=20260822z";
-import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260822z";
-import { CompareView } from "./ui/compare.js?v=20260822z";
-import { VersionsView } from "./ui/versions.js?v=20260822z";
-import { HistoryView } from "./ui/history.js?v=20260822z";
-import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260822z";
-import { ValidateView } from "./ui/validate.js?v=20260822z";
-import { RefPicker } from "./ui/refpicker.js?v=20260822z";
-import { AIView } from "./ui/ai.js?v=20260822z";
-import { CiteCheckView } from "./ui/citecheck.js?v=20260822z";
-import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260822z";
-import * as GH from "./adapters/github.js?v=20260822z";
-import { extractLines } from "./core/importer.js?v=20260822z";
-import { buildAuto } from "./core/structure.js?v=20260822z";
-import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260822z";
-import { ObjectStore, fitTable } from "./core/objects.js?v=20260822z";
-import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260822z";
-import { regFingerprint } from "./core/xrefs.js?v=20260822z";
-import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260822z";
+import * as M from "./core/model.js?v=20260823a";
+import { Project } from "./core/project.js?v=20260823a";
+import * as FS from "./adapters/fileio.js?v=20260823a";
+import * as AUTO from "./adapters/autosave.js?v=20260823a";
+import { TreeView } from "./ui/tree.js?v=20260823a";
+import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260823a";
+import { CompareView } from "./ui/compare.js?v=20260823a";
+import { VersionsView } from "./ui/versions.js?v=20260823a";
+import { HistoryView } from "./ui/history.js?v=20260823a";
+import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260823a";
+import { ValidateView } from "./ui/validate.js?v=20260823a";
+import { RefPicker } from "./ui/refpicker.js?v=20260823a";
+import { AIView } from "./ui/ai.js?v=20260823a";
+import { CiteCheckView } from "./ui/citecheck.js?v=20260823a";
+import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260823a";
+import * as GH from "./adapters/github.js?v=20260823a";
+import { extractLines } from "./core/importer.js?v=20260823a";
+import { buildAuto } from "./core/structure.js?v=20260823a";
+import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260823a";
+import { ObjectStore, fitTable } from "./core/objects.js?v=20260823a";
+import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260823a";
+import { regFingerprint } from "./core/xrefs.js?v=20260823a";
+import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260823a";
 
 const $ = (s) => document.querySelector(s);
 const NL = "\n";

@@ -1,10 +1,10 @@
 /* ============================================================
    ui/detail.js — 조문 상세 패널
    ============================================================ */
-import * as M from "../core/model.js?v=20260822z";
-import { wordDiff, beforeRuns, afterRuns, hasChange } from "../core/textdiff.js?v=20260822z";
+import * as M from "../core/model.js?v=20260823a";
+import { wordDiff, beforeRuns, afterRuns, hasChange } from "../core/textdiff.js?v=20260823a";
 import { imgIdsIn, renderBody, fitTable, toHtml, openTableOverlay, markAnnexEdits }
-  from "../core/objects.js?v=20260822z";
+  from "../core/objects.js?v=20260823a";
 
 
 /** 만들고 있는 안을 부르는 말 — 작업규정은 개정안, 성과심사 규정은 개정안 */
@@ -83,7 +83,7 @@ function fmtDT(iso) {
   return `${d.getFullYear()}.${p(d.getMonth() + 1)}.${p(d.getDate())} ${p(d.getHours())}:${p(d.getMinutes())}`;
 }
 
-import { linkReason, wireReasonLinks } from "../core/reasonlink.js?v=20260822z";
+import { linkReason, wireReasonLinks } from "../core/reasonlink.js?v=20260823a";
 
 /** 사유 글이 스스로 머리글을 달고 있는가 — 그러면 딱지를 겹쳐 붙이지 아니한다 */
 const RE_REASON_HEAD = /^\s*\[변경 사유\]/;
@@ -143,6 +143,11 @@ export class DetailPanel {
       onCite: (id, name, jo) => this.onCite?.(id, name, jo),
       hasJo: docId && this.joNav ? (no) => this.joNav.has(docId, no) : null,
       onJo: (no) => this.joNav?.go(docId, no),
+      /* 본문 속 별표·별지도 눌러 갈 수 있게 한다. 지금까지는 변경 사유에서만
+         되어, 정작 규정 본문에서 별표를 부를 때에는 찾아 헤매야 했다.
+         개정안 트리에서 찾으므로 docId 는 넘기지 않는다(null). */
+      hasAnx: this.joNav?.hasAnx ? (g, no) => this.joNav.hasAnx(null, g, no) : null,
+      onAnx: (g, no) => this.joNav?.goAnx?.(null, g, no),
     };
   }
 

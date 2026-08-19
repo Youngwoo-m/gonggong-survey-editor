@@ -6,7 +6,7 @@
    여기서는 그 XML 을 읽어 화면에 진짜 표로 그린다.
    ============================================================ */
 
-import { toMathML } from "./eqmath.js?v=20260822z";
+import { toMathML } from "./eqmath.js?v=20260823a";
 
 const RE_IMG = /<img\s+id="([\w.-]+)"\s*>(?:<\/img>)?/gi;
 // 본문이 인용하는 다른 규정 — 「…」 / 『…』
@@ -135,6 +135,35 @@ export function linkSelfRefs(html, hasJo) {
     });
   }).join("");
 }
+
+/**
+ * 본문 속 별표·별지 인용을 링크로 바꾼다 — 「별표 22」 · 별지 제3호 서식.
+ *
+ * 조문 인용(제○조)과 짝을 이룬다. 규정 본문은 별표를 부르는 일이 잦은데
+ * 지금까지 본문에서는 눌러 갈 수가 없었다 (변경 사유에서만 되었다).
+ *
+ * 「」 로 감싼 것과 맨 글자를 모두 문다. 뒤에 '제N호 서식' 이 붙는 꼴도
+ * 함께 문다 — 별지는 그렇게 부르는 일이 많다.
+ *
+ * @param {string} html 이미 escape 된 글
+ * @param {(gubun:string, no:string)=>boolean} hasAnx 그 별표가 있는가
+ */
+export function linkAnnexRefs(html, hasAnx) {
+  if (!hasAnx) return html;
+  return String(html).split(new RegExp('(<a[^]*?<\/a>)')).map((seg) => {
+    if (seg.startsWith("<a")) return seg;
+    return seg.replace(RE_ANNEX, (m, open, gubun, no, tail, close) => {
+      if (!hasAnx(gubun, no)) return m;
+      const label = `${gubun} ${no}`;
+      return `${open || ""}<a class="cite anx" href="#" data-anx="${esc(gubun)}"`
+        + ` data-no="${esc(no)}" title="${esc(label)} 로 갑니다">${gubun} ${no}${tail || ""}</a>`
+        + `${close || ""}`;
+    });
+  }).join("");
+}
+
+/* 별표 22 · 별표 제22호 · 「별표 22」 · 별지 제3호 서식 — 앞뒤 「」 는 남긴다 */
+const RE_ANNEX = /(&lt;|「)?(별표|별지)\s*제?\s*(\d+)\s*(호(?:\s*서식)?)?(&gt;|」)?/g;
 
 /** 본문에 박혀 있는 이미지 표식들의 id */
 export function imgIdsIn(text) {
@@ -347,7 +376,8 @@ export function toHtml(obj) {
  */
 export async function renderBody(text, regId, store,
                                 { onXml = null, resolveCite = null, resolveLaw = null,
-                                  onCite = null, hasJo = null, onJo = null } = {}) {
+                                  onCite = null, hasJo = null, onJo = null,
+                                  hasAnx = null, onAnx = null } = {}) {
   const frag = document.createDocumentFragment();
   const src = String(text || "");
   RE_IMG.lastIndex = 0;
@@ -358,16 +388,18 @@ export async function renderBody(text, regId, store,
     const d = document.createElement("div");
     d.className = "bd-text";
     const plain = s.replace(/^\n+|\n+$/g, "");
-    if (resolveCite || resolveLaw || hasJo) {
+    if (resolveCite || resolveLaw || hasJo || hasAnx) {
       // 「…」 인용을 눌러 참조규정 창에서 열 수 있게 한다
       let h = linkCitations(esc(plain), resolveCite);
       h = linkLawRefs(h, resolveLaw);
       h = linkSelfRefs(h, hasJo);          // 같은 규정 안의 제○조 인용
+      h = linkAnnexRefs(h, hasAnx);        // 별표·별지 인용
       d.innerHTML = h;
       d.querySelectorAll("a.cite").forEach((a) => {
         a.onclick = (e) => {
           e.preventDefault();
-          if (a.classList.contains("self")) onJo?.(+a.dataset.jo);
+          if (a.classList.contains("anx")) onAnx?.(a.dataset.anx, a.dataset.no);
+          else if (a.classList.contains("self")) onJo?.(+a.dataset.jo);
           else onCite?.(a.dataset.reg, a.textContent, a.dataset.jo || "");
         };
       });

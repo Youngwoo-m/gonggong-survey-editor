@@ -796,3 +796,7 @@ button.mini2.apply:disabled{background:var(--panel2);color:var(--muted);
 .tag.g-ok { background: #B9C5CB; } .tag.g-must { background: #C1502E; } .tag.g-check { background: #B07A1E; }
 .chip.g-ok b { color: #51646D; } .chip.g-must b { color: #C1502E; } .chip.g-check b { color: #B07A1E; }
 tr.g-must td { background: #FDF6F4; } tr.g-check td { background: #FDFAF3; }
+
+/* 본문 속 별표·별지 링크 — 조문 링크(푸른)와 갈라 보이게 */
+a.cite.anx { color: #B07A1E; border-bottom: 1px dotted #B07A1E; cursor: pointer; }
+a.cite.anx:hover { background: #FDF6E7; }
