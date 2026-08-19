@@ -1,12 +1,13 @@
 /* ============================================================
    ui/compare.js — 개정 전후 비교표 화면
    ============================================================ */
-import { buildComparison, KIND_LIST } from "../core/diff.js?v=20260822h";
-import { writeXlsx } from "../core/xlsx.js?v=20260822h";
-import * as M from "../core/model.js?v=20260822h";
-import { regFingerprint } from "../core/xrefs.js?v=20260822h";
-import { buildAmendment } from "../core/amend.js?v=20260822h";
-import { stripImgTags } from "../core/objects.js?v=20260822h";
+import { buildComparison, KIND_LIST } from "../core/diff.js?v=20260822r";
+import { writeXlsx } from "../core/xlsx.js?v=20260822r";
+import * as M from "../core/model.js?v=20260822r";
+import { regFingerprint } from "../core/xrefs.js?v=20260822r";
+import { buildAmendment } from "../core/amend.js?v=20260822r";
+import { buildSupplement, EFFECT_KINDS, topTitles } from "../core/supplement.js?v=20260822r";
+import { stripImgTags } from "../core/objects.js?v=20260822r";
 
 const KIND_CLASS = {
   "신설": "k-new", "삭제": "k-del", "이동": "k-mov", "이관": "k-xfer",
@@ -20,6 +21,8 @@ export class CompareView {
     this.opts = { onlyChanged: true, joOnly: false, excludePureMove: false };
     this.form = "official";   // "official" 신구조문 대비표 · "detail" 상세 비교표 · "amend" 개정문
     this.whole = false;       // 전부개정으로 적을 것인가
+    // 부칙 — 시행일과 '다른 규정의 개정'
+    this.sup = { on: true, kind: "promulgate", months: 6, date: "", others: true };
     this.result = null;
     this.fromId = null;
     this.toId = null;
@@ -109,6 +112,17 @@ export class CompareView {
       this.opts.excludePureMove = e.target.checked; this.refresh();
     };
     this.el.querySelector("#cmpWhole").onchange = (e) => { this.whole = e.target.checked; this.refresh(); };
+    const sup = this.el.querySelector("#cmpSupBar");
+    sup.querySelector("#supOn").onchange = (e) => { this.sup.on = e.target.checked; this.refresh(); };
+    sup.querySelector("#supOthers").onchange = (e) => { this.sup.others = e.target.checked; this.refresh(); };
+    sup.querySelector("#supKind").onchange = (e) => {
+      this.sup.kind = e.target.value;
+      sup.querySelector("#supMonthsWrap").classList.toggle("hidden", this.sup.kind !== "after");
+      sup.querySelector("#supDateWrap").classList.toggle("hidden", this.sup.kind !== "date");
+      this.refresh();
+    };
+    sup.querySelector("#supMonths").onchange = (e) => { this.sup.months = +e.target.value || 6; this.refresh(); };
+    sup.querySelector("#supDate").onchange = (e) => { this.sup.date = e.target.value; this.refresh(); };
     this.el.querySelector('[data-x="copy"]').onclick = () => this.copyAmend();
     this.el.querySelector('[data-x="xlsx"]').onclick = () => this.exportXlsx();
     this.el.querySelector('[data-x="html"]').onclick = () => this.exportHtml();
@@ -169,10 +183,23 @@ export class CompareView {
     this.el.querySelector("#cmpWholeWrap").classList.toggle("hidden", !isAmend);
     this.el.querySelector("#btnCmpCopy").classList.toggle("hidden", !isAmend);
     this.el.querySelector("#btnCmpXlsx").classList.toggle("hidden", isAmend);
+    this.el.querySelector("#cmpSupBar").classList.toggle("hidden", !isAmend);
     if (isAmend) {
       this.amend = buildAmendment(rows, { regName: this._regTitle(), whole: this.whole });
-      amd.innerHTML = this._amendHtml(this.amend);
-      this.el.querySelector("#cmpCount").textContent = `${this.amend.items.length}개 지시문`;
+      const { from, to } = this._resolve();
+      this.supText = this.sup.on ? buildSupplement({
+        regName: this._regTitle(), tree: this.project.tree, targetId: this.targetId, rows,
+        effective: { kind: this.sup.kind, months: this.sup.months, date: this.sup.date },
+        withOthers: this.sup.others,
+        oldTops: topTitles(this._treeOf(from)), newTops: topTitles(this._treeOf(to)),
+      }) : null;
+      amd.innerHTML = this._amendHtml(this.amend)
+        + (this.supText ? this._supHtml(this.supText) : "");
+      this.el.querySelector("#cmpCount").textContent =
+        `${this.amend.items.length}개 지시문` + (this.supText ? ` · 부칙 ${this.supText.articles.length}개 조` : "");
+      const w = this.el.querySelector("#supWarn");
+      if (w) w.textContent = this.supText && this.supText.warnings.length
+        ? `손으로 살필 것 ${this.supText.warnings.length}건` : "";
     } else {
       tbl.innerHTML = this.form === "official" ? this._officialTable(rows) : this._table(rows);
       tbl.className = this.form === "official" ? "official" : "";
@@ -345,6 +372,19 @@ export class CompareView {
     <button data-x="print">인쇄</button>
   </div>
 
+  <div class="cmp-bar3 hidden" id="cmpSupBar">
+    <label><input type="checkbox" id="supOn" checked> <b>부칙</b></label>
+    <span class="sep"></span>
+    <label>시행일 <select id="supKind">${EFFECT_KINDS.map((k) =>
+      `<option value="${k.id}">${esc(k.label)}</option>`).join("")}</select></label>
+    <label id="supMonthsWrap" class="hidden">공포 후 <input type="number" id="supMonths" min="1" max="36" value="6" style="width:52px"> 개월</label>
+    <label id="supDateWrap" class="hidden"><input type="date" id="supDate"></label>
+    <span class="sep"></span>
+    <label title="이 규정을 인용하는 다른 규정의 조문을 찾아 '다른 규정의 개정' 을 짓습니다">
+      <input type="checkbox" id="supOthers" checked> 다른 규정의 개정</label>
+    <span id="supWarn" class="hint"></span>
+  </div>
+
   <div class="cmp-body"><table id="cmpTable"></table><div id="cmpAmend" class="amend hidden"></div></div>
 </div>`;
   }
@@ -377,9 +417,25 @@ export class CompareView {
     return `<div class="amend-head">${esc(am.head)}</div>${body}`;
   }
 
+  /** 부칙 — 개정문 뒤에 이어 붙는다 */
+  _supHtml(sup) {
+    const arts = sup.articles.map((a) => `
+      <div class="amend-item">
+        <span class="amend-tag">부칙</span>
+        <div class="amend-text"><b>제${a.no}조(${esc(a.title)})</b> ${esc(a.lines[0])}${
+          a.lines.length > 1
+            ? `<div class="amend-body">${a.lines.slice(1).map(esc).join("<br>")}</div>` : ""}</div>
+      </div>`).join("");
+    const warn = sup.warnings.length ? `
+      <div class="amend-warn"><b>손으로 살펴야 할 것 ${sup.warnings.length}건</b>
+        <ul>${sup.warnings.map((w) => `<li>${esc(w)}</li>`).join("")}</ul></div>` : "";
+    return `<div class="amend-sup"><div class="amend-head">부칙</div>${arts}${warn}</div>`;
+  }
+
   /** 개정문을 글자 그대로 클립보드에 — 한/글에 그대로 붙여 넣는다 */
   async copyAmend() {
-    const text = this.amend ? this.amend.text : "";
+    const text = [this.amend ? this.amend.text : "",
+                  this.supText ? "\n\n" + this.supText.text : ""].join("");
     try {
       await navigator.clipboard.writeText(text);
       this._flash("개정문을 복사했습니다 — 한/글에 그대로 붙여 넣으십시오.");
@@ -558,9 +614,14 @@ p.it{margin:0 0 10px;text-indent:0}
 pre.bd{font-family:inherit;font-size:10.5pt;margin:4px 0 12px 16px;white-space:pre-wrap;line-height:1.9}`;
     const items = am.items.map((it) =>
       `<p class="it">${esc(it.text)}</p>${it.body ? `<pre class="bd">${esc(it.body)}</pre>` : ""}`).join("");
+    const sup = this.supText ? `<h1 style="margin-top:28px">부칙</h1>`
+      + this.supText.articles.map((a) =>
+        `<p class="it"><b>제${a.no}조(${esc(a.title)})</b> ${esc(a.lines[0])}</p>`
+        + (a.lines.length > 1 ? `<pre class="bd">${a.lines.slice(1).map(esc).join("\n")}</pre>` : "")).join("")
+      : "";
     const html = `<!doctype html><html lang="ko"><meta charset="utf-8">
 <title>개정문 — ${esc(this._targetName())}</title><style>${css}</style>
-<h1>${esc(am.head)}</h1>${items}</html>`;
+<h1>${esc(am.head)}</h1>${items}${sup}</html>`;
     download(new Blob([html], { type: "text/html;charset=utf-8" }),
       this._fileBase().replace("개정전후_비교표", "개정문") + ".html");
   }

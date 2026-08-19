@@ -773,3 +773,14 @@ button.mini2.apply:disabled{background:var(--panel2);color:var(--muted);
               border-left: 2px solid #C7D2D8; white-space: pre-wrap; font-size: 12px;
               line-height: 1.85; color: #33454F; }
 #cmpWholeWrap { white-space: nowrap; }
+
+/* 부칙 — 개정문 뒤에 이어 붙는다 */
+.cmp-bar3 { display: flex; align-items: center; gap: 10px; padding: 7px 14px;
+            border-bottom: 1px solid #E4EBEE; background: #F7F9FA; font-size: 12px; flex-wrap: wrap; }
+.cmp-bar3.hidden { display: none; }
+.cmp-bar3 .sep { width: 1px; height: 14px; background: #C7D2D8; }
+.cmp-bar3 .hint { color: #B07A1E; }
+.amend-sup { margin-top: 26px; padding-top: 18px; border-top: 1px solid #C7D2D8; }
+.amend-warn { margin: 14px 0 0; padding: 10px 12px; background: #FBF3F1;
+              border-left: 3px solid #C1502E; font-size: 12px; color: #8A3A1F; line-height: 1.7; }
+.amend-warn ul { margin: 6px 0 0; padding-left: 18px; }

@@ -1,27 +1,27 @@
 /* ============================================================
    main.js — 앱 조립 (1단계 프로토타입)
    ============================================================ */
-import * as M from "./core/model.js?v=20260822h";
-import { Project } from "./core/project.js?v=20260822h";
-import * as FS from "./adapters/fileio.js?v=20260822h";
-import * as AUTO from "./adapters/autosave.js?v=20260822h";
-import { TreeView } from "./ui/tree.js?v=20260822h";
-import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260822h";
-import { CompareView } from "./ui/compare.js?v=20260822h";
-import { VersionsView } from "./ui/versions.js?v=20260822h";
-import { HistoryView } from "./ui/history.js?v=20260822h";
-import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260822h";
-import { ValidateView } from "./ui/validate.js?v=20260822h";
-import { RefPicker } from "./ui/refpicker.js?v=20260822h";
-import { AIView } from "./ui/ai.js?v=20260822h";
-import * as GH from "./adapters/github.js?v=20260822h";
-import { extractLines } from "./core/importer.js?v=20260822h";
-import { buildAuto } from "./core/structure.js?v=20260822h";
-import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260822h";
-import { ObjectStore, fitTable } from "./core/objects.js?v=20260822h";
-import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260822h";
-import { regFingerprint } from "./core/xrefs.js?v=20260822h";
-import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260822h";
+import * as M from "./core/model.js?v=20260822r";
+import { Project } from "./core/project.js?v=20260822r";
+import * as FS from "./adapters/fileio.js?v=20260822r";
+import * as AUTO from "./adapters/autosave.js?v=20260822r";
+import { TreeView } from "./ui/tree.js?v=20260822r";
+import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260822r";
+import { CompareView } from "./ui/compare.js?v=20260822r";
+import { VersionsView } from "./ui/versions.js?v=20260822r";
+import { HistoryView } from "./ui/history.js?v=20260822r";
+import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260822r";
+import { ValidateView } from "./ui/validate.js?v=20260822r";
+import { RefPicker } from "./ui/refpicker.js?v=20260822r";
+import { AIView } from "./ui/ai.js?v=20260822r";
+import * as GH from "./adapters/github.js?v=20260822r";
+import { extractLines } from "./core/importer.js?v=20260822r";
+import { buildAuto } from "./core/structure.js?v=20260822r";
+import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260822r";
+import { ObjectStore, fitTable } from "./core/objects.js?v=20260822r";
+import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260822r";
+import { regFingerprint } from "./core/xrefs.js?v=20260822r";
+import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260822r";
 
 const $ = (s) => document.querySelector(s);
 const NL = "\n";
@@ -189,6 +189,15 @@ async function init() {
       resumed = got.at;
     }
   } catch (e) { console.warn("담아 둔 것을 이어받지 못했습니다:", e); }
+
+  /* 앱을 열 때에는 공공측량 작업규정부터 보인다.
+     이어받은 프로젝트에 지난번 손대던 규정이 적혀 있어도, 처음 화면은
+     늘 첫 규정으로 연다 — 이 편집기의 본디 일감이 작업규정 개정이다. */
+  const first = firstTarget();
+  if (first && project.regNode(first.id)) {
+    project.activeTargetId = first.id;
+    editScope = null;
+  }
 
   project.onChange(onProjectChange);
   onProjectChange(project, "");
@@ -364,8 +373,16 @@ function paintRevPicker(targetId) {
   const sig = revs.map((r) => r.versionId + "|" + r.label).join("~") + "@" + targetId;
   if (sel.dataset.sig !== sig) {
     sel.dataset.sig = sig;
-    sel.innerHTML = revs.map((r) =>
-      `<option value="${r.versionId}">${esc(r.label)}${r.title ? ` · ${esc(r.title)}` : ""}</option>`).join("");
+    /* 같은 이름을 단 판이 둘 이상이면 판 이름을 덧붙여 갈라 준다.
+       작업규정은 초안이 한 벌인데, 거기에 용어 통일을 적용한 판이 따로
+       있으면 둘 다 'v1 · 개정안 초안(2025)' 이라 무엇이 다른지 알 수 없다. */
+    const dup = {};
+    for (const r of revs) dup[r.label] = (dup[r.label] || 0) + 1;
+    sel.innerHTML = revs.map((r) => {
+      const tail = (dup[r.label] > 1 && r.versionLabel !== r.label) ? ` [${esc(r.versionLabel)}]` : "";
+      return `<option value="${r.versionId}">${esc(r.label)}`
+        + `${r.title ? ` · ${esc(r.title)}` : ""}${tail}</option>`;
+    }).join("");
   }
   const now = revs.find((r) => r.versionId === project.currentId);
   sel.value = now ? now.versionId : (revs.find((r) => {

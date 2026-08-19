@@ -82,6 +82,8 @@ function jong(word) {
   return (c - 0xac00) % 28;                          // 0 이면 받침 없음
 }
 export const eul = (w) => { const j = jong(w); return j === null ? "을(를)" : (j ? "을" : "를"); };
+/** 주어 자리 조사 — 받침이 있으면 '이', 없으면 '가' */
+export const iga = (w) => { const j = jong(w); return j === null ? "이(가)" : (j ? "이" : "가"); };
 export const ro = (w) => {
   const j = jong(w);
   if (j === null) return "(으)로";
