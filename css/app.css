@@ -784,3 +784,15 @@ button.mini2.apply:disabled{background:var(--panel2);color:var(--muted);
 .amend-warn { margin: 14px 0 0; padding: 10px 12px; background: #FBF3F1;
               border-left: 3px solid #C1502E; font-size: 12px; color: #8A3A1F; line-height: 1.7; }
 .amend-warn ul { margin: 6px 0 0; padding-left: 18px; }
+
+/* 피인용조문 검색 */
+.cc-tbl th { position: sticky; top: 0; background: #1F2C35; color: #fff; font-size: 12px; }
+.cc-tbl td { border: 1px solid #E4EBEE; padding: 7px 9px; font-size: 12px; vertical-align: top; line-height: 1.65; }
+.cc-tbl tbody tr { cursor: pointer; }
+.cc-tbl tbody tr:hover td { background: #F7F9FA; }
+.cc-tbl .cc-raw { font-weight: 700; color: #1F2C35; }
+.cc-tbl .cc-reg { margin-top: 3px; font-size: 11px; color: #51646D; text-decoration: underline; cursor: pointer; }
+.cc-tbl .none { text-align: center; color: #8C9BA3; padding: 26px; }
+.tag.g-ok { background: #B9C5CB; } .tag.g-must { background: #C1502E; } .tag.g-check { background: #B07A1E; }
+.chip.g-ok b { color: #51646D; } .chip.g-must b { color: #C1502E; } .chip.g-check b { color: #B07A1E; }
+tr.g-must td { background: #FDF6F4; } tr.g-check td { background: #FDFAF3; }

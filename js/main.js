@@ -1,27 +1,29 @@
 /* ============================================================
    main.js — 앱 조립 (1단계 프로토타입)
    ============================================================ */
-import * as M from "./core/model.js?v=20260822r";
-import { Project } from "./core/project.js?v=20260822r";
-import * as FS from "./adapters/fileio.js?v=20260822r";
-import * as AUTO from "./adapters/autosave.js?v=20260822r";
-import { TreeView } from "./ui/tree.js?v=20260822r";
-import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260822r";
-import { CompareView } from "./ui/compare.js?v=20260822r";
-import { VersionsView } from "./ui/versions.js?v=20260822r";
-import { HistoryView } from "./ui/history.js?v=20260822r";
-import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260822r";
-import { ValidateView } from "./ui/validate.js?v=20260822r";
-import { RefPicker } from "./ui/refpicker.js?v=20260822r";
-import { AIView } from "./ui/ai.js?v=20260822r";
-import * as GH from "./adapters/github.js?v=20260822r";
-import { extractLines } from "./core/importer.js?v=20260822r";
-import { buildAuto } from "./core/structure.js?v=20260822r";
-import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260822r";
-import { ObjectStore, fitTable } from "./core/objects.js?v=20260822r";
-import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260822r";
-import { regFingerprint } from "./core/xrefs.js?v=20260822r";
-import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260822r";
+import * as M from "./core/model.js?v=20260822u";
+import { Project } from "./core/project.js?v=20260822u";
+import * as FS from "./adapters/fileio.js?v=20260822u";
+import * as AUTO from "./adapters/autosave.js?v=20260822u";
+import { TreeView } from "./ui/tree.js?v=20260822u";
+import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260822u";
+import { CompareView } from "./ui/compare.js?v=20260822u";
+import { VersionsView } from "./ui/versions.js?v=20260822u";
+import { HistoryView } from "./ui/history.js?v=20260822u";
+import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260822u";
+import { ValidateView } from "./ui/validate.js?v=20260822u";
+import { RefPicker } from "./ui/refpicker.js?v=20260822u";
+import { AIView } from "./ui/ai.js?v=20260822u";
+import { CiteCheckView } from "./ui/citecheck.js?v=20260822u";
+import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260822u";
+import * as GH from "./adapters/github.js?v=20260822u";
+import { extractLines } from "./core/importer.js?v=20260822u";
+import { buildAuto } from "./core/structure.js?v=20260822u";
+import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260822u";
+import { ObjectStore, fitTable } from "./core/objects.js?v=20260822u";
+import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260822u";
+import { regFingerprint } from "./core/xrefs.js?v=20260822u";
+import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260822u";
 
 const $ = (s) => document.querySelector(s);
 const NL = "\n";
@@ -61,6 +63,10 @@ const ai = new AIView(project, {
   onToast: (m, ms) => toast(m, ms),
   onJump: (id) => jumpToNode(id),
   host: $("#aiDock"),          // 별도 창이 아니라 개정안 창 아래에 붙인다
+});
+const citecheck = new CiteCheckView({
+  onJump: (id) => jumpToNode(id),
+  onOpenRef: (regId) => { $("#refSelect2").value = regId; setRefDoc("ref2", regId); },
 });
 const history = new HistoryView(project, {
   onJump: (nodeId, versionId) => {
@@ -1378,6 +1384,50 @@ ${r.warning}` : ""),
     }
 
     case "scopeAll": showAllTargets(); break;
+
+    /* 개정안 이름 바꾸기 — 판 이름은 세 규정을 아우른 것이라 규정 하나만
+       놓고 보면 뜻이 없다. 작업규정으로는 둘째 판인데 판 이름이 v4 인 일이
+       생긴다. 규정마다 지닌 제 이름을 고친다. */
+    case "renameRev": {
+      const tid = scopedTargetId();
+      const reg = tid ? project.regNode(tid) : null;
+      if (!reg) { toast("규정을 먼저 고르십시오.", 3000); break; }
+      const vid = $("#editRevSelect")?.value || project.currentId;
+      const cur = project.version(vid);
+      const r = cur ? (cur.tree || []).find((n) => M.isRegNode(n) && n.targetId === tid) : null;
+      if (!r) break;
+      const label = prompt(
+        `개정안 이름을 적으십시오 — ${targetById(tid)?.short || ""}` + NL
+        + `(판 이름 '${cur.label}' 은 세 규정을 아우른 것이라 그대로 둡니다)`,
+        r.revLabel || "");
+      if (label === null) break;
+      const title = prompt("설명을 적으십시오 (비워 두어도 됩니다).", r.revTitle || "");
+      if (title === null) break;
+      project.renameRev(tid, vid, label, title);
+      $("#editRevSelect").dataset.sig = "";     // 목록을 다시 세운다
+      paintEditHead();
+      break;
+    }
+
+    /* 피인용조문 검색 — 이 규정이 부르는 남의 조문이 아직 성한지 본다.
+       라이브러리에 색인된 규정의 조문 트리를 잣대로 삼는다. 색인이 없는
+       규정은 '확인필요' 로 남긴다 — 모르는 것을 성하다고 하지 않는다. */
+    case "cites": {
+      const reg = project.regNode(scopedTargetId()) || project.regNodes[0];
+      if (!reg) break;
+      const cites = scanCitations(reg);
+      if (!cites.length) { toast("이 규정에는 조 번호까지 적은 인용이 없습니다.", 3500); break; }
+      busy(`인용 ${cites.length}건을 견주는 중…`);
+      const ids = neededDocs(cites, library.regulations);
+      const docs = new Map();
+      for (const id of ids) {
+        try { docs.set(id, await loadReg(id)); } catch { /* 못 읽으면 확인필요로 남는다 */ }
+      }
+      busy(false);
+      citecheck.open(gradeAll(cites, library.regulations, docs),
+        { regName: reg.title, indexed: docs.size });
+      break;
+    }
     /* 규정 사이에서 갈린 말을 맞춘다 — 무엇을 왜 바꾸는지 먼저 보이고 묻는다.
        고친 조문마다 근거(현행 고시 명칭 + 국가공간정보 표준용어집 인용표준번호)를
        남기므로, 그것이 그대로 개정사유서와 신구대조표 비고란으로 간다. */

@@ -7,8 +7,8 @@
      · 결과는 사람이 고칠 수 있고, 원문은 항상 보존된다.
    외부 번역 API 를 붙이려면 translateVia() 를 교체하면 된다.
    ============================================================ */
-import * as M from "./model.js?v=20260822r";
-import { polish } from "./jafallback.js?v=20260822r";
+import * as M from "./model.js?v=20260822u";
+import { polish } from "./jafallback.js?v=20260822u";
 
 /* ---------- 일본어 → 한국어 용어 대응표 ---------- */
 const JA = {

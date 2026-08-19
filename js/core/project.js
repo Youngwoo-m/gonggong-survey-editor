@@ -7,9 +7,9 @@
    · this.tree 는 항상 '현재 버전'의 트리 배열과 같은 객체를 가리킨다.
    · 모든 구조 변경은 run() 트랜잭션을 통해서만 일어난다.
    ============================================================ */
-import * as M from "./model.js?v=20260822r";
+import * as M from "./model.js?v=20260822u";
 import { numbersOf, planFrom, planStayed, remapCitations, articleIdsIn,
-         planTermFixes, TERM_RULES } from "./xrefs.js?v=20260822r";
+         planTermFixes, TERM_RULES } from "./xrefs.js?v=20260822u";
 
 const MAX_HISTORY = 100;
 const BASE_ID = "base";
@@ -351,6 +351,28 @@ ${line}` : line;
     return ok ? fresh : { ...fresh, count: 0, nodes: 0, blocked: true };
   }
 
+  /**
+   * 개정안 이름 바꾸기 — 규정 하나의, 판 하나에서.
+   *
+   * 판 이름(v1·v2·v4…)은 세 규정을 아우른 것이라 규정 하나만 놓고 보면 뜻이
+   * 없다. 작업규정으로는 두 번째 판인데 판 이름이 v4 인 일이 생긴다.
+   * 그래서 규정마다 제 개정안 이름을 따로 지닌다(revLabel) — 그것을 고친다.
+   */
+  renameRev(targetId, versionId, label, title) {
+    const v = this.version(versionId);
+    if (!v) return false;
+    const reg = (v.tree || []).find((n) => M.isRegNode(n) && n.targetId === targetId);
+    if (!reg) return false;
+    const was = `${reg.revLabel || ""} · ${reg.revTitle || ""}`.trim();
+    if (label !== null && label !== undefined) reg.revLabel = String(label).trim() || reg.revLabel;
+    if (title !== null && title !== undefined) reg.revTitle = String(title).trim();
+    this.dirty = true;
+    this._log.push({ at: new Date().toISOString(), v: v.label,
+      label: `개정안 이름: ${was} → ${reg.revLabel} · ${reg.revTitle || ""}`.trim() });
+    this.emit(`개정안 이름을 바꿨습니다 — ${reg.revLabel}${reg.revTitle ? ` · ${reg.revTitle}` : ""}`);
+    return true;
+  }
+
   /* ---------- 규정 경계 ---------- */
 
   /** 트리 최상위의 규정 노드들 */
@@ -512,6 +534,26 @@ ${line}` : line;
        그대로 복제하면 분기해도 여전히 손댈 수 없다 — 기준(현행)에서 갈라
        나온 판이 특히 그렇다 (규정 셋이 모두 잠겨 있다). 여기서 푼다. */
     M.walk(v.tree, (n) => { if (M.isRegNode(n)) n.readonly = false; });
+
+    /* 손대는 규정의 개정안 이름을 한 판 올린다.
+       판 이름(v1·v2·v4…)은 세 규정을 아우른 것이라 규정 하나만 놓고 보면
+       뜻이 없다. 작업규정에서 갈라 나왔으면 작업규정으로는 두 번째 판이므로
+       그 규정의 개정안 이름을 v2 로 적는다 — 그래야 고르개에서 갈린다. */
+    const act = this.activeTargetId;
+    if (act) {
+      const reg = (v.tree || []).find((n) => M.isRegNode(n) && n.targetId === act);
+      if (reg) {
+        const used = new Set();
+        for (const ov of this.versions) {
+          const r = (ov.tree || []).find((n) => M.isRegNode(n) && n.targetId === act);
+          if (r && r.revLabel) used.add(r.revLabel);
+        }
+        let k = 2;
+        while (used.has(`v${k}`)) k += 1;
+        reg.revLabel = `v${k}`;
+        reg.revTitle = reg.revTitle || `${reg.word || "개정안"} (${k}판)`;
+      }
+    }
     this.versions.push(v);
     this.dirty = true;
     this._log.push({ at: v.createdAt, label: `버전 생성: ${v.label} (${src.label} 에서 분기)` });

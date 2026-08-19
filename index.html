@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>공공측량 규정 개정 편집기</title>
-<link rel="stylesheet" href="css/app.css?v=20260822i" />
+<link rel="stylesheet" href="css/app.css?v=20260822s" />
 </head>
 <body>
 
@@ -17,6 +17,7 @@
       <button data-cmd="export" title="이 브라우저 밖으로 꺼냅니다 — .pmproj 파일 (남에게 넘기거나 갈무리할 때)">내보내기</button>
       <button data-cmd="report" title="개정(안)·별표및별지모음·개정사유서·신구대조표를 zip 한 개로 내려받습니다">보고서</button>
       <button data-cmd="terms" title="규정 사이에서 갈린 말을 정한 말로 맞추고, 근거를 조문마다 남깁니다">용어 통일</button>
+      <button data-cmd="cites" title="이 규정이 부르는 남의 조문이 아직 성한지 봅니다 (피인용조문 검색)">인용 검사</button>
       <span class="sep"></span>
       <button data-cmd="share"><b>공유 저장소</b></button>
       <button data-cmd="versions">버전 관리</button>
@@ -150,6 +151,7 @@
         <div class="row rev hidden" id="editRevRow">
           <span class="lbl">개정안</span>
           <select id="editRevSelect" title="이 규정의 개정안이 여러 벌입니다 — 볼 것을 고릅니다"></select>
+          <button class="mini2" data-cmd="renameRev" title="이 규정의 개정안 이름을 바꿉니다">이름</button>
           <span id="editRevNote" class="hint"></span>
         </div>
         <div class="row">
@@ -195,6 +197,6 @@
 <div id="toast" class="toast hidden"></div>
 <div id="busy" class="busy hidden"><div class="busy-box"><div class="spin"></div><div id="busyMsg">처리 중…</div></div></div>
 
-<script type="module" src="js/main.js?v=20260822r"></script>
+<script type="module" src="js/main.js?v=20260822u"></script>
 </body>
 </html>

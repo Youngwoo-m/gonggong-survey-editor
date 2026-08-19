@@ -7,9 +7,9 @@
      · work 에만 있음  → 신설
      · 둘 다 있음      → 부모 체인 변화(이동) / 제목·본문 변화(수정) 판정
    ============================================================ */
-import * as M from "./model.js?v=20260822r";
-import { stripImgTags } from "./objects.js?v=20260822r";
-import { wordDiff, afterRuns, beforeRuns, hasChange } from "./textdiff.js?v=20260822r";
+import * as M from "./model.js?v=20260822u";
+import { stripImgTags } from "./objects.js?v=20260822u";
+import { wordDiff, afterRuns, beforeRuns, hasChange } from "./textdiff.js?v=20260822u";
 
 export const KIND_LIST = ["신설", "삭제", "이동", "이동·수정", "수정", "통합", "유지"];
 
