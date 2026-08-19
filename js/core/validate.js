@@ -6,8 +6,9 @@
      경고 : 사람이 판단해야 하는 것
      정보 : 알아두면 좋은 것
    ============================================================ */
-import * as M from "./model.js?v=20260822u";
-import { checkCrossRefs, checkTerms, checkAnnexClash } from "./xrefs.js?v=20260822u";
+import * as M from "./model.js?v=20260822v";
+import { checkCrossRefs, checkTerms, checkAnnexClash } from "./xrefs.js?v=20260822v";
+import { QUALITY_ELEMENTS, elementsOf } from "./quality.js?v=20260822v";
 
 export const LEVELS_OF = { 오류: 0, 경고: 1, 정보: 2 };
 
@@ -384,6 +385,32 @@ function crossChecks(tree) {
     ].filter(Boolean);
     add("경고", "cross-term", `규정마다 다른 말로 부릅니다 — ${t.canon}`,
       parts.join(" "), null, "규정 사이");
+  }
+
+  /* ---- 별표 허용기준이 다루지 않는 품질요소 (정보) ----
+     KS X 19157-1:2025 의 품질모델로 견준다. 말로 가리는 어림이므로
+     '빠짐' 이 아니라 '눈에 띄지 않음' 으로 적는다 — 사람이 보아야 한다. */
+  for (const reg of (tree || []).filter(M.isRegNode)) {
+    const short = M.shortLabel(reg);
+    const tally = Object.fromEntries(QUALITY_ELEMENTS.map((e) => [e.id, 0]));
+    let n = 0;
+    M.walk(reg.children || [], (node) => {
+      if (!node.annexRef) return;
+      const body = `${node.title || ""} ${node.body || ""} ${(node.citesAnnex || []).join(" ")}`;
+      if (!/정확도|공차|허용|오차|품질/.test(body)) return;
+      n += 1;
+      for (const id of elementsOf(body)) tally[id] += 1;
+    });
+    if (!n) continue;
+    const thin = QUALITY_ELEMENTS.filter((e) => tally[e.id] === 0);
+    if (!thin.length) continue;
+    add("정보", "q19157",
+      `${short} — 별표 기준이 다루지 않는 품질요소 ${thin.length}가지`,
+      `기준을 담은 별표 ${n}건 가운데 `
+      + thin.map((e) => `${e.name}(${e.hint})`).join(", ")
+      + ` 을(를) 다루는 것이 눈에 띄지 않습니다. KS X 19157-1:2025 품질모델 기준이며, `
+      + `말로 가린 어림이므로 실제로 없는지는 살펴보아야 합니다.`,
+      null, `${short} › 별표`);
   }
 
   /* ---- 별표 번호 충돌 — 경고 ---- */
