@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지10" gubun="별지" no="10" title="교량구조물 시공좌표 산출서 (교량 받침대)" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=59323135">
+  <text>[별지 제10호 서식]
+교량구조물 시공좌표 산출서 (교량 받침대)
+¤ 대상 부위 : ○○교 P05-S7 (STA 0+000)</text>
+  <table rows="12" cols="9">
+    <row>
+      <cell col="0" row="0" colspan="9">좌표 전개도</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="9">서울방향
+↑
+중심선</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">도로중심선좌표</cell>
+      <cell col="2" row="2" colspan="7">X(N) :                         Y(E) :</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="9">교각 받침대 시공 좌표</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="5">좌측 교각</cell>
+      <cell col="5" row="4" colspan="4">우측 교각</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">번호</cell>
+      <cell col="1" row="5" colspan="2">X</cell>
+      <cell col="3" row="5">Y</cell>
+      <cell col="4" row="5">H</cell>
+      <cell col="5" row="5">번호</cell>
+      <cell col="6" row="5">X</cell>
+      <cell col="7" row="5">Y</cell>
+      <cell col="8" row="5">H</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">L</cell>
+      <cell col="1" row="6" colspan="2"></cell>
+      <cell col="3" row="6"></cell>
+      <cell col="4" row="6"></cell>
+      <cell col="5" row="6">R</cell>
+      <cell col="6" row="6"></cell>
+      <cell col="7" row="6"></cell>
+      <cell col="8" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">L1</cell>
+      <cell col="1" row="7" colspan="2"></cell>
+      <cell col="3" row="7"></cell>
+      <cell col="4" row="7"></cell>
+      <cell col="5" row="7">R1</cell>
+      <cell col="6" row="7"></cell>
+      <cell col="7" row="7"></cell>
+      <cell col="8" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8">L2</cell>
+      <cell col="1" row="8" colspan="2"></cell>
+      <cell col="3" row="8"></cell>
+      <cell col="4" row="8"></cell>
+      <cell col="5" row="8">R2</cell>
+      <cell col="6" row="8"></cell>
+      <cell col="7" row="8"></cell>
+      <cell col="8" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">L3</cell>
+      <cell col="1" row="9" colspan="2"></cell>
+      <cell col="3" row="9"></cell>
+      <cell col="4" row="9"></cell>
+      <cell col="5" row="9">R3</cell>
+      <cell col="6" row="9"></cell>
+      <cell col="7" row="9"></cell>
+      <cell col="8" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10">L4</cell>
+      <cell col="1" row="10" colspan="2"></cell>
+      <cell col="3" row="10"></cell>
+      <cell col="4" row="10"></cell>
+      <cell col="5" row="10">R4</cell>
+      <cell col="6" row="10"></cell>
+      <cell col="7" row="10"></cell>
+      <cell col="8" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="9">비고
+  1. 교량받침대 시공좌표 산출근거 첨부 (엑셀파일)
+  2. 교량받침대 표고 산출시 고려사항
+     ① 중심선계획고  ② 중심선이격거리  ③ 수평레벨거리  ④ 편구배  ⑤ 포장두께
+     ⑥ 슬래브두께    ⑦ 박스리더높이    ⑧ 하판두께      ⑨ 형하공간높이 (솔플레이트 두께,
+     shoe높이, 모르타르두께, 블록높이 등)</cell>
+    </row>
+  </table>
+  <text>210mm×297mm(일반용지 60g/㎡)</text>
+</annex>

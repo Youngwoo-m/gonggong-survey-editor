@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표5의1" gubun="별표" no="5의1" title="매설 과정별 사진첩 (제17조제1항 관련)" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=155729867">
+  <text>[별표 5-1] 매설 과정별 사진첩 (제17조제1항 관련)</text>
+  <table rows="8" cols="4">
+    <row>
+      <cell col="0" row="0" colspan="4">매  설  사  진  첩</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">□  점 명 :</cell>
+      <cell col="1" row="1" colspan="2"></cell>
+      <cell col="3" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">① 터파기 전</cell>
+      <cell col="2" row="2" colspan="2">② 터파기 후</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">6.5*8.91㎝</cell>
+      <cell col="2" row="3" colspan="2">6.5*8.91㎝</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="2">③ 기초잡석 포설</cell>
+      <cell col="2" row="4" colspan="2">④ 기초콘크리트 타설</cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="2">6.5*8.91㎝</cell>
+      <cell col="2" row="5" colspan="2">6.5*8.91㎝</cell>
+    </row>
+    <row>
+      <cell col="0" row="6" colspan="2">⑤ 흙 채움</cell>
+      <cell col="2" row="6" colspan="2">⑥ 상부잡석 포설</cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="2">6.5*8.91㎝</cell>
+      <cell col="2" row="7" colspan="2">6.5*8.91㎝</cell>
+    </row>
+  </table>
+</annex>

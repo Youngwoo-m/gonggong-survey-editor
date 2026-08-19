@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<equation id="151296059" article="제209조" font="HYhwpEQ" source="공공측량 작업규정.2025.04.23_수식수정.오류표시.hwpx">
+  <script>X _{m} `=` {p _{1} X _{1} `+p _{2} X _{2} + BULLET  BULLET  BULLET  +p _{N} X _{N}} over {p _{1} +p _{2} + BULLET  BULLET  BULLET  +p _{N}}</script>
+  <readable>X _m = p _1 X _1 +p _2 X _2 + BULLET BULLET BULLET +p _N X _N / p _1 +p _2 + BULLET BULLET BULLET +p _N</readable>
+  <latex>X _{m} = {p _{1} X _{1} +p _{2} X _{2} + BULLET BULLET BULLET +p _{N} X \frac{_{N}}}{{p} _{1} +p _{2} + BULLET BULLET BULLET +p _{N}}</latex>
+</equation>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식82" gubun="서식" no="82" title="등기필 통지내용과 지적공부의 불일치사항 통지" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454977">
+  <table rows="1" cols="2">
+    <row>
+      <cell col="0" row="0">발신기관장</cell>
+      <cell col="1" row="0">직인</cell>
+    </row>
+  </table>
+  <table rows="25" cols="28">
+    <row>
+      <cell col="0" row="0" colspan="28">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별지 제82호서식] &lt;개정 2017. 1. 31.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="28">행 정 기 관 명
+수신자  
+(경유)
+제 목 등기필 통지내용과 지적공부의 불일치사항 통지</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="28">등기필 통지서의 토지의 표시내용이 아래와 같이 지적공부와 일치하지 않으므로 「공간정보의 구축 및 관리 등에 관한 법률」 제88조제3항에 따라 통지합니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="11">등기필 통지서</cell>
+      <cell col="11" row="3" colspan="16">지적공부</cell>
+      <cell col="27" row="3" rowspan="2">불합치
+내  용</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" rowspan="3">등  기
+연월일</cell>
+      <cell col="1" row="4" colspan="2" rowspan="3">등기
+번호</cell>
+      <cell col="3" row="4" colspan="8">토지의 표시</cell>
+      <cell col="11" row="4" colspan="10">토지의 표시</cell>
+      <cell col="21" row="4" colspan="6">소유자</cell>
+    </row>
+    <row>
+      <cell col="3" row="5" rowspan="2">읍ㆍ면</cell>
+      <cell col="4" row="5" colspan="2" rowspan="2">동ㆍ리</cell>
+      <cell col="6" row="5" colspan="2" rowspan="2">지번</cell>
+      <cell col="8" row="5" colspan="2" rowspan="2">지목</cell>
+      <cell col="10" row="5" rowspan="2">면적
+(㎡)</cell>
+      <cell col="11" row="5" colspan="3" rowspan="2">지번</cell>
+      <cell col="14" row="5" colspan="4" rowspan="2">지목</cell>
+      <cell col="18" row="5" colspan="3" rowspan="2">면적
+(㎡)</cell>
+      <cell col="21" row="5">성 명</cell>
+      <cell col="22" row="5" colspan="5" rowspan="2">주  소</cell>
+      <cell col="27" row="5" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="21" row="6">생년월일
+또는
+등록번호</cell>
+    </row>
+    <row>
+      <cell col="0" row="7" rowspan="2"></cell>
+      <cell col="1" row="7" colspan="2" rowspan="2"></cell>
+      <cell col="3" row="7" rowspan="2"></cell>
+      <cell col="4" row="7" colspan="2" rowspan="2"></cell>
+      <cell col="6" row="7" colspan="2" rowspan="2"></cell>
+      <cell col="8" row="7" colspan="2" rowspan="2"></cell>
+      <cell col="10" row="7" rowspan="2"></cell>
+      <cell col="11" row="7" colspan="3" rowspan="2"></cell>
+      <cell col="14" row="7" colspan="4" rowspan="2"></cell>
+      <cell col="18" row="7" colspan="3" rowspan="2"></cell>
+      <cell col="21" row="7"></cell>
+      <cell col="22" row="7" colspan="5" rowspan="2"></cell>
+      <cell col="27" row="7" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="21" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9" rowspan="2"></cell>
+      <cell col="1" row="9" colspan="2" rowspan="2"></cell>
+      <cell col="3" row="9" rowspan="2"></cell>
+      <cell col="4" row="9" colspan="2" rowspan="2"></cell>
+      <cell col="6" row="9" colspan="2" rowspan="2"></cell>
+      <cell col="8" row="9" colspan="2" rowspan="2"></cell>
+      <cell col="10" row="9" rowspan="2"></cell>
+      <cell col="11" row="9" colspan="3" rowspan="2"></cell>
+      <cell col="14" row="9" colspan="4" rowspan="2"></cell>
+      <cell col="18" row="9" colspan="3" rowspan="2"></cell>
+      <cell col="21" row="9"></cell>
+      <cell col="22" row="9" colspan="5" rowspan="2"></cell>
+      <cell col="27" row="9" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="21" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11" rowspan="2"></cell>
+      <cell col="1" row="11" colspan="2" rowspan="2"></cell>
+      <cell col="3" row="11" rowspan="2"></cell>
+      <cell col="4" row="11" colspan="2" rowspan="2"></cell>
+      <cell col="6" row="11" colspan="2" rowspan="2"></cell>
+      <cell col="8" row="11" colspan="2" rowspan="2"></cell>
+      <cell col="10" row="11" rowspan="2"></cell>
+      <cell col="11" row="11" colspan="3" rowspan="2"></cell>
+      <cell col="14" row="11" colspan="4" rowspan="2"></cell>
+      <cell col="18" row="11" colspan="3" rowspan="2"></cell>
+      <cell col="21" row="11"></cell>
+      <cell col="22" row="11" colspan="5" rowspan="2"></cell>
+      <cell col="27" row="11" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="21" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13" rowspan="2"></cell>
+      <cell col="1" row="13" colspan="2" rowspan="2"></cell>
+      <cell col="3" row="13" rowspan="2"></cell>
+      <cell col="4" row="13" colspan="2" rowspan="2"></cell>
+      <cell col="6" row="13" colspan="2" rowspan="2"></cell>
+      <cell col="8" row="13" colspan="2" rowspan="2"></cell>
+      <cell col="10" row="13" rowspan="2"></cell>
+      <cell col="11" row="13" colspan="3" rowspan="2"></cell>
+      <cell col="14" row="13" colspan="4" rowspan="2"></cell>
+      <cell col="18" row="13" colspan="3" rowspan="2"></cell>
+      <cell col="21" row="13"></cell>
+      <cell col="22" row="13" colspan="5" rowspan="2"></cell>
+      <cell col="27" row="13" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="21" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15" rowspan="2"></cell>
+      <cell col="1" row="15" colspan="2" rowspan="2"></cell>
+      <cell col="3" row="15" rowspan="2"></cell>
+      <cell col="4" row="15" colspan="2" rowspan="2"></cell>
+      <cell col="6" row="15" colspan="2" rowspan="2"></cell>
+      <cell col="8" row="15" colspan="2" rowspan="2"></cell>
+      <cell col="10" row="15" rowspan="2"></cell>
+      <cell col="11" row="15" colspan="3" rowspan="2"></cell>
+      <cell col="14" row="15" colspan="4" rowspan="2"></cell>
+      <cell col="18" row="15" colspan="3" rowspan="2"></cell>
+      <cell col="21" row="15"></cell>
+      <cell col="22" row="15" colspan="5" rowspan="2"></cell>
+      <cell col="27" row="15" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="21" row="16"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17" colspan="28">끝.</cell>
+    </row>
+    <row>
+      <cell col="0" row="18" colspan="28"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19" colspan="7">기안자  직위(직급) 서명</cell>
+      <cell col="7" row="19" colspan="13">검토자  직위(직급)서명</cell>
+      <cell col="20" row="19" colspan="8">결재권자  직위 (직급)서명</cell>
+    </row>
+    <row>
+      <cell col="0" row="20" colspan="2">협조자</cell>
+      <cell col="2" row="20" colspan="3"></cell>
+      <cell col="5" row="20" colspan="4"></cell>
+      <cell col="9" row="20" colspan="3"></cell>
+      <cell col="12" row="20" colspan="7"></cell>
+      <cell col="19" row="20" colspan="4"></cell>
+      <cell col="23" row="20" colspan="3"></cell>
+      <cell col="26" row="20" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21" colspan="2">시행</cell>
+      <cell col="2" row="21" colspan="10">처리과-일련번호(시행일자)</cell>
+      <cell col="12" row="21" colspan="7">접수</cell>
+      <cell col="19" row="21" colspan="9">처리과명-일련번호(접수일자)</cell>
+    </row>
+    <row>
+      <cell col="0" row="22" colspan="2">우</cell>
+      <cell col="2" row="22" colspan="13">주소</cell>
+      <cell col="15" row="22" colspan="2">/</cell>
+      <cell col="17" row="22" colspan="11">홈페이지 주소</cell>
+    </row>
+    <row>
+      <cell col="0" row="23" colspan="5">전화(  )</cell>
+      <cell col="5" row="23" colspan="8">전송(  )</cell>
+      <cell col="13" row="23" colspan="3">/</cell>
+      <cell col="16" row="23" colspan="8">기안자의 공식전자우편주소</cell>
+      <cell col="24" row="23">/</cell>
+      <cell col="25" row="23" colspan="3">공개구분</cell>
+    </row>
+    <row>
+      <cell col="0" row="24" colspan="28">210㎜×297㎜[백상지(80g/㎡)]</cell>
+    </row>
+  </table>
+</annex>

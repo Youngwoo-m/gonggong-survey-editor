@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="151295885" article="제25조" rows="6" cols="4" source="공공측량 작업규정.2025.04.23_수식수정.오류표시.hwpx">
+  <row>
+    <cell col="0" row="0">편심거리</cell>
+    <cell col="1" row="0">기계 및 측정방법</cell>
+    <cell col="2" row="0">측정단위</cell>
+    <cell col="3" row="0">점검항목·허용범위</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">30cm</cell>
+    <cell col="1" row="1">일반적인 강권척으로 측정한다.</cell>
+    <cell col="2" row="1">mm</cell>
+    <cell col="3" row="1">-</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">30cm 이상
+2m 미만</cell>
+    <cell col="1" row="2">강권척으로 2회 읽으며 왕복측정을 실시한다.</cell>
+    <cell col="2" row="2">mm</cell>
+    <cell col="3" row="2">왕복 교차 5mm</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">2m이상
+50m 미만</cell>
+    <cell col="1" row="3" rowspan="2">TS를 이용하여 제24조 운용기준을 준용하여 측정한다.</cell>
+    <cell col="2" row="3" rowspan="2">mm</cell>
+    <cell col="3" row="3" rowspan="2">제 4조 준용한다.</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">50m 이상</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">비고</cell>
+    <cell col="1" row="5" colspan="3">편심 거리가 5mm 미만이고, 길이가 1km를 넣는 경우는 편심 보정계산을 생략할 수 있다.
+편심 거리가 10m 이하의 경우는 경사 보정 이외의 보정은 생략할 수 있다.</cell>
+  </row>
+</table>

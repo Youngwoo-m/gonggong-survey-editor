@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0059" article="제122조(キネマティック法又はＲＴＫ法による地形、地物等の測定)" rows="3" cols="4" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">項 目</cell>
+    <cell col="1" row="0" header="1"></cell>
+    <cell col="2" row="0" header="1">許容範囲</cell>
+    <cell col="3" row="0" header="1">備 考</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">セット間較差</cell>
+    <cell col="1" row="1">ΔＮ ΔＥ</cell>
+    <cell col="2" row="1">20mm</cell>
+    <cell col="3" row="1">ΔＮ：水平面の南北成分のセット間較差 ΔＥ：水平面の東西成分のセット間較差 ΔＵ：水平面からの高さ成分のセット間較差 ただし、平面直角座標値で比較することができる。</cell>
+  </row>
+  <row>
+    <cell col="0" row="2"></cell>
+    <cell col="1" row="2">ΔＵ</cell>
+    <cell col="2" row="2">30mm</cell>
+    <cell col="3" row="2"></cell>
+  </row>
+</table>

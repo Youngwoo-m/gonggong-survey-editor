@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="t4303" article="개정 우선순위 로드맵" rows="11" cols="5" source="2025년 전략수립 연구보고서">
+  <row>
+    <cell col="0" row="0" header="1">우선순위</cell>
+    <cell col="1" row="0" header="1">개정 항목</cell>
+    <cell col="2" row="0" header="1">주요 해당 유형</cell>
+    <cell col="3" row="0" header="1">개정 단계</cell>
+    <cell col="4" row="0" header="1">AHP 종합점수</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">1순위</cell>
+    <cell col="1" row="1">상위법령 위계 정합성 정비 (용어·인용·위임 체계)</cell>
+    <cell col="2" row="1">A, C</cell>
+    <cell col="3" row="1">단기 (1단계)</cell>
+    <cell col="4" row="1">0.86</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">2순위</cell>
+    <cell col="1" row="2">성과 중심 체계 전환 (성과패키지·품질요소·판정기준)</cell>
+    <cell col="2" row="2">D, E</cell>
+    <cell col="3" row="2">단기 (1단계)</cell>
+    <cell col="4" row="2">0.84</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">3순위</cell>
+    <cell col="1" row="3">전자성과 제출 및 메타데이터 체계 신설</cell>
+    <cell col="2" row="3">B, E</cell>
+    <cell col="3" row="3">단기 (1단계)</cell>
+    <cell col="4" row="3">0.83</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">4순위</cell>
+    <cell col="1" row="4">기술중립성 확보 (기술 진부화 표현 전면 개정)</cell>
+    <cell col="2" row="4">B, D</cell>
+    <cell col="3" row="4">단기 (1단계)</cell>
+    <cell col="4" row="4">0.78</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">5순위</cell>
+    <cell col="1" row="5">성과심사 기준 표준화 (정량 기준·심사 일관성)</cell>
+    <cell col="2" row="5">D, E</cell>
+    <cell col="3" row="5">단기 (1단계)</cell>
+    <cell col="4" row="5">0.76</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">6순위</cell>
+    <cell col="1" row="6">LiDAR 작업·성과심사 모듈 신설</cell>
+    <cell col="2" row="6">F</cell>
+    <cell col="3" row="6">중기 (2단계)</cell>
+    <cell col="4" row="6">0.75</cell>
+  </row>
+  <row>
+    <cell col="0" row="7">7순위</cell>
+    <cell col="1" row="7">UAV 측량 기준 명문화</cell>
+    <cell col="2" row="7">F</cell>
+    <cell col="3" row="7">중기 (2단계)</cell>
+    <cell col="4" row="7">0.74</cell>
+  </row>
+  <row>
+    <cell col="0" row="8">8순위</cell>
+    <cell col="1" row="8">MMS·정밀도로지도 체계 정비</cell>
+    <cell col="2" row="8">F</cell>
+    <cell col="3" row="8">중기 (2단계)</cell>
+    <cell col="4" row="8">0.71</cell>
+  </row>
+  <row>
+    <cell col="0" row="9">9순위</cell>
+    <cell col="1" row="9">지하시설물 도통테스트 규정 신설</cell>
+    <cell col="2" row="9">E, F</cell>
+    <cell col="3" row="9">중기 (2단계)</cell>
+    <cell col="4" row="9">0.67</cell>
+  </row>
+  <row>
+    <cell col="0" row="10">10순위</cell>
+    <cell col="1" row="10">단위·표기 정비 (즉시 정비 가능)</cell>
+    <cell col="2" row="10">C, D</cell>
+    <cell col="3" row="10">즉시 정비 (병행)</cell>
+    <cell col="4" row="10">0.52</cell>
+  </row>
+</table>

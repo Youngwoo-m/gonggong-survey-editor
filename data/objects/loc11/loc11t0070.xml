@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0070" article="제197조(空中写真の数値化)" rows="4" cols="2" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">項目</cell>
+    <cell col="1" row="0" header="1">性能</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">数値化の画素寸法</cell>
+    <cell col="1" row="1">0.021mm 以内</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">色階調</cell>
+    <cell col="1" row="2">各色8bit 以上</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">画像データ形式</cell>
+    <cell col="1" row="3">非圧縮形式</cell>
+  </row>
+</table>

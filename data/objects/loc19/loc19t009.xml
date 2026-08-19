@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc19t009" article="산업안전보건 체계(모든 현장에 공통 적용)" rows="6" cols="5" source="측량 안전관리 매뉴얼 (2026.1)">
+  <row>
+    <cell col="0" row="0" header="1">항 목</cell>
+    <cell col="1" row="0" header="1">배점</cell>
+    <cell col="2" row="0" header="1">사업장 평가점수</cell>
+    <cell col="3" row="0" header="1">가중치</cell>
+    <cell col="4" row="0" header="1">환산평가점수</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">Ⅰ. 사업주의 관심도</cell>
+    <cell col="1" row="1">100</cell>
+    <cell col="2" row="1">(a)</cell>
+    <cell col="3" row="1">10%</cell>
+    <cell col="4" row="1">a × 10% = A</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">Ⅱ. 위험성평가 실행 수준</cell>
+    <cell col="1" row="2">100</cell>
+    <cell col="2" row="2">(b)</cell>
+    <cell col="3" row="2">60%</cell>
+    <cell col="4" row="2">b × 60% = B</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">Ⅲ. 구성원의 참여 및 이해 수준</cell>
+    <cell col="1" row="3">100</cell>
+    <cell col="2" row="3">(c)</cell>
+    <cell col="3" row="3">25%</cell>
+    <cell col="4" row="3">c × 25% = C</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">Ⅳ. 재해발생</cell>
+    <cell col="1" row="4">100</cell>
+    <cell col="2" row="4">(d)</cell>
+    <cell col="3" row="4">5%</cell>
+    <cell col="4" row="4">d × 5% = D</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">종합점수</cell>
+    <cell col="1" row="5">A + B + C + D</cell>
+    <cell col="2" row="5"></cell>
+    <cell col="3" row="5"></cell>
+    <cell col="4" row="5"></cell>
+  </row>
+</table>

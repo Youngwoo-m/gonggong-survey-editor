@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0089" article="제497조(調整点の精度)" rows="3" cols="2" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">調整点間の距離</cell>
+    <cell col="1" row="0" header="1">許容範囲</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">500ｍ以上</cell>
+    <cell col="1" row="1">点間距離の1／10,000</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">500ｍ未満</cell>
+    <cell col="1" row="2">50ｍｍ</cell>
+  </row>
+</table>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0091" article="제549조(航空レーザ測量システム)" rows="3" cols="2" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">項 目</cell>
+    <cell col="1" row="0" header="1">性 能</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">水平成分</cell>
+    <cell col="1" row="1">0.3ｍ</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">高さ成分</cell>
+    <cell col="1" row="2">0.3ｍ</cell>
+  </row>
+</table>

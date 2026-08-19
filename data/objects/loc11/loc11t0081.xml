@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0081" article="제415조(標定点及び検証点の配置)" rows="4" cols="3" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">位置精度</cell>
+    <cell col="1" row="0" header="1">隣接する外側標定点 間の距離</cell>
+    <cell col="2" row="0" header="1">任意の内側標定点とその点 を囲む各標定点との距離</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">0.05ｍ以内</cell>
+    <cell col="1" row="1">100ｍ以内</cell>
+    <cell col="2" row="1">200ｍ以内</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">0.10ｍ以内</cell>
+    <cell col="1" row="2">100ｍ以内</cell>
+    <cell col="2" row="2">400ｍ以内</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">0.20ｍ以内</cell>
+    <cell col="1" row="3">200ｍ以内</cell>
+    <cell col="2" row="3">600ｍ以内</cell>
+  </row>
+</table>

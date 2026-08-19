@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식9" gubun="서식" no="9" title="지도등 간행심사 신청서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454413">
+  <table rows="2" cols="13">
+    <row>
+      <cell col="0" row="0" rowspan="2">신청서 제출</cell>
+      <cell col="1" row="0" rowspan="2"></cell>
+      <cell col="2" row="0" rowspan="2">접수 및 검토</cell>
+      <cell col="3" row="0" rowspan="2"></cell>
+      <cell col="4" row="0" rowspan="2">처리부 등재</cell>
+      <cell col="5" row="0" rowspan="2"></cell>
+      <cell col="6" row="0" rowspan="2">심 사</cell>
+      <cell col="7" row="0" rowspan="2"></cell>
+      <cell col="8" row="0" rowspan="2">기안 ㆍ 결재</cell>
+      <cell col="9" row="0"></cell>
+      <cell col="10" row="0" rowspan="2">측량성과심사
+- 수탁기관장</cell>
+      <cell col="11" row="0" rowspan="2"></cell>
+      <cell col="12" row="0" rowspan="2">통 보</cell>
+    </row>
+    <row>
+      <cell col="9" row="1"></cell>
+    </row>
+  </table>
+  <table rows="31" cols="13">
+    <row>
+      <cell col="0" row="0" colspan="13">■공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별지 제9호서식] &lt;개정 2022. 12. 13.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="13">지도등 간행심사 신청서</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="9">※ 색상이 어두운 란은 신청인이 적지 않습니다.</cell>
+      <cell col="9" row="2" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">접수번호</cell>
+      <cell col="1" row="3"></cell>
+      <cell col="2" row="3">접수일</cell>
+      <cell col="3" row="3" colspan="2"></cell>
+      <cell col="5" row="3"></cell>
+      <cell col="6" row="3" colspan="4"></cell>
+      <cell col="10" row="3" colspan="2">처리기간</cell>
+      <cell col="12" row="3">14일</cell>
+    </row>
+    <row>
+      <cell col="0" row="4"></cell>
+      <cell col="1" row="4"></cell>
+      <cell col="2" row="4"></cell>
+      <cell col="3" row="4" colspan="2"></cell>
+      <cell col="5" row="4"></cell>
+      <cell col="6" row="4" colspan="4"></cell>
+      <cell col="10" row="4" colspan="2"></cell>
+      <cell col="12" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" rowspan="3">신청인</cell>
+      <cell col="1" row="5" colspan="7">성명</cell>
+      <cell col="8" row="5" colspan="5">생년월일</cell>
+    </row>
+    <row>
+      <cell col="1" row="6" colspan="12">전화번호</cell>
+    </row>
+    <row>
+      <cell col="1" row="7" colspan="12">주소</cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9" rowspan="7">신청내용</cell>
+      <cell col="1" row="9">사용측량성과</cell>
+      <cell col="2" row="9" colspan="6">축척</cell>
+      <cell col="8" row="9" colspan="5">도엽명</cell>
+    </row>
+    <row>
+      <cell col="1" row="10" colspan="12">간행목적</cell>
+    </row>
+    <row>
+      <cell col="1" row="11">간행성과물</cell>
+      <cell col="2" row="11" colspan="6">명칭</cell>
+      <cell col="8" row="11" colspan="5">축척</cell>
+    </row>
+    <row>
+      <cell col="1" row="12" colspan="7">간행예정일</cell>
+      <cell col="8" row="12" colspan="5">간행부수</cell>
+    </row>
+    <row>
+      <cell col="1" row="13" colspan="12">작업방법</cell>
+    </row>
+    <row>
+      <cell col="1" row="14" colspan="12">축척별 지도활용도엽수</cell>
+    </row>
+    <row>
+      <cell col="1" row="15" colspan="12">복제승인일
+년      월      일(승인번호:            )</cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17" colspan="13">「공간정보의 구축 및 관리 등에 관한 법률」 제15조제4항 및 같은 법 시행규칙 제17조에 따라 지도 등을 간행하기 위하여 심사를 신청합니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="18" colspan="13">년          월          일장</cell>
+    </row>
+    <row>
+      <cell col="0" row="19" colspan="4"></cell>
+      <cell col="4" row="19" colspan="3">신청인</cell>
+      <cell col="7" row="19" colspan="4"></cell>
+      <cell col="11" row="19" colspan="2">(서명 또는 인)</cell>
+    </row>
+    <row>
+      <cell col="0" row="20" colspan="13">귀하</cell>
+    </row>
+    <row>
+      <cell col="0" row="21" colspan="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="22" rowspan="2">첨부서류</cell>
+      <cell col="1" row="22" colspan="11" rowspan="2">1. 표준작업방법서 1부
+ 2. 성과심사용 간행물 2부</cell>
+      <cell col="12" row="22">수수료</cell>
+    </row>
+    <row>
+      <cell col="12" row="23">시행규칙 별표 12에서 정한 바에 따름 (하단부 참조)</cell>
+    </row>
+    <row>
+      <cell col="0" row="24" colspan="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="25" colspan="13">작성방법 및 수수료</cell>
+    </row>
+    <row>
+      <cell col="0" row="26" colspan="13">※ 작성방법
+  1. &quot;간행목적&quot;란에는 간행하려는 지도등의 용도를 구체적으로 적습니다.
+  2. &quot;작업방법&quot;란에는 작업범위, 색도, 인쇄사항 등을 간략하게 적습니다.
+ ※ 지도등의 도엽당 심사 수수료는 다음과 같습니다.
+    ○ 1: 1,000, 1: 1,200 : 도엽당 중급기술인 1명의 임금단가의 7퍼센트
+    ○ 1: 5,000, 1: 10,000 : 도엽당 중급기술인 1명의 임금단가의 8퍼센트
+    ○ 1: 25,000 : 도엽당 중급기술인 1명의 임금단가의 9퍼센트
+    ○ 1: 50,000, 1: 100,000 : 도엽당 중급기술인 1명의 임금단가의 11퍼센트
+    ○ 1: 250,000, 1: 500,000, 1: 1,000,000 : 도엽당 중급기술인 1명의 임금단가의 10퍼센트
+    ○ 정밀도로지도 : km당 중급기술인 1명의 임금단가의 0.01퍼센트</cell>
+    </row>
+    <row>
+      <cell col="0" row="27" colspan="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="28" colspan="13">처리절차</cell>
+    </row>
+    <row>
+      <cell col="0" row="29" colspan="13">신청인                               측량성과 심사 수탁기관</cell>
+    </row>
+    <row>
+      <cell col="0" row="30" colspan="13">210㎜×297㎜(일반용지60g/㎡)</cell>
+    </row>
+  </table>
+</annex>

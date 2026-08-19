@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표10" gubun="별표" no="10" title="GNSS높이측량 관측기록부" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296131">
+  <text>[ 별표 10 ]
+GNSS높이측량 관측기록부</text>
+  <table rows="23" cols="14">
+    <row>
+      <cell col="0" row="0" colspan="14">GNSS높이측량 관측기록부</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="2">세 션</cell>
+      <cell col="1" row="1" rowspan="2">점번호</cell>
+      <cell col="2" row="1" rowspan="2">측 점
+I D</cell>
+      <cell col="3" row="1" rowspan="2">관측시간
+( K S T )</cell>
+      <cell col="4" row="1" rowspan="2">RINEX
+파일명</cell>
+      <cell col="5" row="1" colspan="2">최소 
+위성수</cell>
+      <cell col="7" row="1" rowspan="2">안테나
+종  류</cell>
+      <cell col="8" row="1" rowspan="2">제조사</cell>
+      <cell col="9" row="1" rowspan="2">측 정
+안테나고</cell>
+      <cell col="10" row="1" rowspan="2">A.R.P</cell>
+      <cell col="11" row="1" rowspan="2">점의 상태</cell>
+      <cell col="12" row="1" rowspan="2">관측자</cell>
+      <cell col="13" row="1" rowspan="2">비고</cell>
+    </row>
+    <row>
+      <cell col="5" row="2">GPS</cell>
+      <cell col="6" row="2">다중
+GNSS</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" rowspan="10">1</cell>
+      <cell col="1" row="3" rowspan="2">U0046</cell>
+      <cell col="2" row="3" rowspan="2">U046</cell>
+      <cell col="3" row="3">2019.01.01. 13:00</cell>
+      <cell col="4" row="3" rowspan="2">U0462100</cell>
+      <cell col="5" row="3" rowspan="2">6</cell>
+      <cell col="6" row="3" rowspan="2"></cell>
+      <cell col="7" row="3" rowspan="2">Zephyr Geodetic</cell>
+      <cell col="8" row="3" rowspan="2">Trimble</cell>
+      <cell col="9" row="3" rowspan="2">1.118</cell>
+      <cell col="10" row="3" rowspan="2">1.0607</cell>
+      <cell col="11" row="3" rowspan="2">완전</cell>
+      <cell col="12" row="3" rowspan="2">홍길동</cell>
+      <cell col="13" row="3" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="3" row="4">~ 2019.01.01. 17:00</cell>
+    </row>
+    <row>
+      <cell col="1" row="5" rowspan="2"></cell>
+      <cell col="2" row="5" rowspan="2"></cell>
+      <cell col="3" row="5"></cell>
+      <cell col="4" row="5" rowspan="2"></cell>
+      <cell col="5" row="5" rowspan="2"></cell>
+      <cell col="6" row="5" rowspan="2"></cell>
+      <cell col="7" row="5" rowspan="2"></cell>
+      <cell col="8" row="5" rowspan="2"></cell>
+      <cell col="9" row="5" rowspan="2"></cell>
+      <cell col="10" row="5" rowspan="2"></cell>
+      <cell col="11" row="5" rowspan="2"></cell>
+      <cell col="12" row="5" rowspan="2"></cell>
+      <cell col="13" row="5" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="3" row="6"></cell>
+    </row>
+    <row>
+      <cell col="1" row="7" rowspan="2"></cell>
+      <cell col="2" row="7" rowspan="2"></cell>
+      <cell col="3" row="7"></cell>
+      <cell col="4" row="7" rowspan="2"></cell>
+      <cell col="5" row="7" rowspan="2"></cell>
+      <cell col="6" row="7" rowspan="2"></cell>
+      <cell col="7" row="7" rowspan="2"></cell>
+      <cell col="8" row="7" rowspan="2"></cell>
+      <cell col="9" row="7" rowspan="2"></cell>
+      <cell col="10" row="7" rowspan="2"></cell>
+      <cell col="11" row="7" rowspan="2"></cell>
+      <cell col="12" row="7" rowspan="2"></cell>
+      <cell col="13" row="7" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="3" row="8"></cell>
+    </row>
+    <row>
+      <cell col="1" row="9" rowspan="2"></cell>
+      <cell col="2" row="9" rowspan="2"></cell>
+      <cell col="3" row="9"></cell>
+      <cell col="4" row="9" rowspan="2"></cell>
+      <cell col="5" row="9" rowspan="2"></cell>
+      <cell col="6" row="9" rowspan="2"></cell>
+      <cell col="7" row="9" rowspan="2"></cell>
+      <cell col="8" row="9" rowspan="2"></cell>
+      <cell col="9" row="9" rowspan="2"></cell>
+      <cell col="10" row="9" rowspan="2"></cell>
+      <cell col="11" row="9" rowspan="2"></cell>
+      <cell col="12" row="9" rowspan="2"></cell>
+      <cell col="13" row="9" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="3" row="10"></cell>
+    </row>
+    <row>
+      <cell col="1" row="11" rowspan="2"></cell>
+      <cell col="2" row="11" rowspan="2"></cell>
+      <cell col="3" row="11"></cell>
+      <cell col="4" row="11" rowspan="2"></cell>
+      <cell col="5" row="11" rowspan="2"></cell>
+      <cell col="6" row="11" rowspan="2"></cell>
+      <cell col="7" row="11" rowspan="2"></cell>
+      <cell col="8" row="11" rowspan="2"></cell>
+      <cell col="9" row="11" rowspan="2"></cell>
+      <cell col="10" row="11" rowspan="2"></cell>
+      <cell col="11" row="11" rowspan="2"></cell>
+      <cell col="12" row="11" rowspan="2"></cell>
+      <cell col="13" row="11" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="3" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13" rowspan="10">2</cell>
+      <cell col="1" row="13" rowspan="2">U0046</cell>
+      <cell col="2" row="13" rowspan="2">U046</cell>
+      <cell col="3" row="13">2019.01.02. 09:00</cell>
+      <cell col="4" row="13" rowspan="2">U0462110</cell>
+      <cell col="5" row="13" rowspan="2">5</cell>
+      <cell col="6" row="13" rowspan="2"></cell>
+      <cell col="7" row="13" rowspan="2">Zephyr Geodetic</cell>
+      <cell col="8" row="13" rowspan="2">Trimble</cell>
+      <cell col="9" row="13" rowspan="2">1.146</cell>
+      <cell col="10" row="13" rowspan="2">1.0890</cell>
+      <cell col="11" row="13" rowspan="2">완전</cell>
+      <cell col="12" row="13" rowspan="2">홍길동</cell>
+      <cell col="13" row="13" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="3" row="14">~ 2019.01.02. 13:00</cell>
+    </row>
+    <row>
+      <cell col="1" row="15" rowspan="2"></cell>
+      <cell col="2" row="15" rowspan="2"></cell>
+      <cell col="3" row="15"></cell>
+      <cell col="4" row="15" rowspan="2"></cell>
+      <cell col="5" row="15" rowspan="2"></cell>
+      <cell col="6" row="15" rowspan="2"></cell>
+      <cell col="7" row="15" rowspan="2"></cell>
+      <cell col="8" row="15" rowspan="2"></cell>
+      <cell col="9" row="15" rowspan="2"></cell>
+      <cell col="10" row="15" rowspan="2"></cell>
+      <cell col="11" row="15" rowspan="2"></cell>
+      <cell col="12" row="15" rowspan="2"></cell>
+      <cell col="13" row="15" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="3" row="16"></cell>
+    </row>
+    <row>
+      <cell col="1" row="17" rowspan="2"></cell>
+      <cell col="2" row="17" rowspan="2"></cell>
+      <cell col="3" row="17"></cell>
+      <cell col="4" row="17" rowspan="2"></cell>
+      <cell col="5" row="17" rowspan="2"></cell>
+      <cell col="6" row="17" rowspan="2"></cell>
+      <cell col="7" row="17" rowspan="2"></cell>
+      <cell col="8" row="17" rowspan="2"></cell>
+      <cell col="9" row="17" rowspan="2"></cell>
+      <cell col="10" row="17" rowspan="2"></cell>
+      <cell col="11" row="17" rowspan="2"></cell>
+      <cell col="12" row="17" rowspan="2"></cell>
+      <cell col="13" row="17" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="3" row="18"></cell>
+    </row>
+    <row>
+      <cell col="1" row="19" rowspan="2"></cell>
+      <cell col="2" row="19" rowspan="2"></cell>
+      <cell col="3" row="19"></cell>
+      <cell col="4" row="19" rowspan="2"></cell>
+      <cell col="5" row="19" rowspan="2"></cell>
+      <cell col="6" row="19" rowspan="2"></cell>
+      <cell col="7" row="19" rowspan="2"></cell>
+      <cell col="8" row="19" rowspan="2"></cell>
+      <cell col="9" row="19" rowspan="2"></cell>
+      <cell col="10" row="19" rowspan="2"></cell>
+      <cell col="11" row="19" rowspan="2"></cell>
+      <cell col="12" row="19" rowspan="2"></cell>
+      <cell col="13" row="19" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="3" row="20"></cell>
+    </row>
+    <row>
+      <cell col="1" row="21" rowspan="2"></cell>
+      <cell col="2" row="21" rowspan="2"></cell>
+      <cell col="3" row="21"></cell>
+      <cell col="4" row="21" rowspan="2"></cell>
+      <cell col="5" row="21" rowspan="2"></cell>
+      <cell col="6" row="21" rowspan="2"></cell>
+      <cell col="7" row="21" rowspan="2"></cell>
+      <cell col="8" row="21" rowspan="2"></cell>
+      <cell col="9" row="21" rowspan="2"></cell>
+      <cell col="10" row="21" rowspan="2"></cell>
+      <cell col="11" row="21" rowspan="2"></cell>
+      <cell col="12" row="21" rowspan="2"></cell>
+      <cell col="13" row="21" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="3" row="22"></cell>
+    </row>
+  </table>
+</annex>

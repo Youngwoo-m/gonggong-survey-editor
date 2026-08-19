@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표16" gubun="별표" no="16" title="심사자 교육과정 및 이수기준" source="성과심사 규정 개정안 초안 (scripts/genannex_simsa.py)">
+  <text>[별표 16]
+심사자 교육과정 및 이수기준 (제12조제3항 관련)</text>
+  <table rows="7" cols="4">
+    <row>
+      <cell col="0" row="0" header="1">과정</cell>
+      <cell col="1" row="0" header="1">대상</cell>
+      <cell col="2" row="0" header="1">내용</cell>
+      <cell col="3" row="0" header="1">연간 최소 이수시간</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">공통</cell>
+      <cell col="1" row="1">성과심사 및 간행심사 업무를 수행하는 자</cell>
+      <cell col="2" row="1">「공공측량 작업규정」과 이 규정의 개정 사항, 심사 절차와 판정 기준, 성과의 보안 관리</cell>
+      <cell col="3" row="1">4시간</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">기준점측량</cell>
+      <cell col="1" row="2">그 분야의 성과를 심사하는 자</cell>
+      <cell col="2" row="2">관측과 계산, 점검계산, 망조정, 기준점 성과의 판정</cell>
+      <cell col="3" row="2">2시간</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">지형측량</cell>
+      <cell col="1" row="3">그 분야의 성과를 심사하는 자</cell>
+      <cell col="2" row="3">도화ㆍ편집ㆍ수치지도, 지형도의 정확도 검증</cell>
+      <cell col="3" row="3">2시간</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">3차원 공간정보 구축</cell>
+      <cell col="1" row="4">그 분야의 성과를 심사하는 자(제18조제2항의 대상)</cell>
+      <cell col="2" row="4">무인비행장치 사진점군측량과 레이저측량, 차량기반 이동측량, 항공레이저측량의 취득과 처리, 점군의 정합과 표정성과, 센서의 검정</cell>
+      <cell col="3" row="4">6시간</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">응용측량</cell>
+      <cell col="1" row="5">그 분야의 성과를 심사하는 자</cell>
+      <cell col="2" row="5">노선ㆍ지하시설물ㆍ수심측량의 성과와 판정</cell>
+      <cell col="3" row="5">2시간</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">자동검사</cell>
+      <cell col="1" row="6">자동검사를 실행하거나 그 결과를 확인하는 자</cell>
+      <cell col="2" row="6">별표 14의 검사 항목과 판정 논리, 검사 도구의 갱신</cell>
+      <cell col="3" row="6">2시간</cell>
+    </row>
+  </table>
+  <text>비고
+1. 이수시간은 매년 1월 1일부터 12월 31일까지를 기준으로 센다.
+2. 국토지리정보원장이 실시하는 특별교육을 이수한 경우에는 그 시간만큼 이수한 것으로 본다(제12조제4항).
+3. 제18조제2항에 따라 3차원 공간정보 구축의 성과를 심사하는 자는 그 과정을 이수하여야 한다.
+4. 이수 결과는 제11조제3항의 심사이력과 함께 관리하고, 국토지리정보원장이 요구하는 경우 제출한다.
+5. 이수시간은 이 개정안의 제안이며, 심사수탁기관의 인력 사정을 고려하여 공청회에서 정한다.</text>
+</annex>

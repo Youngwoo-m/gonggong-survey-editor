@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표7" gubun="별표" no="7" title="간행심사 관리대장" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151295193">
+  <text>[별표 7]
+간행심사 관리대장</text>
+  <table rows="3" cols="14">
+    <row>
+      <cell col="0" row="0" rowspan="2">심
+사
+번
+호</cell>
+      <cell col="1" row="0" rowspan="2">접
+수
+일
+자</cell>
+      <cell col="2" row="0" rowspan="2">심
+사
+일
+자</cell>
+      <cell col="3" row="0" rowspan="2">지도
+(간행물명칭)</cell>
+      <cell col="4" row="0" rowspan="2">발행자
+(신청자)</cell>
+      <cell col="5" row="0" colspan="5">사용 및 심사 도엽수</cell>
+      <cell col="10" row="0" colspan="2">수수료</cell>
+      <cell col="12" row="0" rowspan="2">담
+당
+확
+인</cell>
+      <cell col="13" row="0" rowspan="2">주
+요
+심
+사
+내
+용</cell>
+    </row>
+    <row>
+      <cell col="5" row="1">1:5
+천</cell>
+      <cell col="6" row="1">1:1
+만</cell>
+      <cell col="7" row="1">1:
+25천</cell>
+      <cell col="8" row="1">1:5
+만</cell>
+      <cell col="9" row="1">1:
+25만</cell>
+      <cell col="10" row="1">금
+액</cell>
+      <cell col="11" row="1">징
+수
+일
+자</cell>
+    </row>
+    <row>
+      <cell col="0" row="2"></cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2"></cell>
+      <cell col="3" row="2"></cell>
+      <cell col="4" row="2"></cell>
+      <cell col="5" row="2"></cell>
+      <cell col="6" row="2"></cell>
+      <cell col="7" row="2"></cell>
+      <cell col="8" row="2"></cell>
+      <cell col="9" row="2"></cell>
+      <cell col="10" row="2"></cell>
+      <cell col="11" row="2"></cell>
+      <cell col="12" row="2"></cell>
+      <cell col="13" row="2"></cell>
+    </row>
+  </table>
+  <text>주요 심사내용 난 구분</text>
+  <table rows="3" cols="4">
+    <row>
+      <cell col="0" row="0" colspan="4">주요 심사내용</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">군사보호
+시설물</cell>
+      <cell col="1" row="1">보안목표
+ 시설물</cell>
+      <cell col="2" row="1">국가공간정보 보안
+관리규정의 표시제한</cell>
+      <cell col="3" row="1">기타 지형ㆍ지물 등</cell>
+    </row>
+    <row>
+      <cell col="0" row="2"></cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2"></cell>
+      <cell col="3" row="2"></cell>
+    </row>
+  </table>
+</annex>

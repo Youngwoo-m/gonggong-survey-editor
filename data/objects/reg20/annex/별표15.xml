@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표15" gubun="별표" no="15" title="지하공간통합지도 성과물 목록" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=38099393">
+  <text>[별표 15] 지하공간통합지도 성과물 목록</text>
+  <table rows="21" cols="3">
+    <row>
+      <cell col="0" row="0">구분</cell>
+      <cell col="1" row="0">목록</cell>
+      <cell col="2" row="0">설명</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="5">지하시설물(관로형)</cell>
+      <cell col="1" row="1">인덱스</cell>
+      <cell col="2" row="1">성과 제작을 위한 작업 인덱스</cell>
+    </row>
+    <row>
+      <cell col="1" row="2">2차원 지하시설물(관로형) 구축성과</cell>
+      <cell col="2" row="2">2D 지하시설물(관로형) 구축성과 (shp)</cell>
+    </row>
+    <row>
+      <cell col="1" row="3">3차원 지하시설물(관로형) 구축성과</cell>
+      <cell col="2" row="3">3D 지하시설물(관로형) 구축성과 (3ds)</cell>
+    </row>
+    <row>
+      <cell col="1" row="4">서비스파일</cell>
+      <cell col="2" row="4">서비스 탑재를 위한 서비스파일</cell>
+    </row>
+    <row>
+      <cell col="1" row="5">수집자료</cell>
+      <cell col="2" row="5">성과제작을 위한 지하시설물 전산화 통합 성과물</cell>
+    </row>
+    <row>
+      <cell col="0" row="6" rowspan="9">지하시설물(구조물형)</cell>
+      <cell col="1" row="6">인덱스</cell>
+      <cell col="2" row="6">측량 및 성과 제작을 위한 작업 인덱스</cell>
+    </row>
+    <row>
+      <cell col="1" row="7">기준점성과</cell>
+      <cell col="2" row="7">기준점측량을 기준점, 수준점 등 기준점 성과</cell>
+    </row>
+    <row>
+      <cell col="1" row="8">시설물측량성과</cell>
+      <cell col="2" row="8">성과 제작을 위한 보조측량성과</cell>
+    </row>
+    <row>
+      <cell col="1" row="9">정위치데이터</cell>
+      <cell col="2" row="9">정위치 편집된 2D, 3D 성과</cell>
+    </row>
+    <row>
+      <cell col="1" row="10">3D모델데이터</cell>
+      <cell col="2" row="10">3D형태 성과(3ds 또는 dae)</cell>
+    </row>
+    <row>
+      <cell col="1" row="11">구조화데이터</cell>
+      <cell col="2" row="11">구조화 편집된 성과(shp)</cell>
+    </row>
+    <row>
+      <cell col="1" row="12">대장조서</cell>
+      <cell col="2" row="12">구조화 편집된 대장</cell>
+    </row>
+    <row>
+      <cell col="1" row="13">성과관리 및 점검파일</cell>
+      <cell col="2" row="13">성과 제작을 위한 기본정보(txt)</cell>
+    </row>
+    <row>
+      <cell col="1" row="14">수집자료</cell>
+      <cell col="2" row="14">성과제작을 위한 지자체, 유관기관 수집자료</cell>
+    </row>
+    <row>
+      <cell col="0" row="15" rowspan="6">지반정보</cell>
+      <cell col="1" row="15">시추정보</cell>
+      <cell col="2" row="15">2차원 시추정보(shp, 테이블)</cell>
+    </row>
+    <row>
+      <cell col="1" row="16">관정정보</cell>
+      <cell col="2" row="16">관정정보</cell>
+    </row>
+    <row>
+      <cell col="1" row="17">지하수관측망</cell>
+      <cell col="2" row="17">지하수관측망</cell>
+    </row>
+    <row>
+      <cell col="1" row="18">지하수관측위치</cell>
+      <cell col="2" row="18">지하수관측위치</cell>
+    </row>
+    <row>
+      <cell col="1" row="19">암상</cell>
+      <cell col="2" row="19">암상정보(shp)</cell>
+    </row>
+    <row>
+      <cell col="1" row="20">단층</cell>
+      <cell col="2" row="20">단층정보(shp)</cell>
+    </row>
+  </table>
+</annex>

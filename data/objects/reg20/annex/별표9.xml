@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표9" gubun="별표" no="9" title="지하시설물(구조물형) 유형별 구축방법" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=38099217">
+  <text>[별표 9] 지하시설물(구조물형) 유형별 구축방법</text>
+  <table rows="17" cols="3">
+    <row>
+      <cell col="0" row="0" colspan="2">구분</cell>
+      <cell col="2" row="0">구축방법</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="3">지하철역사</cell>
+      <cell col="1" row="1">최상단 지상 부속물 구축 여부</cell>
+      <cell col="2" row="1">미 구축</cell>
+    </row>
+    <row>
+      <cell col="1" row="2">출입구 개방 여부</cell>
+      <cell col="2" row="2">개방</cell>
+    </row>
+    <row>
+      <cell col="1" row="3">내벽 구축 여부</cell>
+      <cell col="2" row="3">미 구축</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" rowspan="2">지하철노선</cell>
+      <cell col="1" row="4">출입구 개방 여부</cell>
+      <cell col="2" row="4">개방</cell>
+    </row>
+    <row>
+      <cell col="1" row="5">내벽 구축 여부</cell>
+      <cell col="2" row="5">미 구축</cell>
+    </row>
+    <row>
+      <cell col="0" row="6" rowspan="2">지하보도</cell>
+      <cell col="1" row="6">출입구 개방 여부</cell>
+      <cell col="2" row="6">개방</cell>
+    </row>
+    <row>
+      <cell col="1" row="7">내벽 구축 여부</cell>
+      <cell col="2" row="7">미 구축</cell>
+    </row>
+    <row>
+      <cell col="0" row="8" rowspan="2">지하차도</cell>
+      <cell col="1" row="8">출입구 개방 여부</cell>
+      <cell col="2" row="8">개방</cell>
+    </row>
+    <row>
+      <cell col="1" row="9">내벽 구축 여부</cell>
+      <cell col="2" row="9">미 구축</cell>
+    </row>
+    <row>
+      <cell col="0" row="10" rowspan="2">공동구</cell>
+      <cell col="1" row="10">출입구 개방 여부</cell>
+      <cell col="2" row="10">미 개방</cell>
+    </row>
+    <row>
+      <cell col="1" row="11">내벽 구축 여부</cell>
+      <cell col="2" row="11">미 구축</cell>
+    </row>
+    <row>
+      <cell col="0" row="12" rowspan="3">지하상가</cell>
+      <cell col="1" row="12">최상단 지상 부속물 구축 여부</cell>
+      <cell col="2" row="12">미 구축</cell>
+    </row>
+    <row>
+      <cell col="1" row="13">출입구 개방 여부</cell>
+      <cell col="2" row="13">개방</cell>
+    </row>
+    <row>
+      <cell col="1" row="14">내벽 구축 여부</cell>
+      <cell col="2" row="14">미 구축</cell>
+    </row>
+    <row>
+      <cell col="0" row="15" rowspan="2">지하주차장</cell>
+      <cell col="1" row="15">출입구 개방 여부</cell>
+      <cell col="2" row="15">개방</cell>
+    </row>
+    <row>
+      <cell col="1" row="16">내벽 구축 여부</cell>
+      <cell col="2" row="16">미 구축</cell>
+    </row>
+  </table>
+</annex>

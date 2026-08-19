@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식71" gubun="서식" no="71" title="지적공부ㆍ부동산종합공부 열람ㆍ발급 신청서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454851">
+  <table rows="34" cols="21">
+    <row>
+      <cell col="0" row="0" colspan="21">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별지 제71호서식]  &lt;큰글자 서식&gt; &lt;개정 2021. 8. 5.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="21">지적공부ㆍ부동산종합공부 열람ㆍ발급 신청서</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="17"></cell>
+      <cell col="17" row="2" colspan="4">(앞쪽)</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">접수번호</cell>
+      <cell col="2" row="3" colspan="3">접수일</cell>
+      <cell col="5" row="3" colspan="7">발급일</cell>
+      <cell col="12" row="3" colspan="6">처리기간</cell>
+      <cell col="18" row="3" colspan="3">즉시</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="21"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5">신청인</cell>
+      <cell col="1" row="5" colspan="5">성명</cell>
+      <cell col="6" row="5" colspan="15">생연월일</cell>
+    </row>
+    <row>
+      <cell col="0" row="6" colspan="21"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7" rowspan="3">신청
+물건</cell>
+      <cell col="1" row="7" colspan="2">시ㆍ도</cell>
+      <cell col="3" row="7" colspan="6">시ㆍ군ㆍ구</cell>
+      <cell col="9" row="7" colspan="12">읍ㆍ면</cell>
+    </row>
+    <row>
+      <cell col="1" row="8" colspan="2">리ㆍ동</cell>
+      <cell col="3" row="8" colspan="6">번지</cell>
+      <cell col="9" row="8" colspan="12"></cell>
+    </row>
+    <row>
+      <cell col="1" row="9" colspan="2">집합건물</cell>
+      <cell col="3" row="9" colspan="6">APTㆍ연립ㆍB/D</cell>
+      <cell col="9" row="9" colspan="6">동</cell>
+      <cell col="15" row="9" colspan="4">층</cell>
+      <cell col="19" row="9" colspan="2">호</cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="21"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11">신청
+구분</cell>
+      <cell col="1" row="11" colspan="20">[  ] 열람   [  ] 등본 발급    [  ] 증명서 발급           
+ ※ 발급 시 부수를 [ ]안에 숫자로 표시</cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="21"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13">지적
+공부</cell>
+      <cell col="1" row="13" colspan="20">[  ] 토지대장     [  ] 임야대장      [  ] 지적도     
+  [  ] 임야도       [  ] 경계점좌표등록부</cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="21">부동산종합공부 ※ 종합형은 연혁을 포함한 모든 정보, 맞춤형은 √로 표시한 정보만 발급)</cell>
+    </row>
+    <row>
+      <cell col="0" row="15">종합형</cell>
+      <cell col="1" row="15" colspan="6"></cell>
+      <cell col="7" row="15">[ ]</cell>
+      <cell col="8" row="15" colspan="3">토지</cell>
+      <cell col="11" row="15" colspan="2">[ ]</cell>
+      <cell col="13" row="15" colspan="3">토지,
+건축물</cell>
+      <cell col="16" row="15" colspan="4">[ ]</cell>
+      <cell col="20" row="15">토지,
+집합건물</cell>
+    </row>
+    <row>
+      <cell col="0" row="16" rowspan="12">맞춤형</cell>
+      <cell col="1" row="16" colspan="6">ㆍ 토지(지목, 면적, 현 소유자 등) 
+   기본사항</cell>
+      <cell col="7" row="16" colspan="4">[  ]</cell>
+      <cell col="11" row="16" colspan="5"></cell>
+      <cell col="16" row="16" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="1" row="17" colspan="6">ㆍ 토지(지목, 면적 등)ㆍ건물(주용도, 층수 등) 기본사항</cell>
+      <cell col="7" row="17" colspan="4"></cell>
+      <cell col="11" row="17" colspan="5">[  ]</cell>
+      <cell col="16" row="17" colspan="5">[  ]</cell>
+    </row>
+    <row>
+      <cell col="1" row="18" colspan="6">ㆍ 토지이용확인도 및 토지이용계획</cell>
+      <cell col="7" row="18" colspan="4">[  ]</cell>
+      <cell col="11" row="18" colspan="5">[  ]</cell>
+      <cell col="16" row="18" colspan="5">[  ]</cell>
+    </row>
+    <row>
+      <cell col="1" row="19" colspan="6">ㆍ 토지ㆍ건축물 소유자 현황</cell>
+      <cell col="7" row="19" colspan="4"></cell>
+      <cell col="11" row="19" colspan="5">[  ]</cell>
+      <cell col="16" row="19" colspan="5">[  ]</cell>
+    </row>
+    <row>
+      <cell col="1" row="20" colspan="6">ㆍ 토지ㆍ건축물 소유자 공유현황</cell>
+      <cell col="7" row="20" colspan="4">[  ]</cell>
+      <cell col="11" row="20" colspan="5">[  ]</cell>
+      <cell col="16" row="20" colspan="5">[  ]</cell>
+    </row>
+    <row>
+      <cell col="1" row="21" colspan="6">ㆍ 토지ㆍ건축물 표시 변동 연혁</cell>
+      <cell col="7" row="21" colspan="4">[  ]</cell>
+      <cell col="11" row="21" colspan="5">[  ]</cell>
+      <cell col="16" row="21" colspan="5">[  ]</cell>
+    </row>
+    <row>
+      <cell col="1" row="22" colspan="6">ㆍ 토지ㆍ건축물 소유자 변동 연혁</cell>
+      <cell col="7" row="22" colspan="4">[  ]</cell>
+      <cell col="11" row="22" colspan="5">[  ]</cell>
+      <cell col="16" row="22" colspan="5">[  ]</cell>
+    </row>
+    <row>
+      <cell col="1" row="23" colspan="6">ㆍ 가격 연혁</cell>
+      <cell col="7" row="23" colspan="4">[  ]</cell>
+      <cell col="11" row="23" colspan="5">[  ]</cell>
+      <cell col="16" row="23" colspan="5">[  ]</cell>
+    </row>
+    <row>
+      <cell col="1" row="24" colspan="6">ㆍ 지적(임야)도</cell>
+      <cell col="7" row="24" colspan="4">[  ]</cell>
+      <cell col="11" row="24" colspan="5">[  ]</cell>
+      <cell col="16" row="24" colspan="5">[  ]</cell>
+    </row>
+    <row>
+      <cell col="1" row="25" colspan="6">ㆍ 경계점좌표 등록사항</cell>
+      <cell col="7" row="25" colspan="4">[  ]</cell>
+      <cell col="11" row="25" colspan="5">[  ]</cell>
+      <cell col="16" row="25" colspan="5">[  ]</cell>
+    </row>
+    <row>
+      <cell col="1" row="26" colspan="6">ㆍ 건축물 층별 현황</cell>
+      <cell col="7" row="26" colspan="4"></cell>
+      <cell col="11" row="26" colspan="5">[  ]</cell>
+      <cell col="16" row="26" colspan="5">[  ]</cell>
+    </row>
+    <row>
+      <cell col="1" row="27" colspan="6">ㆍ 건축물 현황도면</cell>
+      <cell col="7" row="27" colspan="4"></cell>
+      <cell col="11" row="27" colspan="5">[  ]</cell>
+      <cell col="16" row="27" colspan="5">[  ]</cell>
+    </row>
+    <row>
+      <cell col="0" row="28" colspan="21">「공간정보의 구축 및 관리 등에 관한 법률」 제75조, 제76조의4 및 같은 법 시행규칙 제74조에 따라 지적공부ㆍ부동산종합공부의 열람ㆍ 증명서 발급을 신청합니다.
+년          월          일</cell>
+    </row>
+    <row>
+      <cell col="0" row="29" colspan="4"></cell>
+      <cell col="4" row="29" colspan="6">신청인</cell>
+      <cell col="10" row="29" colspan="4"></cell>
+      <cell col="14" row="29" colspan="7">(서명 또는 인)</cell>
+    </row>
+    <row>
+      <cell col="0" row="30" colspan="21">특별자치시장, 시장ㆍ군수ㆍ구청장, 읍ㆍ면ㆍ동장 귀하</cell>
+    </row>
+    <row>
+      <cell col="0" row="31" colspan="21"></cell>
+    </row>
+    <row>
+      <cell col="0" row="32" colspan="21">☞ 첨부서류는 없으며 수수료는 뒤쪽에 있습니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="33" colspan="21">210㎜×297㎜[백상지(80g/㎡) 또는 중질지(80g/㎡)]</cell>
+    </row>
+  </table>
+  <table rows="15" cols="6">
+    <row>
+      <cell col="0" row="0" colspan="6">(뒤쪽)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2">첨부
+서류</cell>
+      <cell col="1" row="2" colspan="5">없 음</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4" rowspan="10">수수료</cell>
+      <cell col="1" row="4" colspan="2">구분</cell>
+      <cell col="3" row="4">신청 종목</cell>
+      <cell col="4" row="4">방문 신청</cell>
+      <cell col="5" row="4">인터넷 신청</cell>
+    </row>
+    <row>
+      <cell col="1" row="5" rowspan="4">지적
+공부</cell>
+      <cell col="2" row="5" rowspan="2">열람</cell>
+      <cell col="3" row="5">토지(임야)대장, 경계점좌표등록부(1필지)</cell>
+      <cell col="4" row="5">300원</cell>
+      <cell col="5" row="5">무료</cell>
+    </row>
+    <row>
+      <cell col="3" row="6">지적(임야)도(1장)</cell>
+      <cell col="4" row="6">400원</cell>
+      <cell col="5" row="6">무료</cell>
+    </row>
+    <row>
+      <cell col="2" row="7" rowspan="2">발급</cell>
+      <cell col="3" row="7">토지(임야)대장, 경계점좌표등록부(1필지)</cell>
+      <cell col="4" row="7">500원</cell>
+      <cell col="5" row="7">무료</cell>
+    </row>
+    <row>
+      <cell col="3" row="8">지적(임야)도 (가로 21cm×30cm)</cell>
+      <cell col="4" row="8">700원</cell>
+      <cell col="5" row="8">무료</cell>
+    </row>
+    <row>
+      <cell col="1" row="9" rowspan="5">부동산
+종합
+공부</cell>
+      <cell col="2" row="9" rowspan="2">열람</cell>
+      <cell col="3" row="9">부동산종합증명서 종합형</cell>
+      <cell col="4" row="9">없음</cell>
+      <cell col="5" row="9">무료</cell>
+    </row>
+    <row>
+      <cell col="3" row="10">부동산종합증명서 맞춤형</cell>
+      <cell col="4" row="10">없음</cell>
+      <cell col="5" row="10">무료</cell>
+    </row>
+    <row>
+      <cell col="2" row="11" rowspan="3">발급</cell>
+      <cell col="3" row="11">부동산종합증명서 종합형</cell>
+      <cell col="4" row="11">1,500원</cell>
+      <cell col="5" row="11">1,000원</cell>
+    </row>
+    <row>
+      <cell col="3" row="12">부동산종합증명서 맞춤형</cell>
+      <cell col="4" row="12">1,000원</cell>
+      <cell col="5" row="12">800원</cell>
+    </row>
+    <row>
+      <cell col="3" row="13" colspan="3">※ 방문 발급 시 1통에 대한 발급수수료는 20장까지는 기본 수수료를 적용하고, 1통이 20장을 초과하는 때에는 초과 1장마다 50원의 수수료 추가 적용(인터넷 발급은 적용하지 않음)</cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="6">210㎜×297㎜[백상지(80g/㎡) 또는 중질지(80g/㎡)]</cell>
+    </row>
+  </table>
+</annex>

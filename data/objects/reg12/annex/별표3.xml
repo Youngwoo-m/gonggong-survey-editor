@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표3" gubun="별표" no="3" title="촬영기록부" source="[별표 3] 촬영기록부(무인비행장치 측량 작업규정).hwp">
+  <text>[별표 3] 촬영기록부</text>
+  <table rows="18" cols="15">
+    <row>
+      <cell col="0" row="0" colspan="2">사업명</cell>
+      <cell col="2" row="0" colspan="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="2">촬영지구</cell>
+      <cell col="2" row="1" colspan="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">작업지역 현황</cell>
+      <cell col="2" row="2" colspan="3">면적 및 지형</cell>
+      <cell col="5" row="2" colspan="3">㎢ / OO지역</cell>
+      <cell col="8" row="2" colspan="2">기타 특징</cell>
+      <cell col="10" row="2" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2" rowspan="2">촬영일자</cell>
+      <cell col="2" row="3" colspan="4" rowspan="2">20  년  월  일</cell>
+      <cell col="6" row="3" rowspan="2">조종사</cell>
+      <cell col="7" row="3">성명
+(소속)</cell>
+      <cell col="8" row="3" colspan="5">(      )</cell>
+      <cell col="13" row="3" rowspan="2">이 륙</cell>
+      <cell col="14" row="3" rowspan="2">시   분</cell>
+    </row>
+    <row>
+      <cell col="7" row="4">연락처</cell>
+      <cell col="8" row="4" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="2" rowspan="2">기 체</cell>
+      <cell col="2" row="5">형식</cell>
+      <cell col="3" row="5" colspan="3"></cell>
+      <cell col="6" row="5" rowspan="2">카메라</cell>
+      <cell col="7" row="5">센서명</cell>
+      <cell col="8" row="5"></cell>
+      <cell col="9" row="5" colspan="2">센서크기</cell>
+      <cell col="11" row="5" colspan="2">가로   (mm)
+세로   (mm)</cell>
+      <cell col="13" row="5" rowspan="2">착 륙</cell>
+      <cell col="14" row="5" rowspan="2">시   분</cell>
+    </row>
+    <row>
+      <cell col="2" row="6">기체명</cell>
+      <cell col="3" row="6" colspan="3"></cell>
+      <cell col="7" row="6">초점거리</cell>
+      <cell col="8" row="6">mm</cell>
+      <cell col="9" row="6" colspan="2">픽셀
+수</cell>
+      <cell col="11" row="6" colspan="2">가로   (픽셀)
+세로   (픽셀)</cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="2" rowspan="2">고 도</cell>
+      <cell col="2" row="7" colspan="4">ft</cell>
+      <cell col="6" row="7" rowspan="2">기 상</cell>
+      <cell col="7" row="7" rowspan="2">맑음</cell>
+      <cell col="8" row="7">풍향</cell>
+      <cell col="9" row="7" colspan="4"></cell>
+      <cell col="13" row="7">비행
+시간</cell>
+      <cell col="14" row="7">분</cell>
+    </row>
+    <row>
+      <cell col="2" row="8" colspan="4">m</cell>
+      <cell col="8" row="8">풍속</cell>
+      <cell col="9" row="8" colspan="4">m/s</cell>
+      <cell col="13" row="8">비행
+속도</cell>
+      <cell col="14" row="8">m/s</cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="4">개시시간</cell>
+      <cell col="4" row="9" colspan="4">종료시간</cell>
+      <cell col="8" row="9" colspan="4">영상매수</cell>
+      <cell col="12" row="9" colspan="3">비 고</cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="4">:</cell>
+      <cell col="4" row="10" colspan="4">:</cell>
+      <cell col="8" row="10" colspan="4">매</cell>
+      <cell col="12" row="10" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="4"></cell>
+      <cell col="4" row="11" colspan="4"></cell>
+      <cell col="8" row="11" colspan="4"></cell>
+      <cell col="12" row="11" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="4"></cell>
+      <cell col="4" row="12" colspan="4"></cell>
+      <cell col="8" row="12" colspan="4"></cell>
+      <cell col="12" row="12" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="4"></cell>
+      <cell col="4" row="13" colspan="4"></cell>
+      <cell col="8" row="13" colspan="4"></cell>
+      <cell col="12" row="13" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="4"></cell>
+      <cell col="4" row="14" colspan="4"></cell>
+      <cell col="8" row="14" colspan="4"></cell>
+      <cell col="12" row="14" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15">계</cell>
+      <cell col="1" row="15" colspan="3"></cell>
+      <cell col="4" row="15" colspan="4"></cell>
+      <cell col="8" row="15" colspan="4"></cell>
+      <cell col="12" row="15" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="15">촬영계획도</cell>
+    </row>
+    <row>
+      <cell col="0" row="17" colspan="15"></cell>
+    </row>
+  </table>
+</annex>

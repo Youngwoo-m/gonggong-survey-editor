@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식19" gubun="서식" no="19" title="지적측량 적부심사 청구서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454483">
+  <table rows="4" cols="16">
+    <row>
+      <cell col="0" row="0">청구서 작성</cell>
+      <cell col="1" row="0" colspan="2"></cell>
+      <cell col="3" row="0">접 수</cell>
+      <cell col="4" row="0" colspan="2"></cell>
+      <cell col="6" row="0">청구서 검토 및 첨부서류 검토
+(30일 이내)</cell>
+      <cell col="7" row="0" colspan="2"></cell>
+      <cell col="9" row="0">지방지적위원회 회 부</cell>
+      <cell col="10" row="0" colspan="2"></cell>
+      <cell col="12" row="0">위원회 소집</cell>
+      <cell col="13" row="0" colspan="2"></cell>
+      <cell col="15" row="0">심의ㆍ의결
+(60일 이내)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">청구인</cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1">시ㆍ도</cell>
+      <cell col="4" row="1"></cell>
+      <cell col="5" row="1"></cell>
+      <cell col="6" row="1">시ㆍ도</cell>
+      <cell col="7" row="1"></cell>
+      <cell col="8" row="1"></cell>
+      <cell col="9" row="1">시ㆍ도</cell>
+      <cell col="10" row="1"></cell>
+      <cell col="11" row="1"></cell>
+      <cell col="12" row="1">지방지적위원회</cell>
+      <cell col="13" row="1"></cell>
+      <cell col="14" row="1"></cell>
+      <cell col="15" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2" rowspan="2"></cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2" rowspan="2"></cell>
+      <cell col="3" row="2" rowspan="2"></cell>
+      <cell col="4" row="2" colspan="2" rowspan="2"></cell>
+      <cell col="6" row="2" rowspan="2">송 부</cell>
+      <cell col="7" row="2" colspan="2" rowspan="2"></cell>
+      <cell col="9" row="2" rowspan="2">의결서 통지
+(7일 이내)</cell>
+      <cell col="10" row="2" colspan="2" rowspan="2"></cell>
+      <cell col="12" row="2" rowspan="2">의결 및 의결서
+송부</cell>
+      <cell col="13" row="2" colspan="2" rowspan="2"></cell>
+      <cell col="15" row="2" rowspan="2">필요시 조사측량</cell>
+    </row>
+    <row>
+      <cell col="1" row="3"></cell>
+    </row>
+  </table>
+  <table rows="29" cols="27">
+    <row>
+      <cell col="0" row="0" colspan="27">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙칙 [별지 제19호서식] &lt;개정 2015.6.4.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="27">지적측량 적부심사 청구서</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="19"></cell>
+      <cell col="19" row="2" colspan="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">접수번호</cell>
+      <cell col="2" row="3" colspan="5"></cell>
+      <cell col="7" row="3" colspan="3">접수일</cell>
+      <cell col="10" row="3" colspan="3"></cell>
+      <cell col="13" row="3" colspan="2"></cell>
+      <cell col="15" row="3" colspan="5">처리기간</cell>
+      <cell col="20" row="3" colspan="7">90일(30일 연장 가능)</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="27"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="2" rowspan="2">청구인</cell>
+      <cell col="2" row="5" colspan="13">성명</cell>
+      <cell col="15" row="5" colspan="12">생년월일(법인등록번호)</cell>
+    </row>
+    <row>
+      <cell col="2" row="6" colspan="13">주소</cell>
+      <cell col="15" row="6" colspan="12">전화번호</cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="27"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="2" rowspan="2">대상 토지</cell>
+      <cell col="2" row="8" colspan="13">지번</cell>
+      <cell col="15" row="8" colspan="8">지목</cell>
+      <cell col="23" row="8" colspan="4">면적(㎡)</cell>
+    </row>
+    <row>
+      <cell col="2" row="9" colspan="25">소재지</cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="27"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="2">청구 취지</cell>
+      <cell col="2" row="11" colspan="25">※ 별지 작성 가능</cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="27"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="3" rowspan="3">측량자</cell>
+      <cell col="3" row="13" colspan="12">법인 명칭 또는 업체 명칭</cell>
+      <cell col="15" row="13" colspan="12">성명</cell>
+    </row>
+    <row>
+      <cell col="3" row="14" colspan="12">법인 명칭 또는 업체 명칭</cell>
+      <cell col="15" row="14" colspan="12">성명</cell>
+    </row>
+    <row>
+      <cell col="3" row="15" colspan="12">법인 명칭 또는 업체 명칭</cell>
+      <cell col="15" row="15" colspan="12">성명</cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="27"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17" colspan="27">「공간정보의 구축 및 관리 등에 관한 법률」 제29조제1항, 같은 법 시행령 제24조제1항 및 같은 법 시행규칙 제27조에 따라 위와 같이 심사청구 합니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="18" colspan="27">년          월          일</cell>
+    </row>
+    <row>
+      <cell col="0" row="19" colspan="12">청구인</cell>
+      <cell col="12" row="19" colspan="5"></cell>
+      <cell col="17" row="19" colspan="4"></cell>
+      <cell col="21" row="19" colspan="6">(서명 또는 인)</cell>
+    </row>
+    <row>
+      <cell col="0" row="20" colspan="27">시ㆍ도지사  귀하</cell>
+    </row>
+    <row>
+      <cell col="0" row="21" colspan="27"></cell>
+    </row>
+    <row>
+      <cell col="0" row="22" colspan="4" rowspan="2">첨부서류</cell>
+      <cell col="4" row="22" colspan="21" rowspan="2">1. 토지소유자 또는 이해관계인: 지적측량을 의뢰하여 발급받은 지적측량성과
+2. 지적측량수행자(지적측량수행자 소속 지적기술자가 청구하는 경우만 해당한다): 직접 실시한 지적측량성과</cell>
+      <cell col="25" row="22" colspan="2">수수료</cell>
+    </row>
+    <row>
+      <cell col="25" row="23" colspan="2">없 음</cell>
+    </row>
+    <row>
+      <cell col="0" row="24" colspan="27"></cell>
+    </row>
+    <row>
+      <cell col="0" row="25" colspan="27">처리절차</cell>
+    </row>
+    <row>
+      <cell col="0" row="26" colspan="27"></cell>
+    </row>
+    <row>
+      <cell col="0" row="27"></cell>
+      <cell col="1" row="27" colspan="4"></cell>
+      <cell col="5" row="27"></cell>
+      <cell col="6" row="27" colspan="2"></cell>
+      <cell col="8" row="27"></cell>
+      <cell col="9" row="27" colspan="2">청구인</cell>
+      <cell col="11" row="27" colspan="3"></cell>
+      <cell col="14" row="27" colspan="2">시ㆍ도</cell>
+      <cell col="16" row="27" colspan="2"></cell>
+      <cell col="18" row="27" colspan="4">지방지적위원회</cell>
+      <cell col="22" row="27" colspan="2"></cell>
+      <cell col="24" row="27" colspan="2">지방지적위원회</cell>
+      <cell col="26" row="27"></cell>
+    </row>
+    <row>
+      <cell col="0" row="28" colspan="27">210mm×297mm[백상지 80g/㎡(재활용품)]</cell>
+    </row>
+  </table>
+</annex>

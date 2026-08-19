@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="r45t1" article="rule 45 Unique parcel identifier" rows="8" cols="2" source="Table 4: Unique parcel identifier format">
+  <row>
+    <cell col="0" row="0" header="1">Parcel tenure type</cell>
+    <cell col="1" row="0" header="1">Unique parcel identifier format</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">Lot</cell>
+    <cell col="1" row="1">A number</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">Section</cell>
+    <cell col="1" row="2">A number</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">Māori Block</cell>
+    <cell col="1" row="3">A sequence of alternating letters and numbers</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">Unit as part of a unit title development</cell>
+    <cell col="1" row="4">A number, a number followed by a letter, or a letter followed by a number</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">Common property as part of a unit title development</cell>
+    <cell col="1" row="5">No identifier</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">Lease or licence</cell>
+    <cell col="1" row="6">A number, or a number followed by a letter</cell>
+  </row>
+  <row>
+    <cell col="0" row="7">Right associated with any other non-primary parcel, including a movable marginal strip or an esplanade strip</cell>
+    <cell col="1" row="7">A letter, or a letter followed by another letter</cell>
+  </row>
+</table>

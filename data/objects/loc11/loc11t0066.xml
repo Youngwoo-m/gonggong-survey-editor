@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0066" article="제184조(数値写真の地上画素寸法)" rows="6" cols="2" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">地図情報レベル</cell>
+    <cell col="1" row="0" header="1">地上画素寸法（式中のＢ:基線長、Ｈ:対地高度）</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">500</cell>
+    <cell col="1" row="1">90 ㎜×２×Ｂ[ｍ]÷Ｈ[ｍ] ～ 120 ㎜×２×Ｂ[ｍ]÷Ｈ[ｍ]</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">1000</cell>
+    <cell col="1" row="2">180 ㎜×２×Ｂ[ｍ]÷Ｈ[ｍ] ～ 240 ㎜×２×Ｂ[ｍ]÷Ｈ[ｍ]</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">2500</cell>
+    <cell col="1" row="3">300 ㎜×２×Ｂ[ｍ]÷Ｈ[ｍ] ～ 375 ㎜×２×Ｂ[ｍ]÷Ｈ[ｍ]</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">5000</cell>
+    <cell col="1" row="4">600 ㎜×２×Ｂ[ｍ]÷Ｈ[ｍ] ～ 750 ㎜×２×Ｂ[ｍ]÷Ｈ[ｍ]</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">10000</cell>
+    <cell col="1" row="5">900 ㎜×２×Ｂ[ｍ]÷Ｈ[ｍ]</cell>
+  </row>
+</table>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0078" article="제371조(標定点の精度)" rows="3" cols="3" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">距離</cell>
+    <cell col="1" row="0" header="1">許容範囲</cell>
+    <cell col="2" row="0" header="1">備 考</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">20ｍ未満</cell>
+    <cell col="1" row="1">10mm</cell>
+    <cell col="2" row="1">Ｓは点間距離の計算値 （ｍ単位）をいう。</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">20ｍ以上</cell>
+    <cell col="1" row="2">Ｓ/2,000</cell>
+    <cell col="2" row="2"></cell>
+  </row>
+</table>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지19" gubun="별지" no="19" title="수치표고모형 검사표" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=161554375">
+  <text>■ 수치표고모형의 구축 및 관리 등에 관한 규정 [별지 제19호서식]
+수치표고모형 검사표</text>
+  <table rows="24" cols="7">
+    <row>
+      <cell col="0" row="0" rowspan="2">점이름</cell>
+      <cell col="1" row="0" rowspan="2">구분</cell>
+      <cell col="2" row="0" colspan="3">기준점/검사점 좌표</cell>
+      <cell col="5" row="0" rowspan="2">수치표고모형
+정표고(Z)</cell>
+      <cell col="6" row="0" rowspan="2">H-Z
+(m)</cell>
+    </row>
+    <row>
+      <cell col="2" row="1">X</cell>
+      <cell col="3" row="1">Y</cell>
+      <cell col="4" row="1">정표고(H)</cell>
+    </row>
+    <row>
+      <cell col="0" row="2"></cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2"></cell>
+      <cell col="3" row="2"></cell>
+      <cell col="4" row="2"></cell>
+      <cell col="5" row="2"></cell>
+      <cell col="6" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3"></cell>
+      <cell col="1" row="3"></cell>
+      <cell col="2" row="3"></cell>
+      <cell col="3" row="3"></cell>
+      <cell col="4" row="3"></cell>
+      <cell col="5" row="3"></cell>
+      <cell col="6" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4"></cell>
+      <cell col="1" row="4"></cell>
+      <cell col="2" row="4"></cell>
+      <cell col="3" row="4"></cell>
+      <cell col="4" row="4"></cell>
+      <cell col="5" row="4"></cell>
+      <cell col="6" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5"></cell>
+      <cell col="1" row="5"></cell>
+      <cell col="2" row="5"></cell>
+      <cell col="3" row="5"></cell>
+      <cell col="4" row="5"></cell>
+      <cell col="5" row="5"></cell>
+      <cell col="6" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6"></cell>
+      <cell col="1" row="6"></cell>
+      <cell col="2" row="6"></cell>
+      <cell col="3" row="6"></cell>
+      <cell col="4" row="6"></cell>
+      <cell col="5" row="6"></cell>
+      <cell col="6" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7"></cell>
+      <cell col="1" row="7"></cell>
+      <cell col="2" row="7"></cell>
+      <cell col="3" row="7"></cell>
+      <cell col="4" row="7"></cell>
+      <cell col="5" row="7"></cell>
+      <cell col="6" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8"></cell>
+      <cell col="1" row="8"></cell>
+      <cell col="2" row="8"></cell>
+      <cell col="3" row="8"></cell>
+      <cell col="4" row="8"></cell>
+      <cell col="5" row="8"></cell>
+      <cell col="6" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9"></cell>
+      <cell col="1" row="9"></cell>
+      <cell col="2" row="9"></cell>
+      <cell col="3" row="9"></cell>
+      <cell col="4" row="9"></cell>
+      <cell col="5" row="9"></cell>
+      <cell col="6" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10"></cell>
+      <cell col="1" row="10"></cell>
+      <cell col="2" row="10"></cell>
+      <cell col="3" row="10"></cell>
+      <cell col="4" row="10"></cell>
+      <cell col="5" row="10"></cell>
+      <cell col="6" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11"></cell>
+      <cell col="1" row="11"></cell>
+      <cell col="2" row="11"></cell>
+      <cell col="3" row="11"></cell>
+      <cell col="4" row="11"></cell>
+      <cell col="5" row="11"></cell>
+      <cell col="6" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12"></cell>
+      <cell col="1" row="12"></cell>
+      <cell col="2" row="12"></cell>
+      <cell col="3" row="12"></cell>
+      <cell col="4" row="12"></cell>
+      <cell col="5" row="12"></cell>
+      <cell col="6" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13"></cell>
+      <cell col="1" row="13"></cell>
+      <cell col="2" row="13"></cell>
+      <cell col="3" row="13"></cell>
+      <cell col="4" row="13"></cell>
+      <cell col="5" row="13"></cell>
+      <cell col="6" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14"></cell>
+      <cell col="1" row="14"></cell>
+      <cell col="2" row="14"></cell>
+      <cell col="3" row="14"></cell>
+      <cell col="4" row="14"></cell>
+      <cell col="5" row="14"></cell>
+      <cell col="6" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15"></cell>
+      <cell col="1" row="15"></cell>
+      <cell col="2" row="15"></cell>
+      <cell col="3" row="15"></cell>
+      <cell col="4" row="15"></cell>
+      <cell col="5" row="15"></cell>
+      <cell col="6" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16"></cell>
+      <cell col="1" row="16"></cell>
+      <cell col="2" row="16"></cell>
+      <cell col="3" row="16"></cell>
+      <cell col="4" row="16"></cell>
+      <cell col="5" row="16"></cell>
+      <cell col="6" row="16"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17"></cell>
+      <cell col="1" row="17"></cell>
+      <cell col="2" row="17"></cell>
+      <cell col="3" row="17"></cell>
+      <cell col="4" row="17"></cell>
+      <cell col="5" row="17"></cell>
+      <cell col="6" row="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18"></cell>
+      <cell col="1" row="18"></cell>
+      <cell col="2" row="18"></cell>
+      <cell col="3" row="18"></cell>
+      <cell col="4" row="18"></cell>
+      <cell col="5" row="18"></cell>
+      <cell col="6" row="18"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19" colspan="2" rowspan="5">분 석</cell>
+      <cell col="2" row="19" colspan="4">최대</cell>
+      <cell col="6" row="19"></cell>
+    </row>
+    <row>
+      <cell col="2" row="20" colspan="4">최소</cell>
+      <cell col="6" row="20"></cell>
+    </row>
+    <row>
+      <cell col="2" row="21" colspan="4">평균</cell>
+      <cell col="6" row="21"></cell>
+    </row>
+    <row>
+      <cell col="2" row="22" colspan="4">표준편차</cell>
+      <cell col="6" row="22"></cell>
+    </row>
+    <row>
+      <cell col="2" row="23" colspan="4">RMSE</cell>
+      <cell col="6" row="23"></cell>
+    </row>
+  </table>
+  <text>가. 구분에는 기준점 또는 검사점으로 기입한다.
+나. 기준점 또는 검사점의 평면좌표의 높이를 수치표고모형에서 계산하여 수치표고모형 정표고에 기입한다.</text>
+</annex>

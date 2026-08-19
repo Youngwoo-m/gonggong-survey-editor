@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0104" article="제620조(等高線データの作成)" rows="6" cols="6" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">地図情報レベル</cell>
+    <cell col="1" row="0" header="1">主曲線</cell>
+    <cell col="2" row="0" header="1">計曲線</cell>
+    <cell col="3" row="0" header="1">グラウンドデータ、グリッドデータ</cell>
+    <cell col="4" row="0" header="1"></cell>
+    <cell col="5" row="0" header="1"></cell>
+  </row>
+  <row>
+    <cell col="0" row="1"></cell>
+    <cell col="1" row="1"></cell>
+    <cell col="2" row="1"></cell>
+    <cell col="3" row="1">約１ｍ</cell>
+    <cell col="4" row="1">約２ｍ</cell>
+    <cell col="5" row="1">約５ｍ</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">500</cell>
+    <cell col="1" row="2">１ｍ</cell>
+    <cell col="2" row="2">５ｍ</cell>
+    <cell col="3" row="2">○</cell>
+    <cell col="4" row="2">―</cell>
+    <cell col="5" row="2">―</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">1000</cell>
+    <cell col="1" row="3">１ｍ</cell>
+    <cell col="2" row="3">５ｍ</cell>
+    <cell col="3" row="3">○</cell>
+    <cell col="4" row="3">―</cell>
+    <cell col="5" row="3">―</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">2500</cell>
+    <cell col="1" row="4">２ｍ</cell>
+    <cell col="2" row="4">１０ｍ</cell>
+    <cell col="3" row="4">○</cell>
+    <cell col="4" row="4">○</cell>
+    <cell col="5" row="4">―</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">5000</cell>
+    <cell col="1" row="5">５ｍ</cell>
+    <cell col="2" row="5">２５ｍ</cell>
+    <cell col="3" row="5">○</cell>
+    <cell col="4" row="5">○</cell>
+    <cell col="5" row="5">○</cell>
+  </row>
+</table>

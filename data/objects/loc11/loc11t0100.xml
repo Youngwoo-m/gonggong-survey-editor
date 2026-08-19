@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0100" article="제586조(精度)" rows="3" cols="2" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">区 分</cell>
+    <cell col="1" row="0" header="1">精度（標準偏差）</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">陸部の標高</cell>
+    <cell col="1" row="1">0.3ｍ以内</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">水底の標高</cell>
+    <cell col="1" row="2">0.3ｍ以内</cell>
+  </row>
+</table>

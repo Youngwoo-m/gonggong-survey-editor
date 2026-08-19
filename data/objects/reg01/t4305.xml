@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="t4305" article="도로·교통 인접 환경의 위험특성과 관찰 안전행동" rows="5" cols="4" source="현장작업 환경별 위험특성 분석 (연구 진행 중)">
+  <row>
+    <cell col="0" row="0" header="1">분석항목</cell>
+    <cell col="1" row="0" header="1">도로·교통 환경의 특성</cell>
+    <cell col="2" row="0" header="1">관찰 가능한 안전행동</cell>
+    <cell col="3" row="0" header="1">필수 여부</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">작업계획</cell>
+    <cell col="1" row="1">도로관리주체와 교통조건에 따른 통제 필요</cell>
+    <cell col="2" row="1">승인·협의사항과 교통관리계획을 확인한다</cell>
+    <cell col="3" row="1">필수</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">현장 재평가</cell>
+    <cell col="1" row="2">교통량·속도·시야·기상이 수시로 변화</cell>
+    <cell col="2" row="2">당일 현장조건이 계획과 다르면 작업을 중지하고 재평가한다</cell>
+    <cell col="3" row="2">필수</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">작업차량</cell>
+    <cell col="1" row="3">정차·후진·개문·승하차 위험</cell>
+    <cell col="2" row="3">안전한 방향으로 정차하고 장비와 문을 교통 반대쪽에서 취급한다</cell>
+    <cell col="3" row="3">환경특화</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">작업구역</cell>
+    <cell col="1" row="4">차량과 작업자의 공간분리 필요</cell>
+    <cell col="2" row="4">표지·콘·차단시설을 계획된 순서와 위치에 설치한다</cell>
+    <cell col="3" row="4">필수</cell>
+  </row>
+</table>

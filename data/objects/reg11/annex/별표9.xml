@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표9" gubun="별표" no="9" title="수준차계산부 (제37조제2항 관련)" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=155729927">
+  <text>[별표 9] 수준차계산부 (제37조제2항 관련)</text>
+  <table rows="20" cols="17">
+    <row>
+      <cell col="0" row="0" colspan="2"></cell>
+      <cell col="2" row="0" colspan="13">수   준   차   계   산   부</cell>
+      <cell col="15" row="0" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1"></cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1"></cell>
+      <cell col="4" row="1"></cell>
+      <cell col="5" row="1"></cell>
+      <cell col="6" row="1"></cell>
+      <cell col="7" row="1"></cell>
+      <cell col="8" row="1"></cell>
+      <cell col="9" row="1"></cell>
+      <cell col="10" row="1"></cell>
+      <cell col="11" row="1"></cell>
+      <cell col="12" row="1"></cell>
+      <cell col="13" row="1" colspan="2"></cell>
+      <cell col="15" row="1" colspan="2">(단위 : m)</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">관측구간</cell>
+      <cell col="2" row="2" colspan="13"></cell>
+      <cell col="15" row="2" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2" rowspan="3">점간
+구분</cell>
+      <cell col="2" row="3"></cell>
+      <cell col="3" row="3"></cell>
+      <cell col="4" row="3"></cell>
+      <cell col="5" row="3"></cell>
+      <cell col="6" row="3"></cell>
+      <cell col="7" row="3"></cell>
+      <cell col="8" row="3"></cell>
+      <cell col="9" row="3"></cell>
+      <cell col="10" row="3"></cell>
+      <cell col="11" row="3"></cell>
+      <cell col="12" row="3"></cell>
+      <cell col="13" row="3" colspan="2"></cell>
+      <cell col="15" row="3"></cell>
+      <cell col="16" row="3"></cell>
+    </row>
+    <row>
+      <cell col="2" row="4"></cell>
+      <cell col="3" row="4" colspan="2"></cell>
+      <cell col="5" row="4" colspan="2"></cell>
+      <cell col="7" row="4" colspan="2"></cell>
+      <cell col="9" row="4" colspan="2"></cell>
+      <cell col="11" row="4" colspan="2"></cell>
+      <cell col="13" row="4"></cell>
+      <cell col="14" row="4" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="2" row="5"></cell>
+      <cell col="3" row="5"></cell>
+      <cell col="4" row="5"></cell>
+      <cell col="5" row="5"></cell>
+      <cell col="6" row="5"></cell>
+      <cell col="7" row="5"></cell>
+      <cell col="8" row="5"></cell>
+      <cell col="9" row="5"></cell>
+      <cell col="10" row="5"></cell>
+      <cell col="11" row="5"></cell>
+      <cell col="12" row="5"></cell>
+      <cell col="13" row="5" colspan="2"></cell>
+      <cell col="15" row="5"></cell>
+      <cell col="16" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6" colspan="2" rowspan="2">관 측 거 리 (m)</cell>
+      <cell col="2" row="6" rowspan="2"></cell>
+      <cell col="3" row="6"></cell>
+      <cell col="4" row="6" rowspan="2"></cell>
+      <cell col="5" row="6"></cell>
+      <cell col="6" row="6" rowspan="2"></cell>
+      <cell col="7" row="6"></cell>
+      <cell col="8" row="6" rowspan="2"></cell>
+      <cell col="9" row="6"></cell>
+      <cell col="10" row="6" rowspan="2"></cell>
+      <cell col="11" row="6"></cell>
+      <cell col="12" row="6" rowspan="2"></cell>
+      <cell col="13" row="6" colspan="2"></cell>
+      <cell col="15" row="6" rowspan="2"></cell>
+      <cell col="16" row="6"></cell>
+    </row>
+    <row>
+      <cell col="3" row="7"></cell>
+      <cell col="5" row="7"></cell>
+      <cell col="7" row="7"></cell>
+      <cell col="9" row="7"></cell>
+      <cell col="11" row="7"></cell>
+      <cell col="13" row="7" colspan="2"></cell>
+      <cell col="16" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="2">(왕) 구간수준차</cell>
+      <cell col="2" row="8" colspan="2"></cell>
+      <cell col="4" row="8" colspan="2"></cell>
+      <cell col="6" row="8" colspan="2"></cell>
+      <cell col="8" row="8" colspan="2"></cell>
+      <cell col="10" row="8" colspan="2"></cell>
+      <cell col="12" row="8" colspan="3"></cell>
+      <cell col="15" row="8" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="2">(복) 구간수준차</cell>
+      <cell col="2" row="9" colspan="2"></cell>
+      <cell col="4" row="9" colspan="2"></cell>
+      <cell col="6" row="9" colspan="2"></cell>
+      <cell col="8" row="9" colspan="2"></cell>
+      <cell col="10" row="9" colspan="2"></cell>
+      <cell col="12" row="9" colspan="3"></cell>
+      <cell col="15" row="9" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="2">구간오차(교차)</cell>
+      <cell col="2" row="10" colspan="2"></cell>
+      <cell col="4" row="10" colspan="2"></cell>
+      <cell col="6" row="10" colspan="2"></cell>
+      <cell col="8" row="10" colspan="2"></cell>
+      <cell col="10" row="10" colspan="2"></cell>
+      <cell col="12" row="10" colspan="3"></cell>
+      <cell col="15" row="10" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="2">평 균 수 준 차</cell>
+      <cell col="2" row="11" colspan="2"></cell>
+      <cell col="4" row="11" colspan="2"></cell>
+      <cell col="6" row="11" colspan="2"></cell>
+      <cell col="8" row="11" colspan="2"></cell>
+      <cell col="10" row="11" colspan="2"></cell>
+      <cell col="12" row="11" colspan="3"></cell>
+      <cell col="15" row="11" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="2">오  차  한  계</cell>
+      <cell col="2" row="12" colspan="2"></cell>
+      <cell col="4" row="12" colspan="2"></cell>
+      <cell col="6" row="12" colspan="2"></cell>
+      <cell col="8" row="12" colspan="2"></cell>
+      <cell col="10" row="12" colspan="2"></cell>
+      <cell col="12" row="12" colspan="3"></cell>
+      <cell col="15" row="12" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="2">온            도</cell>
+      <cell col="2" row="13" colspan="2"></cell>
+      <cell col="4" row="13" colspan="2"></cell>
+      <cell col="6" row="13" colspan="2"></cell>
+      <cell col="8" row="13" colspan="2"></cell>
+      <cell col="10" row="13" colspan="2"></cell>
+      <cell col="12" row="13" colspan="3"></cell>
+      <cell col="15" row="13" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="2">비            고</cell>
+      <cell col="2" row="14" colspan="2"></cell>
+      <cell col="4" row="14" colspan="2"></cell>
+      <cell col="6" row="14" colspan="2"></cell>
+      <cell col="8" row="14" colspan="2"></cell>
+      <cell col="10" row="14" colspan="2"></cell>
+      <cell col="12" row="14" colspan="3"></cell>
+      <cell col="15" row="14" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15"></cell>
+      <cell col="1" row="15"></cell>
+      <cell col="2" row="15"></cell>
+      <cell col="3" row="15"></cell>
+      <cell col="4" row="15"></cell>
+      <cell col="5" row="15"></cell>
+      <cell col="6" row="15"></cell>
+      <cell col="7" row="15"></cell>
+      <cell col="8" row="15"></cell>
+      <cell col="9" row="15"></cell>
+      <cell col="10" row="15"></cell>
+      <cell col="11" row="15"></cell>
+      <cell col="12" row="15"></cell>
+      <cell col="13" row="15" colspan="2"></cell>
+      <cell col="15" row="15"></cell>
+      <cell col="16" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16"></cell>
+      <cell col="1" row="16"></cell>
+      <cell col="2" row="16"></cell>
+      <cell col="3" row="16"></cell>
+      <cell col="4" row="16"></cell>
+      <cell col="5" row="16"></cell>
+      <cell col="6" row="16"></cell>
+      <cell col="7" row="16"></cell>
+      <cell col="8" row="16"></cell>
+      <cell col="9" row="16"></cell>
+      <cell col="10" row="16"></cell>
+      <cell col="11" row="16"></cell>
+      <cell col="12" row="16" colspan="5">계산자 :                    (인)</cell>
+    </row>
+    <row>
+      <cell col="0" row="17"></cell>
+      <cell col="1" row="17"></cell>
+      <cell col="2" row="17"></cell>
+      <cell col="3" row="17"></cell>
+      <cell col="4" row="17"></cell>
+      <cell col="5" row="17"></cell>
+      <cell col="6" row="17"></cell>
+      <cell col="7" row="17"></cell>
+      <cell col="8" row="17"></cell>
+      <cell col="9" row="17"></cell>
+      <cell col="10" row="17"></cell>
+      <cell col="11" row="17"></cell>
+      <cell col="12" row="17"></cell>
+      <cell col="13" row="17" colspan="2"></cell>
+      <cell col="15" row="17"></cell>
+      <cell col="16" row="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18"></cell>
+      <cell col="1" row="18"></cell>
+      <cell col="2" row="18"></cell>
+      <cell col="3" row="18"></cell>
+      <cell col="4" row="18"></cell>
+      <cell col="5" row="18"></cell>
+      <cell col="6" row="18"></cell>
+      <cell col="7" row="18"></cell>
+      <cell col="8" row="18"></cell>
+      <cell col="9" row="18"></cell>
+      <cell col="10" row="18"></cell>
+      <cell col="11" row="18"></cell>
+      <cell col="12" row="18" colspan="5">확인자 :                    (인)</cell>
+    </row>
+    <row>
+      <cell col="0" row="19" colspan="17"></cell>
+    </row>
+  </table>
+</annex>

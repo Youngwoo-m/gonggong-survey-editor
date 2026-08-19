@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0117" article="제651조(方法)" rows="3" cols="4" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">区 分</cell>
+    <cell col="1" row="0" header="1">平 地</cell>
+    <cell col="2" row="0" header="1">山 地</cell>
+    <cell col="3" row="0" header="1">備 考</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">距 離</cell>
+    <cell col="1" row="1">L／500</cell>
+    <cell col="2" row="1">L／300</cell>
+    <cell col="3" row="1">Ｌは中心杭等と末端見通杭の 測定距離（ｍ単位）</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">標 高</cell>
+    <cell col="1" row="2">20mm＋50mm L/100</cell>
+    <cell col="2" row="2">50mm＋150mm L/100</cell>
+    <cell col="3" row="2"></cell>
+  </row>
+</table>

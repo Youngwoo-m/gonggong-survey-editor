@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표1" gubun="별표" no="1" title="심사수탁기관 업무수행능력 심사기준" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151294971">
+  <text>[별표 1]
+심사수탁기관 업무수행능력 심사기준</text>
+  <table rows="41" cols="6">
+    <row>
+      <cell col="0" row="0">구 분</cell>
+      <cell col="1" row="0">심 사 항 목</cell>
+      <cell col="2" row="0" colspan="2">심  사  내  용</cell>
+      <cell col="4" row="0">배 점</cell>
+      <cell col="5" row="0">점 수</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="14">일
+반
+현
+황
+(서류)</cell>
+      <cell col="1" row="1" rowspan="8">1. 조직 운영</cell>
+      <cell col="2" row="1" rowspan="2">가. 법인 설립 목적의 적정성</cell>
+      <cell col="3" row="1">공정성 등 확보</cell>
+      <cell col="4" row="1">4</cell>
+      <cell col="5" row="1" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="3" row="2">공정성 등 미흡</cell>
+      <cell col="4" row="2">2</cell>
+    </row>
+    <row>
+      <cell col="2" row="3" rowspan="2">나. 운영방침 및 업무관리체계</cell>
+      <cell col="3" row="3">공정성 등 확보</cell>
+      <cell col="4" row="3">4</cell>
+      <cell col="5" row="3" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="3" row="4">공정성 등 미흡</cell>
+      <cell col="4" row="4">2</cell>
+    </row>
+    <row>
+      <cell col="2" row="5" rowspan="2">다. 심사수탁기관 조직 및 인력 현황</cell>
+      <cell col="3" row="5">공정성 등 확보</cell>
+      <cell col="4" row="5">4</cell>
+      <cell col="5" row="5" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="3" row="6">공정성 등 미흡</cell>
+      <cell col="4" row="6">2</cell>
+    </row>
+    <row>
+      <cell col="2" row="7" rowspan="2">라. 예산집행 등을 위한 관련규정 운영</cell>
+      <cell col="3" row="7">공정성 등 확보</cell>
+      <cell col="4" row="7">4</cell>
+      <cell col="5" row="7" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="3" row="8">공정성 등 미흡</cell>
+      <cell col="4" row="8">2</cell>
+    </row>
+    <row>
+      <cell col="1" row="9" rowspan="4">2. 인력 보유 및 관리</cell>
+      <cell col="2" row="9" rowspan="2">가. 법 시행령 제104조제3항에 따른 측량관련 인력</cell>
+      <cell col="3" row="9">공정성 등 확보</cell>
+      <cell col="4" row="9">4</cell>
+      <cell col="5" row="9" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="3" row="10">공정성 등 미흡</cell>
+      <cell col="4" row="10">2</cell>
+    </row>
+    <row>
+      <cell col="2" row="11" rowspan="2">나. 측량관련 인력에 대한 심사업무 교육훈련 계획</cell>
+      <cell col="3" row="11">공정성 등 확보</cell>
+      <cell col="4" row="11">4</cell>
+      <cell col="5" row="11" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="3" row="12">공정성 등 미흡</cell>
+      <cell col="4" row="12">2</cell>
+    </row>
+    <row>
+      <cell col="1" row="13" rowspan="2">3. 장비 보유 및 유지관리</cell>
+      <cell col="2" row="13" colspan="2">가. 법 시행령 제104조제3항에 따른 장비 보유</cell>
+      <cell col="4" row="13">3</cell>
+      <cell col="5" row="13"></cell>
+    </row>
+    <row>
+      <cell col="2" row="14" colspan="2">나. 장비관리 및 안전조치 등 유지보수 계획</cell>
+      <cell col="4" row="14">3</cell>
+      <cell col="5" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="4">소  계</cell>
+      <cell col="4" row="15">30</cell>
+      <cell col="5" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16" rowspan="17">운
+영
+계
+획
+서</cell>
+      <cell col="1" row="16" rowspan="10">1. 운영계획서</cell>
+      <cell col="2" row="16" rowspan="2">가. 업무수행 목표, 전략, 범위 및 절차의 적절성</cell>
+      <cell col="3" row="16">공정성 등 확보</cell>
+      <cell col="4" row="16">5</cell>
+      <cell col="5" row="16" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="3" row="17">공정성 등 미흡</cell>
+      <cell col="4" row="17">2</cell>
+    </row>
+    <row>
+      <cell col="2" row="18" rowspan="2">나. 심사업무 추진 전략의 구체성</cell>
+      <cell col="3" row="18">공정성 등 확보</cell>
+      <cell col="4" row="18">5</cell>
+      <cell col="5" row="18" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="3" row="19">공정성 등 미흡</cell>
+      <cell col="4" row="19">2</cell>
+    </row>
+    <row>
+      <cell col="2" row="20" rowspan="2">다. 심사업무 지원 및 관리계획</cell>
+      <cell col="3" row="20">공정성 등 확보</cell>
+      <cell col="4" row="20">5</cell>
+      <cell col="5" row="20" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="3" row="21">공정성 등 미흡</cell>
+      <cell col="4" row="21">2</cell>
+    </row>
+    <row>
+      <cell col="2" row="22" rowspan="2">라. 심사인력의 전문성 및 적합성</cell>
+      <cell col="3" row="22">공정성 등 확보</cell>
+      <cell col="4" row="22">5</cell>
+      <cell col="5" row="22" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="3" row="23">공정성 등 미흡</cell>
+      <cell col="4" row="23">2</cell>
+    </row>
+    <row>
+      <cell col="2" row="24" rowspan="2">마. 심사인력의 교육이수 및 경험 수준</cell>
+      <cell col="3" row="24">공정성 등 확보</cell>
+      <cell col="4" row="24">5</cell>
+      <cell col="5" row="24" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="3" row="25">공정성 등 미흡</cell>
+      <cell col="4" row="25">2</cell>
+    </row>
+    <row>
+      <cell col="1" row="26" rowspan="7">2. 관련규정 운영</cell>
+      <cell col="2" row="26" rowspan="2">가. 심사업무 전문성·독립성 및 비밀유지 규정</cell>
+      <cell col="3" row="26">공정성 등 확보</cell>
+      <cell col="4" row="26">5</cell>
+      <cell col="5" row="26" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="3" row="27">공정성 등 미흡</cell>
+      <cell col="4" row="27">2</cell>
+    </row>
+    <row>
+      <cell col="2" row="28" rowspan="2">나. 심사업무 절차 및 수수료 관리에 관한 규정</cell>
+      <cell col="3" row="28">공정성 등 확보</cell>
+      <cell col="4" row="28">5</cell>
+      <cell col="5" row="28" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="3" row="29">공정성 등 미흡</cell>
+      <cell col="4" row="29">2</cell>
+    </row>
+    <row>
+      <cell col="2" row="30" colspan="2">다. 장비 관리에 관한 규정</cell>
+      <cell col="4" row="30">5</cell>
+      <cell col="5" row="30"></cell>
+    </row>
+    <row>
+      <cell col="2" row="31" colspan="2">라. 문서 및 기록물관리에 관한 규정</cell>
+      <cell col="4" row="31">5</cell>
+      <cell col="5" row="31"></cell>
+    </row>
+    <row>
+      <cell col="2" row="32" colspan="2">마. 고객만족도 등 이의제기 처리 등에 관한 규정</cell>
+      <cell col="4" row="32">5</cell>
+      <cell col="5" row="32"></cell>
+    </row>
+    <row>
+      <cell col="0" row="33" colspan="4">소  계</cell>
+      <cell col="4" row="33">50</cell>
+      <cell col="5" row="33"></cell>
+    </row>
+    <row>
+      <cell col="0" row="34" rowspan="5">업
+무
+환
+경
+(현장)</cell>
+      <cell col="1" row="34" colspan="2" rowspan="2">1. 심사업무 수행에 필요한 사무공간 확보</cell>
+      <cell col="3" row="34">공정성 등 확보</cell>
+      <cell col="4" row="34">7</cell>
+      <cell col="5" row="34" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="3" row="35">공정성 등 미흡</cell>
+      <cell col="4" row="35">3</cell>
+    </row>
+    <row>
+      <cell col="1" row="36" colspan="2" rowspan="2">2. 법 시행령 제104조제3항에 따른 측량관련 인력 등 근무 환경</cell>
+      <cell col="3" row="36">공정성 등 확보</cell>
+      <cell col="4" row="36">7</cell>
+      <cell col="5" row="36" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="3" row="37">공정성 등 미흡</cell>
+      <cell col="4" row="37">3</cell>
+    </row>
+    <row>
+      <cell col="1" row="38" colspan="3">3. 법 시행령 제104조제3항에 따른 장비 확보 및 관리 환경</cell>
+      <cell col="4" row="38">6</cell>
+      <cell col="5" row="38"></cell>
+    </row>
+    <row>
+      <cell col="0" row="39" colspan="4">소  계</cell>
+      <cell col="4" row="39">20</cell>
+      <cell col="5" row="39"></cell>
+    </row>
+    <row>
+      <cell col="0" row="40" colspan="4">총  계</cell>
+      <cell col="4" row="40">100</cell>
+      <cell col="5" row="40"></cell>
+    </row>
+  </table>
+  <text>* 공정성 등 확보(미흡) 여부는 공정성, 전문성, 정책기여도, 투명성 등을 반영하여 평가할 것</text>
+</annex>

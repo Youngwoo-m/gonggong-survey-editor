@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표16" gubun="별표" no="16" title="사진지도(현지조사ㆍ모자이크ㆍ편집ㆍ원판제작) 정확도 관리표" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296167">
+  <text>[ 별표 16 ]
+사진지도(현지조사ㆍ모자이크ㆍ편집ㆍ원판제작) 정확도 관리표</text>
+  <table rows="2" cols="12">
+    <row>
+      <cell col="0" row="0">사업명</cell>
+      <cell col="1" row="0"></cell>
+      <cell col="2" row="0" rowspan="2">축
+척</cell>
+      <cell col="3" row="0" rowspan="2"></cell>
+      <cell col="4" row="0" rowspan="2">작
+업
+량</cell>
+      <cell col="5" row="0" rowspan="2"></cell>
+      <cell col="6" row="0" rowspan="2">작
+업
+기
+간</cell>
+      <cell col="7" row="0">시    월
+      일</cell>
+      <cell col="8" row="0">작업
+기관</cell>
+      <cell col="9" row="0"></cell>
+      <cell col="10" row="0">작업자</cell>
+      <cell col="11" row="0">인</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">도엽
+번호</cell>
+      <cell col="1" row="1"></cell>
+      <cell col="7" row="1">종    월
+      일</cell>
+      <cell col="8" row="1">작업원</cell>
+      <cell col="9" row="1"></cell>
+      <cell col="10" row="1">검사자</cell>
+      <cell col="11" row="1">인</cell>
+    </row>
+  </table>
+  <table rows="21" cols="12">
+    <row>
+      <cell col="0" row="0" colspan="2">항목</cell>
+      <cell col="2" row="0">탈락</cell>
+      <cell col="3" row="0">오기등</cell>
+      <cell col="4" row="0">적요</cell>
+      <cell col="5" row="0" colspan="2">항목</cell>
+      <cell col="7" row="0" colspan="2">탈락</cell>
+      <cell col="9" row="0" colspan="2">오기등</cell>
+      <cell col="11" row="0">적요</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="4">기
+준
+점</cell>
+      <cell col="1" row="1">국가기준점</cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1"></cell>
+      <cell col="4" row="1"></cell>
+      <cell col="5" row="1" rowspan="2">철
+도</cell>
+      <cell col="6" row="1">철도ㆍ고가ㆍ교량명</cell>
+      <cell col="7" row="1" colspan="2"></cell>
+      <cell col="9" row="1" colspan="2"></cell>
+      <cell col="11" row="1"></cell>
+    </row>
+    <row>
+      <cell col="1" row="2">공공기준점</cell>
+      <cell col="2" row="2"></cell>
+      <cell col="3" row="2"></cell>
+      <cell col="4" row="2"></cell>
+      <cell col="6" row="2">역(정거장ㆍ기차장)명</cell>
+      <cell col="7" row="2" colspan="2"></cell>
+      <cell col="9" row="2" colspan="2"></cell>
+      <cell col="11" row="2"></cell>
+    </row>
+    <row>
+      <cell col="1" row="3">신설기준점</cell>
+      <cell col="2" row="3"></cell>
+      <cell col="3" row="3"></cell>
+      <cell col="4" row="3"></cell>
+      <cell col="5" row="3" rowspan="2">하천관계</cell>
+      <cell col="6" row="3">등고선과의 관계</cell>
+      <cell col="7" row="3" colspan="2"></cell>
+      <cell col="9" row="3" colspan="2"></cell>
+      <cell col="11" row="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="4">표고점등</cell>
+      <cell col="2" row="4"></cell>
+      <cell col="3" row="4"></cell>
+      <cell col="4" row="4"></cell>
+      <cell col="6" row="4">기타 하천에 
+관한 인공물</cell>
+      <cell col="7" row="4" colspan="2"></cell>
+      <cell col="9" row="4" colspan="2"></cell>
+      <cell col="11" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" rowspan="7">주
+기</cell>
+      <cell col="1" row="5">행정명</cell>
+      <cell col="2" row="5"></cell>
+      <cell col="3" row="5"></cell>
+      <cell col="4" row="5"></cell>
+      <cell col="5" row="5" rowspan="5">지
+형</cell>
+      <cell col="6" row="5">유수방향 기타</cell>
+      <cell col="7" row="5" colspan="2"></cell>
+      <cell col="9" row="5" colspan="2"></cell>
+      <cell col="11" row="5"></cell>
+    </row>
+    <row>
+      <cell col="1" row="6">거주지명</cell>
+      <cell col="2" row="6"></cell>
+      <cell col="3" row="6"></cell>
+      <cell col="4" row="6"></cell>
+      <cell col="6" row="6">등고선</cell>
+      <cell col="7" row="6" colspan="2"></cell>
+      <cell col="9" row="6" colspan="2"></cell>
+      <cell col="11" row="6"></cell>
+    </row>
+    <row>
+      <cell col="1" row="7">건물ㆍ소물체명</cell>
+      <cell col="2" row="7"></cell>
+      <cell col="3" row="7"></cell>
+      <cell col="4" row="7"></cell>
+      <cell col="6" row="7">변형지</cell>
+      <cell col="7" row="7" colspan="2"></cell>
+      <cell col="9" row="7" colspan="2"></cell>
+      <cell col="11" row="7"></cell>
+    </row>
+    <row>
+      <cell col="1" row="8">양지ㆍ식생명</cell>
+      <cell col="2" row="8"></cell>
+      <cell col="3" row="8"></cell>
+      <cell col="4" row="8"></cell>
+      <cell col="6" row="8">등고선의 표고값</cell>
+      <cell col="7" row="8" colspan="2"></cell>
+      <cell col="9" row="8" colspan="2"></cell>
+      <cell col="11" row="8"></cell>
+    </row>
+    <row>
+      <cell col="1" row="9">산ㆍ곡ㆍ촌명</cell>
+      <cell col="2" row="9"></cell>
+      <cell col="3" row="9"></cell>
+      <cell col="4" row="9"></cell>
+      <cell col="6" row="9"></cell>
+      <cell col="7" row="9" colspan="2"></cell>
+      <cell col="9" row="9" colspan="2"></cell>
+      <cell col="11" row="9"></cell>
+    </row>
+    <row>
+      <cell col="1" row="10">하천ㆍ호소ㆍ
+항만명</cell>
+      <cell col="2" row="10"></cell>
+      <cell col="3" row="10"></cell>
+      <cell col="4" row="10"></cell>
+      <cell col="5" row="10" colspan="2">구분
+항목</cell>
+      <cell col="7" row="10">유</cell>
+      <cell col="8" row="10">무</cell>
+      <cell col="9" row="10">양</cell>
+      <cell col="10" row="10">부</cell>
+      <cell col="11" row="10">적요</cell>
+    </row>
+    <row>
+      <cell col="1" row="11"></cell>
+      <cell col="2" row="11"></cell>
+      <cell col="3" row="11"></cell>
+      <cell col="4" row="11"></cell>
+      <cell col="5" row="11" rowspan="4">획
+선
+등</cell>
+      <cell col="6" row="11">농도의 균일</cell>
+      <cell col="7" row="11"></cell>
+      <cell col="8" row="11"></cell>
+      <cell col="9" row="11"></cell>
+      <cell col="10" row="11"></cell>
+      <cell col="11" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12" rowspan="2">도
+로</cell>
+      <cell col="1" row="12">도로ㆍ교량ㆍ
+터널명</cell>
+      <cell col="2" row="12"></cell>
+      <cell col="3" row="12"></cell>
+      <cell col="4" row="12"></cell>
+      <cell col="6" row="12">선호의 균일</cell>
+      <cell col="7" row="12"></cell>
+      <cell col="8" row="12"></cell>
+      <cell col="9" row="12"></cell>
+      <cell col="10" row="12"></cell>
+      <cell col="11" row="12"></cell>
+    </row>
+    <row>
+      <cell col="1" row="13">기타도로에 관한
+인공물</cell>
+      <cell col="2" row="13"></cell>
+      <cell col="3" row="13"></cell>
+      <cell col="4" row="13"></cell>
+      <cell col="6" row="13">긁힘ㆍ더러움</cell>
+      <cell col="7" row="13"></cell>
+      <cell col="8" row="13"></cell>
+      <cell col="9" row="13"></cell>
+      <cell col="10" row="13"></cell>
+      <cell col="11" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14" rowspan="7">난
+외
+등</cell>
+      <cell col="1" row="14">도엽번호 및 
+인접도엽번호</cell>
+      <cell col="2" row="14"></cell>
+      <cell col="3" row="14"></cell>
+      <cell col="4" row="14"></cell>
+      <cell col="6" row="14">식자의 접착착오 및 
+어긋남</cell>
+      <cell col="7" row="14"></cell>
+      <cell col="8" row="14"></cell>
+      <cell col="9" row="14"></cell>
+      <cell col="10" row="14"></cell>
+      <cell col="11" row="14"></cell>
+    </row>
+    <row>
+      <cell col="1" row="15">경위도선 및 
+그의 오차</cell>
+      <cell col="2" row="15"></cell>
+      <cell col="3" row="15"></cell>
+      <cell col="4" row="15"></cell>
+      <cell col="5" row="15" rowspan="6">연속
+모
+자
+이
+크
+등</cell>
+      <cell col="6" row="15">Spotting</cell>
+      <cell col="7" row="15"></cell>
+      <cell col="8" row="15"></cell>
+      <cell col="9" row="15"></cell>
+      <cell col="10" row="15"></cell>
+      <cell col="11" row="15"></cell>
+    </row>
+    <row>
+      <cell col="1" row="16">좌표값 등</cell>
+      <cell col="2" row="16"></cell>
+      <cell col="3" row="16"></cell>
+      <cell col="4" row="16"></cell>
+      <cell col="6" row="16">슬리트</cell>
+      <cell col="7" row="16"></cell>
+      <cell col="8" row="16"></cell>
+      <cell col="9" row="16"></cell>
+      <cell col="10" row="16"></cell>
+      <cell col="11" row="16"></cell>
+    </row>
+    <row>
+      <cell col="1" row="17">개견도ㆍ행정
+구역도</cell>
+      <cell col="2" row="17"></cell>
+      <cell col="3" row="17"></cell>
+      <cell col="4" row="17"></cell>
+      <cell col="6" row="17">모자이크법</cell>
+      <cell col="7" row="17"></cell>
+      <cell col="8" row="17"></cell>
+      <cell col="9" row="17"></cell>
+      <cell col="10" row="17"></cell>
+      <cell col="11" row="17"></cell>
+    </row>
+    <row>
+      <cell col="1" row="18">방위</cell>
+      <cell col="2" row="18"></cell>
+      <cell col="3" row="18"></cell>
+      <cell col="4" row="18"></cell>
+      <cell col="6" row="18">할레이션</cell>
+      <cell col="7" row="18"></cell>
+      <cell col="8" row="18"></cell>
+      <cell col="9" row="18"></cell>
+      <cell col="10" row="18"></cell>
+      <cell col="11" row="18"></cell>
+    </row>
+    <row>
+      <cell col="1" row="19">측량년차
+사용사진의 설명</cell>
+      <cell col="2" row="19"></cell>
+      <cell col="3" row="19"></cell>
+      <cell col="4" row="19"></cell>
+      <cell col="6" row="19">상의 흔들림</cell>
+      <cell col="7" row="19"></cell>
+      <cell col="8" row="19"></cell>
+      <cell col="9" row="19"></cell>
+      <cell col="10" row="19"></cell>
+      <cell col="11" row="19"></cell>
+    </row>
+    <row>
+      <cell col="1" row="20">기타</cell>
+      <cell col="2" row="20"></cell>
+      <cell col="3" row="20"></cell>
+      <cell col="4" row="20"></cell>
+      <cell col="6" row="20">스캐닝</cell>
+      <cell col="7" row="20"></cell>
+      <cell col="8" row="20"></cell>
+      <cell col="9" row="20"></cell>
+      <cell col="10" row="20"></cell>
+      <cell col="11" row="20"></cell>
+    </row>
+  </table>
+</annex>

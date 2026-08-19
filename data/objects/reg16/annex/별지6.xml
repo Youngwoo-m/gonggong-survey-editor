@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지6" gubun="별지" no="6" title="비행 및 측량제원계획표" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=161554297">
+  <text>■ 수치표고모형의 구축 및 관리 등에 관한 규정 [별지 제6호서식]
+비행 및 측량제원계획표</text>
+  <table rows="17" cols="6">
+    <row>
+      <cell col="0" row="0" rowspan="2">지구명</cell>
+      <cell col="1" row="0" colspan="2" rowspan="2"></cell>
+      <cell col="3" row="0">작업기관</cell>
+      <cell col="4" row="0" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="3" row="1">작성자</cell>
+      <cell col="4" row="1" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="3">항목</cell>
+      <cell col="3" row="2">제원</cell>
+      <cell col="4" row="2">단위</cell>
+      <cell col="5" row="2">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2" rowspan="5">비행제원</cell>
+      <cell col="2" row="3">대지 고도</cell>
+      <cell col="3" row="3"></cell>
+      <cell col="4" row="3">m</cell>
+      <cell col="5" row="3"></cell>
+    </row>
+    <row>
+      <cell col="2" row="4">대지 속도</cell>
+      <cell col="3" row="4"></cell>
+      <cell col="4" row="4">km/h</cell>
+      <cell col="5" row="4"></cell>
+    </row>
+    <row>
+      <cell col="2" row="5">코스수</cell>
+      <cell col="3" row="5"></cell>
+      <cell col="4" row="5">코스</cell>
+      <cell col="5" row="5"></cell>
+    </row>
+    <row>
+      <cell col="2" row="6">코스간격</cell>
+      <cell col="3" row="6"></cell>
+      <cell col="4" row="6">m</cell>
+      <cell col="5" row="6"></cell>
+    </row>
+    <row>
+      <cell col="2" row="7">코스 간 중복도</cell>
+      <cell col="3" row="7"></cell>
+      <cell col="4" row="7">%</cell>
+      <cell col="5" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="2" rowspan="8">레이저측량제원</cell>
+      <cell col="2" row="8">레이저 주사율</cell>
+      <cell col="3" row="8"></cell>
+      <cell col="4" row="8">Hz</cell>
+      <cell col="5" row="8"></cell>
+    </row>
+    <row>
+      <cell col="2" row="9">주사각</cell>
+      <cell col="3" row="9"></cell>
+      <cell col="4" row="9">도</cell>
+      <cell col="5" row="9"></cell>
+    </row>
+    <row>
+      <cell col="2" row="10">주사폭</cell>
+      <cell col="3" row="10"></cell>
+      <cell col="4" row="10">m</cell>
+      <cell col="5" row="10"></cell>
+    </row>
+    <row>
+      <cell col="2" row="11">스캔주기</cell>
+      <cell col="3" row="11"></cell>
+      <cell col="4" row="11">Hz</cell>
+      <cell col="5" row="11"></cell>
+    </row>
+    <row>
+      <cell col="2" row="12">반사파의 수</cell>
+      <cell col="3" row="12"></cell>
+      <cell col="4" row="12"></cell>
+      <cell col="5" row="12"></cell>
+    </row>
+    <row>
+      <cell col="2" row="13">비행방향
+측량점 간격</cell>
+      <cell col="3" row="13"></cell>
+      <cell col="4" row="13">m</cell>
+      <cell col="5" row="13"></cell>
+    </row>
+    <row>
+      <cell col="2" row="14">비행직각방향
+측량점 간격</cell>
+      <cell col="3" row="14"></cell>
+      <cell col="4" row="14">m</cell>
+      <cell col="5" row="14"></cell>
+    </row>
+    <row>
+      <cell col="2" row="15">평균점밀도</cell>
+      <cell col="3" row="15"></cell>
+      <cell col="4" row="15">pts/㎡</cell>
+      <cell col="5" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="3">그 외</cell>
+      <cell col="3" row="16"></cell>
+      <cell col="4" row="16"></cell>
+      <cell col="5" row="16"></cell>
+    </row>
+  </table>
+  <text>가. 계획코스도(1/50,000) 첨부
+나. 계획코스도에는 GNSS 기준국을 표시</text>
+</annex>

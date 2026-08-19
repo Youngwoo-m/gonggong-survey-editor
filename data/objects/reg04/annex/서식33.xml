@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식33" gubun="서식" no="33" title="측량기술경력증(발급(신규), 발급(모바일), 갱신발급, 재발급)신청서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454581">
+  <table rows="23" cols="14">
+    <row>
+      <cell col="0" row="0" colspan="14">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별지 제33호서식] &lt;개정 2024. 2. 6.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="4">측량기술경력증</cell>
+      <cell col="4" row="1" colspan="5">[ ]발급(신규)
+[ ]발급(모바일)
+[ ]갱신발급
+[ ]재발급</cell>
+      <cell col="9" row="1" colspan="5">신청서</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="11">※ [  ]에는 해당되는 곳에 √표를 하며, 색상이 어두운 란은 적지 않습니다.</cell>
+      <cell col="11" row="2" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">접수번호</cell>
+      <cell col="1" row="3"></cell>
+      <cell col="2" row="3">접수일</cell>
+      <cell col="3" row="3" colspan="3"></cell>
+      <cell col="6" row="3" colspan="2"></cell>
+      <cell col="8" row="3" colspan="3"></cell>
+      <cell col="11" row="3" colspan="2">처리기간</cell>
+      <cell col="13" row="3">즉시</cell>
+    </row>
+    <row>
+      <cell col="0" row="4"></cell>
+      <cell col="1" row="4"></cell>
+      <cell col="2" row="4"></cell>
+      <cell col="3" row="4" colspan="3"></cell>
+      <cell col="6" row="4" colspan="2"></cell>
+      <cell col="8" row="4" colspan="3"></cell>
+      <cell col="11" row="4" colspan="2"></cell>
+      <cell col="13" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" rowspan="3">신청인</cell>
+      <cell col="1" row="5" colspan="6">성명</cell>
+      <cell col="7" row="5" colspan="7">생년월일</cell>
+    </row>
+    <row>
+      <cell col="1" row="6" colspan="13">전화번호</cell>
+    </row>
+    <row>
+      <cell col="1" row="7" colspan="13">주소</cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9" rowspan="3">근무처</cell>
+      <cell col="1" row="9" colspan="6">회사명</cell>
+      <cell col="7" row="9" colspan="7">법인 또는 사업자등록번호</cell>
+    </row>
+    <row>
+      <cell col="1" row="10" colspan="6">전화번호</cell>
+      <cell col="7" row="10" colspan="7">업종(등록번호)</cell>
+    </row>
+    <row>
+      <cell col="1" row="11" colspan="13">주사무소 소재지</cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13">신청 분야</cell>
+      <cell col="1" row="13" colspan="13">분야</cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="14">「공간정보의 구축 및 관리 등에 관한 법률」 제40조제3항 및 같은 법 시행규칙 제43조제3항에 따라 측량기술경력증의 발급(신규ㆍ모바일)ㆍ갱신발급ㆍ재발급을 신청합니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="14">년          월          일</cell>
+    </row>
+    <row>
+      <cell col="0" row="17" colspan="5">신청인</cell>
+      <cell col="5" row="17" colspan="5">(본인)</cell>
+      <cell col="10" row="17" colspan="2"></cell>
+      <cell col="12" row="17" colspan="2">(서명 또는 인)</cell>
+    </row>
+    <row>
+      <cell col="0" row="18" colspan="5"></cell>
+      <cell col="5" row="18" colspan="5">(대리인)</cell>
+      <cell col="10" row="18" colspan="2"></cell>
+      <cell col="12" row="18" colspan="2">(서명 또는 인)</cell>
+    </row>
+    <row>
+      <cell col="0" row="19" colspan="14">귀하</cell>
+    </row>
+    <row>
+      <cell col="0" row="20" colspan="14">유의사항</cell>
+    </row>
+    <row>
+      <cell col="0" row="21" colspan="14">측량기술경력증을 모바일로 발급 받은 경우 조회일자에 따라 표기 내용이 다를 수 있습니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="22" colspan="14">210㎜×297㎜[백상지(80g/㎡) 또는 중질지(80g/㎡)]</cell>
+    </row>
+  </table>
+</annex>

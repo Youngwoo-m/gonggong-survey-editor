@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="151295895" article="제28조" rows="6" cols="5" source="공공측량 작업규정.2025.04.23_수식수정.오류표시.hwpx">
+  <row>
+    <cell col="0" row="0">구분
+항목</cell>
+    <cell col="1" row="0">1금 공공삼각점측량</cell>
+    <cell col="2" row="0">2급 공공삼각점측량</cell>
+    <cell col="3" row="0">3급 공공삼각점측량</cell>
+    <cell col="4" row="0">4급 공공삼각점측량</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">방위각의 편차</cell>
+    <cell col="1" row="1">5초</cell>
+    <cell col="2" row="1">10초</cell>
+    <cell col="3" row="1">20초</cell>
+    <cell col="4" row="1">80초</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">경사거리의 편차</cell>
+    <cell col="1" row="2" colspan="4">20mm ± 4ppm · D
+(D :측정거리 km)</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">타원체비고의 편차</cell>
+    <cell col="1" row="3" colspan="4">30mm ± 4ppm · D
+(D : 측정거리 km)</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">수평위치의 폐합차</cell>
+    <cell col="1" row="4" colspan="4">△S = 10cm ± 4cm
+(△S : 기지점의 성과와 가정 3차원망 조정계산 결과에서 구한 거리)
+(N : 기지점까지의 최단변수)</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">지오이드 경사량</cell>
+    <cell col="1" row="5" colspan="4">20cm ± 10cm·S를 표준으로 한다.
+(S : 구면거리 km)</cell>
+  </row>
+</table>

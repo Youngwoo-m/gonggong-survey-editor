@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지5" gubun="별지" no="5" title="정사영상 성과검사 결과" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=118722777">
+  <text>[별 지 제5호]품질관리표
+정사영상 성과검사 결과</text>
+  <table rows="1" cols="4">
+    <row>
+      <cell col="0" row="0">결과번호</cell>
+      <cell col="1" row="0"></cell>
+      <cell col="2" row="0">보고일</cell>
+      <cell col="3" row="0"></cell>
+    </row>
+  </table>
+  <table rows="4" cols="5">
+    <row>
+      <cell col="0" row="0">대상사업</cell>
+      <cell col="1" row="0" colspan="2"></cell>
+      <cell col="3" row="0">접수번호</cell>
+      <cell col="4" row="0"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1">검사자</cell>
+      <cell col="1" row="1" colspan="2"></cell>
+      <cell col="3" row="1">접수물량</cell>
+      <cell col="4" row="1">도엽</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">검사요청</cell>
+      <cell col="1" row="2" colspan="2"></cell>
+      <cell col="3" row="2">검사물량</cell>
+      <cell col="4" row="2">도엽</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">검사기간</cell>
+      <cell col="1" row="3" colspan="2"></cell>
+      <cell col="3" row="3">검사결과</cell>
+      <cell col="4" row="3">적합(완료), 적합(보완), 부적합</cell>
+    </row>
+  </table>
+  <text>□ 검사결과</text>
+  <table rows="8" cols="5">
+    <row>
+      <cell col="0" row="0">연번</cell>
+      <cell col="1" row="0" colspan="2">검사항목</cell>
+      <cell col="3" row="0">검사기준</cell>
+      <cell col="4" row="0">검사결과</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">1</cell>
+      <cell col="1" row="1" rowspan="6">정사영상</cell>
+      <cell col="2" row="1">영상의 연결성</cell>
+      <cell col="3" row="1">접합선 및 연속 구조물의 모자이크 처리, 인접도엽 단절·어긋남 등 연결성을 확인(seamline 확인)</cell>
+      <cell col="4" row="1">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">2</cell>
+      <cell col="2" row="2">중심영상 사용</cell>
+      <cell col="3" row="2">영상지도내 건물의 기울기등을 육안으로 확인하여 중심영상 사용여부를 확인</cell>
+      <cell col="4" row="2">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">3</cell>
+      <cell col="2" row="3">입체구조물 및 지형지물 형상</cell>
+      <cell col="3" row="3">교량, 고가도로 등 입체구조물과  교량, 고가도로 등의 기하학적 왜곡 발생 여부를 확인</cell>
+      <cell col="4" row="3">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">4</cell>
+      <cell col="2" row="4">색상·밝기 일치성</cell>
+      <cell col="3" row="4">영상지도내 색상·밝기 일치성을 육안으로 확인</cell>
+      <cell col="4" row="4">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">5</cell>
+      <cell col="2" row="5">영상보정</cell>
+      <cell col="3" row="5">도면 인접부분의 선형정보(경계, 지물, 지형 등)가 단락되지 않고 잘 부합되는지 여부를 시스템을 통해 확인</cell>
+      <cell col="4" row="5">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">6</cell>
+      <cell col="2" row="6">공간해상도</cell>
+      <cell col="3" row="6">개별 픽셀의 실제거리에 대한 적정 해상도(GSD) 확인</cell>
+      <cell col="4" row="6">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">7</cell>
+      <cell col="1" row="7">수치표고모형</cell>
+      <cell col="2" row="7">지형의 연속성</cell>
+      <cell col="3" row="7">입체구조물(교량, 고가도로 등) 형상 
+지형변화 지역 DEM 수정 여부
+지면과 높이차가 큰 지형(산악도로, 고층건물 등)에 대한 형상</cell>
+      <cell col="4" row="7">적합 / 부적합</cell>
+    </row>
+  </table>
+  <text>20  .   .   .
+붙임 1. 검증 위치도
+2. 정사영상 검증결과 및 세부내역</text>
+</annex>

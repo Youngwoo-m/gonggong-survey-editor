@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지20" gubun="별지" no="20" title="수치표고모형 오류 정정표" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=161554381">
+  <text>■ 수치표고모형의 구축 및 관리 등에 관한 규정 [별지 제20호서식]
+수치표고모형 오류 정정표</text>
+  <table rows="6" cols="4">
+    <row>
+      <cell col="0" row="0">지구명</cell>
+      <cell col="1" row="0"></cell>
+      <cell col="2" row="0">작업자</cell>
+      <cell col="3" row="0"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1">오류정정자료</cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1">작업일자</cell>
+      <cell col="3" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2">위치</cell>
+      <cell col="1" row="2" colspan="3">X :                       Y :</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">오류 내용</cell>
+      <cell col="2" row="3" colspan="2">조치 내용</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="2">* 오류내용을 서술</cell>
+      <cell col="2" row="4" colspan="2">* 오류를 정정한 내용을 서술</cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="2">* 오류내용이 나타난 그림을 첨부</cell>
+      <cell col="2" row="5" colspan="2">* 정정한 후의 그림을 첨부</cell>
+    </row>
+  </table>
+  <text>※ 필요한 경우에는 오류내용 그림 부분에 대상지역의 영상자료를 첨부하여 작성한다.</text>
+</annex>

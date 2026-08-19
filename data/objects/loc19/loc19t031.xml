@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc19t031" article="사전준비 및 작업계획" rows="4" cols="5" source="측량 안전관리 매뉴얼 (2026.1)">
+  <row>
+    <cell col="0" row="0" header="1">상대 정확도(95% 신뢰구간)</cell>
+    <cell col="1" row="0" header="1"></cell>
+    <cell col="2" row="0" header="1">최대오차</cell>
+    <cell col="3" row="0" header="1"></cell>
+    <cell col="4" row="0" header="1">비고</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">평면위치</cell>
+    <cell col="1" row="1">수직위치</cell>
+    <cell col="2" row="1">평면위치</cell>
+    <cell col="3" row="1">수직위치</cell>
+    <cell col="4" row="1"></cell>
+  </row>
+  <row>
+    <cell col="0" row="2">0.1m 이내</cell>
+    <cell col="1" row="2">0.1m 이내</cell>
+    <cell col="2" row="2">0.2m 이내</cell>
+    <cell col="3" row="2">0.2m 이내</cell>
+    <cell col="4" row="2">제23조제4항</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">1) 도화 위치의 좌표 값과 점군 데이터 좌표 값의 차이(평면, 수직)를 측정하여 RMSE 와 최대오차를 계산 2) 최대오차 기준을 비교하고, 95% 신뢰구간에서의 정확도를 계산하여 비교 ※ 95% 신뢰구간에서 평면위치 정확도× , 수직위치 정확도×  </cell>
+    <cell col="1" row="3"></cell>
+    <cell col="2" row="3"></cell>
+    <cell col="3" row="3"></cell>
+    <cell col="4" row="3"></cell>
+  </row>
+</table>

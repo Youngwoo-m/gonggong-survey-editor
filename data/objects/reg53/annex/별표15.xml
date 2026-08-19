@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표15" gubun="별표" no="15" title="혈액노출후 추적관리(제598조제2항 관련)" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=155899343">
+  <table rows="7" cols="2">
+    <row>
+      <cell col="0" row="0" colspan="2">■ 산업안전보건기준에 관한 규칙 [별표 15] &lt;개정 2024. 6. 28.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="2">혈액노출후 추적관리(제598조제2항 관련)</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">감염병</cell>
+      <cell col="1" row="2">추적관리 내용 및 시기</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">B형간염 바이러스</cell>
+      <cell col="1" row="3">HBsAg: 노출 후 3개월, 6개월</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">C형간염 바이러스</cell>
+      <cell col="1" row="4">anti HCV RNA: 4~6주
+anti HCV: 4~6개월</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">인체면역결핍 바이러스</cell>
+      <cell col="1" row="5">anti HIV: 6주, 12주, 6개월</cell>
+    </row>
+    <row>
+      <cell col="0" row="6" colspan="2">비고
+ 1. anti HCV RNA:  C형간염바이러스 RNA 검사
+ 2. anti HCV: C형간염항체 검사
+ 3. anti HIV: 인체면역결핍항체 검사</cell>
+    </row>
+  </table>
+</annex>

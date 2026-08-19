@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표14" gubun="별표" no="14" title="자동검사 항목" source="성과심사 규정 개정안 초안 (scripts/genannex_simsa.py)">
+  <text>[별표 14]
+자동검사 항목 (제24조제2항 관련)</text>
+  <table rows="19" cols="4">
+    <row>
+      <cell col="0" row="0" header="1">구분</cell>
+      <cell col="1" row="0" header="1">검사 항목</cell>
+      <cell col="2" row="0" header="1">검사 내용</cell>
+      <cell col="3" row="0" header="1">걸렸을 때</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">1. 파일</cell>
+      <cell col="1" row="1">형식</cell>
+      <cell col="2" row="1">제품사양서 또는 작업계획서가 정한 형식인지</cell>
+      <cell col="3" row="1">보완 요구(제20조)</cell>
+    </row>
+    <row>
+      <cell col="0" row="2"></cell>
+      <cell col="1" row="2">이름 규칙</cell>
+      <cell col="2" row="2">도엽ㆍ구간ㆍ성과 유형에 따른 이름 규칙에 맞는지</cell>
+      <cell col="3" row="2">보완 요구(제20조)</cell>
+    </row>
+    <row>
+      <cell col="0" row="3"></cell>
+      <cell col="1" row="3">인코딩</cell>
+      <cell col="2" row="3">정한 문자 인코딩인지</cell>
+      <cell col="3" row="3">보완 요구(제20조)</cell>
+    </row>
+    <row>
+      <cell col="0" row="4"></cell>
+      <cell col="1" row="4">열림</cell>
+      <cell col="2" row="4">파일이 손상 없이 열리는지</cell>
+      <cell col="3" row="4">보완 요구(제20조)</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">2. 좌표계와 범위</cell>
+      <cell col="1" row="5">좌표계</cell>
+      <cell col="2" row="5">정한 좌표계ㆍ원점ㆍ투영법인지</cell>
+      <cell col="3" row="5">심사자 확인</cell>
+    </row>
+    <row>
+      <cell col="0" row="6"></cell>
+      <cell col="1" row="6">범위</cell>
+      <cell col="2" row="6">성과의 좌표 범위가 사업 구역 안에 있는지</cell>
+      <cell col="3" row="6">심사자 확인</cell>
+    </row>
+    <row>
+      <cell col="0" row="7"></cell>
+      <cell col="1" row="7">단위</cell>
+      <cell col="2" row="7">길이와 각의 단위가 정한 바와 같은지</cell>
+      <cell col="3" row="7">심사자 확인</cell>
+    </row>
+    <row>
+      <cell col="0" row="8">3. 속성</cell>
+      <cell col="1" row="8">필수 속성</cell>
+      <cell col="2" row="8">필수로 정한 속성이 비어 있지 아니한지</cell>
+      <cell col="3" row="8">심사자 확인</cell>
+    </row>
+    <row>
+      <cell col="0" row="9"></cell>
+      <cell col="1" row="9">값의 범위</cell>
+      <cell col="2" row="9">수치 속성이 정한 범위 안에 있는지</cell>
+      <cell col="3" row="9">심사자 확인</cell>
+    </row>
+    <row>
+      <cell col="0" row="10"></cell>
+      <cell col="1" row="10">코드값</cell>
+      <cell col="2" row="10">코드 목록에 있는 값인지</cell>
+      <cell col="3" row="10">심사자 확인</cell>
+    </row>
+    <row>
+      <cell col="0" row="11">4. 위상</cell>
+      <cell col="1" row="11">겹침과 틈</cell>
+      <cell col="2" row="11">면 형상이 서로 겹치거나 틈이 있는지</cell>
+      <cell col="3" row="11">심사자 확인</cell>
+    </row>
+    <row>
+      <cell col="0" row="12"></cell>
+      <cell col="1" row="12">끊김</cell>
+      <cell col="2" row="12">선 형상이 이어져야 할 곳에서 끊겼는지</cell>
+      <cell col="3" row="12">심사자 확인</cell>
+    </row>
+    <row>
+      <cell col="0" row="13"></cell>
+      <cell col="1" row="13">중복</cell>
+      <cell col="2" row="13">같은 자리에 형상이 겹쳐 있는지</cell>
+      <cell col="3" row="13">심사자 확인</cell>
+    </row>
+    <row>
+      <cell col="0" row="14">5. 메타데이터</cell>
+      <cell col="1" row="14">필수 항목</cell>
+      <cell col="2" row="14">「공공측량 작업규정」이 정한 항목이 채워졌는지</cell>
+      <cell col="3" row="14">보완 요구(제20조)</cell>
+    </row>
+    <row>
+      <cell col="0" row="15"></cell>
+      <cell col="1" row="15">성과와의 일치</cell>
+      <cell col="2" row="15">좌표계ㆍ범위ㆍ작성일이 성과와 맞는지</cell>
+      <cell col="3" row="15">심사자 확인</cell>
+    </row>
+    <row>
+      <cell col="0" row="16">6. 점군ㆍ영상</cell>
+      <cell col="1" row="16">점밀도</cell>
+      <cell col="2" row="16">제품사양서가 정한 점밀도 이상인지</cell>
+      <cell col="3" row="16">심사자 확인</cell>
+    </row>
+    <row>
+      <cell col="0" row="17"></cell>
+      <cell col="1" row="17">지상표본거리</cell>
+      <cell col="2" row="17">제품사양서가 정한 지상표본거리 이하인지</cell>
+      <cell col="3" row="17">심사자 확인</cell>
+    </row>
+    <row>
+      <cell col="0" row="18"></cell>
+      <cell col="1" row="18">결측</cell>
+      <cell col="2" row="18">취득 구역 안에 자료가 빠진 곳이 있는지</cell>
+      <cell col="3" row="18">심사자 확인</cell>
+    </row>
+  </table>
+  <text>비고
+1. '보완 요구' 는 접수 단계에서 형식이 갖추어지지 아니한 것이므로 제20조제2항에 따라 7일 이내의 기간을 정하여 보완을 요구한다.
+2. '심사자 확인' 은 자동검사가 걸러 낸 것을 심사자가 확인한 뒤 판정에 반영한다는 뜻이다. 자동검사의 결과만으로 부적합으로 판정하지 아니한다(제24조제3항).
+3. 검사 항목과 판정 논리는 공공측량시행자가 요청하면 알려 준다(제24조제4항).
+4. 이 표의 항목은 기계가 읽을 수 있는 형태로 제출된 성과에만 적용한다.</text>
+</annex>

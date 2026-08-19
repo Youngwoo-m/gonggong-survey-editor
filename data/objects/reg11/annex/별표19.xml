@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표19" gubun="별표" no="19" title="수준관측기록부" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=155729989">
+  <text>[별표 19] 수준관측기록부</text>
+  <table rows="19" cols="5">
+    <row>
+      <cell col="0" row="0" colspan="5">수준관측기록부</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2">벤더사 :</cell>
+      <cell col="1" row="2" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">장비명 :</cell>
+      <cell col="1" row="3" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4">일련번호 :</cell>
+      <cell col="1" row="4" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5">버전 :</cell>
+      <cell col="1" row="5" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">단위 :</cell>
+      <cell col="1" row="6" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">관측방법:</cell>
+      <cell col="1" row="7" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8">점 명칭 :</cell>
+      <cell col="1" row="8" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">구간명 :</cell>
+      <cell col="1" row="9" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10">관측일시 :</cell>
+      <cell col="1" row="10" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11">온도1</cell>
+      <cell col="1" row="11">시간</cell>
+      <cell col="2" row="11"></cell>
+      <cell col="3" row="11">온도</cell>
+      <cell col="4" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12">온도2</cell>
+      <cell col="1" row="12">시간</cell>
+      <cell col="2" row="12"></cell>
+      <cell col="3" row="12">온도</cell>
+      <cell col="4" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13"></cell>
+      <cell col="1" row="13"></cell>
+      <cell col="2" row="13"></cell>
+      <cell col="3" row="13"></cell>
+      <cell col="4" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="2">점검기준</cell>
+      <cell col="2" row="14"></cell>
+      <cell col="3" row="14"></cell>
+      <cell col="4" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15">최저높이(m) :</cell>
+      <cell col="1" row="15"></cell>
+      <cell col="2" row="15"></cell>
+      <cell col="3" row="15"></cell>
+      <cell col="4" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16">최고높이(m) :</cell>
+      <cell col="1" row="16"></cell>
+      <cell col="2" row="16"></cell>
+      <cell col="3" row="16"></cell>
+      <cell col="4" row="16"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17">비고차(m) :</cell>
+      <cell col="1" row="17"></cell>
+      <cell col="2" row="17"></cell>
+      <cell col="3" row="17"></cell>
+      <cell col="4" row="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18">오차범위(%) :</cell>
+      <cell col="1" row="18"></cell>
+      <cell col="2" row="18"></cell>
+      <cell col="3" row="18"></cell>
+      <cell col="4" row="18"></cell>
+    </row>
+  </table>
+</annex>

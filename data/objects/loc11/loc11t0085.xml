@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0085" article="제462조(最適軌跡解析の点検)" rows="7" cols="3" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">点検項目</cell>
+    <cell col="1" row="0" header="1">標準値</cell>
+    <cell col="2" row="0" header="1">備考</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">最少衛星数</cell>
+    <cell col="1" row="1">第３７条第２項第二号ニの 規定に基づく</cell>
+    <cell col="2" row="1"></cell>
+  </row>
+  <row>
+    <cell col="0" row="2">ＤＯＰ値</cell>
+    <cell col="1" row="2">３以下</cell>
+    <cell col="2" row="2">ＰＤＯＰ</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">位置の往復差の平 均値とその絶対値 の最大値</cell>
+    <cell col="1" row="3">0.3ｍ以内</cell>
+    <cell col="2" row="3">各軸とも</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">解の品質</cell>
+    <cell col="1" row="4">ＦＩＸ解</cell>
+    <cell col="2" row="4">固定局との基線距離が確保 できない場合は、安定フロ ート解も可能とする。</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">位置の標準偏差の 平均値</cell>
+    <cell col="1" row="5">0.10ｍ以内</cell>
+    <cell col="2" row="5">各軸とも</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">位置の標準偏差の 最大値</cell>
+    <cell col="1" row="6">0.15ｍ以内</cell>
+    <cell col="2" row="6">各軸とも</cell>
+  </row>
+</table>

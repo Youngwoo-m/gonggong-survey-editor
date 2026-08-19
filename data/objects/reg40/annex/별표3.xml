@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표3" gubun="별표" no="3" title="측량기준점 현황조사 총괄표(제9조제1항 관련)" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=107655491">
+  <text>[별표 3] 측량기준점 현황조사 총괄표(제9조제1항 관련)
+1. 총괄표</text>
+  <table rows="5" cols="8">
+    <row>
+      <cell col="0" row="0">점의 종류</cell>
+      <cell col="1" row="0">전체</cell>
+      <cell col="2" row="0">완전</cell>
+      <cell col="3" row="0">멸실</cell>
+      <cell col="4" row="0">파손</cell>
+      <cell col="5" row="0">불량</cell>
+      <cell col="6" row="0">조사불가</cell>
+      <cell col="7" row="0">조사완료</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">통합기준점</cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1"></cell>
+      <cell col="4" row="1"></cell>
+      <cell col="5" row="1"></cell>
+      <cell col="6" row="1"></cell>
+      <cell col="7" row="1">00%</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">수준점</cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2"></cell>
+      <cell col="3" row="2"></cell>
+      <cell col="4" row="2"></cell>
+      <cell col="5" row="2"></cell>
+      <cell col="6" row="2"></cell>
+      <cell col="7" row="2">00%</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">삼각점</cell>
+      <cell col="1" row="3"></cell>
+      <cell col="2" row="3"></cell>
+      <cell col="3" row="3"></cell>
+      <cell col="4" row="3"></cell>
+      <cell col="5" row="3"></cell>
+      <cell col="6" row="3"></cell>
+      <cell col="7" row="3">00%</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">합계</cell>
+      <cell col="1" row="4"></cell>
+      <cell col="2" row="4"></cell>
+      <cell col="3" row="4"></cell>
+      <cell col="4" row="4"></cell>
+      <cell col="5" row="4"></cell>
+      <cell col="6" row="4"></cell>
+      <cell col="7" row="4">00%</cell>
+    </row>
+  </table>
+  <text>2. 조사결과</text>
+  <table rows="8" cols="10">
+    <row>
+      <cell col="0" row="0" rowspan="2">점의 종류</cell>
+      <cell col="1" row="0" rowspan="2">점명</cell>
+      <cell col="2" row="0" rowspan="2">소속</cell>
+      <cell col="3" row="0" colspan="8504">* 측량기준점의 상태가 멸실, 파손, 불량, 조사불가인 경우 해당지역의 개발행위 등을 조사·검토하여 그 사유를 검토결과에 상세히 작성해야 한다. 그럼에도 불구하고 그 사유를 알 수 없는 경우에는 ‘확인불가’로 기재한다.</cell>
+      <cell col="3" row="0" rowspan="2">조사자</cell>
+      <cell col="4" row="0" rowspan="2">조사
+연월일</cell>
+      <cell col="5" row="0" rowspan="2">조사
+결과</cell>
+      <cell col="6" row="0" colspan="3">조사내용</cell>
+      <cell col="9" row="0" rowspan="2">멸실·파손·불량·조사불가 사유*</cell>
+    </row>
+    <row>
+      <cell col="6" row="1">표석</cell>
+      <cell col="7" row="1">보호석</cell>
+      <cell col="8" row="1">보호콘크리트</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">통합기준점</cell>
+      <cell col="1" row="2">U수원01</cell>
+      <cell col="2" row="2">ㅇㅇㅇㅇ</cell>
+      <cell col="3" row="2">김ㅇㅇ</cell>
+      <cell col="4" row="2">2021.3.5.</cell>
+      <cell col="5" row="2">멸실</cell>
+      <cell col="6" row="2">멸실</cell>
+      <cell col="7" row="2">멸실</cell>
+      <cell col="8" row="2">멸실</cell>
+      <cell col="9" row="2">ㅇㅇ기관, ㅇㅇ건축</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">수준점</cell>
+      <cell col="1" row="3">00-00-00-00</cell>
+      <cell col="2" row="3">ㅇㅇㅇㅇ</cell>
+      <cell col="3" row="3">김ㅇㅇ</cell>
+      <cell col="4" row="3">2021.3.5.</cell>
+      <cell col="5" row="3">파손</cell>
+      <cell col="6" row="3">완전</cell>
+      <cell col="7" row="3">파손</cell>
+      <cell col="8" row="3">완전</cell>
+      <cell col="9" row="3">확인불가</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">삼각점</cell>
+      <cell col="1" row="4">수원12</cell>
+      <cell col="2" row="4">ㅇㅇㅇㅇ</cell>
+      <cell col="3" row="4">박ㅇㅇ</cell>
+      <cell col="4" row="4">2021.3.10.</cell>
+      <cell col="5" row="4">완전</cell>
+      <cell col="6" row="4">완전</cell>
+      <cell col="7" row="4">-</cell>
+      <cell col="8" row="4">완전</cell>
+      <cell col="9" row="4">-</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">삼각점</cell>
+      <cell col="1" row="5">수원13</cell>
+      <cell col="2" row="5">ㅇㅇㅇㅇ</cell>
+      <cell col="3" row="5">이ㅇㅇ</cell>
+      <cell col="4" row="5">2021.3.11.</cell>
+      <cell col="5" row="5">불량</cell>
+      <cell col="6" row="5">불량</cell>
+      <cell col="7" row="5">-</cell>
+      <cell col="8" row="5">완전</cell>
+      <cell col="9" row="5">확인불가</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">삼각점</cell>
+      <cell col="1" row="6">수원14</cell>
+      <cell col="2" row="6">ㅇㅇㅇㅇ</cell>
+      <cell col="3" row="6">이ㅇㅇ</cell>
+      <cell col="4" row="6">2021.3.11.</cell>
+      <cell col="5" row="6">불량</cell>
+      <cell col="6" row="6">불량</cell>
+      <cell col="7" row="6">-</cell>
+      <cell col="8" row="6">완전</cell>
+      <cell col="9" row="6">장마로 인한 토사이동으로 표석 기울어짐</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">삼각점</cell>
+      <cell col="1" row="7">수원15</cell>
+      <cell col="2" row="7">ㅇㅇㅇㅇ</cell>
+      <cell col="3" row="7">김ㅇㅇ</cell>
+      <cell col="4" row="7">2021.4.1.</cell>
+      <cell col="5" row="7">조사불가</cell>
+      <cell col="6" row="7">-</cell>
+      <cell col="7" row="7">-</cell>
+      <cell col="8" row="7">-</cell>
+      <cell col="9" row="7">군부대 내 위치</cell>
+    </row>
+  </table>
+</annex>

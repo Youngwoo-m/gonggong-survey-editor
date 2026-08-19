@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식89" gubun="서식" no="89" title="측량기기 성능검사 기록부" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162455031">
+  <table rows="7" cols="18">
+    <row>
+      <cell col="0" row="0" colspan="18">[별지 제89호서식]</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="18">측량기기 성능검사 기록부</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">접수</cell>
+      <cell col="2" row="2" colspan="4">신청인</cell>
+      <cell col="6" row="2" colspan="7">측량기기</cell>
+      <cell col="13" row="2" colspan="3">검사결과</cell>
+      <cell col="16" row="2" rowspan="3">수수료</cell>
+      <cell col="17" row="2" rowspan="3">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" rowspan="2">번호</cell>
+      <cell col="1" row="3" rowspan="2">날짜</cell>
+      <cell col="2" row="3" rowspan="2">대표자</cell>
+      <cell col="3" row="3" rowspan="2">상호
+(측량업
+등록번호)</cell>
+      <cell col="4" row="3" rowspan="2">주소</cell>
+      <cell col="5" row="3" rowspan="2">전화번호</cell>
+      <cell col="6" row="3" rowspan="2">명칭</cell>
+      <cell col="7" row="3" rowspan="2">규격</cell>
+      <cell col="8" row="3" rowspan="2">기기번호</cell>
+      <cell col="9" row="3" rowspan="2">제조사명</cell>
+      <cell col="10" row="3" colspan="3">성능</cell>
+      <cell col="13" row="3" rowspan="2">등급</cell>
+      <cell col="14" row="3" rowspan="2">유효
+기간</cell>
+      <cell col="15" row="3" rowspan="2">적합여부</cell>
+    </row>
+    <row>
+      <cell col="10" row="4">외관검사</cell>
+      <cell col="11" row="4">구조 및 기능검사</cell>
+      <cell col="12" row="4">측정검사</cell>
+    </row>
+    <row>
+      <cell col="0" row="5"></cell>
+      <cell col="1" row="5"></cell>
+      <cell col="2" row="5"></cell>
+      <cell col="3" row="5"></cell>
+      <cell col="4" row="5"></cell>
+      <cell col="5" row="5"></cell>
+      <cell col="6" row="5"></cell>
+      <cell col="7" row="5"></cell>
+      <cell col="8" row="5"></cell>
+      <cell col="9" row="5"></cell>
+      <cell col="10" row="5"></cell>
+      <cell col="11" row="5"></cell>
+      <cell col="12" row="5"></cell>
+      <cell col="13" row="5"></cell>
+      <cell col="14" row="5"></cell>
+      <cell col="15" row="5"></cell>
+      <cell col="16" row="5"></cell>
+      <cell col="17" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6" colspan="18">420㎜×297㎜(보존용지2종 70g/㎡)</cell>
+    </row>
+  </table>
+</annex>

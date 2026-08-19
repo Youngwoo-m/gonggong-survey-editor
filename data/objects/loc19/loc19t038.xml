@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc19t038" article="지리조사 안전수칙 요약표" rows="7" cols="3" source="측량 안전관리 매뉴얼 (2026.1)">
+  <row>
+    <cell col="0" row="0" header="1">위험 환경</cell>
+    <cell col="1" row="0" header="1">주요 위험</cell>
+    <cell col="2" row="0" header="1">핵심 예방조치</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">경사지/법면</cell>
+    <cell col="1" row="1">사면붕괴·낙석</cell>
+    <cell col="2" row="1">지반 안정성 평가, 접근제한</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">하천/습지</cell>
+    <cell col="1" row="2">추락·유실</cell>
+    <cell col="2" row="2">수심·유속 확인, 안전 감시</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">숲/야산</cell>
+    <cell col="1" row="3">야생동물·감염</cell>
+    <cell col="2" row="3">출몰정보 확인, 방제조치</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">암반지형</cell>
+    <cell col="1" row="4">미끄럼·추락</cell>
+    <cell col="2" row="4">안전선 표시, 고정 장비</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">기상 악화</cell>
+    <cell col="1" row="5">낙뢰·침수</cell>
+    <cell col="2" row="5">기상 모니터링, 즉시 철수</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">원격탐사 병행</cell>
+    <cell col="1" row="6">장비 사고</cell>
+    <cell col="2" row="6">RTH 설정, 비행허가 준수</cell>
+  </row>
+</table>

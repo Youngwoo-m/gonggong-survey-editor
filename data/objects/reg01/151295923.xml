@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="151295923" article="제97조" rows="3" cols="7" source="공공측량 작업규정.2025.04.23_수식수정.오류표시.hwpx">
+  <row>
+    <cell col="0" row="0">구분</cell>
+    <cell col="1" row="0">각도</cell>
+    <cell col="2" row="0">거리</cell>
+    <cell col="3" row="0">표고</cell>
+    <cell col="4" row="0">좌표</cell>
+    <cell col="5" row="0">면적</cell>
+    <cell col="6" row="0">체적</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">단위</cell>
+    <cell col="1" row="1">초</cell>
+    <cell col="2" row="1">m</cell>
+    <cell col="3" row="1">m</cell>
+    <cell col="4" row="1">m</cell>
+    <cell col="5" row="1">m²</cell>
+    <cell col="6" row="1">m²</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">자리수</cell>
+    <cell col="1" row="2">1</cell>
+    <cell col="2" row="2">0.001</cell>
+    <cell col="3" row="2">0.001</cell>
+    <cell col="4" row="2">0.001</cell>
+    <cell col="5" row="2">0.01</cell>
+    <cell col="6" row="2">0.01</cell>
+  </row>
+</table>

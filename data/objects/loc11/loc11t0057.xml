@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0057" article="제121조(ＴＳ等を用いる地形、地物等の測定)" rows="4" cols="5" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">地図情報レベル</cell>
+    <cell col="1" row="0" header="1">機 器</cell>
+    <cell col="2" row="0" header="1">水平角観 測対回数</cell>
+    <cell col="3" row="0" header="1">距 離 測定回数</cell>
+    <cell col="4" row="0" header="1">測定距離の 許容範囲</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">500 以下</cell>
+    <cell col="1" row="1">２級トータルステーション ３級トータルステーション</cell>
+    <cell col="2" row="1">0.5 0.5</cell>
+    <cell col="3" row="1">１ １</cell>
+    <cell col="4" row="1">150ｍ 100ｍ</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">1000 以上</cell>
+    <cell col="1" row="2">２級トータルステーション ３級トータルステーション</cell>
+    <cell col="2" row="2">0.5 0.5</cell>
+    <cell col="3" row="2">１ １</cell>
+    <cell col="4" row="2">200ｍ 150ｍ</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">備 考</cell>
+    <cell col="1" row="3">ノンプリズム測距機能を有し、ノンプリズムによる公称測定精度が２級短距離型測 距儀の性能を有する場合は、反射鏡を使用しないで測定することができる。</cell>
+    <cell col="2" row="3"></cell>
+    <cell col="3" row="3"></cell>
+    <cell col="4" row="3"></cell>
+  </row>
+</table>

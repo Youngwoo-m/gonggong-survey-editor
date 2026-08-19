@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지5의2" gubun="별지" no="5의2" title="용역완성검사조서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=108259833">
+  <text>(별지 제5호 2서식)
+용역완성검사조서
+1. 용  역  명 :
+2. 계 약 금 액 :
+3. 계약상대자 :
+4. 계약년월일 :
+5. 용역시행기간 :
+6. 첨 부 서 류 : 성과품검사 인정내역, 완성부분액 인정내역
+위 용역에 대한 완성검사의 명을 받아    년   월   일부터     년        월   일까지 검사한 결과, 설계도서 및 기타 약정대로 어김없이 완성되었음을 인정함.
+년       월       일
+검  사  관 :                      (인)
+보조검사관 :                      (인)
+국토지리정보원 재무관 귀하
+용역완성내역서</text>
+  <table rows="7" cols="12">
+    <row>
+      <cell col="0" row="0" colspan="2">용 역 명</cell>
+      <cell col="2" row="0" colspan="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="2">계약금액</cell>
+      <cell col="2" row="1" colspan="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">용역시행기간</cell>
+      <cell col="2" row="2" colspan="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">완성부분금액</cell>
+      <cell col="2" row="3" colspan="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4" rowspan="2">용역
+내역</cell>
+      <cell col="1" row="4" rowspan="2">단위</cell>
+      <cell col="2" row="4" colspan="3">도 급 액</cell>
+      <cell col="5" row="4" colspan="3">완성부분액</cell>
+      <cell col="8" row="4" colspan="3">전회까지의 기성액</cell>
+      <cell col="11" row="4" rowspan="2">비고</cell>
+    </row>
+    <row>
+      <cell col="2" row="5">수량</cell>
+      <cell col="3" row="5">단가</cell>
+      <cell col="4" row="5">금액</cell>
+      <cell col="5" row="5">수량</cell>
+      <cell col="6" row="5">금액</cell>
+      <cell col="7" row="5">비율</cell>
+      <cell col="8" row="5">수량</cell>
+      <cell col="9" row="5">금액</cell>
+      <cell col="10" row="5">비율</cell>
+    </row>
+    <row>
+      <cell col="0" row="6"></cell>
+      <cell col="1" row="6"></cell>
+      <cell col="2" row="6"></cell>
+      <cell col="3" row="6"></cell>
+      <cell col="4" row="6"></cell>
+      <cell col="5" row="6"></cell>
+      <cell col="6" row="6"></cell>
+      <cell col="7" row="6"></cell>
+      <cell col="8" row="6"></cell>
+      <cell col="9" row="6"></cell>
+      <cell col="10" row="6"></cell>
+      <cell col="11" row="6"></cell>
+    </row>
+  </table>
+  <text>용역성과품 검사인정내역서</text>
+  <table rows="2" cols="5">
+    <row>
+      <cell col="0" row="0">품 명</cell>
+      <cell col="1" row="0">단위</cell>
+      <cell col="2" row="0">수량</cell>
+      <cell col="3" row="0">세부내역</cell>
+      <cell col="4" row="0">비 고</cell>
+    </row>
+    <row>
+      <cell col="0" row="1"></cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1"></cell>
+      <cell col="4" row="1"></cell>
+    </row>
+  </table>
+</annex>

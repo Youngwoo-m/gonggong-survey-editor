@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0049" article="제102조(水準点の復旧測量)" rows="3" cols="4" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">区分 項目</cell>
+    <cell col="1" row="0" header="1">１級水準点</cell>
+    <cell col="2" row="0" header="1">２級水準点</cell>
+    <cell col="3" row="0" header="1">３～４級水準点</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">標高の較差</cell>
+    <cell col="1" row="1">３mm</cell>
+    <cell col="2" row="1">３mm</cell>
+    <cell col="3" row="1">10mm</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">読 定 単 位</cell>
+    <cell col="1" row="2">１mm</cell>
+    <cell col="2" row="2">１mm</cell>
+    <cell col="3" row="2">１mm</cell>
+  </row>
+</table>

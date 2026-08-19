@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0005" article="제35조(機器)" rows="4" cols="3" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">機 器</cell>
+    <cell col="1" row="0" header="1">性 能</cell>
+    <cell col="2" row="0" header="1">摘 要</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">１級トータルステーション</cell>
+    <cell col="1" row="1"></cell>
+    <cell col="2" row="1">１～４級基準点測量</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">２級トータルステーション</cell>
+    <cell col="1" row="2"></cell>
+    <cell col="2" row="2">２～４級基準点測量</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">３級トータルステーション</cell>
+    <cell col="1" row="3"></cell>
+    <cell col="2" row="3">４ 級 基 準 点 測 量</cell>
+  </row>
+</table>

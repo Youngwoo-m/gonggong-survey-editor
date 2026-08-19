@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<equation id="151296017" article="제209조" font="HYhwpEQ" source="공공측량 작업규정.2025.04.23_수식수정.오류표시.hwpx">
+  <script>ø _{m} `=` {p _{1} ø _{1} `+`p _{2} ø _{2`} `+` BULLET  BULLET  BULLET  +p _{N} ø _{N}} over {p _{1} +p _{2} + BULLET  BULLET  BULLET  +p _{N}}</script>
+  <readable>ø _m = p _1 ø _1 + p _2 ø _2 + BULLET BULLET BULLET +p _N ø _N / p _1 +p _2 + BULLET BULLET BULLET +p _N</readable>
+  <latex>ø _{m} = {p _{1} ø _{1} + p _{2} ø _{2 } + BULLET BULLET BULLET +p _{N} ø \frac{_{N}}}{{p} _{1} +p _{2} + BULLET BULLET BULLET +p _{N}}</latex>
+</equation>

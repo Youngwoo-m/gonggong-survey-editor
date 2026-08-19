@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표10" gubun="별표" no="10" title="실내공간정보 품질기준 및 품질검사표" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=111000083">
+  <text>[별표 10] 실내공간정보 품질기준 및 품질검사표
+ㅇ 실내공간정보 품질기준</text>
+  <table rows="21" cols="8">
+    <row>
+      <cell col="0" row="0">구분</cell>
+      <cell col="1" row="0">품질검사
+항목</cell>
+      <cell col="2" row="0">품질기준</cell>
+      <cell col="3" row="0">품질검사
+방법</cell>
+      <cell col="4" row="0">검사
+대상</cell>
+      <cell col="5" row="0">검사방법</cell>
+      <cell col="6" row="0">적정성
+기준</cell>
+      <cell col="7" row="0">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="6">완전성</cell>
+      <cell col="1" row="1">부재객체
+비율</cell>
+      <cell col="2" row="1">사업수행계획서 또는
+별표2 참조</cell>
+      <cell col="3" row="1">표본(20%)검사</cell>
+      <cell col="4" row="1">최종LOD데이터</cell>
+      <cell col="5" row="1">현장조사 부재객체 확인
+부재객체수비율(부재객체수/전체객체수)</cell>
+      <cell col="6" row="1">규정이내
+(1％이하)</cell>
+      <cell col="7" row="1"></cell>
+    </row>
+    <row>
+      <cell col="1" row="2">누락객체
+비율</cell>
+      <cell col="2" row="2">사업수행계획서 또는
+별표2 참조</cell>
+      <cell col="3" row="2">표본(20%)검사</cell>
+      <cell col="4" row="2">최종LOD데이터</cell>
+      <cell col="5" row="2">현장조사 누락된 객체 확인
+누락객체수비율(누락객체수/전체객체수)</cell>
+      <cell col="6" row="2">규정이내
+(1％이하)</cell>
+      <cell col="7" row="2"></cell>
+    </row>
+    <row>
+      <cell col="1" row="3">중복객체
+비율</cell>
+      <cell col="2" row="3">사업수행계획서 또는
+별표2 참조</cell>
+      <cell col="3" row="3">표본(20%)검사</cell>
+      <cell col="4" row="3">최종LOD데이터</cell>
+      <cell col="5" row="3">현장조사 중복된 객체 확인
+중복객체수비율(중복객체수/전체객체수)</cell>
+      <cell col="6" row="3">규정이내
+(1％이하)</cell>
+      <cell col="7" row="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="4">데이터스키마
+무결성</cell>
+      <cell col="2" row="4">별표12 참조</cell>
+      <cell col="3" row="4">실내(전수)검수</cell>
+      <cell col="4" row="4">최종LOD데이터</cell>
+      <cell col="5" row="4">CityGML2.0스키마 준수 여부
+XML 문법 검사기 검사</cell>
+      <cell col="6" row="4">규정이내
+(1％이하)</cell>
+      <cell col="7" row="4"></cell>
+    </row>
+    <row>
+      <cell col="1" row="5">ID무결성</cell>
+      <cell col="2" row="5">별표5, 별표6 참조</cell>
+      <cell col="3" row="5">실내(전수)검수</cell>
+      <cell col="4" row="5">최종LOD데이터</cell>
+      <cell col="5" row="5">객체 ID 중복/누락 검사</cell>
+      <cell col="6" row="5">규정이내
+(1％이하)</cell>
+      <cell col="7" row="5"></cell>
+    </row>
+    <row>
+      <cell col="1" row="6">분류코드
+무결성</cell>
+      <cell col="2" row="6">별표5, 별표6 참조</cell>
+      <cell col="3" row="6">실내(전수)검수</cell>
+      <cell col="4" row="6">최종LOD데이터</cell>
+      <cell col="5" row="6">분류코드 입력 오류/누락 확인</cell>
+      <cell col="6" row="6">규정이내
+(1％이하)</cell>
+      <cell col="7" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7" rowspan="5">논리
+일관성</cell>
+      <cell col="1" row="7">단위공간
+정의 일관성</cell>
+      <cell col="2" row="7">별표3 참조</cell>
+      <cell col="3" row="7">표본(20%)검사</cell>
+      <cell col="4" row="7">최종LOD데이터</cell>
+      <cell col="5" row="7">단위공간 구분의 적정성 확인</cell>
+      <cell col="6" row="7">규정이내
+(90％이상)</cell>
+      <cell col="7" row="7"></cell>
+    </row>
+    <row>
+      <cell col="1" row="8">기하요소
+정의 일관성</cell>
+      <cell col="2" row="8">별표3 참조</cell>
+      <cell col="3" row="8">표본(20%)검사</cell>
+      <cell col="4" row="8">최종LOD데이터</cell>
+      <cell col="5" row="8">기하요소 유형, 폐합, 겹칩, 중복, 방향성의 적정성 확인</cell>
+      <cell col="6" row="8">규정이내
+(90％이상)</cell>
+      <cell col="7" row="8"></cell>
+    </row>
+    <row>
+      <cell col="1" row="9">경계면 표현 일관성</cell>
+      <cell col="2" row="9">별표3 참조</cell>
+      <cell col="3" row="9">표본(20%)검사</cell>
+      <cell col="4" row="9">최종LOD데이터</cell>
+      <cell col="5" row="9">가상면의 기하요소 양쪽면 정의 및 벽면 개폐정의 적정성 확인</cell>
+      <cell col="6" row="9">규정이내
+(90％이상)</cell>
+      <cell col="7" row="9"></cell>
+    </row>
+    <row>
+      <cell col="1" row="10">세밀도
+일관성</cell>
+      <cell col="2" row="10">별표1, 별표7 참조</cell>
+      <cell col="3" row="10">표본(20%)검사</cell>
+      <cell col="4" row="10">최종LOD데이터</cell>
+      <cell col="5" row="10">세밀도 정의에 따른 구축 여부 확인</cell>
+      <cell col="6" row="10">규정이내
+(90％이상)</cell>
+      <cell col="7" row="10"></cell>
+    </row>
+    <row>
+      <cell col="1" row="11">가시화
+일관성</cell>
+      <cell col="2" row="11">별표1, 별표7 참조</cell>
+      <cell col="3" row="11">표본(20%)검사</cell>
+      <cell col="4" row="11">최종LOD데이터</cell>
+      <cell col="5" row="11">가시화정보가 세밀도 규정에 맞게 제작되었는지 확인</cell>
+      <cell col="6" row="11">규정이내
+(90％이상)</cell>
+      <cell col="7" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12" rowspan="4">위치
+정확성</cell>
+      <cell col="1" row="12">기준좌표계
+정확성</cell>
+      <cell col="2" row="12">과업지시서</cell>
+      <cell col="3" row="12">표본(20%)검사</cell>
+      <cell col="4" row="12">기준
+좌표계</cell>
+      <cell col="5" row="12">기준좌표계 입력 정확성</cell>
+      <cell col="6" row="12">규정이내
+(90％이상)</cell>
+      <cell col="7" row="12"></cell>
+    </row>
+    <row>
+      <cell col="1" row="13">위치정보 정확성</cell>
+      <cell col="2" row="13">별표11 참조</cell>
+      <cell col="3" row="13">표본(20%)검사</cell>
+      <cell col="4" row="13">최종LOD데이터</cell>
+      <cell col="5" row="13">제작된 자료의 위치정확성 확인</cell>
+      <cell col="6" row="13">규정이내
+(90％이상)</cell>
+      <cell col="7" row="13"></cell>
+    </row>
+    <row>
+      <cell col="1" row="14">경계인접</cell>
+      <cell col="2" row="14">별표2 참조</cell>
+      <cell col="3" row="14">표본(20%)검사</cell>
+      <cell col="4" row="14">최종LOD데이터</cell>
+      <cell col="5" row="14">제작된 자료의 경계 인접부 정확성 확인</cell>
+      <cell col="6" row="14">규정이내
+(90％이상)</cell>
+      <cell col="7" row="14"></cell>
+    </row>
+    <row>
+      <cell col="1" row="15">가시화정보 정합</cell>
+      <cell col="2" row="15">별표2, 별표5 참조</cell>
+      <cell col="3" row="15">표본(20%)검사</cell>
+      <cell col="4" row="15">최종LOD데이터</cell>
+      <cell col="5" row="15">가시화정보 정합여부 확인</cell>
+      <cell col="6" row="15">규정이내
+(90％이상)</cell>
+      <cell col="7" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16" rowspan="3">주제 정확성</cell>
+      <cell col="1" row="16">항목 분류 정확성</cell>
+      <cell col="2" row="16">별표2, 별표5, 별표6 참조</cell>
+      <cell col="3" row="16">표본(20%)검사</cell>
+      <cell col="4" row="16">최종LOD데이터</cell>
+      <cell col="5" row="16">속성데이터 항목의 분류 정확성 확인</cell>
+      <cell col="6" row="16">규정이내
+(90％이상)</cell>
+      <cell col="7" row="16"></cell>
+    </row>
+    <row>
+      <cell col="1" row="17">속성내용 불일치</cell>
+      <cell col="2" row="17">별표2, 별표5, 별표6 참조</cell>
+      <cell col="3" row="17">표본(20%)검사</cell>
+      <cell col="4" row="17">최종LOD데이터</cell>
+      <cell col="5" row="17">객체의 속성내용 불일치 확인</cell>
+      <cell col="6" row="17">규정이내
+(90％이상)</cell>
+      <cell col="7" row="17"></cell>
+    </row>
+    <row>
+      <cell col="1" row="18">속성내용 누락</cell>
+      <cell col="2" row="18">별표2, 별표5, 별표6 참조</cell>
+      <cell col="3" row="18">표본(20%)검사</cell>
+      <cell col="4" row="18">최종LOD데이터</cell>
+      <cell col="5" row="18">객체의 속성내용 누락 확인</cell>
+      <cell col="6" row="18">규정이내
+(90％이상)</cell>
+      <cell col="7" row="18"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19">기타</cell>
+      <cell col="1" row="19">성과품 누락</cell>
+      <cell col="2" row="19">별표13 참조</cell>
+      <cell col="3" row="19">실내(전수)검수</cell>
+      <cell col="4" row="19">성과품</cell>
+      <cell col="5" row="19">최종성과품들의 누락여부 확인</cell>
+      <cell col="6" row="19">적정성
+여부</cell>
+      <cell col="7" row="19"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20">표본
+추출</cell>
+      <cell col="1" row="20" colspan="7">표본추출은 무작위 추출(Random Collection)에 의함</cell>
+    </row>
+  </table>
+  <text>ㅇ 품질검사표
+품 질 검 사 표</text>
+  <table rows="27" cols="7">
+    <row>
+      <cell col="0" row="0">품질검사 항목</cell>
+      <cell col="1" row="0">품질검사
+대상</cell>
+      <cell col="2" row="0" colspan="2">기준이내</cell>
+      <cell col="4" row="0">완성도(%)</cell>
+      <cell col="5" row="0">품질
+적정성</cell>
+      <cell col="6" row="0">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">1. 완전성</cell>
+      <cell col="1" row="1" colspan="4"></cell>
+      <cell col="5" row="1"></cell>
+      <cell col="6" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2">가. 부재객체비율</cell>
+      <cell col="1" row="2">개</cell>
+      <cell col="2" row="2" colspan="2">개</cell>
+      <cell col="4" row="2"></cell>
+      <cell col="5" row="2">적, 부</cell>
+      <cell col="6" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">나. 누락객체비율</cell>
+      <cell col="1" row="3">개</cell>
+      <cell col="2" row="3" colspan="2">개</cell>
+      <cell col="4" row="3"></cell>
+      <cell col="5" row="3">적, 부</cell>
+      <cell col="6" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4">다. 중복객체비율</cell>
+      <cell col="1" row="4">개</cell>
+      <cell col="2" row="4" colspan="2">개</cell>
+      <cell col="4" row="4"></cell>
+      <cell col="5" row="4">적, 부</cell>
+      <cell col="6" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5">라. 데이터스키마무결성</cell>
+      <cell col="1" row="5">개</cell>
+      <cell col="2" row="5" colspan="2">개</cell>
+      <cell col="4" row="5"></cell>
+      <cell col="5" row="5">적, 부</cell>
+      <cell col="6" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">마. ID무결성</cell>
+      <cell col="1" row="6">개</cell>
+      <cell col="2" row="6" colspan="2">개</cell>
+      <cell col="4" row="6"></cell>
+      <cell col="5" row="6">적, 부</cell>
+      <cell col="6" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">바. 분류코드무결성</cell>
+      <cell col="1" row="7">개</cell>
+      <cell col="2" row="7" colspan="2">개</cell>
+      <cell col="4" row="7"></cell>
+      <cell col="5" row="7">적, 부</cell>
+      <cell col="6" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8">2. 논리일관성</cell>
+      <cell col="1" row="8" colspan="4"></cell>
+      <cell col="5" row="8"></cell>
+      <cell col="6" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">가. 단위공간정의 일관성</cell>
+      <cell col="1" row="9">개</cell>
+      <cell col="2" row="9" colspan="2">개</cell>
+      <cell col="4" row="9"></cell>
+      <cell col="5" row="9">적, 부</cell>
+      <cell col="6" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10">나. 기하요소정의 일관성</cell>
+      <cell col="1" row="10">개</cell>
+      <cell col="2" row="10" colspan="2">개</cell>
+      <cell col="4" row="10"></cell>
+      <cell col="5" row="10">적, 부</cell>
+      <cell col="6" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11">다. 경계면 표현 일관성</cell>
+      <cell col="1" row="11">개</cell>
+      <cell col="2" row="11" colspan="2">개</cell>
+      <cell col="4" row="11"></cell>
+      <cell col="5" row="11">적, 부</cell>
+      <cell col="6" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12">라. 세밀도일관성</cell>
+      <cell col="1" row="12">개</cell>
+      <cell col="2" row="12" colspan="2">개</cell>
+      <cell col="4" row="12"></cell>
+      <cell col="5" row="12">적, 부</cell>
+      <cell col="6" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13">마. 가시화일관성</cell>
+      <cell col="1" row="13">개</cell>
+      <cell col="2" row="13" colspan="2">개</cell>
+      <cell col="4" row="13"></cell>
+      <cell col="5" row="13">적, 부</cell>
+      <cell col="6" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14">3. 위치정확성</cell>
+      <cell col="1" row="14" colspan="4"></cell>
+      <cell col="5" row="14"></cell>
+      <cell col="6" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15">가. 기준좌표계정확성</cell>
+      <cell col="1" row="15">개</cell>
+      <cell col="2" row="15" colspan="2">개</cell>
+      <cell col="4" row="15"></cell>
+      <cell col="5" row="15">적, 부</cell>
+      <cell col="6" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16">나. 위치정보 정확성</cell>
+      <cell col="1" row="16">개</cell>
+      <cell col="2" row="16" colspan="2">개</cell>
+      <cell col="4" row="16"></cell>
+      <cell col="5" row="16">적, 부</cell>
+      <cell col="6" row="16"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17">다. 경계인접</cell>
+      <cell col="1" row="17">개</cell>
+      <cell col="2" row="17" colspan="2">개</cell>
+      <cell col="4" row="17"></cell>
+      <cell col="5" row="17">적, 부</cell>
+      <cell col="6" row="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18">라. 가시화정보 정합</cell>
+      <cell col="1" row="18">개</cell>
+      <cell col="2" row="18" colspan="2">개</cell>
+      <cell col="4" row="18"></cell>
+      <cell col="5" row="18">적, 부</cell>
+      <cell col="6" row="18"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19">4. 주제정확성</cell>
+      <cell col="1" row="19" colspan="4"></cell>
+      <cell col="5" row="19"></cell>
+      <cell col="6" row="19"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20">가. 항목 분류 정확성</cell>
+      <cell col="1" row="20">개</cell>
+      <cell col="2" row="20" colspan="2">개</cell>
+      <cell col="4" row="20"></cell>
+      <cell col="5" row="20">적, 부</cell>
+      <cell col="6" row="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21">나. 속성내용 불일치</cell>
+      <cell col="1" row="21">개</cell>
+      <cell col="2" row="21" colspan="2">개</cell>
+      <cell col="4" row="21"></cell>
+      <cell col="5" row="21">적, 부</cell>
+      <cell col="6" row="21"></cell>
+    </row>
+    <row>
+      <cell col="0" row="22">다. 속성내용 누락</cell>
+      <cell col="1" row="22">개</cell>
+      <cell col="2" row="22" colspan="2">개</cell>
+      <cell col="4" row="22"></cell>
+      <cell col="5" row="22">적, 부</cell>
+      <cell col="6" row="22"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23">5. 기타</cell>
+      <cell col="1" row="23" colspan="4"></cell>
+      <cell col="5" row="23"></cell>
+      <cell col="6" row="23"></cell>
+    </row>
+    <row>
+      <cell col="0" row="24">가. 성과품 누락</cell>
+      <cell col="1" row="24" colspan="4"></cell>
+      <cell col="5" row="24">적정성 여부</cell>
+      <cell col="6" row="24"></cell>
+    </row>
+    <row>
+      <cell col="0" row="25">품질적정성</cell>
+      <cell col="1" row="25" colspan="2">소속</cell>
+      <cell col="3" row="25" colspan="2">직책</cell>
+      <cell col="5" row="25">성명</cell>
+      <cell col="6" row="25">서명</cell>
+    </row>
+    <row>
+      <cell col="0" row="26"></cell>
+      <cell col="1" row="26" colspan="2"></cell>
+      <cell col="3" row="26" colspan="2"></cell>
+      <cell col="5" row="26"></cell>
+      <cell col="6" row="26"></cell>
+    </row>
+  </table>
+</annex>

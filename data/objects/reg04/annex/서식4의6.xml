@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식4의6" gubun="서식" no="4의6" title="측량용역 수행실적 확인서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454347">
+  <table rows="1" cols="2">
+    <row>
+      <cell col="0" row="0">ㅇㅇㅇㅇ 협 회 장</cell>
+      <cell col="1" row="0">인</cell>
+    </row>
+  </table>
+  <table rows="17" cols="9">
+    <row>
+      <cell col="0" row="0" colspan="9">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별지 제4호의6서식] &lt;개정 2017. 1. 31.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="9">측량용역 수행실적 확인서</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">상호(명 칭)</cell>
+      <cell col="2" row="2" colspan="2"></cell>
+      <cell col="4" row="2" colspan="3">사업자등록번호</cell>
+      <cell col="7" row="2" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">성명(대표자)</cell>
+      <cell col="2" row="3" colspan="2"></cell>
+      <cell col="4" row="3" colspan="3">생년월일</cell>
+      <cell col="7" row="3" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="2">소  재  지</cell>
+      <cell col="2" row="4" colspan="7">(전화번호:                   )</cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="2">측량업 등록업종
+(측량업 등록번호)
+※보유업종 전체기재</cell>
+      <cell col="2" row="5" colspan="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6" colspan="9">측량용역 수행실적 명세
+    (단위: 백만원)</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">일련번호</cell>
+      <cell col="1" row="7" colspan="2">용역명</cell>
+      <cell col="3" row="7" colspan="2">계약기간</cell>
+      <cell col="5" row="7">실적금액</cell>
+      <cell col="6" row="7" colspan="2">발주처</cell>
+      <cell col="8" row="7">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="8"></cell>
+      <cell col="1" row="8" colspan="2"></cell>
+      <cell col="3" row="8" colspan="2"></cell>
+      <cell col="5" row="8"></cell>
+      <cell col="6" row="8" colspan="2"></cell>
+      <cell col="8" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9"></cell>
+      <cell col="1" row="9" colspan="2"></cell>
+      <cell col="3" row="9" colspan="2"></cell>
+      <cell col="5" row="9"></cell>
+      <cell col="6" row="9" colspan="2"></cell>
+      <cell col="8" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10"></cell>
+      <cell col="1" row="10" colspan="2"></cell>
+      <cell col="3" row="10" colspan="2"></cell>
+      <cell col="5" row="10"></cell>
+      <cell col="6" row="10" colspan="2"></cell>
+      <cell col="8" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11"></cell>
+      <cell col="1" row="11" colspan="2"></cell>
+      <cell col="3" row="11" colspan="2"></cell>
+      <cell col="5" row="11"></cell>
+      <cell col="6" row="11" colspan="2"></cell>
+      <cell col="8" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12"></cell>
+      <cell col="1" row="12" colspan="2"></cell>
+      <cell col="3" row="12" colspan="2"></cell>
+      <cell col="5" row="12"></cell>
+      <cell col="6" row="12" colspan="2"></cell>
+      <cell col="8" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13"></cell>
+      <cell col="1" row="13" colspan="2"></cell>
+      <cell col="3" row="13" colspan="2"></cell>
+      <cell col="5" row="13"></cell>
+      <cell col="6" row="13" colspan="2"></cell>
+      <cell col="8" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14"></cell>
+      <cell col="1" row="14" colspan="2"></cell>
+      <cell col="3" row="14" colspan="2"></cell>
+      <cell col="5" row="14"></cell>
+      <cell col="6" row="14" colspan="2"></cell>
+      <cell col="8" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="9">「공간정보의 구축 및 관리 등에 관한 법률 시행규칙」 제6조의4제2항에 따라 측량용역 수행실적을 위와 같이 확인합니다.
+ 년    월    일</cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="9">210㎜×297㎜[백상지(80g/㎡) 또는 중질지(80g/㎡)]</cell>
+    </row>
+  </table>
+</annex>

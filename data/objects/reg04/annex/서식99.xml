@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식99" gubun="서식" no="99" title="업무위탁 청약서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162455109">
+  <table rows="14" cols="8">
+    <row>
+      <cell col="0" row="0" colspan="6">[별지 제99호서식] &lt;개정 2015.6.4.&gt;</cell>
+      <cell col="6" row="0" colspan="2">(앞쪽)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="7" rowspan="2">업무위탁 청약서</cell>
+      <cell col="7" row="1">처리기간</cell>
+    </row>
+    <row>
+      <cell col="7" row="2">10일</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" rowspan="2">신청인</cell>
+      <cell col="1" row="3">성명</cell>
+      <cell col="2" row="3" colspan="2"></cell>
+      <cell col="4" row="3">생년월일</cell>
+      <cell col="5" row="3" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="4">주소</cell>
+      <cell col="2" row="4" colspan="6">(전화번호 :              )</cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="2">사 업 명</cell>
+      <cell col="2" row="5" colspan="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6" colspan="2">목    적</cell>
+      <cell col="2" row="6" colspan="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="2">지역 및 범위</cell>
+      <cell col="2" row="7" colspan="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="2">방법 및 정밀도</cell>
+      <cell col="2" row="8" colspan="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="2">도면의 축척</cell>
+      <cell col="2" row="9" colspan="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="2">작업기간</cell>
+      <cell col="2" row="10" colspan="6">.      .      . 부터
+      .      .      . 까지</cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="8">「공간정보의 구축 및 관리 등에 관한 법률」 제104조 및 같은 법 시행규칙 제112조제1항에 따라 업무위탁을 청약합니다.
+                                              년   월   일
+                                            신청인          (서명 또는 인)
+                   귀하</cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="8">※ 구비서류
+  1. 사업계획서 2부
+  2. 사업지역 도면 2부</cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="3"></cell>
+      <cell col="3" row="13" colspan="5">210㎜×297㎜(일반용지 60g/㎡)</cell>
+    </row>
+  </table>
+  <table rows="25" cols="21">
+    <row>
+      <cell col="0" row="0" colspan="10">이 신청은 아래와 같이 처리됩니다.</cell>
+      <cell col="10" row="0" colspan="11">(뒤쪽)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="4" rowspan="2">신청인</cell>
+      <cell col="4" row="1" colspan="17">처리기관</cell>
+    </row>
+    <row>
+      <cell col="4" row="2" colspan="17">관할기관 담당부서</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="4"></cell>
+      <cell col="4" row="3" colspan="6"></cell>
+      <cell col="10" row="3" colspan="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4"></cell>
+      <cell col="1" row="4" colspan="2" rowspan="2">신청서 제출</cell>
+      <cell col="3" row="4"></cell>
+      <cell col="4" row="4" colspan="2"></cell>
+      <cell col="6" row="4" rowspan="2">▶</cell>
+      <cell col="7" row="4" colspan="2" rowspan="2">접수</cell>
+      <cell col="9" row="4"></cell>
+      <cell col="10" row="4" colspan="2"></cell>
+      <cell col="12" row="4" colspan="2" rowspan="2">▶</cell>
+      <cell col="14" row="4" colspan="5" rowspan="2">민원서류 처리부 등재</cell>
+      <cell col="19" row="4" colspan="2" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5"></cell>
+      <cell col="3" row="5"></cell>
+      <cell col="4" row="5" colspan="2"></cell>
+      <cell col="9" row="5"></cell>
+      <cell col="10" row="5" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6"></cell>
+      <cell col="1" row="6" colspan="2"></cell>
+      <cell col="3" row="6"></cell>
+      <cell col="4" row="6" colspan="4" rowspan="12"></cell>
+      <cell col="8" row="6" colspan="2" rowspan="14"></cell>
+      <cell col="10" row="6" colspan="4" rowspan="2"></cell>
+      <cell col="14" row="6" colspan="3"></cell>
+      <cell col="17" row="6" colspan="2"></cell>
+      <cell col="19" row="6" colspan="2" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="2" rowspan="12"></cell>
+      <cell col="2" row="7" colspan="2" rowspan="12"></cell>
+      <cell col="14" row="7" colspan="5">▼</cell>
+    </row>
+    <row>
+      <cell col="10" row="8" colspan="4"></cell>
+      <cell col="14" row="8" colspan="5">검토</cell>
+      <cell col="19" row="8" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="10" row="9" colspan="3"></cell>
+      <cell col="13" row="9" colspan="4"></cell>
+      <cell col="17" row="9" colspan="2"></cell>
+      <cell col="19" row="9" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="10" row="10"></cell>
+      <cell col="11" row="10" colspan="2"></cell>
+      <cell col="13" row="10" colspan="2"></cell>
+      <cell col="15" row="10" colspan="6"></cell>
+    </row>
+    <row>
+      <cell col="10" row="11"></cell>
+      <cell col="11" row="11" colspan="4">▼</cell>
+      <cell col="15" row="11" colspan="6"></cell>
+    </row>
+    <row>
+      <cell col="10" row="12"></cell>
+      <cell col="11" row="12" colspan="4" rowspan="2">기안ㆍ
+결재</cell>
+      <cell col="15" row="12" rowspan="2">◀</cell>
+      <cell col="16" row="12" colspan="2"></cell>
+      <cell col="18" row="12" colspan="2" rowspan="2">원장</cell>
+      <cell col="20" row="12"></cell>
+    </row>
+    <row>
+      <cell col="10" row="13"></cell>
+      <cell col="16" row="13" colspan="2"></cell>
+      <cell col="20" row="13"></cell>
+    </row>
+    <row>
+      <cell col="10" row="14"></cell>
+      <cell col="11" row="14" colspan="2"></cell>
+      <cell col="13" row="14" colspan="2"></cell>
+      <cell col="15" row="14" colspan="6"></cell>
+    </row>
+    <row>
+      <cell col="10" row="15" colspan="3"></cell>
+      <cell col="13" row="15" colspan="4"></cell>
+      <cell col="17" row="15" colspan="2"></cell>
+      <cell col="19" row="15" colspan="2" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="10" row="16" colspan="4"></cell>
+      <cell col="14" row="16" colspan="5">▼</cell>
+    </row>
+    <row>
+      <cell col="10" row="17" colspan="4" rowspan="3"></cell>
+      <cell col="14" row="17" colspan="5" rowspan="6">업무위탁</cell>
+      <cell col="19" row="17" colspan="2" rowspan="6"></cell>
+    </row>
+    <row>
+      <cell col="4" row="18" rowspan="6">◀</cell>
+      <cell col="5" row="18" colspan="3" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19" colspan="2" rowspan="2"></cell>
+      <cell col="2" row="19" colspan="2" rowspan="3">통지</cell>
+    </row>
+    <row>
+      <cell col="5" row="20" colspan="3" rowspan="2"></cell>
+      <cell col="8" row="20" colspan="2" rowspan="5"></cell>
+      <cell col="10" row="20" colspan="4" rowspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21" colspan="2" rowspan="4"></cell>
+    </row>
+    <row>
+      <cell col="2" row="22" colspan="2" rowspan="3"></cell>
+      <cell col="5" row="22" colspan="3" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="10" row="23" colspan="11" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="4" row="24" colspan="4"></cell>
+    </row>
+  </table>
+</annex>

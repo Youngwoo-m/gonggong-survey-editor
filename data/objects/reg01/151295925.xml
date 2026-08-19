@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="151295925" article="제102조" rows="4" cols="3" source="공공측량 작업규정.2025.04.23_수식수정.오류표시.hwpx">
+  <row>
+    <cell col="0" row="0">구분</cell>
+    <cell col="1" row="0">방법</cell>
+    <cell col="2" row="0">교차의 허용범위</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">수평각관측</cell>
+    <cell col="1" row="1">1대회</cell>
+    <cell col="2" row="1">40″</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">연직각관측</cell>
+    <cell col="1" row="2">0.5대회</cell>
+    <cell col="2" row="2">·</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">거리측정</cell>
+    <cell col="1" row="3">2회 측정</cell>
+    <cell col="2" row="3">5mm</cell>
+  </row>
+</table>

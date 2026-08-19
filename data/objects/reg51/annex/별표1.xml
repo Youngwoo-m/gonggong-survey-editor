@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표1" gubun="별표" no="1" title="도엽코드 및 도곽의 크기(제5조제2항 관련)" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=166645037">
+  <table rows="82" cols="56">
+    <row>
+      <cell col="0" row="0" colspan="56">[별표] &lt;개정 2010.10.28&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="56">도엽코드 및 도곽의 크기(제5조제2항 관련)</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">축척</cell>
+      <cell col="1" row="2" colspan="51">색인도</cell>
+      <cell col="52" row="2" colspan="4">도엽코드 및 도곽의 크기</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" rowspan="7">1/50,000</cell>
+      <cell col="1" row="3" colspan="3"></cell>
+      <cell col="4" row="3" colspan="7"></cell>
+      <cell col="11" row="3" colspan="16"></cell>
+      <cell col="27" row="3" colspan="12"></cell>
+      <cell col="39" row="3" colspan="9"></cell>
+      <cell col="48" row="3" colspan="4"></cell>
+      <cell col="52" row="3" colspan="4" rowspan="7">-도엽코드: 경위도를 1° 간격으로 분할한 지역에 대하여 다시 15′씩 16등분하여 하단 위도 두 자리 숫자와 좌측경도의 끝자리 숫자를 합성한 뒤 해당 코드를 추가하여 구성한다.
+-도곽의 크기: 15′×15′</cell>
+    </row>
+    <row>
+      <cell col="1" row="4" colspan="3">37°</cell>
+      <cell col="4" row="4" colspan="7">01</cell>
+      <cell col="11" row="4" colspan="16">02</cell>
+      <cell col="27" row="4" colspan="12">03</cell>
+      <cell col="39" row="4" colspan="9">04</cell>
+      <cell col="48" row="4" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="1" row="5" colspan="3"></cell>
+      <cell col="4" row="5" colspan="7">05</cell>
+      <cell col="11" row="5" colspan="16">06</cell>
+      <cell col="27" row="5" colspan="12">07</cell>
+      <cell col="39" row="5" colspan="9">08</cell>
+      <cell col="48" row="5" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="1" row="6" colspan="3"></cell>
+      <cell col="4" row="6" colspan="7">09</cell>
+      <cell col="11" row="6" colspan="16">10</cell>
+      <cell col="27" row="6" colspan="12">11</cell>
+      <cell col="39" row="6" colspan="9">12</cell>
+      <cell col="48" row="6" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="1" row="7" colspan="3">36°</cell>
+      <cell col="4" row="7" colspan="7">13</cell>
+      <cell col="11" row="7" colspan="16">14</cell>
+      <cell col="27" row="7" colspan="12">15</cell>
+      <cell col="39" row="7" colspan="9">16</cell>
+      <cell col="48" row="7" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="1" row="8" colspan="3"></cell>
+      <cell col="4" row="8" colspan="7">127°</cell>
+      <cell col="11" row="8" colspan="16"></cell>
+      <cell col="27" row="8" colspan="12"></cell>
+      <cell col="39" row="8" colspan="9">128°</cell>
+      <cell col="48" row="8" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="1" row="9" colspan="3"></cell>
+      <cell col="4" row="9" colspan="7"></cell>
+      <cell col="11" row="9" colspan="16"></cell>
+      <cell col="27" row="9" colspan="12">36715</cell>
+      <cell col="39" row="9" colspan="9"></cell>
+      <cell col="48" row="9" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" rowspan="8">1/25,000</cell>
+      <cell col="1" row="10" colspan="3"></cell>
+      <cell col="4" row="10" colspan="12"></cell>
+      <cell col="16" row="10" colspan="10"></cell>
+      <cell col="26" row="10" colspan="11"></cell>
+      <cell col="37" row="10" colspan="11"></cell>
+      <cell col="48" row="10" colspan="4"></cell>
+      <cell col="52" row="10" colspan="4" rowspan="8">-도엽코드: 1/50,000 도엽을 4등분하여 1/50,000 도엽코드 끝에 한 자리 코드를 추가하여 구성한다.
+-도곽의 크기: 7′30&quot;×7′30&quot;</cell>
+    </row>
+    <row>
+      <cell col="1" row="11" colspan="3"></cell>
+      <cell col="4" row="11" colspan="12" rowspan="3">1</cell>
+      <cell col="16" row="11" colspan="10" rowspan="2"></cell>
+      <cell col="26" row="11" colspan="11" rowspan="2"></cell>
+      <cell col="37" row="11" colspan="11" rowspan="3">2</cell>
+      <cell col="48" row="11" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="1" row="12" colspan="3" rowspan="2"></cell>
+      <cell col="48" row="12" colspan="4" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="16" row="13" colspan="21" rowspan="2">36715</cell>
+    </row>
+    <row>
+      <cell col="1" row="14" colspan="3" rowspan="2"></cell>
+      <cell col="4" row="14" colspan="12" rowspan="3">3</cell>
+      <cell col="37" row="14" colspan="11" rowspan="3">4</cell>
+      <cell col="48" row="14" colspan="4" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="16" row="15" colspan="10" rowspan="2"></cell>
+      <cell col="26" row="15" colspan="11" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="1" row="16" colspan="3"></cell>
+      <cell col="48" row="16" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="1" row="17" colspan="3"></cell>
+      <cell col="4" row="17" colspan="12"></cell>
+      <cell col="16" row="17" colspan="10"></cell>
+      <cell col="26" row="17" colspan="22">367154</cell>
+      <cell col="48" row="17" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18" rowspan="12">1/10,000</cell>
+      <cell col="1" row="18" colspan="3"></cell>
+      <cell col="4" row="18" colspan="4"></cell>
+      <cell col="8" row="18" colspan="6"></cell>
+      <cell col="14" row="18" colspan="8"></cell>
+      <cell col="22" row="18" colspan="7"></cell>
+      <cell col="29" row="18" colspan="6"></cell>
+      <cell col="35" row="18" colspan="8"></cell>
+      <cell col="43" row="18" colspan="5"></cell>
+      <cell col="48" row="18" colspan="4"></cell>
+      <cell col="52" row="18" colspan="4" rowspan="12">-도엽코드: 1/50,000 도엽을 25등분하여 1/50,000 도엽코드 끝에 두 자리 코드를 추가하여 구성한다.
+-도곽의 크기: 3′×3′</cell>
+    </row>
+    <row>
+      <cell col="1" row="19" colspan="3"></cell>
+      <cell col="4" row="19" colspan="6" rowspan="2">01</cell>
+      <cell col="10" row="19" colspan="11" rowspan="2">02</cell>
+      <cell col="21" row="19" colspan="10" rowspan="2">03</cell>
+      <cell col="31" row="19" colspan="10" rowspan="2">04</cell>
+      <cell col="41" row="19" colspan="7" rowspan="2">05</cell>
+      <cell col="48" row="19" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="1" row="20" colspan="3" rowspan="2"></cell>
+      <cell col="48" row="20" colspan="4" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="4" row="21" colspan="6" rowspan="2">06</cell>
+      <cell col="10" row="21" colspan="11">07</cell>
+      <cell col="21" row="21" colspan="10">08</cell>
+      <cell col="31" row="21" colspan="10">09</cell>
+      <cell col="41" row="21" colspan="7" rowspan="2">10</cell>
+    </row>
+    <row>
+      <cell col="1" row="22" colspan="3" rowspan="2"></cell>
+      <cell col="10" row="22" colspan="8"></cell>
+      <cell col="18" row="22" colspan="14" rowspan="5">36715</cell>
+      <cell col="32" row="22" colspan="9"></cell>
+      <cell col="48" row="22" colspan="4" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="4" row="23" colspan="6" rowspan="3">11</cell>
+      <cell col="10" row="23" colspan="8" rowspan="3">12</cell>
+      <cell col="32" row="23" colspan="9" rowspan="3">14</cell>
+      <cell col="41" row="23" colspan="7" rowspan="3">15</cell>
+    </row>
+    <row>
+      <cell col="1" row="24" colspan="3"></cell>
+      <cell col="48" row="24" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="1" row="25" colspan="3" rowspan="2"></cell>
+      <cell col="48" row="25" colspan="4" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="4" row="26" colspan="6" rowspan="2">16</cell>
+      <cell col="10" row="26" colspan="8"></cell>
+      <cell col="32" row="26" colspan="9"></cell>
+      <cell col="41" row="26" colspan="7" rowspan="2">20</cell>
+    </row>
+    <row>
+      <cell col="1" row="27" colspan="3"></cell>
+      <cell col="10" row="27" colspan="11">17</cell>
+      <cell col="21" row="27" colspan="10">18</cell>
+      <cell col="31" row="27" colspan="10">19</cell>
+      <cell col="48" row="27" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="1" row="28" colspan="3"></cell>
+      <cell col="4" row="28" colspan="6">21</cell>
+      <cell col="10" row="28" colspan="11">22</cell>
+      <cell col="21" row="28" colspan="10">23</cell>
+      <cell col="31" row="28" colspan="10">24</cell>
+      <cell col="41" row="28" colspan="7">25</cell>
+      <cell col="48" row="28" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="1" row="29" colspan="3"></cell>
+      <cell col="4" row="29" colspan="4"></cell>
+      <cell col="8" row="29" colspan="6"></cell>
+      <cell col="14" row="29" colspan="21">3671523</cell>
+      <cell col="35" row="29" colspan="8"></cell>
+      <cell col="43" row="29" colspan="5"></cell>
+      <cell col="48" row="29" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="30" colspan="56"></cell>
+    </row>
+    <row>
+      <cell col="0" row="31">축척</cell>
+      <cell col="1" row="31" colspan="54">색인도</cell>
+      <cell col="55" row="31">도엽코드 및 도곽의 크기</cell>
+    </row>
+    <row>
+      <cell col="0" row="32" rowspan="14">1/5,000</cell>
+      <cell col="1" row="32" colspan="2"></cell>
+      <cell col="3" row="32" colspan="4"></cell>
+      <cell col="7" row="32" colspan="5"></cell>
+      <cell col="12" row="32" colspan="8"></cell>
+      <cell col="20" row="32" colspan="8"></cell>
+      <cell col="28" row="32" colspan="5"></cell>
+      <cell col="33" row="32" colspan="7"></cell>
+      <cell col="40" row="32" colspan="6"></cell>
+      <cell col="46" row="32" colspan="4"></cell>
+      <cell col="50" row="32" colspan="3"></cell>
+      <cell col="53" row="32"></cell>
+      <cell col="54" row="32"></cell>
+      <cell col="55" row="32" rowspan="14">-도엽코드: 1/50,000 도엽을 100등분하여 1/50,000 도엽코드 끝에 세 자리 코드를 추가하여 구성한다.
+-도곽의 크기: 1′30&quot;×1′30&quot;</cell>
+    </row>
+    <row>
+      <cell col="1" row="33" colspan="2"></cell>
+      <cell col="3" row="33" colspan="4">001</cell>
+      <cell col="7" row="33" colspan="5"></cell>
+      <cell col="12" row="33" colspan="8"></cell>
+      <cell col="20" row="33" colspan="8"></cell>
+      <cell col="28" row="33" colspan="5"></cell>
+      <cell col="33" row="33" colspan="7"></cell>
+      <cell col="40" row="33" colspan="6"></cell>
+      <cell col="46" row="33" colspan="4"></cell>
+      <cell col="50" row="33" colspan="3"></cell>
+      <cell col="53" row="33">010</cell>
+      <cell col="54" row="33"></cell>
+    </row>
+    <row>
+      <cell col="1" row="34" colspan="2"></cell>
+      <cell col="3" row="34" colspan="4"></cell>
+      <cell col="7" row="34" colspan="5"></cell>
+      <cell col="12" row="34" colspan="8"></cell>
+      <cell col="20" row="34" colspan="8"></cell>
+      <cell col="28" row="34" colspan="5"></cell>
+      <cell col="33" row="34" colspan="7"></cell>
+      <cell col="40" row="34" colspan="6"></cell>
+      <cell col="46" row="34" colspan="4"></cell>
+      <cell col="50" row="34" colspan="3"></cell>
+      <cell col="53" row="34"></cell>
+      <cell col="54" row="34"></cell>
+    </row>
+    <row>
+      <cell col="1" row="35" colspan="2"></cell>
+      <cell col="3" row="35" colspan="4"></cell>
+      <cell col="7" row="35" colspan="5"></cell>
+      <cell col="12" row="35" colspan="8"></cell>
+      <cell col="20" row="35" colspan="8"></cell>
+      <cell col="28" row="35" colspan="5"></cell>
+      <cell col="33" row="35" colspan="7"></cell>
+      <cell col="40" row="35" colspan="6"></cell>
+      <cell col="46" row="35" colspan="4"></cell>
+      <cell col="50" row="35" colspan="3"></cell>
+      <cell col="53" row="35"></cell>
+      <cell col="54" row="35"></cell>
+    </row>
+    <row>
+      <cell col="1" row="36" colspan="2"></cell>
+      <cell col="3" row="36" colspan="4"></cell>
+      <cell col="7" row="36" colspan="5"></cell>
+      <cell col="12" row="36" colspan="8"></cell>
+      <cell col="20" row="36" colspan="8"></cell>
+      <cell col="28" row="36" colspan="5"></cell>
+      <cell col="33" row="36" colspan="7"></cell>
+      <cell col="40" row="36" colspan="6"></cell>
+      <cell col="46" row="36" colspan="4"></cell>
+      <cell col="50" row="36" colspan="3"></cell>
+      <cell col="53" row="36"></cell>
+      <cell col="54" row="36"></cell>
+    </row>
+    <row>
+      <cell col="1" row="37" colspan="2" rowspan="2"></cell>
+      <cell col="3" row="37" colspan="4" rowspan="2"></cell>
+      <cell col="7" row="37" colspan="5" rowspan="2"></cell>
+      <cell col="12" row="37" colspan="8" rowspan="2"></cell>
+      <cell col="20" row="37" colspan="3"></cell>
+      <cell col="23" row="37" colspan="5"></cell>
+      <cell col="28" row="37" colspan="5"></cell>
+      <cell col="33" row="37" colspan="7"></cell>
+      <cell col="40" row="37" colspan="4"></cell>
+      <cell col="44" row="37" colspan="2"></cell>
+      <cell col="46" row="37" colspan="4" rowspan="2"></cell>
+      <cell col="50" row="37" colspan="3" rowspan="2"></cell>
+      <cell col="53" row="37" rowspan="2"></cell>
+      <cell col="54" row="37" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="20" row="38" colspan="3"></cell>
+      <cell col="23" row="38" colspan="21" rowspan="2">36715</cell>
+      <cell col="44" row="38" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="1" row="39" colspan="2" rowspan="2"></cell>
+      <cell col="3" row="39" colspan="4" rowspan="2"></cell>
+      <cell col="7" row="39" colspan="5" rowspan="2"></cell>
+      <cell col="12" row="39" colspan="8" rowspan="2"></cell>
+      <cell col="20" row="39" colspan="3"></cell>
+      <cell col="44" row="39" colspan="2"></cell>
+      <cell col="46" row="39" colspan="4" rowspan="2"></cell>
+      <cell col="50" row="39" colspan="3" rowspan="2"></cell>
+      <cell col="53" row="39" rowspan="2"></cell>
+      <cell col="54" row="39" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="20" row="40" colspan="3"></cell>
+      <cell col="23" row="40" colspan="5"></cell>
+      <cell col="28" row="40" colspan="5"></cell>
+      <cell col="33" row="40" colspan="7"></cell>
+      <cell col="40" row="40" colspan="4"></cell>
+      <cell col="44" row="40" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="1" row="41" colspan="2"></cell>
+      <cell col="3" row="41" colspan="4"></cell>
+      <cell col="7" row="41" colspan="5"></cell>
+      <cell col="12" row="41" colspan="8"></cell>
+      <cell col="20" row="41" colspan="8"></cell>
+      <cell col="28" row="41" colspan="5"></cell>
+      <cell col="33" row="41" colspan="7"></cell>
+      <cell col="40" row="41" colspan="6"></cell>
+      <cell col="46" row="41" colspan="4"></cell>
+      <cell col="50" row="41" colspan="3"></cell>
+      <cell col="53" row="41"></cell>
+      <cell col="54" row="41"></cell>
+    </row>
+    <row>
+      <cell col="1" row="42" colspan="2"></cell>
+      <cell col="3" row="42" colspan="4"></cell>
+      <cell col="7" row="42" colspan="5"></cell>
+      <cell col="12" row="42" colspan="8"></cell>
+      <cell col="20" row="42" colspan="8"></cell>
+      <cell col="28" row="42" colspan="5"></cell>
+      <cell col="33" row="42" colspan="7"></cell>
+      <cell col="40" row="42" colspan="6"></cell>
+      <cell col="46" row="42" colspan="4"></cell>
+      <cell col="50" row="42" colspan="3"></cell>
+      <cell col="53" row="42"></cell>
+      <cell col="54" row="42"></cell>
+    </row>
+    <row>
+      <cell col="1" row="43" colspan="2"></cell>
+      <cell col="3" row="43" colspan="4"></cell>
+      <cell col="7" row="43" colspan="5"></cell>
+      <cell col="12" row="43" colspan="8"></cell>
+      <cell col="20" row="43" colspan="8"></cell>
+      <cell col="28" row="43" colspan="5"></cell>
+      <cell col="33" row="43" colspan="7"></cell>
+      <cell col="40" row="43" colspan="6"></cell>
+      <cell col="46" row="43" colspan="4"></cell>
+      <cell col="50" row="43" colspan="3"></cell>
+      <cell col="53" row="43"></cell>
+      <cell col="54" row="43"></cell>
+    </row>
+    <row>
+      <cell col="1" row="44" colspan="2"></cell>
+      <cell col="3" row="44" colspan="4">091</cell>
+      <cell col="7" row="44" colspan="5"></cell>
+      <cell col="12" row="44" colspan="8"></cell>
+      <cell col="20" row="44" colspan="8"></cell>
+      <cell col="28" row="44" colspan="5"></cell>
+      <cell col="33" row="44" colspan="7"></cell>
+      <cell col="40" row="44" colspan="6"></cell>
+      <cell col="46" row="44" colspan="4">098</cell>
+      <cell col="50" row="44" colspan="3"></cell>
+      <cell col="53" row="44">100</cell>
+      <cell col="54" row="44"></cell>
+    </row>
+    <row>
+      <cell col="1" row="45" colspan="2"></cell>
+      <cell col="3" row="45" colspan="4"></cell>
+      <cell col="7" row="45" colspan="5"></cell>
+      <cell col="12" row="45" colspan="8"></cell>
+      <cell col="20" row="45" colspan="8"></cell>
+      <cell col="28" row="45" colspan="5"></cell>
+      <cell col="33" row="45" colspan="7"></cell>
+      <cell col="40" row="45" colspan="13">36715098</cell>
+      <cell col="53" row="45"></cell>
+      <cell col="54" row="45"></cell>
+    </row>
+    <row>
+      <cell col="0" row="46" rowspan="14">1/2,500</cell>
+      <cell col="1" row="46" colspan="2"></cell>
+      <cell col="3" row="46" colspan="4">A</cell>
+      <cell col="7" row="46" colspan="5">B</cell>
+      <cell col="12" row="46" colspan="8">C</cell>
+      <cell col="20" row="46" colspan="8">D</cell>
+      <cell col="28" row="46" colspan="5">E</cell>
+      <cell col="33" row="46" colspan="7">F</cell>
+      <cell col="40" row="46" colspan="6">G</cell>
+      <cell col="46" row="46" colspan="4">H</cell>
+      <cell col="50" row="46" colspan="3">I</cell>
+      <cell col="53" row="46">J</cell>
+      <cell col="54" row="46"></cell>
+      <cell col="55" row="46" rowspan="14">-도엽코드: 1/25,000 도엽을 100등분하여 1/25,000 도엽코드 끝에 두 자리 코드를 추가하여 구성한다.
+-도곽의 크기: 45&quot;×45&quot;</cell>
+    </row>
+    <row>
+      <cell col="1" row="47" colspan="2">0</cell>
+      <cell col="3" row="47" colspan="4">0A</cell>
+      <cell col="7" row="47" colspan="5">0B</cell>
+      <cell col="12" row="47" colspan="8">0C</cell>
+      <cell col="20" row="47" colspan="8">0D</cell>
+      <cell col="28" row="47" colspan="5">0E</cell>
+      <cell col="33" row="47" colspan="7">0F</cell>
+      <cell col="40" row="47" colspan="6">0G</cell>
+      <cell col="46" row="47" colspan="4">0H</cell>
+      <cell col="50" row="47" colspan="3">0I</cell>
+      <cell col="53" row="47">0J</cell>
+      <cell col="54" row="47"></cell>
+    </row>
+    <row>
+      <cell col="1" row="48" colspan="2">1</cell>
+      <cell col="3" row="48" colspan="4"></cell>
+      <cell col="7" row="48" colspan="5"></cell>
+      <cell col="12" row="48" colspan="8"></cell>
+      <cell col="20" row="48" colspan="8"></cell>
+      <cell col="28" row="48" colspan="5"></cell>
+      <cell col="33" row="48" colspan="7"></cell>
+      <cell col="40" row="48" colspan="6"></cell>
+      <cell col="46" row="48" colspan="4"></cell>
+      <cell col="50" row="48" colspan="3"></cell>
+      <cell col="53" row="48"></cell>
+      <cell col="54" row="48"></cell>
+    </row>
+    <row>
+      <cell col="1" row="49" colspan="2">2</cell>
+      <cell col="3" row="49" colspan="4"></cell>
+      <cell col="7" row="49" colspan="5"></cell>
+      <cell col="12" row="49" colspan="8"></cell>
+      <cell col="20" row="49" colspan="8"></cell>
+      <cell col="28" row="49" colspan="5"></cell>
+      <cell col="33" row="49" colspan="7"></cell>
+      <cell col="40" row="49" colspan="6"></cell>
+      <cell col="46" row="49" colspan="4"></cell>
+      <cell col="50" row="49" colspan="3"></cell>
+      <cell col="53" row="49"></cell>
+      <cell col="54" row="49"></cell>
+    </row>
+    <row>
+      <cell col="1" row="50" colspan="2">3</cell>
+      <cell col="3" row="50" colspan="4"></cell>
+      <cell col="7" row="50" colspan="5"></cell>
+      <cell col="12" row="50" colspan="8"></cell>
+      <cell col="20" row="50" colspan="8"></cell>
+      <cell col="28" row="50" colspan="5"></cell>
+      <cell col="33" row="50" colspan="7"></cell>
+      <cell col="40" row="50" colspan="6"></cell>
+      <cell col="46" row="50" colspan="4"></cell>
+      <cell col="50" row="50" colspan="3"></cell>
+      <cell col="53" row="50"></cell>
+      <cell col="54" row="50"></cell>
+    </row>
+    <row>
+      <cell col="1" row="51" colspan="2" rowspan="2">4</cell>
+      <cell col="3" row="51" colspan="4" rowspan="2"></cell>
+      <cell col="7" row="51" colspan="5" rowspan="2"></cell>
+      <cell col="12" row="51" colspan="8" rowspan="2"></cell>
+      <cell col="20" row="51" colspan="3"></cell>
+      <cell col="23" row="51" colspan="5"></cell>
+      <cell col="28" row="51" colspan="5"></cell>
+      <cell col="33" row="51" colspan="7"></cell>
+      <cell col="40" row="51" colspan="4"></cell>
+      <cell col="44" row="51" colspan="2"></cell>
+      <cell col="46" row="51" colspan="4" rowspan="2"></cell>
+      <cell col="50" row="51" colspan="3" rowspan="2"></cell>
+      <cell col="53" row="51" rowspan="2"></cell>
+      <cell col="54" row="51" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="20" row="52" colspan="3"></cell>
+      <cell col="23" row="52" colspan="21" rowspan="2">367154</cell>
+      <cell col="44" row="52" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="1" row="53" colspan="2" rowspan="2">5</cell>
+      <cell col="3" row="53" colspan="4" rowspan="2"></cell>
+      <cell col="7" row="53" colspan="5" rowspan="2"></cell>
+      <cell col="12" row="53" colspan="8" rowspan="2"></cell>
+      <cell col="20" row="53" colspan="3"></cell>
+      <cell col="44" row="53" colspan="2"></cell>
+      <cell col="46" row="53" colspan="4" rowspan="2"></cell>
+      <cell col="50" row="53" colspan="3" rowspan="2"></cell>
+      <cell col="53" row="53" rowspan="2"></cell>
+      <cell col="54" row="53" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="20" row="54" colspan="3"></cell>
+      <cell col="23" row="54" colspan="5"></cell>
+      <cell col="28" row="54" colspan="5"></cell>
+      <cell col="33" row="54" colspan="7"></cell>
+      <cell col="40" row="54" colspan="4"></cell>
+      <cell col="44" row="54" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="1" row="55" colspan="2">6</cell>
+      <cell col="3" row="55" colspan="4"></cell>
+      <cell col="7" row="55" colspan="5"></cell>
+      <cell col="12" row="55" colspan="8"></cell>
+      <cell col="20" row="55" colspan="8"></cell>
+      <cell col="28" row="55" colspan="5"></cell>
+      <cell col="33" row="55" colspan="7"></cell>
+      <cell col="40" row="55" colspan="6"></cell>
+      <cell col="46" row="55" colspan="4"></cell>
+      <cell col="50" row="55" colspan="3"></cell>
+      <cell col="53" row="55"></cell>
+      <cell col="54" row="55"></cell>
+    </row>
+    <row>
+      <cell col="1" row="56" colspan="2">7</cell>
+      <cell col="3" row="56" colspan="4"></cell>
+      <cell col="7" row="56" colspan="5"></cell>
+      <cell col="12" row="56" colspan="8"></cell>
+      <cell col="20" row="56" colspan="8"></cell>
+      <cell col="28" row="56" colspan="5"></cell>
+      <cell col="33" row="56" colspan="7"></cell>
+      <cell col="40" row="56" colspan="6"></cell>
+      <cell col="46" row="56" colspan="4"></cell>
+      <cell col="50" row="56" colspan="3"></cell>
+      <cell col="53" row="56"></cell>
+      <cell col="54" row="56"></cell>
+    </row>
+    <row>
+      <cell col="1" row="57" colspan="2">8</cell>
+      <cell col="3" row="57" colspan="4"></cell>
+      <cell col="7" row="57" colspan="5"></cell>
+      <cell col="12" row="57" colspan="8"></cell>
+      <cell col="20" row="57" colspan="8"></cell>
+      <cell col="28" row="57" colspan="5"></cell>
+      <cell col="33" row="57" colspan="7"></cell>
+      <cell col="40" row="57" colspan="6"></cell>
+      <cell col="46" row="57" colspan="4"></cell>
+      <cell col="50" row="57" colspan="3"></cell>
+      <cell col="53" row="57"></cell>
+      <cell col="54" row="57"></cell>
+    </row>
+    <row>
+      <cell col="1" row="58" colspan="2">9</cell>
+      <cell col="3" row="58" colspan="4"></cell>
+      <cell col="7" row="58" colspan="5"></cell>
+      <cell col="12" row="58" colspan="8"></cell>
+      <cell col="20" row="58" colspan="8"></cell>
+      <cell col="28" row="58" colspan="5"></cell>
+      <cell col="33" row="58" colspan="7"></cell>
+      <cell col="40" row="58" colspan="6">9G</cell>
+      <cell col="46" row="58" colspan="4">9H</cell>
+      <cell col="50" row="58" colspan="3">9I</cell>
+      <cell col="53" row="58">9J</cell>
+      <cell col="54" row="58"></cell>
+    </row>
+    <row>
+      <cell col="1" row="59" colspan="2"></cell>
+      <cell col="3" row="59" colspan="4"></cell>
+      <cell col="7" row="59" colspan="5"></cell>
+      <cell col="12" row="59" colspan="8"></cell>
+      <cell col="20" row="59" colspan="8"></cell>
+      <cell col="28" row="59" colspan="5"></cell>
+      <cell col="33" row="59" colspan="7"></cell>
+      <cell col="40" row="59" colspan="13">3671549H</cell>
+      <cell col="53" row="59"></cell>
+      <cell col="54" row="59"></cell>
+    </row>
+    <row>
+      <cell col="0" row="60" colspan="56"></cell>
+    </row>
+    <row>
+      <cell col="0" row="61">축척</cell>
+      <cell col="1" row="61" colspan="50">색인도</cell>
+      <cell col="51" row="61" colspan="5">도엽코드 및 도곽의 크기</cell>
+    </row>
+    <row>
+      <cell col="0" row="62" rowspan="14">1/1,000</cell>
+      <cell col="1" row="62"></cell>
+      <cell col="2" row="62" colspan="3"></cell>
+      <cell col="5" row="62" colspan="4"></cell>
+      <cell col="9" row="62" colspan="4"></cell>
+      <cell col="13" row="62" colspan="6"></cell>
+      <cell col="19" row="62" colspan="6"></cell>
+      <cell col="25" row="62" colspan="5"></cell>
+      <cell col="30" row="62" colspan="8"></cell>
+      <cell col="38" row="62" colspan="4"></cell>
+      <cell col="42" row="62" colspan="5"></cell>
+      <cell col="47" row="62" colspan="2"></cell>
+      <cell col="49" row="62" colspan="2"></cell>
+      <cell col="51" row="62" colspan="5" rowspan="14">-도엽코드: 1/10,000 도엽을 100등분하여 1/10,000 도엽코드 끝에 두 자리 코드를 추가하여 구성한다.
+-도곽의 크기: 18&quot;×18&quot;</cell>
+    </row>
+    <row>
+      <cell col="1" row="63"></cell>
+      <cell col="2" row="63" colspan="3">01</cell>
+      <cell col="5" row="63" colspan="4">02</cell>
+      <cell col="9" row="63" colspan="4">03</cell>
+      <cell col="13" row="63" colspan="6">04</cell>
+      <cell col="19" row="63" colspan="6">05</cell>
+      <cell col="25" row="63" colspan="5">06</cell>
+      <cell col="30" row="63" colspan="8">07</cell>
+      <cell col="38" row="63" colspan="4">08</cell>
+      <cell col="42" row="63" colspan="5">09</cell>
+      <cell col="47" row="63" colspan="2">10</cell>
+      <cell col="49" row="63" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="1" row="64"></cell>
+      <cell col="2" row="64" colspan="3">11</cell>
+      <cell col="5" row="64" colspan="4"></cell>
+      <cell col="9" row="64" colspan="4"></cell>
+      <cell col="13" row="64" colspan="6"></cell>
+      <cell col="19" row="64" colspan="6"></cell>
+      <cell col="25" row="64" colspan="5"></cell>
+      <cell col="30" row="64" colspan="8"></cell>
+      <cell col="38" row="64" colspan="4"></cell>
+      <cell col="42" row="64" colspan="5"></cell>
+      <cell col="47" row="64" colspan="2"></cell>
+      <cell col="49" row="64" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="1" row="65"></cell>
+      <cell col="2" row="65" colspan="3">21</cell>
+      <cell col="5" row="65" colspan="4"></cell>
+      <cell col="9" row="65" colspan="4"></cell>
+      <cell col="13" row="65" colspan="6"></cell>
+      <cell col="19" row="65" colspan="6"></cell>
+      <cell col="25" row="65" colspan="5"></cell>
+      <cell col="30" row="65" colspan="8"></cell>
+      <cell col="38" row="65" colspan="4"></cell>
+      <cell col="42" row="65" colspan="5"></cell>
+      <cell col="47" row="65" colspan="2"></cell>
+      <cell col="49" row="65" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="1" row="66"></cell>
+      <cell col="2" row="66" colspan="3">31</cell>
+      <cell col="5" row="66" colspan="4"></cell>
+      <cell col="9" row="66" colspan="4"></cell>
+      <cell col="13" row="66" colspan="6"></cell>
+      <cell col="19" row="66" colspan="6"></cell>
+      <cell col="25" row="66" colspan="5"></cell>
+      <cell col="30" row="66" colspan="8"></cell>
+      <cell col="38" row="66" colspan="4"></cell>
+      <cell col="42" row="66" colspan="5"></cell>
+      <cell col="47" row="66" colspan="2"></cell>
+      <cell col="49" row="66" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="1" row="67" rowspan="2"></cell>
+      <cell col="2" row="67" colspan="3" rowspan="2"></cell>
+      <cell col="5" row="67" colspan="4" rowspan="2"></cell>
+      <cell col="9" row="67" colspan="4" rowspan="2"></cell>
+      <cell col="13" row="67" colspan="4"></cell>
+      <cell col="17" row="67" colspan="2"></cell>
+      <cell col="19" row="67" colspan="6"></cell>
+      <cell col="25" row="67" colspan="5"></cell>
+      <cell col="30" row="67" colspan="4"></cell>
+      <cell col="34" row="67" colspan="4"></cell>
+      <cell col="38" row="67" colspan="4" rowspan="2"></cell>
+      <cell col="42" row="67" colspan="5" rowspan="2"></cell>
+      <cell col="47" row="67" colspan="2" rowspan="2"></cell>
+      <cell col="49" row="67" colspan="2" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="13" row="68" colspan="4"></cell>
+      <cell col="17" row="68" colspan="17" rowspan="2">3671523</cell>
+      <cell col="34" row="68" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="1" row="69" rowspan="2"></cell>
+      <cell col="2" row="69" colspan="3" rowspan="2"></cell>
+      <cell col="5" row="69" colspan="4" rowspan="2"></cell>
+      <cell col="9" row="69" colspan="4" rowspan="2"></cell>
+      <cell col="13" row="69" colspan="4"></cell>
+      <cell col="34" row="69" colspan="4"></cell>
+      <cell col="38" row="69" colspan="4" rowspan="2"></cell>
+      <cell col="42" row="69" colspan="5" rowspan="2"></cell>
+      <cell col="47" row="69" colspan="2" rowspan="2"></cell>
+      <cell col="49" row="69" colspan="2" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="13" row="70" colspan="4"></cell>
+      <cell col="17" row="70" colspan="2"></cell>
+      <cell col="19" row="70" colspan="6"></cell>
+      <cell col="25" row="70" colspan="5"></cell>
+      <cell col="30" row="70" colspan="4"></cell>
+      <cell col="34" row="70" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="1" row="71"></cell>
+      <cell col="2" row="71" colspan="3"></cell>
+      <cell col="5" row="71" colspan="4"></cell>
+      <cell col="9" row="71" colspan="4"></cell>
+      <cell col="13" row="71" colspan="6"></cell>
+      <cell col="19" row="71" colspan="6"></cell>
+      <cell col="25" row="71" colspan="5"></cell>
+      <cell col="30" row="71" colspan="8"></cell>
+      <cell col="38" row="71" colspan="4"></cell>
+      <cell col="42" row="71" colspan="5"></cell>
+      <cell col="47" row="71" colspan="2"></cell>
+      <cell col="49" row="71" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="1" row="72"></cell>
+      <cell col="2" row="72" colspan="3"></cell>
+      <cell col="5" row="72" colspan="4"></cell>
+      <cell col="9" row="72" colspan="4"></cell>
+      <cell col="13" row="72" colspan="6"></cell>
+      <cell col="19" row="72" colspan="6"></cell>
+      <cell col="25" row="72" colspan="5"></cell>
+      <cell col="30" row="72" colspan="8"></cell>
+      <cell col="38" row="72" colspan="4"></cell>
+      <cell col="42" row="72" colspan="5"></cell>
+      <cell col="47" row="72" colspan="2">80</cell>
+      <cell col="49" row="72" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="1" row="73"></cell>
+      <cell col="2" row="73" colspan="3"></cell>
+      <cell col="5" row="73" colspan="4"></cell>
+      <cell col="9" row="73" colspan="4"></cell>
+      <cell col="13" row="73" colspan="6"></cell>
+      <cell col="19" row="73" colspan="6"></cell>
+      <cell col="25" row="73" colspan="5"></cell>
+      <cell col="30" row="73" colspan="8"></cell>
+      <cell col="38" row="73" colspan="4"></cell>
+      <cell col="42" row="73" colspan="5"></cell>
+      <cell col="47" row="73" colspan="2">90</cell>
+      <cell col="49" row="73" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="1" row="74"></cell>
+      <cell col="2" row="74" colspan="3"></cell>
+      <cell col="5" row="74" colspan="4"></cell>
+      <cell col="9" row="74" colspan="4"></cell>
+      <cell col="13" row="74" colspan="6"></cell>
+      <cell col="19" row="74" colspan="6"></cell>
+      <cell col="25" row="74" colspan="5"></cell>
+      <cell col="30" row="74" colspan="8"></cell>
+      <cell col="38" row="74" colspan="4">98</cell>
+      <cell col="42" row="74" colspan="5">99</cell>
+      <cell col="47" row="74" colspan="2">00</cell>
+      <cell col="49" row="74" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="1" row="75"></cell>
+      <cell col="2" row="75" colspan="3"></cell>
+      <cell col="5" row="75" colspan="4"></cell>
+      <cell col="9" row="75" colspan="4"></cell>
+      <cell col="13" row="75" colspan="6"></cell>
+      <cell col="19" row="75" colspan="6"></cell>
+      <cell col="25" row="75" colspan="24">367152398</cell>
+      <cell col="49" row="75" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="76" rowspan="6">1/500</cell>
+      <cell col="1" row="76" colspan="5"></cell>
+      <cell col="6" row="76" colspan="18"></cell>
+      <cell col="24" row="76" colspan="21"></cell>
+      <cell col="45" row="76" colspan="6"></cell>
+      <cell col="51" row="76" colspan="5" rowspan="6">-도엽코드: 1/1,000 도엽을 4등분하여 1/1,000 도엽코드 끝에 한 자리 코드를 추가하여 구성한다.
+-도곽의 크기: 9&quot;×9&quot;</cell>
+    </row>
+    <row>
+      <cell col="1" row="77" colspan="5" rowspan="2"></cell>
+      <cell col="6" row="77" colspan="18">1</cell>
+      <cell col="24" row="77" colspan="21">2</cell>
+      <cell col="45" row="77" colspan="6" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="6" row="78" colspan="9"></cell>
+      <cell col="15" row="78" colspan="21" rowspan="2">367152398</cell>
+      <cell col="36" row="78" colspan="9"></cell>
+    </row>
+    <row>
+      <cell col="1" row="79" colspan="5" rowspan="2"></cell>
+      <cell col="6" row="79" colspan="9"></cell>
+      <cell col="36" row="79" colspan="9"></cell>
+      <cell col="45" row="79" colspan="6" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="6" row="80" colspan="18">3</cell>
+      <cell col="24" row="80" colspan="21">4</cell>
+    </row>
+    <row>
+      <cell col="1" row="81" colspan="5"></cell>
+      <cell col="6" row="81" colspan="18"></cell>
+      <cell col="24" row="81" colspan="21">3671523984</cell>
+      <cell col="45" row="81" colspan="6"></cell>
+    </row>
+  </table>
+</annex>

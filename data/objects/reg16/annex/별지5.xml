@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지5" gubun="별지" no="5" title="수치표고모형 제작 품질관리표" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=161554291">
+  <text>■ 수치표고모형의 구축 및 관리 등에 관한 규정 [별지 제5호서식]
+수치표고모형 제작 품질관리표</text>
+  <table rows="1" cols="4">
+    <row>
+      <cell col="0" row="0">결과번호</cell>
+      <cell col="1" row="0"></cell>
+      <cell col="2" row="0">보고일</cell>
+      <cell col="3" row="0"></cell>
+    </row>
+  </table>
+  <table rows="4" cols="5">
+    <row>
+      <cell col="0" row="0">대상사업</cell>
+      <cell col="1" row="0" colspan="2"></cell>
+      <cell col="3" row="0">접수번호</cell>
+      <cell col="4" row="0"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1">검사자</cell>
+      <cell col="1" row="1" colspan="2"></cell>
+      <cell col="3" row="1">접수물량</cell>
+      <cell col="4" row="1">도엽</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">검사요청</cell>
+      <cell col="1" row="2" colspan="2"></cell>
+      <cell col="3" row="2">검사물량</cell>
+      <cell col="4" row="2">도엽</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">검사기간</cell>
+      <cell col="1" row="3" colspan="2"></cell>
+      <cell col="3" row="3">검사결과</cell>
+      <cell col="4" row="3">적합(완료), 적합(보완), 부적합</cell>
+    </row>
+  </table>
+  <text>□ 검사결과</text>
+  <table rows="3" cols="3">
+    <row>
+      <cell col="0" row="0">규격</cell>
+      <cell col="1" row="0">RMSE</cell>
+      <cell col="2" row="0">최대오차</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">1m×1m</cell>
+      <cell col="1" row="1">±0.5m</cell>
+      <cell col="2" row="1">±0.75m</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">5m×5m</cell>
+      <cell col="1" row="2">±1.0m</cell>
+      <cell col="2" row="2">±2.0m</cell>
+    </row>
+  </table>
+  <table rows="6" cols="5">
+    <row>
+      <cell col="0" row="0">연번</cell>
+      <cell col="1" row="0" colspan="2">검사항목</cell>
+      <cell col="3" row="0">검사기준</cell>
+      <cell col="4" row="0">검사결과</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="5">1</cell>
+      <cell col="1" row="1" rowspan="5">수치표고모형</cell>
+      <cell col="2" row="1">구축지역 누락</cell>
+      <cell col="3" row="1">사업지역 내 미 구축 여부</cell>
+      <cell col="4" row="1">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="2" row="2">영역일관성</cell>
+      <cell col="3" row="2">수치표고모형이 적절한 좌표계로 구축되었는지 여부</cell>
+      <cell col="4" row="2">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="2" row="3">보간방법</cell>
+      <cell col="3" row="3">지형자료를 수치표고모형으로 변환하기 위한 보간방법의 적절성</cell>
+      <cell col="4" row="3">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="2" row="4">높이정확도</cell>
+      <cell col="3" row="4"></cell>
+      <cell col="4" row="4">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="2" row="5">지형연속성</cell>
+      <cell col="3" row="5">수치표고모형 내부 및 인접도엽간 지형 표현의 적절성</cell>
+      <cell col="4" row="5">적합 / 부적합</cell>
+    </row>
+  </table>
+  <text>20  .   .   .
+붙임 1. 검사 위치도
+2. 수치표고모형 제작 검사결과 및 세부내역</text>
+</annex>

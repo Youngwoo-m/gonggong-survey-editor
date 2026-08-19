@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표15" gubun="별표" no="15" title="판정 구분 및 보완 요구 기준" source="성과심사 규정 개정안 초안 (scripts/genannex_simsa.py)">
+  <text>[별표 15]
+판정 구분 및 보완 요구 기준 (제27조제2항 관련)</text>
+  <text>1. 오류의 무게에 따른 판정</text>
+  <table rows="4" cols="5">
+    <row>
+      <cell col="0" row="0" header="1">무게</cell>
+      <cell col="1" row="0" header="1">어떤 것인가</cell>
+      <cell col="2" row="0" header="1">보기</cell>
+      <cell col="3" row="0" header="1">판정</cell>
+      <cell col="4" row="0" header="1">보완을 요구하는 범위</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">중대</cell>
+      <cell col="1" row="1">성과의 정확도가 판정기준을 크게 벗어나거나, 다시 측량하지 아니하고는 고칠 수 없는 것</cell>
+      <cell col="2" row="1">기준점 성과의 폐합차가 허용범위의 2배를 넘는 경우, 표본의 위치정확도 불합격 비율이 30%를 넘는 경우, 취득 구역의 일부가 측량되지 아니한 경우</cell>
+      <cell col="3" row="1">부적합</cell>
+      <cell col="4" row="1">—</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">일반</cell>
+      <cell col="1" row="2">판정기준을 만족하지 못하나 자료를 고쳐 다시 낼 수 있는 것</cell>
+      <cell col="2" row="2">속성의 누락, 도곽 접합의 잘못, 편집 오류, 점군의 정합 오차 초과</cell>
+      <cell col="3" row="2">조건부적합</cell>
+      <cell col="4" row="2">그 항목과 그 항목의 영향이 미치는 항목</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">경미</cell>
+      <cell col="1" row="3">성과의 내용에 영향이 없는 표기ㆍ형식의 잘못</cell>
+      <cell col="2" row="3">파일 이름 규칙 위반, 메타데이터의 오탈자, 도면 여백의 표기 누락</cell>
+      <cell col="3" row="3">적합</cell>
+      <cell col="4" row="3">보완을 권고하되 판정에는 반영하지 아니한다</cell>
+    </row>
+  </table>
+  <text>2. 정확도가 판정기준을 벗어난 정도에 따른 판정</text>
+  <table rows="4" cols="3">
+    <row>
+      <cell col="0" row="0" header="1">표본 가운데 허용범위를 벗어난 비율</cell>
+      <cell col="1" row="0" header="1">판정</cell>
+      <cell col="2" row="0" header="1">근거</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">10% 이하</cell>
+      <cell col="1" row="1">적합</cell>
+      <cell col="2" row="1">현행 별표 3의 '규정 이내(90% 이상)' 기준과 같다</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">10% 초과 30% 이하</cell>
+      <cell col="1" row="2">조건부적합</cell>
+      <cell col="2" row="2">보완으로 고칠 수 있는 범위로 본다</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">30% 초과</cell>
+      <cell col="1" row="3">부적합</cell>
+      <cell col="2" row="3">표본이 성과 전체의 경향을 나타내므로 다시 측량하여야 한다</cell>
+    </row>
+  </table>
+  <text>비고
+1. 제1호와 제2호가 서로 다른 판정에 이르는 경우에는 무거운 쪽을 따른다.
+2. 표본의 90% 이상이 허용범위 안에 있어야 한다는 기준은 현행 별표 3의 판정기준을 그대로 옮긴 것이다.
+3. 30%의 경계값과 폐합차 2배의 기준은 이 개정안의 제안이며, 공청회와 관계기관 협의에서 정한다.
+4. 조건부적합으로 판정한 경우에는 보완할 사항과 기한을 함께 알린다(제27조제3항). 보완과 재심사는 제29조에 따른다.
+5. 성과심사 단위가 둘 이상인 경우에는 단위별로 판정한다(제27조제4항).</text>
+</annex>

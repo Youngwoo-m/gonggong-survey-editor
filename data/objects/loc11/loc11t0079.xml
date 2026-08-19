@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0079" article="제371조(標定点の精度)" rows="3" cols="3" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">項 目</cell>
+    <cell col="1" row="0" header="1">許容範囲</cell>
+    <cell col="2" row="0" header="1">備 考</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">環閉合差</cell>
+    <cell col="1" row="1">40mm√</cell>
+    <cell col="2" row="1">は観測距離（片道、km 単位）とする。</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">既知点間での閉合差</cell>
+    <cell col="1" row="2">50mm√</cell>
+    <cell col="2" row="2"></cell>
+  </row>
+</table>

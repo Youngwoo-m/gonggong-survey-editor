@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표17" gubun="별표" no="17" title="평균자승오차(매㎞당)" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=155729977">
+  <text>[별표 17] 평균자승오차(매㎞당)</text>
+  <table rows="32" cols="9">
+    <row>
+      <cell col="0" row="0" colspan="9">매  1㎞당  평균자승오차</cell>
+    </row>
+    <row>
+      <cell col="0" row="1"></cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1"></cell>
+      <cell col="4" row="1" colspan="2"></cell>
+      <cell col="6" row="1"></cell>
+      <cell col="7" row="1"></cell>
+      <cell col="8" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">시점 :</cell>
+      <cell col="2" row="2"></cell>
+      <cell col="3" row="2" colspan="3">종점 :</cell>
+      <cell col="6" row="2" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">구  간  수</cell>
+      <cell col="1" row="3">점의번호</cell>
+      <cell col="2" row="3">거  리 (S)</cell>
+      <cell col="3" row="3"></cell>
+      <cell col="4" row="3" colspan="2"></cell>
+      <cell col="6" row="3" colspan="3">비     고</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">0</cell>
+      <cell col="1" row="4"></cell>
+      <cell col="2" row="4"></cell>
+      <cell col="3" row="4"></cell>
+      <cell col="4" row="4" colspan="2"></cell>
+      <cell col="6" row="4" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5">1</cell>
+      <cell col="1" row="5"></cell>
+      <cell col="2" row="5"></cell>
+      <cell col="3" row="5"></cell>
+      <cell col="4" row="5" colspan="2"></cell>
+      <cell col="6" row="5" colspan="2">레벨 :</cell>
+      <cell col="8" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6"></cell>
+      <cell col="1" row="6"></cell>
+      <cell col="2" row="6"></cell>
+      <cell col="3" row="6"></cell>
+      <cell col="4" row="6" colspan="2"></cell>
+      <cell col="6" row="6" colspan="2">표척 :</cell>
+      <cell col="8" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7"></cell>
+      <cell col="1" row="7"></cell>
+      <cell col="2" row="7"></cell>
+      <cell col="3" row="7"></cell>
+      <cell col="4" row="7" colspan="2"></cell>
+      <cell col="6" row="7" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8"></cell>
+      <cell col="1" row="8"></cell>
+      <cell col="2" row="8"></cell>
+      <cell col="3" row="8"></cell>
+      <cell col="4" row="8" colspan="2"></cell>
+      <cell col="6" row="8" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9"></cell>
+      <cell col="1" row="9"></cell>
+      <cell col="2" row="9"></cell>
+      <cell col="3" row="9"></cell>
+      <cell col="4" row="9" colspan="2"></cell>
+      <cell col="6" row="9" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10"></cell>
+      <cell col="1" row="10"></cell>
+      <cell col="2" row="10"></cell>
+      <cell col="3" row="10"></cell>
+      <cell col="4" row="10" colspan="2"></cell>
+      <cell col="6" row="10" colspan="2">정의회수 :</cell>
+      <cell col="8" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11"></cell>
+      <cell col="1" row="11"></cell>
+      <cell col="2" row="11"></cell>
+      <cell col="3" row="11"></cell>
+      <cell col="4" row="11" colspan="2"></cell>
+      <cell col="6" row="11" colspan="2">부의회수 :</cell>
+      <cell col="8" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12"></cell>
+      <cell col="1" row="12"></cell>
+      <cell col="2" row="12"></cell>
+      <cell col="3" row="12"></cell>
+      <cell col="4" row="12" colspan="2"></cell>
+      <cell col="6" row="12" colspan="2">0의회수 :</cell>
+      <cell col="8" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13"></cell>
+      <cell col="1" row="13"></cell>
+      <cell col="2" row="13"></cell>
+      <cell col="3" row="13"></cell>
+      <cell col="4" row="13" colspan="2"></cell>
+      <cell col="6" row="13" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14"></cell>
+      <cell col="1" row="14"></cell>
+      <cell col="2" row="14"></cell>
+      <cell col="3" row="14"></cell>
+      <cell col="4" row="14" colspan="2"></cell>
+      <cell col="6" row="14" colspan="2">정의총화  
+:</cell>
+      <cell col="8" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15"></cell>
+      <cell col="1" row="15"></cell>
+      <cell col="2" row="15"></cell>
+      <cell col="3" row="15"></cell>
+      <cell col="4" row="15" colspan="2"></cell>
+      <cell col="6" row="15" colspan="2">부의총화  
+:</cell>
+      <cell col="8" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16"></cell>
+      <cell col="1" row="16"></cell>
+      <cell col="2" row="16"></cell>
+      <cell col="3" row="16"></cell>
+      <cell col="4" row="16" colspan="2"></cell>
+      <cell col="6" row="16" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17"></cell>
+      <cell col="1" row="17"></cell>
+      <cell col="2" row="17"></cell>
+      <cell col="3" row="17"></cell>
+      <cell col="4" row="17" colspan="2"></cell>
+      <cell col="6" row="17" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18"></cell>
+      <cell col="1" row="18"></cell>
+      <cell col="2" row="18"></cell>
+      <cell col="3" row="18"></cell>
+      <cell col="4" row="18" colspan="2"></cell>
+      <cell col="6" row="18" colspan="3">㎡=¼×1.321</cell>
+    </row>
+    <row>
+      <cell col="0" row="19"></cell>
+      <cell col="1" row="19"></cell>
+      <cell col="2" row="19"></cell>
+      <cell col="3" row="19"></cell>
+      <cell col="4" row="19" colspan="2"></cell>
+      <cell col="6" row="19" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20"></cell>
+      <cell col="1" row="20"></cell>
+      <cell col="2" row="20"></cell>
+      <cell col="3" row="20"></cell>
+      <cell col="4" row="20" colspan="2"></cell>
+      <cell col="6" row="20" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21"></cell>
+      <cell col="1" row="21"></cell>
+      <cell col="2" row="21"></cell>
+      <cell col="3" row="21"></cell>
+      <cell col="4" row="21" colspan="2"></cell>
+      <cell col="6" row="21" colspan="3">㎡ =</cell>
+    </row>
+    <row>
+      <cell col="0" row="22"></cell>
+      <cell col="1" row="22"></cell>
+      <cell col="2" row="22"></cell>
+      <cell col="3" row="22"></cell>
+      <cell col="4" row="22" colspan="2"></cell>
+      <cell col="6" row="22" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23"></cell>
+      <cell col="1" row="23"></cell>
+      <cell col="2" row="23"></cell>
+      <cell col="3" row="23"></cell>
+      <cell col="4" row="23" colspan="2"></cell>
+      <cell col="6" row="23" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="24"></cell>
+      <cell col="1" row="24"></cell>
+      <cell col="2" row="24"></cell>
+      <cell col="3" row="24"></cell>
+      <cell col="4" row="24" colspan="2"></cell>
+      <cell col="6" row="24" colspan="3">m  =</cell>
+    </row>
+    <row>
+      <cell col="0" row="25"></cell>
+      <cell col="1" row="25"></cell>
+      <cell col="2" row="25"></cell>
+      <cell col="3" row="25"></cell>
+      <cell col="4" row="25" colspan="2"></cell>
+      <cell col="6" row="25" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="26"></cell>
+      <cell col="1" row="26"></cell>
+      <cell col="2" row="26"></cell>
+      <cell col="3" row="26"></cell>
+      <cell col="4" row="26" colspan="2"></cell>
+      <cell col="6" row="26" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="27"></cell>
+      <cell col="1" row="27"></cell>
+      <cell col="2" row="27"></cell>
+      <cell col="3" row="27"></cell>
+      <cell col="4" row="27" colspan="2"></cell>
+      <cell col="6" row="27" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="28" colspan="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="29" colspan="5">m : 1㎞당의 관측평균 자승오차</cell>
+      <cell col="5" row="29" colspan="4">Si : 각 구간의 거리 (㎞단위)</cell>
+    </row>
+    <row>
+      <cell col="0" row="30" colspan="5">μi : 각 구간의 왕복차(㎜단위)</cell>
+      <cell col="5" row="30" colspan="4">n : 구간수</cell>
+    </row>
+    <row>
+      <cell col="0" row="31"></cell>
+      <cell col="1" row="31"></cell>
+      <cell col="2" row="31"></cell>
+      <cell col="3" row="31"></cell>
+      <cell col="4" row="31" colspan="2"></cell>
+      <cell col="6" row="31" colspan="3"></cell>
+    </row>
+  </table>
+</annex>

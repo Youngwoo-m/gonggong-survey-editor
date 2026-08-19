@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0105" article="제631조(機器)" rows="14" cols="3" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">機 器</cell>
+    <cell col="1" row="0" header="1">性 能</cell>
+    <cell col="2" row="0" header="1">備 考</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">３級トータルステーション</cell>
+    <cell col="1" row="1">別表１による</cell>
+    <cell col="2" row="1"></cell>
+  </row>
+  <row>
+    <cell col="0" row="2">２級ＧＮＳＳ測量機</cell>
+    <cell col="1" row="2"></cell>
+    <cell col="2" row="2"></cell>
+  </row>
+  <row>
+    <cell col="0" row="3">３級セオドライト</cell>
+    <cell col="1" row="3"></cell>
+    <cell col="2" row="3"></cell>
+  </row>
+  <row>
+    <cell col="0" row="4">測 距 儀</cell>
+    <cell col="1" row="4"></cell>
+    <cell col="2" row="4"></cell>
+  </row>
+  <row>
+    <cell col="0" row="5">３級レベル</cell>
+    <cell col="1" row="5"></cell>
+    <cell col="2" row="5"></cell>
+  </row>
+  <row>
+    <cell col="0" row="6">２ 級 標 尺</cell>
+    <cell col="1" row="6"></cell>
+    <cell col="2" row="6"></cell>
+  </row>
+  <row>
+    <cell col="0" row="7">水準測量作業用電卓</cell>
+    <cell col="1" row="7">――――</cell>
+    <cell col="2" row="7"></cell>
+  </row>
+  <row>
+    <cell col="0" row="8">鋼製巻尺（広幅巻尺）</cell>
+    <cell col="1" row="8">ＪＩＳ １級</cell>
+    <cell col="2" row="8"></cell>
+  </row>
+  <row>
+    <cell col="0" row="9">ガラス繊維製巻尺</cell>
+    <cell col="1" row="9">ＪＩＳ１種 １級</cell>
+    <cell col="2" row="9"></cell>
+  </row>
+  <row>
+    <cell col="0" row="10">箱 尺</cell>
+    <cell col="1" row="10"></cell>
+    <cell col="2" row="10">目盛が明瞭で、接合が正確であること</cell>
+  </row>
+  <row>
+    <cell col="0" row="11">音響測深機</cell>
+    <cell col="1" row="11">測深精度±（３cm＋水 深×1/1000）以上</cell>
+    <cell col="2" row="11"></cell>
+  </row>
+  <row>
+    <cell col="0" row="12">レッド</cell>
+    <cell col="1" row="12"></cell>
+    <cell col="2" row="12">１kg （標準）</cell>
+  </row>
+  <row>
+    <cell col="0" row="13">ロッド</cell>
+    <cell col="1" row="13"></cell>
+    <cell col="2" row="13">２ｍ （標準）継ぎたし可能</cell>
+  </row>
+</table>

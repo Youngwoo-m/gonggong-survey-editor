@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지1" gubun="별지" no="1" title="측량기기 성능검사 대행업무 실태점검표" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=109993543">
+  <text>■  측량기기 성능검사 대행업무 실태점검 지침 [별지 제1호서식]
+측량기기 성능검사 대행업무 실태점검표
+(수검(기관ㆍ업체)명 :         )
+□ 평가항목</text>
+  <table rows="8" cols="3">
+    <row>
+      <cell col="0" row="0">점검항목</cell>
+      <cell col="1" row="0">내용</cell>
+      <cell col="2" row="0">점검결과(‘양호’ 또는 ‘미흡’ 표기)
+※ ‘미흡’인 경우 미흡사유 기재</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">성능검사대행자 
+등록기준</cell>
+      <cell col="1" row="1">법에 따른 시설 및 장비에 관한 사항
+법에 따른 기술인력의 자격보유 현황 등</cell>
+      <cell col="2" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2">성능검사대행자
+등록증 관리</cell>
+      <cell col="1" row="2">등록증 또는 상호 등 명의를 빌려주거나 빌려서 성능검사를 했는지에 대한 사항</cell>
+      <cell col="2" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">성능검사대행자
+등록사항 변경신고 등</cell>
+      <cell col="1" row="3">성능검사대행자 등록사항 변경사항 발생에 따른 변경신고 여부(60일 이내)
+성능검사 대행업무 폐업 시 신고여부(30일 이내)</cell>
+      <cell col="2" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4">성능검사 
+대행인력 교육</cell>
+      <cell col="1" row="4">성능검사 대행자 및 그 소속 직원의 법정 의무교육 이수 여부
+성능검사대행자의 자체적 교육 실시 및 결과 관리 여부</cell>
+      <cell col="2" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5">성능검사 방법 
+및 기준 적용</cell>
+      <cell col="1" row="5">장비별 검사방법의 적절한 수행 및 누락 여부
+성능검사 기준에 따른 판정의 적정 여부
+｢측량기기 성능검사 규정｣에 따른 지정된 검사시설 사용 여부
+기술인력으로 등록되지 않은 자가 성능검사에 참여했는지 여부</cell>
+      <cell col="2" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">성능검사서 발급 및 성능검사 결과 기록 관리</cell>
+      <cell col="1" row="6">성능검사 결과 기록부 및 성능검사서 작성의 적정성
+성능검사기록부의 기록 및 관리 적정성</cell>
+      <cell col="2" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">기타 준수사항</cell>
+      <cell col="1" row="7">신청인에 처리과정 안내 적정성
+신청인 대상 만족도 조사 및 관리 적정성
+대행자 보유 검사시설의 유지관리 적정성
+수수료 징수의 적정성
+윤리강령 마련 및 준수 적정성</cell>
+      <cell col="2" row="7"></cell>
+    </row>
+  </table>
+  <text>□ 기타 의견</text>
+  <table rows="1" cols="1">
+    <row>
+      <cell col="0" row="0"></cell>
+    </row>
+  </table>
+  <text>실태점검반장   소속                 성명           (서명)
+반원   소속                 성명           (서명)
+반원   소속                 성명           (서명)
+반원   소속                 성명           (서명)
+반원   소속                 성명           (서명)</text>
+</annex>

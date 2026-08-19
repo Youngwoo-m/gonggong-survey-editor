@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0040" article="제87조(機器)" rows="7" cols="3" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1"></cell>
+    <cell col="1" row="0" header="1">で又は交点から他の交点までを対象とする。 ２．観測楕円体比高が700ｍを超える等の誤差要因となる可能性が高 い観測点においては、点検観測を行い、良否を判定するものとす る。この点検観測は、点検測量を兼ねることができるものとする。</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">機 器</cell>
+    <cell col="1" row="1">性 能</cell>
+    <cell col="2" row="1">摘 要</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">１級ＧＮＳＳ測量機</cell>
+    <cell col="1" row="2">別表１による</cell>
+    <cell col="2" row="2">―――</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">２級ＧＮＳＳ測量機</cell>
+    <cell col="1" row="3"></cell>
+    <cell col="2" row="3">観測距離が10km 未満の場合に使用できる。</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">３ 級 レ ベ ル</cell>
+    <cell col="1" row="4"></cell>
+    <cell col="2" row="4">偏心要素の測定</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">２ 級 標 尺</cell>
+    <cell col="1" row="5"></cell>
+    <cell col="2" row="5"></cell>
+  </row>
+  <row>
+    <cell col="0" row="6">鋼 製 巻 尺</cell>
+    <cell col="1" row="6">J I S １級</cell>
+    <cell col="2" row="6">アンテナ高の測定（コンベックスルール等）</cell>
+  </row>
+</table>

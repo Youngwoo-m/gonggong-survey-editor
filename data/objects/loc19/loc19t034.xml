@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc19t034" article="사전준비 및 작업계획" rows="6" cols="4" source="측량 안전관리 매뉴얼 (2026.1)">
+  <row>
+    <cell col="0" row="0" header="1">구분</cell>
+    <cell col="1" row="0" header="1"></cell>
+    <cell col="2" row="0" header="1">수량</cell>
+    <cell col="3" row="0" header="1">성능기준</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">GNSS/INS</cell>
+    <cell col="1" row="1">GNSS 수신기</cell>
+    <cell col="2" row="1">1대 이상</cell>
+    <cell col="3" row="1">◦ 2주파 수신기 이상 ◦ 1Hz 이상의 측정 빈도 ◦ 의사거리 및 반송파 위상에 대한 관측 가능 ◦ 키네메틱(Kinematic) GNSS 해석이 가능하 여야 함</cell>
+  </row>
+  <row>
+    <cell col="0" row="2"></cell>
+    <cell col="1" row="2">INS</cell>
+    <cell col="2" row="2">1대 이상</cell>
+    <cell col="3" row="2">◦ 100Hz 이상의 측정 빈도 ◦ 3축 방향(롤링, 피칭, 헤딩)의 자세 및 가속도 의 측정이 가능하고, 아래 제시된 성능 또는 이 와 동등 이상의 성능을 확보하여야 함 - 롤링 : 0.05도 - 피칭 : 0.05도 - 헤딩 : 0.10도</cell>
+  </row>
+  <row>
+    <cell col="0" row="3"></cell>
+    <cell col="1" row="3">GNSS/INS 통합계산</cell>
+    <cell col="2" row="3"></cell>
+    <cell col="3" row="3">◦ GNSS와 INS를 통합처리 하여 위치정보를 산 출할 수 있어야 함 ◦ 통합처리 결과의 위치오차는 평면 0.1m, 수직 0.2m 이내의 성능을 확보하여야 함</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">DMI</cell>
+    <cell col="1" row="4"></cell>
+    <cell col="2" row="4">1대 이상</cell>
+    <cell col="3" row="4">◦ 발주자 요구에 따라 필요한 경우 부착하며, 차 축 1회전 당 100회 이상의 펄스 신호를 수집할 수 있어야 함</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">기타사항</cell>
+    <cell col="1" row="5"></cell>
+    <cell col="2" row="5"></cell>
+    <cell col="3" row="5">◦ INS 또는 INS와 DMI만을 사용하여 측정한 위치 오차는 일정한 경향성을 나타내므로 기준 점 자료와 연계하여 위치 및 자세 측정 정확도 를 향상할 수 있어야 함 ◦ GNSS 신호가 단절된 이후 60초가 경과 할 때 까지 상기의 성능기준을 만족하여야 함</cell>
+  </row>
+</table>

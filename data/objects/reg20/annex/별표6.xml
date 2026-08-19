@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표6" gubun="별표" no="6" title="지하시설물(구조물형) 별 지하현장측량 위치 및 대상" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=38099167">
+  <text>[별표 6] 지하시설물(구조물형) 별 지하현장측량 위치 및 대상</text>
+  <table rows="3" cols="3">
+    <row>
+      <cell col="0" row="0">구분</cell>
+      <cell col="1" row="0">측량위치 (예시)</cell>
+      <cell col="2" row="0">주요 측량 대상</cell>
+      <cell col="3" row="0" colspan="8504">[지하철 역사 진출입계단]</cell>
+      <cell col="3" row="0" colspan="8504">[지하철 노선부 중심선 및 반대편]</cell>
+      <cell col="3" row="0" colspan="8504">[지하철 노선부 기타시설 측량위치]</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">지하철 역사</cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1">- 역사 출입구
+- 출입구 계단부
+- 역사 내 주요 변곡점
+*제19조에 따라 측량을 수행하지 않거나, 보조측량 수행 가능</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">지하철 노선</cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2">- 선로 양쪽 내벽
+- 선로 중심선
+- 선로 내 주요 변곡점
+*제19조에 따라 측량을 수행하지 않거나, 보조측량 수행 가능</cell>
+    </row>
+  </table>
+  <table rows="3" cols="3">
+    <row>
+      <cell col="0" row="0">구분</cell>
+      <cell col="1" row="0">측량위치 (예시)</cell>
+      <cell col="2" row="0">주요 측량 대상</cell>
+      <cell col="3" row="0" colspan="8504">[지하차도 차도부 및 터널부]</cell>
+      <cell col="3" row="0" colspan="8504">[지하차도 터널내부 및 기타시설]</cell>
+      <cell col="3" row="0" colspan="8504">[지하보도 진출입계단]</cell>
+      <cell col="3" row="0" colspan="8504">[지하보도 연결통로 및 기타시설]</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">지하차도</cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1">- 지하차도 진·출입구간
+  (날개부 시종점)
+- 터널부 상·하단
+- 지상연결부 시설
+- 지하차도 내 주요 변곡점
+*제19조에 따라 측량을 수행하지 않거나, 보조측량 수행 가능</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">지하보도</cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2">- 출입구 및 출입구 계단부
+- 지상연결부 시설
+- 지하보도 내 주요 변곡점
+*제19조에 따라 측량을 수행하지 않거나, 보조측량 수행 가능</cell>
+    </row>
+  </table>
+  <table rows="3" cols="3">
+    <row>
+      <cell col="0" row="0">구분</cell>
+      <cell col="1" row="0">측량위치 (예시)</cell>
+      <cell col="2" row="0">주요 측량 대상</cell>
+      <cell col="3" row="0" colspan="8504">[지하상가 계단부 및 내부]</cell>
+      <cell col="3" row="0" colspan="8504">[지하상가 기타시설]</cell>
+      <cell col="3" row="0" colspan="8504">[지하주차장 진입램프]</cell>
+      <cell col="3" row="0" colspan="8504">[지하주차장 내부 및 기타시설]</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">지하상가</cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1">- 출입구 및 출입구 계단부
+- 지상연결부 시설
+- 지하상가 내 주요 변곡점
+*제19조에 따라 측량을 수행하지 않거나, 보조측량 수행 가능</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">지하
+주차장</cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2">- 출입구 및 출입구 계단부
+- 지상연결부 시설
+- 램프구간
+- 지하주차장 내 주요 변곡점
+*제19조에 따라 측량을 수행하지 않거나, 보조측량 수행 가능</cell>
+    </row>
+  </table>
+</annex>

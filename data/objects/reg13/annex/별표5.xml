@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표5" gubun="별표" no="5" title="품질관리기준" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=118668771">
+  <text>[별표 5] 품질관리기준</text>
+  <table rows="6" cols="2">
+    <row>
+      <cell col="0" row="0">지상표본거리</cell>
+      <cell col="1" row="0">평면표고 오차의 한계</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">8cm 이내</cell>
+      <cell col="1" row="1">±0.05m 이내</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">12cm 이내</cell>
+      <cell col="1" row="2">±0.10m 이내</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">25cm 이내</cell>
+      <cell col="1" row="3">±0.15m 이내</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">42cm 이내</cell>
+      <cell col="1" row="4">±0.20m 이내</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">65cm 이내</cell>
+      <cell col="1" row="5">±0.30m 이내</cell>
+    </row>
+  </table>
+  <table rows="7" cols="3">
+    <row>
+      <cell col="0" row="0">기준 GSD</cell>
+      <cell col="1" row="0">RMSE(m)</cell>
+      <cell col="2" row="0">최대값(m)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">8㎝</cell>
+      <cell col="1" row="1">0.08</cell>
+      <cell col="2" row="1">0.16</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">12㎝</cell>
+      <cell col="1" row="2">0.12</cell>
+      <cell col="2" row="2">0.24</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">25cm</cell>
+      <cell col="1" row="3">0.25</cell>
+      <cell col="2" row="3">0.50</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">42㎝</cell>
+      <cell col="1" row="4">0.42</cell>
+      <cell col="2" row="4">0.84</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">65㎝</cell>
+      <cell col="1" row="5">0.65</cell>
+      <cell col="2" row="5">1.30</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">80㎝</cell>
+      <cell col="1" row="6">0.80</cell>
+      <cell col="2" row="6">1.60</cell>
+    </row>
+  </table>
+  <table rows="7" cols="3">
+    <row>
+      <cell col="0" row="0">기준 GSD</cell>
+      <cell col="1" row="0">RMSE(m)</cell>
+      <cell col="2" row="0">최대값(m)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">8㎝</cell>
+      <cell col="1" row="1">0.08</cell>
+      <cell col="2" row="1">0.16</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">12㎝</cell>
+      <cell col="1" row="2">0.12</cell>
+      <cell col="2" row="2">0.24</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">25cm</cell>
+      <cell col="1" row="3">0.25</cell>
+      <cell col="2" row="3">0.50</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">42㎝</cell>
+      <cell col="1" row="4">0.42</cell>
+      <cell col="2" row="4">0.84</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">65㎝</cell>
+      <cell col="1" row="5">0.65</cell>
+      <cell col="2" row="5">1.30</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">80㎝</cell>
+      <cell col="1" row="6">0.80</cell>
+      <cell col="2" row="6">1.60</cell>
+    </row>
+  </table>
+  <table rows="4" cols="7">
+    <row>
+      <cell col="0" row="0" rowspan="2">도 화
+축 척</cell>
+      <cell col="1" row="0" colspan="3">RMSE</cell>
+      <cell col="4" row="0" colspan="3">최대오차</cell>
+    </row>
+    <row>
+      <cell col="1" row="1">평면
+위치</cell>
+      <cell col="2" row="1">등고선</cell>
+      <cell col="3" row="1">표고점</cell>
+      <cell col="4" row="1">평면
+위치</cell>
+      <cell col="5" row="1">등고선</cell>
+      <cell col="6" row="1">표고점</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">1/1,000</cell>
+      <cell col="1" row="2">0.2m</cell>
+      <cell col="2" row="2">0.3m</cell>
+      <cell col="3" row="2">0.15m</cell>
+      <cell col="4" row="2">0.4m</cell>
+      <cell col="5" row="2">0.6m</cell>
+      <cell col="6" row="2">0.3m</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">1/5,000</cell>
+      <cell col="1" row="3">1.0m</cell>
+      <cell col="2" row="3">1.0m</cell>
+      <cell col="3" row="3">0.5m</cell>
+      <cell col="4" row="3">2.0m</cell>
+      <cell col="5" row="3">2.0m</cell>
+      <cell col="6" row="3">1.0m</cell>
+    </row>
+  </table>
+  <table rows="20" cols="9">
+    <row>
+      <cell col="0" row="0" rowspan="2">작업공정</cell>
+      <cell col="1" row="0" rowspan="2">대상데이터</cell>
+      <cell col="2" row="0" rowspan="2">품질요소</cell>
+      <cell col="3" row="0" colspan="2">검증항목</cell>
+      <cell col="5" row="0" colspan="2">검증방법</cell>
+      <cell col="7" row="0" rowspan="2">검증기준</cell>
+      <cell col="8" row="0" rowspan="2">표본
+추출법</cell>
+    </row>
+    <row>
+      <cell col="3" row="1">항목명</cell>
+      <cell col="4" row="1">세부검증사항</cell>
+      <cell col="5" row="1">구분</cell>
+      <cell col="6" row="1">방법</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" rowspan="8">항공사진
+촬영</cell>
+      <cell col="1" row="2">항공카메라 검정 데이터</cell>
+      <cell col="2" row="2">논리적일관성</cell>
+      <cell col="3" row="2">검정여부</cell>
+      <cell col="4" row="2">· 검정 보고서 적정성(검정방법, 장비S/N 등) 확인</cell>
+      <cell col="5" row="2">실내</cell>
+      <cell col="6" row="2">수동평가</cell>
+      <cell col="7" row="2">적합/부적합</cell>
+      <cell col="8" row="2">전수</cell>
+    </row>
+    <row>
+      <cell col="1" row="3">촬영기록부/ 코스별검사표</cell>
+      <cell col="2" row="3">시간적품질</cell>
+      <cell col="3" row="3">일자 및 
+시간</cell>
+      <cell col="4" row="3">· (최적시간대 촬영 여부)촬영기록부 및 GNSS Time을 계산하여 촬영일 및 촬영시간 확인</cell>
+      <cell col="5" row="3">실내</cell>
+      <cell col="6" row="3">자동평가</cell>
+      <cell col="7" row="3">적합/부적합</cell>
+      <cell col="8" row="3">전수</cell>
+    </row>
+    <row>
+      <cell col="1" row="4" rowspan="5">초기
+외부표정요소</cell>
+      <cell col="2" row="4" rowspan="4">위치정확성</cell>
+      <cell col="3" row="4">기준국위치</cell>
+      <cell col="4" row="4">· 기준국 반경 50㎞이내 촬영여부 확인</cell>
+      <cell col="5" row="4">실내</cell>
+      <cell col="6" row="4">수동평가</cell>
+      <cell col="7" row="4">기준국 거리 50km
+(도서지역 70km)</cell>
+      <cell col="8" row="4">전수</cell>
+    </row>
+    <row>
+      <cell col="3" row="5">코스유지</cell>
+      <cell col="4" row="5">· 초기외부표정요소를 이용하여 촬영고도 및 촬영코스 이탈 여부를 확인</cell>
+      <cell col="5" row="5">실내</cell>
+      <cell col="6" row="5">자동평가</cell>
+      <cell col="7" row="5">수평이탈 : 15%
+수직이탈 : 5% 이내
+(12cm)10% 이내</cell>
+      <cell col="8" row="5">전수</cell>
+    </row>
+    <row>
+      <cell col="3" row="6">촬영각</cell>
+      <cell col="4" row="6">· 초기외부표정요소의 연직각과 편류각에 대한 기준 초과여부 확인</cell>
+      <cell col="5" row="6">실내</cell>
+      <cell col="6" row="6">자동평가</cell>
+      <cell col="7" row="6">이내</cell>
+      <cell col="8" row="6">전수</cell>
+    </row>
+    <row>
+      <cell col="3" row="7">중복도</cell>
+      <cell col="4" row="7">· 촬영 표정도 및 초기외부표정요소의 사진간 기선길이와 코스간 길이를 계산하여 중복도 확인
+· 산악지의 경우 육안검사를 병행</cell>
+      <cell col="5" row="7">실내</cell>
+      <cell col="6" row="7">자동평가
+수동평가</cell>
+      <cell col="7" row="7">종중복 : 60%
+횡중복 : 30% 이상</cell>
+      <cell col="8" row="7">전수</cell>
+    </row>
+    <row>
+      <cell col="2" row="8">논리적일관성</cell>
+      <cell col="3" row="8">해상도</cell>
+      <cell col="4" row="8">· 초점거리, 비행고도 및 영상화소 크기를 이용하여 확인(촬영영상 확인 병행)</cell>
+      <cell col="5" row="8">실내</cell>
+      <cell col="6" row="8">자동평가
+수동평가</cell>
+      <cell col="7" row="8">12cm /  25cm</cell>
+      <cell col="8" row="8">전수</cell>
+    </row>
+    <row>
+      <cell col="1" row="9">항공영상</cell>
+      <cell col="2" row="9">논리적일관성</cell>
+      <cell col="3" row="9">사진상태</cell>
+      <cell col="4" row="9">· 육안으로 사진상태를 확인하여 후속공정 가능여부 및 재촬영 여부 확인
+  (빛 반사, 연무, 구름, 그림자, 명암 등 유무)</cell>
+      <cell col="5" row="9">실내</cell>
+      <cell col="6" row="9">수동평가</cell>
+      <cell col="7" row="9">적합/부적합</cell>
+      <cell col="8" row="9">전수</cell>
+    </row>
+    <row>
+      <cell col="0" row="10" rowspan="5">항공삼각측량</cell>
+      <cell col="1" row="10">측량성과철</cell>
+      <cell col="2" row="10">위치정확성</cell>
+      <cell col="3" row="10">지상기준점</cell>
+      <cell col="4" row="10">· 측량성과와 지상기준점 조서를 확인하여 측량성과 및 선점위치의 적정성을 확인</cell>
+      <cell col="5" row="10">실내</cell>
+      <cell col="6" row="10">수동평가</cell>
+      <cell col="7" row="10">적합/부적합</cell>
+      <cell col="8" row="10">전수</cell>
+    </row>
+    <row>
+      <cell col="1" row="11">모델인덱스</cell>
+      <cell col="2" row="11">위치정확성</cell>
+      <cell col="3" row="11">지상기준점 배치</cell>
+      <cell col="4" row="11">· 진행방향 5.5km(12cm이내), 11km(25cm 이상), 직각방향 코스 중복부분 1점</cell>
+      <cell col="5" row="11">실내</cell>
+      <cell col="6" row="11">수동평가</cell>
+      <cell col="7" row="11">적합/부적합</cell>
+      <cell col="8" row="11">전수</cell>
+    </row>
+    <row>
+      <cell col="1" row="12" rowspan="2">항공삼각측량 계산부</cell>
+      <cell col="2" row="12" rowspan="2">위치정확성</cell>
+      <cell col="3" row="12">연결점/
+결합점</cell>
+      <cell col="4" row="12">· Report상 연결점/결합점성과의 관측교차 확인</cell>
+      <cell col="5" row="12">실내</cell>
+      <cell col="6" row="12">수동평가</cell>
+      <cell col="7" row="12">X, Y의 관측교차 각 0.5 pixel 이내</cell>
+      <cell col="8" row="12">전수</cell>
+    </row>
+    <row>
+      <cell col="3" row="13">지상기준점
+잔차</cell>
+      <cell col="4" row="13">· 항공삼각측량 후 Report상 지상기준점의 평면·표고의 잔차 확인</cell>
+      <cell col="5" row="13">실내</cell>
+      <cell col="6" row="13">수동평가</cell>
+      <cell col="7" row="13">RMSE:1pixel
+최대값:2pixel</cell>
+      <cell col="8" row="13">전수</cell>
+    </row>
+    <row>
+      <cell col="1" row="14">최종
+외부표정요소</cell>
+      <cell col="2" row="14">위치정확성</cell>
+      <cell col="3" row="14">지상기준점 및 검사점 검사</cell>
+      <cell col="4" row="14">· 수치도화기를 이용하여 지상기준점 및 검사검의 평면•표고의 잔차 확인</cell>
+      <cell col="5" row="14">실내</cell>
+      <cell col="6" row="14">재측</cell>
+      <cell col="7" row="14">RMSE:1pixel
+최대값:2pixel</cell>
+      <cell col="8" row="14">전수</cell>
+    </row>
+    <row>
+      <cell col="0" row="15" rowspan="5">수치도화</cell>
+      <cell col="1" row="15" rowspan="5">도화원도</cell>
+      <cell col="2" row="15" rowspan="3">완전성</cell>
+      <cell col="3" row="15">초과</cell>
+      <cell col="4" row="15">· 항공사진에 없는 객체의 입력 여부 확인</cell>
+      <cell col="5" row="15">실내</cell>
+      <cell col="6" row="15">수동평가</cell>
+      <cell col="7" row="15">오류비율 : 10%</cell>
+      <cell col="8" row="15">집락 추출(30%)</cell>
+    </row>
+    <row>
+      <cell col="3" row="16">누락</cell>
+      <cell col="4" row="16">· 항공사진에 있는 객체의 누락 여부 확인</cell>
+      <cell col="5" row="16">실내</cell>
+      <cell col="6" row="16">수동평가</cell>
+      <cell col="7" row="16">오류비율 : 10%</cell>
+      <cell col="8" row="16">집락 추출(30%)</cell>
+    </row>
+    <row>
+      <cell col="3" row="17">묘사오류</cell>
+      <cell col="4" row="17">· 항공사진에 있는 객체와 같게 묘사되었는지 여부를 확인</cell>
+      <cell col="5" row="17">실내</cell>
+      <cell col="6" row="17">수동평가</cell>
+      <cell col="7" row="17">오류비율 : 10%</cell>
+      <cell col="8" row="17">집락 추출(30%)</cell>
+    </row>
+    <row>
+      <cell col="2" row="18">위치정확성</cell>
+      <cell col="3" row="18">묘사오차</cell>
+      <cell col="4" row="18"></cell>
+      <cell col="5" row="18">실내</cell>
+      <cell col="6" row="18">재측</cell>
+      <cell col="7" row="18">RMSE(평면): 1.00m
+RMSE(표고): 0.50m
+RMSE(등고): 1.00m</cell>
+      <cell col="8" row="18">집락
+추출
+(30%)</cell>
+    </row>
+    <row>
+      <cell col="2" row="19">논리적일관성</cell>
+      <cell col="3" row="19">3D 형식</cell>
+      <cell col="4" row="19">· 도화원도 상 모든 객체가 3D 형식으로 제작 되었는지 여부 확인</cell>
+      <cell col="5" row="19">실내</cell>
+      <cell col="6" row="19">수동평가</cell>
+      <cell col="7" row="19">오류비율 : 10%</cell>
+      <cell col="8" row="19">집락
+추출
+(30%)</cell>
+    </row>
+  </table>
+</annex>

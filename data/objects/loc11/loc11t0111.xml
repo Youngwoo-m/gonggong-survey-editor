@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0111" article="제640조(方法)" rows="3" cols="4" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">区分 距離</cell>
+    <cell col="1" row="0" header="1">平 地</cell>
+    <cell col="2" row="0" header="1">山 地</cell>
+    <cell col="3" row="0" header="1">備 考</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">30m 未満</cell>
+    <cell col="1" row="1">10mm</cell>
+    <cell col="2" row="1">15mm</cell>
+    <cell col="3" row="1">点間距離が測定できる場合、Ｓは座標差から 求めた距離とする。 点間距離が測定できない場合、Ｓは既知点又 は既設点から条件点までの距離のうち短い方 とする。</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">30m 以上</cell>
+    <cell col="1" row="2">S/3,000</cell>
+    <cell col="2" row="2">S/2,000</cell>
+    <cell col="3" row="2"></cell>
+  </row>
+</table>

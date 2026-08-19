@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="151295863" article="제19조" rows="10" cols="6" source="공공측량 작업규정.2025.04.23_수식수정.오류표시.hwpx">
+  <row>
+    <cell col="0" row="0" colspan="2">구분
+항목</cell>
+    <cell col="2" row="0">1급 공공삼각점 측량</cell>
+    <cell col="3" row="0">2급 공공삼각점 측량</cell>
+    <cell col="4" row="0">3급 공공삼각점 측량</cell>
+    <cell col="5" row="0">4급 공공삼각점 측량</cell>
+  </row>
+  <row>
+    <cell col="0" row="1" rowspan="9">결합방식
+·
+폐합 방식</cell>
+    <cell col="1" row="1">1.1개 대각망에서의 기지점수</cell>
+    <cell col="2" row="1" colspan="2"></cell>
+    <cell col="4" row="1" colspan="2">3점 이상</cell>
+  </row>
+  <row>
+    <cell col="1" row="2">2.단위다각형의 변수</cell>
+    <cell col="2" row="2">10번 이하</cell>
+    <cell col="3" row="2">12번 이하</cell>
+    <cell col="4" row="2">-</cell>
+    <cell col="5" row="2">-</cell>
+  </row>
+  <row>
+    <cell col="1" row="3" rowspan="2">3.노선의 변수</cell>
+    <cell col="2" row="3">5번 이하</cell>
+    <cell col="3" row="3">6번 이하</cell>
+    <cell col="4" row="3" rowspan="2">7번 이하</cell>
+    <cell col="5" row="3" rowspan="2">10번 이하</cell>
+  </row>
+  <row>
+    <cell col="2" row="4" colspan="2">벌채, 수목 및 지형의 상황에 따라서 시행자의 승인을 얻어 변수를 증가할 수 있다.</cell>
+  </row>
+  <row>
+    <cell col="1" row="5">4.절점간 거리</cell>
+    <cell col="2" row="5">250m 이상</cell>
+    <cell col="3" row="5">150m 이상</cell>
+    <cell col="4" row="5">70m 이상</cell>
+    <cell col="5" row="5">20m 이상</cell>
+  </row>
+  <row>
+    <cell col="1" row="6" rowspan="2">5.노선장</cell>
+    <cell col="2" row="6">3km 이하</cell>
+    <cell col="3" row="6">2km 이하</cell>
+    <cell col="4" row="6" rowspan="2">1km 이하</cell>
+    <cell col="5" row="6" rowspan="2">500m 이하</cell>
+  </row>
+  <row>
+    <cell col="2" row="7" colspan="2">GPS 수신기를 사용하는 경우는 5km 이하로 한다.</cell>
+  </row>
+  <row>
+    <cell col="1" row="8">6.편심거리의 제한</cell>
+    <cell col="2" row="8" colspan="4">S/e ≥ 6 (S : 측점간거리, e :　편심거리)</cell>
+  </row>
+  <row>
+    <cell col="1" row="9">7.노선도형</cell>
+    <cell col="2" row="9" colspan="4">미지점은 두 기지점을 잇는 직선에서 양측 40〫 이하의 지역 내에 선점하고 노선중의 협각은 60〫 이상을 원칙으로 한다. 다만, 지형의 상황에 따라 부득이한 경우는 예외로 한다.</cell>
+  </row>
+</table>

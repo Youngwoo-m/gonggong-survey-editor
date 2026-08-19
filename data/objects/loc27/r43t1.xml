@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="r43t1" article="rule 43 Parcel type components" rows="10" cols="2" source="Table 3: Parcel type component of appellation">
+  <row>
+    <cell col="0" row="0" header="1">Type of parcel</cell>
+    <cell col="1" row="0" header="1">Parcel type component</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">Primary parcel in a Land Transfer CSD</cell>
+    <cell col="1" row="1">“Lot”</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">–with a height-limited boundary</cell>
+    <cell col="1" row="2">“Height-Limited Lot”</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">Primary parcel in a Survey Office CSD</cell>
+    <cell col="1" row="3">“Section”</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">with a height-limited boundary</cell>
+    <cell col="1" row="4">“Height-Limited Section”</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">Unit title development</cell>
+    <cell col="1" row="5">As appropriate,— (a) “Principal Unit” : (b) “Accessory Unit” : (c) “Future Development Unit” : (d) “Common Property”</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">Movable marginal strip parcel</cell>
+    <cell col="1" row="6">“Marginal Strip”</cell>
+  </row>
+  <row>
+    <cell col="0" row="7">Esplanade strip parcel</cell>
+    <cell col="1" row="7">“Esplanade Strip”</cell>
+  </row>
+  <row>
+    <cell col="0" row="8">Any other non-primary parcel</cell>
+    <cell col="1" row="8">“Area”</cell>
+  </row>
+  <row>
+    <cell col="0" row="9">with a height-limited boundary</cell>
+    <cell col="1" row="9">“Height-Limited Area”</cell>
+  </row>
+</table>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="151295967" article="제145조" rows="4" cols="4" source="공공측량 작업규정.2025.04.23_수식수정.오류표시.hwpx">
+  <row>
+    <cell col="0" row="0">구분</cell>
+    <cell col="1" row="0">방법</cell>
+    <cell col="2" row="0">단위</cell>
+    <cell col="3" row="0">교차의 허용범위</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">수평각 측정</cell>
+    <cell col="1" row="1">1대회</cell>
+    <cell col="2" row="1">20초</cell>
+    <cell col="3" row="1">-</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">연직각 측정</cell>
+    <cell col="1" row="2">1대회</cell>
+    <cell col="2" row="2">60초</cell>
+    <cell col="3" row="2">-</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">거리 측정</cell>
+    <cell col="1" row="3">2최 측정</cell>
+    <cell col="2" row="3">mm</cell>
+    <cell col="3" row="3">5mm</cell>
+  </row>
+</table>

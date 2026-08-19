@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식85" gubun="서식" no="85" title="소유자정리 결의서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454995">
+  <table rows="15" cols="17">
+    <row>
+      <cell col="0" row="0" colspan="17">[별지 제85호서식]</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="17">소 유 자 정 리  결 의 서</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">번    호</cell>
+      <cell col="2" row="2" colspan="5">제           호</cell>
+      <cell col="7" row="2" colspan="2" rowspan="3">결
+재</cell>
+      <cell col="9" row="2" colspan="2"></cell>
+      <cell col="11" row="2" colspan="2"></cell>
+      <cell col="13" row="2" colspan="2"></cell>
+      <cell col="15" row="2" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">결의일</cell>
+      <cell col="2" row="3" colspan="5">년   월   일</cell>
+      <cell col="9" row="3" colspan="2" rowspan="2"></cell>
+      <cell col="11" row="3" colspan="2" rowspan="2"></cell>
+      <cell col="13" row="3" colspan="2" rowspan="2"></cell>
+      <cell col="15" row="3" colspan="2" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="2">보존기간</cell>
+      <cell col="2" row="4" colspan="5">5년</cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="4">접     수</cell>
+      <cell col="4" row="5" colspan="2">정     리</cell>
+      <cell col="6" row="5" colspan="4">기 정 리</cell>
+      <cell col="10" row="5" colspan="4">불일치 통지</cell>
+      <cell col="14" row="5" colspan="3" rowspan="2">비   고</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">건수</cell>
+      <cell col="1" row="6" colspan="3">지번 수</cell>
+      <cell col="4" row="6">건수</cell>
+      <cell col="5" row="6">지번 수</cell>
+      <cell col="6" row="6" colspan="2">건수</cell>
+      <cell col="8" row="6" colspan="2">지번 수</cell>
+      <cell col="10" row="6" colspan="2">건수</cell>
+      <cell col="12" row="6" colspan="2">지번 수</cell>
+    </row>
+    <row>
+      <cell col="0" row="7"></cell>
+      <cell col="1" row="7" colspan="3"></cell>
+      <cell col="4" row="7"></cell>
+      <cell col="5" row="7"></cell>
+      <cell col="6" row="7" colspan="2"></cell>
+      <cell col="8" row="7" colspan="2"></cell>
+      <cell col="10" row="7" colspan="2"></cell>
+      <cell col="12" row="7" colspan="2"></cell>
+      <cell col="14" row="7" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="4" rowspan="2">토지 소재</cell>
+      <cell col="4" row="8" colspan="2">계</cell>
+      <cell col="6" row="8" colspan="4">소유권 보존</cell>
+      <cell col="10" row="8" colspan="4">소유권 이전</cell>
+      <cell col="14" row="8" colspan="3">기   타</cell>
+    </row>
+    <row>
+      <cell col="4" row="9">건수</cell>
+      <cell col="5" row="9">지번 수</cell>
+      <cell col="6" row="9" colspan="2">건수</cell>
+      <cell col="8" row="9" colspan="2">지번 수</cell>
+      <cell col="10" row="9" colspan="2">건수</cell>
+      <cell col="12" row="9" colspan="2">지번 수</cell>
+      <cell col="14" row="9" colspan="2">건수</cell>
+      <cell col="16" row="9">지번 수</cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="4"></cell>
+      <cell col="4" row="10"></cell>
+      <cell col="5" row="10"></cell>
+      <cell col="6" row="10" colspan="2"></cell>
+      <cell col="8" row="10" colspan="2"></cell>
+      <cell col="10" row="10" colspan="2"></cell>
+      <cell col="12" row="10" colspan="2"></cell>
+      <cell col="14" row="10" colspan="2"></cell>
+      <cell col="16" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="3">정  리  일</cell>
+      <cell col="3" row="11" colspan="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="3">정  리  자</cell>
+      <cell col="3" row="12" colspan="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="3">확  인  자</cell>
+      <cell col="3" row="13" colspan="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="17">210㎜×297㎜(보존용지(2종) 70g/㎡)</cell>
+    </row>
+  </table>
+</annex>

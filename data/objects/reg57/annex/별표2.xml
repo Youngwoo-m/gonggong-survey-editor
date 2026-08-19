@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표2" gubun="별표" no="2" title="설계도서ㆍ시설물관리대장 등 관련 서류의 종류(제6조 관련)" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162762621">
+  <text>■ 시설물의 안전 및 유지관리에 관한 특별법 시행령 [별표 2]</text>
+  <table rows="5" cols="3">
+    <row>
+      <cell col="0" row="0" colspan="3">설계도서ㆍ시설물관리대장 등 관련 서류의 종류(제6조 관련)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">구분</cell>
+      <cell col="1" row="1">제1종시설물ㆍ제2종시설물</cell>
+      <cell col="2" row="1">제3종시설물</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">설계도서 등</cell>
+      <cell col="1" row="2">가. 준공 도면
+나. 준공 내역서 및 시방서
+다. 구조계산서
+라. 그 밖에 시공상 특기한 사항에 관한 보고서 등</cell>
+      <cell col="2" row="2">준공 도면(준공 도면이 없는 경우 실측 도면)</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">2. 시설물관리대장</cell>
+      <cell col="1" row="3">법 제21조제1항에 따른 안전점검등에 관한 지침에서 정한 시설물 관리대장</cell>
+      <cell col="2" row="3">법 제21조제1항에 따른 안전점검등에 관한 지침에서 정한 시설물 관리대장</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">3. 감리보고서</cell>
+      <cell col="1" row="4">최종감리보고서</cell>
+      <cell col="2" row="4"></cell>
+    </row>
+  </table>
+</annex>

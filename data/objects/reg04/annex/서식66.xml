@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식66" gubun="서식" no="66" title="대지권등록부" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454821">
+  <table rows="22" cols="56">
+    <row>
+      <cell col="0" row="0" colspan="56">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별지 제66호서식] &lt;개정 2017. 1. 31.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1"></cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1" colspan="2"></cell>
+      <cell col="5" row="1"></cell>
+      <cell col="6" row="1" colspan="2"></cell>
+      <cell col="8" row="1"></cell>
+      <cell col="9" row="1"></cell>
+      <cell col="10" row="1"></cell>
+      <cell col="11" row="1" colspan="2"></cell>
+      <cell col="13" row="1"></cell>
+      <cell col="14" row="1" colspan="2"></cell>
+      <cell col="16" row="1" colspan="2"></cell>
+      <cell col="18" row="1" colspan="2"></cell>
+      <cell col="20" row="1"></cell>
+      <cell col="21" row="1"></cell>
+      <cell col="22" row="1" colspan="2"></cell>
+      <cell col="24" row="1" colspan="2"></cell>
+      <cell col="26" row="1"></cell>
+      <cell col="27" row="1" colspan="2"></cell>
+      <cell col="29" row="1"></cell>
+      <cell col="30" row="1" colspan="2"></cell>
+      <cell col="32" row="1"></cell>
+      <cell col="33" row="1" colspan="2"></cell>
+      <cell col="35" row="1"></cell>
+      <cell col="36" row="1" colspan="2"></cell>
+      <cell col="38" row="1" colspan="2"></cell>
+      <cell col="40" row="1"></cell>
+      <cell col="41" row="1" colspan="2"></cell>
+      <cell col="43" row="1" colspan="2"></cell>
+      <cell col="45" row="1" colspan="2"></cell>
+      <cell col="47" row="1" colspan="2"></cell>
+      <cell col="49" row="1"></cell>
+      <cell col="50" row="1" colspan="2"></cell>
+      <cell col="52" row="1" colspan="2"></cell>
+      <cell col="54" row="1"></cell>
+      <cell col="55" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="15"></cell>
+      <cell col="15" row="2" colspan="22"></cell>
+      <cell col="37" row="2" colspan="19"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="4">고유번호</cell>
+      <cell col="4" row="3" colspan="11"></cell>
+      <cell col="15" row="3" colspan="22">대지권등록부</cell>
+      <cell col="37" row="3" colspan="5">전유부분 건물표시</cell>
+      <cell col="42" row="3" colspan="6"></cell>
+      <cell col="48" row="3" colspan="5">장번호</cell>
+      <cell col="53" row="3" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="4">토지소재</cell>
+      <cell col="4" row="4" colspan="11"></cell>
+      <cell col="15" row="4" colspan="4">지번</cell>
+      <cell col="19" row="4" colspan="6"></cell>
+      <cell col="25" row="4" colspan="6">대지권 비율</cell>
+      <cell col="31" row="4" colspan="6"></cell>
+      <cell col="37" row="4" colspan="5">건물명칭</cell>
+      <cell col="42" row="4" colspan="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="7">지      번</cell>
+      <cell col="7" row="5" colspan="5"></cell>
+      <cell col="12" row="5" colspan="5"></cell>
+      <cell col="17" row="5" colspan="6"></cell>
+      <cell col="23" row="5" colspan="5"></cell>
+      <cell col="28" row="5" colspan="6"></cell>
+      <cell col="34" row="5" colspan="5"></cell>
+      <cell col="39" row="5" colspan="7"></cell>
+      <cell col="46" row="5" colspan="5"></cell>
+      <cell col="51" row="5" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6" colspan="7">대지권 비율</cell>
+      <cell col="7" row="6" colspan="5"></cell>
+      <cell col="12" row="6" colspan="5"></cell>
+      <cell col="17" row="6" colspan="6"></cell>
+      <cell col="23" row="6" colspan="5"></cell>
+      <cell col="28" row="6" colspan="6"></cell>
+      <cell col="34" row="6" colspan="5"></cell>
+      <cell col="39" row="6" colspan="7"></cell>
+      <cell col="46" row="6" colspan="5"></cell>
+      <cell col="51" row="6" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="7" rowspan="2">변 동 일 자</cell>
+      <cell col="7" row="7" colspan="10" rowspan="4">소유권 지분</cell>
+      <cell col="17" row="7" colspan="39">소     유     자</cell>
+    </row>
+    <row>
+      <cell col="17" row="8" colspan="27" rowspan="3">주         소</cell>
+      <cell col="44" row="8" colspan="12" rowspan="2">등 록  번 호</cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="7" rowspan="2">변 동 원 인</cell>
+    </row>
+    <row>
+      <cell col="44" row="10" colspan="12">성명 또는 명칭</cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="7">년   월   일</cell>
+      <cell col="7" row="11" colspan="10"></cell>
+      <cell col="17" row="11" colspan="27"></cell>
+      <cell col="44" row="11" colspan="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="7"></cell>
+      <cell col="7" row="12" colspan="10"></cell>
+      <cell col="17" row="12" colspan="27"></cell>
+      <cell col="44" row="12" colspan="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="7">년   월   일</cell>
+      <cell col="7" row="13" colspan="10"></cell>
+      <cell col="17" row="13" colspan="27"></cell>
+      <cell col="44" row="13" colspan="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="7"></cell>
+      <cell col="7" row="14" colspan="10"></cell>
+      <cell col="17" row="14" colspan="27"></cell>
+      <cell col="44" row="14" colspan="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="7">년   월   일</cell>
+      <cell col="7" row="15" colspan="10"></cell>
+      <cell col="17" row="15" colspan="27"></cell>
+      <cell col="44" row="15" colspan="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="7"></cell>
+      <cell col="7" row="16" colspan="10"></cell>
+      <cell col="17" row="16" colspan="27"></cell>
+      <cell col="44" row="16" colspan="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17" colspan="7">년   월   일</cell>
+      <cell col="7" row="17" colspan="10"></cell>
+      <cell col="17" row="17" colspan="27"></cell>
+      <cell col="44" row="17" colspan="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18" colspan="7"></cell>
+      <cell col="7" row="18" colspan="10"></cell>
+      <cell col="17" row="18" colspan="27"></cell>
+      <cell col="44" row="18" colspan="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19" colspan="56"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20"></cell>
+      <cell col="1" row="20"></cell>
+      <cell col="2" row="20"></cell>
+      <cell col="3" row="20" colspan="2"></cell>
+      <cell col="5" row="20"></cell>
+      <cell col="6" row="20" colspan="2"></cell>
+      <cell col="8" row="20"></cell>
+      <cell col="9" row="20"></cell>
+      <cell col="10" row="20"></cell>
+      <cell col="11" row="20" colspan="2"></cell>
+      <cell col="13" row="20"></cell>
+      <cell col="14" row="20" colspan="2"></cell>
+      <cell col="16" row="20" colspan="2"></cell>
+      <cell col="18" row="20" colspan="2"></cell>
+      <cell col="20" row="20"></cell>
+      <cell col="21" row="20"></cell>
+      <cell col="22" row="20" colspan="2"></cell>
+      <cell col="24" row="20" colspan="2"></cell>
+      <cell col="26" row="20"></cell>
+      <cell col="27" row="20" colspan="2"></cell>
+      <cell col="29" row="20"></cell>
+      <cell col="30" row="20" colspan="2"></cell>
+      <cell col="32" row="20"></cell>
+      <cell col="33" row="20" colspan="2"></cell>
+      <cell col="35" row="20"></cell>
+      <cell col="36" row="20" colspan="2"></cell>
+      <cell col="38" row="20" colspan="2"></cell>
+      <cell col="40" row="20"></cell>
+      <cell col="41" row="20" colspan="2"></cell>
+      <cell col="43" row="20" colspan="2"></cell>
+      <cell col="45" row="20" colspan="2"></cell>
+      <cell col="47" row="20" colspan="2"></cell>
+      <cell col="49" row="20"></cell>
+      <cell col="50" row="20" colspan="2"></cell>
+      <cell col="52" row="20" colspan="2"></cell>
+      <cell col="54" row="20"></cell>
+      <cell col="55" row="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21" colspan="56">270㎜×190㎜ [백상지(150g/㎡)]</cell>
+    </row>
+  </table>
+</annex>

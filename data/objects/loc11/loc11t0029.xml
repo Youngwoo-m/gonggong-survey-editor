@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0029" article="제62조(機器)" rows="12" cols="5" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">使用衛星数</cell>
+    <cell col="1" row="0" header="1">観測回数</cell>
+    <cell col="2" row="0" header="1">データ取得間隔</cell>
+    <cell col="3" row="0" header="1">許容範囲</cell>
+    <cell col="4" row="0" header="1">備 考</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">機 器</cell>
+    <cell col="1" row="1">性 能</cell>
+    <cell col="2" row="1">摘 要</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">１ 級 レ ベ ル</cell>
+    <cell col="1" row="2">別表１による</cell>
+    <cell col="2" row="2">１～４級水準測量</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">２ 級 レ ベ ル</cell>
+    <cell col="1" row="3"></cell>
+    <cell col="2" row="3">２～４級水準測量</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">３ 級 レ ベ ル</cell>
+    <cell col="1" row="4"></cell>
+    <cell col="2" row="4">３～４級水準測量 簡 易 水 準 測 量</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">１ 級 標 尺</cell>
+    <cell col="1" row="5"></cell>
+    <cell col="2" row="5">１～４級水準測量</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">２ 級 標 尺</cell>
+    <cell col="1" row="6"></cell>
+    <cell col="2" row="6">３～４級水準測量</cell>
+  </row>
+  <row>
+    <cell col="0" row="7">１級セオドライト</cell>
+    <cell col="1" row="7"></cell>
+    <cell col="2" row="7">１～４級水準測量（渡海）</cell>
+  </row>
+  <row>
+    <cell col="0" row="8">１級トータルステーション</cell>
+    <cell col="1" row="8"></cell>
+    <cell col="2" row="8">１～４級水準測量（渡海）</cell>
+  </row>
+  <row>
+    <cell col="0" row="9">測 距 儀</cell>
+    <cell col="1" row="9"></cell>
+    <cell col="2" row="9">１～４級水準測量（渡海）</cell>
+  </row>
+  <row>
+    <cell col="0" row="10">水準測量作業用電卓</cell>
+    <cell col="1" row="10">―――</cell>
+    <cell col="2" row="10">―――</cell>
+  </row>
+  <row>
+    <cell col="0" row="11">箱 尺</cell>
+    <cell col="1" row="11"></cell>
+    <cell col="2" row="11">簡 易 水 準 測 量</cell>
+  </row>
+</table>

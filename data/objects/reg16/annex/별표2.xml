@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표2" gubun="별표" no="2" title="장비의 성능기준(제9조 관련)" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=161554091">
+  <text>■ 수치표고모형의 구축 및 관리 등에 관한 규정 [별표 2]
+장비의 성능기준(제9조 관련)
+1. GNSS 안테나 및 수신기
+가. 항공기탑재용 GNSS안테나는 항공기의 천정에 견고하게 고정할 것
+나. GNSS 자료를 1초 이하의 간격으로 취득할 수 있는 것
+다. 2주파로 반송파 위상을 관측할 수 있는 것
+2 INS(관성항법시스템)
+가. INS의 IMU는 롤링, 핏칭, 헤딩의 3축 방향의 자세 및 가속도의 측정이 가능하고, GNSS/INS 자료의 통합처리를 통하여 산출된 자세 추정값의 표준편차가 다음의 성능 이상이어야 함</text>
+  <table rows="5" cols="2">
+    <row>
+      <cell col="0" row="0">센서</cell>
+      <cell col="1" row="0">표준편차</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">롤링</cell>
+      <cell col="1" row="1">0.010도</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">피칭</cell>
+      <cell col="1" row="2">0.010도</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">헤딩</cell>
+      <cell col="1" row="3">0.015도</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">취득간격</cell>
+      <cell col="1" row="4">0.005초</cell>
+    </row>
+  </table>
+  <text>나. 레이저 거리측정기와 직접 고정하여 설치된 것
+3 레이저 거리측정기
+가. 1개의 펄스에 대해서 4개 이상의 반사파를 측정할 수 있는 것
+나. 스캔 기능을 가지고 있을 것
+다. 인체에 대한 안전기준 인증을 받은 장치</text>
+</annex>

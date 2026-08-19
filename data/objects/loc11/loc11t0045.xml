@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0045" article="제94조(点検計算及び再測)" rows="6" cols="4" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">100ｍ以上 250ｍ未満</cell>
+    <cell col="1" row="0" header="1">レベル等による水準測量のうち ３級水準測量に準じて測定する。</cell>
+    <cell col="2" row="0" header="1">mm</cell>
+    <cell col="3" row="0" header="1">往復の較差 ５mm</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">区 分 項 目</cell>
+    <cell col="1" row="1"></cell>
+    <cell col="2" row="1">許容範囲</cell>
+    <cell col="3" row="1">備 考</cell>
+  </row>
+  <row>
+    <cell col="0" row="2"></cell>
+    <cell col="1" row="2"></cell>
+    <cell col="2" row="2">３級水準測量</cell>
+    <cell col="3" row="2"></cell>
+  </row>
+  <row>
+    <cell col="0" row="3">基線ベクトルの 較 差</cell>
+    <cell col="1" row="3">水平（ΔＮ、ΔＥ）</cell>
+    <cell col="2" row="3">20mm</cell>
+    <cell col="3" row="3">ΔＮ：水平面の南北成分の較差 ΔＥ：水平面の東西成分の較差 ΔＵ：高さ成分の較差 （前項第二号にも適用）</cell>
+  </row>
+  <row>
+    <cell col="0" row="4"></cell>
+    <cell col="1" row="4">高さ（ΔＵ）</cell>
+    <cell col="2" row="4">40mm</cell>
+    <cell col="3" row="4"></cell>
+  </row>
+  <row>
+    <cell col="0" row="5">既知点間の楕円体高の閉合差</cell>
+    <cell col="1" row="5"></cell>
+    <cell col="2" row="5">15mm√</cell>
+    <cell col="3" row="5">ΣＳ：路線長（km 単位）</cell>
+  </row>
+</table>

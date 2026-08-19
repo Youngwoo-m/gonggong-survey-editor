@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표1" gubun="별표" no="1" title="선기호 유형" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=119183699">
+  <text>[별표 1] 선기호 유형</text>
+  <table rows="10" cols="4">
+    <row>
+      <cell col="0" row="0">선의 종류</cell>
+      <cell col="1" row="0" colspan="2">선 굵기</cell>
+      <cell col="3" row="0">비 고</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">1 호 선</cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1">0.05㎜</cell>
+      <cell col="3" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2">2 호 선</cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2">0.075㎜</cell>
+      <cell col="3" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">3 호 선</cell>
+      <cell col="1" row="3"></cell>
+      <cell col="2" row="3">0.1㎜</cell>
+      <cell col="3" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4">4 호 선</cell>
+      <cell col="1" row="4"></cell>
+      <cell col="2" row="4">0.15㎜</cell>
+      <cell col="3" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5">5 호 선</cell>
+      <cell col="1" row="5"></cell>
+      <cell col="2" row="5">0.2㎜</cell>
+      <cell col="3" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">6 호 선</cell>
+      <cell col="1" row="6"></cell>
+      <cell col="2" row="6">0.3㎜</cell>
+      <cell col="3" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">7 호 선</cell>
+      <cell col="1" row="7"></cell>
+      <cell col="2" row="7">0.4㎜</cell>
+      <cell col="3" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8">8 호 선</cell>
+      <cell col="1" row="8"></cell>
+      <cell col="2" row="8">0.5㎜</cell>
+      <cell col="3" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">9 호 선</cell>
+      <cell col="1" row="9"></cell>
+      <cell col="2" row="9">1.0㎜</cell>
+      <cell col="3" row="9"></cell>
+    </row>
+  </table>
+</annex>

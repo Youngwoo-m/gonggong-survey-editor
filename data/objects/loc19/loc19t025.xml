@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc19t025" article="안전수칙 종합" rows="11" cols="3" source="측량 안전관리 매뉴얼 (2026.1)">
+  <row>
+    <cell col="0" row="0" header="1">구역</cell>
+    <cell col="1" row="0" header="1">내용</cell>
+    <cell col="2" row="0" header="1">법적 근거</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">① 작업 전 준비</cell>
+    <cell col="1" row="1">위험성평가 실시, 작업계획서 승인, 장비점검 완료</cell>
+    <cell col="2" row="1">산업안전보건법 제36조 / 산업안전 보건기준 규칙 제38조</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">② 개인보호구 착용</cell>
+    <cell col="1" row="2">안전모·안전화·반사조끼·절연 장갑 필수</cell>
+    <cell col="2" row="2">산업안전보건법 제41조</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">③ 드론 비행 전 점검</cell>
+    <cell col="1" row="3">배터리·프로펠러·비행구역 확 인, 비행승인서 소지</cell>
+    <cell col="2" row="3">항공안전법 제129조, 제129조의2</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">④ 교통안전 확보</cell>
+    <cell col="1" row="4">도로 측량 시 교통유도원 배치, 표지병·콘 설치</cell>
+    <cell col="2" row="4">도로교통법 제68조</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">⑤ 기상확인</cell>
+    <cell col="1" row="5">강풍·우박·낙뢰 시 비행·측량 중단</cell>
+    <cell col="2" row="5">산업안전보건기준규칙 제11조</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">⑥ 통신 유지</cell>
+    <cell col="1" row="6">무전기·휴대폰 등 연락체계 유지</cell>
+    <cell col="2" row="6">산업안전보건법 제5조</cell>
+  </row>
+  <row>
+    <cell col="0" row="7">⑦ 감전주의</cell>
+    <cell col="1" row="7">고압선 2 m 이내 접근 금지, 절연삼각대 사용</cell>
+    <cell col="2" row="7">산업안전보건기준규칙 제240조</cell>
+  </row>
+  <row>
+    <cell col="0" row="8">⑧ 절개지·낙석주의</cell>
+    <cell col="1" row="8">낙석방지망 설치, 안전거리 확보</cell>
+    <cell col="2" row="8">산업안전보건기준규칙 제253조</cell>
+  </row>
+  <row>
+    <cell col="0" row="9">⑨ 수변지역 주의</cell>
+    <cell col="1" row="9">구명조끼 착용, 안전요원 배치</cell>
+    <cell col="2" row="9">산업안전보건기준규칙 제261조</cell>
+  </row>
+  <row>
+    <cell col="0" row="10">⑩ 사고 즉시 보고</cell>
+    <cell col="1" row="10">1차 보고 → 관리책임자 → 기 관 통보(24시간 내)</cell>
+    <cell col="2" row="10">산업안전보건법 제52조</cell>
+  </row>
+</table>

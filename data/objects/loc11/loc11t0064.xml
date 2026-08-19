@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0064" article="제176조(対空標識の規格、設置等)" rows="6" cols="5" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">形 状 地図情報レベル</cell>
+    <cell col="1" row="0" header="1">Ａ型、Ｃ型</cell>
+    <cell col="2" row="0" header="1">Ｂ型、Ｅ型</cell>
+    <cell col="3" row="0" header="1">Ｄ 型</cell>
+    <cell col="4" row="0" header="1">厚さ</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">500</cell>
+    <cell col="1" row="1">20 ㎝×10 ㎝</cell>
+    <cell col="2" row="1">20 ㎝×20 ㎝</cell>
+    <cell col="3" row="1">内側30cm・外側70cm</cell>
+    <cell col="4" row="1"></cell>
+  </row>
+  <row>
+    <cell col="0" row="2">1000</cell>
+    <cell col="1" row="2">30 ㎝×10 ㎝</cell>
+    <cell col="2" row="2">30 ㎝×30 ㎝</cell>
+    <cell col="3" row="2"></cell>
+    <cell col="4" row="2"></cell>
+  </row>
+  <row>
+    <cell col="0" row="3">2500</cell>
+    <cell col="1" row="3">45 ㎝×15 ㎝</cell>
+    <cell col="2" row="3">45 ㎝×45 ㎝</cell>
+    <cell col="3" row="3">内側50 ㎝・外側100 ㎝</cell>
+    <cell col="4" row="3"></cell>
+  </row>
+  <row>
+    <cell col="0" row="4">5000</cell>
+    <cell col="1" row="4">90 ㎝×30 ㎝</cell>
+    <cell col="2" row="4">90 ㎝×90 ㎝</cell>
+    <cell col="3" row="4">内側100 ㎝・外側200 ㎝</cell>
+    <cell col="4" row="4"></cell>
+  </row>
+  <row>
+    <cell col="0" row="5">10000</cell>
+    <cell col="1" row="5">150 ㎝×50 ㎝</cell>
+    <cell col="2" row="5">150 ㎝×150 ㎝</cell>
+    <cell col="3" row="5">内側100 ㎝・外側200 ㎝</cell>
+    <cell col="4" row="5"></cell>
+  </row>
+</table>

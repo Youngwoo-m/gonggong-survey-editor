@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc19t015" article="핵심 안전기준ž절차 및 법적 근거 요약" rows="6" cols="3" source="측량 안전관리 매뉴얼 (2026.1)">
+  <row>
+    <cell col="0" row="0" header="1">구분</cell>
+    <cell col="1" row="0" header="1">관련 법령 및 조항</cell>
+    <cell col="2" row="0" header="1">주요 내용</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">측량기본</cell>
+    <cell col="1" row="1">공간정보의 구축 및 관리 등에 관한 법률 제1조, 제5조, 제14조</cell>
+    <cell col="2" row="1">측량·수로조사의 기준, 절차, 안전관리 및 품질 확보의 기본 목적을 규정</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">공공측량</cell>
+    <cell col="1" row="2">같은 법 시행령 제28조(공공측량의 안전관리)</cell>
+    <cell col="2" row="2">공공측량 수행 시 안전관리계획 수립 및 안전조치 의무 명시</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">안전보건</cell>
+    <cell col="1" row="3">산업안전보건법 제5조(사업주의 의 무), 제36조(위험성평가)</cell>
+    <cell col="2" row="3">모든 사업주는 근로자 보호를 위한 안전조 치·보건조치를 강구해야 함</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">드론 운용</cell>
+    <cell col="1" row="4">항공안전법 제129조(무인비행장치의 비행), 제129조의2(특별비행승인)</cell>
+    <cell col="2" row="4">UAV 측량 시 승인 및 안전 확보 의무</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">도로 작업</cell>
+    <cell col="1" row="5">도로교통법 제68조(공사 등 도로 점 용 시 안전조치)</cell>
+    <cell col="2" row="5">도로에서 측량 작업 시 안전표지·통행안전 조치 의무</cell>
+  </row>
+</table>

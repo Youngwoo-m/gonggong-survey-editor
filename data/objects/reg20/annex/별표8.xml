@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표8" gubun="별표" no="8" title="지하시설물(구조물형) 측점명 코드" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=38099213">
+  <text>[별표 8] 지하시설물(구조물형) 측점명 코드</text>
+  <table rows="22" cols="2">
+    <row>
+      <cell col="0" row="0">측량코드</cell>
+      <cell col="1" row="0">내용</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">S</cell>
+      <cell col="1" row="1">지상출입구상단</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">H</cell>
+      <cell col="1" row="2">지상출입구하단</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">KS</cell>
+      <cell col="1" row="3">외부계단상단</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">KH</cell>
+      <cell col="1" row="4">외부계단하단</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">E</cell>
+      <cell col="1" row="5">지상엘리베이터</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">BE</cell>
+      <cell col="1" row="6">지하엘리베이터</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">H</cell>
+      <cell col="1" row="7">지상 환기구</cell>
+    </row>
+    <row>
+      <cell col="0" row="8">BH</cell>
+      <cell col="1" row="8">지하 환기구</cell>
+    </row>
+    <row>
+      <cell col="0" row="9">JS</cell>
+      <cell col="1" row="9">지하차도 상단</cell>
+    </row>
+    <row>
+      <cell col="0" row="10">JH</cell>
+      <cell col="1" row="10">지하차도 하단</cell>
+    </row>
+    <row>
+      <cell col="0" row="11">TS</cell>
+      <cell col="1" row="11">터널부 상단</cell>
+    </row>
+    <row>
+      <cell col="0" row="12">TH</cell>
+      <cell col="1" row="12">터널부 하단</cell>
+    </row>
+    <row>
+      <cell col="0" row="13">LS</cell>
+      <cell col="1" row="13">진입램프 상단</cell>
+    </row>
+    <row>
+      <cell col="0" row="14">LH</cell>
+      <cell col="1" row="14">진입램프 하단</cell>
+    </row>
+    <row>
+      <cell col="0" row="15">L</cell>
+      <cell col="1" row="15">선로 중심</cell>
+    </row>
+    <row>
+      <cell col="0" row="16">A</cell>
+      <cell col="1" row="16">선로 벽체</cell>
+    </row>
+    <row>
+      <cell col="0" row="17">B</cell>
+      <cell col="1" row="17">선로 벽체(반대)</cell>
+    </row>
+    <row>
+      <cell col="0" row="18">F</cell>
+      <cell col="1" row="18">플랫폼</cell>
+    </row>
+    <row>
+      <cell col="0" row="19">BNS</cell>
+      <cell col="1" row="19">지하N층 상단</cell>
+    </row>
+    <row>
+      <cell col="0" row="20">BNH</cell>
+      <cell col="1" row="20">지하N층 하단</cell>
+    </row>
+    <row>
+      <cell col="0" row="21">G</cell>
+      <cell col="1" row="21">기타시설</cell>
+    </row>
+  </table>
+</annex>

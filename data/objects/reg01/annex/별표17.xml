@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표17" gubun="별표" no="17" title="편집 원도 정확도 관리표" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296173">
+  <text>[ 별표 17 ]
+편집 원도 정확도 관리표</text>
+  <table rows="5" cols="7">
+    <row>
+      <cell col="0" row="0">축척</cell>
+      <cell col="1" row="0"></cell>
+      <cell col="2" row="0">도엽번호</cell>
+      <cell col="3" row="0" colspan="2"></cell>
+      <cell col="5" row="0">도엽명</cell>
+      <cell col="6" row="0"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="2"></cell>
+      <cell col="1" row="1" rowspan="2">년</cell>
+      <cell col="2" row="1" colspan="3" rowspan="2">편 집
+수 정</cell>
+      <cell col="5" row="1" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="5" row="2" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">계획기관</cell>
+      <cell col="1" row="3" colspan="2"></cell>
+      <cell col="3" row="3">작업자</cell>
+      <cell col="4" row="3" colspan="3">인</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">작업기관</cell>
+      <cell col="1" row="4" colspan="2"></cell>
+      <cell col="3" row="4">검사자</cell>
+      <cell col="4" row="4" colspan="3">인</cell>
+    </row>
+  </table>
+  <table rows="16" cols="5">
+    <row>
+      <cell col="0" row="0" colspan="2">항목</cell>
+      <cell col="2" row="0">오기</cell>
+      <cell col="3" row="0">탈락</cell>
+      <cell col="4" row="0">불합격</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="2">도곽선 길이 및 격자선 표현</cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1"></cell>
+      <cell col="4" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">취사 선택의 적정 여부</cell>
+      <cell col="2" row="2"></cell>
+      <cell col="3" row="2"></cell>
+      <cell col="4" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">전체 묘사의 적정 여부</cell>
+      <cell col="2" row="3"></cell>
+      <cell col="3" row="3"></cell>
+      <cell col="4" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="2">각종 표고 수치</cell>
+      <cell col="2" row="4"></cell>
+      <cell col="3" row="4"></cell>
+      <cell col="4" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="2">주기</cell>
+      <cell col="2" row="5"></cell>
+      <cell col="3" row="5"></cell>
+      <cell col="4" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6" colspan="2">각종기호</cell>
+      <cell col="2" row="6"></cell>
+      <cell col="3" row="6"></cell>
+      <cell col="4" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="2">지형ㆍ지물</cell>
+      <cell col="2" row="7"></cell>
+      <cell col="3" row="7"></cell>
+      <cell col="4" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="2">각종 기호의 폭, 크기</cell>
+      <cell col="2" row="8"></cell>
+      <cell col="3" row="8"></cell>
+      <cell col="4" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="2">선의 어긋남</cell>
+      <cell col="2" row="9"></cell>
+      <cell col="3" row="9"></cell>
+      <cell col="4" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="2">선의 농도</cell>
+      <cell col="2" row="10"></cell>
+      <cell col="3" row="10"></cell>
+      <cell col="4" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="2">선 굵기의 적정 여부</cell>
+      <cell col="2" row="11"></cell>
+      <cell col="3" row="11"></cell>
+      <cell col="4" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="2">접합의 적정 여부</cell>
+      <cell col="2" row="12"></cell>
+      <cell col="3" row="12"></cell>
+      <cell col="4" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="2">난외주기</cell>
+      <cell col="2" row="13"></cell>
+      <cell col="3" row="13"></cell>
+      <cell col="4" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="2">흠ㆍ더러움</cell>
+      <cell col="2" row="14"></cell>
+      <cell col="3" row="14"></cell>
+      <cell col="4" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15">비고</cell>
+      <cell col="1" row="15"></cell>
+      <cell col="2" row="15" colspan="3">(도곽선)</cell>
+    </row>
+  </table>
+  <text>주  1. 기재 건수는 사내 검사지 또는 성과 검정지의 지적 사항 수를 해당란에 기재한다.  작성은 도면 단위로 한다.
+2. 도곽 치수는 규정 치수와의 차를 ＋, － 의 부호를 붙여서 mm 단위로 기재한다.</text>
+</annex>

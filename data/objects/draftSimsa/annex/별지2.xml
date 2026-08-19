@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지2" gubun="별지" no="2" title="성과 보완요구서" source="성과심사 규정 개정안 초안 (scripts/genforms_simsa.py)">
+  <text>[별지 제2호서식]
+성과 보완요구서 (제20조제2항 및 제27조제3항 관련)</text>
+  <table rows="4" cols="4">
+    <row>
+      <cell col="0" row="0" header="1">문서번호</cell>
+      <cell col="1" row="0" header="1"></cell>
+      <cell col="2" row="0" header="1">요구일</cell>
+      <cell col="3" row="0" header="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1">받는 이</cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1">사업명</cell>
+      <cell col="3" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2">보완 단계</cell>
+      <cell col="1" row="2" colspan="3">접수 단계(제20조제2항) / 판정 단계(제27조제3항ㆍ조건부적합)</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">보완 기한</cell>
+      <cell col="1" row="3" colspan="3">접수 단계 7일 이내 / 판정 단계 30일 이내(제29조제1항). 부득이한 사유가 있으면 협의하여 연장할 수 있다</cell>
+    </row>
+  </table>
+  <text>보완할 사항</text>
+  <table rows="4" cols="5">
+    <row>
+      <cell col="0" row="0" header="1">연번</cell>
+      <cell col="1" row="0" header="1">보완할 사항</cell>
+      <cell col="2" row="0" header="1">해당 성과ㆍ항목</cell>
+      <cell col="3" row="0" header="1">오류의 무게 (별표 15)</cell>
+      <cell col="4" row="0" header="1">근거</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">1</cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1">중대 / 일반 / 경미</cell>
+      <cell col="4" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2">2</cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2"></cell>
+      <cell col="3" row="2">중대 / 일반 / 경미</cell>
+      <cell col="4" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">3</cell>
+      <cell col="1" row="3"></cell>
+      <cell col="2" row="3"></cell>
+      <cell col="3" row="3">중대 / 일반 / 경미</cell>
+      <cell col="4" row="3"></cell>
+    </row>
+  </table>
+  <text>알려 드립니다
+1. 접수 단계의 보완에 걸린 기간은 심사기간에 넣지 아니합니다(제20조제3항).
+2. 기한 안에 보완된 성과가 제출되지 아니하면 부적합으로 판정할 수 있습니다(제29조제3항).
+3. 재심사는 보완을 요구한 항목을 중심으로 하며, 보완으로 다른 항목에 영향이 미치는 경우에는 그 항목도 함께 심사합니다(제29조제2항).
+4. 재심사수수료는 제46조에 따릅니다. 심사수탁기관의 잘못으로 다시 심사하는 경우에는 징수하지 아니합니다.</text>
+  <text>위와 같이 보완을 요구합니다.
+
+년       월       일
+
+측량성과 심사수탁기관의 장          (직인)</text>
+</annex>

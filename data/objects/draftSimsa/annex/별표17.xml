@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표17" gubun="별표" no="17" title="기본수수료 및 최저 심사비 산정기준" source="성과심사 규정 개정안 초안 (scripts/genannex_simsa.py)">
+  <text>[별표 17]
+기본수수료 및 최저 심사비 산정기준 (제41조제2항 및 제42조제1항 관련)</text>
+  <text>1. 기본수수료의 산정
+  기본수수료 = 다음 표의 심사인원수의 합계 × 측량기술자 임금단가
+  (성과심사 단위마다 한 번 산정한다)</text>
+  <table rows="5" cols="3">
+    <row>
+      <cell col="0" row="0" header="1">업무</cell>
+      <cell col="1" row="0" header="1">근거 조문</cell>
+      <cell col="2" row="0" header="1">심사인원수(고급기술인)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">접수와 성과패키지의 확인</cell>
+      <cell col="1" row="1">제20조</cell>
+      <cell col="2" row="1">[    ]</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">자동검사의 실행과 결과 확인</cell>
+      <cell col="1" row="2">제24조</cell>
+      <cell col="2" row="2">[    ]</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">판정과 심사결과서의 작성ㆍ통지</cell>
+      <cell col="1" row="3">제27조ㆍ제28조</cell>
+      <cell col="2" row="3">[    ]</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">합계</cell>
+      <cell col="1" row="4"></cell>
+      <cell col="2" row="4">[    ]</cell>
+    </row>
+  </table>
+  <text>2. 최저 심사비</text>
+  <table rows="5" cols="3">
+    <row>
+      <cell col="0" row="0" header="1">측량의 종류</cell>
+      <cell col="1" row="0" header="1">성과심사 단위</cell>
+      <cell col="2" row="0" header="1">최저 심사비</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">기준점측량</cell>
+      <cell col="1" row="1">사업 또는 망</cell>
+      <cell col="2" row="1">[    ]</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">지형측량</cell>
+      <cell col="1" row="2">도엽</cell>
+      <cell col="2" row="2">[    ]</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">3차원 공간정보 구축</cell>
+      <cell col="1" row="3">성과의 유형</cell>
+      <cell col="2" row="3">[    ]</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">응용측량</cell>
+      <cell col="1" row="4">사업 또는 구간</cell>
+      <cell col="2" row="4">[    ]</cell>
+    </row>
+  </table>
+  <text>비고
+1. [    ] 안의 값은 최종보고서 부록 12(성과심사 수수료 분석 및 산정표)의 원가 분석 결과로 정한다. 이 초안에서는 짓지 아니한다.
+2. 임금단가는 「공간정보의 구축 및 관리 등에 관한 법률 시행규칙」 별표 13 제1호 가목 1)에 따라 공간정보산업협회가 조사ㆍ공표한 측량기술자 임금단가를 쓴다.
+3. 이 표는 시행규칙 별표 13 제1호의 산정방법 안에서 적용하며, 같은 별표에 기본수수료가 반영된 뒤에 시행한다.
+4. 물량에 따라 산정한 수수료가 기본수수료에 미치지 못하는 경우에는 기본수수료를 성과심사수수료로 한다(제41조제3항).
+5. 성과심사 단위별로 산정한 수수료가 최저 심사비에 미치지 못하는 경우에는 최저 심사비를 성과심사수수료로 한다(제42조제1항).
+6. 최저 심사비는 3년마다 검토한다(제42조제2항).</text>
+</annex>

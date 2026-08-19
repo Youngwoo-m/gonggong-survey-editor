@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표20" gubun="별표" no="20" title="점의 조서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296191">
+  <text>[ 별표 20 ]
+점의 조서</text>
+  <table rows="8" cols="6">
+    <row>
+      <cell col="0" row="0">노선번호</cell>
+      <cell col="1" row="0">점번호</cell>
+      <cell col="2" row="0">표지의 종류</cell>
+      <cell col="3" row="0">노선번호</cell>
+      <cell col="4" row="0">점번호</cell>
+      <cell col="5" row="0">표지의 종류</cell>
+    </row>
+    <row>
+      <cell col="0" row="1"></cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1">목항,석항,못,각인</cell>
+      <cell col="3" row="1"></cell>
+      <cell col="4" row="1"></cell>
+      <cell col="5" row="1">목항,석항,못,각인</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">소재지</cell>
+      <cell col="1" row="2" colspan="2"></cell>
+      <cell col="3" row="2">소재지</cell>
+      <cell col="4" row="2" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="3">약 도</cell>
+      <cell col="3" row="3" colspan="3">약 도</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">노선번호</cell>
+      <cell col="1" row="4">점번호</cell>
+      <cell col="2" row="4">표지의 종류</cell>
+      <cell col="3" row="4">노선번호</cell>
+      <cell col="4" row="4">점번호</cell>
+      <cell col="5" row="4">표지의 종류</cell>
+    </row>
+    <row>
+      <cell col="0" row="5"></cell>
+      <cell col="1" row="5"></cell>
+      <cell col="2" row="5">목항,석항,못,각인</cell>
+      <cell col="3" row="5"></cell>
+      <cell col="4" row="5"></cell>
+      <cell col="5" row="5">목항,석항,못,각인</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">소재지</cell>
+      <cell col="1" row="6" colspan="2"></cell>
+      <cell col="3" row="6">소재지</cell>
+      <cell col="4" row="6" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="3">약 도</cell>
+      <cell col="3" row="7" colspan="3">약 도</cell>
+    </row>
+  </table>
+  <text>용지의 크기는 A4판으로 한다.</text>
+</annex>

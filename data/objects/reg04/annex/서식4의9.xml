@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식4의9" gubun="서식" no="4의9" title="측량업자 재무정보현황표" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454365">
+  <table rows="40" cols="4">
+    <row>
+      <cell col="0" row="0" colspan="4">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별지 제4호의9서식] &lt;개정 2021. 8. 27.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="4">측량업자 재무정보현황표</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="4">(당기 :    년    월    일까지    전기 :    년    월    일까지)</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="4">▣ 재무상태표 정보</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">과목</cell>
+      <cell col="1" row="4">당기(단위 : 원)</cell>
+      <cell col="2" row="4">전기(단위 : 원)</cell>
+      <cell col="3" row="4">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">자산총계</cell>
+      <cell col="1" row="5"></cell>
+      <cell col="2" row="5"></cell>
+      <cell col="3" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">유동자산</cell>
+      <cell col="1" row="6"></cell>
+      <cell col="2" row="6"></cell>
+      <cell col="3" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">고정자산</cell>
+      <cell col="1" row="7"></cell>
+      <cell col="2" row="7"></cell>
+      <cell col="3" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8">부채총계</cell>
+      <cell col="1" row="8"></cell>
+      <cell col="2" row="8"></cell>
+      <cell col="3" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">유동부채</cell>
+      <cell col="1" row="9"></cell>
+      <cell col="2" row="9"></cell>
+      <cell col="3" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10">고정부채</cell>
+      <cell col="1" row="10"></cell>
+      <cell col="2" row="10"></cell>
+      <cell col="3" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11">자본총계</cell>
+      <cell col="1" row="11"></cell>
+      <cell col="2" row="11"></cell>
+      <cell col="3" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12">자본금</cell>
+      <cell col="1" row="12"></cell>
+      <cell col="2" row="12"></cell>
+      <cell col="3" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13">자본잉여금</cell>
+      <cell col="1" row="13"></cell>
+      <cell col="2" row="13"></cell>
+      <cell col="3" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14">이익잉여금
+ (당기순이익)</cell>
+      <cell col="1" row="14"></cell>
+      <cell col="2" row="14"></cell>
+      <cell col="3" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15">자본조정</cell>
+      <cell col="1" row="15"></cell>
+      <cell col="2" row="15"></cell>
+      <cell col="3" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="4">○자산총계=유동자산+고정자산          ○부채총계=유동부채+고정부채
+○자본총계=자본금+자본잉여금+이익잉여금(당기순이익)+자본조정</cell>
+    </row>
+    <row>
+      <cell col="0" row="17" colspan="4">▣ 손익계산서 정보</cell>
+    </row>
+    <row>
+      <cell col="0" row="18">과목</cell>
+      <cell col="1" row="18">당기(단위 : 원)</cell>
+      <cell col="2" row="18">전기(단위 : 원)</cell>
+      <cell col="3" row="18">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="19">매출액</cell>
+      <cell col="1" row="19"></cell>
+      <cell col="2" row="19"></cell>
+      <cell col="3" row="19"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20">매출원가</cell>
+      <cell col="1" row="20"></cell>
+      <cell col="2" row="20"></cell>
+      <cell col="3" row="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21">매출총이익</cell>
+      <cell col="1" row="21"></cell>
+      <cell col="2" row="21"></cell>
+      <cell col="3" row="21"></cell>
+    </row>
+    <row>
+      <cell col="0" row="22">판매비와 관리비</cell>
+      <cell col="1" row="22"></cell>
+      <cell col="2" row="22"></cell>
+      <cell col="3" row="22"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23">영업이익</cell>
+      <cell col="1" row="23"></cell>
+      <cell col="2" row="23"></cell>
+      <cell col="3" row="23"></cell>
+    </row>
+    <row>
+      <cell col="0" row="24">영업외수익</cell>
+      <cell col="1" row="24"></cell>
+      <cell col="2" row="24"></cell>
+      <cell col="3" row="24"></cell>
+    </row>
+    <row>
+      <cell col="0" row="25">영업외비용</cell>
+      <cell col="1" row="25"></cell>
+      <cell col="2" row="25"></cell>
+      <cell col="3" row="25"></cell>
+    </row>
+    <row>
+      <cell col="0" row="26">경상이익</cell>
+      <cell col="1" row="26"></cell>
+      <cell col="2" row="26"></cell>
+      <cell col="3" row="26"></cell>
+    </row>
+    <row>
+      <cell col="0" row="27">특별이익</cell>
+      <cell col="1" row="27"></cell>
+      <cell col="2" row="27"></cell>
+      <cell col="3" row="27"></cell>
+    </row>
+    <row>
+      <cell col="0" row="28">특별손실</cell>
+      <cell col="1" row="28"></cell>
+      <cell col="2" row="28"></cell>
+      <cell col="3" row="28"></cell>
+    </row>
+    <row>
+      <cell col="0" row="29">법인세비용차감전순이익</cell>
+      <cell col="1" row="29"></cell>
+      <cell col="2" row="29"></cell>
+      <cell col="3" row="29"></cell>
+    </row>
+    <row>
+      <cell col="0" row="30">법인세비용</cell>
+      <cell col="1" row="30"></cell>
+      <cell col="2" row="30"></cell>
+      <cell col="3" row="30"></cell>
+    </row>
+    <row>
+      <cell col="0" row="31">당기순이익</cell>
+      <cell col="1" row="31"></cell>
+      <cell col="2" row="31"></cell>
+      <cell col="3" row="31"></cell>
+    </row>
+    <row>
+      <cell col="0" row="32" colspan="4">▣ 재무지표 정보</cell>
+    </row>
+    <row>
+      <cell col="0" row="33">재무지표</cell>
+      <cell col="1" row="33">당기(단위 : %)</cell>
+      <cell col="2" row="33">전기(단위 : %)</cell>
+      <cell col="3" row="33">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="34">유동비율</cell>
+      <cell col="1" row="34"></cell>
+      <cell col="2" row="34"></cell>
+      <cell col="3" row="34"></cell>
+    </row>
+    <row>
+      <cell col="0" row="35">자기자본비율</cell>
+      <cell col="1" row="35"></cell>
+      <cell col="2" row="35"></cell>
+      <cell col="3" row="35"></cell>
+    </row>
+    <row>
+      <cell col="0" row="36">매출액순이익률</cell>
+      <cell col="1" row="36"></cell>
+      <cell col="2" row="36"></cell>
+      <cell col="3" row="36"></cell>
+    </row>
+    <row>
+      <cell col="0" row="37">총자본회전율</cell>
+      <cell col="1" row="37"></cell>
+      <cell col="2" row="37"></cell>
+      <cell col="3" row="37"></cell>
+    </row>
+    <row>
+      <cell col="0" row="38" colspan="4">○유동비율(유동자산/유동부채)            ○자기자본비율(자기자본/총자본)
+ ○매출액순이익률(법인세 또는 소득세차감전순이익/매출액)
+ ○총자본회전율(매출액/총자본)</cell>
+    </row>
+    <row>
+      <cell col="0" row="39" colspan="4">210mm×297mm(신문용지 54g/㎡(재활용품)</cell>
+    </row>
+  </table>
+</annex>

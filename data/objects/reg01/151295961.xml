@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="151295961" article="제109조" rows="13" cols="10" source="공공측량 작업규정.2025.04.23_수식수정.오류표시.hwpx">
+  <row>
+    <cell col="0" row="0" rowspan="2">성과 등의 종류</cell>
+    <cell col="1" row="0" colspan="9">해당하는 측량의 종류</cell>
+  </row>
+  <row>
+    <cell col="1" row="1">선형 결정</cell>
+    <cell col="2" row="1">조절점의관측</cell>
+    <cell col="3" row="1">교점설치측량</cell>
+    <cell col="4" row="1">중심선측량</cell>
+    <cell col="5" row="1">가설 수준점 설치측량</cell>
+    <cell col="6" row="1">종단측량</cell>
+    <cell col="7" row="1">횡단 측량</cell>
+    <cell col="8" row="1">세부측량</cell>
+    <cell col="9" row="1">용지폭말뚝설치측량</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">관측기록부</cell>
+    <cell col="1" row="2"></cell>
+    <cell col="2" row="2">○</cell>
+    <cell col="3" row="2"></cell>
+    <cell col="4" row="2"></cell>
+    <cell col="5" row="2">○</cell>
+    <cell col="6" row="2">○</cell>
+    <cell col="7" row="2">○</cell>
+    <cell col="8" row="2">○</cell>
+    <cell col="9" row="2"></cell>
+  </row>
+  <row>
+    <cell col="0" row="3">계산부</cell>
+    <cell col="1" row="3">○</cell>
+    <cell col="2" row="3">○</cell>
+    <cell col="3" row="3">○</cell>
+    <cell col="4" row="3">○</cell>
+    <cell col="5" row="3">○</cell>
+    <cell col="6" row="3"></cell>
+    <cell col="7" row="3"></cell>
+    <cell col="8" row="3"></cell>
+    <cell col="9" row="3">○</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">성과표</cell>
+    <cell col="1" row="4"></cell>
+    <cell col="2" row="4">○</cell>
+    <cell col="3" row="4"></cell>
+    <cell col="4" row="4"></cell>
+    <cell col="5" row="4">○</cell>
+    <cell col="6" row="4">○☆</cell>
+    <cell col="7" row="4"></cell>
+    <cell col="8" row="4">○☆</cell>
+    <cell col="9" row="4"></cell>
+  </row>
+  <row>
+    <cell col="0" row="5">선형도</cell>
+    <cell col="1" row="5">○</cell>
+    <cell col="2" row="5"></cell>
+    <cell col="3" row="5"></cell>
+    <cell col="4" row="5"></cell>
+    <cell col="5" row="5"></cell>
+    <cell col="6" row="5"></cell>
+    <cell col="7" row="5"></cell>
+    <cell col="8" row="5"></cell>
+    <cell col="9" row="5"></cell>
+  </row>
+  <row>
+    <cell col="0" row="6">선형지형도</cell>
+    <cell col="1" row="6"></cell>
+    <cell col="2" row="6"></cell>
+    <cell col="3" row="6">○</cell>
+    <cell col="4" row="6"></cell>
+    <cell col="5" row="6"></cell>
+    <cell col="6" row="6"></cell>
+    <cell col="7" row="6"></cell>
+    <cell col="8" row="6"></cell>
+    <cell col="9" row="6"></cell>
+  </row>
+  <row>
+    <cell col="0" row="7">말뚝설치도</cell>
+    <cell col="1" row="7"></cell>
+    <cell col="2" row="7"></cell>
+    <cell col="3" row="7"></cell>
+    <cell col="4" row="7"></cell>
+    <cell col="5" row="7"></cell>
+    <cell col="6" row="7"></cell>
+    <cell col="7" row="7"></cell>
+    <cell col="8" row="7"></cell>
+    <cell col="9" row="7">○</cell>
+  </row>
+  <row>
+    <cell col="0" row="8">종단면도</cell>
+    <cell col="1" row="8"></cell>
+    <cell col="2" row="8"></cell>
+    <cell col="3" row="8"></cell>
+    <cell col="4" row="8"></cell>
+    <cell col="5" row="8"></cell>
+    <cell col="6" row="8">○</cell>
+    <cell col="7" row="8"></cell>
+    <cell col="8" row="8">○</cell>
+    <cell col="9" row="8"></cell>
+  </row>
+  <row>
+    <cell col="0" row="9">횡단면도</cell>
+    <cell col="1" row="9"></cell>
+    <cell col="2" row="9"></cell>
+    <cell col="3" row="9"></cell>
+    <cell col="4" row="9"></cell>
+    <cell col="5" row="9"></cell>
+    <cell col="6" row="9">○</cell>
+    <cell col="7" row="9">○</cell>
+    <cell col="8" row="9">○</cell>
+    <cell col="9" row="9"></cell>
+  </row>
+  <row>
+    <cell col="0" row="10">세부평면도</cell>
+    <cell col="1" row="10"></cell>
+    <cell col="2" row="10"></cell>
+    <cell col="3" row="10"></cell>
+    <cell col="4" row="10"></cell>
+    <cell col="5" row="10"></cell>
+    <cell col="6" row="10"></cell>
+    <cell col="7" row="10"></cell>
+    <cell col="8" row="10">○</cell>
+    <cell col="9" row="10"></cell>
+  </row>
+  <row>
+    <cell col="0" row="11">점의 조서</cell>
+    <cell col="1" row="11"></cell>
+    <cell col="2" row="11"></cell>
+    <cell col="3" row="11">○</cell>
+    <cell col="4" row="11">○★</cell>
+    <cell col="5" row="11">○</cell>
+    <cell col="6" row="11"></cell>
+    <cell col="7" row="11"></cell>
+    <cell col="8" row="11"></cell>
+    <cell col="9" row="11"></cell>
+  </row>
+  <row>
+    <cell col="0" row="12">정확도관리표</cell>
+    <cell col="1" row="12"></cell>
+    <cell col="2" row="12">○</cell>
+    <cell col="3" row="12">○</cell>
+    <cell col="4" row="12">○</cell>
+    <cell col="5" row="12">○</cell>
+    <cell col="6" row="12">○</cell>
+    <cell col="7" row="12">○</cell>
+    <cell col="8" row="12">○</cell>
+    <cell col="9" row="12">○</cell>
+  </row>
+</table>

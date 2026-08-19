@@ -1,0 +1,2094 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표13" gubun="별표" no="13" title="지하시설물(구조물형) 구조화 테이블 설계서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=38099363">
+  <text>[별표 13] 지하시설물(구조물형) 구조화 테이블 설계서
+1. 지하철_선로</text>
+  <table rows="36" cols="9">
+    <row>
+      <cell col="0" row="0" colspan="9">테이블정의서</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="2">주제영역</cell>
+      <cell col="2" row="1">지하시설물(구조물형)</cell>
+      <cell col="3" row="1">작성일</cell>
+      <cell col="4" row="1" colspan="3"></cell>
+      <cell col="7" row="1">작성자</cell>
+      <cell col="8" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">테이블ID</cell>
+      <cell col="2" row="2">UDG_SUBW_AS</cell>
+      <cell col="3" row="2" colspan="2">테이블명</cell>
+      <cell col="5" row="2" colspan="4">지하철_선로</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">테이블설명</cell>
+      <cell col="2" row="3" colspan="7">지하철_선로</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">NO</cell>
+      <cell col="1" row="4">컬럼ID</cell>
+      <cell col="2" row="4">컬럼명</cell>
+      <cell col="3" row="4">타입</cell>
+      <cell col="4" row="4">길이</cell>
+      <cell col="5" row="4">NULL</cell>
+      <cell col="6" row="4">KEY</cell>
+      <cell col="7" row="4">CD NUM</cell>
+      <cell col="8" row="4">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">1</cell>
+      <cell col="1" row="5">FTR_IDN</cell>
+      <cell col="2" row="5">관리번호</cell>
+      <cell col="3" row="5">NUMBER</cell>
+      <cell col="4" row="5">10</cell>
+      <cell col="5" row="5">NN</cell>
+      <cell col="6" row="5">PK</cell>
+      <cell col="7" row="5"></cell>
+      <cell col="8" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">2</cell>
+      <cell col="1" row="6">FTR_CDE</cell>
+      <cell col="2" row="6">지형지물부호</cell>
+      <cell col="3" row="6">VARCHAR2</cell>
+      <cell col="4" row="6">5</cell>
+      <cell col="5" row="6">NN</cell>
+      <cell col="6" row="6"></cell>
+      <cell col="7" row="6"></cell>
+      <cell col="8" row="6">AE903</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">3</cell>
+      <cell col="1" row="7">HJD_CDE</cell>
+      <cell col="2" row="7">행정읍면동코드</cell>
+      <cell col="3" row="7">VARCHAR2</cell>
+      <cell col="4" row="7">10</cell>
+      <cell col="5" row="7">NN</cell>
+      <cell col="6" row="7"></cell>
+      <cell col="7" row="7">HJD-001</cell>
+      <cell col="8" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8">4</cell>
+      <cell col="1" row="8">MNG_CDE</cell>
+      <cell col="2" row="8">관리기관코드</cell>
+      <cell col="3" row="8">VARCHAR2</cell>
+      <cell col="4" row="8">7</cell>
+      <cell col="5" row="8">N</cell>
+      <cell col="6" row="8"></cell>
+      <cell col="7" row="8">MNG-001</cell>
+      <cell col="8" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">5</cell>
+      <cell col="1" row="9">MNG_NAM</cell>
+      <cell col="2" row="9">관리자</cell>
+      <cell col="3" row="9">VARCHAR2</cell>
+      <cell col="4" row="9">100</cell>
+      <cell col="5" row="9">N</cell>
+      <cell col="6" row="9"></cell>
+      <cell col="7" row="9"></cell>
+      <cell col="8" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10">6</cell>
+      <cell col="1" row="10">GRD_CDE</cell>
+      <cell col="2" row="10">구조물등급</cell>
+      <cell col="3" row="10">VARCHAR2</cell>
+      <cell col="4" row="10">6</cell>
+      <cell col="5" row="10">NN</cell>
+      <cell col="6" row="10"></cell>
+      <cell col="7" row="10">CDE-001</cell>
+      <cell col="8" row="10">터널구간</cell>
+    </row>
+    <row>
+      <cell col="0" row="11">7</cell>
+      <cell col="1" row="11">FAC_CDE</cell>
+      <cell col="2" row="11">종별</cell>
+      <cell col="3" row="11">VARCHAR2</cell>
+      <cell col="4" row="11">6</cell>
+      <cell col="5" row="11">NN</cell>
+      <cell col="6" row="11"></cell>
+      <cell col="7" row="11">CDE-002</cell>
+      <cell col="8" row="11">터널구간</cell>
+    </row>
+    <row>
+      <cell col="0" row="12">8</cell>
+      <cell col="1" row="12">LIN_NAM</cell>
+      <cell col="2" row="12">호선명</cell>
+      <cell col="3" row="12">VARCHAR2</cell>
+      <cell col="4" row="12">50</cell>
+      <cell col="5" row="12">N</cell>
+      <cell col="6" row="12"></cell>
+      <cell col="7" row="12"></cell>
+      <cell col="8" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13">9</cell>
+      <cell col="1" row="13">SEC_NUM</cell>
+      <cell col="2" row="13">공구번호</cell>
+      <cell col="3" row="13">VARCHAR2</cell>
+      <cell col="4" row="13">50</cell>
+      <cell col="5" row="13">N</cell>
+      <cell col="6" row="13"></cell>
+      <cell col="7" row="13"></cell>
+      <cell col="8" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14">10</cell>
+      <cell col="1" row="14">SEC_NAM</cell>
+      <cell col="2" row="14">구간이름</cell>
+      <cell col="3" row="14">VARCHAR2</cell>
+      <cell col="4" row="14">100</cell>
+      <cell col="5" row="14">N</cell>
+      <cell col="6" row="14"></cell>
+      <cell col="7" row="14"></cell>
+      <cell col="8" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15">11</cell>
+      <cell col="1" row="15">LIN_CDE</cell>
+      <cell col="2" row="15">선로형태</cell>
+      <cell col="3" row="15">VARCHAR2</cell>
+      <cell col="4" row="15">6</cell>
+      <cell col="5" row="15">NN</cell>
+      <cell col="6" row="15"></cell>
+      <cell col="7" row="15">CDE-003</cell>
+      <cell col="8" row="15">교량,터널</cell>
+    </row>
+    <row>
+      <cell col="0" row="16">12</cell>
+      <cell col="1" row="16">RAL_CDE</cell>
+      <cell col="2" row="16">선로분리유무</cell>
+      <cell col="3" row="16">VARCHAR2</cell>
+      <cell col="4" row="16">6</cell>
+      <cell col="5" row="16">NN</cell>
+      <cell col="6" row="16"></cell>
+      <cell col="7" row="16">CDE-004</cell>
+      <cell col="8" row="16">단일,분리</cell>
+    </row>
+    <row>
+      <cell col="0" row="17">13</cell>
+      <cell col="1" row="17">FST_NAM</cell>
+      <cell col="2" row="17">상행역명</cell>
+      <cell col="3" row="17">VARCHAR2</cell>
+      <cell col="4" row="17">50</cell>
+      <cell col="5" row="17">N</cell>
+      <cell col="6" row="17"></cell>
+      <cell col="7" row="17"></cell>
+      <cell col="8" row="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18">14</cell>
+      <cell col="1" row="18">SCD_NAM</cell>
+      <cell col="2" row="18">하행역명</cell>
+      <cell col="3" row="18">VARCHAR2</cell>
+      <cell col="4" row="18">50</cell>
+      <cell col="5" row="18">N</cell>
+      <cell col="6" row="18"></cell>
+      <cell col="7" row="18"></cell>
+      <cell col="8" row="18"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19">15</cell>
+      <cell col="1" row="19">TOT_LEN</cell>
+      <cell col="2" row="19">총연장</cell>
+      <cell col="3" row="19">NUMBER</cell>
+      <cell col="4" row="19">11,2</cell>
+      <cell col="5" row="19">N</cell>
+      <cell col="6" row="19"></cell>
+      <cell col="7" row="19"></cell>
+      <cell col="8" row="19">역간총연장</cell>
+    </row>
+    <row>
+      <cell col="0" row="20">16</cell>
+      <cell col="1" row="20">BRG_LEN</cell>
+      <cell col="2" row="20">교량구간연장</cell>
+      <cell col="3" row="20">NUMBER</cell>
+      <cell col="4" row="20">5,2</cell>
+      <cell col="5" row="20">N</cell>
+      <cell col="6" row="20"></cell>
+      <cell col="7" row="20"></cell>
+      <cell col="8" row="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21">17</cell>
+      <cell col="1" row="21">BJL_CDE</cell>
+      <cell col="2" row="21">교량종류</cell>
+      <cell col="3" row="21">VARCHAR2</cell>
+      <cell col="4" row="21">6</cell>
+      <cell col="5" row="21">NN</cell>
+      <cell col="6" row="21"></cell>
+      <cell col="7" row="21">CDE-005</cell>
+      <cell col="8" row="21"></cell>
+    </row>
+    <row>
+      <cell col="0" row="22">18</cell>
+      <cell col="1" row="22">TNL_LEN</cell>
+      <cell col="2" row="22">터널구간연장</cell>
+      <cell col="3" row="22">NUMBER</cell>
+      <cell col="4" row="22">5,2</cell>
+      <cell col="5" row="22">N</cell>
+      <cell col="6" row="22"></cell>
+      <cell col="7" row="22"></cell>
+      <cell col="8" row="22"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23">19</cell>
+      <cell col="1" row="23">STA_DEP</cell>
+      <cell col="2" row="23">시점매설깊이</cell>
+      <cell col="3" row="23">NUMBER</cell>
+      <cell col="4" row="23">5,2</cell>
+      <cell col="5" row="23">N</cell>
+      <cell col="6" row="23"></cell>
+      <cell col="7" row="23"></cell>
+      <cell col="8" row="23"></cell>
+    </row>
+    <row>
+      <cell col="0" row="24">20</cell>
+      <cell col="1" row="24">END_DEP</cell>
+      <cell col="2" row="24">종점매설깊이</cell>
+      <cell col="3" row="24">NUMBER</cell>
+      <cell col="4" row="24">5,2</cell>
+      <cell col="5" row="24">N</cell>
+      <cell col="6" row="24"></cell>
+      <cell col="7" row="24"></cell>
+      <cell col="8" row="24"></cell>
+    </row>
+    <row>
+      <cell col="0" row="25">21</cell>
+      <cell col="1" row="25">AVG_DEP</cell>
+      <cell col="2" row="25">평균매설깊이</cell>
+      <cell col="3" row="25">NUMBER</cell>
+      <cell col="4" row="25">5,2</cell>
+      <cell col="5" row="25">N</cell>
+      <cell col="6" row="25"></cell>
+      <cell col="7" row="25"></cell>
+      <cell col="8" row="25"></cell>
+    </row>
+    <row>
+      <cell col="0" row="26">22</cell>
+      <cell col="1" row="26">MIN_DEP</cell>
+      <cell col="2" row="26">최소매설깊이</cell>
+      <cell col="3" row="26">NUMBER</cell>
+      <cell col="4" row="26">5,2</cell>
+      <cell col="5" row="26">N</cell>
+      <cell col="6" row="26"></cell>
+      <cell col="7" row="26"></cell>
+      <cell col="8" row="26"></cell>
+    </row>
+    <row>
+      <cell col="0" row="27">23</cell>
+      <cell col="1" row="27">MAX_DEP</cell>
+      <cell col="2" row="27">최대매설깊이</cell>
+      <cell col="3" row="27">NUMBER</cell>
+      <cell col="4" row="27">5,2</cell>
+      <cell col="5" row="27">N</cell>
+      <cell col="6" row="27"></cell>
+      <cell col="7" row="27"></cell>
+      <cell col="8" row="27"></cell>
+    </row>
+    <row>
+      <cell col="0" row="28">24</cell>
+      <cell col="1" row="28">CNT_NAM</cell>
+      <cell col="2" row="28">공사명</cell>
+      <cell col="3" row="28">VARCHAR2</cell>
+      <cell col="4" row="28">100</cell>
+      <cell col="5" row="28">N</cell>
+      <cell col="6" row="28"></cell>
+      <cell col="7" row="28"></cell>
+      <cell col="8" row="28"></cell>
+    </row>
+    <row>
+      <cell col="0" row="29">25</cell>
+      <cell col="1" row="29">STA_YMD</cell>
+      <cell col="2" row="29">착공일자</cell>
+      <cell col="3" row="29">VARCHAR2</cell>
+      <cell col="4" row="29">8</cell>
+      <cell col="5" row="29">N</cell>
+      <cell col="6" row="29"></cell>
+      <cell col="7" row="29"></cell>
+      <cell col="8" row="29"></cell>
+    </row>
+    <row>
+      <cell col="0" row="30">26</cell>
+      <cell col="1" row="30">CMP_YMD</cell>
+      <cell col="2" row="30">준공일자</cell>
+      <cell col="3" row="30">VARCHAR2</cell>
+      <cell col="4" row="30">8</cell>
+      <cell col="5" row="30">N</cell>
+      <cell col="6" row="30"></cell>
+      <cell col="7" row="30"></cell>
+      <cell col="8" row="30"></cell>
+    </row>
+    <row>
+      <cell col="0" row="31">27</cell>
+      <cell col="1" row="31">LOC_NAM</cell>
+      <cell col="2" row="31">발주처</cell>
+      <cell col="3" row="31">VARCHAR2</cell>
+      <cell col="4" row="31">100</cell>
+      <cell col="5" row="31">N</cell>
+      <cell col="6" row="31"></cell>
+      <cell col="7" row="31"></cell>
+      <cell col="8" row="31"></cell>
+    </row>
+    <row>
+      <cell col="0" row="32">28</cell>
+      <cell col="1" row="32">CLT_NAM</cell>
+      <cell col="2" row="32">시행사</cell>
+      <cell col="3" row="32">VARCHAR2</cell>
+      <cell col="4" row="32">100</cell>
+      <cell col="5" row="32">N</cell>
+      <cell col="6" row="32"></cell>
+      <cell col="7" row="32"></cell>
+      <cell col="8" row="32"></cell>
+    </row>
+    <row>
+      <cell col="0" row="33">29</cell>
+      <cell col="1" row="33">USE_RMK</cell>
+      <cell col="2" row="33">비고</cell>
+      <cell col="3" row="33">VARCHAR2</cell>
+      <cell col="4" row="33">255</cell>
+      <cell col="5" row="33">N</cell>
+      <cell col="6" row="33"></cell>
+      <cell col="7" row="33"></cell>
+      <cell col="8" row="33"></cell>
+    </row>
+    <row>
+      <cell col="0" row="34">30</cell>
+      <cell col="1" row="34">UGID</cell>
+      <cell col="2" row="34">3D고유식별코드</cell>
+      <cell col="3" row="34">VARCHAR2</cell>
+      <cell col="4" row="34">30</cell>
+      <cell col="5" row="34">N</cell>
+      <cell col="6" row="34" colspan="3">테이블명:FTR_CDE:FTR_IDN조합</cell>
+    </row>
+    <row>
+      <cell col="0" row="35">31</cell>
+      <cell col="1" row="35">WAL_CDE</cell>
+      <cell col="2" row="35">외벽적용구분</cell>
+      <cell col="3" row="35">VARCHAR2</cell>
+      <cell col="4" row="35">6</cell>
+      <cell col="5" row="35">NN</cell>
+      <cell col="6" row="35"></cell>
+      <cell col="7" row="35">CDE-011</cell>
+      <cell col="8" row="35"></cell>
+    </row>
+  </table>
+  <text>2. 지하철_역사</text>
+  <table rows="29" cols="9">
+    <row>
+      <cell col="0" row="0" colspan="9">테이블정의서</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="2">주제영역</cell>
+      <cell col="2" row="1">지하시설물(구조물형)</cell>
+      <cell col="3" row="1">작성일</cell>
+      <cell col="4" row="1" colspan="3"></cell>
+      <cell col="7" row="1">작성자</cell>
+      <cell col="8" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">테이블ID</cell>
+      <cell col="2" row="2">UDG_STAT_AS</cell>
+      <cell col="3" row="2" colspan="2">테이블명</cell>
+      <cell col="5" row="2" colspan="4">지하철_역사</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">테이블설명</cell>
+      <cell col="2" row="3" colspan="7">지하철_역사</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">NO</cell>
+      <cell col="1" row="4">컬럼ID</cell>
+      <cell col="2" row="4">컬럼명</cell>
+      <cell col="3" row="4">타입</cell>
+      <cell col="4" row="4">길이</cell>
+      <cell col="5" row="4">NULL</cell>
+      <cell col="6" row="4">KEY</cell>
+      <cell col="7" row="4">CD NUM</cell>
+      <cell col="8" row="4">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">1</cell>
+      <cell col="1" row="5">FTR_IDN</cell>
+      <cell col="2" row="5">관리번호</cell>
+      <cell col="3" row="5">NUMBER</cell>
+      <cell col="4" row="5">10</cell>
+      <cell col="5" row="5">NN</cell>
+      <cell col="6" row="5">PK</cell>
+      <cell col="7" row="5"></cell>
+      <cell col="8" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">2</cell>
+      <cell col="1" row="6">FTR_CDE</cell>
+      <cell col="2" row="6">지형지물부호</cell>
+      <cell col="3" row="6">VARCHAR2</cell>
+      <cell col="4" row="6">5</cell>
+      <cell col="5" row="6">NN</cell>
+      <cell col="6" row="6"></cell>
+      <cell col="7" row="6"></cell>
+      <cell col="8" row="6">AE904</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">2</cell>
+      <cell col="1" row="7">HJD_CDE</cell>
+      <cell col="2" row="7">행정읍면동코드</cell>
+      <cell col="3" row="7">VARCHAR2</cell>
+      <cell col="4" row="7">10</cell>
+      <cell col="5" row="7">NN</cell>
+      <cell col="6" row="7"></cell>
+      <cell col="7" row="7">HJD-001</cell>
+      <cell col="8" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8">3</cell>
+      <cell col="1" row="8">MNG_CDE</cell>
+      <cell col="2" row="8">관리기관코드</cell>
+      <cell col="3" row="8">VARCHAR2</cell>
+      <cell col="4" row="8">7</cell>
+      <cell col="5" row="8">N</cell>
+      <cell col="6" row="8"></cell>
+      <cell col="7" row="8">MNG-001</cell>
+      <cell col="8" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">4</cell>
+      <cell col="1" row="9">MNG_NAM</cell>
+      <cell col="2" row="9">관리자</cell>
+      <cell col="3" row="9">VARCHAR2</cell>
+      <cell col="4" row="9">100</cell>
+      <cell col="5" row="9">N</cell>
+      <cell col="6" row="9"></cell>
+      <cell col="7" row="9"></cell>
+      <cell col="8" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10">5</cell>
+      <cell col="1" row="10">LIN_NAM</cell>
+      <cell col="2" row="10">호선명</cell>
+      <cell col="3" row="10">VARCHAR2</cell>
+      <cell col="4" row="10">50</cell>
+      <cell col="5" row="10">N</cell>
+      <cell col="6" row="10"></cell>
+      <cell col="7" row="10"></cell>
+      <cell col="8" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11">6</cell>
+      <cell col="1" row="11">STA_NAM</cell>
+      <cell col="2" row="11">역사명</cell>
+      <cell col="3" row="11">VARCHAR2</cell>
+      <cell col="4" row="11">50</cell>
+      <cell col="5" row="11">N</cell>
+      <cell col="6" row="11"></cell>
+      <cell col="7" row="11"></cell>
+      <cell col="8" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12">7</cell>
+      <cell col="1" row="12">TOT_LEN</cell>
+      <cell col="2" row="12">총연장</cell>
+      <cell col="3" row="12">NUMBER</cell>
+      <cell col="4" row="12">11,2</cell>
+      <cell col="5" row="12">N</cell>
+      <cell col="6" row="12"></cell>
+      <cell col="7" row="12"></cell>
+      <cell col="8" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13">8</cell>
+      <cell col="1" row="13">TOT_ARA</cell>
+      <cell col="2" row="13">총면적</cell>
+      <cell col="3" row="13">NUMBER</cell>
+      <cell col="4" row="13">10,2</cell>
+      <cell col="5" row="13">N</cell>
+      <cell col="6" row="13"></cell>
+      <cell col="7" row="13"></cell>
+      <cell col="8" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14">9</cell>
+      <cell col="1" row="14">OVR_FLO</cell>
+      <cell col="2" row="14">지상층수</cell>
+      <cell col="3" row="14">NUMBER</cell>
+      <cell col="4" row="14">5</cell>
+      <cell col="5" row="14">N</cell>
+      <cell col="6" row="14"></cell>
+      <cell col="7" row="14"></cell>
+      <cell col="8" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15">10</cell>
+      <cell col="1" row="15">UNG_FLO</cell>
+      <cell col="2" row="15">지하층수</cell>
+      <cell col="3" row="15">NUMBER</cell>
+      <cell col="4" row="15">5</cell>
+      <cell col="5" row="15">N</cell>
+      <cell col="6" row="15"></cell>
+      <cell col="7" row="15"></cell>
+      <cell col="8" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16">11</cell>
+      <cell col="1" row="16">STA_DEP</cell>
+      <cell col="2" row="16">시점매설깊이</cell>
+      <cell col="3" row="16">NUMBER</cell>
+      <cell col="4" row="16">5,2</cell>
+      <cell col="5" row="16">N</cell>
+      <cell col="6" row="16"></cell>
+      <cell col="7" row="16"></cell>
+      <cell col="8" row="16"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17">12</cell>
+      <cell col="1" row="17">END_DEP</cell>
+      <cell col="2" row="17">종점매설깊이</cell>
+      <cell col="3" row="17">NUMBER</cell>
+      <cell col="4" row="17">5,2</cell>
+      <cell col="5" row="17">N</cell>
+      <cell col="6" row="17"></cell>
+      <cell col="7" row="17"></cell>
+      <cell col="8" row="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18">13</cell>
+      <cell col="1" row="18">AVG_DEP</cell>
+      <cell col="2" row="18">평균매설깊이</cell>
+      <cell col="3" row="18">NUMBER</cell>
+      <cell col="4" row="18">5,2</cell>
+      <cell col="5" row="18">N</cell>
+      <cell col="6" row="18"></cell>
+      <cell col="7" row="18"></cell>
+      <cell col="8" row="18"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19">14</cell>
+      <cell col="1" row="19">MIN_DEP</cell>
+      <cell col="2" row="19">최소매설깊이</cell>
+      <cell col="3" row="19">NUMBER</cell>
+      <cell col="4" row="19">5,2</cell>
+      <cell col="5" row="19">N</cell>
+      <cell col="6" row="19"></cell>
+      <cell col="7" row="19"></cell>
+      <cell col="8" row="19"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20">15</cell>
+      <cell col="1" row="20">MAX_DEP</cell>
+      <cell col="2" row="20">최대매설깊이</cell>
+      <cell col="3" row="20">NUMBER</cell>
+      <cell col="4" row="20">5,2</cell>
+      <cell col="5" row="20">N</cell>
+      <cell col="6" row="20"></cell>
+      <cell col="7" row="20"></cell>
+      <cell col="8" row="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21">16</cell>
+      <cell col="1" row="21">CNT_NAM</cell>
+      <cell col="2" row="21">공사명</cell>
+      <cell col="3" row="21">VARCHAR2</cell>
+      <cell col="4" row="21">100</cell>
+      <cell col="5" row="21">N</cell>
+      <cell col="6" row="21"></cell>
+      <cell col="7" row="21"></cell>
+      <cell col="8" row="21"></cell>
+    </row>
+    <row>
+      <cell col="0" row="22">17</cell>
+      <cell col="1" row="22">STA_YMD</cell>
+      <cell col="2" row="22">착공일자</cell>
+      <cell col="3" row="22">VARCHAR2</cell>
+      <cell col="4" row="22">8</cell>
+      <cell col="5" row="22">N</cell>
+      <cell col="6" row="22"></cell>
+      <cell col="7" row="22"></cell>
+      <cell col="8" row="22"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23">18</cell>
+      <cell col="1" row="23">CMP_YMD</cell>
+      <cell col="2" row="23">준공일자</cell>
+      <cell col="3" row="23">VARCHAR2</cell>
+      <cell col="4" row="23">8</cell>
+      <cell col="5" row="23">N</cell>
+      <cell col="6" row="23"></cell>
+      <cell col="7" row="23"></cell>
+      <cell col="8" row="23"></cell>
+    </row>
+    <row>
+      <cell col="0" row="24">19</cell>
+      <cell col="1" row="24">LOC_NAM</cell>
+      <cell col="2" row="24">발주처</cell>
+      <cell col="3" row="24">VARCHAR2</cell>
+      <cell col="4" row="24">100</cell>
+      <cell col="5" row="24">N</cell>
+      <cell col="6" row="24"></cell>
+      <cell col="7" row="24"></cell>
+      <cell col="8" row="24"></cell>
+    </row>
+    <row>
+      <cell col="0" row="25">20</cell>
+      <cell col="1" row="25">CLT_NAM</cell>
+      <cell col="2" row="25">시행사</cell>
+      <cell col="3" row="25">VARCHAR2</cell>
+      <cell col="4" row="25">100</cell>
+      <cell col="5" row="25">N</cell>
+      <cell col="6" row="25"></cell>
+      <cell col="7" row="25"></cell>
+      <cell col="8" row="25"></cell>
+    </row>
+    <row>
+      <cell col="0" row="26">21</cell>
+      <cell col="1" row="26">USE_RMK</cell>
+      <cell col="2" row="26">비고</cell>
+      <cell col="3" row="26">VARCHAR2</cell>
+      <cell col="4" row="26">255</cell>
+      <cell col="5" row="26">N</cell>
+      <cell col="6" row="26"></cell>
+      <cell col="7" row="26"></cell>
+      <cell col="8" row="26"></cell>
+    </row>
+    <row>
+      <cell col="0" row="27">22</cell>
+      <cell col="1" row="27">UGID</cell>
+      <cell col="2" row="27">3D고유식별코드</cell>
+      <cell col="3" row="27">VARCHAR2</cell>
+      <cell col="4" row="27">30</cell>
+      <cell col="5" row="27">N</cell>
+      <cell col="6" row="27" colspan="3">테이블명:FTR_CDE:FTR_IDN조합</cell>
+    </row>
+    <row>
+      <cell col="0" row="28">23</cell>
+      <cell col="1" row="28">WAL_CDE</cell>
+      <cell col="2" row="28">외벽적용구분</cell>
+      <cell col="3" row="28">VARCHAR2</cell>
+      <cell col="4" row="28">6</cell>
+      <cell col="5" row="28">NN</cell>
+      <cell col="6" row="28"></cell>
+      <cell col="7" row="28">CDE-011</cell>
+      <cell col="8" row="28"></cell>
+    </row>
+  </table>
+  <text>3. 공동구</text>
+  <table rows="27" cols="9">
+    <row>
+      <cell col="0" row="0" colspan="9">테이블정의서</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="2">주제영역</cell>
+      <cell col="2" row="1">지하시설물(구조물형)</cell>
+      <cell col="3" row="1">작성일</cell>
+      <cell col="4" row="1" colspan="3"></cell>
+      <cell col="7" row="1">작성자</cell>
+      <cell col="8" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">테이블ID</cell>
+      <cell col="2" row="2">UDG_FACI_AS</cell>
+      <cell col="3" row="2" colspan="2">테이블명</cell>
+      <cell col="5" row="2" colspan="4">공동구</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">테이블설명</cell>
+      <cell col="2" row="3" colspan="7">공동구</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">NO</cell>
+      <cell col="1" row="4">컬럼ID</cell>
+      <cell col="2" row="4">컬럼명</cell>
+      <cell col="3" row="4">타입</cell>
+      <cell col="4" row="4">길이</cell>
+      <cell col="5" row="4">NULL</cell>
+      <cell col="6" row="4">KEY</cell>
+      <cell col="7" row="4">CD NUM</cell>
+      <cell col="8" row="4">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">1</cell>
+      <cell col="1" row="5">FTR_IDN</cell>
+      <cell col="2" row="5">관리번호</cell>
+      <cell col="3" row="5">NUMBER</cell>
+      <cell col="4" row="5">10</cell>
+      <cell col="5" row="5">NN</cell>
+      <cell col="6" row="5">PK</cell>
+      <cell col="7" row="5"></cell>
+      <cell col="8" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">2</cell>
+      <cell col="1" row="6">FTR_CDE</cell>
+      <cell col="2" row="6">지형지물부호</cell>
+      <cell col="3" row="6">VARCHAR2</cell>
+      <cell col="4" row="6">5</cell>
+      <cell col="5" row="6">NN</cell>
+      <cell col="6" row="6"></cell>
+      <cell col="7" row="6"></cell>
+      <cell col="8" row="6">AE900</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">3</cell>
+      <cell col="1" row="7">HJD_CDE</cell>
+      <cell col="2" row="7">행정읍면동코드</cell>
+      <cell col="3" row="7">VARCHAR2</cell>
+      <cell col="4" row="7">10</cell>
+      <cell col="5" row="7">NN</cell>
+      <cell col="6" row="7"></cell>
+      <cell col="7" row="7">HJD-001</cell>
+      <cell col="8" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8">4</cell>
+      <cell col="1" row="8">MNG_CDE</cell>
+      <cell col="2" row="8">관리기관코드</cell>
+      <cell col="3" row="8">VARCHAR2</cell>
+      <cell col="4" row="8">7</cell>
+      <cell col="5" row="8">N</cell>
+      <cell col="6" row="8"></cell>
+      <cell col="7" row="8">MNG-001</cell>
+      <cell col="8" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">5</cell>
+      <cell col="1" row="9">MNG_NAM</cell>
+      <cell col="2" row="9">관리자</cell>
+      <cell col="3" row="9">VARCHAR2</cell>
+      <cell col="4" row="9">100</cell>
+      <cell col="5" row="9">N</cell>
+      <cell col="6" row="9"></cell>
+      <cell col="7" row="9"></cell>
+      <cell col="8" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10">6</cell>
+      <cell col="1" row="10">FAC_CDE</cell>
+      <cell col="2" row="10">종별</cell>
+      <cell col="3" row="10">VARCHAR2</cell>
+      <cell col="4" row="10">6</cell>
+      <cell col="5" row="10">N</cell>
+      <cell col="6" row="10"></cell>
+      <cell col="7" row="10">CDE-002</cell>
+      <cell col="8" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11">7</cell>
+      <cell col="1" row="11">COP_NAM</cell>
+      <cell col="2" row="11">공동구명</cell>
+      <cell col="3" row="11">VARCHAR2</cell>
+      <cell col="4" row="11">100</cell>
+      <cell col="5" row="11">N</cell>
+      <cell col="6" row="11"></cell>
+      <cell col="7" row="11"></cell>
+      <cell col="8" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12">8</cell>
+      <cell col="1" row="12">TOT_ARA</cell>
+      <cell col="2" row="12">총면적</cell>
+      <cell col="3" row="12">NUMBER</cell>
+      <cell col="4" row="12">10,2</cell>
+      <cell col="5" row="12">N</cell>
+      <cell col="6" row="12"></cell>
+      <cell col="7" row="12"></cell>
+      <cell col="8" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13">9</cell>
+      <cell col="1" row="13">TOT_LEN</cell>
+      <cell col="2" row="13">총연장</cell>
+      <cell col="3" row="13">NUMBER</cell>
+      <cell col="4" row="13">11,2</cell>
+      <cell col="5" row="13">N</cell>
+      <cell col="6" row="13"></cell>
+      <cell col="7" row="13"></cell>
+      <cell col="8" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14">10</cell>
+      <cell col="1" row="14">STA_DEP</cell>
+      <cell col="2" row="14">시점매설깊이</cell>
+      <cell col="3" row="14">NUMBER</cell>
+      <cell col="4" row="14">5,2</cell>
+      <cell col="5" row="14">N</cell>
+      <cell col="6" row="14"></cell>
+      <cell col="7" row="14"></cell>
+      <cell col="8" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15">11</cell>
+      <cell col="1" row="15">END_DEP</cell>
+      <cell col="2" row="15">종점매설깊이</cell>
+      <cell col="3" row="15">NUMBER</cell>
+      <cell col="4" row="15">5,2</cell>
+      <cell col="5" row="15">N</cell>
+      <cell col="6" row="15"></cell>
+      <cell col="7" row="15"></cell>
+      <cell col="8" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16">12</cell>
+      <cell col="1" row="16">AVG_DEP</cell>
+      <cell col="2" row="16">평균매설깊이</cell>
+      <cell col="3" row="16">NUMBER</cell>
+      <cell col="4" row="16">5,2</cell>
+      <cell col="5" row="16">N</cell>
+      <cell col="6" row="16"></cell>
+      <cell col="7" row="16"></cell>
+      <cell col="8" row="16"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17">13</cell>
+      <cell col="1" row="17">MIN_DEP</cell>
+      <cell col="2" row="17">최소매설깊이</cell>
+      <cell col="3" row="17">NUMBER</cell>
+      <cell col="4" row="17">5,2</cell>
+      <cell col="5" row="17">N</cell>
+      <cell col="6" row="17"></cell>
+      <cell col="7" row="17"></cell>
+      <cell col="8" row="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18">14</cell>
+      <cell col="1" row="18">MAX_DEP</cell>
+      <cell col="2" row="18">최대매설깊이</cell>
+      <cell col="3" row="18">NUMBER</cell>
+      <cell col="4" row="18">5,2</cell>
+      <cell col="5" row="18">N</cell>
+      <cell col="6" row="18"></cell>
+      <cell col="7" row="18"></cell>
+      <cell col="8" row="18"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19">15</cell>
+      <cell col="1" row="19">CNT_NAM</cell>
+      <cell col="2" row="19">공사명</cell>
+      <cell col="3" row="19">VARCHAR2</cell>
+      <cell col="4" row="19">100</cell>
+      <cell col="5" row="19">N</cell>
+      <cell col="6" row="19"></cell>
+      <cell col="7" row="19"></cell>
+      <cell col="8" row="19"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20">16</cell>
+      <cell col="1" row="20">STA_YMD</cell>
+      <cell col="2" row="20">착공일자</cell>
+      <cell col="3" row="20">VARCHAR2</cell>
+      <cell col="4" row="20">8</cell>
+      <cell col="5" row="20">N</cell>
+      <cell col="6" row="20"></cell>
+      <cell col="7" row="20"></cell>
+      <cell col="8" row="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21">17</cell>
+      <cell col="1" row="21">CMP_YMD</cell>
+      <cell col="2" row="21">준공일자</cell>
+      <cell col="3" row="21">VARCHAR2</cell>
+      <cell col="4" row="21">8</cell>
+      <cell col="5" row="21">N</cell>
+      <cell col="6" row="21"></cell>
+      <cell col="7" row="21"></cell>
+      <cell col="8" row="21"></cell>
+    </row>
+    <row>
+      <cell col="0" row="22">18</cell>
+      <cell col="1" row="22">LOC_NAM</cell>
+      <cell col="2" row="22">발주처</cell>
+      <cell col="3" row="22">VARCHAR2</cell>
+      <cell col="4" row="22">100</cell>
+      <cell col="5" row="22">N</cell>
+      <cell col="6" row="22"></cell>
+      <cell col="7" row="22"></cell>
+      <cell col="8" row="22"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23">19</cell>
+      <cell col="1" row="23">CLT_NAM</cell>
+      <cell col="2" row="23">시행사</cell>
+      <cell col="3" row="23">VARCHAR2</cell>
+      <cell col="4" row="23">100</cell>
+      <cell col="5" row="23">N</cell>
+      <cell col="6" row="23"></cell>
+      <cell col="7" row="23"></cell>
+      <cell col="8" row="23"></cell>
+    </row>
+    <row>
+      <cell col="0" row="24">20</cell>
+      <cell col="1" row="24">USE_RMK</cell>
+      <cell col="2" row="24">비고</cell>
+      <cell col="3" row="24">VARCHAR2</cell>
+      <cell col="4" row="24">255</cell>
+      <cell col="5" row="24">N</cell>
+      <cell col="6" row="24"></cell>
+      <cell col="7" row="24"></cell>
+      <cell col="8" row="24"></cell>
+    </row>
+    <row>
+      <cell col="0" row="25">21</cell>
+      <cell col="1" row="25">UGID</cell>
+      <cell col="2" row="25">3D고유식별코드</cell>
+      <cell col="3" row="25">VARCHAR2</cell>
+      <cell col="4" row="25">30</cell>
+      <cell col="5" row="25">N</cell>
+      <cell col="6" row="25" colspan="3">테이블명:FTR_CDE:FTR_IDN조합</cell>
+    </row>
+    <row>
+      <cell col="0" row="26">22</cell>
+      <cell col="1" row="26">WAL_CDE</cell>
+      <cell col="2" row="26">외벽적용구분</cell>
+      <cell col="3" row="26">VARCHAR2</cell>
+      <cell col="4" row="26">6</cell>
+      <cell col="5" row="26">NN</cell>
+      <cell col="6" row="26"></cell>
+      <cell col="7" row="26">CDE-011</cell>
+      <cell col="8" row="26"></cell>
+    </row>
+  </table>
+  <text>4. 지하차도</text>
+  <table rows="28" cols="9">
+    <row>
+      <cell col="0" row="0" colspan="9">테이블정의서</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="2">주제영역</cell>
+      <cell col="2" row="1">지하시설물(구조물형)</cell>
+      <cell col="3" row="1">작성일</cell>
+      <cell col="4" row="1" colspan="3"></cell>
+      <cell col="7" row="1">작성자</cell>
+      <cell col="8" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">테이블ID</cell>
+      <cell col="2" row="2">UDG_RODW_AS</cell>
+      <cell col="3" row="2" colspan="2">테이블명</cell>
+      <cell col="5" row="2" colspan="4">지하차도</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">테이블설명</cell>
+      <cell col="2" row="3" colspan="7">지하차도</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">NO</cell>
+      <cell col="1" row="4">컬럼ID</cell>
+      <cell col="2" row="4">컬럼명</cell>
+      <cell col="3" row="4">타입</cell>
+      <cell col="4" row="4">길이</cell>
+      <cell col="5" row="4">NULL</cell>
+      <cell col="6" row="4">KEY</cell>
+      <cell col="7" row="4">CD NUM</cell>
+      <cell col="8" row="4">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">1</cell>
+      <cell col="1" row="5">FTR_IDN</cell>
+      <cell col="2" row="5">관리번호</cell>
+      <cell col="3" row="5">NUMBER</cell>
+      <cell col="4" row="5">10</cell>
+      <cell col="5" row="5">NN</cell>
+      <cell col="6" row="5">PK</cell>
+      <cell col="7" row="5"></cell>
+      <cell col="8" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">2</cell>
+      <cell col="1" row="6">FTR_CDE</cell>
+      <cell col="2" row="6">지형지물부호</cell>
+      <cell col="3" row="6">VARCHAR2</cell>
+      <cell col="4" row="6">5</cell>
+      <cell col="5" row="6">NN</cell>
+      <cell col="6" row="6"></cell>
+      <cell col="7" row="6"></cell>
+      <cell col="8" row="6">AE057</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">3</cell>
+      <cell col="1" row="7">HJD_CDE</cell>
+      <cell col="2" row="7">행정읍면동코드</cell>
+      <cell col="3" row="7">VARCHAR2</cell>
+      <cell col="4" row="7">10</cell>
+      <cell col="5" row="7">NN</cell>
+      <cell col="6" row="7"></cell>
+      <cell col="7" row="7">HJD-001</cell>
+      <cell col="8" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8">4</cell>
+      <cell col="1" row="8">MNG_CDE</cell>
+      <cell col="2" row="8">관리기관코드</cell>
+      <cell col="3" row="8">VARCHAR2</cell>
+      <cell col="4" row="8">7</cell>
+      <cell col="5" row="8">N</cell>
+      <cell col="6" row="8"></cell>
+      <cell col="7" row="8">MNG-001</cell>
+      <cell col="8" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">5</cell>
+      <cell col="1" row="9">MNG_NAM</cell>
+      <cell col="2" row="9">관리자</cell>
+      <cell col="3" row="9">VARCHAR2</cell>
+      <cell col="4" row="9">100</cell>
+      <cell col="5" row="9">N</cell>
+      <cell col="6" row="9"></cell>
+      <cell col="7" row="9"></cell>
+      <cell col="8" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10">6</cell>
+      <cell col="1" row="10">SCR_NAM</cell>
+      <cell col="2" row="10">지하차도명</cell>
+      <cell col="3" row="10">VARCHAR2</cell>
+      <cell col="4" row="10">100</cell>
+      <cell col="5" row="10">N</cell>
+      <cell col="6" row="10"></cell>
+      <cell col="7" row="10"></cell>
+      <cell col="8" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11">7</cell>
+      <cell col="1" row="11">GRD_CDE</cell>
+      <cell col="2" row="11">구조물등급</cell>
+      <cell col="3" row="11">VARCHAR2</cell>
+      <cell col="4" row="11">6</cell>
+      <cell col="5" row="11">NN</cell>
+      <cell col="6" row="11"></cell>
+      <cell col="7" row="11"></cell>
+      <cell col="8" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12">8</cell>
+      <cell col="1" row="12">FAC_CDE</cell>
+      <cell col="2" row="12">종별</cell>
+      <cell col="3" row="12">VARCHAR2</cell>
+      <cell col="4" row="12">6</cell>
+      <cell col="5" row="12">NN</cell>
+      <cell col="6" row="12"></cell>
+      <cell col="7" row="12"></cell>
+      <cell col="8" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13">9</cell>
+      <cell col="1" row="13">TOT_LEN</cell>
+      <cell col="2" row="13">총연장</cell>
+      <cell col="3" row="13">NUMBER</cell>
+      <cell col="4" row="13">11,2</cell>
+      <cell col="5" row="13">N</cell>
+      <cell col="6" row="13"></cell>
+      <cell col="7" row="13"></cell>
+      <cell col="8" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14">10</cell>
+      <cell col="1" row="14">TOT_ARA</cell>
+      <cell col="2" row="14">총면적</cell>
+      <cell col="3" row="14">NUMBER</cell>
+      <cell col="4" row="14">10,2</cell>
+      <cell col="5" row="14">N</cell>
+      <cell col="6" row="14"></cell>
+      <cell col="7" row="14"></cell>
+      <cell col="8" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15">11</cell>
+      <cell col="1" row="15">STA_DEP</cell>
+      <cell col="2" row="15">시점매설깊이</cell>
+      <cell col="3" row="15">NUMBER</cell>
+      <cell col="4" row="15">5,2</cell>
+      <cell col="5" row="15">N</cell>
+      <cell col="6" row="15"></cell>
+      <cell col="7" row="15"></cell>
+      <cell col="8" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16">12</cell>
+      <cell col="1" row="16">END_DEP</cell>
+      <cell col="2" row="16">종점매설깊이</cell>
+      <cell col="3" row="16">NUMBER</cell>
+      <cell col="4" row="16">5,2</cell>
+      <cell col="5" row="16">N</cell>
+      <cell col="6" row="16"></cell>
+      <cell col="7" row="16"></cell>
+      <cell col="8" row="16"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17">13</cell>
+      <cell col="1" row="17">AVG_DEP</cell>
+      <cell col="2" row="17">평균매설깊이</cell>
+      <cell col="3" row="17">NUMBER</cell>
+      <cell col="4" row="17">5,2</cell>
+      <cell col="5" row="17">N</cell>
+      <cell col="6" row="17"></cell>
+      <cell col="7" row="17"></cell>
+      <cell col="8" row="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18">14</cell>
+      <cell col="1" row="18">MIN_DEP</cell>
+      <cell col="2" row="18">최소매설깊이</cell>
+      <cell col="3" row="18">NUMBER</cell>
+      <cell col="4" row="18">5,2</cell>
+      <cell col="5" row="18">N</cell>
+      <cell col="6" row="18"></cell>
+      <cell col="7" row="18"></cell>
+      <cell col="8" row="18"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19">15</cell>
+      <cell col="1" row="19">MAX_DEP</cell>
+      <cell col="2" row="19">최대매설깊이</cell>
+      <cell col="3" row="19">NUMBER</cell>
+      <cell col="4" row="19">5,2</cell>
+      <cell col="5" row="19">N</cell>
+      <cell col="6" row="19"></cell>
+      <cell col="7" row="19"></cell>
+      <cell col="8" row="19"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20">16</cell>
+      <cell col="1" row="20">CNT_NAM</cell>
+      <cell col="2" row="20">공사명</cell>
+      <cell col="3" row="20">VARCHAR2</cell>
+      <cell col="4" row="20">100</cell>
+      <cell col="5" row="20">N</cell>
+      <cell col="6" row="20"></cell>
+      <cell col="7" row="20"></cell>
+      <cell col="8" row="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21">17</cell>
+      <cell col="1" row="21">STA_YMD</cell>
+      <cell col="2" row="21">착공일자</cell>
+      <cell col="3" row="21">VARCHAR2</cell>
+      <cell col="4" row="21">8</cell>
+      <cell col="5" row="21">N</cell>
+      <cell col="6" row="21"></cell>
+      <cell col="7" row="21"></cell>
+      <cell col="8" row="21"></cell>
+    </row>
+    <row>
+      <cell col="0" row="22">18</cell>
+      <cell col="1" row="22">CMP_YMD</cell>
+      <cell col="2" row="22">준공일자</cell>
+      <cell col="3" row="22">VARCHAR2</cell>
+      <cell col="4" row="22">8</cell>
+      <cell col="5" row="22">N</cell>
+      <cell col="6" row="22"></cell>
+      <cell col="7" row="22"></cell>
+      <cell col="8" row="22"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23">19</cell>
+      <cell col="1" row="23">LOC_NAM</cell>
+      <cell col="2" row="23">발주처</cell>
+      <cell col="3" row="23">VARCHAR2</cell>
+      <cell col="4" row="23">100</cell>
+      <cell col="5" row="23">N</cell>
+      <cell col="6" row="23"></cell>
+      <cell col="7" row="23"></cell>
+      <cell col="8" row="23"></cell>
+    </row>
+    <row>
+      <cell col="0" row="24">20</cell>
+      <cell col="1" row="24">CLT_NAM</cell>
+      <cell col="2" row="24">시행사</cell>
+      <cell col="3" row="24">VARCHAR2</cell>
+      <cell col="4" row="24">100</cell>
+      <cell col="5" row="24">N</cell>
+      <cell col="6" row="24"></cell>
+      <cell col="7" row="24"></cell>
+      <cell col="8" row="24"></cell>
+    </row>
+    <row>
+      <cell col="0" row="25">21</cell>
+      <cell col="1" row="25">USE_RMK</cell>
+      <cell col="2" row="25">비고</cell>
+      <cell col="3" row="25">VARCHAR2</cell>
+      <cell col="4" row="25">255</cell>
+      <cell col="5" row="25">N</cell>
+      <cell col="6" row="25"></cell>
+      <cell col="7" row="25"></cell>
+      <cell col="8" row="25"></cell>
+    </row>
+    <row>
+      <cell col="0" row="26">22</cell>
+      <cell col="1" row="26">UGID</cell>
+      <cell col="2" row="26">3D고유식별코드</cell>
+      <cell col="3" row="26">VARCHAR2</cell>
+      <cell col="4" row="26">30</cell>
+      <cell col="5" row="26">N</cell>
+      <cell col="6" row="26" colspan="3">테이블명:FTR_CDE:FTR_IDN조합</cell>
+    </row>
+    <row>
+      <cell col="0" row="27">23</cell>
+      <cell col="1" row="27">WAL_CDE</cell>
+      <cell col="2" row="27">외벽적용구분</cell>
+      <cell col="3" row="27">VARCHAR2</cell>
+      <cell col="4" row="27">6</cell>
+      <cell col="5" row="27">NN</cell>
+      <cell col="6" row="27"></cell>
+      <cell col="7" row="27">CDE-011</cell>
+      <cell col="8" row="27"></cell>
+    </row>
+  </table>
+  <text>5. 지하보도</text>
+  <table rows="29" cols="9">
+    <row>
+      <cell col="0" row="0" colspan="9">테이블정의서</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="2">주제영역</cell>
+      <cell col="2" row="1">지하시설물(구조물형)</cell>
+      <cell col="3" row="1">작성일</cell>
+      <cell col="4" row="1" colspan="3"></cell>
+      <cell col="7" row="1">작성자</cell>
+      <cell col="8" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">테이블ID</cell>
+      <cell col="2" row="2">UDG_SDWY_AS</cell>
+      <cell col="3" row="2" colspan="2">테이블명</cell>
+      <cell col="5" row="2" colspan="4">지하보도</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">테이블설명</cell>
+      <cell col="2" row="3" colspan="7">지하보도</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">NO</cell>
+      <cell col="1" row="4">컬럼ID</cell>
+      <cell col="2" row="4">컬럼명</cell>
+      <cell col="3" row="4">타입</cell>
+      <cell col="4" row="4">길이</cell>
+      <cell col="5" row="4">NULL</cell>
+      <cell col="6" row="4">KEY</cell>
+      <cell col="7" row="4">CD  NUM</cell>
+      <cell col="8" row="4">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">1</cell>
+      <cell col="1" row="5">FTR_IDN</cell>
+      <cell col="2" row="5">관리번호</cell>
+      <cell col="3" row="5">NUMBER</cell>
+      <cell col="4" row="5">10</cell>
+      <cell col="5" row="5">NN</cell>
+      <cell col="6" row="5">PK</cell>
+      <cell col="7" row="5"></cell>
+      <cell col="8" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">2</cell>
+      <cell col="1" row="6">FTR_CDE</cell>
+      <cell col="2" row="6">지형지물부호</cell>
+      <cell col="3" row="6">VARCHAR2</cell>
+      <cell col="4" row="6">5</cell>
+      <cell col="5" row="6">NN</cell>
+      <cell col="6" row="6"></cell>
+      <cell col="7" row="6"></cell>
+      <cell col="8" row="6">AE050</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">3</cell>
+      <cell col="1" row="7">HJD_CDE</cell>
+      <cell col="2" row="7">행정읍면동코드</cell>
+      <cell col="3" row="7">VARCHAR2</cell>
+      <cell col="4" row="7">10</cell>
+      <cell col="5" row="7">NN</cell>
+      <cell col="6" row="7"></cell>
+      <cell col="7" row="7">HJD-001</cell>
+      <cell col="8" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8">4</cell>
+      <cell col="1" row="8">MNG_CDE</cell>
+      <cell col="2" row="8">관리기관코드</cell>
+      <cell col="3" row="8">VARCHAR2</cell>
+      <cell col="4" row="8">7</cell>
+      <cell col="5" row="8">N</cell>
+      <cell col="6" row="8"></cell>
+      <cell col="7" row="8">MNG-001</cell>
+      <cell col="8" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">5</cell>
+      <cell col="1" row="9">MNG_NAM</cell>
+      <cell col="2" row="9">관리자</cell>
+      <cell col="3" row="9">VARCHAR2</cell>
+      <cell col="4" row="9">100</cell>
+      <cell col="5" row="9">N</cell>
+      <cell col="6" row="9"></cell>
+      <cell col="7" row="9"></cell>
+      <cell col="8" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10">6</cell>
+      <cell col="1" row="10">SMN_NAM</cell>
+      <cell col="2" row="10">지하보도명</cell>
+      <cell col="3" row="10">VARCHAR2</cell>
+      <cell col="4" row="10">100</cell>
+      <cell col="5" row="10">N</cell>
+      <cell col="6" row="10"></cell>
+      <cell col="7" row="10"></cell>
+      <cell col="8" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11">7</cell>
+      <cell col="1" row="11">GRD_CDE</cell>
+      <cell col="2" row="11">구조물등급</cell>
+      <cell col="3" row="11">VARCHAR2</cell>
+      <cell col="4" row="11">6</cell>
+      <cell col="5" row="11">NN</cell>
+      <cell col="6" row="11"></cell>
+      <cell col="7" row="11">CDE-001</cell>
+      <cell col="8" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12">8</cell>
+      <cell col="1" row="12">FAC_CDE</cell>
+      <cell col="2" row="12">종별</cell>
+      <cell col="3" row="12">VARCHAR2</cell>
+      <cell col="4" row="12">6</cell>
+      <cell col="5" row="12">NN</cell>
+      <cell col="6" row="12"></cell>
+      <cell col="7" row="12">CDE-002</cell>
+      <cell col="8" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13">9</cell>
+      <cell col="1" row="13">TOT_LEN</cell>
+      <cell col="2" row="13">총연장</cell>
+      <cell col="3" row="13">NUMBER</cell>
+      <cell col="4" row="13">11,2</cell>
+      <cell col="5" row="13">N</cell>
+      <cell col="6" row="13"></cell>
+      <cell col="7" row="13"></cell>
+      <cell col="8" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14">10</cell>
+      <cell col="1" row="14">TOT_ARA</cell>
+      <cell col="2" row="14">총면적</cell>
+      <cell col="3" row="14">NUMBER</cell>
+      <cell col="4" row="14">10,2</cell>
+      <cell col="5" row="14">N</cell>
+      <cell col="6" row="14"></cell>
+      <cell col="7" row="14"></cell>
+      <cell col="8" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15">11</cell>
+      <cell col="1" row="15">BOX_LEN</cell>
+      <cell col="2" row="15">구체연장</cell>
+      <cell col="3" row="15">NUMBER</cell>
+      <cell col="4" row="15">11,2</cell>
+      <cell col="5" row="15">N</cell>
+      <cell col="6" row="15"></cell>
+      <cell col="7" row="15"></cell>
+      <cell col="8" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16">12</cell>
+      <cell col="1" row="16">STA_DEP</cell>
+      <cell col="2" row="16">시점매설깊이</cell>
+      <cell col="3" row="16">NUMBER</cell>
+      <cell col="4" row="16">5,2</cell>
+      <cell col="5" row="16">N</cell>
+      <cell col="6" row="16"></cell>
+      <cell col="7" row="16"></cell>
+      <cell col="8" row="16"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17">13</cell>
+      <cell col="1" row="17">END_DEP</cell>
+      <cell col="2" row="17">종점매설깊이</cell>
+      <cell col="3" row="17">NUMBER</cell>
+      <cell col="4" row="17">5,2</cell>
+      <cell col="5" row="17">N</cell>
+      <cell col="6" row="17"></cell>
+      <cell col="7" row="17"></cell>
+      <cell col="8" row="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18">14</cell>
+      <cell col="1" row="18">AVG_DEP</cell>
+      <cell col="2" row="18">평균매설깊이</cell>
+      <cell col="3" row="18">NUMBER</cell>
+      <cell col="4" row="18">5,2</cell>
+      <cell col="5" row="18">N</cell>
+      <cell col="6" row="18"></cell>
+      <cell col="7" row="18"></cell>
+      <cell col="8" row="18"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19">15</cell>
+      <cell col="1" row="19">MIN_DEP</cell>
+      <cell col="2" row="19">최소매설깊이</cell>
+      <cell col="3" row="19">NUMBER</cell>
+      <cell col="4" row="19">5,2</cell>
+      <cell col="5" row="19">N</cell>
+      <cell col="6" row="19"></cell>
+      <cell col="7" row="19"></cell>
+      <cell col="8" row="19"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20">16</cell>
+      <cell col="1" row="20">MAX_DEP</cell>
+      <cell col="2" row="20">최대매설깊이</cell>
+      <cell col="3" row="20">NUMBER</cell>
+      <cell col="4" row="20">5,2</cell>
+      <cell col="5" row="20">N</cell>
+      <cell col="6" row="20"></cell>
+      <cell col="7" row="20"></cell>
+      <cell col="8" row="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21">17</cell>
+      <cell col="1" row="21">CNT_NAM</cell>
+      <cell col="2" row="21">공사명</cell>
+      <cell col="3" row="21">VARCHAR2</cell>
+      <cell col="4" row="21">100</cell>
+      <cell col="5" row="21">N</cell>
+      <cell col="6" row="21"></cell>
+      <cell col="7" row="21"></cell>
+      <cell col="8" row="21"></cell>
+    </row>
+    <row>
+      <cell col="0" row="22">18</cell>
+      <cell col="1" row="22">STA_YMD</cell>
+      <cell col="2" row="22">착공일자</cell>
+      <cell col="3" row="22">VARCHAR2</cell>
+      <cell col="4" row="22">8</cell>
+      <cell col="5" row="22">N</cell>
+      <cell col="6" row="22"></cell>
+      <cell col="7" row="22"></cell>
+      <cell col="8" row="22"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23">19</cell>
+      <cell col="1" row="23">CMP_YMD</cell>
+      <cell col="2" row="23">준공일자</cell>
+      <cell col="3" row="23">VARCHAR2</cell>
+      <cell col="4" row="23">8</cell>
+      <cell col="5" row="23">N</cell>
+      <cell col="6" row="23"></cell>
+      <cell col="7" row="23"></cell>
+      <cell col="8" row="23"></cell>
+    </row>
+    <row>
+      <cell col="0" row="24">20</cell>
+      <cell col="1" row="24">LOC_NAM</cell>
+      <cell col="2" row="24">발주처</cell>
+      <cell col="3" row="24">VARCHAR2</cell>
+      <cell col="4" row="24">100</cell>
+      <cell col="5" row="24">N</cell>
+      <cell col="6" row="24"></cell>
+      <cell col="7" row="24"></cell>
+      <cell col="8" row="24"></cell>
+    </row>
+    <row>
+      <cell col="0" row="25">21</cell>
+      <cell col="1" row="25">CLT_NAM</cell>
+      <cell col="2" row="25">시행사</cell>
+      <cell col="3" row="25">VARCHAR2</cell>
+      <cell col="4" row="25">100</cell>
+      <cell col="5" row="25">N</cell>
+      <cell col="6" row="25"></cell>
+      <cell col="7" row="25"></cell>
+      <cell col="8" row="25"></cell>
+    </row>
+    <row>
+      <cell col="0" row="26">22</cell>
+      <cell col="1" row="26">USE_RMK</cell>
+      <cell col="2" row="26">비고</cell>
+      <cell col="3" row="26">VARCHAR2</cell>
+      <cell col="4" row="26">255</cell>
+      <cell col="5" row="26">N</cell>
+      <cell col="6" row="26"></cell>
+      <cell col="7" row="26"></cell>
+      <cell col="8" row="26"></cell>
+    </row>
+    <row>
+      <cell col="0" row="27">23</cell>
+      <cell col="1" row="27">UGID</cell>
+      <cell col="2" row="27">3D고유식별코드</cell>
+      <cell col="3" row="27">VARCHAR2</cell>
+      <cell col="4" row="27">30</cell>
+      <cell col="5" row="27">N</cell>
+      <cell col="6" row="27" colspan="3">테이블명:FTR_CDE:FTR_IDN조합</cell>
+    </row>
+    <row>
+      <cell col="0" row="28">24</cell>
+      <cell col="1" row="28">WAL_CDE</cell>
+      <cell col="2" row="28">외벽적용구분</cell>
+      <cell col="3" row="28">VARCHAR2</cell>
+      <cell col="4" row="28">6</cell>
+      <cell col="5" row="28">NN</cell>
+      <cell col="6" row="28"></cell>
+      <cell col="7" row="28">CDE-011</cell>
+      <cell col="8" row="28"></cell>
+    </row>
+  </table>
+  <text>6. 지하주차장</text>
+  <table rows="29" cols="9">
+    <row>
+      <cell col="0" row="0" colspan="9">테이블정의서</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="2">주제영역</cell>
+      <cell col="2" row="1">지하시설물(구조물형)</cell>
+      <cell col="3" row="1">작성일</cell>
+      <cell col="4" row="1" colspan="3"></cell>
+      <cell col="7" row="1">작성자</cell>
+      <cell col="8" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">테이블ID</cell>
+      <cell col="2" row="2">UDG_PARK_AS</cell>
+      <cell col="3" row="2" colspan="2">테이블명</cell>
+      <cell col="5" row="2" colspan="4">지하주차장</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">테이블설명</cell>
+      <cell col="2" row="3" colspan="7">지하주차장</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">NO</cell>
+      <cell col="1" row="4">컬럼ID</cell>
+      <cell col="2" row="4">컬럼명</cell>
+      <cell col="3" row="4">타입</cell>
+      <cell col="4" row="4">길이</cell>
+      <cell col="5" row="4">NULL</cell>
+      <cell col="6" row="4">KEY</cell>
+      <cell col="7" row="4">CD NUM</cell>
+      <cell col="8" row="4">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">1</cell>
+      <cell col="1" row="5">FTR_IDN</cell>
+      <cell col="2" row="5">관리번호</cell>
+      <cell col="3" row="5">NUMBER</cell>
+      <cell col="4" row="5">10</cell>
+      <cell col="5" row="5">NN</cell>
+      <cell col="6" row="5">PK</cell>
+      <cell col="7" row="5"></cell>
+      <cell col="8" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">2</cell>
+      <cell col="1" row="6">FTR_CDE</cell>
+      <cell col="2" row="6">지형지물부호</cell>
+      <cell col="3" row="6">VARCHAR2</cell>
+      <cell col="4" row="6">5</cell>
+      <cell col="5" row="6">NN</cell>
+      <cell col="6" row="6"></cell>
+      <cell col="7" row="6"></cell>
+      <cell col="8" row="6">AE906</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">3</cell>
+      <cell col="1" row="7">HJD_CDE</cell>
+      <cell col="2" row="7">행정읍면동코드</cell>
+      <cell col="3" row="7">VARCHAR2</cell>
+      <cell col="4" row="7">10</cell>
+      <cell col="5" row="7">NN</cell>
+      <cell col="6" row="7"></cell>
+      <cell col="7" row="7">HJD-001</cell>
+      <cell col="8" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8">4</cell>
+      <cell col="1" row="8">MNG_CDE</cell>
+      <cell col="2" row="8">관리기관코드</cell>
+      <cell col="3" row="8">VARCHAR2</cell>
+      <cell col="4" row="8">7</cell>
+      <cell col="5" row="8">N</cell>
+      <cell col="6" row="8"></cell>
+      <cell col="7" row="8">MNG-001</cell>
+      <cell col="8" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">5</cell>
+      <cell col="1" row="9">MNG_NAM</cell>
+      <cell col="2" row="9">관리자</cell>
+      <cell col="3" row="9">VARCHAR2</cell>
+      <cell col="4" row="9">100</cell>
+      <cell col="5" row="9">N</cell>
+      <cell col="6" row="9"></cell>
+      <cell col="7" row="9"></cell>
+      <cell col="8" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10">6</cell>
+      <cell col="1" row="10">PRK_NAM</cell>
+      <cell col="2" row="10">주차장명</cell>
+      <cell col="3" row="10">VARCHAR2</cell>
+      <cell col="4" row="10">100</cell>
+      <cell col="5" row="10">N</cell>
+      <cell col="6" row="10"></cell>
+      <cell col="7" row="10"></cell>
+      <cell col="8" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11">7</cell>
+      <cell col="1" row="11">CHR_CDE</cell>
+      <cell col="2" row="11">주차요금구분</cell>
+      <cell col="3" row="11">VARCHAR2</cell>
+      <cell col="4" row="11">6</cell>
+      <cell col="5" row="11">NN</cell>
+      <cell col="6" row="11"></cell>
+      <cell col="7" row="11">CDE-006</cell>
+      <cell col="8" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12">8</cell>
+      <cell col="1" row="12">FEE_EXP</cell>
+      <cell col="2" row="12">요금</cell>
+      <cell col="3" row="12">VARCHAR2</cell>
+      <cell col="4" row="12">50</cell>
+      <cell col="5" row="12">N</cell>
+      <cell col="6" row="12"></cell>
+      <cell col="7" row="12"></cell>
+      <cell col="8" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13">9</cell>
+      <cell col="1" row="13">TOT_ARA</cell>
+      <cell col="2" row="13">총면적</cell>
+      <cell col="3" row="13">NUMBER</cell>
+      <cell col="4" row="13">10,2</cell>
+      <cell col="5" row="13">N</cell>
+      <cell col="6" row="13"></cell>
+      <cell col="7" row="13"></cell>
+      <cell col="8" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14">10</cell>
+      <cell col="1" row="14">OVR_FLO</cell>
+      <cell col="2" row="14">지상층수</cell>
+      <cell col="3" row="14">NUMBER</cell>
+      <cell col="4" row="14">5</cell>
+      <cell col="5" row="14">N</cell>
+      <cell col="6" row="14"></cell>
+      <cell col="7" row="14"></cell>
+      <cell col="8" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15">11</cell>
+      <cell col="1" row="15">UNG_FLO</cell>
+      <cell col="2" row="15">지하층수</cell>
+      <cell col="3" row="15">NUMBER</cell>
+      <cell col="4" row="15">5</cell>
+      <cell col="5" row="15">N</cell>
+      <cell col="6" row="15"></cell>
+      <cell col="7" row="15"></cell>
+      <cell col="8" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16">12</cell>
+      <cell col="1" row="16">STA_DEP</cell>
+      <cell col="2" row="16">시점매설깊이</cell>
+      <cell col="3" row="16">NUMBER</cell>
+      <cell col="4" row="16">5,2</cell>
+      <cell col="5" row="16">N</cell>
+      <cell col="6" row="16"></cell>
+      <cell col="7" row="16"></cell>
+      <cell col="8" row="16"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17">13</cell>
+      <cell col="1" row="17">END_DEP</cell>
+      <cell col="2" row="17">종점매설깊이</cell>
+      <cell col="3" row="17">NUMBER</cell>
+      <cell col="4" row="17">5,2</cell>
+      <cell col="5" row="17">N</cell>
+      <cell col="6" row="17"></cell>
+      <cell col="7" row="17"></cell>
+      <cell col="8" row="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18">14</cell>
+      <cell col="1" row="18">AVG_DEP</cell>
+      <cell col="2" row="18">평균매설깊이</cell>
+      <cell col="3" row="18">NUMBER</cell>
+      <cell col="4" row="18">5,2</cell>
+      <cell col="5" row="18">N</cell>
+      <cell col="6" row="18"></cell>
+      <cell col="7" row="18"></cell>
+      <cell col="8" row="18"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19">15</cell>
+      <cell col="1" row="19">MIN_DEP</cell>
+      <cell col="2" row="19">최소매설깊이</cell>
+      <cell col="3" row="19">NUMBER</cell>
+      <cell col="4" row="19">5,2</cell>
+      <cell col="5" row="19">N</cell>
+      <cell col="6" row="19"></cell>
+      <cell col="7" row="19"></cell>
+      <cell col="8" row="19"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20">16</cell>
+      <cell col="1" row="20">MAX_DEP</cell>
+      <cell col="2" row="20">최대매설깊이</cell>
+      <cell col="3" row="20">NUMBER</cell>
+      <cell col="4" row="20">5,2</cell>
+      <cell col="5" row="20">N</cell>
+      <cell col="6" row="20"></cell>
+      <cell col="7" row="20"></cell>
+      <cell col="8" row="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21">17</cell>
+      <cell col="1" row="21">CNT_NAM</cell>
+      <cell col="2" row="21">공사명</cell>
+      <cell col="3" row="21">VARCHAR2</cell>
+      <cell col="4" row="21">100</cell>
+      <cell col="5" row="21">N</cell>
+      <cell col="6" row="21"></cell>
+      <cell col="7" row="21"></cell>
+      <cell col="8" row="21"></cell>
+    </row>
+    <row>
+      <cell col="0" row="22">18</cell>
+      <cell col="1" row="22">STA_YMD</cell>
+      <cell col="2" row="22">착공일자</cell>
+      <cell col="3" row="22">VARCHAR2</cell>
+      <cell col="4" row="22">8</cell>
+      <cell col="5" row="22">N</cell>
+      <cell col="6" row="22"></cell>
+      <cell col="7" row="22"></cell>
+      <cell col="8" row="22"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23">19</cell>
+      <cell col="1" row="23">CMP_YMD</cell>
+      <cell col="2" row="23">준공일자</cell>
+      <cell col="3" row="23">VARCHAR2</cell>
+      <cell col="4" row="23">8</cell>
+      <cell col="5" row="23">N</cell>
+      <cell col="6" row="23"></cell>
+      <cell col="7" row="23"></cell>
+      <cell col="8" row="23"></cell>
+    </row>
+    <row>
+      <cell col="0" row="24">20</cell>
+      <cell col="1" row="24">LOC_NAM</cell>
+      <cell col="2" row="24">발주처</cell>
+      <cell col="3" row="24">VARCHAR2</cell>
+      <cell col="4" row="24">100</cell>
+      <cell col="5" row="24">N</cell>
+      <cell col="6" row="24"></cell>
+      <cell col="7" row="24"></cell>
+      <cell col="8" row="24"></cell>
+    </row>
+    <row>
+      <cell col="0" row="25">21</cell>
+      <cell col="1" row="25">CLT_NAM</cell>
+      <cell col="2" row="25">시행사</cell>
+      <cell col="3" row="25">VARCHAR2</cell>
+      <cell col="4" row="25">100</cell>
+      <cell col="5" row="25">N</cell>
+      <cell col="6" row="25"></cell>
+      <cell col="7" row="25"></cell>
+      <cell col="8" row="25"></cell>
+    </row>
+    <row>
+      <cell col="0" row="26">22</cell>
+      <cell col="1" row="26">USE_RMK</cell>
+      <cell col="2" row="26">비고</cell>
+      <cell col="3" row="26">VARCHAR2</cell>
+      <cell col="4" row="26">255</cell>
+      <cell col="5" row="26">N</cell>
+      <cell col="6" row="26"></cell>
+      <cell col="7" row="26"></cell>
+      <cell col="8" row="26"></cell>
+    </row>
+    <row>
+      <cell col="0" row="27">23</cell>
+      <cell col="1" row="27">UGID</cell>
+      <cell col="2" row="27">3D고유식별코드</cell>
+      <cell col="3" row="27">VARCHAR2</cell>
+      <cell col="4" row="27">30</cell>
+      <cell col="5" row="27">N</cell>
+      <cell col="6" row="27" colspan="3">테이블명:FTR_CDE:FTR_IDN조합</cell>
+    </row>
+    <row>
+      <cell col="0" row="28">24</cell>
+      <cell col="1" row="28">WAL_CDE</cell>
+      <cell col="2" row="28">외벽적용구분</cell>
+      <cell col="3" row="28">VARCHAR2</cell>
+      <cell col="4" row="28">6</cell>
+      <cell col="5" row="28">NN</cell>
+      <cell col="6" row="28"></cell>
+      <cell col="7" row="28">CDE-011</cell>
+      <cell col="8" row="28"></cell>
+    </row>
+  </table>
+  <text>7. 지하상가</text>
+  <table rows="26" cols="9">
+    <row>
+      <cell col="0" row="0" colspan="9">테이블정의서</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="2">주제영역</cell>
+      <cell col="2" row="1">지하시설물(구조물형)</cell>
+      <cell col="3" row="1">작성일</cell>
+      <cell col="4" row="1" colspan="3"></cell>
+      <cell col="7" row="1">작성자</cell>
+      <cell col="8" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">테이블ID</cell>
+      <cell col="2" row="2">UDG_SHOP_AS</cell>
+      <cell col="3" row="2" colspan="2">테이블명</cell>
+      <cell col="5" row="2" colspan="4">지하상가</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">테이블설명</cell>
+      <cell col="2" row="3" colspan="7">지하상가</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">NO</cell>
+      <cell col="1" row="4">컬럼ID</cell>
+      <cell col="2" row="4">컬럼명</cell>
+      <cell col="3" row="4">타입</cell>
+      <cell col="4" row="4">길이</cell>
+      <cell col="5" row="4">NULL</cell>
+      <cell col="6" row="4">KEY</cell>
+      <cell col="7" row="4">CD NUM</cell>
+      <cell col="8" row="4">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">1</cell>
+      <cell col="1" row="5">FTR_IDN</cell>
+      <cell col="2" row="5">관리번호</cell>
+      <cell col="3" row="5">NUMBER</cell>
+      <cell col="4" row="5">10</cell>
+      <cell col="5" row="5">NN</cell>
+      <cell col="6" row="5">PK</cell>
+      <cell col="7" row="5"></cell>
+      <cell col="8" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">2</cell>
+      <cell col="1" row="6">FTR_CDE</cell>
+      <cell col="2" row="6">지형지물부호</cell>
+      <cell col="3" row="6">VARCHAR2</cell>
+      <cell col="4" row="6">5</cell>
+      <cell col="5" row="6">NN</cell>
+      <cell col="6" row="6"></cell>
+      <cell col="7" row="6"></cell>
+      <cell col="8" row="6">AE905</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">3</cell>
+      <cell col="1" row="7">HJD_CDE</cell>
+      <cell col="2" row="7">행정읍면동코드</cell>
+      <cell col="3" row="7">VARCHAR2</cell>
+      <cell col="4" row="7">10</cell>
+      <cell col="5" row="7">NN</cell>
+      <cell col="6" row="7"></cell>
+      <cell col="7" row="7">HJD-001</cell>
+      <cell col="8" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8">4</cell>
+      <cell col="1" row="8">MNG_CDE</cell>
+      <cell col="2" row="8">관리기관코드</cell>
+      <cell col="3" row="8">VARCHAR2</cell>
+      <cell col="4" row="8">7</cell>
+      <cell col="5" row="8">N</cell>
+      <cell col="6" row="8"></cell>
+      <cell col="7" row="8">MNG-001</cell>
+      <cell col="8" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">5</cell>
+      <cell col="1" row="9">MNG_NAM</cell>
+      <cell col="2" row="9">관리자</cell>
+      <cell col="3" row="9">VARCHAR2</cell>
+      <cell col="4" row="9">100</cell>
+      <cell col="5" row="9">N</cell>
+      <cell col="6" row="9"></cell>
+      <cell col="7" row="9"></cell>
+      <cell col="8" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10">6</cell>
+      <cell col="1" row="10">TOT_ARA</cell>
+      <cell col="2" row="10">총면적</cell>
+      <cell col="3" row="10">NUMBER</cell>
+      <cell col="4" row="10">10,2</cell>
+      <cell col="5" row="10">N</cell>
+      <cell col="6" row="10"></cell>
+      <cell col="7" row="10"></cell>
+      <cell col="8" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11">7</cell>
+      <cell col="1" row="11">OVR_FLO</cell>
+      <cell col="2" row="11">지상층수</cell>
+      <cell col="3" row="11">NUMBER</cell>
+      <cell col="4" row="11">5</cell>
+      <cell col="5" row="11">N</cell>
+      <cell col="6" row="11"></cell>
+      <cell col="7" row="11"></cell>
+      <cell col="8" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12">8</cell>
+      <cell col="1" row="12">UNG_FLO</cell>
+      <cell col="2" row="12">지하층수</cell>
+      <cell col="3" row="12">NUMBER</cell>
+      <cell col="4" row="12">5</cell>
+      <cell col="5" row="12">N</cell>
+      <cell col="6" row="12"></cell>
+      <cell col="7" row="12"></cell>
+      <cell col="8" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13">9</cell>
+      <cell col="1" row="13">STA_DEP</cell>
+      <cell col="2" row="13">시점매설깊이</cell>
+      <cell col="3" row="13">NUMBER</cell>
+      <cell col="4" row="13">5,2</cell>
+      <cell col="5" row="13">N</cell>
+      <cell col="6" row="13"></cell>
+      <cell col="7" row="13"></cell>
+      <cell col="8" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14">10</cell>
+      <cell col="1" row="14">END_DEP</cell>
+      <cell col="2" row="14">종점매설깊이</cell>
+      <cell col="3" row="14">NUMBER</cell>
+      <cell col="4" row="14">5,2</cell>
+      <cell col="5" row="14">N</cell>
+      <cell col="6" row="14"></cell>
+      <cell col="7" row="14"></cell>
+      <cell col="8" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15">11</cell>
+      <cell col="1" row="15">AVG_DEP</cell>
+      <cell col="2" row="15">평균매설깊이</cell>
+      <cell col="3" row="15">NUMBER</cell>
+      <cell col="4" row="15">5,2</cell>
+      <cell col="5" row="15">N</cell>
+      <cell col="6" row="15"></cell>
+      <cell col="7" row="15"></cell>
+      <cell col="8" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16">12</cell>
+      <cell col="1" row="16">MIN_DEP</cell>
+      <cell col="2" row="16">최소매설깊이</cell>
+      <cell col="3" row="16">NUMBER</cell>
+      <cell col="4" row="16">5,2</cell>
+      <cell col="5" row="16">N</cell>
+      <cell col="6" row="16"></cell>
+      <cell col="7" row="16"></cell>
+      <cell col="8" row="16"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17">13</cell>
+      <cell col="1" row="17">MAX_DEP</cell>
+      <cell col="2" row="17">최대매설깊이</cell>
+      <cell col="3" row="17">NUMBER</cell>
+      <cell col="4" row="17">5,2</cell>
+      <cell col="5" row="17">N</cell>
+      <cell col="6" row="17"></cell>
+      <cell col="7" row="17"></cell>
+      <cell col="8" row="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18">14</cell>
+      <cell col="1" row="18">CNT_NAM</cell>
+      <cell col="2" row="18">공사명</cell>
+      <cell col="3" row="18">VARCHAR2</cell>
+      <cell col="4" row="18">100</cell>
+      <cell col="5" row="18">N</cell>
+      <cell col="6" row="18"></cell>
+      <cell col="7" row="18"></cell>
+      <cell col="8" row="18"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19">15</cell>
+      <cell col="1" row="19">STA_YMD</cell>
+      <cell col="2" row="19">착공일자</cell>
+      <cell col="3" row="19">VARCHAR2</cell>
+      <cell col="4" row="19">8</cell>
+      <cell col="5" row="19">N</cell>
+      <cell col="6" row="19"></cell>
+      <cell col="7" row="19"></cell>
+      <cell col="8" row="19"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20">16</cell>
+      <cell col="1" row="20">CMP_YMD</cell>
+      <cell col="2" row="20">준공일자</cell>
+      <cell col="3" row="20">VARCHAR2</cell>
+      <cell col="4" row="20">8</cell>
+      <cell col="5" row="20">N</cell>
+      <cell col="6" row="20"></cell>
+      <cell col="7" row="20"></cell>
+      <cell col="8" row="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21">17</cell>
+      <cell col="1" row="21">LOC_NAM</cell>
+      <cell col="2" row="21">발주처</cell>
+      <cell col="3" row="21">VARCHAR2</cell>
+      <cell col="4" row="21">100</cell>
+      <cell col="5" row="21">N</cell>
+      <cell col="6" row="21"></cell>
+      <cell col="7" row="21"></cell>
+      <cell col="8" row="21"></cell>
+    </row>
+    <row>
+      <cell col="0" row="22">18</cell>
+      <cell col="1" row="22">CLT_NAM</cell>
+      <cell col="2" row="22">시행사</cell>
+      <cell col="3" row="22">VARCHAR2</cell>
+      <cell col="4" row="22">100</cell>
+      <cell col="5" row="22">N</cell>
+      <cell col="6" row="22"></cell>
+      <cell col="7" row="22"></cell>
+      <cell col="8" row="22"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23">19</cell>
+      <cell col="1" row="23">USE_RMK</cell>
+      <cell col="2" row="23">비고</cell>
+      <cell col="3" row="23">VARCHAR2</cell>
+      <cell col="4" row="23">255</cell>
+      <cell col="5" row="23">N</cell>
+      <cell col="6" row="23"></cell>
+      <cell col="7" row="23"></cell>
+      <cell col="8" row="23"></cell>
+    </row>
+    <row>
+      <cell col="0" row="24">20</cell>
+      <cell col="1" row="24">UGID</cell>
+      <cell col="2" row="24">3D고유식별코드</cell>
+      <cell col="3" row="24">VARCHAR2</cell>
+      <cell col="4" row="24">30</cell>
+      <cell col="5" row="24">N</cell>
+      <cell col="6" row="24" colspan="3">테이블명:FTR_CDE:FTR_IDN조합</cell>
+    </row>
+    <row>
+      <cell col="0" row="25">21</cell>
+      <cell col="1" row="25">WAL_CDE</cell>
+      <cell col="2" row="25">외벽적용구분</cell>
+      <cell col="3" row="25">VARCHAR2</cell>
+      <cell col="4" row="25">6</cell>
+      <cell col="5" row="25">NN</cell>
+      <cell col="6" row="25"></cell>
+      <cell col="7" row="25">CDE-011</cell>
+      <cell col="8" row="25"></cell>
+    </row>
+  </table>
+</annex>

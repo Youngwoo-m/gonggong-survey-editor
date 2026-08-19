@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="s7c2t1" article="Schedule 7 Symbols" rows="13" cols="3" source="Table 9: Symbols for survey marks">
+  <row>
+    <cell col="0" row="0" colspan="2" header="1">Mark type</cell>
+    <cell col="2" row="0" header="1">Symbol</cell>
+  </row>
+  <row>
+    <cell col="0" row="1" rowspan="2">PRM</cell>
+    <cell col="1" row="1">New</cell>
+    <cell col="2" row="1"></cell>
+  </row>
+  <row>
+    <cell col="1" row="2">Old</cell>
+    <cell col="2" row="2"></cell>
+  </row>
+  <row>
+    <cell col="0" row="3" rowspan="2">Cadastral survey network mark or a vertical control mark</cell>
+    <cell col="1" row="3">Old</cell>
+    <cell col="2" row="3"></cell>
+  </row>
+  <row>
+    <cell col="1" row="4">Adopted</cell>
+    <cell col="2" row="4"></cell>
+  </row>
+  <row>
+    <cell col="0" row="5" rowspan="3">Boundary post</cell>
+    <cell col="1" row="5">New</cell>
+    <cell col="2" row="5"></cell>
+  </row>
+  <row>
+    <cell col="1" row="6">Old</cell>
+    <cell col="2" row="6"></cell>
+  </row>
+  <row>
+    <cell col="1" row="7">Adopted</cell>
+    <cell col="2" row="7"></cell>
+  </row>
+  <row>
+    <cell col="0" row="8" rowspan="2">Unmarked point</cell>
+    <cell col="1" row="8">New</cell>
+    <cell col="2" row="8"></cell>
+  </row>
+  <row>
+    <cell col="1" row="9">Adopted</cell>
+    <cell col="2" row="9"></cell>
+  </row>
+  <row>
+    <cell col="0" row="10" rowspan="3">Other survey mark or boundary mark, including a mark in post</cell>
+    <cell col="1" row="10">New</cell>
+    <cell col="2" row="10"></cell>
+  </row>
+  <row>
+    <cell col="1" row="11">Old</cell>
+    <cell col="2" row="11"></cell>
+  </row>
+  <row>
+    <cell col="1" row="12">Adopted</cell>
+    <cell col="2" row="12"></cell>
+  </row>
+</table>

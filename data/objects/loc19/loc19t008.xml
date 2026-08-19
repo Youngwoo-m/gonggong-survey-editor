@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc19t008" article="산업안전보건 체계(모든 현장에 공통 적용)" rows="11" cols="3" source="측량 안전관리 매뉴얼 (2026.1)">
+  <row>
+    <cell col="0" row="0" header="1">심사항목</cell>
+    <cell col="1" row="0" header="1">심사기준</cell>
+    <cell col="2" row="0" header="1">배점</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">및 위험성 결정</cell>
+    <cell col="1" row="1">유해‧위험요인별 위험성 수준 결정</cell>
+    <cell col="2" row="1">5</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">3. 위험성 감소대책 수립 및 이행</cell>
+    <cell col="1" row="2">위험성 감소대책 수립 수립한 위험성 감소대책의 이행</cell>
+    <cell col="2" row="2">20 20</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">4. 지속적 개선</cell>
+    <cell col="1" row="3">위험성평가의 정기‧수시평가(또는 상시평가) 실시</cell>
+    <cell col="2" row="3">10</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">5. 결과 공유</cell>
+    <cell col="1" row="4">위험성평가 결과의 현장 근로자 공유</cell>
+    <cell col="2" row="4">15</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">Ⅲ. 구성원의 참여 및 이해 수준</cell>
+    <cell col="1" row="5"></cell>
+    <cell col="2" row="5">100</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">1. 사업주/임원 (현장소장 포함)</cell>
+    <cell col="1" row="6">위험성평가 활동에 대한 사업주의 참여와 지원</cell>
+    <cell col="2" row="6">40</cell>
+  </row>
+  <row>
+    <cell col="0" row="7">2. 관리자 (관리감독자)</cell>
+    <cell col="1" row="7">위험성평가 실행에 대한 관리자의 책임과 역할</cell>
+    <cell col="2" row="7">30</cell>
+  </row>
+  <row>
+    <cell col="0" row="8">3. 근로자</cell>
+    <cell col="1" row="8">위험성평가 실행에 대한 근로자의 참여 및 이해 수준</cell>
+    <cell col="2" row="8">30</cell>
+  </row>
+  <row>
+    <cell col="0" row="9">Ⅳ. 재해발생</cell>
+    <cell col="1" row="9"></cell>
+    <cell col="2" row="9">100</cell>
+  </row>
+  <row>
+    <cell col="0" row="10">재해발생</cell>
+    <cell col="1" row="10">동일 업종‧규모별 재해율 대비 사업장 재해율</cell>
+    <cell col="2" row="10">100</cell>
+  </row>
+</table>

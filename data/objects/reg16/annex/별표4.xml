@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표4" gubun="별표" no="4" title="원시자료(제21조 관련)" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=161554223">
+  <text>■ 수치표고모형의 구축 및 관리 등에 관한 규정 [별표 4]
+원시자료(제21조 관련)
+1. 자료저장 내용 및 순서
+GNSS_Time X(E) Y(N) Z(H) Intensity(반사강도) Return_Number Number_of_Returns Scan_Angle Range_Distance
+2. 작성요령
+가. 각 자료의 구분은 공백(space)으로 한다.
+나. 각 자료는 장비에서 제공하는 정밀도로 기록한다.
+다. 레이저 펄스의 반사파(1st～4th)별로 개별 파일에 저장한다.
+라. 비행코스별로 저장한다.
+마. 파일명은 다음과 같은 내용이 포함되도록 작성하며, 비행코스별로 폴더를 구분하여 저장한다.
+지구명, 코스명, _반사파순서, 작업기관, 촬영날짜</text>
+  <table rows="6" cols="4">
+    <row>
+      <cell col="0" row="0">예)</cell>
+      <cell col="1" row="0">폴더명
+(코스명)</cell>
+      <cell col="2" row="0">파일명</cell>
+      <cell col="3" row="0">파일설명</cell>
+    </row>
+    <row>
+      <cell col="0" row="1"></cell>
+      <cell col="1" row="1" rowspan="4">C001</cell>
+      <cell col="2" row="1">장성C001_1항측090101.txt</cell>
+      <cell col="3" row="1">(1st 반사파 파일)</cell>
+    </row>
+    <row>
+      <cell col="0" row="2"></cell>
+      <cell col="2" row="2">장성C001_2항측090101.txt</cell>
+      <cell col="3" row="2">(2nd 반사파 파일)</cell>
+    </row>
+    <row>
+      <cell col="0" row="3"></cell>
+      <cell col="2" row="3">장성C001_3항측090101.txt</cell>
+      <cell col="3" row="3">(3rd 반사파 파일)</cell>
+    </row>
+    <row>
+      <cell col="0" row="4"></cell>
+      <cell col="2" row="4">장성C001_4항측090101.txt</cell>
+      <cell col="3" row="4">(4th 반사파 파일)</cell>
+    </row>
+    <row>
+      <cell col="0" row="5"></cell>
+      <cell col="1" row="5">C002</cell>
+      <cell col="2" row="5"></cell>
+      <cell col="3" row="5"></cell>
+    </row>
+  </table>
+</annex>

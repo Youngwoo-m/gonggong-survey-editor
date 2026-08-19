@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지9" gubun="별지" no="9" title="교량구조물 시공좌표 산출서 (교각 및 코핑)" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=59323127">
+  <text>[별지 제9호 서식]
+교량구조물 시공좌표 산출서 (교각 및 코핑)
+¤ 대상 부위 : ○○교 P05 (STA 0+000)</text>
+  <table rows="15" cols="9">
+    <row>
+      <cell col="0" row="0" colspan="9">좌표 전개도</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="9">서울방향
+↑
+중심선</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">도로중심선좌표</cell>
+      <cell col="2" row="2" colspan="7">X(N) :                         Y(E) :</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="9">교각 상부면 시공 좌표</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="5">좌측 교각</cell>
+      <cell col="5" row="4" colspan="4">우측 교각</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">번호</cell>
+      <cell col="1" row="5" colspan="2">X</cell>
+      <cell col="3" row="5">Y</cell>
+      <cell col="4" row="5">H</cell>
+      <cell col="5" row="5">번호</cell>
+      <cell col="6" row="5">X</cell>
+      <cell col="7" row="5">Y</cell>
+      <cell col="8" row="5">H</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">L1</cell>
+      <cell col="1" row="6" colspan="2"></cell>
+      <cell col="3" row="6"></cell>
+      <cell col="4" row="6"></cell>
+      <cell col="5" row="6">R1</cell>
+      <cell col="6" row="6"></cell>
+      <cell col="7" row="6"></cell>
+      <cell col="8" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">L2</cell>
+      <cell col="1" row="7" colspan="2"></cell>
+      <cell col="3" row="7"></cell>
+      <cell col="4" row="7"></cell>
+      <cell col="5" row="7">R2</cell>
+      <cell col="6" row="7"></cell>
+      <cell col="7" row="7"></cell>
+      <cell col="8" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8">L3</cell>
+      <cell col="1" row="8" colspan="2"></cell>
+      <cell col="3" row="8"></cell>
+      <cell col="4" row="8"></cell>
+      <cell col="5" row="8">R3</cell>
+      <cell col="6" row="8"></cell>
+      <cell col="7" row="8"></cell>
+      <cell col="8" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">L4</cell>
+      <cell col="1" row="9" colspan="2"></cell>
+      <cell col="3" row="9"></cell>
+      <cell col="4" row="9"></cell>
+      <cell col="5" row="9">R4</cell>
+      <cell col="6" row="9"></cell>
+      <cell col="7" row="9"></cell>
+      <cell col="8" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="9">코핑 상부면 시공 좌표</cell>
+    </row>
+    <row>
+      <cell col="0" row="11">번호</cell>
+      <cell col="1" row="11" colspan="2">X</cell>
+      <cell col="3" row="11">Y</cell>
+      <cell col="4" row="11">H</cell>
+      <cell col="5" row="11">번호</cell>
+      <cell col="6" row="11">X</cell>
+      <cell col="7" row="11">Y</cell>
+      <cell col="8" row="11">H</cell>
+    </row>
+    <row>
+      <cell col="0" row="12">C1</cell>
+      <cell col="1" row="12" colspan="2"></cell>
+      <cell col="3" row="12"></cell>
+      <cell col="4" row="12"></cell>
+      <cell col="5" row="12">C3</cell>
+      <cell col="6" row="12"></cell>
+      <cell col="7" row="12"></cell>
+      <cell col="8" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13">C2</cell>
+      <cell col="1" row="13" colspan="2"></cell>
+      <cell col="3" row="13"></cell>
+      <cell col="4" row="13"></cell>
+      <cell col="5" row="13">C4</cell>
+      <cell col="6" row="13"></cell>
+      <cell col="7" row="13"></cell>
+      <cell col="8" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14"></cell>
+      <cell col="1" row="14" colspan="2"></cell>
+      <cell col="3" row="14"></cell>
+      <cell col="4" row="14"></cell>
+      <cell col="5" row="14"></cell>
+      <cell col="6" row="14"></cell>
+      <cell col="7" row="14"></cell>
+      <cell col="8" row="14"></cell>
+    </row>
+  </table>
+  <text>210mm×297mm(일반용지 60g/㎡)</text>
+</annex>

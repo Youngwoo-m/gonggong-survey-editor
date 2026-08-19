@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식47" gubun="서식" no="47" title="측량업 휴업신고서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454703">
+  <table rows="22" cols="13">
+    <row>
+      <cell col="0" row="0" colspan="13">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별지 제47호서식] &lt;개정 2021. 2. 19.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="13">측량업 휴업신고서</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="10"></cell>
+      <cell col="10" row="2" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">접수번호</cell>
+      <cell col="1" row="3"></cell>
+      <cell col="2" row="3">접수일</cell>
+      <cell col="3" row="3" colspan="2"></cell>
+      <cell col="5" row="3"></cell>
+      <cell col="6" row="3" colspan="3"></cell>
+      <cell col="9" row="3" colspan="3">처리기간</cell>
+      <cell col="12" row="3">즉시</cell>
+    </row>
+    <row>
+      <cell col="0" row="4"></cell>
+      <cell col="1" row="4"></cell>
+      <cell col="2" row="4"></cell>
+      <cell col="3" row="4" colspan="2"></cell>
+      <cell col="5" row="4"></cell>
+      <cell col="6" row="4" colspan="3"></cell>
+      <cell col="9" row="4" colspan="3"></cell>
+      <cell col="12" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" rowspan="4">신고인</cell>
+      <cell col="1" row="5" colspan="7">상호(업체명)</cell>
+      <cell col="8" row="5" colspan="5">업종</cell>
+    </row>
+    <row>
+      <cell col="1" row="6" colspan="7">성명(대표자)</cell>
+      <cell col="8" row="6" colspan="5">사업자등록번호</cell>
+    </row>
+    <row>
+      <cell col="1" row="7" colspan="12">전화번호</cell>
+    </row>
+    <row>
+      <cell col="1" row="8" colspan="12">소재지</cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" rowspan="3">신고내용</cell>
+      <cell col="1" row="10" colspan="7">업종</cell>
+      <cell col="8" row="10" colspan="5">등록번호</cell>
+    </row>
+    <row>
+      <cell col="1" row="11" colspan="12">휴업기간
+         년      월      일 ～        년      월      일 (         일 간)</cell>
+    </row>
+    <row>
+      <cell col="1" row="12" colspan="12">사유</cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="13">「공간정보의 구축 및 관리 등에 관한 법률」 제48조 및 같은 법 시행규칙 제52조에 따라 휴업을 신고합니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="13">년          월          일장</cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="4"></cell>
+      <cell col="4" row="16" colspan="3">신고인</cell>
+      <cell col="7" row="16" colspan="4"></cell>
+      <cell col="11" row="16" colspan="2">(서명 또는 인)</cell>
+    </row>
+    <row>
+      <cell col="0" row="17" colspan="13">귀하</cell>
+    </row>
+    <row>
+      <cell col="0" row="18" colspan="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19" rowspan="2">첨부서류</cell>
+      <cell col="1" row="19" colspan="11" rowspan="2">측량업등록증 및 등록수첩 각 1부(잃어버린 경우에는 사유서 제출)</cell>
+      <cell col="12" row="19">수수료</cell>
+    </row>
+    <row>
+      <cell col="12" row="20">없음</cell>
+    </row>
+    <row>
+      <cell col="0" row="21" colspan="13">210㎜×297㎜(일반용지 60g/㎡)</cell>
+    </row>
+  </table>
+</annex>

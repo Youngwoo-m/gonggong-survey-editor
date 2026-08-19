@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="r103t1" article="rule 103 Parcel annotations" rows="14" cols="2" source="Table 7: Parcel annotations for title diagrams">
+  <row>
+    <cell col="0" row="0" header="1">Parcel</cell>
+    <cell col="1" row="0" header="1">Annotation</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">Existing centre-line easement of unknown width</cell>
+    <cell col="1" row="1">“Width unknown”</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">Parcel area derived from accepted boundaries</cell>
+    <cell col="1" row="2">“Area not determined by survey”</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">Land in a parcel intended to remain in a title limited as to parcels</cell>
+    <cell col="1" row="3">“Limited as to parcels”</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">Land in a parcel intended to remain in a Hawke’s Bay interim title</cell>
+    <cell col="1" row="4">“Hawke’s Bay interim title”</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">Land in a parcel intended for disposal by the Crown, or land already subject to Part 4A of the Conservation Act 1987</cell>
+    <cell col="1" row="5">“Subject to Part 4A Conservation Act 1987”</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">A movable marginal strip or esplanade strip</cell>
+    <cell col="1" row="6">[ Width of strip ]</cell>
+  </row>
+  <row>
+    <cell col="0" row="7">An existing non-primary parcel already defined in an approved CSD in terms of rule 105(2)﻿(a)</cell>
+    <cell col="1" row="7">“Parcel adopted from [ CSD number ]”</cell>
+  </row>
+  <row>
+    <cell col="0" row="8">A parcel required to vest or other matters required by law</cell>
+    <cell col="1" row="8">[ Suitable notation ] (for example, “road to vest in [ ] District Council” )</cell>
+  </row>
+  <row>
+    <cell col="0" row="9">Any road, railway, or water body that abuts a new parcel</cell>
+    <cell col="1" row="9">The name or (if no name is available) a simple description of the road, railway, or water body</cell>
+  </row>
+  <row>
+    <cell col="0" row="10">Land that has been eroded</cell>
+    <cell col="1" row="10">“Erosion”</cell>
+  </row>
+  <row>
+    <cell col="0" row="11">Land being claimed as accretion</cell>
+    <cell col="1" row="11">“Accretion”</cell>
+  </row>
+  <row>
+    <cell col="0" row="12">Land being claimed as dry stream bed</cell>
+    <cell col="1" row="12">“Dry bed”</cell>
+  </row>
+  <row>
+    <cell col="0" row="13">A balance parcel that is a fixed marginal strip</cell>
+    <cell col="1" row="13">“Marginal strip”</cell>
+  </row>
+</table>

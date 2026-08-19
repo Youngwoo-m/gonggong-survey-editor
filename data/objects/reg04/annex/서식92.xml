@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식92" gubun="서식" no="92" title="측량기기 성능검사대행자 변경신고서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162455061">
+  <table rows="2" cols="16">
+    <row>
+      <cell col="0" row="0" rowspan="2">신고서
+작성</cell>
+      <cell col="1" row="0"></cell>
+      <cell col="2" row="0" rowspan="2">‣</cell>
+      <cell col="3" row="0" rowspan="2">접 수</cell>
+      <cell col="4" row="0"></cell>
+      <cell col="5" row="0" rowspan="2">‣</cell>
+      <cell col="6" row="0" rowspan="2">처리부 등재</cell>
+      <cell col="7" row="0"></cell>
+      <cell col="8" row="0" rowspan="2">‣</cell>
+      <cell col="9" row="0" rowspan="2">검 토</cell>
+      <cell col="10" row="0"></cell>
+      <cell col="11" row="0" rowspan="2">‣</cell>
+      <cell col="12" row="0" rowspan="2">기안 ㆍ 결재</cell>
+      <cell col="13" row="0"></cell>
+      <cell col="14" row="0" rowspan="2">‣</cell>
+      <cell col="15" row="0" rowspan="2">통 보</cell>
+    </row>
+    <row>
+      <cell col="1" row="1"></cell>
+      <cell col="4" row="1"></cell>
+      <cell col="7" row="1"></cell>
+      <cell col="10" row="1"></cell>
+      <cell col="13" row="1"></cell>
+    </row>
+  </table>
+  <table rows="31" cols="34">
+    <row>
+      <cell col="0" row="0" colspan="34">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별지 제92호서식] &lt;개정 2024. 9. 20.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="34">측량기기 성능검사대행자 변경신고서</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="26"></cell>
+      <cell col="26" row="2" colspan="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">접수번호</cell>
+      <cell col="2" row="3" colspan="5"></cell>
+      <cell col="7" row="3" colspan="4">접수일</cell>
+      <cell col="11" row="3" colspan="3"></cell>
+      <cell col="14" row="3" colspan="5">발급일</cell>
+      <cell col="19" row="3" colspan="6"></cell>
+      <cell col="25" row="3" colspan="6">처리기간</cell>
+      <cell col="31" row="3" colspan="3">10일</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="2"></cell>
+      <cell col="2" row="4" colspan="5"></cell>
+      <cell col="7" row="4" colspan="4"></cell>
+      <cell col="11" row="4" colspan="3"></cell>
+      <cell col="14" row="4" colspan="5"></cell>
+      <cell col="19" row="4" colspan="6"></cell>
+      <cell col="25" row="4" colspan="6"></cell>
+      <cell col="31" row="4" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="2" rowspan="4">신고인</cell>
+      <cell col="2" row="5" colspan="32">법인 또는 기관명</cell>
+    </row>
+    <row>
+      <cell col="2" row="6" colspan="20">대표자</cell>
+      <cell col="22" row="6" colspan="12">사업자등록번호</cell>
+    </row>
+    <row>
+      <cell col="2" row="7" colspan="32">전화번호</cell>
+    </row>
+    <row>
+      <cell col="2" row="8" colspan="32">주소</cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="34"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="2">변경사항</cell>
+      <cell col="2" row="10" colspan="14">변경 전</cell>
+      <cell col="16" row="10" colspan="18">변경 후</cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="34"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="34">「공간정보의 구축 및 관리 등에 관한 법률」 제93조제1항 및 같은 법 시행규칙 제105조제1항에 따라 측량기기 성능검사대행자의 등록사항이 변경되었음을 신고합니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="34">년          월          일</cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="13"></cell>
+      <cell col="13" row="14" colspan="8">신고인</cell>
+      <cell col="21" row="14" colspan="6"></cell>
+      <cell col="27" row="14" colspan="7">(서명 또는 인)</cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="34">시ㆍ도지사        귀하</cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="34"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17" colspan="6">첨부서류</cell>
+      <cell col="6" row="17" colspan="12">신고인 제출서류</cell>
+      <cell col="18" row="17" colspan="14">시ㆍ도지사 확인사항</cell>
+      <cell col="32" row="17" colspan="2" rowspan="5">수수료
+없음</cell>
+    </row>
+    <row>
+      <cell col="0" row="18" colspan="6">1. 검사시설 또는 검사장비가 변경된 경우</cell>
+      <cell col="6" row="18" colspan="12">가. 변경된 시설 또는 장비의 명세서 및 성능검사서  사본
+나. 소유권 또는 사용권을 보유한 사실을 증명할 수 있는 서류</cell>
+      <cell col="18" row="18" colspan="14">없음</cell>
+    </row>
+    <row>
+      <cell col="0" row="19" colspan="6">2. 기술인력 변경의 경우</cell>
+      <cell col="6" row="19" colspan="12">가. 입사 또는 퇴사한 검사기술인력의 명단
+나. 검사기술인력의 측량기술경력증 또는 입사한 경력증명서(실무경력 인정이 필요한 자의 경우만을 말합니다)</cell>
+      <cell col="18" row="19" colspan="14">보유 검사기술인력의 국가기술자격증</cell>
+    </row>
+    <row>
+      <cell col="0" row="20" colspan="6">3. 법인의 대표자 또는 임원이 변경된 경우</cell>
+      <cell col="6" row="20" colspan="12">없음</cell>
+      <cell col="18" row="20" colspan="14">법인 등기사항증명서</cell>
+    </row>
+    <row>
+      <cell col="0" row="21" colspan="6">4. 상호 또는 주된 영업소 소재지가 변경된 경우</cell>
+      <cell col="6" row="21" colspan="12">없음</cell>
+      <cell col="18" row="21" colspan="14">변경사항이 적힌 사업자등록증명 또는 
+법인 등기사항증명서(법인인 경우만 해당합니다)</cell>
+    </row>
+    <row>
+      <cell col="0" row="22" colspan="34"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23" colspan="34">행정정보 공동이용 동의서</cell>
+    </row>
+    <row>
+      <cell col="0" row="24" colspan="34">본인은 이 건 업무처리와 관련하여 시ㆍ도지사가 「전자정부법」 제36조제1항에 따른 행정정보의 공동이용을 통하여 국가기술자격증  또는 사업자등록증명을 확인하는 것에 동의합니다.   *동의하지 않은 경우에는 신청인이 직접 해당 서류(국가기술자격증의 경우에는 사본)를 제출해야 합니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="25" colspan="4"></cell>
+      <cell col="4" row="25" colspan="4"></cell>
+      <cell col="8" row="25" colspan="9">신고인(대표자)</cell>
+      <cell col="17" row="25" colspan="7"></cell>
+      <cell col="24" row="25" colspan="5"></cell>
+      <cell col="29" row="25" colspan="5">(서명 또는 인)</cell>
+    </row>
+    <row>
+      <cell col="0" row="26" colspan="34"></cell>
+    </row>
+    <row>
+      <cell col="0" row="27" colspan="34">처리절차</cell>
+    </row>
+    <row>
+      <cell col="0" row="28" colspan="34"></cell>
+    </row>
+    <row>
+      <cell col="0" row="29"></cell>
+      <cell col="1" row="29" colspan="2">신고인</cell>
+      <cell col="3" row="29" colspan="2"></cell>
+      <cell col="5" row="29" colspan="4">시ㆍ도 담당부서</cell>
+      <cell col="9" row="29"></cell>
+      <cell col="10" row="29" colspan="2">시ㆍ도 담당부서</cell>
+      <cell col="12" row="29" colspan="3"></cell>
+      <cell col="15" row="29" colspan="5">시ㆍ도 담당부서</cell>
+      <cell col="20" row="29" colspan="3"></cell>
+      <cell col="23" row="29" colspan="5">시ㆍ도 담당부서</cell>
+      <cell col="28" row="29" colspan="2"></cell>
+      <cell col="30" row="29" colspan="3"></cell>
+      <cell col="33" row="29"></cell>
+    </row>
+    <row>
+      <cell col="0" row="30" colspan="34">210㎜×297㎜[(백상지(80g/㎡) 또는 중질지(80g/㎡)]</cell>
+    </row>
+  </table>
+</annex>

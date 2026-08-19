@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표5" gubun="별표" no="5" title="실내공간정보 레이어 명명규칙" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=111000033">
+  <text>[별표 5] 실내공간정보 레이어 명명규칙
+가. 실내공간정보 레이어코드 명명규칙 : &quot;L_&quot; + ① +&quot;_&quot;+ ② +&quot;_&quot;+ ③ &quot;_&quot;+ ④
+예시1) 판매 시설물        → L_UFID코드_B01F01_SL_FC</text>
+  <table rows="5" cols="2">
+    <row>
+      <cell col="0" row="0">구분</cell>
+      <cell col="1" row="0">입력값</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">① 건물 ID</cell>
+      <cell col="1" row="1">UFID(공간객체등록번호) CHAR(17)</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">② 층(FLOOR)</cell>
+      <cell col="1" row="2">지하1층 → “B01B01”,  지상1층 →“F01F01”,  로비층 → “L01L01”
+지하1층지상1층 → “B01F01”</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">③ 구분(DIVISION)</cell>
+      <cell col="1" row="3">이동 → “MV”,  안내 →“IF”,  편의 → “CV”, 운수 → “TP”
+안전 → “SF”,  소방 →“FF”,  판매 → “SL”, 의료 → “MD”
+주거 →“HS”, 업무 →“BS”, 관리 → “MN”, 구조 → “IS”</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">④ 구조(CLASSIFY)</cell>
+      <cell col="1" row="4">천정 → “CL”, 벽 → “WL”, 바닥 → “FL”, 문 → “DR”,
+창문 → “WD”, 기둥 → “PL”, 시설물 → “FC”</cell>
+    </row>
+  </table>
+  <text>나. 실내공간정보 3차원객체코드 명명규칙 : “M_” + ① + ② + “_”+ ③ + ④ + “_”+ ⑤ + ⑥
+예시1) 지하1층 천정  → M_UFID코드B01B01_ISCL_0000001
+예시2) 지하1층지상1층 계단 → M_UFID코드B01F01_MVFC_0100001</text>
+  <table rows="7" cols="2">
+    <row>
+      <cell col="0" row="0">구분</cell>
+      <cell col="1" row="0">입력값</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">① 건물 ID</cell>
+      <cell col="1" row="1">UFID(공간객체등록번호) CHAR(17)</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">② 층(FLOOR)</cell>
+      <cell col="1" row="2">지하1층 → “B01B01”,  지상1층 →“F01F01”,  로비층 → “L01L01”
+지하1층지상1층 → “B01F01”</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">③ 구분(DIVISION)</cell>
+      <cell col="1" row="3">이동 → “MV”,  안내 →“IF”,  편의 → “CV”, 운수 → “TP”
+안전 → “SF”,  소방 →“FF”,  판매 → “SL”, 의료 → “MD”
+주거 →“HS”, 업무 →“BS”, 관리 → “MN”, 구조 → “IS”</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">④ 구조(CLASSIFY)</cell>
+      <cell col="1" row="4">천정 → “CL”, 벽 → “WL”, 바닥 → “FL”, 문 → “DR”,
+창문 → “WD”, 기둥 → “PL”, 시설물 → “FC”</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">⑤ 시설구분</cell>
+      <cell col="1" row="5">3차원 시설구분코드 참조</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">⑥ 일련번호(SERIAL)</cell>
+      <cell col="1" row="6">CHAR(5)</cell>
+    </row>
+  </table>
+  <text>다. 실내공간정보 3차원텍스쳐코드 명명규칙 : “T_” + ① + ② + “_”+ ③ + ④ + “_”+ ⑤ + ⑥  + “_”+ ⑦
+예시1) 지하1층 천정  → L_UFID코드B01B01_ISCL_0000001_01
+예시2) 지하1층지상1층 계단 → L_UFID코드B01F01_MVFC_0100001_02</text>
+  <table rows="8" cols="2">
+    <row>
+      <cell col="0" row="0">구분</cell>
+      <cell col="1" row="0">입력값</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">① 건물 ID</cell>
+      <cell col="1" row="1">UFID(공간객체등록번호) CHAR(17)</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">② 층(FLOOR)</cell>
+      <cell col="1" row="2">지하1층 → “B01B01”,  지상1층 →“F01F01”,  로비층 → “L01L01”
+지하1층지상1층 → “B01F01”</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">③ 구분(DIVISION)</cell>
+      <cell col="1" row="3">이동 → “MV”,  안내 →“IF”,  편의 → “CV”, 운수 → “TP”
+안전 → “SF”,  소방 →“FF”,  판매 → “SL”, 의료 → “MD”
+주거 →“HS”, 업무 →“BS”, 관리 → “MN”, 구조 → “IS”</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">④ 구조(CLASSIFY)</cell>
+      <cell col="1" row="4">천정 → “CL”, 벽 → “WL”, 바닥 → “FL”, 문 → “DR”,
+창문 → “WD”, 기둥 → “PL”, 시설물 → “FC”</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">⑤ 시설구분</cell>
+      <cell col="1" row="5">3차원 시설구분코드 참조</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">⑥ 일련번호(SERIAL)</cell>
+      <cell col="1" row="6">CHAR(5)</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">⑦ 텍스처번호</cell>
+      <cell col="1" row="7">CHAR(2)</cell>
+    </row>
+  </table>
+  <text>라. 3차원 실내공간정보 시설구분코드</text>
+  <table rows="22" cols="9">
+    <row>
+      <cell col="0" row="0" colspan="9">3차원 실내공간정보 시설구분코드</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="2">시설명</cell>
+      <cell col="2" row="1">코드</cell>
+      <cell col="3" row="1" colspan="2">시설명</cell>
+      <cell col="5" row="1">코드</cell>
+      <cell col="6" row="1" colspan="2">시설명</cell>
+      <cell col="8" row="1">코드</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" rowspan="10">이
+동</cell>
+      <cell col="1" row="2">계단</cell>
+      <cell col="2" row="2">01</cell>
+      <cell col="3" row="2" rowspan="11">편
+의</cell>
+      <cell col="4" row="2">공중전화</cell>
+      <cell col="5" row="2">01</cell>
+      <cell col="6" row="2" rowspan="12">소
+방</cell>
+      <cell col="7" row="2">구호물품보관함</cell>
+      <cell col="8" row="2">01</cell>
+    </row>
+    <row>
+      <cell col="1" row="3">에스컬레이터</cell>
+      <cell col="2" row="3">02</cell>
+      <cell col="4" row="3">사물함</cell>
+      <cell col="5" row="3">02</cell>
+      <cell col="7" row="3">긴급전화</cell>
+      <cell col="8" row="3">02</cell>
+    </row>
+    <row>
+      <cell col="1" row="4">무빙워크</cell>
+      <cell col="2" row="4">03</cell>
+      <cell col="4" row="4">즉석사진기</cell>
+      <cell col="5" row="4">03</cell>
+      <cell col="7" row="4">비상벨</cell>
+      <cell col="8" row="4">03</cell>
+    </row>
+    <row>
+      <cell col="1" row="5">엘리베이터</cell>
+      <cell col="2" row="5">04</cell>
+      <cell col="4" row="5">생수대</cell>
+      <cell col="5" row="5">04</cell>
+      <cell col="7" row="5">비상용모래함</cell>
+      <cell col="8" row="5">04</cell>
+    </row>
+    <row>
+      <cell col="1" row="6">펜스</cell>
+      <cell col="2" row="6">05</cell>
+      <cell col="4" row="6">정수기</cell>
+      <cell col="5" row="6">05</cell>
+      <cell col="7" row="6">소화기</cell>
+      <cell col="8" row="6">05</cell>
+    </row>
+    <row>
+      <cell col="1" row="7">개찰구</cell>
+      <cell col="2" row="7">06</cell>
+      <cell col="4" row="7">현금인출기</cell>
+      <cell col="5" row="7">06</cell>
+      <cell col="7" row="7">비상조명</cell>
+      <cell col="8" row="7">06</cell>
+    </row>
+    <row>
+      <cell col="1" row="8">장애인보도블럭</cell>
+      <cell col="2" row="8">07</cell>
+      <cell col="4" row="8">휴지통</cell>
+      <cell col="5" row="8">07</cell>
+      <cell col="7" row="8">비상구</cell>
+      <cell col="8" row="8">07</cell>
+    </row>
+    <row>
+      <cell col="1" row="9">휠체어리프트</cell>
+      <cell col="2" row="9">08</cell>
+      <cell col="4" row="9">벤치</cell>
+      <cell col="5" row="9">08</cell>
+      <cell col="7" row="9">심장제세동기</cell>
+      <cell col="8" row="9">08</cell>
+    </row>
+    <row>
+      <cell col="1" row="10">경사로</cell>
+      <cell col="2" row="10">09</cell>
+      <cell col="4" row="10">체육시설</cell>
+      <cell col="5" row="10">09</cell>
+      <cell col="7" row="10">소화전</cell>
+      <cell col="8" row="10">09</cell>
+    </row>
+    <row>
+      <cell col="1" row="11">기타</cell>
+      <cell col="2" row="11">99</cell>
+      <cell col="4" row="11">물품보관함</cell>
+      <cell col="5" row="11">10</cell>
+      <cell col="7" row="11">방화셔터</cell>
+      <cell col="8" row="11">10</cell>
+    </row>
+    <row>
+      <cell col="0" row="12" rowspan="10">안
+내</cell>
+      <cell col="1" row="12">점자길</cell>
+      <cell col="2" row="12">01</cell>
+      <cell col="4" row="12">기타</cell>
+      <cell col="5" row="12">99</cell>
+      <cell col="7" row="12">완강기</cell>
+      <cell col="8" row="12">11</cell>
+    </row>
+    <row>
+      <cell col="1" row="13">표지판</cell>
+      <cell col="2" row="13">02</cell>
+      <cell col="3" row="13" rowspan="6">운
+수</cell>
+      <cell col="4" row="13">입국심사대</cell>
+      <cell col="5" row="13">01</cell>
+      <cell col="7" row="13">기타</cell>
+      <cell col="8" row="13">99</cell>
+    </row>
+    <row>
+      <cell col="1" row="14">안내도</cell>
+      <cell col="2" row="14">03</cell>
+      <cell col="4" row="14">출국심사대</cell>
+      <cell col="5" row="14">02</cell>
+      <cell col="6" row="14" rowspan="3">판
+매</cell>
+      <cell col="7" row="14">자판기</cell>
+      <cell col="8" row="14">01</cell>
+    </row>
+    <row>
+      <cell col="1" row="15">전광판</cell>
+      <cell col="2" row="15">04</cell>
+      <cell col="4" row="15">개촬구</cell>
+      <cell col="5" row="15">03</cell>
+      <cell col="7" row="15">매표기</cell>
+      <cell col="8" row="15">02</cell>
+    </row>
+    <row>
+      <cell col="1" row="16">디지털뷰</cell>
+      <cell col="2" row="16">05</cell>
+      <cell col="4" row="16">스크린도어</cell>
+      <cell col="5" row="16">04</cell>
+      <cell col="7" row="16">기타</cell>
+      <cell col="8" row="16">99</cell>
+    </row>
+    <row>
+      <cell col="1" row="17">게시판</cell>
+      <cell col="2" row="17">06</cell>
+      <cell col="4" row="17">안전선</cell>
+      <cell col="5" row="17">05</cell>
+      <cell col="6" row="17" rowspan="3">관
+리</cell>
+      <cell col="7" row="17">보일러</cell>
+      <cell col="8" row="17">01</cell>
+    </row>
+    <row>
+      <cell col="1" row="18" rowspan="2">시각장애인용 안내장치</cell>
+      <cell col="2" row="18" rowspan="2">07</cell>
+      <cell col="4" row="18">기타</cell>
+      <cell col="5" row="18">99</cell>
+      <cell col="7" row="18">변전기</cell>
+      <cell col="8" row="18">02</cell>
+    </row>
+    <row>
+      <cell col="3" row="19" rowspan="3">안전</cell>
+      <cell col="4" row="19">보안검색대</cell>
+      <cell col="5" row="19">01</cell>
+      <cell col="7" row="19">기타</cell>
+      <cell col="8" row="19">99</cell>
+    </row>
+    <row>
+      <cell col="1" row="20">지하철승하차위치</cell>
+      <cell col="2" row="20">08</cell>
+      <cell col="4" row="20">CCTV</cell>
+      <cell col="5" row="20">02</cell>
+      <cell col="6" row="20" rowspan="2"></cell>
+      <cell col="7" row="20"></cell>
+      <cell col="8" row="20"></cell>
+    </row>
+    <row>
+      <cell col="1" row="21">기타</cell>
+      <cell col="2" row="21">99</cell>
+      <cell col="4" row="21">기타</cell>
+      <cell col="5" row="21">99</cell>
+      <cell col="7" row="21"></cell>
+      <cell col="8" row="21"></cell>
+    </row>
+  </table>
+</annex>

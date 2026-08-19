@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표8" gubun="별표" no="8" title="3차원 국토공간정보 품질요소 오류율 산정기준" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=118782571">
+  <text>[별표8] 3차원 국토공간정보 품질요소 오류율 산정기준</text>
+  <table rows="12" cols="3">
+    <row>
+      <cell col="0" row="0">데이터 품질요소</cell>
+      <cell col="1" row="0">데이터품질 세부요소</cell>
+      <cell col="2" row="0">데이터 품질 오류율 산정 공식</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">완전성</cell>
+      <cell col="1" row="1">누락</cell>
+      <cell col="2" row="1">L / (A + L) × 100</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" rowspan="3">논리
+일관성</cell>
+      <cell col="1" row="2">개념 일관성</cell>
+      <cell col="2" row="2">(E / A) × 100</cell>
+    </row>
+    <row>
+      <cell col="1" row="3">데이터형식 일관성</cell>
+      <cell col="2" row="3">(C / A) × 100</cell>
+    </row>
+    <row>
+      <cell col="1" row="4">위상 일관성</cell>
+      <cell col="2" row="4">(F / A) × 100</cell>
+    </row>
+    <row>
+      <cell col="0" row="5" rowspan="3">위치
+정확성</cell>
+      <cell col="1" row="5">절대적 또는 외적 정확성</cell>
+      <cell col="2" row="5">(E / A) × 100</cell>
+    </row>
+    <row>
+      <cell col="1" row="6">상대적 또는 내적 정확성</cell>
+      <cell col="2" row="6">(E / A) × 100</cell>
+    </row>
+    <row>
+      <cell col="1" row="7">그리드데이터 위치정확성</cell>
+      <cell col="2" row="7">(E / A) × 100</cell>
+    </row>
+    <row>
+      <cell col="0" row="8" rowspan="2">주제
+정확성</cell>
+      <cell col="1" row="8">분류 정확성</cell>
+      <cell col="2" row="8">(B / A) × 100</cell>
+    </row>
+    <row>
+      <cell col="1" row="9">속성 정확성</cell>
+      <cell col="2" row="9">(B / A) × 100</cell>
+    </row>
+    <row>
+      <cell col="0" row="10" rowspan="2">기타</cell>
+      <cell col="1" row="10">관리파일 작성 오류</cell>
+      <cell col="2" row="10">L / (A + L) × 100</cell>
+    </row>
+    <row>
+      <cell col="1" row="11">성과품 누락</cell>
+      <cell col="2" row="11">L / (A + L) × 100</cell>
+    </row>
+  </table>
+  <text>※ 범례</text>
+  <table rows="4" cols="4">
+    <row>
+      <cell col="0" row="0">L :</cell>
+      <cell col="1" row="0">누락항목</cell>
+      <cell col="2" row="0">C :</cell>
+      <cell col="3" row="0">정해진 구성을 준수하지 않는 항목 수</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">A :</cell>
+      <cell col="1" row="1">품질적용 범위내의 총 항목 수</cell>
+      <cell col="2" row="1">E :</cell>
+      <cell col="3" row="1">영역을 초과한 항목 수</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">F :</cell>
+      <cell col="1" row="2">정해진 위상을 준수하지 않는 항목 수</cell>
+      <cell col="2" row="2">B :</cell>
+      <cell col="3" row="2">분류나 속성이 틀린 항목 수</cell>
+    </row>
+    <row>
+      <cell col="0" row="3"></cell>
+      <cell col="1" row="3"></cell>
+      <cell col="2" row="3"></cell>
+      <cell col="3" row="3"></cell>
+    </row>
+  </table>
+</annex>

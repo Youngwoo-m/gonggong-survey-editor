@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="s7c3t1" article="Schedule 7 Line styles" rows="12" cols="3" source="Table 10: Line styles and widths">
+  <row>
+    <cell col="0" row="0" header="1">Line types</cell>
+    <cell col="1" row="0" header="1">Line style</cell>
+    <cell col="2" row="0" header="1">Line width</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">Boundary of a new primary, unit, or lease parcel</cell>
+    <cell col="1" row="1"></cell>
+    <cell col="2" row="1">Thick</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">Reinstated boundary</cell>
+    <cell col="1" row="2"></cell>
+    <cell col="2" row="2">Thick</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">Underlying exterior parcel boundary on unit title or cross lease development</cell>
+    <cell col="1" row="3"></cell>
+    <cell col="2" row="3">Thick</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">Proposed unit</cell>
+    <cell col="1" row="4"></cell>
+    <cell col="2" row="4">Thick</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">Other non-primary parcel boundary</cell>
+    <cell col="1" row="5"></cell>
+    <cell col="2" row="5">Thin</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">Measured vector</cell>
+    <cell col="1" row="6"></cell>
+    <cell col="2" row="6">Thin</cell>
+  </row>
+  <row>
+    <cell col="0" row="7">Calculated vector</cell>
+    <cell col="1" row="7"></cell>
+    <cell col="2" row="7">Thin</cell>
+  </row>
+  <row>
+    <cell col="0" row="8">Adopted vector or line</cell>
+    <cell col="1" row="8"></cell>
+    <cell col="2" row="8">Thin</cell>
+  </row>
+  <row>
+    <cell col="0" row="9">Estate boundary</cell>
+    <cell col="1" row="9"></cell>
+    <cell col="2" row="9">Thin</cell>
+  </row>
+  <row>
+    <cell col="0" row="10">Adjacent and underlying primary parcel boundary</cell>
+    <cell col="1" row="10"></cell>
+    <cell col="2" row="10">Thin</cell>
+  </row>
+  <row>
+    <cell col="0" row="11">Territorial authority boundary</cell>
+    <cell col="1" row="11"></cell>
+    <cell col="2" row="11">Thick</cell>
+  </row>
+</table>

@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지1" gubun="별지" no="1" title="항공사진측량용 카메라 검정 검사표" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=118668777">
+  <text>[별지 제1호서식] 항공사진측량용 카메라 검정 검사표</text>
+  <table rows="33" cols="17">
+    <row>
+      <cell col="0" row="0" rowspan="5">카
+메
+라</cell>
+      <cell col="1" row="0">카메라모델명</cell>
+      <cell col="2" row="0" colspan="5">DMC</cell>
+      <cell col="7" row="0" colspan="5">카메라 일련번호</cell>
+      <cell col="12" row="0" colspan="5">DMC01-0115</cell>
+    </row>
+    <row>
+      <cell col="1" row="1">초점거리(f)</cell>
+      <cell col="2" row="1" colspan="5">120.000 ㎜</cell>
+      <cell col="7" row="1" colspan="5">구입/임대일자</cell>
+      <cell col="12" row="1" colspan="5">2009. 01. 01</cell>
+    </row>
+    <row>
+      <cell col="1" row="2" rowspan="2">주점위치</cell>
+      <cell col="2" row="2" colspan="2">x</cell>
+      <cell col="4" row="2" colspan="3">-0.640 ㎜</cell>
+      <cell col="7" row="2" colspan="5" rowspan="2">카메라 검정장촬영 
+수행일자</cell>
+      <cell col="12" row="2" colspan="5" rowspan="2">2022. 01. 15</cell>
+    </row>
+    <row>
+      <cell col="2" row="3" colspan="2">y</cell>
+      <cell col="4" row="3" colspan="3">0.640 ㎜</cell>
+    </row>
+    <row>
+      <cell col="1" row="4">물리적인
+픽셀크기</cell>
+      <cell col="2" row="4" colspan="5">12.0 ㎛</cell>
+      <cell col="7" row="4" colspan="5">카메라 정기점검
+수행일자</cell>
+      <cell col="12" row="4" colspan="5">2012. 10. 11</cell>
+    </row>
+    <row>
+      <cell col="0" row="5" rowspan="3">GNSS
+/INS</cell>
+      <cell col="1" row="5">GNSS 모델명</cell>
+      <cell col="2" row="5" colspan="5">POS AV</cell>
+      <cell col="7" row="5" colspan="5">GNSS 모델 일련번호</cell>
+      <cell col="12" row="5" colspan="5">2809</cell>
+    </row>
+    <row>
+      <cell col="1" row="6">INS 모델명</cell>
+      <cell col="2" row="6" colspan="5">CUS6</cell>
+      <cell col="7" row="6" colspan="5">INS 모델 일련번호</cell>
+      <cell col="12" row="6" colspan="5">56024513</cell>
+    </row>
+    <row>
+      <cell col="1" row="7">GNSS 정확도</cell>
+      <cell col="2" row="7" colspan="5">0.05 m</cell>
+      <cell col="7" row="7" colspan="5">INS 정확도</cell>
+      <cell col="12" row="7" colspan="5">0.01 deg</cell>
+    </row>
+    <row>
+      <cell col="0" row="8" rowspan="3">검정장
+현황</cell>
+      <cell col="1" row="8">검정장 위치</cell>
+      <cell col="2" row="8" colspan="5">천안</cell>
+      <cell col="7" row="8" colspan="5">검정장규격
+(가로×세로)</cell>
+      <cell col="12" row="8" colspan="5">3㎞ × 3㎞(Frame)
+  6㎞ × 6㎞(Line)</cell>
+    </row>
+    <row>
+      <cell col="1" row="9">해상도 분석 도형</cell>
+      <cell col="2" row="9" colspan="5">Siemens star, Scale bar</cell>
+      <cell col="7" row="9" colspan="5">분석 도형수</cell>
+      <cell col="12" row="9" colspan="5">3, 1</cell>
+    </row>
+    <row>
+      <cell col="1" row="10">지상기준점 수</cell>
+      <cell col="2" row="10" colspan="5">30</cell>
+      <cell col="7" row="10" colspan="5">검사점 수</cell>
+      <cell col="12" row="10" colspan="5">10</cell>
+    </row>
+    <row>
+      <cell col="0" row="11" rowspan="10">항공
+삼각
+측량</cell>
+      <cell col="1" row="11">항공삼각측량 
+수행일자</cell>
+      <cell col="2" row="11" colspan="5">2021. 02. 15</cell>
+      <cell col="7" row="11" colspan="5">자료처리
+소프트웨어</cell>
+      <cell col="12" row="11" colspan="5">MatchAT</cell>
+    </row>
+    <row>
+      <cell col="1" row="12">촬영고도(H)</cell>
+      <cell col="2" row="12" colspan="5">1000 m</cell>
+      <cell col="7" row="12" colspan="5">GSD(=)</cell>
+      <cell col="12" row="12" colspan="5">10 cm</cell>
+    </row>
+    <row>
+      <cell col="1" row="13">항공삼각측량 
+수행방법</cell>
+      <cell col="2" row="13" colspan="15">독립모델법, 광속조정법</cell>
+    </row>
+    <row>
+      <cell col="1" row="14">촬영코스수</cell>
+      <cell col="2" row="14" colspan="15">4 코스</cell>
+    </row>
+    <row>
+      <cell col="1" row="15" rowspan="2">촬영사진매수</cell>
+      <cell col="2" row="15" colspan="5" rowspan="2">40 매</cell>
+      <cell col="7" row="15" colspan="3" rowspan="2">중복도</cell>
+      <cell col="10" row="15" colspan="5">종중복도</cell>
+      <cell col="15" row="15" colspan="2">70 %</cell>
+    </row>
+    <row>
+      <cell col="10" row="16" colspan="5">횡중복도</cell>
+      <cell col="15" row="16" colspan="2">30 %</cell>
+    </row>
+    <row>
+      <cell col="1" row="17" rowspan="2">지상기준점 잔차</cell>
+      <cell col="2" row="17" colspan="3" rowspan="2">RMSE</cell>
+      <cell col="5" row="17" colspan="2">평면</cell>
+      <cell col="7" row="17" colspan="3">0.08 m</cell>
+      <cell col="10" row="17" colspan="2" rowspan="2">최대값</cell>
+      <cell col="12" row="17" colspan="3">평면</cell>
+      <cell col="15" row="17" colspan="2">0.10 m</cell>
+    </row>
+    <row>
+      <cell col="5" row="18" colspan="2">표고</cell>
+      <cell col="7" row="18" colspan="3">0.10 m</cell>
+      <cell col="12" row="18" colspan="3">표고</cell>
+      <cell col="15" row="18" colspan="2">0.12 m</cell>
+    </row>
+    <row>
+      <cell col="1" row="19" rowspan="2">검사점 잔차</cell>
+      <cell col="2" row="19" colspan="3" rowspan="2">RMSE</cell>
+      <cell col="5" row="19" colspan="2">평면</cell>
+      <cell col="7" row="19" colspan="3">0.09 m</cell>
+      <cell col="10" row="19" colspan="2" rowspan="2">최대값</cell>
+      <cell col="12" row="19" colspan="3">평면</cell>
+      <cell col="15" row="19" colspan="2">0.12 m</cell>
+    </row>
+    <row>
+      <cell col="5" row="20" colspan="2">표고</cell>
+      <cell col="7" row="20" colspan="3">0.11 m</cell>
+      <cell col="12" row="20" colspan="3">표고</cell>
+      <cell col="15" row="20" colspan="2">0.13 m</cell>
+    </row>
+    <row>
+      <cell col="0" row="21" rowspan="2">이격
+거리
+보정</cell>
+      <cell col="1" row="21" rowspan="2">Boresight 
+수행값</cell>
+      <cell col="2" row="21" colspan="3">X</cell>
+      <cell col="5" row="21" colspan="2">0.01 m</cell>
+      <cell col="7" row="21" colspan="3">Y</cell>
+      <cell col="10" row="21" colspan="2">0.01 m</cell>
+      <cell col="12" row="21" colspan="3">Z</cell>
+      <cell col="15" row="21" colspan="2">0.01 m</cell>
+    </row>
+    <row>
+      <cell col="2" row="22" colspan="3">Omega</cell>
+      <cell col="5" row="22" colspan="2">0.02 deg</cell>
+      <cell col="7" row="22" colspan="3">Phi</cell>
+      <cell col="10" row="22" colspan="2">0.02 deg</cell>
+      <cell col="12" row="22" colspan="3">Kappa</cell>
+      <cell col="15" row="22" colspan="2">0.02 deg</cell>
+    </row>
+    <row>
+      <cell col="0" row="23" rowspan="3">지상
+공간
+해상도</cell>
+      <cell col="1" row="23">실제 외부 직경</cell>
+      <cell col="2" row="23" colspan="5">2m 또는 4m</cell>
+      <cell col="7" row="23" colspan="8">(평균) 직경비
+(내부직경(d)/외부직경(D))</cell>
+      <cell col="15" row="23" colspan="2">0.450</cell>
+    </row>
+    <row>
+      <cell col="1" row="24">흑백선 수</cell>
+      <cell col="2" row="24" colspan="5">32</cell>
+      <cell col="7" row="24" colspan="8">(평균) 시각적 지상해상도()</cell>
+      <cell col="15" row="24" colspan="2">8.8 cm</cell>
+    </row>
+    <row>
+      <cell col="1" row="25">(평균) 영상의 선명도
+(/GSD)</cell>
+      <cell col="2" row="25" colspan="15">0.88</cell>
+    </row>
+    <row>
+      <cell col="0" row="26" rowspan="6">방사
+해상도</cell>
+      <cell col="1" row="26">구분</cell>
+      <cell col="2" row="26">0</cell>
+      <cell col="3" row="26" colspan="3">1</cell>
+      <cell col="6" row="26" colspan="2">2</cell>
+      <cell col="8" row="26">3</cell>
+      <cell col="9" row="26" colspan="2">4</cell>
+      <cell col="11" row="26" colspan="2">5</cell>
+      <cell col="13" row="26">6</cell>
+      <cell col="14" row="26" colspan="2">7</cell>
+      <cell col="16" row="26">8</cell>
+    </row>
+    <row>
+      <cell col="1" row="27">흑백 평균</cell>
+      <cell col="2" row="27">0</cell>
+      <cell col="3" row="27" colspan="3">32</cell>
+      <cell col="6" row="27" colspan="2">64</cell>
+      <cell col="8" row="27">96</cell>
+      <cell col="9" row="27" colspan="2">128</cell>
+      <cell col="11" row="27" colspan="2">160</cell>
+      <cell col="13" row="27">192</cell>
+      <cell col="14" row="27" colspan="2">224</cell>
+      <cell col="16" row="27">255</cell>
+    </row>
+    <row>
+      <cell col="1" row="28">적색 평균</cell>
+      <cell col="2" row="28">128</cell>
+      <cell col="3" row="28" colspan="3">96</cell>
+      <cell col="6" row="28" colspan="2">64</cell>
+      <cell col="8" row="28">32</cell>
+      <cell col="9" row="28" colspan="2">160</cell>
+      <cell col="11" row="28" colspan="2">192</cell>
+      <cell col="13" row="28">224</cell>
+      <cell col="14" row="28" colspan="2">255</cell>
+      <cell col="16" row="28"></cell>
+    </row>
+    <row>
+      <cell col="1" row="29">녹색 평균</cell>
+      <cell col="2" row="29">128</cell>
+      <cell col="3" row="29" colspan="3">96</cell>
+      <cell col="6" row="29" colspan="2">64</cell>
+      <cell col="8" row="29">32</cell>
+      <cell col="9" row="29" colspan="2">160</cell>
+      <cell col="11" row="29" colspan="2">192</cell>
+      <cell col="13" row="29">224</cell>
+      <cell col="14" row="29" colspan="2">255</cell>
+      <cell col="16" row="29"></cell>
+    </row>
+    <row>
+      <cell col="1" row="30">청색 평균</cell>
+      <cell col="2" row="30">128</cell>
+      <cell col="3" row="30" colspan="3">96</cell>
+      <cell col="6" row="30" colspan="2">64</cell>
+      <cell col="8" row="30">32</cell>
+      <cell col="9" row="30" colspan="2">160</cell>
+      <cell col="11" row="30" colspan="2">192</cell>
+      <cell col="13" row="30">224</cell>
+      <cell col="14" row="30" colspan="2">255</cell>
+      <cell col="16" row="30"></cell>
+    </row>
+    <row>
+      <cell col="1" row="31">선형성 평가</cell>
+      <cell col="2" row="31" colspan="15">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="32">첨부
+서류</cell>
+      <cell col="1" row="32" colspan="16">[붙임1] 공간해상도 성과표
+ [붙임2] 방사해상도 성과표
+ [붙임3] 위치정확도 성과표</cell>
+    </row>
+  </table>
+  <text>[붙임1] 공간해상도 성과표</text>
+  <table rows="11" cols="8">
+    <row>
+      <cell col="0" row="0">연번</cell>
+      <cell col="0" row="0">시각적 해상도()
+(cm)</cell>
+      <cell col="1" row="0">분석 도형
+촬영 영상</cell>
+      <cell col="2" row="0">실제
+외부
+직경
+(m)</cell>
+      <cell col="3" row="0">흑백선수</cell>
+      <cell col="4" row="0">내부 직경
+(d)</cell>
+      <cell col="5" row="0">외부직경
+(D)</cell>
+      <cell col="6" row="0">직경비
+(d/D)</cell>
+      <cell col="7" row="0">시각적
+해상도</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">1</cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1">2</cell>
+      <cell col="3" row="1">32</cell>
+      <cell col="4" row="1">13.32</cell>
+      <cell col="5" row="1">29.62</cell>
+      <cell col="6" row="1">0.450</cell>
+      <cell col="7" row="1">8.8</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">2</cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2"></cell>
+      <cell col="3" row="2"></cell>
+      <cell col="4" row="2"></cell>
+      <cell col="5" row="2"></cell>
+      <cell col="6" row="2"></cell>
+      <cell col="7" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">3</cell>
+      <cell col="1" row="3"></cell>
+      <cell col="2" row="3"></cell>
+      <cell col="3" row="3"></cell>
+      <cell col="4" row="3"></cell>
+      <cell col="5" row="3"></cell>
+      <cell col="6" row="3"></cell>
+      <cell col="7" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4">4</cell>
+      <cell col="1" row="4"></cell>
+      <cell col="2" row="4"></cell>
+      <cell col="3" row="4"></cell>
+      <cell col="4" row="4"></cell>
+      <cell col="5" row="4"></cell>
+      <cell col="6" row="4"></cell>
+      <cell col="7" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5">5</cell>
+      <cell col="1" row="5"></cell>
+      <cell col="2" row="5"></cell>
+      <cell col="3" row="5"></cell>
+      <cell col="4" row="5"></cell>
+      <cell col="5" row="5"></cell>
+      <cell col="6" row="5"></cell>
+      <cell col="7" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">⦙</cell>
+      <cell col="1" row="6"></cell>
+      <cell col="2" row="6"></cell>
+      <cell col="3" row="6"></cell>
+      <cell col="4" row="6"></cell>
+      <cell col="5" row="6"></cell>
+      <cell col="6" row="6"></cell>
+      <cell col="7" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">n</cell>
+      <cell col="1" row="7"></cell>
+      <cell col="2" row="7"></cell>
+      <cell col="3" row="7"></cell>
+      <cell col="4" row="7"></cell>
+      <cell col="5" row="7"></cell>
+      <cell col="6" row="7"></cell>
+      <cell col="7" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="7">평균 시각적 해상도 (cm)</cell>
+      <cell col="7" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="7">지상표본거리(GSD) (cm)</cell>
+      <cell col="7" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="7">평균 영상의 선명도 ( )</cell>
+      <cell col="7" row="10"></cell>
+    </row>
+  </table>
+  <text>[붙임2] 방사해상도 성과표</text>
+  <table rows="1" cols="2">
+    <row>
+      <cell col="0" row="0">(사진별 수치 그래프)</cell>
+      <cell col="1" row="0">(평균 수치 그래프)</cell>
+    </row>
+  </table>
+  <table rows="12" cols="11">
+    <row>
+      <cell col="0" row="0" colspan="11">[방사해상도 분석도형 촬영사진]</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="2">연번
+(사진번호)</cell>
+      <cell col="1" row="1" colspan="10">구간 별 수치</cell>
+    </row>
+    <row>
+      <cell col="1" row="2" colspan="2">0</cell>
+      <cell col="3" row="2">1</cell>
+      <cell col="4" row="2">2</cell>
+      <cell col="5" row="2">3</cell>
+      <cell col="6" row="2">4</cell>
+      <cell col="7" row="2">5</cell>
+      <cell col="8" row="2">6</cell>
+      <cell col="9" row="2">7</cell>
+      <cell col="10" row="2">8</cell>
+    </row>
+    <row>
+      <cell col="0" row="3"></cell>
+      <cell col="1" row="3" colspan="2"></cell>
+      <cell col="3" row="3"></cell>
+      <cell col="4" row="3"></cell>
+      <cell col="5" row="3"></cell>
+      <cell col="6" row="3"></cell>
+      <cell col="7" row="3"></cell>
+      <cell col="8" row="3"></cell>
+      <cell col="9" row="3"></cell>
+      <cell col="10" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4"></cell>
+      <cell col="1" row="4" colspan="2"></cell>
+      <cell col="3" row="4"></cell>
+      <cell col="4" row="4"></cell>
+      <cell col="5" row="4"></cell>
+      <cell col="6" row="4"></cell>
+      <cell col="7" row="4"></cell>
+      <cell col="8" row="4"></cell>
+      <cell col="9" row="4"></cell>
+      <cell col="10" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5"></cell>
+      <cell col="1" row="5" colspan="2"></cell>
+      <cell col="3" row="5"></cell>
+      <cell col="4" row="5"></cell>
+      <cell col="5" row="5"></cell>
+      <cell col="6" row="5"></cell>
+      <cell col="7" row="5"></cell>
+      <cell col="8" row="5"></cell>
+      <cell col="9" row="5"></cell>
+      <cell col="10" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6"></cell>
+      <cell col="1" row="6" colspan="2"></cell>
+      <cell col="3" row="6"></cell>
+      <cell col="4" row="6"></cell>
+      <cell col="5" row="6"></cell>
+      <cell col="6" row="6"></cell>
+      <cell col="7" row="6"></cell>
+      <cell col="8" row="6"></cell>
+      <cell col="9" row="6"></cell>
+      <cell col="10" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7"></cell>
+      <cell col="1" row="7" colspan="2"></cell>
+      <cell col="3" row="7"></cell>
+      <cell col="4" row="7"></cell>
+      <cell col="5" row="7"></cell>
+      <cell col="6" row="7"></cell>
+      <cell col="7" row="7"></cell>
+      <cell col="8" row="7"></cell>
+      <cell col="9" row="7"></cell>
+      <cell col="10" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8"></cell>
+      <cell col="1" row="8" colspan="2"></cell>
+      <cell col="3" row="8"></cell>
+      <cell col="4" row="8"></cell>
+      <cell col="5" row="8"></cell>
+      <cell col="6" row="8"></cell>
+      <cell col="7" row="8"></cell>
+      <cell col="8" row="8"></cell>
+      <cell col="9" row="8"></cell>
+      <cell col="10" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">평균DN</cell>
+      <cell col="1" row="9" colspan="2"></cell>
+      <cell col="3" row="9"></cell>
+      <cell col="4" row="9"></cell>
+      <cell col="5" row="9"></cell>
+      <cell col="6" row="9"></cell>
+      <cell col="7" row="9"></cell>
+      <cell col="8" row="9"></cell>
+      <cell col="9" row="9"></cell>
+      <cell col="10" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="11">[그래프]</cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="2">선형성 평가</cell>
+      <cell col="2" row="11" colspan="9"></cell>
+    </row>
+  </table>
+  <text>※ 흑백(Gray), 적색(Red), 녹색(Green), 청색(Blue) 색상 바에 대해 각각 작성
+[붙임3] 위치정확도 성과표</text>
+  <table rows="18" cols="13">
+    <row>
+      <cell col="0" row="0" rowspan="3">연번</cell>
+      <cell col="1" row="0" colspan="3">AT성과</cell>
+      <cell col="4" row="0" colspan="3">검사점 측량성과</cell>
+      <cell col="7" row="0" colspan="3">잔차(오차)</cell>
+      <cell col="10" row="0" colspan="3">잔차(오차)2</cell>
+    </row>
+    <row>
+      <cell col="1" row="1" colspan="2">평면
+(m)</cell>
+      <cell col="3" row="1">표고
+(m)</cell>
+      <cell col="4" row="1" colspan="2">평면
+(m)</cell>
+      <cell col="6" row="1">표고
+(m)</cell>
+      <cell col="7" row="1" colspan="2">평면
+(m)</cell>
+      <cell col="9" row="1">표고
+(m)</cell>
+      <cell col="10" row="1" colspan="2">평면
+(m)</cell>
+      <cell col="12" row="1">표고
+(m)</cell>
+    </row>
+    <row>
+      <cell col="1" row="2">X</cell>
+      <cell col="2" row="2">Y</cell>
+      <cell col="3" row="2">Z</cell>
+      <cell col="4" row="2">X</cell>
+      <cell col="5" row="2">Y</cell>
+      <cell col="6" row="2">Z</cell>
+      <cell col="7" row="2">DX</cell>
+      <cell col="8" row="2">DY</cell>
+      <cell col="9" row="2">DZ</cell>
+      <cell col="10" row="2">DX2</cell>
+      <cell col="11" row="2">DY2</cell>
+      <cell col="12" row="2">DZ2</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">1</cell>
+      <cell col="1" row="3"></cell>
+      <cell col="2" row="3"></cell>
+      <cell col="3" row="3"></cell>
+      <cell col="4" row="3"></cell>
+      <cell col="5" row="3"></cell>
+      <cell col="6" row="3"></cell>
+      <cell col="7" row="3"></cell>
+      <cell col="8" row="3"></cell>
+      <cell col="9" row="3"></cell>
+      <cell col="10" row="3"></cell>
+      <cell col="11" row="3"></cell>
+      <cell col="12" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4">2</cell>
+      <cell col="1" row="4"></cell>
+      <cell col="2" row="4"></cell>
+      <cell col="3" row="4"></cell>
+      <cell col="4" row="4"></cell>
+      <cell col="5" row="4"></cell>
+      <cell col="6" row="4"></cell>
+      <cell col="7" row="4"></cell>
+      <cell col="8" row="4"></cell>
+      <cell col="9" row="4"></cell>
+      <cell col="10" row="4"></cell>
+      <cell col="11" row="4"></cell>
+      <cell col="12" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5">3</cell>
+      <cell col="1" row="5"></cell>
+      <cell col="2" row="5"></cell>
+      <cell col="3" row="5"></cell>
+      <cell col="4" row="5"></cell>
+      <cell col="5" row="5"></cell>
+      <cell col="6" row="5"></cell>
+      <cell col="7" row="5"></cell>
+      <cell col="8" row="5"></cell>
+      <cell col="9" row="5"></cell>
+      <cell col="10" row="5"></cell>
+      <cell col="11" row="5"></cell>
+      <cell col="12" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">4</cell>
+      <cell col="1" row="6"></cell>
+      <cell col="2" row="6"></cell>
+      <cell col="3" row="6"></cell>
+      <cell col="4" row="6"></cell>
+      <cell col="5" row="6"></cell>
+      <cell col="6" row="6"></cell>
+      <cell col="7" row="6"></cell>
+      <cell col="8" row="6"></cell>
+      <cell col="9" row="6"></cell>
+      <cell col="10" row="6"></cell>
+      <cell col="11" row="6"></cell>
+      <cell col="12" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">5</cell>
+      <cell col="1" row="7"></cell>
+      <cell col="2" row="7"></cell>
+      <cell col="3" row="7"></cell>
+      <cell col="4" row="7"></cell>
+      <cell col="5" row="7"></cell>
+      <cell col="6" row="7"></cell>
+      <cell col="7" row="7"></cell>
+      <cell col="8" row="7"></cell>
+      <cell col="9" row="7"></cell>
+      <cell col="10" row="7"></cell>
+      <cell col="11" row="7"></cell>
+      <cell col="12" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8">6</cell>
+      <cell col="1" row="8"></cell>
+      <cell col="2" row="8"></cell>
+      <cell col="3" row="8"></cell>
+      <cell col="4" row="8"></cell>
+      <cell col="5" row="8"></cell>
+      <cell col="6" row="8"></cell>
+      <cell col="7" row="8"></cell>
+      <cell col="8" row="8"></cell>
+      <cell col="9" row="8"></cell>
+      <cell col="10" row="8"></cell>
+      <cell col="11" row="8"></cell>
+      <cell col="12" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">7</cell>
+      <cell col="1" row="9"></cell>
+      <cell col="2" row="9"></cell>
+      <cell col="3" row="9"></cell>
+      <cell col="4" row="9"></cell>
+      <cell col="5" row="9"></cell>
+      <cell col="6" row="9"></cell>
+      <cell col="7" row="9"></cell>
+      <cell col="8" row="9"></cell>
+      <cell col="9" row="9"></cell>
+      <cell col="10" row="9"></cell>
+      <cell col="11" row="9"></cell>
+      <cell col="12" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10">8</cell>
+      <cell col="1" row="10"></cell>
+      <cell col="2" row="10"></cell>
+      <cell col="3" row="10"></cell>
+      <cell col="4" row="10"></cell>
+      <cell col="5" row="10"></cell>
+      <cell col="6" row="10"></cell>
+      <cell col="7" row="10"></cell>
+      <cell col="8" row="10"></cell>
+      <cell col="9" row="10"></cell>
+      <cell col="10" row="10"></cell>
+      <cell col="11" row="10"></cell>
+      <cell col="12" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11">9</cell>
+      <cell col="1" row="11"></cell>
+      <cell col="2" row="11"></cell>
+      <cell col="3" row="11"></cell>
+      <cell col="4" row="11"></cell>
+      <cell col="5" row="11"></cell>
+      <cell col="6" row="11"></cell>
+      <cell col="7" row="11"></cell>
+      <cell col="8" row="11"></cell>
+      <cell col="9" row="11"></cell>
+      <cell col="10" row="11"></cell>
+      <cell col="11" row="11"></cell>
+      <cell col="12" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12">10</cell>
+      <cell col="1" row="12"></cell>
+      <cell col="2" row="12"></cell>
+      <cell col="3" row="12"></cell>
+      <cell col="4" row="12"></cell>
+      <cell col="5" row="12"></cell>
+      <cell col="6" row="12"></cell>
+      <cell col="7" row="12"></cell>
+      <cell col="8" row="12"></cell>
+      <cell col="9" row="12"></cell>
+      <cell col="10" row="12"></cell>
+      <cell col="11" row="12"></cell>
+      <cell col="12" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13">⦙</cell>
+      <cell col="1" row="13"></cell>
+      <cell col="2" row="13"></cell>
+      <cell col="3" row="13"></cell>
+      <cell col="4" row="13"></cell>
+      <cell col="5" row="13"></cell>
+      <cell col="6" row="13"></cell>
+      <cell col="7" row="13"></cell>
+      <cell col="8" row="13"></cell>
+      <cell col="9" row="13"></cell>
+      <cell col="10" row="13"></cell>
+      <cell col="11" row="13"></cell>
+      <cell col="12" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14">n</cell>
+      <cell col="1" row="14"></cell>
+      <cell col="2" row="14"></cell>
+      <cell col="3" row="14"></cell>
+      <cell col="4" row="14"></cell>
+      <cell col="5" row="14"></cell>
+      <cell col="6" row="14"></cell>
+      <cell col="7" row="14"></cell>
+      <cell col="8" row="14"></cell>
+      <cell col="9" row="14"></cell>
+      <cell col="10" row="14"></cell>
+      <cell col="11" row="14"></cell>
+      <cell col="12" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="10">RMSE(m) (예,</cell>
+      <cell col="10" row="15"></cell>
+      <cell col="11" row="15"></cell>
+      <cell col="12" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="10">평면위치 RM(m)</cell>
+      <cell col="10" row="16" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17" colspan="10">최대값(m)</cell>
+      <cell col="10" row="17"></cell>
+      <cell col="11" row="17"></cell>
+      <cell col="12" row="17"></cell>
+    </row>
+  </table>
+  <table rows="1" cols="1">
+    <row>
+      <cell col="0" row="0">※ 천안 검정장 현황
+◦ 국토지리정보원에서 수행하는 검정은 천안 검정장을 원칙으로 한다.
+◦ (규격) 6km x 6km(Line 방식 카메라 포함)
+◦ (공간해상도) 도형수 3, 외부직경 2m, 흑백선수 32
+◦ (방사해상도) 도형수 1(5mx4.5m) - 흑백, 적색, 녹색, 청색 색상 바 1식
+◦ (기준점) 평면·표고 지상기준점 약 50점(공개), 검사점 약 30점(비공개)
+◦ (검정기준) GSD 10cm이내, 영상의선명도≤1.1, 밝기값 선형성 유지, 지상기준점·검사점 잔차 RMSE≤0.12m, 최대값≤0.24m</cell>
+    </row>
+  </table>
+  <table rows="2" cols="2">
+    <row>
+      <cell col="0" row="0">&lt; 적합 사례 &gt;</cell>
+      <cell col="1" row="0">&lt; 부적합 사례 &gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1"></cell>
+      <cell col="1" row="1"></cell>
+    </row>
+  </table>
+  <table rows="3" cols="1">
+    <row>
+      <cell col="0" row="0">항공사진측량용 카메라 검정 검사표 작성 방법</cell>
+      <cell col="3" row="0" colspan="8504">&lt; 외부직경(D)과 내부직경(d) 관측방법 &gt;</cell>
+      <cell col="3" row="0" colspan="8504">&lt; 관측예시 &gt;
+ ◦ 흑백선 수
+   - 검정장에 설치된 분석 도형의 흑백선의 개수를 숫자로 표시한다.
+ ◦ (평균) 시각적 지상해상도
+   - 영상의 시각적 지상해상도() 분석을 위하여 다음의 식을 적용하여 결과를 산출하고 단위는 cm 단위로 표기하며 소수 1자리까지 표시한다.
+   - 검정장에 설치한 분석 도형의 개수가 여러 개일 경우 평균직경비를 이용하여 평균 시각적 지상해상도를 산출한다.
+   - 예시 : 직경비가 0.450이고 흑백선의 개수가 32이며 실제외부직경이 2m일 경우 시각적 해상도()는 8.8cm이다.
+ ◦ (평균) 영상의 선명도
+   - 영상의 선명도는 시각적 해상도()/지상표본거리(GSD)의 비로 나타내고 단위는 cm 단위로 표기하며 소수 2자리까지 표시한다.
+   - (평균)영상의 선명도는 1.1 이하가 되어야 한다.
+   - 예시 :  시각적 해상도()가 8.8cm이고 GSD가 10cm 일 경우 영상의 선명도는 0.88이다.
+7. 방사해상도
+ ◦ 흑백·적색·녹색·청색 평균
+   - 서로 다른 사진 3장 이상에서 나타난 각 색상 바에 대해 구간 별 중심 수치를 읽고 그에 대한 평균값을 입력한다.
+   - 흑백 : 0~8칸, 적·녹·청색 : 0~7칸
+ ◦ 선형성 평가
+   - 평균 값에 대한 그래프가 어긋남 없이 일관된 선형성을 띄는 경우 적합, 그렇지 않은 경우 부적합을 작성한다.
+   - 예시 :</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">1. 카메라
+ ◦ 카메라모델명
+   - 촬영한 카메라의 모델명을 기록한다.
+   - 예시 : UltraCam-xp, DMCⅡ, ADS80 등
+ ◦ 카메라 일련번호
+   - 카메라마다 고유한 일련번호를 기록한다.
+ ◦ 초점거리(f)
+   - 카메라의 초점거리를 ㎜ 단위로 표시하며 소수 이하 3자리까지 표기한다.
+   - 예시 : 120.000 ㎜
+ ◦ 구입/임대일자
+   - 카메라를 구매 또는 임대한 날짜를 연도(숫자 4자리), 월(숫자 2자리), 일(숫자 2자리) 형태로 표시한다. 또한 구매과 임대 유무를 알 수 있도록 표시한다.
+   - 예시 : 2009. 01. 01
+ ◦ 주점위치
+   - 주점의 x좌표와 y좌표값을 ㎜ 단위로 표시하며 소수 이하 3자리까지 표기한다.
+   - 예시 : x : -0.640㎜, y : 0.640㎜
+ ◦ 카메라 검정장 촬영 수행일자
+   - 카메라의 성능을 확인하기 위해서 촬영계획기관이 선정한 검정장을 대상으로 촬영을 수행한 날짜를 연도(숫자 4자리), 월(숫자 2자리), 일(숫자 2자리) 형태로 표시한다.
+   - 예시 : 2022. 01. 15
+ ◦ 물리적인 픽셀크기
+   - 카메라를 구성하고 있는 CCD 배열요소의 픽셀에 대한 물리적인 크기를  ㎛ 단위로 표시하며 소수 이하 1자리까지 표기한다.
+   - 예시 : 12.0 ㎛
+ ◦ 카메라 정기점검 수행일자
+   - 카메라 장비를 제조한 제조사에 의뢰하여 정기점검을 수행한 일자를 연도(숫자 4자리), 월(숫자 2자리), 일(숫자 2자리) 형태로 표시한다.
+   - 예시 : 2012. 10. 11
+2. GNSS/INS
+ ◦ GNSS 모델명
+   - GNSS 관측장비의 모델명을 기록한다.
+ ◦ GNSS 모델 일련번호
+   - GNSS 관측장비마다 고유한 일련번호를 기록한다.
+ ◦ INS 모델명
+   - INS 관측장비의 모델명을 기록한다.
+ ◦ INS 모델 일련번호
+   - INS 관측장비마다 고유한 일련번호를 기록한다.
+ ◦ GNSS 정확도
+   - GNSS 관측장비의 정확도를 판단할 수 있는 표준편차를 미터(m) 단위로 표시하며 소수 이하 2자리까지 표기한다.
+   - 예시 : 0.05 m
+ ◦ INS 정확도
+   - INS 관측장비의 정확도를 판단할 수 있는 표준편차를 도(deg) 단위로 표시하며 소수 이하 2자리까지 표기한다.
+   - 예시 : 0.01 deg
+3. 검정장현황
+ ◦ 검정장위치
+   - 항공측량용 센서의 정확도를 검정하기 위해서 항공측량 업체에서 비행을 수행한 검정장의 위치를 기록한다.
+ ◦ 검정장규격
+   - 검정장의 지상크기를 가로×세로 형태로 기록한다. 이때 지상크기의 단위는 ㎞ 형태로 표시한다.
+   - 예시 : 3㎞ × 3㎞(Frame 방식 카메라), 6㎞ x 6㎞(Line 방식 카메라)
+ ◦ 해상도 분석 도형
+   - 공간해상도 분석 도형은 Siemens star 도형을 사용하고 아래와 같다.
+   - 방사해상도 분석 도형은 흑백, 적색, 녹색, 청색 색상 바를 사용하고 각 색상 별 표준수치는 아래와 같다.
+ ◦ 분석 도형수
+   - 해상도 검증을 위해서 사용한 분석 도형의 개수를 숫자로 기록한다.
+ ◦ 지상기준점 수
+   - 검정에 사용된 지상기준점의 개수를 숫자로 기록한다. 
+   - 국토지리정보원이 수행하는 검정의 경우, 국토지리정보원이 천안 검정장에 설치한 지상기준점 중 카메라 검정에 사용한 지상기준점의 개수를 숫자로 기록한다.
+ ◦ 검사점 수
+   - 검정장에 설치하여 자료처리에 사용되지 않고 정확도를 평가하기 위해 사용한 검사점의 개수를 숫자로 기록한다. 
+   - 국토지리정보원이 수행하는 검정의 경우, 국토지리정보원이 설치한 지상기준점 중 사용하지 않은 기준점을 검사점으로 활용할 수 있다.
+4. 항공삼각측량
+ ◦ 항공삼각측량 수행일자
+   - 검정장을 대상으로 디지털 카메라를 이용하여 항공촬영을 수행한 후 지상기준점, 접합점 등을 이용하여 항공삼각측량을 수행한 날짜를 연도(숫자 4자리), 월(숫자 2자리), 일(숫자 2자리) 형태로 표시한다.
+   - 예시 : 2022. 02. 15
+ ◦ 자료처리 소프트웨어
+   - 항공삼각측량을 수행하기 위해서 사용한 자료처리 소프트웨어를 기록한다.
+   - 예시 : MatchAT, Bingo, CalQC, ISAT, IPAS Pro 등
+ ◦ 촬영고도
+   - 촬영대상지를 비행한 항공기의 촬영고도를 미터(m) 단위의 숫자로 기록한다.
+   - 예시 : 1000 m
+ ◦ GSD(=)
+   - 촬영고도(H), 초점거리(f) 및 물리적인 픽셀크기를 이용하여 산출된 지상표본거리(GSD : Ground Sample Distance)를 cm 단위로 기록한다.
+   - 예시 : 촬영고도(1000m)×픽셀크기(12㎛)/초점거리(120.000㎜) = 10 cm
+ ◦ 항공삼각측량 수행방법
+   - 항공삼각측량을 수행한 방법을 기록한다.
+   - 예시 : 광속조정법, 독립모델법
+ ◦ 촬영코스수
+   - 항공삼각측량을 수행하기 위해서 검정장을 대상으로 촬영한 코스의 수를 숫자로 기록한다.
+ ◦ 촬영사진매수
+   - 촬영대상지를 촬영한 사진 또는 영상의 매수를 숫자로 기록한다.
+ ◦ 중복도
+   - 항공사진(또는 영상)은 입체시가 될 수 있도록 사진을 촬영하며 촬영 진행방향인 종중복도와 인접 코스간의 횡중복도를 각각 퍼센트(%) 형태의 숫자 2자리로 기록한다.
+   - 선형 카메라의 경우 종중복도는 100%로 기록한다.
+ ◦ 지상기준점 잔차
+   - 항공삼각측량의 수행결과를 간접적으로 확인할 수 있는 지상기준점의 잔차에 대해 평면과 표고에 대한 RMSE와 최대값을 각각 미터(m) 단위로 표시하며 소수 이하 2자리까지 표기한다.
+   - 예시 : 평면 RMSE : 0.08m, 표고 RMSE : 0.10m
+평면 최대값 : 0.10m 표고 최대값 : 0.12m
+ ◦ 검사점 잔차
+   - 항공삼각측량의 수행결과를 직접적으로 확인할 수 있는 검사점의 잔차에 대해 평면과 표고에 대한 RMSE와 최대값을 각각 미터(m) 단위로 표시하며 소수 이하 2자리까지 표기한다.
+   - 예시 : 평면 RMSE : 0.09m, 표고 RMSE : 0.11m
+평면 최대값 : 0.12m 표고 최대값 : 0.13m
+5. 이격거리보정
+ ◦ Boresight 수행값
+   - 항공기에 설치된 카메라의 렌즈중심점과 GNSS/INS와의 이격거리를 지상측량 장비를 이용하여 정밀하게 관측한 결과값을 기록한다. X, Y, Z는 카메라 렌즈중심점과 GNSS/INS와의 이동량을 나타내며 미터(m) 단위로 표시하고 소수 이하 2자리까지 표기한다. 또한 Omega, Phi, Kappa는 카메라와 GNSS/INS와의 X, Y, Z축의 회전량을 나타나고 도(deg) 단위로 소수 이하 2자리까지 표기한다.
+   - 예시 : X : 0.01 m, Y : 0.01 m, Z : 0.01 m
+Omega : 0.02 deg, Phi : 0.02 deg, Kappa : 0.02 deg
+6. 공간해상도
+ ◦ 실제 외부 직경
+   - 공간해상도 검증을 위해서 검정장에 설치된 시각적 해상도 분석 도형의 실제 직경을 미터(m) 단위로 기록한다.
+   - 예시 : 2m 또는 4m
+ ◦ (평균) 직경비(내부 직경(d)/외부 직경(D))
+   - 영상의 공간해상도 분석을 위하여 촬영한 시각적 해상도 분석 도형의 내부 직경과 외부 직경의 비를 소수 3자리까지 기록한다. 다음 그림에서 외부 직경은 D로 나타낼 수 있고 내부 직경은 d로 나타낼 수 있다.
+   - 시각적 해상도 분석을 위해 검정장에 설치한 분석 도형의 개수가 여러 개일 경우 직경비의 평균값을 표시한다.
+   - 예시 : 시각적 해상도 분석 도형을 촬영한 영상을 이용하여 외부직경(D)과 내부직경(d)을 관측하여 각각 29.62와 13.32가 나왔을 경우 직경비는 0.450이 된다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="2"></cell>
+    </row>
+  </table>
+</annex>

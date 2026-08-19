@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표1" gubun="별표" no="1" title="교육과정별 세부내용(제3조제4항 관련)" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=115170929">
+  <text>■ 측량기기 성능검사대행자 교육에 관한 규정 [별표 1]
+교육과정별 세부내용(제3조제4항 관련)</text>
+  <table rows="7" cols="3">
+    <row>
+      <cell col="0" row="0">교육종류</cell>
+      <cell col="1" row="0">세부항목</cell>
+      <cell col="2" row="0">교육내용</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="3">전문교육
+(2시간)</cell>
+      <cell col="1" row="1">측량기기 성능검사 대상 및 검사 방법</cell>
+      <cell col="2" row="1">‧ 검사절차 : 법 시행령 제97조에 따른 성능검사 대상 및 검사 절차에 대한 교육
+‧ 외관검사 : 법 시행규칙 별표8에서 정한 방법에 따라 외관검사를 수행하는 방법에 대한 교육
+‧ 구조‧기능검사 : 법 시행규칙 별표8에서 정한 방법에 따라 구조, 기능검사를 수행하는 방법에 대한 교육
+‧ 측정검사 : 측량기기 성능검사 규정에서 정한 방법에 따라 측정검사를 수행하는 방법에 대한 교육</cell>
+    </row>
+    <row>
+      <cell col="1" row="2">측량기기 성능검사 관리</cell>
+      <cell col="2" row="2">‧ 측량기기 성능검사의 주기적 관리에 관한 사항 교육</cell>
+    </row>
+    <row>
+      <cell col="1" row="3">웹기반 성능검사 관리시스템</cell>
+      <cell col="2" row="3">‧ 측량기기 성능검사 규정에 따라 웹기반 성능검사 관리시스템을 사용하는 방법에 대한 교육</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" rowspan="3">소양교육
+(2시간)</cell>
+      <cell col="1" row="4">성능검사대행자 준수사항</cell>
+      <cell col="2" row="4">‧ 측량기기 성능검사 규정에 따른 성능검사대행자 준수사항에 대한 교육</cell>
+    </row>
+    <row>
+      <cell col="1" row="5">측량기기 성능검사 관련법령</cell>
+      <cell col="2" row="5">‧ 측량기기 성능검사 관련 법규에 대한 교육</cell>
+    </row>
+    <row>
+      <cell col="1" row="6">성능검사 대행자 직업윤리 및 사례</cell>
+      <cell col="2" row="6">‧ 측량기기 성능검사 대행자가 갖추어야 할 기본소양과 직업 윤리
+‧ 성능검사 대행 업무 관련 주요 사례</cell>
+    </row>
+  </table>
+</annex>

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식58" gubun="서식" no="58" title="지상경계점등록부" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454769">
+  <table rows="16" cols="7">
+    <row>
+      <cell col="0" row="0" colspan="7">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별지 제58호서식] &lt;개정 2017. 1. 31.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="7">지상경계점등록부</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="7">(3쪽 중 제1쪽)</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" rowspan="2">토지의 소재</cell>
+      <cell col="1" row="3">시ㆍ도</cell>
+      <cell col="2" row="3">시ㆍ군ㆍ구</cell>
+      <cell col="3" row="3" colspan="2">읍ㆍ면</cell>
+      <cell col="5" row="3" colspan="2">동ㆍ리</cell>
+    </row>
+    <row>
+      <cell col="1" row="4">지번</cell>
+      <cell col="2" row="4">공부상 지목</cell>
+      <cell col="3" row="4">실제 토지
+이용 지목</cell>
+      <cell col="4" row="4"></cell>
+      <cell col="5" row="4">면적(㎡)</cell>
+      <cell col="6" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6" colspan="3" rowspan="8">위치도
+(토지의 위치를 나타낼 수 있는 개략적 도면)</cell>
+      <cell col="3" row="6" colspan="2">토지이용계획</cell>
+      <cell col="5" row="6" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="3" row="7" colspan="2">개별공시지가</cell>
+      <cell col="5" row="7" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="3" row="8" colspan="2" rowspan="2">측 량 자</cell>
+      <cell col="5" row="8" colspan="2">년   월   일</cell>
+    </row>
+    <row>
+      <cell col="5" row="9" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="3" row="10" colspan="2" rowspan="2">검 사 자</cell>
+      <cell col="5" row="10" colspan="2">년   월   일</cell>
+    </row>
+    <row>
+      <cell col="5" row="11" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="3" row="12" colspan="2" rowspan="2">입 회 인</cell>
+      <cell col="5" row="12" colspan="2">측량의뢰인:</cell>
+    </row>
+    <row>
+      <cell col="5" row="13" colspan="2">이해관계인:</cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="7">경계점 위치 설명도</cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="7">210㎜×297㎜[백상지(150g/㎡)]</cell>
+    </row>
+  </table>
+  <table rows="5" cols="34">
+    <row>
+      <cell col="0" row="0" rowspan="2">부호</cell>
+      <cell col="1" row="0" colspan="16">좌표</cell>
+      <cell col="17" row="0" rowspan="2">부호</cell>
+      <cell col="18" row="0" colspan="16">좌표</cell>
+    </row>
+    <row>
+      <cell col="1" row="1" colspan="8">X</cell>
+      <cell col="9" row="1" colspan="8">Y</cell>
+      <cell col="18" row="1" colspan="8">X</cell>
+      <cell col="26" row="1" colspan="8">Y</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">1</cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2"></cell>
+      <cell col="3" row="2"></cell>
+      <cell col="4" row="2"></cell>
+      <cell col="5" row="2"></cell>
+      <cell col="6" row="2">m</cell>
+      <cell col="7" row="2"></cell>
+      <cell col="8" row="2"></cell>
+      <cell col="9" row="2"></cell>
+      <cell col="10" row="2"></cell>
+      <cell col="11" row="2"></cell>
+      <cell col="12" row="2"></cell>
+      <cell col="13" row="2"></cell>
+      <cell col="14" row="2">m</cell>
+      <cell col="15" row="2"></cell>
+      <cell col="16" row="2"></cell>
+      <cell col="17" row="2"></cell>
+      <cell col="18" row="2"></cell>
+      <cell col="19" row="2"></cell>
+      <cell col="20" row="2"></cell>
+      <cell col="21" row="2"></cell>
+      <cell col="22" row="2"></cell>
+      <cell col="23" row="2">m</cell>
+      <cell col="24" row="2"></cell>
+      <cell col="25" row="2"></cell>
+      <cell col="26" row="2"></cell>
+      <cell col="27" row="2"></cell>
+      <cell col="28" row="2"></cell>
+      <cell col="29" row="2"></cell>
+      <cell col="30" row="2"></cell>
+      <cell col="31" row="2">m</cell>
+      <cell col="32" row="2"></cell>
+      <cell col="33" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">2</cell>
+      <cell col="1" row="3"></cell>
+      <cell col="2" row="3"></cell>
+      <cell col="3" row="3"></cell>
+      <cell col="4" row="3"></cell>
+      <cell col="5" row="3"></cell>
+      <cell col="6" row="3"></cell>
+      <cell col="7" row="3"></cell>
+      <cell col="8" row="3"></cell>
+      <cell col="9" row="3"></cell>
+      <cell col="10" row="3"></cell>
+      <cell col="11" row="3"></cell>
+      <cell col="12" row="3"></cell>
+      <cell col="13" row="3"></cell>
+      <cell col="14" row="3"></cell>
+      <cell col="15" row="3"></cell>
+      <cell col="16" row="3"></cell>
+      <cell col="17" row="3"></cell>
+      <cell col="18" row="3"></cell>
+      <cell col="19" row="3"></cell>
+      <cell col="20" row="3"></cell>
+      <cell col="21" row="3"></cell>
+      <cell col="22" row="3"></cell>
+      <cell col="23" row="3"></cell>
+      <cell col="24" row="3"></cell>
+      <cell col="25" row="3"></cell>
+      <cell col="26" row="3"></cell>
+      <cell col="27" row="3"></cell>
+      <cell col="28" row="3"></cell>
+      <cell col="29" row="3"></cell>
+      <cell col="30" row="3"></cell>
+      <cell col="31" row="3"></cell>
+      <cell col="32" row="3"></cell>
+      <cell col="33" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4"></cell>
+      <cell col="1" row="4"></cell>
+      <cell col="2" row="4"></cell>
+      <cell col="3" row="4"></cell>
+      <cell col="4" row="4"></cell>
+      <cell col="5" row="4"></cell>
+      <cell col="6" row="4"></cell>
+      <cell col="7" row="4"></cell>
+      <cell col="8" row="4"></cell>
+      <cell col="9" row="4"></cell>
+      <cell col="10" row="4"></cell>
+      <cell col="11" row="4"></cell>
+      <cell col="12" row="4"></cell>
+      <cell col="13" row="4"></cell>
+      <cell col="14" row="4"></cell>
+      <cell col="15" row="4"></cell>
+      <cell col="16" row="4"></cell>
+      <cell col="17" row="4"></cell>
+      <cell col="18" row="4"></cell>
+      <cell col="19" row="4"></cell>
+      <cell col="20" row="4"></cell>
+      <cell col="21" row="4"></cell>
+      <cell col="22" row="4"></cell>
+      <cell col="23" row="4"></cell>
+      <cell col="24" row="4"></cell>
+      <cell col="25" row="4"></cell>
+      <cell col="26" row="4"></cell>
+      <cell col="27" row="4"></cell>
+      <cell col="28" row="4"></cell>
+      <cell col="29" row="4"></cell>
+      <cell col="30" row="4"></cell>
+      <cell col="31" row="4"></cell>
+      <cell col="32" row="4"></cell>
+      <cell col="33" row="4"></cell>
+    </row>
+  </table>
+  <table rows="11" cols="9">
+    <row>
+      <cell col="0" row="0" colspan="9">(3쪽 중 제2쪽)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="9">경계점좌표(경계점좌표 등록부 시행지역만 해당함)</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="9">경계점 위치 사진</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" rowspan="2">번호</cell>
+      <cell col="1" row="4" rowspan="2"></cell>
+      <cell col="2" row="4">표지의 종류</cell>
+      <cell col="3" row="4" colspan="2"></cell>
+      <cell col="5" row="4" rowspan="2">번호</cell>
+      <cell col="6" row="4" rowspan="2"></cell>
+      <cell col="7" row="4">표지의 종류</cell>
+      <cell col="8" row="4"></cell>
+    </row>
+    <row>
+      <cell col="2" row="5">위치</cell>
+      <cell col="3" row="5" colspan="2"></cell>
+      <cell col="7" row="5">위치</cell>
+      <cell col="8" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6" colspan="5"></cell>
+      <cell col="5" row="6" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7" rowspan="2">번호</cell>
+      <cell col="1" row="7" rowspan="2"></cell>
+      <cell col="2" row="7" colspan="2">표지의 종류</cell>
+      <cell col="4" row="7"></cell>
+      <cell col="5" row="7" rowspan="2">번호</cell>
+      <cell col="6" row="7" rowspan="2"></cell>
+      <cell col="7" row="7">표지의 종류</cell>
+      <cell col="8" row="7"></cell>
+    </row>
+    <row>
+      <cell col="2" row="8" colspan="2">위치</cell>
+      <cell col="4" row="8"></cell>
+      <cell col="7" row="8">위치</cell>
+      <cell col="8" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="5"></cell>
+      <cell col="5" row="9" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="9"></cell>
+    </row>
+  </table>
+  <table rows="12" cols="9">
+    <row>
+      <cell col="0" row="0" colspan="9">(3쪽 중 제3쪽)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="9">경계점 위치 사진</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" rowspan="2">번호</cell>
+      <cell col="1" row="2" rowspan="2"></cell>
+      <cell col="2" row="2">표지의 종류</cell>
+      <cell col="3" row="2" colspan="2"></cell>
+      <cell col="5" row="2" rowspan="2">번호</cell>
+      <cell col="6" row="2" rowspan="2"></cell>
+      <cell col="7" row="2">표지의 종류</cell>
+      <cell col="8" row="2"></cell>
+    </row>
+    <row>
+      <cell col="2" row="3">위치</cell>
+      <cell col="3" row="3" colspan="2"></cell>
+      <cell col="7" row="3">위치</cell>
+      <cell col="8" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="5"></cell>
+      <cell col="5" row="4" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" rowspan="2">번호</cell>
+      <cell col="1" row="5" rowspan="2"></cell>
+      <cell col="2" row="5" colspan="2">표지의 종류</cell>
+      <cell col="4" row="5"></cell>
+      <cell col="5" row="5" rowspan="2">번호</cell>
+      <cell col="6" row="5" rowspan="2"></cell>
+      <cell col="7" row="5">표지의 종류</cell>
+      <cell col="8" row="5"></cell>
+    </row>
+    <row>
+      <cell col="2" row="6" colspan="2">위치</cell>
+      <cell col="4" row="6"></cell>
+      <cell col="7" row="6">위치</cell>
+      <cell col="8" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="5"></cell>
+      <cell col="5" row="7" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8" rowspan="2">번호</cell>
+      <cell col="1" row="8" rowspan="2"></cell>
+      <cell col="2" row="8" colspan="2">표지의 종류</cell>
+      <cell col="4" row="8"></cell>
+      <cell col="5" row="8" rowspan="2">번호</cell>
+      <cell col="6" row="8" rowspan="2"></cell>
+      <cell col="7" row="8">표지의 종류</cell>
+      <cell col="8" row="8"></cell>
+    </row>
+    <row>
+      <cell col="2" row="9" colspan="2">위치</cell>
+      <cell col="4" row="9"></cell>
+      <cell col="7" row="9">위치</cell>
+      <cell col="8" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="5"></cell>
+      <cell col="5" row="10" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="9"></cell>
+    </row>
+  </table>
+</annex>

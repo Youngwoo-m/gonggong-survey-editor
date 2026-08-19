@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표9" gubun="별표" no="9" title="측량기기별 성능기준(제102조 관련)" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454229">
+  <table rows="44" cols="10">
+    <row>
+      <cell col="0" row="0" colspan="10">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별표 9] &lt;개정 2023. 11. 27.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="10">측량기기별 성능기준(제102조 관련)</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">측량기기</cell>
+      <cell col="2" row="2" colspan="7">성능기준</cell>
+      <cell col="9" row="2">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2" rowspan="7">트랜싯
+(데오드라이트)</cell>
+      <cell col="2" row="3" rowspan="3">등급</cell>
+      <cell col="3" row="3" colspan="6">항목</cell>
+      <cell col="9" row="3" rowspan="7">정밀도 : 
+수평각의 표준편차</cell>
+    </row>
+    <row>
+      <cell col="3" row="4" colspan="4">눈금판</cell>
+      <cell col="7" row="4" colspan="2" rowspan="2">정밀도</cell>
+    </row>
+    <row>
+      <cell col="3" row="5" colspan="2">수평</cell>
+      <cell col="5" row="5" colspan="2">연직</cell>
+    </row>
+    <row>
+      <cell col="2" row="6">특급</cell>
+      <cell col="3" row="6" colspan="2">0.2초이하</cell>
+      <cell col="5" row="6" colspan="2">0.2초이하</cell>
+      <cell col="7" row="6" colspan="2">±1.0초 이하</cell>
+    </row>
+    <row>
+      <cell col="2" row="7">1급</cell>
+      <cell col="3" row="7" colspan="2">1.0초 이하</cell>
+      <cell col="5" row="7" colspan="2">1.0초 이하</cell>
+      <cell col="7" row="7" colspan="2">±2.0초 이하</cell>
+    </row>
+    <row>
+      <cell col="2" row="8">2급</cell>
+      <cell col="3" row="8" colspan="2">10초 이하</cell>
+      <cell col="5" row="8" colspan="2">10초 이하</cell>
+      <cell col="7" row="8" colspan="2">±10초 이하</cell>
+    </row>
+    <row>
+      <cell col="2" row="9">3급</cell>
+      <cell col="3" row="9" colspan="2">20초 이하</cell>
+      <cell col="5" row="9" colspan="2">20초 이하</cell>
+      <cell col="7" row="9" colspan="2">±20초 이하</cell>
+    </row>
+    <row>
+      <cell col="0" row="10" rowspan="15">레벨</cell>
+      <cell col="1" row="10" rowspan="6">기포관</cell>
+      <cell col="2" row="10" rowspan="3">등급</cell>
+      <cell col="3" row="10" colspan="6">항목</cell>
+      <cell col="9" row="10" rowspan="6">정밀도 :
+1킬로미터 왕복수준측량의 표준편차</cell>
+    </row>
+    <row>
+      <cell col="3" row="11" colspan="3">기포관감도</cell>
+      <cell col="6" row="11" colspan="2" rowspan="2">최소눈금</cell>
+      <cell col="8" row="11" rowspan="2">정밀도</cell>
+    </row>
+    <row>
+      <cell col="3" row="12">주</cell>
+      <cell col="4" row="12" colspan="2">원형</cell>
+    </row>
+    <row>
+      <cell col="2" row="13">1급</cell>
+      <cell col="3" row="13">10초</cell>
+      <cell col="4" row="13" colspan="2">5분</cell>
+      <cell col="6" row="13" colspan="2">0.1밀리미터</cell>
+      <cell col="8" row="13">±0.6밀리미터</cell>
+    </row>
+    <row>
+      <cell col="2" row="14">2급</cell>
+      <cell col="3" row="14">20초</cell>
+      <cell col="4" row="14" colspan="2">10분</cell>
+      <cell col="6" row="14" colspan="2">1.0밀리미터</cell>
+      <cell col="8" row="14">±1.0밀리미터</cell>
+    </row>
+    <row>
+      <cell col="2" row="15">3급</cell>
+      <cell col="3" row="15">40초</cell>
+      <cell col="4" row="15" colspan="2">10분</cell>
+      <cell col="6" row="15" colspan="2">-</cell>
+      <cell col="8" row="15">±3.0밀리미터</cell>
+    </row>
+    <row>
+      <cell col="1" row="16" rowspan="5">자동</cell>
+      <cell col="2" row="16" rowspan="2">등급</cell>
+      <cell col="3" row="16" colspan="6">항목</cell>
+      <cell col="9" row="16" rowspan="5">정밀도 :
+1킬로미터 왕복수준측량의 표준편차</cell>
+    </row>
+    <row>
+      <cell col="3" row="17">기포관감도
+(원형)</cell>
+      <cell col="4" row="17" colspan="2">Compensator
+정도</cell>
+      <cell col="6" row="17" colspan="2">최소눈금</cell>
+      <cell col="8" row="17">정밀도</cell>
+    </row>
+    <row>
+      <cell col="2" row="18">1급</cell>
+      <cell col="3" row="18">8분</cell>
+      <cell col="4" row="18" colspan="2">0.4초</cell>
+      <cell col="6" row="18" colspan="2">0.1밀리미터</cell>
+      <cell col="8" row="18">±0.6밀리미터</cell>
+    </row>
+    <row>
+      <cell col="2" row="19">2급</cell>
+      <cell col="3" row="19">10분</cell>
+      <cell col="4" row="19" colspan="2">0.8초</cell>
+      <cell col="6" row="19" colspan="2">1.0밀리미터</cell>
+      <cell col="8" row="19">±1.0밀리미터</cell>
+    </row>
+    <row>
+      <cell col="2" row="20">3급</cell>
+      <cell col="3" row="20">10분</cell>
+      <cell col="4" row="20" colspan="2">1.6초</cell>
+      <cell col="6" row="20" colspan="2">-</cell>
+      <cell col="8" row="20">±3.0밀리미터</cell>
+    </row>
+    <row>
+      <cell col="1" row="21" rowspan="4">전자</cell>
+      <cell col="2" row="21" rowspan="2">등급</cell>
+      <cell col="3" row="21" colspan="6">항목</cell>
+      <cell col="9" row="21" rowspan="4">정밀도 :
+1킬로미터 왕복수준측량의 표준편차</cell>
+    </row>
+    <row>
+      <cell col="3" row="22">기포관감도
+(원형)</cell>
+      <cell col="4" row="22" colspan="2">Compensator
+정도</cell>
+      <cell col="6" row="22" colspan="2">최소눈금</cell>
+      <cell col="8" row="22">정밀도</cell>
+    </row>
+    <row>
+      <cell col="2" row="23">1급</cell>
+      <cell col="3" row="23">8분</cell>
+      <cell col="4" row="23" colspan="2">0.4초</cell>
+      <cell col="6" row="23" colspan="2">0.1밀리미터</cell>
+      <cell col="8" row="23">±0.6밀리미터</cell>
+    </row>
+    <row>
+      <cell col="2" row="24">2급</cell>
+      <cell col="3" row="24">10분</cell>
+      <cell col="4" row="24" colspan="2">0.8초</cell>
+      <cell col="6" row="24" colspan="2">1.0밀리미터</cell>
+      <cell col="8" row="24">±1.0밀리미터</cell>
+    </row>
+    <row>
+      <cell col="0" row="25" colspan="2" rowspan="5">거리측정기
+(광파)</cell>
+      <cell col="2" row="25" rowspan="2">등급</cell>
+      <cell col="3" row="25" colspan="6">항목</cell>
+      <cell col="9" row="25" rowspan="5">정밀도 :
+측정거리의 표준편차</cell>
+    </row>
+    <row>
+      <cell col="3" row="26" colspan="3">측정거리</cell>
+      <cell col="6" row="26" colspan="3">정밀도</cell>
+    </row>
+    <row>
+      <cell col="2" row="27">1급</cell>
+      <cell col="3" row="27" colspan="3">10킬로미터</cell>
+      <cell col="6" row="27" colspan="3">5밀리미터±1ppmㆍD</cell>
+    </row>
+    <row>
+      <cell col="2" row="28">2급</cell>
+      <cell col="3" row="28" colspan="3">6킬로미터</cell>
+      <cell col="6" row="28" colspan="3">5밀리미터±2ppmㆍD</cell>
+    </row>
+    <row>
+      <cell col="2" row="29">3급</cell>
+      <cell col="3" row="29" colspan="3">2킬로미터</cell>
+      <cell col="6" row="29" colspan="3">5밀리미터±5ppmㆍD</cell>
+    </row>
+    <row>
+      <cell col="0" row="30" rowspan="6">토털스테이션</cell>
+      <cell col="1" row="30" rowspan="3">등급</cell>
+      <cell col="2" row="30" colspan="7">항목</cell>
+      <cell col="9" row="30" rowspan="6">정밀도 :
+트랜싯 및 거리측정기 정밀도 적용</cell>
+    </row>
+    <row>
+      <cell col="2" row="31" colspan="4">각도측정부</cell>
+      <cell col="6" row="31" colspan="3">거리측정부</cell>
+    </row>
+    <row>
+      <cell col="2" row="32">눈금판</cell>
+      <cell col="3" row="32" colspan="3">정밀도</cell>
+      <cell col="6" row="32" colspan="2">측정거리</cell>
+      <cell col="8" row="32">정밀도</cell>
+    </row>
+    <row>
+      <cell col="1" row="33">1급</cell>
+      <cell col="2" row="33" colspan="4">1급 트랜싯 적용</cell>
+      <cell col="6" row="33" colspan="3" rowspan="2">2급 거리측정기 적용</cell>
+    </row>
+    <row>
+      <cell col="1" row="34">2급</cell>
+      <cell col="2" row="34" colspan="4">2급 트랜싯 적용</cell>
+    </row>
+    <row>
+      <cell col="1" row="35">3급</cell>
+      <cell col="2" row="35" colspan="4">3급 트랜싯 적용</cell>
+      <cell col="6" row="35" colspan="3">3급 거리측정기 적용</cell>
+    </row>
+    <row>
+      <cell col="0" row="36" rowspan="4">지엔에스에스(GNSS) 수신기</cell>
+      <cell col="1" row="36" rowspan="2">등급</cell>
+      <cell col="2" row="36" colspan="7">항목</cell>
+      <cell col="9" row="36" rowspan="4">정밀도 : 
+기선의 표준편차</cell>
+    </row>
+    <row>
+      <cell col="2" row="37" colspan="2">수신대역수</cell>
+      <cell col="4" row="37" colspan="3">측정거리</cell>
+      <cell col="7" row="37" colspan="2">정밀도</cell>
+    </row>
+    <row>
+      <cell col="1" row="38">1급</cell>
+      <cell col="2" row="38" colspan="2">2주파</cell>
+      <cell col="4" row="38" colspan="3">10킬로미터 이상</cell>
+      <cell col="7" row="38" colspan="2">5밀리미터±1ppmㆍD</cell>
+    </row>
+    <row>
+      <cell col="1" row="39">2급</cell>
+      <cell col="2" row="39" colspan="2">1주파</cell>
+      <cell col="4" row="39" colspan="3">10킬로미터 이하</cell>
+      <cell col="7" row="39" colspan="2">5밀리미터±2ppmㆍD</cell>
+    </row>
+    <row>
+      <cell col="0" row="40" rowspan="3">금속 또는 비금속 관로 탐지기</cell>
+      <cell col="1" row="40" rowspan="2">등급</cell>
+      <cell col="2" row="40" colspan="7">항목</cell>
+      <cell col="9" row="40" rowspan="3">정밀도 : 
+관측값의 표준편차</cell>
+    </row>
+    <row>
+      <cell col="2" row="41" colspan="3">측정깊이</cell>
+      <cell col="5" row="41" colspan="4">정밀도</cell>
+    </row>
+    <row>
+      <cell col="1" row="42"></cell>
+      <cell col="2" row="42" colspan="3">3미터</cell>
+      <cell col="5" row="42" colspan="4">ㆍ 평면위치 : ±20센티미터 이하
+ㆍ 탐사깊이 : ±30센티미터 이하</cell>
+    </row>
+    <row>
+      <cell col="0" row="43" colspan="10">※ 성능기준란의 각 측량기기별 등급은 출고된 당시의 성능을 변경하여 성능검사를 할 수 없다.</cell>
+    </row>
+  </table>
+</annex>

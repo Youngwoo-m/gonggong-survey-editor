@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식91의3" gubun="서식" no="91의3" title="측량기기 성능검사 대행자 및 소속직원 교육이수증 발급대장" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162455055">
+  <table rows="6" cols="7">
+    <row>
+      <cell col="0" row="0" colspan="7">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별지 제91호의 3 서식] &lt;신설 2021. 4. 8.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="7">측량기기 성능검사 대행자 및 소속직원 교육이수증 발급대장</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">이수번호</cell>
+      <cell col="1" row="3">이수일자</cell>
+      <cell col="2" row="3">법인
+(상호)명</cell>
+      <cell col="3" row="3">성명
+(대표자)</cell>
+      <cell col="4" row="3">사업장 소재지</cell>
+      <cell col="5" row="3">연락처
+(전화, 팩스)</cell>
+      <cell col="6" row="3">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="4"></cell>
+      <cell col="1" row="4"></cell>
+      <cell col="2" row="4"></cell>
+      <cell col="3" row="4"></cell>
+      <cell col="4" row="4"></cell>
+      <cell col="5" row="4"></cell>
+      <cell col="6" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="7">210mm×297mm[백상지(80g/㎡) 또는 중질지(80g/㎡)]</cell>
+    </row>
+  </table>
+</annex>

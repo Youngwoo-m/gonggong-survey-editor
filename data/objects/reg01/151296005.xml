@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="151296005" article="제188조" rows="8" cols="4" source="공공측량 작업규정.2025.04.23_수식수정.오류표시.hwpx">
+  <row>
+    <cell col="0" row="0">시설물 종류</cell>
+    <cell col="1" row="0">색상</cell>
+    <cell col="2" row="0">색상코드
+(R,G,B)</cell>
+    <cell col="3" row="0">비고</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">상수도</cell>
+    <cell col="1" row="1">청색</cell>
+    <cell col="2" row="1">0,0,255</cell>
+    <cell col="3" row="1" rowspan="7">※HSB, CMYK 코든는 RGB 코드를 참조하여 적용</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">하수도</cell>
+    <cell col="1" row="2">보라색</cell>
+    <cell col="2" row="2">255,0,255</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">가스</cell>
+    <cell col="1" row="3">황색</cell>
+    <cell col="2" row="3">255,102,0</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">통신</cell>
+    <cell col="1" row="4">녹색</cell>
+    <cell col="2" row="4">0,255,0</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">전기</cell>
+    <cell col="1" row="5">적색</cell>
+    <cell col="2" row="5">255,0,0</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">송유관</cell>
+    <cell col="1" row="6">갈색</cell>
+    <cell col="2" row="6">153,102,0</cell>
+  </row>
+  <row>
+    <cell col="0" row="7">난방열관</cell>
+    <cell col="1" row="7">주황색</cell>
+    <cell col="2" row="7">255,102,204</cell>
+  </row>
+</table>

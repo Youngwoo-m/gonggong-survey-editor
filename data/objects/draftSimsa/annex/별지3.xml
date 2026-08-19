@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지3" gubun="별지" no="3" title="자동검사 결과서" source="성과심사 규정 개정안 초안 (scripts/genforms_simsa.py)">
+  <text>[별지 제3호서식]
+자동검사 결과서 (제24조제2항 관련)</text>
+  <table rows="3" cols="4">
+    <row>
+      <cell col="0" row="0" header="1">사업명</cell>
+      <cell col="1" row="0" header="1"></cell>
+      <cell col="2" row="0" header="1">성과심사 단위</cell>
+      <cell col="3" row="0" header="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1">검사일</cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1">검사 도구ㆍ판(版)</cell>
+      <cell col="3" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2">검사 범위</cell>
+      <cell col="1" row="2" colspan="3">기계가 읽을 수 있는 형태로 제출된 성과 전체 (표본추출하지 아니한다)</cell>
+    </row>
+  </table>
+  <text>검사 결과 (별표 14)</text>
+  <table rows="7" cols="6">
+    <row>
+      <cell col="0" row="0" header="1">구분</cell>
+      <cell col="1" row="0" header="1">검사 항목</cell>
+      <cell col="2" row="0" header="1">대상 수</cell>
+      <cell col="3" row="0" header="1">걸린 수</cell>
+      <cell col="4" row="0" header="1">처리</cell>
+      <cell col="5" row="0" header="1">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">1. 파일</cell>
+      <cell col="1" row="1">형식ㆍ이름ㆍ인코딩ㆍ열림</cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1"></cell>
+      <cell col="4" row="1">보완 요구 / 해당 없음</cell>
+      <cell col="5" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2">2. 좌표계와 범위</cell>
+      <cell col="1" row="2">좌표계ㆍ범위ㆍ단위</cell>
+      <cell col="2" row="2"></cell>
+      <cell col="3" row="2"></cell>
+      <cell col="4" row="2">심사자 확인</cell>
+      <cell col="5" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">3. 속성</cell>
+      <cell col="1" row="3">필수 속성ㆍ값의 범위ㆍ코드값</cell>
+      <cell col="2" row="3"></cell>
+      <cell col="3" row="3"></cell>
+      <cell col="4" row="3">심사자 확인</cell>
+      <cell col="5" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4">4. 위상</cell>
+      <cell col="1" row="4">겹침과 틈ㆍ끊김ㆍ중복</cell>
+      <cell col="2" row="4"></cell>
+      <cell col="3" row="4"></cell>
+      <cell col="4" row="4">심사자 확인</cell>
+      <cell col="5" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5">5. 메타데이터</cell>
+      <cell col="1" row="5">필수 항목ㆍ성과와의 일치</cell>
+      <cell col="2" row="5"></cell>
+      <cell col="3" row="5"></cell>
+      <cell col="4" row="5">보완 요구 / 해당 없음</cell>
+      <cell col="5" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">6. 점군ㆍ영상</cell>
+      <cell col="1" row="6">점밀도ㆍ지상표본거리ㆍ결측</cell>
+      <cell col="2" row="6"></cell>
+      <cell col="3" row="6"></cell>
+      <cell col="4" row="6">심사자 확인</cell>
+      <cell col="5" row="6"></cell>
+    </row>
+  </table>
+  <table rows="3" cols="4">
+    <row>
+      <cell col="0" row="0" header="1">심사자 확인</cell>
+      <cell col="1" row="0" header="1">확인한 사람</cell>
+      <cell col="2" row="0" header="1"></cell>
+      <cell col="3" row="0" header="1">확인일</cell>
+    </row>
+    <row>
+      <cell col="0" row="1"></cell>
+      <cell col="1" row="1">확인 결과</cell>
+      <cell col="2" row="1">판정에 반영 / 반영하지 아니함</cell>
+      <cell col="3" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2"></cell>
+      <cell col="1" row="2">반영하지 아니한 사유</cell>
+      <cell col="2" row="2"></cell>
+      <cell col="3" row="2"></cell>
+    </row>
+  </table>
+  <text>비고
+1. 자동검사의 결과만으로 부적합으로 판정하지 아니합니다(제24조제3항).
+2. 검사 항목과 판정 논리는 공공측량시행자가 요청하면 알려 드립니다(제24조제4항).
+3. 이 결과서는 별지 제1호서식 또는 별지 제4호서식에 붙입니다.</text>
+</annex>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0118" article="제656조(用地幅杭点間測量)" rows="3" cols="4" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">区分 距離</cell>
+    <cell col="1" row="0" header="1">平 地</cell>
+    <cell col="2" row="0" header="1">山 地</cell>
+    <cell col="3" row="0" header="1">備 考</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">20m 未満</cell>
+    <cell col="1" row="1">10mm</cell>
+    <cell col="2" row="1">20mm</cell>
+    <cell col="3" row="1">点間距離が測定できる場合、Ｓは座 標差から求めた距離とする。 点間距離が測定できない場合、Ｓは 既知点又は既設点から用地幅杭点ま での距離のうち短い方とする。</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">20m 以上</cell>
+    <cell col="1" row="2">S/2,000</cell>
+    <cell col="2" row="2">S/1,000</cell>
+    <cell col="3" row="2"></cell>
+  </row>
+</table>

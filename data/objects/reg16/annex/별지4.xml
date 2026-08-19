@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지4" gubun="별지" no="4" title="수치표고 지형자료 추출 품질관리표" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=161554285">
+  <text>■ 수치표고모형의 구축 및 관리 등에 관한 규정 [별지 제4호서식]
+수치표고 지형자료 추출 품질관리표</text>
+  <table rows="1" cols="4">
+    <row>
+      <cell col="0" row="0">결과번호</cell>
+      <cell col="1" row="0"></cell>
+      <cell col="2" row="0">보고일</cell>
+      <cell col="3" row="0"></cell>
+    </row>
+  </table>
+  <table rows="4" cols="5">
+    <row>
+      <cell col="0" row="0">대상사업</cell>
+      <cell col="1" row="0" colspan="2"></cell>
+      <cell col="3" row="0">접수번호</cell>
+      <cell col="4" row="0"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1">검사자</cell>
+      <cell col="1" row="1" colspan="2"></cell>
+      <cell col="3" row="1">접수물량</cell>
+      <cell col="4" row="1">도엽</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">검사요청</cell>
+      <cell col="1" row="2" colspan="2"></cell>
+      <cell col="3" row="2">검사물량</cell>
+      <cell col="4" row="2">도엽</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">검사기간</cell>
+      <cell col="1" row="3" colspan="2"></cell>
+      <cell col="3" row="3">검사결과</cell>
+      <cell col="4" row="3">적합(완료), 적합(보완), 부적합</cell>
+    </row>
+  </table>
+  <text>□ 검사결과</text>
+  <table rows="10" cols="5">
+    <row>
+      <cell col="0" row="0">연번</cell>
+      <cell col="1" row="0" colspan="2">검사항목</cell>
+      <cell col="3" row="0">검사기준</cell>
+      <cell col="4" row="0">검사결과</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="4">1</cell>
+      <cell col="1" row="1" rowspan="4">항공LiDAR 측량 원시성과의 지형분류 점군데이터</cell>
+      <cell col="2" row="1">사업지역 충족 여부</cell>
+      <cell col="3" row="1">추출된 데이터 범위가 사업지역 충족 여부</cell>
+      <cell col="4" row="1">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="2" row="2">영역일관성</cell>
+      <cell col="3" row="2">추출된 자료가 적절한 좌표계로 구축 되었는지 여부</cell>
+      <cell col="4" row="2">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="2" row="3">지형분류</cell>
+      <cell col="3" row="3">점군데이터 중 지형자료로 분류된 성과의 적절성</cell>
+      <cell col="4" row="3">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="2" row="4">불연속선</cell>
+      <cell col="3" row="4">지형 불연속선의 적절성</cell>
+      <cell col="4" row="4">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="5" rowspan="5">2</cell>
+      <cell col="1" row="5" rowspan="5">수치도화 지형 Layer / 변화지역 수정도화 데이터</cell>
+      <cell col="2" row="5">사업지역 충족 여부</cell>
+      <cell col="3" row="5">추출된 layer 범위가 사업지역 충족 여부</cell>
+      <cell col="4" row="5">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="2" row="6">영역일관성</cell>
+      <cell col="3" row="6">수치표고모형이 적절한 좌표계로 구축되었는지 여부</cell>
+      <cell col="4" row="6">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="2" row="7">위치정확성</cell>
+      <cell col="3" row="7">수치도화의 허용오차가 구축하는 수치표고모형의 정확도 충족 여부</cell>
+      <cell col="4" row="7">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="2" row="8">지형 layer</cell>
+      <cell col="3" row="8">수치표고모형 생성을 위한 적절한 layer 추출 여부</cell>
+      <cell col="4" row="8">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="2" row="9">불연속선</cell>
+      <cell col="3" row="9">지형 불연속선의 적절성</cell>
+      <cell col="4" row="9">적합 / 부적합</cell>
+    </row>
+  </table>
+  <text>20  .   .   .
+붙임 1. 검사 위치도
+2. 수치표고 지형자료 추출 검사결과 및 세부내역</text>
+</annex>

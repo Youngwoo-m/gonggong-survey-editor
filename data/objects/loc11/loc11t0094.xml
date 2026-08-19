@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0094" article="제566조(グラウンドデータの作成)" rows="9" cols="3" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">交通施設</cell>
+    <cell col="1" row="0" header="1">道路施設等</cell>
+    <cell col="2" row="0" header="1">道路橋（長さ５ｍ以上）、高架橋、横断歩道橋、照明灯、信号灯、道路情報板 等</cell>
+  </row>
+  <row>
+    <cell col="0" row="1"></cell>
+    <cell col="1" row="1">鉄道施設</cell>
+    <cell col="2" row="1">鉄道橋（長さ５ｍ以上）、高架橋（モノレールの高架橋含む。）、跨 こ 線橋、プラ ットホーム、プラットホーム上屋、架線支柱、信号灯支柱</cell>
+  </row>
+  <row>
+    <cell col="0" row="2"></cell>
+    <cell col="1" row="2">移 動 体</cell>
+    <cell col="2" row="2">駐車車両、鉄道車両、船舶</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">建物等</cell>
+    <cell col="1" row="3">建物及び 附属施設等</cell>
+    <cell col="2" row="3">一般住宅、工場、倉庫、公共施設、駅舎、無壁舎、温室、ビニールハウス、 競技場のスタンド、門、プール（土台部分含む。）、塀</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">小物体</cell>
+    <cell col="1" row="4"></cell>
+    <cell col="2" row="4">記念碑、鳥居、貯水槽、肥料槽、給水塔、起重機、煙突、高塔、電波塔、灯台、 灯標、輸送管（地上、空間）、送電線</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">水部等</cell>
+    <cell col="1" row="5">水部に関する 構 造 物</cell>
+    <cell col="2" row="5">浮き桟橋、水位観測施設、河川表示板</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">植 生</cell>
+    <cell col="1" row="6"></cell>
+    <cell col="2" row="6">樹木※１、竹林※１、生垣※１</cell>
+  </row>
+  <row>
+    <cell col="0" row="7">その他</cell>
+    <cell col="1" row="7">そ の 他</cell>
+    <cell col="2" row="7">大規模な改変工事中の地域※２、地下鉄工事等の開削部、資材置場等の材料、 資材</cell>
+  </row>
+  <row>
+    <cell col="0" row="8">備 考</cell>
+    <cell col="1" row="8">※１ 地表面として、判断できる部分は可能な限り採用するものとする。 ※２ 地表面として、ほぼ恒久的であると判断できるものは採用するものとする。</cell>
+    <cell col="2" row="8"></cell>
+  </row>
+</table>

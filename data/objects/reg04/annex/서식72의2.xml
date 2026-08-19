@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식72의2" gubun="서식" no="72의2" title="지적전산자료 이용ㆍ활용 신청서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454915">
+  <table rows="23" cols="17">
+    <row>
+      <cell col="0" row="0" colspan="17">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별지 제72호의2서식] &lt;신설 2024. 9. 20.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="17">지적전산자료 이용ㆍ활용 신청서</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="13">※ 색상이 어두운 란은 신청인이 적지 않으며, [  ]에는 해당되는 곳에 √ 표시를 합니다.</cell>
+      <cell col="13" row="2" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="3">접수번호</cell>
+      <cell col="3" row="3" colspan="2"></cell>
+      <cell col="5" row="3" colspan="2"></cell>
+      <cell col="7" row="3" colspan="3">접수일</cell>
+      <cell col="10" row="3" colspan="4"></cell>
+      <cell col="14" row="3" colspan="2">처리기간</cell>
+      <cell col="16" row="3">7일</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="3"></cell>
+      <cell col="3" row="4" colspan="2"></cell>
+      <cell col="5" row="4" colspan="2"></cell>
+      <cell col="7" row="4" colspan="2"></cell>
+      <cell col="9" row="4"></cell>
+      <cell col="10" row="4" colspan="4"></cell>
+      <cell col="14" row="4" colspan="2"></cell>
+      <cell col="16" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="2" rowspan="2">신청인</cell>
+      <cell col="2" row="5" colspan="10">성명</cell>
+      <cell col="12" row="5" colspan="5">생년월일</cell>
+    </row>
+    <row>
+      <cell col="2" row="6" colspan="15">주소</cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8" rowspan="6">신청사항</cell>
+      <cell col="1" row="8" colspan="16">이용ㆍ활용하려는 지적전산자료</cell>
+    </row>
+    <row>
+      <cell col="1" row="9" colspan="16">이용ㆍ활용 목적</cell>
+    </row>
+    <row>
+      <cell col="1" row="10" colspan="16">법적 근거</cell>
+    </row>
+    <row>
+      <cell col="1" row="11" colspan="5" rowspan="2">자료 범위</cell>
+      <cell col="6" row="11" colspan="11">[  ] 기개발자료    [  ] 신규개발자료</cell>
+    </row>
+    <row>
+      <cell col="6" row="12" colspan="11">[  ] 전국          [  ] 시ㆍ도           [  ] 시ㆍ군ㆍ구</cell>
+    </row>
+    <row>
+      <cell col="1" row="13" colspan="5">자료제공 방법</cell>
+      <cell col="6" row="13" colspan="11">[  ] 인쇄물        [  ] 전산매체</cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="17">「공간정보의 구축 및 관리 등에 관한 법률」 제76조제1항, 같은 법 시행령 제62조제3항 및 같은 법 시행규칙 제75조제2항에 따라 위와 같이 신청합니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="17">년          월          일</cell>
+    </row>
+    <row>
+      <cell col="0" row="17" colspan="8"></cell>
+      <cell col="8" row="17" colspan="3">신청인</cell>
+      <cell col="11" row="17" colspan="4"></cell>
+      <cell col="15" row="17" colspan="2">(서명 또는 인)</cell>
+    </row>
+    <row>
+      <cell col="0" row="18" colspan="4">국토교통부장관
+시ㆍ도지사
+지적소관청</cell>
+      <cell col="4" row="18" colspan="13">귀하</cell>
+    </row>
+    <row>
+      <cell col="0" row="19" colspan="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20" rowspan="2">첨부서류</cell>
+      <cell col="1" row="20" colspan="15" rowspan="2">「공간정보의 구축 및 관리 등에 관한 법률 시행령」 제62조제2항에 따른 관계 중앙행정기관의 장의 심사 결과(「공간정보의 구축 및 관리 등에 관한 법률」 제76조제2항 단서에 따라 중앙행정기관의 장, 그 소속 기관의 장 또는 지방자치단체의 장이 지적전산자료의 이용 또는 활용을 신청하는 경우 또는 같은 조 제3항 각 호의 어느 하나에 해당하는 경우로서 관계 중앙행정기관의 심사를 받지 않는 경우는 제외합니다)</cell>
+      <cell col="16" row="20">수수료</cell>
+    </row>
+    <row>
+      <cell col="16" row="21">1필지당 각 
+인쇄물: 30원
+전산매체: 20원</cell>
+    </row>
+    <row>
+      <cell col="0" row="22" colspan="17">210㎜×297㎜[백상지(80g/㎡) 또는 중질지(80g/㎡)]</cell>
+    </row>
+  </table>
+</annex>

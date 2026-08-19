@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표38" gubun="별표" no="38" title="노출관로 위치측량 조서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296303">
+  <table rows="11" cols="7">
+    <row>
+      <cell col="0" row="0" colspan="7">노출관로 위치측량 조서</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="7">사 업 명 :</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">측량날짜</cell>
+      <cell col="1" row="2" colspan="2">년   월   일</cell>
+      <cell col="3" row="2">측점명</cell>
+      <cell col="4" row="2" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">좌표(GRS80)</cell>
+      <cell col="2" row="3" rowspan="2">시설물종류</cell>
+      <cell col="3" row="3" rowspan="2">재질</cell>
+      <cell col="4" row="3" rowspan="2">관경</cell>
+      <cell col="5" row="3" rowspan="2">이격거리</cell>
+      <cell col="6" row="3" rowspan="2">심도</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">X(N)</cell>
+      <cell col="1" row="4">Y(E)</cell>
+    </row>
+    <row>
+      <cell col="0" row="5"></cell>
+      <cell col="1" row="5"></cell>
+      <cell col="2" row="5"></cell>
+      <cell col="3" row="5"></cell>
+      <cell col="4" row="5"></cell>
+      <cell col="5" row="5"></cell>
+      <cell col="6" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6" colspan="3"></cell>
+      <cell col="3" row="6" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="3">근 경</cell>
+      <cell col="3" row="7" colspan="4">원 경</cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="3"></cell>
+      <cell col="3" row="8" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="3">지거측량 기준점</cell>
+      <cell col="3" row="9" colspan="4">관로 측량점</cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="7">* 보드판을 활용한 사진촬영(휴대폰 어플 사용가능)</cell>
+    </row>
+  </table>
+</annex>

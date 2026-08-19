@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="t4315" article="현장작업 환경별 안전관리비 가산율(안)" rows="12" cols="5" source="건설업 산업안전보건관리비 계상 및 사용기준 (고용노동부고시 제2025-11호)">
+  <row>
+    <cell col="0" row="0" header="1">위험등급</cell>
+    <cell col="1" row="0" header="1">현장작업 환경</cell>
+    <cell col="2" row="0" header="1">핵심 위험</cell>
+    <cell col="3" row="0" header="1">가산율(%)</cell>
+    <cell col="4" row="0" header="1">가산율의 근거</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">Ⅰ (일반)</cell>
+    <cell col="1" row="1">도심·주거 및 일반 개활지</cell>
+    <cell col="2" row="1">보행자·차량 혼재, 장비 전도</cell>
+    <cell col="3" row="1">0</cell>
+    <cell col="4" row="1">기준 요율(특수건설공사 요율)을 그대로 적용한다</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">Ⅱ (주의)</cell>
+    <cell col="1" row="2">건설·산업시설 환경</cell>
+    <cell col="2" row="2">중장비 협착, 추락, 개구부</cell>
+    <cell col="3" row="2">45</cell>
+    <cell col="4" row="2">고시의 건축공사 요율이 기준 요율보다 45퍼센트 높은 것에 준한다</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">Ⅱ (주의)</cell>
+    <cell col="1" row="3">무인비행장치 운용 환경</cell>
+    <cell col="2" row="3">기체 추락, 제3자 피해, 비행 규제</cell>
+    <cell col="3" row="3">45</cell>
+    <cell col="4" row="3">고시의 건축공사 요율이 기준 요율보다 45퍼센트 높은 것에 준한다</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">Ⅲ (경계)</cell>
+    <cell col="1" row="4">도로·교통 인접 환경</cell>
+    <cell col="2" row="4">주행차량 침범, 이차사고</cell>
+    <cell col="3" row="4">60</cell>
+    <cell col="4" row="4">고시의 토목공사 요율이 기준 요율보다 59퍼센트 높은 것에 준한다</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">Ⅲ (경계)</cell>
+    <cell col="1" row="5">산악·급경사 및 원격지</cell>
+    <cell col="2" row="5">추락·낙석, 구조 지연, 통신 두절</cell>
+    <cell col="3" row="5">60</cell>
+    <cell col="4" row="5">고시의 토목공사 요율이 기준 요율보다 59퍼센트 높은 것에 준한다</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">Ⅲ (경계)</cell>
+    <cell col="1" row="6">하천·수변 환경</cell>
+    <cell col="2" row="6">익수, 급격한 수위 변화</cell>
+    <cell col="3" row="6">60</cell>
+    <cell col="4" row="6">고시의 토목공사 요율이 기준 요율보다 59퍼센트 높은 것에 준한다</cell>
+  </row>
+  <row>
+    <cell col="0" row="7">Ⅳ (위험)</cell>
+    <cell col="1" row="7">지하·밀폐공간 환경</cell>
+    <cell col="2" row="7">산소결핍, 유해가스, 구조 곤란</cell>
+    <cell col="3" row="7">90</cell>
+    <cell col="4" row="7">고시의 중건설공사(터널신설공사 등) 요율이 기준 요율보다 90퍼센트 높은 것에 준한다</cell>
+  </row>
+  <row>
+    <cell col="0" row="8">(비고) 1. 가산율은 그 환경에 해당하는 작업 구간의 대상액에만 적용한다. 구간별 대상액은 작업량이나 투입 인일수의 비율로 나눈다.</cell>
+    <cell col="1" row="8"></cell>
+    <cell col="2" row="8"></cell>
+    <cell col="3" row="8"></cell>
+    <cell col="4" row="8"></cell>
+  </row>
+  <row>
+    <cell col="0" row="9">(비고) 2. 한 구간에 두 가지 이상의 환경이 겹치는 경우에는 가장 높은 가산율 하나만 적용하고 거듭 더하지 아니한다.</cell>
+    <cell col="1" row="9"></cell>
+    <cell col="2" row="9"></cell>
+    <cell col="3" row="9"></cell>
+    <cell col="4" row="9"></cell>
+  </row>
+  <row>
+    <cell col="0" row="10">(비고) 3. 야간작업, 동절기 작업 등 위험을 크게 하는 사정이 있는 경우에는 시행자가 가산율을 더 높일 수 있다.</cell>
+    <cell col="1" row="10"></cell>
+    <cell col="2" row="10"></cell>
+    <cell col="3" row="10"></cell>
+    <cell col="4" row="10"></cell>
+  </row>
+  <row>
+    <cell col="0" row="11">(비고) 4. 등급 배정과 가산율은 현장작업 환경별 위험특성 분석 결과가 나오면 다시 검토한다.</cell>
+    <cell col="1" row="11"></cell>
+    <cell col="2" row="11"></cell>
+    <cell col="3" row="11"></cell>
+    <cell col="4" row="11"></cell>
+  </row>
+</table>

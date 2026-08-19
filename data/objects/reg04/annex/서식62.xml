@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식62" gubun="서식" no="62" title="지적공부 반출 승인신청" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454797">
+  <table rows="1" cols="1">
+    <row>
+      <cell col="0" row="0">행 정 기 관 명
+수신자  
+(참 조)
+제 목  지적공부 반출 승인신청</cell>
+    </row>
+  </table>
+  <table rows="4" cols="8">
+    <row>
+      <cell col="0" row="0" colspan="2">토  지   소  재</cell>
+      <cell col="2" row="0" rowspan="2">공부구분</cell>
+      <cell col="3" row="0" rowspan="2">수   량</cell>
+      <cell col="4" row="0" rowspan="2">지번 또는
+도면번호</cell>
+      <cell col="5" row="0" rowspan="2">반출장소</cell>
+      <cell col="6" row="0" rowspan="2">반출기간</cell>
+      <cell col="7" row="0" rowspan="2">비   고</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">읍ㆍ면</cell>
+      <cell col="1" row="1">동ㆍ리</cell>
+    </row>
+    <row>
+      <cell col="0" row="2"></cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2"></cell>
+      <cell col="3" row="2"></cell>
+      <cell col="4" row="2"></cell>
+      <cell col="5" row="2"></cell>
+      <cell col="6" row="2"></cell>
+      <cell col="7" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="8">반출사유 :</cell>
+    </row>
+  </table>
+  <table rows="1" cols="2">
+    <row>
+      <cell col="0" row="0">발 신 기 관 장</cell>
+      <cell col="1" row="0">직인</cell>
+    </row>
+  </table>
+  <table rows="7" cols="16">
+    <row>
+      <cell col="0" row="0" colspan="16"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="3">기안자  직위(직급) 서명</cell>
+      <cell col="3" row="1" colspan="8">검토자  직위(직급)서명</cell>
+      <cell col="11" row="1" colspan="5">결재권자  직위 (직급)서명</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">협조자</cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2" colspan="2"></cell>
+      <cell col="4" row="2" colspan="2"></cell>
+      <cell col="6" row="2" colspan="4"></cell>
+      <cell col="10" row="2" colspan="2"></cell>
+      <cell col="12" row="2" colspan="3"></cell>
+      <cell col="15" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">시행</cell>
+      <cell col="1" row="3" colspan="5">처리과-일련번호(시행일자)</cell>
+      <cell col="6" row="3" colspan="3">접수</cell>
+      <cell col="9" row="3" colspan="7">처리과명-일련번호(접수일자)</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">우</cell>
+      <cell col="1" row="4" colspan="6">주소</cell>
+      <cell col="7" row="4">/</cell>
+      <cell col="8" row="4" colspan="8">홈페이지 주소</cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="2">전화(  )</cell>
+      <cell col="2" row="5" colspan="3">전송(  )</cell>
+      <cell col="5" row="5">/</cell>
+      <cell col="6" row="5" colspan="7">기안자의 공식전자우편주소</cell>
+      <cell col="13" row="5">/</cell>
+      <cell col="14" row="5" colspan="2">공개구분</cell>
+    </row>
+    <row>
+      <cell col="0" row="6" colspan="16">210㎜×297㎜ (일반용지 60g/㎡(재활용품)</cell>
+    </row>
+  </table>
+  <table rows="2" cols="1">
+    <row>
+      <cell col="0" row="0">[별지 제62호서식] &lt;개정 2015.6.4.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">「공간정보의 구축 및 관리 등에 관한 법률」 제69조제1항 및 같은 법 시행규칙 제67조에 따라 다음과 같이 지적공부를 반출하려 하니 승인해 주시기 바랍니다.</cell>
+    </row>
+  </table>
+</annex>

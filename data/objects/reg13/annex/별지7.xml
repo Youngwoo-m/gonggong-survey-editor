@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지7" gubun="별지" no="7" title="기준점 메타데이터" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=118668815">
+  <text>[별지 제7호서식] 기준점 메타데이터</text>
+  <table rows="4" cols="11">
+    <row>
+      <cell col="0" row="0">연번</cell>
+      <cell col="1" row="0">1</cell>
+      <cell col="2" row="0">2</cell>
+      <cell col="3" row="0">3</cell>
+      <cell col="4" row="0">4</cell>
+      <cell col="5" row="0">5</cell>
+      <cell col="6" row="0">6</cell>
+      <cell col="7" row="0">7</cell>
+      <cell col="8" row="0">8</cell>
+      <cell col="9" row="0">9</cell>
+      <cell col="10" row="0">10</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">구분</cell>
+      <cell col="1" row="1">기준점식별자</cell>
+      <cell col="2" row="1">기준점 종류</cell>
+      <cell col="3" row="1">기준점 번호</cell>
+      <cell col="4" row="1">기준점 상태</cell>
+      <cell col="5" row="1">기준점 위치설명</cell>
+      <cell col="6" row="1">기준점 관측일</cell>
+      <cell col="7" row="1">용역수행업체명</cell>
+      <cell col="8" row="1">사업년도</cell>
+      <cell col="9" row="1">도 (특시)</cell>
+      <cell col="10" row="1">도엽명</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">컬럼명</cell>
+      <cell col="1" row="2">UFID</cell>
+      <cell col="2" row="2">CTRLPNT_KND</cell>
+      <cell col="3" row="2">CTRLPNT_NO</cell>
+      <cell col="4" row="2">CTRLPNT_STUS</cell>
+      <cell col="5" row="2">CTRLPNT_COURS</cell>
+      <cell col="6" row="2">CTRLPNT_OBSR_DE</cell>
+      <cell col="7" row="2">DLVGBIZ_NM</cell>
+      <cell col="8" row="2">MESR_BSNS_YEAR</cell>
+      <cell col="9" row="2">ADMIN</cell>
+      <cell col="10" row="2">5k</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">필수/
+선택</cell>
+      <cell col="1" row="3">M</cell>
+      <cell col="2" row="3">M</cell>
+      <cell col="3" row="3">M</cell>
+      <cell col="4" row="3">M</cell>
+      <cell col="5" row="3">M</cell>
+      <cell col="6" row="3">M</cell>
+      <cell col="7" row="3">M</cell>
+      <cell col="8" row="3">M</cell>
+      <cell col="9" row="3">M</cell>
+      <cell col="10" row="3">M</cell>
+    </row>
+  </table>
+  <table rows="4" cols="11">
+    <row>
+      <cell col="0" row="0">연번</cell>
+      <cell col="1" row="0">11</cell>
+      <cell col="2" row="0">12</cell>
+      <cell col="3" row="0">13</cell>
+      <cell col="4" row="0">14</cell>
+      <cell col="5" row="0">15</cell>
+      <cell col="6" row="0">16</cell>
+      <cell col="7" row="0">17</cell>
+      <cell col="8" row="0">18</cell>
+      <cell col="9" row="0">19</cell>
+      <cell col="10" row="0">20</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">구분</cell>
+      <cell col="1" row="1">특이사항</cell>
+      <cell col="2" row="1">평면직각좌표 관측방법</cell>
+      <cell col="3" row="1">평면직각좌표X</cell>
+      <cell col="4" row="1">평면직각좌표Y</cell>
+      <cell col="5" row="1">타원체고</cell>
+      <cell col="6" row="1">표고</cell>
+      <cell col="7" row="1">평면직각좌표 투영원점</cell>
+      <cell col="8" row="1">평면직각좌표 투영방법</cell>
+      <cell col="9" row="1">타원체고 관측방법</cell>
+      <cell col="10" row="1">표고 측량방법</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">컬럼명</cell>
+      <cell col="1" row="2">PARTCLR_MATTER</cell>
+      <cell col="2" row="2">CTRLPNT_OBSR_MTH</cell>
+      <cell col="3" row="2">PRO_CRDNT_X</cell>
+      <cell col="4" row="2">PRO_CRDNT_Y</cell>
+      <cell col="5" row="2">ELLIP_HGH</cell>
+      <cell col="6" row="2">VERTCL_VALUE</cell>
+      <cell col="7" row="2">PRJCTN_ORIGIN</cell>
+      <cell col="8" row="2">PRJCTN_MTH</cell>
+      <cell col="9" row="2">ELLIPSOID_HGT_OBSR_MTH</cell>
+      <cell col="10" row="2">VERTCL_OBSR_MTH</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">필수/
+선택</cell>
+      <cell col="1" row="3">O</cell>
+      <cell col="2" row="3">O</cell>
+      <cell col="3" row="3">M</cell>
+      <cell col="4" row="3">M</cell>
+      <cell col="5" row="3">O</cell>
+      <cell col="6" row="3">M</cell>
+      <cell col="7" row="3">M</cell>
+      <cell col="8" row="3">O</cell>
+      <cell col="9" row="3">O</cell>
+      <cell col="10" row="3">O</cell>
+    </row>
+  </table>
+  <table rows="4" cols="8">
+    <row>
+      <cell col="0" row="0">연번</cell>
+      <cell col="1" row="0">21</cell>
+      <cell col="2" row="0">22</cell>
+      <cell col="3" row="0">23</cell>
+      <cell col="4" row="0">24</cell>
+      <cell col="5" row="0">25</cell>
+      <cell col="6" row="0">26</cell>
+      <cell col="7" row="0">27</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">구분</cell>
+      <cell col="1" row="1">표고 정밀도</cell>
+      <cell col="2" row="1">지오이드 모델</cell>
+      <cell col="3" row="1">사진경로(지상_근경)</cell>
+      <cell col="4" row="1">사진경로(지상_원경)</cell>
+      <cell col="5" row="1">사진경로(영상_근경)</cell>
+      <cell col="6" row="1">사진경로(영상_원경)</cell>
+      <cell col="7" row="1">GCP Patch 경로</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">컬럼명</cell>
+      <cell col="1" row="2">VERTCL_PRECISE</cell>
+      <cell col="2" row="2">GEOID_MDL</cell>
+      <cell col="3" row="2">IMAGES_LAND_C</cell>
+      <cell col="4" row="2">IMAGES_LAND_D</cell>
+      <cell col="5" row="2">IMAGES_AIR_C</cell>
+      <cell col="6" row="2">IMAGES_AIR_D</cell>
+      <cell col="7" row="2">IMAGES_Patch</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">필수/
+선택</cell>
+      <cell col="1" row="3">O</cell>
+      <cell col="2" row="3">O</cell>
+      <cell col="3" row="3">M</cell>
+      <cell col="4" row="3">M</cell>
+      <cell col="5" row="3">M</cell>
+      <cell col="6" row="3">M</cell>
+      <cell col="7" row="3">O</cell>
+    </row>
+  </table>
+  <table rows="3" cols="1">
+    <row>
+      <cell col="0" row="0">기준점 메타데이터 작성 방법</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">1. 기준점 식별자(PK)
+ - 국토지리정보원에서 취합완료 후 일련번호 일괄 부여
+2. 기준점 종류
+ - (평면점) 타원체고나 표고가 없이 평면좌표만 있는 점 - code : 1
+ - (표고점) 한국수직기준계에 의한 정표고만 있는 점 - code : 2
+ - (평면표고점) 평면좌표와 함께 표고 또는 타원체고가 있는 점 - code : 5
+ - (검사점) 지상기준점의 정확도 평가를 위한 점 - code : 3
+3. 기준점 번호
+ - 측량기준점(삼각점, 수준점, 통합기준점)을 사용하는 경우 점의번호 그대로 기입
+ - 기준점신설시사업년도(숫자2자리)+_(언더바)+도엽번호(숫자5자리)+ 구분자(ex.T,L,TL)+일련번호(숫자3자리)부여
+ - 구분 : 평면기준점(T), 표고기준점(L), 평면/표고기준점(TL), 보조점(TP), 검사점(CK)
+ - 일련번호 : 기준점 구분 순서로 연속하여 배정 
+  ※ 평면기준점의 표시 형식(예) : 21_37608T001 (21년 사업 37608 도엽번호 T 평면 001 일련번호)
+4. 기준점 상태
+ - 사용가능(1), 사용불가(2), 사용보류(3)
+ - 기존 점의 망실 등을 확인한 경우 사용불가(2) 표기
+ - 일시적으로 사용이 불가하거나 사용가능 여부를 확인할 수 없을 때 사용보류(3) 표기
+5. 기준점 위치설명
+ - 기준점 위치를 찾기 위한 보조수단으로서의 경로 설명
+6. 기준점 관측일
+ - 기준점측량의 수행일. 두가지 이상의 측량을 서로 다른 날짜에 수행한 경우 마지막 관측일
+ - 연도(4)+월(2)+일(2)의 6자리 숫자로 표시(예, 20190401)
+7. 용역수행업체명
+ - 해당사업의 수행업체(컨소시엄인 경우 대표사 명)
+8. 사업년도
+ - 당해사업 계약연도 숫자 4자리(이월사업인 경우 관측연도와 사업연도가 다를 수 있음)
+ - 기준점 좌표 변경없이 GCP patch 등을 변경하는 경우에도 업체명과 사업년도 update
+9. 도(특시)
+ - 기준점이 위치한 (도, 광역시 단위 행정구역 명)
+10. 도엽명
+ - 기준점이 위치한 지역의 1/5,000 도엽번호
+11. 특이사항
+ - 해당 지상기준점의 특이사항 기록
+12. 평면직각좌표 관측방법
+ - Static 방식 1, RTK 방식 2, Network RTK 방식 3, 영상 추출 4, 수치지형도 추출 5, 기타 6
+13. 14. 평면직각좌표
+ - 평면직각좌표를 m단위로 소수점 3자리까지 기입(예, 514190.673)
+ - 단위(m)는 적지 않고 숫자만 기입
+15. 타원체고
+ - GRS80 기준타원체면 상의 높이를 m단위로 소수점 3자리가지 기입
+16. 표고
+ - 직접 또는 간접수준측량 방법으로 산출한 정표고 기입
+ - 간접수준측량한 경우 타원체고와 지오이드모델을 반드시 작성
+  ※ 정표고 = 타원체고 - 지오이드고
+ - 직접수준측량한 경우 타원체고는 공란 
+17. 평면직각좌표 투영원점
+ - TM 투영의 경우 1~5 선택
+ - UTM-K 투영의 경우 6 선택
+18. 평면직각좌표 투영방법
+ - TM 좌표의 경우 1 선택
+ - UTM-K 좌표계는 TM 투영임에도 불구하고 명확한 구분을 위해 별도코드 3 입력
+19. 타원체고 관측방법
+ - static 1, RTK 2, Network-RTK 3 입력
+20. 표고 측량방법
+ - 직접 수준측량 code : 1
+ - 간접 수준측량 code : 2
+21. 표고 정밀도
+ - 직접수준측량은 잔차 입력, 간접수준측량은 공란
+22. 지오이드모델
+ - 후처리에 사용하였거나 GNSS 수신기에 탑재된 지오이드 모델 코드 입력
+23∼27. 이미지 경로
+ - 이미지 파일 링크
+ - 파일명은 구분자(1자리)+점번호(9자리) + 확장자
+ - 구분 : 원경(d), 근경(c), GCP patch(p)
+ - 예시 : 37608T001의 지상사진근경(\images\land\C37608T001.jpg), 지상사진원경 (\images\land\D37608T001.jpg), 
+항공사진근경(\images\air\C37608T001.jpg),  
+항공사진원경 (\images\air\D37608T001.jpg), 
+GCP patch(\images\P37608T001.jpg)
+ - 기준점 DB(엑셀파일)과 동일 폴더 내에 IMAGES 폴더에 이미지 저장
+ - GCP Patch는 항공사진 원본을 GCP 중심으로 200pixel X 200pixel 크기로 잘라 생성</cell>
+    </row>
+    <row>
+      <cell col="0" row="2"></cell>
+    </row>
+  </table>
+</annex>

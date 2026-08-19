@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지2" gubun="별지" no="2" title="공통기준점 사용에 관한 상호 협약서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=59322929">
+  <text>[별지 제2호 서식]
+공통기준점 사용에 관한 상호 협약서
+○○사와 ○○사는 ○○건설공사에 있어 향후 중심선 연결 시 양사의 공구 경계점에서 평면 또는 수직방향으로 허용오차 이상의 오차가 발생되지 않도록 하기 위하여 공구경계에서는 아래의 시공기준점을 공통으로 사용할 것을 상호 협약한다.
+―     아       래     ―
+□ 공사명 :
+□ 시공사
+제 ○공구 :
+제 ○공구 :
+□ 공통 기준점 성과</text>
+  <table rows="4" cols="6">
+    <row>
+      <cell col="0" row="0">기준점 명칭</cell>
+      <cell col="1" row="0">적용 기준</cell>
+      <cell col="2" row="0">X(N)</cell>
+      <cell col="3" row="0">Y(E)</cell>
+      <cell col="4" row="0">Z(H)</cell>
+      <cell col="5" row="0">소재지</cell>
+    </row>
+    <row>
+      <cell col="0" row="1"></cell>
+      <cell col="1" row="1">예) 평면및표고</cell>
+      <cell col="2" row="1">m</cell>
+      <cell col="3" row="1">m</cell>
+      <cell col="4" row="1">m</cell>
+      <cell col="5" row="1">○공구</cell>
+    </row>
+    <row>
+      <cell col="0" row="2"></cell>
+      <cell col="1" row="2">예) 평면좌표</cell>
+      <cell col="2" row="2">m</cell>
+      <cell col="3" row="2">m</cell>
+      <cell col="4" row="2">m</cell>
+      <cell col="5" row="2">○공구</cell>
+    </row>
+    <row>
+      <cell col="0" row="3"></cell>
+      <cell col="1" row="3">예) 표고</cell>
+      <cell col="2" row="3">m</cell>
+      <cell col="3" row="3">m</cell>
+      <cell col="4" row="3">m</cell>
+      <cell col="5" row="3">○공구</cell>
+    </row>
+  </table>
+  <text>□ 첨부 : 점의조서
+20   .    .
+제○공구 : ○○건설 주식회사
+공사부장   ○○○ 인
+공사과장   ○○○ 인
+측량담당   ○○○ 인
+제○공구 : ○○건설 주식회사
+공사부장   ○○○ 인
+공사과장   ○○○ 인
+측량담당   ○○○ 인
+210mm×297mm(일반용지 60g/㎡)</text>
+</annex>

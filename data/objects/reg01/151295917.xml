@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="151295917" article="제62조" rows="2" cols="4" source="공공측량 작업규정.2025.04.23_수식수정.오류표시.hwpx">
+  <row>
+    <cell col="0" row="0">축척</cell>
+    <cell col="1" row="0">수평위치의 표준편차</cell>
+    <cell col="2" row="0">표고점의 표준편차</cell>
+    <cell col="3" row="0">등고선의 표준편차</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">250
+500
+1000
+2500
+5000
+10000</cell>
+    <cell col="1" row="1">0.12m이내
+0.25m이내
+0.70m이내
+1.75m이내
+3.50m이내
+7.00m이내</cell>
+    <cell col="2" row="1">0.25m이내
+0.25m이내
+0.33m이내
+0.66m이내
+1.66m이내
+3.33m이내</cell>
+    <cell col="3" row="1">0.5m이내
+0.5m이내
+0.5m이내
+1.0m이내
+2.5m이내
+5.0m이내</cell>
+  </row>
+</table>

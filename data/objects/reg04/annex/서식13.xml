@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식13" gubun="서식" no="13" title="공공측량성과 심사신청서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454437">
+  <table rows="2" cols="13">
+    <row>
+      <cell col="0" row="0">신청서 제출</cell>
+      <cell col="1" row="0"></cell>
+      <cell col="2" row="0">접 수</cell>
+      <cell col="3" row="0"></cell>
+      <cell col="4" row="0">처리부 등재</cell>
+      <cell col="5" row="0"></cell>
+      <cell col="6" row="0">성과 심사
+수수료 산정
+(신청인에 통지)</cell>
+      <cell col="7" row="0"></cell>
+      <cell col="8" row="0">성과 심사</cell>
+      <cell col="9" row="0"></cell>
+      <cell col="10" row="0">기안 ㆍ 결재</cell>
+      <cell col="11" row="0"></cell>
+      <cell col="12" row="0">통 지</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">신청인</cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1">측량성과 심사
+수탁기관</cell>
+      <cell col="3" row="1"></cell>
+      <cell col="4" row="1">측량성과 심사
+수탁기관</cell>
+      <cell col="5" row="1"></cell>
+      <cell col="6" row="1">측량성과 심사
+수탁기관</cell>
+      <cell col="7" row="1"></cell>
+      <cell col="8" row="1">측량성과 심사
+수탁기관</cell>
+      <cell col="9" row="1"></cell>
+      <cell col="10" row="1">측량성과 심사
+수탁기관</cell>
+      <cell col="11" row="1"></cell>
+      <cell col="12" row="1"></cell>
+    </row>
+  </table>
+  <table rows="25" cols="14">
+    <row>
+      <cell col="0" row="0" colspan="14">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별지 제13호서식] &lt;개정 2022. 12. 13.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="14">공공측량성과 심사신청서</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="6"></cell>
+      <cell col="6" row="2" colspan="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">접수번호</cell>
+      <cell col="2" row="3"></cell>
+      <cell col="3" row="3">접수일</cell>
+      <cell col="4" row="3" colspan="2"></cell>
+      <cell col="6" row="3">발급일</cell>
+      <cell col="7" row="3" colspan="3"></cell>
+      <cell col="10" row="3" colspan="3">처리기간</cell>
+      <cell col="13" row="3">20일</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="2"></cell>
+      <cell col="2" row="4"></cell>
+      <cell col="3" row="4"></cell>
+      <cell col="4" row="4" colspan="2"></cell>
+      <cell col="6" row="4"></cell>
+      <cell col="7" row="4" colspan="3"></cell>
+      <cell col="10" row="4" colspan="3"></cell>
+      <cell col="13" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="2" rowspan="2">시행자</cell>
+      <cell col="2" row="5" colspan="7">기관명(부서)</cell>
+      <cell col="9" row="5" colspan="5">연락처</cell>
+    </row>
+    <row>
+      <cell col="2" row="6" colspan="12">주소</cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="2">수행자</cell>
+      <cell col="2" row="8" colspan="7">성명</cell>
+      <cell col="9" row="8" colspan="5">연락처</cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="2" rowspan="4">신청내용</cell>
+      <cell col="2" row="10" colspan="12">사업명</cell>
+    </row>
+    <row>
+      <cell col="2" row="11" colspan="12">사업목적</cell>
+    </row>
+    <row>
+      <cell col="2" row="12" colspan="12">측량종류</cell>
+    </row>
+    <row>
+      <cell col="2" row="13" colspan="12">공공측량 작업계획 신청검토 통지번호</cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="14">「공간정보의 구축 및 관리 등에 관한 법률」 제18조 및 같은 법 시행규칙 제22조제1항에 따라 공공측량성과 심사를 신청합니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="14">년          월          일장</cell>
+    </row>
+    <row>
+      <cell col="0" row="17" colspan="5"></cell>
+      <cell col="5" row="17" colspan="3">신청인</cell>
+      <cell col="8" row="17" colspan="3"></cell>
+      <cell col="11" row="17" colspan="3">(서명 또는 인)</cell>
+    </row>
+    <row>
+      <cell col="0" row="18" colspan="14">귀하</cell>
+    </row>
+    <row>
+      <cell col="0" row="19" colspan="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20">첨부서류</cell>
+      <cell col="1" row="20" colspan="11">1. 공공측량작업계획 신청서 사본
+  2. 공공측량 작업계획 검토 통지서 사본
+  3. 공공측량 기록 및 성과</cell>
+      <cell col="12" row="20" colspan="2">「공간정보의 구축 및 관리 등에 관한 법률 시행규칙」 별표 13에서 정한 산정방법에 따름</cell>
+    </row>
+    <row>
+      <cell col="0" row="21" colspan="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="22" colspan="14">처리절차</cell>
+    </row>
+    <row>
+      <cell col="0" row="23" colspan="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="24" colspan="14">210㎜×297㎜(일반용지60g/㎡)</cell>
+    </row>
+  </table>
+</annex>

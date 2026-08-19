@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지1" gubun="별지" no="1" title="성과심사 접수확인서" source="성과심사 규정 개정안 초안 (scripts/genforms_simsa.py)">
+  <text>[별지 제1호서식]
+성과심사 접수확인서 (제20조제1항 관련)</text>
+  <table rows="2" cols="4">
+    <row>
+      <cell col="0" row="0" header="1">접수번호</cell>
+      <cell col="1" row="0" header="1"></cell>
+      <cell col="2" row="0" header="1">접수일</cell>
+      <cell col="3" row="0" header="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1">처리기간</cell>
+      <cell col="1" row="1" colspan="3">접수일부터 20일 (「공간정보의 구축 및 관리 등에 관한 법률 시행규칙」 제22조제3항). 제20조제2항에 따른 보완 기간은 넣지 아니한다</cell>
+    </row>
+  </table>
+  <table rows="5" cols="4">
+    <row>
+      <cell col="0" row="0" header="1">신청인</cell>
+      <cell col="1" row="0" header="1">기관명</cell>
+      <cell col="2" row="0" header="1"></cell>
+      <cell col="3" row="0" header="1">담당자</cell>
+    </row>
+    <row>
+      <cell col="0" row="1"></cell>
+      <cell col="1" row="1">연락처</cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2">사업</cell>
+      <cell col="1" row="2">사업명</cell>
+      <cell col="2" row="2"></cell>
+      <cell col="3" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3"></cell>
+      <cell col="1" row="3">측량의 종류</cell>
+      <cell col="2" row="3">기준점측량 / 지형측량 / 3차원 공간정보 구축 / 응용측량</cell>
+      <cell col="3" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4"></cell>
+      <cell col="1" row="4">성과심사 단위</cell>
+      <cell col="2" row="4">단위 구분과 수량 (별표 13)</cell>
+      <cell col="3" row="4"></cell>
+    </row>
+  </table>
+  <text>확인 결과 (별표 13의 접수 시 확인 항목)</text>
+  <table rows="5" cols="4">
+    <row>
+      <cell col="0" row="0" header="1">확인 항목</cell>
+      <cell col="1" row="0" header="1">근거</cell>
+      <cell col="2" row="0" header="1">결과</cell>
+      <cell col="3" row="0" header="1">확인 내용</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">성과패키지의 구성</cell>
+      <cell col="1" row="1">제20조제1항제1호ㆍ별표 13</cell>
+      <cell col="2" row="1">적합 / 보완 필요</cell>
+      <cell col="3" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2">파일의 형식ㆍ이름ㆍ좌표계</cell>
+      <cell col="1" row="2">제20조제1항제2호</cell>
+      <cell col="2" row="2">적합 / 보완 필요</cell>
+      <cell col="3" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">메타데이터와 품질보고서</cell>
+      <cell col="1" row="3">제20조제1항제3호</cell>
+      <cell col="2" row="3">적합 / 보완 필요</cell>
+      <cell col="3" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4">자동검사로 갈음</cell>
+      <cell col="1" row="4">제20조제4항</cell>
+      <cell col="2" row="4">실시 / 미실시</cell>
+      <cell col="3" row="4">별지 제3호서식 붙임</cell>
+    </row>
+  </table>
+  <table rows="3" cols="4">
+    <row>
+      <cell col="0" row="0" header="1">처리</cell>
+      <cell col="1" row="0" header="1">접수 / 보완 요구</cell>
+      <cell col="2" row="0" header="1"></cell>
+      <cell col="3" row="0" header="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1">보완 요구</cell>
+      <cell col="1" row="1">요구일</cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1">기한 (7일 이내)</cell>
+    </row>
+    <row>
+      <cell col="0" row="2"></cell>
+      <cell col="1" row="2">심사기간에서 빼는 기간</cell>
+      <cell col="2" row="2">     년 월 일 ~     년 월 일 (   일)</cell>
+      <cell col="3" row="2"></cell>
+    </row>
+  </table>
+  <text>위와 같이 공공측량성과의 심사 신청을 접수하였음을 확인합니다.
+
+년       월       일
+
+측량성과 심사수탁기관의 장          (직인)</text>
+</annex>

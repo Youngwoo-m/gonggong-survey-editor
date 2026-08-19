@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표9" gubun="별표" no="9" title="성과심사수수료 명세서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151295215">
+  <text>[별표 9]
+성과심사수수료 명세서
+공공측량명 :</text>
+  <table rows="29" cols="9">
+    <row>
+      <cell col="0" row="0" colspan="3">심 사 내 용</cell>
+      <cell col="3" row="0">단위</cell>
+      <cell col="4" row="0">총수량</cell>
+      <cell col="5" row="0">심사량</cell>
+      <cell col="6" row="0">단가</cell>
+      <cell col="7" row="0">금액</cell>
+      <cell col="8" row="0">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="2" rowspan="2">공공
+기준점</cell>
+      <cell col="2" row="1">공공
+삼각점</cell>
+      <cell col="3" row="1">점</cell>
+      <cell col="4" row="1"></cell>
+      <cell col="5" row="1"></cell>
+      <cell col="6" row="1"></cell>
+      <cell col="7" row="1"></cell>
+      <cell col="8" row="1"></cell>
+    </row>
+    <row>
+      <cell col="2" row="2">공공
+수준점</cell>
+      <cell col="3" row="2">km</cell>
+      <cell col="4" row="2"></cell>
+      <cell col="5" row="2"></cell>
+      <cell col="6" row="2"></cell>
+      <cell col="7" row="2"></cell>
+      <cell col="8" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="3">사진기준점</cell>
+      <cell col="3" row="3">모델</cell>
+      <cell col="4" row="3"></cell>
+      <cell col="5" row="3"></cell>
+      <cell col="6" row="3"></cell>
+      <cell col="7" row="3"></cell>
+      <cell col="8" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="3">항공사진</cell>
+      <cell col="3" row="4">10매</cell>
+      <cell col="4" row="4"></cell>
+      <cell col="5" row="4"></cell>
+      <cell col="6" row="4"></cell>
+      <cell col="7" row="4"></cell>
+      <cell col="8" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="3">공간영상도화</cell>
+      <cell col="3" row="5">모델</cell>
+      <cell col="4" row="5"></cell>
+      <cell col="5" row="5"></cell>
+      <cell col="6" row="5"></cell>
+      <cell col="7" row="5"></cell>
+      <cell col="8" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6" colspan="3">지하ㆍ도로시설물도</cell>
+      <cell col="3" row="6">km</cell>
+      <cell col="4" row="6"></cell>
+      <cell col="5" row="6"></cell>
+      <cell col="6" row="6"></cell>
+      <cell col="7" row="6"></cell>
+      <cell col="8" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="3">영상지도</cell>
+      <cell col="3" row="7">도엽</cell>
+      <cell col="4" row="7"></cell>
+      <cell col="5" row="7"></cell>
+      <cell col="6" row="7"></cell>
+      <cell col="7" row="7"></cell>
+      <cell col="8" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="3">수치표고자료제작</cell>
+      <cell col="3" row="8">도엽</cell>
+      <cell col="4" row="8"></cell>
+      <cell col="5" row="8"></cell>
+      <cell col="6" row="8"></cell>
+      <cell col="7" row="8"></cell>
+      <cell col="8" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="3">수치주제도제작</cell>
+      <cell col="3" row="9"></cell>
+      <cell col="4" row="9"></cell>
+      <cell col="5" row="9"></cell>
+      <cell col="6" row="9"></cell>
+      <cell col="7" row="9"></cell>
+      <cell col="8" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="3">3차원공간정보구축</cell>
+      <cell col="3" row="10"></cell>
+      <cell col="4" row="10"></cell>
+      <cell col="5" row="10"></cell>
+      <cell col="6" row="10"></cell>
+      <cell col="7" row="10"></cell>
+      <cell col="8" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="3">실내공간정보구축</cell>
+      <cell col="3" row="11"></cell>
+      <cell col="4" row="11"></cell>
+      <cell col="5" row="11"></cell>
+      <cell col="6" row="11"></cell>
+      <cell col="7" row="11"></cell>
+      <cell col="8" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="3">수심측량</cell>
+      <cell col="3" row="12">km</cell>
+      <cell col="4" row="12"></cell>
+      <cell col="5" row="12"></cell>
+      <cell col="6" row="12"></cell>
+      <cell col="7" row="12"></cell>
+      <cell col="8" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13" rowspan="2">수치
+지도</cell>
+      <cell col="1" row="13" colspan="2">정위치 편집</cell>
+      <cell col="3" row="13">도엽</cell>
+      <cell col="4" row="13"></cell>
+      <cell col="5" row="13"></cell>
+      <cell col="6" row="13"></cell>
+      <cell col="7" row="13"></cell>
+      <cell col="8" row="13"></cell>
+    </row>
+    <row>
+      <cell col="1" row="14" colspan="2">도면제작 편집</cell>
+      <cell col="3" row="14">도엽</cell>
+      <cell col="4" row="14"></cell>
+      <cell col="5" row="14"></cell>
+      <cell col="6" row="14"></cell>
+      <cell col="7" row="14"></cell>
+      <cell col="8" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="3">지형현황도</cell>
+      <cell col="3" row="15">도엽</cell>
+      <cell col="4" row="15"></cell>
+      <cell col="5" row="15"></cell>
+      <cell col="6" row="15"></cell>
+      <cell col="7" row="15"></cell>
+      <cell col="8" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="4" rowspan="3">1. 직접 인건비</cell>
+      <cell col="4" row="16" colspan="3">실내 심사비 1식</cell>
+      <cell col="7" row="16"></cell>
+      <cell col="8" row="16"></cell>
+    </row>
+    <row>
+      <cell col="4" row="17" colspan="3">현지 심사비 1식</cell>
+      <cell col="7" row="17"></cell>
+      <cell col="8" row="17"></cell>
+    </row>
+    <row>
+      <cell col="4" row="18" colspan="3">소   계</cell>
+      <cell col="7" row="18"></cell>
+      <cell col="8" row="18"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19" colspan="7">2. 제 경 비 ( 1 × 110% ) :</cell>
+      <cell col="7" row="19"></cell>
+      <cell col="8" row="19"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20" colspan="7">3. 기 술 료 ( ( 1 + 2 ) × 13% ) :</cell>
+      <cell col="7" row="20"></cell>
+      <cell col="8" row="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21" colspan="4" rowspan="4">4. 직접 경비</cell>
+      <cell col="4" row="21" colspan="3">인부 노임</cell>
+      <cell col="7" row="21"></cell>
+      <cell col="8" row="21"></cell>
+    </row>
+    <row>
+      <cell col="4" row="22" colspan="3">현지 여비</cell>
+      <cell col="7" row="22"></cell>
+      <cell col="8" row="22"></cell>
+    </row>
+    <row>
+      <cell col="4" row="23" colspan="3">기기상각비</cell>
+      <cell col="7" row="23"></cell>
+      <cell col="8" row="23"></cell>
+    </row>
+    <row>
+      <cell col="4" row="24" colspan="3">소   계</cell>
+      <cell col="7" row="24"></cell>
+      <cell col="8" row="24"></cell>
+    </row>
+    <row>
+      <cell col="0" row="25" colspan="7">공공측량 성과심사 수수료 계 : ( 1+2+3+4 )</cell>
+      <cell col="7" row="25"></cell>
+      <cell col="8" row="25"></cell>
+    </row>
+    <row>
+      <cell col="0" row="26" colspan="7">부  가  세 (10%)</cell>
+      <cell col="7" row="26"></cell>
+      <cell col="8" row="26"></cell>
+    </row>
+    <row>
+      <cell col="0" row="27" colspan="7">합     계</cell>
+      <cell col="7" row="27"></cell>
+      <cell col="8" row="27"></cell>
+    </row>
+    <row>
+      <cell col="0" row="28" colspan="9">작 성 년 월 일        년    월    일</cell>
+    </row>
+  </table>
+  <text>※ 현지 여비는 측량용역대가의 기준에 의한다.</text>
+</annex>

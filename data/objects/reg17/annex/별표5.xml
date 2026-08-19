@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표5" gubun="별표" no="5" title="3차원 건물데이터 세밀도 및 가시화정보 제작기준" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=118782553">
+  <text>[별표5] 3차원 건물데이터 세밀도 및 가시화정보 제작기준</text>
+  <table rows="8" cols="3">
+    <row>
+      <cell col="0" row="0">대분류</cell>
+      <cell col="1" row="0" colspan="2">3차원 건물데이터</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">중분류</cell>
+      <cell col="1" row="1" colspan="2">주거용 및 주거외 건물</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">세분류</cell>
+      <cell col="1" row="2" colspan="2">일반주택 / 공동주택 / 공공기관 / 산업시설 / 문화교육시설 / 의료복지시설 / 서비스 시설 / 기타시설</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">세밀도</cell>
+      <cell col="1" row="3">제작기준</cell>
+      <cell col="2" row="3">제작 예</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">Level 1</cell>
+      <cell col="1" row="4">▪블록 형태
+▪지붕면은 단색 텍스처
+▪수직적 돌출부 및 함몰부 미제작
+▪단색, 색깔 또는 가상 영상 텍스처</cell>
+      <cell col="2" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5">Level 2</cell>
+      <cell col="1" row="5">▪블록 또는 연합블록 형태
+▪지붕면은 색깔 또는 정사영상 텍스처
+▪수직적 돌출부 및 함몰부 미제작
+▪가상 영상 또는 실사 영상 텍스처</cell>
+      <cell col="2" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">Level 3</cell>
+      <cell col="1" row="6">▪연합블록 형태
+▪지붕구조(경사면) 제작
+▪수직적 돌출부 및 함몰부까지 제작
+▪가상 영상 또는 실사 영상 텍스처</cell>
+      <cell col="2" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">Level 4</cell>
+      <cell col="1" row="7">▪3차원 실사모델
+▪지붕구조(경사면) 제작
+▪수직적․수평적 돌출부 및 함몰부까지 제작
+▪실사 영상 텍스처</cell>
+      <cell col="2" row="7"></cell>
+    </row>
+  </table>
+</annex>

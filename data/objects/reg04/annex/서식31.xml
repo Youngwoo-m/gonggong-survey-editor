@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식31" gubun="서식" no="31" title="측량기술자 경력확인서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454559">
+  <table rows="1" cols="2">
+    <row>
+      <cell col="0" row="0">사용자(대표자) 또는 발주자</cell>
+      <cell col="1" row="0">인</cell>
+    </row>
+  </table>
+  <table rows="34" cols="20">
+    <row>
+      <cell col="0" row="0" colspan="20">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별지 제31호서식] &lt;개정 2023. 5. 8.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="20">측량기술자 경력확인서</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="16">※ 작성방법 읽고 작성하여 주시기 바랍니다.</cell>
+      <cell col="16" row="2" colspan="4">(앞 쪽)</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">관리번호</cell>
+      <cell col="2" row="3" colspan="3"></cell>
+      <cell col="5" row="3" colspan="2">접수일</cell>
+      <cell col="7" row="3" colspan="3"></cell>
+      <cell col="10" row="3" colspan="2"></cell>
+      <cell col="12" row="3" colspan="3"></cell>
+      <cell col="15" row="3" colspan="3">처리기간</cell>
+      <cell col="18" row="3" colspan="2">즉시</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="2"></cell>
+      <cell col="2" row="4" colspan="3"></cell>
+      <cell col="5" row="4" colspan="2"></cell>
+      <cell col="7" row="4" colspan="3"></cell>
+      <cell col="10" row="4" colspan="2"></cell>
+      <cell col="12" row="4" colspan="3"></cell>
+      <cell col="15" row="4" colspan="3"></cell>
+      <cell col="18" row="4" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="2" rowspan="3">인적사항</cell>
+      <cell col="2" row="5" colspan="12">성명
+                                                                (인)</cell>
+      <cell col="14" row="5" colspan="6">주민등록번호</cell>
+    </row>
+    <row>
+      <cell col="2" row="6" colspan="18">전화번호</cell>
+    </row>
+    <row>
+      <cell col="2" row="7" colspan="18">주소</cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="20">근무처 경력</cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="2" rowspan="6">소속회사</cell>
+      <cell col="2" row="10" colspan="18">회사명</cell>
+    </row>
+    <row>
+      <cell col="2" row="11" colspan="12">측량업종</cell>
+      <cell col="14" row="11" colspan="6">면허번호 또는 등록번호</cell>
+    </row>
+    <row>
+      <cell col="2" row="12" colspan="12">대표자</cell>
+      <cell col="14" row="12" colspan="6">법인(사업자)등록번호</cell>
+    </row>
+    <row>
+      <cell col="2" row="13" colspan="18">전화번호</cell>
+    </row>
+    <row>
+      <cell col="2" row="14" colspan="18">주소</cell>
+    </row>
+    <row>
+      <cell col="2" row="15" colspan="12">입사일</cell>
+      <cell col="14" row="15" colspan="6">퇴사일</cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17" colspan="20">기술경력</cell>
+    </row>
+    <row>
+      <cell col="0" row="18">연번</cell>
+      <cell col="1" row="18" colspan="3">참여기간</cell>
+      <cell col="4" row="18" colspan="5">참여사업명</cell>
+      <cell col="9" row="18">발주자</cell>
+      <cell col="10" row="18" colspan="4">기술구분</cell>
+      <cell col="14" row="18" colspan="3">전문분야</cell>
+      <cell col="17" row="18" colspan="2">담당업무</cell>
+      <cell col="19" row="18">직위</cell>
+    </row>
+    <row>
+      <cell col="0" row="19">1</cell>
+      <cell col="1" row="19" colspan="3">.  .  . 
+~ .  .  .</cell>
+      <cell col="4" row="19" colspan="5"></cell>
+      <cell col="9" row="19"></cell>
+      <cell col="10" row="19" colspan="4"></cell>
+      <cell col="14" row="19" colspan="3"></cell>
+      <cell col="17" row="19" colspan="2"></cell>
+      <cell col="19" row="19"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20">2</cell>
+      <cell col="1" row="20" colspan="3">.  .  . 
+~ .  .  .</cell>
+      <cell col="4" row="20" colspan="5"></cell>
+      <cell col="9" row="20"></cell>
+      <cell col="10" row="20" colspan="4"></cell>
+      <cell col="14" row="20" colspan="3"></cell>
+      <cell col="17" row="20" colspan="2"></cell>
+      <cell col="19" row="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21">3</cell>
+      <cell col="1" row="21" colspan="3">.  .  . 
+~ .  .  .</cell>
+      <cell col="4" row="21" colspan="5"></cell>
+      <cell col="9" row="21"></cell>
+      <cell col="10" row="21" colspan="4"></cell>
+      <cell col="14" row="21" colspan="3"></cell>
+      <cell col="17" row="21" colspan="2"></cell>
+      <cell col="19" row="21"></cell>
+    </row>
+    <row>
+      <cell col="0" row="22">4</cell>
+      <cell col="1" row="22" colspan="3">.  .  . 
+~ .  .  .</cell>
+      <cell col="4" row="22" colspan="5"></cell>
+      <cell col="9" row="22"></cell>
+      <cell col="10" row="22" colspan="4"></cell>
+      <cell col="14" row="22" colspan="3"></cell>
+      <cell col="17" row="22" colspan="2"></cell>
+      <cell col="19" row="22"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23">5</cell>
+      <cell col="1" row="23" colspan="3">.  .  . 
+~ .  .  .</cell>
+      <cell col="4" row="23" colspan="5"></cell>
+      <cell col="9" row="23"></cell>
+      <cell col="10" row="23" colspan="4"></cell>
+      <cell col="14" row="23" colspan="3"></cell>
+      <cell col="17" row="23" colspan="2"></cell>
+      <cell col="19" row="23"></cell>
+    </row>
+    <row>
+      <cell col="0" row="24">6</cell>
+      <cell col="1" row="24" colspan="3">.  .  . 
+~ .  .  .</cell>
+      <cell col="4" row="24" colspan="5"></cell>
+      <cell col="9" row="24"></cell>
+      <cell col="10" row="24" colspan="4"></cell>
+      <cell col="14" row="24" colspan="3"></cell>
+      <cell col="17" row="24" colspan="2"></cell>
+      <cell col="19" row="24"></cell>
+    </row>
+    <row>
+      <cell col="0" row="25">7</cell>
+      <cell col="1" row="25" colspan="3">.  .  . 
+~ .  .  .</cell>
+      <cell col="4" row="25" colspan="5"></cell>
+      <cell col="9" row="25"></cell>
+      <cell col="10" row="25" colspan="4"></cell>
+      <cell col="14" row="25" colspan="3"></cell>
+      <cell col="17" row="25" colspan="2"></cell>
+      <cell col="19" row="25"></cell>
+    </row>
+    <row>
+      <cell col="0" row="26" colspan="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="27" colspan="20">위와 같이 측량기술자의 경력을 확인합니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="28" colspan="20">년          월          일장</cell>
+    </row>
+    <row>
+      <cell col="0" row="29" colspan="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="30" colspan="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="31" colspan="20">작성방법</cell>
+    </row>
+    <row>
+      <cell col="0" row="32" colspan="20">1. 기술경력의 작성요령은 「공간정보의 구축 및 관리 등에 관한 법률 시행규칙」 별지 제29호서식 측량기술자 경력신고서의 작성요령과 동일하며, 기술구분과 전문분야는 「공간정보의 구축 및 관리 등에 관한 법률 시행령」 별표 5의 비고 라목에서 정하는 분야를 적습니다.
+  2. 측량기술자 본인의 서명 또는 날인이 있는 경우에는 「공간정보의 구축 및 관리 등에 관한 법률 시행규칙」 별지 제30호서식의 측량기술자 경력변경신고서를 작성하지 않아도 됩니다.
+  3. &quot;입사일&quot;과 &quot;퇴사일&quot;은 변경사항이 발생한 경우에만 적으시면 됩니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="33" colspan="3"></cell>
+      <cell col="3" row="33" colspan="3"></cell>
+      <cell col="6" row="33" colspan="2"></cell>
+      <cell col="8" row="33" colspan="3"></cell>
+      <cell col="11" row="33" colspan="2"></cell>
+      <cell col="13" row="33" colspan="7">210㎜ × 297㎜(일반용지60g/㎡)</cell>
+    </row>
+  </table>
+  <table rows="30" cols="8">
+    <row>
+      <cell col="0" row="0" colspan="8">(뒤 쪽)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="8">기술경력</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">연번</cell>
+      <cell col="1" row="2">참여기간</cell>
+      <cell col="2" row="2">참여사업명</cell>
+      <cell col="3" row="2">발주자</cell>
+      <cell col="4" row="2">기술구분</cell>
+      <cell col="5" row="2">전문분야</cell>
+      <cell col="6" row="2">담당업무</cell>
+      <cell col="7" row="2">직위</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">8</cell>
+      <cell col="1" row="3">.  .  . 
+~ .  .  .</cell>
+      <cell col="2" row="3"></cell>
+      <cell col="3" row="3"></cell>
+      <cell col="4" row="3"></cell>
+      <cell col="5" row="3"></cell>
+      <cell col="6" row="3"></cell>
+      <cell col="7" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4">9</cell>
+      <cell col="1" row="4">.  .  . 
+~ .  .  .</cell>
+      <cell col="2" row="4"></cell>
+      <cell col="3" row="4"></cell>
+      <cell col="4" row="4"></cell>
+      <cell col="5" row="4"></cell>
+      <cell col="6" row="4"></cell>
+      <cell col="7" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5">10</cell>
+      <cell col="1" row="5">.  .  . 
+~ .  .  .</cell>
+      <cell col="2" row="5"></cell>
+      <cell col="3" row="5"></cell>
+      <cell col="4" row="5"></cell>
+      <cell col="5" row="5"></cell>
+      <cell col="6" row="5"></cell>
+      <cell col="7" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">11</cell>
+      <cell col="1" row="6">.  .  . 
+~ .  .  .</cell>
+      <cell col="2" row="6"></cell>
+      <cell col="3" row="6"></cell>
+      <cell col="4" row="6"></cell>
+      <cell col="5" row="6"></cell>
+      <cell col="6" row="6"></cell>
+      <cell col="7" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">12</cell>
+      <cell col="1" row="7">.  .  . 
+~ .  .  .</cell>
+      <cell col="2" row="7"></cell>
+      <cell col="3" row="7"></cell>
+      <cell col="4" row="7"></cell>
+      <cell col="5" row="7"></cell>
+      <cell col="6" row="7"></cell>
+      <cell col="7" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8">13</cell>
+      <cell col="1" row="8">.  .  . 
+~ .  .  .</cell>
+      <cell col="2" row="8"></cell>
+      <cell col="3" row="8"></cell>
+      <cell col="4" row="8"></cell>
+      <cell col="5" row="8"></cell>
+      <cell col="6" row="8"></cell>
+      <cell col="7" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">14</cell>
+      <cell col="1" row="9">.  .  . 
+~ .  .  .</cell>
+      <cell col="2" row="9"></cell>
+      <cell col="3" row="9"></cell>
+      <cell col="4" row="9"></cell>
+      <cell col="5" row="9"></cell>
+      <cell col="6" row="9"></cell>
+      <cell col="7" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10">15</cell>
+      <cell col="1" row="10">.  .  . 
+~ .  .  .</cell>
+      <cell col="2" row="10"></cell>
+      <cell col="3" row="10"></cell>
+      <cell col="4" row="10"></cell>
+      <cell col="5" row="10"></cell>
+      <cell col="6" row="10"></cell>
+      <cell col="7" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11">16</cell>
+      <cell col="1" row="11">.  .  . 
+~ .  .  .</cell>
+      <cell col="2" row="11"></cell>
+      <cell col="3" row="11"></cell>
+      <cell col="4" row="11"></cell>
+      <cell col="5" row="11"></cell>
+      <cell col="6" row="11"></cell>
+      <cell col="7" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12">17</cell>
+      <cell col="1" row="12">.  .  . 
+~ .  .  .</cell>
+      <cell col="2" row="12"></cell>
+      <cell col="3" row="12"></cell>
+      <cell col="4" row="12"></cell>
+      <cell col="5" row="12"></cell>
+      <cell col="6" row="12"></cell>
+      <cell col="7" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13">18</cell>
+      <cell col="1" row="13">.  .  . 
+~ .  .  .</cell>
+      <cell col="2" row="13"></cell>
+      <cell col="3" row="13"></cell>
+      <cell col="4" row="13"></cell>
+      <cell col="5" row="13"></cell>
+      <cell col="6" row="13"></cell>
+      <cell col="7" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14">19</cell>
+      <cell col="1" row="14">.  .  . 
+~ .  .  .</cell>
+      <cell col="2" row="14"></cell>
+      <cell col="3" row="14"></cell>
+      <cell col="4" row="14"></cell>
+      <cell col="5" row="14"></cell>
+      <cell col="6" row="14"></cell>
+      <cell col="7" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15">20</cell>
+      <cell col="1" row="15">.  .  . 
+~ .  .  .</cell>
+      <cell col="2" row="15"></cell>
+      <cell col="3" row="15"></cell>
+      <cell col="4" row="15"></cell>
+      <cell col="5" row="15"></cell>
+      <cell col="6" row="15"></cell>
+      <cell col="7" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16">21</cell>
+      <cell col="1" row="16">.  .  . 
+~ .  .  .</cell>
+      <cell col="2" row="16"></cell>
+      <cell col="3" row="16"></cell>
+      <cell col="4" row="16"></cell>
+      <cell col="5" row="16"></cell>
+      <cell col="6" row="16"></cell>
+      <cell col="7" row="16"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17">22</cell>
+      <cell col="1" row="17">.  .  . 
+~ .  .  .</cell>
+      <cell col="2" row="17"></cell>
+      <cell col="3" row="17"></cell>
+      <cell col="4" row="17"></cell>
+      <cell col="5" row="17"></cell>
+      <cell col="6" row="17"></cell>
+      <cell col="7" row="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18">23</cell>
+      <cell col="1" row="18">.  .  . 
+~ .  .  .</cell>
+      <cell col="2" row="18"></cell>
+      <cell col="3" row="18"></cell>
+      <cell col="4" row="18"></cell>
+      <cell col="5" row="18"></cell>
+      <cell col="6" row="18"></cell>
+      <cell col="7" row="18"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19">24</cell>
+      <cell col="1" row="19">.  .  . 
+~ .  .  .</cell>
+      <cell col="2" row="19"></cell>
+      <cell col="3" row="19"></cell>
+      <cell col="4" row="19"></cell>
+      <cell col="5" row="19"></cell>
+      <cell col="6" row="19"></cell>
+      <cell col="7" row="19"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20">25</cell>
+      <cell col="1" row="20">.  .  . 
+~ .  .  .</cell>
+      <cell col="2" row="20"></cell>
+      <cell col="3" row="20"></cell>
+      <cell col="4" row="20"></cell>
+      <cell col="5" row="20"></cell>
+      <cell col="6" row="20"></cell>
+      <cell col="7" row="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21">26</cell>
+      <cell col="1" row="21">.  .  . 
+~ .  .  .</cell>
+      <cell col="2" row="21"></cell>
+      <cell col="3" row="21"></cell>
+      <cell col="4" row="21"></cell>
+      <cell col="5" row="21"></cell>
+      <cell col="6" row="21"></cell>
+      <cell col="7" row="21"></cell>
+    </row>
+    <row>
+      <cell col="0" row="22">27</cell>
+      <cell col="1" row="22">.  .  . 
+~ .  .  .</cell>
+      <cell col="2" row="22"></cell>
+      <cell col="3" row="22"></cell>
+      <cell col="4" row="22"></cell>
+      <cell col="5" row="22"></cell>
+      <cell col="6" row="22"></cell>
+      <cell col="7" row="22"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23">28</cell>
+      <cell col="1" row="23">.  .  . 
+~ .  .  .</cell>
+      <cell col="2" row="23"></cell>
+      <cell col="3" row="23"></cell>
+      <cell col="4" row="23"></cell>
+      <cell col="5" row="23"></cell>
+      <cell col="6" row="23"></cell>
+      <cell col="7" row="23"></cell>
+    </row>
+    <row>
+      <cell col="0" row="24">29</cell>
+      <cell col="1" row="24">.  .  . 
+~ .  .  .</cell>
+      <cell col="2" row="24"></cell>
+      <cell col="3" row="24"></cell>
+      <cell col="4" row="24"></cell>
+      <cell col="5" row="24"></cell>
+      <cell col="6" row="24"></cell>
+      <cell col="7" row="24"></cell>
+    </row>
+    <row>
+      <cell col="0" row="25">30</cell>
+      <cell col="1" row="25">.  .  . 
+~ .  .  .</cell>
+      <cell col="2" row="25"></cell>
+      <cell col="3" row="25"></cell>
+      <cell col="4" row="25"></cell>
+      <cell col="5" row="25"></cell>
+      <cell col="6" row="25"></cell>
+      <cell col="7" row="25"></cell>
+    </row>
+    <row>
+      <cell col="0" row="26">31</cell>
+      <cell col="1" row="26">.  .  . 
+~ .  .  .</cell>
+      <cell col="2" row="26"></cell>
+      <cell col="3" row="26"></cell>
+      <cell col="4" row="26"></cell>
+      <cell col="5" row="26"></cell>
+      <cell col="6" row="26"></cell>
+      <cell col="7" row="26"></cell>
+    </row>
+    <row>
+      <cell col="0" row="27">32</cell>
+      <cell col="1" row="27">.  .  . 
+~ .  .  .</cell>
+      <cell col="2" row="27"></cell>
+      <cell col="3" row="27"></cell>
+      <cell col="4" row="27"></cell>
+      <cell col="5" row="27"></cell>
+      <cell col="6" row="27"></cell>
+      <cell col="7" row="27"></cell>
+    </row>
+    <row>
+      <cell col="0" row="28">33</cell>
+      <cell col="1" row="28">.  .  . 
+~ .  .  .</cell>
+      <cell col="2" row="28"></cell>
+      <cell col="3" row="28"></cell>
+      <cell col="4" row="28"></cell>
+      <cell col="5" row="28"></cell>
+      <cell col="6" row="28"></cell>
+      <cell col="7" row="28"></cell>
+    </row>
+    <row>
+      <cell col="0" row="29" colspan="8"></cell>
+    </row>
+  </table>
+</annex>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="t4302" article="연구 검토(부록 4) 유형별 문제 빈도" rows="9" cols="4" source="2025년 전략수립 연구보고서">
+  <row>
+    <cell col="0" row="0" header="1">문제 유형</cell>
+    <cell col="1" row="0" header="1">분석 항목 수</cell>
+    <cell col="2" row="0" header="1">주요 현장 영향</cell>
+    <cell col="3" row="0" header="1">개정 시급성</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">A. 법령 불일치</cell>
+    <cell col="1" row="1">6건</cell>
+    <cell col="2" row="1">법적 분쟁, 행정처분 불안정성</cell>
+    <cell col="3" row="1">매우 높음</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">B. 기술 진부화</cell>
+    <cell col="1" row="2">6건</cell>
+    <cell col="2" row="2">신기술 사용 시 규정 위반 혼란, 기술 도입 억제</cell>
+    <cell col="3" row="2">높음</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">C. 용어 오류·불일치</cell>
+    <cell col="1" row="3">8건</cell>
+    <cell col="2" row="3">장비 검수 혼선, 행정 마찰, 파싱 오류</cell>
+    <cell col="3" row="3">높음 (즉시 정비 가능)</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">D. 서술 방식 불일치</cell>
+    <cell col="1" row="4">6건</cell>
+    <cell col="2" row="4">심사자별 판정 편차, 재량권 남용</cell>
+    <cell col="3" row="4">높음</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">E. 중복·누락·불명확</cell>
+    <cell col="1" row="5">13건</cell>
+    <cell col="2" row="5">품질 분쟁, 성과 반려, 안전 사각지대</cell>
+    <cell col="3" row="5">매우 높음</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">F. 신기술 규정 공백</cell>
+    <cell col="1" row="6">5건</cell>
+    <cell col="2" row="6">기술 도입 제도적 장벽, 성과심사 불일관</cell>
+    <cell col="3" row="6">매우 높음 (중기 대응)</cell>
+  </row>
+  <row>
+    <cell col="0" row="7">합계</cell>
+    <cell col="1" row="7">44</cell>
+    <cell col="2" row="7"></cell>
+    <cell col="3" row="7"></cell>
+  </row>
+  <row>
+    <cell col="0" row="8">합계</cell>
+    <cell col="1" row="8">44건</cell>
+    <cell col="2" row="8"></cell>
+    <cell col="3" row="8"></cell>
+  </row>
+</table>

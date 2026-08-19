@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표41" gubun="별표" no="41" title="성과표" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296321">
+  <text>[ 별표 41 ]
+성과표</text>
+  <table rows="26" cols="6">
+    <row>
+      <cell col="0" row="0" rowspan="3">측점</cell>
+      <cell col="1" row="0" colspan="5">GRS80</cell>
+    </row>
+    <row>
+      <cell col="1" row="1" rowspan="2">위도</cell>
+      <cell col="2" row="1" rowspan="2">경도</cell>
+      <cell col="3" row="1" rowspan="2">타원체고 [m]</cell>
+      <cell col="4" row="1" colspan="2">투영평면좌표</cell>
+    </row>
+    <row>
+      <cell col="4" row="2">X(N)  좌표 [m]</cell>
+      <cell col="5" row="2">Y(E)  좌표 [m]</cell>
+    </row>
+    <row>
+      <cell col="0" row="3"></cell>
+      <cell col="1" row="3"></cell>
+      <cell col="2" row="3"></cell>
+      <cell col="3" row="3"></cell>
+      <cell col="4" row="3"></cell>
+      <cell col="5" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4"></cell>
+      <cell col="1" row="4"></cell>
+      <cell col="2" row="4"></cell>
+      <cell col="3" row="4"></cell>
+      <cell col="4" row="4"></cell>
+      <cell col="5" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5"></cell>
+      <cell col="1" row="5"></cell>
+      <cell col="2" row="5"></cell>
+      <cell col="3" row="5"></cell>
+      <cell col="4" row="5"></cell>
+      <cell col="5" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6"></cell>
+      <cell col="1" row="6"></cell>
+      <cell col="2" row="6"></cell>
+      <cell col="3" row="6"></cell>
+      <cell col="4" row="6"></cell>
+      <cell col="5" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7"></cell>
+      <cell col="1" row="7"></cell>
+      <cell col="2" row="7"></cell>
+      <cell col="3" row="7"></cell>
+      <cell col="4" row="7"></cell>
+      <cell col="5" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8"></cell>
+      <cell col="1" row="8"></cell>
+      <cell col="2" row="8"></cell>
+      <cell col="3" row="8"></cell>
+      <cell col="4" row="8"></cell>
+      <cell col="5" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9"></cell>
+      <cell col="1" row="9"></cell>
+      <cell col="2" row="9"></cell>
+      <cell col="3" row="9"></cell>
+      <cell col="4" row="9"></cell>
+      <cell col="5" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10"></cell>
+      <cell col="1" row="10"></cell>
+      <cell col="2" row="10"></cell>
+      <cell col="3" row="10"></cell>
+      <cell col="4" row="10"></cell>
+      <cell col="5" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11"></cell>
+      <cell col="1" row="11"></cell>
+      <cell col="2" row="11"></cell>
+      <cell col="3" row="11"></cell>
+      <cell col="4" row="11"></cell>
+      <cell col="5" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12"></cell>
+      <cell col="1" row="12"></cell>
+      <cell col="2" row="12"></cell>
+      <cell col="3" row="12"></cell>
+      <cell col="4" row="12"></cell>
+      <cell col="5" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13"></cell>
+      <cell col="1" row="13"></cell>
+      <cell col="2" row="13"></cell>
+      <cell col="3" row="13"></cell>
+      <cell col="4" row="13"></cell>
+      <cell col="5" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14"></cell>
+      <cell col="1" row="14"></cell>
+      <cell col="2" row="14"></cell>
+      <cell col="3" row="14"></cell>
+      <cell col="4" row="14"></cell>
+      <cell col="5" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15"></cell>
+      <cell col="1" row="15"></cell>
+      <cell col="2" row="15"></cell>
+      <cell col="3" row="15"></cell>
+      <cell col="4" row="15"></cell>
+      <cell col="5" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16"></cell>
+      <cell col="1" row="16"></cell>
+      <cell col="2" row="16"></cell>
+      <cell col="3" row="16"></cell>
+      <cell col="4" row="16"></cell>
+      <cell col="5" row="16"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17"></cell>
+      <cell col="1" row="17"></cell>
+      <cell col="2" row="17"></cell>
+      <cell col="3" row="17"></cell>
+      <cell col="4" row="17"></cell>
+      <cell col="5" row="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18"></cell>
+      <cell col="1" row="18"></cell>
+      <cell col="2" row="18"></cell>
+      <cell col="3" row="18"></cell>
+      <cell col="4" row="18"></cell>
+      <cell col="5" row="18"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19"></cell>
+      <cell col="1" row="19"></cell>
+      <cell col="2" row="19"></cell>
+      <cell col="3" row="19"></cell>
+      <cell col="4" row="19"></cell>
+      <cell col="5" row="19"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20"></cell>
+      <cell col="1" row="20"></cell>
+      <cell col="2" row="20"></cell>
+      <cell col="3" row="20"></cell>
+      <cell col="4" row="20"></cell>
+      <cell col="5" row="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21"></cell>
+      <cell col="1" row="21"></cell>
+      <cell col="2" row="21"></cell>
+      <cell col="3" row="21"></cell>
+      <cell col="4" row="21"></cell>
+      <cell col="5" row="21"></cell>
+    </row>
+    <row>
+      <cell col="0" row="22"></cell>
+      <cell col="1" row="22"></cell>
+      <cell col="2" row="22"></cell>
+      <cell col="3" row="22"></cell>
+      <cell col="4" row="22"></cell>
+      <cell col="5" row="22"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23"></cell>
+      <cell col="1" row="23"></cell>
+      <cell col="2" row="23"></cell>
+      <cell col="3" row="23"></cell>
+      <cell col="4" row="23"></cell>
+      <cell col="5" row="23"></cell>
+    </row>
+    <row>
+      <cell col="0" row="24"></cell>
+      <cell col="1" row="24"></cell>
+      <cell col="2" row="24"></cell>
+      <cell col="3" row="24"></cell>
+      <cell col="4" row="24"></cell>
+      <cell col="5" row="24"></cell>
+    </row>
+    <row>
+      <cell col="0" row="25"></cell>
+      <cell col="1" row="25"></cell>
+      <cell col="2" row="25"></cell>
+      <cell col="3" row="25"></cell>
+      <cell col="4" row="25"></cell>
+      <cell col="5" row="25"></cell>
+    </row>
+  </table>
+</annex>

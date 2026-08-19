@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0052" article="제112조(機器及びシステム)" rows="11" cols="3" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">機 器</cell>
+    <cell col="1" row="0" header="1">性 能</cell>
+    <cell col="2" row="0" header="1">読 取 範 囲</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">３級トータルステーション</cell>
+    <cell col="1" row="1">別表１による</cell>
+    <cell col="2" row="1">―――</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">２級ＧＮＳＳ測量機</cell>
+    <cell col="1" row="2"></cell>
+    <cell col="2" row="2"></cell>
+  </row>
+  <row>
+    <cell col="0" row="3">３級セオドライト</cell>
+    <cell col="1" row="3"></cell>
+    <cell col="2" row="3"></cell>
+  </row>
+  <row>
+    <cell col="0" row="4">測距儀</cell>
+    <cell col="1" row="4"></cell>
+    <cell col="2" row="4"></cell>
+  </row>
+  <row>
+    <cell col="0" row="5">３級レベル</cell>
+    <cell col="1" row="5"></cell>
+    <cell col="2" row="5"></cell>
+  </row>
+  <row>
+    <cell col="0" row="6">２級標尺</cell>
+    <cell col="1" row="6"></cell>
+    <cell col="2" row="6"></cell>
+  </row>
+  <row>
+    <cell col="0" row="7">デジタイザ</cell>
+    <cell col="1" row="7">分解能 0.1mm 以内 読取精度 0.3mm 以内</cell>
+    <cell col="2" row="7">計測基図の図郭内の読取 りが可能なこと</cell>
+  </row>
+  <row>
+    <cell col="0" row="8">スキャナ</cell>
+    <cell col="1" row="8">分解能 0.1mm 以内 読取精度 0.25％以内(任意の２点間)</cell>
+    <cell col="2" row="8">計測基図の図郭内の読取 りが可能なこと</cell>
+  </row>
+  <row>
+    <cell col="0" row="9">自動製図機（プリンタ等）</cell>
+    <cell col="1" row="9">描画精度 0.1mm 以内 位置精度 0.2mm 以内</cell>
+    <cell col="2" row="9">―――</cell>
+  </row>
+  <row>
+    <cell col="0" row="10">図形編集装置</cell>
+    <cell col="1" row="10">電子計算機及びスクリーンモニター、必要に応じてデジタイザで構 成されるもの。</cell>
+    <cell col="2" row="10"></cell>
+  </row>
+</table>

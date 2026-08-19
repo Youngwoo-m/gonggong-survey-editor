@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc19t002" article="현장 작업시 주의사항" rows="2" cols="4" source="측량 안전관리 매뉴얼 (2026.1)">
+  <row>
+    <cell col="0" row="0" header="1">구분</cell>
+    <cell col="1" row="0" header="1">장비명</cell>
+    <cell col="2" row="0" header="1">사용용도</cell>
+    <cell col="3" row="0" header="1">사진</cell>
+  </row>
+  <row>
+    <cell col="0" row="1"></cell>
+    <cell col="1" row="1">구급의약품</cell>
+    <cell col="2" row="1">안전사고 발생 시 응급처치용</cell>
+    <cell col="3" row="1"></cell>
+  </row>
+</table>

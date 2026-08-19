@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="t13ovl" article="제13조제2항 촬영 중복도" rows="3" cols="4" source="무인비행장치 측량 작업규정 원문 그림 (pic1.gif)">
+  <row>
+    <cell col="0" row="0" header="1">구 분</cell>
+    <cell col="1" row="0" header="1">평탄한 저지대 지역</cell>
+    <cell col="2" row="0" header="1">매칭점이 부족하거나 높이차가 있는 지역</cell>
+    <cell col="3" row="0" header="1">높이차가 크거나, 고층 건물이 있는 지역</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">촬영 방향 중복도</cell>
+    <cell col="1" row="1">65% 이상</cell>
+    <cell col="2" row="1">75% 이상</cell>
+    <cell col="3" row="1">85% 이상</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">인접 코스 중복도</cell>
+    <cell col="1" row="2">60% 이상</cell>
+    <cell col="2" row="2">70% 이상</cell>
+    <cell col="3" row="2">80% 이상</cell>
+  </row>
+</table>

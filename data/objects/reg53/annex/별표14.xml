@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표14" gubun="별표" no="14" title="혈액노출 근로자에 대한 조치사항(제598조제2항 관련)" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=155899335">
+  <table rows="19" cols="9">
+    <row>
+      <cell col="0" row="0" colspan="9">■ 산업안전보건기준에 관한 규칙 [별표 14] &lt;개정 2024. 6. 28.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="9">혈액노출 근로자에 대한 조치사항(제598조제2항 관련)
+1. B형 간염에 대한 조치사항</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2" rowspan="2">근로자의 상태1)</cell>
+      <cell col="2" row="2" colspan="7">노출된 혈액의 상태에 따른 치료 방침</cell>
+    </row>
+    <row>
+      <cell col="2" row="3" colspan="3">HBsAg 양성</cell>
+      <cell col="5" row="3" colspan="2">HBsAg 음성</cell>
+      <cell col="7" row="3" colspan="2">검사를 할 수 없거나 혈액의 상태를 모르는 경우</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="2">예방접종2)하지 않은 경우</cell>
+      <cell col="2" row="4" colspan="3">HBIG3) 1회 투여 및 B형간염 예방접종 실시</cell>
+      <cell col="5" row="4" colspan="2">B형간염 예방접종 실시</cell>
+      <cell col="7" row="4" colspan="2">B형간염 예방접종 실시</cell>
+    </row>
+    <row>
+      <cell col="0" row="5" rowspan="3">예방접종한 경우</cell>
+      <cell col="1" row="5">항체형성
+HBsAb(+)</cell>
+      <cell col="2" row="5" colspan="3">치료하지 않음</cell>
+      <cell col="5" row="5" colspan="2">치료하지 않음</cell>
+      <cell col="7" row="5" colspan="2">치료하지 않음</cell>
+    </row>
+    <row>
+      <cell col="1" row="6">항체미형성
+HBsAb(-)</cell>
+      <cell col="2" row="6" colspan="3">HBIG 2회 투여4) 또는 HBIG 1회 투여 및 B형간염 백신 재접종</cell>
+      <cell col="5" row="6" colspan="2">치료하지 않음</cell>
+      <cell col="7" row="6" colspan="2">고위험 감염원인 경우 HBsAg 양성의 경우와 같이 치료함</cell>
+    </row>
+    <row>
+      <cell col="1" row="7">모름</cell>
+      <cell col="2" row="7" colspan="3">항체(HBsAb) 검사:
+1. 적절5): 치료하지 않음
+2. 부적절: HBIG 1회투여 및 B형간염 백신 추가접종</cell>
+      <cell col="5" row="7" colspan="2">치료하지 않음</cell>
+      <cell col="7" row="7" colspan="2">항체(HBsAb) 검사: 
+1. 적절: 치료하지 않음
+2. 부적절: B형간염백신 추가접종과 1～2개월 후 항체역가검사</cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="9">비고
+ 1. 과거 B형간염을 앓았던 사람은 면역이 되므로 예방접종이 필요하지 않다.
+ 2. 예방접종은 B형간염 백신을 3회 접종완료한 것을 의미한다.
+ 3. HBIG(B형간염 면역글로불린)는 가능한 한 24시간 이내에 0.06 ml/kg을 근육주사한다.
+ 4. HBIG 2회 투여는 예방접종을 2회 하였지만 항체가 형성되지 않은 사람 또는 예방접종을 2회 하지 않았거나 2회차 접종이 완료되지 않은 사람에게 투여하는 것을 의미한다.
+ 5. 항체가 적절하다는 것은 혈청내 항체(anti HBs)가 10mIU/ml 이상임을 말한다.
+ 6. HBsAg(Hepatitis B Antigen): B형간염 항원</cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="9">2. 인체면역결핍 바이러스에 대한 조치사항</cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="3" rowspan="2">노출 형태
+혈액의 감염상태</cell>
+      <cell col="3" row="11" colspan="3">침습적 노출</cell>
+      <cell col="6" row="11" colspan="3">점막 및 피부노출</cell>
+    </row>
+    <row>
+      <cell col="3" row="12">심한 노출5)</cell>
+      <cell col="4" row="12" colspan="2">가벼운 노출6)</cell>
+      <cell col="6" row="12" colspan="2">다량 노출7)</cell>
+      <cell col="8" row="12">소량 노출8)</cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="3">인체면역결핍 바이러스 양성-1급1)</cell>
+      <cell col="3" row="13" colspan="3">확장 3제 예방요법9)</cell>
+      <cell col="6" row="13" colspan="2">확장 3제 예방요법</cell>
+      <cell col="8" row="13">기본 2제 예방요법</cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="3">인체면역결핍 바이러스 양성-2급2)</cell>
+      <cell col="3" row="14">확장 3제 예방요법</cell>
+      <cell col="4" row="14" colspan="2">기본 2제 예방요법</cell>
+      <cell col="6" row="14" colspan="3">기본 2제 예방요법10)</cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="3">혈액의 인체면역결핍 바이러스 감염상태 모름3)</cell>
+      <cell col="3" row="15" colspan="6">예방요법 필요 없음. 그러나 인체면역결핍 바이러스 위험요인이 있으면 기본 2제 예방요법 고려</cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="3">노출된 혈액을 확인할 수 없음4)</cell>
+      <cell col="3" row="16" colspan="6">예방요법 필요 없음. 그러나 인체면역결핍 바이러스에 감염된 환자의 것으로 추정되면 기본 2제 예방요법 고려</cell>
+    </row>
+    <row>
+      <cell col="0" row="17" colspan="3">인체면역결핍 바이러스 음성</cell>
+      <cell col="3" row="17" colspan="6">예방요법 필요 없음</cell>
+    </row>
+    <row>
+      <cell col="0" row="18" colspan="9">비고
+ 1. 다량의 바이러스(1,500 RNA copies/ml 이상), 감염의 증상, 후천성면역결핍증 등이 있는 경우이다.
+ 2. 무증상 또는 소량의 바이러스이다.
+ 3. 노출된 혈액이 사망한 사람의 혈액이거나 추적이 불가능한 경우 등 검사할 수 없는 경우이다.
+ 4. 폐기한 혈액 또는 주사침 등에 의한 노출로 혈액원(血液源)을 파악할 수 없는 경우 등이다.
+ 5. 환자의 근육 또는 혈관에 사용한 주사침이나 도구에 혈액이 묻어 있는 것이 맨눈으로 확인되는 경우 등이다. 
+ 6. 피상적 손상이거나 주사침에 혈액이 보이지 않는 경우 등이다.
+ 7. 혈액이 뿌려지거나 흘려진 경우 등이다.
+ 8. 혈액이 몇 방울 정도 묻은 경우 등이다.
+ 9. 해당 전문가의 견해에 따라 결정한다.
+ 10. 해당 전문가의 견해에 따라 결정한다.</cell>
+    </row>
+  </table>
+</annex>

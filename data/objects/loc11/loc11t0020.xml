@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0020" article="제43조(平均計算)" rows="4" cols="5" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">区 分 項 目</cell>
+    <cell col="1" row="0" header="1">１級基準点測量</cell>
+    <cell col="2" row="0" header="1">２級基準点測量</cell>
+    <cell col="3" row="0" header="1">３級基準点測量</cell>
+    <cell col="4" row="0" header="1">４級基準点測量</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">基線ベクトルの 各成分の残差</cell>
+    <cell col="1" row="1">20mm</cell>
+    <cell col="2" row="1">20mm</cell>
+    <cell col="3" row="1">20mm</cell>
+    <cell col="4" row="1">20mm</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">水平位置の閉合差</cell>
+    <cell col="1" row="2">Δs ＝100mm＋40mm√N Δs：既知点の成果値及び仮定三次元網平均計算結果から求めた距離 Ｎ：既知点までの最少辺数（辺数が同じ場合は路線長の最短のもの。）</cell>
+    <cell col="2" row="2"></cell>
+    <cell col="3" row="2"></cell>
+    <cell col="4" row="2"></cell>
+  </row>
+  <row>
+    <cell col="0" row="3">標高の閉合差</cell>
+    <cell col="1" row="3">250mm＋45mm√N を標準とする Ｎ：辺数</cell>
+    <cell col="2" row="3"></cell>
+    <cell col="3" row="3"></cell>
+    <cell col="4" row="3"></cell>
+  </row>
+</table>

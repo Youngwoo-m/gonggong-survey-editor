@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표1" gubun="별표" no="1" title="국가기준점 총괄표 (제13조제1항 관련)" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=155729837">
+  <text>[별표 1] 국가기준점 총괄표 (제13조제1항 관련)</text>
+  <table rows="28" cols="12">
+    <row>
+      <cell col="0" row="0" colspan="12">□ 국가기준점 총괄표</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="2">1. 총괄표</cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1"></cell>
+      <cell col="4" row="1"></cell>
+      <cell col="5" row="1"></cell>
+      <cell col="6" row="1"></cell>
+      <cell col="7" row="1"></cell>
+      <cell col="8" row="1" colspan="2"></cell>
+      <cell col="10" row="1"></cell>
+      <cell col="11" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">도엽명  구분</cell>
+      <cell col="2" row="2"></cell>
+      <cell col="3" row="2"></cell>
+      <cell col="4" row="2"></cell>
+      <cell col="5" row="2"></cell>
+      <cell col="6" row="2"></cell>
+      <cell col="7" row="2"></cell>
+      <cell col="8" row="2" colspan="2"></cell>
+      <cell col="10" row="2"></cell>
+      <cell col="11" row="2">계</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">완전</cell>
+      <cell col="2" row="3"></cell>
+      <cell col="3" row="3"></cell>
+      <cell col="4" row="3"></cell>
+      <cell col="5" row="3"></cell>
+      <cell col="6" row="3"></cell>
+      <cell col="7" row="3"></cell>
+      <cell col="8" row="3" colspan="2"></cell>
+      <cell col="10" row="3"></cell>
+      <cell col="11" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="2">총계</cell>
+      <cell col="2" row="4"></cell>
+      <cell col="3" row="4"></cell>
+      <cell col="4" row="4"></cell>
+      <cell col="5" row="4"></cell>
+      <cell col="6" row="4"></cell>
+      <cell col="7" row="4"></cell>
+      <cell col="8" row="4" colspan="2"></cell>
+      <cell col="10" row="4"></cell>
+      <cell col="11" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5"></cell>
+      <cell col="1" row="5"></cell>
+      <cell col="2" row="5"></cell>
+      <cell col="3" row="5"></cell>
+      <cell col="4" row="5"></cell>
+      <cell col="5" row="5"></cell>
+      <cell col="6" row="5"></cell>
+      <cell col="7" row="5"></cell>
+      <cell col="8" row="5" colspan="2"></cell>
+      <cell col="10" row="5"></cell>
+      <cell col="11" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6"></cell>
+      <cell col="1" row="6"></cell>
+      <cell col="2" row="6"></cell>
+      <cell col="3" row="6"></cell>
+      <cell col="4" row="6"></cell>
+      <cell col="5" row="6"></cell>
+      <cell col="6" row="6"></cell>
+      <cell col="7" row="6"></cell>
+      <cell col="8" row="6" colspan="2"></cell>
+      <cell col="10" row="6"></cell>
+      <cell col="11" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="6">2. 멸실점 총괄표(안내판, 보조점A.B, 보호석)</cell>
+      <cell col="6" row="7"></cell>
+      <cell col="7" row="7"></cell>
+      <cell col="8" row="7" colspan="2"></cell>
+      <cell col="10" row="7"></cell>
+      <cell col="11" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="2">도엽명  구분</cell>
+      <cell col="2" row="8"></cell>
+      <cell col="3" row="8"></cell>
+      <cell col="4" row="8"></cell>
+      <cell col="5" row="8"></cell>
+      <cell col="6" row="8"></cell>
+      <cell col="7" row="8"></cell>
+      <cell col="8" row="8" colspan="2"></cell>
+      <cell col="10" row="8"></cell>
+      <cell col="11" row="8">계</cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="2">안내판</cell>
+      <cell col="2" row="9"></cell>
+      <cell col="3" row="9"></cell>
+      <cell col="4" row="9"></cell>
+      <cell col="5" row="9"></cell>
+      <cell col="6" row="9"></cell>
+      <cell col="7" row="9"></cell>
+      <cell col="8" row="9" colspan="2"></cell>
+      <cell col="10" row="9"></cell>
+      <cell col="11" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="2">보조수준점A</cell>
+      <cell col="2" row="10"></cell>
+      <cell col="3" row="10"></cell>
+      <cell col="4" row="10"></cell>
+      <cell col="5" row="10"></cell>
+      <cell col="6" row="10"></cell>
+      <cell col="7" row="10"></cell>
+      <cell col="8" row="10" colspan="2"></cell>
+      <cell col="10" row="10"></cell>
+      <cell col="11" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="2">보조수준점B</cell>
+      <cell col="2" row="11"></cell>
+      <cell col="3" row="11"></cell>
+      <cell col="4" row="11"></cell>
+      <cell col="5" row="11"></cell>
+      <cell col="6" row="11"></cell>
+      <cell col="7" row="11"></cell>
+      <cell col="8" row="11" colspan="2"></cell>
+      <cell col="10" row="11"></cell>
+      <cell col="11" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="2">보호석</cell>
+      <cell col="2" row="12"></cell>
+      <cell col="3" row="12"></cell>
+      <cell col="4" row="12"></cell>
+      <cell col="5" row="12"></cell>
+      <cell col="6" row="12"></cell>
+      <cell col="7" row="12"></cell>
+      <cell col="8" row="12" colspan="2"></cell>
+      <cell col="10" row="12"></cell>
+      <cell col="11" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="2">총계</cell>
+      <cell col="2" row="13"></cell>
+      <cell col="3" row="13"></cell>
+      <cell col="4" row="13"></cell>
+      <cell col="5" row="13"></cell>
+      <cell col="6" row="13"></cell>
+      <cell col="7" row="13"></cell>
+      <cell col="8" row="13" colspan="2"></cell>
+      <cell col="10" row="13"></cell>
+      <cell col="11" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14"></cell>
+      <cell col="1" row="14"></cell>
+      <cell col="2" row="14"></cell>
+      <cell col="3" row="14"></cell>
+      <cell col="4" row="14"></cell>
+      <cell col="5" row="14"></cell>
+      <cell col="6" row="14"></cell>
+      <cell col="7" row="14"></cell>
+      <cell col="8" row="14" colspan="2"></cell>
+      <cell col="10" row="14"></cell>
+      <cell col="11" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15"></cell>
+      <cell col="1" row="15"></cell>
+      <cell col="2" row="15"></cell>
+      <cell col="3" row="15"></cell>
+      <cell col="4" row="15"></cell>
+      <cell col="5" row="15"></cell>
+      <cell col="6" row="15"></cell>
+      <cell col="7" row="15"></cell>
+      <cell col="8" row="15" colspan="2"></cell>
+      <cell col="10" row="15"></cell>
+      <cell col="11" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="3">3. 세부조사결과</cell>
+      <cell col="3" row="16"></cell>
+      <cell col="4" row="16"></cell>
+      <cell col="5" row="16"></cell>
+      <cell col="6" row="16"></cell>
+      <cell col="7" row="16"></cell>
+      <cell col="8" row="16" colspan="2"></cell>
+      <cell col="10" row="16"></cell>
+      <cell col="11" row="16"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17" rowspan="3">연번</cell>
+      <cell col="1" row="17" rowspan="3">도엽명</cell>
+      <cell col="2" row="17" rowspan="3">점번호</cell>
+      <cell col="3" row="17" rowspan="3">소재지</cell>
+      <cell col="4" row="17" colspan="7">조사내용</cell>
+      <cell col="11" row="17" rowspan="3">비고</cell>
+    </row>
+    <row>
+      <cell col="4" row="18" colspan="2">표석상태</cell>
+      <cell col="6" row="18" colspan="2">보조수준점</cell>
+      <cell col="8" row="18" rowspan="2">안내판</cell>
+      <cell col="9" row="18" colspan="2" rowspan="2">GNSS관측가능여부</cell>
+    </row>
+    <row>
+      <cell col="4" row="19">표석</cell>
+      <cell col="5" row="19">보호석</cell>
+      <cell col="6" row="19">A</cell>
+      <cell col="7" row="19">B</cell>
+    </row>
+    <row>
+      <cell col="0" row="20">1</cell>
+      <cell col="1" row="20"></cell>
+      <cell col="2" row="20"></cell>
+      <cell col="3" row="20"></cell>
+      <cell col="4" row="20"></cell>
+      <cell col="5" row="20"></cell>
+      <cell col="6" row="20"></cell>
+      <cell col="7" row="20"></cell>
+      <cell col="8" row="20"></cell>
+      <cell col="9" row="20" colspan="2"></cell>
+      <cell col="11" row="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21">2</cell>
+      <cell col="1" row="21"></cell>
+      <cell col="2" row="21"></cell>
+      <cell col="3" row="21"></cell>
+      <cell col="4" row="21"></cell>
+      <cell col="5" row="21"></cell>
+      <cell col="6" row="21"></cell>
+      <cell col="7" row="21"></cell>
+      <cell col="8" row="21"></cell>
+      <cell col="9" row="21" colspan="2"></cell>
+      <cell col="11" row="21"></cell>
+    </row>
+    <row>
+      <cell col="0" row="22">3</cell>
+      <cell col="1" row="22"></cell>
+      <cell col="2" row="22"></cell>
+      <cell col="3" row="22"></cell>
+      <cell col="4" row="22"></cell>
+      <cell col="5" row="22"></cell>
+      <cell col="6" row="22"></cell>
+      <cell col="7" row="22"></cell>
+      <cell col="8" row="22"></cell>
+      <cell col="9" row="22" colspan="2"></cell>
+      <cell col="11" row="22"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23">4</cell>
+      <cell col="1" row="23"></cell>
+      <cell col="2" row="23"></cell>
+      <cell col="3" row="23"></cell>
+      <cell col="4" row="23"></cell>
+      <cell col="5" row="23"></cell>
+      <cell col="6" row="23"></cell>
+      <cell col="7" row="23"></cell>
+      <cell col="8" row="23"></cell>
+      <cell col="9" row="23" colspan="2"></cell>
+      <cell col="11" row="23"></cell>
+    </row>
+    <row>
+      <cell col="0" row="24">5</cell>
+      <cell col="1" row="24"></cell>
+      <cell col="2" row="24"></cell>
+      <cell col="3" row="24"></cell>
+      <cell col="4" row="24"></cell>
+      <cell col="5" row="24"></cell>
+      <cell col="6" row="24"></cell>
+      <cell col="7" row="24"></cell>
+      <cell col="8" row="24"></cell>
+      <cell col="9" row="24" colspan="2"></cell>
+      <cell col="11" row="24"></cell>
+    </row>
+    <row>
+      <cell col="0" row="25">6</cell>
+      <cell col="1" row="25"></cell>
+      <cell col="2" row="25"></cell>
+      <cell col="3" row="25"></cell>
+      <cell col="4" row="25"></cell>
+      <cell col="5" row="25"></cell>
+      <cell col="6" row="25"></cell>
+      <cell col="7" row="25"></cell>
+      <cell col="8" row="25"></cell>
+      <cell col="9" row="25" colspan="2"></cell>
+      <cell col="11" row="25"></cell>
+    </row>
+    <row>
+      <cell col="0" row="26">7</cell>
+      <cell col="1" row="26"></cell>
+      <cell col="2" row="26"></cell>
+      <cell col="3" row="26"></cell>
+      <cell col="4" row="26"></cell>
+      <cell col="5" row="26"></cell>
+      <cell col="6" row="26"></cell>
+      <cell col="7" row="26"></cell>
+      <cell col="8" row="26"></cell>
+      <cell col="9" row="26" colspan="2"></cell>
+      <cell col="11" row="26"></cell>
+    </row>
+    <row>
+      <cell col="0" row="27">8</cell>
+      <cell col="1" row="27"></cell>
+      <cell col="2" row="27"></cell>
+      <cell col="3" row="27"></cell>
+      <cell col="4" row="27"></cell>
+      <cell col="5" row="27"></cell>
+      <cell col="6" row="27"></cell>
+      <cell col="7" row="27"></cell>
+      <cell col="8" row="27"></cell>
+      <cell col="9" row="27" colspan="2"></cell>
+      <cell col="11" row="27"></cell>
+    </row>
+  </table>
+</annex>

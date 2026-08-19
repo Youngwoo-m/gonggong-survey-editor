@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="151295993" article="제155조" rows="25" cols="24" source="공공측량 작업규정.2025.04.23_수식수정.오류표시.hwpx">
+  <row>
+    <cell col="0" row="0" colspan="2">폭</cell>
+    <cell col="2" row="0" colspan="2">4</cell>
+    <cell col="4" row="0" colspan="2">6</cell>
+    <cell col="6" row="0" colspan="2">8</cell>
+    <cell col="8" row="0" colspan="2">10</cell>
+    <cell col="10" row="0" colspan="2">12</cell>
+    <cell col="12" row="0" colspan="2">15</cell>
+    <cell col="14" row="0" colspan="2">20</cell>
+    <cell col="16" row="0" colspan="2">25</cell>
+    <cell col="18" row="0" colspan="2">30</cell>
+    <cell col="20" row="0" colspan="2">35</cell>
+    <cell col="22" row="0" colspan="2">40m 이상</cell>
+  </row>
+  <row>
+    <cell col="0" row="1" rowspan="2">폭</cell>
+    <cell col="1" row="1" rowspan="2">가각</cell>
+    <cell col="2" row="1" colspan="2">90″</cell>
+    <cell col="4" row="1" colspan="2">90″</cell>
+    <cell col="6" row="1" colspan="2">90″</cell>
+    <cell col="8" row="1" colspan="2">90″</cell>
+    <cell col="10" row="1" colspan="2">90″</cell>
+    <cell col="12" row="1" colspan="2">90″</cell>
+    <cell col="14" row="1" colspan="2">90″</cell>
+    <cell col="16" row="1" colspan="2">90″</cell>
+    <cell col="18" row="1" colspan="2">90″</cell>
+    <cell col="20" row="1" colspan="2">90″</cell>
+    <cell col="22" row="1" colspan="2">90″</cell>
+  </row>
+  <row>
+    <cell col="2" row="2">120″</cell>
+    <cell col="3" row="2">60″</cell>
+    <cell col="4" row="2">120″</cell>
+    <cell col="5" row="2">60″</cell>
+    <cell col="6" row="2">120″</cell>
+    <cell col="7" row="2">60″</cell>
+    <cell col="8" row="2">120″</cell>
+    <cell col="9" row="2">60″</cell>
+    <cell col="10" row="2">120″</cell>
+    <cell col="11" row="2">60″</cell>
+    <cell col="12" row="2">120″</cell>
+    <cell col="13" row="2">60″</cell>
+    <cell col="14" row="2">120″</cell>
+    <cell col="15" row="2">60″</cell>
+    <cell col="16" row="2">120″</cell>
+    <cell col="17" row="2">60″</cell>
+    <cell col="18" row="2">120″</cell>
+    <cell col="19" row="2">60″</cell>
+    <cell col="20" row="2">120″</cell>
+    <cell col="21" row="2">60″</cell>
+    <cell col="22" row="2">120″</cell>
+    <cell col="23" row="2">60″</cell>
+  </row>
+  <row>
+    <cell col="0" row="3" colspan="2" rowspan="2">40m 이상</cell>
+    <cell col="2" row="3" colspan="2">-</cell>
+    <cell col="4" row="3" colspan="2">-</cell>
+    <cell col="6" row="3" colspan="2">-</cell>
+    <cell col="8" row="3" colspan="2">-</cell>
+    <cell col="10" row="3" colspan="2">6</cell>
+    <cell col="12" row="3" colspan="2">8</cell>
+    <cell col="14" row="3" colspan="2">10</cell>
+    <cell col="16" row="3" colspan="2">10</cell>
+    <cell col="18" row="3" colspan="2">10</cell>
+    <cell col="20" row="3" colspan="2">10</cell>
+    <cell col="22" row="3" colspan="2">12</cell>
+  </row>
+  <row>
+    <cell col="2" row="4">-</cell>
+    <cell col="3" row="4">-</cell>
+    <cell col="4" row="4">-</cell>
+    <cell col="5" row="4">-</cell>
+    <cell col="6" row="4">-</cell>
+    <cell col="7" row="4">-</cell>
+    <cell col="8" row="4">-</cell>
+    <cell col="9" row="4">-</cell>
+    <cell col="10" row="4">5</cell>
+    <cell col="11" row="4">8</cell>
+    <cell col="12" row="4">6</cell>
+    <cell col="13" row="4">10</cell>
+    <cell col="14" row="4">8</cell>
+    <cell col="15" row="4">12</cell>
+    <cell col="16" row="4">8</cell>
+    <cell col="17" row="4">12</cell>
+    <cell col="18" row="4">8</cell>
+    <cell col="19" row="4">12</cell>
+    <cell col="20" row="4">8</cell>
+    <cell col="21" row="4">12</cell>
+    <cell col="22" row="4">8</cell>
+    <cell col="23" row="4">15</cell>
+  </row>
+  <row>
+    <cell col="0" row="5" colspan="2" rowspan="2">35</cell>
+    <cell col="2" row="5" colspan="2">-</cell>
+    <cell col="4" row="5" colspan="2">-</cell>
+    <cell col="6" row="5" colspan="2">-</cell>
+    <cell col="8" row="5" colspan="2">-</cell>
+    <cell col="10" row="5" colspan="2">6</cell>
+    <cell col="12" row="5" colspan="2">8</cell>
+    <cell col="14" row="5" colspan="2">10</cell>
+    <cell col="16" row="5" colspan="2">10</cell>
+    <cell col="18" row="5" colspan="2">10</cell>
+    <cell col="20" row="5" colspan="2">10</cell>
+    <cell col="22" row="5" colspan="2">10</cell>
+  </row>
+  <row>
+    <cell col="2" row="6">-</cell>
+    <cell col="3" row="6">-</cell>
+    <cell col="4" row="6">-</cell>
+    <cell col="5" row="6">-</cell>
+    <cell col="6" row="6">-</cell>
+    <cell col="7" row="6">-</cell>
+    <cell col="8" row="6">-</cell>
+    <cell col="9" row="6">-</cell>
+    <cell col="10" row="6">5</cell>
+    <cell col="11" row="6">8</cell>
+    <cell col="12" row="6">6</cell>
+    <cell col="13" row="6">10</cell>
+    <cell col="14" row="6">8</cell>
+    <cell col="15" row="6">12</cell>
+    <cell col="16" row="6">8</cell>
+    <cell col="17" row="6">12</cell>
+    <cell col="18" row="6">8</cell>
+    <cell col="19" row="6">12</cell>
+    <cell col="20" row="6">8</cell>
+    <cell col="21" row="6">12</cell>
+    <cell col="22" row="6">8</cell>
+    <cell col="23" row="6">12</cell>
+  </row>
+  <row>
+    <cell col="0" row="7" colspan="2" rowspan="2">30</cell>
+    <cell col="2" row="7" colspan="2">-</cell>
+    <cell col="4" row="7" colspan="2">-</cell>
+    <cell col="6" row="7" colspan="2">-</cell>
+    <cell col="8" row="7" colspan="2">5</cell>
+    <cell col="10" row="7" colspan="2">6</cell>
+    <cell col="12" row="7" colspan="2">8</cell>
+    <cell col="14" row="7" colspan="2">10</cell>
+    <cell col="16" row="7" colspan="2">10</cell>
+    <cell col="18" row="7" colspan="2">10</cell>
+    <cell col="20" row="7" colspan="2">10</cell>
+    <cell col="22" row="7" colspan="2">10</cell>
+  </row>
+  <row>
+    <cell col="2" row="8">-</cell>
+    <cell col="3" row="8">-</cell>
+    <cell col="4" row="8">-</cell>
+    <cell col="5" row="8">-</cell>
+    <cell col="6" row="8">-</cell>
+    <cell col="7" row="8">-</cell>
+    <cell col="8" row="8">4</cell>
+    <cell col="9" row="8">6</cell>
+    <cell col="10" row="8">5</cell>
+    <cell col="11" row="8">8</cell>
+    <cell col="12" row="8">6</cell>
+    <cell col="13" row="8">10</cell>
+    <cell col="14" row="8">8</cell>
+    <cell col="15" row="8">12</cell>
+    <cell col="16" row="8">8</cell>
+    <cell col="17" row="8">12</cell>
+    <cell col="18" row="8">8</cell>
+    <cell col="19" row="8">12</cell>
+    <cell col="20" row="8">8</cell>
+    <cell col="21" row="8">12</cell>
+    <cell col="22" row="8">8</cell>
+    <cell col="23" row="8">12</cell>
+  </row>
+  <row>
+    <cell col="0" row="9" colspan="2" rowspan="2">25</cell>
+    <cell col="2" row="9" colspan="2">-</cell>
+    <cell col="4" row="9" colspan="2">-</cell>
+    <cell col="6" row="9" colspan="2">-</cell>
+    <cell col="8" row="9" colspan="2">5</cell>
+    <cell col="10" row="9" colspan="2">6</cell>
+    <cell col="12" row="9" colspan="2">8</cell>
+    <cell col="14" row="9" colspan="2">10</cell>
+    <cell col="16" row="9" colspan="2">10</cell>
+    <cell col="18" row="9" colspan="2">10</cell>
+    <cell col="20" row="9" colspan="2">10</cell>
+    <cell col="22" row="9" colspan="2">10</cell>
+  </row>
+  <row>
+    <cell col="2" row="10">-</cell>
+    <cell col="3" row="10">-</cell>
+    <cell col="4" row="10">-</cell>
+    <cell col="5" row="10">-</cell>
+    <cell col="6" row="10">-</cell>
+    <cell col="7" row="10">-</cell>
+    <cell col="8" row="10">4</cell>
+    <cell col="9" row="10">6</cell>
+    <cell col="10" row="10">5</cell>
+    <cell col="11" row="10">8</cell>
+    <cell col="12" row="10">6</cell>
+    <cell col="13" row="10">10</cell>
+    <cell col="14" row="10">8</cell>
+    <cell col="15" row="10">12</cell>
+    <cell col="16" row="10">8</cell>
+    <cell col="17" row="10">12</cell>
+    <cell col="18" row="10">8</cell>
+    <cell col="19" row="10">12</cell>
+    <cell col="20" row="10">8</cell>
+    <cell col="21" row="10">12</cell>
+    <cell col="22" row="10">8</cell>
+    <cell col="23" row="10">12</cell>
+  </row>
+  <row>
+    <cell col="0" row="11" colspan="2" rowspan="2">20</cell>
+    <cell col="2" row="11" colspan="2">-</cell>
+    <cell col="4" row="11" colspan="2">5</cell>
+    <cell col="6" row="11" colspan="2">5</cell>
+    <cell col="8" row="11" colspan="2">5</cell>
+    <cell col="10" row="11" colspan="2">6</cell>
+    <cell col="12" row="11" colspan="2">8</cell>
+    <cell col="14" row="11" colspan="2">10</cell>
+    <cell col="16" row="11" colspan="2">10</cell>
+    <cell col="18" row="11" colspan="2">10</cell>
+    <cell col="20" row="11" colspan="2">10</cell>
+    <cell col="22" row="11" colspan="2">10</cell>
+  </row>
+  <row>
+    <cell col="2" row="12">-</cell>
+    <cell col="3" row="12">-</cell>
+    <cell col="4" row="12">-</cell>
+    <cell col="5" row="12">6</cell>
+    <cell col="6" row="12">-</cell>
+    <cell col="7" row="12">6</cell>
+    <cell col="8" row="12">4</cell>
+    <cell col="9" row="12">6</cell>
+    <cell col="10" row="12">5</cell>
+    <cell col="11" row="12">8</cell>
+    <cell col="12" row="12">6</cell>
+    <cell col="13" row="12">10</cell>
+    <cell col="14" row="12">8</cell>
+    <cell col="15" row="12">12</cell>
+    <cell col="16" row="12">8</cell>
+    <cell col="17" row="12">12</cell>
+    <cell col="18" row="12">8</cell>
+    <cell col="19" row="12">12</cell>
+    <cell col="20" row="12">8</cell>
+    <cell col="21" row="12">12</cell>
+    <cell col="22" row="12">8</cell>
+    <cell col="23" row="12">12</cell>
+  </row>
+  <row>
+    <cell col="0" row="13" colspan="2" rowspan="2">15</cell>
+    <cell col="2" row="13" colspan="2">-</cell>
+    <cell col="4" row="13" colspan="2">5</cell>
+    <cell col="6" row="13" colspan="2">5</cell>
+    <cell col="8" row="13" colspan="2">5</cell>
+    <cell col="10" row="13" colspan="2">6</cell>
+    <cell col="12" row="13" colspan="2">8</cell>
+    <cell col="14" row="13" colspan="2">8</cell>
+    <cell col="16" row="13" colspan="2">8</cell>
+    <cell col="18" row="13" colspan="2">8</cell>
+    <cell col="20" row="13" colspan="2">8</cell>
+    <cell col="22" row="13" colspan="2">8</cell>
+  </row>
+  <row>
+    <cell col="2" row="14">-</cell>
+    <cell col="3" row="14">-4</cell>
+    <cell col="4" row="14">4</cell>
+    <cell col="5" row="14">6</cell>
+    <cell col="6" row="14">4</cell>
+    <cell col="7" row="14">6</cell>
+    <cell col="8" row="14">4</cell>
+    <cell col="9" row="14">6</cell>
+    <cell col="10" row="14">5</cell>
+    <cell col="11" row="14">8</cell>
+    <cell col="12" row="14">6</cell>
+    <cell col="13" row="14">10</cell>
+    <cell col="14" row="14">6</cell>
+    <cell col="15" row="14">10</cell>
+    <cell col="16" row="14">6</cell>
+    <cell col="17" row="14">10</cell>
+    <cell col="18" row="14">6</cell>
+    <cell col="19" row="14">10</cell>
+    <cell col="20" row="14">6</cell>
+    <cell col="21" row="14">10</cell>
+    <cell col="22" row="14">6</cell>
+    <cell col="23" row="14">10</cell>
+  </row>
+  <row>
+    <cell col="0" row="15" colspan="2" rowspan="2">12</cell>
+    <cell col="2" row="15" colspan="2">-</cell>
+    <cell col="4" row="15" colspan="2">5</cell>
+    <cell col="6" row="15" colspan="2">5</cell>
+    <cell col="8" row="15" colspan="2">5</cell>
+    <cell col="10" row="15" colspan="2">6</cell>
+    <cell col="12" row="15" colspan="2">6</cell>
+    <cell col="14" row="15" colspan="2">6</cell>
+    <cell col="16" row="15" colspan="2">6</cell>
+    <cell col="18" row="15" colspan="2">6</cell>
+    <cell col="20" row="15" colspan="2">6</cell>
+    <cell col="22" row="15" colspan="2">6</cell>
+  </row>
+  <row>
+    <cell col="2" row="16">-</cell>
+    <cell col="3" row="16">4</cell>
+    <cell col="4" row="16">4</cell>
+    <cell col="5" row="16">6</cell>
+    <cell col="6" row="16">4</cell>
+    <cell col="7" row="16">6</cell>
+    <cell col="8" row="16">4</cell>
+    <cell col="9" row="16">6</cell>
+    <cell col="10" row="16">5</cell>
+    <cell col="11" row="16">8</cell>
+    <cell col="12" row="16">5</cell>
+    <cell col="13" row="16">8</cell>
+    <cell col="14" row="16">5</cell>
+    <cell col="15" row="16">8</cell>
+    <cell col="16" row="16">5</cell>
+    <cell col="17" row="16">8</cell>
+    <cell col="18" row="16">5</cell>
+    <cell col="19" row="16">8</cell>
+    <cell col="20" row="16">5</cell>
+    <cell col="21" row="16">8</cell>
+    <cell col="22" row="16">5</cell>
+    <cell col="23" row="16">8</cell>
+  </row>
+  <row>
+    <cell col="0" row="17" colspan="2" rowspan="2">10</cell>
+    <cell col="2" row="17" colspan="2">3</cell>
+    <cell col="4" row="17" colspan="2">5</cell>
+    <cell col="6" row="17" colspan="2">5</cell>
+    <cell col="8" row="17" colspan="2">5</cell>
+    <cell col="10" row="17" colspan="2">5</cell>
+    <cell col="12" row="17" colspan="2">5</cell>
+    <cell col="14" row="17" colspan="2">5</cell>
+    <cell col="16" row="17" colspan="2">5</cell>
+    <cell col="18" row="17" colspan="2">5</cell>
+    <cell col="20" row="17" colspan="2">-</cell>
+    <cell col="22" row="17" colspan="2">-</cell>
+  </row>
+  <row>
+    <cell col="2" row="18">2</cell>
+    <cell col="3" row="18">4</cell>
+    <cell col="4" row="18">4</cell>
+    <cell col="5" row="18">6</cell>
+    <cell col="6" row="18">4</cell>
+    <cell col="7" row="18">6</cell>
+    <cell col="8" row="18">4</cell>
+    <cell col="9" row="18">6</cell>
+    <cell col="10" row="18">4</cell>
+    <cell col="11" row="18">6</cell>
+    <cell col="12" row="18">4</cell>
+    <cell col="13" row="18">6</cell>
+    <cell col="14" row="18">4</cell>
+    <cell col="15" row="18">6</cell>
+    <cell col="16" row="18">4</cell>
+    <cell col="17" row="18">6</cell>
+    <cell col="18" row="18">4</cell>
+    <cell col="19" row="18">6</cell>
+    <cell col="20" row="18">-</cell>
+    <cell col="21" row="18">6</cell>
+    <cell col="22" row="18">-</cell>
+    <cell col="23" row="18">6</cell>
+  </row>
+  <row>
+    <cell col="0" row="19" colspan="2" rowspan="2">8</cell>
+    <cell col="2" row="19" colspan="2">3</cell>
+    <cell col="4" row="19" colspan="2">5</cell>
+    <cell col="6" row="19" colspan="2">5</cell>
+    <cell col="8" row="19" colspan="2">5</cell>
+    <cell col="10" row="19" colspan="2">5</cell>
+    <cell col="12" row="19" colspan="2">5</cell>
+    <cell col="14" row="19" colspan="2">5</cell>
+    <cell col="16" row="19" colspan="2"></cell>
+    <cell col="18" row="19" colspan="2"></cell>
+    <cell col="20" row="19" colspan="2"></cell>
+    <cell col="22" row="19" colspan="2"></cell>
+  </row>
+  <row>
+    <cell col="2" row="20">2</cell>
+    <cell col="3" row="20">4</cell>
+    <cell col="4" row="20">4</cell>
+    <cell col="5" row="20">6</cell>
+    <cell col="6" row="20">4</cell>
+    <cell col="7" row="20">6</cell>
+    <cell col="8" row="20">4</cell>
+    <cell col="9" row="20">6</cell>
+    <cell col="10" row="20">4</cell>
+    <cell col="11" row="20">6</cell>
+    <cell col="12" row="20">4</cell>
+    <cell col="13" row="20">6</cell>
+    <cell col="14" row="20">4</cell>
+    <cell col="15" row="20">6</cell>
+    <cell col="16" row="20"></cell>
+    <cell col="17" row="20"></cell>
+    <cell col="18" row="20"></cell>
+    <cell col="19" row="20"></cell>
+    <cell col="20" row="20"></cell>
+    <cell col="21" row="20"></cell>
+    <cell col="22" row="20"></cell>
+    <cell col="23" row="20"></cell>
+  </row>
+  <row>
+    <cell col="0" row="21" colspan="2" rowspan="2">6</cell>
+    <cell col="2" row="21" colspan="2">3</cell>
+    <cell col="4" row="21" colspan="2">5</cell>
+    <cell col="6" row="21" colspan="2">5</cell>
+    <cell col="8" row="21" colspan="2">5</cell>
+    <cell col="10" row="21" colspan="2">5</cell>
+    <cell col="12" row="21" colspan="2">5</cell>
+    <cell col="14" row="21" colspan="2">-</cell>
+    <cell col="16" row="21" colspan="2"></cell>
+    <cell col="18" row="21" colspan="2"></cell>
+    <cell col="20" row="21" colspan="2"></cell>
+    <cell col="22" row="21" colspan="2"></cell>
+  </row>
+  <row>
+    <cell col="2" row="22">2</cell>
+    <cell col="3" row="22">4</cell>
+    <cell col="4" row="22">4</cell>
+    <cell col="5" row="22">6</cell>
+    <cell col="6" row="22">4</cell>
+    <cell col="7" row="22">6</cell>
+    <cell col="8" row="22">4</cell>
+    <cell col="9" row="22">6</cell>
+    <cell col="10" row="22">4</cell>
+    <cell col="11" row="22">6</cell>
+    <cell col="12" row="22">4</cell>
+    <cell col="13" row="22">6</cell>
+    <cell col="14" row="22">4</cell>
+    <cell col="15" row="22">6</cell>
+    <cell col="16" row="22"></cell>
+    <cell col="17" row="22"></cell>
+    <cell col="18" row="22"></cell>
+    <cell col="19" row="22"></cell>
+    <cell col="20" row="22"></cell>
+    <cell col="21" row="22"></cell>
+    <cell col="22" row="22"></cell>
+    <cell col="23" row="22"></cell>
+  </row>
+  <row>
+    <cell col="0" row="23" colspan="2" rowspan="2">4</cell>
+    <cell col="2" row="23" colspan="2">3</cell>
+    <cell col="4" row="23" colspan="2">3</cell>
+    <cell col="6" row="23" colspan="2">3</cell>
+    <cell col="8" row="23" colspan="2">3</cell>
+    <cell col="10" row="23" colspan="2"></cell>
+    <cell col="12" row="23" colspan="2"></cell>
+    <cell col="14" row="23" colspan="2"></cell>
+    <cell col="16" row="23" colspan="2"></cell>
+    <cell col="18" row="23" colspan="2"></cell>
+    <cell col="20" row="23" colspan="2"></cell>
+    <cell col="22" row="23" colspan="2"></cell>
+  </row>
+  <row>
+    <cell col="2" row="24">2</cell>
+    <cell col="3" row="24">4</cell>
+    <cell col="4" row="24">2</cell>
+    <cell col="5" row="24">4</cell>
+    <cell col="6" row="24">2</cell>
+    <cell col="7" row="24">4</cell>
+    <cell col="8" row="24">2</cell>
+    <cell col="9" row="24">4</cell>
+    <cell col="10" row="24"></cell>
+    <cell col="11" row="24"></cell>
+    <cell col="12" row="24"></cell>
+    <cell col="13" row="24"></cell>
+    <cell col="14" row="24"></cell>
+    <cell col="15" row="24"></cell>
+    <cell col="16" row="24"></cell>
+    <cell col="17" row="24"></cell>
+    <cell col="18" row="24"></cell>
+    <cell col="19" row="24"></cell>
+    <cell col="20" row="24"></cell>
+    <cell col="21" row="24"></cell>
+    <cell col="22" row="24"></cell>
+    <cell col="23" row="24"></cell>
+  </row>
+</table>

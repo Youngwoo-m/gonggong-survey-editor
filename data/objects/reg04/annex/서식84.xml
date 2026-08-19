@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식84" gubun="서식" no="84" title="토지표시변경등기 촉탁대장" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454989">
+  <table rows="16" cols="14">
+    <row>
+      <cell col="0" row="0" colspan="14">[별지 제84호서식] &lt;개정 2022. 12. 13.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="14">토지표시변경등기 촉탁대장</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="14">○ 토지이동종목 :</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">결   재</cell>
+      <cell col="2" row="3" colspan="2">토 지 대 장</cell>
+      <cell col="4" row="3" rowspan="2">지 번</cell>
+      <cell col="5" row="3" rowspan="2">지 목</cell>
+      <cell col="6" row="3" rowspan="2">면 적
+(㎡)</cell>
+      <cell col="7" row="3">성명(생년월일)/법인 명칭(법인등록번호)</cell>
+      <cell col="8" row="3" rowspan="2">등  기
+촉  탁
+연월일</cell>
+      <cell col="9" row="3" rowspan="2">등  기
+연월일</cell>
+      <cell col="10" row="3" rowspan="2">등기필증 
+접  수
+연월일</cell>
+      <cell col="11" row="3" rowspan="2">소유자
+통  지
+연월일</cell>
+      <cell col="12" row="3" rowspan="2">반  송
+연월일</cell>
+      <cell col="13" row="3" rowspan="2">비 고</cell>
+    </row>
+    <row>
+      <cell col="0" row="4"></cell>
+      <cell col="1" row="4"></cell>
+      <cell col="2" row="4">읍ㆍ면</cell>
+      <cell col="3" row="4">동ㆍ리</cell>
+      <cell col="7" row="4">주        소</cell>
+    </row>
+    <row>
+      <cell col="0" row="5"></cell>
+      <cell col="1" row="5"></cell>
+      <cell col="2" row="5"></cell>
+      <cell col="3" row="5"></cell>
+      <cell col="4" row="5"></cell>
+      <cell col="5" row="5"></cell>
+      <cell col="6" row="5"></cell>
+      <cell col="7" row="5"></cell>
+      <cell col="8" row="5"></cell>
+      <cell col="9" row="5"></cell>
+      <cell col="10" row="5"></cell>
+      <cell col="11" row="5"></cell>
+      <cell col="12" row="5"></cell>
+      <cell col="13" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6"></cell>
+      <cell col="1" row="6"></cell>
+      <cell col="2" row="6"></cell>
+      <cell col="3" row="6"></cell>
+      <cell col="4" row="6"></cell>
+      <cell col="5" row="6"></cell>
+      <cell col="6" row="6"></cell>
+      <cell col="7" row="6"></cell>
+      <cell col="8" row="6"></cell>
+      <cell col="9" row="6"></cell>
+      <cell col="10" row="6"></cell>
+      <cell col="11" row="6"></cell>
+      <cell col="12" row="6"></cell>
+      <cell col="13" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7"></cell>
+      <cell col="1" row="7"></cell>
+      <cell col="2" row="7"></cell>
+      <cell col="3" row="7"></cell>
+      <cell col="4" row="7"></cell>
+      <cell col="5" row="7"></cell>
+      <cell col="6" row="7"></cell>
+      <cell col="7" row="7"></cell>
+      <cell col="8" row="7"></cell>
+      <cell col="9" row="7"></cell>
+      <cell col="10" row="7"></cell>
+      <cell col="11" row="7"></cell>
+      <cell col="12" row="7"></cell>
+      <cell col="13" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8"></cell>
+      <cell col="1" row="8"></cell>
+      <cell col="2" row="8"></cell>
+      <cell col="3" row="8"></cell>
+      <cell col="4" row="8"></cell>
+      <cell col="5" row="8"></cell>
+      <cell col="6" row="8"></cell>
+      <cell col="7" row="8"></cell>
+      <cell col="8" row="8"></cell>
+      <cell col="9" row="8"></cell>
+      <cell col="10" row="8"></cell>
+      <cell col="11" row="8"></cell>
+      <cell col="12" row="8"></cell>
+      <cell col="13" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9"></cell>
+      <cell col="1" row="9"></cell>
+      <cell col="2" row="9"></cell>
+      <cell col="3" row="9"></cell>
+      <cell col="4" row="9"></cell>
+      <cell col="5" row="9"></cell>
+      <cell col="6" row="9"></cell>
+      <cell col="7" row="9"></cell>
+      <cell col="8" row="9"></cell>
+      <cell col="9" row="9"></cell>
+      <cell col="10" row="9"></cell>
+      <cell col="11" row="9"></cell>
+      <cell col="12" row="9"></cell>
+      <cell col="13" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10"></cell>
+      <cell col="1" row="10"></cell>
+      <cell col="2" row="10"></cell>
+      <cell col="3" row="10"></cell>
+      <cell col="4" row="10"></cell>
+      <cell col="5" row="10"></cell>
+      <cell col="6" row="10"></cell>
+      <cell col="7" row="10"></cell>
+      <cell col="8" row="10"></cell>
+      <cell col="9" row="10"></cell>
+      <cell col="10" row="10"></cell>
+      <cell col="11" row="10"></cell>
+      <cell col="12" row="10"></cell>
+      <cell col="13" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11"></cell>
+      <cell col="1" row="11"></cell>
+      <cell col="2" row="11"></cell>
+      <cell col="3" row="11"></cell>
+      <cell col="4" row="11"></cell>
+      <cell col="5" row="11"></cell>
+      <cell col="6" row="11"></cell>
+      <cell col="7" row="11"></cell>
+      <cell col="8" row="11"></cell>
+      <cell col="9" row="11"></cell>
+      <cell col="10" row="11"></cell>
+      <cell col="11" row="11"></cell>
+      <cell col="12" row="11"></cell>
+      <cell col="13" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12"></cell>
+      <cell col="1" row="12"></cell>
+      <cell col="2" row="12"></cell>
+      <cell col="3" row="12"></cell>
+      <cell col="4" row="12"></cell>
+      <cell col="5" row="12"></cell>
+      <cell col="6" row="12"></cell>
+      <cell col="7" row="12"></cell>
+      <cell col="8" row="12"></cell>
+      <cell col="9" row="12"></cell>
+      <cell col="10" row="12"></cell>
+      <cell col="11" row="12"></cell>
+      <cell col="12" row="12"></cell>
+      <cell col="13" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13"></cell>
+      <cell col="1" row="13"></cell>
+      <cell col="2" row="13"></cell>
+      <cell col="3" row="13"></cell>
+      <cell col="4" row="13"></cell>
+      <cell col="5" row="13"></cell>
+      <cell col="6" row="13"></cell>
+      <cell col="7" row="13"></cell>
+      <cell col="8" row="13"></cell>
+      <cell col="9" row="13"></cell>
+      <cell col="10" row="13"></cell>
+      <cell col="11" row="13"></cell>
+      <cell col="12" row="13"></cell>
+      <cell col="13" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14"></cell>
+      <cell col="1" row="14"></cell>
+      <cell col="2" row="14"></cell>
+      <cell col="3" row="14"></cell>
+      <cell col="4" row="14"></cell>
+      <cell col="5" row="14"></cell>
+      <cell col="6" row="14"></cell>
+      <cell col="7" row="14"></cell>
+      <cell col="8" row="14"></cell>
+      <cell col="9" row="14"></cell>
+      <cell col="10" row="14"></cell>
+      <cell col="11" row="14"></cell>
+      <cell col="12" row="14"></cell>
+      <cell col="13" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="14">297㎜×210㎜ (보존용지(2종) 70g/㎡)</cell>
+    </row>
+  </table>
+</annex>

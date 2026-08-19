@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표6" gubun="별표" no="6" title="지도 등의 간행심사 결과 통보서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151295181">
+  <text>[별표 6]
+지도 등의 간행심사 결과 통보서</text>
+  <table rows="13" cols="9">
+    <row>
+      <cell col="0" row="0" rowspan="2">신청인
+(발행인)</cell>
+      <cell col="1" row="0">성 명</cell>
+      <cell col="2" row="0" colspan="3"></cell>
+      <cell col="5" row="0" colspan="3">생년월일</cell>
+      <cell col="8" row="0"></cell>
+    </row>
+    <row>
+      <cell col="1" row="1">주 소</cell>
+      <cell col="2" row="1" colspan="4"></cell>
+      <cell col="6" row="1" colspan="2">전 화</cell>
+      <cell col="8" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">간행물(지도)명칭</cell>
+      <cell col="2" row="2" colspan="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">심  사  번  호</cell>
+      <cell col="2" row="3" colspan="7">0 0 0 0 심사필(     호)</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="2">제 작 회 사
+또는 제작자</cell>
+      <cell col="2" row="4" colspan="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="2">심  사  비</cell>
+      <cell col="2" row="5" colspan="7">원</cell>
+    </row>
+    <row>
+      <cell col="0" row="6" colspan="9">주 요 심 사 사 항</cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="3">심 사 항 목</cell>
+      <cell col="3" row="7">간행물쪽번호
+(책자인 경우)</cell>
+      <cell col="4" row="7" colspan="3">틀 린 표 기</cell>
+      <cell col="7" row="7" colspan="2">바 른 표 기</cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="3"></cell>
+      <cell col="3" row="8"></cell>
+      <cell col="4" row="8" colspan="3"></cell>
+      <cell col="7" row="8" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="3"></cell>
+      <cell col="3" row="9"></cell>
+      <cell col="4" row="9" colspan="3"></cell>
+      <cell col="7" row="9" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="3"></cell>
+      <cell col="3" row="10"></cell>
+      <cell col="4" row="10" colspan="3"></cell>
+      <cell col="7" row="10" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="3"></cell>
+      <cell col="3" row="11"></cell>
+      <cell col="4" row="11" colspan="3"></cell>
+      <cell col="7" row="11" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="3"></cell>
+      <cell col="3" row="12"></cell>
+      <cell col="4" row="12" colspan="3"></cell>
+      <cell col="7" row="12" colspan="2"></cell>
+    </row>
+  </table>
+</annex>

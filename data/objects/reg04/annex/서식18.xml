@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식18" gubun="서식" no="18" title="지적기준점성과 등본" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454469">
+  <table rows="1" cols="2">
+    <row>
+      <cell col="0" row="0">○ ○ 기관장</cell>
+      <cell col="1" row="0">직인</cell>
+    </row>
+  </table>
+  <table rows="16" cols="10">
+    <row>
+      <cell col="0" row="0" colspan="10">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별지 제18호서식] &lt;개정 2017. 1. 31.&gt;
+                            (앞쪽)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="10">지 적 기 준 점 성 과  등 본</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">지적기준점 종류</cell>
+      <cell col="1" row="2" colspan="3"></cell>
+      <cell col="4" row="2" colspan="3">명칭 및 번호</cell>
+      <cell col="7" row="2" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" rowspan="2">구분</cell>
+      <cell col="1" row="3" colspan="4">평면직각좌표</cell>
+      <cell col="5" row="3" colspan="4">경위도 좌표</cell>
+      <cell col="9" row="3" rowspan="2">기타
+사항</cell>
+    </row>
+    <row>
+      <cell col="1" row="4">X(m)</cell>
+      <cell col="2" row="4" colspan="3">Y(m)</cell>
+      <cell col="5" row="4">위도</cell>
+      <cell col="6" row="4" colspan="3">경도</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">세계측지계</cell>
+      <cell col="1" row="5"></cell>
+      <cell col="2" row="5" colspan="3"></cell>
+      <cell col="5" row="5"></cell>
+      <cell col="6" row="5" colspan="3"></cell>
+      <cell col="9" row="5" rowspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">지역측지계</cell>
+      <cell col="1" row="6"></cell>
+      <cell col="2" row="6" colspan="3"></cell>
+      <cell col="5" row="6"></cell>
+      <cell col="6" row="6" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">기타 좌표</cell>
+      <cell col="1" row="7"></cell>
+      <cell col="2" row="7" colspan="3"></cell>
+      <cell col="5" row="7"></cell>
+      <cell col="6" row="7" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8">표고(m)</cell>
+      <cell col="1" row="8" colspan="4"></cell>
+      <cell col="5" row="8">타원체고</cell>
+      <cell col="6" row="8" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">기준원점명</cell>
+      <cell col="1" row="9" colspan="4"></cell>
+      <cell col="5" row="9">표지의 재질</cell>
+      <cell col="6" row="9" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10">토지소재지</cell>
+      <cell col="1" row="10" colspan="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11">설치일자</cell>
+      <cell col="1" row="11" colspan="2"></cell>
+      <cell col="3" row="11" colspan="5">고시일자</cell>
+      <cell col="8" row="11" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="10">위치 약도</cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="10">「공간정보의 구축 및 관리 등에 관한 법률」 제27조 및 같은 법 시행규칙 제26조제3항에 따라 작성된 등본입니다.
+   년      월      일</cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="10">210㎜×297㎜[백상지(120g/㎡) 또는 백상지(80g/㎡)]</cell>
+    </row>
+  </table>
+  <table rows="31" cols="12">
+    <row>
+      <cell col="0" row="0" colspan="12">(뒤쪽)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="12">지 적 기 준 점 성 과  등 본</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="12">좌표 연혁</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" rowspan="2">순번</cell>
+      <cell col="1" row="3" rowspan="2">구분</cell>
+      <cell col="2" row="3" colspan="4">평면직각좌표</cell>
+      <cell col="6" row="3" colspan="3">경위도 좌표</cell>
+      <cell col="9" row="3" colspan="2" rowspan="2">성과
+고시일자</cell>
+      <cell col="11" row="3" rowspan="2">기타
+사항</cell>
+    </row>
+    <row>
+      <cell col="2" row="4" colspan="2">X(m)</cell>
+      <cell col="4" row="4" colspan="2">Y(m)</cell>
+      <cell col="6" row="4">위도</cell>
+      <cell col="7" row="4" colspan="2">경도</cell>
+    </row>
+    <row>
+      <cell col="0" row="5" rowspan="5">1</cell>
+      <cell col="1" row="5">세계측지계</cell>
+      <cell col="2" row="5" colspan="2"></cell>
+      <cell col="4" row="5" colspan="2"></cell>
+      <cell col="6" row="5"></cell>
+      <cell col="7" row="5" colspan="2"></cell>
+      <cell col="9" row="5" colspan="2"></cell>
+      <cell col="11" row="5" rowspan="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="6">지역측지계</cell>
+      <cell col="2" row="6" colspan="2"></cell>
+      <cell col="4" row="6" colspan="2"></cell>
+      <cell col="6" row="6"></cell>
+      <cell col="7" row="6" colspan="2"></cell>
+      <cell col="9" row="6" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="1" row="7">기타 좌표</cell>
+      <cell col="2" row="7" colspan="2"></cell>
+      <cell col="4" row="7" colspan="2"></cell>
+      <cell col="6" row="7"></cell>
+      <cell col="7" row="7" colspan="2"></cell>
+      <cell col="9" row="7" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="1" row="8">표고(m)</cell>
+      <cell col="2" row="8" colspan="4"></cell>
+      <cell col="6" row="8">타원체고</cell>
+      <cell col="7" row="8" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="1" row="9">재고시 사유</cell>
+      <cell col="2" row="9" colspan="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" rowspan="5">2</cell>
+      <cell col="1" row="10">세계측지계</cell>
+      <cell col="2" row="10"></cell>
+      <cell col="3" row="10" colspan="3"></cell>
+      <cell col="6" row="10"></cell>
+      <cell col="7" row="10" colspan="2"></cell>
+      <cell col="9" row="10" colspan="2"></cell>
+      <cell col="11" row="10" rowspan="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="11">지역측지계</cell>
+      <cell col="2" row="11"></cell>
+      <cell col="3" row="11" colspan="3"></cell>
+      <cell col="6" row="11"></cell>
+      <cell col="7" row="11" colspan="2"></cell>
+      <cell col="9" row="11" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="1" row="12">기타 좌표</cell>
+      <cell col="2" row="12"></cell>
+      <cell col="3" row="12" colspan="3"></cell>
+      <cell col="6" row="12"></cell>
+      <cell col="7" row="12" colspan="2"></cell>
+      <cell col="9" row="12" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="1" row="13">표고(m)</cell>
+      <cell col="2" row="13" colspan="4"></cell>
+      <cell col="6" row="13">타원체고</cell>
+      <cell col="7" row="13" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="1" row="14">재고시 사유</cell>
+      <cell col="2" row="14" colspan="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15" rowspan="5">3</cell>
+      <cell col="1" row="15">세계측지계</cell>
+      <cell col="2" row="15"></cell>
+      <cell col="3" row="15" colspan="3"></cell>
+      <cell col="6" row="15"></cell>
+      <cell col="7" row="15" colspan="2"></cell>
+      <cell col="9" row="15" colspan="2"></cell>
+      <cell col="11" row="15" rowspan="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="16">지역측지계</cell>
+      <cell col="2" row="16"></cell>
+      <cell col="3" row="16" colspan="3"></cell>
+      <cell col="6" row="16"></cell>
+      <cell col="7" row="16" colspan="2"></cell>
+      <cell col="9" row="16" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="1" row="17">기타 좌표</cell>
+      <cell col="2" row="17"></cell>
+      <cell col="3" row="17" colspan="3"></cell>
+      <cell col="6" row="17"></cell>
+      <cell col="7" row="17" colspan="2"></cell>
+      <cell col="9" row="17" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="1" row="18">표고(m)</cell>
+      <cell col="2" row="18" colspan="4"></cell>
+      <cell col="6" row="18">타원체고</cell>
+      <cell col="7" row="18" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="1" row="19">재고시 사유</cell>
+      <cell col="2" row="19" colspan="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20" rowspan="5">4</cell>
+      <cell col="1" row="20">세계측지계</cell>
+      <cell col="2" row="20" colspan="3"></cell>
+      <cell col="5" row="20"></cell>
+      <cell col="6" row="20" colspan="2"></cell>
+      <cell col="8" row="20" colspan="2"></cell>
+      <cell col="10" row="20"></cell>
+      <cell col="11" row="20" rowspan="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="21">지역측지계</cell>
+      <cell col="2" row="21" colspan="3"></cell>
+      <cell col="5" row="21"></cell>
+      <cell col="6" row="21" colspan="2"></cell>
+      <cell col="8" row="21" colspan="2"></cell>
+      <cell col="10" row="21"></cell>
+    </row>
+    <row>
+      <cell col="1" row="22">기타 좌표</cell>
+      <cell col="2" row="22" colspan="3"></cell>
+      <cell col="5" row="22"></cell>
+      <cell col="6" row="22" colspan="2"></cell>
+      <cell col="8" row="22" colspan="2"></cell>
+      <cell col="10" row="22"></cell>
+    </row>
+    <row>
+      <cell col="1" row="23">표고(m)</cell>
+      <cell col="2" row="23" colspan="4"></cell>
+      <cell col="6" row="23" colspan="2">타원체고</cell>
+      <cell col="8" row="23" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="1" row="24">재고시 사유</cell>
+      <cell col="2" row="24" colspan="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="25" rowspan="5">5</cell>
+      <cell col="1" row="25">세계측지계</cell>
+      <cell col="2" row="25" colspan="3"></cell>
+      <cell col="5" row="25"></cell>
+      <cell col="6" row="25" colspan="2"></cell>
+      <cell col="8" row="25" colspan="2"></cell>
+      <cell col="10" row="25"></cell>
+      <cell col="11" row="25" rowspan="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="26">지역측지계</cell>
+      <cell col="2" row="26" colspan="3"></cell>
+      <cell col="5" row="26"></cell>
+      <cell col="6" row="26" colspan="2"></cell>
+      <cell col="8" row="26" colspan="2"></cell>
+      <cell col="10" row="26"></cell>
+    </row>
+    <row>
+      <cell col="1" row="27">기타 좌표</cell>
+      <cell col="2" row="27" colspan="3"></cell>
+      <cell col="5" row="27"></cell>
+      <cell col="6" row="27" colspan="2"></cell>
+      <cell col="8" row="27" colspan="2"></cell>
+      <cell col="10" row="27"></cell>
+    </row>
+    <row>
+      <cell col="1" row="28">표고(m)</cell>
+      <cell col="2" row="28" colspan="4"></cell>
+      <cell col="6" row="28" colspan="2">타원체고</cell>
+      <cell col="8" row="28" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="1" row="29">재고시 사유</cell>
+      <cell col="2" row="29" colspan="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="30" colspan="12"></cell>
+    </row>
+  </table>
+</annex>

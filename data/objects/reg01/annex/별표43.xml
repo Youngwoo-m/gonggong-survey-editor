@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표43" gubun="별표" no="43" title="GPR 탐사조서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296335">
+  <text>[ 별표 43 ] GPR 탐사조서</text>
+  <table rows="15" cols="10">
+    <row>
+      <cell col="0" row="0" colspan="10">사업명 :</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="10">GPR탐사 현황정보</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">측점</cell>
+      <cell col="2" row="2" colspan="2"></cell>
+      <cell col="4" row="2">탐사일시</cell>
+      <cell col="5" row="2" colspan="2"></cell>
+      <cell col="7" row="2" colspan="2">탐사작업자</cell>
+      <cell col="9" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">기상정보</cell>
+      <cell col="2" row="3" colspan="2">맑음/기온</cell>
+      <cell col="4" row="3">관재질</cell>
+      <cell col="5" row="3" colspan="2"></cell>
+      <cell col="7" row="3" colspan="2">관경</cell>
+      <cell col="9" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="2">장비명</cell>
+      <cell col="2" row="4" colspan="2"></cell>
+      <cell col="4" row="4">주파수</cell>
+      <cell col="5" row="4" colspan="2"></cell>
+      <cell col="7" row="4" colspan="2">포장상태</cell>
+      <cell col="9" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="5">탐사위치도</cell>
+      <cell col="5" row="5" colspan="5">현장사진</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">도엽번호
+(측점번호)</cell>
+      <cell col="1" row="6" colspan="4"></cell>
+      <cell col="5" row="6">도로명
+주소</cell>
+      <cell col="6" row="6" colspan="4">도로명주소와 진행방향 작성</cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="5">탐사 위치도면</cell>
+      <cell col="5" row="7" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="10">유전상수 산출 측점 영상자료분석</cell>
+    </row>
+    <row>
+      <cell col="0" row="9">분석자</cell>
+      <cell col="1" row="9" colspan="4"></cell>
+      <cell col="5" row="9">분석S/W</cell>
+      <cell col="6" row="9" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="5">하이퍼볼라 영상</cell>
+      <cell col="5" row="10" colspan="5">기타 영상(오실로스코프 등)</cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="5"></cell>
+      <cell col="5" row="11" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="3">관로깊이 측정방법</cell>
+      <cell col="3" row="12" colspan="2"></cell>
+      <cell col="5" row="12" colspan="3">관로 매설깊이</cell>
+      <cell col="8" row="12" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="3">탐사 시작점 좌표</cell>
+      <cell col="3" row="13" colspan="2">X(N)
+Y(E)</cell>
+      <cell col="5" row="13" colspan="3">산출 유전상수</cell>
+      <cell col="8" row="13" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="3">탐사 끝점 좌표</cell>
+      <cell col="3" row="14" colspan="2">X(N)
+Y(E)</cell>
+      <cell col="5" row="14" colspan="3">유전상수산출 관로 평면좌표</cell>
+      <cell col="8" row="14" colspan="2">X(N)
+Y(E)</cell>
+    </row>
+    <row>
+      <cell col="106" row="111" colspan="8504">유전상수 산출 결과조서</cell>
+    </row>
+  </table>
+  <table rows="16" cols="10">
+    <row>
+      <cell col="0" row="0" colspan="10">사업명 :</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="10">GPR탐사 현황정보</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">측점</cell>
+      <cell col="2" row="2" colspan="2"></cell>
+      <cell col="4" row="2">탐사일시</cell>
+      <cell col="5" row="2" colspan="2"></cell>
+      <cell col="7" row="2" colspan="2">탐사작업자</cell>
+      <cell col="9" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">기상정보</cell>
+      <cell col="2" row="3" colspan="2">맑음/기온</cell>
+      <cell col="4" row="3">관재질</cell>
+      <cell col="5" row="3" colspan="2"></cell>
+      <cell col="7" row="3" colspan="2">관경</cell>
+      <cell col="9" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="2">장비명</cell>
+      <cell col="2" row="4" colspan="2"></cell>
+      <cell col="4" row="4">주파수</cell>
+      <cell col="5" row="4" colspan="2"></cell>
+      <cell col="7" row="4" colspan="2">포장상태</cell>
+      <cell col="9" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="5">탐사위치도</cell>
+      <cell col="5" row="5" colspan="5">현장사진</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">도엽번호
+(측점번호)</cell>
+      <cell col="1" row="6" colspan="4"></cell>
+      <cell col="5" row="6">도로명
+주소</cell>
+      <cell col="6" row="6" colspan="4">도로명주소와 진행방향 작성</cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="5">탐사 위치도면</cell>
+      <cell col="5" row="7" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="10">유전상수 산출 측점 영상자료분석</cell>
+    </row>
+    <row>
+      <cell col="0" row="9">분석자</cell>
+      <cell col="1" row="9" colspan="4"></cell>
+      <cell col="5" row="9">분석S/W</cell>
+      <cell col="6" row="9" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="5">No. 0-1</cell>
+      <cell col="5" row="10" colspan="5">No. 0</cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="5">유전상수 선출결과 
+또는 전 측점
+(하이퍼볼라와 기타 참조 영상을 함께 삽화)</cell>
+      <cell col="5" row="11" colspan="5">유전상수 검증결과
+영상자료
+(하이퍼볼라와 기타 참조 영상을 함께 삽화)</cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="3">검증 유전상수</cell>
+      <cell col="3" row="12" colspan="2"></cell>
+      <cell col="5" row="12" colspan="3">검증관로 매설깊이</cell>
+      <cell col="8" row="12" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="3">탐사 시작점 좌표</cell>
+      <cell col="3" row="13" colspan="2">X(N)
+Y(E)</cell>
+      <cell col="5" row="13" colspan="3">매설깊이 오차</cell>
+      <cell col="8" row="13" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="3">탐사 끝점 좌표</cell>
+      <cell col="3" row="14" colspan="2">X(N)
+Y(E)</cell>
+      <cell col="5" row="14" colspan="3">유전상수 검증 관로 평면좌표</cell>
+      <cell col="8" row="14" colspan="2">X(N)
+Y(E)</cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="3">기타
+(분석사유 등)</cell>
+      <cell col="3" row="15" colspan="7"></cell>
+    </row>
+    <row>
+      <cell col="42" row="85" colspan="8504">유전상수 산출 검증조서</cell>
+    </row>
+  </table>
+  <table rows="16" cols="10">
+    <row>
+      <cell col="0" row="0" colspan="10">사업명 :</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="10">GPR탐사 현황정보</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">측점</cell>
+      <cell col="2" row="2" colspan="2"></cell>
+      <cell col="4" row="2">탐사일시</cell>
+      <cell col="5" row="2" colspan="2"></cell>
+      <cell col="7" row="2" colspan="2">탐사작업자</cell>
+      <cell col="9" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">기상정보</cell>
+      <cell col="2" row="3" colspan="2">맑음/기온</cell>
+      <cell col="4" row="3">관재질</cell>
+      <cell col="5" row="3" colspan="2"></cell>
+      <cell col="7" row="3" colspan="2">관경</cell>
+      <cell col="9" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="2">장비명</cell>
+      <cell col="2" row="4" colspan="2"></cell>
+      <cell col="4" row="4">주파수</cell>
+      <cell col="5" row="4" colspan="2"></cell>
+      <cell col="7" row="4" colspan="2">유전상수</cell>
+      <cell col="9" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="5">탐사위치도</cell>
+      <cell col="5" row="5" colspan="5">현장사진</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">도엽번호
+(측점번호)</cell>
+      <cell col="1" row="6" colspan="4"></cell>
+      <cell col="5" row="6">도로명
+주소</cell>
+      <cell col="6" row="6" colspan="4">도로명주소와 진행방향 작성</cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="5">탐사 위치도면</cell>
+      <cell col="5" row="7" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="10">GPR탐사 영상자료분석</cell>
+    </row>
+    <row>
+      <cell col="0" row="9">분석자</cell>
+      <cell col="1" row="9" colspan="4"></cell>
+      <cell col="5" row="9">분석S/W</cell>
+      <cell col="6" row="9" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="5">NO. 0-1</cell>
+      <cell col="5" row="10" colspan="5">NO. 0</cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="5">전 측점 영상자료
+(하이퍼볼라와 기타 참조 영상을 함께 삽화)</cell>
+      <cell col="5" row="11" colspan="5">현 측점 영상자료
+(하이퍼볼라와 기타 참조 영상을 함께 삽화)</cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="3">매설 평면거리</cell>
+      <cell col="3" row="12" colspan="2">예) 시작점에서        m</cell>
+      <cell col="5" row="12" colspan="3">매설깊이</cell>
+      <cell col="8" row="12" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="3">탐사시작점 좌표</cell>
+      <cell col="3" row="13" colspan="2">X(N) 
+Y(E)</cell>
+      <cell col="5" row="13" colspan="3">탐사끝점 좌표</cell>
+      <cell col="8" row="13" colspan="2">X(N) 
+Y(E)</cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="3">관로평면좌표</cell>
+      <cell col="3" row="14" colspan="7">X(N) 
+Y(E)</cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="3">기타
+(분석사유 등)</cell>
+      <cell col="3" row="15" colspan="7"></cell>
+    </row>
+    <row>
+      <cell col="42" row="104" colspan="8504">GPR탐사 결과조서</cell>
+    </row>
+  </table>
+  <table rows="16" cols="10">
+    <row>
+      <cell col="0" row="0" colspan="10">사업명 :</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="10">GPR탐사 현황정보</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">측점</cell>
+      <cell col="2" row="2" colspan="2"></cell>
+      <cell col="4" row="2">탐사일시</cell>
+      <cell col="5" row="2" colspan="2"></cell>
+      <cell col="7" row="2" colspan="2">탐사작업자</cell>
+      <cell col="9" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">기상정보</cell>
+      <cell col="2" row="3" colspan="2">맑음/기온</cell>
+      <cell col="4" row="3">관재질</cell>
+      <cell col="5" row="3" colspan="2"></cell>
+      <cell col="7" row="3" colspan="2">관경</cell>
+      <cell col="9" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="2">장비명</cell>
+      <cell col="2" row="4" colspan="2"></cell>
+      <cell col="4" row="4">주파수</cell>
+      <cell col="5" row="4" colspan="2"></cell>
+      <cell col="7" row="4" colspan="2">유전상수</cell>
+      <cell col="9" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="10">불탐구간 위치도 (도엽번호 :       )</cell>
+    </row>
+    <row>
+      <cell col="0" row="6" colspan="10">탐사 위치도면</cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="10">GPR탐사 영상자료분석</cell>
+    </row>
+    <row>
+      <cell col="0" row="8">분석자</cell>
+      <cell col="1" row="8" colspan="4"></cell>
+      <cell col="5" row="8">분석S/W</cell>
+      <cell col="6" row="8" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="4">NO. 0-1</cell>
+      <cell col="4" row="9" colspan="3">NO. 0</cell>
+      <cell col="7" row="9" colspan="3">NO. 0+1</cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="4">전 측점 영상자료
+(하이퍼볼라와 기타 참조 영상을 함께 삽화)</cell>
+      <cell col="4" row="10" colspan="3">불탐 시작점 영상자료
+(하이퍼볼라와 기타 참조 영상을 함께 삽화)</cell>
+      <cell col="7" row="10" colspan="3">불탐 끝점 영상자료
+(하이퍼볼라와 기타 참조 영상을 함께 삽화)</cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="10">현장사진</cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="4"></cell>
+      <cell col="4" row="12" colspan="3"></cell>
+      <cell col="7" row="12" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="3">불탐시점
+시작점 좌표</cell>
+      <cell col="3" row="13" colspan="2">X(N) 
+Y(E)</cell>
+      <cell col="5" row="13" colspan="3">불탐시점
+끝점 좌표</cell>
+      <cell col="8" row="13" colspan="2">X(N) 
+Y(E)</cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="3">불탐종점
+시작점 좌표</cell>
+      <cell col="3" row="14" colspan="2">X(N) 
+Y(E)</cell>
+      <cell col="5" row="14" colspan="3">불탐종점
+끝점 좌표</cell>
+      <cell col="8" row="14" colspan="2">X(N) 
+Y(E)</cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="3">불탐사유</cell>
+      <cell col="3" row="15" colspan="7"></cell>
+    </row>
+    <row>
+      <cell col="106" row="111" colspan="8504">불탐구간 조서</cell>
+    </row>
+  </table>
+</annex>

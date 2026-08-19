@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표2" gubun="별표" no="2" title="지하시설물(관로형) 세밀도 제작 기준" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=38099151">
+  <text>[별표 2] 지하시설물(관로형) 세밀도 제작 기준</text>
+  <table rows="5" cols="3">
+    <row>
+      <cell col="0" row="0">세밀도</cell>
+      <cell col="1" row="0">제작기준</cell>
+      <cell col="2" row="0">제작 예</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">LOD 1</cell>
+      <cell col="1" row="1">▪ 단순화된 3차원 심볼
+▪ 단색 텍스처</cell>
+      <cell col="2" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2">LOD 2</cell>
+      <cell col="1" row="2">▪ 3차원 심볼
+▪ 관로 연결부 처리
+▪ 형태 구분(원형, 사각형)
+▪ 색깔 텍스처(그라데이션)</cell>
+      <cell col="2" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">LOD 3</cell>
+      <cell col="1" row="3">▪ 3차원 심볼
+▪ 관로 연결부 처리
+▪ 형태 구분(원형, 사각형), 재질구분
+▪ 색깔 텍스처(그라데이션)</cell>
+      <cell col="2" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4">LOD 4</cell>
+      <cell col="1" row="4">▪ 3차원 실사모델
+▪ 관로 연결부 처리
+▪ 형태(원형, 사각형), 재질 구분
+▪ 실사 영상 텍스처</cell>
+      <cell col="2" row="4"></cell>
+    </row>
+  </table>
+</annex>

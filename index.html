@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>공공측량 규정 개정 편집기</title>
+<link rel="stylesheet" href="css/app.css?v=20260822d" />
+</head>
+<body>
+
+<div id="app">
+
+  <!-- ============ 메뉴바 ============ -->
+  <header class="menubar">
+    <div class="brand">공공측량 규정 <b>개정 편집기</b></div>
+    <div class="menu">
+      <button data-cmd="export" title="이 브라우저 밖으로 꺼냅니다 — .pmproj 파일 (남에게 넘기거나 갈무리할 때)">내보내기</button>
+      <button data-cmd="report" title="개정(안)·별표및별지모음·개정사유서·신구대조표를 zip 한 개로 내려받습니다">보고서</button>
+      <button data-cmd="terms" title="규정 사이에서 갈린 말을 정한 말로 맞추고, 근거를 조문마다 남깁니다">용어 통일</button>
+      <span class="sep"></span>
+      <button data-cmd="share"><b>공유 저장소</b></button>
+      <button data-cmd="versions">버전 관리</button>
+      <button data-cmd="history">변경 이력</button>
+      <button data-cmd="compare"><b>개정 전후 비교표</b></button>
+      <span class="sep"></span>
+      <button data-cmd="reset">현행으로 초기화</button>
+    </div>
+    <div class="docname">
+      <select id="versionSelect" title="편집할 버전 (Ctrl+Shift+V 로 새 버전)"></select>
+      <span id="docName">개정안</span><span id="dirty" class="dirty hidden">●</span>
+    </div>
+  </header>
+
+
+  <!-- ============ 본문 3분할 ============ -->
+  <main class="panes">
+
+    <!-- 좌 : 참조 규정 (2단) -->
+    <section class="pane pane-ref">
+
+      <div class="ref-block" id="refBlock1">
+        <div class="pane-head ref">
+          <span class="pane-title">현행규정</span>
+          <span class="pane-sub" id="refCount">—</span>
+          <button class="mini" data-cmd="addRef2" id="btnAddRef2" title="참조규정 창 하나 더 열기">＋</button>
+        </div>
+        <div class="pane-tools">
+          <div class="row">
+            <select id="refSelect1"></select>
+            <button class="mini2" data-cmd="openFile1" title="파일을 열어 색인화 (TXT·HWP·HWPX·PDF)">파일 열기</button>
+            <button class="mini2 share hidden" id="refShare1" data-cmd="shareRef1" title="이 규정을 공유 저장소에 올려 다른 사람도 쓰게 합니다">↥ 공유</button>
+            <button class="mini2 del hidden" id="refDel1" data-cmd="delRef1" title="불러온 이 규정을 프로젝트에서 제거">−</button>
+          </div>
+          <div class="row">
+            <input id="refSearch1" class="search sm" type="search" placeholder="조문 검색 (Enter: 다음)" />
+            <button class="mini2 nav" data-cmd="prev1" title="이전 결과">‹</button>
+            <button class="mini2 nav" data-cmd="next1" title="다음 결과">›</button>
+            <span class="hitn" id="refHit1"></span>
+            <button class="mini2 clearsel" data-cmd="clearSel1" title="이 창에서 고른 조문 풀기">선택취소</button>
+          </div>
+          <div class="row modes hidden" id="refModes1">
+            <span class="lbl">표시</span>
+            <button data-mode="orig" class="on">원문</button>
+            <button data-mode="trans">번역</button>
+            <button data-mode="both">대역</button>
+          </div>
+        </div>
+        <div class="pane-meta" id="refMeta1"></div>
+        <div class="tree" id="refTree1"></div>
+      </div>
+
+      <div class="splitter-h" id="refSplit"></div>
+
+      <div class="ref-block" id="refBlock2">
+        <div class="pane-head ref alt">
+          <span class="pane-title">참조규정</span>
+          <button class="mini" data-cmd="closeRef2" title="닫기">✕</button>
+        </div>
+        <div class="pane-tools">
+          <div class="row">
+            <select id="refSelect2"></select>
+            <button class="mini2" data-cmd="openFile2" title="파일을 열어 색인화 (TXT·HWP·HWPX·PDF)">파일 열기</button>
+            <button class="mini2 share hidden" id="refShare2" data-cmd="shareRef2" title="이 규정을 공유 저장소에 올려 다른 사람도 쓰게 합니다">↥ 공유</button>
+            <button class="mini2 del hidden" id="refDel2" data-cmd="delRef2" title="불러온 이 규정을 프로젝트에서 제거">−</button>
+          </div>
+          <div class="row">
+            <input id="refSearch2" class="search sm" type="search" placeholder="조문 검색 (Enter: 다음)" />
+            <button class="mini2 nav" data-cmd="prev2" title="이전 결과">‹</button>
+            <button class="mini2 nav" data-cmd="next2" title="다음 결과">›</button>
+            <span class="hitn" id="refHit2"></span>
+            <button class="mini2 clearsel" data-cmd="clearSel2" title="이 창에서 고른 조문 풀기">선택취소</button>
+          </div>
+          <div class="row modes hidden" id="refModes2">
+            <span class="lbl">표시</span>
+            <button data-mode="orig" class="on">원문</button>
+            <button data-mode="trans">번역</button>
+            <button data-mode="both">대역</button>
+          </div>
+        </div>
+        <div class="pane-meta" id="refMeta2"></div>
+        <div class="tree" id="refTree2"></div>
+      </div>
+
+      <div class="pane-foot">두 창 모두 오른쪽 개정안 트리로 끌어다 놓을 수 있습니다.</div>
+    </section>
+
+    <div class="splitter" data-split="left"></div>
+
+    <!-- 중 : 조문 상세 -->
+    <section class="pane pane-detail">
+      <div class="pane-head detail">
+        <span class="pane-title">조문 상세</span>
+        <span class="pane-sub" id="detailPath">—</span>
+      </div>
+      <div class="detail-body" id="detailBody">
+        <div class="empty">오른쪽 트리에서 항목을 선택하세요.</div>
+      </div>
+    </section>
+
+    <div class="splitter" data-split="right"></div>
+
+    <!-- 우 : 개정안 구조 · 개정 대상 세 규정이 최상위 -->
+    <section class="pane pane-edit">
+      <div class="pane-head edit">
+        <span class="pane-title">개정안 구조 · 드래그 편집</span>
+        <span class="pane-sub" id="editStats">—</span>
+      </div>
+  <div class="pane-toolbar">
+        <button data-cmd="addSibling" title="형제 신설 (Ctrl+N)">＋<span class="lbl">형제</span></button>
+        <button data-cmd="addChild" title="하위 신설 (Ctrl+Shift+N)">＋<span class="lbl">하위</span></button>
+        <span class="sep"></span>
+        <button data-cmd="promote" title="승격 (Shift+Tab)">▲</button>
+        <button data-cmd="demote" title="강등 (Tab)">▼</button>
+        <button data-cmd="moveUp" title="위로 (Alt+↑)">↑</button>
+        <button data-cmd="moveDown" title="아래로 (Alt+↓)">↓</button>
+        <span class="sep"></span>
+        <button data-cmd="del" class="danger" title="삭제 (Delete)">×</button>
+        <span class="sep"></span>
+        <button data-cmd="undo" title="되돌리기 (Ctrl+Z)">◀</button>
+        <button data-cmd="redo" title="다시 실행 (Ctrl+Y)">▶</button>
+        <span class="sep"></span>
+        <button data-cmd="validate" title="정합성 검증 (F5)">✓<span class="lbl">검증</span></button>
+        <button data-cmd="ai" class="ai" title="AI 도우미 (Ctrl+I)">✦AI</button>
+        <button data-cmd="branch" title="새 버전으로 분기 (Ctrl+Shift+V)">⑂<span class="lbl">분기</span></button>
+        <button data-cmd="scopeAll" id="btnScopeAll" class="hidden"
+                title="세 규정을 모두 펼칩니다 — 규정을 넘어 조문을 옮기려면 필요합니다">⊞<span class="lbl">전체</span></button>
+        <button id="btnStartEdit" class="go hidden" data-cmd="startEdit">✎<span class="lbl">편집</span></button>
+      </div>
+      <div class="pane-tools">
+        <div class="row rev hidden" id="editRevRow">
+          <span class="lbl">개정안</span>
+          <select id="editRevSelect" title="이 규정의 개정안이 여러 벌입니다 — 볼 것을 고릅니다"></select>
+          <span id="editRevNote" class="hint"></span>
+        </div>
+        <div class="row">
+          <input id="centerSearch" class="search sm" type="search" placeholder="개정안 내 조문 검색 (Ctrl+F)" />
+          <span id="searchCount" class="hint"></span>
+          <button class="mini2 clearsel" data-cmd="clearSelEdit" title="개정안에서 고른 조문 풀기">선택취소</button>
+          <button id="btnApply" class="mini2 apply" data-cmd="apply" disabled
+                  title="조문 상세에서 고친 내용을 개정안에 반영합니다 (Ctrl+S 아님 · Enter)">적용</button>
+        </div>
+      </div>
+
+      <div class="tree" id="editTree" tabindex="0"></div>
+      <div class="ai-dock hidden" id="aiDock"></div>
+      <div class="pane-foot edit-foot">
+        <span class="flt-lbl">골라 보기</span>
+        <button class="flt" data-flt="수정" title="고친 조문만 보입니다 (이동·수정 포함)">수정<span class="n"></span></button>
+        <button class="flt" data-flt="신설" title="새로 만든 조문만 보입니다">신설<span class="n"></span></button>
+        <button class="flt" data-flt="용어" title="연구 검토에서 용어 오류·불일치로 지적되어 말을 바로잡은 조문만 보입니다">용어<span class="n"></span></button>
+        <button class="flt off" data-flt="" title="모두 보이기">전체</button>
+        <span id="editHint">노드를 끌어 위치를 바꾸면 조 번호가 자동으로 다시 매겨집니다.</span>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- ============ 상태바 ============ -->
+  <footer class="statusbar">
+    <span id="stSel">선택 없음</span>
+    <span class="sep"></span>
+    <span id="stCount">—</span>
+    <span class="sep"></span>
+    <span id="stValid" class="stv"></span>
+    <div class="spacer"></div>
+    <span id="stMsg"></span>
+    <span class="sep"></span>
+    <span id="stSaved">저장 안 됨</span>
+  </footer>
+</div>
+
+<input type="file" id="filePicker" accept=".pmproj,.json" hidden />
+<input type="file" id="refFilePicker" accept=".txt,.md,.hwp,.hwpx,.pdf,.json" hidden />
+<div id="toast" class="toast hidden"></div>
+<div id="busy" class="busy hidden"><div class="busy-box"><div class="spin"></div><div id="busyMsg">처리 중…</div></div></div>
+
+<script type="module" src="js/main.js?v=20260822e"></script>
+</body>
+</html>

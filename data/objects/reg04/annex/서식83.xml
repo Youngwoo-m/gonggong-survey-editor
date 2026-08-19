@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식83" gubun="서식" no="83" title="토지표시변경등기 촉탁서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454983">
+  <table rows="1" cols="2">
+    <row>
+      <cell col="0" row="0">시장ㆍ군수ㆍ구청장</cell>
+      <cell col="1" row="0">직인</cell>
+    </row>
+  </table>
+  <table rows="13" cols="5">
+    <row>
+      <cell col="0" row="0" colspan="5">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별지 제83호서식] &lt;개정 2017. 1. 31.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="5">토지표시변경등기 촉탁서</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" rowspan="2">접수</cell>
+      <cell col="1" row="2">년  월  일</cell>
+      <cell col="2" row="2" rowspan="2">처리인</cell>
+      <cell col="3" row="2">등기관 확인</cell>
+      <cell col="4" row="2">각종 통지</cell>
+    </row>
+    <row>
+      <cell col="1" row="3">제       호</cell>
+      <cell col="3" row="3"></cell>
+      <cell col="4" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="5">부동산의 표시</cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="2">등기원인과 그 연월일</cell>
+      <cell col="2" row="5" colspan="3">년          월           일</cell>
+    </row>
+    <row>
+      <cell col="0" row="6" colspan="2">등  기  의   목  적</cell>
+      <cell col="2" row="6" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="2">소유권의 등기명의인 표시</cell>
+      <cell col="2" row="7" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="2">촉   탁   근   거</cell>
+      <cell col="2" row="8" colspan="3">「공간정보의 구축 및 관리 등에 관한 법률」 제89조</cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="2">등 록 면 허 세</cell>
+      <cell col="2" row="9" colspan="3">면세(「지방세법」 제26조제1항)</cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="5">위 등기촉탁인
+            년     월     일
+ 지방법원 등기소   귀중</cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="2">첨부서류</cell>
+      <cell col="2" row="11" colspan="3">등기촉탁서 부본 1통</cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="5">210㎜×297㎜[(백상지(80g/㎡) 또는 중질지(80g/㎡)]</cell>
+    </row>
+  </table>
+</annex>

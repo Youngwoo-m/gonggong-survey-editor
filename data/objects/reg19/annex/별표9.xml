@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표9" gubun="별표" no="9" title="실내공간정보 주요항목별 평면도화" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=111000079">
+  <text>[별표 9] 실내공간정보 주요항목별 평면도화</text>
+  <table rows="6" cols="7">
+    <row>
+      <cell col="0" row="0">명칭</cell>
+      <cell col="1" row="0">분류</cell>
+      <cell col="2" row="0">현장모습</cell>
+      <cell col="3" row="0">점군자료</cell>
+      <cell col="4" row="0" colspan="2">취득 위치</cell>
+      <cell col="6" row="0">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">바닥면</cell>
+      <cell col="1" row="1">면</cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1"></cell>
+      <cell col="4" row="1"></cell>
+      <cell col="5" row="1">바닥면과 벽면의 경계를 도화</cell>
+      <cell col="6" row="1">수직포인트가 겹치기 때문에 벽면을 주의 하면서 경계면 도화</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">기둥</cell>
+      <cell col="1" row="2">면</cell>
+      <cell col="2" row="2"></cell>
+      <cell col="3" row="2"></cell>
+      <cell col="4" row="2"></cell>
+      <cell col="5" row="2">바닥면과 기둥면의 경계를 도화</cell>
+      <cell col="6" row="2">원형기둥의 경우도 중심점에서 써클로 도화하지 않고  바닥과의 경계면 도화</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">점자
+블록</cell>
+      <cell col="1" row="3">면</cell>
+      <cell col="2" row="3"></cell>
+      <cell col="3" row="3"></cell>
+      <cell col="4" row="3"></cell>
+      <cell col="5" row="3">실제 점자블록 경계면 도화</cell>
+      <cell col="6" row="3">렌즈의 굴곡으로 인해 RGB값이 아닌 반사도를 이용하여  경계면을 도화</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">펜스</cell>
+      <cell col="1" row="4">라인</cell>
+      <cell col="2" row="4"></cell>
+      <cell col="3" row="4"></cell>
+      <cell col="4" row="4">(횡단면)         (수평면)</cell>
+      <cell col="5" row="4">펜스 하단 중심선 도화</cell>
+      <cell col="6" row="4">펜스의 중심에는 포인트가 없기 때문에 펜스 끝에서부터 중심점 도화</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">시설물</cell>
+      <cell col="1" row="5">점 , 면</cell>
+      <cell col="2" row="5"></cell>
+      <cell col="3" row="5"></cell>
+      <cell col="4" row="5">(횡단면)         (수평면)</cell>
+      <cell col="5" row="5">시설물 하단 중심점,
+시설물 하단 경계면 도화</cell>
+      <cell col="6" row="5">LOD1일 경우 점형
+LOD2 이상 면형</cell>
+    </row>
+  </table>
+</annex>

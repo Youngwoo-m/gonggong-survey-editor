@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc19t021" article="핵심 안전기준ž절차 및 법적 근거 요약" rows="5" cols="2" source="측량 안전관리 매뉴얼 (2026.1)">
+  <row>
+    <cell col="0" row="0" header="1">근거</cell>
+    <cell col="1" row="0" header="1">관련 조항</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">산업안전보건기준에 관한 규칙제240조~제259조</cell>
+    <cell col="1" row="1">고압선, 낙하물, 전도, 전기 등 세부 위험방지 기준</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">산업안전보건기준에 관한 규칙 제311조</cell>
+    <cell col="1" row="2">폭염·한랭 환경작업자의 보호조치 의무</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">산업안전보건법 제41조(보호구의 지급·착용)</cell>
+    <cell col="1" row="3">보호구 지급·착용 및 점검의무</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">LX공사 지적측량 안전매뉴얼(내규)</cell>
+    <cell col="1" row="4">벌·독충, 낙석, 감전, 수변 등 현장위 험요소별 조치사항 제시</cell>
+  </row>
+</table>

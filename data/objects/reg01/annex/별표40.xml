@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표40" gubun="별표" no="40" title="네트워크 RTK 관측기록부" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296315">
+  <text>[ 별표 40 ]
+네트워크 RTK 관측기록부</text>
+  <table rows="7" cols="6">
+    <row>
+      <cell col="0" row="0">작업명</cell>
+      <cell col="1" row="0" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1">관측일자</cell>
+      <cell col="1" row="1">20     .       .</cell>
+      <cell col="2" row="1">GNSS 수신기 제조사/모델</cell>
+      <cell col="3" row="1" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2">관측자</cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2">GNSS 수신기 일련번호</cell>
+      <cell col="3" row="2"></cell>
+      <cell col="4" row="2">펌웨어Ver.</cell>
+      <cell col="5" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">관측지점명</cell>
+      <cell col="1" row="3"></cell>
+      <cell col="2" row="3">안테나 제조사/모델</cell>
+      <cell col="3" row="3" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4">작업시작시간</cell>
+      <cell col="1" row="4"></cell>
+      <cell col="2" row="4">안테나 일련번호</cell>
+      <cell col="3" row="4" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5">작업종료시간</cell>
+      <cell col="1" row="5"></cell>
+      <cell col="2" row="5">안테나고</cell>
+      <cell col="3" row="5" colspan="3">□ 수직   □ 사거리    (                  m)</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">비고</cell>
+      <cell col="1" row="6" colspan="5"></cell>
+    </row>
+  </table>
+  <table rows="8" cols="12">
+    <row>
+      <cell col="0" row="0" rowspan="2">관측
+ID</cell>
+      <cell col="1" row="0" rowspan="2">세션번호</cell>
+      <cell col="2" row="0" rowspan="2">관측
+시작</cell>
+      <cell col="3" row="0" rowspan="2">관측
+종료</cell>
+      <cell col="4" row="0" rowspan="2">PDOP</cell>
+      <cell col="5" row="0" rowspan="2">위성수</cell>
+      <cell col="6" row="0" colspan="3">정밀도(cm)</cell>
+      <cell col="9" row="0" rowspan="2">관측값(m)
+ENh/BLh/dXYZ</cell>
+      <cell col="10" row="0" rowspan="2">세션평균(m)
+ENh/BLh/dXYZ</cell>
+      <cell col="11" row="0" rowspan="2">비고
+(수신 위성 종류 등)</cell>
+    </row>
+    <row>
+      <cell col="6" row="1">E/X</cell>
+      <cell col="7" row="1">N/Y</cell>
+      <cell col="8" row="1">H/Z</cell>
+    </row>
+    <row>
+      <cell col="0" row="2"></cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2"></cell>
+      <cell col="3" row="2"></cell>
+      <cell col="4" row="2"></cell>
+      <cell col="5" row="2"></cell>
+      <cell col="6" row="2"></cell>
+      <cell col="7" row="2"></cell>
+      <cell col="8" row="2"></cell>
+      <cell col="9" row="2"></cell>
+      <cell col="10" row="2"></cell>
+      <cell col="11" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3"></cell>
+      <cell col="1" row="3"></cell>
+      <cell col="2" row="3"></cell>
+      <cell col="3" row="3"></cell>
+      <cell col="4" row="3"></cell>
+      <cell col="5" row="3"></cell>
+      <cell col="6" row="3"></cell>
+      <cell col="7" row="3"></cell>
+      <cell col="8" row="3"></cell>
+      <cell col="9" row="3"></cell>
+      <cell col="10" row="3"></cell>
+      <cell col="11" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4"></cell>
+      <cell col="1" row="4"></cell>
+      <cell col="2" row="4"></cell>
+      <cell col="3" row="4"></cell>
+      <cell col="4" row="4"></cell>
+      <cell col="5" row="4"></cell>
+      <cell col="6" row="4"></cell>
+      <cell col="7" row="4"></cell>
+      <cell col="8" row="4"></cell>
+      <cell col="9" row="4"></cell>
+      <cell col="10" row="4"></cell>
+      <cell col="11" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5"></cell>
+      <cell col="1" row="5"></cell>
+      <cell col="2" row="5"></cell>
+      <cell col="3" row="5"></cell>
+      <cell col="4" row="5"></cell>
+      <cell col="5" row="5"></cell>
+      <cell col="6" row="5"></cell>
+      <cell col="7" row="5"></cell>
+      <cell col="8" row="5"></cell>
+      <cell col="9" row="5"></cell>
+      <cell col="10" row="5"></cell>
+      <cell col="11" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6"></cell>
+      <cell col="1" row="6"></cell>
+      <cell col="2" row="6"></cell>
+      <cell col="3" row="6"></cell>
+      <cell col="4" row="6"></cell>
+      <cell col="5" row="6"></cell>
+      <cell col="6" row="6"></cell>
+      <cell col="7" row="6"></cell>
+      <cell col="8" row="6"></cell>
+      <cell col="9" row="6"></cell>
+      <cell col="10" row="6"></cell>
+      <cell col="11" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7"></cell>
+      <cell col="1" row="7"></cell>
+      <cell col="2" row="7"></cell>
+      <cell col="3" row="7"></cell>
+      <cell col="4" row="7"></cell>
+      <cell col="5" row="7"></cell>
+      <cell col="6" row="7"></cell>
+      <cell col="7" row="7"></cell>
+      <cell col="8" row="7"></cell>
+      <cell col="9" row="7"></cell>
+      <cell col="10" row="7"></cell>
+      <cell col="11" row="7"></cell>
+    </row>
+  </table>
+</annex>

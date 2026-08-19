@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표10" gubun="별표" no="10" title="지반정보 자료수집 목록" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=38099221">
+  <text>[별표 10] 지반정보 자료수집 목록</text>
+  <table rows="6" cols="5">
+    <row>
+      <cell col="0" row="0" colspan="2">자료목록</cell>
+      <cell col="2" row="0">자료형태</cell>
+      <cell col="3" row="0">자료내용</cell>
+      <cell col="4" row="0">자료 보유기관</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="2">시추정보</cell>
+      <cell col="1" row="1">시추공 정보</cell>
+      <cell col="2" row="1">EXCEL, JPEG 등</cell>
+      <cell col="3" row="1">공간·속성정보 및 주상도 이미지 파일</cell>
+      <cell col="4" row="1" rowspan="2">한국건설기술연구원</cell>
+    </row>
+    <row>
+      <cell col="1" row="2">지층 정보</cell>
+      <cell col="2" row="2">EXCEL 등</cell>
+      <cell col="3" row="2">공간·속성정보</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" rowspan="2">관정정보</cell>
+      <cell col="1" row="3">지하수관측정정보</cell>
+      <cell col="2" row="3">EXCEL 등</cell>
+      <cell col="3" row="3">공간·속성정보</cell>
+      <cell col="4" row="3" rowspan="2">한국수자원공사</cell>
+    </row>
+    <row>
+      <cell col="1" row="4">지하수 개발이용정보</cell>
+      <cell col="2" row="4">EXCEL 등</cell>
+      <cell col="3" row="4">공간·속성정보</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">지질정보</cell>
+      <cell col="1" row="5">암상 및 단층정보</cell>
+      <cell col="2" row="5">SHP 등</cell>
+      <cell col="3" row="5">공간·속성정보</cell>
+      <cell col="4" row="5">한국지질자원연구원</cell>
+    </row>
+  </table>
+</annex>

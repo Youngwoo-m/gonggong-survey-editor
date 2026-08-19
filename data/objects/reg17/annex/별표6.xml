@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표6" gubun="별표" no="6" title="3차원 수자원데이터 세밀도 및 가시화정보 제작기준" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=118782557">
+  <text>[별표6] 3차원 수자원데이터 세밀도 및 가시화정보 제작기준</text>
+  <table rows="8" cols="3">
+    <row>
+      <cell col="0" row="0">대분류</cell>
+      <cell col="1" row="0" colspan="2">3차원 수자원데이터</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">중분류</cell>
+      <cell col="1" row="1" colspan="2">전문수자원</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">세분류</cell>
+      <cell col="1" row="2" colspan="2">하천부속물(댐 / 보)</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">세밀도</cell>
+      <cell col="1" row="3">제작기준</cell>
+      <cell col="2" row="3">제작 예</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">Level 1</cell>
+      <cell col="1" row="4">▪3차원 면형
+▪돌출부 및 함몰부 미제작
+▪단색 텍스처</cell>
+      <cell col="2" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5">Level 2</cell>
+      <cell col="1" row="5">▪단순화된 3차원 심볼
+▪돌출부 및 함몰부 미제작
+▪색깔 텍스처</cell>
+      <cell col="2" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">Level 3</cell>
+      <cell col="1" row="6">▪3차원 심볼
+▪수직적 돌출부 및 함몰부까지 제작
+▪가상 영상 텍스처</cell>
+      <cell col="2" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">Level 4</cell>
+      <cell col="1" row="7">▪3차원 실사모델
+▪수직적․수평적 돌출부 및 함몰부까지 제작
+▪실사 영상 텍스처</cell>
+      <cell col="2" row="7"></cell>
+    </row>
+  </table>
+  <table rows="8" cols="3">
+    <row>
+      <cell col="0" row="0">대분류</cell>
+      <cell col="1" row="0" colspan="2">3차원 수자원데이터</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">중분류</cell>
+      <cell col="1" row="1" colspan="2">전문수자원</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">세분류</cell>
+      <cell col="1" row="2" colspan="2">호안 / 제방</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">세밀도</cell>
+      <cell col="1" row="3">제작기준</cell>
+      <cell col="2" row="3">제작 예</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">Level 1</cell>
+      <cell col="1" row="4">▪기준에 따른 제작(높이 1.5m 이상 / 연장 50m 이상)
+▪3차원 면형
+▪단색 텍스처</cell>
+      <cell col="2" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5">Level 2</cell>
+      <cell col="1" row="5">▪기준에 따른 제작(높이 1.5m 이상 / 연장 50m 이상)
+▪3차원 면형
+▪색깔 텍스처</cell>
+      <cell col="2" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">Level 3</cell>
+      <cell col="1" row="6">▪기준에 따른 제작(높이 1.5m 이상 / 연장 50m 이상)
+▪3차원 면형
+▪가상 영상 텍스처</cell>
+      <cell col="2" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">Level 4</cell>
+      <cell col="1" row="7">▪기준에 따른 제작(모든 호안/제방)
+▪3차원 실사모델
+▪실사 영상 텍스처</cell>
+      <cell col="2" row="7"></cell>
+    </row>
+  </table>
+  <table rows="8" cols="3">
+    <row>
+      <cell col="0" row="0">대분류</cell>
+      <cell col="1" row="0" colspan="2">3차원 수자원데이터</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">중분류</cell>
+      <cell col="1" row="1" colspan="2">전문수자원</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">세분류</cell>
+      <cell col="1" row="2" colspan="2">하천면</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">세밀도</cell>
+      <cell col="1" row="3">제작기준</cell>
+      <cell col="2" row="3">제작 예</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">Level 1</cell>
+      <cell col="1" row="4">▪3차원 면형
+▪단색 텍스처</cell>
+      <cell col="2" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5">Level 2</cell>
+      <cell col="1" row="5">▪3차원 면형
+▪색깔 텍스처</cell>
+      <cell col="2" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">Level 3</cell>
+      <cell col="1" row="6">▪3차원 면형
+▪가상 영상 텍스처</cell>
+      <cell col="2" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">Level 4</cell>
+      <cell col="1" row="7">▪3차원 면형
+▪실사 영상 텍스처</cell>
+      <cell col="2" row="7"></cell>
+    </row>
+  </table>
+</annex>

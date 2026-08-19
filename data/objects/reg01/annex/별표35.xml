@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표35" gubun="별표" no="35" title="안전이행확인서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296283">
+  <table rows="1" cols="1">
+    <row>
+      <cell col="0" row="0">안 전 이 행 확 인 서</cell>
+    </row>
+  </table>
+  <text>본 이행 확인서는 ○○도 ○○시 ○○(구,군)에서 발주된 ○○사업과 관련하여 지하시설물측량작업을 수행하는 경우 밀폐공간작업으로 인한 작업자의 질식재해예방을 위해 다음과 같이 노ㆍ사가 안전작업을 이행할 것을 확인합니다.
+□ 밀폐공간 작업자 현황</text>
+  <table rows="4" cols="4">
+    <row>
+      <cell col="0" row="0">성 명</cell>
+      <cell col="1" row="0">작업기간</cell>
+      <cell col="2" row="0">작업내용</cell>
+      <cell col="3" row="0">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="1"></cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2"></cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2"></cell>
+      <cell col="3" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3"></cell>
+      <cell col="1" row="3"></cell>
+      <cell col="2" row="3"></cell>
+      <cell col="3" row="3"></cell>
+    </row>
+  </table>
+  <text>□ 밀폐공간 질식재해예방장비 보유현황</text>
+  <table rows="5" cols="5">
+    <row>
+      <cell col="0" row="0" colspan="2">장비명</cell>
+      <cell col="2" row="0">모델명</cell>
+      <cell col="3" row="0">보유대수</cell>
+      <cell col="4" row="0">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="2">산소농도 및 유해가스측정기</cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1"></cell>
+      <cell col="4" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">환기팬</cell>
+      <cell col="2" row="2"></cell>
+      <cell col="3" row="2"></cell>
+      <cell col="4" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" rowspan="2">호흡
+보호구</cell>
+      <cell col="1" row="3">공기호흡기</cell>
+      <cell col="2" row="3"></cell>
+      <cell col="3" row="3"></cell>
+      <cell col="4" row="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="4">송기마스크</cell>
+      <cell col="2" row="4"></cell>
+      <cell col="3" row="4"></cell>
+      <cell col="4" row="4"></cell>
+    </row>
+  </table>
+</annex>

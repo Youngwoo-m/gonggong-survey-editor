@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0037" article="제70조(平均計算)" rows="2" cols="6" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">区 分 項 目</cell>
+    <cell col="1" row="0" header="1">１級水準測量</cell>
+    <cell col="2" row="0" header="1">２級水準測量</cell>
+    <cell col="3" row="0" header="1">３級水準測量</cell>
+    <cell col="4" row="0" header="1">４級水準測量</cell>
+    <cell col="5" row="0" header="1">簡易水準測量</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">単位重量当たりの観 測の標準偏差</cell>
+    <cell col="1" row="1">２mm</cell>
+    <cell col="2" row="1">５mm</cell>
+    <cell col="3" row="1">10mm</cell>
+    <cell col="4" row="1">20mm</cell>
+    <cell col="5" row="1">40mm</cell>
+  </row>
+</table>

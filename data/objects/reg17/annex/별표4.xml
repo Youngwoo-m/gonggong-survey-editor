@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표4" gubun="별표" no="4" title="3차원 교통데이터 세밀도 및 가시화정보 제작기준" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=118782541">
+  <text>[별표4] 3차원 교통데이터 세밀도 및 가시화정보 제작기준</text>
+  <table rows="8" cols="3">
+    <row>
+      <cell col="0" row="0">대분류</cell>
+      <cell col="1" row="0" colspan="2">3차원 교통데이터</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">중분류</cell>
+      <cell col="1" row="1" colspan="2">도로</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">세분류</cell>
+      <cell col="1" row="2" colspan="2">단위도로면 / 도로교차면</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">세밀도</cell>
+      <cell col="1" row="3">제작기준</cell>
+      <cell col="2" row="3">제작 예</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">Level 1</cell>
+      <cell col="1" row="4">▪기준에 따른 제작(폭 4m 이상)
+▪3차원 면형
+▪기준 이하는 선형으로 제작
+▪인도면/차도면 미구분
+▪차선, 도로중심선, 횡단보도 미제작
+▪단색 텍스처</cell>
+      <cell col="2" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5">Level 2</cell>
+      <cell col="1" row="5">▪기준에 따른 제작(폭 3m 이상)
+▪3차원 면형
+▪기준 이하는 선형으로 제작
+▪인도면/차도면 구분 제작
+▪차선, 도로중심선, 횡단보도 제작
+▪색깔 텍스처</cell>
+      <cell col="2" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">Level 3</cell>
+      <cell col="1" row="6">▪기준에 따른 제작(폭 1.5m 이상)
+▪3차원 면형
+▪기준 이하는 선형으로 제작
+▪인도면/차도면 구분 제작
+▪차선, 도로중심선, 횡단보도 제작
+▪가상 영상 텍스처</cell>
+      <cell col="2" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">Level 4</cell>
+      <cell col="1" row="7">▪기준에 따른 제작(폭 0.6m 이상) 
+▪3차원 실사모델
+▪기준 이하는 선형으로 제작
+▪인도면/차도면 구분 제작
+▪차선, 도로중심선, 횡단보도 제작
+▪실사 영상 텍스처</cell>
+      <cell col="2" row="7"></cell>
+    </row>
+  </table>
+  <table rows="8" cols="3">
+    <row>
+      <cell col="0" row="0">대분류</cell>
+      <cell col="1" row="0" colspan="2">3차원 교통데이터</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">중분류</cell>
+      <cell col="1" row="1" colspan="2">철도</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">세분류</cell>
+      <cell col="1" row="2" colspan="2">단위철도면</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">세밀도</cell>
+      <cell col="1" row="3">제작기준</cell>
+      <cell col="2" row="3">제작 예</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">Level 1</cell>
+      <cell col="1" row="4">▪3차원 면형
+▪주변 지형지물 미제작
+▪단색 텍스처</cell>
+      <cell col="2" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5">Level 2</cell>
+      <cell col="1" row="5">▪3차원 면형
+▪주변 지형지물 미제작
+▪가상 영상 텍스처</cell>
+      <cell col="2" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">Level 3</cell>
+      <cell col="1" row="6">▪3차원 심볼
+▪주변 지형지물 미제작
+▪가상 영상 텍스처</cell>
+      <cell col="2" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">Level 4</cell>
+      <cell col="1" row="7">▪3차원 실사모델
+▪주변 지형지물까지 제작
+▪가상 영상 텍스처</cell>
+      <cell col="2" row="7"></cell>
+    </row>
+  </table>
+  <table rows="8" cols="3">
+    <row>
+      <cell col="0" row="0">대분류</cell>
+      <cell col="1" row="0" colspan="2">3차원 교통데이터</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">중분류</cell>
+      <cell col="1" row="1" colspan="2">교통시설물</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">세분류</cell>
+      <cell col="1" row="2" colspan="2">교량(교량 / 입체교차부)</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">세밀도</cell>
+      <cell col="1" row="3">제작기준</cell>
+      <cell col="2" row="3">제작 예</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">Level 1</cell>
+      <cell col="1" row="4">▪기준에 따른 제작(연장 10m 이상) 및 중요 교량 제작
+▪3차원 면형
+▪인도면/차도면 미구분
+▪차선, 도로중심선 미제작
+▪교각 미제작
+▪단색 텍스처</cell>
+      <cell col="2" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5">Level 2</cell>
+      <cell col="1" row="5">▪기준에 따른 제작(연장 4m 이상)
+▪단순화된 3차원 심볼
+▪인도면/차도면 구분 제작
+▪차선, 도로중심선 제작
+▪교각 제작
+▪색깔 텍스처</cell>
+      <cell col="2" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">Level 3</cell>
+      <cell col="1" row="6">▪기준에 따른 제작(연장 2m 이상)
+▪3차원 심볼
+▪인도면/차도면 구분 제작
+▪차선, 도로중심선 제작 
+▪교각 제작
+▪가상 영상 텍스처</cell>
+      <cell col="2" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">Level 4</cell>
+      <cell col="1" row="7">▪기준에 따른 제작(모든 교량)
+▪3차원 실사모델
+▪인도면/차도면 구분 제작
+▪차선, 도로중심선 제작
+▪교각 제작
+▪실사 영상 텍스처</cell>
+      <cell col="2" row="7"></cell>
+    </row>
+  </table>
+  <table rows="8" cols="3">
+    <row>
+      <cell col="0" row="0">대분류</cell>
+      <cell col="1" row="0" colspan="2">3차원 교통데이터</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">중분류</cell>
+      <cell col="1" row="1" colspan="2">교통시설물</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">세분류</cell>
+      <cell col="1" row="2" colspan="2">터널(터널 / 지하차도)</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">세밀도</cell>
+      <cell col="1" row="3">제작기준</cell>
+      <cell col="2" row="3">제작 예</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">Level 1</cell>
+      <cell col="1" row="4">▪단순화된 3차원 심볼
+▪단색 텍스처</cell>
+      <cell col="2" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5">Level 2</cell>
+      <cell col="1" row="5">▪단순화된 3차원 심볼
+▪색깔 텍스처</cell>
+      <cell col="2" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">Level 3</cell>
+      <cell col="1" row="6">▪3차원 심볼
+▪가상 영상 텍스처</cell>
+      <cell col="2" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">Level 4</cell>
+      <cell col="1" row="7">▪3차원 실사모델
+▪실사 영상 텍스처</cell>
+      <cell col="2" row="7"></cell>
+    </row>
+  </table>
+  <table rows="8" cols="3">
+    <row>
+      <cell col="0" row="0">대분류</cell>
+      <cell col="1" row="0" colspan="2">3차원 교통데이터</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">중분류</cell>
+      <cell col="1" row="1" colspan="2">교통시설물</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">세분류</cell>
+      <cell col="1" row="2" colspan="2">도로교통시설물</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">세밀도</cell>
+      <cell col="1" row="3">제작기준</cell>
+      <cell col="2" row="3">제작 예</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">Level 1</cell>
+      <cell col="1" row="4">▪단순화된 3차원 심볼
+▪단색 텍스처</cell>
+      <cell col="2" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5">Level 2</cell>
+      <cell col="1" row="5">▪단순화된 3차원 심볼
+▪색깔 텍스처</cell>
+      <cell col="2" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">Level 3</cell>
+      <cell col="1" row="6">▪3차원 심볼
+▪가상 영상 텍스처</cell>
+      <cell col="2" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">Level 4</cell>
+      <cell col="1" row="7">▪3차원 실사모델
+▪실사 영상 텍스처</cell>
+      <cell col="2" row="7"></cell>
+    </row>
+  </table>
+</annex>

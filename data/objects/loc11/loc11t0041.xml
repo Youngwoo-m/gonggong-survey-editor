@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0041" article="제89조(ＧＮＳＳ観測の実施)" rows="7" cols="3" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">区 分 項 目</cell>
+    <cell col="1" row="0" header="1"></cell>
+    <cell col="2" row="0" header="1">３級水準測量</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">観 測 時 間</cell>
+    <cell col="1" row="1"></cell>
+    <cell col="2" row="1">５時間以上</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">データ取得間隔</cell>
+    <cell col="1" row="2"></cell>
+    <cell col="2" row="2">30秒以下</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">最 低 高 度 角</cell>
+    <cell col="1" row="3"></cell>
+    <cell col="2" row="3">15°を標準</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">アンテナ高測定単位</cell>
+    <cell col="1" row="4"></cell>
+    <cell col="2" row="4">mm</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">使用衛星数</cell>
+    <cell col="1" row="5">ＧＰＳ・準天頂衛星</cell>
+    <cell col="2" row="5">５衛星以上</cell>
+  </row>
+  <row>
+    <cell col="0" row="6"></cell>
+    <cell col="1" row="6">ＧＰＳ・準天頂衛星 及びＧＬＯＮＡＳＳ衛星</cell>
+    <cell col="2" row="6">６衛星以上</cell>
+  </row>
+</table>

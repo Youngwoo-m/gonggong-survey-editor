@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0055" article="제118조(キネマティック法又はＲＴＫ法によるＴＳ点の設置)" rows="4" cols="6" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">使用衛星数</cell>
+    <cell col="1" row="0" header="1">観測回数</cell>
+    <cell col="2" row="0" header="1">データ取得間隔</cell>
+    <cell col="3" row="0" header="1">許容範囲</cell>
+    <cell col="4" row="0" header="1"></cell>
+    <cell col="5" row="0" header="1">備 考</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">５衛星以上</cell>
+    <cell col="1" row="1">ＦＩＸ解 を得てか ら10 エポ ック以上</cell>
+    <cell col="2" row="1">１秒 （ただし、キネ マティック法は ５秒以下）</cell>
+    <cell col="3" row="1">ΔＮ ΔＥ</cell>
+    <cell col="4" row="1">20mm</cell>
+    <cell col="5" row="1">ΔＮ：水平面の南北成分のセット間較 差 ΔＥ：水平面の東西成分のセット間較 差 ΔＵ：水平面からの高さ成分のセット 間較差 ただし、平面直角座標値で比較すること ができる。</cell>
+  </row>
+  <row>
+    <cell col="0" row="2"></cell>
+    <cell col="1" row="2"></cell>
+    <cell col="2" row="2"></cell>
+    <cell col="3" row="2">ΔＵ</cell>
+    <cell col="4" row="2">30mm</cell>
+    <cell col="5" row="2"></cell>
+  </row>
+  <row>
+    <cell col="0" row="3">摘 要</cell>
+    <cell col="1" row="3">ＧＬＯＮＡＳＳ衛星を用いて観測する場合は、使用衛星数は６衛星以上とする。ただ し、ＧＰＳ・準天頂衛星及びＧＬＯＮＡＳＳ衛星を、それぞれ２衛星以上を用いるこ と。</cell>
+    <cell col="2" row="3"></cell>
+    <cell col="3" row="3"></cell>
+    <cell col="4" row="3"></cell>
+    <cell col="5" row="3"></cell>
+  </row>
+</table>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표1" gubun="별표" no="1" title="측량기준점 현황조사 개요표(제8조제1항 관련)" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=107655483">
+  <text>[별표 1] 측량기준점 현황조사 개요표(제8조제1항 관련)</text>
+  <table rows="3" cols="2">
+    <row>
+      <cell col="0" row="0">조사 연월일 :</cell>
+      <cell col="1" row="0">2021. 5. 13.</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">점의 종류   :</cell>
+      <cell col="1" row="1">통합기준점</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">점의 번호   :</cell>
+      <cell col="1" row="2">U0000</cell>
+    </row>
+  </table>
+</annex>

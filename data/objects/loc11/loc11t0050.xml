@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0050" article="제105조(数値地形図データの精度)" rows="7" cols="4" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">地図情報レベル</cell>
+    <cell col="1" row="0" header="1">水平位置の標準偏差</cell>
+    <cell col="2" row="0" header="1">標高点の標準偏差</cell>
+    <cell col="3" row="0" header="1">等高線の標準偏差</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">250</cell>
+    <cell col="1" row="1">0.12ｍ以内</cell>
+    <cell col="2" row="1">0.25ｍ以内</cell>
+    <cell col="3" row="1">0.5ｍ以内</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">500</cell>
+    <cell col="1" row="2">0.25ｍ以内</cell>
+    <cell col="2" row="2">0.25ｍ以内</cell>
+    <cell col="3" row="2">0.5ｍ以内</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">1000</cell>
+    <cell col="1" row="3">0.70ｍ以内</cell>
+    <cell col="2" row="3">0.33ｍ以内</cell>
+    <cell col="3" row="3">0.5ｍ以内</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">2500</cell>
+    <cell col="1" row="4">1.75ｍ以内</cell>
+    <cell col="2" row="4">0.66ｍ以内</cell>
+    <cell col="3" row="4">1.0ｍ以内</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">5000</cell>
+    <cell col="1" row="5">3.50ｍ以内</cell>
+    <cell col="2" row="5">1.66ｍ以内</cell>
+    <cell col="3" row="5">2.5ｍ以内</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">10000</cell>
+    <cell col="1" row="6">7.00ｍ以内</cell>
+    <cell col="2" row="6">3.33ｍ以内</cell>
+    <cell col="3" row="6">5.0ｍ以内</cell>
+  </row>
+</table>

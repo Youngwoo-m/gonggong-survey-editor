@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지5" gubun="별지" no="5" title="네트워크 RTK 측량조서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=118668807">
+  <text>[별지 제5호서식] 네트워크 RTK 측량조서
+네트워크 RTK 측량조서</text>
+  <table rows="10" cols="5">
+    <row>
+      <cell col="0" row="0">종류</cell>
+      <cell col="1" row="0" colspan="2">표고기준점 – 네트워크-RTK</cell>
+      <cell col="3" row="0">사 업 명</cell>
+      <cell col="4" row="0">00지구(2021)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">경로</cell>
+      <cell col="1" row="1" colspan="2">양지사거리에서 용인방향 횡단보도 끝에 위치</cell>
+      <cell col="3" row="1">사 업 자</cell>
+      <cell col="4" row="1">홍길동</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="5">37607TP001</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">&lt;항공사진 근경&gt;</cell>
+      <cell col="2" row="3" colspan="3">&lt;항공사진 원경&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="2"></cell>
+      <cell col="2" row="4" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="2">&lt;방향 1&gt;</cell>
+      <cell col="2" row="5" colspan="3">&lt;방향 2&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="6" colspan="2"></cell>
+      <cell col="2" row="6" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="2">&lt;방향 3&gt;</cell>
+      <cell col="2" row="7" colspan="3">&lt;방향 4&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="2"></cell>
+      <cell col="2" row="8" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">특이사항</cell>
+      <cell col="1" row="9" colspan="4"></cell>
+    </row>
+  </table>
+</annex>

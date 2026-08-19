@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc19t026" article="법규ž절차 및 권한 준수" rows="7" cols="10" source="측량 안전관리 매뉴얼 (2026.1)">
+  <row>
+    <cell col="0" row="0" header="1"></cell>
+    <cell col="1" row="0" header="1">조 종 자</cell>
+    <cell col="2" row="0" header="1">구분</cell>
+    <cell col="3" row="0" header="1"></cell>
+    <cell col="4" row="0" header="1">소속</cell>
+    <cell col="5" row="0" header="1"></cell>
+    <cell col="6" row="0" header="1">직위/직급</cell>
+    <cell col="7" row="0" header="1"></cell>
+    <cell col="8" row="0" header="1">자격</cell>
+    <cell col="9" row="0" header="1"></cell>
+  </row>
+  <row>
+    <cell col="0" row="1"></cell>
+    <cell col="1" row="1"></cell>
+    <cell col="2" row="1">주조종자</cell>
+    <cell col="3" row="1"></cell>
+    <cell col="4" row="1"></cell>
+    <cell col="5" row="1"></cell>
+    <cell col="6" row="1"></cell>
+    <cell col="7" row="1"></cell>
+    <cell col="8" row="1"></cell>
+    <cell col="9" row="1"></cell>
+  </row>
+  <row>
+    <cell col="0" row="2"></cell>
+    <cell col="1" row="2"></cell>
+    <cell col="2" row="2">부조종자</cell>
+    <cell col="3" row="2"></cell>
+    <cell col="4" row="2"></cell>
+    <cell col="5" row="2"></cell>
+    <cell col="6" row="2"></cell>
+    <cell col="7" row="2"></cell>
+    <cell col="8" row="2"></cell>
+    <cell col="9" row="2"></cell>
+  </row>
+  <row>
+    <cell col="0" row="3"></cell>
+    <cell col="1" row="3"></cell>
+    <cell col="2" row="3"></cell>
+    <cell col="3" row="3"></cell>
+    <cell col="4" row="3">이·착륙 장소</cell>
+    <cell col="5" row="3"></cell>
+    <cell col="6" row="3"></cell>
+    <cell col="7" row="3"></cell>
+    <cell col="8" row="3"></cell>
+    <cell col="9" row="3"></cell>
+  </row>
+  <row>
+    <cell col="0" row="4"></cell>
+    <cell col="1" row="4">[ ]고정익 [ ]회전익 [ ]하이브리드</cell>
+    <cell col="2" row="4"></cell>
+    <cell col="3" row="4"></cell>
+    <cell col="4" row="4"></cell>
+    <cell col="5" row="4">속도</cell>
+    <cell col="6" row="4"></cell>
+    <cell col="7" row="4"></cell>
+    <cell col="8" row="4"></cell>
+    <cell col="9" row="4">카메라 제원</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">m</cell>
+    <cell col="1" row="5">촬영횟수</cell>
+    <cell col="2" row="5"></cell>
+    <cell col="3" row="5">회</cell>
+    <cell col="4" row="5"></cell>
+    <cell col="5" row="5">중복도</cell>
+    <cell col="6" row="5"></cell>
+    <cell col="7" row="5"></cell>
+    <cell col="8" row="5"></cell>
+    <cell col="9" row="5">종</cell>
+  </row>
+  <row>
+    <cell col="0" row="6"></cell>
+    <cell col="1" row="6"></cell>
+    <cell col="2" row="6"></cell>
+    <cell col="3" row="6"></cell>
+    <cell col="4" row="6"></cell>
+    <cell col="5" row="6"></cell>
+    <cell col="6" row="6"></cell>
+    <cell col="7" row="6"></cell>
+    <cell col="8" row="6"></cell>
+    <cell col="9" row="6">횡</cell>
+  </row>
+</table>

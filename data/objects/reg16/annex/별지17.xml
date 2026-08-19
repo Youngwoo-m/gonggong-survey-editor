@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지17" gubun="별지" no="17" title="원시자료 조정 결과보고서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=161554363">
+  <text>■ 수치표고모형의 구축 및 관리 등에 관한 규정 [별지 제17호서식]
+원시자료 조정 결과보고서</text>
+  <table rows="14" cols="4">
+    <row>
+      <cell col="0" row="0">지구명</cell>
+      <cell col="1" row="0"></cell>
+      <cell col="2" row="0">작업자</cell>
+      <cell col="3" row="0"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="2">비행
+코스</cell>
+      <cell col="1" row="1">조정값</cell>
+      <cell col="2" row="1" rowspan="2">비행
+코스</cell>
+      <cell col="3" row="1">조정값</cell>
+    </row>
+    <row>
+      <cell col="1" row="2">ZAdj(m)</cell>
+      <cell col="3" row="2">ZAdj(m)</cell>
+    </row>
+    <row>
+      <cell col="0" row="3"></cell>
+      <cell col="1" row="3"></cell>
+      <cell col="2" row="3"></cell>
+      <cell col="3" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4"></cell>
+      <cell col="1" row="4"></cell>
+      <cell col="2" row="4"></cell>
+      <cell col="3" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5"></cell>
+      <cell col="1" row="5"></cell>
+      <cell col="2" row="5"></cell>
+      <cell col="3" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6"></cell>
+      <cell col="1" row="6"></cell>
+      <cell col="2" row="6"></cell>
+      <cell col="3" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7"></cell>
+      <cell col="1" row="7"></cell>
+      <cell col="2" row="7"></cell>
+      <cell col="3" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8"></cell>
+      <cell col="1" row="8"></cell>
+      <cell col="2" row="8"></cell>
+      <cell col="3" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9"></cell>
+      <cell col="1" row="9"></cell>
+      <cell col="2" row="9"></cell>
+      <cell col="3" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10"></cell>
+      <cell col="1" row="10"></cell>
+      <cell col="2" row="10"></cell>
+      <cell col="3" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11"></cell>
+      <cell col="1" row="11"></cell>
+      <cell col="2" row="11"></cell>
+      <cell col="3" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12"></cell>
+      <cell col="1" row="12"></cell>
+      <cell col="2" row="12"></cell>
+      <cell col="3" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13"></cell>
+      <cell col="1" row="13"></cell>
+      <cell col="2" row="13"></cell>
+      <cell col="3" row="13"></cell>
+    </row>
+  </table>
+  <text>※ 조정은 기준점에 의해 분석된 높이의 평균값만큼 평행이동하여 수행한다.</text>
+</annex>

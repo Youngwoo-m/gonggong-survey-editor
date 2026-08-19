@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0075" article="제310조(方法)" rows="7" cols="6" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">地図情報 レベル</cell>
+    <cell col="1" row="0" header="1">水平位置 （標準偏 差）</cell>
+    <cell col="2" row="0" header="1">地上画素 寸 法</cell>
+    <cell col="3" row="0" header="1">撮影縮尺</cell>
+    <cell col="4" row="0" header="1">数値地形モデル</cell>
+    <cell col="5" row="0" header="1"></cell>
+  </row>
+  <row>
+    <cell col="0" row="1"></cell>
+    <cell col="1" row="1"></cell>
+    <cell col="2" row="1"></cell>
+    <cell col="3" row="1"></cell>
+    <cell col="4" row="1">グリッド間隔</cell>
+    <cell col="5" row="1">標高点（標準偏 差）</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">500</cell>
+    <cell col="1" row="2">0.5ｍ 以内</cell>
+    <cell col="2" row="2">0.1ｍ 以内</cell>
+    <cell col="3" row="2">1/3,000～1/4,000</cell>
+    <cell col="4" row="2">5ｍ 以内</cell>
+    <cell col="5" row="2">0.5ｍ 以内</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">1000</cell>
+    <cell col="1" row="3">1.0ｍ 以内</cell>
+    <cell col="2" row="3">0.2ｍ 以内</cell>
+    <cell col="3" row="3">1/6,000～1/8,000</cell>
+    <cell col="4" row="3">10ｍ 以内</cell>
+    <cell col="5" row="3">0.5ｍ 以内</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">2500</cell>
+    <cell col="1" row="4">2.5ｍ 以内</cell>
+    <cell col="2" row="4">0.4ｍ 以内</cell>
+    <cell col="3" row="4">1/10,000～1/12,500</cell>
+    <cell col="4" row="4">25ｍ 以内</cell>
+    <cell col="5" row="4">1.0ｍ 以内</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">5000</cell>
+    <cell col="1" row="5">5.0ｍ 以内</cell>
+    <cell col="2" row="5">0.8ｍ 以内</cell>
+    <cell col="3" row="5">1/20,000～1/25,000</cell>
+    <cell col="4" row="5">50ｍ 以内</cell>
+    <cell col="5" row="5">2.5ｍ 以内</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">10000</cell>
+    <cell col="1" row="6">10.0ｍ 以内</cell>
+    <cell col="2" row="6">1.0ｍ 以内</cell>
+    <cell col="3" row="6">1/30,000</cell>
+    <cell col="4" row="6">50ｍ 以内</cell>
+    <cell col="5" row="6">5.0ｍ 以内</cell>
+  </row>
+</table>

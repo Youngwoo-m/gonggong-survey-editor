@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="r88t1" article="rule 88 Boundary annotations" rows="6" cols="2" source="Table 6: Boundary annotations for survey diagrams">
+  <row>
+    <cell col="0" row="0" header="1">Boundary</cell>
+    <cell col="1" row="0" header="1">Annotation</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">Class D boundaries</cell>
+    <cell col="1" row="1">“Class D”</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">Water centre-line boundary</cell>
+    <cell col="1" row="2">“Boundary follows centre-line of stream/river”</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">Water boundary defined by a physical feature</cell>
+    <cell col="1" row="3">[ Description of physical feature ]</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">An adopted permanent structure boundary, a water boundary, a water centre-line boundary, or an irregular boundary</cell>
+    <cell col="1" row="4">“Adpt [ CSD number ]”</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">An accepted permanent structure boundary, a water boundary, a water centre-line boundary, or an irregular boundary</cell>
+    <cell col="1" row="5">“Boundary accepted from [ CSD number ]”</cell>
+  </row>
+</table>

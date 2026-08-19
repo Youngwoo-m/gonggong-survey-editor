@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc28m001" article="제4장 조문 대응표" rows="45" cols="5" source="作業規程の準則 제4편 제4장 UAV 레이저 측량 (2025년판)">
+  <row>
+    <cell col="0" row="0" header="1">2023년 옮김본</cell>
+    <cell col="1" row="0" header="1">2025년판</cell>
+    <cell col="2" row="0" header="1">제목</cell>
+    <cell col="3" row="0" header="1">차이</cell>
+    <cell col="4" row="0" header="1">우리말</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">제437조</cell>
+    <cell col="1" row="1">제440조</cell>
+    <cell col="2" row="1">요지</cell>
+    <cell col="3" row="1">+3</cell>
+    <cell col="4" row="1">옮김본 그대로</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">제438조</cell>
+    <cell col="1" row="2">제441조</cell>
+    <cell col="2" row="2">공정별 작업 구분 및 순서</cell>
+    <cell col="3" row="2">+3</cell>
+    <cell col="4" row="2">옮김본 그대로</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">제439조</cell>
+    <cell col="1" row="3">제442조</cell>
+    <cell col="2" row="3">요지</cell>
+    <cell col="3" row="3">+3</cell>
+    <cell col="4" row="3">옮김본 그대로</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">제440조</cell>
+    <cell col="1" row="4">제443조</cell>
+    <cell col="2" row="4">목적의 명확화</cell>
+    <cell col="3" row="4">+3</cell>
+    <cell col="4" row="4">옮김본 그대로</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">제441조</cell>
+    <cell col="1" row="5">제444조</cell>
+    <cell col="2" row="5">성과품 요구 사양서의 작성</cell>
+    <cell col="3" row="5">+3</cell>
+    <cell col="4" row="5">고침</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">제442조</cell>
+    <cell col="1" row="6">제445조</cell>
+    <cell col="2" row="6">취득하는 좌표치의 단위</cell>
+    <cell col="3" row="6">+3</cell>
+    <cell col="4" row="6">고침</cell>
+  </row>
+  <row>
+    <cell col="0" row="7">제443조</cell>
+    <cell col="1" row="7">제446조</cell>
+    <cell col="2" row="7">요지</cell>
+    <cell col="3" row="7">+3</cell>
+    <cell col="4" row="7">옮김본 그대로</cell>
+  </row>
+  <row>
+    <cell col="0" row="8">제444조</cell>
+    <cell col="1" row="8">제447조</cell>
+    <cell col="2" row="8">요지</cell>
+    <cell col="3" row="8">+3</cell>
+    <cell col="4" row="8">고침</cell>
+  </row>
+  <row>
+    <cell col="0" row="9">제445조</cell>
+    <cell col="1" row="9">제448조</cell>
+    <cell col="2" row="9">UAV 레이저 측량 시스템</cell>
+    <cell col="3" row="9">+3</cell>
+    <cell col="4" row="9">고침</cell>
+  </row>
+  <row>
+    <cell col="0" row="10">제446조</cell>
+    <cell col="1" row="10">제449조</cell>
+    <cell col="2" row="10">UAV 레이저 측량 시스템의 보어 사이트 캘리브레이션 및 정밀도 시험</cell>
+    <cell col="3" row="10">+3</cell>
+    <cell col="4" row="10">고침</cell>
+  </row>
+  <row>
+    <cell col="0" row="11">제447조</cell>
+    <cell col="1" row="11">제450조</cell>
+    <cell col="2" row="11">작업 사양서 작성</cell>
+    <cell col="3" row="11">+3</cell>
+    <cell col="4" row="11">옮김본 그대로</cell>
+  </row>
+  <row>
+    <cell col="0" row="12">제448조</cell>
+    <cell col="1" row="12">제451조</cell>
+    <cell col="2" row="12">계측 제원</cell>
+    <cell col="3" row="12">+3</cell>
+    <cell col="4" row="12">고침</cell>
+  </row>
+  <row>
+    <cell col="0" row="13">제449조</cell>
+    <cell col="1" row="13">제452조</cell>
+    <cell col="2" row="13">작업 사양서의 계획 기관에 의한 승인</cell>
+    <cell col="3" row="13">+3</cell>
+    <cell col="4" row="13">옮김본 그대로</cell>
+  </row>
+  <row>
+    <cell col="0" row="14">제450조</cell>
+    <cell col="1" row="14">제453조</cell>
+    <cell col="2" row="14">계측 계획 작성</cell>
+    <cell col="3" row="14">+3</cell>
+    <cell col="4" row="14">옮김본 그대로</cell>
+  </row>
+  <row>
+    <cell col="0" row="15">제451조</cell>
+    <cell col="1" row="15">제454조</cell>
+    <cell col="2" row="15">고정국의 설치</cell>
+    <cell col="3" row="15">+3</cell>
+    <cell col="4" row="15">옮김본 그대로</cell>
+  </row>
+  <row>
+    <cell col="0" row="16">제452조</cell>
+    <cell col="1" row="16">제455조</cell>
+    <cell col="2" row="16">조정점의 설치</cell>
+    <cell col="3" row="16">+3</cell>
+    <cell col="4" row="16">고침</cell>
+  </row>
+  <row>
+    <cell col="0" row="17">제453조</cell>
+    <cell col="1" row="17">제456조</cell>
+    <cell col="2" row="17">조정점의 측정</cell>
+    <cell col="3" row="17">+3</cell>
+    <cell col="4" row="17">고침</cell>
+  </row>
+  <row>
+    <cell col="0" row="18">제454조</cell>
+    <cell col="1" row="18">제457조</cell>
+    <cell col="2" row="18">계측</cell>
+    <cell col="3" row="18">+3</cell>
+    <cell col="4" row="18">옮김본 그대로</cell>
+  </row>
+  <row>
+    <cell col="0" row="19">제455조</cell>
+    <cell col="1" row="19">제458조</cell>
+    <cell col="2" row="19">UAV 비행</cell>
+    <cell col="3" row="19">+3</cell>
+    <cell col="4" row="19">고침</cell>
+  </row>
+  <row>
+    <cell col="0" row="20">제456조</cell>
+    <cell col="1" row="20">제459조</cell>
+    <cell col="2" row="20">수치 사진 촬영</cell>
+    <cell col="3" row="20">+3</cell>
+    <cell col="4" row="20">옮김본 그대로</cell>
+  </row>
+  <row>
+    <cell col="0" row="21">제457조</cell>
+    <cell col="1" row="21">제460조</cell>
+    <cell col="2" row="21">계측 확인</cell>
+    <cell col="3" row="21">+3</cell>
+    <cell col="4" row="21">옮김본 그대로</cell>
+  </row>
+  <row>
+    <cell col="0" row="22">제458조</cell>
+    <cell col="1" row="22">제461조</cell>
+    <cell col="2" row="22">최적 궤적 해석</cell>
+    <cell col="3" row="22">+3</cell>
+    <cell col="4" row="22">옮김본 그대로</cell>
+  </row>
+  <row>
+    <cell col="0" row="23">제459조</cell>
+    <cell col="1" row="23">제462조</cell>
+    <cell col="2" row="23">최적 궤적 해석의 점검</cell>
+    <cell col="3" row="23">+3</cell>
+    <cell col="4" row="23">고침</cell>
+  </row>
+  <row>
+    <cell col="0" row="24">제460조</cell>
+    <cell col="1" row="24">제463조</cell>
+    <cell col="2" row="24">점군 데이터의 작성</cell>
+    <cell col="3" row="24">+3</cell>
+    <cell col="4" row="24">옮김본 그대로</cell>
+  </row>
+  <row>
+    <cell col="0" row="25">제461조</cell>
+    <cell col="1" row="25">제464조</cell>
+    <cell col="2" row="25">코스간의 중복부에 있어서의 고도값의 점검 및 조정</cell>
+    <cell col="3" row="25">+3</cell>
+    <cell col="4" row="25">고침</cell>
+  </row>
+  <row>
+    <cell col="0" row="26">제462조</cell>
+    <cell col="1" row="26">제465조</cell>
+    <cell col="2" row="26">조정점을 이용한 점검 및 조정</cell>
+    <cell col="3" row="26">+3</cell>
+    <cell col="4" row="26">옮김본 그대로</cell>
+  </row>
+  <row>
+    <cell col="0" row="27">제463조</cell>
+    <cell col="1" row="27">제466조</cell>
+    <cell col="2" row="27">점밀도 점검</cell>
+    <cell col="3" row="27">+3</cell>
+    <cell col="4" row="27">옮김본 그대로</cell>
+  </row>
+  <row>
+    <cell col="0" row="28">제464조</cell>
+    <cell col="1" row="28">제467조</cell>
+    <cell col="2" row="28">원시 데이터의 점검 측량</cell>
+    <cell col="3" row="28">+3</cell>
+    <cell col="4" row="28">고침</cell>
+  </row>
+  <row>
+    <cell col="0" row="29">제465조</cell>
+    <cell col="1" row="29">제468조</cell>
+    <cell col="2" row="29">요지</cell>
+    <cell col="3" row="29">+3</cell>
+    <cell col="4" row="29">옮김본 그대로</cell>
+  </row>
+  <row>
+    <cell col="0" row="30">제466조</cell>
+    <cell col="1" row="30">제469조</cell>
+    <cell col="2" row="30">지면 데이터 작성</cell>
+    <cell col="3" row="30">+3</cell>
+    <cell col="4" row="30">옮김본 그대로</cell>
+  </row>
+  <row>
+    <cell col="0" row="31">제467조</cell>
+    <cell col="1" row="31">제470조</cell>
+    <cell col="2" row="31">지면 데이터 점검</cell>
+    <cell col="3" row="31">+3</cell>
+    <cell col="4" row="31">고침</cell>
+  </row>
+  <row>
+    <cell col="0" row="32">제468조</cell>
+    <cell col="1" row="32">제471조</cell>
+    <cell col="2" row="32">그리드 데이터 작성</cell>
+    <cell col="3" row="32">+3</cell>
+    <cell col="4" row="32">고침</cell>
+  </row>
+  <row>
+    <cell col="0" row="33">제469조</cell>
+    <cell col="1" row="33">제472조</cell>
+    <cell col="2" row="33">그리드 데이터 점검</cell>
+    <cell col="3" row="33">+3</cell>
+    <cell col="4" row="33">옮김본 그대로</cell>
+  </row>
+  <row>
+    <cell col="0" row="34">제470조</cell>
+    <cell col="1" row="34">제473조</cell>
+    <cell col="2" row="34">등고선 데이터 작성</cell>
+    <cell col="3" row="34">+3</cell>
+    <cell col="4" row="34">옮김본 그대로</cell>
+  </row>
+  <row>
+    <cell col="0" row="35">제471조</cell>
+    <cell col="1" row="35">제474조</cell>
+    <cell col="2" row="35">등고선 데이터 점검</cell>
+    <cell col="3" row="35">+3</cell>
+    <cell col="4" row="35">옮김본 그대로</cell>
+  </row>
+  <row>
+    <cell col="0" row="36">—</cell>
+    <cell col="1" row="36">제475조</cell>
+    <cell col="2" row="36">단면도 데이터의 작성</cell>
+    <cell col="3" row="36">2025년판 신설</cell>
+    <cell col="4" row="36">새로 옮김</cell>
+  </row>
+  <row>
+    <cell col="0" row="37">—</cell>
+    <cell col="1" row="37">제476조</cell>
+    <cell col="2" row="37">단면도 데이터의 점검</cell>
+    <cell col="3" row="37">2025년판 신설</cell>
+    <cell col="4" row="37">새로 옮김</cell>
+  </row>
+  <row>
+    <cell col="0" row="38">제472조</cell>
+    <cell col="1" row="38">제477조</cell>
+    <cell col="2" row="38">수치 지형도 데이터의 작성</cell>
+    <cell col="3" row="38">+5</cell>
+    <cell col="4" row="38">옮김본 그대로</cell>
+  </row>
+  <row>
+    <cell col="0" row="39">제473조</cell>
+    <cell col="1" row="39">제478조</cell>
+    <cell col="2" row="39">수치 지형도 데이터 작성에 사용하는 데이터</cell>
+    <cell col="3" row="39">+5</cell>
+    <cell col="4" row="39">고침</cell>
+  </row>
+  <row>
+    <cell col="0" row="40">제474조</cell>
+    <cell col="1" row="40">제479조</cell>
+    <cell col="2" row="40">수치 지형도 데이터의 점검</cell>
+    <cell col="3" row="40">+5</cell>
+    <cell col="4" row="40">옮김본 그대로</cell>
+  </row>
+  <row>
+    <cell col="0" row="41">제475조</cell>
+    <cell col="1" row="41">제480조</cell>
+    <cell col="2" row="41">성과 데이터 파일의 작성</cell>
+    <cell col="3" row="41">+5</cell>
+    <cell col="4" row="41">옮김본 그대로</cell>
+  </row>
+  <row>
+    <cell col="0" row="42">제476조</cell>
+    <cell col="1" row="42">제481조</cell>
+    <cell col="2" row="42">품질 평가</cell>
+    <cell col="3" row="42">+5</cell>
+    <cell col="4" row="42">옮김본 그대로</cell>
+  </row>
+  <row>
+    <cell col="0" row="43">제477조</cell>
+    <cell col="1" row="43">제482조</cell>
+    <cell col="2" row="43">메타데이터 만들기</cell>
+    <cell col="3" row="43">+5</cell>
+    <cell col="4" row="43">옮김본 그대로</cell>
+  </row>
+  <row>
+    <cell col="0" row="44">제478조</cell>
+    <cell col="1" row="44">제483조</cell>
+    <cell col="2" row="44">성과 등</cell>
+    <cell col="3" row="44">+5</cell>
+    <cell col="4" row="44">옮김본 그대로</cell>
+  </row>
+</table>

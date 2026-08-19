@@ -1,0 +1,1489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표14" gubun="별표" no="14" title="지반정보 구조화 테이블 설계서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=38099379">
+  <text>[별표 14] 지반정보 구조화 테이블 설계서
+1. 시추</text>
+  <table rows="25" cols="9">
+    <row>
+      <cell col="0" row="0" colspan="9">테이블정의서</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="2">주제영역</cell>
+      <cell col="2" row="1">지반_시추공</cell>
+      <cell col="3" row="1">작성일</cell>
+      <cell col="4" row="1" colspan="3"></cell>
+      <cell col="7" row="1">작성자</cell>
+      <cell col="8" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">테이블ID</cell>
+      <cell col="2" row="2">UGG_STRT_PS</cell>
+      <cell col="3" row="2" colspan="2">테이블명</cell>
+      <cell col="5" row="2" colspan="4">지층정보</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">테이블설명</cell>
+      <cell col="2" row="3" colspan="7">3D 지층정보 위치정보</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">NO</cell>
+      <cell col="1" row="4">컬럼ID</cell>
+      <cell col="2" row="4">컬럼명</cell>
+      <cell col="3" row="4">타입</cell>
+      <cell col="4" row="4">길이</cell>
+      <cell col="5" row="4">NULL</cell>
+      <cell col="6" row="4">KEY</cell>
+      <cell col="7" row="4">CD NUM</cell>
+      <cell col="8" row="4">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">1</cell>
+      <cell col="1" row="5">STR_MKU</cell>
+      <cell col="2" row="5">지층구성</cell>
+      <cell col="3" row="5">VARCHAR2</cell>
+      <cell col="4" row="5">200</cell>
+      <cell col="5" row="5">N</cell>
+      <cell col="6" row="5"></cell>
+      <cell col="7" row="5"></cell>
+      <cell col="8" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">2</cell>
+      <cell col="1" row="6">HJD_CDE</cell>
+      <cell col="2" row="6">행정읍면동코드</cell>
+      <cell col="3" row="6">VARCHAR2</cell>
+      <cell col="4" row="6">10</cell>
+      <cell col="5" row="6">NN</cell>
+      <cell col="6" row="6"></cell>
+      <cell col="7" row="6">HJD-001</cell>
+      <cell col="8" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">3</cell>
+      <cell col="1" row="7"></cell>
+      <cell col="2" row="7"></cell>
+      <cell col="3" row="7"></cell>
+      <cell col="4" row="7"></cell>
+      <cell col="5" row="7"></cell>
+      <cell col="6" row="7"></cell>
+      <cell col="7" row="7"></cell>
+      <cell col="8" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8">4</cell>
+      <cell col="1" row="8"></cell>
+      <cell col="2" row="8"></cell>
+      <cell col="3" row="8"></cell>
+      <cell col="4" row="8"></cell>
+      <cell col="5" row="8"></cell>
+      <cell col="6" row="8"></cell>
+      <cell col="7" row="8"></cell>
+      <cell col="8" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">5</cell>
+      <cell col="1" row="9"></cell>
+      <cell col="2" row="9"></cell>
+      <cell col="3" row="9"></cell>
+      <cell col="4" row="9"></cell>
+      <cell col="5" row="9"></cell>
+      <cell col="6" row="9"></cell>
+      <cell col="7" row="9"></cell>
+      <cell col="8" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10">6</cell>
+      <cell col="1" row="10"></cell>
+      <cell col="2" row="10"></cell>
+      <cell col="3" row="10"></cell>
+      <cell col="4" row="10"></cell>
+      <cell col="5" row="10"></cell>
+      <cell col="6" row="10"></cell>
+      <cell col="7" row="10"></cell>
+      <cell col="8" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11">7</cell>
+      <cell col="1" row="11"></cell>
+      <cell col="2" row="11"></cell>
+      <cell col="3" row="11"></cell>
+      <cell col="4" row="11"></cell>
+      <cell col="5" row="11"></cell>
+      <cell col="6" row="11"></cell>
+      <cell col="7" row="11"></cell>
+      <cell col="8" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12">8</cell>
+      <cell col="1" row="12"></cell>
+      <cell col="2" row="12"></cell>
+      <cell col="3" row="12"></cell>
+      <cell col="4" row="12"></cell>
+      <cell col="5" row="12"></cell>
+      <cell col="6" row="12"></cell>
+      <cell col="7" row="12"></cell>
+      <cell col="8" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13">9</cell>
+      <cell col="1" row="13"></cell>
+      <cell col="2" row="13"></cell>
+      <cell col="3" row="13"></cell>
+      <cell col="4" row="13"></cell>
+      <cell col="5" row="13"></cell>
+      <cell col="6" row="13"></cell>
+      <cell col="7" row="13"></cell>
+      <cell col="8" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14">10</cell>
+      <cell col="1" row="14"></cell>
+      <cell col="2" row="14"></cell>
+      <cell col="3" row="14"></cell>
+      <cell col="4" row="14"></cell>
+      <cell col="5" row="14"></cell>
+      <cell col="6" row="14"></cell>
+      <cell col="7" row="14"></cell>
+      <cell col="8" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15">11</cell>
+      <cell col="1" row="15"></cell>
+      <cell col="2" row="15"></cell>
+      <cell col="3" row="15"></cell>
+      <cell col="4" row="15"></cell>
+      <cell col="5" row="15"></cell>
+      <cell col="6" row="15"></cell>
+      <cell col="7" row="15"></cell>
+      <cell col="8" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16">12</cell>
+      <cell col="1" row="16"></cell>
+      <cell col="2" row="16"></cell>
+      <cell col="3" row="16"></cell>
+      <cell col="4" row="16"></cell>
+      <cell col="5" row="16"></cell>
+      <cell col="6" row="16"></cell>
+      <cell col="7" row="16"></cell>
+      <cell col="8" row="16"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17">13</cell>
+      <cell col="1" row="17"></cell>
+      <cell col="2" row="17"></cell>
+      <cell col="3" row="17"></cell>
+      <cell col="4" row="17"></cell>
+      <cell col="5" row="17"></cell>
+      <cell col="6" row="17"></cell>
+      <cell col="7" row="17"></cell>
+      <cell col="8" row="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18">14</cell>
+      <cell col="1" row="18"></cell>
+      <cell col="2" row="18"></cell>
+      <cell col="3" row="18"></cell>
+      <cell col="4" row="18"></cell>
+      <cell col="5" row="18"></cell>
+      <cell col="6" row="18"></cell>
+      <cell col="7" row="18"></cell>
+      <cell col="8" row="18"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19">15</cell>
+      <cell col="1" row="19"></cell>
+      <cell col="2" row="19"></cell>
+      <cell col="3" row="19"></cell>
+      <cell col="4" row="19"></cell>
+      <cell col="5" row="19"></cell>
+      <cell col="6" row="19"></cell>
+      <cell col="7" row="19"></cell>
+      <cell col="8" row="19"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20">16</cell>
+      <cell col="1" row="20"></cell>
+      <cell col="2" row="20"></cell>
+      <cell col="3" row="20"></cell>
+      <cell col="4" row="20"></cell>
+      <cell col="5" row="20"></cell>
+      <cell col="6" row="20"></cell>
+      <cell col="7" row="20"></cell>
+      <cell col="8" row="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21">17</cell>
+      <cell col="1" row="21"></cell>
+      <cell col="2" row="21"></cell>
+      <cell col="3" row="21"></cell>
+      <cell col="4" row="21"></cell>
+      <cell col="5" row="21"></cell>
+      <cell col="6" row="21"></cell>
+      <cell col="7" row="21"></cell>
+      <cell col="8" row="21"></cell>
+    </row>
+    <row>
+      <cell col="0" row="22">18</cell>
+      <cell col="1" row="22"></cell>
+      <cell col="2" row="22"></cell>
+      <cell col="3" row="22"></cell>
+      <cell col="4" row="22"></cell>
+      <cell col="5" row="22"></cell>
+      <cell col="6" row="22"></cell>
+      <cell col="7" row="22"></cell>
+      <cell col="8" row="22"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23">19</cell>
+      <cell col="1" row="23"></cell>
+      <cell col="2" row="23"></cell>
+      <cell col="3" row="23"></cell>
+      <cell col="4" row="23"></cell>
+      <cell col="5" row="23"></cell>
+      <cell col="6" row="23"></cell>
+      <cell col="7" row="23"></cell>
+      <cell col="8" row="23"></cell>
+    </row>
+    <row>
+      <cell col="0" row="24" colspan="2">인덱스</cell>
+      <cell col="2" row="24" colspan="7">인덱스키</cell>
+    </row>
+  </table>
+  <text>2. 관정</text>
+  <table rows="25" cols="9">
+    <row>
+      <cell col="0" row="0" colspan="9">테이블정의서</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="2">주제영역</cell>
+      <cell col="2" row="1">지반_관정</cell>
+      <cell col="3" row="1">작성일</cell>
+      <cell col="4" row="1" colspan="3">-</cell>
+      <cell col="7" row="1">작성자</cell>
+      <cell col="8" row="1">-</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">테이블ID</cell>
+      <cell col="2" row="2">UGG_TUBW_PS</cell>
+      <cell col="3" row="2" colspan="2">테이블명</cell>
+      <cell col="5" row="2" colspan="4">관정</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">테이블설명</cell>
+      <cell col="2" row="3" colspan="7">관정정보</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">NO</cell>
+      <cell col="1" row="4">컬럼ID</cell>
+      <cell col="2" row="4">컬럼명</cell>
+      <cell col="3" row="4">타입</cell>
+      <cell col="4" row="4">길이</cell>
+      <cell col="5" row="4">NULL</cell>
+      <cell col="6" row="4">KEY</cell>
+      <cell col="7" row="4">CD NUM</cell>
+      <cell col="8" row="4">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">1</cell>
+      <cell col="1" row="5">FTR_IDN</cell>
+      <cell col="2" row="5">관리번호</cell>
+      <cell col="3" row="5">NUMBER</cell>
+      <cell col="4" row="5">10</cell>
+      <cell col="5" row="5">NN</cell>
+      <cell col="6" row="5">PK</cell>
+      <cell col="7" row="5"></cell>
+      <cell col="8" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">2</cell>
+      <cell col="1" row="6">FTR_CDE</cell>
+      <cell col="2" row="6">지형지물부호</cell>
+      <cell col="3" row="6">VARCHAR2</cell>
+      <cell col="4" row="6">5</cell>
+      <cell col="5" row="6">NN</cell>
+      <cell col="6" row="6"></cell>
+      <cell col="7" row="6"></cell>
+      <cell col="8" row="6">AL002</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">3</cell>
+      <cell col="1" row="7">NAT_LEV</cell>
+      <cell col="2" row="7">자연수위</cell>
+      <cell col="3" row="7">NUMBER</cell>
+      <cell col="4" row="7">16,6</cell>
+      <cell col="5" row="7">N</cell>
+      <cell col="6" row="7"></cell>
+      <cell col="7" row="7"></cell>
+      <cell col="8" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8">4</cell>
+      <cell col="1" row="8">TUB_DEP</cell>
+      <cell col="2" row="8">굴착심도</cell>
+      <cell col="3" row="8">NUMBER</cell>
+      <cell col="4" row="8">16,6</cell>
+      <cell col="5" row="8">N</cell>
+      <cell col="6" row="8"></cell>
+      <cell col="7" row="8"></cell>
+      <cell col="8" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">5</cell>
+      <cell col="1" row="9">TUB_DIA</cell>
+      <cell col="2" row="9">굴착직경</cell>
+      <cell col="3" row="9">NUMBER</cell>
+      <cell col="4" row="9">16,6</cell>
+      <cell col="5" row="9">N</cell>
+      <cell col="6" row="9"></cell>
+      <cell col="7" row="9"></cell>
+      <cell col="8" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10">6</cell>
+      <cell col="1" row="10">TUB_CDE</cell>
+      <cell col="2" row="10">관정종류코드</cell>
+      <cell col="3" row="10">VARCHAR2</cell>
+      <cell col="4" row="10">6</cell>
+      <cell col="5" row="10">NN</cell>
+      <cell col="6" row="10"></cell>
+      <cell col="7" row="10">CDE-010</cell>
+      <cell col="8" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11">7</cell>
+      <cell col="1" row="11">TUB_CAT</cell>
+      <cell col="2" row="11">관정구분</cell>
+      <cell col="3" row="11">VARCHAR2</cell>
+      <cell col="4" row="11">50</cell>
+      <cell col="5" row="11">N</cell>
+      <cell col="6" row="11"></cell>
+      <cell col="7" row="11"></cell>
+      <cell col="8" row="11">수자원  분류</cell>
+    </row>
+    <row>
+      <cell col="0" row="12">8</cell>
+      <cell col="1" row="12">CNT_CHK</cell>
+      <cell col="2" row="12">조사원시자료</cell>
+      <cell col="3" row="12">VARCHAR2</cell>
+      <cell col="4" row="12">100</cell>
+      <cell col="5" row="12">N</cell>
+      <cell col="6" row="12"></cell>
+      <cell col="7" row="12"></cell>
+      <cell col="8" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13">9</cell>
+      <cell col="1" row="13">CNT_MNG</cell>
+      <cell col="2" row="13">조사기관</cell>
+      <cell col="3" row="13">VARCHAR2</cell>
+      <cell col="4" row="13">100</cell>
+      <cell col="5" row="13">N</cell>
+      <cell col="6" row="13"></cell>
+      <cell col="7" row="13"></cell>
+      <cell col="8" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14">10</cell>
+      <cell col="1" row="14">CNT_YMD</cell>
+      <cell col="2" row="14">조사년도</cell>
+      <cell col="3" row="14">VARCHAR2</cell>
+      <cell col="4" row="14">8</cell>
+      <cell col="5" row="14">N</cell>
+      <cell col="6" row="14"></cell>
+      <cell col="7" row="14"></cell>
+      <cell col="8" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15">11</cell>
+      <cell col="1" row="15">MNG_CDE</cell>
+      <cell col="2" row="15">관리기관코드</cell>
+      <cell col="3" row="15">VARCHAR2</cell>
+      <cell col="4" row="15">7</cell>
+      <cell col="5" row="15">N</cell>
+      <cell col="6" row="15"></cell>
+      <cell col="7" row="15">MNG-001</cell>
+      <cell col="8" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16">12</cell>
+      <cell col="1" row="16">USE_RMK</cell>
+      <cell col="2" row="16">비고</cell>
+      <cell col="3" row="16">VARCHAR2</cell>
+      <cell col="4" row="16">255</cell>
+      <cell col="5" row="16">N</cell>
+      <cell col="6" row="16"></cell>
+      <cell col="7" row="16"></cell>
+      <cell col="8" row="16"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17">13</cell>
+      <cell col="1" row="17">RSM_WGT</cell>
+      <cell col="2" row="17">위험도가중치</cell>
+      <cell col="3" row="17">NUMBER</cell>
+      <cell col="4" row="17">5,2</cell>
+      <cell col="5" row="17">N</cell>
+      <cell col="6" row="17"></cell>
+      <cell col="7" row="17"></cell>
+      <cell col="8" row="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18">14</cell>
+      <cell col="1" row="18">HJD_CDE</cell>
+      <cell col="2" row="18">행정읍면동코드</cell>
+      <cell col="3" row="18">VARCHAR2</cell>
+      <cell col="4" row="18">10</cell>
+      <cell col="5" row="18">NN</cell>
+      <cell col="6" row="18"></cell>
+      <cell col="7" row="18">HJD-001</cell>
+      <cell col="8" row="18"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19">15</cell>
+      <cell col="1" row="19"></cell>
+      <cell col="2" row="19"></cell>
+      <cell col="3" row="19"></cell>
+      <cell col="4" row="19"></cell>
+      <cell col="5" row="19"></cell>
+      <cell col="6" row="19"></cell>
+      <cell col="7" row="19"></cell>
+      <cell col="8" row="19"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20">16</cell>
+      <cell col="1" row="20"></cell>
+      <cell col="2" row="20"></cell>
+      <cell col="3" row="20"></cell>
+      <cell col="4" row="20"></cell>
+      <cell col="5" row="20"></cell>
+      <cell col="6" row="20"></cell>
+      <cell col="7" row="20"></cell>
+      <cell col="8" row="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21">17</cell>
+      <cell col="1" row="21"></cell>
+      <cell col="2" row="21"></cell>
+      <cell col="3" row="21"></cell>
+      <cell col="4" row="21"></cell>
+      <cell col="5" row="21"></cell>
+      <cell col="6" row="21"></cell>
+      <cell col="7" row="21"></cell>
+      <cell col="8" row="21"></cell>
+    </row>
+    <row>
+      <cell col="0" row="22">18</cell>
+      <cell col="1" row="22"></cell>
+      <cell col="2" row="22"></cell>
+      <cell col="3" row="22"></cell>
+      <cell col="4" row="22"></cell>
+      <cell col="5" row="22"></cell>
+      <cell col="6" row="22"></cell>
+      <cell col="7" row="22"></cell>
+      <cell col="8" row="22"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23">19</cell>
+      <cell col="1" row="23"></cell>
+      <cell col="2" row="23"></cell>
+      <cell col="3" row="23"></cell>
+      <cell col="4" row="23"></cell>
+      <cell col="5" row="23"></cell>
+      <cell col="6" row="23"></cell>
+      <cell col="7" row="23"></cell>
+      <cell col="8" row="23"></cell>
+    </row>
+    <row>
+      <cell col="0" row="24" colspan="2">인덱스</cell>
+      <cell col="2" row="24" colspan="7">인덱스키</cell>
+    </row>
+  </table>
+  <table rows="25" cols="9">
+    <row>
+      <cell col="0" row="0" colspan="9">테이블정의서</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="2">주제영역</cell>
+      <cell col="2" row="1">지반_관정</cell>
+      <cell col="3" row="1">작성일</cell>
+      <cell col="4" row="1" colspan="3">-</cell>
+      <cell col="7" row="1">작성자</cell>
+      <cell col="8" row="1">-</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">테이블ID</cell>
+      <cell col="2" row="2">UGG_UWAT_PS</cell>
+      <cell col="3" row="2" colspan="2">테이블명</cell>
+      <cell col="5" row="2" colspan="4">지하수 관측위치</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">테이블설명</cell>
+      <cell col="2" row="3" colspan="7">지하수 관측 위치정보</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">NO</cell>
+      <cell col="1" row="4">컬럼ID</cell>
+      <cell col="2" row="4">컬럼명</cell>
+      <cell col="3" row="4">타입</cell>
+      <cell col="4" row="4">길이</cell>
+      <cell col="5" row="4">NULL</cell>
+      <cell col="6" row="4">KEY</cell>
+      <cell col="7" row="4">CD NUM</cell>
+      <cell col="8" row="4">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">1</cell>
+      <cell col="1" row="5">FTR_IDN</cell>
+      <cell col="2" row="5">관리번호</cell>
+      <cell col="3" row="5">NUMBER</cell>
+      <cell col="4" row="5">10</cell>
+      <cell col="5" row="5">NN</cell>
+      <cell col="6" row="5">PK</cell>
+      <cell col="7" row="5"></cell>
+      <cell col="8" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">2</cell>
+      <cell col="1" row="6">FTR_CDE</cell>
+      <cell col="2" row="6">지형지물부호</cell>
+      <cell col="3" row="6">VARCHAR2</cell>
+      <cell col="4" row="6">5</cell>
+      <cell col="5" row="6">NN</cell>
+      <cell col="6" row="6"></cell>
+      <cell col="7" row="6">FTR-001</cell>
+      <cell col="8" row="6">AL005</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">3</cell>
+      <cell col="1" row="7">HJD_CDE</cell>
+      <cell col="2" row="7">행정읍면동코드</cell>
+      <cell col="3" row="7">VARCHAR2</cell>
+      <cell col="4" row="7">10</cell>
+      <cell col="5" row="7">NN</cell>
+      <cell col="6" row="7"></cell>
+      <cell col="7" row="7">HJD-001</cell>
+      <cell col="8" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8">4</cell>
+      <cell col="1" row="8">OSR_NAM</cell>
+      <cell col="2" row="8">관측위치명</cell>
+      <cell col="3" row="8">VARCHAR2</cell>
+      <cell col="4" row="8">20</cell>
+      <cell col="5" row="8">N</cell>
+      <cell col="6" row="8"></cell>
+      <cell col="7" row="8"></cell>
+      <cell col="8" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">5</cell>
+      <cell col="1" row="9">IST_YMD</cell>
+      <cell col="2" row="9">설치일자</cell>
+      <cell col="3" row="9">VARCHAR2</cell>
+      <cell col="4" row="9">8</cell>
+      <cell col="5" row="9">N</cell>
+      <cell col="6" row="9"></cell>
+      <cell col="7" row="9"></cell>
+      <cell col="8" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10">6</cell>
+      <cell col="1" row="10"></cell>
+      <cell col="2" row="10"></cell>
+      <cell col="3" row="10"></cell>
+      <cell col="4" row="10"></cell>
+      <cell col="5" row="10"></cell>
+      <cell col="6" row="10"></cell>
+      <cell col="7" row="10"></cell>
+      <cell col="8" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11">7</cell>
+      <cell col="1" row="11"></cell>
+      <cell col="2" row="11"></cell>
+      <cell col="3" row="11"></cell>
+      <cell col="4" row="11"></cell>
+      <cell col="5" row="11"></cell>
+      <cell col="6" row="11"></cell>
+      <cell col="7" row="11"></cell>
+      <cell col="8" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12">8</cell>
+      <cell col="1" row="12"></cell>
+      <cell col="2" row="12"></cell>
+      <cell col="3" row="12"></cell>
+      <cell col="4" row="12"></cell>
+      <cell col="5" row="12"></cell>
+      <cell col="6" row="12"></cell>
+      <cell col="7" row="12"></cell>
+      <cell col="8" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13">9</cell>
+      <cell col="1" row="13"></cell>
+      <cell col="2" row="13"></cell>
+      <cell col="3" row="13"></cell>
+      <cell col="4" row="13"></cell>
+      <cell col="5" row="13"></cell>
+      <cell col="6" row="13"></cell>
+      <cell col="7" row="13"></cell>
+      <cell col="8" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14">10</cell>
+      <cell col="1" row="14"></cell>
+      <cell col="2" row="14"></cell>
+      <cell col="3" row="14"></cell>
+      <cell col="4" row="14"></cell>
+      <cell col="5" row="14"></cell>
+      <cell col="6" row="14"></cell>
+      <cell col="7" row="14"></cell>
+      <cell col="8" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15">11</cell>
+      <cell col="1" row="15"></cell>
+      <cell col="2" row="15"></cell>
+      <cell col="3" row="15"></cell>
+      <cell col="4" row="15"></cell>
+      <cell col="5" row="15"></cell>
+      <cell col="6" row="15"></cell>
+      <cell col="7" row="15"></cell>
+      <cell col="8" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16">12</cell>
+      <cell col="1" row="16"></cell>
+      <cell col="2" row="16"></cell>
+      <cell col="3" row="16"></cell>
+      <cell col="4" row="16"></cell>
+      <cell col="5" row="16"></cell>
+      <cell col="6" row="16"></cell>
+      <cell col="7" row="16"></cell>
+      <cell col="8" row="16"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17">13</cell>
+      <cell col="1" row="17"></cell>
+      <cell col="2" row="17"></cell>
+      <cell col="3" row="17"></cell>
+      <cell col="4" row="17"></cell>
+      <cell col="5" row="17"></cell>
+      <cell col="6" row="17"></cell>
+      <cell col="7" row="17"></cell>
+      <cell col="8" row="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18">14</cell>
+      <cell col="1" row="18"></cell>
+      <cell col="2" row="18"></cell>
+      <cell col="3" row="18"></cell>
+      <cell col="4" row="18"></cell>
+      <cell col="5" row="18"></cell>
+      <cell col="6" row="18"></cell>
+      <cell col="7" row="18"></cell>
+      <cell col="8" row="18"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19">15</cell>
+      <cell col="1" row="19"></cell>
+      <cell col="2" row="19"></cell>
+      <cell col="3" row="19"></cell>
+      <cell col="4" row="19"></cell>
+      <cell col="5" row="19"></cell>
+      <cell col="6" row="19"></cell>
+      <cell col="7" row="19"></cell>
+      <cell col="8" row="19"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20">16</cell>
+      <cell col="1" row="20"></cell>
+      <cell col="2" row="20"></cell>
+      <cell col="3" row="20"></cell>
+      <cell col="4" row="20"></cell>
+      <cell col="5" row="20"></cell>
+      <cell col="6" row="20"></cell>
+      <cell col="7" row="20"></cell>
+      <cell col="8" row="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21">17</cell>
+      <cell col="1" row="21"></cell>
+      <cell col="2" row="21"></cell>
+      <cell col="3" row="21"></cell>
+      <cell col="4" row="21"></cell>
+      <cell col="5" row="21"></cell>
+      <cell col="6" row="21"></cell>
+      <cell col="7" row="21"></cell>
+      <cell col="8" row="21"></cell>
+    </row>
+    <row>
+      <cell col="0" row="22">18</cell>
+      <cell col="1" row="22"></cell>
+      <cell col="2" row="22"></cell>
+      <cell col="3" row="22"></cell>
+      <cell col="4" row="22"></cell>
+      <cell col="5" row="22"></cell>
+      <cell col="6" row="22"></cell>
+      <cell col="7" row="22"></cell>
+      <cell col="8" row="22"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23">19</cell>
+      <cell col="1" row="23"></cell>
+      <cell col="2" row="23"></cell>
+      <cell col="3" row="23"></cell>
+      <cell col="4" row="23"></cell>
+      <cell col="5" row="23"></cell>
+      <cell col="6" row="23"></cell>
+      <cell col="7" row="23"></cell>
+      <cell col="8" row="23"></cell>
+    </row>
+    <row>
+      <cell col="0" row="24" colspan="2">인덱스</cell>
+      <cell col="2" row="24" colspan="7">인덱스키</cell>
+    </row>
+  </table>
+  <table rows="25" cols="9">
+    <row>
+      <cell col="0" row="0" colspan="9">테이블정의서</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="2">주제영역</cell>
+      <cell col="2" row="1">지반_관정</cell>
+      <cell col="3" row="1">작성일</cell>
+      <cell col="4" row="1" colspan="3">-</cell>
+      <cell col="7" row="1">작성자</cell>
+      <cell col="8" row="1">-</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">테이블ID</cell>
+      <cell col="2" row="2">UGT_UWAT_DT</cell>
+      <cell col="3" row="2" colspan="2">테이블명</cell>
+      <cell col="5" row="2" colspan="4">지하수 관측망</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">테이블설명</cell>
+      <cell col="2" row="3" colspan="7">지하수 관측망 정보</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">NO</cell>
+      <cell col="1" row="4">컬럼ID</cell>
+      <cell col="2" row="4">컬럼명</cell>
+      <cell col="3" row="4">타입</cell>
+      <cell col="4" row="4">길이</cell>
+      <cell col="5" row="4">NULL</cell>
+      <cell col="6" row="4">KEY</cell>
+      <cell col="7" row="4">CD NUM</cell>
+      <cell col="8" row="4">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">1</cell>
+      <cell col="1" row="5">FTR_IDN</cell>
+      <cell col="2" row="5">관리번호</cell>
+      <cell col="3" row="5">NUMBER</cell>
+      <cell col="4" row="5">10</cell>
+      <cell col="5" row="5">NN</cell>
+      <cell col="6" row="5">PK</cell>
+      <cell col="7" row="5"></cell>
+      <cell col="8" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">2</cell>
+      <cell col="1" row="6">OSR_IDN</cell>
+      <cell col="2" row="6">관측위치 관리번호</cell>
+      <cell col="3" row="6">NUMBER</cell>
+      <cell col="4" row="6">10</cell>
+      <cell col="5" row="6">NN</cell>
+      <cell col="6" row="6">FK</cell>
+      <cell col="7" row="6"></cell>
+      <cell col="8" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">3</cell>
+      <cell col="1" row="7">NAT_LEV</cell>
+      <cell col="2" row="7">자연수위</cell>
+      <cell col="3" row="7">NUMBER</cell>
+      <cell col="4" row="7">5,2</cell>
+      <cell col="5" row="7">N</cell>
+      <cell col="6" row="7"></cell>
+      <cell col="7" row="7"></cell>
+      <cell col="8" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8">4</cell>
+      <cell col="1" row="8">WAT_TMP</cell>
+      <cell col="2" row="8">수온</cell>
+      <cell col="3" row="8">NUMBER</cell>
+      <cell col="4" row="8">5,2</cell>
+      <cell col="5" row="8">N</cell>
+      <cell col="6" row="8"></cell>
+      <cell col="7" row="8"></cell>
+      <cell col="8" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">5</cell>
+      <cell col="1" row="9">OSR_YMD</cell>
+      <cell col="2" row="9">관측일시</cell>
+      <cell col="3" row="9">VARCHAR2</cell>
+      <cell col="4" row="9">8</cell>
+      <cell col="5" row="9">N</cell>
+      <cell col="6" row="9"></cell>
+      <cell col="7" row="9"></cell>
+      <cell col="8" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10">6</cell>
+      <cell col="1" row="10">STR_CDE</cell>
+      <cell col="2" row="10">관측위치 지층정보</cell>
+      <cell col="3" row="10">VARCHAR2</cell>
+      <cell col="4" row="10">6</cell>
+      <cell col="5" row="10">N</cell>
+      <cell col="6" row="10"></cell>
+      <cell col="7" row="10">CDE-016</cell>
+      <cell col="8" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11">7</cell>
+      <cell col="1" row="11"></cell>
+      <cell col="2" row="11"></cell>
+      <cell col="3" row="11"></cell>
+      <cell col="4" row="11"></cell>
+      <cell col="5" row="11"></cell>
+      <cell col="6" row="11"></cell>
+      <cell col="7" row="11"></cell>
+      <cell col="8" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12">8</cell>
+      <cell col="1" row="12"></cell>
+      <cell col="2" row="12"></cell>
+      <cell col="3" row="12"></cell>
+      <cell col="4" row="12"></cell>
+      <cell col="5" row="12"></cell>
+      <cell col="6" row="12"></cell>
+      <cell col="7" row="12"></cell>
+      <cell col="8" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13">9</cell>
+      <cell col="1" row="13"></cell>
+      <cell col="2" row="13"></cell>
+      <cell col="3" row="13"></cell>
+      <cell col="4" row="13"></cell>
+      <cell col="5" row="13"></cell>
+      <cell col="6" row="13"></cell>
+      <cell col="7" row="13"></cell>
+      <cell col="8" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14">10</cell>
+      <cell col="1" row="14"></cell>
+      <cell col="2" row="14"></cell>
+      <cell col="3" row="14"></cell>
+      <cell col="4" row="14"></cell>
+      <cell col="5" row="14"></cell>
+      <cell col="6" row="14"></cell>
+      <cell col="7" row="14"></cell>
+      <cell col="8" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15">11</cell>
+      <cell col="1" row="15"></cell>
+      <cell col="2" row="15"></cell>
+      <cell col="3" row="15"></cell>
+      <cell col="4" row="15"></cell>
+      <cell col="5" row="15"></cell>
+      <cell col="6" row="15"></cell>
+      <cell col="7" row="15"></cell>
+      <cell col="8" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16">12</cell>
+      <cell col="1" row="16"></cell>
+      <cell col="2" row="16"></cell>
+      <cell col="3" row="16"></cell>
+      <cell col="4" row="16"></cell>
+      <cell col="5" row="16"></cell>
+      <cell col="6" row="16"></cell>
+      <cell col="7" row="16"></cell>
+      <cell col="8" row="16"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17">13</cell>
+      <cell col="1" row="17"></cell>
+      <cell col="2" row="17"></cell>
+      <cell col="3" row="17"></cell>
+      <cell col="4" row="17"></cell>
+      <cell col="5" row="17"></cell>
+      <cell col="6" row="17"></cell>
+      <cell col="7" row="17"></cell>
+      <cell col="8" row="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18">14</cell>
+      <cell col="1" row="18"></cell>
+      <cell col="2" row="18"></cell>
+      <cell col="3" row="18"></cell>
+      <cell col="4" row="18"></cell>
+      <cell col="5" row="18"></cell>
+      <cell col="6" row="18"></cell>
+      <cell col="7" row="18"></cell>
+      <cell col="8" row="18"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19">15</cell>
+      <cell col="1" row="19"></cell>
+      <cell col="2" row="19"></cell>
+      <cell col="3" row="19"></cell>
+      <cell col="4" row="19"></cell>
+      <cell col="5" row="19"></cell>
+      <cell col="6" row="19"></cell>
+      <cell col="7" row="19"></cell>
+      <cell col="8" row="19"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20">16</cell>
+      <cell col="1" row="20"></cell>
+      <cell col="2" row="20"></cell>
+      <cell col="3" row="20"></cell>
+      <cell col="4" row="20"></cell>
+      <cell col="5" row="20"></cell>
+      <cell col="6" row="20"></cell>
+      <cell col="7" row="20"></cell>
+      <cell col="8" row="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21">17</cell>
+      <cell col="1" row="21"></cell>
+      <cell col="2" row="21"></cell>
+      <cell col="3" row="21"></cell>
+      <cell col="4" row="21"></cell>
+      <cell col="5" row="21"></cell>
+      <cell col="6" row="21"></cell>
+      <cell col="7" row="21"></cell>
+      <cell col="8" row="21"></cell>
+    </row>
+    <row>
+      <cell col="0" row="22">18</cell>
+      <cell col="1" row="22"></cell>
+      <cell col="2" row="22"></cell>
+      <cell col="3" row="22"></cell>
+      <cell col="4" row="22"></cell>
+      <cell col="5" row="22"></cell>
+      <cell col="6" row="22"></cell>
+      <cell col="7" row="22"></cell>
+      <cell col="8" row="22"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23">19</cell>
+      <cell col="1" row="23"></cell>
+      <cell col="2" row="23"></cell>
+      <cell col="3" row="23"></cell>
+      <cell col="4" row="23"></cell>
+      <cell col="5" row="23"></cell>
+      <cell col="6" row="23"></cell>
+      <cell col="7" row="23"></cell>
+      <cell col="8" row="23"></cell>
+    </row>
+    <row>
+      <cell col="0" row="24" colspan="2">인덱스</cell>
+      <cell col="2" row="24" colspan="7">인덱스키</cell>
+    </row>
+  </table>
+  <text>3. 지질</text>
+  <table rows="25" cols="9">
+    <row>
+      <cell col="0" row="0" colspan="9">테이블정의서</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="2">주제영역</cell>
+      <cell col="2" row="1">지반_지질</cell>
+      <cell col="3" row="1">작성일</cell>
+      <cell col="4" row="1" colspan="3">-</cell>
+      <cell col="7" row="1">작성자</cell>
+      <cell col="8" row="1">-</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">테이블ID</cell>
+      <cell col="2" row="2">UGG_LTHF_AS</cell>
+      <cell col="3" row="2" colspan="2">테이블명</cell>
+      <cell col="5" row="2" colspan="4">암상</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">테이블설명</cell>
+      <cell col="2" row="3" colspan="7">암상</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">NO</cell>
+      <cell col="1" row="4">컬럼ID</cell>
+      <cell col="2" row="4">컬럼명</cell>
+      <cell col="3" row="4">타입</cell>
+      <cell col="4" row="4">길이</cell>
+      <cell col="5" row="4">NULL</cell>
+      <cell col="6" row="4">KEY</cell>
+      <cell col="7" row="4">CD NUM</cell>
+      <cell col="8" row="4">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">1</cell>
+      <cell col="1" row="5">FTR_IDN</cell>
+      <cell col="2" row="5">관리번호</cell>
+      <cell col="3" row="5">NUMBER</cell>
+      <cell col="4" row="5">10</cell>
+      <cell col="5" row="5">NN</cell>
+      <cell col="6" row="5">PK</cell>
+      <cell col="7" row="5"></cell>
+      <cell col="8" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">2</cell>
+      <cell col="1" row="6">FTR_CDE</cell>
+      <cell col="2" row="6">지형지물부호</cell>
+      <cell col="3" row="6">VARCHAR2</cell>
+      <cell col="4" row="6">5</cell>
+      <cell col="5" row="6">NN</cell>
+      <cell col="6" row="6"></cell>
+      <cell col="7" row="6"></cell>
+      <cell col="8" row="6">AL003</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">3</cell>
+      <cell col="1" row="7">AGE_NAM</cell>
+      <cell col="2" row="7">지질시대</cell>
+      <cell col="3" row="7">VARCHAR2</cell>
+      <cell col="4" row="7">50</cell>
+      <cell col="5" row="7">N</cell>
+      <cell col="6" row="7"></cell>
+      <cell col="7" row="7"></cell>
+      <cell col="8" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8">4</cell>
+      <cell col="1" row="8">LTH_NAM</cell>
+      <cell col="2" row="8">지층명</cell>
+      <cell col="3" row="8">VARCHAR2</cell>
+      <cell col="4" row="8">255</cell>
+      <cell col="5" row="8">N</cell>
+      <cell col="6" row="8"></cell>
+      <cell col="7" row="8"></cell>
+      <cell col="8" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">5</cell>
+      <cell col="1" row="9">LTH_MAT</cell>
+      <cell col="2" row="9">대표암석</cell>
+      <cell col="3" row="9">VARCHAR2</cell>
+      <cell col="4" row="9">255</cell>
+      <cell col="5" row="9">N</cell>
+      <cell col="6" row="9"></cell>
+      <cell col="7" row="9"></cell>
+      <cell col="8" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10">6</cell>
+      <cell col="1" row="10">CNT_CHK</cell>
+      <cell col="2" row="10">조사원시자료</cell>
+      <cell col="3" row="10">VARCHAR2</cell>
+      <cell col="4" row="10">100</cell>
+      <cell col="5" row="10">N</cell>
+      <cell col="6" row="10"></cell>
+      <cell col="7" row="10"></cell>
+      <cell col="8" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11">7</cell>
+      <cell col="1" row="11">CNT_MNG</cell>
+      <cell col="2" row="11">조사기관</cell>
+      <cell col="3" row="11">VARCHAR2</cell>
+      <cell col="4" row="11">100</cell>
+      <cell col="5" row="11">N</cell>
+      <cell col="6" row="11"></cell>
+      <cell col="7" row="11"></cell>
+      <cell col="8" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12">8</cell>
+      <cell col="1" row="12">CNT_YMD</cell>
+      <cell col="2" row="12">조사년도</cell>
+      <cell col="3" row="12">VARCHAR2</cell>
+      <cell col="4" row="12">8</cell>
+      <cell col="5" row="12">N</cell>
+      <cell col="6" row="12"></cell>
+      <cell col="7" row="12"></cell>
+      <cell col="8" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13">9</cell>
+      <cell col="1" row="13">MNG_CDE</cell>
+      <cell col="2" row="13">관리기관코드</cell>
+      <cell col="3" row="13">VARCHAR2</cell>
+      <cell col="4" row="13">7</cell>
+      <cell col="5" row="13">N</cell>
+      <cell col="6" row="13"></cell>
+      <cell col="7" row="13">MNG-001</cell>
+      <cell col="8" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14">10</cell>
+      <cell col="1" row="14">USE_RMK</cell>
+      <cell col="2" row="14">비고</cell>
+      <cell col="3" row="14">VARCHAR2</cell>
+      <cell col="4" row="14">255</cell>
+      <cell col="5" row="14">N</cell>
+      <cell col="6" row="14"></cell>
+      <cell col="7" row="14"></cell>
+      <cell col="8" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15">11</cell>
+      <cell col="1" row="15">RSM_WGT</cell>
+      <cell col="2" row="15">위험도가중치</cell>
+      <cell col="3" row="15">NUMBER</cell>
+      <cell col="4" row="15">5,2</cell>
+      <cell col="5" row="15">N</cell>
+      <cell col="6" row="15"></cell>
+      <cell col="7" row="15"></cell>
+      <cell col="8" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16">12</cell>
+      <cell col="1" row="16">HJD_CDE</cell>
+      <cell col="2" row="16">행정읍면동코드</cell>
+      <cell col="3" row="16">VARCHAR2</cell>
+      <cell col="4" row="16">10</cell>
+      <cell col="5" row="16">NN</cell>
+      <cell col="6" row="16"></cell>
+      <cell col="7" row="16">HJD-001</cell>
+      <cell col="8" row="16"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17">13</cell>
+      <cell col="1" row="17"></cell>
+      <cell col="2" row="17"></cell>
+      <cell col="3" row="17"></cell>
+      <cell col="4" row="17"></cell>
+      <cell col="5" row="17"></cell>
+      <cell col="6" row="17"></cell>
+      <cell col="7" row="17"></cell>
+      <cell col="8" row="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18">14</cell>
+      <cell col="1" row="18"></cell>
+      <cell col="2" row="18"></cell>
+      <cell col="3" row="18"></cell>
+      <cell col="4" row="18"></cell>
+      <cell col="5" row="18"></cell>
+      <cell col="6" row="18"></cell>
+      <cell col="7" row="18"></cell>
+      <cell col="8" row="18"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19">15</cell>
+      <cell col="1" row="19"></cell>
+      <cell col="2" row="19"></cell>
+      <cell col="3" row="19"></cell>
+      <cell col="4" row="19"></cell>
+      <cell col="5" row="19"></cell>
+      <cell col="6" row="19"></cell>
+      <cell col="7" row="19"></cell>
+      <cell col="8" row="19"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20">16</cell>
+      <cell col="1" row="20"></cell>
+      <cell col="2" row="20"></cell>
+      <cell col="3" row="20"></cell>
+      <cell col="4" row="20"></cell>
+      <cell col="5" row="20"></cell>
+      <cell col="6" row="20"></cell>
+      <cell col="7" row="20"></cell>
+      <cell col="8" row="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21">17</cell>
+      <cell col="1" row="21"></cell>
+      <cell col="2" row="21"></cell>
+      <cell col="3" row="21"></cell>
+      <cell col="4" row="21"></cell>
+      <cell col="5" row="21"></cell>
+      <cell col="6" row="21"></cell>
+      <cell col="7" row="21"></cell>
+      <cell col="8" row="21"></cell>
+    </row>
+    <row>
+      <cell col="0" row="22">18</cell>
+      <cell col="1" row="22"></cell>
+      <cell col="2" row="22"></cell>
+      <cell col="3" row="22"></cell>
+      <cell col="4" row="22"></cell>
+      <cell col="5" row="22"></cell>
+      <cell col="6" row="22"></cell>
+      <cell col="7" row="22"></cell>
+      <cell col="8" row="22"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23">19</cell>
+      <cell col="1" row="23"></cell>
+      <cell col="2" row="23"></cell>
+      <cell col="3" row="23"></cell>
+      <cell col="4" row="23"></cell>
+      <cell col="5" row="23"></cell>
+      <cell col="6" row="23"></cell>
+      <cell col="7" row="23"></cell>
+      <cell col="8" row="23"></cell>
+    </row>
+    <row>
+      <cell col="0" row="24" colspan="2">인덱스</cell>
+      <cell col="2" row="24" colspan="7">인덱스키</cell>
+    </row>
+  </table>
+  <table rows="25" cols="9">
+    <row>
+      <cell col="0" row="0" colspan="9">테이블정의서</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="2">주제영역</cell>
+      <cell col="2" row="1">지반_지질</cell>
+      <cell col="3" row="1">작성일</cell>
+      <cell col="4" row="1" colspan="3">-</cell>
+      <cell col="7" row="1">작성자</cell>
+      <cell col="8" row="1">-</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">테이블ID</cell>
+      <cell col="2" row="2">UGG_FALT_LS</cell>
+      <cell col="3" row="2" colspan="2">테이블명</cell>
+      <cell col="5" row="2" colspan="4">단층</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">테이블설명</cell>
+      <cell col="2" row="3" colspan="7">단층</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">NO</cell>
+      <cell col="1" row="4">컬럼ID</cell>
+      <cell col="2" row="4">컬럼명</cell>
+      <cell col="3" row="4">타입</cell>
+      <cell col="4" row="4">길이</cell>
+      <cell col="5" row="4">NULL</cell>
+      <cell col="6" row="4">KEY</cell>
+      <cell col="7" row="4">CD NUM</cell>
+      <cell col="8" row="4">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">1</cell>
+      <cell col="1" row="5">FTR_IDN</cell>
+      <cell col="2" row="5">관리번호</cell>
+      <cell col="3" row="5">NUMBER</cell>
+      <cell col="4" row="5">10</cell>
+      <cell col="5" row="5">NN</cell>
+      <cell col="6" row="5">PK</cell>
+      <cell col="7" row="5"></cell>
+      <cell col="8" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">2</cell>
+      <cell col="1" row="6">FTR_CDE</cell>
+      <cell col="2" row="6">지형지물부호</cell>
+      <cell col="3" row="6">VARCHAR2</cell>
+      <cell col="4" row="6">5</cell>
+      <cell col="5" row="6">NN</cell>
+      <cell col="6" row="6"></cell>
+      <cell col="7" row="6"></cell>
+      <cell col="8" row="6">AL004</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">3</cell>
+      <cell col="1" row="7">FLT_TYP</cell>
+      <cell col="2" row="7">단층유형</cell>
+      <cell col="3" row="7">VARCHAR2</cell>
+      <cell col="4" row="7">15</cell>
+      <cell col="5" row="7">N</cell>
+      <cell col="6" row="7"></cell>
+      <cell col="7" row="7"></cell>
+      <cell col="8" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8">4</cell>
+      <cell col="1" row="8">FLT_THK</cell>
+      <cell col="2" row="8">단층두께</cell>
+      <cell col="3" row="8">NUMBER</cell>
+      <cell col="4" row="8">3</cell>
+      <cell col="5" row="8">N</cell>
+      <cell col="6" row="8"></cell>
+      <cell col="7" row="8"></cell>
+      <cell col="8" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">5</cell>
+      <cell col="1" row="9">CNT_CHK</cell>
+      <cell col="2" row="9">조사원시자료</cell>
+      <cell col="3" row="9">VARCHAR2</cell>
+      <cell col="4" row="9">100</cell>
+      <cell col="5" row="9">N</cell>
+      <cell col="6" row="9"></cell>
+      <cell col="7" row="9"></cell>
+      <cell col="8" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10">6</cell>
+      <cell col="1" row="10">CNT_MNG</cell>
+      <cell col="2" row="10">조사기관</cell>
+      <cell col="3" row="10">VARCHAR2</cell>
+      <cell col="4" row="10">100</cell>
+      <cell col="5" row="10">N</cell>
+      <cell col="6" row="10"></cell>
+      <cell col="7" row="10"></cell>
+      <cell col="8" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11">7</cell>
+      <cell col="1" row="11">CNT_YMD</cell>
+      <cell col="2" row="11">조사년도</cell>
+      <cell col="3" row="11">VARCHAR2</cell>
+      <cell col="4" row="11">8</cell>
+      <cell col="5" row="11">N</cell>
+      <cell col="6" row="11"></cell>
+      <cell col="7" row="11"></cell>
+      <cell col="8" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12">8</cell>
+      <cell col="1" row="12">MNG_CDE</cell>
+      <cell col="2" row="12">관리기관코드</cell>
+      <cell col="3" row="12">VARCHAR2</cell>
+      <cell col="4" row="12">7</cell>
+      <cell col="5" row="12">N</cell>
+      <cell col="6" row="12"></cell>
+      <cell col="7" row="12">MNG-001</cell>
+      <cell col="8" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13">9</cell>
+      <cell col="1" row="13">USE_RMK</cell>
+      <cell col="2" row="13">비고</cell>
+      <cell col="3" row="13">VARCHAR2</cell>
+      <cell col="4" row="13">255</cell>
+      <cell col="5" row="13">N</cell>
+      <cell col="6" row="13"></cell>
+      <cell col="7" row="13"></cell>
+      <cell col="8" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14">10</cell>
+      <cell col="1" row="14">HJD_CDE</cell>
+      <cell col="2" row="14">행정읍면동코드</cell>
+      <cell col="3" row="14">VARCHAR2</cell>
+      <cell col="4" row="14">10</cell>
+      <cell col="5" row="14">NN</cell>
+      <cell col="6" row="14"></cell>
+      <cell col="7" row="14">HJD-001</cell>
+      <cell col="8" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15">11</cell>
+      <cell col="1" row="15"></cell>
+      <cell col="2" row="15"></cell>
+      <cell col="3" row="15"></cell>
+      <cell col="4" row="15"></cell>
+      <cell col="5" row="15"></cell>
+      <cell col="6" row="15"></cell>
+      <cell col="7" row="15"></cell>
+      <cell col="8" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16">12</cell>
+      <cell col="1" row="16"></cell>
+      <cell col="2" row="16"></cell>
+      <cell col="3" row="16"></cell>
+      <cell col="4" row="16"></cell>
+      <cell col="5" row="16"></cell>
+      <cell col="6" row="16"></cell>
+      <cell col="7" row="16"></cell>
+      <cell col="8" row="16"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17">13</cell>
+      <cell col="1" row="17"></cell>
+      <cell col="2" row="17"></cell>
+      <cell col="3" row="17"></cell>
+      <cell col="4" row="17"></cell>
+      <cell col="5" row="17"></cell>
+      <cell col="6" row="17"></cell>
+      <cell col="7" row="17"></cell>
+      <cell col="8" row="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18">14</cell>
+      <cell col="1" row="18"></cell>
+      <cell col="2" row="18"></cell>
+      <cell col="3" row="18"></cell>
+      <cell col="4" row="18"></cell>
+      <cell col="5" row="18"></cell>
+      <cell col="6" row="18"></cell>
+      <cell col="7" row="18"></cell>
+      <cell col="8" row="18"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19">15</cell>
+      <cell col="1" row="19"></cell>
+      <cell col="2" row="19"></cell>
+      <cell col="3" row="19"></cell>
+      <cell col="4" row="19"></cell>
+      <cell col="5" row="19"></cell>
+      <cell col="6" row="19"></cell>
+      <cell col="7" row="19"></cell>
+      <cell col="8" row="19"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20">16</cell>
+      <cell col="1" row="20"></cell>
+      <cell col="2" row="20"></cell>
+      <cell col="3" row="20"></cell>
+      <cell col="4" row="20"></cell>
+      <cell col="5" row="20"></cell>
+      <cell col="6" row="20"></cell>
+      <cell col="7" row="20"></cell>
+      <cell col="8" row="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21">17</cell>
+      <cell col="1" row="21"></cell>
+      <cell col="2" row="21"></cell>
+      <cell col="3" row="21"></cell>
+      <cell col="4" row="21"></cell>
+      <cell col="5" row="21"></cell>
+      <cell col="6" row="21"></cell>
+      <cell col="7" row="21"></cell>
+      <cell col="8" row="21"></cell>
+    </row>
+    <row>
+      <cell col="0" row="22">18</cell>
+      <cell col="1" row="22"></cell>
+      <cell col="2" row="22"></cell>
+      <cell col="3" row="22"></cell>
+      <cell col="4" row="22"></cell>
+      <cell col="5" row="22"></cell>
+      <cell col="6" row="22"></cell>
+      <cell col="7" row="22"></cell>
+      <cell col="8" row="22"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23">19</cell>
+      <cell col="1" row="23"></cell>
+      <cell col="2" row="23"></cell>
+      <cell col="3" row="23"></cell>
+      <cell col="4" row="23"></cell>
+      <cell col="5" row="23"></cell>
+      <cell col="6" row="23"></cell>
+      <cell col="7" row="23"></cell>
+      <cell col="8" row="23"></cell>
+    </row>
+    <row>
+      <cell col="0" row="24" colspan="2">인덱스</cell>
+      <cell col="2" row="24" colspan="7">인덱스키</cell>
+    </row>
+  </table>
+</annex>

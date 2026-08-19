@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지6" gubun="별지" no="6" title="이의신청 처리결과 통지서" source="성과심사 규정 개정안 초안 (scripts/genforms_simsa.py)">
+  <text>[별지 제6호서식]
+이의신청 처리결과 통지서 (제30조제2항 관련)</text>
+  <table rows="3" cols="4">
+    <row>
+      <cell col="0" row="0" header="1">문서번호</cell>
+      <cell col="1" row="0" header="1"></cell>
+      <cell col="2" row="0" header="1">통지일</cell>
+      <cell col="3" row="0" header="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1">받는 이</cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1">이의신청 접수일</cell>
+      <cell col="3" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2">사업명</cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2">심사결과서 문서번호</cell>
+      <cell col="3" row="2"></cell>
+    </row>
+  </table>
+  <text>재검토의 구성 (제30조제2항)</text>
+  <table rows="4" cols="4">
+    <row>
+      <cell col="0" row="0" header="1">구분</cell>
+      <cell col="1" row="0" header="1">성명</cell>
+      <cell col="2" row="0" header="1">직책ㆍ기술등급</cell>
+      <cell col="3" row="0" header="1">처음 심사 참여 여부</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">재검토자 1</cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1">참여 / 미참여</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">재검토자 2</cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2"></cell>
+      <cell col="3" row="2">참여 / 미참여</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">재검토자 3</cell>
+      <cell col="1" row="3"></cell>
+      <cell col="2" row="3"></cell>
+      <cell col="3" row="3">참여 / 미참여</cell>
+    </row>
+  </table>
+  <text>재검토 결과</text>
+  <table rows="3" cols="5">
+    <row>
+      <cell col="0" row="0" header="1">연번</cell>
+      <cell col="1" row="0" header="1">이의를 제기한 항목</cell>
+      <cell col="2" row="0" header="1">처음 판정</cell>
+      <cell col="3" row="0" header="1">재검토 판정</cell>
+      <cell col="4" row="0" header="1">근거</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">1</cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1">유지 / 변경</cell>
+      <cell col="4" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2">2</cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2"></cell>
+      <cell col="3" row="2">유지 / 변경</cell>
+      <cell col="4" row="2"></cell>
+    </row>
+  </table>
+  <table rows="2" cols="2">
+    <row>
+      <cell col="0" row="0" header="1">종합 결과</cell>
+      <cell col="1" row="0" colspan="3" header="1">처음 판정 유지 / 판정 변경 (변경 후 : 적합ㆍ조건부적합ㆍ부적합)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">뒤따르는 조치</cell>
+      <cell col="1" row="1" colspan="3">판정이 바뀐 경우 심사결과서를 다시 작성하여 통지하며, 재심사수수료를 징수하지 아니한다(제46조제3항)</cell>
+    </row>
+  </table>
+  <text>위와 같이 이의신청의 처리 결과를 알려 드립니다.
+이 결과에도 이의가 있으면 국토지리정보원장에게 판단을 요청할 수 있습니다(제30조제3항).
+
+년       월       일
+
+측량성과 심사수탁기관의 장          (직인)</text>
+</annex>

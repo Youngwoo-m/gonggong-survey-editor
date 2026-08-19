@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0014" article="제39조(偏心要素の測定)" rows="7" cols="4" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">偏心距離</cell>
+    <cell col="1" row="0" header="1">機器及び測定方法</cell>
+    <cell col="2" row="0" header="1">測定単位</cell>
+    <cell col="3" row="0" header="1">点検項目及び許容範囲</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">30cm 未満</cell>
+    <cell col="1" row="1">独立水準器を用いて、偏心点を本点と 同標高に設置する。</cell>
+    <cell col="2" row="1">―</cell>
+    <cell col="3" row="1">―――</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">30cm 以上 100ｍ未満</cell>
+    <cell col="1" row="2">４級水準測量に準じて測定する。ただ し、後視及び前視に同一標尺を用いて 片道観測の測点数を１点とすることが できる。</cell>
+    <cell col="2" row="2">mm</cell>
+    <cell col="3" row="2">往復の較差 20mm√S</cell>
+  </row>
+  <row>
+    <cell col="0" row="3"></cell>
+    <cell col="1" row="3">４級基準点測量の鉛直角観測に準じて 測定する。ただし、正、反方向の鉛直 角観測に代えて、器械高の異なる片方 向による２対回の鉛直角観測とするこ とができる。</cell>
+    <cell col="2" row="3">20″</cell>
+    <cell col="3" row="3">高度定数の較差60″ 高低差の正反較差100mm</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">100ｍ以上 250ｍ未満</cell>
+    <cell col="1" row="4">４級水準測量に準じて測定する。</cell>
+    <cell col="2" row="4">mm</cell>
+    <cell col="3" row="4">往復の較差 20mm√S</cell>
+  </row>
+  <row>
+    <cell col="0" row="5"></cell>
+    <cell col="1" row="5">２～３級基準点測量の鉛直角観測に準 じて測定する。</cell>
+    <cell col="2" row="5">10″</cell>
+    <cell col="3" row="5">高度定数の較差30″ 高低差の正反較差150mm</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">備 考</cell>
+    <cell col="1" row="6">Ｓは、測定距離（km 単位）とする。</cell>
+    <cell col="2" row="6"></cell>
+    <cell col="3" row="6"></cell>
+  </row>
+</table>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지11" gubun="별지" no="11" title="지하시설물측량 결과표" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=59323143">
+  <text>[별지 제11호 서식]
+지하시설물측량 결과표
+¤ 공사명 : ○○건설공사</text>
+  <table rows="18" cols="12">
+    <row>
+      <cell col="0" row="0" colspan="2">지하시설물 종류</cell>
+      <cell col="2" row="0" colspan="5">우수관, D600mm 흄관</cell>
+      <cell col="7" row="0" colspan="2">측량 일자</cell>
+      <cell col="9" row="0" colspan="3">20   .    .</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="2">매설 위치</cell>
+      <cell col="2" row="1" colspan="5">집수정, 00~집수정 00구간, 00m</cell>
+      <cell col="7" row="1" colspan="2">측량 방법</cell>
+      <cell col="9" row="1" colspan="3">네트워크 RTK 측량 (현장캘리브레이션 성과 첨부)</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="12">집수정 측량성과</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="4">집수정 중심점의 위치 좌표</cell>
+      <cell col="4" row="3" colspan="8">X :                              Y :</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="4">집수정 바닥면의 표고</cell>
+      <cell col="4" row="4" colspan="8">H :</cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="5">집수정 유입구 바닥면 (Inlet)의 표고</cell>
+      <cell col="5" row="5" colspan="2">m</cell>
+      <cell col="7" row="5" colspan="4">집수정 유출구 바닥면 (Outlet)의 표고</cell>
+      <cell col="11" row="5">m</cell>
+    </row>
+    <row>
+      <cell col="0" row="6" colspan="12">매설관 측량성과</cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="6">매설관의 연장 (맨홀과 맨홀간의 거리)</cell>
+      <cell col="6" row="7" colspan="6">m</cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="12">되메우기 전 매설관 상단의 위치좌표</cell>
+    </row>
+    <row>
+      <cell col="0" row="9">번호</cell>
+      <cell col="1" row="9" colspan="2">X</cell>
+      <cell col="3" row="9" colspan="2">Y</cell>
+      <cell col="5" row="9" colspan="2">H</cell>
+      <cell col="7" row="9">번호</cell>
+      <cell col="8" row="9" colspan="2">X</cell>
+      <cell col="10" row="9">Y</cell>
+      <cell col="11" row="9">H</cell>
+    </row>
+    <row>
+      <cell col="0" row="10"></cell>
+      <cell col="1" row="10" colspan="2"></cell>
+      <cell col="3" row="10" colspan="2"></cell>
+      <cell col="5" row="10" colspan="2"></cell>
+      <cell col="7" row="10"></cell>
+      <cell col="8" row="10" colspan="2"></cell>
+      <cell col="10" row="10"></cell>
+      <cell col="11" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11"></cell>
+      <cell col="1" row="11" colspan="2"></cell>
+      <cell col="3" row="11" colspan="2"></cell>
+      <cell col="5" row="11" colspan="2"></cell>
+      <cell col="7" row="11"></cell>
+      <cell col="8" row="11" colspan="2"></cell>
+      <cell col="10" row="11"></cell>
+      <cell col="11" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12"></cell>
+      <cell col="1" row="12" colspan="2"></cell>
+      <cell col="3" row="12" colspan="2"></cell>
+      <cell col="5" row="12" colspan="2"></cell>
+      <cell col="7" row="12"></cell>
+      <cell col="8" row="12" colspan="2"></cell>
+      <cell col="10" row="12"></cell>
+      <cell col="11" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13"></cell>
+      <cell col="1" row="13" colspan="2"></cell>
+      <cell col="3" row="13" colspan="2"></cell>
+      <cell col="5" row="13" colspan="2"></cell>
+      <cell col="7" row="13"></cell>
+      <cell col="8" row="13" colspan="2"></cell>
+      <cell col="10" row="13"></cell>
+      <cell col="11" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14"></cell>
+      <cell col="1" row="14" colspan="2"></cell>
+      <cell col="3" row="14" colspan="2"></cell>
+      <cell col="5" row="14" colspan="2"></cell>
+      <cell col="7" row="14"></cell>
+      <cell col="8" row="14" colspan="2"></cell>
+      <cell col="10" row="14"></cell>
+      <cell col="11" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="7">근경 사진</cell>
+      <cell col="7" row="15" colspan="5">원경 사진</cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="7">매설관의 재질 및 날짜 표시판 식별할 수 
+있도록 촬영</cell>
+      <cell col="7" row="16" colspan="5">매설관의 위치를 인식할 수 있도록 
+주변경관 포함 촬영</cell>
+    </row>
+    <row>
+      <cell col="0" row="17" colspan="7">측량자 : 소속, 직급, 성명 기재 및 날인</cell>
+      <cell col="7" row="17" colspan="5">감독자 : 소속, 직급, 성명 기재 및 날인</cell>
+    </row>
+  </table>
+  <text>210mm×297mm(일반용지 60g/㎡)</text>
+</annex>

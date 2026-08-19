@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc19t004" article="측량 작업현장 안전 인력의 역할과 기준" rows="5" cols="5" source="측량 안전관리 매뉴얼 (2026.1)">
+  <row>
+    <cell col="0" row="0" header="1">구분</cell>
+    <cell col="1" row="0" header="1">점검항목</cell>
+    <cell col="2" row="0" header="1">세부 점검내용</cell>
+    <cell col="3" row="0" header="1">점검결과</cell>
+    <cell col="4" row="0" header="1">비고</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">작업 후</cell>
+    <cell col="1" row="1">장비 정리 및 보관</cell>
+    <cell col="2" row="1">☐ 장비 전원 차단 및 청결 유지 ☐ 보관함·케이스에 안전 보관 ☐ 장비 이상 유무 기록</cell>
+    <cell col="3" row="1">□ 완료, □ 미비</cell>
+    <cell col="4" row="1"></cell>
+  </row>
+  <row>
+    <cell col="0" row="2"></cell>
+    <cell col="1" row="2">현장 정리</cell>
+    <cell col="2" row="2">☐ 측량표지, 임시 설치물 등 제거 ☐ 폐기물·이물질 정리 ☐ 잔류 위험요인 제거</cell>
+    <cell col="3" row="2">□ 완료, □ 미비</cell>
+    <cell col="4" row="2"></cell>
+  </row>
+  <row>
+    <cell col="0" row="3"></cell>
+    <cell col="1" row="3">작업결과 기록</cell>
+    <cell col="2" row="3">☐ 작업일지 작성(기상, 장비 이상, 안전상황 포함) ☐ 이상사항 즉시 보고</cell>
+    <cell col="3" row="3">□ 완료, □ 미비</cell>
+    <cell col="4" row="3"></cell>
+  </row>
+  <row>
+    <cell col="0" row="4"></cell>
+    <cell col="1" row="4">근로자 상태 확인</cell>
+    <cell col="2" row="4">☐ 피로, 탈수, 열사병 등 이상 여부 확인 ☐ 필요 시 응급조치·휴식 조치</cell>
+    <cell col="3" row="4">□ 완료, □ 미비</cell>
+    <cell col="4" row="4"></cell>
+  </row>
+</table>

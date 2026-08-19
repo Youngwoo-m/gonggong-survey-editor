@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표13" gubun="별표" no="13" title="GNSS높이측량 성과표" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296149">
+  <text>[ 별표 13 ]
+GNSS높이측량 성과표</text>
+  <table rows="8" cols="8">
+    <row>
+      <cell col="0" row="0" rowspan="2">측점</cell>
+      <cell col="1" row="0" colspan="3">GRS80</cell>
+      <cell col="4" row="0" colspan="4">높이정확도 3cm</cell>
+    </row>
+    <row>
+      <cell col="1" row="1">위도</cell>
+      <cell col="2" row="1">경도</cell>
+      <cell col="3" row="1">보정
+타원체고
+[m]</cell>
+      <cell col="4" row="1">지오이드고
+[m]</cell>
+      <cell col="5" row="1">표고
+[m]</cell>
+      <cell col="6" row="1">표준편차
+[m]</cell>
+      <cell col="7" row="1">점검결과</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">KW27</cell>
+      <cell col="1" row="2">38-04-35.83873</cell>
+      <cell col="2" row="2">128-31-53.30170</cell>
+      <cell col="3" row="2">163.0503</cell>
+      <cell col="4" row="2">26.7830</cell>
+      <cell col="5" row="2">136.2673</cell>
+      <cell col="6" row="2">0.007</cell>
+      <cell col="7" row="2">O</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">KW28</cell>
+      <cell col="1" row="3">38-04-47.02883</cell>
+      <cell col="2" row="3">128-31-09.11685</cell>
+      <cell col="3" row="3">183.2808</cell>
+      <cell col="4" row="3">26.8322</cell>
+      <cell col="5" row="3">156.4486</cell>
+      <cell col="6" row="3">0.007</cell>
+      <cell col="7" row="3">O</cell>
+    </row>
+    <row>
+      <cell col="0" row="4"></cell>
+      <cell col="1" row="4"></cell>
+      <cell col="2" row="4"></cell>
+      <cell col="3" row="4"></cell>
+      <cell col="4" row="4"></cell>
+      <cell col="5" row="4"></cell>
+      <cell col="6" row="4"></cell>
+      <cell col="7" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5"></cell>
+      <cell col="1" row="5"></cell>
+      <cell col="2" row="5"></cell>
+      <cell col="3" row="5"></cell>
+      <cell col="4" row="5"></cell>
+      <cell col="5" row="5"></cell>
+      <cell col="6" row="5"></cell>
+      <cell col="7" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6"></cell>
+      <cell col="1" row="6"></cell>
+      <cell col="2" row="6"></cell>
+      <cell col="3" row="6"></cell>
+      <cell col="4" row="6"></cell>
+      <cell col="5" row="6"></cell>
+      <cell col="6" row="6"></cell>
+      <cell col="7" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7"></cell>
+      <cell col="1" row="7"></cell>
+      <cell col="2" row="7"></cell>
+      <cell col="3" row="7"></cell>
+      <cell col="4" row="7"></cell>
+      <cell col="5" row="7"></cell>
+      <cell col="6" row="7"></cell>
+      <cell col="7" row="7"></cell>
+    </row>
+  </table>
+</annex>

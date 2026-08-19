@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="t4314" article="공공측량 안전관리비 계상 요율(안)" rows="9" cols="4" source="건설업 산업안전보건관리비 계상 및 사용기준 (고용노동부고시 제2025-11호)">
+  <row>
+    <cell col="0" row="0" header="1">대상액</cell>
+    <cell col="1" row="0" header="1">적용비율(%)</cell>
+    <cell col="2" row="0" header="1">기초액(원)</cell>
+    <cell col="3" row="0" header="1">계상액</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">5억원 미만</cell>
+    <cell col="1" row="1">2.07</cell>
+    <cell col="2" row="1">—</cell>
+    <cell col="3" row="1">대상액 × 2.07%</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">5억원 이상 50억원 미만</cell>
+    <cell col="1" row="2">1.59</cell>
+    <cell col="2" row="2">2,450,000</cell>
+    <cell col="3" row="2">대상액 × 1.59% + 2,450,000원</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">50억원 이상</cell>
+    <cell col="1" row="3">1.64</cell>
+    <cell col="2" row="3">—</cell>
+    <cell col="3" row="3">대상액 × 1.64%</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">(비고) 1. 요율은 「건설업 산업안전보건관리비 계상 및 사용기준」 별표 1의 &quot;특수건설공사&quot; 요율을 준용한 것이다. 측량용역은 건설공사가 아니어서 그 고시가 직접 적용되지 아니하나, 특수건설공사가 '다른 공사와 분리하여 발주되고 시간적·장소적으로도 독립하여 행하는 공사'를 가리키는 점에서 측량용역의 수행 형태와 가장 가깝다.</cell>
+    <cell col="1" row="4"></cell>
+    <cell col="2" row="4"></cell>
+    <cell col="3" row="4"></cell>
+  </row>
+  <row>
+    <cell col="0" row="5">(비고) 2. 대상액은 직접인건비와 직접경비를 합한 금액으로 하되, 안전관리비는 그 대상액에 포함하지 아니한다.</cell>
+    <cell col="1" row="5"></cell>
+    <cell col="2" row="5"></cell>
+    <cell col="3" row="5"></cell>
+  </row>
+  <row>
+    <cell col="0" row="6">(비고) 3. 총사업비가 2천만원 미만인 측량에는 계상하지 아니할 수 있다.</cell>
+    <cell col="1" row="6"></cell>
+    <cell col="2" row="6"></cell>
+    <cell col="3" row="6"></cell>
+  </row>
+  <row>
+    <cell col="0" row="7">(비고) 4. 작업 구간에 포함된 현장작업 환경에 따른 가산율은 환경별 가산율 표에서 정하는 바에 따른다.</cell>
+    <cell col="1" row="7"></cell>
+    <cell col="2" row="7"></cell>
+    <cell col="3" row="7"></cell>
+  </row>
+  <row>
+    <cell col="0" row="8">(비고) 5. 요율로 계상한 금액이 실비에 미치지 못하는 경우에는 실비로 계상한다.</cell>
+    <cell col="1" row="8"></cell>
+    <cell col="2" row="8"></cell>
+    <cell col="3" row="8"></cell>
+  </row>
+</table>

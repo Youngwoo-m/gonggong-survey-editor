@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표13" gubun="별표" no="13" title="실내공간정보 성과물 목록" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=111000101">
+  <text>[별표 13] 실내공간정보 성과물 목록
+1) 건축도면 방식의 구축 단계별 성과물 목록</text>
+  <table rows="17" cols="8">
+    <row>
+      <cell col="0" row="0" rowspan="2">구축 단계</cell>
+      <cell col="1" row="0" colspan="2" rowspan="2">구분</cell>
+      <cell col="3" row="0" rowspan="2">비고</cell>
+      <cell col="4" row="0" colspan="4">LOD</cell>
+    </row>
+    <row>
+      <cell col="4" row="1">0</cell>
+      <cell col="5" row="1">1</cell>
+      <cell col="6" row="1">2</cell>
+      <cell col="7" row="1">3</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">기준점측량</cell>
+      <cell col="1" row="2" colspan="2">기준점 성과철</cell>
+      <cell col="3" row="2">출력물 및 CD
+(기준점성과표, 성과기록부, 관측망도, 계산부, 점의조서, 기타자료 등 포함)</cell>
+      <cell col="4" row="2"></cell>
+      <cell col="5" row="2">√</cell>
+      <cell col="6" row="2">√</cell>
+      <cell col="7" row="2">√</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">시설물조사</cell>
+      <cell col="1" row="3" colspan="2"></cell>
+      <cell col="3" row="3">야장</cell>
+      <cell col="4" row="3"></cell>
+      <cell col="5" row="3">√</cell>
+      <cell col="6" row="3">√</cell>
+      <cell col="7" row="3">√</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">텍스쳐 촬영</cell>
+      <cell col="1" row="4"></cell>
+      <cell col="2" row="4">현장사진</cell>
+      <cell col="3" row="4"></cell>
+      <cell col="4" row="4"></cell>
+      <cell col="5" row="4"></cell>
+      <cell col="6" row="4"></cell>
+      <cell col="7" row="4">√</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">원시자료 전처리</cell>
+      <cell col="1" row="5"></cell>
+      <cell col="2" row="5">경량화 도면</cell>
+      <cell col="3" row="5">건축도면 경량화</cell>
+      <cell col="4" row="5">√</cell>
+      <cell col="5" row="5">√</cell>
+      <cell col="6" row="5">√</cell>
+      <cell col="7" row="5">√</cell>
+    </row>
+    <row>
+      <cell col="0" row="6" rowspan="2">정위치편집</cell>
+      <cell col="1" row="6" rowspan="2">정위치</cell>
+      <cell col="2" row="6">정위치</cell>
+      <cell col="3" row="6">파일명은 정위치 레이어 정의서에 따름</cell>
+      <cell col="4" row="6" rowspan="2"></cell>
+      <cell col="5" row="6" rowspan="2">√</cell>
+      <cell col="6" row="6" rowspan="2">√</cell>
+      <cell col="7" row="6" rowspan="2">√</cell>
+    </row>
+    <row>
+      <cell col="2" row="7">INDEX</cell>
+      <cell col="3" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8" rowspan="2">구조화 편집</cell>
+      <cell col="1" row="8" rowspan="2">구조화</cell>
+      <cell col="2" row="8">구조화</cell>
+      <cell col="3" row="8">파일명은 구조화 레이어 정의서에 따름</cell>
+      <cell col="4" row="8" rowspan="2"></cell>
+      <cell col="5" row="8" rowspan="2">√</cell>
+      <cell col="6" row="8" rowspan="2">√</cell>
+      <cell col="7" row="8" rowspan="2">√</cell>
+    </row>
+    <row>
+      <cell col="2" row="9">POI</cell>
+      <cell col="3" row="9">파일명은 건물층 아이디 설계표에 따름</cell>
+    </row>
+    <row>
+      <cell col="0" row="10" rowspan="4">3차원 모델링</cell>
+      <cell col="1" row="10" rowspan="2">3DS</cell>
+      <cell col="2" row="10">원점</cell>
+      <cell col="3" row="10" rowspan="2">3DS 파일명은 개발코드 분류 체계에 따름</cell>
+      <cell col="4" row="10" rowspan="4"></cell>
+      <cell col="5" row="10" rowspan="4">√</cell>
+      <cell col="6" row="10" rowspan="4">√</cell>
+      <cell col="7" row="10" rowspan="4">√</cell>
+    </row>
+    <row>
+      <cell col="2" row="11">정위치</cell>
+    </row>
+    <row>
+      <cell col="1" row="12" rowspan="2">MAX</cell>
+      <cell col="2" row="12">원점</cell>
+      <cell col="3" row="12" rowspan="2">파일내 오브젝트명은 개발코드 분류체계에 따름</cell>
+    </row>
+    <row>
+      <cell col="2" row="13">정위치</cell>
+    </row>
+    <row>
+      <cell col="0" row="14">사진편집 및 텍스쳐</cell>
+      <cell col="1" row="14"></cell>
+      <cell col="2" row="14">MAP</cell>
+      <cell col="3" row="14">JPG는 텍스쳐 코드표에 따름</cell>
+      <cell col="4" row="14"></cell>
+      <cell col="5" row="14"></cell>
+      <cell col="6" row="14"></cell>
+      <cell col="7" row="14">√</cell>
+    </row>
+    <row>
+      <cell col="0" row="15">CityGML 편집 및 저장</cell>
+      <cell col="1" row="15">CityGML</cell>
+      <cell col="2" row="15"></cell>
+      <cell col="3" row="15"></cell>
+      <cell col="4" row="15"></cell>
+      <cell col="5" row="15">√</cell>
+      <cell col="6" row="15">√</cell>
+      <cell col="7" row="15">√</cell>
+    </row>
+    <row>
+      <cell col="0" row="16">정리 및 점검</cell>
+      <cell col="1" row="16"></cell>
+      <cell col="2" row="16">기타산출물</cell>
+      <cell col="3" row="16"></cell>
+      <cell col="4" row="16"></cell>
+      <cell col="5" row="16">√</cell>
+      <cell col="6" row="16">√</cell>
+      <cell col="7" row="16">√</cell>
+    </row>
+  </table>
+  <text>* 단, 활용목적에 따른 세밀도 요구수준 및 품질기준에 따라 필요한 공정을 선별하여 
+추가로 적용할 수 있으며, 그에 따른 해당 성과물을 제출해야 함
+2) 지상레이저측량 방식의 구축 단계별 성과물 목록</text>
+  <table rows="20" cols="8">
+    <row>
+      <cell col="0" row="0" rowspan="2">구축 단계</cell>
+      <cell col="1" row="0" colspan="2" rowspan="2">구분</cell>
+      <cell col="3" row="0" rowspan="2">비고</cell>
+      <cell col="4" row="0" colspan="4">LOD</cell>
+    </row>
+    <row>
+      <cell col="4" row="1">0</cell>
+      <cell col="5" row="1">1</cell>
+      <cell col="6" row="1">2</cell>
+      <cell col="7" row="1">3</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">기준점측량</cell>
+      <cell col="1" row="2" colspan="2">기준점 성과철</cell>
+      <cell col="3" row="2">출력물 및 CD
+(기준점성과표, 성과기록부, 관측망도, 계산부, 점의조서, 기타자료 등 포함)</cell>
+      <cell col="4" row="2">√</cell>
+      <cell col="5" row="2">√</cell>
+      <cell col="6" row="2">√</cell>
+      <cell col="7" row="2">√</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">시설물조사</cell>
+      <cell col="1" row="3" colspan="2"></cell>
+      <cell col="3" row="3">야장</cell>
+      <cell col="4" row="3"></cell>
+      <cell col="5" row="3">√</cell>
+      <cell col="6" row="3">√</cell>
+      <cell col="7" row="3">√</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" rowspan="3">지상레이저측량</cell>
+      <cell col="1" row="4">레이저스캔</cell>
+      <cell col="2" row="4">성과조서</cell>
+      <cell col="3" row="4" rowspan="3">스캔원시데이터, 정합파일</cell>
+      <cell col="4" row="4" rowspan="3">√</cell>
+      <cell col="5" row="4" rowspan="3">√</cell>
+      <cell col="6" row="4" rowspan="3">√</cell>
+      <cell col="7" row="4" rowspan="3">√</cell>
+    </row>
+    <row>
+      <cell col="1" row="5">원시자료 전처리</cell>
+      <cell col="2" row="5">IMP</cell>
+    </row>
+    <row>
+      <cell col="1" row="6"></cell>
+      <cell col="2" row="6">ASC</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">평면도화</cell>
+      <cell col="1" row="7"></cell>
+      <cell col="2" row="7">현장조사도면</cell>
+      <cell col="3" row="7"></cell>
+      <cell col="4" row="7">√</cell>
+      <cell col="5" row="7">√</cell>
+      <cell col="6" row="7">√</cell>
+      <cell col="7" row="7">√</cell>
+    </row>
+    <row>
+      <cell col="0" row="8">텍스쳐 촬영</cell>
+      <cell col="1" row="8"></cell>
+      <cell col="2" row="8">현장사진</cell>
+      <cell col="3" row="8"></cell>
+      <cell col="4" row="8"></cell>
+      <cell col="5" row="8"></cell>
+      <cell col="6" row="8"></cell>
+      <cell col="7" row="8">√</cell>
+    </row>
+    <row>
+      <cell col="0" row="9" rowspan="2">정위치편집</cell>
+      <cell col="1" row="9" rowspan="2">정위치</cell>
+      <cell col="2" row="9">정위치</cell>
+      <cell col="3" row="9">파일명은 정위치 레이어 정의서에 따름</cell>
+      <cell col="4" row="9" rowspan="2"></cell>
+      <cell col="5" row="9" rowspan="2">√</cell>
+      <cell col="6" row="9" rowspan="2">√</cell>
+      <cell col="7" row="9" rowspan="2">√</cell>
+    </row>
+    <row>
+      <cell col="2" row="10">INDEX</cell>
+      <cell col="3" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11" rowspan="2">구조화 편집</cell>
+      <cell col="1" row="11" rowspan="2">구조화</cell>
+      <cell col="2" row="11">구조화</cell>
+      <cell col="3" row="11">파일명은 구조화 레이어 정의서에 따름</cell>
+      <cell col="4" row="11" rowspan="2"></cell>
+      <cell col="5" row="11" rowspan="2">√</cell>
+      <cell col="6" row="11" rowspan="2">√</cell>
+      <cell col="7" row="11" rowspan="2">√</cell>
+    </row>
+    <row>
+      <cell col="2" row="12">POI</cell>
+      <cell col="3" row="12">파일명은 건물층 아이디 설계표에 따름</cell>
+    </row>
+    <row>
+      <cell col="0" row="13" rowspan="4">3차원 모델링</cell>
+      <cell col="1" row="13" rowspan="2">3DS</cell>
+      <cell col="2" row="13">원점</cell>
+      <cell col="3" row="13" rowspan="2">3DS 파일명은 개발코드 분류 체계에 따름</cell>
+      <cell col="4" row="13" rowspan="4"></cell>
+      <cell col="5" row="13" rowspan="4">√</cell>
+      <cell col="6" row="13" rowspan="4">√</cell>
+      <cell col="7" row="13" rowspan="4">√</cell>
+    </row>
+    <row>
+      <cell col="2" row="14">정위치</cell>
+    </row>
+    <row>
+      <cell col="1" row="15" rowspan="2">MAX</cell>
+      <cell col="2" row="15">원점</cell>
+      <cell col="3" row="15" rowspan="2">파일내 오브젝트명은 개발코드 분류체계에 따름</cell>
+    </row>
+    <row>
+      <cell col="2" row="16">정위치</cell>
+    </row>
+    <row>
+      <cell col="0" row="17">사진편집 및 텍스쳐</cell>
+      <cell col="1" row="17"></cell>
+      <cell col="2" row="17">MAP</cell>
+      <cell col="3" row="17">JPG는 텍스쳐 코드표에 따름</cell>
+      <cell col="4" row="17"></cell>
+      <cell col="5" row="17"></cell>
+      <cell col="6" row="17"></cell>
+      <cell col="7" row="17">√</cell>
+    </row>
+    <row>
+      <cell col="0" row="18">CityGML 편집 및 저장</cell>
+      <cell col="1" row="18">CityGML</cell>
+      <cell col="2" row="18"></cell>
+      <cell col="3" row="18"></cell>
+      <cell col="4" row="18"></cell>
+      <cell col="5" row="18">√</cell>
+      <cell col="6" row="18">√</cell>
+      <cell col="7" row="18">√</cell>
+    </row>
+    <row>
+      <cell col="0" row="19">정리 및 점검</cell>
+      <cell col="1" row="19"></cell>
+      <cell col="2" row="19">기타산출물</cell>
+      <cell col="3" row="19"></cell>
+      <cell col="4" row="19">√</cell>
+      <cell col="5" row="19">√</cell>
+      <cell col="6" row="19">√</cell>
+      <cell col="7" row="19">√</cell>
+    </row>
+  </table>
+  <text>* 단, 활용목적에 따른 세밀도 요구수준 및 품질기준에 따라 필요한 공정을 선별하여 
+추가로 적용할 수 있으며, 그에 따른 해당 성과물을 제출해야 함</text>
+</annex>

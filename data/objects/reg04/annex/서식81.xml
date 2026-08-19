@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식81" gubun="서식" no="81" title="도시개발사업 등의 착수(시행)ㆍ변경ㆍ완료 신고서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454971">
+  <table rows="2" cols="7">
+    <row>
+      <cell col="0" row="0" rowspan="2">신고서
+작성</cell>
+      <cell col="1" row="0"></cell>
+      <cell col="2" row="0" rowspan="2">‣</cell>
+      <cell col="3" row="0" rowspan="2">접 수</cell>
+      <cell col="4" row="0"></cell>
+      <cell col="5" row="0" rowspan="2">‣</cell>
+      <cell col="6" row="0" rowspan="2">지적공부 정리</cell>
+    </row>
+    <row>
+      <cell col="1" row="1"></cell>
+      <cell col="4" row="1"></cell>
+    </row>
+  </table>
+  <table rows="28" cols="22">
+    <row>
+      <cell col="0" row="0" colspan="22">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별지 제81호서식] &lt;개정 2022. 12. 13.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="22">도시개발사업 등의 착수(시행)ㆍ변경ㆍ완료 신고서</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="16"></cell>
+      <cell col="16" row="2" colspan="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="3">접수번호</cell>
+      <cell col="3" row="3" colspan="2"></cell>
+      <cell col="5" row="3" colspan="2">접수일</cell>
+      <cell col="7" row="3" colspan="3"></cell>
+      <cell col="10" row="3" colspan="3"></cell>
+      <cell col="13" row="3" colspan="5"></cell>
+      <cell col="18" row="3" colspan="2">처리기간</cell>
+      <cell col="20" row="3" colspan="2">90일</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="3"></cell>
+      <cell col="3" row="4" colspan="2"></cell>
+      <cell col="5" row="4" colspan="2"></cell>
+      <cell col="7" row="4" colspan="3"></cell>
+      <cell col="10" row="4" colspan="3"></cell>
+      <cell col="13" row="4" colspan="5"></cell>
+      <cell col="18" row="4" colspan="2"></cell>
+      <cell col="20" row="4" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="3" rowspan="2">신고인
+(사업시행자)</cell>
+      <cell col="3" row="5" colspan="12">성명(명칭)</cell>
+      <cell col="15" row="5" colspan="7">생년월일(법인등록번호)</cell>
+    </row>
+    <row>
+      <cell col="3" row="6" colspan="19">주소</cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="22"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="3" rowspan="2">신고사항</cell>
+      <cell col="3" row="8" colspan="19">사 업 명</cell>
+    </row>
+    <row>
+      <cell col="3" row="9" colspan="3">토지소재
+               시ㆍ도</cell>
+      <cell col="6" row="9" colspan="5">시ㆍ군ㆍ구</cell>
+      <cell col="11" row="9" colspan="6">읍ㆍ면</cell>
+      <cell col="17" row="9" colspan="5">동ㆍ리</cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="22"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="3" rowspan="3">인가내용</cell>
+      <cell col="3" row="11" colspan="12">구분</cell>
+      <cell col="15" row="11" colspan="7">지번수</cell>
+    </row>
+    <row>
+      <cell col="3" row="12" colspan="12">면적(㎡)</cell>
+      <cell col="15" row="12" colspan="7">인가년월일</cell>
+    </row>
+    <row>
+      <cell col="3" row="13" colspan="12">사업기간</cell>
+      <cell col="15" row="13" colspan="7">기타</cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="22"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="22"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="22">「공간정보의 구축 및 관리 등에 관한 법률」 제86조제1항, 같은 법 시행령 제83조제2항 및 같은 법 시행규칙 제95조에 따라 위와 같이 신고합니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="17" colspan="22">년          월          일</cell>
+    </row>
+    <row>
+      <cell col="0" row="18" colspan="9"></cell>
+      <cell col="9" row="18" colspan="5">신고인(사업시행자)</cell>
+      <cell col="14" row="18" colspan="4"></cell>
+      <cell col="18" row="18" colspan="4">(서명 또는 인)</cell>
+    </row>
+    <row>
+      <cell col="0" row="19" colspan="22">시장ㆍ군수ㆍ구청장   귀하</cell>
+    </row>
+    <row>
+      <cell col="0" row="20" colspan="22"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21" colspan="2" rowspan="2">첨부서류</cell>
+      <cell col="2" row="21" colspan="16">1. 착수(시행)ㆍ변경 신고의 경우(변경신고의 경우는 변경된 부분만 해당합니다)
+ 가. 사업인가서
+ 나. 지번별 조서
+ 다. 사업계획도</cell>
+      <cell col="18" row="21" colspan="4">착수ㆍ변경 신고 : 수수료 없음.</cell>
+    </row>
+    <row>
+      <cell col="2" row="22" colspan="16">2. 완료 신고의 경우(지적측량수행자가 측량검사를 의뢰하면서 미리 제출한 서류는 첨부하지 않습니다)
+ 가. 확정될 토지의 지번별 조서 및 종전 토지의 지번별 조서
+ 나. 환지처분과 같은 효력이 있는 고시된 환지계획서. 다만, 환지를 수반하지 아니하는 사업인 경우에는 사업의 완료를 증명하는 서류를 말합니다.</cell>
+      <cell col="18" row="22" colspan="4">완료신고 : 확정 후  1필지당 1,400원</cell>
+    </row>
+    <row>
+      <cell col="0" row="23" colspan="22"></cell>
+    </row>
+    <row>
+      <cell col="0" row="24" colspan="22">처리절차</cell>
+    </row>
+    <row>
+      <cell col="0" row="25" colspan="22"></cell>
+    </row>
+    <row>
+      <cell col="0" row="26"></cell>
+      <cell col="1" row="26" colspan="3">사업시행자</cell>
+      <cell col="4" row="26" colspan="4"></cell>
+      <cell col="8" row="26" colspan="4">시ㆍ군ㆍ구 담당부서</cell>
+      <cell col="12" row="26" colspan="7"></cell>
+      <cell col="19" row="26" colspan="2">시ㆍ군ㆍ구 담당부서</cell>
+      <cell col="21" row="26"></cell>
+    </row>
+    <row>
+      <cell col="0" row="27" colspan="22">210mm×297mm[백상지 80g/㎡(재활용품)]</cell>
+    </row>
+  </table>
+</annex>

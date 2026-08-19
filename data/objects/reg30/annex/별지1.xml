@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지1" gubun="별지" no="1" title="용역기성부분 검사원" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=108259801">
+  <text>(별지 제1호 서식)
+용역기성부분 검사원(제   회)
+감독관 경유 :          (인)
+1. 용  역  명 :
+2. 사 업 위 치 :
+3. 계 약 금 액 :
+4. 계약년월일 :
+5. 착수년월일 :
+6. 완 성 기 한 :
+7. 현재의 진도 :       년     월    일 현재 (       %)
+8. 첨 부 서 류 : 기성부분내역서, 성과품납품내역서, 기타(                 )
+위 용역을 도급시행함에 있어 용역전반에 걸쳐 설계서ㆍ과업지시서ㆍ설계도면, 기타 약정대로 어김없이 기성되었음을 확인하오며, 만일 이 기성내역에 의한 귀 원의 검사시 하자가 발생된 때에는 변상, 재시행 또는 귀 원의 조치ㆍ지시에 이의없이 응할 것을 서약하고 이에 기성부분검사원을 제출하오니 검사하여 주시기 바랍니다.
+년       월       일
+계 약 자     주  소 :
+상  호 :
+대표자 :              (인)
+국토지리정보원 재무관 귀하
+용역기성부분내역서
+1. 용   역   명 :
+2. 도   급   액 :
+3. 기성부분금액 :
+4. 내        역 :
+200  .    .   현재</text>
+  <table rows="3" cols="12">
+    <row>
+      <cell col="0" row="0" rowspan="2">용역
+내역</cell>
+      <cell col="1" row="0" rowspan="2">단위</cell>
+      <cell col="2" row="0" colspan="3">도 급 액</cell>
+      <cell col="5" row="0" colspan="3">금회기성액</cell>
+      <cell col="8" row="0" colspan="3">전회까지의 기성액</cell>
+      <cell col="11" row="0" rowspan="2">비고</cell>
+    </row>
+    <row>
+      <cell col="2" row="1">수량</cell>
+      <cell col="3" row="1">단가</cell>
+      <cell col="4" row="1">금액</cell>
+      <cell col="5" row="1">수량</cell>
+      <cell col="6" row="1">금액</cell>
+      <cell col="7" row="1">비율</cell>
+      <cell col="8" row="1">수량</cell>
+      <cell col="9" row="1">금액</cell>
+      <cell col="10" row="1">비율</cell>
+    </row>
+    <row>
+      <cell col="0" row="2"></cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2"></cell>
+      <cell col="3" row="2"></cell>
+      <cell col="4" row="2"></cell>
+      <cell col="5" row="2"></cell>
+      <cell col="6" row="2"></cell>
+      <cell col="7" row="2"></cell>
+      <cell col="8" row="2"></cell>
+      <cell col="9" row="2"></cell>
+      <cell col="10" row="2"></cell>
+      <cell col="11" row="2"></cell>
+    </row>
+  </table>
+  <text>용역성과납품내역서</text>
+  <table rows="2" cols="5">
+    <row>
+      <cell col="0" row="0">품 명</cell>
+      <cell col="1" row="0">단위</cell>
+      <cell col="2" row="0">수량</cell>
+      <cell col="3" row="0">세부내역</cell>
+      <cell col="4" row="0">비 고</cell>
+    </row>
+    <row>
+      <cell col="0" row="1"></cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1"></cell>
+      <cell col="4" row="1"></cell>
+    </row>
+  </table>
+</annex>

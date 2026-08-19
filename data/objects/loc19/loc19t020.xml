@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc19t020" article="핵심 안전기준ž절차 및 법적 근거 요약" rows="6" cols="2" source="측량 안전관리 매뉴얼 (2026.1)">
+  <row>
+    <cell col="0" row="0" header="1">근거</cell>
+    <cell col="1" row="0" header="1">관련 조항</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">항공안전법 제129조(무인비행장치의 비행)</cell>
+    <cell col="1" row="1">무인비행장치 조종자 및 운용자의 안전조 치 의무</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">같은 법 제129조의2 (특별비행승인)</cell>
+    <cell col="1" row="2">야간·가시권 밖(BVLOS) 비행 시 국토부 장관 승인 필요</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">항공안전법 시행규칙 제310조</cell>
+    <cell col="1" row="3">비행승인 절차, 서류, 비행고도 제한(150 m 기준)</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">국토교통부 고시 제2021-1230호 (무인비행장치 특별비행승인 기준)</cell>
+    <cell col="1" row="4">비행허가·보험·비상대응계획 등 승인 세부 절차 규정</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">국토지리정보원「무인비행장치측량작업규정」</cell>
+    <cell col="1" row="5">드론 측량 시 안전점검·이착륙·기상기준· 체크리스트 명시</cell>
+  </row>
+</table>

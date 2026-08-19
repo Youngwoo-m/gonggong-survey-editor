@@ -1,0 +1,3484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표2" gubun="별표" no="2" title="주기표기기준" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=119183703">
+  <text>[별표 2] 주기표기기준
+가. 주기위치표</text>
+  <table rows="7" cols="4">
+    <row>
+      <cell col="0" row="0" rowspan="2">구분</cell>
+      <cell col="1" row="0" rowspan="2">주기 위치와 순서</cell>
+      <cell col="2" row="0" colspan="2">주기의 대상물</cell>
+    </row>
+    <row>
+      <cell col="2" row="1">분 류</cell>
+      <cell col="3" row="1">예</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" rowspan="3">독립
+물체</cell>
+      <cell col="1" row="2" rowspan="3"></cell>
+      <cell col="2" row="2">건 물</cell>
+      <cell col="3" row="2">절, 교회, 학교</cell>
+    </row>
+    <row>
+      <cell col="2" row="3">구조물</cell>
+      <cell col="3" row="3">탑, 기념비
+등대, 갱구, 능묘</cell>
+    </row>
+    <row>
+      <cell col="2" row="4">특정
+지역</cell>
+      <cell col="3" row="4">역명, 온천
+광산, 암초, 댐, 수문</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">집단
+물체</cell>
+      <cell col="1" row="5">지역1            지역2</cell>
+      <cell col="2" row="5">거 주 지
+행정구역
+특정지역
+호수
+못
+바다
+만
+섬</cell>
+      <cell col="3" row="5">마을(부락)
+시, 군, 읍, 면, 동, 리
+공원, 운동장, 비행장, 목장
+채석장
+항
+섬
+잔교
+산, 
+호, 못, 바다, 만
+산, 섬</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">선상
+물체</cell>
+      <cell col="1" row="6"></cell>
+      <cell col="2" row="6">도로
+철도
+하천</cell>
+      <cell col="3" row="6">령, 터널, 다리
+하천, 보
+가로, 철도
+성벽</cell>
+    </row>
+  </table>
+  <text>나. 주기</text>
+  <table rows="35" cols="5">
+    <row>
+      <cell col="0" row="0">명 칭</cell>
+      <cell col="1" row="0">대․소 변형체</cell>
+      <cell col="2" row="0">글자체</cell>
+      <cell col="3" row="0">자간
+거리</cell>
+      <cell col="4" row="0">급 수
+(글자크기)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">읍</cell>
+      <cell col="1" row="1">寧 月 邑, 水支邑</cell>
+      <cell col="2" row="1" rowspan="3">돋움체</cell>
+      <cell col="3" row="1" rowspan="3">8자,5자,3자,1자, 최소간격
+(면적에 따라 1자와 최소간격은 지도상 높이 3.2㎜ 크기의   글자에 적용시킬 수 있다)</cell>
+      <cell col="4" row="1" rowspan="3">24(4.8㎜)
+20(4.0㎜)
+16(3.2㎜)</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">면</cell>
+      <cell col="1" row="2">新 東 面, 冠山面</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">일반시의 구</cell>
+      <cell col="1" row="3">(南 區),(南 區)</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">도․특별시․광역시</cell>
+      <cell col="1" row="4">忠 淸 南 道</cell>
+      <cell col="2" row="4" rowspan="4">돋움체</cell>
+      <cell col="3" row="4" rowspan="4">1자, 최소간격
+(면적에 따라 1자와 최소간격은 지도상 높이 3.0mm 크기의  글자에 적용시킬 수 있다)</cell>
+      <cell col="4" row="4" rowspan="4">20(4.0㎜)
+18(3.6㎜)
+15(3.0㎜)</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">시</cell>
+      <cell col="1" row="5">全 州 市</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">군</cell>
+      <cell col="1" row="6">洪 城 郡</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">특별시,광역시의 구</cell>
+      <cell col="1" row="7">鍾 路 區</cell>
+    </row>
+    <row>
+      <cell col="0" row="8">법정동·리
+행정동·리</cell>
+      <cell col="1" row="8">大 興 洞/(大 興 洞)
+文 學 里/(文 學 里)</cell>
+      <cell col="2" row="8">돋움체</cell>
+      <cell col="3" row="8">4자, 1자, 최소간격</cell>
+      <cell col="4" row="8">18(3.6㎜)
+15(3.0㎜)
+13(2.6㎜)</cell>
+    </row>
+    <row>
+      <cell col="0" row="9">마을(부락)</cell>
+      <cell col="1" row="9">배나무골,신촌</cell>
+      <cell col="2" row="9">바탕체</cell>
+      <cell col="3" row="9">최소간격</cell>
+      <cell col="4" row="9">13(2.6㎜)</cell>
+    </row>
+    <row>
+      <cell col="0" row="10">부락명</cell>
+      <cell col="1" row="10">(배나무골),(신촌)</cell>
+      <cell col="2" row="10">바탕체</cell>
+      <cell col="3" row="10">최소간격</cell>
+      <cell col="4" row="10">11(2.2㎜)</cell>
+    </row>
+    <row>
+      <cell col="0" row="11">고속도로</cell>
+      <cell col="1" row="11">경 부 고 속 국 도</cell>
+      <cell col="2" row="11" rowspan="3">돋움체</cell>
+      <cell col="3" row="11" rowspan="3">1자, 최소간격</cell>
+      <cell col="4" row="11" rowspan="3">12(2.4㎜)</cell>
+    </row>
+    <row>
+      <cell col="0" row="12">가도</cell>
+      <cell col="1" row="12">경 인 가 도</cell>
+    </row>
+    <row>
+      <cell col="0" row="13">철도</cell>
+      <cell col="1" row="13">전 라 선</cell>
+    </row>
+    <row>
+      <cell col="0" row="14">역(정류장)</cell>
+      <cell col="1" row="14">대전역․시흥역</cell>
+      <cell col="2" row="14">돋움체</cell>
+      <cell col="3" row="14">최소간격</cell>
+      <cell col="4" row="14">8(1.6㎜)</cell>
+    </row>
+    <row>
+      <cell col="0" row="15">산악
+-1000m이상
+- 500m이상
+- 500m이하</cell>
+      <cell col="1" row="15">大成山
+冠岳山
+玉女峰</cell>
+      <cell col="2" row="15">바탕체
+기울임 20</cell>
+      <cell col="3" row="15">최소간격</cell>
+      <cell col="4" row="15">18(3.6㎜)
+16(3.2㎜)
+14(2.8㎜)</cell>
+    </row>
+    <row>
+      <cell col="0" row="16">령·현·고개</cell>
+      <cell col="1" row="16">大關嶺 
+광치․쑥고개</cell>
+      <cell col="2" row="16">바탕체,
+기울임 20</cell>
+      <cell col="3" row="16">최소간격</cell>
+      <cell col="4" row="16">14(2.8㎜)
+12(2.4㎜)</cell>
+    </row>
+    <row>
+      <cell col="0" row="17">계곡(골), 협곡</cell>
+      <cell col="1" row="17">바 구 니 골
+쑥 골</cell>
+      <cell col="2" row="17">바탕체,
+기울임 20</cell>
+      <cell col="3" row="17">1자, 최소간격
+골명은 선상물체 주기원칙에 의거</cell>
+      <cell col="4" row="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18">들명</cell>
+      <cell col="1" row="18">장 안 들
+장 안 들</cell>
+      <cell col="2" row="18">바탕체</cell>
+      <cell col="3" row="18"></cell>
+      <cell col="4" row="18"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19">국립공원</cell>
+      <cell col="1" row="19">國 立 公 園
+國 立 公 園
+國 立 公 園</cell>
+      <cell col="2" row="19">바탕체</cell>
+      <cell col="3" row="19">3자,2자,1자   간격
+3자,2자,1자, 최소간격
+2자,1자,최소간격</cell>
+      <cell col="4" row="19">38(7.6㎜)
+28(5.6㎜)
+24(4.8㎜)</cell>
+    </row>
+    <row>
+      <cell col="0" row="20">특정지역</cell>
+      <cell col="1" row="20">어린이대공원</cell>
+      <cell col="2" row="20" rowspan="2">굴림체</cell>
+      <cell col="3" row="20">최소간격</cell>
+      <cell col="4" row="20">14(2.8㎜)
+12(2.4㎜)</cell>
+    </row>
+    <row>
+      <cell col="0" row="21">명승고적</cell>
+      <cell col="1" row="21">南 漢 山 城</cell>
+      <cell col="3" row="21">1자 간격</cell>
+      <cell col="4" row="21">12(2.4㎜)</cell>
+    </row>
+    <row>
+      <cell col="0" row="22">바다</cell>
+      <cell col="1" row="22">黃 海  黃 海</cell>
+      <cell col="2" row="22">바탕체
+기울임
+20</cell>
+      <cell col="3" row="22">5자,3자,1자,최소간격</cell>
+      <cell col="4" row="22">24(4.8㎜)
+18(3.6㎜)</cell>
+    </row>
+    <row>
+      <cell col="0" row="23">강</cell>
+      <cell col="1" row="23">漢 江  漢 灘 江</cell>
+      <cell col="2" row="23">바탕체</cell>
+      <cell col="3" row="23">4자,2자,1자,최소간격</cell>
+      <cell col="4" row="23">18(3.6㎜)
+14(2.8㎜)</cell>
+    </row>
+    <row>
+      <cell col="0" row="24">법정(비법정)
+하천</cell>
+      <cell col="1" row="24">안 성 천  안 양 천</cell>
+      <cell col="2" row="24">바탕체</cell>
+      <cell col="3" row="24">2자,1자,최소간격</cell>
+      <cell col="4" row="24">14(2.8㎜)
+12(2.4㎜)</cell>
+    </row>
+    <row>
+      <cell col="0" row="25">호</cell>
+      <cell col="1" row="25">晋 陽 湖  西 湖</cell>
+      <cell col="2" row="25">바탕체</cell>
+      <cell col="3" row="25">2자,1자,최소간격</cell>
+      <cell col="4" row="25">14(2.8㎜)
+12(2.4㎜)</cell>
+    </row>
+    <row>
+      <cell col="0" row="26">저수지</cell>
+      <cell col="1" row="26">신촌저수지 신촌저수지 신촌저수지</cell>
+      <cell col="2" row="26">바탕체</cell>
+      <cell col="3" row="26">14급은 1자,최소간격</cell>
+      <cell col="4" row="26">14(2.8㎜)
+12(2.4㎜)
+10(2.0㎜)</cell>
+    </row>
+    <row>
+      <cell col="0" row="27">만</cell>
+      <cell col="1" row="27">경 기 만 경 기 만 경 기 만</cell>
+      <cell col="2" row="27">바탕체</cell>
+      <cell col="3" row="27">2자,1자,최소간격</cell>
+      <cell col="4" row="27">18(3.6㎜)
+15(3.0㎜)
+12(2.4㎜)</cell>
+    </row>
+    <row>
+      <cell col="0" row="28">곶 포</cell>
+      <cell col="1" row="28">장산곶, 만리포</cell>
+      <cell col="2" row="28">바탕체</cell>
+      <cell col="3" row="28">최소간격</cell>
+      <cell col="4" row="28">9(1.8㎜)</cell>
+    </row>
+    <row>
+      <cell col="0" row="29">군 도</cell>
+      <cell col="1" row="29">德 積 群 島</cell>
+      <cell col="2" row="29">바탕체</cell>
+      <cell col="3" row="29">1자 간격</cell>
+      <cell col="4" row="29">18(3.6㎜)</cell>
+    </row>
+    <row>
+      <cell col="0" row="30">섬</cell>
+      <cell col="1" row="30">江 華 島 延坪島 獨島</cell>
+      <cell col="2" row="30">바탕체</cell>
+      <cell col="3" row="30">2자, 1자, 최소간격</cell>
+      <cell col="4" row="30">18(3.6㎜)
+15(3.0㎜)
+12(2.4㎜)</cell>
+    </row>
+    <row>
+      <cell col="0" row="31">교량</cell>
+      <cell col="1" row="31">서 강 대 교․서강대교 은행교</cell>
+      <cell col="2" row="31">굴림체</cell>
+      <cell col="3" row="31">1자, 최소간격</cell>
+      <cell col="4" row="31">12(2.4㎜) 
+10(2.0㎜) 
+9(1.8㎜)</cell>
+    </row>
+    <row>
+      <cell col="0" row="32">건물 및 독립물체</cell>
+      <cell col="1" row="32">국 토 지 리 정 보 원 신갈초교</cell>
+      <cell col="2" row="32">굴림체</cell>
+      <cell col="3" row="32">1자, 최소간격</cell>
+      <cell col="4" row="32">10(2.0㎜)
+9(1.8㎜)</cell>
+    </row>
+    <row>
+      <cell col="0" row="33">등고선 수치</cell>
+      <cell col="1" row="33">25 50 75 100 125 150</cell>
+      <cell col="2" row="33">굴림체
+기울임 20</cell>
+      <cell col="3" row="33">최소간격</cell>
+      <cell col="4" row="33">9(1.8㎜)</cell>
+    </row>
+    <row>
+      <cell col="0" row="34">측량기준점 수치</cell>
+      <cell col="1" row="34">△126.5
+× 326.7
+□237.5</cell>
+      <cell col="2" row="34">굴림체</cell>
+      <cell col="3" row="34"></cell>
+      <cell col="4" row="34"></cell>
+    </row>
+  </table>
+  <table rows="41" cols="6">
+    <row>
+      <cell col="0" row="0" colspan="2">대상의 구분</cell>
+      <cell col="2" row="0">글자체</cell>
+      <cell col="3" row="0">포인트</cell>
+      <cell col="4" row="0">자간
+거리(색)</cell>
+      <cell col="5" row="0">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="2">도로·철도</cell>
+      <cell col="2" row="1">세고딕정체</cell>
+      <cell col="3" row="1">9</cell>
+      <cell col="4" row="1">1~2(먹)</cell>
+      <cell col="5" row="1">고속도로, 가로, 철도, 지하철도</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">역(정거장)</cell>
+      <cell col="2" row="2">세고딕정체</cell>
+      <cell col="3" row="2">8</cell>
+      <cell col="4" row="2">1/4(먹)</cell>
+      <cell col="5" row="2">철도역, 버스터미널, 전철역</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" rowspan="2">교량</cell>
+      <cell col="1" row="3">100미만</cell>
+      <cell col="2" row="3">세고딕정체</cell>
+      <cell col="3" row="3">8</cell>
+      <cell col="4" row="3">1/2(먹)</cell>
+      <cell col="5" row="3" rowspan="2">일반교량, 철교</cell>
+    </row>
+    <row>
+      <cell col="1" row="4">100이상</cell>
+      <cell col="2" row="4">세고딕정체</cell>
+      <cell col="3" row="4">9</cell>
+      <cell col="4" row="4">1/2~4(먹)</cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="2">도·특별시·광역시</cell>
+      <cell col="2" row="5">세고딕정체</cell>
+      <cell col="3" row="5">12</cell>
+      <cell col="4" row="5">1~2(먹)</cell>
+      <cell col="5" row="5" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6" colspan="2">시·군·구</cell>
+      <cell col="2" row="6">세고딕정체</cell>
+      <cell col="3" row="6">8</cell>
+      <cell col="4" row="6">1~4(먹)</cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="2">읍·면·구</cell>
+      <cell col="2" row="7">중고딕정체</cell>
+      <cell col="3" row="7">18</cell>
+      <cell col="4" row="7">1~4(먹)</cell>
+      <cell col="5" row="7" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="2">동·리</cell>
+      <cell col="2" row="8">세고딕정체</cell>
+      <cell col="3" row="8">15</cell>
+      <cell col="4" row="8">1/2~1(먹)</cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="2">법정동</cell>
+      <cell col="2" row="9">세고딕정체</cell>
+      <cell col="3" row="9">12</cell>
+      <cell col="4" row="9">1/2~1(먹)</cell>
+      <cell col="5" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="2">부락</cell>
+      <cell col="2" row="10">명조정체</cell>
+      <cell col="3" row="10">10</cell>
+      <cell col="4" row="10">1/2~1(먹)</cell>
+      <cell col="5" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="2">건물·구조물</cell>
+      <cell col="2" row="11">세고딕정체</cell>
+      <cell col="3" row="11">7</cell>
+      <cell col="4" row="11">1/4~1/2</cell>
+      <cell col="5" row="11">서비스 기관, 학교, 교회, 공장, 병원, 기타, 기념비, 탑, 명승고적, 능묘, 온천, 주유소, 기타시설물</cell>
+    </row>
+    <row>
+      <cell col="0" row="12" rowspan="4">특정지역</cell>
+      <cell col="1" row="12">지도상면적</cell>
+      <cell col="2" row="12" rowspan="2">세고딕정체</cell>
+      <cell col="3" row="12" rowspan="2">12</cell>
+      <cell col="4" row="12" rowspan="2">1/4~1/2</cell>
+      <cell col="5" row="12" rowspan="4">공원, 유원지, 운동장, 목장, 광장, 단지 등</cell>
+    </row>
+    <row>
+      <cell col="1" row="13">20㎜×20㎜이상</cell>
+    </row>
+    <row>
+      <cell col="1" row="14">10㎜×10㎜이상</cell>
+      <cell col="2" row="14">세고딕정체</cell>
+      <cell col="3" row="14">10</cell>
+      <cell col="4" row="14" rowspan="2">1/4(먹)</cell>
+    </row>
+    <row>
+      <cell col="1" row="15">10㎜×10㎜미만</cell>
+      <cell col="2" row="15">세고딕정체</cell>
+      <cell col="3" row="15">8</cell>
+    </row>
+    <row>
+      <cell col="0" row="16" rowspan="4">산 또는 봉우리</cell>
+      <cell col="1" row="16">높이</cell>
+      <cell col="2" row="16" rowspan="2">세고딕 우경체</cell>
+      <cell col="3" row="16" rowspan="2">15</cell>
+      <cell col="4" row="16" rowspan="4">1/4(먹)</cell>
+      <cell col="5" row="16" rowspan="4">산맥, 산, 봉우리 등</cell>
+    </row>
+    <row>
+      <cell col="1" row="17">1,000m 이상</cell>
+    </row>
+    <row>
+      <cell col="1" row="18">500m 이상</cell>
+      <cell col="2" row="18">세고딕 우경체</cell>
+      <cell col="3" row="18">13</cell>
+    </row>
+    <row>
+      <cell col="1" row="19">500m 미만</cell>
+      <cell col="2" row="19">세고딕 우경체</cell>
+      <cell col="3" row="19">11</cell>
+    </row>
+    <row>
+      <cell col="0" row="20" rowspan="4">령 또는 고개</cell>
+      <cell col="1" row="20">높이</cell>
+      <cell col="2" row="20" rowspan="2">세고딕우경체</cell>
+      <cell col="3" row="20" rowspan="2">13</cell>
+      <cell col="4" row="20" rowspan="4">1/4(먹)</cell>
+      <cell col="5" row="20" rowspan="4">령, 언덕, 고개 등</cell>
+    </row>
+    <row>
+      <cell col="1" row="21">500m 이상</cell>
+    </row>
+    <row>
+      <cell col="1" row="22">300m 이상</cell>
+      <cell col="2" row="22">세고딕우경체</cell>
+      <cell col="3" row="22">11</cell>
+    </row>
+    <row>
+      <cell col="1" row="23">300m 이하</cell>
+      <cell col="2" row="23">세고딕우경체</cell>
+      <cell col="3" row="23">9</cell>
+    </row>
+    <row>
+      <cell col="0" row="24" rowspan="4">평야 또는 들</cell>
+      <cell col="1" row="24">지도상면적</cell>
+      <cell col="2" row="24" rowspan="2">세고딕평체</cell>
+      <cell col="3" row="24" rowspan="2">15</cell>
+      <cell col="4" row="24" rowspan="2">1~2(먹)</cell>
+      <cell col="5" row="24" rowspan="2">평야, 간척지 등</cell>
+    </row>
+    <row>
+      <cell col="1" row="25">100㎜×100㎜이상</cell>
+    </row>
+    <row>
+      <cell col="1" row="26">100㎜×100㎜미만</cell>
+      <cell col="2" row="26">세고딕평체</cell>
+      <cell col="3" row="26">12</cell>
+      <cell col="4" row="26">1~2(먹)</cell>
+      <cell col="5" row="26" rowspan="2">들, 곶, 계곡 등</cell>
+    </row>
+    <row>
+      <cell col="1" row="27">50㎜×50㎜이하</cell>
+      <cell col="2" row="27">세고딕평체</cell>
+      <cell col="3" row="27">10</cell>
+      <cell col="4" row="27">1~2(먹)</cell>
+    </row>
+    <row>
+      <cell col="0" row="28" rowspan="6">수부
+면형대상물</cell>
+      <cell col="1" row="28">지도상면적</cell>
+      <cell col="2" row="28" rowspan="2">중고딕우경체</cell>
+      <cell col="3" row="28" rowspan="2">18</cell>
+      <cell col="4" row="28" rowspan="2">1/2~5(청)</cell>
+      <cell col="5" row="28" rowspan="6">바다, 호, 만, 군도, 섬, 염전, 습지 등</cell>
+    </row>
+    <row>
+      <cell col="1" row="29">200㎜×200㎜이상</cell>
+    </row>
+    <row>
+      <cell col="1" row="30">100㎜×100㎜이상</cell>
+      <cell col="2" row="30">중고딕우경체</cell>
+      <cell col="3" row="30">16</cell>
+      <cell col="4" row="30">1/2~5(청)</cell>
+    </row>
+    <row>
+      <cell col="1" row="31">100㎜×100㎜미만</cell>
+      <cell col="2" row="31">세고딕우경체</cell>
+      <cell col="3" row="31">14</cell>
+      <cell col="4" row="31">1/2~5(청)</cell>
+    </row>
+    <row>
+      <cell col="1" row="32">50㎜×50㎜미만</cell>
+      <cell col="2" row="32">세고딕우경체</cell>
+      <cell col="3" row="32">12</cell>
+      <cell col="4" row="32">1/2~5(청)</cell>
+    </row>
+    <row>
+      <cell col="1" row="33">10㎜×10㎜이하</cell>
+      <cell col="2" row="33">세고딕우경체</cell>
+      <cell col="3" row="33">10</cell>
+      <cell col="4" row="33">1/2~5(청)</cell>
+    </row>
+    <row>
+      <cell col="0" row="34" rowspan="5">수부
+선형대상물</cell>
+      <cell col="1" row="34">지도상면적</cell>
+      <cell col="2" row="34" rowspan="2">중고딕우경체</cell>
+      <cell col="3" row="34" rowspan="2">14</cell>
+      <cell col="4" row="34" rowspan="2">1/2~5(청)</cell>
+      <cell col="5" row="34" rowspan="5">강, 하천</cell>
+    </row>
+    <row>
+      <cell col="1" row="35">30㎜ 이상</cell>
+    </row>
+    <row>
+      <cell col="1" row="36">30㎜ 미만</cell>
+      <cell col="2" row="36">세고딕우경체</cell>
+      <cell col="3" row="36">12</cell>
+      <cell col="4" row="36">1/2~5(청)</cell>
+    </row>
+    <row>
+      <cell col="1" row="37">10㎜ 미만</cell>
+      <cell col="2" row="37">세고딕우경체</cell>
+      <cell col="3" row="37">10</cell>
+      <cell col="4" row="37">1/2~5(청)</cell>
+    </row>
+    <row>
+      <cell col="1" row="38">10㎜ 미만</cell>
+      <cell col="2" row="38">세고딕우경체</cell>
+      <cell col="3" row="38">8</cell>
+      <cell col="4" row="38">1/2~5(청)</cell>
+    </row>
+    <row>
+      <cell col="0" row="39" colspan="2">표고수치</cell>
+      <cell col="2" row="39">EB-16우경체</cell>
+      <cell col="3" row="39">8</cell>
+      <cell col="4" row="39">1/4(먹)</cell>
+      <cell col="5" row="39">삼각점, 수준점, 표고점</cell>
+    </row>
+    <row>
+      <cell col="0" row="40" colspan="2">등고선수치</cell>
+      <cell col="2" row="40">EB-16우경체</cell>
+      <cell col="3" row="40">8</cell>
+      <cell col="4" row="40">1/4(먹)</cell>
+      <cell col="5" row="40">주곡선, 계곡선, 간곡선, 조곡선</cell>
+    </row>
+  </table>
+  <table rows="56" cols="13">
+    <row>
+      <cell col="0" row="0" colspan="8">명 칭</cell>
+      <cell col="8" row="0">대․소 변형체</cell>
+      <cell col="9" row="0">서체 및 
+자체</cell>
+      <cell col="10" row="0">자간
+거리</cell>
+      <cell col="11" row="0">포인트</cell>
+      <cell col="12" row="0">서체색
+(C, M, Y, K)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="8">군</cell>
+      <cell col="8" row="1">洪    城    郡
+洪  城  郡</cell>
+      <cell col="9" row="1" rowspan="5">견명조</cell>
+      <cell col="10" row="1">隔
+(最大間隔)</cell>
+      <cell col="11" row="1">15
+12</cell>
+      <cell col="12" row="1">K : 100%</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="8">도 ․ 특별시
+․ 광역시&lt;경계&gt;</cell>
+      <cell col="8" row="2">忠  淸  南  道
+서 울 特 別 市
+光 州 廣 域 市</cell>
+      <cell col="10" row="2">標
+(標準間隔)</cell>
+      <cell col="11" row="2">12</cell>
+      <cell col="12" row="2">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="8">시</cell>
+      <cell col="8" row="3">始    興    市
+始  興  市</cell>
+      <cell col="10" row="3">隔
+(最大間隔)</cell>
+      <cell col="11" row="3">12
+10</cell>
+      <cell col="12" row="3">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="8">읍</cell>
+      <cell col="8" row="4">寧    越    邑
+寧 越 邑</cell>
+      <cell col="10" row="4">隔
+(2,000∼5,000)</cell>
+      <cell col="11" row="4">12
+10</cell>
+      <cell col="12" row="4">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="8">면</cell>
+      <cell col="8" row="5">新    東    面
+新  東  面</cell>
+      <cell col="10" row="5">&quot;</cell>
+      <cell col="11" row="5">12
+10</cell>
+      <cell col="12" row="5">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="6" colspan="6" rowspan="2">구</cell>
+      <cell col="6" row="6" colspan="2">광․특별시</cell>
+      <cell col="8" row="6">冠   岳   區</cell>
+      <cell col="9" row="6" rowspan="2">견명조
+(90%)</cell>
+      <cell col="10" row="6" rowspan="2">&quot;</cell>
+      <cell col="11" row="6">11</cell>
+      <cell col="12" row="6" rowspan="2">&quot;</cell>
+    </row>
+    <row>
+      <cell col="6" row="7" colspan="2">일반시</cell>
+      <cell col="8" row="7">八  達  區</cell>
+      <cell col="11" row="7">10</cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="8">주요지명</cell>
+      <cell col="8" row="8">富  平</cell>
+      <cell col="9" row="8">태고딕</cell>
+      <cell col="10" row="8">標
+(標準間隔)</cell>
+      <cell col="11" row="8">8</cell>
+      <cell col="12" row="8">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="8">리 ⋅ 동</cell>
+      <cell col="8" row="9">交 村 里 ․ 大 興 洞
+ 交 村 里 ․ 大 興 洞</cell>
+      <cell col="9" row="9">중고딕</cell>
+      <cell col="10" row="9">標準間隔
+(500)</cell>
+      <cell col="11" row="9">7.5
+6.5</cell>
+      <cell col="12" row="9">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="8">부    락</cell>
+      <cell col="8" row="10">배나무골, 신촌</cell>
+      <cell col="9" row="10">태명조</cell>
+      <cell col="10" row="10">近</cell>
+      <cell col="11" row="10">7</cell>
+      <cell col="12" row="10">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="8">가    도</cell>
+      <cell col="8" row="11">京  仁  街  道</cell>
+      <cell col="9" row="11">중고딕</cell>
+      <cell col="10" row="11">標準間隔
+(500)</cell>
+      <cell col="11" row="11">6</cell>
+      <cell col="12" row="11">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="8">철    도</cell>
+      <cell col="8" row="12">京  釜  線</cell>
+      <cell col="9" row="12">태고딕</cell>
+      <cell col="10" row="12">標準間隔
+(2000)</cell>
+      <cell col="11" row="12">8</cell>
+      <cell col="12" row="12">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="8">고속국도</cell>
+      <cell col="8" row="13">京 釜 高 速 國 道</cell>
+      <cell col="9" row="13">&quot;</cell>
+      <cell col="10" row="13">標準間隔
+(500)</cell>
+      <cell col="11" row="13">&quot;</cell>
+      <cell col="12" row="13">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="8">역명(정류장)</cell>
+      <cell col="8" row="14">서울역 ․ 대전역</cell>
+      <cell col="9" row="14">태고딕
+(90%)</cell>
+      <cell col="10" row="14">近</cell>
+      <cell col="11" row="14">6</cell>
+      <cell col="12" row="14">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="15" rowspan="3"></cell>
+      <cell col="1" row="15" colspan="3"></cell>
+      <cell col="4" row="15" colspan="4" rowspan="3">2,000m 以上</cell>
+      <cell col="8" row="15" rowspan="3">白頭山</cell>
+      <cell col="9" row="15" rowspan="11">태고딕
+우경 20</cell>
+      <cell col="10" row="15" rowspan="2">&quot;</cell>
+      <cell col="11" row="15" rowspan="2">14</cell>
+      <cell col="12" row="15" rowspan="2">&quot;</cell>
+    </row>
+    <row>
+      <cell col="1" row="16" rowspan="3"></cell>
+      <cell col="2" row="16" colspan="2" rowspan="3"></cell>
+    </row>
+    <row>
+      <cell col="10" row="17" rowspan="3">&quot;</cell>
+      <cell col="11" row="17" rowspan="3">12</cell>
+      <cell col="12" row="17" rowspan="3">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="18" rowspan="3">山</cell>
+      <cell col="4" row="18" colspan="4" rowspan="3">1,000m 以上</cell>
+      <cell col="8" row="18" rowspan="3">金剛山</cell>
+    </row>
+    <row>
+      <cell col="1" row="19" rowspan="2"></cell>
+      <cell col="2" row="19" colspan="2" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="10" row="20" rowspan="4">&quot;</cell>
+      <cell col="11" row="20" rowspan="4">10</cell>
+      <cell col="12" row="20" rowspan="4">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="21" rowspan="2">岳</cell>
+      <cell col="1" row="21"></cell>
+      <cell col="2" row="21" colspan="2"></cell>
+      <cell col="4" row="21" colspan="4" rowspan="2">500m 以上</cell>
+      <cell col="8" row="21" rowspan="2">冠岳山</cell>
+    </row>
+    <row>
+      <cell col="1" row="22" rowspan="3"></cell>
+      <cell col="2" row="22" colspan="2" rowspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23" rowspan="3"></cell>
+      <cell col="4" row="23" colspan="4" rowspan="3">500m 미만</cell>
+      <cell col="8" row="23" rowspan="3">北岳山</cell>
+    </row>
+    <row>
+      <cell col="10" row="24" rowspan="2">&quot;</cell>
+      <cell col="11" row="24" rowspan="2">8</cell>
+      <cell col="12" row="24" rowspan="2">&quot;</cell>
+    </row>
+    <row>
+      <cell col="1" row="25" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="26" colspan="3" rowspan="2">自然</cell>
+      <cell col="3" row="26" colspan="4"></cell>
+      <cell col="7" row="26" rowspan="2">山地部</cell>
+      <cell col="8" row="26" rowspan="2">太  白  山  脈
+太  白  山  脈</cell>
+      <cell col="9" row="26" rowspan="2">태고딕</cell>
+      <cell col="10" row="26" rowspan="2">隔
+(最大間隔)</cell>
+      <cell col="11" row="26" rowspan="2">12
+10</cell>
+      <cell col="12" row="26" rowspan="2">K : 100%</cell>
+    </row>
+    <row>
+      <cell col="3" row="27" colspan="2"></cell>
+      <cell col="5" row="27" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="28" colspan="3" rowspan="2">地域</cell>
+      <cell col="3" row="28" colspan="2"></cell>
+      <cell col="5" row="28" colspan="2"></cell>
+      <cell col="7" row="28" rowspan="2">平地部</cell>
+      <cell col="8" row="28" rowspan="2">邊  山  半  道
+邊  山  半  道</cell>
+      <cell col="9" row="28" rowspan="2">태명조
+(110%)</cell>
+      <cell col="10" row="28" rowspan="2">標準間隔
+(1000)</cell>
+      <cell col="11" row="28" rowspan="2">11
+9</cell>
+      <cell col="12" row="28" rowspan="2">&quot;</cell>
+    </row>
+    <row>
+      <cell col="3" row="29" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="30" colspan="8">平野, 들</cell>
+      <cell col="8" row="30">金  海  平  野
+金 海 平 野</cell>
+      <cell col="9" row="30">태명조
+(110%)</cell>
+      <cell col="10" row="30">&quot;</cell>
+      <cell col="11" row="30">9
+7</cell>
+      <cell col="12" row="30">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="31" colspan="8">고개,재,嶺,峴,峙</cell>
+      <cell col="8" row="31">大關嶺(1000m이상), 廣峴(1000m미만)</cell>
+      <cell col="9" row="31">태고딕
+기울임20</cell>
+      <cell col="10" row="31">近</cell>
+      <cell col="11" row="31">8
+6</cell>
+      <cell col="12" row="31">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="32" colspan="8">國立公園</cell>
+      <cell col="8" row="32">慶 州 國 立 公 園
+慶 州 國 立 公 園</cell>
+      <cell col="9" row="32">태고딕</cell>
+      <cell col="10" row="32">標準間隔
+(500)</cell>
+      <cell col="11" row="32">15
+13</cell>
+      <cell col="12" row="32">C : 100%
+Y : 100%</cell>
+    </row>
+    <row>
+      <cell col="0" row="33" colspan="8" rowspan="2">名勝古蹟</cell>
+      <cell col="8" row="33">숭례문, 石窟庵</cell>
+      <cell col="9" row="33" rowspan="2">태고
+(90%)</cell>
+      <cell col="10" row="33" rowspan="2">近</cell>
+      <cell col="11" row="33">6</cell>
+      <cell col="12" row="33" rowspan="2">M : 100%
+Y : 50%</cell>
+    </row>
+    <row>
+      <cell col="8" row="34">(보물제1호)</cell>
+      <cell col="11" row="34">5.5</cell>
+    </row>
+    <row>
+      <cell col="0" row="35" colspan="8">바    다</cell>
+      <cell col="8" row="35">東   海, 東   海</cell>
+      <cell col="9" row="35">견명조
+기울임 20</cell>
+      <cell col="10" row="35">標準間隔
+(5,000)</cell>
+      <cell col="11" row="35">15, 13</cell>
+      <cell col="12" row="35">C : 100%
+M : 50%</cell>
+    </row>
+    <row>
+      <cell col="0" row="36" colspan="8" rowspan="2">江</cell>
+      <cell col="8" row="36">漢  江, 洪  川  江</cell>
+      <cell col="9" row="36" rowspan="7">태고딕
+기울임 20</cell>
+      <cell col="10" row="36" rowspan="2">標準間隔
+(1,000∼2,000)</cell>
+      <cell col="11" row="36">12, 10</cell>
+      <cell col="12" row="36" rowspan="2">C : 100%
+M : 50%</cell>
+    </row>
+    <row>
+      <cell col="8" row="37">漢  江, 洪  川  江&lt;최소&gt;</cell>
+      <cell col="11" row="37">8</cell>
+    </row>
+    <row>
+      <cell col="0" row="38" colspan="8" rowspan="2">河    川</cell>
+      <cell col="8" row="38">安 城 川</cell>
+      <cell col="10" row="38" rowspan="2">&quot;</cell>
+      <cell col="11" row="38">8</cell>
+      <cell col="12" row="38" rowspan="2">C : 100%
+M : 50%</cell>
+    </row>
+    <row>
+      <cell col="8" row="39">安 養 川</cell>
+      <cell col="11" row="39">7</cell>
+    </row>
+    <row>
+      <cell col="0" row="40" colspan="8" rowspan="3">湖, 貯水池</cell>
+      <cell col="8" row="40">西  湖,  신촌저수지</cell>
+      <cell col="10" row="40" rowspan="3">標準間隔
+(1,000∼近)</cell>
+      <cell col="11" row="40">8</cell>
+      <cell col="12" row="40" rowspan="3">C : 100%
+M : 50%</cell>
+    </row>
+    <row>
+      <cell col="8" row="41">雁鴨池</cell>
+      <cell col="11" row="41">7</cell>
+    </row>
+    <row>
+      <cell col="8" row="42">雁鴨池</cell>
+      <cell col="11" row="42">6</cell>
+    </row>
+    <row>
+      <cell col="0" row="43" colspan="8">灣</cell>
+      <cell col="8" row="43">京 畿 灣,  南 陽 灣</cell>
+      <cell col="9" row="43" rowspan="4">태명조
+기울임 20</cell>
+      <cell col="10" row="43">標準間隔
+(1000)</cell>
+      <cell col="11" row="43">12, 10</cell>
+      <cell col="12" row="43">C : 100%
+M : 50%</cell>
+    </row>
+    <row>
+      <cell col="0" row="44" colspan="8">海峽․水道</cell>
+      <cell col="8" row="44">大 韓 海 峽,한 려 수 도
+大 韓 海 峽,한 려 수 도</cell>
+      <cell col="10" row="44">&quot;</cell>
+      <cell col="11" row="44">12
+10</cell>
+      <cell col="12" row="44">C : 100%
+M : 50%</cell>
+    </row>
+    <row>
+      <cell col="0" row="45" colspan="6" rowspan="2">港</cell>
+      <cell col="6" row="45" colspan="2">국가항</cell>
+      <cell col="8" row="45">釜 山 港(대),  仁 川 港(중)</cell>
+      <cell col="10" row="45" rowspan="2">標準間隔
+(500)</cell>
+      <cell col="11" row="45">12, 10</cell>
+      <cell col="12" row="45" rowspan="2">C : 100%
+M : 50%</cell>
+    </row>
+    <row>
+      <cell col="6" row="46" colspan="2">지방항</cell>
+      <cell col="8" row="46">浦 項 港(대),浦 項 港(중)</cell>
+      <cell col="11" row="46">10, 8</cell>
+    </row>
+    <row>
+      <cell col="0" row="47" colspan="8">串   浦</cell>
+      <cell col="8" row="47">長山串, 萬里浦</cell>
+      <cell col="9" row="47">중고딕</cell>
+      <cell col="10" row="47">近</cell>
+      <cell col="11" row="47">6</cell>
+      <cell col="12" row="47">K : 100%</cell>
+    </row>
+    <row>
+      <cell col="0" row="48" colspan="8">群   島</cell>
+      <cell col="8" row="48">德 積 群 島, 德 積 群 島</cell>
+      <cell col="9" row="48" rowspan="2">태명조</cell>
+      <cell col="10" row="48">標準間隔
+(1000)</cell>
+      <cell col="11" row="48">12, 10</cell>
+      <cell col="12" row="48">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="49" colspan="8">島</cell>
+      <cell col="8" row="49">濟 州 島, 江 華 島, 
+ 鬱 陵 島,  獨島</cell>
+      <cell col="10" row="49">標準間隔(1000)近</cell>
+      <cell col="11" row="49">12, 10
+8, 6</cell>
+      <cell col="12" row="49">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="50" colspan="8">獨立物體</cell>
+      <cell col="8" row="50">華城牧場, 金浦干拓地, 新村橋</cell>
+      <cell col="9" row="50">중고딕</cell>
+      <cell col="10" row="50">近</cell>
+      <cell col="11" row="50">5</cell>
+      <cell col="12" row="50">K : 100%
+(글자 테두리
+: 백색 6호선)</cell>
+    </row>
+    <row>
+      <cell col="0" row="51" colspan="3" rowspan="2">標   高</cell>
+      <cell col="3" row="51" colspan="5">기준점</cell>
+      <cell col="8" row="51">⌧542.7, △ 384.2, □ 148.4,</cell>
+      <cell col="9" row="51" rowspan="2">중고딕</cell>
+      <cell col="10" row="51">&quot;</cell>
+      <cell col="11" row="51">6</cell>
+      <cell col="12" row="51">K : 100%</cell>
+    </row>
+    <row>
+      <cell col="3" row="52" colspan="5">표고점</cell>
+      <cell col="8" row="52">× 123.5</cell>
+      <cell col="10" row="52">&quot;</cell>
+      <cell col="11" row="52">6</cell>
+      <cell col="12" row="52">M : 100%
+Y : 100%</cell>
+    </row>
+    <row>
+      <cell col="0" row="53" colspan="3" rowspan="2">등고선 수치</cell>
+      <cell col="3" row="53" colspan="5">지형도</cell>
+      <cell col="8" row="53">100, 200, 250, 300, 350, 400</cell>
+      <cell col="9" row="53" rowspan="2">세고딕</cell>
+      <cell col="10" row="53">&quot;</cell>
+      <cell col="11" row="53">5.5</cell>
+      <cell col="12" row="53">C : 100%
+Y : 100%</cell>
+    </row>
+    <row>
+      <cell col="3" row="54" colspan="5">음영지형도</cell>
+      <cell col="8" row="54">100, 200, 250, 300, 350, 400</cell>
+      <cell col="10" row="54">&quot;</cell>
+      <cell col="11" row="54">5.5</cell>
+      <cell col="12" row="54">M : 90%
+Y : 100%</cell>
+    </row>
+    <row>
+      <cell col="0" row="55" colspan="8">등심선수치</cell>
+      <cell col="8" row="55">0 , -5, -10, -15, -20</cell>
+      <cell col="9" row="55">중고딕</cell>
+      <cell col="10" row="55">近</cell>
+      <cell col="11" row="55">5.5</cell>
+      <cell col="12" row="55">C : 100%
+M : 100%</cell>
+    </row>
+  </table>
+  <table rows="8" cols="1">
+    <row>
+      <cell col="0" row="0">1) 1:5,000 지형도</cell>
+    </row>
+    <row>
+      <cell col="0" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">2) 1:10,000 지형도</cell>
+    </row>
+    <row>
+      <cell col="0" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">3) 1:25,000 및 1:50,000 지형도</cell>
+    </row>
+    <row>
+      <cell col="0" row="7"></cell>
+    </row>
+  </table>
+  <table rows="51" cols="12">
+    <row>
+      <cell col="0" row="0" colspan="7">명 칭</cell>
+      <cell col="7" row="0">대․소 변형체</cell>
+      <cell col="8" row="0">서체 및 
+자체</cell>
+      <cell col="9" row="0">자간
+거리</cell>
+      <cell col="10" row="0">포인트</cell>
+      <cell col="11" row="0">서체색
+(C, M, Y, K)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="7">군</cell>
+      <cell col="7" row="1">洪    城    郡
+洪  城  郡</cell>
+      <cell col="8" row="1" rowspan="5">견명조</cell>
+      <cell col="9" row="1">隔
+(最大間隔)</cell>
+      <cell col="10" row="1">15
+12</cell>
+      <cell col="11" row="1">C : 75%
+M : 68%
+Y : 67%
+K : 90%</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="7">도 ․ 특별시
+․ 광역시&lt;경계&gt;</cell>
+      <cell col="7" row="2">忠  淸  南  道
+서 울 特 別 市
+光 州 廣 域 市</cell>
+      <cell col="9" row="2">標
+(標準間隔)</cell>
+      <cell col="10" row="2">12</cell>
+      <cell col="11" row="2">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="7">시</cell>
+      <cell col="7" row="3">始    興    市
+始  興  市</cell>
+      <cell col="9" row="3">隔
+(最大間隔)</cell>
+      <cell col="10" row="3">12
+10</cell>
+      <cell col="11" row="3">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="7">읍</cell>
+      <cell col="7" row="4">寧    越    邑
+寧 越 邑</cell>
+      <cell col="9" row="4">隔
+(2,000∼5,000)</cell>
+      <cell col="10" row="4">12
+10</cell>
+      <cell col="11" row="4">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="7">면</cell>
+      <cell col="7" row="5">新    東    面
+新  東  面</cell>
+      <cell col="9" row="5">&quot;</cell>
+      <cell col="10" row="5">12
+10</cell>
+      <cell col="11" row="5">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="6" colspan="5" rowspan="2">구</cell>
+      <cell col="5" row="6" colspan="2">광․특별시</cell>
+      <cell col="7" row="6">冠   岳   區</cell>
+      <cell col="8" row="6" rowspan="2">견명조
+(90%)</cell>
+      <cell col="9" row="6" rowspan="2">&quot;</cell>
+      <cell col="10" row="6">11</cell>
+      <cell col="11" row="6" rowspan="2">&quot;</cell>
+    </row>
+    <row>
+      <cell col="5" row="7" colspan="2">일반시</cell>
+      <cell col="7" row="7">八  達  區</cell>
+      <cell col="10" row="7">10</cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="7">주요지명</cell>
+      <cell col="7" row="8">富  平</cell>
+      <cell col="8" row="8">태고딕</cell>
+      <cell col="9" row="8">標
+(標準間隔)</cell>
+      <cell col="10" row="8">8</cell>
+      <cell col="11" row="8">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="7">리 ⋅ 동</cell>
+      <cell col="7" row="9">交 村 里 ․ 大 興 洞
+ 交 村 里 ․ 大 興 洞</cell>
+      <cell col="8" row="9">중고딕</cell>
+      <cell col="9" row="9">標準間隔
+(500)</cell>
+      <cell col="10" row="9">7.5
+6.5</cell>
+      <cell col="11" row="9">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="7">부    락</cell>
+      <cell col="7" row="10">배나무골, 신촌</cell>
+      <cell col="8" row="10">태명조</cell>
+      <cell col="9" row="10">近</cell>
+      <cell col="10" row="10">7</cell>
+      <cell col="11" row="10">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="7">가    도</cell>
+      <cell col="7" row="11">京  仁  街  道</cell>
+      <cell col="8" row="11">중고딕</cell>
+      <cell col="9" row="11">標準間隔
+(500)</cell>
+      <cell col="10" row="11">6</cell>
+      <cell col="11" row="11">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="7">철    도</cell>
+      <cell col="7" row="12">京  釜  線</cell>
+      <cell col="8" row="12">태고딕</cell>
+      <cell col="9" row="12">標準間隔
+(2000)</cell>
+      <cell col="10" row="12">8</cell>
+      <cell col="11" row="12">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="7">고속국도</cell>
+      <cell col="7" row="13">京 釜 高 速 國 道</cell>
+      <cell col="8" row="13">&quot;</cell>
+      <cell col="9" row="13">標準間隔
+(500)</cell>
+      <cell col="10" row="13">&quot;</cell>
+      <cell col="11" row="13">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="7">역명(정류장)</cell>
+      <cell col="7" row="14">서울역 ․ 대전역</cell>
+      <cell col="8" row="14">태고딕
+(90%)</cell>
+      <cell col="9" row="14">近</cell>
+      <cell col="10" row="14">6</cell>
+      <cell col="11" row="14">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="15" rowspan="2"></cell>
+      <cell col="1" row="15" colspan="3"></cell>
+      <cell col="4" row="15" colspan="3" rowspan="2">2,000m 以上</cell>
+      <cell col="7" row="15" rowspan="2">白頭山</cell>
+      <cell col="8" row="15" rowspan="6">태고딕
+우경 20</cell>
+      <cell col="9" row="15" rowspan="2">&quot;</cell>
+      <cell col="10" row="15" rowspan="2">14</cell>
+      <cell col="11" row="15" rowspan="2">&quot;</cell>
+    </row>
+    <row>
+      <cell col="1" row="16"></cell>
+      <cell col="2" row="16" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17">山</cell>
+      <cell col="1" row="17"></cell>
+      <cell col="2" row="17" colspan="2"></cell>
+      <cell col="4" row="17" colspan="3">1,000m 以上</cell>
+      <cell col="7" row="17">金剛山</cell>
+      <cell col="9" row="17">&quot;</cell>
+      <cell col="10" row="17">12</cell>
+      <cell col="11" row="17">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="18">岳</cell>
+      <cell col="1" row="18"></cell>
+      <cell col="2" row="18" colspan="2"></cell>
+      <cell col="4" row="18" colspan="3">500m 以上</cell>
+      <cell col="7" row="18">冠岳山</cell>
+      <cell col="9" row="18">&quot;</cell>
+      <cell col="10" row="18">10</cell>
+      <cell col="11" row="18">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="19" rowspan="2"></cell>
+      <cell col="1" row="19"></cell>
+      <cell col="2" row="19" colspan="2"></cell>
+      <cell col="4" row="19" colspan="3" rowspan="2">500m 미만</cell>
+      <cell col="7" row="19" rowspan="2">北岳山</cell>
+      <cell col="9" row="19" rowspan="2">&quot;</cell>
+      <cell col="10" row="19" rowspan="2">8</cell>
+      <cell col="11" row="19" rowspan="2">&quot;</cell>
+    </row>
+    <row>
+      <cell col="1" row="20" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21" colspan="3" rowspan="2">自然</cell>
+      <cell col="3" row="21" colspan="3"></cell>
+      <cell col="6" row="21" rowspan="2">山地部</cell>
+      <cell col="7" row="21" rowspan="2">太  白  山  脈
+太  白  山  脈</cell>
+      <cell col="8" row="21" rowspan="2">태고딕</cell>
+      <cell col="9" row="21" rowspan="2">隔
+(最大間隔)</cell>
+      <cell col="10" row="21" rowspan="2">12
+10</cell>
+      <cell col="11" row="21" rowspan="2">C : 75%
+M : 68%
+Y : 67%
+K : 90%</cell>
+    </row>
+    <row>
+      <cell col="3" row="22" colspan="2"></cell>
+      <cell col="5" row="22"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23" colspan="3" rowspan="2">地域</cell>
+      <cell col="3" row="23" colspan="2"></cell>
+      <cell col="5" row="23"></cell>
+      <cell col="6" row="23" rowspan="2">平地部</cell>
+      <cell col="7" row="23" rowspan="2">邊  山  半  道
+邊  山  半  道</cell>
+      <cell col="8" row="23" rowspan="2">태명조
+(110%)</cell>
+      <cell col="9" row="23" rowspan="2">標準間隔
+(1000)</cell>
+      <cell col="10" row="23" rowspan="2">11
+9</cell>
+      <cell col="11" row="23" rowspan="2">&quot;</cell>
+    </row>
+    <row>
+      <cell col="3" row="24" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="25" colspan="7">平野, 들</cell>
+      <cell col="7" row="25">金  海  平  野
+金 海 平 ㅑ野</cell>
+      <cell col="8" row="25">태명조
+(110%)</cell>
+      <cell col="9" row="25">&quot;</cell>
+      <cell col="10" row="25">9
+7</cell>
+      <cell col="11" row="25">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="26" colspan="7">고개,재,嶺,峴,峙</cell>
+      <cell col="7" row="26">大關嶺(1000m이상), 廣峴(1000m미만)</cell>
+      <cell col="8" row="26">태고딕
+기울임20</cell>
+      <cell col="9" row="26">近</cell>
+      <cell col="10" row="26">8
+6</cell>
+      <cell col="11" row="26">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="27" colspan="7">國立公園</cell>
+      <cell col="7" row="27">慶 州 國 立 公 園
+慶 州 國 立 公 園</cell>
+      <cell col="8" row="27">태고딕</cell>
+      <cell col="9" row="27">標準間隔
+(500)</cell>
+      <cell col="10" row="27">15
+13</cell>
+      <cell col="11" row="27">C : 84%
+M : 41%
+Y : 100%
+K : 43%</cell>
+    </row>
+    <row>
+      <cell col="0" row="28" colspan="7" rowspan="2">名勝古蹟</cell>
+      <cell col="7" row="28">숭례문, 石窟庵</cell>
+      <cell col="8" row="28" rowspan="2">태고
+(90%)</cell>
+      <cell col="9" row="28" rowspan="2">近</cell>
+      <cell col="10" row="28">6</cell>
+      <cell col="11" row="28" rowspan="2">C : 14%
+M : 55%</cell>
+    </row>
+    <row>
+      <cell col="7" row="29">(보물제1호)</cell>
+      <cell col="10" row="29">5.5</cell>
+    </row>
+    <row>
+      <cell col="0" row="30" colspan="7">바    다</cell>
+      <cell col="7" row="30">東   海, 東   海</cell>
+      <cell col="8" row="30">견명조
+기울임 20</cell>
+      <cell col="9" row="30">標準間隔
+(5,000)</cell>
+      <cell col="10" row="30">15, 13</cell>
+      <cell col="11" row="30">C : 100%
+M : 87%
+Y : 28%
+K : 13%</cell>
+    </row>
+    <row>
+      <cell col="0" row="31" colspan="7" rowspan="2">江</cell>
+      <cell col="7" row="31">漢  江, 洪  川  江</cell>
+      <cell col="8" row="31" rowspan="7">태고딕
+기울임 20</cell>
+      <cell col="9" row="31" rowspan="2">標準間隔
+(1,000∼2,000)</cell>
+      <cell col="10" row="31">12, 10</cell>
+      <cell col="11" row="31" rowspan="2">&quot;</cell>
+    </row>
+    <row>
+      <cell col="7" row="32">漢  江, 洪  川  江&lt;최소&gt;</cell>
+      <cell col="10" row="32">8</cell>
+    </row>
+    <row>
+      <cell col="0" row="33" colspan="7" rowspan="2">河    川</cell>
+      <cell col="7" row="33">安 城 川</cell>
+      <cell col="9" row="33" rowspan="2">&quot;</cell>
+      <cell col="10" row="33">8</cell>
+      <cell col="11" row="33" rowspan="2">&quot;</cell>
+    </row>
+    <row>
+      <cell col="7" row="34">安 養 川</cell>
+      <cell col="10" row="34">7</cell>
+    </row>
+    <row>
+      <cell col="0" row="35" colspan="7" rowspan="3">湖, 貯水池</cell>
+      <cell col="7" row="35">西  湖,  신촌저수지</cell>
+      <cell col="9" row="35" rowspan="3">標準間隔
+(1,000∼近)</cell>
+      <cell col="10" row="35">8</cell>
+      <cell col="11" row="35" rowspan="3">&quot;</cell>
+    </row>
+    <row>
+      <cell col="7" row="36">雁鴨池</cell>
+      <cell col="10" row="36">7</cell>
+    </row>
+    <row>
+      <cell col="7" row="37">雁鴨池</cell>
+      <cell col="10" row="37">6</cell>
+    </row>
+    <row>
+      <cell col="0" row="38" colspan="7">灣</cell>
+      <cell col="7" row="38">京 畿 灣,  南 陽 灣</cell>
+      <cell col="8" row="38" rowspan="4">태명조
+기울임 20</cell>
+      <cell col="9" row="38">標準間隔
+(1000)</cell>
+      <cell col="10" row="38">12, 10</cell>
+      <cell col="11" row="38">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="39" colspan="7">海峽․水道</cell>
+      <cell col="7" row="39">大 韓 海 峽,한 려 수 도
+大 韓 海 峽,한 려 수 도</cell>
+      <cell col="9" row="39">&quot;</cell>
+      <cell col="10" row="39">12
+10</cell>
+      <cell col="11" row="39">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="40" colspan="5" rowspan="2">港</cell>
+      <cell col="5" row="40" colspan="2">국가항</cell>
+      <cell col="7" row="40">釜 山 港(대),  仁 川 港(중)</cell>
+      <cell col="9" row="40" rowspan="2">標準間隔
+(500)</cell>
+      <cell col="10" row="40">12, 10</cell>
+      <cell col="11" row="40" rowspan="2">&quot;</cell>
+    </row>
+    <row>
+      <cell col="5" row="41" colspan="2">지방항</cell>
+      <cell col="7" row="41">浦 項 港(대),浦 項 港(중)</cell>
+      <cell col="10" row="41">10, 8</cell>
+    </row>
+    <row>
+      <cell col="0" row="42" colspan="7">串   浦</cell>
+      <cell col="7" row="42">長山串, 萬里浦</cell>
+      <cell col="8" row="42">중고딕</cell>
+      <cell col="9" row="42">近</cell>
+      <cell col="10" row="42">6</cell>
+      <cell col="11" row="42">C : 75%
+M : 68%
+Y : 67%
+K : 90%</cell>
+    </row>
+    <row>
+      <cell col="0" row="43" colspan="7">群   島</cell>
+      <cell col="7" row="43">德 積 群 島, 德 積 群 島</cell>
+      <cell col="8" row="43" rowspan="2">태명조</cell>
+      <cell col="9" row="43">標準間隔
+(1000)</cell>
+      <cell col="10" row="43">12, 10</cell>
+      <cell col="11" row="43">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="44" colspan="7">島</cell>
+      <cell col="7" row="44">濟 州 島, 江 華 島, 
+ 鬱 陵 島,  獨島</cell>
+      <cell col="9" row="44">標準間隔(1000)近</cell>
+      <cell col="10" row="44">12, 10
+8, 6</cell>
+      <cell col="11" row="44">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="45" colspan="7">獨立物體</cell>
+      <cell col="7" row="45">華城牧場, 金浦干拓地, 新村橋</cell>
+      <cell col="8" row="45">중고딕</cell>
+      <cell col="9" row="45">近</cell>
+      <cell col="10" row="45">5</cell>
+      <cell col="11" row="45">C : 75%
+M : 68%
+Y : 67%
+K : 90%
+(글자 테두리
+: 백색 6호선)</cell>
+    </row>
+    <row>
+      <cell col="0" row="46" colspan="3" rowspan="2">標   高</cell>
+      <cell col="3" row="46" colspan="4">기준점</cell>
+      <cell col="7" row="46">⌧542.7, △ 384.2, □ 148.4,</cell>
+      <cell col="8" row="46" rowspan="2">중고딕</cell>
+      <cell col="9" row="46">&quot;</cell>
+      <cell col="10" row="46">6</cell>
+      <cell col="11" row="46">C : 75%
+M : 68%
+Y : 67%
+K : 90%</cell>
+    </row>
+    <row>
+      <cell col="3" row="47" colspan="4">표고점</cell>
+      <cell col="7" row="47">× 123.5</cell>
+      <cell col="9" row="47">&quot;</cell>
+      <cell col="10" row="47">6</cell>
+      <cell col="11" row="47">C : 2%
+M : 60%
+Y : 12%</cell>
+    </row>
+    <row>
+      <cell col="0" row="48" colspan="3" rowspan="2">등고선 수치</cell>
+      <cell col="3" row="48" colspan="4">지형도</cell>
+      <cell col="7" row="48">100, 200, 250, 300, 350, 400</cell>
+      <cell col="8" row="48" rowspan="2">세고딕</cell>
+      <cell col="9" row="48">&quot;</cell>
+      <cell col="10" row="48">5.5</cell>
+      <cell col="11" row="48">C : 84%
+M : 41%
+Y : 100%
+K : 43%</cell>
+    </row>
+    <row>
+      <cell col="3" row="49" colspan="4">음영지형도</cell>
+      <cell col="7" row="49">100, 200, 250, 300, 350, 400</cell>
+      <cell col="9" row="49">&quot;</cell>
+      <cell col="10" row="49">5.5</cell>
+      <cell col="11" row="49">C : 3%
+M : 49%
+Y : 36%</cell>
+    </row>
+    <row>
+      <cell col="0" row="50" colspan="7">등심선수치</cell>
+      <cell col="7" row="50">0 , -5, -10, -15, -20</cell>
+      <cell col="8" row="50">중고딕</cell>
+      <cell col="9" row="50">近</cell>
+      <cell col="10" row="50">5.5</cell>
+      <cell col="11" row="50">C : 100%
+M : 98%
+Y : 4%
+K : 1%</cell>
+    </row>
+  </table>
+  <table rows="2" cols="1">
+    <row>
+      <cell col="0" row="0">4) 1:25,000 및 1:50,000 지형도(녹색약맹)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1"></cell>
+    </row>
+  </table>
+  <table rows="53" cols="13">
+    <row>
+      <cell col="0" row="0" colspan="8">명 칭</cell>
+      <cell col="8" row="0">대․소 변형체</cell>
+      <cell col="9" row="0">서체 및 
+자체</cell>
+      <cell col="10" row="0">자간
+거리</cell>
+      <cell col="11" row="0">포인트</cell>
+      <cell col="12" row="0">서체색
+(C, M, Y, K)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="8">군</cell>
+      <cell col="8" row="1">洪    城    郡
+洪  城  郡</cell>
+      <cell col="9" row="1" rowspan="5">견명조</cell>
+      <cell col="10" row="1">隔
+(最大間隔)</cell>
+      <cell col="11" row="1">15
+12</cell>
+      <cell col="12" row="1">C : 75%
+M : 68%
+Y : 67%
+K : 90%</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="8">도 ․ 특별시
+․ 광역시&lt;경계&gt;</cell>
+      <cell col="8" row="2">忠  淸  南  道
+서 울 特 別 市
+光 州 廣 域 市</cell>
+      <cell col="10" row="2">標
+(標準間隔)</cell>
+      <cell col="11" row="2">12</cell>
+      <cell col="12" row="2">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="8">시</cell>
+      <cell col="8" row="3">始    興    市
+始  興  市</cell>
+      <cell col="10" row="3">隔
+(最大間隔)</cell>
+      <cell col="11" row="3">12
+10</cell>
+      <cell col="12" row="3">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="8">읍</cell>
+      <cell col="8" row="4">寧    越    邑
+寧 越 邑</cell>
+      <cell col="10" row="4">隔
+(2,000∼5,000)</cell>
+      <cell col="11" row="4">12
+10</cell>
+      <cell col="12" row="4">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="8">면</cell>
+      <cell col="8" row="5">新    東    面
+新  東  面</cell>
+      <cell col="10" row="5">&quot;</cell>
+      <cell col="11" row="5">12
+10</cell>
+      <cell col="12" row="5">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="6" colspan="6" rowspan="2">구</cell>
+      <cell col="6" row="6" colspan="2">광․특별시</cell>
+      <cell col="8" row="6">冠   岳   區</cell>
+      <cell col="9" row="6" rowspan="2">견명조
+(90%)</cell>
+      <cell col="10" row="6" rowspan="2">&quot;</cell>
+      <cell col="11" row="6">11</cell>
+      <cell col="12" row="6" rowspan="2">&quot;</cell>
+    </row>
+    <row>
+      <cell col="6" row="7" colspan="2">일반시</cell>
+      <cell col="8" row="7">八  達  區</cell>
+      <cell col="11" row="7">10</cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="8">주요지명</cell>
+      <cell col="8" row="8">富  平</cell>
+      <cell col="9" row="8">태고딕</cell>
+      <cell col="10" row="8">標
+(標準間隔)</cell>
+      <cell col="11" row="8">8</cell>
+      <cell col="12" row="8">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="8">리 ⋅ 동</cell>
+      <cell col="8" row="9">交 村 里 ․ 大 興 洞
+ 交 村 里 ․ 大 興 洞</cell>
+      <cell col="9" row="9">중고딕</cell>
+      <cell col="10" row="9">標準間隔
+(500)</cell>
+      <cell col="11" row="9">7.5
+6.5</cell>
+      <cell col="12" row="9">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="8">부    락</cell>
+      <cell col="8" row="10">배나무골, 신촌</cell>
+      <cell col="9" row="10">태명조</cell>
+      <cell col="10" row="10">近</cell>
+      <cell col="11" row="10">7</cell>
+      <cell col="12" row="10">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="8">가    도</cell>
+      <cell col="8" row="11">京  仁  街  道</cell>
+      <cell col="9" row="11">중고딕</cell>
+      <cell col="10" row="11">標準間隔
+(500)</cell>
+      <cell col="11" row="11">6</cell>
+      <cell col="12" row="11">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="8">철    도</cell>
+      <cell col="8" row="12">京  釜  線</cell>
+      <cell col="9" row="12">태고딕</cell>
+      <cell col="10" row="12">標準間隔
+(2000)</cell>
+      <cell col="11" row="12">8</cell>
+      <cell col="12" row="12">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="8">고속국도</cell>
+      <cell col="8" row="13">京 釜 高 速 國 道</cell>
+      <cell col="9" row="13">&quot;</cell>
+      <cell col="10" row="13">標準間隔
+(500)</cell>
+      <cell col="11" row="13">&quot;</cell>
+      <cell col="12" row="13">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="8">역명(정류장)</cell>
+      <cell col="8" row="14">서울역 ․ 대전역</cell>
+      <cell col="9" row="14">태고딕
+(90%)</cell>
+      <cell col="10" row="14">近</cell>
+      <cell col="11" row="14">6</cell>
+      <cell col="12" row="14">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="15" rowspan="2"></cell>
+      <cell col="1" row="15" colspan="3"></cell>
+      <cell col="4" row="15" colspan="4" rowspan="2">2,000m 以上</cell>
+      <cell col="8" row="15" rowspan="2">白頭山</cell>
+      <cell col="9" row="15" rowspan="8">태고딕
+우경 20</cell>
+      <cell col="10" row="15" rowspan="2">&quot;</cell>
+      <cell col="11" row="15" rowspan="2">14</cell>
+      <cell col="12" row="15" rowspan="2">&quot;</cell>
+    </row>
+    <row>
+      <cell col="1" row="16" rowspan="2"></cell>
+      <cell col="2" row="16" colspan="2" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17" rowspan="2">山</cell>
+      <cell col="4" row="17" colspan="4" rowspan="2">1,000m 以上</cell>
+      <cell col="8" row="17" rowspan="2">金剛山</cell>
+      <cell col="10" row="17" rowspan="2">&quot;</cell>
+      <cell col="11" row="17" rowspan="2">12</cell>
+      <cell col="12" row="17" rowspan="2">&quot;</cell>
+    </row>
+    <row>
+      <cell col="1" row="18"></cell>
+      <cell col="2" row="18" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19" rowspan="2">岳</cell>
+      <cell col="1" row="19"></cell>
+      <cell col="2" row="19" colspan="2"></cell>
+      <cell col="4" row="19" colspan="4" rowspan="2">500m 以上</cell>
+      <cell col="8" row="19" rowspan="2">冠岳山</cell>
+      <cell col="10" row="19" rowspan="2">&quot;</cell>
+      <cell col="11" row="19" rowspan="2">10</cell>
+      <cell col="12" row="19" rowspan="2">&quot;</cell>
+    </row>
+    <row>
+      <cell col="1" row="20" rowspan="2"></cell>
+      <cell col="2" row="20" colspan="2" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21" rowspan="2"></cell>
+      <cell col="4" row="21" colspan="4" rowspan="2">500m 미만</cell>
+      <cell col="8" row="21" rowspan="2">北岳山</cell>
+      <cell col="10" row="21" rowspan="2">&quot;</cell>
+      <cell col="11" row="21" rowspan="2">8</cell>
+      <cell col="12" row="21" rowspan="2">&quot;</cell>
+    </row>
+    <row>
+      <cell col="1" row="22" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23" colspan="3" rowspan="2">自然</cell>
+      <cell col="3" row="23" colspan="4"></cell>
+      <cell col="7" row="23" rowspan="2">山地部</cell>
+      <cell col="8" row="23" rowspan="2">太  白  山  脈
+太  白  山  脈</cell>
+      <cell col="9" row="23" rowspan="2">태고딕</cell>
+      <cell col="10" row="23" rowspan="2">隔
+(最大間隔)</cell>
+      <cell col="11" row="23" rowspan="2">12
+10</cell>
+      <cell col="12" row="23" rowspan="2">C : 75%
+M : 68%
+Y : 67%
+K : 90%</cell>
+    </row>
+    <row>
+      <cell col="3" row="24" colspan="2"></cell>
+      <cell col="5" row="24" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="25" colspan="3" rowspan="2">地域</cell>
+      <cell col="3" row="25" colspan="2"></cell>
+      <cell col="5" row="25" colspan="2"></cell>
+      <cell col="7" row="25" rowspan="2">平地部</cell>
+      <cell col="8" row="25" rowspan="2">邊  山  半  道
+邊  山  半  道</cell>
+      <cell col="9" row="25" rowspan="2">태명조
+(110%)</cell>
+      <cell col="10" row="25" rowspan="2">標準間隔
+(1000)</cell>
+      <cell col="11" row="25" rowspan="2">11
+9</cell>
+      <cell col="12" row="25" rowspan="2">&quot;</cell>
+    </row>
+    <row>
+      <cell col="3" row="26" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="27" colspan="8">平野, 들</cell>
+      <cell col="8" row="27">金  海  平  野
+金 海 平 野</cell>
+      <cell col="9" row="27">태명조
+(110%)</cell>
+      <cell col="10" row="27">&quot;</cell>
+      <cell col="11" row="27">9
+7</cell>
+      <cell col="12" row="27">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="28" colspan="8">고개,재,嶺,峴,峙</cell>
+      <cell col="8" row="28">大關嶺(1000m이상), 廣峴(1000m미만)</cell>
+      <cell col="9" row="28">태고딕
+기울임20</cell>
+      <cell col="10" row="28">近</cell>
+      <cell col="11" row="28">8
+6</cell>
+      <cell col="12" row="28">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="29" colspan="8">國立公園</cell>
+      <cell col="8" row="29">慶 州 國 立 公園
+慶 州 國 立 公 園</cell>
+      <cell col="9" row="29">태고딕</cell>
+      <cell col="10" row="29">標準間隔
+(500)</cell>
+      <cell col="11" row="29">15
+13</cell>
+      <cell col="12" row="29">C : 100%
+Y : 100%</cell>
+    </row>
+    <row>
+      <cell col="0" row="30" colspan="8" rowspan="2">名勝古蹟</cell>
+      <cell col="8" row="30">숭례문, 石窟庵</cell>
+      <cell col="9" row="30" rowspan="2">태고
+(90%)</cell>
+      <cell col="10" row="30" rowspan="2">近</cell>
+      <cell col="11" row="30">6</cell>
+      <cell col="12" row="30" rowspan="2">M : 100%
+Y : 50%</cell>
+    </row>
+    <row>
+      <cell col="8" row="31">(보물제1호)</cell>
+      <cell col="11" row="31">5.5</cell>
+    </row>
+    <row>
+      <cell col="0" row="32" colspan="8">바    다</cell>
+      <cell col="8" row="32">東   海, 東   海</cell>
+      <cell col="9" row="32">견명조
+기울임 20</cell>
+      <cell col="10" row="32">標準間隔
+(5,000)</cell>
+      <cell col="11" row="32">15, 13</cell>
+      <cell col="12" row="32">C : 100%
+M : 50%</cell>
+    </row>
+    <row>
+      <cell col="0" row="33" colspan="8" rowspan="2">江</cell>
+      <cell col="8" row="33">漢  江, 洪  川  江</cell>
+      <cell col="9" row="33" rowspan="7">태고딕
+기울임 20</cell>
+      <cell col="10" row="33" rowspan="2">標準間隔
+(1,000∼2,000)</cell>
+      <cell col="11" row="33">12, 10</cell>
+      <cell col="12" row="33" rowspan="2">C : 100%
+M : 50%</cell>
+    </row>
+    <row>
+      <cell col="8" row="34">漢  江, 洪  川  江&lt;최소&gt;</cell>
+      <cell col="11" row="34">8</cell>
+    </row>
+    <row>
+      <cell col="0" row="35" colspan="8" rowspan="2">河    川</cell>
+      <cell col="8" row="35">安 城 川</cell>
+      <cell col="10" row="35" rowspan="2">&quot;</cell>
+      <cell col="11" row="35">8</cell>
+      <cell col="12" row="35" rowspan="2">C : 100%
+M : 50%</cell>
+    </row>
+    <row>
+      <cell col="8" row="36">安 養 川</cell>
+      <cell col="11" row="36">7</cell>
+    </row>
+    <row>
+      <cell col="0" row="37" colspan="8" rowspan="3">湖, 貯水池</cell>
+      <cell col="8" row="37">西  湖,  신촌저수지</cell>
+      <cell col="10" row="37" rowspan="3">標準間隔
+(1,000∼近)</cell>
+      <cell col="11" row="37">8</cell>
+      <cell col="12" row="37" rowspan="3">C : 100%
+M : 50%</cell>
+    </row>
+    <row>
+      <cell col="8" row="38">雁鴨池</cell>
+      <cell col="11" row="38">7</cell>
+    </row>
+    <row>
+      <cell col="8" row="39">雁鴨池</cell>
+      <cell col="11" row="39">6</cell>
+    </row>
+    <row>
+      <cell col="0" row="40" colspan="8">灣</cell>
+      <cell col="8" row="40">京 畿 灣,  南 陽 灣</cell>
+      <cell col="9" row="40" rowspan="4">태명조
+기울임 20</cell>
+      <cell col="10" row="40">標準間隔
+(1000)</cell>
+      <cell col="11" row="40">12, 10</cell>
+      <cell col="12" row="40">C : 100%
+M : 50%</cell>
+    </row>
+    <row>
+      <cell col="0" row="41" colspan="8">海峽․水道</cell>
+      <cell col="8" row="41">大 韓 海 峽,한 려 수 도
+大 韓 海 峽,한 려 수 도</cell>
+      <cell col="10" row="41">&quot;</cell>
+      <cell col="11" row="41">12
+10</cell>
+      <cell col="12" row="41">C : 100%
+M : 50%</cell>
+    </row>
+    <row>
+      <cell col="0" row="42" colspan="6" rowspan="2">港</cell>
+      <cell col="6" row="42" colspan="2">국가항</cell>
+      <cell col="8" row="42">釜 山 港(대),  仁 川 港(중)</cell>
+      <cell col="10" row="42" rowspan="2">標準間隔
+(500)</cell>
+      <cell col="11" row="42">12, 10</cell>
+      <cell col="12" row="42" rowspan="2">C : 100%
+M : 50%</cell>
+    </row>
+    <row>
+      <cell col="6" row="43" colspan="2">지방항</cell>
+      <cell col="8" row="43">浦 項 港(대),浦 項 港(중)</cell>
+      <cell col="11" row="43">10, 8</cell>
+    </row>
+    <row>
+      <cell col="0" row="44" colspan="8">串   浦</cell>
+      <cell col="8" row="44">長山串, 萬里浦</cell>
+      <cell col="9" row="44">중고딕</cell>
+      <cell col="10" row="44">近</cell>
+      <cell col="11" row="44">6</cell>
+      <cell col="12" row="44">C : 75%
+M : 68%
+Y : 67%
+K : 90%</cell>
+    </row>
+    <row>
+      <cell col="0" row="45" colspan="8">群   島</cell>
+      <cell col="8" row="45">德 積 群 島, 德 積 群 島</cell>
+      <cell col="9" row="45" rowspan="2">태명조</cell>
+      <cell col="10" row="45">標準間隔
+(1000)</cell>
+      <cell col="11" row="45">12, 10</cell>
+      <cell col="12" row="45">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="46" colspan="8">島</cell>
+      <cell col="8" row="46">濟 州 島, 江 華 島, 
+ 鬱 陵 島,  獨島</cell>
+      <cell col="10" row="46">標準間隔(1000)近</cell>
+      <cell col="11" row="46">12, 10
+8, 6</cell>
+      <cell col="12" row="46">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="47" colspan="8">獨立物體</cell>
+      <cell col="8" row="47">華城牧場, 金浦干拓地, 新村橋</cell>
+      <cell col="9" row="47">중고딕</cell>
+      <cell col="10" row="47">近</cell>
+      <cell col="11" row="47">5</cell>
+      <cell col="12" row="47">C : 75%
+M : 68%
+Y : 67%
+K : 90%
+(글자 테두리
+: 백색 6호선)</cell>
+    </row>
+    <row>
+      <cell col="0" row="48" colspan="3" rowspan="2">標   高</cell>
+      <cell col="3" row="48" colspan="5">기준점</cell>
+      <cell col="8" row="48">⌧542.7, △ 384.2, □ 148.4,</cell>
+      <cell col="9" row="48" rowspan="2">중고딕</cell>
+      <cell col="10" row="48">&quot;</cell>
+      <cell col="11" row="48">6</cell>
+      <cell col="12" row="48">C : 75%
+M : 68%
+Y : 67%
+K : 90%</cell>
+    </row>
+    <row>
+      <cell col="3" row="49" colspan="5">표고점</cell>
+      <cell col="8" row="49">× 123.5</cell>
+      <cell col="10" row="49">&quot;</cell>
+      <cell col="11" row="49">6</cell>
+      <cell col="12" row="49">M : 100%
+Y : 100%</cell>
+    </row>
+    <row>
+      <cell col="0" row="50" colspan="3" rowspan="2">등고선 수치</cell>
+      <cell col="3" row="50" colspan="5">지형도</cell>
+      <cell col="8" row="50">100, 200, 250, 300, 350, 400</cell>
+      <cell col="9" row="50" rowspan="2">세고딕</cell>
+      <cell col="10" row="50">&quot;</cell>
+      <cell col="11" row="50">5.5</cell>
+      <cell col="12" row="50">C : 100%
+Y : 100%</cell>
+    </row>
+    <row>
+      <cell col="3" row="51" colspan="5">음영지형도</cell>
+      <cell col="8" row="51">100, 200, 250, 300, 350, 400</cell>
+      <cell col="10" row="51">&quot;</cell>
+      <cell col="11" row="51">5.5</cell>
+      <cell col="12" row="51">M : 90%
+Y : 100%</cell>
+    </row>
+    <row>
+      <cell col="0" row="52" colspan="8">등심선수치</cell>
+      <cell col="8" row="52">0 , -5, -10, -15, -20</cell>
+      <cell col="9" row="52">중고딕</cell>
+      <cell col="10" row="52">近</cell>
+      <cell col="11" row="52">5.5</cell>
+      <cell col="12" row="52">C : 100%
+M : 100%</cell>
+    </row>
+  </table>
+  <table rows="2" cols="1">
+    <row>
+      <cell col="0" row="0">5) 1:25,000 및 1:50,000 지형도(적색약맹)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1"></cell>
+    </row>
+  </table>
+  <table rows="51" cols="13">
+    <row>
+      <cell col="0" row="0" colspan="8">명 칭</cell>
+      <cell col="8" row="0">대․소 변형체</cell>
+      <cell col="9" row="0">서체 및 
+자체</cell>
+      <cell col="10" row="0">자간
+거리</cell>
+      <cell col="11" row="0">포인트</cell>
+      <cell col="12" row="0">서체색
+(C, M, Y, K)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="8">군</cell>
+      <cell col="8" row="1">洪    城    郡
+洪  城  郡</cell>
+      <cell col="9" row="1" rowspan="5">견명조</cell>
+      <cell col="10" row="1">隔
+(最大間隔)</cell>
+      <cell col="11" row="1">15
+12</cell>
+      <cell col="12" row="1">C : 75%
+M : 68%
+Y : 67%
+K : 90%</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="8">도 ․ 특별시
+․ 광역시&lt;경계&gt;</cell>
+      <cell col="8" row="2">忠  淸  南  道
+서 울 特 別 市
+光 州 廣 域 市</cell>
+      <cell col="10" row="2">標
+(標準間隔)</cell>
+      <cell col="11" row="2">12</cell>
+      <cell col="12" row="2">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="8">시</cell>
+      <cell col="8" row="3">始    興    市
+始  興  市</cell>
+      <cell col="10" row="3">隔
+(最大間隔)</cell>
+      <cell col="11" row="3">12
+10</cell>
+      <cell col="12" row="3">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="8">읍</cell>
+      <cell col="8" row="4">寧    越    邑
+寧 越 邑</cell>
+      <cell col="10" row="4">隔
+(2,000∼5,000)</cell>
+      <cell col="11" row="4">12
+10</cell>
+      <cell col="12" row="4">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="8">면</cell>
+      <cell col="8" row="5">新    東    面
+新  東  面</cell>
+      <cell col="10" row="5">&quot;</cell>
+      <cell col="11" row="5">12
+10</cell>
+      <cell col="12" row="5">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="6" colspan="6" rowspan="2">구</cell>
+      <cell col="6" row="6" colspan="2">광․특별시</cell>
+      <cell col="8" row="6">冠   岳   區</cell>
+      <cell col="9" row="6" rowspan="2">견명조
+(90%)</cell>
+      <cell col="10" row="6" rowspan="2">&quot;</cell>
+      <cell col="11" row="6">11</cell>
+      <cell col="12" row="6" rowspan="2">&quot;</cell>
+    </row>
+    <row>
+      <cell col="6" row="7" colspan="2">일반시</cell>
+      <cell col="8" row="7">八  達  區</cell>
+      <cell col="11" row="7">10</cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="8">주요지명</cell>
+      <cell col="8" row="8">富  平</cell>
+      <cell col="9" row="8">태고딕</cell>
+      <cell col="10" row="8">標
+(標準間隔)</cell>
+      <cell col="11" row="8">8</cell>
+      <cell col="12" row="8">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="8">리 ⋅ 동</cell>
+      <cell col="8" row="9">交 村 里 ․ 大 興 洞
+ 交 村 里 ․ 大 興 洞</cell>
+      <cell col="9" row="9">중고딕</cell>
+      <cell col="10" row="9">標準間隔
+(500)</cell>
+      <cell col="11" row="9">7.5
+6.5</cell>
+      <cell col="12" row="9">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="8">부    락</cell>
+      <cell col="8" row="10">배나무골, 신촌</cell>
+      <cell col="9" row="10">태명조</cell>
+      <cell col="10" row="10">近</cell>
+      <cell col="11" row="10">7</cell>
+      <cell col="12" row="10">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="8">가    도</cell>
+      <cell col="8" row="11">京  仁  街  道</cell>
+      <cell col="9" row="11">중고딕</cell>
+      <cell col="10" row="11">標準間隔
+(500)</cell>
+      <cell col="11" row="11">6</cell>
+      <cell col="12" row="11">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="8">철    도</cell>
+      <cell col="8" row="12">京  釜  線</cell>
+      <cell col="9" row="12">태고딕</cell>
+      <cell col="10" row="12">標準間隔
+(2000)</cell>
+      <cell col="11" row="12">8</cell>
+      <cell col="12" row="12">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="8">고속국도</cell>
+      <cell col="8" row="13">京 釜 高 速 國 道</cell>
+      <cell col="9" row="13">&quot;</cell>
+      <cell col="10" row="13">標準間隔
+(500)</cell>
+      <cell col="11" row="13">&quot;</cell>
+      <cell col="12" row="13">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="8">역명(정류장)</cell>
+      <cell col="8" row="14">서울역 ․ 대전역</cell>
+      <cell col="9" row="14">태고딕
+(90%)</cell>
+      <cell col="10" row="14">近</cell>
+      <cell col="11" row="14">6</cell>
+      <cell col="12" row="14">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="15" rowspan="2"></cell>
+      <cell col="1" row="15" colspan="3"></cell>
+      <cell col="4" row="15" colspan="4" rowspan="2">2,000m 以上</cell>
+      <cell col="8" row="15" rowspan="2">白頭山</cell>
+      <cell col="9" row="15" rowspan="6">태고딕
+우경 20</cell>
+      <cell col="10" row="15" rowspan="2">&quot;</cell>
+      <cell col="11" row="15" rowspan="2">14</cell>
+      <cell col="12" row="15" rowspan="2">&quot;</cell>
+    </row>
+    <row>
+      <cell col="1" row="16"></cell>
+      <cell col="2" row="16" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17">山</cell>
+      <cell col="1" row="17"></cell>
+      <cell col="2" row="17" colspan="2"></cell>
+      <cell col="4" row="17" colspan="4">1,000m 以上</cell>
+      <cell col="8" row="17">金剛山</cell>
+      <cell col="10" row="17">&quot;</cell>
+      <cell col="11" row="17">12</cell>
+      <cell col="12" row="17">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="18">岳</cell>
+      <cell col="1" row="18"></cell>
+      <cell col="2" row="18" colspan="2"></cell>
+      <cell col="4" row="18" colspan="4">500m 以上</cell>
+      <cell col="8" row="18">冠岳山</cell>
+      <cell col="10" row="18">&quot;</cell>
+      <cell col="11" row="18">10</cell>
+      <cell col="12" row="18">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="19" rowspan="2"></cell>
+      <cell col="1" row="19"></cell>
+      <cell col="2" row="19" colspan="2"></cell>
+      <cell col="4" row="19" colspan="4" rowspan="2">500m 미만</cell>
+      <cell col="8" row="19" rowspan="2">北岳山</cell>
+      <cell col="10" row="19" rowspan="2">&quot;</cell>
+      <cell col="11" row="19" rowspan="2">8</cell>
+      <cell col="12" row="19" rowspan="2">&quot;</cell>
+    </row>
+    <row>
+      <cell col="1" row="20" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21" colspan="3" rowspan="2">自然</cell>
+      <cell col="3" row="21" colspan="4"></cell>
+      <cell col="7" row="21" rowspan="2">山地部</cell>
+      <cell col="8" row="21" rowspan="2">太  白  山  脈
+太  白  山  脈</cell>
+      <cell col="9" row="21" rowspan="2">태고딕</cell>
+      <cell col="10" row="21" rowspan="2">隔
+(最大間隔)</cell>
+      <cell col="11" row="21" rowspan="2">12
+10</cell>
+      <cell col="12" row="21" rowspan="2">C : 75%
+M : 68%
+Y : 67%
+K : 90%</cell>
+    </row>
+    <row>
+      <cell col="3" row="22" colspan="2"></cell>
+      <cell col="5" row="22" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23" colspan="3" rowspan="2">地域</cell>
+      <cell col="3" row="23" colspan="2"></cell>
+      <cell col="5" row="23" colspan="2"></cell>
+      <cell col="7" row="23" rowspan="2">平地部</cell>
+      <cell col="8" row="23" rowspan="2">邊  山  半  道
+邊  山  半  道</cell>
+      <cell col="9" row="23" rowspan="2">태명조
+(110%)</cell>
+      <cell col="10" row="23" rowspan="2">標準間隔
+(1000)</cell>
+      <cell col="11" row="23" rowspan="2">11
+9</cell>
+      <cell col="12" row="23" rowspan="2">&quot;</cell>
+    </row>
+    <row>
+      <cell col="3" row="24" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="25" colspan="8">平野, 들</cell>
+      <cell col="8" row="25">金  海  平  野
+金 海 平 野</cell>
+      <cell col="9" row="25">태명조
+(110%)</cell>
+      <cell col="10" row="25">&quot;</cell>
+      <cell col="11" row="25">9
+7</cell>
+      <cell col="12" row="25">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="26" colspan="8">고개,재,嶺,峴,峙</cell>
+      <cell col="8" row="26">大關嶺(1000m이상), 廣峴(1000m미만)</cell>
+      <cell col="9" row="26">태고딕
+기울임20</cell>
+      <cell col="10" row="26">近</cell>
+      <cell col="11" row="26">8
+6</cell>
+      <cell col="12" row="26">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="27" colspan="8">國立公園</cell>
+      <cell col="8" row="27">慶 州 國 立 公園
+慶 州 國 立 公 園</cell>
+      <cell col="9" row="27">태고딕</cell>
+      <cell col="10" row="27">標準間隔
+(500)</cell>
+      <cell col="11" row="27">15
+13</cell>
+      <cell col="12" row="27">C : 78%
+M : 100%</cell>
+    </row>
+    <row>
+      <cell col="0" row="28" colspan="8" rowspan="2">名勝古蹟</cell>
+      <cell col="8" row="28">숭례문, 石窟庵</cell>
+      <cell col="9" row="28" rowspan="2">태고
+(90%)</cell>
+      <cell col="10" row="28" rowspan="2">近</cell>
+      <cell col="11" row="28">6</cell>
+      <cell col="12" row="28" rowspan="2">C : 34%
+M : 82%</cell>
+    </row>
+    <row>
+      <cell col="8" row="29">(보물제1호)</cell>
+      <cell col="11" row="29">5.5</cell>
+    </row>
+    <row>
+      <cell col="0" row="30" colspan="8">바    다</cell>
+      <cell col="8" row="30">東   海, 東   海</cell>
+      <cell col="9" row="30">견명조
+기울임 20</cell>
+      <cell col="10" row="30">標準間隔
+(5,000)</cell>
+      <cell col="11" row="30">15, 13</cell>
+      <cell col="12" row="30">C : 87%
+M : 24%
+Y : 100%
+K : 12%</cell>
+    </row>
+    <row>
+      <cell col="0" row="31" colspan="8" rowspan="2">江</cell>
+      <cell col="8" row="31">漢  江, 洪  川  江</cell>
+      <cell col="9" row="31" rowspan="7">태고딕
+기울임 20</cell>
+      <cell col="10" row="31" rowspan="2">標準間隔
+(1,000∼2,000)</cell>
+      <cell col="11" row="31">12, 10</cell>
+      <cell col="12" row="31" rowspan="2">C : 87%
+M : 24%
+Y : 100%
+K : 12%</cell>
+    </row>
+    <row>
+      <cell col="8" row="32">漢  江, 洪  川  江&lt;최소&gt;</cell>
+      <cell col="11" row="32">8</cell>
+    </row>
+    <row>
+      <cell col="0" row="33" colspan="8" rowspan="2">河    川</cell>
+      <cell col="8" row="33">安 城 川</cell>
+      <cell col="10" row="33" rowspan="2">&quot;</cell>
+      <cell col="11" row="33">8</cell>
+      <cell col="12" row="33" rowspan="2">C : 87%
+M : 24%
+Y : 100%
+K : 12%</cell>
+    </row>
+    <row>
+      <cell col="8" row="34">安 養 川</cell>
+      <cell col="11" row="34">7</cell>
+    </row>
+    <row>
+      <cell col="0" row="35" colspan="8" rowspan="3">湖, 貯水池</cell>
+      <cell col="8" row="35">西  湖,  신촌저수지</cell>
+      <cell col="10" row="35" rowspan="3">標準間隔
+(1,000∼近)</cell>
+      <cell col="11" row="35">8</cell>
+      <cell col="12" row="35" rowspan="3">C : 87%
+M : 24%
+Y : 100%
+K : 12%</cell>
+    </row>
+    <row>
+      <cell col="8" row="36">雁鴨池</cell>
+      <cell col="11" row="36">7</cell>
+    </row>
+    <row>
+      <cell col="8" row="37">雁鴨池</cell>
+      <cell col="11" row="37">6</cell>
+    </row>
+    <row>
+      <cell col="0" row="38" colspan="8">灣</cell>
+      <cell col="8" row="38">京 畿 灣,  南 陽 灣</cell>
+      <cell col="9" row="38" rowspan="4">태명조
+기울임 20</cell>
+      <cell col="10" row="38">標準間隔
+(1000)</cell>
+      <cell col="11" row="38">12, 10</cell>
+      <cell col="12" row="38">C : 87%
+M : 24%
+Y : 100%
+K : 12%</cell>
+    </row>
+    <row>
+      <cell col="0" row="39" colspan="8">海峽․水道</cell>
+      <cell col="8" row="39">大 韓 海 峽,한 려 수 도
+大 韓 海 峽,한 려 수 도</cell>
+      <cell col="10" row="39">&quot;</cell>
+      <cell col="11" row="39">12
+10</cell>
+      <cell col="12" row="39">C : 87%
+M : 24%
+Y : 100%
+K : 12%</cell>
+    </row>
+    <row>
+      <cell col="0" row="40" colspan="6" rowspan="2">港</cell>
+      <cell col="6" row="40" colspan="2">국가항</cell>
+      <cell col="8" row="40">釜 山 港(대),  仁 川 港(중)</cell>
+      <cell col="10" row="40" rowspan="2">標準間隔
+(500)</cell>
+      <cell col="11" row="40">12, 10</cell>
+      <cell col="12" row="40" rowspan="2">C : 87%
+M : 24%
+Y : 100%
+K : 12%</cell>
+    </row>
+    <row>
+      <cell col="6" row="41" colspan="2">지방항</cell>
+      <cell col="8" row="41">浦 項 港(대),浦 項 港(중)</cell>
+      <cell col="11" row="41">10, 8</cell>
+    </row>
+    <row>
+      <cell col="0" row="42" colspan="8">串   浦</cell>
+      <cell col="8" row="42">長山串, 萬里浦</cell>
+      <cell col="9" row="42">중고딕</cell>
+      <cell col="10" row="42">近</cell>
+      <cell col="11" row="42">6</cell>
+      <cell col="12" row="42">C : 75%
+M : 68%
+Y : 67%
+K : 90%</cell>
+    </row>
+    <row>
+      <cell col="0" row="43" colspan="8">群   島</cell>
+      <cell col="8" row="43">德 積 群 島, 德 積 群 島</cell>
+      <cell col="9" row="43" rowspan="2">태명조</cell>
+      <cell col="10" row="43">標準間隔
+(1000)</cell>
+      <cell col="11" row="43">12, 10</cell>
+      <cell col="12" row="43">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="44" colspan="8">島</cell>
+      <cell col="8" row="44">濟 州 島, 江 華 島, 
+ 鬱 陵 島,  獨島</cell>
+      <cell col="10" row="44">標準間隔(1000)近</cell>
+      <cell col="11" row="44">12, 10
+8, 6</cell>
+      <cell col="12" row="44">&quot;</cell>
+    </row>
+    <row>
+      <cell col="0" row="45" colspan="8">獨立物體</cell>
+      <cell col="8" row="45">華城牧場, 金浦干拓地, 新村橋</cell>
+      <cell col="9" row="45">중고딕</cell>
+      <cell col="10" row="45">近</cell>
+      <cell col="11" row="45">5</cell>
+      <cell col="12" row="45">C : 75%
+M : 68%
+Y : 67%
+K : 90%
+(글자 테두리
+: 백색 6호선)</cell>
+    </row>
+    <row>
+      <cell col="0" row="46" colspan="3" rowspan="2">標   高</cell>
+      <cell col="3" row="46" colspan="5">기준점</cell>
+      <cell col="8" row="46">⌧542.7, △ 384.2, □ 148.4,</cell>
+      <cell col="9" row="46" rowspan="2">중고딕</cell>
+      <cell col="10" row="46">&quot;</cell>
+      <cell col="11" row="46">6</cell>
+      <cell col="12" row="46">C : 75%
+M : 68%
+Y : 67%
+K : 90%</cell>
+    </row>
+    <row>
+      <cell col="3" row="47" colspan="5">표고점</cell>
+      <cell col="8" row="47">× 123.5</cell>
+      <cell col="10" row="47">&quot;</cell>
+      <cell col="11" row="47">6</cell>
+      <cell col="12" row="47">C : 34%
+M : 82%</cell>
+    </row>
+    <row>
+      <cell col="0" row="48" colspan="3" rowspan="2">등고선 수치</cell>
+      <cell col="3" row="48" colspan="5">지형도</cell>
+      <cell col="8" row="48">100, 200, 250, 300, 350, 400</cell>
+      <cell col="9" row="48" rowspan="2">세고딕</cell>
+      <cell col="10" row="48">&quot;</cell>
+      <cell col="11" row="48">5.5</cell>
+      <cell col="12" row="48">C : 78%
+Y : 100%</cell>
+    </row>
+    <row>
+      <cell col="3" row="49" colspan="5">음영지형도</cell>
+      <cell col="8" row="49">100, 200, 250, 300, 350, 400</cell>
+      <cell col="10" row="49">&quot;</cell>
+      <cell col="11" row="49">5.5</cell>
+      <cell col="12" row="49">M : 32%
+Y : 80%</cell>
+    </row>
+    <row>
+      <cell col="0" row="50" colspan="8">등심선수치</cell>
+      <cell col="8" row="50">0 , -5, -10, -15, -20</cell>
+      <cell col="9" row="50">중고딕</cell>
+      <cell col="10" row="50">近</cell>
+      <cell col="11" row="50">5.5</cell>
+      <cell col="12" row="50">C : 100%
+M : 98%
+Y : 10%
+K : 1%</cell>
+    </row>
+  </table>
+  <table rows="2" cols="1">
+    <row>
+      <cell col="0" row="0">6) 1:25,000 및 1:50,000 지형도(청색약맹)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1"></cell>
+    </row>
+  </table>
+  <text>다. 난외사항</text>
+  <table rows="14" cols="5">
+    <row>
+      <cell col="0" row="0">명 칭</cell>
+      <cell col="1" row="0">대․소 변형체</cell>
+      <cell col="2" row="0">글자체</cell>
+      <cell col="3" row="0">자간
+거리</cell>
+      <cell col="4" row="0">급 수
+(글자크기)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">도엽번호</cell>
+      <cell col="1" row="1">1:5,000 지형도
+도엽번호 NJ52-9-19-002</cell>
+      <cell col="2" row="1">돋움체</cell>
+      <cell col="3" row="1">최소간격
+(5,000과 지형도, 번호와 NJ는 1/2자 간격)</cell>
+      <cell col="4" row="1">17.5(3.5㎜)</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">축척</cell>
+      <cell col="1" row="2" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">도엽명</cell>
+      <cell col="1" row="3" colspan="2">수 원(002)
+수원(水原)</cell>
+      <cell col="3" row="3">“수”와“원”은 1자 간격
+“원”과“(”은 1/2자 간격</cell>
+      <cell col="4" row="3">55(11㎜)</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">경 위 도</cell>
+      <cell col="1" row="4">128°48′00″ 35°49′30″</cell>
+      <cell col="2" row="4">돋움체</cell>
+      <cell col="3" row="4">최소간격</cell>
+      <cell col="4" row="4">8(1.6㎜)</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">직각좌표</cell>
+      <cell col="1" row="5">393.7 98.0</cell>
+      <cell col="2" row="5">돋움체</cell>
+      <cell col="3" row="5">숫자는 밑줄에 맞춘다.</cell>
+      <cell col="4" row="5">10(2.0㎜)
+7.5(1.5㎜)</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">행선지명</cell>
+      <cell col="1" row="6">국토지리정보원5.0㎞ 신갈인터체인지8.9㎞</cell>
+      <cell col="2" row="6">돋움체</cell>
+      <cell col="3" row="6"></cell>
+      <cell col="4" row="6">8.75(1.75㎜)</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">행정구역표</cell>
+      <cell col="1" row="7">행 정   구 역</cell>
+      <cell col="2" row="7">돋움체</cell>
+      <cell col="3" row="7"></cell>
+      <cell col="4" row="7">13.75(2.75㎜)</cell>
+    </row>
+    <row>
+      <cell col="0" row="8">행정구역표 
+숫자</cell>
+      <cell col="1" row="8">1 2 3 4 5</cell>
+      <cell col="2" row="8">돋움체</cell>
+      <cell col="3" row="8"></cell>
+      <cell col="4" row="8">8.75(1.75㎜)</cell>
+    </row>
+    <row>
+      <cell col="0" row="9">행정구역명</cell>
+      <cell col="1" row="9">경기도   수원시 팔달구</cell>
+      <cell col="2" row="9">돋움체</cell>
+      <cell col="3" row="9"></cell>
+      <cell col="4" row="9">10(2.0㎜)</cell>
+    </row>
+    <row>
+      <cell col="0" row="10">인접도엽명</cell>
+      <cell col="1" row="10">남양
+091</cell>
+      <cell col="2" row="10">돋움체</cell>
+      <cell col="3" row="10"></cell>
+      <cell col="4" row="10">10(2.0㎜)</cell>
+    </row>
+    <row>
+      <cell col="0" row="11">편집 및
+수정년도</cell>
+      <cell col="1" row="11">2008년 편집, 2009년 수정
+2009년 9월 인쇄</cell>
+      <cell col="2" row="11" rowspan="2">돋움체</cell>
+      <cell col="3" row="11" rowspan="3">“년”과“편․수․인” 은 1/2자 간격
+“집”과“2”는50m(지도상 1cm)</cell>
+      <cell col="4" row="11" rowspan="2">16.5(3.3㎜)</cell>
+    </row>
+    <row>
+      <cell col="0" row="12">저작권소유 및 발행자</cell>
+      <cell col="1" row="12">국토지리정보원
+http://www.ngii.go.kr</cell>
+    </row>
+    <row>
+      <cell col="0" row="13">편집자료</cell>
+      <cell col="1" row="13">(2007년 항공촬영, 2008년 현지조사)</cell>
+      <cell col="2" row="13">돋움체</cell>
+      <cell col="4" row="13">15(3.0㎜)</cell>
+    </row>
+  </table>
+  <table rows="2" cols="1">
+    <row>
+      <cell col="0" row="0">1) 1:5,000</cell>
+    </row>
+    <row>
+      <cell col="0" row="1"></cell>
+    </row>
+  </table>
+  <table rows="15" cols="6">
+    <row>
+      <cell col="0" row="0" colspan="2">대상의 구분</cell>
+      <cell col="2" row="0">글자체</cell>
+      <cell col="3" row="0">급수</cell>
+      <cell col="4" row="0">자간
+거리(색)</cell>
+      <cell col="5" row="0">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="2">도엽명</cell>
+      <cell col="2" row="1">중고딕정체</cell>
+      <cell col="3" row="1">28</cell>
+      <cell col="4" row="1">1~3(먹)</cell>
+      <cell col="5" row="1">大 邱 Ⅱ
+대 구(Daegu)</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">편집 및 수정년도, 발행자, 인쇄년월</cell>
+      <cell col="2" row="2">중고딕정체</cell>
+      <cell col="3" row="2">16</cell>
+      <cell col="4" row="2">1/4~1(먹)</cell>
+      <cell col="5" row="2">2008년 편집, 2009년 수정
+2009년  9월 인쇄
+국토지리정보원http://www.ngii.go.kr</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">도엽번호</cell>
+      <cell col="2" row="3">중고딕정체</cell>
+      <cell col="3" row="3">15</cell>
+      <cell col="4" row="3">1/4~1/2(먹)</cell>
+      <cell col="5" row="3">1:10,000 지형도 도엽번호 NI52-2-04-11</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="2">축척</cell>
+      <cell col="2" row="4" colspan="4">축척1:10,000</cell>
+    </row>
+    <row>
+      <cell col="0" row="5" rowspan="5">인접도엽표</cell>
+      <cell col="1" row="5">행정구역표</cell>
+      <cell col="2" row="5">중고딕정체</cell>
+      <cell col="3" row="5">13</cell>
+      <cell col="4" row="5">1/2(먹)</cell>
+      <cell col="5" row="5">행정구역</cell>
+    </row>
+    <row>
+      <cell col="1" row="6">행정구역명</cell>
+      <cell col="2" row="6">중고딕정체</cell>
+      <cell col="3" row="6">10</cell>
+      <cell col="4" row="6">1/4(먹)</cell>
+      <cell col="5" row="6">수원시 팔달구</cell>
+    </row>
+    <row>
+      <cell col="1" row="7">인접도엽명</cell>
+      <cell col="2" row="7">중고딕정체</cell>
+      <cell col="3" row="7">11</cell>
+      <cell col="4" row="7">1/2~1(먹)</cell>
+      <cell col="5" row="7"></cell>
+    </row>
+    <row>
+      <cell col="1" row="8">인접도엽
+숫자</cell>
+      <cell col="2" row="8">EB-16정체</cell>
+      <cell col="3" row="8">9</cell>
+      <cell col="4" row="8">1/4(먹)</cell>
+      <cell col="5" row="8"></cell>
+    </row>
+    <row>
+      <cell col="1" row="9">행정구역표 숫자</cell>
+      <cell col="2" row="9">세고딕장체</cell>
+      <cell col="3" row="9">8</cell>
+      <cell col="4" row="9">1/4(먹)</cell>
+      <cell col="5" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" rowspan="2">좌표수치</cell>
+      <cell col="1" row="10">직각좌표</cell>
+      <cell col="2" row="10">세고딕정체</cell>
+      <cell col="3" row="10">9</cell>
+      <cell col="4" row="10">1/4(먹)</cell>
+      <cell col="5" row="10"></cell>
+    </row>
+    <row>
+      <cell col="1" row="11">경위도</cell>
+      <cell col="2" row="11">T·I장체</cell>
+      <cell col="3" row="11">8</cell>
+      <cell col="4" row="11">1/4(먹)</cell>
+      <cell col="5" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="2">행선지명</cell>
+      <cell col="2" row="12">세고딕정체</cell>
+      <cell col="3" row="12">9</cell>
+      <cell col="4" row="12">1/4(먹)</cell>
+      <cell col="5" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="2">편집자료 등</cell>
+      <cell col="2" row="13">중고딕정체</cell>
+      <cell col="3" row="13">10</cell>
+      <cell col="4" row="13">1/4~1(먹)</cell>
+      <cell col="5" row="13">(2007년 항공촬영, 2008년 현지조사)</cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="2">범례 및 기타 사항</cell>
+      <cell col="2" row="14">세고딕정체</cell>
+      <cell col="3" row="14">10~7</cell>
+      <cell col="4" row="14">1/4~8(먹)</cell>
+      <cell col="5" row="14"></cell>
+    </row>
+  </table>
+  <table rows="2" cols="1">
+    <row>
+      <cell col="0" row="0">2) 1:10,000</cell>
+    </row>
+    <row>
+      <cell col="0" row="1"></cell>
+    </row>
+  </table>
+  <table rows="20" cols="6">
+    <row>
+      <cell col="0" row="0">명 칭</cell>
+      <cell col="1" row="0">대․소 변형체</cell>
+      <cell col="2" row="0">서체 및 
+자체</cell>
+      <cell col="3" row="0">자간
+거리</cell>
+      <cell col="4" row="0">포인트</cell>
+      <cell col="5" row="0">서체색
+(C, M, Y, K)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">인접도엽명</cell>
+      <cell col="1" row="1">고 양</cell>
+      <cell col="2" row="1">태고딕(90%)</cell>
+      <cell col="3" row="1">標
+(250)</cell>
+      <cell col="4" row="1">9</cell>
+      <cell col="5" row="1">: 100%</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">인접도엽 
+시 군 명</cell>
+      <cell col="1" row="2">공주시 고창군</cell>
+      <cell col="2" row="2">중고딕(80%)</cell>
+      <cell col="3" row="2">近</cell>
+      <cell col="4" row="2">5.5</cell>
+      <cell col="5" row="2">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" rowspan="3">편차분도</cell>
+      <cell col="1" row="3">도북  진북  자북</cell>
+      <cell col="2" row="3" rowspan="3">중고딕(90%)</cell>
+      <cell col="3" row="3">〃</cell>
+      <cell col="4" row="3">6</cell>
+      <cell col="5" row="3">〃</cell>
+    </row>
+    <row>
+      <cell col="1" row="4">5°50′</cell>
+      <cell col="3" row="4">〃</cell>
+      <cell col="4" row="4">6</cell>
+      <cell col="5" row="4">〃</cell>
+    </row>
+    <row>
+      <cell col="1" row="5">(1996)</cell>
+      <cell col="3" row="5">〃</cell>
+      <cell col="4" row="5">6</cell>
+      <cell col="5" row="5">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">행정구역표</cell>
+      <cell col="1" row="6">행 정 구 역</cell>
+      <cell col="2" row="6">태고딕</cell>
+      <cell col="3" row="6">標
+(300)</cell>
+      <cell col="4" row="6">10</cell>
+      <cell col="5" row="6">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">행정구역표 
+숫     자</cell>
+      <cell col="1" row="7">①  ②  ③      2㎜</cell>
+      <cell col="2" row="7">중고딕</cell>
+      <cell col="3" row="7">近</cell>
+      <cell col="4" row="7">5.5</cell>
+      <cell col="5" row="7">〃
+(원지름2mm
+선:3호선)</cell>
+    </row>
+    <row>
+      <cell col="0" row="8" rowspan="2">행정구역명</cell>
+      <cell col="1" row="8">광주광역시</cell>
+      <cell col="2" row="8">태고딕</cell>
+      <cell col="3" row="8">近</cell>
+      <cell col="4" row="8">8</cell>
+      <cell col="5" row="8">〃</cell>
+    </row>
+    <row>
+      <cell col="1" row="9">서욱특별시 관악구</cell>
+      <cell col="2" row="9">태명조(90%)</cell>
+      <cell col="3" row="9">〃</cell>
+      <cell col="4" row="9">7</cell>
+      <cell col="5" row="9">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="10">직각좌표</cell>
+      <cell col="1" row="10">456</cell>
+      <cell col="2" row="10">중명조</cell>
+      <cell col="3" row="10">〃</cell>
+      <cell col="4" row="10">7</cell>
+      <cell col="5" row="10">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="11">경 위 도</cell>
+      <cell col="1" row="11">127°07′30″</cell>
+      <cell col="2" row="11">중고딕</cell>
+      <cell col="3" row="11">〃</cell>
+      <cell col="4" row="11">5.5</cell>
+      <cell col="5" row="11">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="12">도엽번호</cell>
+      <cell col="1" row="12">1:25,000 지형도 도엽번호 NJ 52-13-20</cell>
+      <cell col="2" row="12" rowspan="2">태고딕
+(90%)</cell>
+      <cell col="3" row="12">〃</cell>
+      <cell col="4" row="12">12</cell>
+      <cell col="5" row="12">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="13">도 엽 명</cell>
+      <cell col="1" row="13">수치지도 도엽번호 대전(367104)</cell>
+      <cell col="3" row="13">〃</cell>
+      <cell col="4" row="13">12</cell>
+      <cell col="5" row="13">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="14">대도엽명</cell>
+      <cell col="1" row="14">대 전
+(大 田)</cell>
+      <cell col="2" row="14">견고딕</cell>
+      <cell col="3" row="14">標
+(1,200)</cell>
+      <cell col="4" row="14">33</cell>
+      <cell col="5" row="14">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="15">편집
+수정
+인쇄년도</cell>
+      <cell col="1" row="15">2004년 편집, 2009년 수정
+2010년 인쇄</cell>
+      <cell col="2" row="15">태고딕(80%)</cell>
+      <cell col="3" row="15">近</cell>
+      <cell col="4" row="15">12</cell>
+      <cell col="5" row="15">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="16">촬영조사년도</cell>
+      <cell col="1" row="16">(2008년 촬영, 2009년 조사)</cell>
+      <cell col="2" row="16">태명조(80%)</cell>
+      <cell col="3" row="16">〃</cell>
+      <cell col="4" row="16">11</cell>
+      <cell col="5" row="16">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="17">소유자</cell>
+      <cell col="1" row="17">국토지리정보원
+http://www.ngii.go.kr</cell>
+      <cell col="2" row="17">태고딕</cell>
+      <cell col="3" row="17">標
+(200)</cell>
+      <cell col="4" row="17">12</cell>
+      <cell col="5" row="17">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="18">행선지명</cell>
+      <cell col="1" row="18">대전역3.5㎞ 회덕IC3.4㎞</cell>
+      <cell col="2" row="18">중고딕(90%)</cell>
+      <cell col="3" row="18">近</cell>
+      <cell col="4" row="18">5</cell>
+      <cell col="5" row="18">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="19">QR코드</cell>
+      <cell col="1" row="19"></cell>
+      <cell col="2" row="19">-</cell>
+      <cell col="3" row="19">-</cell>
+      <cell col="4" row="19">가로 3.1cm
+ ×
+세로 3.1cm</cell>
+      <cell col="5" row="19">도엽별
+정보입력</cell>
+    </row>
+  </table>
+  <table rows="2" cols="1">
+    <row>
+      <cell col="0" row="0">3) 1:25,000 및 1:50,000 지형도</cell>
+    </row>
+    <row>
+      <cell col="0" row="1"></cell>
+    </row>
+  </table>
+  <table rows="20" cols="6">
+    <row>
+      <cell col="0" row="0">명 칭</cell>
+      <cell col="1" row="0">대․소 변형체</cell>
+      <cell col="2" row="0">서체 및 
+자체</cell>
+      <cell col="3" row="0">자간
+거리</cell>
+      <cell col="4" row="0">포인트</cell>
+      <cell col="5" row="0">서체색
+(C, M, Y, K)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">인접도엽명</cell>
+      <cell col="1" row="1">고 양</cell>
+      <cell col="2" row="1">태고딕(90%)</cell>
+      <cell col="3" row="1">標
+(250)</cell>
+      <cell col="4" row="1">9</cell>
+      <cell col="5" row="1">C : 75%
+M : 68%
+Y : 67%
+K : 90%</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">인접도엽 
+시 군 명</cell>
+      <cell col="1" row="2">공주시 고창군</cell>
+      <cell col="2" row="2">중고딕(80%)</cell>
+      <cell col="3" row="2">近</cell>
+      <cell col="4" row="2">5.5</cell>
+      <cell col="5" row="2">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" rowspan="3">편차분도</cell>
+      <cell col="1" row="3">도북  진북  자북</cell>
+      <cell col="2" row="3" rowspan="3">중고딕(90%)</cell>
+      <cell col="3" row="3">〃</cell>
+      <cell col="4" row="3">6</cell>
+      <cell col="5" row="3">〃</cell>
+    </row>
+    <row>
+      <cell col="1" row="4">5°50′</cell>
+      <cell col="3" row="4">〃</cell>
+      <cell col="4" row="4">6</cell>
+      <cell col="5" row="4">〃</cell>
+    </row>
+    <row>
+      <cell col="1" row="5">(1996)</cell>
+      <cell col="3" row="5">〃</cell>
+      <cell col="4" row="5">6</cell>
+      <cell col="5" row="5">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">행정구역표</cell>
+      <cell col="1" row="6">행 정 구 역</cell>
+      <cell col="2" row="6">태고딕</cell>
+      <cell col="3" row="6">標
+(300)</cell>
+      <cell col="4" row="6">10</cell>
+      <cell col="5" row="6">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">행정구역표 
+숫     자</cell>
+      <cell col="1" row="7">①  ②  ③      2㎜</cell>
+      <cell col="2" row="7">중고딕</cell>
+      <cell col="3" row="7">近</cell>
+      <cell col="4" row="7">5.5</cell>
+      <cell col="5" row="7">〃
+(원지름2mm
+선:3호선)</cell>
+    </row>
+    <row>
+      <cell col="0" row="8" rowspan="2">행정구역명</cell>
+      <cell col="1" row="8">광주광역시</cell>
+      <cell col="2" row="8">태고딕</cell>
+      <cell col="3" row="8">近</cell>
+      <cell col="4" row="8">8</cell>
+      <cell col="5" row="8">〃</cell>
+    </row>
+    <row>
+      <cell col="1" row="9">서욱특별시 관악구</cell>
+      <cell col="2" row="9">태명조(90%)</cell>
+      <cell col="3" row="9">〃</cell>
+      <cell col="4" row="9">7</cell>
+      <cell col="5" row="9">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="10">직각좌표</cell>
+      <cell col="1" row="10">456</cell>
+      <cell col="2" row="10">중명조</cell>
+      <cell col="3" row="10">〃</cell>
+      <cell col="4" row="10">7</cell>
+      <cell col="5" row="10">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="11">경 위 도</cell>
+      <cell col="1" row="11">127°07′30″</cell>
+      <cell col="2" row="11">중고딕</cell>
+      <cell col="3" row="11">〃</cell>
+      <cell col="4" row="11">5.5</cell>
+      <cell col="5" row="11">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="12">도엽번호</cell>
+      <cell col="1" row="12">1:25,000 지형도 도엽번호 NJ 52-13-20</cell>
+      <cell col="2" row="12" rowspan="2">태고딕
+(90%)</cell>
+      <cell col="3" row="12">〃</cell>
+      <cell col="4" row="12">12</cell>
+      <cell col="5" row="12">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="13">도 엽 명</cell>
+      <cell col="1" row="13">수치지도 도엽번호 대전(367104)</cell>
+      <cell col="3" row="13">〃</cell>
+      <cell col="4" row="13">12</cell>
+      <cell col="5" row="13">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="14">대도엽명</cell>
+      <cell col="1" row="14">대 전
+(大 田)</cell>
+      <cell col="2" row="14">견고딕</cell>
+      <cell col="3" row="14">標
+(1,200)</cell>
+      <cell col="4" row="14">33</cell>
+      <cell col="5" row="14">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="15">편집
+수정
+인쇄년도</cell>
+      <cell col="1" row="15">2004년 편집, 2009년 수정
+2010년 인쇄</cell>
+      <cell col="2" row="15">태고딕(80%)</cell>
+      <cell col="3" row="15">近</cell>
+      <cell col="4" row="15">12</cell>
+      <cell col="5" row="15">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="16">촬영조사년도</cell>
+      <cell col="1" row="16">(2008년 촬영, 2009년 조사)</cell>
+      <cell col="2" row="16">태명조(80%)</cell>
+      <cell col="3" row="16">〃</cell>
+      <cell col="4" row="16">11</cell>
+      <cell col="5" row="16">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="17">소유자</cell>
+      <cell col="1" row="17">국토지리정보원
+http://www.ngii.go.kr</cell>
+      <cell col="2" row="17">태고딕</cell>
+      <cell col="3" row="17">標
+(200)</cell>
+      <cell col="4" row="17">12</cell>
+      <cell col="5" row="17">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="18">행선지명</cell>
+      <cell col="1" row="18">대전역3.5㎞ 회덕IC3.4㎞</cell>
+      <cell col="2" row="18">중고딕(90%)</cell>
+      <cell col="3" row="18">近</cell>
+      <cell col="4" row="18">5</cell>
+      <cell col="5" row="18">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="19">QR코드</cell>
+      <cell col="1" row="19"></cell>
+      <cell col="2" row="19">-</cell>
+      <cell col="3" row="19">-</cell>
+      <cell col="4" row="19">가로 3.1cm
+ ×
+세로 3.1cm</cell>
+      <cell col="5" row="19">도엽별
+정보입력</cell>
+    </row>
+  </table>
+  <table rows="2" cols="1">
+    <row>
+      <cell col="0" row="0">4) 1:25,000 및 1:50,000 지형도(녹색약맹)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1"></cell>
+    </row>
+  </table>
+  <table rows="20" cols="6">
+    <row>
+      <cell col="0" row="0">명 칭</cell>
+      <cell col="1" row="0">대․소 변형체</cell>
+      <cell col="2" row="0">서체 및 
+자체</cell>
+      <cell col="3" row="0">자간
+거리</cell>
+      <cell col="4" row="0">포인트</cell>
+      <cell col="5" row="0">서체색
+(C, M, Y, K)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">인접도엽명</cell>
+      <cell col="1" row="1">고 양</cell>
+      <cell col="2" row="1">태고딕(90%)</cell>
+      <cell col="3" row="1">標
+(250)</cell>
+      <cell col="4" row="1">9</cell>
+      <cell col="5" row="1">C : 75%
+M : 68%
+Y : 67%
+K : 90%</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">인접도엽 
+시 군 명</cell>
+      <cell col="1" row="2">공주시 고창군</cell>
+      <cell col="2" row="2">중고딕(80%)</cell>
+      <cell col="3" row="2">近</cell>
+      <cell col="4" row="2">5.5</cell>
+      <cell col="5" row="2">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" rowspan="3">편차분도</cell>
+      <cell col="1" row="3">도북  진북  자북</cell>
+      <cell col="2" row="3" rowspan="3">중고딕(90%)</cell>
+      <cell col="3" row="3">〃</cell>
+      <cell col="4" row="3">6</cell>
+      <cell col="5" row="3">〃</cell>
+    </row>
+    <row>
+      <cell col="1" row="4">5°50′</cell>
+      <cell col="3" row="4">〃</cell>
+      <cell col="4" row="4">6</cell>
+      <cell col="5" row="4">〃</cell>
+    </row>
+    <row>
+      <cell col="1" row="5">(1996)</cell>
+      <cell col="3" row="5">〃</cell>
+      <cell col="4" row="5">6</cell>
+      <cell col="5" row="5">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">행정구역표</cell>
+      <cell col="1" row="6">행 정 구 역</cell>
+      <cell col="2" row="6">태고딕</cell>
+      <cell col="3" row="6">標
+(300)</cell>
+      <cell col="4" row="6">10</cell>
+      <cell col="5" row="6">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">행정구역표 
+숫     자</cell>
+      <cell col="1" row="7">①  ②  ③      2㎜</cell>
+      <cell col="2" row="7">중고딕</cell>
+      <cell col="3" row="7">近</cell>
+      <cell col="4" row="7">5.5</cell>
+      <cell col="5" row="7">〃
+(원지름2mm
+선:3호선)</cell>
+    </row>
+    <row>
+      <cell col="0" row="8" rowspan="2">행정구역명</cell>
+      <cell col="1" row="8">광주광역시</cell>
+      <cell col="2" row="8">태고딕</cell>
+      <cell col="3" row="8">近</cell>
+      <cell col="4" row="8">8</cell>
+      <cell col="5" row="8">〃</cell>
+    </row>
+    <row>
+      <cell col="1" row="9">서욱특별시 관악구</cell>
+      <cell col="2" row="9">태명조(90%)</cell>
+      <cell col="3" row="9">〃</cell>
+      <cell col="4" row="9">7</cell>
+      <cell col="5" row="9">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="10">직각좌표</cell>
+      <cell col="1" row="10">456</cell>
+      <cell col="2" row="10">중명조</cell>
+      <cell col="3" row="10">〃</cell>
+      <cell col="4" row="10">7</cell>
+      <cell col="5" row="10">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="11">경 위 도</cell>
+      <cell col="1" row="11">127°07′30″</cell>
+      <cell col="2" row="11">중고딕</cell>
+      <cell col="3" row="11">〃</cell>
+      <cell col="4" row="11">5.5</cell>
+      <cell col="5" row="11">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="12">도엽번호</cell>
+      <cell col="1" row="12">1:25,000 지형도 도엽번호 NJ 52-13-20</cell>
+      <cell col="2" row="12" rowspan="2">태고딕
+(90%)</cell>
+      <cell col="3" row="12">〃</cell>
+      <cell col="4" row="12">12</cell>
+      <cell col="5" row="12">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="13">도 엽 명</cell>
+      <cell col="1" row="13">수치지도 도엽번호 대전(367104)</cell>
+      <cell col="3" row="13">〃</cell>
+      <cell col="4" row="13">12</cell>
+      <cell col="5" row="13">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="14">대도엽명</cell>
+      <cell col="1" row="14">대 전
+(大 田)</cell>
+      <cell col="2" row="14">견고딕</cell>
+      <cell col="3" row="14">標
+(1,200)</cell>
+      <cell col="4" row="14">33</cell>
+      <cell col="5" row="14">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="15">편집
+수정
+인쇄년도</cell>
+      <cell col="1" row="15">2004년 편집, 2009년 수정
+2010년 인쇄</cell>
+      <cell col="2" row="15">태고딕(80%)</cell>
+      <cell col="3" row="15">近</cell>
+      <cell col="4" row="15">12</cell>
+      <cell col="5" row="15">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="16">촬영조사년도</cell>
+      <cell col="1" row="16">(2008년 촬영, 2009년 조사)</cell>
+      <cell col="2" row="16">태명조(80%)</cell>
+      <cell col="3" row="16">〃</cell>
+      <cell col="4" row="16">11</cell>
+      <cell col="5" row="16">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="17">소유자</cell>
+      <cell col="1" row="17">국토지리정보원
+http://www.ngii.go.kr</cell>
+      <cell col="2" row="17">태고딕</cell>
+      <cell col="3" row="17">標
+(200)</cell>
+      <cell col="4" row="17">12</cell>
+      <cell col="5" row="17">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="18">행선지명</cell>
+      <cell col="1" row="18">대전역3.5㎞ 회덕IC3.4㎞</cell>
+      <cell col="2" row="18">중고딕(90%)</cell>
+      <cell col="3" row="18">近</cell>
+      <cell col="4" row="18">5</cell>
+      <cell col="5" row="18">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="19">QR코드</cell>
+      <cell col="1" row="19"></cell>
+      <cell col="2" row="19">-</cell>
+      <cell col="3" row="19">-</cell>
+      <cell col="4" row="19">가로 3.1cm
+ ×
+세로 3.1cm</cell>
+      <cell col="5" row="19">도엽별
+정보입력</cell>
+    </row>
+  </table>
+  <table rows="2" cols="1">
+    <row>
+      <cell col="0" row="0">5) 1:25,000 및 1:50,000 지형도(적색약맹)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1"></cell>
+    </row>
+  </table>
+  <table rows="20" cols="6">
+    <row>
+      <cell col="0" row="0">명 칭</cell>
+      <cell col="1" row="0">대․소 변형체</cell>
+      <cell col="2" row="0">서체 및 
+자체</cell>
+      <cell col="3" row="0">자간
+거리</cell>
+      <cell col="4" row="0">포인트</cell>
+      <cell col="5" row="0">서체색
+(C, M, Y, K)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">인접도엽명</cell>
+      <cell col="1" row="1">고 양</cell>
+      <cell col="2" row="1">태고딕(90%)</cell>
+      <cell col="3" row="1">標
+(250)</cell>
+      <cell col="4" row="1">9</cell>
+      <cell col="5" row="1">C : 75%
+M : 68%
+Y : 67%
+K : 90%</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">인접도엽 
+시 군 명</cell>
+      <cell col="1" row="2">공주시 고창군</cell>
+      <cell col="2" row="2">중고딕(80%)</cell>
+      <cell col="3" row="2">近</cell>
+      <cell col="4" row="2">5.5</cell>
+      <cell col="5" row="2">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" rowspan="3">편차분도</cell>
+      <cell col="1" row="3">도북  진북  자북</cell>
+      <cell col="2" row="3" rowspan="3">중고딕(90%)</cell>
+      <cell col="3" row="3">〃</cell>
+      <cell col="4" row="3">6</cell>
+      <cell col="5" row="3">〃</cell>
+    </row>
+    <row>
+      <cell col="1" row="4">5°50′</cell>
+      <cell col="3" row="4">〃</cell>
+      <cell col="4" row="4">6</cell>
+      <cell col="5" row="4">〃</cell>
+    </row>
+    <row>
+      <cell col="1" row="5">(1996)</cell>
+      <cell col="3" row="5">〃</cell>
+      <cell col="4" row="5">6</cell>
+      <cell col="5" row="5">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">행정구역표</cell>
+      <cell col="1" row="6">행 정 구 역</cell>
+      <cell col="2" row="6">태고딕</cell>
+      <cell col="3" row="6">標
+(300)</cell>
+      <cell col="4" row="6">10</cell>
+      <cell col="5" row="6">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">행정구역표 
+숫     자</cell>
+      <cell col="1" row="7">①  ②  ③      2㎜</cell>
+      <cell col="2" row="7">중고딕</cell>
+      <cell col="3" row="7">近</cell>
+      <cell col="4" row="7">5.5</cell>
+      <cell col="5" row="7">〃
+(원지름2mm
+선:3호선)</cell>
+    </row>
+    <row>
+      <cell col="0" row="8" rowspan="2">행정구역명</cell>
+      <cell col="1" row="8">광주광역시</cell>
+      <cell col="2" row="8">태고딕</cell>
+      <cell col="3" row="8">近</cell>
+      <cell col="4" row="8">8</cell>
+      <cell col="5" row="8">〃</cell>
+    </row>
+    <row>
+      <cell col="1" row="9">서욱특별시 관악구</cell>
+      <cell col="2" row="9">태명조(90%)</cell>
+      <cell col="3" row="9">〃</cell>
+      <cell col="4" row="9">7</cell>
+      <cell col="5" row="9">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="10">직각좌표</cell>
+      <cell col="1" row="10">456</cell>
+      <cell col="2" row="10">중명조</cell>
+      <cell col="3" row="10">〃</cell>
+      <cell col="4" row="10">7</cell>
+      <cell col="5" row="10">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="11">경 위 도</cell>
+      <cell col="1" row="11">127°07′30″</cell>
+      <cell col="2" row="11">중고딕</cell>
+      <cell col="3" row="11">〃</cell>
+      <cell col="4" row="11">5.5</cell>
+      <cell col="5" row="11">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="12">도엽번호</cell>
+      <cell col="1" row="12">1:25,000 지형도 도엽번호 NJ 52-13-20</cell>
+      <cell col="2" row="12" rowspan="2">태고딕
+(90%)</cell>
+      <cell col="3" row="12">〃</cell>
+      <cell col="4" row="12">12</cell>
+      <cell col="5" row="12">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="13">도 엽 명</cell>
+      <cell col="1" row="13">수치지도 도엽번호 대전(367104)</cell>
+      <cell col="3" row="13">〃</cell>
+      <cell col="4" row="13">12</cell>
+      <cell col="5" row="13">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="14">대도엽명</cell>
+      <cell col="1" row="14">대 전
+(大 田)</cell>
+      <cell col="2" row="14">견고딕</cell>
+      <cell col="3" row="14">標
+(1,200)</cell>
+      <cell col="4" row="14">33</cell>
+      <cell col="5" row="14">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="15">편집
+수정
+인쇄년도</cell>
+      <cell col="1" row="15">2004년 편집, 2009년 수정
+2010년 인쇄</cell>
+      <cell col="2" row="15">태고딕(80%)</cell>
+      <cell col="3" row="15">近</cell>
+      <cell col="4" row="15">12</cell>
+      <cell col="5" row="15">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="16">촬영조사년도</cell>
+      <cell col="1" row="16">(2008년 촬영, 2009년 조사)</cell>
+      <cell col="2" row="16">태명조(80%)</cell>
+      <cell col="3" row="16">〃</cell>
+      <cell col="4" row="16">11</cell>
+      <cell col="5" row="16">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="17">소유자</cell>
+      <cell col="1" row="17">국토지리정보원
+http://www.ngii.go.kr</cell>
+      <cell col="2" row="17">태고딕</cell>
+      <cell col="3" row="17">標
+(200)</cell>
+      <cell col="4" row="17">12</cell>
+      <cell col="5" row="17">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="18">행선지명</cell>
+      <cell col="1" row="18">대전역3.5㎞ 회덕IC3.4㎞</cell>
+      <cell col="2" row="18">중고딕(90%)</cell>
+      <cell col="3" row="18">近</cell>
+      <cell col="4" row="18">5</cell>
+      <cell col="5" row="18">〃</cell>
+    </row>
+    <row>
+      <cell col="0" row="19">QR코드</cell>
+      <cell col="1" row="19"></cell>
+      <cell col="2" row="19">-</cell>
+      <cell col="3" row="19">-</cell>
+      <cell col="4" row="19">가로 3.1cm
+ ×
+세로 3.1cm</cell>
+      <cell col="5" row="19">도엽별
+정보입력</cell>
+    </row>
+  </table>
+  <table rows="2" cols="1">
+    <row>
+      <cell col="0" row="0">6) 1:25,000 및 1:50,000 지형도(청색약맹)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1"></cell>
+    </row>
+  </table>
+</annex>

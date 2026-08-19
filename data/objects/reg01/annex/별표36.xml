@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표36" gubun="별표" no="36" title="지하시설물 제원 표기방법 및 재질약어표" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296289">
+  <text>[ 별표 36 ]
+지하시설물 제원 표기방법 및 재질약어표
+가. 제원표기 방법</text>
+  <table rows="6" cols="3">
+    <row>
+      <cell col="0" row="0">구 분</cell>
+      <cell col="1" row="0">기 호</cell>
+      <cell col="2" row="0">단 위</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">재 질</cell>
+      <cell col="1" row="1">재질약어표</cell>
+      <cell col="2" row="1">아래표 참조</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" rowspan="2">구 경</cell>
+      <cell col="1" row="2">∅ (원형)</cell>
+      <cell col="2" row="2">mm</cell>
+    </row>
+    <row>
+      <cell col="1" row="3">□ (각형)</cell>
+      <cell col="2" row="3">mm</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">길 이</cell>
+      <cell col="1" row="4">L</cell>
+      <cell col="2" row="4">m</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">깊 이</cell>
+      <cell col="1" row="5">D</cell>
+      <cell col="2" row="5">m</cell>
+    </row>
+  </table>
+  <text>나. 재질약어표</text>
+  <table rows="60" cols="4">
+    <row>
+      <cell col="0" row="0">약 어</cell>
+      <cell col="1" row="0">원 어</cell>
+      <cell col="2" row="0">설 명</cell>
+      <cell col="3" row="0">관련지하시설물</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">D.C.I.P</cell>
+      <cell col="1" row="1">Ductile Cast Iron Pipe</cell>
+      <cell col="2" row="1">닥타일, 주철관</cell>
+      <cell col="3" row="1">상수도</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">S.P.</cell>
+      <cell col="1" row="2">Steel Pipe</cell>
+      <cell col="2" row="2">강관</cell>
+      <cell col="3" row="2">상수도,가스,통신,전기</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">G.S.P</cell>
+      <cell col="1" row="3">Galvanized Steel Pipe</cell>
+      <cell col="2" row="3">아연도 강관</cell>
+      <cell col="3" row="3">상수도, 가스</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">P.V.C.</cell>
+      <cell col="1" row="4">Polyvinyl Chloride Pipe</cell>
+      <cell col="2" row="4">경질염화비닐관</cell>
+      <cell col="3" row="4">상수도</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">P.E.</cell>
+      <cell col="1" row="5">Polyethylene Pipe</cell>
+      <cell col="2" row="5">폴리에테렌관</cell>
+      <cell col="3" row="5">상수도</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">S.S.P.</cell>
+      <cell col="1" row="6">Stainless Steel Pipe</cell>
+      <cell col="2" row="6">스테인레스강관</cell>
+      <cell col="3" row="6">상수도</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">C.O.P.</cell>
+      <cell col="1" row="7">Copper Pipe</cell>
+      <cell col="2" row="7">동관</cell>
+      <cell col="3" row="7">상수도</cell>
+    </row>
+    <row>
+      <cell col="0" row="8">P.C.</cell>
+      <cell col="1" row="8">Prestressed Concrete  Pipe</cell>
+      <cell col="2" row="8">프리스트레스(PS), 콘크리트관</cell>
+      <cell col="3" row="8">상수도</cell>
+    </row>
+    <row>
+      <cell col="0" row="9">A.C.P.</cell>
+      <cell col="1" row="9">Asbestos Cement pipe</cell>
+      <cell col="2" row="9">석면시멘트관</cell>
+      <cell col="3" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10">C.I.P.</cell>
+      <cell col="1" row="10">Cast Iron Pipe</cell>
+      <cell col="2" row="10">회주철관</cell>
+      <cell col="3" row="10">상ㆍ하수도,전기,통신,가스</cell>
+    </row>
+    <row>
+      <cell col="0" row="11">L.P.</cell>
+      <cell col="1" row="11">Lead Pipe</cell>
+      <cell col="2" row="11">연관</cell>
+      <cell col="3" row="11">전기, 상수도</cell>
+    </row>
+    <row>
+      <cell col="0" row="12">H.P.</cell>
+      <cell col="1" row="12">Hume Pipe</cell>
+      <cell col="2" row="12">흄관</cell>
+      <cell col="3" row="12">상ㆍ하수도,통신,전기</cell>
+    </row>
+    <row>
+      <cell col="0" row="13">E.P.</cell>
+      <cell col="1" row="13">Earthen ware pipe</cell>
+      <cell col="2" row="13">도관(토관)</cell>
+      <cell col="3" row="13">하수도</cell>
+    </row>
+    <row>
+      <cell col="0" row="14">R.C.P.</cell>
+      <cell col="1" row="14">Reinforced Concrete  Pipe</cell>
+      <cell col="2" row="14">철근콘트리트관</cell>
+      <cell col="3" row="14">하수도</cell>
+    </row>
+    <row>
+      <cell col="0" row="15">C.I.</cell>
+      <cell col="1" row="15"></cell>
+      <cell col="2" row="15">주철관</cell>
+      <cell col="3" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16">P.V.</cell>
+      <cell col="1" row="16"></cell>
+      <cell col="2" row="16">화학제품류관</cell>
+      <cell col="3" row="16"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17">V.C.</cell>
+      <cell col="1" row="17">Vibrated and Rolled</cell>
+      <cell col="2" row="17">진동 및 전압 철근콘트리트관</cell>
+      <cell col="3" row="17">하수도</cell>
+    </row>
+    <row>
+      <cell col="0" row="18">S.E.</cell>
+      <cell col="1" row="18"></cell>
+      <cell col="2" row="18">석축</cell>
+      <cell col="3" row="18"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19">A.C.P.</cell>
+      <cell col="1" row="19">Asphalt Coating Pipe</cell>
+      <cell col="2" row="19">도복장강관</cell>
+      <cell col="3" row="19"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20">E.P.</cell>
+      <cell col="1" row="20"></cell>
+      <cell col="2" row="20"></cell>
+      <cell col="3" row="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21">G.P.</cell>
+      <cell col="1" row="21"></cell>
+      <cell col="2" row="21">아연도 강관</cell>
+      <cell col="3" row="21"></cell>
+    </row>
+    <row>
+      <cell col="0" row="22">B.R.</cell>
+      <cell col="1" row="22">Bronze Pipe</cell>
+      <cell col="2" row="22">청동관</cell>
+      <cell col="3" row="22"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23">R.M.</cell>
+      <cell col="1" row="23">Rubber Cable</cell>
+      <cell col="2" row="23">고무몰딩</cell>
+      <cell col="3" row="23">전기</cell>
+    </row>
+    <row>
+      <cell col="0" row="24">C.S.</cell>
+      <cell col="1" row="24">Cast Steel</cell>
+      <cell col="2" row="24">주강</cell>
+      <cell col="3" row="24"></cell>
+    </row>
+    <row>
+      <cell col="0" row="25">H.D.P.E</cell>
+      <cell col="1" row="25"></cell>
+      <cell col="2" row="25">HDPE관</cell>
+      <cell col="3" row="25"></cell>
+    </row>
+    <row>
+      <cell col="0" row="26">C</cell>
+      <cell col="1" row="26"></cell>
+      <cell col="2" row="26">시멘트라이닝주철관</cell>
+      <cell col="3" row="26"></cell>
+    </row>
+    <row>
+      <cell col="0" row="27">P.E.</cell>
+      <cell col="1" row="27"></cell>
+      <cell col="2" row="27">수도용 PE관</cell>
+      <cell col="3" row="27">상수도</cell>
+    </row>
+    <row>
+      <cell col="0" row="28">A.C.</cell>
+      <cell col="1" row="28"></cell>
+      <cell col="2" row="28">석면시멘트관</cell>
+      <cell col="3" row="28"></cell>
+    </row>
+    <row>
+      <cell col="0" row="29">P.E.P.</cell>
+      <cell col="1" row="29"></cell>
+      <cell col="2" row="29">폴리에틸렌분 체라이닝관</cell>
+      <cell col="3" row="29"></cell>
+    </row>
+    <row>
+      <cell col="0" row="30">E.P.S</cell>
+      <cell col="1" row="30"></cell>
+      <cell col="2" row="30">에폭시코팅강관</cell>
+      <cell col="3" row="30"></cell>
+    </row>
+    <row>
+      <cell col="0" row="31">HI-3P</cell>
+      <cell col="1" row="31"></cell>
+      <cell col="2" row="31">하이쓰리P</cell>
+      <cell col="3" row="31"></cell>
+    </row>
+    <row>
+      <cell col="0" row="32">C.D.</cell>
+      <cell col="1" row="32"></cell>
+      <cell col="2" row="32">콘크리트 중선함</cell>
+      <cell col="3" row="32"></cell>
+    </row>
+    <row>
+      <cell col="0" row="33">F.P.</cell>
+      <cell col="1" row="33">Flexible Pipe</cell>
+      <cell col="2" row="33">유연관, 전선관</cell>
+      <cell col="3" row="33">전기, 상수도</cell>
+    </row>
+    <row>
+      <cell col="0" row="34">F.D.</cell>
+      <cell col="1" row="34">Floor Duct</cell>
+      <cell col="2" row="34">전선함</cell>
+      <cell col="3" row="34">전기</cell>
+    </row>
+    <row>
+      <cell col="0" row="35">C.S</cell>
+      <cell col="1" row="35">Carbon Steel</cell>
+      <cell col="2" row="35">탄소강(카본스틸)</cell>
+      <cell col="3" row="35"></cell>
+    </row>
+    <row>
+      <cell col="0" row="36"></cell>
+      <cell col="1" row="36"></cell>
+      <cell col="2" row="36">이중보은관</cell>
+      <cell col="3" row="36"></cell>
+    </row>
+    <row>
+      <cell col="0" row="37">C.P.</cell>
+      <cell col="1" row="37">Concrete Pipe</cell>
+      <cell col="2" row="37">콘크리트(무근)</cell>
+      <cell col="3" row="37">하수도</cell>
+    </row>
+    <row>
+      <cell col="0" row="38">R.C.B.</cell>
+      <cell col="1" row="38">Reinforced Concrete Box</cell>
+      <cell col="2" row="38">철근콘크리트 박스</cell>
+      <cell col="3" row="38">상ㆍ하수도,전기,통신,가스</cell>
+    </row>
+    <row>
+      <cell col="0" row="39">C.P.E.</cell>
+      <cell col="1" row="39">Corrugated Polyvilylene Pipe</cell>
+      <cell col="2" row="39">파형합성수지관</cell>
+      <cell col="3" row="39">전기, 통신</cell>
+    </row>
+    <row>
+      <cell col="0" row="40">P.L.P.</cell>
+      <cell col="1" row="40">Polyethylene Laminated Pipe</cell>
+      <cell col="2" row="40">폴리에틸렌피복강관</cell>
+      <cell col="3" row="40">상ㆍ하수도,전기,통신,가스</cell>
+    </row>
+    <row>
+      <cell col="0" row="41">S.T.S.</cell>
+      <cell col="1" row="41">Stainless Steel Pipe</cell>
+      <cell col="2" row="41">스테인레스관</cell>
+      <cell col="3" row="41">상수도</cell>
+    </row>
+    <row>
+      <cell col="0" row="42">F.P.</cell>
+      <cell col="1" row="42">Flexible Pipe</cell>
+      <cell col="2" row="42">유연관, 전선관</cell>
+      <cell col="3" row="42">전기, 상수도</cell>
+    </row>
+    <row>
+      <cell col="0" row="43">E.L.P.</cell>
+      <cell col="1" row="43">Epoxy Lining Pipe</cell>
+      <cell col="2" row="43">에폭시라이닝관</cell>
+      <cell col="3" row="43">상수도</cell>
+    </row>
+    <row>
+      <cell col="0" row="44">C.I.C.</cell>
+      <cell col="1" row="44">Cast Iron Lining Pipe</cell>
+      <cell col="2" row="44">회주철라이닝관</cell>
+      <cell col="3" row="44">상수도</cell>
+    </row>
+    <row>
+      <cell col="0" row="45">D.T.C.</cell>
+      <cell col="1" row="45">Ductile Cement Lining</cell>
+      <cell col="2" row="45">닥타일라이닝관</cell>
+      <cell col="3" row="45">상수도</cell>
+    </row>
+    <row>
+      <cell col="0" row="46">P.C.C</cell>
+      <cell col="1" row="46">Prestressde Concrete   Cylinder Pipe</cell>
+      <cell col="2" row="46">PC 실린더관</cell>
+      <cell col="3" row="46">상수도</cell>
+    </row>
+    <row>
+      <cell col="0" row="47">V.R.</cell>
+      <cell col="1" row="47">Vibrated and Rolled</cell>
+      <cell col="2" row="47">진동 및 전압관</cell>
+      <cell col="3" row="47">하수도</cell>
+    </row>
+    <row>
+      <cell col="0" row="48">B.E.J.</cell>
+      <cell col="1" row="48">Bellows Expansion Joint</cell>
+      <cell col="2" row="48">벨로우즈 신축관</cell>
+      <cell col="3" row="48">전기, 하수도</cell>
+    </row>
+    <row>
+      <cell col="0" row="49">E.C.S.P</cell>
+      <cell col="1" row="49">Epoxy Coated Steel Pipe</cell>
+      <cell col="2" row="49">에폭시수지피복강관</cell>
+      <cell col="3" row="49">상수도</cell>
+    </row>
+    <row>
+      <cell col="0" row="50">P.C.C.</cell>
+      <cell col="1" row="50">Prestressed Concrete   Cylinder Pipe</cell>
+      <cell col="2" row="50">PC 실린더관</cell>
+      <cell col="3" row="50">상수도</cell>
+    </row>
+    <row>
+      <cell col="0" row="51">F.R.P.</cell>
+      <cell col="1" row="51"></cell>
+      <cell col="2" row="51"></cell>
+      <cell col="3" row="51"></cell>
+    </row>
+    <row>
+      <cell col="0" row="52">C.O.P.</cell>
+      <cell col="1" row="52">Copper Pipe</cell>
+      <cell col="2" row="52">동관</cell>
+      <cell col="3" row="52">상수도</cell>
+    </row>
+    <row>
+      <cell col="0" row="53">HI-VP</cell>
+      <cell col="1" row="53"></cell>
+      <cell col="2" row="53">하이 브이P</cell>
+      <cell col="3" row="53">상수도</cell>
+    </row>
+    <row>
+      <cell col="0" row="54">C.S.P</cell>
+      <cell col="1" row="54"></cell>
+      <cell col="2" row="54">파형강관</cell>
+      <cell col="3" row="54">하수도</cell>
+    </row>
+    <row>
+      <cell col="0" row="55">P.R.C</cell>
+      <cell col="1" row="55"></cell>
+      <cell col="2" row="55">불포화 폴리에스테르 수지 콘크리트관</cell>
+      <cell col="3" row="55">하수도</cell>
+    </row>
+    <row>
+      <cell col="0" row="56">P.C.B</cell>
+      <cell col="1" row="56">Precast Concrete Box Culvert</cell>
+      <cell col="2" row="56">PC암거</cell>
+      <cell col="3" row="56">하수도</cell>
+    </row>
+    <row>
+      <cell col="0" row="57">G.R.P</cell>
+      <cell col="1" row="57">Glass Reinforced Plastice Pipe</cell>
+      <cell col="2" row="57">유리섬유 복합관</cell>
+      <cell col="3" row="57">하수도</cell>
+    </row>
+    <row>
+      <cell col="0" row="58">P.C.F</cell>
+      <cell col="1" row="58"></cell>
+      <cell col="2" row="58">복합 철판관</cell>
+      <cell col="3" row="58">하수도</cell>
+    </row>
+    <row>
+      <cell col="0" row="59">P.S.P</cell>
+      <cell col="1" row="59"></cell>
+      <cell col="2" row="59">고강도 철판 매입관</cell>
+      <cell col="3" row="59">상수도</cell>
+    </row>
+  </table>
+</annex>

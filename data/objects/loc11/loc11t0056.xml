@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0056" article="제119조(ネットワーク型ＲＴＫ法によるＴＳ点の設置)" rows="3" cols="2" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">点検距離</cell>
+    <cell col="1" row="0" header="1">許容範囲</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">500ｍ以上</cell>
+    <cell col="1" row="1">点検距離の1/10,000</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">500ｍ未満</cell>
+    <cell col="1" row="2">50mm</cell>
+  </row>
+</table>

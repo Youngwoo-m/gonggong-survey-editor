@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지1" gubun="별지" no="1" title="항공사진 자동독취 파일명 작성방법" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=118722761">
+  <text>[별 지 제1호]항공사진 자동독취 파일명 작성방법
+① 국토지리정보원의 항공사진 자동독취 파일명은 다음과 같이 입력한다.
+사업년도(4) + 촬영월(2) + 지구명(4) + 코스번호(4) + 사진번호(4)
+(예) 2000/12/0001/006B/0003</text>
+  <table rows="6" cols="4">
+    <row>
+      <cell col="0" row="0">항 목</cell>
+      <cell col="1" row="0">형 식</cell>
+      <cell col="2" row="0">작성 예시</cell>
+      <cell col="3" row="0">비 고</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">사업년도</cell>
+      <cell col="1" row="1">4자리 숫자</cell>
+      <cell col="2" row="1">1966,... 2000</cell>
+      <cell col="3" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2">촬 영 월</cell>
+      <cell col="1" row="2">2자리 숫자</cell>
+      <cell col="2" row="2">01, 10, 12</cell>
+      <cell col="3" row="2">-촬영기록부의 촬영월</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">지 구 명</cell>
+      <cell col="1" row="3">4자리 숫자</cell>
+      <cell col="2" row="3">0001, 0002</cell>
+      <cell col="3" row="3">-롤필름의 경우 사업지구명 입력
+-롤필름이 없는 양화필름이나 밀착사진 등은 사업지구명을 부여하지 않음</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">코스번호</cell>
+      <cell col="1" row="4">4자리 숫자
+ (영문자 혼용)</cell>
+      <cell col="2" row="4">006B</cell>
+      <cell col="3" row="4">-코스번호 앞의 영문자 C는　생략
+-영문 촬영코스는 적용</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">사진번호</cell>
+      <cell col="1" row="5">4자리 숫자</cell>
+      <cell col="2" row="5">0003</cell>
+      <cell col="3" row="5">-사진번호가 20-1, 20-15의 경우 뒤의 숫자는 알파벳으로 처리</cell>
+    </row>
+  </table>
+  <text>② 국토지리정보원 이외의 항공사진은 다음과 같이 입력한다.
+사업년도(4) + 촬영월(2) +행정구역명(5) + 코스번호(4) + 사진번호(3)
+(예) 2000/12/11000/006B/003</text>
+  <table rows="6" cols="4">
+    <row>
+      <cell col="0" row="0">항 목</cell>
+      <cell col="1" row="0">형 식</cell>
+      <cell col="2" row="0">작성 예시</cell>
+      <cell col="3" row="0">비 고</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">사업년도</cell>
+      <cell col="1" row="1">4자리 숫자</cell>
+      <cell col="2" row="1">1966, 2000</cell>
+      <cell col="3" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2">촬 영 월</cell>
+      <cell col="1" row="2">2자리 숫자</cell>
+      <cell col="2" row="2">01, 09, 10, 12</cell>
+      <cell col="3" row="2">촬영기록부의 촬영월</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">행정구역명</cell>
+      <cell col="1" row="3">숫자5자리 [시도 
+ (2), 시군(3)]</cell>
+      <cell col="2" row="3">11000, 11010</cell>
+      <cell col="3" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4">코스번호</cell>
+      <cell col="1" row="4">4자리 숫자
+ (영문자 혼용)</cell>
+      <cell col="2" row="4">006B</cell>
+      <cell col="3" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5">필름번호</cell>
+      <cell col="1" row="5">3자리 숫자</cell>
+      <cell col="2" row="5">002, 003</cell>
+      <cell col="3" row="5"></cell>
+    </row>
+  </table>
+</annex>

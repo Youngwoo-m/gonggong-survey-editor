@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표3" gubun="별표" no="3" title="3차원 국토공간정보 공간객체 기본 제약조건" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=118782533">
+  <text>[별표3] 3차원 국토공간정보 공간객체 기본 제약조건</text>
+  <table rows="2" cols="3">
+    <row>
+      <cell col="0" row="0" colspan="3">GF_Constraint : 도로의 연결성 제약</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">설 명</cell>
+      <cell col="1" row="1">․도로는 연결되어 있어야 한다.</cell>
+      <cell col="2" row="1"></cell>
+    </row>
+  </table>
+  <table rows="2" cols="3">
+    <row>
+      <cell col="0" row="0" colspan="3">GF_Constraint : 철도의 연결성 제약</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">설 명</cell>
+      <cell col="1" row="1">․철도는 연결되어 있어야 한다.</cell>
+      <cell col="2" row="1"></cell>
+    </row>
+  </table>
+  <table rows="2" cols="3">
+    <row>
+      <cell col="0" row="0" colspan="3">GF_Constraint : 도로교차면과 단위도로면의 관계</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">설 명</cell>
+      <cell col="1" row="1">․공간형태집합관계 vs 개별입력 vs 개별분리입력
+ * 공간형태집합관계
+  F1 = {SO1},  SO1={SP1, SP2, SP3}, 
+  F2 = {SO2},  SO2={SP4, SP2, SP5},  
+  F3 = {SO3},  SO3={SP2}
+ * 개별입력
+  SO6  = {SP2},  SP7 = {SP4}, 
+  SO8  = {SP5},  SO9 = {SP1},
+  SO10 = {SP3}       
+ * 개별분리입력
+  F1 = {MS1}, MS1 = {SO9, SO3, SO10},
+  F2 = {MS2}, MS2 = {SO6, SO7, SO8},      F3 = {SO3}</cell>
+      <cell col="2" row="1"></cell>
+    </row>
+  </table>
+  <table rows="2" cols="3">
+    <row>
+      <cell col="0" row="0" colspan="3">GF_Constraint : 교통시설물(교량, 터널)과 단위도로면의 관계</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">설 명</cell>
+      <cell col="1" row="1">․교통시설물과 단위도로면은 인접하여야 한다.</cell>
+      <cell col="2" row="1"></cell>
+    </row>
+  </table>
+  <table rows="2" cols="3">
+    <row>
+      <cell col="0" row="0" colspan="3">GF_Constraint : 교통시설물(교량, 터널)과 도로교차면의 관계</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">설 명</cell>
+      <cell col="1" row="1">․교통시설물과 단위도로면이 교차하면 도로 교차면이 생성되고 이는 교통시설물과 인접하여야 한다.</cell>
+      <cell col="2" row="1"></cell>
+    </row>
+  </table>
+  <table rows="2" cols="3">
+    <row>
+      <cell col="0" row="0" colspan="3">GF_Constraint : 교통시설물(교량, 터널)과 철도와의 관계</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">설 명</cell>
+      <cell col="1" row="1">․교통시설물과 철도는 인접하여야 한다.</cell>
+      <cell col="2" row="1"></cell>
+    </row>
+  </table>
+  <table rows="2" cols="3">
+    <row>
+      <cell col="0" row="0" colspan="3">GF_Constraint : 경계중복 입력 제약</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">설 명</cell>
+      <cell col="1" row="1">․임의의 지물이 또 다른 지물과 공통경계를 가질 경우 공통경계부분을 중복 입력한다.</cell>
+      <cell col="2" row="1"></cell>
+    </row>
+  </table>
+  <table rows="2" cols="3">
+    <row>
+      <cell col="0" row="0" colspan="3">GF_Constraint : 공간형태(spatial object) 개수 제약</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">설 명</cell>
+      <cell col="1" row="1">․모든 지물은 각 세밀도 단계마다 오직 하나의 공간형태(spatial object)를 가진다.</cell>
+      <cell col="2" row="1"></cell>
+    </row>
+  </table>
+  <table rows="2" cols="3">
+    <row>
+      <cell col="0" row="0" colspan="3">GF_Constraint : 복합지물 제약</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">설 명</cell>
+      <cell col="1" row="1">․복합지물은 “여러 개의 다른 지물로 구성된 지물”이다. 복합지물을 구성하는 방법은 일반적으로 두 가지가 있으며, 복합지물을 공간형태 집합관계(spatial object aggregation)로 표현하거나, 복합지물을 지물집합관계로만 표현한다. 
+ * 공간형태집합관계는 지물의 관계를 공간 형태 사이의 관계로 표현한 것이다.
+  F1 = (K1, A1, SO1)
+  F2 = (K2, A2, SO2)
+  F3 = (K3, A3, SO3)
+  SO1 = {SO2, SO3} // F1과 F2, F3와의 집합관계를 표현함.
+ * 지물집합관계는 지물간의 집합관계를 표현한 것이다.
+  F1 = (K1, A1, SO1, F2, F3)// SO1과 SO2, SO3 는 집합관계가 없어도 무방함.
+  F2 = (K2, A2, SO2)
+  F3 = (K3, A3, SO3)
+  F : 지물, K : 지물, ID, A : 비공간 속성, SO : 공간속성 
+․여기에서 지물 집합관계는 공간객체집합관계로  표현하여야 한다.</cell>
+      <cell col="2" row="1"></cell>
+    </row>
+  </table>
+</annex>

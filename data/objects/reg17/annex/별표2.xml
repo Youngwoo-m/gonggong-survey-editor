@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표2" gubun="별표" no="2" title="3차원 국토공간정보 기본 기하 제약조건" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=118782527">
+  <text>[별표2] 3차원 국토공간정보 기본 기하 제약조건</text>
+  <table rows="10" cols="3">
+    <row>
+      <cell col="0" row="0" colspan="3">GF_Constraint : 기하요소의 구성 제약</cell>
+      <cell col="48190" row="0"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="9">설
+명</cell>
+      <cell col="1" row="1">․점(point)은 좌표(X, Y, Z)로 구성된다.</cell>
+      <cell col="2" row="1"></cell>
+    </row>
+    <row>
+      <cell col="1" row="2">․직선은 양 끝점(시작점, 끝점)으로 구성된다.</cell>
+      <cell col="2" row="2"></cell>
+    </row>
+    <row>
+      <cell col="1" row="3">․곡선조각(curve segment)은 직선이나 또 다른 곡선조각으로 연속적으로 구성된다. 이때 각 직선이나 또 다른 곡선조각의 양 끝점들은 서로 공유되어야 한다.</cell>
+      <cell col="2" row="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="4">․곡선(curve)은 곡선조각으로 연속적으로 구성된다. 이때 각 곡선조각의 양 끝점들은 서로 공유되어야 한다.</cell>
+      <cell col="2" row="4"></cell>
+    </row>
+    <row>
+      <cell col="1" row="5">․면조각(surface patch)은 곡선으로 된 경계(boundary)나 면조각으로 구성된다. 이때 경계는 닫혀 있어야 하며, 면조각을 구성하고 있는 또다른 면조각들은 서로 인접하여야 한다.</cell>
+      <cell col="2" row="5"></cell>
+    </row>
+    <row>
+      <cell col="1" row="6">․면(surface)은 곡선으로 된 경계나 면조각으로 구성된다. 이때 경계는 닫혀 있어야 하며, 면을 구성하고 있는 면조각들은 서로 인접하여야 한다.</cell>
+      <cell col="2" row="6"></cell>
+    </row>
+    <row>
+      <cell col="1" row="7">․입체(solid)는 면으로 된 경계로 구성된다. 이때 경계는 닫혀 있어야 하며, 입체를 구성하고 있는 면들은 서로 인접하여야 한다.</cell>
+      <cell col="2" row="7"></cell>
+    </row>
+    <row>
+      <cell col="1" row="8">․복합공간객체(GM_MultiPrimitive)는 단일공간객체 (GM_Primitive)로만 구성된다.</cell>
+      <cell col="2" row="8"></cell>
+    </row>
+    <row>
+      <cell col="1" row="9">근거 : ISO19107</cell>
+      <cell col="2" row="9"></cell>
+    </row>
+  </table>
+  <table rows="10" cols="3">
+    <row>
+      <cell col="0" row="0" colspan="3">GF_Constraint : 기하요소의 방향 제약</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="9">설
+명</cell>
+      <cell col="1" row="1">․점은 방향이 없다.</cell>
+      <cell col="2" row="1"></cell>
+    </row>
+    <row>
+      <cell col="1" row="2">․직선의 방향은 양 끝점(시작점, 끝점)에 의해서 결정되며, 시작점에서 끝점으로의 방향으로 한다.</cell>
+      <cell col="2" row="2"></cell>
+    </row>
+    <row>
+      <cell col="1" row="3">․곡선조각의 방향은 그것을 구성하고 있는 직선이나 또 다른 곡선조각들의 방향과 같다. 이때 구성요소들은 모두 동일한 방향을 가지고 있다.</cell>
+      <cell col="2" row="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="4">․곡선의 방향은 그것을 구성하고 있는 곡선조각의 방향과 같다. 이 때 곡선조각은 모두 동일한 방향을 가지고 있다.</cell>
+      <cell col="2" row="4"></cell>
+    </row>
+    <row>
+      <cell col="1" row="5">․면조각이 곡선으로 된 경계로 구성된 경우, 면의 방향(normal vector)은 경계를 구성하고 있는 곡선의 방향에 따라 플레밍의 오른손 법칙을 적용하여 결정된다.</cell>
+      <cell col="2" row="5"></cell>
+    </row>
+    <row>
+      <cell col="1" row="6">․면조각이 또 다른 면조각들로 구성된 경우, 면의 방향은 그것을 구성하는 면조각들의 방향과 같다. 이때 면조각들의 방향들은 모두 동일하여야 한다.</cell>
+      <cell col="2" row="6"></cell>
+    </row>
+    <row>
+      <cell col="1" row="7">․면이 곡선으로 된 경계로 구성된 경우, 면의 방향(normal vector)은 경계를 구성하고 있는 곡선의 방향에 따라 플레밍의 오른손 법칙을 적용하여 결정된다.</cell>
+      <cell col="2" row="7"></cell>
+    </row>
+    <row>
+      <cell col="1" row="8">․면이 면조각들로 구성된 경우, 면의 방향은 그것을 구성하는 면조각들의 방향과 같다. 이때 면조각들의 방향들은 모두 동일하여야 한다.</cell>
+      <cell col="2" row="8"></cell>
+    </row>
+    <row>
+      <cell col="1" row="9">근거 : ISO19107</cell>
+      <cell col="2" row="9"></cell>
+    </row>
+  </table>
+</annex>

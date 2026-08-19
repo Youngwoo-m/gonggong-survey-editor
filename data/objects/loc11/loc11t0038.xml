@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0038" article="제75조(既知点の種類等)" rows="6" cols="2" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">区 分 項 目</cell>
+    <cell col="1" row="0" header="1">３級水準測量</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">既知点の種類</cell>
+    <cell col="1" row="1">電子基準点</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">新点間の距離</cell>
+    <cell col="1" row="2">6,000ｍ以上</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">既知点と新点間の 距離</cell>
+    <cell col="1" row="3"></cell>
+  </row>
+  <row>
+    <cell col="0" row="4">既設点と新点間の 距離</cell>
+    <cell col="1" row="4"></cell>
+  </row>
+  <row>
+    <cell col="0" row="5">備 考</cell>
+    <cell col="1" row="5">ただし、新点間距離、既知点と新点間又は既設点から新点までの距離 が6,000ｍ未満になる場合でも、急峻な地形や河川などがあることによ り両点間のレベル等による水準測量の観測距離が6,000ｍ以上になるこ とが明らかな場合は、計画機関の承認を得ることにより実施できるも のとする。</cell>
+  </row>
+</table>

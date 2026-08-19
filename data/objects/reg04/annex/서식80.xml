@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식80" gubun="서식" no="80" title="청산금에 대한 이의신청서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454965">
+  <table rows="2" cols="16">
+    <row>
+      <cell col="0" row="0" rowspan="2">신청서
+작성</cell>
+      <cell col="1" row="0"></cell>
+      <cell col="2" row="0" rowspan="2">‣</cell>
+      <cell col="3" row="0" rowspan="2">접 수</cell>
+      <cell col="4" row="0"></cell>
+      <cell col="5" row="0" rowspan="2">‣</cell>
+      <cell col="6" row="0" rowspan="2">서류 확인</cell>
+      <cell col="7" row="0"></cell>
+      <cell col="8" row="0" rowspan="2">‣</cell>
+      <cell col="9" row="0" rowspan="2">축척변경위원회
+심의ㆍ의결</cell>
+      <cell col="10" row="0"></cell>
+      <cell col="11" row="0" rowspan="2">‣</cell>
+      <cell col="12" row="0" rowspan="2">정 리</cell>
+      <cell col="13" row="0"></cell>
+      <cell col="14" row="0" rowspan="2">‣</cell>
+      <cell col="15" row="0" rowspan="2">통 지</cell>
+    </row>
+    <row>
+      <cell col="1" row="1"></cell>
+      <cell col="4" row="1"></cell>
+      <cell col="7" row="1"></cell>
+      <cell col="10" row="1"></cell>
+      <cell col="13" row="1"></cell>
+    </row>
+  </table>
+  <table rows="30" cols="34">
+    <row>
+      <cell col="0" row="0" colspan="34">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별지 제80호서식] &lt;개정 2017. 1. 31.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="34">청산금에 대한 이의신청서</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="26"></cell>
+      <cell col="26" row="2" colspan="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="3">접수번호</cell>
+      <cell col="3" row="3" colspan="4"></cell>
+      <cell col="7" row="3" colspan="4">접수일</cell>
+      <cell col="11" row="3" colspan="4"></cell>
+      <cell col="15" row="3" colspan="3">발급일</cell>
+      <cell col="18" row="3" colspan="7"></cell>
+      <cell col="25" row="3" colspan="7">처리기간</cell>
+      <cell col="32" row="3" colspan="2">1일</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="3"></cell>
+      <cell col="3" row="4" colspan="4"></cell>
+      <cell col="7" row="4" colspan="4"></cell>
+      <cell col="11" row="4" colspan="4"></cell>
+      <cell col="15" row="4" colspan="3"></cell>
+      <cell col="18" row="4" colspan="7"></cell>
+      <cell col="25" row="4" colspan="7"></cell>
+      <cell col="32" row="4" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="2" rowspan="3">신청인</cell>
+      <cell col="2" row="5" colspan="32">성명(한글)</cell>
+    </row>
+    <row>
+      <cell col="2" row="6" colspan="20">생년월일</cell>
+      <cell col="22" row="6" colspan="12">전화번호</cell>
+    </row>
+    <row>
+      <cell col="2" row="7" colspan="32">주소</cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="34"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="2" rowspan="3">토지의 
+표시</cell>
+      <cell col="2" row="9" colspan="4" rowspan="2">읍ㆍ면</cell>
+      <cell col="6" row="9" colspan="4" rowspan="2">동ㆍ리</cell>
+      <cell col="10" row="9" colspan="4" rowspan="2">지번</cell>
+      <cell col="14" row="9" colspan="3" rowspan="2">지목</cell>
+      <cell col="17" row="9" colspan="17">면적(㎡)</cell>
+    </row>
+    <row>
+      <cell col="17" row="10" colspan="7">변경 전</cell>
+      <cell col="24" row="10" colspan="7">변경 후</cell>
+      <cell col="31" row="10" colspan="3">증감내용</cell>
+    </row>
+    <row>
+      <cell col="2" row="11" colspan="4"></cell>
+      <cell col="6" row="11" colspan="4"></cell>
+      <cell col="10" row="11" colspan="4"></cell>
+      <cell col="14" row="11" colspan="3"></cell>
+      <cell col="17" row="11" colspan="7"></cell>
+      <cell col="24" row="11" colspan="7"></cell>
+      <cell col="31" row="11" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="34"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="2" rowspan="2">청 산 금
+결정금액</cell>
+      <cell col="2" row="13" colspan="17">㎡당 금액
+원</cell>
+      <cell col="19" row="13" colspan="15">총 금 액
+원</cell>
+    </row>
+    <row>
+      <cell col="2" row="14" colspan="32">청산금 결정내용 
+                       [  ]납부고지     [  ]수령통지</cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="34"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="34">이의신청 사유</cell>
+    </row>
+    <row>
+      <cell col="0" row="17" colspan="34"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18" colspan="34">「공간정보의 구축 및 관리 등에 관한 법률 시행령」 제77조에 따라 축척변경에 따른 청산금에 대하여 위와 같이 이의신청합니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="19" colspan="34">년          월          일장</cell>
+    </row>
+    <row>
+      <cell col="0" row="20" colspan="13"></cell>
+      <cell col="13" row="20" colspan="8">신청인</cell>
+      <cell col="21" row="20" colspan="6"></cell>
+      <cell col="27" row="20" colspan="7">(서명 또는 인)</cell>
+    </row>
+    <row>
+      <cell col="0" row="21" colspan="34">시장ㆍ군수ㆍ구청장 귀하</cell>
+    </row>
+    <row>
+      <cell col="0" row="22" colspan="34"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23" colspan="2" rowspan="2">첨부서류</cell>
+      <cell col="2" row="23" colspan="28" rowspan="2">없음</cell>
+      <cell col="30" row="23" colspan="4">수수료</cell>
+    </row>
+    <row>
+      <cell col="30" row="24" colspan="4">없음</cell>
+    </row>
+    <row>
+      <cell col="0" row="25" colspan="34"></cell>
+    </row>
+    <row>
+      <cell col="0" row="26" colspan="34">처리절차</cell>
+    </row>
+    <row>
+      <cell col="0" row="27" colspan="34"></cell>
+    </row>
+    <row>
+      <cell col="0" row="28"></cell>
+      <cell col="1" row="28" colspan="3">신청인</cell>
+      <cell col="4" row="28"></cell>
+      <cell col="5" row="28" colspan="3">시ㆍ군ㆍ구 담당부서</cell>
+      <cell col="8" row="28"></cell>
+      <cell col="9" row="28" colspan="3">시ㆍ군ㆍ구 담당부서</cell>
+      <cell col="12" row="28" colspan="4"></cell>
+      <cell col="16" row="28" colspan="4">시ㆍ군ㆍ구 담당부서</cell>
+      <cell col="20" row="28" colspan="3"></cell>
+      <cell col="23" row="28" colspan="5">시ㆍ군ㆍ구 담당부서</cell>
+      <cell col="28" row="28"></cell>
+      <cell col="29" row="28" colspan="4"></cell>
+      <cell col="33" row="28"></cell>
+    </row>
+    <row>
+      <cell col="0" row="29" colspan="34">210㎜×297㎜[백상지(80g/㎡) 또는 중질지(80g/㎡)]</cell>
+    </row>
+  </table>
+</annex>

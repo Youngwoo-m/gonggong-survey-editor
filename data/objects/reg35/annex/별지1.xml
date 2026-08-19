@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지1" gubun="별지" no="1" title="측량기기 성능검사대행자 교육 참가 신청서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=115170925">
+  <text>■ 측량기기 성능검사대행자 교육에 관한 규정 [별지 제1호 서식]</text>
+  <table rows="11" cols="5">
+    <row>
+      <cell col="0" row="0" colspan="5">측량기기 성능검사대행자 교육 참가 신청서</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2" rowspan="2">신청인</cell>
+      <cell col="1" row="2">성    명</cell>
+      <cell col="2" row="2"></cell>
+      <cell col="3" row="2">생년월일</cell>
+      <cell col="4" row="2"></cell>
+    </row>
+    <row>
+      <cell col="1" row="3">휴대전화</cell>
+      <cell col="2" row="3"></cell>
+      <cell col="3" row="3">E-mail</cell>
+      <cell col="4" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" rowspan="4">근무처</cell>
+      <cell col="1" row="5">업 체 명</cell>
+      <cell col="2" row="5" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="6">부 서 명</cell>
+      <cell col="2" row="6"></cell>
+      <cell col="3" row="6">직   위
+(담당업무)</cell>
+      <cell col="4" row="6"></cell>
+    </row>
+    <row>
+      <cell col="1" row="7">주   소</cell>
+      <cell col="2" row="7" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="8">전   화</cell>
+      <cell col="2" row="8" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">비  고</cell>
+      <cell col="1" row="9" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="5">「측량기기 성능검사대행자 교육에 관한 규정」 제2조제3항에 따라 위와 같이 측량  기기 성능검사대행자 교육 참가를 신청합니다.
+20     년      월       일   
+신청인 :                   (서명 또는 인)
+국토지리정보원장 귀하</cell>
+    </row>
+  </table>
+</annex>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="r104t1" article="rule 104 Boundary annotations" rows="9" cols="2" source="Table 8: Boundary annotations for title diagrams">
+  <row>
+    <cell col="0" row="0" header="1">Boundary</cell>
+    <cell col="1" row="0" header="1">Annotation</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">An accepted boundary</cell>
+    <cell col="1" row="1">“Boundary accepted from [ CSD number ]”</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">Class D non-primary parcel boundaries, unless accepted</cell>
+    <cell col="1" row="2">“Boundary not defined by survey”</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">Water centre-line boundary</cell>
+    <cell col="1" row="3">“Boundary follows centre-line of stream/river”</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">Water boundary, including where it is a height-limited boundary</cell>
+    <cell col="1" row="4">[ Description of legal water boundary ]</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">An adopted water boundary that has become an irregular boundary under rule 10(3)﻿(a)</cell>
+    <cell col="1" row="5">“Former water boundary not coincident with water’s edge”</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">An adopted water boundary where accretion is not being claimed under rule 10(2)﻿(b)</cell>
+    <cell col="1" row="6">“Adopted boundary not coincident with water’s edge”</cell>
+  </row>
+  <row>
+    <cell col="0" row="7">New boundary angles created due to fault zone movement</cell>
+    <cell col="1" row="7">“Boundary includes new angles due to fault zone movement”</cell>
+  </row>
+  <row>
+    <cell col="0" row="8">Boundary accepted in areas of ground movement in terms of rules 109(1), (4), and (5) and 110(5)</cell>
+    <cell col="1" row="8">“Boundary not surveyed since ground movement”</cell>
+  </row>
+</table>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표2" gubun="별표" no="2" title="보안심사전문기관에 대한 행정처분 기준(제24조의3제3항 관련)" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=161191481">
+  <table rows="12" cols="6">
+    <row>
+      <cell col="0" row="0" colspan="6">■ 국가공간정보 기본법 시행령 [별표 2] &lt;신설 2022. 3. 15.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="6">보안심사전문기관에 대한 행정처분 기준(제24조의3제3항 관련)</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="6">1. 일반기준
+ 가. 위반행위의 횟수에 따른 행정처분의 가중된 처분기준은 최근 1년간 같은 위반행위로 행정처분을 받은 경우에 적용한다. 이 경우 기간의 계산은 위반행위에 대하여 행정처분을 받은 날과 그 처분 후 다시 같은 위반행위를 하여 적발된 날을 기준으로 한다.
+ 나. 가목에 따라 가중된 부과처분을 하는 경우 가중처분의 적용 차수는 그 위반행위 전 부과처분 차수(가목에 따른 기간 내에 행정처분이 둘 이상 있었던 경우에는 높은 차수를 말한다)의 다음 차수로 한다.
+ 다. 위반행위가 둘 이상인 경우로서 그에 해당하는 각각의 처분 기준이 다른 경우에는 그중 무거운 처분 기준에 따른다.
+ 라. 관리기관의 장은 다음 각 호에 해당하는 사유를 고려하여 제2호의 개별기준에 따른 처분기준을 감경할 수 있다. 이 경우 처분기준이 업무정지인 경우에는 그 처분기준의 2분의 1 범위에서 감경할 수 있고, 지정취소인 경우에는 3개월 이상 1년 이하의 업무정지로 감경할 수 있다.
+    1) 위반행위가 사소한 부주의나 오류로 인한 것으로 인정되는 경우
+    2) 위반의 내용ㆍ정도가 경미하여 공개가 제한되는 공간정보의 보안심사에 미치는 피해가 적다고 인정되는 경우
+    3) 위반행위자가 처음 해당 위반행위를 한 경우로서 2년 이상 보안심사전문기관 업무를 모범적으로 한 사실이 인정되는 경우
+    4) 위반행위자가 보안심사 업무나 국가공간정보체계의 발전 등에 기여한 사실이 인정되는 경우</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="6">2. 개별기준</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" rowspan="2">위반행위</cell>
+      <cell col="1" row="4" rowspan="2">근거 법조문</cell>
+      <cell col="2" row="4" colspan="4">처분기준</cell>
+    </row>
+    <row>
+      <cell col="2" row="5">1차 위반</cell>
+      <cell col="3" row="5" colspan="2">2차 위반</cell>
+      <cell col="5" row="5">3차 위반</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">가. 거짓이나 그 밖의 부정한 방법으로 지정을 받은 경우</cell>
+      <cell col="1" row="6">법 제35조의4제1항제1호</cell>
+      <cell col="2" row="6">지정취소</cell>
+      <cell col="3" row="6" colspan="2"></cell>
+      <cell col="5" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">나. 업무정지 명령을 위반하여 업무정지 기간 중에 보안심사 업무를 수행한 경우</cell>
+      <cell col="1" row="7">법 제35조의4
+제1항제2호</cell>
+      <cell col="2" row="7">지정취소</cell>
+      <cell col="3" row="7" colspan="2"></cell>
+      <cell col="5" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8">다. 정당한 사유 없이 지정받은 날부터 1년 이상 보안심사 업무를 수행하지 않은 경우</cell>
+      <cell col="1" row="8">법 제35조의4
+제1항제3호</cell>
+      <cell col="2" row="8">시정명령</cell>
+      <cell col="3" row="8" colspan="2">지정취소</cell>
+      <cell col="5" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">라. 전문기관의 지정 기준에 적합하지 않게 된 경우</cell>
+      <cell col="1" row="9">법 제35조의4
+제1항제4호</cell>
+      <cell col="2" row="9">시정명령</cell>
+      <cell col="3" row="9" colspan="2">업무정지
+3개월</cell>
+      <cell col="5" row="9">지정취소</cell>
+    </row>
+    <row>
+      <cell col="0" row="10">마. 고의 또는 중대한 과실로 보안심사 기준 및 절차를 위반하거나 부당하게 보안심사 업무를 수행한 경우</cell>
+      <cell col="1" row="10">법 제35조의4제1항제5호</cell>
+      <cell col="2" row="10">업무정지
+3개월</cell>
+      <cell col="3" row="10" colspan="2">지정취소</cell>
+      <cell col="5" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="6"></cell>
+    </row>
+  </table>
+</annex>

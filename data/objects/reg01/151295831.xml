@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="151295831" article="제25조" rows="7" cols="4" source="공공측량 작업규정.2025.04.23_수식수정.오류표시.hwpx">
+  <row>
+    <cell col="0" row="0">편심거리</cell>
+    <cell col="1" row="0">기계 및 측정방법</cell>
+    <cell col="2" row="0">측정단위</cell>
+    <cell col="3" row="0">점검항목·헝용범위</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">30cm 미만</cell>
+    <cell col="1" row="1">편심 측정용지에 방향선을 긋고, 각도기를 편심 각도를 측정한다.</cell>
+    <cell col="2" row="1">1′</cell>
+    <cell col="3" row="1">-</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">30cm 이상
+2m 미만</cell>
+    <cell col="1" row="2">편심 측정용지에 방향선을 긋고,
+계산에 의해 편심각을 산출한다</cell>
+    <cell col="2" row="2">10′</cell>
+    <cell col="3" row="2">-</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">2m 이상
+10m 미만</cell>
+    <cell col="1" row="3" rowspan="4">TS를 이용하여 제24조 운용기준을 준용하여 측정한다.</cell>
+    <cell col="2" row="3">1′</cell>
+    <cell col="3" row="3">배각차 120″
+관측차 90″</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">10m 이상
+50m 미만</cell>
+    <cell col="2" row="4" rowspan="2">10′</cell>
+    <cell col="3" row="4">배각차 60″
+관측차 40″</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">50m 이상
+100m 미만</cell>
+    <cell col="3" row="5">배각차 30″
+관측차 20″</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">100m 이상
+250m 미만</cell>
+    <cell col="2" row="6">1′</cell>
+    <cell col="3" row="6">배각차 20″
+관측차 10″</cell>
+  </row>
+</table>

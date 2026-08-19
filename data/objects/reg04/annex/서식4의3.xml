@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식4의3" gubun="서식" no="4의3" title="측량용역 수행실적서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454329">
+  <table rows="20" cols="6">
+    <row>
+      <cell col="0" row="0" colspan="6">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별지 제4호의3서식] &lt;개정 2021. 8. 27.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="6">측량용역 수행실적서</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">접수번호</cell>
+      <cell col="2" row="2" colspan="4">접수일자</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2"></cell>
+      <cell col="2" row="3" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="2" rowspan="3">수신자</cell>
+      <cell col="2" row="4">수신</cell>
+      <cell col="3" row="4" colspan="3">공간정보산업협회장</cell>
+    </row>
+    <row>
+      <cell col="2" row="5">참조</cell>
+      <cell col="3" row="5" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="2" row="6">제목</cell>
+      <cell col="3" row="6" colspan="3">(     )년도 측량용역 수행실적 제출</cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="2" rowspan="6">제출자</cell>
+      <cell col="2" row="8" colspan="2">사업자 등록번호</cell>
+      <cell col="4" row="8" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="2" row="9" colspan="2">상 호</cell>
+      <cell col="4" row="9" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="2" row="10" colspan="2">대표자</cell>
+      <cell col="4" row="10"></cell>
+      <cell col="5" row="10">(서명 또는 인)</cell>
+    </row>
+    <row>
+      <cell col="2" row="11" colspan="2">소재지</cell>
+      <cell col="4" row="11" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="2" row="12" colspan="2">실제 작성자 성명 및 소속</cell>
+      <cell col="4" row="12" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="2" row="13" colspan="2">전화번호</cell>
+      <cell col="4" row="13" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="6">「공간정보의 구축 및 관리 등에 관한 법률 시행규칙」 제6조의4에 따라 (     )년도 측량용역 수행실적을 제출합니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="6">년     월     일</cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17" colspan="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18">첨부서류</cell>
+      <cell col="1" row="18" colspan="5">1.「부가가치세법」에 따른 사업자등록증 사본(신청인이 개인인 경우에 제출합니다)
+ 2. 별지 제4호의4서식에 따른 측량용역 수행실적 명세서
+ 3. 측량용역 수행실적을 증명하는 다음 각 목의 서류
+   가. 법 제2조제3호가목의 기관으로부터 수탁한 측량용역의 경우에는 발주자가 발행한 실적증명서
+   나. 가목 이외의 자로부터 수탁한 측량용역의 경우에는 다음 1)과 2)의 서류
+     1) 측량용역 수탁계약서 사본
+     2) 당해 용역 관련 세금계산서 사본
+   다. 「해외건설촉진법」제2조제3호에 따른 해외건설 엔지니어링활동으로 수행한 측량용역의 경우는「해외건설촉진법」 제23조에 따라 설립된 해외건설협회가 확인한 실적확인서 또는 공사계약서 사본이 첨부된 외국환은행이 발행한 외화입금증명서
+ 4. 재무상태를 증명하는 다음 각 목의 어느 하나에 해당하는 서류
+   가.「법인세법」 및 「소득세법」의 규정에 따라 관할세무서장에게 제출한 조세에 관한 신고서류(「세무사법」 제6조의 규정에 따라 등록한 세무사 또는 같은 법 제20조의2의 규정에 따라 세무대리업무등록부에 등록한 공인회계사가 같은 법 제2조제7호의 규정에 따라 확인한 것으로서 재무상태표 및 손익계산서가 포함된 것을 말한다)
+   나.「주식회사의 외부감사에 관한 법률」 제3조의 규정에 따른 감사인의 회계감사를 받은 재무제표
+   다.「공인회계사법」 제7조의 규정에 따라 등록한 공인회계사 또는 같은 법 제24조의 규정에 따라 등록한 회계법인의 회계감사를 받은 재무제표
+ 5. 별지 제4호의5서식에 따른 장비 보유현황표 및 그 증명 서류</cell>
+    </row>
+    <row>
+      <cell col="0" row="19" colspan="6">210㎜×297㎜(일반용지 60g/㎡(재활용품)</cell>
+    </row>
+  </table>
+</annex>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식86의2" gubun="서식" no="86의2" title="지명 결정 요청서(제정ㆍ변경ㆍ폐지ㆍ기타)" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162455007">
+  <table rows="22" cols="24">
+    <row>
+      <cell col="0" row="0" colspan="24">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별지 제86호의2서식] &lt;신설 2023. 6. 9.&gt;
+지명 결정 요청서(제정ㆍ변경ㆍ폐지ㆍ기타)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="4">번호</cell>
+      <cell col="1" row="1" rowspan="4">심의 
+종류</cell>
+      <cell col="2" row="1" colspan="2" rowspan="4">지명 종류</cell>
+      <cell col="4" row="1" rowspan="4">행정구역
+(시, 도,  군, 읍,  면, 리)</cell>
+      <cell col="5" row="1" colspan="2" rowspan="2">위치</cell>
+      <cell col="7" row="1" rowspan="4">현 지도
+표기내용</cell>
+      <cell col="8" row="1" colspan="4" rowspan="4">현재 호칭되는 지명</cell>
+      <cell col="12" row="1" colspan="4" rowspan="3">최초 심의
+요청 지명</cell>
+      <cell col="16" row="1" colspan="8">지명위원회 의결</cell>
+    </row>
+    <row>
+      <cell col="16" row="2" colspan="5" rowspan="2">○○시ㆍ군ㆍ구</cell>
+      <cell col="21" row="2" colspan="3" rowspan="2">○○시ㆍ도</cell>
+    </row>
+    <row>
+      <cell col="5" row="3" rowspan="2">경도</cell>
+      <cell col="6" row="3" rowspan="2">위도</cell>
+    </row>
+    <row>
+      <cell col="12" row="4">한글</cell>
+      <cell col="13" row="4" colspan="2">한자</cell>
+      <cell col="15" row="4">영문</cell>
+      <cell col="16" row="4" colspan="2">한글</cell>
+      <cell col="18" row="4" colspan="2">한자</cell>
+      <cell col="20" row="4">영문</cell>
+      <cell col="21" row="4">한글</cell>
+      <cell col="22" row="4">한자</cell>
+      <cell col="23" row="4">영문</cell>
+    </row>
+    <row>
+      <cell col="0" row="5" rowspan="2"></cell>
+      <cell col="1" row="5" rowspan="2"></cell>
+      <cell col="2" row="5" colspan="2" rowspan="2"></cell>
+      <cell col="4" row="5" rowspan="2"></cell>
+      <cell col="5" row="5" rowspan="2"></cell>
+      <cell col="6" row="5" rowspan="2"></cell>
+      <cell col="7" row="5" rowspan="2"></cell>
+      <cell col="8" row="5">한글</cell>
+      <cell col="9" row="5" colspan="3"></cell>
+      <cell col="12" row="5" rowspan="2"></cell>
+      <cell col="13" row="5" colspan="2" rowspan="2"></cell>
+      <cell col="15" row="5" rowspan="2"></cell>
+      <cell col="16" row="5" colspan="2" rowspan="2"></cell>
+      <cell col="18" row="5" colspan="2" rowspan="2"></cell>
+      <cell col="20" row="5" rowspan="2"></cell>
+      <cell col="21" row="5" rowspan="2"></cell>
+      <cell col="22" row="5" rowspan="2"></cell>
+      <cell col="23" row="5" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="8" row="6">한자</cell>
+      <cell col="9" row="6" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7" rowspan="2"></cell>
+      <cell col="1" row="7" rowspan="2"></cell>
+      <cell col="2" row="7" colspan="2" rowspan="2"></cell>
+      <cell col="4" row="7" rowspan="2"></cell>
+      <cell col="5" row="7" rowspan="2"></cell>
+      <cell col="6" row="7" rowspan="2"></cell>
+      <cell col="7" row="7" rowspan="2"></cell>
+      <cell col="8" row="7">한글</cell>
+      <cell col="9" row="7" colspan="3"></cell>
+      <cell col="12" row="7" rowspan="2"></cell>
+      <cell col="13" row="7" colspan="2" rowspan="2"></cell>
+      <cell col="15" row="7" rowspan="2"></cell>
+      <cell col="16" row="7" colspan="2" rowspan="2"></cell>
+      <cell col="18" row="7" colspan="2" rowspan="2"></cell>
+      <cell col="20" row="7" rowspan="2"></cell>
+      <cell col="21" row="7" rowspan="2"></cell>
+      <cell col="22" row="7" rowspan="2"></cell>
+      <cell col="23" row="7" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="8" row="8">한자</cell>
+      <cell col="9" row="8" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9" rowspan="2"></cell>
+      <cell col="1" row="9" rowspan="2"></cell>
+      <cell col="2" row="9" colspan="2" rowspan="2"></cell>
+      <cell col="4" row="9" rowspan="2"></cell>
+      <cell col="5" row="9" rowspan="2"></cell>
+      <cell col="6" row="9" rowspan="2"></cell>
+      <cell col="7" row="9" rowspan="2"></cell>
+      <cell col="8" row="9">한글</cell>
+      <cell col="9" row="9" colspan="3"></cell>
+      <cell col="12" row="9" rowspan="2"></cell>
+      <cell col="13" row="9" colspan="2" rowspan="2"></cell>
+      <cell col="15" row="9" rowspan="2"></cell>
+      <cell col="16" row="9" colspan="2" rowspan="2"></cell>
+      <cell col="18" row="9" colspan="2" rowspan="2"></cell>
+      <cell col="20" row="9" rowspan="2"></cell>
+      <cell col="21" row="9" rowspan="2"></cell>
+      <cell col="22" row="9" rowspan="2"></cell>
+      <cell col="23" row="9" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="8" row="10">한자</cell>
+      <cell col="9" row="10" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11" rowspan="2"></cell>
+      <cell col="1" row="11" rowspan="2"></cell>
+      <cell col="2" row="11" colspan="2" rowspan="2"></cell>
+      <cell col="4" row="11" rowspan="2"></cell>
+      <cell col="5" row="11" rowspan="2"></cell>
+      <cell col="6" row="11" rowspan="2"></cell>
+      <cell col="7" row="11" rowspan="2"></cell>
+      <cell col="8" row="11">한글</cell>
+      <cell col="9" row="11" colspan="3"></cell>
+      <cell col="12" row="11" rowspan="2"></cell>
+      <cell col="13" row="11" colspan="2" rowspan="2"></cell>
+      <cell col="15" row="11" rowspan="2"></cell>
+      <cell col="16" row="11" colspan="2" rowspan="2"></cell>
+      <cell col="18" row="11" colspan="2" rowspan="2"></cell>
+      <cell col="20" row="11" rowspan="2"></cell>
+      <cell col="21" row="11" rowspan="2"></cell>
+      <cell col="22" row="11" rowspan="2"></cell>
+      <cell col="23" row="11" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="8" row="12">한자</cell>
+      <cell col="9" row="12" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="24"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="24">「공간정보의 구축 및 관리 등에 관한 법률」 제91조의2제2항 및 같은 법 시행규칙 제99조의2에 따라 지명 결정(제정ㆍ변경ㆍ폐지ㆍ기타)을 요청합니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="24">년       월       일</cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="11"></cell>
+      <cell col="11" row="16" colspan="3">신청인</cell>
+      <cell col="14" row="16" colspan="3">○○시ㆍ도지사</cell>
+      <cell col="17" row="16" colspan="2"></cell>
+      <cell col="19" row="16" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17" colspan="24"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18" colspan="5">국토교통부장관</cell>
+      <cell col="5" row="18" colspan="19">귀하</cell>
+    </row>
+    <row>
+      <cell col="0" row="19" colspan="24"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20" colspan="3">첨부서류</cell>
+      <cell col="3" row="20" colspan="21">1. 지명 세부내용 조사표 1부
+ 2. 시ㆍ도 지명위원회의 회의록 사본 1부
+ 3. 영 제96조의2제1항 각 호에 해당하는 사항임을 입증하는 서류 1부</cell>
+    </row>
+    <row>
+      <cell col="0" row="21" colspan="10"></cell>
+      <cell col="10" row="21" colspan="14">380㎜×268㎜(일반용지 60g/㎡)</cell>
+    </row>
+  </table>
+</annex>

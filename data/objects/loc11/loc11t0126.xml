@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0126" article="제694조(方法)" rows="4" cols="5" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">区 分</cell>
+    <cell col="1" row="0" header="1">水平角観測</cell>
+    <cell col="2" row="0" header="1"></cell>
+    <cell col="3" row="0" header="1">鉛直角観測</cell>
+    <cell col="4" row="0" header="1">距離測定</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">方 法</cell>
+    <cell col="1" row="1">２対回（０°，90°）</cell>
+    <cell col="2" row="1"></cell>
+    <cell col="3" row="1">１対回</cell>
+    <cell col="4" row="1">２回測定</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">較差の許容範囲</cell>
+    <cell col="1" row="2">倍角差</cell>
+    <cell col="2" row="2">60″</cell>
+    <cell col="3" row="2">60″</cell>
+    <cell col="4" row="2">５㎜</cell>
+  </row>
+  <row>
+    <cell col="0" row="3"></cell>
+    <cell col="1" row="3">観測差</cell>
+    <cell col="2" row="3">40″</cell>
+    <cell col="3" row="3"></cell>
+    <cell col="4" row="3"></cell>
+  </row>
+</table>

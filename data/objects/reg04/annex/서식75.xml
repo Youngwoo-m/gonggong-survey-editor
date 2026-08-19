@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식75" gubun="서식" no="75" title="토지이동 신청서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454933">
+  <table rows="6" cols="4">
+    <row>
+      <cell col="0" row="0">신청인
+제출서류</cell>
+      <cell col="1" row="0" colspan="2">없음</cell>
+      <cell col="3" row="0" rowspan="2">수입증지 첨부란
+「공간정보의 구축 및 관리 등에 관한 법률 시행규칙」 제115조제1항에 따른 수수료(뒤쪽 참조)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">담당 공무원
+확인 사항</cell>
+      <cell col="1" row="1" colspan="2">토지(임야)합병 신청의 경우 다음 각 호의 사항
+1. 토지등기사항증명서
+2. 법인등기사항증명서(신청인이 법인인 경우에만 확인합니다)
+3. 주민등록표 초본(신청인이 개인인 경우에만 확인합니다)</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="4">행정정보 공동이용 동의서</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="4">본인은 이 건 업무처리와 관련하여 담당 공무원이 「전자정부법」 제36조제1항에 따른 행정정보의 공동이용을 통하여 위의 담당 공무원 확인 사항의 서류를 확인하는 것에 동의합니다.   * 동의하지 않는 경우에는 신청인이 직접 관련 서류를 제출해야 합니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="2">신청인</cell>
+      <cell col="2" row="5" colspan="2">(서명 또는 인)</cell>
+    </row>
+  </table>
+  <table rows="26" cols="22">
+    <row>
+      <cell col="0" row="0" colspan="22">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별지 제75호서식] &lt;개정 2022. 4. 6.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="22">토지이동 신청서</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="18">※ 뒤쪽의 수수료와 처리기간을 확인하시고, [  ]에는 해당되는 곳에 √ 표시를 합니다.</cell>
+      <cell col="18" row="2" colspan="4">(앞 쪽)</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">접수번호</cell>
+      <cell col="2" row="3" colspan="2"></cell>
+      <cell col="4" row="3" colspan="3">접수일</cell>
+      <cell col="7" row="3" colspan="3"></cell>
+      <cell col="10" row="3" colspan="3">발급일</cell>
+      <cell col="13" row="3" colspan="4"></cell>
+      <cell col="17" row="3" colspan="4">처리기간</cell>
+      <cell col="21" row="3">뒤 쪽 참조</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="2"></cell>
+      <cell col="2" row="4" colspan="2"></cell>
+      <cell col="4" row="4" colspan="3"></cell>
+      <cell col="7" row="4" colspan="3"></cell>
+      <cell col="10" row="4" colspan="3"></cell>
+      <cell col="13" row="4" colspan="4"></cell>
+      <cell col="17" row="4" colspan="4"></cell>
+      <cell col="21" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="2">신청구분</cell>
+      <cell col="2" row="5" colspan="20">[  ]토지(임야)신규등록      [  ]토지(임야)분할      [  ]토지(임야)지목변경  
+[  ]등록전환                                                                  [  ]토지(임야)합병      [  ]토지(임야)등록사항정정
+[  ]기타</cell>
+    </row>
+    <row>
+      <cell col="0" row="6" colspan="22"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="2" rowspan="2">신청인</cell>
+      <cell col="2" row="7" colspan="13">성명</cell>
+      <cell col="15" row="7" colspan="7">생년월일</cell>
+    </row>
+    <row>
+      <cell col="2" row="8" colspan="13">주소</cell>
+      <cell col="15" row="8" colspan="7">전화번호</cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="22"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="22">신 청 내 용</cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="5">토지소재</cell>
+      <cell col="5" row="11" colspan="6">이동전</cell>
+      <cell col="11" row="11" colspan="9">이동후</cell>
+      <cell col="20" row="11" colspan="2" rowspan="2">토지이동 결의일
+및 이동사유</cell>
+    </row>
+    <row>
+      <cell col="0" row="12">시ㆍ군ㆍ구</cell>
+      <cell col="1" row="12" colspan="2">읍ㆍ면</cell>
+      <cell col="3" row="12" colspan="2">동ㆍ리</cell>
+      <cell col="5" row="12">지번</cell>
+      <cell col="6" row="12" colspan="2">지목</cell>
+      <cell col="8" row="12" colspan="3">면적(㎡)</cell>
+      <cell col="11" row="12">지번</cell>
+      <cell col="12" row="12" colspan="4">지목</cell>
+      <cell col="16" row="12" colspan="4">면적(㎡)</cell>
+    </row>
+    <row>
+      <cell col="0" row="13"></cell>
+      <cell col="1" row="13" colspan="2"></cell>
+      <cell col="3" row="13" colspan="2"></cell>
+      <cell col="5" row="13"></cell>
+      <cell col="6" row="13" colspan="2"></cell>
+      <cell col="8" row="13" colspan="3"></cell>
+      <cell col="11" row="13"></cell>
+      <cell col="12" row="13" colspan="4"></cell>
+      <cell col="16" row="13" colspan="4"></cell>
+      <cell col="20" row="13" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14"></cell>
+      <cell col="1" row="14" colspan="2"></cell>
+      <cell col="3" row="14" colspan="2"></cell>
+      <cell col="5" row="14"></cell>
+      <cell col="6" row="14" colspan="2"></cell>
+      <cell col="8" row="14" colspan="3"></cell>
+      <cell col="11" row="14"></cell>
+      <cell col="12" row="14" colspan="4"></cell>
+      <cell col="16" row="14" colspan="4"></cell>
+      <cell col="20" row="14" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15"></cell>
+      <cell col="1" row="15" colspan="2"></cell>
+      <cell col="3" row="15" colspan="2"></cell>
+      <cell col="5" row="15"></cell>
+      <cell col="6" row="15" colspan="2"></cell>
+      <cell col="8" row="15" colspan="3"></cell>
+      <cell col="11" row="15"></cell>
+      <cell col="12" row="15" colspan="4"></cell>
+      <cell col="16" row="15" colspan="4"></cell>
+      <cell col="20" row="15" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16"></cell>
+      <cell col="1" row="16" colspan="2"></cell>
+      <cell col="3" row="16" colspan="2"></cell>
+      <cell col="5" row="16"></cell>
+      <cell col="6" row="16" colspan="2"></cell>
+      <cell col="8" row="16" colspan="3"></cell>
+      <cell col="11" row="16"></cell>
+      <cell col="12" row="16" colspan="4"></cell>
+      <cell col="16" row="16" colspan="4"></cell>
+      <cell col="20" row="16" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17"></cell>
+      <cell col="1" row="17" colspan="2"></cell>
+      <cell col="3" row="17" colspan="2"></cell>
+      <cell col="5" row="17"></cell>
+      <cell col="6" row="17" colspan="2"></cell>
+      <cell col="8" row="17" colspan="3"></cell>
+      <cell col="11" row="17"></cell>
+      <cell col="12" row="17" colspan="4"></cell>
+      <cell col="16" row="17" colspan="4"></cell>
+      <cell col="20" row="17" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18"></cell>
+      <cell col="1" row="18" colspan="2"></cell>
+      <cell col="3" row="18" colspan="2"></cell>
+      <cell col="5" row="18"></cell>
+      <cell col="6" row="18" colspan="2"></cell>
+      <cell col="8" row="18" colspan="3"></cell>
+      <cell col="11" row="18"></cell>
+      <cell col="12" row="18" colspan="4"></cell>
+      <cell col="16" row="18" colspan="4"></cell>
+      <cell col="20" row="18" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19" colspan="22"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20" colspan="22">위와 같이 관계 증명 서류를 첨부하여 신청합니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="21" colspan="22">년          월          일장</cell>
+    </row>
+    <row>
+      <cell col="0" row="22" colspan="9"></cell>
+      <cell col="9" row="22" colspan="5">신청인</cell>
+      <cell col="14" row="22" colspan="5"></cell>
+      <cell col="19" row="22" colspan="3">(서명 또는 인)</cell>
+    </row>
+    <row>
+      <cell col="0" row="23" colspan="22">시장ㆍ군수ㆍ구청장 귀하</cell>
+    </row>
+    <row>
+      <cell col="0" row="24" colspan="22"></cell>
+    </row>
+    <row>
+      <cell col="0" row="25" colspan="22">210㎜×297㎜[일반용지60g/㎡]</cell>
+    </row>
+  </table>
+  <table rows="2" cols="16">
+    <row>
+      <cell col="0" row="0" rowspan="2">신청서
+작성</cell>
+      <cell col="1" row="0"></cell>
+      <cell col="2" row="0" rowspan="2">‣</cell>
+      <cell col="3" row="0" rowspan="2">접 수</cell>
+      <cell col="4" row="0"></cell>
+      <cell col="5" row="0" rowspan="2">‣</cell>
+      <cell col="6" row="0" rowspan="2">확 인</cell>
+      <cell col="7" row="0"></cell>
+      <cell col="8" row="0" rowspan="2">‣</cell>
+      <cell col="9" row="0" rowspan="2">결 재</cell>
+      <cell col="10" row="0"></cell>
+      <cell col="11" row="0" rowspan="2">‣</cell>
+      <cell col="12" row="0" rowspan="2">정 리</cell>
+      <cell col="13" row="0"></cell>
+      <cell col="14" row="0" rowspan="2">‣</cell>
+      <cell col="15" row="0" rowspan="2">통 지</cell>
+    </row>
+    <row>
+      <cell col="1" row="1"></cell>
+      <cell col="4" row="1"></cell>
+      <cell col="7" row="1"></cell>
+      <cell col="10" row="1"></cell>
+      <cell col="13" row="1"></cell>
+    </row>
+  </table>
+  <table rows="13" cols="17">
+    <row>
+      <cell col="0" row="0" colspan="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="17">(뒤 쪽)</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="17">처리기간</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="4">1. 신규등록 : 3일
+5. 토지(임야) 합병 : 5일</cell>
+      <cell col="4" row="4" colspan="4">2. 토지(임야)분할 : 3일
+6. 등록사항 정정 : 3일</cell>
+      <cell col="8" row="4" colspan="5">3. 토지(임야) 지목변경 : 5일
+7. 바다로 된 토지의 등록말소 : 3일</cell>
+      <cell col="13" row="4" colspan="4">4. 등록전환 : 3일
+8. 축척변경 : 3일</cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6" colspan="17">수수료</cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="9">1. 토지(임야) 신규등록 : 1,400원(1필지)
+2. 토지(임야) 분할 : 1,400원(분할 후 1필지)
+3. 토지(임야) 지목변경 : 1,000원(1필지)
+4. 등 록 전 환 : 1,400원(1필지)
+5. 토지(임야) 합병 : 1,000원(합병 전1필지)</cell>
+      <cell col="9" row="7" colspan="8">6. 등록사항 정정 : 무료
+7. 바다로 된 토지의 등록말소 : 무료
+8. 축 척 변 경 : 1,400원(1필지)
+9. 「공간정보의 구축 및 관리 등에 관한 법률」 제86조에 따른 토지이동 신청 : 1,400원(1필지)</cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="17">처리절차</cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11"></cell>
+      <cell col="1" row="11">신청인</cell>
+      <cell col="2" row="11"></cell>
+      <cell col="3" row="11" colspan="2">시ㆍ군ㆍ구(지적업무 담당부서)</cell>
+      <cell col="5" row="11"></cell>
+      <cell col="6" row="11">시ㆍ군ㆍ구(지적업무
+담당부서)</cell>
+      <cell col="7" row="11" colspan="3"></cell>
+      <cell col="10" row="11">시ㆍ군ㆍ구(지적업무
+담당부서)</cell>
+      <cell col="11" row="11"></cell>
+      <cell col="12" row="11" colspan="2">시ㆍ군ㆍ구(지적업무
+담당부서)</cell>
+      <cell col="14" row="11"></cell>
+      <cell col="15" row="11"></cell>
+      <cell col="16" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="17">210mm×297mm[일반용지 60g/㎡(재활용품)]</cell>
+    </row>
+  </table>
+</annex>

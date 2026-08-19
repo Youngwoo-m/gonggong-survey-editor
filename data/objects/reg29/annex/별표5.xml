@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표5" gubun="별표" no="5" title="지도 등의 간행심사 사항" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151295095">
+  <text>[별표 5]
+지도 등의 간행심사 사항</text>
+  <table rows="5" cols="2">
+    <row>
+      <cell col="0" row="0">심사항목</cell>
+      <cell col="1" row="0">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">1. 보안사항 
+ - 군사보호시설 및 국가보안목표시설
+ - 기타 보안시설</cell>
+      <cell col="1" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2">2. 주요 지형의 위치 및 표현 적정성
+ - 도로ㆍ철도의 표기상태 및 위치의 정확성(터널, 지하차도, 고가   차도, 철도 등)
+ - 도로의 개통, 미개통, 공  사중, 계획선 등 표기여부
+ - 도로번호, 도로종류 
+ - 하천 및 교량</cell>
+      <cell col="1" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">3. 주요 건물의 위치 및 표현적정성
+ - 행정 및 공공기관</cell>
+      <cell col="1" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4">4. 행정경제
+ - 행정구역명</cell>
+      <cell col="1" row="4"></cell>
+    </row>
+  </table>
+</annex>

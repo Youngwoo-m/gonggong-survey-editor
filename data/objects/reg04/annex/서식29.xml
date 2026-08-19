@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식29" gubun="서식" no="29" title="측량기술자 경력신고서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454543">
+  <table rows="39" cols="20">
+    <row>
+      <cell col="0" row="0" colspan="20">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별지 제29호서식] &lt;개정 2024. 2. 6.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="20">측량기술자 경력신고서
+(○○분야)</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="14">※ 작성방법 읽고 작성하여 주시기 바랍니다.</cell>
+      <cell col="14" row="2" colspan="6">(앞 쪽)</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">관리번호</cell>
+      <cell col="1" row="3"></cell>
+      <cell col="2" row="3" colspan="3">접수일</cell>
+      <cell col="5" row="3" colspan="3"></cell>
+      <cell col="8" row="3" colspan="3"></cell>
+      <cell col="11" row="3" colspan="2"></cell>
+      <cell col="13" row="3" colspan="5">처리기간</cell>
+      <cell col="18" row="3" colspan="2">즉시</cell>
+    </row>
+    <row>
+      <cell col="0" row="4"></cell>
+      <cell col="1" row="4"></cell>
+      <cell col="2" row="4" colspan="3"></cell>
+      <cell col="5" row="4" colspan="3"></cell>
+      <cell col="8" row="4" colspan="3"></cell>
+      <cell col="11" row="4" colspan="2"></cell>
+      <cell col="13" row="4" colspan="5"></cell>
+      <cell col="18" row="4" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" rowspan="4">인적사항</cell>
+      <cell col="1" row="5" rowspan="3">성명</cell>
+      <cell col="2" row="5" colspan="8">(한글)</cell>
+      <cell col="10" row="5" colspan="7" rowspan="3">생년월일</cell>
+      <cell col="17" row="5" colspan="3" rowspan="4">사진
+(3×4센티미터)</cell>
+    </row>
+    <row>
+      <cell col="2" row="6" colspan="8">(한자)</cell>
+    </row>
+    <row>
+      <cell col="2" row="7" colspan="8">(영문)</cell>
+    </row>
+    <row>
+      <cell col="1" row="8" colspan="16">거주지</cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" rowspan="5">학력</cell>
+      <cell col="1" row="10" colspan="5">기간</cell>
+      <cell col="6" row="10" colspan="11">학교 및 학과명</cell>
+      <cell col="17" row="10" colspan="3">학위</cell>
+    </row>
+    <row>
+      <cell col="1" row="11" colspan="5"></cell>
+      <cell col="6" row="11" colspan="11"></cell>
+      <cell col="17" row="11" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="12" colspan="5"></cell>
+      <cell col="6" row="12" colspan="11"></cell>
+      <cell col="17" row="12" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="13" colspan="5"></cell>
+      <cell col="6" row="13" colspan="11"></cell>
+      <cell col="17" row="13" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="14" colspan="5"></cell>
+      <cell col="6" row="14" colspan="11"></cell>
+      <cell col="17" row="14" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="20">ㄴ</cell>
+    </row>
+    <row>
+      <cell col="0" row="16" rowspan="5">근무처
+이력</cell>
+      <cell col="1" row="16" colspan="2">근무기간</cell>
+      <cell col="3" row="16">회사명</cell>
+      <cell col="4" row="16" colspan="3">법인 또는 사업자등록번호</cell>
+      <cell col="7" row="16" colspan="2">업종
+(등록번호)</cell>
+      <cell col="9" row="16" colspan="3">근무기간</cell>
+      <cell col="12" row="16" colspan="4">회사명</cell>
+      <cell col="16" row="16" colspan="3">법인 또는 사업자등록번호</cell>
+      <cell col="19" row="16">업종
+(등록번호)</cell>
+    </row>
+    <row>
+      <cell col="1" row="17" colspan="2">~</cell>
+      <cell col="3" row="17"></cell>
+      <cell col="4" row="17" colspan="3"></cell>
+      <cell col="7" row="17" colspan="2"></cell>
+      <cell col="9" row="17" colspan="3">~</cell>
+      <cell col="12" row="17" colspan="4"></cell>
+      <cell col="16" row="17" colspan="3"></cell>
+      <cell col="19" row="17"></cell>
+    </row>
+    <row>
+      <cell col="1" row="18" colspan="2">~</cell>
+      <cell col="3" row="18"></cell>
+      <cell col="4" row="18" colspan="3"></cell>
+      <cell col="7" row="18" colspan="2"></cell>
+      <cell col="9" row="18" colspan="3">~</cell>
+      <cell col="12" row="18" colspan="4"></cell>
+      <cell col="16" row="18" colspan="3"></cell>
+      <cell col="19" row="18"></cell>
+    </row>
+    <row>
+      <cell col="1" row="19" colspan="2">~</cell>
+      <cell col="3" row="19"></cell>
+      <cell col="4" row="19" colspan="3"></cell>
+      <cell col="7" row="19" colspan="2"></cell>
+      <cell col="9" row="19" colspan="3">~</cell>
+      <cell col="12" row="19" colspan="4"></cell>
+      <cell col="16" row="19" colspan="3"></cell>
+      <cell col="19" row="19"></cell>
+    </row>
+    <row>
+      <cell col="1" row="20" colspan="2">~</cell>
+      <cell col="3" row="20"></cell>
+      <cell col="4" row="20" colspan="3"></cell>
+      <cell col="7" row="20" colspan="2"></cell>
+      <cell col="9" row="20" colspan="3">~</cell>
+      <cell col="12" row="20" colspan="4"></cell>
+      <cell col="16" row="20" colspan="3"></cell>
+      <cell col="19" row="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21" colspan="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="22" rowspan="5">기술자격</cell>
+      <cell col="1" row="22" colspan="3">종목 및 등급</cell>
+      <cell col="4" row="22" colspan="5">자격번호</cell>
+      <cell col="9" row="22" colspan="6">합격연월일</cell>
+      <cell col="15" row="22" colspan="5">발급연월일</cell>
+    </row>
+    <row>
+      <cell col="1" row="23" colspan="3"></cell>
+      <cell col="4" row="23" colspan="5"></cell>
+      <cell col="9" row="23" colspan="6"></cell>
+      <cell col="15" row="23" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="1" row="24" colspan="3"></cell>
+      <cell col="4" row="24" colspan="5"></cell>
+      <cell col="9" row="24" colspan="6"></cell>
+      <cell col="15" row="24" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="1" row="25" colspan="3"></cell>
+      <cell col="4" row="25" colspan="5"></cell>
+      <cell col="9" row="25" colspan="6"></cell>
+      <cell col="15" row="25" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="1" row="26" colspan="3"></cell>
+      <cell col="4" row="26" colspan="5"></cell>
+      <cell col="9" row="26" colspan="6"></cell>
+      <cell col="15" row="26" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="27" colspan="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="28" rowspan="5">교육훈련</cell>
+      <cell col="1" row="28" colspan="3">교육기간</cell>
+      <cell col="4" row="28" colspan="5">교육과정</cell>
+      <cell col="9" row="28" colspan="6">수료번호</cell>
+      <cell col="15" row="28" colspan="5">교육기관명</cell>
+    </row>
+    <row>
+      <cell col="1" row="29" colspan="3">.  .  . ～ .  .  .</cell>
+      <cell col="4" row="29" colspan="5"></cell>
+      <cell col="9" row="29" colspan="6"></cell>
+      <cell col="15" row="29" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="1" row="30" colspan="3">.  .  . ～ .  .  .</cell>
+      <cell col="4" row="30" colspan="5"></cell>
+      <cell col="9" row="30" colspan="6"></cell>
+      <cell col="15" row="30" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="1" row="31" colspan="3">.  .  . ～ .  .  .</cell>
+      <cell col="4" row="31" colspan="5"></cell>
+      <cell col="9" row="31" colspan="6"></cell>
+      <cell col="15" row="31" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="1" row="32" colspan="3">.  .  . ～ .  .  .</cell>
+      <cell col="4" row="32" colspan="5"></cell>
+      <cell col="9" row="32" colspan="6"></cell>
+      <cell col="15" row="32" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="33" colspan="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="34" rowspan="4">상훈</cell>
+      <cell col="1" row="34" colspan="3">연월일</cell>
+      <cell col="4" row="34" colspan="5">종류</cell>
+      <cell col="9" row="34" colspan="6">시행청</cell>
+      <cell col="15" row="34" colspan="5">근거</cell>
+    </row>
+    <row>
+      <cell col="1" row="35" colspan="3"></cell>
+      <cell col="4" row="35" colspan="5"></cell>
+      <cell col="9" row="35" colspan="6"></cell>
+      <cell col="15" row="35" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="1" row="36" colspan="3"></cell>
+      <cell col="4" row="36" colspan="5"></cell>
+      <cell col="9" row="36" colspan="6"></cell>
+      <cell col="15" row="36" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="1" row="37" colspan="3"></cell>
+      <cell col="4" row="37" colspan="5"></cell>
+      <cell col="9" row="37" colspan="6"></cell>
+      <cell col="15" row="37" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="38" colspan="20">210㎜×297㎜(일반용지60g/㎡)</cell>
+    </row>
+  </table>
+  <table rows="21" cols="12">
+    <row>
+      <cell col="0" row="0" colspan="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="12">(뒤 쪽)</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">연번</cell>
+      <cell col="1" row="2" colspan="2">참여기간</cell>
+      <cell col="3" row="2">근무처명</cell>
+      <cell col="4" row="2" colspan="2">참여사업명</cell>
+      <cell col="6" row="2" colspan="2">직위</cell>
+      <cell col="8" row="2" colspan="2">담당업무</cell>
+      <cell col="10" row="2" colspan="2">발주자</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">1</cell>
+      <cell col="1" row="3" colspan="2">.  .  . ～  .  .  .</cell>
+      <cell col="3" row="3"></cell>
+      <cell col="4" row="3" colspan="2"></cell>
+      <cell col="6" row="3" colspan="2"></cell>
+      <cell col="8" row="3" colspan="2"></cell>
+      <cell col="10" row="3" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4">2</cell>
+      <cell col="1" row="4" colspan="2">.  .  . ～  .  .  .</cell>
+      <cell col="3" row="4"></cell>
+      <cell col="4" row="4" colspan="2"></cell>
+      <cell col="6" row="4" colspan="2"></cell>
+      <cell col="8" row="4" colspan="2"></cell>
+      <cell col="10" row="4" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5">3</cell>
+      <cell col="1" row="5" colspan="2">.  .  . ～  .  .  .</cell>
+      <cell col="3" row="5"></cell>
+      <cell col="4" row="5" colspan="2"></cell>
+      <cell col="6" row="5" colspan="2"></cell>
+      <cell col="8" row="5" colspan="2"></cell>
+      <cell col="10" row="5" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">4</cell>
+      <cell col="1" row="6" colspan="2">.  .  . ～  .  .  .</cell>
+      <cell col="3" row="6"></cell>
+      <cell col="4" row="6" colspan="2"></cell>
+      <cell col="6" row="6" colspan="2"></cell>
+      <cell col="8" row="6" colspan="2"></cell>
+      <cell col="10" row="6" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">5</cell>
+      <cell col="1" row="7" colspan="2">.  .  . ～  .  .  .</cell>
+      <cell col="3" row="7"></cell>
+      <cell col="4" row="7" colspan="2"></cell>
+      <cell col="6" row="7" colspan="2"></cell>
+      <cell col="8" row="7" colspan="2"></cell>
+      <cell col="10" row="7" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8">6</cell>
+      <cell col="1" row="8" colspan="2">.  .  . ～  .  .  .</cell>
+      <cell col="3" row="8"></cell>
+      <cell col="4" row="8" colspan="2"></cell>
+      <cell col="6" row="8" colspan="2"></cell>
+      <cell col="8" row="8" colspan="2"></cell>
+      <cell col="10" row="8" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="12">※ 붙임의 연번 7번에서     번까지 포함</cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="12">「공간정보의 구축 및 관리 등에 관한 법률」 제40조제1항 및 같은 법 시행규칙 제43조제1항에 따라 위와 같이 신고합니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="12">년          월          일장</cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="5">신고인</cell>
+      <cell col="5" row="12" colspan="2">(본인)</cell>
+      <cell col="7" row="12" colspan="2"></cell>
+      <cell col="9" row="12" colspan="3">(서명 또는 인)</cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="5"></cell>
+      <cell col="5" row="13" colspan="2">(대리인)</cell>
+      <cell col="7" row="13" colspan="2"></cell>
+      <cell col="9" row="13" colspan="3">(서명 또는 인)</cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="12">귀하</cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="2">첨부서류</cell>
+      <cell col="2" row="16" colspan="9">1. 「공간정보의 구축 및 관리 등에 관한 법률 시행규칙」 별지 제31호서식의 경력확인서[사용자(대표자) 또는 발주자의 확인을 받은 것이어야 합니다]
+  2. 국가기술자격증 사본(해당자만 제출합니다)
+  3. 졸업증명서(해당자만 제출합니다)
+  4. 사진(3×4센티미터) 1장(경력신고의 경우에만 제출합니다)
+  5. 경력 또는 경력변경사항을 증명할 수 있는 서류</cell>
+      <cell col="11" row="16">수수료
+없음</cell>
+    </row>
+    <row>
+      <cell col="0" row="17" colspan="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18" colspan="12">작성방법</cell>
+    </row>
+    <row>
+      <cell col="0" row="19" colspan="12">1. 모두 한글로 적으십시오(성명은 예외).
+ 2. 이 신고서 중 기술경력과 관련한 용어의 의미는 아래와 같습니다.
+    ㆍ 참여기간: 참여한 기간을 연, 월, 일로 기재합니다
+    ㆍ 근무처명: 지금까지 근무했던 회사명과 업종을 기재합니다
+    ㆍ 참여사업명: 참여한 공사, 설계 및 용역명(도급계약서 사본 제출), 본사 근무 시에는 부서명을 기재합니다
+    ㆍ 직      위: 해당 사업 참여 당시 회사에서의 직위를 기재합니다
+    ㆍ 담당업무: 해당 사업 참여 시 담당한 업무를 계획ㆍ설계ㆍ설계감리ㆍ시공ㆍ시험ㆍ검사ㆍ공사감독ㆍ감리ㆍ안전진단ㆍ유지관리ㆍ사업관리ㆍ유지관리ㆍ사업관리ㆍ연구업무 등으로 구분하여 구체적으로 기재합니다
+    ㆍ 발  주  자: 해당 사업을 발주한 기관명을 기재합니다</cell>
+    </row>
+    <row>
+      <cell col="0" row="20" colspan="12"></cell>
+    </row>
+  </table>
+</annex>

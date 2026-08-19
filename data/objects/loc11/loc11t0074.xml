@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0074" article="제287조(方法)" rows="6" cols="3" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">地図情報レベル</cell>
+    <cell col="1" row="0" header="1">水平位置の誤差の許容範囲</cell>
+    <cell col="2" row="0" header="1">標高の誤差の許容範囲</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">500</cell>
+    <cell col="1" row="1">0.25ｍ</cell>
+    <cell col="2" row="1">0.2ｍ</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">1000</cell>
+    <cell col="1" row="2">0.50ｍ</cell>
+    <cell col="2" row="2">0.3ｍ</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">2500</cell>
+    <cell col="1" row="3">1.25ｍ</cell>
+    <cell col="2" row="3">0.5ｍ</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">5000</cell>
+    <cell col="1" row="4">2.50ｍ</cell>
+    <cell col="2" row="4">1.0ｍ</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">10000</cell>
+    <cell col="1" row="5">5.00ｍ</cell>
+    <cell col="2" row="5">1.5ｍ</cell>
+  </row>
+</table>

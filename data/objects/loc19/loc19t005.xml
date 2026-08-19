@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc19t005" article="도로 작업준비 및 철거 순서 및 신호수 운용 요령" rows="2" cols="5" source="측량 안전관리 매뉴얼 (2026.1)">
+  <row>
+    <cell col="0" row="0" header="1">안전하게 이동</cell>
+    <cell col="1" row="0" header="1">우로/좌로</cell>
+    <cell col="2" row="0" header="1">천천히 이동</cell>
+    <cell col="3" row="0" header="1">정지</cell>
+    <cell col="4" row="0" header="1">긴급정지</cell>
+  </row>
+  <row>
+    <cell col="0" row="1"></cell>
+    <cell col="1" row="1">유도방향 쪽 손 을 위로 올려 옆 으로 흔든다.</cell>
+    <cell col="2" row="1">진행방향쪽 손을 올린 상태 에서 반대손을 좌우로 흔든다.</cell>
+    <cell col="3" row="1">호각을 길게 불 면서 한손을 들 고 운전자를 향 해 높이 올린다.</cell>
+    <cell col="4" row="1"></cell>
+  </row>
+</table>

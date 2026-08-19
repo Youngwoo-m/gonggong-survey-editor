@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0009" article="제37조(観測の実施)" rows="4" cols="4" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">観測方法 ＧＮＳＳ衛星の組合せ</cell>
+    <cell col="1" row="0" header="1"></cell>
+    <cell col="2" row="0" header="1">スタティック法</cell>
+    <cell col="3" row="0" header="1">短縮スタティック法 キネマティック法 ＲＴＫ法 ネットワーク型ＲＴＫ法</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">ＧＰＳ・準天頂衛星</cell>
+    <cell col="1" row="1"></cell>
+    <cell col="2" row="1">４衛星以上</cell>
+    <cell col="3" row="1">５衛星以上</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">ＧＰＳ・準天頂衛星 及びＧＬＯＮＡＳＳ衛星</cell>
+    <cell col="1" row="2"></cell>
+    <cell col="2" row="2">５衛星以上</cell>
+    <cell col="3" row="2">６衛星以上</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">備 考</cell>
+    <cell col="1" row="3">１．ＧＬＯＮＡＳＳ衛星を用いて観測する場合は、ＧＰＳ・準天頂衛星及びＧＬＯＮ ＡＳＳ衛星を、それぞれ２衛星以上を用いること。 ２．スタティック法による１０㎞以上の観測では、ＧＰＳ・準天頂衛星を用いて観測す る場合は５衛星以上とし、ＧＰＳ・準天頂衛星及びＧＬＯＮＡＳＳ衛星を用いて観測 する場合は６衛星以上とする。</cell>
+    <cell col="2" row="3"></cell>
+    <cell col="3" row="3"></cell>
+  </row>
+</table>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식65" gubun="서식" no="65" title="공유지연명부" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454815">
+  <table rows="27" cols="44">
+    <row>
+      <cell col="0" row="0" colspan="44">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별지 제65호서식] &lt;개정 2017. 1. 31.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="44"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="4">고유번호</cell>
+      <cell col="4" row="2" colspan="10"></cell>
+      <cell col="14" row="2" colspan="14">공 유 지 연 명 부</cell>
+      <cell col="28" row="2" colspan="7">장 번 호</cell>
+      <cell col="35" row="2" colspan="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="4">토지 소재</cell>
+      <cell col="4" row="3" colspan="10"></cell>
+      <cell col="14" row="3" colspan="6">지  번</cell>
+      <cell col="20" row="3" colspan="8"></cell>
+      <cell col="28" row="3" colspan="7">비    고</cell>
+      <cell col="35" row="3" colspan="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="3" rowspan="4">순번</cell>
+      <cell col="3" row="4" colspan="4" rowspan="2">변 동 일 자</cell>
+      <cell col="7" row="4" colspan="5" rowspan="4">소유권 지분</cell>
+      <cell col="12" row="4" colspan="32">소        유        자</cell>
+    </row>
+    <row>
+      <cell col="12" row="5" colspan="25" rowspan="3">주             소</cell>
+      <cell col="37" row="5" colspan="7" rowspan="2">등록번호</cell>
+    </row>
+    <row>
+      <cell col="3" row="6" colspan="4" rowspan="2">변 동 원 인</cell>
+    </row>
+    <row>
+      <cell col="37" row="7" colspan="7">성명 또는 명칭</cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="3"></cell>
+      <cell col="3" row="8" colspan="4">년  월  일</cell>
+      <cell col="7" row="8" colspan="5"></cell>
+      <cell col="12" row="8" colspan="25" rowspan="2"></cell>
+      <cell col="37" row="8" colspan="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="3"></cell>
+      <cell col="3" row="9" colspan="4"></cell>
+      <cell col="7" row="9" colspan="5"></cell>
+      <cell col="37" row="9" colspan="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="3"></cell>
+      <cell col="3" row="10" colspan="4">년  월  일</cell>
+      <cell col="7" row="10" colspan="5"></cell>
+      <cell col="12" row="10" colspan="25" rowspan="2"></cell>
+      <cell col="37" row="10" colspan="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="3"></cell>
+      <cell col="3" row="11" colspan="4"></cell>
+      <cell col="7" row="11" colspan="5"></cell>
+      <cell col="37" row="11" colspan="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="3"></cell>
+      <cell col="3" row="12" colspan="4">년  월  일</cell>
+      <cell col="7" row="12" colspan="5"></cell>
+      <cell col="12" row="12" colspan="25" rowspan="2"></cell>
+      <cell col="37" row="12" colspan="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="3"></cell>
+      <cell col="3" row="13" colspan="4"></cell>
+      <cell col="7" row="13" colspan="5"></cell>
+      <cell col="37" row="13" colspan="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="3"></cell>
+      <cell col="3" row="14" colspan="4">년  월  일</cell>
+      <cell col="7" row="14" colspan="5"></cell>
+      <cell col="12" row="14" colspan="25" rowspan="2"></cell>
+      <cell col="37" row="14" colspan="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="3"></cell>
+      <cell col="3" row="15" colspan="4"></cell>
+      <cell col="7" row="15" colspan="5"></cell>
+      <cell col="37" row="15" colspan="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="3"></cell>
+      <cell col="3" row="16" colspan="4">년  월  일</cell>
+      <cell col="7" row="16" colspan="5"></cell>
+      <cell col="12" row="16" colspan="25" rowspan="2"></cell>
+      <cell col="37" row="16" colspan="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17" colspan="3"></cell>
+      <cell col="3" row="17" colspan="4"></cell>
+      <cell col="7" row="17" colspan="5"></cell>
+      <cell col="37" row="17" colspan="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18" colspan="3"></cell>
+      <cell col="3" row="18" colspan="4">년  월  일</cell>
+      <cell col="7" row="18" colspan="5"></cell>
+      <cell col="12" row="18" colspan="25" rowspan="2"></cell>
+      <cell col="37" row="18" colspan="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19" colspan="3"></cell>
+      <cell col="3" row="19" colspan="4"></cell>
+      <cell col="7" row="19" colspan="5"></cell>
+      <cell col="37" row="19" colspan="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20" colspan="3"></cell>
+      <cell col="3" row="20" colspan="4">년  월  일</cell>
+      <cell col="7" row="20" colspan="5"></cell>
+      <cell col="12" row="20" colspan="25" rowspan="2"></cell>
+      <cell col="37" row="20" colspan="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21" colspan="3"></cell>
+      <cell col="3" row="21" colspan="4"></cell>
+      <cell col="7" row="21" colspan="5"></cell>
+      <cell col="37" row="21" colspan="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="22" colspan="3"></cell>
+      <cell col="3" row="22" colspan="4">년  월  일</cell>
+      <cell col="7" row="22" colspan="5"></cell>
+      <cell col="12" row="22" colspan="25" rowspan="2"></cell>
+      <cell col="37" row="22" colspan="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23" colspan="3"></cell>
+      <cell col="3" row="23" colspan="4"></cell>
+      <cell col="7" row="23" colspan="5"></cell>
+      <cell col="37" row="23" colspan="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="24" colspan="44"></cell>
+    </row>
+    <row>
+      <cell col="0" row="25"></cell>
+      <cell col="1" row="25"></cell>
+      <cell col="2" row="25" colspan="3"></cell>
+      <cell col="5" row="25"></cell>
+      <cell col="6" row="25" colspan="2"></cell>
+      <cell col="8" row="25"></cell>
+      <cell col="9" row="25"></cell>
+      <cell col="10" row="25"></cell>
+      <cell col="11" row="25" colspan="2"></cell>
+      <cell col="13" row="25"></cell>
+      <cell col="14" row="25"></cell>
+      <cell col="15" row="25"></cell>
+      <cell col="16" row="25"></cell>
+      <cell col="17" row="25"></cell>
+      <cell col="18" row="25"></cell>
+      <cell col="19" row="25" colspan="2"></cell>
+      <cell col="21" row="25"></cell>
+      <cell col="22" row="25"></cell>
+      <cell col="23" row="25"></cell>
+      <cell col="24" row="25"></cell>
+      <cell col="25" row="25"></cell>
+      <cell col="26" row="25"></cell>
+      <cell col="27" row="25" colspan="2"></cell>
+      <cell col="29" row="25"></cell>
+      <cell col="30" row="25"></cell>
+      <cell col="31" row="25"></cell>
+      <cell col="32" row="25"></cell>
+      <cell col="33" row="25"></cell>
+      <cell col="34" row="25" colspan="2"></cell>
+      <cell col="36" row="25"></cell>
+      <cell col="37" row="25"></cell>
+      <cell col="38" row="25"></cell>
+      <cell col="39" row="25"></cell>
+      <cell col="40" row="25"></cell>
+      <cell col="41" row="25"></cell>
+      <cell col="42" row="25"></cell>
+      <cell col="43" row="25"></cell>
+    </row>
+    <row>
+      <cell col="0" row="26" colspan="44">270㎜×190㎜ [백상지(150g/㎡)]</cell>
+    </row>
+  </table>
+</annex>

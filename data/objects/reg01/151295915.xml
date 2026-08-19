@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<equation id="151295915" article="제57조" font="HYhwpEQ" source="공공측량 작업규정.2025.04.23_수식수정.오류표시.hwpx">
+  <script>LEFT [ eqalign{TRIANGLE  N#
+TRIANGLE  E#
+TRIANGLE  U} RIGHT ] = LEFT [ eqalign{-sinϕcos lambda ```-sinϕsin lambda `````cosϕ#
+`````````-sin lambda `````````````````````````cos lambda ```````````````````0#
+`````cosϕcos lambda ``````````cosϕsin lambda ``````sinϕ`````} RIGHT ] LEFT [ eqalign{TRIANGLE  X#
+TRIANGLE  Y#
+TRIANGLE  Z} RIGHT ]</script>
+  <readable>[ Δ N ; Δ E ; Δ U ] = [ -sinϕcos λ -sinϕsin λ cosϕ ; -sin λ cos λ 0 ; cosϕcos λ cosϕsin λ sinϕ ] [ Δ X ; Δ Y ; Δ Z ]</readable>
+  <latex>\left[ \begin{aligned}\triangle N \\ \triangle E \\ \triangle U\end{aligned} \right] = \left[ \begin{aligned}-sinϕcos \lambda -sinϕsin \lambda cosϕ \\ -sin \lambda cos \lambda 0 \\ cosϕcos \lambda cosϕsin \lambda sinϕ\end{aligned} \right] \left[ \begin{aligned}\triangle X \\ \triangle Y \\ \triangle Z\end{aligned} \right]</latex>
+</equation>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표2의2" gubun="별표" no="2의2" title="수준점 조사서 (제13조제1항 관련)" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=155729849">
+  <text>[별표 2-2] 수준점 조사서 (제13조제1항 관련)</text>
+  <table rows="1" cols="1">
+    <row>
+      <cell col="0" row="0"></cell>
+    </row>
+  </table>
+  <table rows="18" cols="10">
+    <row>
+      <cell col="0" row="0" colspan="10">수준점 조사서</cell>
+    </row>
+    <row>
+      <cell col="0" row="1"></cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1"></cell>
+      <cell col="4" row="1" colspan="2"></cell>
+      <cell col="6" row="1" colspan="2"></cell>
+      <cell col="8" row="1"></cell>
+      <cell col="9" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2">도엽명</cell>
+      <cell col="1" row="2">점번호</cell>
+      <cell col="2" row="2" colspan="6">소재지</cell>
+      <cell col="8" row="2">지목</cell>
+      <cell col="9" row="2">토지소유자</cell>
+    </row>
+    <row>
+      <cell col="0" row="3"></cell>
+      <cell col="1" row="3"></cell>
+      <cell col="2" row="3" colspan="6"></cell>
+      <cell col="8" row="3"></cell>
+      <cell col="9" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4">경로</cell>
+      <cell col="1" row="4" colspan="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6" colspan="10">조사항목</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">수준점</cell>
+      <cell col="1" row="7">안내표지판</cell>
+      <cell col="2" row="7">보조점A</cell>
+      <cell col="3" row="7">보조점B</cell>
+      <cell col="4" row="7" colspan="3">GNSS관측</cell>
+      <cell col="7" row="7"></cell>
+      <cell col="8" row="7"></cell>
+      <cell col="9" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8"></cell>
+      <cell col="1" row="8"></cell>
+      <cell col="2" row="8"></cell>
+      <cell col="3" row="8"></cell>
+      <cell col="4" row="8" colspan="3"></cell>
+      <cell col="7" row="8"></cell>
+      <cell col="8" row="8"></cell>
+      <cell col="9" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" rowspan="2">특이사항</cell>
+      <cell col="1" row="10" colspan="7" rowspan="2"></cell>
+      <cell col="8" row="10">조사자</cell>
+      <cell col="9" row="10">조사일</cell>
+    </row>
+    <row>
+      <cell col="8" row="11"></cell>
+      <cell col="9" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="5">원경</cell>
+      <cell col="5" row="13" colspan="5">근경</cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="5"></cell>
+      <cell col="5" row="14" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="10">특이사항</cell>
+    </row>
+    <row>
+      <cell col="0" row="17" colspan="5"></cell>
+      <cell col="5" row="17" colspan="5"></cell>
+    </row>
+  </table>
+</annex>

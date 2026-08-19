@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표4" gubun="별표" no="4" title="지하시설물(관로형) 자료수집 목록" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=38099159">
+  <text>[별표 4] 지하시설물(관로형) 자료수집 목록</text>
+  <table rows="27" cols="5">
+    <row>
+      <cell col="0" row="0" colspan="2">자료목록</cell>
+      <cell col="2" row="0">자료형태</cell>
+      <cell col="3" row="0">자료내용</cell>
+      <cell col="4" row="0">자료 보유기관</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="4">광역상수</cell>
+      <cell col="1" row="1">광역상수관로</cell>
+      <cell col="2" row="1">Shapefile(선)</cell>
+      <cell col="3" row="1" rowspan="25">공간정보 및 속성정보</cell>
+      <cell col="4" row="1" rowspan="25">지하시설물 통합체계 성과물
+(국토교통부)</cell>
+    </row>
+    <row>
+      <cell col="1" row="2">광역상수맨홀</cell>
+      <cell col="2" row="2">Shapefile(점)</cell>
+    </row>
+    <row>
+      <cell col="1" row="3">광역상수밸브</cell>
+      <cell col="2" row="3">Shapefile(점)</cell>
+    </row>
+    <row>
+      <cell col="1" row="4">광역상수관로심도</cell>
+      <cell col="2" row="4">Shapefile(점)</cell>
+    </row>
+    <row>
+      <cell col="0" row="5" rowspan="4">상수</cell>
+      <cell col="1" row="5">상수관로</cell>
+      <cell col="2" row="5">Shapefile(선)</cell>
+    </row>
+    <row>
+      <cell col="1" row="6">상수맨홀</cell>
+      <cell col="2" row="6">Shapefile(점)</cell>
+    </row>
+    <row>
+      <cell col="1" row="7">상수밸브</cell>
+      <cell col="2" row="7">Shapefile(점)</cell>
+    </row>
+    <row>
+      <cell col="1" row="8">상수관로심도</cell>
+      <cell col="2" row="8">Shapefile(점)</cell>
+    </row>
+    <row>
+      <cell col="0" row="9" rowspan="3">하수</cell>
+      <cell col="1" row="9">하수관로</cell>
+      <cell col="2" row="9">Shapefile(선)</cell>
+    </row>
+    <row>
+      <cell col="1" row="10">하수맨홀</cell>
+      <cell col="2" row="10">Shapefile(점)</cell>
+    </row>
+    <row>
+      <cell col="1" row="11">하수관로심도</cell>
+      <cell col="2" row="11">Shapefile(점)</cell>
+    </row>
+    <row>
+      <cell col="0" row="12" rowspan="4">전력</cell>
+      <cell col="1" row="12">전력관로</cell>
+      <cell col="2" row="12">Shapefile(선)</cell>
+    </row>
+    <row>
+      <cell col="1" row="13">전력맨홀</cell>
+      <cell col="2" row="13">Shapefile(점)</cell>
+    </row>
+    <row>
+      <cell col="1" row="14">배전전력구</cell>
+      <cell col="2" row="14">Shapefile(선)</cell>
+    </row>
+    <row>
+      <cell col="1" row="15">전력관로심도</cell>
+      <cell col="2" row="15">Shapefile(점)</cell>
+    </row>
+    <row>
+      <cell col="0" row="16" rowspan="4">가스</cell>
+      <cell col="1" row="16">가스관로</cell>
+      <cell col="2" row="16">Shapefile(선)</cell>
+    </row>
+    <row>
+      <cell col="1" row="17">가스맨홀</cell>
+      <cell col="2" row="17">Shapefile(점)</cell>
+    </row>
+    <row>
+      <cell col="1" row="18">가스밸브</cell>
+      <cell col="2" row="18">Shapefile(점)</cell>
+    </row>
+    <row>
+      <cell col="1" row="19">가스관로심도</cell>
+      <cell col="2" row="19">Shapefile(점)</cell>
+    </row>
+    <row>
+      <cell col="0" row="20" rowspan="3">난방</cell>
+      <cell col="1" row="20">난방관로</cell>
+      <cell col="2" row="20">Shapefile(선)</cell>
+    </row>
+    <row>
+      <cell col="1" row="21">난방맨홀</cell>
+      <cell col="2" row="21">Shapefile(점)</cell>
+    </row>
+    <row>
+      <cell col="1" row="22">난방관로심도</cell>
+      <cell col="2" row="22">Shapefile(점)</cell>
+    </row>
+    <row>
+      <cell col="0" row="23" rowspan="3">통신</cell>
+      <cell col="1" row="23">통신선로</cell>
+      <cell col="2" row="23">Shapefile(선)</cell>
+    </row>
+    <row>
+      <cell col="1" row="24">통신맨홀</cell>
+      <cell col="2" row="24">Shapefile(점)</cell>
+    </row>
+    <row>
+      <cell col="1" row="25">통신선로심도</cell>
+      <cell col="2" row="25">Shapefile(점)</cell>
+    </row>
+    <row>
+      <cell col="0" row="26" colspan="2">수치표고모델(DEM)</cell>
+      <cell col="2" row="26">IMG 또는 GeoTiff</cell>
+      <cell col="3" row="26">1m급 혹은 5m급</cell>
+      <cell col="4" row="26">국토교통부</cell>
+    </row>
+  </table>
+</annex>

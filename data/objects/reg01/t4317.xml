@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="t4317" article="측량 유형별 정확도 관리표" rows="9" cols="3" source="2025년 전략수립 연구보고서">
+  <row>
+    <cell col="0" row="0" header="1">측량 유형</cell>
+    <cell col="1" row="0" header="1">쓰는 정확도 관리표</cell>
+    <cell col="2" row="0" header="1">비고</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">공공삼각점측량</cell>
+    <cell col="1" row="1">별표 3 「공공삼각점측량 정확도 관리표(1)」 · 별표 4 「공공삼각점측량 정확도 관리표(2)」</cell>
+    <cell col="2" row="1">측량방법에 따라 골라 쓴다</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">공공수준점측량</cell>
+    <cell col="1" row="2">별표 7 「공공수준점측량 정확도 관리표」</cell>
+    <cell col="2" row="2"></cell>
+  </row>
+  <row>
+    <cell col="0" row="3">지상현황측량</cell>
+    <cell col="1" row="3">별표 14 「지형측량(지도 원판 등, 지도 수정 원도) 정확도 관리표」</cell>
+    <cell col="2" row="3"></cell>
+  </row>
+  <row>
+    <cell col="0" row="4">지도의 축소편집</cell>
+    <cell col="1" row="4">별표 16 「사진지도(현지조사ㆍ모자이크ㆍ편집ㆍ원판제작) 정확도 관리표」 · 별표 17 「편집 원도 정확도 관리표」</cell>
+    <cell col="2" row="4">공정에 따라 골라 쓴다</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">노선측량</cell>
+    <cell col="1" row="5">별표 15 「표정점설치 정확도 관리표」 · 별표 18 「조절점측량 정확도 관리표」 · 별표 19 「IP점 설치측량 정확도 관리표」 · 별표 21 「중심선측량 정확도 관리표」 · 별표 22 「종단측량 정확도 관리표」 · 별표 23 「횡단측량 정확도 관리표」</cell>
+    <cell col="2" row="5">공정마다 그 공정의 관리표를 쓴다</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">용지측량</cell>
+    <cell col="1" row="6">별표 24 「용지폭말뚝설치측량 정확도 관리표」 · 별표 25 「경계측량 정확도 관리표」</cell>
+    <cell col="2" row="6">공정에 따라 골라 쓴다</cell>
+  </row>
+  <row>
+    <cell col="0" row="7">(비고) 1. 이 표에 없는 측량의 정확도 관리표는 시행자가 정하는 서식으로 갈음할 수 있다.</cell>
+    <cell col="1" row="7"></cell>
+    <cell col="2" row="7"></cell>
+  </row>
+  <row>
+    <cell col="0" row="8">(비고) 2. 정확도 관리표는 성과패키지에 포함하여 제출한다.</cell>
+    <cell col="1" row="8"></cell>
+    <cell col="2" row="8"></cell>
+  </row>
+</table>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식4" gubun="서식" no="4" title="측량기준점표지 이전경비 납부통지서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454315">
+  <table rows="1" cols="2">
+    <row>
+      <cell col="0" row="0">○○○기관장</cell>
+      <cell col="1" row="0">직인</cell>
+    </row>
+  </table>
+  <table rows="21" cols="9">
+    <row>
+      <cell col="0" row="0" colspan="9">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별지 제4호서식] &lt;개정 2015.6.4.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="9">측량기준점표지 이전경비 납부통지서</cell>
+    </row>
+    <row>
+      <cell col="0" row="2"></cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2"></cell>
+      <cell col="3" row="2"></cell>
+      <cell col="4" row="2"></cell>
+      <cell col="5" row="2" colspan="2"></cell>
+      <cell col="7" row="2"></cell>
+      <cell col="8" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" rowspan="3">납부
+의무자</cell>
+      <cell col="1" row="3" colspan="8">성명 또는 대표자</cell>
+    </row>
+    <row>
+      <cell col="1" row="4" colspan="5">업체명</cell>
+      <cell col="6" row="4" colspan="3">전화번호</cell>
+    </row>
+    <row>
+      <cell col="1" row="5" colspan="8">주소 또는 주사무소 소재지</cell>
+    </row>
+    <row>
+      <cell col="0" row="6" colspan="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7" rowspan="5">이전경비의 내용</cell>
+      <cell col="1" row="7" colspan="8">이전대상 측량기준점 표지의 명칭 및 번호</cell>
+    </row>
+    <row>
+      <cell col="1" row="8" colspan="8">부과금액</cell>
+    </row>
+    <row>
+      <cell col="1" row="9" colspan="8">부과기준</cell>
+    </row>
+    <row>
+      <cell col="1" row="10" colspan="8">납부방법</cell>
+    </row>
+    <row>
+      <cell col="1" row="11" colspan="8">납부기한
+           년          월           일까지</cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="9">「공간정보의 구축 및 관리 등에 관한 법률」 제9조제4항 및 같은 법 시행규칙 제6조제2항에  따라 측량기준점표지 이전경비의 납부를 통지하오니 기한까지 납부하시기 바랍니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="9">년          월          일장</cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="9">귀하</cell>
+    </row>
+    <row>
+      <cell col="0" row="17" colspan="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18" rowspan="2">첨부서류</cell>
+      <cell col="1" row="18" colspan="7" rowspan="2">없음</cell>
+      <cell col="8" row="18">수수료</cell>
+    </row>
+    <row>
+      <cell col="8" row="19">없음</cell>
+    </row>
+    <row>
+      <cell col="0" row="20" colspan="9">210㎜×297㎜(일반용지60g/㎡)</cell>
+    </row>
+  </table>
+</annex>

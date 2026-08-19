@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식43" gubun="서식" no="43" title="측량업 양도ㆍ양수 신고서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454677">
+  <table rows="1" cols="13">
+    <row>
+      <cell col="0" row="0">신고서 제출</cell>
+      <cell col="1" row="0"></cell>
+      <cell col="2" row="0">접 수</cell>
+      <cell col="3" row="0"></cell>
+      <cell col="4" row="0">민원사무
+처리부등재</cell>
+      <cell col="5" row="0"></cell>
+      <cell col="6" row="0">서류심사 
+및 실태조사</cell>
+      <cell col="7" row="0"></cell>
+      <cell col="8" row="0">기안 ㆍ 결재</cell>
+      <cell col="9" row="0"></cell>
+      <cell col="10" row="0">등록증 및
+등록수첩 작성</cell>
+      <cell col="11" row="0"></cell>
+      <cell col="12" row="0">발 급</cell>
+    </row>
+  </table>
+  <table rows="32" cols="20">
+    <row>
+      <cell col="0" row="0" colspan="20">[별지 제43호서식] &lt;개정 2024. 4. 23.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="20">측량업 양도ㆍ양수 신고서</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="13"></cell>
+      <cell col="13" row="2" colspan="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">접수번호</cell>
+      <cell col="1" row="3" colspan="2"></cell>
+      <cell col="3" row="3" colspan="5">접수일</cell>
+      <cell col="8" row="3" colspan="7">처리기간</cell>
+      <cell col="15" row="3" colspan="5">10일</cell>
+    </row>
+    <row>
+      <cell col="0" row="4"></cell>
+      <cell col="1" row="4" colspan="2"></cell>
+      <cell col="3" row="4" colspan="2"></cell>
+      <cell col="5" row="4" colspan="2"></cell>
+      <cell col="7" row="4" colspan="3"></cell>
+      <cell col="10" row="4" colspan="4"></cell>
+      <cell col="14" row="4" colspan="4"></cell>
+      <cell col="18" row="4" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" rowspan="4">양도인</cell>
+      <cell col="1" row="5" colspan="7">대표자</cell>
+      <cell col="8" row="5" colspan="12">생년월일(법인등록번호)</cell>
+    </row>
+    <row>
+      <cell col="1" row="6" colspan="7">상호</cell>
+      <cell col="8" row="6" colspan="12">전화번호</cell>
+    </row>
+    <row>
+      <cell col="1" row="7" colspan="7">업종</cell>
+      <cell col="8" row="7" colspan="12">측량업등록번호</cell>
+    </row>
+    <row>
+      <cell col="1" row="8" colspan="19">주된 영업소 소재지</cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" rowspan="4">양수인</cell>
+      <cell col="1" row="10" colspan="7">대표자</cell>
+      <cell col="8" row="10" colspan="12">생년월일(법인등록번호)</cell>
+    </row>
+    <row>
+      <cell col="1" row="11" colspan="7">상호</cell>
+      <cell col="8" row="11" colspan="12">전화번호</cell>
+    </row>
+    <row>
+      <cell col="1" row="12" colspan="7">업종</cell>
+      <cell col="8" row="12" colspan="12">등록번호</cell>
+    </row>
+    <row>
+      <cell col="1" row="13" colspan="19">주된 영업소 소재지</cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="20">「공간정보의 구축 및 관리 등에 관한 법률」 제46조 및 같은 법 시행규칙 제51조제1항제1호에 따라 측량업의 양도ㆍ양수를 신고합니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="20">년          월          일</cell>
+    </row>
+    <row>
+      <cell col="0" row="17" colspan="6"></cell>
+      <cell col="6" row="17" colspan="5">양도인</cell>
+      <cell col="11" row="17" colspan="5"></cell>
+      <cell col="16" row="17" colspan="4">(서명 또는 인)</cell>
+    </row>
+    <row>
+      <cell col="0" row="18" colspan="6"></cell>
+      <cell col="6" row="18" colspan="5">양수인</cell>
+      <cell col="11" row="18" colspan="5"></cell>
+      <cell col="16" row="18" colspan="4">(서명 또는 인)</cell>
+    </row>
+    <row>
+      <cell col="0" row="19" colspan="20">귀하</cell>
+    </row>
+    <row>
+      <cell col="0" row="20" colspan="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21" colspan="2">신고인
+제출서류</cell>
+      <cell col="2" row="21" colspan="17">1. 양도ㆍ양수계약서 사본
+2. 보유하고 있는 측량기술자의 명단
+3. 제2호의 인력에 대한 측량기술 경력증명서
+4. 보유하고 있는 장비의 명세서 및 그 장비의 성능검사서 사본
+5. 소유권 또는 사용권을 보유한 사실을 증명할 수 있는 서류</cell>
+      <cell col="19" row="21" rowspan="2">수수료
+없음</cell>
+    </row>
+    <row>
+      <cell col="0" row="22" colspan="2">국토교통부장관, 시ㆍ도지사 또는 대도시 시장 
+확인사항</cell>
+      <cell col="2" row="22" colspan="17">사업자등록증명 또는 법인 등기사항증명서(법인인 경우만 해당합니다)</cell>
+    </row>
+    <row>
+      <cell col="0" row="23" colspan="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="24" colspan="20">행정정보 공동이용 동의서</cell>
+    </row>
+    <row>
+      <cell col="0" row="25" colspan="20">본인은 이 건 업무처리와 관련하여 국토교통부장관, 시ㆍ도지사 또는 대도시 시장이 「전자정부법」 제36조제1항에 따른 행정정보의 공동이용을 통하여 사업자등록증명을 확인하는 것에 동의합니다.   *동의하지 않는 경우에는 신고인이 직접 해당 서류를 제출해야 합니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="26" colspan="2"></cell>
+      <cell col="2" row="26" colspan="2"></cell>
+      <cell col="4" row="26" colspan="5">신고인(대표자)</cell>
+      <cell col="9" row="26" colspan="3"></cell>
+      <cell col="12" row="26" colspan="5"></cell>
+      <cell col="17" row="26" colspan="3">(서명 또는 인)</cell>
+    </row>
+    <row>
+      <cell col="0" row="27" colspan="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="28" colspan="20">처리절차</cell>
+    </row>
+    <row>
+      <cell col="0" row="29" colspan="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="30" colspan="20">신고인       관할기관담당부서   관할기관담당부서    관할기관담당부서   관할기관담당부서   관할기관담당부서</cell>
+    </row>
+    <row>
+      <cell col="0" row="31" colspan="20">210mm×297mm[백상지(80g/㎡) 또는 중질지(80g/㎡)]</cell>
+    </row>
+  </table>
+</annex>

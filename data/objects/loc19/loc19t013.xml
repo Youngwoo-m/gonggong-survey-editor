@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc19t013" article="산업안전보건 체계(모든 현장에 공통 적용)" rows="15" cols="10" source="측량 안전관리 매뉴얼 (2026.1)">
+  <row>
+    <cell col="0" row="0" header="1">번 호</cell>
+    <cell col="1" row="0" header="1">유해·위험요인 (위험한 상황과 사건)</cell>
+    <cell col="2" row="0" header="1">측량현장 위험성 평가</cell>
+    <cell col="3" row="0" header="1"></cell>
+    <cell col="4" row="0" header="1"></cell>
+    <cell col="5" row="0" header="1"></cell>
+    <cell col="6" row="0" header="1"></cell>
+    <cell col="7" row="0" header="1"></cell>
+    <cell col="8" row="0" header="1"></cell>
+    <cell col="9" row="0" header="1">사고 발생 여부</cell>
+  </row>
+  <row>
+    <cell col="0" row="1"></cell>
+    <cell col="1" row="1"></cell>
+    <cell col="2" row="1">발생빈도</cell>
+    <cell col="3" row="1"></cell>
+    <cell col="4" row="1"></cell>
+    <cell col="5" row="1">사고강도</cell>
+    <cell col="6" row="1"></cell>
+    <cell col="7" row="1"></cell>
+    <cell col="8" row="1">위험성</cell>
+    <cell col="9" row="1"></cell>
+  </row>
+  <row>
+    <cell col="0" row="2"></cell>
+    <cell col="1" row="2"></cell>
+    <cell col="2" row="2">낮음</cell>
+    <cell col="3" row="2">보통</cell>
+    <cell col="4" row="2">높음</cell>
+    <cell col="5" row="2">낮음</cell>
+    <cell col="6" row="2">보통</cell>
+    <cell col="7" row="2">높음</cell>
+    <cell col="8" row="2">점수</cell>
+    <cell col="9" row="2"></cell>
+  </row>
+  <row>
+    <cell col="0" row="3">1</cell>
+    <cell col="1" row="3">공공측량작업계획서를 검토하여 작 업 절차를 이해하고 위험을 최소화</cell>
+    <cell col="2" row="3">1 2 3</cell>
+    <cell col="3" row="3"></cell>
+    <cell col="4" row="3"></cell>
+    <cell col="5" row="3">1 2 3</cell>
+    <cell col="6" row="3"></cell>
+    <cell col="7" row="3"></cell>
+    <cell col="8" row="3"></cell>
+    <cell col="9" row="3"></cell>
+  </row>
+  <row>
+    <cell col="0" row="4">2</cell>
+    <cell col="1" row="4">안전모, 안전조끼, 안전화, 보호장갑 등 적절한 보호장구를 착용하여 안 전한 작업환경을 유지</cell>
+    <cell col="2" row="4">1 2 3</cell>
+    <cell col="3" row="4"></cell>
+    <cell col="4" row="4"></cell>
+    <cell col="5" row="4">1 2 3</cell>
+    <cell col="6" row="4"></cell>
+    <cell col="7" row="4"></cell>
+    <cell col="8" row="4"></cell>
+    <cell col="9" row="4"></cell>
+  </row>
+  <row>
+    <cell col="0" row="5">3</cell>
+    <cell col="1" row="5">도로에서의 측량 작업 중 이동 차량 에 의한 교통사고 발생 가능. 표지판 을 설치하고 교통 관리를 실시하여 교통사고를 예방</cell>
+    <cell col="2" row="5">1 2 3</cell>
+    <cell col="3" row="5"></cell>
+    <cell col="4" row="5"></cell>
+    <cell col="5" row="5">1 2 3</cell>
+    <cell col="6" row="5"></cell>
+    <cell col="7" row="5"></cell>
+    <cell col="8" row="5"></cell>
+    <cell col="9" row="5"></cell>
+  </row>
+  <row>
+    <cell col="0" row="6">4</cell>
+    <cell col="1" row="6">지하시설물 실시간 측량 시 시공 관 로 내의 낙상사고, 건설장비와 충돌 사고 발생 가능</cell>
+    <cell col="2" row="6">1 2 3</cell>
+    <cell col="3" row="6"></cell>
+    <cell col="4" row="6"></cell>
+    <cell col="5" row="6">1 2 3</cell>
+    <cell col="6" row="6"></cell>
+    <cell col="7" row="6"></cell>
+    <cell col="8" row="6"></cell>
+    <cell col="9" row="6"></cell>
+  </row>
+  <row>
+    <cell col="0" row="7">5</cell>
+    <cell col="1" row="7">지하시설물 조사. 탐사 맨홀 출입 시 유해가스에 의한 중독, 의식불명, 사 망사고 발생 가능</cell>
+    <cell col="2" row="7">1 2 3</cell>
+    <cell col="3" row="7"></cell>
+    <cell col="4" row="7"></cell>
+    <cell col="5" row="7">1 2 3</cell>
+    <cell col="6" row="7"></cell>
+    <cell col="7" row="7"></cell>
+    <cell col="8" row="7"></cell>
+    <cell col="9" row="7"></cell>
+  </row>
+  <row>
+    <cell col="0" row="8">6</cell>
+    <cell col="1" row="8">지하시설물 조사. 탐사 맨홀 개폐 시 맨홀에 손발 충격, 끼임 등 사고 발생 가능</cell>
+    <cell col="2" row="8">1 2 3</cell>
+    <cell col="3" row="8"></cell>
+    <cell col="4" row="8"></cell>
+    <cell col="5" row="8">1 2 3</cell>
+    <cell col="6" row="8"></cell>
+    <cell col="7" row="8"></cell>
+    <cell col="8" row="8"></cell>
+    <cell col="9" row="8"></cell>
+  </row>
+  <row>
+    <cell col="0" row="9">7</cell>
+    <cell col="1" row="9">지하시설물 조사. 탐사 맨홀 추락사 고 발생 가능</cell>
+    <cell col="2" row="9">1 2 3</cell>
+    <cell col="3" row="9"></cell>
+    <cell col="4" row="9"></cell>
+    <cell col="5" row="9">1 2 3</cell>
+    <cell col="6" row="9"></cell>
+    <cell col="7" row="9"></cell>
+    <cell col="8" row="9"></cell>
+    <cell col="9" row="9"></cell>
+  </row>
+  <row>
+    <cell col="0" row="10">8</cell>
+    <cell col="1" row="10">송·배전 탐사 시 전기 맨홀 내 탐사 및 접지, 지상 개폐기 변압기 조사 시 감전사고 발생 가능</cell>
+    <cell col="2" row="10">1 2 3</cell>
+    <cell col="3" row="10"></cell>
+    <cell col="4" row="10"></cell>
+    <cell col="5" row="10">1 2 3</cell>
+    <cell col="6" row="10"></cell>
+    <cell col="7" row="10"></cell>
+    <cell col="8" row="10"></cell>
+    <cell col="9" row="10"></cell>
+  </row>
+  <row>
+    <cell col="0" row="11">9</cell>
+    <cell col="1" row="11">맨홀 작업 후 맨홀 뚜껑 덜 닫힘에 의한 차량 및 인사사고 발생 가능</cell>
+    <cell col="2" row="11">1 2 3</cell>
+    <cell col="3" row="11"></cell>
+    <cell col="4" row="11"></cell>
+    <cell col="5" row="11">1 2 3</cell>
+    <cell col="6" row="11"></cell>
+    <cell col="7" row="11"></cell>
+    <cell col="8" row="11"></cell>
+    <cell col="9" row="11"></cell>
+  </row>
+  <row>
+    <cell col="0" row="12">10</cell>
+    <cell col="1" row="12">맨홀 양수 작업 시 양수기와 도로 배수에 의한 교통 및 인사사고 발생 가능</cell>
+    <cell col="2" row="12">1 2 3</cell>
+    <cell col="3" row="12"></cell>
+    <cell col="4" row="12"></cell>
+    <cell col="5" row="12">1 2 3</cell>
+    <cell col="6" row="12"></cell>
+    <cell col="7" row="12"></cell>
+    <cell col="8" row="12"></cell>
+    <cell col="9" row="12"></cell>
+  </row>
+  <row>
+    <cell col="0" row="13">11</cell>
+    <cell col="1" row="13">하수 박스 조사. 탐사 시 낙상사고, 물에 휩쓸림, 익사 사고 발생 가능</cell>
+    <cell col="2" row="13">1 2 3</cell>
+    <cell col="3" row="13"></cell>
+    <cell col="4" row="13"></cell>
+    <cell col="5" row="13">1 2 3</cell>
+    <cell col="6" row="13"></cell>
+    <cell col="7" row="13"></cell>
+    <cell col="8" row="13"></cell>
+    <cell col="9" row="13"></cell>
+  </row>
+  <row>
+    <cell col="0" row="14">12</cell>
+    <cell col="1" row="14">작업 지역의 지형과 환경을 평가하 여 작업 시 안전한지 확인. 지형 경사 와 옹벽, 고압선과 철탑 등 장애물을</cell>
+    <cell col="2" row="14">1 2 3</cell>
+    <cell col="3" row="14"></cell>
+    <cell col="4" row="14"></cell>
+    <cell col="5" row="14">1 2 3</cell>
+    <cell col="6" row="14"></cell>
+    <cell col="7" row="14"></cell>
+    <cell col="8" row="14"></cell>
+    <cell col="9" row="14"></cell>
+  </row>
+</table>

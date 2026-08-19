@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="151296021" article="제203조" rows="2" cols="3" source="공공측량 작업규정.2025.04.23_수식수정.오류표시.hwpx">
+  <row>
+    <cell col="0" row="0">구분</cell>
+    <cell col="1" row="0">수신주파수</cell>
+    <cell col="2" row="0">성능</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">GNSS 기준점 측량
+GNSS 현황측량</cell>
+    <cell col="1" row="1">L1, L2(2주파)</cell>
+    <cell col="2" row="1">±(5mm + 1PPM×D)
+D=거리(km)</cell>
+  </row>
+</table>

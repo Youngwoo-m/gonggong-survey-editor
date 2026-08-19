@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표15" gubun="별표" no="15" title="데이터 형식" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=118782599">
+  <text>[별표15] 데이터 형식
+1. 3DF-GML 형식
+◦ 3-Dimension Feature GML(Geographic Markup Language)의 약어로, 국내 3차원 국토공간정보를 저장 및 교환하기 위한 XML 기반의 데이터 포맷이다.
+◦ 3DF-GML은 GML 3.1을 기반으로 하는 응용스키마로서, 매우 복잡하고 방대한 모델을 가진 GML 3.1 및 GML 3.1의 응용 포맷으로 개발된 City-GML보다 간결하게 개발된 포맷이다.
+◦ 3DF-GML은 다양한 국내 3차원 응용분야에서 공통적으로 요구하는 기본항목(entity), 속성(attribute), 관계(relation)들을 정의하고 있다.
+◦ 3DF-GML의 표현 범위를 주요 모델의 항목들로 나타낸 것은 다음과 같다.</text>
+  <table rows="8" cols="2">
+    <row>
+      <cell col="0" row="0">분류</cell>
+      <cell col="1" row="0">표현 항목</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">지형지물</cell>
+      <cell col="1" row="1">교통, 건물, 수자원, 지형</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">기하</cell>
+      <cell col="1" row="2">2, 3차원 객체(선형, 평면 보간 사용), 혼합집합, 동종집합,
+ 혼합복합, 동종복합</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">위상</cell>
+      <cell col="1" row="3">단방향 위상(XLink)</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">세밀도</cell>
+      <cell col="1" row="4">Level 1, Level 2, Level 3, Level 4</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">면의 외형</cell>
+      <cell col="1" row="5">단색 텍스처, 색깔 텍스처, 가상 영상 텍스처, 실사 영상 텍스처</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">지형</cell>
+      <cell col="1" row="6">불규칙삼각망(TIN), 격자 커버리지(GRID)</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">좌표계</cell>
+      <cell col="1" row="7">구형좌표계, 타원좌표계, 직교좌표계</cell>
+    </row>
+  </table>
+  <text>2. City-GML 형식
+◦ City Geography GML(Geographic Markup Language)의 약어로, 가상 3차원 도시 모델의 저장과 교환을 위한 XML 기반의 데이터 포맷이다.
+◦ 개방 데이터 모델이며, GML을 기반으로 하는 응용 스키마로서 GML에서 부족한 모델을 보강하여 3차원 공간 모델링을 보다 효율적으로 하기 위해 개발된 포맷이다. 그러나 GML 3.1을 기반으로 응용 포맷으로 개발된 City-GML은 GML보다 더 복잡하고 방대하다는 문제점을 가지고 있다.
+◦ City-GML은 다른 응용 분야들 간에 공유할 수 있는 공통의 기본항목(entity), 속성(attribute), 관계(relation)들을 정의하고 있다.
+◦ CityGML의 표현 범위를 주요 모델의 항목들로 나타낸 것은 다음과 같다.</text>
+  <table rows="8" cols="2">
+    <row>
+      <cell col="0" row="0">분류</cell>
+      <cell col="1" row="0">표현 항목</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">지형지물</cell>
+      <cell col="1" row="1">일반, 단일 속성</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">기하</cell>
+      <cell col="1" row="2">2, 3차원 객체, 면방향성, 동종집합, 선형보간</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">위상</cell>
+      <cell col="1" row="3">2, 3차원 위상정보</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">세밀도</cell>
+      <cell col="1" row="4">기하 세밀도</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">면의 외형</cell>
+      <cell col="1" row="5">단색 텍스처, 색깔 텍스처, 가상 영상 텍스처, 실사 영상 텍스처</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">지형</cell>
+      <cell col="1" row="6">격자 커버리지(GRID)</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">좌표계</cell>
+      <cell col="1" row="7">구형좌표계, 타원좌표계, 직교좌표계</cell>
+    </row>
+  </table>
+</annex>

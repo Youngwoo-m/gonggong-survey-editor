@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식100" gubun="서식" no="100" title="측량성과심사 수탁기관 지정신청서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162455117">
+  <table rows="30" cols="34">
+    <row>
+      <cell col="0" row="0" colspan="34">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별지 제100호서식] &lt;개정 2017. 1. 31.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="34">측량성과심사 수탁기관 지정신청서</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="25"></cell>
+      <cell col="25" row="2" colspan="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">접수번호</cell>
+      <cell col="2" row="3" colspan="7"></cell>
+      <cell col="9" row="3" colspan="3">접수일</cell>
+      <cell col="12" row="3" colspan="4"></cell>
+      <cell col="16" row="3" colspan="5">발급일</cell>
+      <cell col="21" row="3" colspan="5"></cell>
+      <cell col="26" row="3" colspan="6">처리기간</cell>
+      <cell col="32" row="3" colspan="2">30일</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="2"></cell>
+      <cell col="2" row="4" colspan="7"></cell>
+      <cell col="9" row="4" colspan="3"></cell>
+      <cell col="12" row="4" colspan="4"></cell>
+      <cell col="16" row="4" colspan="5"></cell>
+      <cell col="21" row="4" colspan="5"></cell>
+      <cell col="26" row="4" colspan="6"></cell>
+      <cell col="32" row="4" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="2" rowspan="5">신청인</cell>
+      <cell col="2" row="5" colspan="32">법인 또는 기관명</cell>
+    </row>
+    <row>
+      <cell col="2" row="6" colspan="21">대표자</cell>
+      <cell col="23" row="6" colspan="11">사업자등록번호</cell>
+    </row>
+    <row>
+      <cell col="2" row="7" colspan="32">생년월일</cell>
+    </row>
+    <row>
+      <cell col="2" row="8" colspan="32">전화번호</cell>
+    </row>
+    <row>
+      <cell col="2" row="9" colspan="32">주소</cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="34"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="34">「공간정보의 구축 및 관리 등에 관한 법률 시행령」 제104조제1항 및 같은 법 시행규칙 제114조에 따라 측량성과심사 수탁기관 지정을 신청합니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="34">년          월          일장</cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="15"></cell>
+      <cell col="15" row="13" colspan="7">신청인</cell>
+      <cell col="22" row="13" colspan="6"></cell>
+      <cell col="28" row="13" colspan="6">(서명 또는 인)</cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="34">국토지리정보원장 귀하</cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="34"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="2">신청인(대표자)
+제출서류</cell>
+      <cell col="2" row="16" colspan="30">1. 정관 1부
+2. 측량기술인력 보유현황 및 그 증명서류 1부
+3. 측량장비 보유현황 및 그 증명서류 1부</cell>
+      <cell col="32" row="16" colspan="2" rowspan="2">수수료
+없음</cell>
+    </row>
+    <row>
+      <cell col="0" row="17" colspan="2">국토지리정보원장
+확인사항</cell>
+      <cell col="2" row="17" colspan="30">1. 법인 등기사항증명서
+2. 국가기술자격증(정보처리기사만 해당합니다)</cell>
+    </row>
+    <row>
+      <cell col="0" row="18" colspan="34"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19" colspan="34">행정정보 공동이용 동의서</cell>
+    </row>
+    <row>
+      <cell col="0" row="20" colspan="34">본인은 이 건 업무처리와 관련하여 국토지리정보원장이 「전자정부법」 제36조제1항에 따른 행정정보의 공동이용을 통하여 국가기술자격증을 확인하는 것에 동의합니다.   *동의하지 않는 경우에는 신청인이 직접 국가기술자격증 사본을 제출해야 합니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="21" colspan="3"></cell>
+      <cell col="3" row="21" colspan="7"></cell>
+      <cell col="10" row="21" colspan="7">신청인(대표자)</cell>
+      <cell col="17" row="21" colspan="7"></cell>
+      <cell col="24" row="21" colspan="7"></cell>
+      <cell col="31" row="21" colspan="3">(서명 또는 인)</cell>
+    </row>
+    <row>
+      <cell col="0" row="22" colspan="34"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23" colspan="34">처리절차</cell>
+    </row>
+    <row>
+      <cell col="0" row="24" colspan="19"></cell>
+      <cell col="19" row="24" colspan="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="25" rowspan="2"></cell>
+      <cell col="1" row="25" colspan="3" rowspan="2">신청서 작성</cell>
+      <cell col="4" row="25" colspan="2"></cell>
+      <cell col="6" row="25" colspan="2" rowspan="2">‣</cell>
+      <cell col="8" row="25" colspan="3" rowspan="2">접 수</cell>
+      <cell col="11" row="25" colspan="2"></cell>
+      <cell col="13" row="25" rowspan="2">‣</cell>
+      <cell col="14" row="25" colspan="4" rowspan="2">검 토</cell>
+      <cell col="18" row="25"></cell>
+      <cell col="19" row="25" rowspan="2">‣</cell>
+      <cell col="20" row="25" colspan="7" rowspan="2">기안 ㆍ 결재</cell>
+      <cell col="27" row="25" colspan="2"></cell>
+      <cell col="29" row="25" rowspan="2">‣</cell>
+      <cell col="30" row="25" colspan="3" rowspan="2">통 보</cell>
+      <cell col="33" row="25" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="4" row="26" colspan="2"></cell>
+      <cell col="11" row="26" colspan="2"></cell>
+      <cell col="18" row="26"></cell>
+      <cell col="27" row="26" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="27"></cell>
+      <cell col="1" row="27" colspan="4">신청인</cell>
+      <cell col="5" row="27" colspan="2"></cell>
+      <cell col="7" row="27"></cell>
+      <cell col="8" row="27" colspan="3">국토지리정보원
+담당부서</cell>
+      <cell col="11" row="27" colspan="2"></cell>
+      <cell col="13" row="27"></cell>
+      <cell col="14" row="27" colspan="4">국토지리정보원
+담당부서</cell>
+      <cell col="18" row="27"></cell>
+      <cell col="19" row="27"></cell>
+      <cell col="20" row="27" colspan="7">국토지리정보원
+담당부서</cell>
+      <cell col="27" row="27" colspan="2"></cell>
+      <cell col="29" row="27"></cell>
+      <cell col="30" row="27" colspan="3"></cell>
+      <cell col="33" row="27"></cell>
+    </row>
+    <row>
+      <cell col="0" row="28" colspan="34"></cell>
+    </row>
+    <row>
+      <cell col="0" row="29" colspan="34">210㎜×297㎜[(백상지(80g/㎡) 또는 중질지(80g/㎡)]</cell>
+    </row>
+  </table>
+</annex>

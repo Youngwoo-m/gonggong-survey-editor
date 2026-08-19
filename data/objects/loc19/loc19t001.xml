@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc19t001" article="보호장비 착용 요령" rows="7" cols="4" source="측량 안전관리 매뉴얼 (2026.1)">
+  <row>
+    <cell col="0" row="0" header="1">구분</cell>
+    <cell col="1" row="0" header="1">장비명</cell>
+    <cell col="2" row="0" header="1">사용용도</cell>
+    <cell col="3" row="0" header="1">사진</cell>
+  </row>
+  <row>
+    <cell col="0" row="1"></cell>
+    <cell col="1" row="1">안전화</cell>
+    <cell col="2" row="1">측량 작업 시 부상 및 사고예 방용도</cell>
+    <cell col="3" row="1"></cell>
+  </row>
+  <row>
+    <cell col="0" row="2"></cell>
+    <cell col="1" row="2">안전조끼</cell>
+    <cell col="2" row="2">측량 작업 시 작업자와 통행 자 구분용</cell>
+    <cell col="3" row="2"></cell>
+  </row>
+  <row>
+    <cell col="0" row="3"></cell>
+    <cell col="1" row="3">전자신호봉</cell>
+    <cell col="2" row="3">측량 작업 시 도로통제용</cell>
+    <cell col="3" row="3"></cell>
+  </row>
+  <row>
+    <cell col="0" row="4"></cell>
+    <cell col="1" row="4">호루라기</cell>
+    <cell col="2" row="4">측량 작업 시 도로통제용</cell>
+    <cell col="3" row="4"></cell>
+  </row>
+  <row>
+    <cell col="0" row="5"></cell>
+    <cell col="1" row="5">무전기</cell>
+    <cell col="2" row="5">측량 작업 시 원만한 소통</cell>
+    <cell col="3" row="5"></cell>
+  </row>
+  <row>
+    <cell col="0" row="6"></cell>
+    <cell col="1" row="6">라바콘</cell>
+    <cell col="2" row="6">측량 작업 시 도로통제용</cell>
+    <cell col="3" row="6"></cell>
+  </row>
+</table>

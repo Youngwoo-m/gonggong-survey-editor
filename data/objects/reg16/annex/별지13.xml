@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지13" gubun="별지" no="13" title="기준점/검사점의 조서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=161554339">
+  <text>■ 수치표고모형의 구축 및 관리 등에 관한 규정 [별지 제13호서식]
+기준점/검사점의 조서</text>
+  <table rows="11" cols="11">
+    <row>
+      <cell col="0" row="0">점 명</cell>
+      <cell col="1" row="0" colspan="2"></cell>
+      <cell col="3" row="0" colspan="2">1/5만도엽명</cell>
+      <cell col="5" row="0" colspan="2"></cell>
+      <cell col="7" row="0" colspan="3">작업자</cell>
+      <cell col="10" row="0"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1">구 분</cell>
+      <cell col="1" row="1" colspan="2">기준/검사</cell>
+      <cell col="3" row="1" colspan="2">좌 표 계</cell>
+      <cell col="5" row="1" colspan="2"></cell>
+      <cell col="7" row="1" colspan="3">작업일자</cell>
+      <cell col="10" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="3">X(N)</cell>
+      <cell col="3" row="2" colspan="3">Y(E)</cell>
+      <cell col="6" row="2" colspan="3">타원체고(m)</cell>
+      <cell col="9" row="2" colspan="2">정표고(m)</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="3"></cell>
+      <cell col="3" row="3" colspan="3"></cell>
+      <cell col="6" row="3" colspan="3"></cell>
+      <cell col="9" row="3" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="2">사용장비</cell>
+      <cell col="2" row="4" colspan="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="2">관측시간</cell>
+      <cell col="2" row="5" colspan="2">h  m ～  h  m</cell>
+      <cell col="4" row="5" colspan="4">관측간격</cell>
+      <cell col="8" row="5" colspan="3">초</cell>
+    </row>
+    <row>
+      <cell col="0" row="6" colspan="2">관측위성수</cell>
+      <cell col="2" row="6" colspan="2">개</cell>
+      <cell col="4" row="6" colspan="4">PDOP</cell>
+      <cell col="8" row="6" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="2">안테나고</cell>
+      <cell col="2" row="7" colspan="2">m(경사/수직)</cell>
+      <cell col="4" row="7" colspan="4">수신상향각</cell>
+      <cell col="8" row="7" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="4">개 항 도</cell>
+      <cell col="4" row="8" colspan="7">지 상 사 진</cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="4"></cell>
+      <cell col="4" row="9" colspan="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="11">세 항 도</cell>
+    </row>
+  </table>
+</annex>

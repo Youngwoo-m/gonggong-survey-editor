@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표8" gubun="별표" no="8" title="항공레이저측량 자료저장 구조(제45조제3항 관련)" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=161554247">
+  <text>■ 수치표고모형의 구축 및 관리 등에 관한 규정 [별표 8]
+항공레이저측량 자료저장 구조(제45조제3항 관련)</text>
+  <table rows="31" cols="8">
+    <row>
+      <cell col="0" row="0" rowspan="2">최상위 폴더</cell>
+      <cell col="1" row="0" colspan="3">하위 폴더</cell>
+      <cell col="4" row="0" colspan="3">저장 파일</cell>
+      <cell col="7" row="0" rowspan="2">저장자료 설명</cell>
+    </row>
+    <row>
+      <cell col="1" row="1">단계 1</cell>
+      <cell col="2" row="1">단계 2</cell>
+      <cell col="3" row="1">단계 3</cell>
+      <cell col="4" row="1">파일명</cell>
+      <cell col="5" row="1">.확장자</cell>
+      <cell col="6" row="1">형식</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" rowspan="29">사업명</cell>
+      <cell col="1" row="2" rowspan="5">Plan</cell>
+      <cell col="2" row="2" rowspan="3">planner</cell>
+      <cell col="3" row="2" rowspan="3"></cell>
+      <cell col="4" row="2">*</cell>
+      <cell col="5" row="2">.pdf</cell>
+      <cell col="6" row="2">binary</cell>
+      <cell col="7" row="2" rowspan="2">과업지시서(사업지역, 사업량 등의 정보)</cell>
+    </row>
+    <row>
+      <cell col="4" row="3">*</cell>
+      <cell col="5" row="3">.hwp</cell>
+      <cell col="6" row="3">binary</cell>
+    </row>
+    <row>
+      <cell col="4" row="4">*</cell>
+      <cell col="5" row="4">.dxf</cell>
+      <cell col="6" row="4">binary</cell>
+      <cell col="7" row="4">대상지역 경계도(1/50,000 지형도 바탕)</cell>
+    </row>
+    <row>
+      <cell col="2" row="5" rowspan="2">worker</cell>
+      <cell col="3" row="5" rowspan="2"></cell>
+      <cell col="4" row="5">*</cell>
+      <cell col="5" row="5">.pdf</cell>
+      <cell col="6" row="5">binary</cell>
+      <cell col="7" row="5" rowspan="2">작업시행계획서(제45조제2항제1호)</cell>
+    </row>
+    <row>
+      <cell col="4" row="6">*</cell>
+      <cell col="5" row="6">.hwp</cell>
+      <cell col="6" row="6">binary</cell>
+    </row>
+    <row>
+      <cell col="1" row="7" rowspan="8">Survey</cell>
+      <cell col="2" row="7" rowspan="4">air</cell>
+      <cell col="3" row="7" rowspan="2">report</cell>
+      <cell col="4" row="7">*</cell>
+      <cell col="5" row="7">.pdf</cell>
+      <cell col="6" row="7">binary</cell>
+      <cell col="7" row="7" rowspan="2">제16조제1호~제7호 및 제45조제2항제2호~제8호 관련보고서</cell>
+    </row>
+    <row>
+      <cell col="4" row="8">*</cell>
+      <cell col="5" row="8">.xls</cell>
+      <cell col="6" row="8">binary</cell>
+    </row>
+    <row>
+      <cell col="3" row="9">flight</cell>
+      <cell col="4" row="9">*</cell>
+      <cell col="5" row="9">.txt</cell>
+      <cell col="6" row="9">ascii</cell>
+      <cell col="7" row="9">비행코스 궤적파일[별지 제12호서식](제16조)</cell>
+    </row>
+    <row>
+      <cell col="3" row="10">gnss_ins</cell>
+      <cell col="4" row="10">*</cell>
+      <cell col="5" row="10">.txt</cell>
+      <cell col="6" row="10">ascii</cell>
+      <cell col="7" row="10">GNSS/INS 성과자료(제45조제1항제2호)</cell>
+    </row>
+    <row>
+      <cell col="2" row="11" rowspan="4">ground</cell>
+      <cell col="3" row="11" rowspan="2">report</cell>
+      <cell col="4" row="11">*</cell>
+      <cell col="5" row="11">.pdf</cell>
+      <cell col="6" row="11">binary</cell>
+      <cell col="7" row="11" rowspan="2">제19조제1호~제2호 및 제45조제2항제9호~제10호 관련보고서</cell>
+    </row>
+    <row>
+      <cell col="4" row="12">*</cell>
+      <cell col="5" row="12">.xls</cell>
+      <cell col="6" row="12">binary</cell>
+    </row>
+    <row>
+      <cell col="3" row="13">base</cell>
+      <cell col="4" row="13">*</cell>
+      <cell col="5" row="13">.*</cell>
+      <cell col="6" row="13"></cell>
+      <cell col="7" row="13">GNSS 기준국 및 상시관측소 자료(raw data, RINEX) (제45조제1항제2호)</cell>
+    </row>
+    <row>
+      <cell col="3" row="14">control</cell>
+      <cell col="4" row="14">*</cell>
+      <cell col="5" row="14">.txt</cell>
+      <cell col="6" row="14">ascii</cell>
+      <cell col="7" row="14">기준점측량 성과[별표3](제20조)</cell>
+    </row>
+    <row>
+      <cell col="1" row="15">Laser</cell>
+      <cell col="2" row="15">course_name</cell>
+      <cell col="3" row="15"></cell>
+      <cell col="4" row="15">*</cell>
+      <cell col="5" row="15">.txt</cell>
+      <cell col="6" row="15">ascii</cell>
+      <cell col="7" row="15">원시자료[별표4](제21조)</cell>
+    </row>
+    <row>
+      <cell col="1" row="16" rowspan="2">Check</cell>
+      <cell col="2" row="16" rowspan="2">report</cell>
+      <cell col="3" row="16" rowspan="2"></cell>
+      <cell col="4" row="16">*</cell>
+      <cell col="5" row="16">.pdf</cell>
+      <cell col="6" row="16">binary</cell>
+      <cell col="7" row="16" rowspan="2">제27조제1호~제3호 관련 보고서</cell>
+    </row>
+    <row>
+      <cell col="4" row="17">*</cell>
+      <cell col="5" row="17">.xls</cell>
+      <cell col="6" row="17">binary</cell>
+    </row>
+    <row>
+      <cell col="1" row="18" rowspan="3">DSD</cell>
+      <cell col="2" row="18">report</cell>
+      <cell col="3" row="18"></cell>
+      <cell col="4" row="18">*</cell>
+      <cell col="5" row="18">.*</cell>
+      <cell col="6" row="18"></cell>
+      <cell col="7" row="18">정표고 변환 보고서(제29조)</cell>
+    </row>
+    <row>
+      <cell col="2" row="19">ellipse</cell>
+      <cell col="3" row="19"></cell>
+      <cell col="4" row="19">*</cell>
+      <cell col="5" row="19">.las</cell>
+      <cell col="6" row="19">binary</cell>
+      <cell col="7" row="19">타원체고 수치표면자료[별표5-1](제30조)</cell>
+    </row>
+    <row>
+      <cell col="2" row="20">ortho</cell>
+      <cell col="3" row="20"></cell>
+      <cell col="4" row="20">*</cell>
+      <cell col="5" row="20">.las</cell>
+      <cell col="6" row="20">binary</cell>
+      <cell col="7" row="20">정표고 수치표면자료[별표5-1](제30조)</cell>
+    </row>
+    <row>
+      <cell col="1" row="21" rowspan="4">DTD</cell>
+      <cell col="2" row="21" rowspan="2">report</cell>
+      <cell col="3" row="21" rowspan="2"></cell>
+      <cell col="4" row="21">*</cell>
+      <cell col="5" row="21">.pdf</cell>
+      <cell col="6" row="21">binary</cell>
+      <cell col="7" row="21" rowspan="2">제37조 관련보고서</cell>
+    </row>
+    <row>
+      <cell col="4" row="22">*</cell>
+      <cell col="5" row="22">.xls</cell>
+      <cell col="6" row="22">binary</cell>
+    </row>
+    <row>
+      <cell col="2" row="23">ellipse</cell>
+      <cell col="3" row="23"></cell>
+      <cell col="4" row="23">*</cell>
+      <cell col="5" row="23">.las</cell>
+      <cell col="6" row="23">binary</cell>
+      <cell col="7" row="23">타원체고 수치지면자료[별표5-2](제36조)</cell>
+    </row>
+    <row>
+      <cell col="2" row="24">ortho</cell>
+      <cell col="3" row="24"></cell>
+      <cell col="4" row="24">*</cell>
+      <cell col="5" row="24">.las</cell>
+      <cell col="6" row="24">binary</cell>
+      <cell col="7" row="24">정표고 수치지면자료[별표5-2](제36조)</cell>
+    </row>
+    <row>
+      <cell col="1" row="25" rowspan="4">DEM</cell>
+      <cell col="2" row="25" rowspan="2">report</cell>
+      <cell col="3" row="25" rowspan="2"></cell>
+      <cell col="4" row="25">*</cell>
+      <cell col="5" row="25">.pdf</cell>
+      <cell col="6" row="25">binary</cell>
+      <cell col="7" row="25" rowspan="2">제44조제1호~제2호 관련보고서</cell>
+    </row>
+    <row>
+      <cell col="4" row="26">*</cell>
+      <cell col="5" row="26">.xls</cell>
+      <cell col="6" row="26">binary</cell>
+    </row>
+    <row>
+      <cell col="2" row="27" rowspan="2">grid</cell>
+      <cell col="3" row="27" rowspan="2"></cell>
+      <cell col="4" row="27">도엽명</cell>
+      <cell col="5" row="27">.dat</cell>
+      <cell col="6" row="27">ascii</cell>
+      <cell col="7" row="27">도엽별 수치표고모형 관리파일[별표7](제45조제1항제8호)</cell>
+    </row>
+    <row>
+      <cell col="4" row="28">도엽명</cell>
+      <cell col="5" row="28">.txt</cell>
+      <cell col="6" row="28">ascii</cell>
+      <cell col="7" row="28">수치표고모형[별표6](제43조제3항)</cell>
+    </row>
+    <row>
+      <cell col="1" row="29" rowspan="2">Etc</cell>
+      <cell col="2" row="29" rowspan="2"></cell>
+      <cell col="3" row="29" rowspan="2"></cell>
+      <cell col="4" row="29">*</cell>
+      <cell col="5" row="29">.dxf</cell>
+      <cell col="6" row="29">binary</cell>
+      <cell col="7" row="29">결측/점밀도 관련 비반사지역 벡터 레이어</cell>
+    </row>
+    <row>
+      <cell col="4" row="30">*</cell>
+      <cell col="5" row="30">.*</cell>
+      <cell col="6" row="30"></cell>
+      <cell col="7" row="30">기타 자료</cell>
+    </row>
+  </table>
+  <text>가. 제45조제2항 관련보고서의 별표에서 표 양식의 보고서는 엑셀파일로 기록하여 XLS 파일과 PDF 파일로 저장한다.
+나. 점밀도 계산에서 사용된 비 반사 지역의 벡터 레이어 자료와 같은 부가적인 자료는 Etc(기타) 폴더에 저장한다.</text>
+</annex>

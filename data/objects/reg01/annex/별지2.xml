@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지2" gubun="별지" no="2" title="공공측량 작업계획 사전검토 요청서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296353">
+  <text>[별지 제2호서식] &lt;신설&gt;
+공공측량 작업계획 사전검토 요청서</text>
+  <table rows="9" cols="4">
+    <row>
+      <cell col="0" row="0">안건명</cell>
+      <cell col="1" row="0" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1">공공측량시행자</cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1">공공측량수행자</cell>
+      <cell col="3" row="1">계약 미체결시 공란</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">사업명(예정)</cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2">사업기간(예정)</cell>
+      <cell col="3" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">① 특례적용의
+필요성</cell>
+      <cell col="1" row="3" colspan="3">〇 특례적용시 정확도 향상・불탐 감소・비용절감・효율성 등 개선필요성</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">② 활용사례</cell>
+      <cell col="1" row="4" colspan="3">〇 동일 또는 유사 장비 혹은 작업방법 등의 활용사례(사례가 존재 할 경우 기재)</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">③ 시험장비</cell>
+      <cell col="1" row="5" colspan="3">〇 장비 사양 및 장비가 포함하고 있는 오차(장비시험에 한함)</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">④ 작업방법</cell>
+      <cell col="1" row="6" colspan="3">〇 기지점과 연결 등을 통한 유효한 좌표 산출방법 
+〇 측량작업이 정확하게 이루어졌는지 평가할 수 있는 기준
+〇 폐합차 등 오차를 조정할 수 있는 방법
+〇 지하시설물도 작성시기에 대한 특례적용 시 불탐방지대책</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">⑤ 시험환경</cell>
+      <cell col="1" row="7" colspan="3">〇 시험환경과 실제 작업환경의 유사도 및 시험환경 설정 사유
+〇 정확도에 영향을 많이 끼치는 현장 환경 제시
+〇 시험환경 설정과 시험장비 혹은 작업방법의 인과성</cell>
+    </row>
+    <row>
+      <cell col="0" row="8">⑥ 시험계획(결과)</cell>
+      <cell col="1" row="8" colspan="3">〇 시험장소 및 일정 등의 시험계획(시험 예정 시)
+〇 해당시험 환경에서 시험한 결과 기준값(종전의 측량방법 중 가장 정확하다고 판단할만한 측량방법에 따른 측량 결과)의 차이 및 오차 분석(시험 기 시행 시)</cell>
+    </row>
+  </table>
+</annex>

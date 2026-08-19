@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표20" gubun="별표" no="20" title="지하공간통합지도 품질검사표" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=38099461">
+  <text>[별표 20] 지하공간통합지도 품질검사표</text>
+  <table rows="17" cols="7">
+    <row>
+      <cell col="0" row="0">품질요소</cell>
+      <cell col="1" row="0">세부
+요소</cell>
+      <cell col="2" row="0">세세부 요소</cell>
+      <cell col="3" row="0">품질검사 대상</cell>
+      <cell col="4" row="0">기준 이내</cell>
+      <cell col="5" row="0">완성도
+(%)</cell>
+      <cell col="6" row="0">품질
+적정성</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">완전성</cell>
+      <cell col="1" row="1">누락</cell>
+      <cell col="2" row="1">대상객체
+누락</cell>
+      <cell col="3" row="1">개</cell>
+      <cell col="4" row="1">개</cell>
+      <cell col="5" row="1"></cell>
+      <cell col="6" row="1">적, 부</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" rowspan="3">논리
+일관성
+(기준)</cell>
+      <cell col="1" row="2">개념
+일관성</cell>
+      <cell col="2" row="2">세밀도
+(가시화)
+일관성</cell>
+      <cell col="3" row="2">개</cell>
+      <cell col="4" row="2">개</cell>
+      <cell col="5" row="2"></cell>
+      <cell col="6" row="2">적, 부</cell>
+    </row>
+    <row>
+      <cell col="1" row="3" rowspan="2">위상
+일관성</cell>
+      <cell col="2" row="3">2차원정보 
+일관성</cell>
+      <cell col="3" row="3">개</cell>
+      <cell col="4" row="3">개</cell>
+      <cell col="5" row="3"></cell>
+      <cell col="6" row="3">적, 부</cell>
+    </row>
+    <row>
+      <cell col="2" row="4">3차원정보
+일관성</cell>
+      <cell col="3" row="4">개</cell>
+      <cell col="4" row="4">개</cell>
+      <cell col="5" row="4"></cell>
+      <cell col="6" row="4">적, 부</cell>
+    </row>
+    <row>
+      <cell col="0" row="5" rowspan="5">위치
+정확성
+(공간)</cell>
+      <cell col="1" row="5" rowspan="3">절대적
+또는 
+외적 정확성</cell>
+      <cell col="2" row="5">기준좌표계
+정확성</cell>
+      <cell col="3" row="5">개</cell>
+      <cell col="4" row="5">개</cell>
+      <cell col="5" row="5"></cell>
+      <cell col="6" row="5">적, 부</cell>
+    </row>
+    <row>
+      <cell col="2" row="6">2차원
+위치정보 
+정확성</cell>
+      <cell col="3" row="6">개</cell>
+      <cell col="4" row="6">개</cell>
+      <cell col="5" row="6"></cell>
+      <cell col="6" row="6">적, 부</cell>
+    </row>
+    <row>
+      <cell col="2" row="7">3차원
+위치정보
+정확성</cell>
+      <cell col="3" row="7">개</cell>
+      <cell col="4" row="7">개</cell>
+      <cell col="5" row="7"></cell>
+      <cell col="6" row="7">적, 부</cell>
+    </row>
+    <row>
+      <cell col="1" row="8" rowspan="2">상대적
+또는 
+내적 정확성</cell>
+      <cell col="2" row="8">2차원정보
+ 경계인접</cell>
+      <cell col="3" row="8">개</cell>
+      <cell col="4" row="8">개</cell>
+      <cell col="5" row="8"></cell>
+      <cell col="6" row="8">적, 부</cell>
+    </row>
+    <row>
+      <cell col="2" row="9">3차원정보
+경계인접</cell>
+      <cell col="3" row="9">개</cell>
+      <cell col="4" row="9">개</cell>
+      <cell col="5" row="9"></cell>
+      <cell col="6" row="9">적, 부</cell>
+    </row>
+    <row>
+      <cell col="0" row="10" rowspan="4">주제 정확성
+(속성)</cell>
+      <cell col="1" row="10">분류 
+정확성</cell>
+      <cell col="2" row="10">항목 분류 
+정확성</cell>
+      <cell col="3" row="10">개</cell>
+      <cell col="4" row="10">개</cell>
+      <cell col="5" row="10"></cell>
+      <cell col="6" row="10">적, 부</cell>
+    </row>
+    <row>
+      <cell col="1" row="11">논리
+정확성</cell>
+      <cell col="2" row="11">논리정확성</cell>
+      <cell col="3" row="11">개</cell>
+      <cell col="4" row="11">개</cell>
+      <cell col="5" row="11"></cell>
+      <cell col="6" row="11">적, 부</cell>
+    </row>
+    <row>
+      <cell col="1" row="12" rowspan="2">속성
+정확성</cell>
+      <cell col="2" row="12">속성내용
+불일치</cell>
+      <cell col="3" row="12">개</cell>
+      <cell col="4" row="12">개</cell>
+      <cell col="5" row="12"></cell>
+      <cell col="6" row="12">적, 부</cell>
+    </row>
+    <row>
+      <cell col="2" row="13">속성내용
+누락</cell>
+      <cell col="3" row="13">개</cell>
+      <cell col="4" row="13">개</cell>
+      <cell col="5" row="13"></cell>
+      <cell col="6" row="13">적, 부</cell>
+    </row>
+    <row>
+      <cell col="0" row="14" rowspan="3">기타</cell>
+      <cell col="1" row="14">관리파일 작성오류</cell>
+      <cell col="2" row="14">메타데이터 
+누락</cell>
+      <cell col="3" row="14">개</cell>
+      <cell col="4" row="14">개</cell>
+      <cell col="5" row="14"></cell>
+      <cell col="6" row="14">적, 부</cell>
+    </row>
+    <row>
+      <cell col="1" row="15">성과품 누락</cell>
+      <cell col="2" row="15">성과품 누락</cell>
+      <cell col="3" row="15">개</cell>
+      <cell col="4" row="15">개</cell>
+      <cell col="5" row="15"></cell>
+      <cell col="6" row="15">적, 부</cell>
+    </row>
+    <row>
+      <cell col="1" row="16">성과 탑재 적정성</cell>
+      <cell col="2" row="16">성과 탑재 적정성</cell>
+      <cell col="3" row="16">개</cell>
+      <cell col="4" row="16">개</cell>
+      <cell col="5" row="16"></cell>
+      <cell col="6" row="16">적, 부</cell>
+    </row>
+  </table>
+</annex>

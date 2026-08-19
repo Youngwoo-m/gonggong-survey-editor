@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표3추가" gubun="별표" no="3추가" title="별표 3 에 새로 더하는 심사표 (무인비행장치 레이저측량ㆍ항공레이저측량)" source="성과심사 규정 개정안 초안 (scripts/genannex_simsa.py)">
+  <text>[별표 3] 에 새로 더하는 심사표
+현행 별표 3 의 심사표 24종에는 레이저(라이다) 취득 공정을 보는 심사표가 없다.
+「공공측량 작업규정」 개편안이 제4편 제3장(무인비행장치 레이저측량)과 제5장(항공레이저측량)을 두므로 그에 맞추어 두 종을 더한다.
+칸 구성과 판정 표기는 현행 별표 3 의 심사표를 그대로 따랐다.</text>
+  <text>무인비행장치 레이저측량 — 작업 공정</text>
+  <table rows="16" cols="8">
+    <row>
+      <cell col="0" row="0" header="1">작업 공정</cell>
+      <cell col="1" row="0" header="1">심사 항목</cell>
+      <cell col="2" row="0" header="1">심사 기준</cell>
+      <cell col="3" row="0" header="1">심사 대상</cell>
+      <cell col="4" row="0" header="1">심사 성과물</cell>
+      <cell col="5" row="0" header="1">심사 방법</cell>
+      <cell col="6" row="0" header="1">판정 기준</cell>
+      <cell col="7" row="0" header="1">판정</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">일반 사항</cell>
+      <cell col="1" row="1">레이저 스캐너 제원</cell>
+      <cell col="2" row="1">공공측량 작업계획서 검토 내용</cell>
+      <cell col="3" row="1">실내(전수) 검사</cell>
+      <cell col="4" row="1">장비 제원표</cell>
+      <cell col="5" row="1">작업계획서에 적은 장비와 실제 사용 장비가 같은지 확인</cell>
+      <cell col="6" row="1">적정성 여부</cell>
+      <cell col="7" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2"></cell>
+      <cell col="1" row="2">센서의 검정</cell>
+      <cell col="2" row="2">「공공측량 작업규정」 무인비행장치 레이저측량</cell>
+      <cell col="3" row="2">실내(전수) 검사</cell>
+      <cell col="4" row="2">검정 성적서, 검정 기록</cell>
+      <cell col="5" row="2">검정의 유효기간과 결과를 확인</cell>
+      <cell col="6" row="2">적정성 여부</cell>
+      <cell col="7" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3"></cell>
+      <cell col="1" row="3">기준점 성과의 적정성</cell>
+      <cell col="2" row="3">공공측량 작업계획서 검토 내용</cell>
+      <cell col="3" row="3">실내(전수) 검사</cell>
+      <cell col="4" row="3">국가ㆍ공공기준점 성과표</cell>
+      <cell col="5" row="3">사용한 기준점 성과의 적정성을 확인</cell>
+      <cell col="6" row="3">적정성 여부</cell>
+      <cell col="7" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4">점군 취득</cell>
+      <cell col="1" row="4">비행 및 취득 조건</cell>
+      <cell col="2" row="4">「공공측량 작업규정」 무인비행장치 레이저측량</cell>
+      <cell col="3" row="4">표본검사</cell>
+      <cell col="4" row="4">비행기록, 항적자료</cell>
+      <cell col="5" row="4">대지고도ㆍ비행속도ㆍ스캔각ㆍ중복도가 정한 바에 맞는지 확인</cell>
+      <cell col="6" row="4">적정성 여부</cell>
+      <cell col="7" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5"></cell>
+      <cell col="1" row="5">점밀도</cell>
+      <cell col="2" row="5">「공공측량 작업규정」 무인비행장치 레이저측량ㆍ제품사양서</cell>
+      <cell col="3" row="5">표본검사</cell>
+      <cell col="4" row="5">점군자료</cell>
+      <cell col="5" row="5">단위면적당 점의 수가 정한 값 이상인지 확인</cell>
+      <cell col="6" row="5">규정 이내 (90% 이상)</cell>
+      <cell col="7" row="5">적, 부</cell>
+    </row>
+    <row>
+      <cell col="0" row="6"></cell>
+      <cell col="1" row="6">결측</cell>
+      <cell col="2" row="6">「공공측량 작업규정」 무인비행장치 레이저측량</cell>
+      <cell col="3" row="6">표본검사</cell>
+      <cell col="4" row="6">점군자료</cell>
+      <cell col="5" row="6">취득 구역 안에 자료가 빠진 곳이 있는지 확인</cell>
+      <cell col="6" row="6">적정성 여부</cell>
+      <cell col="7" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">점군 정리</cell>
+      <cell col="1" row="7">궤적 해석(GNSS/INS)</cell>
+      <cell col="2" row="7">「공공측량 작업규정」 무인비행장치 레이저측량</cell>
+      <cell col="3" row="7">실내(전수) 검사</cell>
+      <cell col="4" row="7">기준국 자료, 궤적 해석 성과</cell>
+      <cell col="5" row="7">기준국과의 거리, 해석 결과의 잔차를 확인</cell>
+      <cell col="6" row="7">적정성 여부</cell>
+      <cell col="7" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8"></cell>
+      <cell col="1" row="8">코스 간 정합</cell>
+      <cell col="2" row="8">「공공측량 작업규정」 무인비행장치 레이저측량</cell>
+      <cell col="3" row="8">표본검사</cell>
+      <cell col="4" row="8">점군자료, 정합 보고서</cell>
+      <cell col="5" row="8">이웃한 코스가 겹치는 곳의 높이 차를 확인</cell>
+      <cell col="6" row="8">규정 이내 (90% 이상)</cell>
+      <cell col="7" row="8">적, 부</cell>
+    </row>
+    <row>
+      <cell col="0" row="9"></cell>
+      <cell col="1" row="9">좌표 변환</cell>
+      <cell col="2" row="9">「공공측량 작업규정」 무인비행장치 레이저측량</cell>
+      <cell col="3" row="9">실내(전수) 검사</cell>
+      <cell col="4" row="9">점군자료</cell>
+      <cell col="5" row="9">좌표계ㆍ원점ㆍ투영법이 정한 바와 같은지 확인</cell>
+      <cell col="6" row="9">적정성 여부</cell>
+      <cell col="7" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10"></cell>
+      <cell col="1" row="10">잡음 제거 및 분류</cell>
+      <cell col="2" row="10">「공공측량 작업규정」 무인비행장치 레이저측량</cell>
+      <cell col="3" row="10">표본검사</cell>
+      <cell col="4" row="10">분류 점군</cell>
+      <cell col="5" row="10">지면ㆍ비지면 분류가 적정한지 확인</cell>
+      <cell col="6" row="10">적정성 여부</cell>
+      <cell col="7" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11">정확도 검증</cell>
+      <cell col="1" row="11">검증점 수평위치</cell>
+      <cell col="2" row="11">「공공측량 작업규정」 무인비행장치 레이저측량</cell>
+      <cell col="3" row="11">표본검사</cell>
+      <cell col="4" row="11">검증점 성과, 점군자료</cell>
+      <cell col="5" row="11">검증점과 점군의 수평위치 차를 확인</cell>
+      <cell col="6" row="11">규정 이내 (90% 이상)</cell>
+      <cell col="7" row="11">적, 부</cell>
+    </row>
+    <row>
+      <cell col="0" row="12"></cell>
+      <cell col="1" row="12">검증점 표고</cell>
+      <cell col="2" row="12">「공공측량 작업규정」 무인비행장치 레이저측량</cell>
+      <cell col="3" row="12">표본검사</cell>
+      <cell col="4" row="12">검증점 성과, 점군자료</cell>
+      <cell col="5" row="12">검증점과 점군의 표고 차를 확인</cell>
+      <cell col="6" row="12">규정 이내 (90% 이상)</cell>
+      <cell col="7" row="12">적, 부</cell>
+    </row>
+    <row>
+      <cell col="0" row="13">성과 제작</cell>
+      <cell col="1" row="13">수치표면모델(DSM)</cell>
+      <cell col="2" row="13">「공공측량 작업규정」 무인비행장치 레이저측량</cell>
+      <cell col="3" row="13">표본검사</cell>
+      <cell col="4" row="13">수치표면모델</cell>
+      <cell col="5" row="13">격자 간격과 정확도를 확인</cell>
+      <cell col="6" row="13">규정 이내 (90% 이상)</cell>
+      <cell col="7" row="13">적, 부</cell>
+    </row>
+    <row>
+      <cell col="0" row="14"></cell>
+      <cell col="1" row="14">수치표고모델(DEM)</cell>
+      <cell col="2" row="14">「공공측량 작업규정」 무인비행장치 레이저측량</cell>
+      <cell col="3" row="14">표본검사</cell>
+      <cell col="4" row="14">수치표고모델</cell>
+      <cell col="5" row="14">격자 간격과 정확도를 확인</cell>
+      <cell col="6" row="14">규정 이내 (90% 이상)</cell>
+      <cell col="7" row="14">적, 부</cell>
+    </row>
+    <row>
+      <cell col="0" row="15"></cell>
+      <cell col="1" row="15">메타데이터</cell>
+      <cell col="2" row="15">「공공측량 작업규정」 무인비행장치 레이저측량</cell>
+      <cell col="3" row="15">실내(전수) 검사</cell>
+      <cell col="4" row="15">메타데이터</cell>
+      <cell col="5" row="15">필수 항목이 채워졌는지와 성과와 맞는지 확인</cell>
+      <cell col="6" row="15">적정성 여부</cell>
+      <cell col="7" row="15"></cell>
+    </row>
+  </table>
+  <text>무인비행장치 레이저측량 — 심사표 (사업명            )</text>
+  <table rows="21" cols="6">
+    <row>
+      <cell col="0" row="0" header="1">심사항목</cell>
+      <cell col="1" row="0" header="1">심사 대상</cell>
+      <cell col="2" row="0" header="1">기준 이내</cell>
+      <cell col="3" row="0" header="1">완성도 (%)</cell>
+      <cell col="4" row="0" header="1">판정</cell>
+      <cell col="5" row="0" header="1">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">1. 일반 사항</cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1"></cell>
+      <cell col="4" row="1"></cell>
+      <cell col="5" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2">가. 레이저 스캐너 제원</cell>
+      <cell col="1" row="2">적정성 여부</cell>
+      <cell col="2" row="2"></cell>
+      <cell col="3" row="2"></cell>
+      <cell col="4" row="2"></cell>
+      <cell col="5" row="2">장비 종류</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">나. 센서의 검정</cell>
+      <cell col="1" row="3">적정성 여부</cell>
+      <cell col="2" row="3"></cell>
+      <cell col="3" row="3"></cell>
+      <cell col="4" row="3"></cell>
+      <cell col="5" row="3">검정일</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">2. 점군 취득</cell>
+      <cell col="1" row="4"></cell>
+      <cell col="2" row="4"></cell>
+      <cell col="3" row="4"></cell>
+      <cell col="4" row="4"></cell>
+      <cell col="5" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5">가. 비행 및 취득 조건</cell>
+      <cell col="1" row="5">적정성 여부</cell>
+      <cell col="2" row="5"></cell>
+      <cell col="3" row="5"></cell>
+      <cell col="4" row="5"></cell>
+      <cell col="5" row="5">대지고도ㆍ중복도</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">나. 점밀도</cell>
+      <cell col="1" row="6">점/㎡</cell>
+      <cell col="2" row="6">코스</cell>
+      <cell col="3" row="6">코스</cell>
+      <cell col="4" row="6">적, 부</cell>
+      <cell col="5" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">다. 결측</cell>
+      <cell col="1" row="7">적정성 여부</cell>
+      <cell col="2" row="7"></cell>
+      <cell col="3" row="7"></cell>
+      <cell col="4" row="7"></cell>
+      <cell col="5" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8">3. 점군 정리</cell>
+      <cell col="1" row="8"></cell>
+      <cell col="2" row="8"></cell>
+      <cell col="3" row="8"></cell>
+      <cell col="4" row="8"></cell>
+      <cell col="5" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">가. 궤적 해석</cell>
+      <cell col="1" row="9">적정성 여부</cell>
+      <cell col="2" row="9"></cell>
+      <cell col="3" row="9"></cell>
+      <cell col="4" row="9"></cell>
+      <cell col="5" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10">나. 코스 간 정합</cell>
+      <cell col="1" row="10">코스</cell>
+      <cell col="2" row="10">코스</cell>
+      <cell col="3" row="10">코스</cell>
+      <cell col="4" row="10">적, 부</cell>
+      <cell col="5" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11">다. 잡음 제거 및 분류</cell>
+      <cell col="1" row="11">적정성 여부</cell>
+      <cell col="2" row="11"></cell>
+      <cell col="3" row="11"></cell>
+      <cell col="4" row="11"></cell>
+      <cell col="5" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12">4. 정확도 검증</cell>
+      <cell col="1" row="12"></cell>
+      <cell col="2" row="12"></cell>
+      <cell col="3" row="12"></cell>
+      <cell col="4" row="12"></cell>
+      <cell col="5" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13">가. 수평위치</cell>
+      <cell col="1" row="13">점</cell>
+      <cell col="2" row="13">점</cell>
+      <cell col="3" row="13">점</cell>
+      <cell col="4" row="13">적, 부</cell>
+      <cell col="5" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14">나. 표고</cell>
+      <cell col="1" row="14">점</cell>
+      <cell col="2" row="14">점</cell>
+      <cell col="3" row="14">점</cell>
+      <cell col="4" row="14">적, 부</cell>
+      <cell col="5" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15">5. 성과 제작</cell>
+      <cell col="1" row="15"></cell>
+      <cell col="2" row="15"></cell>
+      <cell col="3" row="15"></cell>
+      <cell col="4" row="15"></cell>
+      <cell col="5" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16">가. 수치표면모델(DSM)</cell>
+      <cell col="1" row="16">도엽</cell>
+      <cell col="2" row="16">도엽</cell>
+      <cell col="3" row="16">도엽</cell>
+      <cell col="4" row="16">적, 부</cell>
+      <cell col="5" row="16"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17">나. 수치표고모델(DEM)</cell>
+      <cell col="1" row="17">도엽</cell>
+      <cell col="2" row="17">도엽</cell>
+      <cell col="3" row="17">도엽</cell>
+      <cell col="4" row="17">적, 부</cell>
+      <cell col="5" row="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18">다. 메타데이터</cell>
+      <cell col="1" row="18">적정성 여부</cell>
+      <cell col="2" row="18"></cell>
+      <cell col="3" row="18"></cell>
+      <cell col="4" row="18"></cell>
+      <cell col="5" row="18"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19">종 합 판 정</cell>
+      <cell col="1" row="19">직 책</cell>
+      <cell col="2" row="19">기 술 등 급</cell>
+      <cell col="3" row="19">성 명</cell>
+      <cell col="4" row="19">서 명</cell>
+      <cell col="5" row="19"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20">적합 / 조건부적합 / 부적합</cell>
+      <cell col="1" row="20"></cell>
+      <cell col="2" row="20"></cell>
+      <cell col="3" row="20"></cell>
+      <cell col="4" row="20"></cell>
+      <cell col="5" row="20"></cell>
+    </row>
+  </table>
+  <text>항공레이저측량 — 작업 공정</text>
+  <table rows="18" cols="8">
+    <row>
+      <cell col="0" row="0" header="1">작업 공정</cell>
+      <cell col="1" row="0" header="1">심사 항목</cell>
+      <cell col="2" row="0" header="1">심사 기준</cell>
+      <cell col="3" row="0" header="1">심사 대상</cell>
+      <cell col="4" row="0" header="1">심사 성과물</cell>
+      <cell col="5" row="0" header="1">심사 방법</cell>
+      <cell col="6" row="0" header="1">판정 기준</cell>
+      <cell col="7" row="0" header="1">판정</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">일반 사항</cell>
+      <cell col="1" row="1">레이저 스캐너 제원</cell>
+      <cell col="2" row="1">공공측량 작업계획서 검토 내용</cell>
+      <cell col="3" row="1">실내(전수) 검사</cell>
+      <cell col="4" row="1">장비 제원표</cell>
+      <cell col="5" row="1">작업계획서에 적은 장비와 실제 사용 장비가 같은지 확인</cell>
+      <cell col="6" row="1">적정성 여부</cell>
+      <cell col="7" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2"></cell>
+      <cell col="1" row="2">센서의 검정</cell>
+      <cell col="2" row="2">「공공측량 작업규정」 항공레이저측량</cell>
+      <cell col="3" row="2">실내(전수) 검사</cell>
+      <cell col="4" row="2">검정 성적서, 검정 기록</cell>
+      <cell col="5" row="2">검정의 유효기간과 결과를 확인</cell>
+      <cell col="6" row="2">적정성 여부</cell>
+      <cell col="7" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3"></cell>
+      <cell col="1" row="3">기준점 성과의 적정성</cell>
+      <cell col="2" row="3">공공측량 작업계획서 검토 내용</cell>
+      <cell col="3" row="3">실내(전수) 검사</cell>
+      <cell col="4" row="3">국가ㆍ공공기준점 성과표</cell>
+      <cell col="5" row="3">사용한 기준점 성과의 적정성을 확인</cell>
+      <cell col="6" row="3">적정성 여부</cell>
+      <cell col="7" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4">계획 및 취득</cell>
+      <cell col="1" row="4">코스 배치</cell>
+      <cell col="2" row="4">「공공측량 작업규정」 항공레이저측량</cell>
+      <cell col="3" row="4">실내(전수) 검사</cell>
+      <cell col="4" row="4">촬영계획도, 항적자료</cell>
+      <cell col="5" row="4">코스 간격ㆍ중복도ㆍ교차코스의 배치가 정한 바에 맞는지 확인</cell>
+      <cell col="6" row="4">적정성 여부</cell>
+      <cell col="7" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5"></cell>
+      <cell col="1" row="5">비행 및 취득 조건</cell>
+      <cell col="2" row="5">「공공측량 작업규정」 항공레이저측량</cell>
+      <cell col="3" row="5">표본검사</cell>
+      <cell col="4" row="5">비행기록, 항적자료</cell>
+      <cell col="5" row="5">대지고도ㆍ비행속도ㆍ스캔각ㆍ펄스 반복률을 확인</cell>
+      <cell col="6" row="5">적정성 여부</cell>
+      <cell col="7" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6"></cell>
+      <cell col="1" row="6">점밀도</cell>
+      <cell col="2" row="6">「공공측량 작업규정」 항공레이저측량ㆍ제품사양서</cell>
+      <cell col="3" row="6">표본검사</cell>
+      <cell col="4" row="6">점군자료</cell>
+      <cell col="5" row="6">단위면적당 점의 수가 정한 값 이상인지 확인</cell>
+      <cell col="6" row="6">규정 이내 (90% 이상)</cell>
+      <cell col="7" row="6">적, 부</cell>
+    </row>
+    <row>
+      <cell col="0" row="7"></cell>
+      <cell col="1" row="7">결측</cell>
+      <cell col="2" row="7">「공공측량 작업규정」 항공레이저측량</cell>
+      <cell col="3" row="7">표본검사</cell>
+      <cell col="4" row="7">점군자료</cell>
+      <cell col="5" row="7">취득 구역 안에 자료가 빠진 곳이 있는지 확인</cell>
+      <cell col="6" row="7">적정성 여부</cell>
+      <cell col="7" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8">점군 정리</cell>
+      <cell col="1" row="8">궤적 해석(GNSS/INS)</cell>
+      <cell col="2" row="8">「공공측량 작업규정」 항공레이저측량</cell>
+      <cell col="3" row="8">실내(전수) 검사</cell>
+      <cell col="4" row="8">기준국 자료, 궤적 해석 성과</cell>
+      <cell col="5" row="8">기준국과의 거리, 해석 결과의 잔차를 확인</cell>
+      <cell col="6" row="8">적정성 여부</cell>
+      <cell col="7" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9"></cell>
+      <cell col="1" row="9">코스 간 정합</cell>
+      <cell col="2" row="9">「공공측량 작업규정」 항공레이저측량</cell>
+      <cell col="3" row="9">표본검사</cell>
+      <cell col="4" row="9">점군자료, 정합 보고서</cell>
+      <cell col="5" row="9">이웃한 코스와 교차코스가 겹치는 곳의 높이 차를 확인</cell>
+      <cell col="6" row="9">규정 이내 (90% 이상)</cell>
+      <cell col="7" row="9">적, 부</cell>
+    </row>
+    <row>
+      <cell col="0" row="10"></cell>
+      <cell col="1" row="10">좌표 변환</cell>
+      <cell col="2" row="10">「공공측량 작업규정」 항공레이저측량</cell>
+      <cell col="3" row="10">실내(전수) 검사</cell>
+      <cell col="4" row="10">점군자료</cell>
+      <cell col="5" row="10">좌표계ㆍ원점ㆍ투영법이 정한 바와 같은지 확인</cell>
+      <cell col="6" row="10">적정성 여부</cell>
+      <cell col="7" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11"></cell>
+      <cell col="1" row="11">잡음 제거 및 분류</cell>
+      <cell col="2" row="11">「공공측량 작업규정」 항공레이저측량</cell>
+      <cell col="3" row="11">표본검사</cell>
+      <cell col="4" row="11">분류 점군</cell>
+      <cell col="5" row="11">지면ㆍ비지면 분류와 건물ㆍ식생의 분류가 적정한지 확인</cell>
+      <cell col="6" row="11">적정성 여부</cell>
+      <cell col="7" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12">정확도 검증</cell>
+      <cell col="1" row="12">검증점 수평위치</cell>
+      <cell col="2" row="12">「공공측량 작업규정」 항공레이저측량</cell>
+      <cell col="3" row="12">표본검사</cell>
+      <cell col="4" row="12">검증점 성과, 점군자료</cell>
+      <cell col="5" row="12">검증점과 점군의 수평위치 차를 확인</cell>
+      <cell col="6" row="12">규정 이내 (90% 이상)</cell>
+      <cell col="7" row="12">적, 부</cell>
+    </row>
+    <row>
+      <cell col="0" row="13"></cell>
+      <cell col="1" row="13">검증점 표고</cell>
+      <cell col="2" row="13">「공공측량 작업규정」 항공레이저측량</cell>
+      <cell col="3" row="13">표본검사</cell>
+      <cell col="4" row="13">검증점 성과, 점군자료</cell>
+      <cell col="5" row="13">검증점과 점군의 표고 차를 확인</cell>
+      <cell col="6" row="13">규정 이내 (90% 이상)</cell>
+      <cell col="7" row="13">적, 부</cell>
+    </row>
+    <row>
+      <cell col="0" row="14">성과 제작</cell>
+      <cell col="1" row="14">수치표면모델(DSM)</cell>
+      <cell col="2" row="14">「공공측량 작업규정」 항공레이저측량</cell>
+      <cell col="3" row="14">표본검사</cell>
+      <cell col="4" row="14">수치표면모델</cell>
+      <cell col="5" row="14">격자 간격과 정확도를 확인</cell>
+      <cell col="6" row="14">규정 이내 (90% 이상)</cell>
+      <cell col="7" row="14">적, 부</cell>
+    </row>
+    <row>
+      <cell col="0" row="15"></cell>
+      <cell col="1" row="15">수치표고모델(DEM)</cell>
+      <cell col="2" row="15">「공공측량 작업규정」 항공레이저측량</cell>
+      <cell col="3" row="15">표본검사</cell>
+      <cell col="4" row="15">수치표고모델</cell>
+      <cell col="5" row="15">격자 간격과 정확도를 확인</cell>
+      <cell col="6" row="15">규정 이내 (90% 이상)</cell>
+      <cell col="7" row="15">적, 부</cell>
+    </row>
+    <row>
+      <cell col="0" row="16"></cell>
+      <cell col="1" row="16">등고선</cell>
+      <cell col="2" row="16">「공공측량 작업규정」 항공레이저측량</cell>
+      <cell col="3" row="16">표본검사</cell>
+      <cell col="4" row="16">등고선 성과</cell>
+      <cell col="5" row="16">등고선 간격과 표고 정확도를 확인</cell>
+      <cell col="6" row="16">규정 이내 (90% 이상)</cell>
+      <cell col="7" row="16">적, 부</cell>
+    </row>
+    <row>
+      <cell col="0" row="17"></cell>
+      <cell col="1" row="17">메타데이터</cell>
+      <cell col="2" row="17">「공공측량 작업규정」 항공레이저측량</cell>
+      <cell col="3" row="17">실내(전수) 검사</cell>
+      <cell col="4" row="17">메타데이터</cell>
+      <cell col="5" row="17">필수 항목이 채워졌는지와 성과와 맞는지 확인</cell>
+      <cell col="6" row="17">적정성 여부</cell>
+      <cell col="7" row="17"></cell>
+    </row>
+  </table>
+  <text>항공레이저측량 — 심사표 (사업명            )</text>
+  <table rows="23" cols="6">
+    <row>
+      <cell col="0" row="0" header="1">심사항목</cell>
+      <cell col="1" row="0" header="1">심사 대상</cell>
+      <cell col="2" row="0" header="1">기준 이내</cell>
+      <cell col="3" row="0" header="1">완성도 (%)</cell>
+      <cell col="4" row="0" header="1">판정</cell>
+      <cell col="5" row="0" header="1">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">1. 일반 사항</cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1"></cell>
+      <cell col="4" row="1"></cell>
+      <cell col="5" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2">가. 레이저 스캐너 제원</cell>
+      <cell col="1" row="2">적정성 여부</cell>
+      <cell col="2" row="2"></cell>
+      <cell col="3" row="2"></cell>
+      <cell col="4" row="2"></cell>
+      <cell col="5" row="2">장비 종류</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">나. 센서의 검정</cell>
+      <cell col="1" row="3">적정성 여부</cell>
+      <cell col="2" row="3"></cell>
+      <cell col="3" row="3"></cell>
+      <cell col="4" row="3"></cell>
+      <cell col="5" row="3">검정일</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">2. 계획 및 취득</cell>
+      <cell col="1" row="4"></cell>
+      <cell col="2" row="4"></cell>
+      <cell col="3" row="4"></cell>
+      <cell col="4" row="4"></cell>
+      <cell col="5" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5">가. 코스 배치</cell>
+      <cell col="1" row="5">적정성 여부</cell>
+      <cell col="2" row="5"></cell>
+      <cell col="3" row="5"></cell>
+      <cell col="4" row="5"></cell>
+      <cell col="5" row="5">코스 간격ㆍ중복도</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">나. 비행 및 취득 조건</cell>
+      <cell col="1" row="6">적정성 여부</cell>
+      <cell col="2" row="6"></cell>
+      <cell col="3" row="6"></cell>
+      <cell col="4" row="6"></cell>
+      <cell col="5" row="6">대지고도</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">다. 점밀도</cell>
+      <cell col="1" row="7">점/㎡</cell>
+      <cell col="2" row="7">코스</cell>
+      <cell col="3" row="7">코스</cell>
+      <cell col="4" row="7">적, 부</cell>
+      <cell col="5" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8">라. 결측</cell>
+      <cell col="1" row="8">적정성 여부</cell>
+      <cell col="2" row="8"></cell>
+      <cell col="3" row="8"></cell>
+      <cell col="4" row="8"></cell>
+      <cell col="5" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">3. 점군 정리</cell>
+      <cell col="1" row="9"></cell>
+      <cell col="2" row="9"></cell>
+      <cell col="3" row="9"></cell>
+      <cell col="4" row="9"></cell>
+      <cell col="5" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10">가. 궤적 해석</cell>
+      <cell col="1" row="10">적정성 여부</cell>
+      <cell col="2" row="10"></cell>
+      <cell col="3" row="10"></cell>
+      <cell col="4" row="10"></cell>
+      <cell col="5" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11">나. 코스 간 정합</cell>
+      <cell col="1" row="11">코스</cell>
+      <cell col="2" row="11">코스</cell>
+      <cell col="3" row="11">코스</cell>
+      <cell col="4" row="11">적, 부</cell>
+      <cell col="5" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12">다. 잡음 제거 및 분류</cell>
+      <cell col="1" row="12">적정성 여부</cell>
+      <cell col="2" row="12"></cell>
+      <cell col="3" row="12"></cell>
+      <cell col="4" row="12"></cell>
+      <cell col="5" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13">4. 정확도 검증</cell>
+      <cell col="1" row="13"></cell>
+      <cell col="2" row="13"></cell>
+      <cell col="3" row="13"></cell>
+      <cell col="4" row="13"></cell>
+      <cell col="5" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14">가. 수평위치</cell>
+      <cell col="1" row="14">점</cell>
+      <cell col="2" row="14">점</cell>
+      <cell col="3" row="14">점</cell>
+      <cell col="4" row="14">적, 부</cell>
+      <cell col="5" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15">나. 표고</cell>
+      <cell col="1" row="15">점</cell>
+      <cell col="2" row="15">점</cell>
+      <cell col="3" row="15">점</cell>
+      <cell col="4" row="15">적, 부</cell>
+      <cell col="5" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16">5. 성과 제작</cell>
+      <cell col="1" row="16"></cell>
+      <cell col="2" row="16"></cell>
+      <cell col="3" row="16"></cell>
+      <cell col="4" row="16"></cell>
+      <cell col="5" row="16"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17">가. 수치표면모델(DSM)</cell>
+      <cell col="1" row="17">도엽</cell>
+      <cell col="2" row="17">도엽</cell>
+      <cell col="3" row="17">도엽</cell>
+      <cell col="4" row="17">적, 부</cell>
+      <cell col="5" row="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18">나. 수치표고모델(DEM)</cell>
+      <cell col="1" row="18">도엽</cell>
+      <cell col="2" row="18">도엽</cell>
+      <cell col="3" row="18">도엽</cell>
+      <cell col="4" row="18">적, 부</cell>
+      <cell col="5" row="18"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19">다. 등고선</cell>
+      <cell col="1" row="19">도엽</cell>
+      <cell col="2" row="19">도엽</cell>
+      <cell col="3" row="19">도엽</cell>
+      <cell col="4" row="19">적, 부</cell>
+      <cell col="5" row="19"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20">라. 메타데이터</cell>
+      <cell col="1" row="20">적정성 여부</cell>
+      <cell col="2" row="20"></cell>
+      <cell col="3" row="20"></cell>
+      <cell col="4" row="20"></cell>
+      <cell col="5" row="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21">종 합 판 정</cell>
+      <cell col="1" row="21">직 책</cell>
+      <cell col="2" row="21">기 술 등 급</cell>
+      <cell col="3" row="21">성 명</cell>
+      <cell col="4" row="21">서 명</cell>
+      <cell col="5" row="21"></cell>
+    </row>
+    <row>
+      <cell col="0" row="22">적합 / 조건부적합 / 부적합</cell>
+      <cell col="1" row="22"></cell>
+      <cell col="2" row="22"></cell>
+      <cell col="3" row="22"></cell>
+      <cell col="4" row="22"></cell>
+      <cell col="5" row="22"></cell>
+    </row>
+  </table>
+  <text>비고
+1. 표본추출 비율은 「공간정보의 구축 및 관리 등에 관한 법률 시행규칙」 별표 13 제3호에 따른다 — 별표 3 머리의 비고와 같다.
+2. 점밀도ㆍ정합 허용값ㆍ정확도의 수치는 「공공측량 작업규정」에서 정한 값을 따르며, 이 심사표에는 적지 아니한다. 두 규정이 어긋나는 것을 막기 위함이다.
+3. 종합판정은 제27조에 따라 적합ㆍ조건부적합ㆍ부적합으로 구분한다.
+4. '규정 이내 (90% 이상)' 은 현행 별표 3 의 판정기준을 그대로 쓴 것이다.</text>
+</annex>

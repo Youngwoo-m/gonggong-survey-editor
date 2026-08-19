@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc19t040" article="관측·접근구간 안전 확보" rows="2" cols="3" source="측량 안전관리 매뉴얼 (2026.1)">
+  <row>
+    <cell col="0" row="0" header="1">경위도 기준점</cell>
+    <cell col="1" row="0" header="1">증력 기준점</cell>
+    <cell col="2" row="0" header="1">지자기 기준점</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">통합기준점</cell>
+    <cell col="1" row="1">삼각점</cell>
+    <cell col="2" row="1">수준점</cell>
+  </row>
+</table>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표19" gubun="별표" no="19" title="지하공간통합지도 품질검사 방법 - 지반" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=38099409">
+  <text>[별표 19] 지하공간통합지도 품질검사 방법 - 지반</text>
+  <table rows="17" cols="4">
+    <row>
+      <cell col="0" row="0">품질요소</cell>
+      <cell col="1" row="0">세부요소</cell>
+      <cell col="2" row="0">세세부 요소</cell>
+      <cell col="3" row="0">품질검사 기준</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">완전성</cell>
+      <cell col="1" row="1">누락</cell>
+      <cell col="2" row="1">대상객체
+누락</cell>
+      <cell col="3" row="1">-관리기관으로부터 수집된 원시자료와 최종성과의 목록 및 수량 비교</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" rowspan="3">논리
+일관성
+(기준)</cell>
+      <cell col="1" row="2">개념
+일관성</cell>
+      <cell col="2" row="2">세밀도
+(가시화)
+일관성</cell>
+      <cell col="3" row="2">-지반 세밀도(가시화) 제작기준의 LOD 2 적용여부 확인</cell>
+    </row>
+    <row>
+      <cell col="1" row="3" rowspan="2">위상
+일관성</cell>
+      <cell col="2" row="3">2차원정보</cell>
+      <cell col="3" row="3">- 2차원정보에 대한 위상조건 적정성 확인</cell>
+    </row>
+    <row>
+      <cell col="2" row="4">3차원정보</cell>
+      <cell col="3" row="4">-3차원 모델에 대한 위상조건 적정성 확인</cell>
+    </row>
+    <row>
+      <cell col="0" row="5" rowspan="5">위치
+정확성
+(공간)</cell>
+      <cell col="1" row="5" rowspan="3">절대적
+또는 
+외적 정확성</cell>
+      <cell col="2" row="5">기준좌표계
+정확성</cell>
+      <cell col="3" row="5">- 세계측지계(평면직각좌표) 적용 확인</cell>
+    </row>
+    <row>
+      <cell col="2" row="6">2차원
+위치정보 
+정확성</cell>
+      <cell col="3" row="6">- 원시자료와 2차원 지반정보(지질) 중첩을 통한 지질정보의 위치정확성 확인</cell>
+    </row>
+    <row>
+      <cell col="2" row="7">3차원
+위치정보
+정확성</cell>
+      <cell col="3" row="7">- 수치표고모델(DEM), 2차원 지반정보(시추, 관정) 중첩을 통한 3D 모델의 위치정확성 확인</cell>
+    </row>
+    <row>
+      <cell col="1" row="8" rowspan="2">상대적
+또는 
+내적 정확성</cell>
+      <cell col="2" row="8">2차원정보
+ 경계인접</cell>
+      <cell col="3" row="8">- 2차원 지질정보의 중첩 또는 이격여부 확인</cell>
+    </row>
+    <row>
+      <cell col="2" row="9">3차원정보
+경계인접</cell>
+      <cell col="3" row="9">- 3차원 시추 지층모델의 지층 간 이격여부 확인</cell>
+    </row>
+    <row>
+      <cell col="0" row="10" rowspan="4">주제 정확성
+(속성)</cell>
+      <cell col="1" row="10">분류 
+정확성</cell>
+      <cell col="2" row="10">항목 분류 
+정확성</cell>
+      <cell col="3" row="10">-최종성과와 표준데이터 항목 일치성 및 준용 여부 확인</cell>
+    </row>
+    <row>
+      <cell col="1" row="11">논리
+정확성</cell>
+      <cell col="2" row="11">논리
+정확성</cell>
+      <cell col="3" row="11">-최종성과의 테이블 설계서 적용 여부 확인</cell>
+    </row>
+    <row>
+      <cell col="1" row="12" rowspan="2">속성
+정확성</cell>
+      <cell col="2" row="12">속성내용
+불일치</cell>
+      <cell col="3" row="12">-원시자료와 최종성과 속성의 일치여부 확인</cell>
+    </row>
+    <row>
+      <cell col="2" row="13">속성내용
+누락</cell>
+      <cell col="3" row="13">-필수정보를 포함한 속성정보 누락여부 확인</cell>
+    </row>
+    <row>
+      <cell col="0" row="14" rowspan="3">기타</cell>
+      <cell col="1" row="14">관리파일 작성오류</cell>
+      <cell col="2" row="14">메타데이터 
+누락</cell>
+      <cell col="3" row="14">-메타데이터 표준을 준용한 레이어별 메타데이터 구축여부 확인</cell>
+    </row>
+    <row>
+      <cell col="1" row="15">성과품 누락</cell>
+      <cell col="2" row="15">성과품 누락</cell>
+      <cell col="3" row="15">-원시자료, shp 등 최종성과에 대한 누락여부 점검</cell>
+    </row>
+    <row>
+      <cell col="1" row="16">성과 탑재 적정성</cell>
+      <cell col="2" row="16">성과 탑재 적정성</cell>
+      <cell col="3" row="16">운영서버 탑재를 위한 3차원 모델, 속성정보 적정성 확인</cell>
+    </row>
+  </table>
+  <text>※ 품질검사 적합기준 : 실내(화면)검사 90% 이상</text>
+</annex>

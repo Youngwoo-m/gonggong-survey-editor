@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0058" article="제122조(キネマティック法又はＲＴＫ法による地形、地物等の測定)" rows="3" cols="3" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">使用衛星数</cell>
+    <cell col="1" row="0" header="1">観 測 回 数</cell>
+    <cell col="2" row="0" header="1">データ取得間隔</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">５衛星以上</cell>
+    <cell col="1" row="1">ＦＩＸ解を得てから10 エポック以上</cell>
+    <cell col="2" row="1">１秒（ただし、キネマティック法は５秒以下）</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">摘 要</cell>
+    <cell col="1" row="2">ＧＬＯＮＡＳＳ衛星を用いて観測する場合は、使用衛星数は６衛星以上とする。た だし、ＧＰＳ・準天頂衛星及びＧＬＯＮＡＳＳ衛星を、それぞれ２衛星以上を用い ること。</cell>
+    <cell col="2" row="2"></cell>
+  </row>
+</table>

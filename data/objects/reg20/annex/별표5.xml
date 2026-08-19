@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표5" gubun="별표" no="5" title="지하시설물(구조물형) 자료수집 목록" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=38099163">
+  <text>[별표 5] 지하시설물(구조물형) 자료수집 목록</text>
+  <table rows="10" cols="5">
+    <row>
+      <cell col="0" row="0" colspan="2">자료목록</cell>
+      <cell col="2" row="0">자료형태</cell>
+      <cell col="3" row="0">자료내용</cell>
+      <cell col="4" row="0">자료 보유기관</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">지하철</cell>
+      <cell col="1" row="1" rowspan="6">도면자료
+(준공도면), 구조물 관리대장</cell>
+      <cell col="2" row="1" rowspan="6">전산(CAD, BIM, 3DS)
+종이도면
+이미지(TiFF, PDF) 등</cell>
+      <cell col="3" row="1" rowspan="6">공간정보 및 속성정보</cell>
+      <cell col="4" row="1">교통공사, 도시철도공사, 한국철도공사 등</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">지하차도</cell>
+      <cell col="4" row="2">지자체 도로과, 도로사업소, 시설관리공단 등</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">지하보도</cell>
+      <cell col="4" row="3">지자체 도로과, 건축과 등</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">공동구</cell>
+      <cell col="4" row="4">지자체, 시설관리공단 등</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">지하상가</cell>
+      <cell col="4" row="5">지자체, 시설관리공단 등</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">지하주차장</cell>
+      <cell col="4" row="6">지자체, 시설관리공단 등</cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="2">수치지형도</cell>
+      <cell col="2" row="7">dwg, dxf, shp 등</cell>
+      <cell col="3" row="7">공간정보</cell>
+      <cell col="4" row="7">국토지리정보원</cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="2">정사영상</cell>
+      <cell col="2" row="8">IMG, Tiff 등</cell>
+      <cell col="3" row="8">해상도 50cm 또는 1m</cell>
+      <cell col="4" row="8">국토교통부, 국토지리정보원</cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="2">수치표고자료 (DEM)</cell>
+      <cell col="2" row="9">IMG 또는 GeoTiff</cell>
+      <cell col="3" row="9">1m급 혹은 5m급</cell>
+      <cell col="4" row="9">국토교통부</cell>
+    </row>
+  </table>
+</annex>

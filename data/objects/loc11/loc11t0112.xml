@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0112" article="제641조(ＩＰの設置)" rows="3" cols="4" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">区 分</cell>
+    <cell col="1" row="0" header="1">水平角観測</cell>
+    <cell col="2" row="0" header="1">鉛直角観測</cell>
+    <cell col="3" row="0" header="1">距離測定</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">方 法</cell>
+    <cell col="1" row="1">0.5 対回</cell>
+    <cell col="2" row="1">0.5 対回</cell>
+    <cell col="3" row="1">２回測定</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">較差の許容範囲</cell>
+    <cell col="1" row="2">－</cell>
+    <cell col="2" row="2">－</cell>
+    <cell col="3" row="2">５mm</cell>
+  </row>
+</table>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0008" article="제37조(観測の実施)" rows="8" cols="4" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">観 測 方 法</cell>
+    <cell col="1" row="0" header="1">観測時間</cell>
+    <cell col="2" row="0" header="1">データ取得間隔</cell>
+    <cell col="3" row="0" header="1">摘 要</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">スタティック法</cell>
+    <cell col="1" row="1">120 分以上</cell>
+    <cell col="2" row="1">30 秒以下</cell>
+    <cell col="3" row="1">１～３級基準点測量（10km 以上）</cell>
+  </row>
+  <row>
+    <cell col="0" row="2"></cell>
+    <cell col="1" row="2">60 分以上</cell>
+    <cell col="2" row="2">30 秒以下</cell>
+    <cell col="3" row="2">１～３級基準点測量（10km 未満） ４級基準点測量</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">短縮スタティック法 ※１</cell>
+    <cell col="1" row="3">20 分以上</cell>
+    <cell col="2" row="3">15 秒以下</cell>
+    <cell col="3" row="3">３ ～ ４ 級 基 準 点 測 量</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">キネマティック法</cell>
+    <cell col="1" row="4">10 秒以上※２</cell>
+    <cell col="2" row="4">５秒以下</cell>
+    <cell col="3" row="4">３ ～ ４ 級 基 準 点 測 量</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">ＲＴＫ法 ※４</cell>
+    <cell col="1" row="5">10 秒以上※３</cell>
+    <cell col="2" row="5">１秒</cell>
+    <cell col="3" row="5">３ ～ ４ 級 基 準 点 測 量</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">ネットワーク型ＲＴＫ法 ※４</cell>
+    <cell col="1" row="6">10 秒以上※３</cell>
+    <cell col="2" row="6">１秒</cell>
+    <cell col="3" row="6">３ ～ ４ 級 基 準 点 測 量</cell>
+  </row>
+  <row>
+    <cell col="0" row="7">備 考</cell>
+    <cell col="1" row="7">※１ 電子基準点のみを既知点とする場合には適用しないものとする。 ※２ １０エポック以上のデータが取得できる時間とする。 ※３ ＦＩＸ解を得てから１０エポック以上のデータが取得できる時間 とする。 ※４ 後処理で解析を行う場合も含めるものとする。</cell>
+    <cell col="2" row="7"></cell>
+    <cell col="3" row="7"></cell>
+  </row>
+</table>

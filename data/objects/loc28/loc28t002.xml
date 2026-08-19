@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc28t002" article="제444조(成果品要求仕様書の作成)" rows="5" cols="4" source="作業規程の準則 제4편 제4장 UAV 레이저 측량 (2025년판)">
+  <row>
+    <cell col="0" row="0" header="1">成果品目</cell>
+    <cell col="1" row="0" header="1">点密度</cell>
+    <cell col="2" row="0" header="1">要求精度 （標準値）</cell>
+    <cell col="3" row="0" header="1">要求精度 （対象）</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">数値地形図データ （地図情報レベル500）</cell>
+    <cell col="1" row="1">400点／㎡以上</cell>
+    <cell col="2" row="1">0.15ｍ以内</cell>
+    <cell col="3" row="1">水平位置</cell>
+  </row>
+  <row>
+    <cell col="0" row="2"></cell>
+    <cell col="1" row="2"></cell>
+    <cell col="2" row="2">0.2ｍ以内</cell>
+    <cell col="3" row="2">標高</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">数値地形図データ （地図情報レベル1000）</cell>
+    <cell col="1" row="3">100点／㎡以上</cell>
+    <cell col="2" row="3">0.3ｍ以内</cell>
+    <cell col="3" row="3">水平位置</cell>
+  </row>
+  <row>
+    <cell col="0" row="4"></cell>
+    <cell col="1" row="4"></cell>
+    <cell col="2" row="4">0.3ｍ以内</cell>
+    <cell col="3" row="4">標高</cell>
+  </row>
+</table>

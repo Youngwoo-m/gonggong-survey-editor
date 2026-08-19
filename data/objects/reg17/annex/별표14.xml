@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표14" gubun="별표" no="14" title="3차원 국토공간정보 품질관리 총괄표" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=118782595">
+  <text>[별표14] 3차원 국토공간정보 품질관리 총괄표</text>
+  <table rows="20" cols="8">
+    <row>
+      <cell col="0" row="0">대상지역</cell>
+      <cell col="1" row="0" colspan="3"></cell>
+      <cell col="4" row="0" colspan="2">검 사 자</cell>
+      <cell col="6" row="0" colspan="2">(인)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">평가결과</cell>
+      <cell col="1" row="1" colspan="3"></cell>
+      <cell col="4" row="1" colspan="2">검사일자</cell>
+      <cell col="6" row="1" colspan="2">년    월    일</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="3">구 분</cell>
+      <cell col="3" row="3" colspan="2">화면검사</cell>
+      <cell col="5" row="3" colspan="2">현장검사</cell>
+      <cell col="7" row="3">비 고</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="2" rowspan="4">3차원
+교통데이터</cell>
+      <cell col="2" row="4">자료취득 및 편집</cell>
+      <cell col="3" row="4" colspan="2"></cell>
+      <cell col="5" row="4" colspan="2"></cell>
+      <cell col="7" row="4"></cell>
+    </row>
+    <row>
+      <cell col="2" row="5">3차원 공간정보 제작</cell>
+      <cell col="3" row="5" colspan="2"></cell>
+      <cell col="5" row="5" colspan="2"></cell>
+      <cell col="7" row="5"></cell>
+    </row>
+    <row>
+      <cell col="2" row="6">가시화정보 제작</cell>
+      <cell col="3" row="6" colspan="2"></cell>
+      <cell col="5" row="6" colspan="2"></cell>
+      <cell col="7" row="6"></cell>
+    </row>
+    <row>
+      <cell col="2" row="7">정리점검 및 성과품</cell>
+      <cell col="3" row="7" colspan="2"></cell>
+      <cell col="5" row="7" colspan="2"></cell>
+      <cell col="7" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="2" rowspan="4">3차원
+건물데이터</cell>
+      <cell col="2" row="8">자료취득 및 편집</cell>
+      <cell col="3" row="8" colspan="2"></cell>
+      <cell col="5" row="8" colspan="2"></cell>
+      <cell col="7" row="8"></cell>
+    </row>
+    <row>
+      <cell col="2" row="9">3차원 공간정보 제작</cell>
+      <cell col="3" row="9" colspan="2"></cell>
+      <cell col="5" row="9" colspan="2"></cell>
+      <cell col="7" row="9"></cell>
+    </row>
+    <row>
+      <cell col="2" row="10">가시화정보</cell>
+      <cell col="3" row="10" colspan="2"></cell>
+      <cell col="5" row="10" colspan="2"></cell>
+      <cell col="7" row="10"></cell>
+    </row>
+    <row>
+      <cell col="2" row="11">정리점검 및 성과품</cell>
+      <cell col="3" row="11" colspan="2"></cell>
+      <cell col="5" row="11" colspan="2"></cell>
+      <cell col="7" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="2" rowspan="4">3차원
+수자원
+데이터</cell>
+      <cell col="2" row="12">자료취득 및 편집</cell>
+      <cell col="3" row="12" colspan="2"></cell>
+      <cell col="5" row="12" colspan="2"></cell>
+      <cell col="7" row="12"></cell>
+    </row>
+    <row>
+      <cell col="2" row="13">3차원 공간정보 제작</cell>
+      <cell col="3" row="13" colspan="2"></cell>
+      <cell col="5" row="13" colspan="2"></cell>
+      <cell col="7" row="13"></cell>
+    </row>
+    <row>
+      <cell col="2" row="14">가시화정보 제작</cell>
+      <cell col="3" row="14" colspan="2"></cell>
+      <cell col="5" row="14" colspan="2"></cell>
+      <cell col="7" row="14"></cell>
+    </row>
+    <row>
+      <cell col="2" row="15">정리점검 및 성과품</cell>
+      <cell col="3" row="15" colspan="2"></cell>
+      <cell col="5" row="15" colspan="2"></cell>
+      <cell col="7" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="2" rowspan="4">3차원
+지형데이터</cell>
+      <cell col="2" row="16">자료취득 및 편집</cell>
+      <cell col="3" row="16" colspan="2"></cell>
+      <cell col="5" row="16" colspan="2"></cell>
+      <cell col="7" row="16"></cell>
+    </row>
+    <row>
+      <cell col="2" row="17">3차원 공간정보 제작</cell>
+      <cell col="3" row="17" colspan="2"></cell>
+      <cell col="5" row="17" colspan="2"></cell>
+      <cell col="7" row="17"></cell>
+    </row>
+    <row>
+      <cell col="2" row="18">가시화정보 제작</cell>
+      <cell col="3" row="18" colspan="2"></cell>
+      <cell col="5" row="18" colspan="2"></cell>
+      <cell col="7" row="18"></cell>
+    </row>
+    <row>
+      <cell col="2" row="19">정리점검 및 성과품</cell>
+      <cell col="3" row="19" colspan="2"></cell>
+      <cell col="5" row="19" colspan="2"></cell>
+      <cell col="7" row="19"></cell>
+    </row>
+  </table>
+</annex>

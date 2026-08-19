@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지3" gubun="별지" no="3" title="항공레이저측량 품질관리표" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=161554279">
+  <text>■ 수치표고모형의 구축 및 관리 등에 관한 규정 [별지 제3호서식]
+항공레이저측량 품질관리표</text>
+  <table rows="1" cols="4">
+    <row>
+      <cell col="0" row="0">결과번호</cell>
+      <cell col="1" row="0"></cell>
+      <cell col="2" row="0">보고일</cell>
+      <cell col="3" row="0"></cell>
+    </row>
+  </table>
+  <table rows="4" cols="5">
+    <row>
+      <cell col="0" row="0">대상사업</cell>
+      <cell col="1" row="0" colspan="2"></cell>
+      <cell col="3" row="0">접수번호</cell>
+      <cell col="4" row="0"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1">검사자</cell>
+      <cell col="1" row="1" colspan="2"></cell>
+      <cell col="3" row="1">접수물량</cell>
+      <cell col="4" row="1">도엽</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">검사요청</cell>
+      <cell col="1" row="2" colspan="2"></cell>
+      <cell col="3" row="2">검사물량</cell>
+      <cell col="4" row="2">도엽</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">검사기간</cell>
+      <cell col="1" row="3" colspan="2"></cell>
+      <cell col="3" row="3">검사결과</cell>
+      <cell col="4" row="3">적합(완료), 적합(보완), 부적합</cell>
+    </row>
+  </table>
+  <text>□ 검사결과</text>
+  <table rows="9" cols="5">
+    <row>
+      <cell col="0" row="0">연번</cell>
+      <cell col="1" row="0" colspan="2">검사항목</cell>
+      <cell col="3" row="0">검사기준</cell>
+      <cell col="4" row="0">검사결과</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">1</cell>
+      <cell col="1" row="1">캘리브레이션</cell>
+      <cell col="2" row="1">검정</cell>
+      <cell col="3" row="1">검정방법, 장비S/N 등 적정성</cell>
+      <cell col="4" row="1">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">2</cell>
+      <cell col="1" row="2">촬영궤적도</cell>
+      <cell col="2" row="2">촬영적정성</cell>
+      <cell col="3" row="2">GNSS/INS 단절 및 촬영궤도의 적정성</cell>
+      <cell col="4" row="2">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">3</cell>
+      <cell col="1" row="3">지상기지국 데이터</cell>
+      <cell col="2" row="3">측량시간</cell>
+      <cell col="3" row="3">운영시간 및 배치 적정성</cell>
+      <cell col="4" row="3">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">4</cell>
+      <cell col="1" row="4">촬영코스도</cell>
+      <cell col="2" row="4">중복도</cell>
+      <cell col="3" row="4">최소 30% 미만이 전체 1/4미만</cell>
+      <cell col="4" row="4">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">5</cell>
+      <cell col="1" row="5">기준점 배치도</cell>
+      <cell col="2" row="5">배치</cell>
+      <cell col="3" row="5">4km∼5km 간격으로 10점 이상 배치 및 적합성</cell>
+      <cell col="4" row="5">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="6" rowspan="3">6</cell>
+      <cell col="1" row="6" rowspan="3">점군데이터</cell>
+      <cell col="2" row="6">촬영누락</cell>
+      <cell col="3" row="6">사업지역 내 누락</cell>
+      <cell col="4" row="6">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="2" row="7">정확도</cell>
+      <cell col="3" row="7">기준점 성과와 비교, RMSE(높이) : 0.25m</cell>
+      <cell col="4" row="7">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="2" row="8">점밀도</cell>
+      <cell col="3" row="8">m2당 2.5점 이상</cell>
+      <cell col="4" row="8">적합 / 부적합</cell>
+    </row>
+  </table>
+  <text>20  .   .   .
+붙임 1. 검사 위치도
+2. 항공레이저측량 검사결과 및 세부내역</text>
+</annex>

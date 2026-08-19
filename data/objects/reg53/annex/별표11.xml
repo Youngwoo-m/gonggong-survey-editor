@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표11" gubun="별표" no="11" title="굴착면의 기울기 기준(제339조제1항 관련)" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=155899299">
+  <table rows="8" cols="2">
+    <row>
+      <cell col="0" row="0" colspan="2">■ 산업안전보건기준에 관한 규칙 [별표 11] &lt;개정 2023. 11. 14.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="2">굴착면의 기울기 기준(제339조제1항 관련)</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">지반의 종류</cell>
+      <cell col="1" row="2">굴착면의 기울기</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">모래</cell>
+      <cell col="1" row="3">1 : 1.8</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">연암 및 풍화암</cell>
+      <cell col="1" row="4">1 : 1.0</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">경암</cell>
+      <cell col="1" row="5">1 : 0.5</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">그 밖의 흙</cell>
+      <cell col="1" row="6">1 : 1.2</cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="2">비고
+  1. 굴착면의 기울기는 굴착면의 높이에 대한 수평거리의 비율을 말한다.
+  2. 굴착면의 경사가 달라서 기울기를 계산하기가 곤란한 경우에는 해당 굴착면에 대하여 지반의 종류별 굴착면의 기울기에 따라 붕괴의 위험이 증가하지 않도록 위 표의 지반의 종류별 굴착면의 기울기에 맞게 해당 각 부분의 경사를 유지해야 한다.</cell>
+    </row>
+  </table>
+</annex>

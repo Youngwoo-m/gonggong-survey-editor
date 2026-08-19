@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식98" gubun="서식" no="98" title="재결신청서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162455103">
+  <table rows="19" cols="14">
+    <row>
+      <cell col="0" row="0" colspan="14">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별지 제98호서식] &lt;개정 2017. 1. 31.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="14">재결신청서</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="10"></cell>
+      <cell col="10" row="2" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">접수번호</cell>
+      <cell col="1" row="3"></cell>
+      <cell col="2" row="3">접수일</cell>
+      <cell col="3" row="3" colspan="2"></cell>
+      <cell col="5" row="3">발급일</cell>
+      <cell col="6" row="3" colspan="5"></cell>
+      <cell col="11" row="3" colspan="2">처리기간</cell>
+      <cell col="13" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4"></cell>
+      <cell col="1" row="4"></cell>
+      <cell col="2" row="4"></cell>
+      <cell col="3" row="4" colspan="2"></cell>
+      <cell col="5" row="4"></cell>
+      <cell col="6" row="4" colspan="5"></cell>
+      <cell col="11" row="4" colspan="2"></cell>
+      <cell col="13" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" rowspan="3">재결
+신청자</cell>
+      <cell col="1" row="5" colspan="8">성명</cell>
+      <cell col="9" row="5" colspan="5">생년월일</cell>
+    </row>
+    <row>
+      <cell col="1" row="6" colspan="13">전화번호</cell>
+    </row>
+    <row>
+      <cell col="1" row="7" colspan="13">주소</cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9" rowspan="3">상대방</cell>
+      <cell col="1" row="9" colspan="7">성명</cell>
+      <cell col="8" row="9" colspan="6">생년월일</cell>
+    </row>
+    <row>
+      <cell col="1" row="10" colspan="13">전화번호</cell>
+    </row>
+    <row>
+      <cell col="1" row="11" colspan="13">주소</cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="14">「공간정보의 구축 및 관리 등에 관한 법률」 제102조제2항 및 제3항에 따라 손실보상에 관한 협의가 성립되지 않았으므로 아래와 같이 재결을 신청합니다.
+  1. 측량의 종류
+  2. 손실 발생 사실
+  3. 손실액과 그 산출내용
+  4. 협의의 경위와 그 내용</cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="14">년          월          일장</cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="4"></cell>
+      <cell col="4" row="15" colspan="3">재결신청자</cell>
+      <cell col="7" row="15" colspan="5"></cell>
+      <cell col="12" row="15" colspan="2">(서명 또는 인)</cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="14">○○○토지수용위원회 귀하</cell>
+    </row>
+    <row>
+      <cell col="0" row="17" colspan="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18" colspan="14">210㎜×297㎜[(백상지(80g/㎡) 또는 중질지(80g/㎡)]</cell>
+    </row>
+  </table>
+</annex>

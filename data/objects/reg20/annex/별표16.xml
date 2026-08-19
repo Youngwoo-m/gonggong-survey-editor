@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표16" gubun="별표" no="16" title="지하공간통합지도 품질검사 기준" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=38099397">
+  <text>[별표 16] 지하공간통합지도 품질검사 기준</text>
+  <table rows="18" cols="7">
+    <row>
+      <cell col="0" row="0" rowspan="2">품질요소</cell>
+      <cell col="1" row="0" rowspan="2">세부
+요소</cell>
+      <cell col="2" row="0" rowspan="2">세세부 요소</cell>
+      <cell col="3" row="0" rowspan="2">품질검사 기준</cell>
+      <cell col="4" row="0" colspan="3">품질검사 방법 및 대상</cell>
+    </row>
+    <row>
+      <cell col="4" row="1">지하
+시설물
+(구조물형)</cell>
+      <cell col="5" row="1">지하
+시설물
+(관로형)</cell>
+      <cell col="6" row="1">지반</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">완전성</cell>
+      <cell col="1" row="2">누락</cell>
+      <cell col="2" row="2">대상객체
+누락</cell>
+      <cell col="3" row="2">표준데이터 항목의 누락된 객체 확인</cell>
+      <cell col="4" row="2">실내검사
+(표본20%)</cell>
+      <cell col="5" row="2">실내검사
+(표본1%)</cell>
+      <cell col="6" row="2">실내
+(전수)검사</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" rowspan="3">논리
+일관성
+(기준)</cell>
+      <cell col="1" row="3">개념
+일관성</cell>
+      <cell col="2" row="3">세밀도
+(가시화)
+일관성</cell>
+      <cell col="3" row="3">세밀도(가시화) 제작기준에 맞게 제작되었는지 확인</cell>
+      <cell col="4" row="3">실내검사
+(표본20%)</cell>
+      <cell col="5" row="3">실내검사
+(표본1%)</cell>
+      <cell col="6" row="3">실내
+(전수)검사</cell>
+    </row>
+    <row>
+      <cell col="1" row="4" rowspan="2">위상
+일관성</cell>
+      <cell col="2" row="4">2차원정보 
+일관성</cell>
+      <cell col="3" row="4">2차원 정보의 위상조건 확인</cell>
+      <cell col="4" row="4">실내검사
+(표본20%)</cell>
+      <cell col="5" row="4">실내검사
+(표본1%)</cell>
+      <cell col="6" row="4">실내
+(전수)검사</cell>
+    </row>
+    <row>
+      <cell col="2" row="5">3차원정보
+일관성</cell>
+      <cell col="3" row="5">3차원 정보의 위상조건 확인</cell>
+      <cell col="4" row="5">실내검사
+(표본20%)</cell>
+      <cell col="5" row="5">실내검사
+(표본1%)</cell>
+      <cell col="6" row="5">실내
+(전수)검사</cell>
+    </row>
+    <row>
+      <cell col="0" row="6" rowspan="5">위치
+정확성
+(공간)</cell>
+      <cell col="1" row="6" rowspan="3">절대적
+또는 
+외적 정확성</cell>
+      <cell col="2" row="6">기준좌표계
+정확성</cell>
+      <cell col="3" row="6">기준좌표계의 적용 확인</cell>
+      <cell col="4" row="6">실내검사
+(표본20%)</cell>
+      <cell col="5" row="6">실내검사
+(표본1%)</cell>
+      <cell col="6" row="6">실내
+(전수)검사</cell>
+    </row>
+    <row>
+      <cell col="2" row="7">2차원
+위치정보 
+정확성</cell>
+      <cell col="3" row="7">2차원 정보의 위치정확성 확인</cell>
+      <cell col="4" row="7">실내검사
+(표본20%)</cell>
+      <cell col="5" row="7">실내검사
+(표본1%)</cell>
+      <cell col="6" row="7">실내
+(전수)검사</cell>
+    </row>
+    <row>
+      <cell col="2" row="8">3차원
+위치정보
+정확성</cell>
+      <cell col="3" row="8">3차원 정보의 위치정확성 확인</cell>
+      <cell col="4" row="8">실내검사
+(표본20%)
+현장검사
+(표본 2%)</cell>
+      <cell col="5" row="8">실내검사
+(표본1%)</cell>
+      <cell col="6" row="8">실내
+(전수)검사</cell>
+    </row>
+    <row>
+      <cell col="1" row="9" rowspan="2">상대적
+또는 
+내적 정확성</cell>
+      <cell col="2" row="9">2차원정보
+ 경계인접</cell>
+      <cell col="3" row="9">2차원 정보의 경계인접부 정확성 확인</cell>
+      <cell col="4" row="9">실내검사
+(표본20%)</cell>
+      <cell col="5" row="9">실내검사
+(표본1%)</cell>
+      <cell col="6" row="9">실내
+(전수)검사</cell>
+    </row>
+    <row>
+      <cell col="2" row="10">3차원정보
+경계인접</cell>
+      <cell col="3" row="10">3차원 정보의 경계인접부 정확성 확인</cell>
+      <cell col="4" row="10">실내검사
+(표본20%)</cell>
+      <cell col="5" row="10">실내검사
+(표본1%)</cell>
+      <cell col="6" row="10">실내
+(전수)검사</cell>
+    </row>
+    <row>
+      <cell col="0" row="11" rowspan="4">주제 정확성
+(속성)</cell>
+      <cell col="1" row="11">분류 
+정확성</cell>
+      <cell col="2" row="11">항목 분류 
+정확성</cell>
+      <cell col="3" row="11">표준데이터 항목의 분류 정확성 확인</cell>
+      <cell col="4" row="11">실내검사
+(표본20%)</cell>
+      <cell col="5" row="11">실내검사
+(표본1%)</cell>
+      <cell col="6" row="11">실내
+(전수)검사</cell>
+    </row>
+    <row>
+      <cell col="1" row="12">논리
+정확성</cell>
+      <cell col="2" row="12">논리정확성</cell>
+      <cell col="3" row="12">구조화 테이블 설계서 적용여부 확인</cell>
+      <cell col="4" row="12">실내검사
+(표본20%)</cell>
+      <cell col="5" row="12">실내검사
+(표본1%)</cell>
+      <cell col="6" row="12">실내
+(전수)검사</cell>
+    </row>
+    <row>
+      <cell col="1" row="13" rowspan="2">속성
+정확성</cell>
+      <cell col="2" row="13">속성내용
+불일치</cell>
+      <cell col="3" row="13">속성내용 불일치 확인</cell>
+      <cell col="4" row="13">실내검사
+(표본20%)</cell>
+      <cell col="5" row="13">실내검사
+(표본1%)</cell>
+      <cell col="6" row="13">실내
+(전수)검사</cell>
+    </row>
+    <row>
+      <cell col="2" row="14">속성내용
+누락</cell>
+      <cell col="3" row="14">속성내용 누락 확인</cell>
+      <cell col="4" row="14">실내검사
+(표본20%)</cell>
+      <cell col="5" row="14">실내검사
+(표본1%)</cell>
+      <cell col="6" row="14">실내
+(전수)검사</cell>
+    </row>
+    <row>
+      <cell col="0" row="15" rowspan="3">기타</cell>
+      <cell col="1" row="15">관리파일 작성오류</cell>
+      <cell col="2" row="15">메타데이터 
+누락</cell>
+      <cell col="3" row="15">메타데이터의 작성 및 오류여부 확인</cell>
+      <cell col="4" row="15">실내
+(전수)검사</cell>
+      <cell col="5" row="15">실내
+(전수)검사</cell>
+      <cell col="6" row="15">실내
+(전수)검사</cell>
+    </row>
+    <row>
+      <cell col="1" row="16">성과품 누락</cell>
+      <cell col="2" row="16">성과품 누락</cell>
+      <cell col="3" row="16">최종성과품의 누락여부 확인</cell>
+      <cell col="4" row="16">실내
+(전수)검사</cell>
+      <cell col="5" row="16">실내
+(전수)검사</cell>
+      <cell col="6" row="16">실내
+(전수)검사</cell>
+    </row>
+    <row>
+      <cell col="1" row="17">성과 탑재 적정성</cell>
+      <cell col="2" row="17">성과 탑재 적정성</cell>
+      <cell col="3" row="17">최종성과품의 시스템 환경 탑재 적정성 확인</cell>
+      <cell col="4" row="17">실내
+(전수)검사</cell>
+      <cell col="5" row="17">실내
+(전수)검사</cell>
+      <cell col="6" row="17">실내
+(전수)검사</cell>
+    </row>
+  </table>
+</annex>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="151295829" article="제24조" rows="8" cols="7" source="공공측량 작업규정.2025.04.23_수식수정.오류표시.hwpx">
+  <row>
+    <cell col="0" row="0" colspan="2" rowspan="2">구분
+항목</cell>
+    <cell col="2" row="0" rowspan="2">1급
+공공삼각점 측량</cell>
+    <cell col="3" row="0" colspan="2">2급 공공삼각점측량</cell>
+    <cell col="5" row="0" rowspan="2">3급
+공공삼각점측량</cell>
+    <cell col="6" row="0" rowspan="2">4급
+공공삼각점측량</cell>
+  </row>
+  <row>
+    <cell col="3" row="1">1급 TS</cell>
+    <cell col="4" row="1">2급 TS</cell>
+  </row>
+  <row>
+    <cell col="0" row="2" rowspan="2">수평각 측정</cell>
+    <cell col="1" row="2">배각차</cell>
+    <cell col="2" row="2">15˝</cell>
+    <cell col="3" row="2">20˝</cell>
+    <cell col="4" row="2">30˝</cell>
+    <cell col="5" row="2">30˝</cell>
+    <cell col="6" row="2">60˝</cell>
+  </row>
+  <row>
+    <cell col="1" row="3">관측차</cell>
+    <cell col="2" row="3">8˝</cell>
+    <cell col="3" row="3">10˝</cell>
+    <cell col="4" row="3">20˝</cell>
+    <cell col="5" row="3">20˝</cell>
+    <cell col="6" row="3">40˝</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">연직각 측정</cell>
+    <cell col="1" row="4">고도정수의 교차</cell>
+    <cell col="2" row="4">10˝</cell>
+    <cell col="3" row="4">15˝</cell>
+    <cell col="4" row="4">30˝</cell>
+    <cell col="5" row="4">30˝</cell>
+    <cell col="6" row="4">60˝</cell>
+  </row>
+  <row>
+    <cell col="0" row="5" rowspan="2">거리 측정</cell>
+    <cell col="1" row="5">1세트 내 측정값의 교차</cell>
+    <cell col="2" row="5" colspan="5">2cm</cell>
+  </row>
+  <row>
+    <cell col="1" row="6">각 세트의 평균갑의 교차</cell>
+    <cell col="2" row="6" colspan="5">2cm</cell>
+  </row>
+  <row>
+    <cell col="0" row="7">측표 수준</cell>
+    <cell col="1" row="7">왕복 측정값의 교차</cell>
+    <cell col="2" row="7" colspan="5">20mm</cell>
+  </row>
+</table>

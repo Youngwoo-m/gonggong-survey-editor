@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="151295851" article="제29조" rows="3" cols="3" source="공공측량 작업규정.2025.04.23_수식수정.오류표시.hwpx">
+  <row>
+    <cell col="0" row="0">구분
+항복</cell>
+    <cell col="1" row="0">3급 공공삼각점측량</cell>
+    <cell col="2" row="0">4급 공공삼각점측량</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">미지점 수평위치의 표준편차</cell>
+    <cell col="1" row="1">10cm</cell>
+    <cell col="2" row="1">10cm</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">미지점 표고의 표준편차</cell>
+    <cell col="1" row="2">20cm</cell>
+    <cell col="2" row="2">20cm</cell>
+  </row>
+</table>

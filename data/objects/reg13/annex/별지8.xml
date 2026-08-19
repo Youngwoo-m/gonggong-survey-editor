@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지8" gubun="별지" no="8" title="품질관리표" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=118668823">
+  <text>[별지 제8호서식] 품질관리표
+항공사진 품질관리표</text>
+  <table rows="1" cols="4">
+    <row>
+      <cell col="0" row="0">결과번호</cell>
+      <cell col="1" row="0"></cell>
+      <cell col="2" row="0">보고일</cell>
+      <cell col="3" row="0"></cell>
+    </row>
+  </table>
+  <table rows="4" cols="5">
+    <row>
+      <cell col="0" row="0">대상사업</cell>
+      <cell col="1" row="0" colspan="2"></cell>
+      <cell col="3" row="0">접수번호</cell>
+      <cell col="4" row="0"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1">검사자</cell>
+      <cell col="1" row="1" colspan="2"></cell>
+      <cell col="3" row="1">접수물량</cell>
+      <cell col="4" row="1">매</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">검사요청</cell>
+      <cell col="1" row="2" colspan="2"></cell>
+      <cell col="3" row="2">검사물량</cell>
+      <cell col="4" row="2">매</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">검사기간</cell>
+      <cell col="1" row="3" colspan="2"></cell>
+      <cell col="3" row="3">검사결과</cell>
+      <cell col="4" row="3">적합(완료), 적합(보완), 부적합</cell>
+    </row>
+  </table>
+  <text>□ 검사결과</text>
+  <table rows="8" cols="5">
+    <row>
+      <cell col="0" row="0">연번</cell>
+      <cell col="1" row="0" colspan="2">검사항목</cell>
+      <cell col="3" row="0">검사기준</cell>
+      <cell col="4" row="0">검사결과</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">1</cell>
+      <cell col="1" row="1">촬영기록부</cell>
+      <cell col="2" row="1">촬영시간</cell>
+      <cell col="3" row="1">적정시간</cell>
+      <cell col="4" row="1">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" rowspan="5">2</cell>
+      <cell col="1" row="2" rowspan="5">초기 외부표정요소
+(GNSS/INS 데이터)</cell>
+      <cell col="2" row="2">기준국위치</cell>
+      <cell col="3" row="2">반경50㎞이내</cell>
+      <cell col="4" row="2">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="2" row="3">코스유지</cell>
+      <cell col="3" row="3">수평이탈 계획고도 15% 이내
+수직이탈 계획고도 5% 이내
+(12㎝급은 계획고도 10% 이내)</cell>
+      <cell col="4" row="3">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="2" row="4">촬영각</cell>
+      <cell col="3" row="4">φ,ρ=4.5° 이내
+κ=9°이내</cell>
+      <cell col="4" row="4">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="2" row="5">중복도</cell>
+      <cell col="3" row="5">종중복 60%이상
+횡중복 30%이상</cell>
+      <cell col="4" row="5">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="2" row="6">해상도</cell>
+      <cell col="3" row="6">12cm, 25cm 등</cell>
+      <cell col="4" row="6">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">3</cell>
+      <cell col="1" row="7">사진품질</cell>
+      <cell col="2" row="7">빛반사, 연무, 
+그림자, 명암 등</cell>
+      <cell col="3" row="7">후속공정 적합여부</cell>
+      <cell col="4" row="7">적합 / 부적합</cell>
+    </row>
+  </table>
+  <text>20  .   .   .
+붙임 1. 검사 위치도
+2. 항공사진 검사결과 및 세부내역
+항공삼각측량(AT) 품질관리표</text>
+  <table rows="1" cols="4">
+    <row>
+      <cell col="0" row="0">결과번호</cell>
+      <cell col="1" row="0"></cell>
+      <cell col="2" row="0">보고일</cell>
+      <cell col="3" row="0"></cell>
+    </row>
+  </table>
+  <table rows="4" cols="4">
+    <row>
+      <cell col="0" row="0">대상사업</cell>
+      <cell col="1" row="0"></cell>
+      <cell col="2" row="0">접수번호</cell>
+      <cell col="3" row="0"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1">검사자</cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1">접수물량</cell>
+      <cell col="3" row="1">블록(모델)</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">검사요청</cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2">검사물량</cell>
+      <cell col="3" row="2">블록(모델)</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">검사기간</cell>
+      <cell col="1" row="3"></cell>
+      <cell col="2" row="3">검사결과</cell>
+      <cell col="3" row="3">적합(완료), 적합(보완), 부적합</cell>
+    </row>
+  </table>
+  <text>□ 검사결과</text>
+  <table rows="3" cols="3">
+    <row>
+      <cell col="0" row="0">GSD</cell>
+      <cell col="1" row="0">RMSE(m)</cell>
+      <cell col="2" row="0">최대값(m)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">12㎝이내</cell>
+      <cell col="1" row="1">0.12</cell>
+      <cell col="2" row="1">0.24</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">25㎝이내</cell>
+      <cell col="1" row="2">0.25</cell>
+      <cell col="2" row="2">0.50</cell>
+    </row>
+  </table>
+  <table rows="9" cols="6">
+    <row>
+      <cell col="0" row="0">연번</cell>
+      <cell col="1" row="0" colspan="2">검사항목</cell>
+      <cell col="3" row="0">검사대상</cell>
+      <cell col="4" row="0">검사기준</cell>
+      <cell col="5" row="0">검사결과</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="2">1</cell>
+      <cell col="1" row="1" rowspan="2">선점</cell>
+      <cell col="2" row="1">연결점, 결합점</cell>
+      <cell col="3" row="1">블럭</cell>
+      <cell col="4" row="1">배치도, 선점위치 등</cell>
+      <cell col="5" row="1">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="2" row="2">지상기준점</cell>
+      <cell col="3" row="2">블럭</cell>
+      <cell col="4" row="2">평면‧표고기준점 배치 등
+- 평균 5.5㎞당 1점 이상(12cm)
+- 평균 11㎞당 1점 이상(25cm)</cell>
+      <cell col="5" row="2">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" rowspan="3">2</cell>
+      <cell col="1" row="3" rowspan="3">항공삼각측량
+계산부</cell>
+      <cell col="2" row="3">연결점, 결합점</cell>
+      <cell col="3" row="3">모델</cell>
+      <cell col="4" row="3" rowspan="6"></cell>
+      <cell col="5" row="3" rowspan="3">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="2" row="4">평면기준점</cell>
+      <cell col="3" row="4">점</cell>
+    </row>
+    <row>
+      <cell col="2" row="5">표고기준점</cell>
+      <cell col="3" row="5">점</cell>
+    </row>
+    <row>
+      <cell col="0" row="6" rowspan="3">3</cell>
+      <cell col="1" row="6" rowspan="3">최종외부표정요소</cell>
+      <cell col="2" row="6">평면기준점</cell>
+      <cell col="3" row="6">점</cell>
+      <cell col="5" row="6" rowspan="3">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="2" row="7">표고기준점</cell>
+      <cell col="3" row="7">점</cell>
+    </row>
+    <row>
+      <cell col="2" row="8">검사점</cell>
+      <cell col="3" row="8">점</cell>
+    </row>
+  </table>
+  <text>20  .   .   .
+붙임 1. 검사 위치도
+2. 항공삼각측량 블록별 검사결과 및 세부내역
+수치도화 품질관리표</text>
+  <table rows="1" cols="4">
+    <row>
+      <cell col="0" row="0">결과번호</cell>
+      <cell col="1" row="0"></cell>
+      <cell col="2" row="0">보고일</cell>
+      <cell col="3" row="0"></cell>
+    </row>
+  </table>
+  <table rows="4" cols="5">
+    <row>
+      <cell col="0" row="0">대상사업</cell>
+      <cell col="1" row="0" colspan="2"></cell>
+      <cell col="3" row="0">접수번호</cell>
+      <cell col="4" row="0"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1">검사자</cell>
+      <cell col="1" row="1" colspan="2"></cell>
+      <cell col="3" row="1">접수물량</cell>
+      <cell col="4" row="1">도엽</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">검사요청</cell>
+      <cell col="1" row="2" colspan="2"></cell>
+      <cell col="3" row="2">검사물량</cell>
+      <cell col="4" row="2">도엽</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">검사기간</cell>
+      <cell col="1" row="3" colspan="2"></cell>
+      <cell col="3" row="3">검사결과</cell>
+      <cell col="4" row="3">적합(완료), 적합(보완), 부적합</cell>
+    </row>
+  </table>
+  <text>□ 검사결과</text>
+  <table rows="4" cols="7">
+    <row>
+      <cell col="0" row="0" rowspan="2">도화
+축척</cell>
+      <cell col="1" row="0" colspan="3">표준편차</cell>
+      <cell col="4" row="0" colspan="3">최대오차</cell>
+    </row>
+    <row>
+      <cell col="1" row="1">평면 위치</cell>
+      <cell col="2" row="1">등고선</cell>
+      <cell col="3" row="1">표고점</cell>
+      <cell col="4" row="1">평면 위치</cell>
+      <cell col="5" row="1">등고선</cell>
+      <cell col="6" row="1">표고점</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">1/1,000</cell>
+      <cell col="1" row="2">0.2m</cell>
+      <cell col="2" row="2">0.3m</cell>
+      <cell col="3" row="2">0.15m</cell>
+      <cell col="4" row="2">0.4m</cell>
+      <cell col="5" row="2">0.6m</cell>
+      <cell col="6" row="2">0.3m</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">1/5,000</cell>
+      <cell col="1" row="3">1.0m</cell>
+      <cell col="2" row="3">1.0m</cell>
+      <cell col="3" row="3">0.5m</cell>
+      <cell col="4" row="3">2.0m</cell>
+      <cell col="5" row="3">2.0m</cell>
+      <cell col="6" row="3">1.0m</cell>
+    </row>
+  </table>
+  <table rows="6" cols="5">
+    <row>
+      <cell col="0" row="0">연번</cell>
+      <cell col="1" row="0" colspan="2">검사항목</cell>
+      <cell col="3" row="0">검사기준</cell>
+      <cell col="4" row="0">검사결과</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">1</cell>
+      <cell col="1" row="1" rowspan="5">도화원도</cell>
+      <cell col="2" row="1">초과</cell>
+      <cell col="3" row="1">항공사진에 없는 객체 입력여부</cell>
+      <cell col="4" row="1">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">2</cell>
+      <cell col="2" row="2">누락</cell>
+      <cell col="3" row="2">항공사진에 있는 객체 누락여부</cell>
+      <cell col="4" row="2">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">3</cell>
+      <cell col="2" row="3">묘사오류</cell>
+      <cell col="3" row="3">항공사진에 있는 객체와 같게 묘사</cell>
+      <cell col="4" row="3">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">4</cell>
+      <cell col="2" row="4">묘사오차
+(상대위치
+정확도)</cell>
+      <cell col="3" row="4"></cell>
+      <cell col="4" row="4">적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">5</cell>
+      <cell col="2" row="5">3D 형식</cell>
+      <cell col="3" row="5">도화원도 상 모든 객체가 3D 형식으로 제작 되었는지 여부 확인</cell>
+      <cell col="4" row="5">적합 / 부적합</cell>
+    </row>
+  </table>
+  <text>20  .   .   .
+붙임 1. 검사 위치도
+2. 수치도화 검사결과 및 세부내역</text>
+</annex>

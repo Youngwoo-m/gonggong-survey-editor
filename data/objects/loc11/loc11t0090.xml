@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0090" article="제543조(オリジナルデータの点密度及びグリッドデータの格子間隔)" rows="5" cols="3" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">地図情報レベル</cell>
+    <cell col="1" row="0" header="1">点密度</cell>
+    <cell col="2" row="0" header="1">格子間隔</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">500</cell>
+    <cell col="1" row="1">１点／0.25 ㎡ 以上</cell>
+    <cell col="2" row="1">0.5ｍ以内</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">1000</cell>
+    <cell col="1" row="2">１点／㎡ 以上</cell>
+    <cell col="2" row="2">１ｍ以内</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">2500</cell>
+    <cell col="1" row="3">１点／４㎡ 以上</cell>
+    <cell col="2" row="3">２ｍ以内</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">5000</cell>
+    <cell col="1" row="4">１点／25 ㎡ 以上</cell>
+    <cell col="2" row="4">５ｍ以内</cell>
+  </row>
+</table>

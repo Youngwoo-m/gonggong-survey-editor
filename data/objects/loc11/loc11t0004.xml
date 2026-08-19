@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0004" article="제23조(基準点測量の方式)" rows="9" cols="6" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">区 分 項 目</cell>
+    <cell col="1" row="0" header="1"></cell>
+    <cell col="2" row="0" header="1">１級基準点測量</cell>
+    <cell col="3" row="0" header="1">２級基準点測量</cell>
+    <cell col="4" row="0" header="1">３級基準点測量</cell>
+    <cell col="5" row="0" header="1">４級基準点測量</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">単 路 線 方 式</cell>
+    <cell col="1" row="1">方向角の取付</cell>
+    <cell col="2" row="1">既知点の１点以上において方向角の取付を行う。ただし、ＧＮＳＳ測量機を使用 する場合は、方向角の取付は省略する。</cell>
+    <cell col="3" row="1"></cell>
+    <cell col="4" row="1"></cell>
+    <cell col="5" row="1"></cell>
+  </row>
+  <row>
+    <cell col="0" row="2"></cell>
+    <cell col="1" row="2">路線の辺数</cell>
+    <cell col="2" row="2">７辺以下</cell>
+    <cell col="3" row="2">８辺以下</cell>
+    <cell col="4" row="2">10 辺以下</cell>
+    <cell col="5" row="2">15 辺以下 （20 辺以下）</cell>
+  </row>
+  <row>
+    <cell col="0" row="3"></cell>
+    <cell col="1" row="3">新 点 の 数</cell>
+    <cell col="2" row="3">２点以下</cell>
+    <cell col="3" row="3">３点以下</cell>
+    <cell col="4" row="3">―――</cell>
+    <cell col="5" row="3">―――</cell>
+  </row>
+  <row>
+    <cell col="0" row="4"></cell>
+    <cell col="1" row="4">路 線 長</cell>
+    <cell col="2" row="4">５km 以下</cell>
+    <cell col="3" row="4">３km 以下</cell>
+    <cell col="4" row="4">1.5km 以下</cell>
+    <cell col="5" row="4">700ｍ以下 （1km 以下）</cell>
+  </row>
+  <row>
+    <cell col="0" row="5"></cell>
+    <cell col="1" row="5"></cell>
+    <cell col="2" row="5">電子基準点のみを既知点とする場合はこの限りでない。</cell>
+    <cell col="3" row="5"></cell>
+    <cell col="4" row="5"></cell>
+    <cell col="5" row="5"></cell>
+  </row>
+  <row>
+    <cell col="0" row="6"></cell>
+    <cell col="1" row="6">路 線 図 形</cell>
+    <cell col="2" row="6">新点は、両既知点を結ぶ直線から両側40° 以下の地域内に選点するものとし、路線の 中の夾角は、60°以上とする。ただし、地 形の状況等によりやむを得ないときは、こ の限りでない。</cell>
+    <cell col="3" row="6"></cell>
+    <cell col="4" row="6">同 左 50°以下 同 左 60°以上</cell>
+    <cell col="5" row="6"></cell>
+  </row>
+  <row>
+    <cell col="0" row="7"></cell>
+    <cell col="1" row="7">準 用 規 定</cell>
+    <cell col="2" row="7">節点間の距離、偏心距離の制限、平均次数、路線の辺数の制限緩和及びＧＮＳＳ 測量機を使用する場合の路線長の制限緩和は、結合多角方式の各々の項目の規定 を準用する。</cell>
+    <cell col="3" row="7"></cell>
+    <cell col="4" row="7"></cell>
+    <cell col="5" row="7"></cell>
+  </row>
+  <row>
+    <cell col="0" row="8">備 考</cell>
+    <cell col="1" row="8"></cell>
+    <cell col="2" row="8">４級基準点測量のうち、電子基準点のみを既知点として設置した一～四等三角点 及び１～３級基準点並びに電子基準点及び電子基準点付属標を既知点とし、かつ、 第３５条第２項による機器を使用する場合は、路線の辺数及び路線長について （ ）内を標準とすることができる。</cell>
+    <cell col="3" row="8"></cell>
+    <cell col="4" row="8"></cell>
+    <cell col="5" row="8"></cell>
+  </row>
+</table>

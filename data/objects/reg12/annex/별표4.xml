@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표4" gubun="별표" no="4" title="촬영코스별 검사표" source="[별표 4] 촬영코스별 검사표(무인비행장치 측량 작업규정).hwp">
+  <text>[별표 4] 촬영코스별 검사표</text>
+  <table rows="20" cols="20">
+    <row>
+      <cell col="0" row="0">사업명</cell>
+      <cell col="1" row="0" colspan="8"></cell>
+      <cell col="9" row="0" colspan="2">촬영
+지구</cell>
+      <cell col="11" row="0" colspan="4"></cell>
+      <cell col="15" row="0" colspan="3">작성자</cell>
+      <cell col="18" row="0" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1">촬영일자</cell>
+      <cell col="1" row="1" colspan="3">20  년  월  일</cell>
+      <cell col="4" row="1" colspan="2">촬영
+코스 수</cell>
+      <cell col="6" row="1" colspan="3">코스</cell>
+      <cell col="9" row="1" colspan="2">기체명</cell>
+      <cell col="11" row="1" colspan="4"></cell>
+      <cell col="15" row="1" colspan="4">카메라</cell>
+      <cell col="19" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2" rowspan="2">촬영 해상도
+(GSD)</cell>
+      <cell col="1" row="2">계 획</cell>
+      <cell col="2" row="2" colspan="3">cm</cell>
+      <cell col="5" row="2" colspan="2" rowspan="2">비 행
+고 도</cell>
+      <cell col="7" row="2" colspan="6">계  획</cell>
+      <cell col="13" row="2" colspan="7">m</cell>
+    </row>
+    <row>
+      <cell col="1" row="3">실 시</cell>
+      <cell col="2" row="3" colspan="3">cm</cell>
+      <cell col="7" row="3" colspan="6">실  시</cell>
+      <cell col="13" row="3" colspan="7">m</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" rowspan="2">촬 영
+시 간</cell>
+      <cell col="1" row="4">시 작</cell>
+      <cell col="2" row="4" colspan="3">시    분</cell>
+      <cell col="5" row="4" colspan="2" rowspan="2">진행방향
+중복도
+(O.L)</cell>
+      <cell col="7" row="4" colspan="5" rowspan="2">%</cell>
+      <cell col="12" row="4" colspan="4" rowspan="2">촬영선
+중복도
+(S.L)</cell>
+      <cell col="16" row="4" colspan="4" rowspan="2">%</cell>
+    </row>
+    <row>
+      <cell col="1" row="5">종 료</cell>
+      <cell col="2" row="5" colspan="3">시    분</cell>
+    </row>
+    <row>
+      <cell col="0" row="6" rowspan="2">코스
+번호</cell>
+      <cell col="1" row="6" colspan="2" rowspan="2">코스별 
+영상 매수</cell>
+      <cell col="3" row="6" colspan="2" rowspan="2">코스별 불량
+영상 매수</cell>
+      <cell col="5" row="6" colspan="15">코스별 불량영상</cell>
+    </row>
+    <row>
+      <cell col="5" row="7" colspan="3">불량영상번호</cell>
+      <cell col="8" row="7" colspan="2">보안지역 처리</cell>
+      <cell col="10" row="7" colspan="4">Blurring</cell>
+      <cell col="14" row="7" colspan="3">판독 불가</cell>
+      <cell col="17" row="7" colspan="3">기 타</cell>
+    </row>
+    <row>
+      <cell col="0" row="8"></cell>
+      <cell col="1" row="8" colspan="2"></cell>
+      <cell col="3" row="8" colspan="2"></cell>
+      <cell col="5" row="8" colspan="3"></cell>
+      <cell col="8" row="8" colspan="2"></cell>
+      <cell col="10" row="8" colspan="4"></cell>
+      <cell col="14" row="8" colspan="3"></cell>
+      <cell col="17" row="8" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9"></cell>
+      <cell col="1" row="9" colspan="2"></cell>
+      <cell col="3" row="9" colspan="2"></cell>
+      <cell col="5" row="9" colspan="3"></cell>
+      <cell col="8" row="9" colspan="2"></cell>
+      <cell col="10" row="9" colspan="4"></cell>
+      <cell col="14" row="9" colspan="3"></cell>
+      <cell col="17" row="9" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10"></cell>
+      <cell col="1" row="10" colspan="2"></cell>
+      <cell col="3" row="10" colspan="2"></cell>
+      <cell col="5" row="10" colspan="3"></cell>
+      <cell col="8" row="10" colspan="2"></cell>
+      <cell col="10" row="10" colspan="4"></cell>
+      <cell col="14" row="10" colspan="3"></cell>
+      <cell col="17" row="10" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11"></cell>
+      <cell col="1" row="11" colspan="2"></cell>
+      <cell col="3" row="11" colspan="2"></cell>
+      <cell col="5" row="11" colspan="3"></cell>
+      <cell col="8" row="11" colspan="2"></cell>
+      <cell col="10" row="11" colspan="4"></cell>
+      <cell col="14" row="11" colspan="3"></cell>
+      <cell col="17" row="11" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12"></cell>
+      <cell col="1" row="12" colspan="2"></cell>
+      <cell col="3" row="12" colspan="2"></cell>
+      <cell col="5" row="12" colspan="3"></cell>
+      <cell col="8" row="12" colspan="2"></cell>
+      <cell col="10" row="12" colspan="4"></cell>
+      <cell col="14" row="12" colspan="3"></cell>
+      <cell col="17" row="12" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13"></cell>
+      <cell col="1" row="13" colspan="2"></cell>
+      <cell col="3" row="13" colspan="2"></cell>
+      <cell col="5" row="13" colspan="3"></cell>
+      <cell col="8" row="13" colspan="2"></cell>
+      <cell col="10" row="13" colspan="4"></cell>
+      <cell col="14" row="13" colspan="3"></cell>
+      <cell col="17" row="13" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14"></cell>
+      <cell col="1" row="14" colspan="2"></cell>
+      <cell col="3" row="14" colspan="2"></cell>
+      <cell col="5" row="14" colspan="3"></cell>
+      <cell col="8" row="14" colspan="2"></cell>
+      <cell col="10" row="14" colspan="4"></cell>
+      <cell col="14" row="14" colspan="3"></cell>
+      <cell col="17" row="14" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15"></cell>
+      <cell col="1" row="15" colspan="2"></cell>
+      <cell col="3" row="15" colspan="2"></cell>
+      <cell col="5" row="15" colspan="3"></cell>
+      <cell col="8" row="15" colspan="2"></cell>
+      <cell col="10" row="15" colspan="4"></cell>
+      <cell col="14" row="15" colspan="3"></cell>
+      <cell col="17" row="15" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16"></cell>
+      <cell col="1" row="16" colspan="2"></cell>
+      <cell col="3" row="16" colspan="2"></cell>
+      <cell col="5" row="16" colspan="3"></cell>
+      <cell col="8" row="16" colspan="2"></cell>
+      <cell col="10" row="16" colspan="4"></cell>
+      <cell col="14" row="16" colspan="3"></cell>
+      <cell col="17" row="16" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17"></cell>
+      <cell col="1" row="17" colspan="2"></cell>
+      <cell col="3" row="17" colspan="2"></cell>
+      <cell col="5" row="17" colspan="3"></cell>
+      <cell col="8" row="17" colspan="2"></cell>
+      <cell col="10" row="17" colspan="4"></cell>
+      <cell col="14" row="17" colspan="3"></cell>
+      <cell col="17" row="17" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18"></cell>
+      <cell col="1" row="18" colspan="2"></cell>
+      <cell col="3" row="18" colspan="2"></cell>
+      <cell col="5" row="18" colspan="3"></cell>
+      <cell col="8" row="18" colspan="2"></cell>
+      <cell col="10" row="18" colspan="4"></cell>
+      <cell col="14" row="18" colspan="3"></cell>
+      <cell col="17" row="18" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19"></cell>
+      <cell col="1" row="19" colspan="2"></cell>
+      <cell col="3" row="19" colspan="2"></cell>
+      <cell col="5" row="19" colspan="3"></cell>
+      <cell col="8" row="19" colspan="2"></cell>
+      <cell col="10" row="19" colspan="4"></cell>
+      <cell col="14" row="19" colspan="3"></cell>
+      <cell col="17" row="19" colspan="3"></cell>
+    </row>
+  </table>
+</annex>

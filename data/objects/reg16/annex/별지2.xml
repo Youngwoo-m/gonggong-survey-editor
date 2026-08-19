@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지2" gubun="별지" no="2" title="수치표고모형 데이터품질 작성양식" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=161554271">
+  <text>■ 수치표고모형의 구축 및 관리 등에 관한 규정 [별지 제2호서식]
+수치표고모형 데이터품질 작성양식</text>
+  <table rows="20" cols="6">
+    <row>
+      <cell col="0" row="0" colspan="5">항목</cell>
+      <cell col="5" row="0">작성내용</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="2">1. 데이터 품질 범위
+  (scope)</cell>
+      <cell col="1" row="1">레벨
+(level)</cell>
+      <cell col="2" row="1" colspan="3">기술하는 품질 자료의 특성</cell>
+      <cell col="5" row="1"></cell>
+    </row>
+    <row>
+      <cell col="1" row="2">레벨설명
+(levelDescription)</cell>
+      <cell col="2" row="2" colspan="3">데이터 셋인가?</cell>
+      <cell col="5" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" rowspan="17">2. 품질 보고서
+   (report)</cell>
+      <cell col="1" row="3" rowspan="9">품질측정항목
+(measure)</cell>
+      <cell col="2" row="3" colspan="2" rowspan="2">측정항목 식별자
+(measureIdentifier)</cell>
+      <cell col="4" row="3">코드
+(code)</cell>
+      <cell col="5" row="3"></cell>
+    </row>
+    <row>
+      <cell col="4" row="4">코드값에 대한 설명
+(description)</cell>
+      <cell col="5" row="4"></cell>
+    </row>
+    <row>
+      <cell col="2" row="5" colspan="3">측정항목이름
+(name)</cell>
+      <cell col="5" row="5"></cell>
+    </row>
+    <row>
+      <cell col="2" row="6" colspan="3">항목명
+(elementName)</cell>
+      <cell col="5" row="6"></cell>
+    </row>
+    <row>
+      <cell col="2" row="7" colspan="3">항목정의
+(definition)</cell>
+      <cell col="5" row="7"></cell>
+    </row>
+    <row>
+      <cell col="2" row="8" colspan="3">항목유형
+(valueType)</cell>
+      <cell col="5" row="8"></cell>
+    </row>
+    <row>
+      <cell col="2" row="9" colspan="2" rowspan="3">측정인자
+(parameter)</cell>
+      <cell col="4" row="9">인자이름
+(name)</cell>
+      <cell col="5" row="9"></cell>
+    </row>
+    <row>
+      <cell col="4" row="10">인자정의
+(definition)</cell>
+      <cell col="5" row="10"></cell>
+    </row>
+    <row>
+      <cell col="4" row="11">인자유형
+(valueType)</cell>
+      <cell col="5" row="11"></cell>
+    </row>
+    <row>
+      <cell col="1" row="12" rowspan="4">품질평가방법
+(evaluationMethod)</cell>
+      <cell col="2" row="12" colspan="3">품질평가일자
+(dateTime)</cell>
+      <cell col="5" row="12"></cell>
+    </row>
+    <row>
+      <cell col="2" row="13" colspan="3">품질평가방법설명
+(evaluationMethodDescription)</cell>
+      <cell col="5" row="13"></cell>
+    </row>
+    <row>
+      <cell col="2" row="14" colspan="3">품질평가절차
+(evaluationProcedure)</cell>
+      <cell col="5" row="14"></cell>
+    </row>
+    <row>
+      <cell col="2" row="15" colspan="3">품질평가 참조문서
+(referenceDoc)</cell>
+      <cell col="5" row="15"></cell>
+    </row>
+    <row>
+      <cell col="1" row="16" rowspan="4">품질측정결과
+(result)</cell>
+      <cell col="2" row="16" colspan="3">결과값
+(value)</cell>
+      <cell col="5" row="16"></cell>
+    </row>
+    <row>
+      <cell col="2" row="17" colspan="3">측정값단위
+(valueUnit)</cell>
+      <cell col="5" row="17"></cell>
+    </row>
+    <row>
+      <cell col="2" row="18" colspan="3">적합여부
+(pass)</cell>
+      <cell col="5" row="18"></cell>
+    </row>
+    <row>
+      <cell col="2" row="19">참조정보
+(specification)</cell>
+      <cell col="3" row="19" colspan="2">참조이름
+(title)</cell>
+      <cell col="5" row="19"></cell>
+    </row>
+  </table>
+  <table rows="2" cols="1">
+    <row>
+      <cell col="0" row="0">수치표고모형 데이터품질 작성 방법</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">1. 데이터 품질 범위(scope)
+레벨은 데이터를 구성하는 형태 및 특성으로서 다음 목록에서 선택합니다.
+속성(attribute), 속성 유형(attributeType), 자료취득 기기(collectionHardware), 자료취득 영역(collectionSession), 데이터 셋(dataset), 데이터 시리즈(series), 지리정보가 아닌 데이터 셋(nonGeographicDataset), 차원 그룹(dimensionGroup), 지형지물(feature), 지형지물 타입(featureType), 속성값 타입(propertyType), 필드 영역(fieldSession), 소프트웨어(software), 서비스(service), 모형(model), 타일(tile), 메타데이터(metadata), 프로젝트 추진동력(initiative), 샘플, 예제(sample), 문서(document), 등록소(repository), 집합(aggregate), 제품(product), 모음(collection), 커버리지(coverage), 응용시스템(application)
+레벨설명은 데이터 셋에 해당하는가와 관련된 질문으로서 Y와 N만 기재합니다.
+2. 품질 보고서(report)
+1. 품질측정항목 중 측정항목 식별자의 코드는 측정항목을 식별하기 위한 식별번호 또는 인덱스 번호를 작성합니다. 별도의 식별자 체계가 없으면 인덱스로 1부터 순서대로 입력합니다.
+2. 품질측정항목 중 측정항목 식별자의 코드값에 대한 설명은 상기 식별코드를 설명하기 위한 정보를 작성합니다. 예로, 완전성, 논리 일관성, 위치(높이)정확성, 주제 정확성, 시간 품질, 보조자료의 완전성을 넣어서 작성합니다.
+3. 품질측정항목 중 측정항목이름은 데이터 품질을 구성하는 요소를 이용하여 데이터 품질 측정의 이름을 작성합니다.
+4. 품질측정항목 중 항목명은 데이터 품질의 세부 측정항목의 이름을 작성합니다. 초과, 영역일관성 등이 있습니다.
+5. 품질측정항목 중 항목정의는 상기 세부 측정항목을 측정하는 방법에 대한 정의를 작성합니다.
+6. 품질측정항목 중 항목유형은 상시 세부 측정항목의 측정결과가 제시되는 값의 유형을 작성합니다.
+7. 품질측정항목 중 측정인자의 인자이름은 데이터의 품질 측정에 사용되는 변수(인자)의 이름을 작성합니다.
+8. 품질측정항목 중 측정인자의 인자정의는 데이터 품질 측정에 사용되는 변수(인자)의 정의를 작성합니다.
+9. 품질측정항목 중 측정인자의 인자유형은 데이터 품질 측정에 사용되는 변수(인자) 값의 유형을 작성합니다.
+10. 품질평가방법 중 품질평가일자는 상기 측정 항목의 평가를 수행한 일자를 YYYY-MM-DD 형식으로 작성합니다.
+11. 품질평가방법 중 품질평가방법설명은 측정 항목의 평가 방법에 대한 설명을 작성합니다.
+12. 품질평가방법 중 품질평가절차는 측정 항목의 평가 절차를 작성합니다.
+13. 품질평가방법 중 품질평가 참조문서는 측정 항목의 평가방법에 참조할 수 있는 자료를 작성합니다.
+14. 품질측정결과 중 결과값은 측정 항목의 평가결과를 정량적 수치로 작성합니다.
+15. 품질측정결과 중 측정값단위가 있을 경우에는 상기 정량적 수치의 단위를 작성합니다.
+16. 품질측정결과 중 적합여부는 측정 항목의 평가결과가 적합한지를 선택하는 것으로서 적합하면 1을, 적합하지 않는다면 0을 선택합니다.
+17. 품질측정결과 중 참조정보의 참조이름은 측정 항목의 평가결과와 관련하여 참조할 수 있는 자료를 작성하는 것으로서 해당사항이 없으면 빈칸으로 유지합니다.</cell>
+    </row>
+  </table>
+</annex>

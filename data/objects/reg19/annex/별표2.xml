@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표2" gubun="별표" no="2" title="실내공간정보 레이어 분류체계" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=110999987">
+  <text>[별표 2] 실내공간정보 레이어 분류체계
+ㅇ 대분류 : 주체에 따른 분류
+ㅇ 중분류 : 용도에 따른 분류
+ㅇ 소분류 : 구조에 따른 분류</text>
+  <table rows="20" cols="4">
+    <row>
+      <cell col="0" row="0">대분류</cell>
+      <cell col="1" row="0">중분류</cell>
+      <cell col="2" row="0">소분류</cell>
+      <cell col="3" row="0">세부항목</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="14">개방</cell>
+      <cell col="1" row="1" rowspan="2">이동</cell>
+      <cell col="2" row="1">공간</cell>
+      <cell col="3" row="1">출입구, 복도, 홀, 실내주차장, 주차장이동로, 장애인전용주차구역 등</cell>
+    </row>
+    <row>
+      <cell col="2" row="2">시설물</cell>
+      <cell col="3" row="2">계단, 에스컬레이터, 무빙워크, 엘리베이터, 펜스, 개찰구, 장애인보도블럭 휠체어리프트, 경사로 등</cell>
+    </row>
+    <row>
+      <cell col="1" row="3" rowspan="2">안내</cell>
+      <cell col="2" row="3">공간</cell>
+      <cell col="3" row="3">민원실, 고객센터, 안내데스크 등</cell>
+    </row>
+    <row>
+      <cell col="2" row="4">시설물</cell>
+      <cell col="3" row="4">점자길, 표지판, 안내도, 전광판, 디지털뷰, 게시판, 시각장애인용 안내장치, 지하철승하차위치 등</cell>
+    </row>
+    <row>
+      <cell col="1" row="5" rowspan="2">편의</cell>
+      <cell col="2" row="5">공간</cell>
+      <cell col="3" row="5">대합실, 휴게실, 흡연실, 라운지, 화장실, 환전소, 은행영업소 공연장, 전시장, 탈의실, 욕실, 미용실, 갤러리, 휠체어대여소, 유실물센터, 수유실 등</cell>
+    </row>
+    <row>
+      <cell col="2" row="6">시설물</cell>
+      <cell col="3" row="6">공중전화, 사물함, 즉석사진기, 생수대, 정수기, 현금인출기, 휴지통, 벤치, 체육시설, 물품보관함 등</cell>
+    </row>
+    <row>
+      <cell col="1" row="7" rowspan="2">운수</cell>
+      <cell col="2" row="7">공간</cell>
+      <cell col="3" row="7">출국장(공항), 입국장(공항), 검역소, 공항승차장, 버스승차장, 기차승강장, 면세품 인도장 등</cell>
+    </row>
+    <row>
+      <cell col="2" row="8">시설물</cell>
+      <cell col="3" row="8">입국심사대, 출국심사대, 개찰구(철도, 지하철), 스크린도어(철도), 안전선(철도) 등</cell>
+    </row>
+    <row>
+      <cell col="1" row="9" rowspan="2">안전</cell>
+      <cell col="2" row="9">공간</cell>
+      <cell col="3" row="9">공항파출소, 지하철파출소 등</cell>
+    </row>
+    <row>
+      <cell col="2" row="10">시설물</cell>
+      <cell col="3" row="10">보안검색대, CCTV 등</cell>
+    </row>
+    <row>
+      <cell col="1" row="11">소방</cell>
+      <cell col="2" row="11">시설물</cell>
+      <cell col="3" row="11">구호물품보관함, 긴급전화, 비상벨, 비상용모래함, 소화기, 비상조명, 비상구등, 심장제세동기, 소화전, 방화셔터, 완강기 등</cell>
+    </row>
+    <row>
+      <cell col="1" row="12" rowspan="2">판매</cell>
+      <cell col="2" row="12">공간</cell>
+      <cell col="3" row="12">식당, 상가, 매표소, 카페, 면세점 등</cell>
+    </row>
+    <row>
+      <cell col="2" row="13">시설물</cell>
+      <cell col="3" row="13">자판기, 매표기 등</cell>
+    </row>
+    <row>
+      <cell col="1" row="14">의료</cell>
+      <cell col="2" row="14">공간</cell>
+      <cell col="3" row="14">약국, 응급실, 양호실, 처치실, 병실 등</cell>
+    </row>
+    <row>
+      <cell col="0" row="15" rowspan="2">고유</cell>
+      <cell col="1" row="15">주거</cell>
+      <cell col="2" row="15">공간</cell>
+      <cell col="3" row="15">침실, 거실, 부엌, 화장실, 욕실 등</cell>
+    </row>
+    <row>
+      <cell col="1" row="16">업무</cell>
+      <cell col="2" row="16">공간</cell>
+      <cell col="3" row="16">사무실, 회의실, 탕비실, 진료실, 수술실, 처치실, 은행금고, 기계실, 생산설비, 실험실, 행정실, 교육실, 자료실 등</cell>
+    </row>
+    <row>
+      <cell col="0" row="17" rowspan="3">관리</cell>
+      <cell col="1" row="17" rowspan="2">관리</cell>
+      <cell col="2" row="17">공간</cell>
+      <cell col="3" row="17">경비실, 보일러실, 변전실, 관리실, 공조실 등</cell>
+    </row>
+    <row>
+      <cell col="2" row="18">시설물</cell>
+      <cell col="3" row="18">보일러, 변전기 등</cell>
+    </row>
+    <row>
+      <cell col="1" row="19">구조</cell>
+      <cell col="2" row="19" colspan="2">벽, 바닥, 천정, 기둥, 문, 창문 등</cell>
+    </row>
+  </table>
+</annex>

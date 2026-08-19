@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="t4304" article="현장작업 환경의 구분" rows="8" cols="4" source="현장작업 환경별 위험특성 분석 (연구 진행 중)">
+  <row>
+    <cell col="0" row="0" header="1">구분</cell>
+    <cell col="1" row="0" header="1">현장작업 환경</cell>
+    <cell col="2" row="0" header="1">대표 측량 작업</cell>
+    <cell col="3" row="0" header="1">핵심 위험</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">1</cell>
+    <cell col="1" row="1">도심·주거 및 일반 개활지</cell>
+    <cell col="2" row="1">현황측량, 지적측량, 기준점측량</cell>
+    <cell col="3" row="1">보행자·차량 혼재, 장비 전도</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">2</cell>
+    <cell col="1" row="2">도로·교통 인접 환경</cell>
+    <cell col="2" row="2">노선측량, 종·횡단측량, MMS, 도로상 지하시설물측량</cell>
+    <cell col="3" row="2">주행차량 침범, 이차사고</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">3</cell>
+    <cell col="1" row="3">산악·급경사 및 원격지</cell>
+    <cell col="2" row="3">삼각점측량, 산림지역 측량</cell>
+    <cell col="3" row="3">추락·낙석, 구조 지연, 통신 두절</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">4</cell>
+    <cell col="1" row="4">하천·수변 환경</cell>
+    <cell col="2" row="4">하천측량, 심천측량</cell>
+    <cell col="3" row="4">익수, 급격한 수위 변화</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">5</cell>
+    <cell col="1" row="5">건설·산업시설 환경</cell>
+    <cell col="2" row="5">시공측량, 시설물 현황측량</cell>
+    <cell col="3" row="5">중장비 협착, 추락, 개구부</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">6</cell>
+    <cell col="1" row="6">지하·밀폐공간 환경</cell>
+    <cell col="2" row="6">지하시설물측량, 맨홀 조사</cell>
+    <cell col="3" row="6">산소결핍, 유해가스, 구조 곤란</cell>
+  </row>
+  <row>
+    <cell col="0" row="7">7</cell>
+    <cell col="1" row="7">무인비행장치 운용 환경</cell>
+    <cell col="2" row="7">UAV 사진측량, UAV 레이저측량</cell>
+    <cell col="3" row="7">기체 추락, 제3자 피해, 비행 규제</cell>
+  </row>
+</table>

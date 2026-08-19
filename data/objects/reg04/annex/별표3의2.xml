@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표3의2" gubun="별표" no="3의2" title="지적기술자의 업무정지 기준(제44조제3항 관련)" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454193">
+  <text>■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별표 3의2] &lt;개정 2017. 1. 31.&gt;</text>
+  <table rows="14" cols="3">
+    <row>
+      <cell col="0" row="0" colspan="3">지적기술자의 업무정지 기준(제44조제3항 관련)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="3">1. 일반기준
+  국토교통부장관은 다음 각 목의 구분에 따라 업무정지의 기간을 줄일 수 있다.
+   가. 위반행위가 있은 날 이전 최근 2년 이내에 업무정지 처분을 받은 사실이 없는 경우: 4분의 1 경감
+   나. 해당 위반행위가 과실 또는 상당한 이유에 의한 것으로서 보완이 가능한 경우: 4분의 1 경감
+   다. 가목과 나목 모두에 해당하는 경우: 2분의 1 경감
+2. 개별기준</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">위반사항</cell>
+      <cell col="1" row="2">해당법조문</cell>
+      <cell col="2" row="2">행정처분기준</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">가. 법 제40조제1항에 따른 근무처 및 경력등의 신고 또는 변경신고를 거짓으로 한 경우</cell>
+      <cell col="1" row="3">법 제42조
+제1항제1호</cell>
+      <cell col="2" row="3">1년</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">나. 법 제41조제4항을 위반하여 다른 사람에게 측량기술경력증을 빌려 주거나 자기의 성명을 사용하여 측량업무를 수행하게 한 경우</cell>
+      <cell col="1" row="4">법 제42조
+제1항제2호</cell>
+      <cell col="2" row="4">1년</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">다. 법 제50조제1항을 위반하여 신의와 성실로써 공정하게 지적측량을 하지 아니한 경우</cell>
+      <cell col="1" row="5" rowspan="3">법 제42조
+제1항제3호</cell>
+      <cell col="2" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">1) 지적측량수행자 소속 지적기술자가 영업정지기간 중에 이를 알고도 지적측량업무를 행한 경우</cell>
+      <cell col="2" row="6">2년</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">2) 지적측량수행자 소속 지적기술자가 법 제45조에 따른 업무범위를 위반하여 지적측량을 한 경우</cell>
+      <cell col="2" row="7">2년</cell>
+    </row>
+    <row>
+      <cell col="0" row="8">라. 고의 또는 중과실로 지적측량을 잘못하여 다른 사람에게 손해를 입힌 경우</cell>
+      <cell col="1" row="8" rowspan="4">법 제42조
+제1항제3호</cell>
+      <cell col="2" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">1) 다른 사람에게 손해를 입혀 금고 이상의 형을 선고받고 그 형이 확정된 경우</cell>
+      <cell col="2" row="9">2년</cell>
+    </row>
+    <row>
+      <cell col="0" row="10">2) 다른 사람에게 손해를 입혀 벌금 이하의 형을 선고받고 그 형이 확정된 경우</cell>
+      <cell col="2" row="10">1년6개월</cell>
+    </row>
+    <row>
+      <cell col="0" row="11">3) 그 밖에 고의 또는 중대한 과실로 지적측량을 잘못하여 다른 사람에게 손해를 입힌 경우</cell>
+      <cell col="2" row="11">1년</cell>
+    </row>
+    <row>
+      <cell col="0" row="12">마. 지적기술자가 법 제50조제1항을 위반하여 정당한 사유 없이 지적측량 신청을 거부한 경우</cell>
+      <cell col="1" row="12">법 제42조
+제1항제4호</cell>
+      <cell col="2" row="12">3개월</cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="3"></cell>
+    </row>
+  </table>
+</annex>

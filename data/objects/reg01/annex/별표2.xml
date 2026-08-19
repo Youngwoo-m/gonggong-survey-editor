@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표2" gubun="별표" no="2" title="점의조서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296079">
+  <table rows="22" cols="9">
+    <row>
+      <cell col="0" row="0" colspan="9">점  의  조  서</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">사업명</cell>
+      <cell col="1" row="1" colspan="2"></cell>
+      <cell col="3" row="1" colspan="2">표지구분</cell>
+      <cell col="5" row="1">(영구, 가설)</cell>
+      <cell col="6" row="1">고시번호</cell>
+      <cell col="7" row="1" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2">점의종류</cell>
+      <cell col="1" row="2" colspan="3">공공(삼각, 수준, 공용)점</cell>
+      <cell col="4" row="2">점번호</cell>
+      <cell col="5" row="2"></cell>
+      <cell col="6" row="2">급수</cell>
+      <cell col="7" row="2" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">시행자</cell>
+      <cell col="1" row="3" colspan="3"></cell>
+      <cell col="4" row="3">도엽명
+(1/50,000)</cell>
+      <cell col="5" row="3"></cell>
+      <cell col="6" row="3">상태</cell>
+      <cell col="7" row="3" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4">주소(지번)</cell>
+      <cell col="1" row="4" colspan="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5">도로명주소</cell>
+      <cell col="1" row="5" colspan="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">설치일</cell>
+      <cell col="1" row="6" colspan="3"></cell>
+      <cell col="4" row="6">설 치 자</cell>
+      <cell col="5" row="6"></cell>
+      <cell col="6" row="6">매설형태</cell>
+      <cell col="7" row="6" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">관측일</cell>
+      <cell col="1" row="7" colspan="3"></cell>
+      <cell col="4" row="7">관 측 자</cell>
+      <cell col="5" row="7"></cell>
+      <cell col="6" row="7">관측장비</cell>
+      <cell col="7" row="7" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8" rowspan="2">공용성과</cell>
+      <cell col="1" row="8">경도</cell>
+      <cell col="2" row="8" colspan="3"></cell>
+      <cell col="5" row="8">위도</cell>
+      <cell col="6" row="8" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="9">타원체</cell>
+      <cell col="2" row="9" colspan="3"></cell>
+      <cell col="5" row="9">좌표원점</cell>
+      <cell col="6" row="9" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" rowspan="2">삼각점성과</cell>
+      <cell col="1" row="10" colspan="3">N(X)</cell>
+      <cell col="4" row="10" colspan="2">E(Y)</cell>
+      <cell col="6" row="10" colspan="2">타원체고</cell>
+      <cell col="8" row="10">m</cell>
+    </row>
+    <row>
+      <cell col="1" row="11" colspan="3">m</cell>
+      <cell col="4" row="11" colspan="2">m</cell>
+      <cell col="6" row="11" colspan="2">정표고(측표)</cell>
+      <cell col="8" row="11">m</cell>
+    </row>
+    <row>
+      <cell col="0" row="12" rowspan="3">수준점성과</cell>
+      <cell col="1" row="12">관측방법</cell>
+      <cell col="2" row="12" colspan="7">(직접수준측량, GNSS높이측량)</cell>
+    </row>
+    <row>
+      <cell col="1" row="13" colspan="3">노섬시점(점명)</cell>
+      <cell col="4" row="13" colspan="2">노선종점(점명)</cell>
+      <cell col="6" row="13" colspan="3">정표고</cell>
+    </row>
+    <row>
+      <cell col="1" row="14" colspan="3"></cell>
+      <cell col="4" row="14" colspan="2"></cell>
+      <cell col="6" row="14" colspan="3">m</cell>
+    </row>
+    <row>
+      <cell col="0" row="15" rowspan="3">경       로</cell>
+      <cell col="1" row="15" colspan="8"></cell>
+    </row>
+    <row>
+      <cell col="1" row="16" colspan="8"></cell>
+    </row>
+    <row>
+      <cell col="1" row="17" colspan="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18" colspan="4">약    도</cell>
+      <cell col="4" row="18" colspan="5">시 준 도</cell>
+    </row>
+    <row>
+      <cell col="0" row="19" colspan="4"></cell>
+      <cell col="4" row="19" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20" colspan="4">근    경</cell>
+      <cell col="4" row="20" colspan="5">원    경</cell>
+    </row>
+    <row>
+      <cell col="0" row="21" colspan="4"></cell>
+      <cell col="4" row="21" colspan="5"></cell>
+    </row>
+  </table>
+</annex>

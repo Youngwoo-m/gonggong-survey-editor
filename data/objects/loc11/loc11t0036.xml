@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0036" article="제69조(点検計算及び再測)" rows="5" cols="6" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">備 考</cell>
+    <cell col="1" row="0" header="1">１．Ｓは、観測距離（km 単位）、観測日数欄の数字は１日当たりの標準セット数とす る。 ２．観測セット数及び日数の算定において、観測距離（km 単位）を小数点以下１位 まで求め、乗算後の端数は切り上げて整数とする。 ３．偶数セットの観測を行い、観測日数が１日に満たない場合は、１日に切り上げ る。 ４．表中の（ ）内は２～４級水準測量に適用する。</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">区 分 項 目</cell>
+    <cell col="1" row="1">１級水準測量</cell>
+    <cell col="2" row="1">２級水準測量</cell>
+    <cell col="3" row="1">３級水準測量</cell>
+    <cell col="4" row="1">４級水準測量</cell>
+    <cell col="5" row="1">簡易水準測量</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">環 閉 合 差</cell>
+    <cell col="1" row="2">２mm√S</cell>
+    <cell col="2" row="2">５mm√S</cell>
+    <cell col="3" row="2">10mm√S</cell>
+    <cell col="4" row="2">20mm√S</cell>
+    <cell col="5" row="2">40mm√S</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">既知点から既知点ま で の 閉 合 差</cell>
+    <cell col="1" row="3">15mm√S</cell>
+    <cell col="2" row="3">15mm√S</cell>
+    <cell col="3" row="3">15mm√S</cell>
+    <cell col="4" row="3">25mm√S</cell>
+    <cell col="5" row="3">50mm√S</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">備 考</cell>
+    <cell col="1" row="4">Ｓは観測距離（片道、km単位）とする。</cell>
+    <cell col="2" row="4"></cell>
+    <cell col="3" row="4"></cell>
+    <cell col="4" row="4"></cell>
+    <cell col="5" row="4"></cell>
+  </row>
+</table>

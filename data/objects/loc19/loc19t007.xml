@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc19t007" article="산업안전보건 체계(모든 현장에 공통 적용)" rows="9" cols="3" source="측량 안전관리 매뉴얼 (2026.1)">
+  <row>
+    <cell col="0" row="0" header="1">심사항목</cell>
+    <cell col="1" row="0" header="1">심사기준</cell>
+    <cell col="2" row="0" header="1">배점</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">Ⅰ. 사업주의 관심도</cell>
+    <cell col="1" row="1"></cell>
+    <cell col="2" row="1">100</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">1. 활동체계 구축</cell>
+    <cell col="1" row="2">위험성평가 등 안전보건경영에 대한 방침 및 목표 수립 위험성평가 담당자 지정 및 역할 분담 등 조직 구성</cell>
+    <cell col="2" row="2">10 10</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">2. 교육</cell>
+    <cell col="1" row="3">위험성평가 관련 사업주 / 담당자 교육 이수 위험성평가를 포함한 안전보건 교육 실시</cell>
+    <cell col="2" row="3">30 20</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">3. 예산</cell>
+    <cell col="1" row="4">연간 안전보건 관련 예산 편성 및 집행</cell>
+    <cell col="2" row="4">10</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">4. 재해예방 노력</cell>
+    <cell col="1" row="5">작업 전 안전점검 등 재해예방을 위한 사업주의 노력</cell>
+    <cell col="2" row="5">20</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">Ⅱ. 위험성평가 실행 수준</cell>
+    <cell col="1" row="6"></cell>
+    <cell col="2" row="6">100</cell>
+  </row>
+  <row>
+    <cell col="0" row="7">1. 계획 수립</cell>
+    <cell col="1" row="7">위험성평가 실시규정 작성 및 관리 위험성평가에 필요한 사업장 안전보건정보 수집 및 활용</cell>
+    <cell col="2" row="7">5 5</cell>
+  </row>
+  <row>
+    <cell col="0" row="8">2. 위험요인 파악</cell>
+    <cell col="1" row="8"></cell>
+    <cell col="2" row="8"></cell>
+  </row>
+</table>

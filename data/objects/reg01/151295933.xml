@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="151295933" article="제103조" rows="6" cols="3" source="공공측량 작업규정.2025.04.23_수식수정.오류표시.hwpx">
+  <row>
+    <cell col="0" row="0" colspan="2">종별</cell>
+    <cell col="2" row="0">간격</cell>
+  </row>
+  <row>
+    <cell col="0" row="1" rowspan="2">도로</cell>
+    <cell col="1" row="1">계획조사</cell>
+    <cell col="2" row="1">100m 또는 50m</cell>
+  </row>
+  <row>
+    <cell col="1" row="2">실시설계</cell>
+    <cell col="2" row="2">20m</cell>
+  </row>
+  <row>
+    <cell col="0" row="3" rowspan="2">하천</cell>
+    <cell col="1" row="3">계획조사</cell>
+    <cell col="2" row="3">100m 또는 50m</cell>
+  </row>
+  <row>
+    <cell col="1" row="4">실시설계</cell>
+    <cell col="2" row="4">20m 또는 50m</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">해안</cell>
+    <cell col="1" row="5">실시설계</cell>
+    <cell col="2" row="5">20m 또는 50m</cell>
+  </row>
+</table>

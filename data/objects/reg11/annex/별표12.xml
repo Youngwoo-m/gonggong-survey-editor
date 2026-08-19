@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표12" gubun="별표" no="12" title="통합기준점 성과표 (제37조제3항 관련)" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=155729945">
+  <text>[별표 12] 통합기준점 성과표 (제37조제3항 관련)</text>
+  <table rows="36" cols="11">
+    <row>
+      <cell col="0" row="0" colspan="11">통합기준점 성과표</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="2">점번호</cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1" colspan="2">도엽명(1/5만)</cell>
+      <cell col="5" row="1" colspan="2"></cell>
+      <cell col="7" row="1" colspan="2">상태</cell>
+      <cell col="9" row="1" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2" rowspan="2">소재지</cell>
+      <cell col="2" row="2">도로명주소</cell>
+      <cell col="3" row="2" colspan="4"></cell>
+      <cell col="7" row="2" colspan="2">지목</cell>
+      <cell col="9" row="2" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="2" row="3">지        번</cell>
+      <cell col="3" row="3" colspan="4"></cell>
+      <cell col="7" row="3" colspan="2">토지소유자</cell>
+      <cell col="9" row="3" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="2" rowspan="5">통합기준점 성과
+(세계측지계)</cell>
+      <cell col="2" row="5">위도</cell>
+      <cell col="3" row="5" colspan="2"></cell>
+      <cell col="5" row="5" colspan="2">X(m)</cell>
+      <cell col="7" row="5" colspan="2"></cell>
+      <cell col="9" row="5" rowspan="2">원점</cell>
+      <cell col="10" row="5" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="2" row="6">경도</cell>
+      <cell col="3" row="6" colspan="2"></cell>
+      <cell col="5" row="6" colspan="2">Y(m)</cell>
+      <cell col="7" row="6" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="2" row="7">타원체고</cell>
+      <cell col="3" row="7" colspan="2"></cell>
+      <cell col="5" row="7" colspan="2">표고</cell>
+      <cell col="7" row="7" colspan="2"></cell>
+      <cell col="9" row="7" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="2" row="8">지오이드고</cell>
+      <cell col="3" row="8" colspan="2"></cell>
+      <cell col="5" row="8" colspan="2" rowspan="2">수준측량
+노선</cell>
+      <cell col="7" row="8">시점</cell>
+      <cell col="8" row="8" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="2" row="9">중력값</cell>
+      <cell col="3" row="9" colspan="2"></cell>
+      <cell col="7" row="9">종점</cell>
+      <cell col="8" row="9" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="2">통합기준점의 경로</cell>
+      <cell col="2" row="10" colspan="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="2" rowspan="4">제1방위표</cell>
+      <cell col="2" row="12">위도</cell>
+      <cell col="3" row="12" colspan="2"></cell>
+      <cell col="5" row="12" colspan="2">X(m)</cell>
+      <cell col="7" row="12" colspan="2"></cell>
+      <cell col="9" row="12" rowspan="2">원점</cell>
+      <cell col="10" row="12" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="2" row="13">경도</cell>
+      <cell col="3" row="13" colspan="2"></cell>
+      <cell col="5" row="13" colspan="2">Y(m)</cell>
+      <cell col="7" row="13" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="2" row="14">타원체고</cell>
+      <cell col="3" row="14" colspan="2"></cell>
+      <cell col="5" row="14" rowspan="2">경로</cell>
+      <cell col="6" row="14" colspan="5" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="2" row="15">방위각</cell>
+      <cell col="3" row="15" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="2">제2방위표</cell>
+      <cell col="2" row="16">방위각</cell>
+      <cell col="3" row="16" colspan="2"></cell>
+      <cell col="5" row="16">경로</cell>
+      <cell col="6" row="16" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17" colspan="2">인덱스방위표</cell>
+      <cell col="2" row="17">방위각</cell>
+      <cell col="3" row="17" colspan="2"></cell>
+      <cell col="5" row="17">경로</cell>
+      <cell col="6" row="17" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18" colspan="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19" rowspan="2">보조점A</cell>
+      <cell col="1" row="19">위도</cell>
+      <cell col="2" row="19"></cell>
+      <cell col="3" row="19" rowspan="2">비고차</cell>
+      <cell col="4" row="19" rowspan="2"></cell>
+      <cell col="5" row="19" rowspan="2">경로</cell>
+      <cell col="6" row="19" colspan="5" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="1" row="20">경도</cell>
+      <cell col="2" row="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21" rowspan="2">보조점B</cell>
+      <cell col="1" row="21">위도</cell>
+      <cell col="2" row="21"></cell>
+      <cell col="3" row="21" rowspan="2">비고차</cell>
+      <cell col="4" row="21" rowspan="2"></cell>
+      <cell col="5" row="21" rowspan="2">경로</cell>
+      <cell col="6" row="21" colspan="5" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="1" row="22">경도</cell>
+      <cell col="2" row="22"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23" colspan="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="24" colspan="2">매설일</cell>
+      <cell col="2" row="24" colspan="3"></cell>
+      <cell col="5" row="24" colspan="2">평면성과 관측일</cell>
+      <cell col="7" row="24" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="25" colspan="2">표고 관측일</cell>
+      <cell col="2" row="25" colspan="3"></cell>
+      <cell col="5" row="25" colspan="2">중력 관측일</cell>
+      <cell col="7" row="25" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="26" colspan="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="27" colspan="5">지형도(약도)</cell>
+      <cell col="5" row="27" colspan="6">통합기준점(근경)</cell>
+    </row>
+    <row>
+      <cell col="0" row="28" colspan="5"></cell>
+      <cell col="5" row="28" colspan="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="29" colspan="5">통합기준점(원경)</cell>
+      <cell col="5" row="29" colspan="6">주변상세도</cell>
+    </row>
+    <row>
+      <cell col="0" row="30" colspan="5"></cell>
+      <cell col="5" row="30" colspan="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="31" colspan="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="32" colspan="3">제1방위표</cell>
+      <cell col="3" row="32" colspan="4">제2방위표</cell>
+      <cell col="7" row="32" colspan="4">인덱스방위표</cell>
+    </row>
+    <row>
+      <cell col="0" row="33" colspan="3"></cell>
+      <cell col="3" row="33" colspan="4"></cell>
+      <cell col="7" row="33" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="34" colspan="3">보조점 약도</cell>
+      <cell col="3" row="34" colspan="4">보조점A</cell>
+      <cell col="7" row="34" colspan="4">보조점B</cell>
+    </row>
+    <row>
+      <cell col="0" row="35" colspan="3"></cell>
+      <cell col="3" row="35" colspan="4"></cell>
+      <cell col="7" row="35" colspan="4"></cell>
+    </row>
+  </table>
+</annex>

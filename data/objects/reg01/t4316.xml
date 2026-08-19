@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="t4316" article="성과 유형별 성과패키지의 구성" rows="16" cols="3" source="2025년 전략수립 연구보고서">
+  <row>
+    <cell col="0" row="0" header="1">측량 유형</cell>
+    <cell col="1" row="0" header="1">성과패키지에 담는 성과 등</cell>
+    <cell col="2" row="0" header="1">통합한 현행 조문</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">공공삼각점측량</cell>
+    <cell col="1" row="1">공공삼각점 성과표(별표 5 또는 별표 6) / 성과 수치데이터 / 공공삼각점망도 / 관측기록부 / 계산부 / 공공기준점 점의 조서(별표 2) / 정확도 관리표(별표 3 또는 별표 4) / 메타데이터 / 기준점현황조사서(별표 1) / 그 밖의 자료(측량표지 현황사진 등)</cell>
+    <cell col="2" row="1">제31조</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">공공수준점측량</cell>
+    <cell col="1" row="2">공공수준점측량 관측성과표(별표 8) / 성과 수치데이터 / 공공수준점망도 / 관측기록부 / 계산부 / 공공기준점 점의 조서(별표 2) / 정확도 관리표(별표 7) / 메타데이터 / 기준점현황조사서(별표 1) / 그 밖의 자료(측량표지 현황사진 등)</cell>
+    <cell col="2" row="2">제43조</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">GNSS 수준측량</cell>
+    <cell col="1" row="3">작업계획서 / 기준점망도(관측 세션을 기초로 작성) / 점의 조서(난외에 관측 연월일 기입) / GNSS 수준측량 성과표(별표 13) 및 메타데이터 / 관측기록부(별표 10) / 안테나고 관측기록부(별표 9) / GNSS 관측데이터 및 RINEX 파일 / 높이교차 점검표(별표 12) / 기선해석 및 표고계산 관련 자료 / 기지점 성과 점검표(별표 11)</cell>
+    <cell col="2" row="3">제59조</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">지상현황측량</cell>
+    <cell col="1" row="4">지형도 데이터 파일 / 정확도 관리표(별표 14) / 그 밖의 자료</cell>
+    <cell col="2" row="4">제74조</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">지도의 축소편집</cell>
+    <cell col="1" row="5">정위치편집 및 구조화편집 성과파일 / 수치지형도 성과점검 및 관리대장</cell>
+    <cell col="2" row="5">제93조</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">노선측량</cell>
+    <cell col="1" row="6">별표의 노선측량 성과 등의 종류에 따른다</cell>
+    <cell col="2" row="6">제109조</cell>
+  </row>
+  <row>
+    <cell col="0" row="7">하천 및 연안측량</cell>
+    <cell col="1" row="7">별표의 하천 및 연안측량 성과 등의 종류에 따른다</cell>
+    <cell col="2" row="7">제119조</cell>
+  </row>
+  <row>
+    <cell col="0" row="8">용지측량</cell>
+    <cell col="1" row="8">별표의 용지측량 성과 등의 종류에 따른다</cell>
+    <cell col="2" row="8">제130조</cell>
+  </row>
+  <row>
+    <cell col="0" row="9">토지구획정리측량</cell>
+    <cell col="1" row="9">지구계점 측량성과 점검 기록부(별표 26) / 가구면적 대비표(별표 27) / 가구점계산 점검부(별표 28) / 가구점간 거리 점검부(별표 29) / 획지면적 대비표(별표 30) / 지목별 토지이용현황(별표 31)</cell>
+    <cell col="2" row="9">제167조</cell>
+  </row>
+  <row>
+    <cell col="0" row="10">지하시설물측량</cell>
+    <cell col="1" row="10">수집한 관련자료 / 현지보완측량의 성과 / 조사결과를 정리한 도면 / 측량성과 / GPR 탐사조서(별표 43) / 작업조서 / 정위치편집 파일 / 구조화편집 파일 및 설명서 / 도면제작 편집 파일 / 메타데이터 / 성과관리 및 점검파일 / 그 밖의 자료</cell>
+    <cell col="2" row="10">제191조</cell>
+  </row>
+  <row>
+    <cell col="0" row="11">지상라이다측량(신설)</cell>
+    <cell col="1" row="11">원시데이터 및 관련 자료 / 기준점데이터 / 기타 성과데이터 / 관측위치도 / 성과보정 관련 자료 / 정확도 관리표 / 품질평가표 / 메타데이터 / 그 밖의 자료</cell>
+    <cell col="2" row="11">지상라이다 지침 제29조</cell>
+  </row>
+  <row>
+    <cell col="0" row="12">(비고) 1. 작업방법에 따라 일부를 생략하거나 더할 수 있다. 이 경우 시행자의 지시 또는 승인을 받는다.</cell>
+    <cell col="1" row="12"></cell>
+    <cell col="2" row="12"></cell>
+  </row>
+  <row>
+    <cell col="0" row="13">(비고) 2. 수치데이터로 수집한 성과 등은 전자적 방식으로 제출한다.</cell>
+    <cell col="1" row="13"></cell>
+    <cell col="2" row="13"></cell>
+  </row>
+  <row>
+    <cell col="0" row="14">(비고) 3. 지하시설물측량의 목록정보는 「국가공간정보 기본법」 제23조제1항에 따라 작성한다.</cell>
+    <cell col="1" row="14"></cell>
+    <cell col="2" row="14"></cell>
+  </row>
+  <row>
+    <cell col="0" row="15">(비고) 4. 토지구획정리측량은 시행자가 지정하여 측량용역 보고서를 작성하는 경우 성과품의 일부 또는 전부를 보고서에 포함시킬 수 있다.</cell>
+    <cell col="1" row="15"></cell>
+    <cell col="2" row="15"></cell>
+  </row>
+</table>

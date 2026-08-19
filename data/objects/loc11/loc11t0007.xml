@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0007" article="제37조(観測の実施)" rows="9" cols="7" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">区 分 項 目</cell>
+    <cell col="1" row="0" header="1"></cell>
+    <cell col="2" row="0" header="1">１級基準点測量</cell>
+    <cell col="3" row="0" header="1">２級基準点測量</cell>
+    <cell col="4" row="0" header="1"></cell>
+    <cell col="5" row="0" header="1">３級基準点測量</cell>
+    <cell col="6" row="0" header="1">４級基準点測量</cell>
+  </row>
+  <row>
+    <cell col="0" row="1"></cell>
+    <cell col="1" row="1"></cell>
+    <cell col="2" row="1"></cell>
+    <cell col="3" row="1">１級トータルステ ーション、 １級セオドライト</cell>
+    <cell col="4" row="1">２級トータルステ ーション、 ２級セオドライト</cell>
+    <cell col="5" row="1"></cell>
+    <cell col="6" row="1"></cell>
+  </row>
+  <row>
+    <cell col="0" row="2">水 平 角 観 測</cell>
+    <cell col="1" row="2">読定単位</cell>
+    <cell col="2" row="2">１″</cell>
+    <cell col="3" row="2">１″</cell>
+    <cell col="4" row="2">10″</cell>
+    <cell col="5" row="2">10″</cell>
+    <cell col="6" row="2">20″</cell>
+  </row>
+  <row>
+    <cell col="0" row="3"></cell>
+    <cell col="1" row="3">対回数</cell>
+    <cell col="2" row="3">２</cell>
+    <cell col="3" row="3">２</cell>
+    <cell col="4" row="3">３</cell>
+    <cell col="5" row="3">２</cell>
+    <cell col="6" row="3">２</cell>
+  </row>
+  <row>
+    <cell col="0" row="4"></cell>
+    <cell col="1" row="4">水平目盛 位 置</cell>
+    <cell col="2" row="4">０°、90°</cell>
+    <cell col="3" row="4">０°、90°</cell>
+    <cell col="4" row="4">０°、60°、 120°</cell>
+    <cell col="5" row="4">０°、90°</cell>
+    <cell col="6" row="4">０°、90°</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">鉛 直 角 観 測</cell>
+    <cell col="1" row="5">読定単位</cell>
+    <cell col="2" row="5">１″</cell>
+    <cell col="3" row="5">１″</cell>
+    <cell col="4" row="5">10″</cell>
+    <cell col="5" row="5">10″</cell>
+    <cell col="6" row="5">20″</cell>
+  </row>
+  <row>
+    <cell col="0" row="6"></cell>
+    <cell col="1" row="6">対回数</cell>
+    <cell col="2" row="6">１</cell>
+    <cell col="3" row="6">１</cell>
+    <cell col="4" row="6">１</cell>
+    <cell col="5" row="6">１</cell>
+    <cell col="6" row="6">１</cell>
+  </row>
+  <row>
+    <cell col="0" row="7">距 離 測 定</cell>
+    <cell col="1" row="7">読定単位</cell>
+    <cell col="2" row="7">１mm</cell>
+    <cell col="3" row="7">１mm</cell>
+    <cell col="4" row="7">１mm</cell>
+    <cell col="5" row="7">１mm</cell>
+    <cell col="6" row="7">１mm</cell>
+  </row>
+  <row>
+    <cell col="0" row="8"></cell>
+    <cell col="1" row="8">セット数</cell>
+    <cell col="2" row="8">２</cell>
+    <cell col="3" row="8">２</cell>
+    <cell col="4" row="8">２</cell>
+    <cell col="5" row="8">２</cell>
+    <cell col="6" row="8">２</cell>
+  </row>
+</table>

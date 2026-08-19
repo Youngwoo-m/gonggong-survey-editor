@@ -1,0 +1,986 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표6" gubun="별표" no="6" title="실내공간정보 속성입력" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=111000039">
+  <text>[별표 6] 실내공간정보 속성입력
+가. 주요속성값</text>
+  <table rows="20" cols="4">
+    <row>
+      <cell col="0" row="0">컬럼명(컬럼ID)</cell>
+      <cell col="1" row="0">타입</cell>
+      <cell col="2" row="0">길이</cell>
+      <cell col="3" row="0">입력값</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">①기본키(PRIMARY KEY)</cell>
+      <cell col="1" row="1">CHAR</cell>
+      <cell col="2" row="1">41</cell>
+      <cell col="3" row="1">③+“_”+⑩</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">②참조키(FOREIGN KEY)</cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2">38</cell>
+      <cell col="3" row="2">3차원객체코드</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">③레이어(LAYER)ID</cell>
+      <cell col="1" row="3"></cell>
+      <cell col="2" row="3">35</cell>
+      <cell col="3" row="3">레이어코드</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">④건물 ID</cell>
+      <cell col="1" row="4"></cell>
+      <cell col="2" row="4">17</cell>
+      <cell col="3" row="4">UFID(공간객체등록번호)</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">⑤층(FLOOR)</cell>
+      <cell col="1" row="5"></cell>
+      <cell col="2" row="5">6</cell>
+      <cell col="3" row="5">지하1층 → “B01B01”,  지상1층 →“F01F01”,  로비층 → “L01L01”
+지하1층지상1층 → “B01F01”</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">⑥구분(DIVISION)</cell>
+      <cell col="1" row="6"></cell>
+      <cell col="2" row="6">2</cell>
+      <cell col="3" row="6">이동 → “MV”,  안내 →“IF”,  편의 → “CV”, 운수 → “TP”
+안전 → “SF”,  소방 →“FF”,  판매 → “SL”, 의료 → “MD”
+주거 →“HS”, 업무 →“BS”, 관리 → “MN”, 구조 → “IS”</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">⑦구조(CLASSIFY)</cell>
+      <cell col="1" row="7"></cell>
+      <cell col="2" row="7">2</cell>
+      <cell col="3" row="7">공간 → “RM”, 시설물 → “FC”, 천정 → “CL”, 벽 → “WL”, 
+바닥 → “FL”, 문 → “DR”, 창문 → “WD”, 기둥 → “PL”</cell>
+    </row>
+    <row>
+      <cell col="0" row="8">⑧세부항목(KIND)</cell>
+      <cell col="1" row="8"></cell>
+      <cell col="2" row="8">50</cell>
+      <cell col="3" row="8">“카페”, “식당”, “소화전”, “공중전화” 등</cell>
+    </row>
+    <row>
+      <cell col="0" row="9">⑨세부항목_영문(KANDENG)</cell>
+      <cell col="1" row="9"></cell>
+      <cell col="2" row="9">100</cell>
+      <cell col="3" row="9">“CAFE”, “RESTAURANT” 등</cell>
+    </row>
+    <row>
+      <cell col="0" row="10">⑩일련번호(SERIAL)</cell>
+      <cell col="1" row="10"></cell>
+      <cell col="2" row="10">5</cell>
+      <cell col="3" row="10">“00001”, “00002”</cell>
+    </row>
+    <row>
+      <cell col="0" row="11">⑩명칭(NAME)</cell>
+      <cell col="1" row="11"></cell>
+      <cell col="2" row="11">50</cell>
+      <cell col="3" row="11">“스타벅스”, “김밥천국”
+시설물의 경우 현재층_공간(+_시설명) &quot;1층_복도_소화전&quot;
+객석/좌석일 경우 객석번호 입력</cell>
+    </row>
+    <row>
+      <cell col="0" row="12">⑫재질(QAL)</cell>
+      <cell col="1" row="12"></cell>
+      <cell col="2" row="12">6</cell>
+      <cell col="3" row="12">미분류 → “QAL000”, 방화 → “QALQ001”, 유리 → “QAL002”, 
+철재 → “QAL003”, 나무 → “QAL004”, 콘크리트 → “QAL005, 
+종이 → “QAL006”, 플라스틱 → “QAL007”, 기타 → “QAL999”</cell>
+    </row>
+    <row>
+      <cell col="0" row="13">⑬경사(SLP)</cell>
+      <cell col="1" row="13"></cell>
+      <cell col="2" row="13">6</cell>
+      <cell col="3" row="13">미분류 → “SLP000”, 경사로없음 → “SLP001”, 
+휠체어경사로 → “SLP002”, 자전거경사로 → “SLP003”,
+통합경사로 → “SLP004”, 기타 → “SLP999”</cell>
+    </row>
+    <row>
+      <cell col="0" row="14">⑭진행방향(DIR)</cell>
+      <cell col="1" row="14"></cell>
+      <cell col="2" row="14">6</cell>
+      <cell col="3" row="14">미분류 → “DIR000”, 상행 → “DIR001”, 하행 → “DIR002”,
+양방향 → “DIR003”, 기타 → “DIR999”</cell>
+    </row>
+    <row>
+      <cell col="0" row="15">⑮내외부(SKT)</cell>
+      <cell col="1" row="15"></cell>
+      <cell col="2" row="15">6</cell>
+      <cell col="3" row="15">미분류 → “SKT000”, 내부 → “SKT001”, 외부 → “SKT002”
+기타 → “SKT999”</cell>
+    </row>
+    <row>
+      <cell col="0" row="16">⑯교통약자(HANDICAP)</cell>
+      <cell col="1" row="16"></cell>
+      <cell col="2" row="16">6</cell>
+      <cell col="3" row="16">교통약자 이동가능 → “HCP000”, 교통약자 전용 → “HCP001”, 교통약자 이동불가 → “HCP002”</cell>
+    </row>
+    <row>
+      <cell col="0" row="17">⑰첫번째점(FPOINT)</cell>
+      <cell col="1" row="17"></cell>
+      <cell col="2" row="17">36</cell>
+      <cell col="3" row="17">경로연결 시작 지점 PRIMARY KEY 값</cell>
+    </row>
+    <row>
+      <cell col="0" row="18">⑱두번째점(SPOINT)</cell>
+      <cell col="1" row="18"></cell>
+      <cell col="2" row="18">36</cell>
+      <cell col="3" row="18">경로연결 끝 지점 PRIMARY KEY 값</cell>
+    </row>
+    <row>
+      <cell col="0" row="19">⑯기타</cell>
+      <cell col="1" row="19"></cell>
+      <cell col="2" row="19">50</cell>
+      <cell col="3" row="19"></cell>
+    </row>
+  </table>
+  <text>나. 레이어정의 테이블 형식</text>
+  <table rows="22" cols="10">
+    <row>
+      <cell col="0" row="0" colspan="10">경로네트워크 레이어정의서</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="2">주제영역명</cell>
+      <cell col="2" row="1">경로네트워크</cell>
+      <cell col="3" row="1">작성일</cell>
+      <cell col="4" row="1" colspan="4">YYYY-MM-DD</cell>
+      <cell col="8" row="1">작성자</cell>
+      <cell col="9" row="1">OOO</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">레이어ID</cell>
+      <cell col="2" row="2">L_B00100000001AULW1_F01F01_MV_LINE</cell>
+      <cell col="3" row="2">레이어명</cell>
+      <cell col="4" row="2" colspan="4">경로</cell>
+      <cell col="8" row="2">구분</cell>
+      <cell col="9" row="2">선형</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">레이어설명</cell>
+      <cell col="2" row="3" colspan="8">시설명(건물명)+층+레이어명 (ex : 강릉아이스아레나_1층_경로)</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">NO</cell>
+      <cell col="1" row="4">컬럼ID</cell>
+      <cell col="2" row="4">컬럼명</cell>
+      <cell col="3" row="4">타입</cell>
+      <cell col="4" row="4">길이</cell>
+      <cell col="5" row="4">NULL</cell>
+      <cell col="6" row="4" colspan="2">KEY</cell>
+      <cell col="8" row="4">DEFAULT</cell>
+      <cell col="9" row="4">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">1</cell>
+      <cell col="1" row="5">PRIMARYKEY</cell>
+      <cell col="2" row="5">기본키</cell>
+      <cell col="3" row="5">CHAR</cell>
+      <cell col="4" row="5">41</cell>
+      <cell col="5" row="5">NotNull</cell>
+      <cell col="6" row="5" colspan="2">O</cell>
+      <cell col="8" row="5"></cell>
+      <cell col="9" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">2</cell>
+      <cell col="1" row="6">LAYER</cell>
+      <cell col="2" row="6">레이어코드</cell>
+      <cell col="3" row="6">CHAR</cell>
+      <cell col="4" row="6">35</cell>
+      <cell col="5" row="6">NotNull</cell>
+      <cell col="6" row="6" colspan="2"></cell>
+      <cell col="8" row="6"></cell>
+      <cell col="9" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">3</cell>
+      <cell col="1" row="7">ID</cell>
+      <cell col="2" row="7">UFID(공각객체등록번호)</cell>
+      <cell col="3" row="7">CHAR</cell>
+      <cell col="4" row="7">17</cell>
+      <cell col="5" row="7">NotNull</cell>
+      <cell col="6" row="7" colspan="2"></cell>
+      <cell col="8" row="7"></cell>
+      <cell col="9" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8">4</cell>
+      <cell col="1" row="8">FLOOR</cell>
+      <cell col="2" row="8">층</cell>
+      <cell col="3" row="8">CHAR</cell>
+      <cell col="4" row="8">6</cell>
+      <cell col="5" row="8">NotNull</cell>
+      <cell col="6" row="8" colspan="2"></cell>
+      <cell col="8" row="8"></cell>
+      <cell col="9" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">5</cell>
+      <cell col="1" row="9">DIVISION</cell>
+      <cell col="2" row="9">구분</cell>
+      <cell col="3" row="9">CHAR</cell>
+      <cell col="4" row="9">2</cell>
+      <cell col="5" row="9">NotNull</cell>
+      <cell col="6" row="9" colspan="2"></cell>
+      <cell col="8" row="9"></cell>
+      <cell col="9" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10">6</cell>
+      <cell col="1" row="10">KIND</cell>
+      <cell col="2" row="10">세부항목</cell>
+      <cell col="3" row="10">CHAR</cell>
+      <cell col="4" row="10">50</cell>
+      <cell col="5" row="10">NotNull</cell>
+      <cell col="6" row="10" colspan="2"></cell>
+      <cell col="8" row="10"></cell>
+      <cell col="9" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11">7</cell>
+      <cell col="1" row="11">KINDENG</cell>
+      <cell col="2" row="11">세분항목 영문</cell>
+      <cell col="3" row="11">CHAR</cell>
+      <cell col="4" row="11">100</cell>
+      <cell col="5" row="11">NotNull</cell>
+      <cell col="6" row="11" colspan="2"></cell>
+      <cell col="8" row="11"></cell>
+      <cell col="9" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12">8</cell>
+      <cell col="1" row="12">SERIAL</cell>
+      <cell col="2" row="12">일련번호</cell>
+      <cell col="3" row="12">CHAR</cell>
+      <cell col="4" row="12">5</cell>
+      <cell col="5" row="12">NotNull</cell>
+      <cell col="6" row="12" colspan="2"></cell>
+      <cell col="8" row="12"></cell>
+      <cell col="9" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13">9</cell>
+      <cell col="1" row="13">NAME</cell>
+      <cell col="2" row="13">명칭</cell>
+      <cell col="3" row="13">CHAR</cell>
+      <cell col="4" row="13">50</cell>
+      <cell col="5" row="13">NotNull</cell>
+      <cell col="6" row="13" colspan="2"></cell>
+      <cell col="8" row="13"></cell>
+      <cell col="9" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14">10</cell>
+      <cell col="1" row="14">SLP</cell>
+      <cell col="2" row="14">경사</cell>
+      <cell col="3" row="14">CHAR</cell>
+      <cell col="4" row="14">6</cell>
+      <cell col="5" row="14">NotNull</cell>
+      <cell col="6" row="14" colspan="2"></cell>
+      <cell col="8" row="14"></cell>
+      <cell col="9" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15">11</cell>
+      <cell col="1" row="15">DIR</cell>
+      <cell col="2" row="15">진행방향</cell>
+      <cell col="3" row="15">CHAR</cell>
+      <cell col="4" row="15">6</cell>
+      <cell col="5" row="15">NotNull</cell>
+      <cell col="6" row="15" colspan="2"></cell>
+      <cell col="8" row="15"></cell>
+      <cell col="9" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16">12</cell>
+      <cell col="1" row="16">SKT</cell>
+      <cell col="2" row="16">내외부</cell>
+      <cell col="3" row="16">CHAR</cell>
+      <cell col="4" row="16">6</cell>
+      <cell col="5" row="16">NotNull</cell>
+      <cell col="6" row="16" colspan="2"></cell>
+      <cell col="8" row="16"></cell>
+      <cell col="9" row="16"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17">13</cell>
+      <cell col="1" row="17">HANDICAP</cell>
+      <cell col="2" row="17">교통약자 구분</cell>
+      <cell col="3" row="17">CHAR</cell>
+      <cell col="4" row="17">6</cell>
+      <cell col="5" row="17">NotNull</cell>
+      <cell col="6" row="17" colspan="2"></cell>
+      <cell col="8" row="17"></cell>
+      <cell col="9" row="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18">14</cell>
+      <cell col="1" row="18">FPOINT</cell>
+      <cell col="2" row="18">시작점(기본키)</cell>
+      <cell col="3" row="18">CHAR</cell>
+      <cell col="4" row="18">36</cell>
+      <cell col="5" row="18">NotNull</cell>
+      <cell col="6" row="18" colspan="2"></cell>
+      <cell col="8" row="18"></cell>
+      <cell col="9" row="18"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19">15</cell>
+      <cell col="1" row="19">SPOINT</cell>
+      <cell col="2" row="19">끝점(기본키)</cell>
+      <cell col="3" row="19">CHAR</cell>
+      <cell col="4" row="19">36</cell>
+      <cell col="5" row="19">NotNull</cell>
+      <cell col="6" row="19" colspan="2"></cell>
+      <cell col="8" row="19"></cell>
+      <cell col="9" row="19"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20" colspan="2">기본키</cell>
+      <cell col="2" row="20" colspan="2"></cell>
+      <cell col="4" row="20" colspan="3">참조키</cell>
+      <cell col="7" row="20" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21" colspan="2">업무규칙</cell>
+      <cell col="2" row="21" colspan="8"></cell>
+    </row>
+  </table>
+  <table rows="22" cols="10">
+    <row>
+      <cell col="0" row="0" colspan="10">경로네트워크 레이어정의서</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="2">주제영역명</cell>
+      <cell col="2" row="1">경로네트워크</cell>
+      <cell col="3" row="1">작성일</cell>
+      <cell col="4" row="1" colspan="4">YYYY-MM-DD</cell>
+      <cell col="8" row="1">작성자</cell>
+      <cell col="9" row="1">OOO</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">레이어ID</cell>
+      <cell col="2" row="2">L_B00100000001AULW1_F01F01_MV_POINT</cell>
+      <cell col="3" row="2">레이어명</cell>
+      <cell col="4" row="2" colspan="4">지점</cell>
+      <cell col="8" row="2">구분</cell>
+      <cell col="9" row="2">점형</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">레이어설명</cell>
+      <cell col="2" row="3" colspan="8">시설명(건물명)+층+레이어명 (ex : 강릉아이스아레나_1층_지점)</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">NO</cell>
+      <cell col="1" row="4">컬럼ID</cell>
+      <cell col="2" row="4">컬럼명</cell>
+      <cell col="3" row="4">타입</cell>
+      <cell col="4" row="4">길이</cell>
+      <cell col="5" row="4">NULL</cell>
+      <cell col="6" row="4" colspan="2">KEY</cell>
+      <cell col="8" row="4">DEFAULT</cell>
+      <cell col="9" row="4">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">1</cell>
+      <cell col="1" row="5">PRIMARYKEY</cell>
+      <cell col="2" row="5">기본키</cell>
+      <cell col="3" row="5">CHAR</cell>
+      <cell col="4" row="5">41</cell>
+      <cell col="5" row="5">NotNull</cell>
+      <cell col="6" row="5" colspan="2">O</cell>
+      <cell col="8" row="5"></cell>
+      <cell col="9" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">2</cell>
+      <cell col="1" row="6">LAYER</cell>
+      <cell col="2" row="6">레이어코드</cell>
+      <cell col="3" row="6">CHAR</cell>
+      <cell col="4" row="6">35</cell>
+      <cell col="5" row="6">NotNull</cell>
+      <cell col="6" row="6" colspan="2"></cell>
+      <cell col="8" row="6"></cell>
+      <cell col="9" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">3</cell>
+      <cell col="1" row="7">ID</cell>
+      <cell col="2" row="7">UFID(공각객체등록번호)</cell>
+      <cell col="3" row="7">CHAR</cell>
+      <cell col="4" row="7">17</cell>
+      <cell col="5" row="7">NotNull</cell>
+      <cell col="6" row="7" colspan="2"></cell>
+      <cell col="8" row="7"></cell>
+      <cell col="9" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8">4</cell>
+      <cell col="1" row="8">FLOOR</cell>
+      <cell col="2" row="8">층</cell>
+      <cell col="3" row="8">CHAR</cell>
+      <cell col="4" row="8">6</cell>
+      <cell col="5" row="8">NotNull</cell>
+      <cell col="6" row="8" colspan="2"></cell>
+      <cell col="8" row="8"></cell>
+      <cell col="9" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">5</cell>
+      <cell col="1" row="9">DIVISION</cell>
+      <cell col="2" row="9">구분</cell>
+      <cell col="3" row="9">CHAR</cell>
+      <cell col="4" row="9">2</cell>
+      <cell col="5" row="9">NotNull</cell>
+      <cell col="6" row="9" colspan="2"></cell>
+      <cell col="8" row="9"></cell>
+      <cell col="9" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10">6</cell>
+      <cell col="1" row="10">KIND</cell>
+      <cell col="2" row="10">세부항목</cell>
+      <cell col="3" row="10">CHAR</cell>
+      <cell col="4" row="10">50</cell>
+      <cell col="5" row="10">NotNull</cell>
+      <cell col="6" row="10" colspan="2"></cell>
+      <cell col="8" row="10"></cell>
+      <cell col="9" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11">7</cell>
+      <cell col="1" row="11">KINDENG</cell>
+      <cell col="2" row="11">세분항목 영문</cell>
+      <cell col="3" row="11">CHAR</cell>
+      <cell col="4" row="11">100</cell>
+      <cell col="5" row="11">NotNull</cell>
+      <cell col="6" row="11" colspan="2"></cell>
+      <cell col="8" row="11"></cell>
+      <cell col="9" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12">8</cell>
+      <cell col="1" row="12">SERIAL</cell>
+      <cell col="2" row="12">일련번호</cell>
+      <cell col="3" row="12">CHAR</cell>
+      <cell col="4" row="12">5</cell>
+      <cell col="5" row="12">NotNull</cell>
+      <cell col="6" row="12" colspan="2"></cell>
+      <cell col="8" row="12"></cell>
+      <cell col="9" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13">9</cell>
+      <cell col="1" row="13">NAME</cell>
+      <cell col="2" row="13">명칭</cell>
+      <cell col="3" row="13">CHAR</cell>
+      <cell col="4" row="13">50</cell>
+      <cell col="5" row="13">NotNull</cell>
+      <cell col="6" row="13" colspan="2"></cell>
+      <cell col="8" row="13"></cell>
+      <cell col="9" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14">10</cell>
+      <cell col="1" row="14">SLP</cell>
+      <cell col="2" row="14">경사</cell>
+      <cell col="3" row="14">CHAR</cell>
+      <cell col="4" row="14">6</cell>
+      <cell col="5" row="14">NotNull</cell>
+      <cell col="6" row="14" colspan="2"></cell>
+      <cell col="8" row="14"></cell>
+      <cell col="9" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15">11</cell>
+      <cell col="1" row="15">DIR</cell>
+      <cell col="2" row="15">진행방향</cell>
+      <cell col="3" row="15">CHAR</cell>
+      <cell col="4" row="15">6</cell>
+      <cell col="5" row="15">NotNull</cell>
+      <cell col="6" row="15" colspan="2"></cell>
+      <cell col="8" row="15"></cell>
+      <cell col="9" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16">12</cell>
+      <cell col="1" row="16">SKT</cell>
+      <cell col="2" row="16">내외부</cell>
+      <cell col="3" row="16">CHAR</cell>
+      <cell col="4" row="16">6</cell>
+      <cell col="5" row="16">NotNull</cell>
+      <cell col="6" row="16" colspan="2"></cell>
+      <cell col="8" row="16"></cell>
+      <cell col="9" row="16"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17">13</cell>
+      <cell col="1" row="17">HANDICAP</cell>
+      <cell col="2" row="17">교통약자 구분</cell>
+      <cell col="3" row="17">CHAR</cell>
+      <cell col="4" row="17">6</cell>
+      <cell col="5" row="17">NotNull</cell>
+      <cell col="6" row="17" colspan="2"></cell>
+      <cell col="8" row="17"></cell>
+      <cell col="9" row="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18">14</cell>
+      <cell col="1" row="18">FPOINT</cell>
+      <cell col="2" row="18">시작점(기본키)</cell>
+      <cell col="3" row="18">CHAR</cell>
+      <cell col="4" row="18">36</cell>
+      <cell col="5" row="18">NotNull</cell>
+      <cell col="6" row="18" colspan="2"></cell>
+      <cell col="8" row="18"></cell>
+      <cell col="9" row="18"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19">15</cell>
+      <cell col="1" row="19">SPOINT</cell>
+      <cell col="2" row="19">끝점(기본키)</cell>
+      <cell col="3" row="19">CHAR</cell>
+      <cell col="4" row="19">36</cell>
+      <cell col="5" row="19">NotNull</cell>
+      <cell col="6" row="19" colspan="2"></cell>
+      <cell col="8" row="19"></cell>
+      <cell col="9" row="19"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20" colspan="2">기본키</cell>
+      <cell col="2" row="20" colspan="2"></cell>
+      <cell col="4" row="20" colspan="3">참조키</cell>
+      <cell col="7" row="20" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21" colspan="2">업무규칙</cell>
+      <cell col="2" row="21" colspan="8"></cell>
+    </row>
+  </table>
+  <table rows="22" cols="10">
+    <row>
+      <cell col="0" row="0" colspan="10">시설물 레이어정의서</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="2">주제영역명</cell>
+      <cell col="2" row="1">공간</cell>
+      <cell col="3" row="1">작성일</cell>
+      <cell col="4" row="1" colspan="4">YYYY-MM-DD</cell>
+      <cell col="8" row="1">작성자</cell>
+      <cell col="9" row="1">OOO</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">레이어ID</cell>
+      <cell col="2" row="2">L_B00100000001AULW1_F01F01_MV_RM</cell>
+      <cell col="3" row="2">레이어명</cell>
+      <cell col="4" row="2" colspan="4">중분류_소분류
+(이동_공간)</cell>
+      <cell col="8" row="2">구분</cell>
+      <cell col="9" row="2">면형</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">레이어설명</cell>
+      <cell col="2" row="3" colspan="8">시설명(건물명)+층+레이어명 (ex : 강릉아이스아레나_1층_이동_공간)</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">NO</cell>
+      <cell col="1" row="4">컬럼ID</cell>
+      <cell col="2" row="4">컬럼명</cell>
+      <cell col="3" row="4">타입</cell>
+      <cell col="4" row="4">길이</cell>
+      <cell col="5" row="4">NULL</cell>
+      <cell col="6" row="4" colspan="2">KEY</cell>
+      <cell col="8" row="4">DEFAULT</cell>
+      <cell col="9" row="4">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">1</cell>
+      <cell col="1" row="5">PRIMARYKEY</cell>
+      <cell col="2" row="5">기본키</cell>
+      <cell col="3" row="5">CHAR</cell>
+      <cell col="4" row="5">41</cell>
+      <cell col="5" row="5">NotNull</cell>
+      <cell col="6" row="5" colspan="2">O</cell>
+      <cell col="8" row="5"></cell>
+      <cell col="9" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">2</cell>
+      <cell col="1" row="6">FOREIGNKEY</cell>
+      <cell col="2" row="6">3차원 객체코드</cell>
+      <cell col="3" row="6">CHAR</cell>
+      <cell col="4" row="6">38</cell>
+      <cell col="5" row="6">NotNull</cell>
+      <cell col="6" row="6" colspan="2"></cell>
+      <cell col="8" row="6"></cell>
+      <cell col="9" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">3</cell>
+      <cell col="1" row="7">LAYER</cell>
+      <cell col="2" row="7">레이어코드</cell>
+      <cell col="3" row="7">CHAR</cell>
+      <cell col="4" row="7">35</cell>
+      <cell col="5" row="7">NotNull</cell>
+      <cell col="6" row="7" colspan="2"></cell>
+      <cell col="8" row="7"></cell>
+      <cell col="9" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8">4</cell>
+      <cell col="1" row="8">ID</cell>
+      <cell col="2" row="8">UFID(공각객체등록번호)</cell>
+      <cell col="3" row="8">CHAR</cell>
+      <cell col="4" row="8">17</cell>
+      <cell col="5" row="8">NotNull</cell>
+      <cell col="6" row="8" colspan="2"></cell>
+      <cell col="8" row="8"></cell>
+      <cell col="9" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">5</cell>
+      <cell col="1" row="9">FLOOR</cell>
+      <cell col="2" row="9">층</cell>
+      <cell col="3" row="9">CHAR</cell>
+      <cell col="4" row="9">6</cell>
+      <cell col="5" row="9">NotNull</cell>
+      <cell col="6" row="9" colspan="2"></cell>
+      <cell col="8" row="9"></cell>
+      <cell col="9" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10">6</cell>
+      <cell col="1" row="10">DIVISION</cell>
+      <cell col="2" row="10">구분</cell>
+      <cell col="3" row="10">CHAR</cell>
+      <cell col="4" row="10">2</cell>
+      <cell col="5" row="10">NotNull</cell>
+      <cell col="6" row="10" colspan="2"></cell>
+      <cell col="8" row="10"></cell>
+      <cell col="9" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11">7</cell>
+      <cell col="1" row="11">CLASSIFY</cell>
+      <cell col="2" row="11">구조</cell>
+      <cell col="3" row="11">CHAR</cell>
+      <cell col="4" row="11">2</cell>
+      <cell col="5" row="11">NotNull</cell>
+      <cell col="6" row="11" colspan="2"></cell>
+      <cell col="8" row="11"></cell>
+      <cell col="9" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12">8</cell>
+      <cell col="1" row="12">KIND</cell>
+      <cell col="2" row="12">세부항목</cell>
+      <cell col="3" row="12">CHAR</cell>
+      <cell col="4" row="12">50</cell>
+      <cell col="5" row="12">NotNull</cell>
+      <cell col="6" row="12" colspan="2"></cell>
+      <cell col="8" row="12"></cell>
+      <cell col="9" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13">9</cell>
+      <cell col="1" row="13">KINDENG</cell>
+      <cell col="2" row="13">세분항목 영문</cell>
+      <cell col="3" row="13">CHAR</cell>
+      <cell col="4" row="13">100</cell>
+      <cell col="5" row="13">NotNull</cell>
+      <cell col="6" row="13" colspan="2"></cell>
+      <cell col="8" row="13"></cell>
+      <cell col="9" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14">10</cell>
+      <cell col="1" row="14">SERIAL</cell>
+      <cell col="2" row="14">일련번호</cell>
+      <cell col="3" row="14">CHAR</cell>
+      <cell col="4" row="14">5</cell>
+      <cell col="5" row="14">NotNull</cell>
+      <cell col="6" row="14" colspan="2"></cell>
+      <cell col="8" row="14"></cell>
+      <cell col="9" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15">11</cell>
+      <cell col="1" row="15">NAME</cell>
+      <cell col="2" row="15">명칭</cell>
+      <cell col="3" row="15">CHAR</cell>
+      <cell col="4" row="15">50</cell>
+      <cell col="5" row="15">NotNull</cell>
+      <cell col="6" row="15" colspan="2"></cell>
+      <cell col="8" row="15"></cell>
+      <cell col="9" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16">12</cell>
+      <cell col="1" row="16">QAL</cell>
+      <cell col="2" row="16">재질</cell>
+      <cell col="3" row="16">CHAR</cell>
+      <cell col="4" row="16">6</cell>
+      <cell col="5" row="16">NotNull</cell>
+      <cell col="6" row="16" colspan="2"></cell>
+      <cell col="8" row="16">QAL000</cell>
+      <cell col="9" row="16"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17">13</cell>
+      <cell col="1" row="17">SLP</cell>
+      <cell col="2" row="17">경사</cell>
+      <cell col="3" row="17">CHAR</cell>
+      <cell col="4" row="17">6</cell>
+      <cell col="5" row="17">NotNull</cell>
+      <cell col="6" row="17" colspan="2"></cell>
+      <cell col="8" row="17">SLP000</cell>
+      <cell col="9" row="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18">14</cell>
+      <cell col="1" row="18">DIR</cell>
+      <cell col="2" row="18">진행방향</cell>
+      <cell col="3" row="18">CHAR</cell>
+      <cell col="4" row="18">6</cell>
+      <cell col="5" row="18">NotNull</cell>
+      <cell col="6" row="18" colspan="2"></cell>
+      <cell col="8" row="18">DIR000</cell>
+      <cell col="9" row="18"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19">15</cell>
+      <cell col="1" row="19">SKT</cell>
+      <cell col="2" row="19">내외부</cell>
+      <cell col="3" row="19">CHAR</cell>
+      <cell col="4" row="19">6</cell>
+      <cell col="5" row="19">NotNull</cell>
+      <cell col="6" row="19" colspan="2"></cell>
+      <cell col="8" row="19">SKT000</cell>
+      <cell col="9" row="19"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20" colspan="2">기본키</cell>
+      <cell col="2" row="20" colspan="2"></cell>
+      <cell col="4" row="20" colspan="3"></cell>
+      <cell col="7" row="20" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21" colspan="2">업무규칙</cell>
+      <cell col="2" row="21" colspan="8"></cell>
+    </row>
+  </table>
+  <table rows="22" cols="10">
+    <row>
+      <cell col="0" row="0" colspan="10">시설물 레이어정의서</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="2">주제영역명</cell>
+      <cell col="2" row="1">시설물</cell>
+      <cell col="3" row="1">작성일</cell>
+      <cell col="4" row="1" colspan="4">YYYY-MM-DD</cell>
+      <cell col="8" row="1">작성자</cell>
+      <cell col="9" row="1">OOO</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">레이어ID</cell>
+      <cell col="2" row="2">L_B00100000001AULW1_F01F01_MV_FC</cell>
+      <cell col="3" row="2">레이어명</cell>
+      <cell col="4" row="2" colspan="4">중분류_소분류
+(이동_시설물)</cell>
+      <cell col="8" row="2">구분</cell>
+      <cell col="9" row="2">점형</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">레이어설명</cell>
+      <cell col="2" row="3" colspan="8">시설명(건물명)+층+레이어명 (ex : 강릉아이스아레나_1층_이동_시설물)</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">NO</cell>
+      <cell col="1" row="4">컬럼ID</cell>
+      <cell col="2" row="4">컬럼명</cell>
+      <cell col="3" row="4">타입</cell>
+      <cell col="4" row="4">길이</cell>
+      <cell col="5" row="4">NULL</cell>
+      <cell col="6" row="4" colspan="2">KEY</cell>
+      <cell col="8" row="4">DEFAULT</cell>
+      <cell col="9" row="4">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">1</cell>
+      <cell col="1" row="5">PRIMARYKEY</cell>
+      <cell col="2" row="5">기본키</cell>
+      <cell col="3" row="5">CHAR</cell>
+      <cell col="4" row="5">41</cell>
+      <cell col="5" row="5">NotNull</cell>
+      <cell col="6" row="5" colspan="2">O</cell>
+      <cell col="8" row="5"></cell>
+      <cell col="9" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">2</cell>
+      <cell col="1" row="6">FOREIGNKEY</cell>
+      <cell col="2" row="6">3차원 객체코드</cell>
+      <cell col="3" row="6">CHAR</cell>
+      <cell col="4" row="6">38</cell>
+      <cell col="5" row="6">NotNull</cell>
+      <cell col="6" row="6" colspan="2"></cell>
+      <cell col="8" row="6"></cell>
+      <cell col="9" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">3</cell>
+      <cell col="1" row="7">LAYER</cell>
+      <cell col="2" row="7">레이어코드</cell>
+      <cell col="3" row="7">CHAR</cell>
+      <cell col="4" row="7">35</cell>
+      <cell col="5" row="7">NotNull</cell>
+      <cell col="6" row="7" colspan="2"></cell>
+      <cell col="8" row="7"></cell>
+      <cell col="9" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8">4</cell>
+      <cell col="1" row="8">ID</cell>
+      <cell col="2" row="8">UFID(공각객체등록번호)</cell>
+      <cell col="3" row="8">CHAR</cell>
+      <cell col="4" row="8">17</cell>
+      <cell col="5" row="8">NotNull</cell>
+      <cell col="6" row="8" colspan="2"></cell>
+      <cell col="8" row="8"></cell>
+      <cell col="9" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">5</cell>
+      <cell col="1" row="9">FLOOR</cell>
+      <cell col="2" row="9">층</cell>
+      <cell col="3" row="9">CHAR</cell>
+      <cell col="4" row="9">6</cell>
+      <cell col="5" row="9">NotNull</cell>
+      <cell col="6" row="9" colspan="2"></cell>
+      <cell col="8" row="9"></cell>
+      <cell col="9" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10">6</cell>
+      <cell col="1" row="10">DIVISION</cell>
+      <cell col="2" row="10">구분</cell>
+      <cell col="3" row="10">CHAR</cell>
+      <cell col="4" row="10">2</cell>
+      <cell col="5" row="10">NotNull</cell>
+      <cell col="6" row="10" colspan="2"></cell>
+      <cell col="8" row="10"></cell>
+      <cell col="9" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11">7</cell>
+      <cell col="1" row="11">CLASSIFY</cell>
+      <cell col="2" row="11">구조</cell>
+      <cell col="3" row="11">CHAR</cell>
+      <cell col="4" row="11">2</cell>
+      <cell col="5" row="11">NotNull</cell>
+      <cell col="6" row="11" colspan="2"></cell>
+      <cell col="8" row="11"></cell>
+      <cell col="9" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12">8</cell>
+      <cell col="1" row="12">KIND</cell>
+      <cell col="2" row="12">세부항목</cell>
+      <cell col="3" row="12">CHAR</cell>
+      <cell col="4" row="12">50</cell>
+      <cell col="5" row="12">NotNull</cell>
+      <cell col="6" row="12" colspan="2"></cell>
+      <cell col="8" row="12"></cell>
+      <cell col="9" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13">9</cell>
+      <cell col="1" row="13">KINDENG</cell>
+      <cell col="2" row="13">세분항목 영문</cell>
+      <cell col="3" row="13">CHAR</cell>
+      <cell col="4" row="13">100</cell>
+      <cell col="5" row="13">NotNull</cell>
+      <cell col="6" row="13" colspan="2"></cell>
+      <cell col="8" row="13"></cell>
+      <cell col="9" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14">10</cell>
+      <cell col="1" row="14">SERIAL</cell>
+      <cell col="2" row="14">일련번호</cell>
+      <cell col="3" row="14">CHAR</cell>
+      <cell col="4" row="14">5</cell>
+      <cell col="5" row="14">NotNull</cell>
+      <cell col="6" row="14" colspan="2"></cell>
+      <cell col="8" row="14"></cell>
+      <cell col="9" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15">11</cell>
+      <cell col="1" row="15">NAME</cell>
+      <cell col="2" row="15">명칭</cell>
+      <cell col="3" row="15">CHAR</cell>
+      <cell col="4" row="15">50</cell>
+      <cell col="5" row="15">NotNull</cell>
+      <cell col="6" row="15" colspan="2"></cell>
+      <cell col="8" row="15"></cell>
+      <cell col="9" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16">12</cell>
+      <cell col="1" row="16">QAL</cell>
+      <cell col="2" row="16">재질</cell>
+      <cell col="3" row="16">CHAR</cell>
+      <cell col="4" row="16">6</cell>
+      <cell col="5" row="16">NotNull</cell>
+      <cell col="6" row="16" colspan="2"></cell>
+      <cell col="8" row="16">QAL000</cell>
+      <cell col="9" row="16"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17">13</cell>
+      <cell col="1" row="17">SLP</cell>
+      <cell col="2" row="17">경사</cell>
+      <cell col="3" row="17">CHAR</cell>
+      <cell col="4" row="17">6</cell>
+      <cell col="5" row="17">NotNull</cell>
+      <cell col="6" row="17" colspan="2"></cell>
+      <cell col="8" row="17">SLP000</cell>
+      <cell col="9" row="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18">14</cell>
+      <cell col="1" row="18">DIR</cell>
+      <cell col="2" row="18">진행방향</cell>
+      <cell col="3" row="18">CHAR</cell>
+      <cell col="4" row="18">6</cell>
+      <cell col="5" row="18">NotNull</cell>
+      <cell col="6" row="18" colspan="2"></cell>
+      <cell col="8" row="18">DIR000</cell>
+      <cell col="9" row="18"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19">15</cell>
+      <cell col="1" row="19">SKT</cell>
+      <cell col="2" row="19">내외부</cell>
+      <cell col="3" row="19">CHAR</cell>
+      <cell col="4" row="19">6</cell>
+      <cell col="5" row="19">NotNull</cell>
+      <cell col="6" row="19" colspan="2"></cell>
+      <cell col="8" row="19">SKT000</cell>
+      <cell col="9" row="19"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20" colspan="2">기본키</cell>
+      <cell col="2" row="20" colspan="2"></cell>
+      <cell col="4" row="20" colspan="3">참조키</cell>
+      <cell col="7" row="20" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21" colspan="2">업무규칙</cell>
+      <cell col="2" row="21" colspan="8"></cell>
+    </row>
+  </table>
+</annex>

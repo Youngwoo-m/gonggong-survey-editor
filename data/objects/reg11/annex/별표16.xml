@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표16" gubun="별표" no="16" title="타원갱정량 계산표" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=155729971">
+  <text>[별표 16] 타원갱정량 계산표</text>
+  <table rows="26" cols="14">
+    <row>
+      <cell col="0" row="0" colspan="14">타원갱정량 계산표</cell>
+    </row>
+    <row>
+      <cell col="0" row="1"></cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1"></cell>
+      <cell col="4" row="1"></cell>
+      <cell col="5" row="1"></cell>
+      <cell col="6" row="1"></cell>
+      <cell col="7" row="1"></cell>
+      <cell col="8" row="1"></cell>
+      <cell col="9" row="1"></cell>
+      <cell col="10" row="1" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2">수준점번호</cell>
+      <cell col="1" row="2" colspan="2"></cell>
+      <cell col="3" row="2">~</cell>
+      <cell col="4" row="2" colspan="3"></cell>
+      <cell col="7" row="2">수준점번호</cell>
+      <cell col="8" row="2" colspan="2"></cell>
+      <cell col="10" row="2">~</cell>
+      <cell col="11" row="2" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">H1</cell>
+      <cell col="1" row="3"></cell>
+      <cell col="2" row="3">m</cell>
+      <cell col="3" row="3">B1</cell>
+      <cell col="4" row="3"></cell>
+      <cell col="5" row="3"></cell>
+      <cell col="6" row="3"></cell>
+      <cell col="7" row="3">H1</cell>
+      <cell col="8" row="3"></cell>
+      <cell col="9" row="3">m</cell>
+      <cell col="10" row="3">B1</cell>
+      <cell col="11" row="3"></cell>
+      <cell col="12" row="3"></cell>
+      <cell col="13" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4">H2</cell>
+      <cell col="1" row="4"></cell>
+      <cell col="2" row="4">m</cell>
+      <cell col="3" row="4">B2</cell>
+      <cell col="4" row="4"></cell>
+      <cell col="5" row="4"></cell>
+      <cell col="6" row="4"></cell>
+      <cell col="7" row="4">H2</cell>
+      <cell col="8" row="4"></cell>
+      <cell col="9" row="4">m</cell>
+      <cell col="10" row="4">B2</cell>
+      <cell col="11" row="4"></cell>
+      <cell col="12" row="4"></cell>
+      <cell col="13" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" rowspan="2">H
+(H1+H2)/2</cell>
+      <cell col="1" row="5" rowspan="2"></cell>
+      <cell col="2" row="5" rowspan="2">m</cell>
+      <cell col="3" row="5">sin</cell>
+      <cell col="4" row="5" colspan="3"></cell>
+      <cell col="7" row="5" rowspan="2">H
+(H1+H2)/2</cell>
+      <cell col="8" row="5" rowspan="2"></cell>
+      <cell col="9" row="5" rowspan="2">m</cell>
+      <cell col="10" row="5">sin</cell>
+      <cell col="11" row="5" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="3" row="6">(B1+B2)</cell>
+      <cell col="4" row="6"></cell>
+      <cell col="5" row="6"></cell>
+      <cell col="6" row="6"></cell>
+      <cell col="10" row="6">(B1+B2)</cell>
+      <cell col="11" row="6"></cell>
+      <cell col="12" row="6"></cell>
+      <cell col="13" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7"></cell>
+      <cell col="1" row="7" colspan="2"></cell>
+      <cell col="3" row="7">B1-B2</cell>
+      <cell col="4" row="7"></cell>
+      <cell col="5" row="7"></cell>
+      <cell col="6" row="7"></cell>
+      <cell col="7" row="7"></cell>
+      <cell col="8" row="7" colspan="2"></cell>
+      <cell col="10" row="7">B1-B2</cell>
+      <cell col="11" row="7"></cell>
+      <cell col="12" row="7"></cell>
+      <cell col="13" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8">K</cell>
+      <cell col="1" row="8" colspan="2"></cell>
+      <cell col="3" row="8"></cell>
+      <cell col="4" row="8"></cell>
+      <cell col="5" row="8" colspan="2"></cell>
+      <cell col="7" row="8">K</cell>
+      <cell col="8" row="8" colspan="2"></cell>
+      <cell col="10" row="8"></cell>
+      <cell col="11" row="8"></cell>
+      <cell col="12" row="8" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">수준점번호</cell>
+      <cell col="1" row="9" colspan="2"></cell>
+      <cell col="3" row="9">~</cell>
+      <cell col="4" row="9" colspan="3"></cell>
+      <cell col="7" row="9">수준점번호</cell>
+      <cell col="8" row="9" colspan="2"></cell>
+      <cell col="10" row="9">~</cell>
+      <cell col="11" row="9" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10">H1</cell>
+      <cell col="1" row="10"></cell>
+      <cell col="2" row="10">m</cell>
+      <cell col="3" row="10">B1</cell>
+      <cell col="4" row="10"></cell>
+      <cell col="5" row="10"></cell>
+      <cell col="6" row="10"></cell>
+      <cell col="7" row="10">H1</cell>
+      <cell col="8" row="10"></cell>
+      <cell col="9" row="10">m</cell>
+      <cell col="10" row="10">B1</cell>
+      <cell col="11" row="10"></cell>
+      <cell col="12" row="10"></cell>
+      <cell col="13" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11">H2</cell>
+      <cell col="1" row="11"></cell>
+      <cell col="2" row="11">m</cell>
+      <cell col="3" row="11">B2</cell>
+      <cell col="4" row="11"></cell>
+      <cell col="5" row="11"></cell>
+      <cell col="6" row="11"></cell>
+      <cell col="7" row="11">H2</cell>
+      <cell col="8" row="11"></cell>
+      <cell col="9" row="11">m</cell>
+      <cell col="10" row="11">B2</cell>
+      <cell col="11" row="11"></cell>
+      <cell col="12" row="11"></cell>
+      <cell col="13" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12" rowspan="2">H
+(H1+H2)/2</cell>
+      <cell col="1" row="12" rowspan="2"></cell>
+      <cell col="2" row="12" rowspan="2">m</cell>
+      <cell col="3" row="12">sin</cell>
+      <cell col="4" row="12" colspan="3"></cell>
+      <cell col="7" row="12" rowspan="2">H
+(H1+H2)/2</cell>
+      <cell col="8" row="12" rowspan="2"></cell>
+      <cell col="9" row="12" rowspan="2">m</cell>
+      <cell col="10" row="12">sin</cell>
+      <cell col="11" row="12" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="3" row="13">(B1+B2)</cell>
+      <cell col="4" row="13"></cell>
+      <cell col="5" row="13"></cell>
+      <cell col="6" row="13"></cell>
+      <cell col="10" row="13">(B1+B2)</cell>
+      <cell col="11" row="13"></cell>
+      <cell col="12" row="13"></cell>
+      <cell col="13" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14"></cell>
+      <cell col="1" row="14" colspan="2"></cell>
+      <cell col="3" row="14">B1-B2</cell>
+      <cell col="4" row="14"></cell>
+      <cell col="5" row="14"></cell>
+      <cell col="6" row="14"></cell>
+      <cell col="7" row="14"></cell>
+      <cell col="8" row="14" colspan="2"></cell>
+      <cell col="10" row="14">B1-B2</cell>
+      <cell col="11" row="14"></cell>
+      <cell col="12" row="14"></cell>
+      <cell col="13" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15">K</cell>
+      <cell col="1" row="15" colspan="2"></cell>
+      <cell col="3" row="15"></cell>
+      <cell col="4" row="15"></cell>
+      <cell col="5" row="15" colspan="2"></cell>
+      <cell col="7" row="15">K</cell>
+      <cell col="8" row="15" colspan="2"></cell>
+      <cell col="10" row="15"></cell>
+      <cell col="11" row="15"></cell>
+      <cell col="12" row="15" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16">수준점번호</cell>
+      <cell col="1" row="16" colspan="2"></cell>
+      <cell col="3" row="16">~</cell>
+      <cell col="4" row="16" colspan="3"></cell>
+      <cell col="7" row="16">수준점번호</cell>
+      <cell col="8" row="16" colspan="2"></cell>
+      <cell col="10" row="16">~</cell>
+      <cell col="11" row="16" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17">H1</cell>
+      <cell col="1" row="17"></cell>
+      <cell col="2" row="17">m</cell>
+      <cell col="3" row="17">B1</cell>
+      <cell col="4" row="17"></cell>
+      <cell col="5" row="17"></cell>
+      <cell col="6" row="17"></cell>
+      <cell col="7" row="17">H1</cell>
+      <cell col="8" row="17"></cell>
+      <cell col="9" row="17">m</cell>
+      <cell col="10" row="17">B1</cell>
+      <cell col="11" row="17"></cell>
+      <cell col="12" row="17"></cell>
+      <cell col="13" row="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18">H2</cell>
+      <cell col="1" row="18"></cell>
+      <cell col="2" row="18">m</cell>
+      <cell col="3" row="18">B2</cell>
+      <cell col="4" row="18"></cell>
+      <cell col="5" row="18"></cell>
+      <cell col="6" row="18"></cell>
+      <cell col="7" row="18">H2</cell>
+      <cell col="8" row="18"></cell>
+      <cell col="9" row="18">m</cell>
+      <cell col="10" row="18">B2</cell>
+      <cell col="11" row="18"></cell>
+      <cell col="12" row="18"></cell>
+      <cell col="13" row="18"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19" rowspan="2">H
+(H1+H2)/2</cell>
+      <cell col="1" row="19" rowspan="2"></cell>
+      <cell col="2" row="19" rowspan="2">m</cell>
+      <cell col="3" row="19">sin</cell>
+      <cell col="4" row="19" colspan="3"></cell>
+      <cell col="7" row="19" rowspan="2">H
+(H1+H2)/2</cell>
+      <cell col="8" row="19" rowspan="2"></cell>
+      <cell col="9" row="19" rowspan="2">m</cell>
+      <cell col="10" row="19">sin</cell>
+      <cell col="11" row="19" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="3" row="20">(B1+B2)</cell>
+      <cell col="4" row="20"></cell>
+      <cell col="5" row="20"></cell>
+      <cell col="6" row="20"></cell>
+      <cell col="10" row="20">(B1+B2)</cell>
+      <cell col="11" row="20"></cell>
+      <cell col="12" row="20"></cell>
+      <cell col="13" row="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21"></cell>
+      <cell col="1" row="21" colspan="2"></cell>
+      <cell col="3" row="21">B1-B2</cell>
+      <cell col="4" row="21"></cell>
+      <cell col="5" row="21"></cell>
+      <cell col="6" row="21"></cell>
+      <cell col="7" row="21"></cell>
+      <cell col="8" row="21" colspan="2"></cell>
+      <cell col="10" row="21">B1-B2</cell>
+      <cell col="11" row="21"></cell>
+      <cell col="12" row="21"></cell>
+      <cell col="13" row="21"></cell>
+    </row>
+    <row>
+      <cell col="0" row="22">K</cell>
+      <cell col="1" row="22" colspan="2"></cell>
+      <cell col="3" row="22"></cell>
+      <cell col="4" row="22"></cell>
+      <cell col="5" row="22" colspan="2"></cell>
+      <cell col="7" row="22">K</cell>
+      <cell col="8" row="22" colspan="2"></cell>
+      <cell col="10" row="22"></cell>
+      <cell col="11" row="22"></cell>
+      <cell col="12" row="22" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23" colspan="14">계산식 K = 5.29 * sin( B1 + B2 ) * ( B1 - B2 )' / P' * H
+           k : 타원갱정량 ( mm 단위 )
+           B1 B2 : 시점, 종점의 위도              
+           P' = 180/π * 60 = 3437.7468 
+           H : 수준노선의 평균표고 ( m 단위 )</cell>
+    </row>
+    <row>
+      <cell col="0" row="24"></cell>
+      <cell col="1" row="24"></cell>
+      <cell col="2" row="24"></cell>
+      <cell col="3" row="24"></cell>
+      <cell col="4" row="24"></cell>
+      <cell col="5" row="24"></cell>
+      <cell col="6" row="24"></cell>
+      <cell col="7" row="24"></cell>
+      <cell col="8" row="24" colspan="2">계 산 자 :</cell>
+      <cell col="10" row="24" colspan="3"></cell>
+      <cell col="13" row="24">(인)</cell>
+    </row>
+    <row>
+      <cell col="0" row="25"></cell>
+      <cell col="1" row="25"></cell>
+      <cell col="2" row="25"></cell>
+      <cell col="3" row="25"></cell>
+      <cell col="4" row="25"></cell>
+      <cell col="5" row="25"></cell>
+      <cell col="6" row="25"></cell>
+      <cell col="7" row="25"></cell>
+      <cell col="8" row="25" colspan="2">확 인 자 :</cell>
+      <cell col="10" row="25" colspan="3"></cell>
+      <cell col="13" row="25">(인)</cell>
+    </row>
+  </table>
+</annex>

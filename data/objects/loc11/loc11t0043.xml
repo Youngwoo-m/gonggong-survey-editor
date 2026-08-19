@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0043" article="제93조(計算の方法等)" rows="4" cols="5" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">摘 要</cell>
+    <cell col="1" row="0" header="1">１．観測時間は、連続した５時間以上とする。 ２．ＧＮＳＳ衛星の稼働状態、飛来情報等を考慮し、 片寄った配置の使用は避けるものとする。 ３．ＧＬＯＮＡＳＳ衛星を用いて観測する場合は、Ｇ ＰＳ・準天頂衛星及びＧＬＯＮＡＳＳ衛星を、それ ぞれ２衛星以上を用いること。 ４．電子基準点の稼働状況を事前に確認するものとす る。 ５．観測距離が10km 以上の観測は、１級ＧＮＳＳ測 量機により２周波で行う。10km 未満の観測は２級 以上の性能を有するＧＮＳＳ測量機により行う。 ただし、１級ＧＮＳＳ測量機による場合は２周波 で行うことができる。</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">項目 表示</cell>
+    <cell col="1" row="1">標 高</cell>
+    <cell col="2" row="1">ジオイド高</cell>
+    <cell col="3" row="1">楕円体高</cell>
+    <cell col="4" row="1">経 緯 度</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">単 位</cell>
+    <cell col="1" row="2">ｍ</cell>
+    <cell col="2" row="2">ｍ</cell>
+    <cell col="3" row="2">ｍ</cell>
+    <cell col="4" row="2">秒</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">位</cell>
+    <cell col="1" row="3">0.001</cell>
+    <cell col="2" row="3">0.001</cell>
+    <cell col="3" row="3">0.001</cell>
+    <cell col="4" row="3">0.0001</cell>
+  </row>
+</table>

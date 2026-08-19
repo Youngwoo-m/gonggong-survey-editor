@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표6" gubun="별표" no="6" title="오류 정정표(수치표면자료/수치표면모델, 수치지면자료/수치표고모델 등)" source="[별표 6] 오류 정정표(수치표면자료_수치표면모델¸ 수치지면자료_수치표고모델 등)(무인비행장치 측량 작업규정).hwp">
+  <text>[별표 6] 오류 정정표(수치표면자료/수치표면모델, 수치지면자료/수치표고모델 등)</text>
+  <table rows="6" cols="4">
+    <row>
+      <cell col="0" row="0">지구명</cell>
+      <cell col="1" row="0"></cell>
+      <cell col="2" row="0">작업자</cell>
+      <cell col="3" row="0"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1">오류정정자료</cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1">작업일자</cell>
+      <cell col="3" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2">위치</cell>
+      <cell col="1" row="2" colspan="3">X :                       Y :</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="2">오류 내용</cell>
+      <cell col="2" row="3" colspan="2">조치 내용</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="2">* 오류내용을 서술</cell>
+      <cell col="2" row="4" colspan="2">* 오류를 정정한 내용을 서술</cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="2">* 오류내용이 나타난 그림을 첨부</cell>
+      <cell col="2" row="5" colspan="2">* 정정한 후의 그림을 첨부</cell>
+    </row>
+  </table>
+  <text>가. 필요한 경우에는 오류내용 그림 부분에 대상지역의 영상자료를 첨부하여 작성한다.</text>
+</annex>

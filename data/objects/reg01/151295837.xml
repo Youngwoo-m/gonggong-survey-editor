@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="151295837" article="제27조" rows="6" cols="6" source="공공측량 작업규정.2025.04.23_수식수정.오류표시.hwpx">
+  <row>
+    <cell col="0" row="0" colspan="2">구분
+항목</cell>
+    <cell col="2" row="0">1금 공공삼각점측량</cell>
+    <cell col="3" row="0">2급 공공삼각점측량</cell>
+    <cell col="4" row="0">3급 공공삼각점측량</cell>
+    <cell col="5" row="0">4급 공공삼각점측량</cell>
+  </row>
+  <row>
+    <cell col="0" row="1" rowspan="2">결합 단노선</cell>
+    <cell col="1" row="1">수평위치의 폐합차</cell>
+    <cell col="2" row="1">10cm ±
+2cm</cell>
+    <cell col="3" row="1">10cm ±
+3cm</cell>
+    <cell col="4" row="1">15cm ±
+5cm</cell>
+    <cell col="5" row="1">15cm ±
+10cm</cell>
+  </row>
+  <row>
+    <cell col="1" row="2">표고의 폐합차</cell>
+    <cell col="2" row="2">20cm ± 5cm</cell>
+    <cell col="3" row="2">20cm ± 10cm</cell>
+    <cell col="4" row="2">20cm ± 15cm</cell>
+    <cell col="5" row="2">20cm ± 30cm</cell>
+  </row>
+  <row>
+    <cell col="0" row="3" rowspan="2">폐합</cell>
+    <cell col="1" row="3">수평위치의 폐합차</cell>
+    <cell col="2" row="3">1cm</cell>
+    <cell col="3" row="3">1.5cm</cell>
+    <cell col="4" row="3">2.5cm</cell>
+    <cell col="5" row="3">5cm</cell>
+  </row>
+  <row>
+    <cell col="1" row="4">표고의 폐합차</cell>
+    <cell col="2" row="4">5cm</cell>
+    <cell col="3" row="4">10cm</cell>
+    <cell col="4" row="4">15cm</cell>
+    <cell col="5" row="4">30cm</cell>
+  </row>
+  <row>
+    <cell col="0" row="5" colspan="2">표고의 정반교차</cell>
+    <cell col="2" row="5">30cm</cell>
+    <cell col="3" row="5">20cm</cell>
+    <cell col="4" row="5">15cm</cell>
+    <cell col="5" row="5">10cm</cell>
+  </row>
+</table>

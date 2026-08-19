@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="151295907" article="제38조" rows="8" cols="3" source="공공측량 작업규정.2025.04.23_수식수정.오류표시.hwpx">
+  <row>
+    <cell col="0" row="0">측량방법
+구분</cell>
+    <cell col="1" row="0">교호법</cell>
+    <cell col="2" row="0">틸팅나사법</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">목표판 사용수</cell>
+    <cell col="1" row="1">2개</cell>
+    <cell col="2" row="1">4개</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">목표판백선의 크기</cell>
+    <cell col="1" row="2" colspan="2">4·S(cm)
+(S : 도해(하) 거리로서 km 단위)</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">하루 중 관측시간</cell>
+    <cell col="1" row="3" colspan="2">일출전후 및 일몰전후의 2시간을 제외한 시간대</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">하루 주 관측세트수</cell>
+    <cell col="1" row="4" colspan="2">4세트 이내</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">세트 간 관측간격</cell>
+    <cell col="1" row="5" colspan="2">30분 이상</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">관측일수 및 관측세트수</cell>
+    <cell col="1" row="6" colspan="2">T = 2·S    n = 4·T
+( T : 관측일수, S : 관측거리(km 단위), n: 관츤ㄱ세트수)</cell>
+  </row>
+  <row>
+    <cell col="0" row="7">관측방법</cell>
+    <cell col="1" row="7">자안표척 1회, 대안표척 5회, 자안표척 1회의 순서로 양안에 대해 각각 1시준, 1읽음 실시하여 세트로 한다. 읽음단위는 mm까지로 한다.</cell>
+    <cell col="2" row="7">자안의 표척눈금을 1시준 1읽음한후, 대안목표판 하단위치, 레벨의 수평위치, 대안목표판 상단위치의 3개소의 틸팅나사눈금을 왕복 5회 읽고, 다시 자안의 표척눈금을 1시준 1읽는 방식으로 이를 양안에서 동시에 관측을 실시한다. 이 관측을 1/2세트로 하고 거의 13시 이후 대칭의 1/2세트를 실시하여 1세트로 한다.</cell>
+  </row>
+</table>

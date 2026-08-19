@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식68" gubun="서식" no="68" title="임야도" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454833">
+  <table rows="3" cols="4">
+    <row>
+      <cell col="0" row="0"></cell>
+      <cell col="1" row="0"></cell>
+      <cell col="2" row="0"></cell>
+      <cell col="3" row="0" rowspan="3">○○군    ○○면   ○○리       임야도 ○○장 중  제○○호     축척○○○분의1</cell>
+    </row>
+    <row>
+      <cell col="0" row="1"></cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2"></cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2"></cell>
+    </row>
+  </table>
+  <table rows="2" cols="1">
+    <row>
+      <cell col="0" row="0">[별지 제68호서식]</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">임  야  도
+                                                                                 150.000
+                  147.600                                 
+                                        540㎜×440㎜ (폴리에스터켄트지 220g/㎡ 또는 알루미늄켄트지 700g/㎡)
+                                                                          년    월    일    작  성 󰄫        
+                                                                                               재작성</cell>
+    </row>
+  </table>
+</annex>

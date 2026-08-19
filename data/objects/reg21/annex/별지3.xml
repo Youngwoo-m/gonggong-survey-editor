@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지3" gubun="별지" no="3" title="임시 기준점 조서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=59322983">
+  <text>[별지 제3호 서식]
+임시 기준점 조서</text>
+  <table rows="16" cols="6">
+    <row>
+      <cell col="0" row="0">임시기준점명칭</cell>
+      <cell col="1" row="0" colspan="5">예) TCP-B1-01</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">대상구조물</cell>
+      <cell col="1" row="1" colspan="5">예) 1번 교량 (STA. 0+00 ~ STA. 0+00 구간)</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">설치일자</cell>
+      <cell col="1" row="2" colspan="2"></cell>
+      <cell col="3" row="2">설  치  자</cell>
+      <cell col="4" row="2" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">관측일자</cell>
+      <cell col="1" row="3" colspan="2"></cell>
+      <cell col="3" row="3">관  측  자</cell>
+      <cell col="4" row="3" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4" rowspan="3">임시기준점성과</cell>
+      <cell col="1" row="4">X(N)</cell>
+      <cell col="2" row="4">m</cell>
+      <cell col="3" row="4">평면측량방법</cell>
+      <cell col="4" row="4" colspan="2">예) 폐합트래버스 
+    (출발점명 : TCP-B1-01)</cell>
+    </row>
+    <row>
+      <cell col="1" row="5">Y(E)</cell>
+      <cell col="2" row="5">m</cell>
+      <cell col="3" row="5">표고측량방법</cell>
+      <cell col="4" row="5" colspan="2">예) 직접수준측량
+    (기지점명 : KCP-05)</cell>
+    </row>
+    <row>
+      <cell col="1" row="6">Z(H)</cell>
+      <cell col="2" row="6">m</cell>
+      <cell col="3" row="6">좌표원점</cell>
+      <cell col="4" row="6" colspan="2">예) 황동표지 or 플라스틱말뚝</cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="6">사용 기지점 성과</cell>
+    </row>
+    <row>
+      <cell col="0" row="8" rowspan="3">예)
+시공기준점,
+KCP-05
+(기계점)</cell>
+      <cell col="1" row="8">X</cell>
+      <cell col="2" row="8">m</cell>
+      <cell col="3" row="8" rowspan="3">예)
+시공기준점,
+KCP-06
+(후시점)</cell>
+      <cell col="4" row="8">X</cell>
+      <cell col="5" row="8">m</cell>
+    </row>
+    <row>
+      <cell col="1" row="9">Y</cell>
+      <cell col="2" row="9">m</cell>
+      <cell col="4" row="9">Y</cell>
+      <cell col="5" row="9">m</cell>
+    </row>
+    <row>
+      <cell col="1" row="10">H</cell>
+      <cell col="2" row="10">m</cell>
+      <cell col="4" row="10">H</cell>
+      <cell col="5" row="10">m</cell>
+    </row>
+    <row>
+      <cell col="0" row="11" rowspan="3">예)
+시공기준점,
+KCP-05
+(표고기)</cell>
+      <cell col="1" row="11">X</cell>
+      <cell col="2" row="11">m</cell>
+      <cell col="3" row="11" rowspan="3"></cell>
+      <cell col="4" row="11">X</cell>
+      <cell col="5" row="11">m</cell>
+    </row>
+    <row>
+      <cell col="1" row="12">Y</cell>
+      <cell col="2" row="12">m</cell>
+      <cell col="4" row="12">Y</cell>
+      <cell col="5" row="12">m</cell>
+    </row>
+    <row>
+      <cell col="1" row="13">H</cell>
+      <cell col="2" row="13">m</cell>
+      <cell col="4" row="13">H</cell>
+      <cell col="5" row="13">m</cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="3">근경 사진</cell>
+      <cell col="3" row="14" colspan="3">원경 사진</cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="3"></cell>
+      <cell col="3" row="15" colspan="3"></cell>
+    </row>
+  </table>
+  <text>20   .     .      .
+현장대리인                  인
+210mm×297mm(일반용지 60g/㎡)</text>
+</annex>

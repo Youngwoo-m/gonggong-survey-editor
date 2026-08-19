@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표16" gubun="별표" no="16" title="측량기기 성능검사 신청 수수료(제115조제5항 관련)" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454291">
+  <table rows="11" cols="4">
+    <row>
+      <cell col="0" row="0" colspan="4">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별표 16] &lt;개정 2023. 11. 27.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="4">측량기기 성능검사 신청 수수료(제115조제5항 관련)
+1. 측량기기의 성능검사수수료는 다음의 계산식에 따라 산정한 금액 이하의 범위에서 국토지리정보원장이 고시하는 금액으로 한다.
+   수수료 = 제경비 + 기술료 + 임금 + 검사기기감가상각비 + 여비
+2. 제경비 및 기술료는 법 제55조제1항 및 영 제48조제3항에 따라 국토교통부장관이 고시하는 측량의 대가기준 중 제경비 및 기술료의 최소금액을 적용한다.
+3. 검사기기감가상각비는 건설표준품셈에 의한 산정기준 및 사용일수 등에 따라 실비를 계상하며, 기선관측을 하는 경우에는 기선시설사용료가 포함된 금액으로 한다.
+4. 여비는 「공무원여비규정」 제18조제1항에 따른다.
+5. 임금은 다음 표와 같이 하되, 임금단가는 법 제55조제1항 및 영 제48조제3항에 따라 국토교통부장관이 고시하는 측량의 대가기준에 따른다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="2">측량기기</cell>
+      <cell col="2" row="2">단위</cell>
+      <cell col="3" row="2">임금</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" rowspan="2">트랜싯
+(데오드라이트)</cell>
+      <cell col="1" row="3">특급
+1급
+2급</cell>
+      <cell col="2" row="3">1대당</cell>
+      <cell col="3" row="3">ㆍ 고급기술인 1인 및 측량분야 중급기능사 1인의 임금단가의 55퍼센트</cell>
+    </row>
+    <row>
+      <cell col="1" row="4">3급</cell>
+      <cell col="2" row="4">1대당</cell>
+      <cell col="3" row="4">ㆍ 고급기술인 1인 및 측량분야 중급기능사 1인의 임금단가의 40퍼센트</cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="2">레벨</cell>
+      <cell col="2" row="5">1대당</cell>
+      <cell col="3" row="5">ㆍ 고급기술인 1인 및 측량분야 중급기능사 1인의 임금단가의 55퍼센트</cell>
+    </row>
+    <row>
+      <cell col="0" row="6" colspan="2">거리측정기</cell>
+      <cell col="2" row="6">1대당</cell>
+      <cell col="3" row="6">ㆍ 고급기술인 1인 및 측량분야 중급기능사 1인의 임금단가의 55퍼센트</cell>
+    </row>
+    <row>
+      <cell col="0" row="7" rowspan="2">토털스테이션</cell>
+      <cell col="1" row="7">1급
+2급</cell>
+      <cell col="2" row="7">1대당</cell>
+      <cell col="3" row="7">ㆍ 고급기술인 1인 및 측량분야 중급기능사 1인의 임금단가의 85퍼센트</cell>
+    </row>
+    <row>
+      <cell col="1" row="8">3급</cell>
+      <cell col="2" row="8">1대당</cell>
+      <cell col="3" row="8">ㆍ 고급기술인 1인 및 측량분야 중급기능사 1인의 임금단가의 70퍼센트</cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="2">지엔에스에스(GNSS) 수신기</cell>
+      <cell col="2" row="9">1대당</cell>
+      <cell col="3" row="9">ㆍ 고급기술인 1인 및 측량분야 중급기능사 1인의 임금단가의 80퍼센트</cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="2">금속 또는 비금속 관로 탐지기</cell>
+      <cell col="2" row="10">1대당</cell>
+      <cell col="3" row="10">ㆍ 고급기술인 1인 및 측량분야 중급기능사 1인의 임금단가의 85퍼센트</cell>
+    </row>
+  </table>
+</annex>

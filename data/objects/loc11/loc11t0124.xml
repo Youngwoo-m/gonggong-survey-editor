@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0124" article="제679조(成果等)" rows="11" cols="9" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">計算簿</cell>
+    <cell col="1" row="0" header="1">○</cell>
+    <cell col="2" row="0" header="1">○</cell>
+    <cell col="3" row="0" header="1"></cell>
+    <cell col="4" row="0" header="1"></cell>
+    <cell col="5" row="0" header="1"></cell>
+    <cell col="6" row="0" header="1">○</cell>
+    <cell col="7" row="0" header="1">○</cell>
+    <cell col="8" row="0" header="1">○</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">成果表</cell>
+    <cell col="1" row="1">○</cell>
+    <cell col="2" row="1">○</cell>
+    <cell col="3" row="1">○</cell>
+    <cell col="4" row="1"></cell>
+    <cell col="5" row="1"></cell>
+    <cell col="6" row="1"></cell>
+    <cell col="7" row="1"></cell>
+    <cell col="8" row="1"></cell>
+  </row>
+  <row>
+    <cell col="0" row="2">縦断面図データファイル</cell>
+    <cell col="1" row="2"></cell>
+    <cell col="2" row="2"></cell>
+    <cell col="3" row="2">○</cell>
+    <cell col="4" row="2"></cell>
+    <cell col="5" row="2"></cell>
+    <cell col="6" row="2"></cell>
+    <cell col="7" row="2"></cell>
+    <cell col="8" row="2"></cell>
+  </row>
+  <row>
+    <cell col="0" row="3">横断面図データファイル</cell>
+    <cell col="1" row="3"></cell>
+    <cell col="2" row="3"></cell>
+    <cell col="3" row="3"></cell>
+    <cell col="4" row="3">○</cell>
+    <cell col="5" row="3">○</cell>
+    <cell col="6" row="3"></cell>
+    <cell col="7" row="3"></cell>
+    <cell col="8" row="3"></cell>
+  </row>
+  <row>
+    <cell col="0" row="4">線形図データファイル</cell>
+    <cell col="1" row="4"></cell>
+    <cell col="2" row="4"></cell>
+    <cell col="3" row="4"></cell>
+    <cell col="4" row="4"></cell>
+    <cell col="5" row="4"></cell>
+    <cell col="6" row="4">○</cell>
+    <cell col="7" row="4"></cell>
+    <cell col="8" row="4"></cell>
+  </row>
+  <row>
+    <cell col="0" row="5">等高・等深線図 データファイル</cell>
+    <cell col="1" row="5"></cell>
+    <cell col="2" row="5"></cell>
+    <cell col="3" row="5"></cell>
+    <cell col="4" row="5"></cell>
+    <cell col="5" row="5"></cell>
+    <cell col="6" row="5"></cell>
+    <cell col="7" row="5">○</cell>
+    <cell col="8" row="5"></cell>
+  </row>
+  <row>
+    <cell col="0" row="6">汀線図データファイル</cell>
+    <cell col="1" row="6"></cell>
+    <cell col="2" row="6"></cell>
+    <cell col="3" row="6"></cell>
+    <cell col="4" row="6"></cell>
+    <cell col="5" row="6"></cell>
+    <cell col="6" row="6"></cell>
+    <cell col="7" row="6"></cell>
+    <cell col="8" row="6">○</cell>
+  </row>
+  <row>
+    <cell col="0" row="7">点の記</cell>
+    <cell col="1" row="7">○</cell>
+    <cell col="2" row="7">○</cell>
+    <cell col="3" row="7"></cell>
+    <cell col="4" row="7"></cell>
+    <cell col="5" row="7"></cell>
+    <cell col="6" row="7"></cell>
+    <cell col="7" row="7"></cell>
+    <cell col="8" row="7"></cell>
+  </row>
+  <row>
+    <cell col="0" row="8">精度管理表</cell>
+    <cell col="1" row="8">○</cell>
+    <cell col="2" row="8">○</cell>
+    <cell col="3" row="8">○</cell>
+    <cell col="4" row="8">○</cell>
+    <cell col="5" row="8"></cell>
+    <cell col="6" row="8">○</cell>
+    <cell col="7" row="8">○</cell>
+    <cell col="8" row="8"></cell>
+  </row>
+  <row>
+    <cell col="0" row="9">品質評価表</cell>
+    <cell col="1" row="9">○</cell>
+    <cell col="2" row="9">○</cell>
+    <cell col="3" row="9">○</cell>
+    <cell col="4" row="9"></cell>
+    <cell col="5" row="9"></cell>
+    <cell col="6" row="9">○</cell>
+    <cell col="7" row="9">○</cell>
+    <cell col="8" row="9">○</cell>
+  </row>
+  <row>
+    <cell col="0" row="10">メタデータ</cell>
+    <cell col="1" row="10">○</cell>
+    <cell col="2" row="10">○</cell>
+    <cell col="3" row="10">○</cell>
+    <cell col="4" row="10"></cell>
+    <cell col="5" row="10"></cell>
+    <cell col="6" row="10">○</cell>
+    <cell col="7" row="10">○</cell>
+    <cell col="8" row="10">○</cell>
+  </row>
+</table>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식93" gubun="서식" no="93" title="측량기기 성능검사대행자 등록증 재발급신청서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162455067">
+  <table rows="22" cols="14">
+    <row>
+      <cell col="0" row="0" colspan="14">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별지 제93호서식] &lt;개정 2023. 6. 9.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="14">측량기기 성능검사대행자 등록증 재발급신청서</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="9"></cell>
+      <cell col="9" row="2" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">접수번호</cell>
+      <cell col="1" row="3"></cell>
+      <cell col="2" row="3">접수일</cell>
+      <cell col="3" row="3" colspan="2"></cell>
+      <cell col="5" row="3"></cell>
+      <cell col="6" row="3" colspan="4"></cell>
+      <cell col="10" row="3" colspan="2">처리기간</cell>
+      <cell col="12" row="3" colspan="2">즉시</cell>
+    </row>
+    <row>
+      <cell col="0" row="4"></cell>
+      <cell col="1" row="4"></cell>
+      <cell col="2" row="4"></cell>
+      <cell col="3" row="4" colspan="2"></cell>
+      <cell col="5" row="4"></cell>
+      <cell col="6" row="4" colspan="4"></cell>
+      <cell col="10" row="4" colspan="2"></cell>
+      <cell col="12" row="4" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" rowspan="3">신청인</cell>
+      <cell col="1" row="5" colspan="7">성명(대표자)</cell>
+      <cell col="8" row="5" colspan="6">사업자등록번호</cell>
+    </row>
+    <row>
+      <cell col="1" row="6" colspan="13">전화번호</cell>
+    </row>
+    <row>
+      <cell col="1" row="7" colspan="13">주소</cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9" rowspan="4">신청내용</cell>
+      <cell col="1" row="9" colspan="13">등록번호</cell>
+    </row>
+    <row>
+      <cell col="1" row="10" colspan="13">등록연월일</cell>
+    </row>
+    <row>
+      <cell col="1" row="11" colspan="13">상호</cell>
+    </row>
+    <row>
+      <cell col="1" row="12" colspan="13">사유</cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="14">「공간정보의 구축 및 관리 등에 관한 법률」 제93조제3항 및 같은 법 시행규칙 제106조에 따라 성능검사 대행자등록증의 재발급을 신청합니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="14">년          월          일장</cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="4"></cell>
+      <cell col="4" row="16" colspan="3">신청인</cell>
+      <cell col="7" row="16" colspan="4"></cell>
+      <cell col="11" row="16" colspan="3">(서명 또는 인)</cell>
+    </row>
+    <row>
+      <cell col="0" row="17" colspan="14">귀하</cell>
+    </row>
+    <row>
+      <cell col="0" row="18" colspan="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19" rowspan="2">첨부서류</cell>
+      <cell col="1" row="19" colspan="12" rowspan="2">성능검사대행자 등록증 (잃어버린 경우 그 사유서)</cell>
+      <cell col="13" row="19">수수료</cell>
+    </row>
+    <row>
+      <cell col="13" row="20">2,000원</cell>
+    </row>
+    <row>
+      <cell col="0" row="21" colspan="14">210㎜×297㎜(일반용지 60g/㎡)</cell>
+    </row>
+  </table>
+</annex>

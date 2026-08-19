@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0025" article="제43조(平均計算)" rows="4" cols="3" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">区 分 項 目</cell>
+    <cell col="1" row="0" header="1">３級基準点測量</cell>
+    <cell col="2" row="0" header="1">４級基準点測量</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">路線方向角の残差</cell>
+    <cell col="1" row="1">50″</cell>
+    <cell col="2" row="1">120″</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">路線座標差の残差</cell>
+    <cell col="1" row="2">300mm</cell>
+    <cell col="2" row="2">300mm</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">路線高低差の残差</cell>
+    <cell col="1" row="3">300mm</cell>
+    <cell col="2" row="3">300mm</cell>
+  </row>
+</table>

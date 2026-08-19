@@ -1,0 +1,84 @@
+{
+ "r21t1": {
+  "kind": "table",
+  "article": "rule 21 Accuracy of boundary referencing",
+  "rows": 5,
+  "cols": 3,
+  "preview": "Class of boundary point | Horizontal tolerance | Vertical tolerance"
+ },
+ "r27t1": {
+  "kind": "table",
+  "article": "rule 27 Accuracy of boundary points",
+  "rows": 6,
+  "cols": 3,
+  "preview": " | Boundary class | Tolerance"
+ },
+ "r43t1": {
+  "kind": "table",
+  "article": "rule 43 Parcel type components",
+  "rows": 10,
+  "cols": 2,
+  "preview": "Type of parcel | Parcel type component"
+ },
+ "r45t1": {
+  "kind": "table",
+  "article": "rule 45 Unique parcel identifier",
+  "rows": 8,
+  "cols": 2,
+  "preview": "Parcel tenure type | Unique parcel identifier format"
+ },
+ "r55g1": {
+  "kind": "image",
+  "file": "r55g1.jpg",
+  "article": "rule 55 Accuracy and survey requirements where underlying parcel not created by survey",
+  "preview": "Accuracy and survey requirements where underlying parcel not created by survey"
+ },
+ "r87t1": {
+  "kind": "table",
+  "article": "rule 87 Parcel annotations",
+  "rows": 6,
+  "cols": 2,
+  "preview": "Parcel | Annotation"
+ },
+ "r88t1": {
+  "kind": "table",
+  "article": "rule 88 Boundary annotations",
+  "rows": 6,
+  "cols": 2,
+  "preview": "Boundary | Annotation"
+ },
+ "r103t1": {
+  "kind": "table",
+  "article": "rule 103 Parcel annotations",
+  "rows": 14,
+  "cols": 2,
+  "preview": "Parcel | Annotation"
+ },
+ "r104t1": {
+  "kind": "table",
+  "article": "rule 104 Boundary annotations",
+  "rows": 9,
+  "cols": 2,
+  "preview": "Boundary | Annotation"
+ },
+ "r114g1": {
+  "kind": "image",
+  "file": "r114g1.jpg",
+  "article": "rule 114 Complex boundary reinstatements and restrictions",
+  "preview": "Boundary reinstatement restrictions"
+ },
+ "s7c2t1": {
+  "kind": "table",
+  "article": "Schedule 7 Symbols",
+  "rows": 13,
+  "cols": 3,
+  "preview": "Mark type | Symbol"
+ },
+ "s7c3t1": {
+  "kind": "table",
+  "article": "Schedule 7 Line styles",
+  "rows": 12,
+  "cols": 3,
+  "preview": "Line types | Line style | Line width"
+ }
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc19t039" article="지하시설물조사 측량" rows="5" cols="5" source="측량 안전관리 매뉴얼 (2026.1)">
+  <row>
+    <cell col="0" row="0" header="1">장비명</cell>
+    <cell col="1" row="0" header="1"></cell>
+    <cell col="2" row="0" header="1">모델명</cell>
+    <cell col="3" row="0" header="1">보유대수</cell>
+    <cell col="4" row="0" header="1">비고</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">산소농도 및 유해가스측정기</cell>
+    <cell col="1" row="1"></cell>
+    <cell col="2" row="1"></cell>
+    <cell col="3" row="1"></cell>
+    <cell col="4" row="1"></cell>
+  </row>
+  <row>
+    <cell col="0" row="2">환기팬</cell>
+    <cell col="1" row="2"></cell>
+    <cell col="2" row="2"></cell>
+    <cell col="3" row="2"></cell>
+    <cell col="4" row="2"></cell>
+  </row>
+  <row>
+    <cell col="0" row="3">호흡 보호구</cell>
+    <cell col="1" row="3">공기호흡기</cell>
+    <cell col="2" row="3"></cell>
+    <cell col="3" row="3"></cell>
+    <cell col="4" row="3"></cell>
+  </row>
+  <row>
+    <cell col="0" row="4"></cell>
+    <cell col="1" row="4">송기마스크</cell>
+    <cell col="2" row="4"></cell>
+    <cell col="3" row="4"></cell>
+    <cell col="4" row="4"></cell>
+  </row>
+</table>

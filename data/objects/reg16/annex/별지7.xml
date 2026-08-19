@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지7" gubun="별지" no="7" title="GNSS 기준국 점의 조서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=161554303">
+  <text>■ 수치표고모형의 구축 및 관리 등에 관한 규정 [별지 제7호서식]
+GNSS 기준국 점의 조서</text>
+  <table rows="14" cols="4">
+    <row>
+      <cell col="0" row="0">점번호</cell>
+      <cell col="1" row="0"></cell>
+      <cell col="2" row="0">점의 종류</cell>
+      <cell col="3" row="0">GNSS 기준국</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">관측년월일</cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1">관측자</cell>
+      <cell col="3" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2">위치</cell>
+      <cell col="1" row="2" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" rowspan="2">좌표</cell>
+      <cell col="1" row="3">B:        L:</cell>
+      <cell col="2" row="3">타원체고</cell>
+      <cell col="3" row="3">m</cell>
+    </row>
+    <row>
+      <cell col="1" row="4">X:        Y:</cell>
+      <cell col="2" row="4">정표고</cell>
+      <cell col="3" row="4">m</cell>
+    </row>
+    <row>
+      <cell col="0" row="5" rowspan="3">사용한 GNSS 상시관측소</cell>
+      <cell col="1" row="5">1.</cell>
+      <cell col="2" row="5" colspan="2">4.</cell>
+    </row>
+    <row>
+      <cell col="1" row="6">2.</cell>
+      <cell col="2" row="6" colspan="2">5.</cell>
+    </row>
+    <row>
+      <cell col="1" row="7">3.</cell>
+      <cell col="2" row="7" colspan="2">6.</cell>
+    </row>
+    <row>
+      <cell col="0" row="8">사용장비</cell>
+      <cell col="1" row="8" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">관측시간</cell>
+      <cell col="1" row="9">h   m ～   h  m</cell>
+      <cell col="2" row="9">관측간격</cell>
+      <cell col="3" row="9">초</cell>
+    </row>
+    <row>
+      <cell col="0" row="10">관측위성수</cell>
+      <cell col="1" row="10">개</cell>
+      <cell col="2" row="10">PDOP</cell>
+      <cell col="3" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11">안테나고</cell>
+      <cell col="1" row="11">m(경사/수직)</cell>
+      <cell col="2" row="11">수신상향각</cell>
+      <cell col="3" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="2">개항도</cell>
+      <cell col="2" row="12" colspan="2">관측사진</cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="2"></cell>
+      <cell col="2" row="13" colspan="2"></cell>
+    </row>
+  </table>
+</annex>

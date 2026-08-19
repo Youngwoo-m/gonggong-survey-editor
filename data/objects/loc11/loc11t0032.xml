@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0032" article="제64조(観測の実施)" rows="6" cols="6" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">区 分 観測順序</cell>
+    <cell col="1" row="0" header="1">１ 級 水 準 測 量</cell>
+    <cell col="2" row="0" header="1"></cell>
+    <cell col="3" row="0" header="1">２ 級 水 準 測 量</cell>
+    <cell col="4" row="0" header="1"></cell>
+    <cell col="5" row="0" header="1">３～４級水準測量 簡易水準測量</cell>
+  </row>
+  <row>
+    <cell col="0" row="1"></cell>
+    <cell col="1" row="1">気泡管レベル 自動レベル</cell>
+    <cell col="2" row="1">電子レベル</cell>
+    <cell col="3" row="1">気泡管レベル 自動レベル</cell>
+    <cell col="4" row="1">電子レベル</cell>
+    <cell col="5" row="1">気泡管レベル 自動レベル 電子レベル</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">１</cell>
+    <cell col="1" row="2">後視小目盛</cell>
+    <cell col="2" row="2">後 視</cell>
+    <cell col="3" row="2">後視小目盛</cell>
+    <cell col="4" row="2">後 視</cell>
+    <cell col="5" row="2">後 視</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">２</cell>
+    <cell col="1" row="3">前視小目盛</cell>
+    <cell col="2" row="3">前 視</cell>
+    <cell col="3" row="3">後視大目盛</cell>
+    <cell col="4" row="3">後 視</cell>
+    <cell col="5" row="3">前 視</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">３</cell>
+    <cell col="1" row="4">前視大目盛</cell>
+    <cell col="2" row="4">前 視</cell>
+    <cell col="3" row="4">前視小目盛</cell>
+    <cell col="4" row="4">前 視</cell>
+    <cell col="5" row="4">―</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">４</cell>
+    <cell col="1" row="5">後視大目盛</cell>
+    <cell col="2" row="5">後 視</cell>
+    <cell col="3" row="5">前視大目盛</cell>
+    <cell col="4" row="5">前 視</cell>
+    <cell col="5" row="5">―</cell>
+  </row>
+</table>

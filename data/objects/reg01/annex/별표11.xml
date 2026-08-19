@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표11" gubun="별표" no="11" title="기지점 성과 점검표" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296137">
+  <text>[ 별표 11 ]
+기지점 성과 점검표</text>
+  <table rows="12" cols="10">
+    <row>
+      <cell col="0" row="0" colspan="10">기지점 성과 점검표 (높이정확도 3cm)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="2">위성기준점 고정점</cell>
+      <cell col="1" row="1" colspan="4" rowspan="2">봉화, 괴산, 예천, 영월</cell>
+      <cell col="5" row="1" rowspan="2">관측일자</cell>
+      <cell col="6" row="1" colspan="2">1일차</cell>
+      <cell col="8" row="1" colspan="2">2019.01.01. 10:20 ~ 14:20</cell>
+    </row>
+    <row>
+      <cell col="6" row="2" colspan="2">2일차</cell>
+      <cell col="8" row="2" colspan="2">2019.01.02. 13:00 ~ 17:00</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" rowspan="3">기지점 후보</cell>
+      <cell col="1" row="3" rowspan="3">1일차 성과 [m]</cell>
+      <cell col="2" row="3" rowspan="3">2일차 성과 [m]</cell>
+      <cell col="3" row="3" colspan="2">교차 및 점검</cell>
+      <cell col="5" row="3" rowspan="3">고시성과 [m]</cell>
+      <cell col="6" row="3" colspan="3">고시성과 차이 및 점검</cell>
+      <cell col="9" row="3">최종 점검 결과</cell>
+    </row>
+    <row>
+      <cell col="3" row="4" rowspan="2">[cm]</cell>
+      <cell col="4" row="4" rowspan="2">O/X</cell>
+      <cell col="6" row="4">1일차</cell>
+      <cell col="7" row="4">2일차</cell>
+      <cell col="8" row="4" rowspan="2">O/X</cell>
+      <cell col="9" row="4" rowspan="2">O/X</cell>
+    </row>
+    <row>
+      <cell col="6" row="5" colspan="2">[cm]</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">U0404</cell>
+      <cell col="1" row="6">256.2878</cell>
+      <cell col="2" row="6">256.2859</cell>
+      <cell col="3" row="6">0.1880</cell>
+      <cell col="4" row="6">O</cell>
+      <cell col="5" row="6">256.2605</cell>
+      <cell col="6" row="6">2.7250</cell>
+      <cell col="7" row="6">2.5370</cell>
+      <cell col="8" row="6">O</cell>
+      <cell col="9" row="6">O</cell>
+    </row>
+    <row>
+      <cell col="0" row="7"></cell>
+      <cell col="1" row="7"></cell>
+      <cell col="2" row="7"></cell>
+      <cell col="3" row="7"></cell>
+      <cell col="4" row="7"></cell>
+      <cell col="5" row="7"></cell>
+      <cell col="6" row="7"></cell>
+      <cell col="7" row="7"></cell>
+      <cell col="8" row="7"></cell>
+      <cell col="9" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8"></cell>
+      <cell col="1" row="8"></cell>
+      <cell col="2" row="8"></cell>
+      <cell col="3" row="8"></cell>
+      <cell col="4" row="8"></cell>
+      <cell col="5" row="8"></cell>
+      <cell col="6" row="8"></cell>
+      <cell col="7" row="8"></cell>
+      <cell col="8" row="8"></cell>
+      <cell col="9" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9"></cell>
+      <cell col="1" row="9"></cell>
+      <cell col="2" row="9"></cell>
+      <cell col="3" row="9"></cell>
+      <cell col="4" row="9"></cell>
+      <cell col="5" row="9"></cell>
+      <cell col="6" row="9"></cell>
+      <cell col="7" row="9"></cell>
+      <cell col="8" row="9"></cell>
+      <cell col="9" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10"></cell>
+      <cell col="1" row="10"></cell>
+      <cell col="2" row="10"></cell>
+      <cell col="3" row="10"></cell>
+      <cell col="4" row="10"></cell>
+      <cell col="5" row="10"></cell>
+      <cell col="6" row="10"></cell>
+      <cell col="7" row="10"></cell>
+      <cell col="8" row="10"></cell>
+      <cell col="9" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="10">＊ 교차 : 1일차와 2일차 차이가 2cm 이내일 경우 O, 2cm 이상일 경우 X
+＊ 고시성과 차이가 5cm 이내일 경우 O, 5cm 이상일 경우 X
+＊ 최종적으로 교차와 고시성과 차이가 둘다 만족하는 경우 O</cell>
+    </row>
+  </table>
+</annex>

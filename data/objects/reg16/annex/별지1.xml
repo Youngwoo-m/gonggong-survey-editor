@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지1" gubun="별지" no="1" title="수치표고모형 메타데이터 작성양식" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=161554253">
+  <text>■ 수치표고모형의 구축 및 관리 등에 관한 규정 [별지 제1호서식]
+수치표고모형 메타데이터 작성양식
+(4쪽 중 제1쪽)</text>
+  <table rows="17" cols="5">
+    <row>
+      <cell col="0" row="0" colspan="4">항목</cell>
+      <cell col="4" row="0">작성 내용</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="6">1. 메타데이터 연락정보
+  (contact)</cell>
+      <cell col="1" row="1" colspan="3">메타데이터 제공자 유형
+(role)</cell>
+      <cell col="4" row="1"></cell>
+    </row>
+    <row>
+      <cell col="1" row="2" colspan="3">메타데이터 제공(기관) 이름
+(name)</cell>
+      <cell col="4" row="2"></cell>
+    </row>
+    <row>
+      <cell col="1" row="3" colspan="3">메타데이터 제공 부서
+(positionName)</cell>
+      <cell col="4" row="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="4" colspan="3">메타데이터 제공자 전화 연락처
+(number)</cell>
+      <cell col="4" row="4"></cell>
+    </row>
+    <row>
+      <cell col="1" row="5" colspan="3">메타데이터 제공자 URL
+(linkage)</cell>
+      <cell col="4" row="5"></cell>
+    </row>
+    <row>
+      <cell col="1" row="6" colspan="3">이메일주소
+(electronicMailAddress)
+온라인지원 기능
+(function)</cell>
+      <cell col="4" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7" rowspan="2">2. 메타데이터 일자정보
+  (dateInfo)</cell>
+      <cell col="1" row="7" colspan="3">일자
+(date)</cell>
+      <cell col="4" row="7"></cell>
+    </row>
+    <row>
+      <cell col="1" row="8" colspan="3">일자 유형
+(dateType)</cell>
+      <cell col="4" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9" rowspan="8">3. 데이터 식별정보
+(identificationInfo)</cell>
+      <cell col="1" row="9" rowspan="3">사용된 언어
+(defaultLocale)</cell>
+      <cell col="2" row="9" colspan="2">언어코드
+(language)</cell>
+      <cell col="4" row="9"></cell>
+    </row>
+    <row>
+      <cell col="2" row="10" colspan="2">국가코드
+(country)</cell>
+      <cell col="4" row="10"></cell>
+    </row>
+    <row>
+      <cell col="2" row="11" colspan="2">문자인코딩
+(characterEncoding)</cell>
+      <cell col="4" row="11"></cell>
+    </row>
+    <row>
+      <cell col="1" row="12" rowspan="5">데이터 참조
+(citation)</cell>
+      <cell col="2" row="12" colspan="2">데이터이름
+(title)</cell>
+      <cell col="4" row="12"></cell>
+    </row>
+    <row>
+      <cell col="2" row="13" rowspan="2">참조일자
+(date)</cell>
+      <cell col="3" row="13">일자
+(date)</cell>
+      <cell col="4" row="13"></cell>
+    </row>
+    <row>
+      <cell col="3" row="14">일자유형
+(dateType)</cell>
+      <cell col="4" row="14"></cell>
+    </row>
+    <row>
+      <cell col="2" row="15" colspan="2">데이터 에디션 또는 버전
+(edition)</cell>
+      <cell col="4" row="15"></cell>
+    </row>
+    <row>
+      <cell col="2" row="16" colspan="2">데이터 표현 형태
+(presentationForm)</cell>
+      <cell col="4" row="16"></cell>
+    </row>
+  </table>
+  <text>(4쪽 중 제2쪽)</text>
+  <table rows="26" cols="5">
+    <row>
+      <cell col="0" row="0" colspan="4">항목</cell>
+      <cell col="4" row="0">작성 내용</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="22">3. 데이터 식별정보
+(identificationInfo)</cell>
+      <cell col="1" row="1" rowspan="6">데이터 참조
+(citation)</cell>
+      <cell col="2" row="1" colspan="2">데이터 제작 행정구역 또는 지역
+(data administration name)</cell>
+      <cell col="4" row="1"></cell>
+    </row>
+    <row>
+      <cell col="2" row="2" colspan="2">제작 구분
+(production)</cell>
+      <cell col="4" row="2"></cell>
+    </row>
+    <row>
+      <cell col="2" row="3" colspan="2">고시번호
+(notice number)</cell>
+      <cell col="4" row="3"></cell>
+    </row>
+    <row>
+      <cell col="2" row="4" colspan="2">조사년도
+(year of survey)</cell>
+      <cell col="4" row="4"></cell>
+    </row>
+    <row>
+      <cell col="2" row="5" colspan="2">제작년도
+(year of production)</cell>
+      <cell col="4" row="5"></cell>
+    </row>
+    <row>
+      <cell col="2" row="6" colspan="2">데이터 가용웹사이트
+(linkage)</cell>
+      <cell col="4" row="6"></cell>
+    </row>
+    <row>
+      <cell col="1" row="7" colspan="3">데이터 요약
+(abstract)</cell>
+      <cell col="4" row="7"></cell>
+    </row>
+    <row>
+      <cell col="1" row="8" rowspan="2">데이터 관련 연락처
+(pointOfContact)</cell>
+      <cell col="2" row="8" colspan="2">담당(기관) 유형
+(role)</cell>
+      <cell col="4" row="8"></cell>
+    </row>
+    <row>
+      <cell col="2" row="9" colspan="2">담당(기관) 이름
+(name)</cell>
+      <cell col="4" row="9"></cell>
+    </row>
+    <row>
+      <cell col="1" row="10" colspan="3">데이터 공간표현유형
+(spatialRepresentationType)</cell>
+      <cell col="4" row="10"></cell>
+    </row>
+    <row>
+      <cell col="1" row="11">데이터 공간해상도
+(spatialResolution)</cell>
+      <cell col="2" row="11" colspan="2">정거도법의 거리
+(distance)</cell>
+      <cell col="4" row="11"></cell>
+    </row>
+    <row>
+      <cell col="1" row="12" rowspan="2">데이터 활용 주제
+(topicCategory)</cell>
+      <cell col="2" row="12" colspan="2">데이터 메인 주제</cell>
+      <cell col="4" row="12"></cell>
+    </row>
+    <row>
+      <cell col="2" row="13" colspan="2">데이터 서브 주제</cell>
+      <cell col="4" row="13"></cell>
+    </row>
+    <row>
+      <cell col="1" row="14" rowspan="6">데이터의
+시공간적 범위
+(extent)</cell>
+      <cell col="2" row="14" rowspan="4">지리적 요소
+(geographicElement)</cell>
+      <cell col="3" row="14">서쪽끝 경도좌표
+(westBoundLongtitude)</cell>
+      <cell col="4" row="14"></cell>
+    </row>
+    <row>
+      <cell col="3" row="15">동쪽끝 경도좌표
+(eastBoundLongtitude)</cell>
+      <cell col="4" row="15"></cell>
+    </row>
+    <row>
+      <cell col="3" row="16">남쪽끝 위도좌표
+(southBoundLatitude)</cell>
+      <cell col="4" row="16"></cell>
+    </row>
+    <row>
+      <cell col="3" row="17">북쪽끝 위도좌표
+(nouthBoundLatitude)</cell>
+      <cell col="4" row="17"></cell>
+    </row>
+    <row>
+      <cell col="2" row="18" rowspan="2">시간적 요소
+(temporalElement)</cell>
+      <cell col="3" row="18">시작일자
+(beginPosition)</cell>
+      <cell col="4" row="18"></cell>
+    </row>
+    <row>
+      <cell col="3" row="19">종료일자
+(endPosition)</cell>
+      <cell col="4" row="19"></cell>
+    </row>
+    <row>
+      <cell col="1" row="20" rowspan="3">사용된 언어</cell>
+      <cell col="2" row="20" colspan="2">언어코드</cell>
+      <cell col="4" row="20"></cell>
+    </row>
+    <row>
+      <cell col="2" row="21" colspan="2">국가코드</cell>
+      <cell col="4" row="21"></cell>
+    </row>
+    <row>
+      <cell col="2" row="22" colspan="2">문자인코딩</cell>
+      <cell col="4" row="22"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23" rowspan="3">4. 메타데이터 제약
+(metadataConstraints)</cell>
+      <cell col="1" row="23" colspan="3">접근제약
+(accessConstraints)</cell>
+      <cell col="4" row="23"></cell>
+    </row>
+    <row>
+      <cell col="1" row="24" colspan="3">사용제약
+(useConstraints)</cell>
+      <cell col="4" row="24"></cell>
+    </row>
+    <row>
+      <cell col="1" row="25" colspan="3">기타 제약
+(Other constraint)</cell>
+      <cell col="4" row="25"></cell>
+    </row>
+  </table>
+  <text>(4쪽 중 제3쪽)</text>
+  <table rows="25" cols="5">
+    <row>
+      <cell col="0" row="0" colspan="4">항목</cell>
+      <cell col="4" row="0">작성 내용</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="5">5. 메타데이터 유지관리
+(metadataMaintenance)</cell>
+      <cell col="1" row="1" colspan="3">유지관리 및 갱신 주기
+(maintenanceAndUpdateFrequency)</cell>
+      <cell col="4" row="1"></cell>
+    </row>
+    <row>
+      <cell col="1" row="2" rowspan="2">유지관리 연락처
+(contact)</cell>
+      <cell col="2" row="2" colspan="2">유지관리 담당자 유형
+(role)</cell>
+      <cell col="4" row="2"></cell>
+    </row>
+    <row>
+      <cell col="2" row="3" colspan="2">유지관리 담당자 이름
+(name)</cell>
+      <cell col="4" row="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="4" rowspan="2">유지관리 일자
+(maintennaceDate)</cell>
+      <cell col="2" row="4" colspan="2">일자
+(date)</cell>
+      <cell col="4" row="4"></cell>
+    </row>
+    <row>
+      <cell col="2" row="5" colspan="2">일자 유형
+(dateType)</cell>
+      <cell col="4" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6" rowspan="2">6. 연혁정보</cell>
+      <cell col="1" row="6" colspan="3">설명
+(statement)</cell>
+      <cell col="4" row="6"></cell>
+    </row>
+    <row>
+      <cell col="1" row="7" colspan="3">처리 단계
+(processingStep)</cell>
+      <cell col="4" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8" rowspan="2">7. 확장 연혁정보</cell>
+      <cell col="1" row="8" rowspan="2">처리단계
+(processingStep)</cell>
+      <cell col="2" row="8" colspan="2">알고리즘 버전 또는 날짜 식별
+(citation)</cell>
+      <cell col="4" row="8"></cell>
+    </row>
+    <row>
+      <cell col="2" row="9" colspan="2">알고리즘 설명
+(description)</cell>
+      <cell col="4" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" rowspan="15">8. 데이터의 공간표현
+(spatialRepresentationInfo)</cell>
+      <cell col="1" row="10">시공간 차원의 수
+(numberofDimension)</cell>
+      <cell col="2" row="10" colspan="2"></cell>
+      <cell col="4" row="10"></cell>
+    </row>
+    <row>
+      <cell col="1" row="11" rowspan="12">그리드 공간표현
+(GridSpatialRepresentation)</cell>
+      <cell col="2" row="11" rowspan="4">첫 번째 시공간 
+차원에 대한 속성
+(axisDimensionProperties)</cell>
+      <cell col="3" row="11">축의 이름
+(dimesionName)</cell>
+      <cell col="4" row="11"></cell>
+    </row>
+    <row>
+      <cell col="3" row="12">축의 크기
+(dimensionSize)</cell>
+      <cell col="4" row="12"></cell>
+    </row>
+    <row>
+      <cell col="3" row="13">차원이름의 확장/수정자
+(dimensionTitle)</cell>
+      <cell col="4" row="13"></cell>
+    </row>
+    <row>
+      <cell col="3" row="14">축의 설명
+(dimensionDescription)</cell>
+      <cell col="4" row="14"></cell>
+    </row>
+    <row>
+      <cell col="2" row="15" rowspan="4">두 번째 시공간 
+차원에 대한 속성
+(axisDimensionProperties)</cell>
+      <cell col="3" row="15">축의 이름
+(dimesionName)</cell>
+      <cell col="4" row="15"></cell>
+    </row>
+    <row>
+      <cell col="3" row="16">축의 크기
+(dimensionSize)</cell>
+      <cell col="4" row="16"></cell>
+    </row>
+    <row>
+      <cell col="3" row="17">차원이름의 확장/수정자
+(dimensionTitle)</cell>
+      <cell col="4" row="17"></cell>
+    </row>
+    <row>
+      <cell col="3" row="18">축의 설명
+(dimensionDescription)</cell>
+      <cell col="4" row="18"></cell>
+    </row>
+    <row>
+      <cell col="2" row="19" rowspan="4">세 번째 시공간 
+차원에 대한 속성
+(axisDimensionProperties)</cell>
+      <cell col="3" row="19">축의 이름
+(dimesionName)</cell>
+      <cell col="4" row="19"></cell>
+    </row>
+    <row>
+      <cell col="3" row="20">축의 크기
+(dimensionSize)</cell>
+      <cell col="4" row="20"></cell>
+    </row>
+    <row>
+      <cell col="3" row="21">차원이름의 확장/수정자
+(dimensionTitle)</cell>
+      <cell col="4" row="21"></cell>
+    </row>
+    <row>
+      <cell col="3" row="22">축의 설명
+(dimensionDescription)</cell>
+      <cell col="4" row="22"></cell>
+    </row>
+    <row>
+      <cell col="1" row="23" colspan="3">격자구성 셀기하
+(cellGeometry)</cell>
+      <cell col="4" row="23"></cell>
+    </row>
+    <row>
+      <cell col="1" row="24" colspan="3">사진좌표와 지도좌표간의 변환을 위한 매개변수의 존재여부
+(transformationParameterAvailability)</cell>
+      <cell col="4" row="24"></cell>
+    </row>
+  </table>
+  <text>(4쪽 중 제4쪽)</text>
+  <table rows="18" cols="5">
+    <row>
+      <cell col="0" row="0" colspan="4">항목</cell>
+      <cell col="4" row="0">작성 내용</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="5">9. 데이터 참조체계
+(referenceSystemInfo)</cell>
+      <cell col="1" row="1" rowspan="4">참조체계 식별자
+(referenceSystemIdentifier)</cell>
+      <cell col="2" row="1" colspan="2">코드
+(code)</cell>
+      <cell col="4" row="1"></cell>
+    </row>
+    <row>
+      <cell col="2" row="2" colspan="2">코드 스페이스
+(codeSpace)</cell>
+      <cell col="4" row="2"></cell>
+    </row>
+    <row>
+      <cell col="2" row="3" colspan="2">식별자 버전
+(version)</cell>
+      <cell col="4" row="3"></cell>
+    </row>
+    <row>
+      <cell col="2" row="4" colspan="2">참조체계 식별자에 대한 설명
+(description)</cell>
+      <cell col="4" row="4"></cell>
+    </row>
+    <row>
+      <cell col="1" row="5" colspan="3">참조체계 유형
+(referenceSystemType)</cell>
+      <cell col="4" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6" rowspan="3">10. 내용정보(커버리지)
+(contentInfo)</cell>
+      <cell col="1" row="6" rowspan="3">피처카탈로그
+(feature catalogue)</cell>
+      <cell col="2" row="6" colspan="2">자원에 대한 세부 내용
+(coverageDescription)</cell>
+      <cell col="4" row="6"></cell>
+    </row>
+    <row>
+      <cell col="2" row="7" colspan="2">속성그룹
+(attributeGroup)</cell>
+      <cell col="4" row="7"></cell>
+    </row>
+    <row>
+      <cell col="2" row="8" colspan="2">피처 카탈로그 기술
+(featureCatalogueDescription)</cell>
+      <cell col="4" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">11. 묘화정보
+(PortrayalInfo)</cell>
+      <cell col="1" row="9" colspan="3">묘화를 위한 문헌정보
+(PortryalCatalogueCitation)</cell>
+      <cell col="4" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" rowspan="3">12. 배포정보
+(distributionInfo)</cell>
+      <cell col="1" row="10" colspan="3">배포포맷
+(distribitionFormat)</cell>
+      <cell col="4" row="10"></cell>
+    </row>
+    <row>
+      <cell col="1" row="11" colspan="3">배포 담당자
+(distributor)</cell>
+      <cell col="4" row="11"></cell>
+    </row>
+    <row>
+      <cell col="1" row="12" colspan="3">배포자 유형
+(role)</cell>
+      <cell col="4" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13" rowspan="5">13. 수집정보
+(acquisitionInfo)</cell>
+      <cell col="1" row="13">확장 연혁정보
+(extendedlineageInforamtion)</cell>
+      <cell col="2" row="13">처리절차
+(Processing)</cell>
+      <cell col="3" row="13">알고리즘
+(Algorithm)</cell>
+      <cell col="4" row="13"></cell>
+    </row>
+    <row>
+      <cell col="1" row="14" rowspan="2">플랫폼
+(platform)</cell>
+      <cell col="2" row="14" colspan="2">기술
+(description)</cell>
+      <cell col="4" row="14"></cell>
+    </row>
+    <row>
+      <cell col="2" row="15" colspan="2">식별자
+(identifier)</cell>
+      <cell col="4" row="15"></cell>
+    </row>
+    <row>
+      <cell col="1" row="16" rowspan="2">탑재체
+(Instrument)</cell>
+      <cell col="2" row="16" colspan="2">유형
+(type)</cell>
+      <cell col="4" row="16"></cell>
+    </row>
+    <row>
+      <cell col="2" row="17" colspan="2">식별자
+(identifier)</cell>
+      <cell col="4" row="17"></cell>
+    </row>
+  </table>
+  <table rows="2" cols="1">
+    <row>
+      <cell col="0" row="0">수치표고모형 메타데이터 작성 방법</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">메타데이터 연락정보(contact)
+메타데이터 제공자 유형은 자원제공자로 정의합니다.
+제공(기관) 이름은 메타데이터를 제공하는 기관의 이름을 기재하며, 예로 국토지리정보원으로 기재합니다.
+메타데이터 제공 부서는 담당 부서의 명칭을 적습니다.
+메타데이터 제공자 연락처는 해당 전화번호를 지역번호와 함께 표시합니다. 
+메타데이터 제공자 URL은 메타데이터를 확인할 수 있는 웹페이지 명이나 주소를 적습니다. 
+메타데이터 제공자 이메일 주소는 메타데이터에 대한 관리자의 이메일, 대표메일을 적습니다.
+메타데이터 일자정보(dateInfo)
+일자는 메타데이터를 생성한 일자(검수일자)를 기재합니다. YYYY-MM-DD 형식으로 작성합니다.
+일자 유형은 상기 기입된 메타데이터 작성 일자(생성일자)로 위의 일자 정보에 대한 내용을 적습니다.
+데이터 식별정보(identificationInfo)
+사용된 언어 중 언어코드는 데이터가 한국어로 기술된 내용을 포함하고 있는 경우, 사용된 언어의 코드를 문자열로 기재합니다. 우리나라는 410이고, 국가코드는 Korea로 문자인코딩은 EU-Kr 등으로 인코딩 구분자를 적습니다.
+데이터 식별에서 데이터 참조내, 데이터 이름은 데이터의 이름으로, 문자열 형식으로 자유롭게 기재합니다.
+데이터 참조 중 참조일자의 일자는 데이터 구축 일자를 기재합니다. YYYY-MM-DD 형식으로 작성합니다.
+데이터 참조 중 참조일자의 일자유형은 상기 날짜의 유형을 기재합니다.
+데이터 참조 중 데이터 에디션은 데이터의 발생횟수(에디션) 정보가 있는 경우, 그 연도를 YYYY 형태로 기재합니다. 해당 사항이 없는 경우 기재하지 않습니다.
+데이터 참조 중 데이터 에디션 일자는 데이터 에디션의 생성 일자를 기재합니다. YYYY-MM-DD 형식으로 작성합니다. 해당 사항이 없는 경우 기재하지 않습니다.
+데이터 참조 중 데이터 표현 형태는 구축된 데이터가 표현되는 형태로서 다음 사항에서 선택합니다. 수치표고모형은 디지털 모델로 적는 것이 좋습니다.
+디지털 문서 (documentDigital), 인쇄 문서 (documentHardcopy), 디지털 영상 (imageDigital), 인쇄 영상 (imageHardcopy), 디지털 지도 (mapDigital), 종이지도 (mapHardcopy), 디지털 모델 (modelDigital), 하드카피 모델 (modelHardcopy), 디지털 종단면 (profileDigial), 하드카피 종단면 (profileHardcopy), 디지털 표 (tableDigital), 하드카피 표 (tableHardcopy), 디지털 비디오 (videoDigital), 하드카피 비디오 (videoHardcopy), 디지털 오디오 (audioDigital), 하드카피 오디오 (audioHardcopy), 디지털 멀티미디어 (multimediaDigital), 하드카피 멀티미디어 (multimediaHardcopy), 물리적 객체 (physicalObject), 디지털 도식그림 (diagramDigital), 하드카피 도식그림 (diagram hardcopy)
+데이터 참조 중 데이터 기타 참조 정보는 구축된 데이터에 대한 기타 참조정보를 기재합니다. 문자열 형태로 자유롭게 기재하되, 해당 사항이 없는 경우 작성하지 않습니다.
+데이터 기타 참조 정보에서 제작구분은 행정구역명 등 수치표고모형 구축지역이 어느 지역인지 알 수 있도록 적습니다.
+데이터 기타 참조 정보에서 고시번호는 데이터를 고시한 연도를 적고 제작연도가 다를 경우 그 연도도 다음에 적습니다.
+데이터 가용 웹사이트는 다운로드 받을 수 있는 사이트를 적습니다.
+데이터 요약은 데이터에 대한 요약사항을 기재합니다. 문자열 형태로 자유롭게 기재합니다.
+데이터 관련 연락처 중 담당(기관) 유형은 구축된 데이터에 대한 책임자의 유형을 기재합니다.
+데이터 관련 연락처 중 담당(기관) 이름은 구축된 데이터의 책임 기관 이름을 기재합니다.
+데이터 공간표현유형은 데이터에서 공간표현을 위해 사용하는 유형을 기재하며 grid, tin, mesh, vector 중의 하나를 적습니다.
+데이터 공간해상도 중 정거도법의 거리는 데이터가 구축된 거리를 기재합니다. km 단위의 숫자값으로 기재하되 해당 사항이 없는 경우 작성하지 않습니다.
+데이터 활용 주제는 데이터를 활용할 수 있는 주제 및 분야로서 다음 사항에서 선택하되 수치표고모형은 고도를 적습니다.
+농업 (farming), 생태 (biota), 경계 (boundaries), 기후기상대기 (climatologyMeteorologyAtmosphere), 
+경제 (economy), 고도 (elevation), 환경 (environment), 지구과학정보 (geoscienticInformation), 건강 (health),
+영상기본도지구관측 (imageryBaseMapsEarthCover), 군사정보 (IntelligenceMilitary), 담수 (inlandWaters),
+위치 (location), 해양 (oceans), 토지계획 (planningCadastre)
+데이터의 시공간적 범위 중 지리적 요소의 서쪽끝 경도좌표는 데이터의 지리적인 범위 중 서쪽 끝의 경도좌표를 기재합니다. -180~180 사이의 정수로 작성합니다.
+데이터의 시공간적 범위 중 지리적 요소의 동쪽끝 경도좌표는 데이터의 지리적인 범위 중 동쪽 끝의 경도좌표를 기재합니다. -180~180 사이의 정수로 작성합니다.
+데이터의 시공간적 범위 중 지리적 요소의 남쪽끝 위도좌표는 데이터의 지리적인 범위 중 남쪽 끝의 위도좌표를 기재합니다. -90~90 사이의 정수로 작성합니다.
+데이터의 시공간적 범위 중 지리적 요소의 북쪽끝 위도좌표는 데이터의 지리적인 범위 중 북쪽 끝의 위도좌표를 기재합니다. -90~90 사이의 정수로 작성합니다.
+데이터의 시공간적 범위 중 시간적 요소의 시작일자는 데이터 구축 시작 일자를 기재합니다. YYYY-MM-DD 형식으로 작성합니다.
+데이터의 시공간적 범위 중 시간적 요소의 종료일자는 데이터 구축 종료 일자를 기재합니다. YYYY-MM-DD 형식으로 작성합니다.
+사용된 언어는 언어코드 410, 국가코드 Korea, 문자인코딩 번호 등을 적습니다.
+메타데이터 제약(metadataConstraints)
+접근제약은 데이터에 대한 접근제약의 내용으로 다음 목록에서 선택합니다.
+제한되지 않음 (unrestricted), 기타제한 (otherRestrictions), 비공개(private)
+사용제약은 데이터에 대한 사용제약의 내용으로 다음 목록에서 선택합니다.
+제한되지 않음 (unrestricted), 기타제한 (otherRestrictions), 비공개(private)
+기타 제약은 기타 제약 내용을 자유롭게 작성합니다.
+메타데이터 유지관리(metadataMaintenance)
+유지관리 및 갱신 주기는 데이터의 유지관리 및 갱신주기로 다음 목록에서 선택합니다. 수치표고모형은 주로 연간으로 갱신되고 있으므로 연간을 적도록 합니다. 
+지속적 (continual), 매일 (daily), 주간 (weekly), 2주간 (fornightly), 매월 (monthly), 분기 (quaterly), 연 2회 (biannually), 연간 (yearly), 필요시 (asNeeded), 불규칙 (irregularly), 무계획 (notplanned), 알려지지 않음 (unknown), 주기적 (periodic), 월 2회 (semimonthly), 격년 (biennially)
+유지관리 연락처 중 유지관리 담당자 유형은 데이터를 유지관리 및 갱신하는 담당자의 유형을 기재합니다.
+유지관리 연락처 중 유지관리 담당자 이름은 데이터를 유지관리 및 갱신하는 기관의 이름을 기재합니다. 해당 사항이 없는 경우 작성하지 않습니다.
+유지관리 일자 중 일자는 데이터의 유지관리 및 갱신이 이뤄지는 일자를 YYYY-MM-DD 형식으로 작성합니다.
+유지관리 일자 중 일자 유형은 상기 데이터의 유지관리 날짜의 유형을 기재합니다.
+연혁정보
+연혁정보에서 설명은 데이터 생산자가 왜 이 데이터를 생산하게 되었는지 알고 있는 연혁이나 지식에 대한 설명자료를 넣도록 합니다.
+처리 단계는 수치표고모형에 대한 처리 단계에 대한 설명을 적습니다.
+확장 연혁정보
+처리단계에서 확장된 내용으로 알고리즘은 기존 원시자료에서 표고값을 추출할 때 사용한 알고리즘명을 적습니다.
+알고리즘 설명 부분은 알고리즘에 대한 설명자료를 넣을 수 있습니다.
+데이터의 공간표현(spatialRepresentationInfo)
+그리드 공간표현의 경우에는 시공간 차원의 수는 차원의 수를 적습니다.
+첫 번째 시공간 차원에 대한 속성 중 축의 이름은 첫 번째 축의 이름으로 다음 목록에서 선택합니다.
+횡렬(row), 종렬(column), 수직(vertical), 트랙(track), 교차트랙(crossTrack), 선(line), 샘플(sample), 시간(time)
+축의 이름은 횡렬로 하고 해상도는 그리드 간격의 상세 정도를 적습니다. 필요시 축의 설명자료를 넣습니다.
+두 번째 시공간 차원에 대한 속성 중 축의 이름은 첫 번째 축의 이름으로 다음 목록에서 선택합니다.
+횡렬(row), 종렬(column), 수직(vertical), 트랙(track), 교차트랙(crossTrack), 선(line), 샘플(sample), 시간(time)
+축의 이름은 종렬로 하고 해상도는 그리드 간격의 상세정도를 적습니다. 필요시 축의 설명자료를 넣습니다
+세 번째 시공간 차원에 대한 속성 중 축의 이름은 첫 번째 축의 이름으로 다음 목록에서 선택합니다.
+횡렬(row), 종렬(column), 수직(vertical), 트랙(track), 교차트랙(crossTrack), 선(line), 샘플(sample), 시간(time)
+축의 이름은 수직으로 하고 해상도는 실제 값의 단위를 적습니다.
+격자구성 셀기하는 데이터를 구성하는 셀의 기하 유형을 적습니다. 수치표고모형은 주로 area로 적습니다.
+사진좌표와 지도좌표간의 변환을 위한 매개변수의 존재 여부는 데이터의 격자 좌표와 지리적 좌표 사이의 변환을 위한 매개변수가 존재 하는지 여부로서 존재한다면 1을, 존재하지 않는다면 0을 선택합니다.
+데이터 참조체계(referenceSystem)
+참조체계 식별자 중 코드는 데이터가 따르고 있는 참조체계의 식별자로서 다음 목록에서 선택합니다.
+EPSG:4737 (Korea 2000), EPSG:5185 (Korea 2000 Korea West Belt 2010), EPSG:5186 (Korea 2000 Korea Central Belt 2010), EPSG:5187 (Korea 2000 Korea East Belt 2010), EPSG:5188 (Korea 2000 Korea East Sea Belt 2010), EPSG:102080 (Korea 2000 Korea Unified Coordinate System), EPSG:102081 (Korea 2000 Korea West Belt 2010), EPSG:102082 (Korea 2000 Korea Central Belt 2010), EPSG:102083 (Korea 2000 Korea East Belt 2010), EPSG:102084 (Korea 2000 Korea East Sea Belt 2010)
+참조체계 식별자 중 코드 스페이스는 데이터가 따르고 있는 참조체계의 코드 스페이스로서 문자열 형태로 기재하되 해당 사항이 없는 경우 작성하지 않습니다.
+참조체계 식별자 중 식별자 버전은 데이터가 따르고 있는 참조체계 식별자의 버전으로서 문자열 형태로 자유롭게 기재하되 해당 사항이 없는 경우 작성하지 않습니다.
+참조체계 식별자 중 참조체계 식별자에 대한 설명은 데이터가 따르고 있는 참조체계에 대한 기타 설명으로서 문자열 형태로 자유롭게 기재하되 해당 사항이 없는 경우 작성하지 않습니다. 국토지리정보원의 원점 정보로 구성된 EPSG코드로 설명을 넣는 것이 좋습니다. 
+참조체계 유형은 데이터가 따르고 있는 참조체계의 유형을 적습니다. 측지지리2D (geodeticGeographic2D)를 주로 적습니다.
+내용정보(커버리지)(contentInfo)
+피처카탈로그 중 자원에 대한 세부 내용은 고도로 표시합니다.
+피처카탈로그 중 속성그룹은 값으로 표현되는 정보유형으로 미터로 표시되는 높이값이라고 적습니다,
+피처카탈로그 중 피처 카탈로그 기술은 DEM인지 TIN인지 벡터자료인지를 구별하여 적습니다.
+묘화정보(Portrayal Information)
+묘화를 위한 문헌정보는 묘화를 위한 색과 톤 등을 지정할 경우 참조한 문서를 적습니다. 타 정보와의 중첩시 이격이 발생할 경우 기준이 되는 정보에 대한 내용을 추가할 수 있습니다. 예로, 건물과 DEM이 중첩될 경우 건물을 우선한다.
+배포정보(distributionInformation)
+배포포맷 중 참조제목은 데이터의 포맷을 기술하는 관련자료의 제목을 기재합니다. 데이터 포맷 이름을 기입할 수 있습니다. 문자열 형태로 자유롭게 작성합니다. 배포자 중 담당(기관) 이름은 데이터를 배포하는 담당기관의 이름을 기재합니다.
+배포 담당자는 배포자 즉 정보서비스에 대한 정보를 제공합니다.
+배포 매체는 온라인, 오프라인, 외장하드, 메일 요청 등의 배포 방법을 적시합니다.
+수집정보 (aquistionInformation)
+확장 연혁정보는 알고리즘 관련 추가사항을 적습니다.
+플랫폼은 수치표고모형 자료를 추출하기 위한 탑재체가 설치된 기기를 말하며 항공기, 헬리콥터, 드론, 위성 중에서 선택합니다.
+플랫폼 중 식별자는 항공기, 헬리콥터, 드론, 위성 등의 기종 또는 명칭을 말합니다.
+탑재체 중 유형은 수치표고모형을 취득한 방식으로 포인트 클라우드, 프레임 방식 스테레오 영상, 등고선 데이터 중 선택하여야 합니다.
+탑재체 중 식별자는 라이다 센서의 이름, 위성에 탑재된 센서의 이름을 적습니다.</cell>
+    </row>
+  </table>
+</annex>

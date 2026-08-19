@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식79" gubun="서식" no="79" title="청산금납부고지서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454959">
+  <table rows="1" cols="2">
+    <row>
+      <cell col="0" row="0">시장ㆍ군수ㆍ구청장</cell>
+      <cell col="1" row="0">직인</cell>
+    </row>
+  </table>
+  <table rows="17" cols="28">
+    <row>
+      <cell col="0" row="0" colspan="28">[별지 제79호서식] &lt;개정 2015.6.4.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="8"></cell>
+      <cell col="8" row="1"></cell>
+      <cell col="9" row="1"></cell>
+      <cell col="10" row="1" colspan="8">청 산 금 납 부 고 지 서</cell>
+      <cell col="18" row="1"></cell>
+      <cell col="19" row="1"></cell>
+      <cell col="20" row="1" colspan="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="8">제    호     납부고지서</cell>
+      <cell col="8" row="2" rowspan="14"></cell>
+      <cell col="9" row="2" rowspan="14"></cell>
+      <cell col="10" row="2" colspan="8">제   호      영수확인통지서</cell>
+      <cell col="18" row="2" rowspan="14"></cell>
+      <cell col="19" row="2" rowspan="14"></cell>
+      <cell col="20" row="2" colspan="8">제   호      영  수  증</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" rowspan="4">토  지
+소재지</cell>
+      <cell col="1" row="3">읍ㆍ면</cell>
+      <cell col="2" row="3" colspan="3">동ㆍ리</cell>
+      <cell col="5" row="3" colspan="2">지번</cell>
+      <cell col="7" row="3">지목</cell>
+      <cell col="10" row="3" rowspan="4">토  지
+소재지</cell>
+      <cell col="11" row="3" rowspan="2">읍ㆍ면</cell>
+      <cell col="12" row="3" colspan="3" rowspan="2">동ㆍ리</cell>
+      <cell col="15" row="3" colspan="2" rowspan="2">지번</cell>
+      <cell col="17" row="3" rowspan="2">지목</cell>
+      <cell col="20" row="3" rowspan="4">토  지
+소재지</cell>
+      <cell col="21" row="3" rowspan="3">읍ㆍ면</cell>
+      <cell col="22" row="3" colspan="3" rowspan="3">동ㆍ리</cell>
+      <cell col="25" row="3" colspan="2" rowspan="3">지번</cell>
+      <cell col="27" row="3" rowspan="3">지목</cell>
+    </row>
+    <row>
+      <cell col="1" row="4" rowspan="3"></cell>
+      <cell col="2" row="4" colspan="3" rowspan="3"></cell>
+      <cell col="5" row="4" colspan="2" rowspan="3"></cell>
+      <cell col="7" row="4" rowspan="3"></cell>
+    </row>
+    <row>
+      <cell col="11" row="5" rowspan="2"></cell>
+      <cell col="12" row="5" colspan="3" rowspan="2"></cell>
+      <cell col="15" row="5" colspan="2" rowspan="2"></cell>
+      <cell col="17" row="5" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="21" row="6"></cell>
+      <cell col="22" row="6" colspan="3"></cell>
+      <cell col="25" row="6" colspan="2"></cell>
+      <cell col="27" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7" rowspan="3">면 적
+증 감
+내 용</cell>
+      <cell col="1" row="7" colspan="2">축척변경 전</cell>
+      <cell col="3" row="7" colspan="3">축척변경 후</cell>
+      <cell col="6" row="7" colspan="2">증 감</cell>
+      <cell col="10" row="7" rowspan="2">면 적
+증 감
+내 용</cell>
+      <cell col="11" row="7" colspan="2">축척변경 전</cell>
+      <cell col="13" row="7" colspan="3">축척변경 후</cell>
+      <cell col="16" row="7" colspan="2">증 감</cell>
+      <cell col="20" row="7" rowspan="3">면 적
+증 감
+내 용</cell>
+      <cell col="21" row="7" colspan="3">축척변경 전</cell>
+      <cell col="24" row="7" colspan="2">축척변경 후</cell>
+      <cell col="26" row="7" colspan="2">증 감</cell>
+    </row>
+    <row>
+      <cell col="1" row="8" colspan="2" rowspan="2">㎡</cell>
+      <cell col="3" row="8" colspan="3" rowspan="2">㎡</cell>
+      <cell col="6" row="8" colspan="2" rowspan="2">증    ㎡</cell>
+      <cell col="11" row="8" colspan="2">㎡</cell>
+      <cell col="13" row="8" colspan="3">㎡</cell>
+      <cell col="16" row="8" colspan="2">증    ㎡</cell>
+      <cell col="21" row="8" colspan="3" rowspan="2">㎡</cell>
+      <cell col="24" row="8" colspan="2" rowspan="2">㎡</cell>
+      <cell col="26" row="8" colspan="2" rowspan="2">증   ㎡</cell>
+    </row>
+    <row>
+      <cell col="10" row="9" rowspan="4">청산금</cell>
+      <cell col="11" row="9" colspan="3" rowspan="2">㎡당 가격</cell>
+      <cell col="14" row="9" colspan="4" rowspan="2">원</cell>
+    </row>
+    <row>
+      <cell col="0" row="10" rowspan="2">청산금</cell>
+      <cell col="1" row="10" colspan="3">㎡당 가격</cell>
+      <cell col="4" row="10" colspan="4">원</cell>
+      <cell col="20" row="10" rowspan="2">청산금</cell>
+      <cell col="21" row="10" colspan="2">㎡당 가격</cell>
+      <cell col="23" row="10" colspan="5">원</cell>
+    </row>
+    <row>
+      <cell col="1" row="11" colspan="3">총 금 액</cell>
+      <cell col="4" row="11" colspan="4">원</cell>
+      <cell col="11" row="11" colspan="3" rowspan="2">총 금 액</cell>
+      <cell col="14" row="11" colspan="4" rowspan="2">원</cell>
+      <cell col="21" row="11" colspan="2">총 금 액</cell>
+      <cell col="23" row="11" colspan="5">원</cell>
+    </row>
+    <row>
+      <cell col="0" row="12" rowspan="3">납  부
+의무자</cell>
+      <cell col="1" row="12" rowspan="2">주 소</cell>
+      <cell col="2" row="12" colspan="6" rowspan="2"></cell>
+      <cell col="20" row="12" rowspan="3">납  부
+의무자</cell>
+      <cell col="21" row="12" rowspan="2">주 소</cell>
+      <cell col="22" row="12" colspan="6" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="10" row="13" rowspan="2">납  부
+의무자</cell>
+      <cell col="11" row="13">주 소</cell>
+      <cell col="12" row="13" colspan="6"></cell>
+    </row>
+    <row>
+      <cell col="1" row="14">성 명</cell>
+      <cell col="2" row="14" colspan="6"></cell>
+      <cell col="11" row="14">성 명</cell>
+      <cell col="12" row="14" colspan="6"></cell>
+      <cell col="21" row="14">성 명</cell>
+      <cell col="22" row="14" colspan="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="8">「공간정보의 구축 및 관리 등에 관한 법률 시행령」제75조에 따라 산출된 위 청산금을    년    월    일까지 관내 은행 또는 우체국에 납부하시기 바랍니다.
+                년    월    일</cell>
+      <cell col="10" row="15" colspan="8">위의 금액을 납부하였음을 통지합니다.
+                      년    월    일
+  시장ㆍ군수ㆍ구청장  귀하</cell>
+      <cell col="20" row="15" colspan="8">위의 금액을 영수합니다.
+년    월    일
+                 ○ ○ 은  행
+                       우체국</cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="28">297㎜×210㎜(신문용지 54g/㎡(재활용품))</cell>
+    </row>
+  </table>
+</annex>

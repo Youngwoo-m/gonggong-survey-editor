@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc19t036" article="분야별 특별 주의사항" rows="7" cols="3" source="측량 안전관리 매뉴얼 (2026.1)">
+  <row>
+    <cell col="0" row="0" header="1">분야</cell>
+    <cell col="1" row="0" header="1">주요 장비/작업</cell>
+    <cell col="2" row="0" header="1">주의사항</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">중력측량</cell>
+    <cell col="1" row="1">중력계, 진자, 삼각대 고정</cell>
+    <cell col="2" row="1">진자 흔들림·진동 영향 가능성 → 고정부 확 인 필요, 사람이 많은 구역이나차량 지나가 는 구역에서는 진자 진동 방지 대책 필요</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">수준측량</cell>
+    <cell col="1" row="2">자동레벨, 수평기, 표지대</cell>
+    <cell col="2" row="2">측정점 주변이 경사가 크거나 미끄러운 경우 표지대 고정 불량 주의, 빛 반사·눈 부심으로 착오 가능성</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">통합기준점측량</cell>
+    <cell col="1" row="3">토탈스테이션, GNSS, 삼각망</cell>
+    <cell col="2" row="3">여러 장비 혼용 시 좌표 기준·오차개념 명 확히 해야 함, 기준점이 차량·장비·공사 구역에 가까운 경우 보호대책 필요</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">GNSS측량</cell>
+    <cell col="1" row="4">GNSS 수신기, 안테나, 지상국</cell>
+    <cell col="2" row="4">위성 신호 차단(건물·나무), 다중경로 오 류 발생 가능 → 시야 확보 중요, 안테나 설치시 넘어짐 위험 고려</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">지상기준점측량</cell>
+    <cell col="1" row="5">기준점 설치, 마크 지정, 표지</cell>
+    <cell col="2" row="5">설치 지점이 인접 도로나 보행구역일 경 우 사람·차량 충돌 위험 있음 → 반사표 지·차단대 설치 권장</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">지하시설물탐사</cell>
+    <cell col="1" row="6">매설물 탐사기, 지중레이더</cell>
+    <cell col="2" row="6">매설물 위치 오류로 장비 손상·인명사고 발생 가능성</cell>
+  </row>
+</table>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식74" gubun="서식" no="74" title="지적정보관리체계 사용자권한 등록신청서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454927">
+  <table rows="2" cols="10">
+    <row>
+      <cell col="0" row="0" rowspan="2">신청서 작성</cell>
+      <cell col="1" row="0"></cell>
+      <cell col="2" row="0" rowspan="2">‣</cell>
+      <cell col="3" row="0" rowspan="2">제출</cell>
+      <cell col="4" row="0"></cell>
+      <cell col="5" row="0" rowspan="2">‣</cell>
+      <cell col="6" row="0" rowspan="2">심사</cell>
+      <cell col="7" row="0"></cell>
+      <cell col="8" row="0" rowspan="2">‣</cell>
+      <cell col="9" row="0" rowspan="2">등록</cell>
+    </row>
+    <row>
+      <cell col="1" row="1"></cell>
+      <cell col="4" row="1"></cell>
+      <cell col="7" row="1"></cell>
+    </row>
+  </table>
+  <table rows="30" cols="39">
+    <row>
+      <cell col="0" row="0" colspan="39">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별지 제74호서식] &lt;개정 2017. 1. 31.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="39">지적정보관리체계 사용자권한 등록신청서</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="36"></cell>
+      <cell col="36" row="2" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="4">접수번호</cell>
+      <cell col="4" row="3" colspan="29">접수일</cell>
+      <cell col="33" row="3" colspan="3">처리기간</cell>
+      <cell col="36" row="3" colspan="3">즉시</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="39"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="2" rowspan="16">신청
+내용</cell>
+      <cell col="2" row="5" colspan="2">1. 성    명</cell>
+      <cell col="4" row="5" colspan="35"></cell>
+    </row>
+    <row>
+      <cell col="2" row="6" colspan="2">2. 생년월일</cell>
+      <cell col="4" row="6" colspan="35"></cell>
+    </row>
+    <row>
+      <cell col="2" row="7" colspan="2">3. 사 용 자
+   번    호</cell>
+      <cell col="4" row="7" colspan="35"></cell>
+    </row>
+    <row>
+      <cell col="2" row="8" colspan="2">4. 소    속</cell>
+      <cell col="4" row="8" colspan="35"></cell>
+    </row>
+    <row>
+      <cell col="2" row="9" colspan="2">5. 발 령 일</cell>
+      <cell col="4" row="9" colspan="35"></cell>
+    </row>
+    <row>
+      <cell col="2" row="10" colspan="2">6. 퇴 직 및 
+   전 출 일</cell>
+      <cell col="4" row="10" colspan="35"></cell>
+    </row>
+    <row>
+      <cell col="2" row="11" colspan="2" rowspan="2">7. 권한구분 
+   등    록</cell>
+      <cell col="4" row="11" colspan="2">1</cell>
+      <cell col="6" row="11">2</cell>
+      <cell col="7" row="11" colspan="2">3</cell>
+      <cell col="9" row="11">4</cell>
+      <cell col="10" row="11">5</cell>
+      <cell col="11" row="11">6</cell>
+      <cell col="12" row="11" colspan="2">7</cell>
+      <cell col="14" row="11" colspan="3">8</cell>
+      <cell col="17" row="11">9</cell>
+      <cell col="18" row="11" colspan="2">10</cell>
+      <cell col="20" row="11">11</cell>
+      <cell col="21" row="11">12</cell>
+      <cell col="22" row="11" colspan="3">13</cell>
+      <cell col="25" row="11">14</cell>
+      <cell col="26" row="11" colspan="2">15</cell>
+      <cell col="28" row="11" colspan="3">15의2</cell>
+      <cell col="31" row="11">16</cell>
+      <cell col="32" row="11" colspan="2">17</cell>
+      <cell col="34" row="11">18</cell>
+      <cell col="35" row="11" colspan="2">19</cell>
+      <cell col="37" row="11" colspan="2">20</cell>
+    </row>
+    <row>
+      <cell col="4" row="12" colspan="2"></cell>
+      <cell col="6" row="12"></cell>
+      <cell col="7" row="12" colspan="2"></cell>
+      <cell col="9" row="12"></cell>
+      <cell col="10" row="12"></cell>
+      <cell col="11" row="12"></cell>
+      <cell col="12" row="12" colspan="2"></cell>
+      <cell col="14" row="12" colspan="3"></cell>
+      <cell col="17" row="12"></cell>
+      <cell col="18" row="12" colspan="2"></cell>
+      <cell col="20" row="12"></cell>
+      <cell col="21" row="12"></cell>
+      <cell col="22" row="12" colspan="3"></cell>
+      <cell col="25" row="12"></cell>
+      <cell col="26" row="12" colspan="2"></cell>
+      <cell col="28" row="12" colspan="3"></cell>
+      <cell col="31" row="12"></cell>
+      <cell col="32" row="12" colspan="2"></cell>
+      <cell col="34" row="12"></cell>
+      <cell col="35" row="12" colspan="2"></cell>
+      <cell col="37" row="12" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="2" row="13" colspan="2">8. 비밀번호</cell>
+      <cell col="4" row="13" colspan="35"></cell>
+    </row>
+    <row>
+      <cell col="2" row="14" colspan="2">9. 직급구분</cell>
+      <cell col="4" row="14" colspan="35"></cell>
+    </row>
+    <row>
+      <cell col="2" row="15" colspan="2">10.자격구분</cell>
+      <cell col="4" row="15" colspan="35"></cell>
+    </row>
+    <row>
+      <cell col="2" row="16" colspan="2">11.직렬구분</cell>
+      <cell col="4" row="16" colspan="35"></cell>
+    </row>
+    <row>
+      <cell col="2" row="17" colspan="2">12.변경종류</cell>
+      <cell col="4" row="17" colspan="35"></cell>
+    </row>
+    <row>
+      <cell col="2" row="18" colspan="2">13.처    리 
+   담 당 자</cell>
+      <cell col="4" row="18" colspan="35"></cell>
+    </row>
+    <row>
+      <cell col="2" row="19" colspan="2">14.최종이력
+   순    번</cell>
+      <cell col="4" row="19" colspan="35"></cell>
+    </row>
+    <row>
+      <cell col="2" row="20" colspan="2">15.최초임용일</cell>
+      <cell col="4" row="20" colspan="35"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21" colspan="39">「공간정보의 구축 및 관리 등에 관한 법률 시행규칙」 제76조에 따라 사용자권한 등록을 신청합니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="22" colspan="39">년          월          일</cell>
+    </row>
+    <row>
+      <cell col="0" row="23" colspan="15"></cell>
+      <cell col="15" row="23" colspan="8">신청인</cell>
+      <cell col="23" row="23" colspan="6"></cell>
+      <cell col="29" row="23" colspan="10">(서명 또는 인)</cell>
+    </row>
+    <row>
+      <cell col="0" row="24" colspan="39">국토교통부장관  
+시ㆍ도지사          귀하
+시장ㆍ군수ㆍ구청장</cell>
+    </row>
+    <row>
+      <cell col="0" row="25" colspan="39">※ 작성방법
+    신청내용란 중 제7호 권한구분 등록란은 「공간정보의 구축 및 관리 등에 관한 법률 시행규칙」 제78조 각 호에 따라 구분하여 표시합니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="26" colspan="39">처리절차</cell>
+    </row>
+    <row>
+      <cell col="0" row="27" colspan="39"></cell>
+    </row>
+    <row>
+      <cell col="0" row="28"></cell>
+      <cell col="1" row="28" colspan="2">소속 공무원</cell>
+      <cell col="3" row="28" colspan="2"></cell>
+      <cell col="5" row="28" colspan="3"></cell>
+      <cell col="8" row="28" colspan="5">소속 공무원</cell>
+      <cell col="13" row="28" colspan="3"></cell>
+      <cell col="16" row="28" colspan="3"></cell>
+      <cell col="19" row="28" colspan="5">담당부서</cell>
+      <cell col="24" row="28" colspan="3"></cell>
+      <cell col="27" row="28" colspan="3"></cell>
+      <cell col="30" row="28" colspan="8">담당부서</cell>
+      <cell col="38" row="28"></cell>
+    </row>
+    <row>
+      <cell col="0" row="29" colspan="39">210㎜×297㎜[백상지(80g/㎡) 또는 중질지(80g/㎡)]</cell>
+    </row>
+  </table>
+</annex>

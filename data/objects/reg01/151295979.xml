@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="151295979" article="제116조" rows="2" cols="2" source="공공측량 작업규정.2025.04.23_수식수정.오류표시.hwpx">
+  <row>
+    <cell col="0" row="0">구분</cell>
+    <cell col="1" row="0">성능</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">가정음속도
+발진주파수
+측정단위
+수심측정범위
+정도</cell>
+    <cell col="1" row="1">1500m/sec
+25kHz 이상
+1cm 이하
+0.5 – 200m
+10cm + d/1000, d는 수심(cm)</cell>
+  </row>
+</table>

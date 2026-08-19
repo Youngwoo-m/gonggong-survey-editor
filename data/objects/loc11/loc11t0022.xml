@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0022" article="제43조(平均計算)" rows="2" cols="2" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">水平位置の閉合差</cell>
+    <cell col="1" row="0" header="1">Δs ＝100mm＋40mm√N Δs：既知点の成果値及び仮定三次元網平均計算結果から求めた距離 Ｎ：既知点までの最少辺数（辺数が同じ場合は路線長の最短のもの。）</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">標高の閉合差</cell>
+    <cell col="1" row="1">250mm+45mm√N を標準とする Ｎ：辺数</cell>
+  </row>
+</table>

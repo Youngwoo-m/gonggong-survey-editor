@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0115" article="제651조(方法)" rows="3" cols="3" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">使用衛星数</cell>
+    <cell col="1" row="0" header="1">観測回数</cell>
+    <cell col="2" row="0" header="1">データ取得間隔</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">５衛星以上</cell>
+    <cell col="1" row="1">ＦＩＸ解を得てから 10 エポック以上</cell>
+    <cell col="2" row="1">１ 秒 （ただし、キネマティック法は５秒以下）</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">摘 要</cell>
+    <cell col="1" row="2">ＧＬＯＮＡＳＳ衛星を用いて観測する場合は、使用衛星数は６衛星以上とする。 ただし、ＧＰＳ・準天頂衛星及びＧＬＯＮＡＳＳ衛星を、それぞれ２衛星以上を 用いること。</cell>
+    <cell col="2" row="2"></cell>
+  </row>
+</table>

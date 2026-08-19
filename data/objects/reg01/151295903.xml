@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="151295903" article="제33조" rows="3" cols="2" source="공공측량 작업규정.2025.04.23_수식수정.오류표시.hwpx">
+  <row>
+    <cell col="0" row="0">측량방법</cell>
+    <cell col="1" row="0">관측거리</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">교호법</cell>
+    <cell col="1" row="1">1급 공공수준점측량은 약 300m 이하로 한다.
+2~4급 공공수준점측량은 약 450m 이하로 한다.</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">틸팅나사법</cell>
+    <cell col="1" row="2">1, 2급 공공수준점측량은 약 2cm 이하로 한다.</cell>
+  </row>
+</table>

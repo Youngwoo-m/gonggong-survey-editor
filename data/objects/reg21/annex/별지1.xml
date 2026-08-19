@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지1" gubun="별지" no="1" title="설계 (시공) 기준점 조서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=59322911">
+  <text>[별지 제1호 서식]
+설계 (시공) 기준점 조서</text>
+  <table rows="20" cols="6">
+    <row>
+      <cell col="0" row="0">기준점명칭</cell>
+      <cell col="1" row="0" colspan="5">예) KCP 05</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">공  사  명</cell>
+      <cell col="1" row="1" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2">발주기관</cell>
+      <cell col="1" row="2" colspan="2"></cell>
+      <cell col="3" row="2">작업기관</cell>
+      <cell col="4" row="2" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">설치일자</cell>
+      <cell col="1" row="3" colspan="2"></cell>
+      <cell col="3" row="3">설  치  자</cell>
+      <cell col="4" row="3" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4">관측일자</cell>
+      <cell col="1" row="4" colspan="2"></cell>
+      <cell col="3" row="4">관  측  자</cell>
+      <cell col="4" row="4" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" rowspan="3">기준점성과
+(세계측지계)</cell>
+      <cell col="1" row="5">X(N)</cell>
+      <cell col="2" row="5">m</cell>
+      <cell col="3" row="5">측량방법</cell>
+      <cell col="4" row="5" colspan="2">예) GNSS 정지측량</cell>
+    </row>
+    <row>
+      <cell col="1" row="6">Y(E)</cell>
+      <cell col="2" row="6">m</cell>
+      <cell col="3" row="6">표지상황</cell>
+      <cell col="4" row="6" colspan="2">예) 황동표지</cell>
+    </row>
+    <row>
+      <cell col="1" row="7">Z(H)</cell>
+      <cell col="2" row="7">m</cell>
+      <cell col="3" row="7">좌표원점</cell>
+      <cell col="4" row="7" colspan="2">예) 중부</cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="6">사용 기지점 성과</cell>
+    </row>
+    <row>
+      <cell col="0" row="9" rowspan="3">예)
+위성기준점,
+강릉(KANR)</cell>
+      <cell col="1" row="9">X</cell>
+      <cell col="2" row="9">m</cell>
+      <cell col="3" row="9" rowspan="3">예)
+통합기준점,
+U 0000</cell>
+      <cell col="4" row="9">X</cell>
+      <cell col="5" row="9">m</cell>
+    </row>
+    <row>
+      <cell col="1" row="10">Y</cell>
+      <cell col="2" row="10">m</cell>
+      <cell col="4" row="10">Y</cell>
+      <cell col="5" row="10">m</cell>
+    </row>
+    <row>
+      <cell col="1" row="11">H</cell>
+      <cell col="2" row="11">m</cell>
+      <cell col="4" row="11">H</cell>
+      <cell col="5" row="11">m</cell>
+    </row>
+    <row>
+      <cell col="0" row="12" rowspan="3">예)
+삼각점,
+안양 000</cell>
+      <cell col="1" row="12">X</cell>
+      <cell col="2" row="12">m</cell>
+      <cell col="3" row="12" rowspan="3">예)
+공공삼각점,
+0000-000</cell>
+      <cell col="4" row="12">X</cell>
+      <cell col="5" row="12">m</cell>
+    </row>
+    <row>
+      <cell col="1" row="13">Y</cell>
+      <cell col="2" row="13">m</cell>
+      <cell col="4" row="13">Y</cell>
+      <cell col="5" row="13">m</cell>
+    </row>
+    <row>
+      <cell col="1" row="14">H</cell>
+      <cell col="2" row="14">m</cell>
+      <cell col="4" row="14">H</cell>
+      <cell col="5" row="14">m</cell>
+    </row>
+    <row>
+      <cell col="0" row="15" rowspan="3">예)
+수준점,
+00-00-00-00</cell>
+      <cell col="1" row="15">X</cell>
+      <cell col="2" row="15">m</cell>
+      <cell col="3" row="15" rowspan="3"></cell>
+      <cell col="4" row="15">X</cell>
+      <cell col="5" row="15">m</cell>
+    </row>
+    <row>
+      <cell col="1" row="16">Y</cell>
+      <cell col="2" row="16">m</cell>
+      <cell col="4" row="16">Y</cell>
+      <cell col="5" row="16">m</cell>
+    </row>
+    <row>
+      <cell col="1" row="17">H</cell>
+      <cell col="2" row="17">m</cell>
+      <cell col="4" row="17">H</cell>
+      <cell col="5" row="17">m</cell>
+    </row>
+    <row>
+      <cell col="0" row="18" colspan="3">근경 사진</cell>
+      <cell col="3" row="18" colspan="3">원경 사진</cell>
+    </row>
+    <row>
+      <cell col="0" row="19" colspan="3"></cell>
+      <cell col="3" row="19" colspan="3"></cell>
+    </row>
+  </table>
+  <text>20   .     .
+현장대리인                  인
+210mm×297mm(일반용지 60g/㎡)</text>
+</annex>

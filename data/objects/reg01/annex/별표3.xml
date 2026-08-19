@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표3" gubun="별표" no="3" title="공공삼각점측량 정확도 관리표(1)" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296085">
+  <text>[ 별표 3 ]
+공공삼각점측량 정확도 관리표(1)</text>
+  <table rows="18" cols="23">
+    <row>
+      <cell col="0" row="0">작업명</cell>
+      <cell col="1" row="0" colspan="4"></cell>
+      <cell col="5" row="0" colspan="3">지역명</cell>
+      <cell col="8" row="0" colspan="3"></cell>
+      <cell col="11" row="0" colspan="2">시행자명</cell>
+      <cell col="13" row="0"></cell>
+      <cell col="14" row="0" colspan="4">수행자명</cell>
+      <cell col="18" row="0" colspan="3"></cell>
+      <cell col="21" row="0">현장
+책임자</cell>
+      <cell col="22" row="0">인</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">목  적</cell>
+      <cell col="1" row="1" colspan="4"></cell>
+      <cell col="5" row="1" colspan="3">기  간</cell>
+      <cell col="8" row="1" colspan="3"></cell>
+      <cell col="11" row="1" colspan="2">작  업  량</cell>
+      <cell col="13" row="1"></cell>
+      <cell col="14" row="1" colspan="4">용역수행대리인</cell>
+      <cell col="18" row="1" colspan="3">인</cell>
+      <cell col="21" row="1" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="23"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" rowspan="3">노선번호</cell>
+      <cell col="1" row="3" rowspan="3">측정번호</cell>
+      <cell col="2" row="3" colspan="2" rowspan="3">노선길이</cell>
+      <cell col="4" row="3" colspan="3" rowspan="3">내각수</cell>
+      <cell col="7" row="3" colspan="3" rowspan="3">변수</cell>
+      <cell col="10" row="3" colspan="4">점검계산</cell>
+      <cell col="14" row="3" colspan="2" rowspan="3">편  심</cell>
+      <cell col="16" row="3" colspan="3" rowspan="3">재측수</cell>
+      <cell col="19" row="3" colspan="3">엄밀망 평균 계산</cell>
+      <cell col="22" row="3" rowspan="3">적 요</cell>
+    </row>
+    <row>
+      <cell col="10" row="4" colspan="2">수평위치</cell>
+      <cell col="12" row="4" colspan="2">표고</cell>
+      <cell col="19" row="4" colspan="3">신점위치의 표준편차</cell>
+    </row>
+    <row>
+      <cell col="10" row="5">폐합차</cell>
+      <cell col="11" row="5">허용범위</cell>
+      <cell col="12" row="5">폐합차</cell>
+      <cell col="13" row="5">허용범위</cell>
+      <cell col="19" row="5">X좌표</cell>
+      <cell col="20" row="5">Y좌표</cell>
+      <cell col="21" row="5">표고</cell>
+    </row>
+    <row>
+      <cell col="0" row="6"></cell>
+      <cell col="1" row="6"></cell>
+      <cell col="2" row="6" colspan="2"></cell>
+      <cell col="4" row="6" colspan="3"></cell>
+      <cell col="7" row="6" colspan="3"></cell>
+      <cell col="10" row="6"></cell>
+      <cell col="11" row="6"></cell>
+      <cell col="12" row="6"></cell>
+      <cell col="13" row="6"></cell>
+      <cell col="14" row="6" colspan="2"></cell>
+      <cell col="16" row="6" colspan="3"></cell>
+      <cell col="19" row="6"></cell>
+      <cell col="20" row="6"></cell>
+      <cell col="21" row="6"></cell>
+      <cell col="22" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="23"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="19" rowspan="2">점   검   측   량</cell>
+      <cell col="19" row="8" rowspan="10"></cell>
+      <cell col="20" row="8" colspan="3">주요 기기명칭 번호</cell>
+    </row>
+    <row>
+      <cell col="20" row="9" colspan="3" rowspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" rowspan="4">측점번호</cell>
+      <cell col="1" row="10" colspan="8">거        리</cell>
+      <cell col="9" row="10" colspan="4">수   평   각</cell>
+      <cell col="13" row="10" colspan="6">연   직   각</cell>
+    </row>
+    <row>
+      <cell col="1" row="11" colspan="2" rowspan="3">점검값</cell>
+      <cell col="3" row="11" colspan="3" rowspan="3">채택값</cell>
+      <cell col="6" row="11" colspan="3" rowspan="3">교차</cell>
+      <cell col="9" row="11" colspan="2" rowspan="3">점검값</cell>
+      <cell col="11" row="11" rowspan="3">채택값</cell>
+      <cell col="12" row="11" rowspan="3">교 차</cell>
+      <cell col="13" row="11" colspan="2" rowspan="3">점검값</cell>
+      <cell col="15" row="11" colspan="2" rowspan="3">채택값</cell>
+      <cell col="17" row="11" colspan="2" rowspan="3">교 차</cell>
+    </row>
+    <row>
+      <cell col="20" row="12" colspan="3">영구표지의 종별 등</cell>
+    </row>
+    <row>
+      <cell col="20" row="13" rowspan="2">종별</cell>
+      <cell col="21" row="13" rowspan="2">수량</cell>
+      <cell col="22" row="13" rowspan="2">표준양식</cell>
+    </row>
+    <row>
+      <cell col="0" row="14" rowspan="4"></cell>
+      <cell col="1" row="14" colspan="2" rowspan="4"></cell>
+      <cell col="3" row="14" colspan="3" rowspan="4"></cell>
+      <cell col="6" row="14" colspan="3" rowspan="4"></cell>
+      <cell col="9" row="14" colspan="2" rowspan="4"></cell>
+      <cell col="11" row="14" rowspan="4"></cell>
+      <cell col="12" row="14" rowspan="4"></cell>
+      <cell col="13" row="14" colspan="2" rowspan="4"></cell>
+      <cell col="15" row="14" colspan="2" rowspan="4"></cell>
+      <cell col="17" row="14" colspan="2" rowspan="4"></cell>
+    </row>
+    <row>
+      <cell col="20" row="15"></cell>
+      <cell col="21" row="15"></cell>
+      <cell col="22" row="15"></cell>
+    </row>
+    <row>
+      <cell col="20" row="16" colspan="3">특기사항</cell>
+    </row>
+    <row>
+      <cell col="20" row="17" colspan="3"></cell>
+    </row>
+  </table>
+</annex>

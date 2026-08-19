@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc19t006" article="기록 관리" rows="17" cols="5" source="측량 안전관리 매뉴얼 (2026.1)">
+  <row>
+    <cell col="0" row="0" header="1">구분</cell>
+    <cell col="1" row="0" header="1">점검 항목</cell>
+    <cell col="2" row="0" header="1">점검 내용</cell>
+    <cell col="3" row="0" header="1">확인 (✓)</cell>
+    <cell col="4" row="0" header="1">비고</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">1. 개인 보호장비</cell>
+    <cell col="1" row="1">안전모 착용 여부</cell>
+    <cell col="2" row="1">안전모가 착용되어 있고 손상 없음</cell>
+    <cell col="3" row="1">☐</cell>
+    <cell col="4" row="1"></cell>
+  </row>
+  <row>
+    <cell col="0" row="2"></cell>
+    <cell col="1" row="2">안전조끼 및 반사띠 착용 여부</cell>
+    <cell col="2" row="2">고가시성 조끼 착용, 반사 기능 확인</cell>
+    <cell col="3" row="2">☐</cell>
+    <cell col="4" row="2"></cell>
+  </row>
+  <row>
+    <cell col="0" row="3"></cell>
+    <cell col="1" row="3">안전화 착용 여부</cell>
+    <cell col="2" row="3">미끄럼 방지 기능의 안전화 착용</cell>
+    <cell col="3" row="3">☐</cell>
+    <cell col="4" row="3"></cell>
+  </row>
+  <row>
+    <cell col="0" row="4">2. 현장 위험요소 확인</cell>
+    <cell col="1" row="4">지반 및 경사면 위험 여부</cell>
+    <cell col="2" row="4">붕괴 위험, 낙석 가능성 등 확인</cell>
+    <cell col="3" row="4">☐</cell>
+    <cell col="4" row="4"></cell>
+  </row>
+  <row>
+    <cell col="0" row="5"></cell>
+    <cell col="1" row="5">절벽, 급경사 접근 시 조치 여부</cell>
+    <cell col="2" row="5">안전 로프, 안내 표지 설치 등</cell>
+    <cell col="3" row="5">☐</cell>
+    <cell col="4" row="5"></cell>
+  </row>
+  <row>
+    <cell col="0" row="6"></cell>
+    <cell col="1" row="6">작업 공간 내 장애물 여부</cell>
+    <cell col="2" row="6">돌출 구조물, 낙하물, 차량 진입 등</cell>
+    <cell col="3" row="6">☐</cell>
+    <cell col="4" row="6"></cell>
+  </row>
+  <row>
+    <cell col="0" row="7">3. 장비 점검</cell>
+    <cell col="1" row="7">전자 장비 작동 상태 확인</cell>
+    <cell col="2" row="7">GNSS, 토탈스테이션, 드론 등 정상작동 여부</cell>
+    <cell col="3" row="7">☐</cell>
+    <cell col="4" row="7"></cell>
+  </row>
+  <row>
+    <cell col="0" row="8"></cell>
+    <cell col="1" row="8">배터리 상태 및 충전 여부</cell>
+    <cell col="2" row="8">과열, 누액, 충전상태 확인</cell>
+    <cell col="3" row="8">☐</cell>
+    <cell col="4" row="8"></cell>
+  </row>
+  <row>
+    <cell col="0" row="9"></cell>
+    <cell col="1" row="9">삼각대·기기 고정 상태 확인</cell>
+    <cell col="2" row="9">장비가 흔들리지 않도록 고정되었는가</cell>
+    <cell col="3" row="9">☐</cell>
+    <cell col="4" row="9"></cell>
+  </row>
+  <row>
+    <cell col="0" row="10">4. 기상 및 환경 확인</cell>
+    <cell col="1" row="10">기상 상황 확인 여부</cell>
+    <cell col="2" row="10">강풍, 우천, 폭염, 한파 여부 체크</cell>
+    <cell col="3" row="10">☐</cell>
+    <cell col="4" row="10"></cell>
+  </row>
+  <row>
+    <cell col="0" row="11"></cell>
+    <cell col="1" row="11">기상 악화 시 철수 기준 숙지 여부</cell>
+    <cell col="2" row="11">매뉴얼상의 중단기준 인지 여부</cell>
+    <cell col="3" row="11">☐</cell>
+    <cell col="4" row="11"></cell>
+  </row>
+  <row>
+    <cell col="0" row="12">5. 교통안전 확보</cell>
+    <cell col="1" row="12">도로 인접 작업 여부</cell>
+    <cell col="2" row="12">차량 접근 위험 존재 여부</cell>
+    <cell col="3" row="12">☐</cell>
+    <cell col="4" row="12"></cell>
+  </row>
+  <row>
+    <cell col="0" row="13"></cell>
+    <cell col="1" row="13">안전표지 설치 여부</cell>
+    <cell col="2" row="13">고깔, 표지판, 플래시 경고등 등</cell>
+    <cell col="3" row="13">☐</cell>
+    <cell col="4" row="13"></cell>
+  </row>
+  <row>
+    <cell col="0" row="14"></cell>
+    <cell col="1" row="14">반사 조끼 및 작업자 식별 가능 여부</cell>
+    <cell col="2" row="14">운전자가 시야에서 인지 가능하게 착용</cell>
+    <cell col="3" row="14">☐</cell>
+    <cell col="4" row="14"></cell>
+  </row>
+  <row>
+    <cell col="0" row="15">6. 비상대응 체계</cell>
+    <cell col="1" row="15">비상 연락망 숙지 여부</cell>
+    <cell col="2" row="15">팀장, 관리자, 구조요청 번호 등 확인</cell>
+    <cell col="3" row="15">☐</cell>
+    <cell col="4" row="15"></cell>
+  </row>
+  <row>
+    <cell col="0" row="16"></cell>
+    <cell col="1" row="16">응급 키트 및 소화기 확인</cell>
+    <cell col="2" row="16">응급처치 장비 위치 및 사용법 숙지</cell>
+    <cell col="3" row="16">☐</cell>
+    <cell col="4" row="16"></cell>
+  </row>
+</table>

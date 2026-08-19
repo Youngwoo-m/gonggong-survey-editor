@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표1" gubun="별표" no="1" title="3차원 국토공간정보 표준데이터셋" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=118782523">
+  <text>[별표1] 3차원 국토공간정보 표준데이터셋</text>
+  <table rows="20" cols="3">
+    <row>
+      <cell col="0" row="0">대분류</cell>
+      <cell col="1" row="0">중분류</cell>
+      <cell col="2" row="0">세분류</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="6">3차원
+교통데이터</cell>
+      <cell col="1" row="1" rowspan="2">도로</cell>
+      <cell col="2" row="1">단위도로면(차도면, 인도면)</cell>
+    </row>
+    <row>
+      <cell col="2" row="2">도로교차면</cell>
+    </row>
+    <row>
+      <cell col="1" row="3">철도</cell>
+      <cell col="2" row="3">단위철도면</cell>
+    </row>
+    <row>
+      <cell col="1" row="4" rowspan="3">교통시설물</cell>
+      <cell col="2" row="4">교량(교량, 입체교차부)</cell>
+    </row>
+    <row>
+      <cell col="2" row="5">터널(터널, 지하차도)</cell>
+    </row>
+    <row>
+      <cell col="2" row="6">도로교통시설물(육교)</cell>
+    </row>
+    <row>
+      <cell col="0" row="7" rowspan="8">3차원
+건물데이터</cell>
+      <cell col="1" row="7" rowspan="2">주거용 건물</cell>
+      <cell col="2" row="7">일반주택</cell>
+    </row>
+    <row>
+      <cell col="2" row="8">공동주택</cell>
+    </row>
+    <row>
+      <cell col="1" row="9" rowspan="6">주거외 건물</cell>
+      <cell col="2" row="9">공공기관</cell>
+    </row>
+    <row>
+      <cell col="2" row="10">산업시설</cell>
+    </row>
+    <row>
+      <cell col="2" row="11">문화/교육시설</cell>
+    </row>
+    <row>
+      <cell col="2" row="12">의료/복지시설</cell>
+    </row>
+    <row>
+      <cell col="2" row="13">서비스시설</cell>
+    </row>
+    <row>
+      <cell col="2" row="14">기타시설</cell>
+    </row>
+    <row>
+      <cell col="0" row="15" rowspan="4">3차원
+수자원데이터</cell>
+      <cell col="1" row="15" rowspan="4">전문수자원</cell>
+      <cell col="2" row="15">하천부속물(댐, 보)</cell>
+    </row>
+    <row>
+      <cell col="2" row="16">호안</cell>
+    </row>
+    <row>
+      <cell col="2" row="17">제방</cell>
+    </row>
+    <row>
+      <cell col="2" row="18">하천면</cell>
+    </row>
+    <row>
+      <cell col="0" row="19">3차원
+지형데이터</cell>
+      <cell col="1" row="19">-</cell>
+      <cell col="2" row="19">-</cell>
+    </row>
+  </table>
+</annex>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="151295951" article="제102조" rows="12" cols="3" source="공공측량 작업규정.2025.04.23_수식수정.오류표시.hwpx">
+  <row>
+    <cell col="0" row="0" colspan="2">명칭</cell>
+    <cell col="2" row="0">약어</cell>
+  </row>
+  <row>
+    <cell col="0" row="1" rowspan="10">주
+요
+점</cell>
+    <cell col="1" row="1">교점</cell>
+    <cell col="2" row="1">IP</cell>
+  </row>
+  <row>
+    <cell col="1" row="2">기점</cell>
+    <cell col="2" row="2">BP</cell>
+  </row>
+  <row>
+    <cell col="1" row="3">종점</cell>
+    <cell col="2" row="3">EP</cell>
+  </row>
+  <row>
+    <cell col="1" row="4">원곡선 시점</cell>
+    <cell col="2" row="4">BC</cell>
+  </row>
+  <row>
+    <cell col="1" row="5">원곡선 종점</cell>
+    <cell col="2" row="5">EC</cell>
+  </row>
+  <row>
+    <cell col="1" row="6">곡선의 중점</cell>
+    <cell col="2" row="6">SP</cell>
+  </row>
+  <row>
+    <cell col="1" row="7">완화곡선 시점</cell>
+    <cell col="2" row="7">BTC</cell>
+  </row>
+  <row>
+    <cell col="1" row="8">완화곡선 종점</cell>
+    <cell col="2" row="8">ETC</cell>
+  </row>
+  <row>
+    <cell col="1" row="9">클로소이드(clothoid)곡선 시점</cell>
+    <cell col="2" row="9">KA</cell>
+  </row>
+  <row>
+    <cell col="1" row="10">클로소이드(clothoid)곡선 종점</cell>
+    <cell col="2" row="10">KE</cell>
+  </row>
+  <row>
+    <cell col="0" row="11" colspan="2">중심점</cell>
+    <cell col="2" row="11">-</cell>
+  </row>
+</table>

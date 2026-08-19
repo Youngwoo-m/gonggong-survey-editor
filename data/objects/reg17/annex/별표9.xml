@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표9" gubun="별표" no="9" title="3차원 국토공간정보 품질검사 방법별 품질요소 적용범위 및 합격기준" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=118782575">
+  <text>[별표9] 3차원 국토공간정보 품질검사 방법별 품질요소 적용범위 및 합격기준</text>
+  <table rows="20" cols="6">
+    <row>
+      <cell col="0" row="0" colspan="3">항 목</cell>
+      <cell col="3" row="0" colspan="2">검사방법</cell>
+      <cell col="5" row="0">합격기준</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">데이터 품질요소</cell>
+      <cell col="1" row="1">데이터품질  세부요소</cell>
+      <cell col="2" row="1">데이터품질 
+세세부요소</cell>
+      <cell col="3" row="1">화면
+검사</cell>
+      <cell col="4" row="1">현장
+검사</cell>
+      <cell col="5" row="1">오류율
+(% 이내)</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" rowspan="2">완전성</cell>
+      <cell col="1" row="2" rowspan="2">누락</cell>
+      <cell col="2" row="2">대상영역 누락</cell>
+      <cell col="3" row="2">●</cell>
+      <cell col="4" row="2"></cell>
+      <cell col="5" row="2">0%</cell>
+    </row>
+    <row>
+      <cell col="2" row="3">대상객체 누락</cell>
+      <cell col="3" row="3">●</cell>
+      <cell col="4" row="3"></cell>
+      <cell col="5" row="3">0%</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" rowspan="4">논리
+일관성</cell>
+      <cell col="1" row="4" rowspan="2">개념 일관성</cell>
+      <cell col="2" row="4">세밀도 일관성</cell>
+      <cell col="3" row="4">●</cell>
+      <cell col="4" row="4"></cell>
+      <cell col="5" row="4">5%</cell>
+    </row>
+    <row>
+      <cell col="2" row="5">가시화 일관성</cell>
+      <cell col="3" row="5">●</cell>
+      <cell col="4" row="5"></cell>
+      <cell col="5" row="5">5%</cell>
+    </row>
+    <row>
+      <cell col="1" row="6" rowspan="2">위상 일관성</cell>
+      <cell col="2" row="6">2차원정보 구조화 일관성</cell>
+      <cell col="3" row="6">●</cell>
+      <cell col="4" row="6"></cell>
+      <cell col="5" row="6">5%</cell>
+    </row>
+    <row>
+      <cell col="2" row="7">3차원정보 구조화 일관성</cell>
+      <cell col="3" row="7">●</cell>
+      <cell col="4" row="7"></cell>
+      <cell col="5" row="7">5%</cell>
+    </row>
+    <row>
+      <cell col="0" row="8" rowspan="7">위치
+정확성</cell>
+      <cell col="1" row="8" rowspan="3">절대적 또는 외적 정확성</cell>
+      <cell col="2" row="8">기준좌표계 정확성</cell>
+      <cell col="3" row="8">●</cell>
+      <cell col="4" row="8"></cell>
+      <cell col="5" row="8">0%</cell>
+    </row>
+    <row>
+      <cell col="2" row="9">2차원 위치정보 정확성</cell>
+      <cell col="3" row="9">●</cell>
+      <cell col="4" row="9">●</cell>
+      <cell col="5" row="9">5%</cell>
+    </row>
+    <row>
+      <cell col="2" row="10">3차원 위치정보 정확성</cell>
+      <cell col="3" row="10">●</cell>
+      <cell col="4" row="10">●</cell>
+      <cell col="5" row="10">5%</cell>
+    </row>
+    <row>
+      <cell col="1" row="11" rowspan="3">상대적 또는 내적 정확성</cell>
+      <cell col="2" row="11">2차원정보 경계인접</cell>
+      <cell col="3" row="11">●</cell>
+      <cell col="4" row="11">●</cell>
+      <cell col="5" row="11">5%</cell>
+    </row>
+    <row>
+      <cell col="2" row="12">3차원정보 경계인접</cell>
+      <cell col="3" row="12">●</cell>
+      <cell col="4" row="12">●</cell>
+      <cell col="5" row="12">5%</cell>
+    </row>
+    <row>
+      <cell col="2" row="13">가시화이미지 정합</cell>
+      <cell col="3" row="13">●</cell>
+      <cell col="4" row="13">●</cell>
+      <cell col="5" row="13">5%</cell>
+    </row>
+    <row>
+      <cell col="1" row="14">그리드데이터
+위치정확성</cell>
+      <cell col="2" row="14">3차원 지형데이터 
+위치정확성</cell>
+      <cell col="3" row="14">●</cell>
+      <cell col="4" row="14">●</cell>
+      <cell col="5" row="14">5%</cell>
+    </row>
+    <row>
+      <cell col="0" row="15" rowspan="3">주제
+정확성</cell>
+      <cell col="1" row="15">분류 정확성</cell>
+      <cell col="2" row="15">항목 분류 정확성</cell>
+      <cell col="3" row="15">●</cell>
+      <cell col="4" row="15"></cell>
+      <cell col="5" row="15">5%</cell>
+    </row>
+    <row>
+      <cell col="1" row="16" rowspan="2">속성 정확성</cell>
+      <cell col="2" row="16">속성내용 불일치</cell>
+      <cell col="3" row="16">●</cell>
+      <cell col="4" row="16"></cell>
+      <cell col="5" row="16">5%</cell>
+    </row>
+    <row>
+      <cell col="2" row="17">속성내용 누락</cell>
+      <cell col="3" row="17">●</cell>
+      <cell col="4" row="17"></cell>
+      <cell col="5" row="17">5%</cell>
+    </row>
+    <row>
+      <cell col="0" row="18" rowspan="2">기타</cell>
+      <cell col="1" row="18">관리파일 작성오류</cell>
+      <cell col="2" row="18">메타데이터 누락</cell>
+      <cell col="3" row="18">●</cell>
+      <cell col="4" row="18"></cell>
+      <cell col="5" row="18">5%</cell>
+    </row>
+    <row>
+      <cell col="1" row="19">성과품 누락</cell>
+      <cell col="2" row="19">성과품 누락</cell>
+      <cell col="3" row="19">●</cell>
+      <cell col="4" row="19"></cell>
+      <cell col="5" row="19">0%</cell>
+    </row>
+  </table>
+</annex>

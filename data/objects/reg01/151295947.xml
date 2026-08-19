@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="151295947" article="제96조" rows="12" cols="4" source="공공측량 작업규정.2025.04.23_수식수정.오류표시.hwpx">
+  <row>
+    <cell col="0" row="0">기기</cell>
+    <cell col="1" row="0" colspan="2">성능</cell>
+    <cell col="3" row="0">비고</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">2급 TS</cell>
+    <cell col="1" row="1" colspan="2" rowspan="4">시행규칙 제102조의 측량기기별 성능기준에 따른다.</cell>
+    <cell col="3" row="1" rowspan="4"></cell>
+  </row>
+  <row>
+    <cell col="0" row="2">3급 광파측거기</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">2급 데오드라이트</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">2급 GNSS수신기</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">레벨</cell>
+    <cell col="1" row="5" colspan="2">1km왕복수준측량의 표준편차 : 1mm이하</cell>
+    <cell col="3" row="5"></cell>
+  </row>
+  <row>
+    <cell col="0" row="6">강테이프(steel tape)</cell>
+    <cell col="1" row="6" colspan="2">KS 1급</cell>
+    <cell col="3" row="6"></cell>
+  </row>
+  <row>
+    <cell col="0" row="7">유리섬유테이프</cell>
+    <cell col="1" row="7" colspan="2">KS 1급 1종</cell>
+    <cell col="3" row="7"></cell>
+  </row>
+  <row>
+    <cell col="0" row="8">해양측위기</cell>
+    <cell col="1" row="8" colspan="2">측위오차 : (0.5m±100ppm.D)이하</cell>
+    <cell col="3" row="8"></cell>
+  </row>
+  <row>
+    <cell col="0" row="9">음향측심기</cell>
+    <cell col="1" row="9" colspan="2">측심오차 : (10cm+수심/100)이내</cell>
+    <cell col="3" row="9"></cell>
+  </row>
+  <row>
+    <cell col="0" row="10" rowspan="2">지하시설물 측량기</cell>
+    <cell col="1" row="10" colspan="2">시행규칙 제102조의 측량기기별 성능기준에 따른다.</cell>
+    <cell col="3" row="10">관경 80mm이상, 깊이 3m 이내의 관로를 기준으로 한것</cell>
+  </row>
+  <row>
+    <cell col="1" row="11">맨홀탐지기</cell>
+    <cell col="2" row="11">매몰된 맨홀의 탐지 50cm이상</cell>
+    <cell col="3" row="11"></cell>
+  </row>
+</table>

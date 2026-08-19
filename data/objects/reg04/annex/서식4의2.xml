@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식4의2" gubun="서식" no="4의2" title="측량업정보관리대장" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454321">
+  <table rows="33" cols="31">
+    <row>
+      <cell col="0" row="0" colspan="27">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별지 제4호의2서식] &lt;개정 2021. 8. 27.&gt;</cell>
+      <cell col="27" row="0" colspan="4">(앞 쪽)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="31">측량업정보관리대장</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="10">상호</cell>
+      <cell col="10" row="2" colspan="8"></cell>
+      <cell col="18" row="2" colspan="7">대표자(성명)</cell>
+      <cell col="25" row="2" colspan="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="10">영업소 소재지</cell>
+      <cell col="10" row="3" colspan="8"></cell>
+      <cell col="18" row="3" colspan="7">전화번호</cell>
+      <cell col="25" row="3" colspan="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="10">생년월일
+(법인인 경우에는 법인등록번호)</cell>
+      <cell col="10" row="4" colspan="8"></cell>
+      <cell col="18" row="4" colspan="7" rowspan="2">국적 또는 소속 국가명</cell>
+      <cell col="25" row="4" colspan="6" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="10">사업자 등록번호</cell>
+      <cell col="10" row="5" colspan="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6" colspan="10">납입 자본금</cell>
+      <cell col="10" row="6" colspan="8"></cell>
+      <cell col="18" row="6" colspan="7">투자비율(외국인의 경우)</cell>
+      <cell col="25" row="6" colspan="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="4">업종</cell>
+      <cell col="4" row="7" colspan="9">등록번호</cell>
+      <cell col="13" row="7" colspan="5">등록일</cell>
+      <cell col="18" row="7" colspan="7">등록사항
+신고수리일</cell>
+      <cell col="25" row="7" colspan="6">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="4"></cell>
+      <cell col="4" row="8" colspan="9">제   호</cell>
+      <cell col="13" row="8" colspan="5"></cell>
+      <cell col="18" row="8" colspan="7"></cell>
+      <cell col="25" row="8" colspan="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="4"></cell>
+      <cell col="4" row="9" colspan="9">제   호</cell>
+      <cell col="13" row="9" colspan="5"></cell>
+      <cell col="18" row="9" colspan="7"></cell>
+      <cell col="25" row="9" colspan="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="4"></cell>
+      <cell col="4" row="10" colspan="9">제   호</cell>
+      <cell col="13" row="10" colspan="5"></cell>
+      <cell col="18" row="10" colspan="7"></cell>
+      <cell col="25" row="10" colspan="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="31">기 본 현 황</cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="31">임원 현황</cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="8">성명</cell>
+      <cell col="8" row="13" colspan="11">생년월일</cell>
+      <cell col="19" row="13" colspan="6">직위</cell>
+      <cell col="25" row="13" colspan="4">등기일자</cell>
+      <cell col="29" row="13" colspan="2">퇴사일자</cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="8"></cell>
+      <cell col="8" row="14" colspan="11"></cell>
+      <cell col="19" row="14" colspan="6"></cell>
+      <cell col="25" row="14" colspan="4"></cell>
+      <cell col="29" row="14" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="8"></cell>
+      <cell col="8" row="15" colspan="11"></cell>
+      <cell col="19" row="15" colspan="6"></cell>
+      <cell col="25" row="15" colspan="4"></cell>
+      <cell col="29" row="15" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="31">기술인 현황</cell>
+    </row>
+    <row>
+      <cell col="0" row="17" colspan="5">성명</cell>
+      <cell col="5" row="17" colspan="9">생년월일</cell>
+      <cell col="14" row="17" colspan="5">직위</cell>
+      <cell col="19" row="17" colspan="5">기술등급 및 자격현황</cell>
+      <cell col="24" row="17" colspan="5">입사일</cell>
+      <cell col="29" row="17" colspan="2">퇴사일</cell>
+    </row>
+    <row>
+      <cell col="0" row="18" colspan="5"></cell>
+      <cell col="5" row="18" colspan="9"></cell>
+      <cell col="14" row="18" colspan="5"></cell>
+      <cell col="19" row="18" colspan="5"></cell>
+      <cell col="24" row="18" colspan="5"></cell>
+      <cell col="29" row="18" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19" colspan="5"></cell>
+      <cell col="5" row="19" colspan="9"></cell>
+      <cell col="14" row="19" colspan="5"></cell>
+      <cell col="19" row="19" colspan="5"></cell>
+      <cell col="24" row="19" colspan="5"></cell>
+      <cell col="29" row="19" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20" colspan="31">장비현황</cell>
+    </row>
+    <row>
+      <cell col="0" row="21" colspan="9">장 비 명</cell>
+      <cell col="9" row="21" colspan="10">등록번호</cell>
+      <cell col="19" row="21" colspan="7">규격</cell>
+      <cell col="26" row="21" colspan="5">취득일자</cell>
+    </row>
+    <row>
+      <cell col="0" row="22" colspan="9"></cell>
+      <cell col="9" row="22" colspan="10"></cell>
+      <cell col="19" row="22" colspan="7"></cell>
+      <cell col="26" row="22" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23" colspan="9"></cell>
+      <cell col="9" row="23" colspan="10"></cell>
+      <cell col="19" row="23" colspan="7"></cell>
+      <cell col="26" row="23" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="24" colspan="31">재무상태표 (기준일 :             )
+(단위 : 백만원)</cell>
+    </row>
+    <row>
+      <cell col="0" row="25" colspan="2">자산총계</cell>
+      <cell col="2" row="25" colspan="4">유동
+자산</cell>
+      <cell col="6" row="25" colspan="5">고정
+자산</cell>
+      <cell col="11" row="25" colspan="4">부채
+총계</cell>
+      <cell col="15" row="25" colspan="2">유동
+부채</cell>
+      <cell col="17" row="25" colspan="4">고정
+부채</cell>
+      <cell col="21" row="25" colspan="2">자본
+총계</cell>
+      <cell col="23" row="25" colspan="2">자본금</cell>
+      <cell col="25" row="25" colspan="3">자본
+잉여금</cell>
+      <cell col="28" row="25" colspan="2">이익
+잉여금</cell>
+      <cell col="30" row="25">자본
+조정</cell>
+    </row>
+    <row>
+      <cell col="0" row="26" colspan="2"></cell>
+      <cell col="2" row="26" colspan="4"></cell>
+      <cell col="6" row="26" colspan="5"></cell>
+      <cell col="11" row="26" colspan="4"></cell>
+      <cell col="15" row="26" colspan="2"></cell>
+      <cell col="17" row="26" colspan="4"></cell>
+      <cell col="21" row="26" colspan="2"></cell>
+      <cell col="23" row="26" colspan="2"></cell>
+      <cell col="25" row="26" colspan="3"></cell>
+      <cell col="28" row="26" colspan="2"></cell>
+      <cell col="30" row="26"></cell>
+    </row>
+    <row>
+      <cell col="0" row="27" colspan="2"></cell>
+      <cell col="2" row="27" colspan="4"></cell>
+      <cell col="6" row="27" colspan="5"></cell>
+      <cell col="11" row="27" colspan="4"></cell>
+      <cell col="15" row="27" colspan="2"></cell>
+      <cell col="17" row="27" colspan="4"></cell>
+      <cell col="21" row="27" colspan="2"></cell>
+      <cell col="23" row="27" colspan="2"></cell>
+      <cell col="25" row="27" colspan="3"></cell>
+      <cell col="28" row="27" colspan="2"></cell>
+      <cell col="30" row="27"></cell>
+    </row>
+    <row>
+      <cell col="0" row="28" colspan="31">손익계산서 (시작일 :       , 종료일 :        )
+(단위 : 백만원)</cell>
+    </row>
+    <row>
+      <cell col="0" row="29">매출액</cell>
+      <cell col="1" row="29" colspan="2">매출
+원가</cell>
+      <cell col="3" row="29" colspan="4">매출
+총
+이익</cell>
+      <cell col="7" row="29" colspan="5">판매비와 관리비</cell>
+      <cell col="12" row="29" colspan="4">영업
+이익</cell>
+      <cell col="16" row="29" colspan="2">영업외
+수익</cell>
+      <cell col="18" row="29" colspan="2">영업외
+비용</cell>
+      <cell col="20" row="29" colspan="2">경상
+이익</cell>
+      <cell col="22" row="29" colspan="2">특별
+이익</cell>
+      <cell col="24" row="29" colspan="2">특별
+손실</cell>
+      <cell col="26" row="29" colspan="3">법인세
+차감전이익</cell>
+      <cell col="29" row="29">법인세 등</cell>
+      <cell col="30" row="29">당기
+순이익</cell>
+    </row>
+    <row>
+      <cell col="0" row="30"></cell>
+      <cell col="1" row="30" colspan="2"></cell>
+      <cell col="3" row="30" colspan="4"></cell>
+      <cell col="7" row="30" colspan="5"></cell>
+      <cell col="12" row="30" colspan="4"></cell>
+      <cell col="16" row="30" colspan="2"></cell>
+      <cell col="18" row="30" colspan="2"></cell>
+      <cell col="20" row="30" colspan="2"></cell>
+      <cell col="22" row="30" colspan="2"></cell>
+      <cell col="24" row="30" colspan="2"></cell>
+      <cell col="26" row="30" colspan="3"></cell>
+      <cell col="29" row="30"></cell>
+      <cell col="30" row="30"></cell>
+    </row>
+    <row>
+      <cell col="0" row="31"></cell>
+      <cell col="1" row="31" colspan="2"></cell>
+      <cell col="3" row="31" colspan="4"></cell>
+      <cell col="7" row="31" colspan="5"></cell>
+      <cell col="12" row="31" colspan="4"></cell>
+      <cell col="16" row="31" colspan="2"></cell>
+      <cell col="18" row="31" colspan="2"></cell>
+      <cell col="20" row="31" colspan="2"></cell>
+      <cell col="22" row="31" colspan="2"></cell>
+      <cell col="24" row="31" colspan="2"></cell>
+      <cell col="26" row="31" colspan="3"></cell>
+      <cell col="29" row="31"></cell>
+      <cell col="30" row="31"></cell>
+    </row>
+    <row>
+      <cell col="0" row="32" colspan="31">210mm×297mm(보존용지(1종) 70g/㎡)</cell>
+    </row>
+  </table>
+  <table rows="27" cols="30">
+    <row>
+      <cell col="0" row="0" colspan="30">(뒤 쪽)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="30">변 경 사 항
+(상호, 대표자, 법인등록번호, 주소변경 등)</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="4">신고일</cell>
+      <cell col="4" row="2" colspan="5">신 고
+수 리 일</cell>
+      <cell col="9" row="2" colspan="6">구분</cell>
+      <cell col="15" row="2" colspan="5">변경전
+사항</cell>
+      <cell col="20" row="2" colspan="8">변경후
+사항</cell>
+      <cell col="28" row="2" colspan="2">변경일</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="4"></cell>
+      <cell col="4" row="3" colspan="5"></cell>
+      <cell col="9" row="3" colspan="6"></cell>
+      <cell col="15" row="3" colspan="5"></cell>
+      <cell col="20" row="3" colspan="8"></cell>
+      <cell col="28" row="3" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="30">행 정 처 분 사 항
+(시정지시ㆍ시정명령ㆍ영업정지ㆍ등록말소ㆍ과태료 등)</cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="5">처분내용</cell>
+      <cell col="5" row="5" colspan="6">사유</cell>
+      <cell col="11" row="5" colspan="8">처분근거</cell>
+      <cell col="19" row="5" colspan="7">처분기관</cell>
+      <cell col="26" row="5" colspan="4">처분일</cell>
+    </row>
+    <row>
+      <cell col="0" row="6" colspan="5"></cell>
+      <cell col="5" row="6" colspan="6"></cell>
+      <cell col="11" row="6" colspan="8"></cell>
+      <cell col="19" row="6" colspan="7"></cell>
+      <cell col="26" row="6" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="30">양도ㆍ합병ㆍ상속신고 사항</cell>
+    </row>
+    <row>
+      <cell col="0" row="8">신고일</cell>
+      <cell col="1" row="8" colspan="6">신 고
+수 리 일</cell>
+      <cell col="7" row="8" colspan="3">구분</cell>
+      <cell col="10" row="8" colspan="3">업종</cell>
+      <cell col="13" row="8" colspan="5">업종등록번호</cell>
+      <cell col="18" row="8" colspan="4">양수(합병,상속)인</cell>
+      <cell col="22" row="8" colspan="7">양도(피합병 ,피상속)인</cell>
+      <cell col="29" row="8">양도
+(합병,상속)일자</cell>
+    </row>
+    <row>
+      <cell col="0" row="9"></cell>
+      <cell col="1" row="9" colspan="6"></cell>
+      <cell col="7" row="9" colspan="3"></cell>
+      <cell col="10" row="9" colspan="3"></cell>
+      <cell col="13" row="9" colspan="5"></cell>
+      <cell col="18" row="9" colspan="4"></cell>
+      <cell col="22" row="9" colspan="7"></cell>
+      <cell col="29" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="30">측량업 등록사항 신고 사항</cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="6">신고일</cell>
+      <cell col="6" row="11" colspan="8">신 고
+수 리 일</cell>
+      <cell col="14" row="11" colspan="9">신고업종</cell>
+      <cell col="23" row="11" colspan="7">업종
+등록번호</cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="6"></cell>
+      <cell col="6" row="12" colspan="8"></cell>
+      <cell col="14" row="12" colspan="9"></cell>
+      <cell col="23" row="12" colspan="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="30">측량업 폐업 신고 사항</cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="3">신고일</cell>
+      <cell col="3" row="14" colspan="7">신고수리
+연월일</cell>
+      <cell col="10" row="14" colspan="6">폐업업종</cell>
+      <cell col="16" row="14" colspan="5">업종
+등록번호</cell>
+      <cell col="21" row="14" colspan="6">폐업일자</cell>
+      <cell col="27" row="14" colspan="3">폐업사유</cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="3"></cell>
+      <cell col="3" row="15" colspan="7"></cell>
+      <cell col="10" row="15" colspan="6"></cell>
+      <cell col="16" row="15" colspan="5"></cell>
+      <cell col="21" row="15" colspan="6"></cell>
+      <cell col="27" row="15" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="30">측량업 등록증(등록수첩)교부사항</cell>
+    </row>
+    <row>
+      <cell col="0" row="17" colspan="2">매체종류</cell>
+      <cell col="2" row="17" colspan="6">구분</cell>
+      <cell col="8" row="17" colspan="4">업종</cell>
+      <cell col="12" row="17" colspan="5">등록번호</cell>
+      <cell col="17" row="17" colspan="7">교부일</cell>
+      <cell col="24" row="17" colspan="6">수령인</cell>
+    </row>
+    <row>
+      <cell col="0" row="18" colspan="2">□서류
+□전자카드</cell>
+      <cell col="2" row="18" colspan="6"></cell>
+      <cell col="8" row="18" colspan="4"></cell>
+      <cell col="12" row="18" colspan="5"></cell>
+      <cell col="17" row="18" colspan="7"></cell>
+      <cell col="24" row="18" colspan="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19" colspan="30">측량용역 사업수행실적 신고사항
+(단위 : 백만원)</cell>
+    </row>
+    <row>
+      <cell col="0" row="20">년도</cell>
+      <cell col="1" row="20" colspan="24">내용</cell>
+      <cell col="25" row="20" colspan="5">계약금액</cell>
+    </row>
+    <row>
+      <cell col="0" row="21"></cell>
+      <cell col="1" row="21" colspan="24"></cell>
+      <cell col="25" row="21" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="22"></cell>
+      <cell col="1" row="22" colspan="24"></cell>
+      <cell col="25" row="22" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23"></cell>
+      <cell col="1" row="23" colspan="24"></cell>
+      <cell col="25" row="23" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="24"></cell>
+      <cell col="1" row="24" colspan="24"></cell>
+      <cell col="25" row="24" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="25"></cell>
+      <cell col="1" row="25" colspan="24"></cell>
+      <cell col="25" row="25" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="26" colspan="30">210mm×297mm(보존용지(1종) 70g/㎡)</cell>
+    </row>
+  </table>
+</annex>

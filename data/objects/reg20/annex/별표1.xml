@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표1" gubun="별표" no="1" title="지하공간통합지도 표준데이터 항목" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=38098741">
+  <text>[별표 1] 지하공간통합지도 표준데이터 항목</text>
+  <table rows="26" cols="3">
+    <row>
+      <cell col="0" row="0">대분류</cell>
+      <cell col="1" row="0">중분류</cell>
+      <cell col="2" row="0">세분류</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="15">지하시설물(관로형)</cell>
+      <cell col="1" row="1" rowspan="3">상수</cell>
+      <cell col="2" row="1">상수관로</cell>
+    </row>
+    <row>
+      <cell col="2" row="2">상수맨홀</cell>
+    </row>
+    <row>
+      <cell col="2" row="3">상수밸브</cell>
+    </row>
+    <row>
+      <cell col="1" row="4" rowspan="2">하수</cell>
+      <cell col="2" row="4">하수관로</cell>
+    </row>
+    <row>
+      <cell col="2" row="5">하수맨홀</cell>
+    </row>
+    <row>
+      <cell col="1" row="6" rowspan="3">전력</cell>
+      <cell col="2" row="6">전력관로</cell>
+    </row>
+    <row>
+      <cell col="2" row="7">전력맨홀</cell>
+    </row>
+    <row>
+      <cell col="2" row="8">배전전력구</cell>
+    </row>
+    <row>
+      <cell col="1" row="9" rowspan="3">가스</cell>
+      <cell col="2" row="9">가스관로</cell>
+    </row>
+    <row>
+      <cell col="2" row="10">가스맨홀</cell>
+    </row>
+    <row>
+      <cell col="2" row="11">가스밸브</cell>
+    </row>
+    <row>
+      <cell col="1" row="12" rowspan="2">난방</cell>
+      <cell col="2" row="12">난방관로</cell>
+    </row>
+    <row>
+      <cell col="2" row="13">난방맨홀</cell>
+    </row>
+    <row>
+      <cell col="1" row="14" rowspan="2">통신</cell>
+      <cell col="2" row="14">통신선로</cell>
+    </row>
+    <row>
+      <cell col="2" row="15">통신맨홀</cell>
+    </row>
+    <row>
+      <cell col="0" row="16" rowspan="7">지하시설물(구조물형)</cell>
+      <cell col="1" row="16" rowspan="2">지하철</cell>
+      <cell col="2" row="16">지하철 선로</cell>
+    </row>
+    <row>
+      <cell col="2" row="17">지하철 역사</cell>
+    </row>
+    <row>
+      <cell col="1" row="18">공동구</cell>
+      <cell col="2" row="18">-</cell>
+    </row>
+    <row>
+      <cell col="1" row="19">지하차도</cell>
+      <cell col="2" row="19">-</cell>
+    </row>
+    <row>
+      <cell col="1" row="20">지하보도</cell>
+      <cell col="2" row="20">-</cell>
+    </row>
+    <row>
+      <cell col="1" row="21">지하주차장</cell>
+      <cell col="2" row="21">-</cell>
+    </row>
+    <row>
+      <cell col="1" row="22">지하상가</cell>
+      <cell col="2" row="22">-</cell>
+    </row>
+    <row>
+      <cell col="0" row="23" rowspan="3">지반</cell>
+      <cell col="1" row="23">시추(지층)</cell>
+      <cell col="2" row="23">-</cell>
+    </row>
+    <row>
+      <cell col="1" row="24">관정</cell>
+      <cell col="2" row="24">-</cell>
+    </row>
+    <row>
+      <cell col="1" row="25">지질</cell>
+      <cell col="2" row="25">-</cell>
+    </row>
+  </table>
+</annex>

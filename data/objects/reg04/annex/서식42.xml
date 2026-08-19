@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식42" gubun="서식" no="42" title="측량업(등록증, 등록수첩) 재발급 신청서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454671">
+  <table rows="35" cols="36">
+    <row>
+      <cell col="0" row="0" colspan="36">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별지 제42호서식] &lt;개정 2023. 6. 9.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="36">측량업(등록증, 등록수첩) 재발급 신청서</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="27"></cell>
+      <cell col="27" row="2" colspan="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="4">접수번호</cell>
+      <cell col="4" row="3" colspan="4"></cell>
+      <cell col="8" row="3" colspan="5">접수일</cell>
+      <cell col="13" row="3" colspan="3"></cell>
+      <cell col="16" row="3" colspan="3"></cell>
+      <cell col="19" row="3" colspan="7"></cell>
+      <cell col="26" row="3" colspan="6">처리기간</cell>
+      <cell col="32" row="3" colspan="4">즉시</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="4"></cell>
+      <cell col="4" row="4" colspan="4"></cell>
+      <cell col="8" row="4" colspan="5"></cell>
+      <cell col="13" row="4" colspan="3"></cell>
+      <cell col="16" row="4" colspan="3"></cell>
+      <cell col="19" row="4" colspan="7"></cell>
+      <cell col="26" row="4" colspan="6"></cell>
+      <cell col="32" row="4" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="3" rowspan="3">신청인</cell>
+      <cell col="3" row="5" colspan="20">성명</cell>
+      <cell col="23" row="5" colspan="13">사업자등록번호</cell>
+    </row>
+    <row>
+      <cell col="3" row="6" colspan="33">전화번호</cell>
+    </row>
+    <row>
+      <cell col="3" row="7" colspan="33">주소</cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="36"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="4" rowspan="3">등록내용</cell>
+      <cell col="4" row="9" colspan="19">등록번호</cell>
+      <cell col="23" row="9" colspan="13">등록연월일</cell>
+    </row>
+    <row>
+      <cell col="4" row="10" colspan="19">상호</cell>
+      <cell col="23" row="10" colspan="13">업종</cell>
+    </row>
+    <row>
+      <cell col="4" row="11" colspan="32">주된 영업소 소재지</cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="36"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="4">사유</cell>
+      <cell col="4" row="13" colspan="32">[   ] 잃어버림       [   ] 헐어서 못쓰게 됨
+ ※ 재발급 신청 사유를 해당란에 √ 표 하십시오.</cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="36"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="36">「공간정보의 구축 및 관리 등에 관한 법률」 제44조제4항 및 같은 법 시행규칙 제49조에 따라 측량업(등록증,등록수첩)의 재발급을 신청합니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="36">년          월          일장</cell>
+    </row>
+    <row>
+      <cell col="0" row="17" colspan="15"></cell>
+      <cell col="15" row="17" colspan="7">신청인</cell>
+      <cell col="22" row="17" colspan="6"></cell>
+      <cell col="28" row="17" colspan="8">(서명 또는 인)</cell>
+    </row>
+    <row>
+      <cell col="0" row="18" colspan="36">귀하</cell>
+    </row>
+    <row>
+      <cell col="0" row="19" colspan="36"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20" colspan="3" rowspan="2">첨부서류</cell>
+      <cell col="3" row="20" colspan="29" rowspan="2">헐어서 못 쓰게 된 경우: 측량업등록증 또는 측량업등록수첩</cell>
+      <cell col="32" row="20" colspan="4">수수료</cell>
+    </row>
+    <row>
+      <cell col="32" row="21" colspan="4">2,000원</cell>
+    </row>
+    <row>
+      <cell col="0" row="22" colspan="36"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23" colspan="36">처리절차</cell>
+    </row>
+    <row>
+      <cell col="0" row="24"></cell>
+      <cell col="1" row="24"></cell>
+      <cell col="2" row="24" colspan="4"></cell>
+      <cell col="6" row="24"></cell>
+      <cell col="7" row="24" colspan="2"></cell>
+      <cell col="9" row="24" colspan="2"></cell>
+      <cell col="11" row="24"></cell>
+      <cell col="12" row="24" colspan="2"></cell>
+      <cell col="14" row="24" colspan="3"></cell>
+      <cell col="17" row="24"></cell>
+      <cell col="18" row="24" colspan="2"></cell>
+      <cell col="20" row="24" colspan="4"></cell>
+      <cell col="24" row="24"></cell>
+      <cell col="25" row="24" colspan="4"></cell>
+      <cell col="29" row="24" colspan="2"></cell>
+      <cell col="31" row="24" colspan="2"></cell>
+      <cell col="33" row="24" colspan="2"></cell>
+      <cell col="35" row="24"></cell>
+    </row>
+    <row>
+      <cell col="0" row="25" rowspan="2"></cell>
+      <cell col="1" row="25" rowspan="2">신청서 제출</cell>
+      <cell col="2" row="25" colspan="3"></cell>
+      <cell col="5" row="25" colspan="2" rowspan="2">▶</cell>
+      <cell col="7" row="25" colspan="2" rowspan="2">접 수</cell>
+      <cell col="9" row="25"></cell>
+      <cell col="10" row="25" colspan="2" rowspan="2">▶</cell>
+      <cell col="12" row="25" colspan="2" rowspan="2">민원서류
+처리부
+등  재</cell>
+      <cell col="14" row="25"></cell>
+      <cell col="15" row="25" colspan="3" rowspan="2">▶</cell>
+      <cell col="18" row="25" colspan="2" rowspan="2">검 토</cell>
+      <cell col="20" row="25"></cell>
+      <cell col="21" row="25" colspan="4" rowspan="2">▶</cell>
+      <cell col="25" row="25" colspan="4" rowspan="2">결 재</cell>
+      <cell col="29" row="25"></cell>
+      <cell col="30" row="25" colspan="3" rowspan="2">▶</cell>
+      <cell col="33" row="25" colspan="2" rowspan="2">등록증 및 등록증수첩</cell>
+      <cell col="35" row="25" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="2" row="26" colspan="3"></cell>
+      <cell col="9" row="26"></cell>
+      <cell col="14" row="26"></cell>
+      <cell col="20" row="26"></cell>
+      <cell col="29" row="26"></cell>
+    </row>
+    <row>
+      <cell col="0" row="27" rowspan="2"></cell>
+      <cell col="1" row="27" rowspan="2">신청인</cell>
+      <cell col="2" row="27" colspan="4" rowspan="2"></cell>
+      <cell col="6" row="27" rowspan="2"></cell>
+      <cell col="7" row="27" colspan="2" rowspan="2">관할기관
+담당부서</cell>
+      <cell col="9" row="27" colspan="2" rowspan="2"></cell>
+      <cell col="11" row="27" rowspan="2"></cell>
+      <cell col="12" row="27" colspan="2" rowspan="2">관할기관
+담당부서</cell>
+      <cell col="14" row="27" colspan="3" rowspan="2"></cell>
+      <cell col="17" row="27" rowspan="2"></cell>
+      <cell col="18" row="27" colspan="2" rowspan="2">관할기관
+담당부서</cell>
+      <cell col="20" row="27" colspan="4" rowspan="2"></cell>
+      <cell col="24" row="27" rowspan="2"></cell>
+      <cell col="25" row="27" colspan="4" rowspan="2">관할기관
+담당부서</cell>
+      <cell col="29" row="27" colspan="2" rowspan="2"></cell>
+      <cell col="31" row="27" colspan="2" rowspan="2"></cell>
+      <cell col="33" row="27"></cell>
+      <cell col="34" row="27"></cell>
+      <cell col="35" row="27" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="33" row="28" colspan="2" rowspan="2">▼</cell>
+    </row>
+    <row>
+      <cell col="0" row="29"></cell>
+      <cell col="1" row="29"></cell>
+      <cell col="2" row="29" colspan="4"></cell>
+      <cell col="6" row="29"></cell>
+      <cell col="7" row="29" colspan="2"></cell>
+      <cell col="9" row="29" colspan="2"></cell>
+      <cell col="11" row="29"></cell>
+      <cell col="12" row="29" colspan="2"></cell>
+      <cell col="14" row="29" colspan="3"></cell>
+      <cell col="17" row="29"></cell>
+      <cell col="18" row="29" colspan="2"></cell>
+      <cell col="20" row="29" colspan="4"></cell>
+      <cell col="24" row="29"></cell>
+      <cell col="25" row="29" colspan="4"></cell>
+      <cell col="29" row="29" colspan="2"></cell>
+      <cell col="31" row="29" colspan="2"></cell>
+      <cell col="35" row="29"></cell>
+    </row>
+    <row>
+      <cell col="0" row="30" rowspan="2"></cell>
+      <cell col="1" row="30" rowspan="2"></cell>
+      <cell col="2" row="30" colspan="4" rowspan="2"></cell>
+      <cell col="6" row="30" rowspan="2"></cell>
+      <cell col="7" row="30" colspan="2" rowspan="2"></cell>
+      <cell col="9" row="30" colspan="2" rowspan="2"></cell>
+      <cell col="11" row="30" rowspan="2"></cell>
+      <cell col="12" row="30" colspan="2" rowspan="2"></cell>
+      <cell col="14" row="30" colspan="3" rowspan="2"></cell>
+      <cell col="17" row="30" rowspan="2"></cell>
+      <cell col="18" row="30" colspan="2" rowspan="2"></cell>
+      <cell col="20" row="30" colspan="4" rowspan="2"></cell>
+      <cell col="24" row="30" rowspan="2"></cell>
+      <cell col="25" row="30" colspan="4" rowspan="2">발 급</cell>
+      <cell col="29" row="30" colspan="2" rowspan="2">◀</cell>
+      <cell col="31" row="30" colspan="2"></cell>
+      <cell col="33" row="30" colspan="2" rowspan="2">관 인
+날 인</cell>
+      <cell col="35" row="30" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="31" row="31" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="32"></cell>
+      <cell col="1" row="32"></cell>
+      <cell col="2" row="32" colspan="4"></cell>
+      <cell col="6" row="32"></cell>
+      <cell col="7" row="32" colspan="2"></cell>
+      <cell col="9" row="32" colspan="2"></cell>
+      <cell col="11" row="32"></cell>
+      <cell col="12" row="32" colspan="2"></cell>
+      <cell col="14" row="32" colspan="3"></cell>
+      <cell col="17" row="32"></cell>
+      <cell col="18" row="32" colspan="2"></cell>
+      <cell col="20" row="32" colspan="4"></cell>
+      <cell col="24" row="32"></cell>
+      <cell col="25" row="32" colspan="4">신청인</cell>
+      <cell col="29" row="32" colspan="2"></cell>
+      <cell col="31" row="32" colspan="2"></cell>
+      <cell col="33" row="32" colspan="2">관할기관
+담당부서</cell>
+      <cell col="35" row="32"></cell>
+    </row>
+    <row>
+      <cell col="0" row="33"></cell>
+      <cell col="1" row="33"></cell>
+      <cell col="2" row="33" colspan="4"></cell>
+      <cell col="6" row="33"></cell>
+      <cell col="7" row="33" colspan="2"></cell>
+      <cell col="9" row="33" colspan="2"></cell>
+      <cell col="11" row="33"></cell>
+      <cell col="12" row="33" colspan="2"></cell>
+      <cell col="14" row="33" colspan="3"></cell>
+      <cell col="17" row="33"></cell>
+      <cell col="18" row="33" colspan="2"></cell>
+      <cell col="20" row="33" colspan="4"></cell>
+      <cell col="24" row="33"></cell>
+      <cell col="25" row="33" colspan="4"></cell>
+      <cell col="29" row="33" colspan="2"></cell>
+      <cell col="31" row="33" colspan="2"></cell>
+      <cell col="33" row="33" colspan="2"></cell>
+      <cell col="35" row="33"></cell>
+    </row>
+    <row>
+      <cell col="0" row="34" colspan="36">210㎜×297㎜(일반용지 60g/㎡)</cell>
+    </row>
+  </table>
+</annex>

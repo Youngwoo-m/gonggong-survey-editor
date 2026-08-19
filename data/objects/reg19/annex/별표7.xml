@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표7" gubun="별표" no="7" title="세밀도에 따른 가시화정보 제작기준" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=111000047">
+  <text>[별표 7] 세밀도에 따른 가시화정보 제작기준</text>
+  <table rows="8" cols="4">
+    <row>
+      <cell col="0" row="0">대분류</cell>
+      <cell col="1" row="0">개방</cell>
+      <cell col="2" row="0" rowspan="3">실사</cell>
+      <cell col="3" row="0" rowspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1">중분류</cell>
+      <cell col="1" row="1">이동</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">세분류</cell>
+      <cell col="1" row="2">공간 / 시설물</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">세밀도</cell>
+      <cell col="1" row="3" colspan="2">제작기준</cell>
+      <cell col="3" row="3">제작 예</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">LOD0</cell>
+      <cell col="1" row="4" colspan="2">세분류 시설물은 별도 표현 없음
+세분류 공간은 단순 2차원 평면으로 구성</cell>
+      <cell col="3" row="4">해당없음</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">LOD1</cell>
+      <cell col="1" row="5" colspan="2">단순 2차원적인 평면도
+수직이동의 경우 상하 구분없음</cell>
+      <cell col="3" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">LOD2</cell>
+      <cell col="1" row="6" colspan="2">LOD1에 비해 상세한 공간 세밀도를 가지며, 세부적 사항 (돌출물 등)을 표현한 3차원 모델
+가상 단색 텍스처</cell>
+      <cell col="3" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">LOD3</cell>
+      <cell col="1" row="7" colspan="2">3차원 실사모델
+실사 영상 텍스처</cell>
+      <cell col="3" row="7"></cell>
+    </row>
+  </table>
+  <table rows="8" cols="4">
+    <row>
+      <cell col="0" row="0">대분류</cell>
+      <cell col="1" row="0">개방</cell>
+      <cell col="2" row="0" rowspan="3">실사</cell>
+      <cell col="3" row="0" rowspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1">중분류</cell>
+      <cell col="1" row="1">안내</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">세분류</cell>
+      <cell col="1" row="2">공간 / 시설물</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">세밀도</cell>
+      <cell col="1" row="3" colspan="2">제작기준</cell>
+      <cell col="3" row="3">제작 예</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">LOD0</cell>
+      <cell col="1" row="4" colspan="2">세분류 시설물은 별도 표현 없음
+세분류 공간은 단순 2차원 평면으로 구성</cell>
+      <cell col="3" row="4">해당 없음</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">LOD1</cell>
+      <cell col="1" row="5" colspan="2">2차원적인 평면도
+시설물 외곽선의 단순 도화</cell>
+      <cell col="3" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">LOD2</cell>
+      <cell col="1" row="6" colspan="2">실제의 높이값을 반영한 3차원표현
+불필요한 장식물은 표현하지 않음
+가상 단색 텍스처</cell>
+      <cell col="3" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">LOD3</cell>
+      <cell col="1" row="7" colspan="2">실제와 유사한 3차원 정밀묘사
+실사 영상 텍스처</cell>
+      <cell col="3" row="7"></cell>
+    </row>
+  </table>
+  <table rows="8" cols="4">
+    <row>
+      <cell col="0" row="0">대분류</cell>
+      <cell col="1" row="0">개방</cell>
+      <cell col="2" row="0" rowspan="3">실사</cell>
+      <cell col="3" row="0" rowspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1">중분류</cell>
+      <cell col="1" row="1">편의</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">세분류</cell>
+      <cell col="1" row="2">공간 / 시설물</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">세밀도</cell>
+      <cell col="1" row="3" colspan="2">제작기준</cell>
+      <cell col="3" row="3">제작 예</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">LOD0</cell>
+      <cell col="1" row="4" colspan="2">세분류 시설물은 별도 표현 없음
+세분류 공간은 단순 2차원 평면으로 구성</cell>
+      <cell col="3" row="4">해당없음</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">LOD1</cell>
+      <cell col="1" row="5" colspan="2">2차원적인 평면도
+시설물 외곽선의 단순 도화</cell>
+      <cell col="3" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">LOD2</cell>
+      <cell col="1" row="6" colspan="2">실제의 높이값을 반영한 3차원표현
+불필요한 장식물은 표현하지 않음
+가상 단색 텍스처</cell>
+      <cell col="3" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">LOD3</cell>
+      <cell col="1" row="7" colspan="2">실제와 유사한 3차원 정밀묘사
+실사 영상 텍스처</cell>
+      <cell col="3" row="7"></cell>
+    </row>
+  </table>
+  <table rows="8" cols="4">
+    <row>
+      <cell col="0" row="0">대분류</cell>
+      <cell col="1" row="0">개방</cell>
+      <cell col="2" row="0" rowspan="3">실사</cell>
+      <cell col="3" row="0" rowspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1">중분류</cell>
+      <cell col="1" row="1">운수</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">세분류</cell>
+      <cell col="1" row="2">공간 / 시설물</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">세밀도</cell>
+      <cell col="1" row="3" colspan="2">제작기준</cell>
+      <cell col="3" row="3">제작 예</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">LOD0</cell>
+      <cell col="1" row="4" colspan="2">세분류 시설물은 별도 표현 없음
+세분류 공간은 단순 2차원 평면으로 구성</cell>
+      <cell col="3" row="4">해당없음</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">LOD1</cell>
+      <cell col="1" row="5" colspan="2">2차원적인 평면도
+시설물 외곽선의 단순 도화</cell>
+      <cell col="3" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">LOD2</cell>
+      <cell col="1" row="6" colspan="2">실제의 높이값을 반영한 3차원표현
+불필요한 장식물은 표현하지 않음
+가상 단색 텍스처</cell>
+      <cell col="3" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">LOD3</cell>
+      <cell col="1" row="7" colspan="2">실제와 유사한 3차원 정밀묘사
+실사 영상 텍스처</cell>
+      <cell col="3" row="7"></cell>
+    </row>
+  </table>
+  <table rows="8" cols="4">
+    <row>
+      <cell col="0" row="0">대분류</cell>
+      <cell col="1" row="0">개방</cell>
+      <cell col="2" row="0" rowspan="3">실사</cell>
+      <cell col="3" row="0" rowspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1">중분류</cell>
+      <cell col="1" row="1">안전</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">세분류</cell>
+      <cell col="1" row="2">공간 / 시설물</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">세밀도</cell>
+      <cell col="1" row="3" colspan="2">제작기준</cell>
+      <cell col="3" row="3">제작 예</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">LOD0</cell>
+      <cell col="1" row="4" colspan="2">세분류 시설물은 별도 표현 없음
+세분류 공간은 단순 2차원 평면으로 구성</cell>
+      <cell col="3" row="4">해당없음</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">LOD1</cell>
+      <cell col="1" row="5" colspan="2">2차원적인 평면도
+시설물 외곽선의 단순 도화</cell>
+      <cell col="3" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">LOD2</cell>
+      <cell col="1" row="6" colspan="2">실제의 높이값을 반영한 3차원표현
+불필요한 장식물은 표현하지 않음
+가상 단색 텍스처</cell>
+      <cell col="3" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">LOD3</cell>
+      <cell col="1" row="7" colspan="2">실제와 유사한 3차원 정밀묘사
+실사 영상 텍스처</cell>
+      <cell col="3" row="7"></cell>
+    </row>
+  </table>
+  <table rows="8" cols="4">
+    <row>
+      <cell col="0" row="0">대분류</cell>
+      <cell col="1" row="0">개방</cell>
+      <cell col="2" row="0" rowspan="3">실사</cell>
+      <cell col="3" row="0" rowspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1">중분류</cell>
+      <cell col="1" row="1">소방</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">세분류</cell>
+      <cell col="1" row="2">시설물</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">세밀도</cell>
+      <cell col="1" row="3" colspan="2">제작기준</cell>
+      <cell col="3" row="3">제작 예</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">LOD0</cell>
+      <cell col="1" row="4" colspan="2">시설물은 별도 표현 없음</cell>
+      <cell col="3" row="4">해당없음</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">LOD1</cell>
+      <cell col="1" row="5" colspan="2">2차원적인 평면도
+시설물 외곽선의 단순 도화</cell>
+      <cell col="3" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">LOD2</cell>
+      <cell col="1" row="6" colspan="2">실제의 높이값을 반영한 3차원표현
+불필요한 장식물은 표현하지 않음
+가상 단색 텍스처</cell>
+      <cell col="3" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">LOD3</cell>
+      <cell col="1" row="7" colspan="2">실제와 유사한 3차원 정밀묘사
+실사 영상 텍스처</cell>
+      <cell col="3" row="7"></cell>
+    </row>
+  </table>
+  <table rows="8" cols="4">
+    <row>
+      <cell col="0" row="0">대분류</cell>
+      <cell col="1" row="0">개방</cell>
+      <cell col="2" row="0" rowspan="3">실사</cell>
+      <cell col="3" row="0" rowspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1">중분류</cell>
+      <cell col="1" row="1">판매</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">세분류</cell>
+      <cell col="1" row="2">공간 / 시설물</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">세밀도</cell>
+      <cell col="1" row="3" colspan="2">제작기준</cell>
+      <cell col="3" row="3">제작 예</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">LOD0</cell>
+      <cell col="1" row="4" colspan="2">세분류 시설물은 별도 표현 없음
+세분류 공간은 단순 2차원 평면으로 구성</cell>
+      <cell col="3" row="4">해당없음</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">LOD1</cell>
+      <cell col="1" row="5" colspan="2">2차원적인 평면도
+시설물 외곽선의 단순 도화</cell>
+      <cell col="3" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">LOD2</cell>
+      <cell col="1" row="6" colspan="2">실제의 높이값을 반영한 3차원표현
+불필요한 장식물은 표현하지 않음
+가상 단색 텍스처</cell>
+      <cell col="3" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">LOD3</cell>
+      <cell col="1" row="7" colspan="2">실제와 유사한 3차원 정밀묘사
+실사 영상 텍스처</cell>
+      <cell col="3" row="7"></cell>
+    </row>
+  </table>
+  <table rows="8" cols="4">
+    <row>
+      <cell col="0" row="0">대분류</cell>
+      <cell col="1" row="0">관리</cell>
+      <cell col="2" row="0" rowspan="3">실사</cell>
+      <cell col="3" row="0" rowspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1">중분류</cell>
+      <cell col="1" row="1">구조</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">세분류</cell>
+      <cell col="1" row="2">벽</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">세밀도</cell>
+      <cell col="1" row="3" colspan="2">제작기준</cell>
+      <cell col="3" row="3">제작 예</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">LOD0</cell>
+      <cell col="1" row="4" colspan="2">단순 2차원적인 평면도</cell>
+      <cell col="3" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5">LOD1</cell>
+      <cell col="1" row="5" colspan="2">2차원적인 평면도를 단순 상자형(BOX Type)으로 확장하여 표현
+벽면, 천정, 바닥 등 의 별도가  아닌 하나의 객체로 표현</cell>
+      <cell col="3" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">LOD2</cell>
+      <cell col="1" row="6" colspan="2">LOD1에 비해 상세한 공간 세밀도를 가지며, 세부적 사항(돌출물 등)을 표현한 3차원 모델
+가상 단색 텍스처</cell>
+      <cell col="3" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">LOD3</cell>
+      <cell col="1" row="7" colspan="2">3차원 실사모델
+실사 영상 텍스처
+3차원 묘사되지 않는 부분은 텍스쳐로 표현 (예:액자, 광고지 등)</cell>
+      <cell col="3" row="7"></cell>
+    </row>
+  </table>
+  <table rows="8" cols="4">
+    <row>
+      <cell col="0" row="0">대분류</cell>
+      <cell col="1" row="0">관리</cell>
+      <cell col="2" row="0" rowspan="3">실사</cell>
+      <cell col="3" row="0" rowspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1">중분류</cell>
+      <cell col="1" row="1">구조</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">세분류</cell>
+      <cell col="1" row="2">바닥</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">세밀도</cell>
+      <cell col="1" row="3" colspan="2">제작기준</cell>
+      <cell col="3" row="3">제작 예</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">LOD0</cell>
+      <cell col="1" row="4" colspan="2">단순 2차원적인 평면도</cell>
+      <cell col="3" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5">LOD1</cell>
+      <cell col="1" row="5" colspan="2">2차원적인 평면도를 단순 상자형(BOX Type)으로 확장하여 표현
+벽면, 천정, 바닥 등 의 별도가 아닌 하나의 객체로 표현
+수직적 돌출부 및 함몰부 미제작
+이동 시설물과의 통로부 제외</cell>
+      <cell col="3" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">LOD2</cell>
+      <cell col="1" row="6" colspan="2">LOD1에 비해 상세한 공간 세밀도를 가지며, 세부적 사항(돌출물 등)을 표현한 3차원 모델
+가상 단색 텍스처</cell>
+      <cell col="3" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">LOD3</cell>
+      <cell col="1" row="7" colspan="2">3차원 실사모델
+실사 영상 텍스처
+바닥 텍스처의 경우 패턴처리 가능</cell>
+      <cell col="3" row="7"></cell>
+    </row>
+  </table>
+  <table rows="8" cols="4">
+    <row>
+      <cell col="0" row="0">대분류</cell>
+      <cell col="1" row="0">관리</cell>
+      <cell col="2" row="0" rowspan="3">실사</cell>
+      <cell col="3" row="0" rowspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1">중분류</cell>
+      <cell col="1" row="1">구조</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">세분류</cell>
+      <cell col="1" row="2">천정</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">세밀도</cell>
+      <cell col="1" row="3" colspan="2">제작기준</cell>
+      <cell col="3" row="3">제작 예</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">LOD0</cell>
+      <cell col="1" row="4" colspan="2">천정은 별도로 표현하지 않음</cell>
+      <cell col="3" row="4">해당없음</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">LOD1</cell>
+      <cell col="1" row="5" colspan="2">청정면은 단색 텍스쳐
+2차원적인 평면도를 단순 상자형(BOX Type)으로 확장하여 표현
+벽면, 천정, 바닥 등 의 별도가 아닌 하나의 객체로 표현
+수직적 돌출부 및 함몰부 미제작</cell>
+      <cell col="3" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">LOD2</cell>
+      <cell col="1" row="6" colspan="2">LOD1에 비해 상세한 공간 세밀도를 가지며, 세부적 사항(돌출물 등)을 표현한 3차원 모델
+청정면의 돌출부 및 함몰부표현
+가상 단색 텍스처</cell>
+      <cell col="3" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">LOD3</cell>
+      <cell col="1" row="7" colspan="2">3차원 실사모델
+실사 영상 텍스처
+천정 텍스처의 경우 패턴처리 가능
+3차원 묘사되지 않는 부분은 텍스쳐로 표현 (예:조명등, 기타부착 시설 등)</cell>
+      <cell col="3" row="7"></cell>
+    </row>
+  </table>
+  <table rows="8" cols="4">
+    <row>
+      <cell col="0" row="0">대분류</cell>
+      <cell col="1" row="0">관리</cell>
+      <cell col="2" row="0" rowspan="3">실사</cell>
+      <cell col="3" row="0" rowspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1">중분류</cell>
+      <cell col="1" row="1">구조</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">세분류</cell>
+      <cell col="1" row="2">기둥</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">세밀도</cell>
+      <cell col="1" row="3" colspan="2">제작기준</cell>
+      <cell col="3" row="3">제작 예</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">LOD0</cell>
+      <cell col="1" row="4" colspan="2">단순 2차원적인 평면도</cell>
+      <cell col="3" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5">LOD1</cell>
+      <cell col="1" row="5" colspan="2">2차원적인 평면도를 단순 상자형(BOX Type)으로 확장하여 표현
+수직적 돌출부 및 함몰부 미제작</cell>
+      <cell col="3" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">LOD2</cell>
+      <cell col="1" row="6" colspan="2">LOD1에 비해 상세한 공간 세밀도를 가지며, 세부적 사항(돌출물 등)을 표현한 3차원 모델
+가상 단색 텍스처</cell>
+      <cell col="3" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">LOD3</cell>
+      <cell col="1" row="7" colspan="2">3차원 실사모델
+실사 영상 텍스처</cell>
+      <cell col="3" row="7"></cell>
+    </row>
+  </table>
+  <table rows="8" cols="4">
+    <row>
+      <cell col="0" row="0">대분류</cell>
+      <cell col="1" row="0">관리</cell>
+      <cell col="2" row="0" rowspan="3">실사</cell>
+      <cell col="3" row="0" rowspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1">중분류</cell>
+      <cell col="1" row="1">구조</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">세분류</cell>
+      <cell col="1" row="2">문</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">세밀도</cell>
+      <cell col="1" row="3" colspan="2">제작기준</cell>
+      <cell col="3" row="3">제작 예</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">LOD0</cell>
+      <cell col="1" row="4" colspan="2">단순 2차원적인 평면도</cell>
+      <cell col="3" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5">LOD1</cell>
+      <cell col="1" row="5" colspan="2">2차원적인 평면도를 단순 상자형(BOX Type)으로 확장하여 표현
+수직적 돌출부 및 함몰부 미제작
+높이값이 없으므로 벽면과 같은높이</cell>
+      <cell col="3" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">LOD2</cell>
+      <cell col="1" row="6" colspan="2">LOD1에 비해 상세한 공간 세밀도를 가지며, 세부적 사항(돌출물 등)을 표현한 3차원 모델
+가상 단색 텍스처
+문의 제원에 따른 높이 값을 주어 문부분 별도 묘사</cell>
+      <cell col="3" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">LOD3</cell>
+      <cell col="1" row="7" colspan="2">3차원 실사모델
+실사 영상 텍스처
+불필요한 묘사부위는 텍스처로 표현 (예:문고리, 기타 부착시설 등)</cell>
+      <cell col="3" row="7"></cell>
+    </row>
+  </table>
+  <table rows="8" cols="4">
+    <row>
+      <cell col="0" row="0">대분류</cell>
+      <cell col="1" row="0">관리</cell>
+      <cell col="2" row="0" rowspan="3">실사</cell>
+      <cell col="3" row="0" rowspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1">중분류</cell>
+      <cell col="1" row="1">구조</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">세분류</cell>
+      <cell col="1" row="2">창문</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">세밀도</cell>
+      <cell col="1" row="3" colspan="2">제작기준</cell>
+      <cell col="3" row="3">제작 예</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">LOD0</cell>
+      <cell col="1" row="4" colspan="2">별도로 표현하지 않음</cell>
+      <cell col="3" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5">LOD1</cell>
+      <cell col="1" row="5" colspan="2">2차원적인 평면도를 단순 상자형(BOX Type)으로 확장하여 표현
+수직적 돌출부 및 함몰부 미제작
+창문의 경우 벽면에 귀속되어 표현</cell>
+      <cell col="3" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">LOD2</cell>
+      <cell col="1" row="6" colspan="2">LOD1에 비해 상세한 공간 세밀도를 가지며, 세부적 사항(돌출물 등)을 표현한 3차원 모델
+개별창문이 아닌 창문부로 표현
+가상 단색 텍스처</cell>
+      <cell col="3" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">LOD3</cell>
+      <cell col="1" row="7" colspan="2">3차원 실사모델
+실사 영상 텍스처
+불필요한 묘사부위는 텍스처로 표현 (예:창문고리, 창틀 등)</cell>
+      <cell col="3" row="7"></cell>
+    </row>
+  </table>
+</annex>

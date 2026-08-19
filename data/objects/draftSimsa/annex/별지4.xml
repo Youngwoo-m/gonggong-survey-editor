@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지4" gubun="별지" no="4" title="성과심사 판정조서" source="성과심사 규정 개정안 초안 (scripts/genforms_simsa.py)">
+  <text>[별지 제4호서식]
+성과심사 판정조서 (제28조제2항 관련)</text>
+  <text>이 조서는 「공간정보의 구축 및 관리 등에 관한 법률 시행규칙」 별지 제14호서식의 공공측량성과 심사결과서에 붙인다.</text>
+  <table rows="3" cols="4">
+    <row>
+      <cell col="0" row="0" header="1">사업명</cell>
+      <cell col="1" row="0" header="1"></cell>
+      <cell col="2" row="0" header="1">측량의 종류</cell>
+      <cell col="3" row="0" header="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1">심사 기간</cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1">심사 담당자</cell>
+      <cell col="3" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2">표본추출</cell>
+      <cell col="1" row="2" colspan="3">시행규칙 별표 13 제3호의 비율에 따름 — 성과심사 단위별로 추출(제21조제2항)</cell>
+    </row>
+  </table>
+  <text>성과심사 단위별 판정 (제27조제4항)</text>
+  <table rows="4" cols="7">
+    <row>
+      <cell col="0" row="0" header="1">연번</cell>
+      <cell col="1" row="0" header="1">성과심사 단위</cell>
+      <cell col="2" row="0" header="1">심사 항목 (별표 3)</cell>
+      <cell col="3" row="0" header="1">표본 수</cell>
+      <cell col="4" row="0" header="1">벗어난 수</cell>
+      <cell col="5" row="0" header="1">비율(%)</cell>
+      <cell col="6" row="0" header="1">판정</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">1</cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1"></cell>
+      <cell col="4" row="1"></cell>
+      <cell col="5" row="1"></cell>
+      <cell col="6" row="1">적합 / 조건부적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">2</cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2"></cell>
+      <cell col="3" row="2"></cell>
+      <cell col="4" row="2"></cell>
+      <cell col="5" row="2"></cell>
+      <cell col="6" row="2">적합 / 조건부적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">3</cell>
+      <cell col="1" row="3"></cell>
+      <cell col="2" row="3"></cell>
+      <cell col="3" row="3"></cell>
+      <cell col="4" row="3"></cell>
+      <cell col="5" row="3"></cell>
+      <cell col="6" row="3">적합 / 조건부적합 / 부적합</cell>
+    </row>
+  </table>
+  <text>판정의 근거 (별표 15)</text>
+  <table rows="4" cols="4">
+    <row>
+      <cell col="0" row="0" header="1">오류의 무게</cell>
+      <cell col="1" row="0" header="1">발견한 내용</cell>
+      <cell col="2" row="0" header="1">해당 성과ㆍ항목</cell>
+      <cell col="3" row="0" header="1">판정에 미친 영향</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">중대</cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2">일반</cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2"></cell>
+      <cell col="3" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">경미</cell>
+      <cell col="1" row="3"></cell>
+      <cell col="2" row="3"></cell>
+      <cell col="3" row="3"></cell>
+    </row>
+  </table>
+  <table rows="3" cols="2">
+    <row>
+      <cell col="0" row="0" header="1">종합 판정</cell>
+      <cell col="1" row="0" colspan="3" header="1">적합 / 조건부적합 / 부적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">보완할 사항과 기한</cell>
+      <cell col="1" row="1" colspan="3">조건부적합인 경우에 적는다 — 별지 제2호서식으로 함께 알린다</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">붙임</cell>
+      <cell col="1" row="2" colspan="3">1. 자동검사 결과서(별지 제3호서식)   2. 발견된 성과의 오류 목록</cell>
+    </row>
+  </table>
+  <text>비고
+1. 비율은 표본 가운데 허용범위를 벗어난 것의 비율이며, 별표 15 제2호의 기준으로 판정합니다(10% 이하 적합, 10% 초과 30% 이하 조건부적합, 30% 초과 부적합).
+2. 오류의 무게와 판정이 서로 다른 결론에 이르면 무거운 쪽을 따릅니다(별표 15 비고 제1호).
+3. 이 조서의 내용은 제11조제3항의 심사이력에 함께 남깁니다.</text>
+</annex>

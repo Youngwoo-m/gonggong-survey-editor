@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0077" article="제368조(計測条件等)" rows="5" cols="4" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">地図情報レベル</cell>
+    <cell col="1" row="0" header="1">地形</cell>
+    <cell col="2" row="0" header="1">地物</cell>
+  </row>
+  <row>
+    <cell col="0" row="1"></cell>
+    <cell col="1" row="1">放射方向の計測点 間隔</cell>
+    <cell col="2" row="1">放射方向の計測点 間隔</cell>
+    <cell col="3" row="1">放射方向のスポット 長径(FWHM)</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">250</cell>
+    <cell col="1" row="2">330mm</cell>
+    <cell col="2" row="2">25mm</cell>
+    <cell col="3" row="2">50mm</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">500</cell>
+    <cell col="1" row="3">330mm</cell>
+    <cell col="2" row="3">50mm</cell>
+    <cell col="3" row="3">100mm</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">備考 地物の計測条件は、放射方向の計測点間隔又は放射方向のスポット長径のいずれかが満た されているものとする。</cell>
+    <cell col="1" row="4"></cell>
+    <cell col="2" row="4"></cell>
+    <cell col="3" row="4"></cell>
+  </row>
+</table>

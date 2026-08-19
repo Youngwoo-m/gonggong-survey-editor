@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc19t003" article="작업 후 점검사항" rows="5" cols="5" source="측량 안전관리 매뉴얼 (2026.1)">
+  <row>
+    <cell col="0" row="0" header="1">구분</cell>
+    <cell col="1" row="0" header="1">점검항목</cell>
+    <cell col="2" row="0" header="1">세부 점검내용</cell>
+    <cell col="3" row="0" header="1">점검결과</cell>
+    <cell col="4" row="0" header="1">비고</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">작업 전</cell>
+    <cell col="1" row="1">장비상태 점검</cell>
+    <cell col="2" row="1">☐ 측량기(토탈스테이션, GNSS 등) 작동 여부 확인 ☐ 배터리·충전 상태 점검 ☐ 삼각대, 각대 등 고정 상태 확인</cell>
+    <cell col="3" row="1">□ 완료, □ 미비</cell>
+    <cell col="4" row="1"></cell>
+  </row>
+  <row>
+    <cell col="0" row="2"></cell>
+    <cell col="1" row="2">보호구 착용 확인</cell>
+    <cell col="2" row="2">☐ 안전모, 안전화, 형광조끼 등 필 수 보호장비 착용 ☐ 손상·오염 여부 확인 및 교체</cell>
+    <cell col="3" row="2">□ 완료, □ 미비</cell>
+    <cell col="4" row="2"></cell>
+  </row>
+  <row>
+    <cell col="0" row="3"></cell>
+    <cell col="1" row="3">작업환경 점검</cell>
+    <cell col="2" row="3">☐ 지형·지반 상태 점검 ☐ 기상(비·강풍·안개 등) 확인 ☐ 차량 통행 및 주변 위험요소 확인</cell>
+    <cell col="3" row="3">□ 완료, □ 미비</cell>
+    <cell col="4" row="3"></cell>
+  </row>
+  <row>
+    <cell col="0" row="4"></cell>
+    <cell col="1" row="4">통신 및 비상 체계</cell>
+    <cell col="2" row="4">☐ 무전기, 휴대전화 등 통신수단 점검 ☐ 비상연락망·대피로 공유</cell>
+    <cell col="3" row="4">□ 완료, □ 미비</cell>
+    <cell col="4" row="4"></cell>
+  </row>
+</table>

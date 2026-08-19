@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표5" gubun="별표" no="5" title="강관비계의 조립간격(제59조제4호 관련)" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=155899257">
+  <table rows="6" cols="3">
+    <row>
+      <cell col="0" row="0" colspan="3">■ 산업안전보건기준에 관한 규칙 [별표 5]</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="3">강관비계의 조립간격(제59조제4호 관련)</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" rowspan="2">강관비계의 종류</cell>
+      <cell col="1" row="2" colspan="2">조립간격(단위: m)</cell>
+    </row>
+    <row>
+      <cell col="1" row="3">수직방향</cell>
+      <cell col="2" row="3">수평방향</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">단관비계</cell>
+      <cell col="1" row="4">5</cell>
+      <cell col="2" row="4">5</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">틀비계(높이가 5m 미만인 것은 제외한다)</cell>
+      <cell col="1" row="5">6</cell>
+      <cell col="2" row="5">8</cell>
+    </row>
+  </table>
+</annex>

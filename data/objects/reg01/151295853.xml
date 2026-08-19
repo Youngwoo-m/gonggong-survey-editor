@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="151295853" article="제32조" rows="5" cols="5" source="공공측량 작업규정.2025.04.23_수식수정.오류표시.hwpx">
+  <row>
+    <cell col="0" row="0">구분</cell>
+    <cell col="1" row="0">기지점 종류</cell>
+    <cell col="2" row="0">왕복관측값의 교차</cell>
+    <cell col="3" row="0">기지점 간 폐합차</cell>
+    <cell col="4" row="0">환폐합차</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">1급 공공 수준점측량</cell>
+    <cell col="1" row="1">1등 수준점
+1급 공공수준점</cell>
+    <cell col="2" row="1">2.5mm
+이하</cell>
+    <cell col="3" row="1">15mm
+이하</cell>
+    <cell col="4" row="1">2mm
+이하</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">2급 공공 수준점측량</cell>
+    <cell col="1" row="2">1, 2등 수준점
+통합기준점
+1, 2급 공공수준점</cell>
+    <cell col="2" row="2">5mm
+이하</cell>
+    <cell col="3" row="2">15mm
+이하</cell>
+    <cell col="4" row="2">5mm
+이하</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">3급 공공 수준점측량</cell>
+    <cell col="1" row="3">1, 2등 수준점
+통합기준점
+1~3급 공공수준점</cell>
+    <cell col="2" row="3">10mm
+이하</cell>
+    <cell col="3" row="3">15mm
+이하</cell>
+    <cell col="4" row="3">10mm
+이하</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">4급 공공 수준점측량</cell>
+    <cell col="1" row="4">1, 2등 수준점
+통합기준점
+1~4급 공공수준점</cell>
+    <cell col="2" row="4">20mm
+이하</cell>
+    <cell col="3" row="4">25mm
+이하</cell>
+    <cell col="4" row="4">20mm
+이하</cell>
+  </row>
+</table>

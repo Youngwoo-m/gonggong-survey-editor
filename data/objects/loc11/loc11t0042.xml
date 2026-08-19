@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0042" article="제91조(偏心要素の測定)" rows="3" cols="4" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">偏心距離</cell>
+    <cell col="1" row="0" header="1">３級水準測量</cell>
+    <cell col="2" row="0" header="1"></cell>
+    <cell col="3" row="0" header="1"></cell>
+  </row>
+  <row>
+    <cell col="0" row="1"></cell>
+    <cell col="1" row="1">機器及び測定方法</cell>
+    <cell col="2" row="1">測定単位</cell>
+    <cell col="3" row="1">点検項目及び許容範囲</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">100ｍ未満</cell>
+    <cell col="1" row="2">レベル等による水準測量のうち ３級水準測量に準じて測定する。 ただし、後視及び前視に同一標尺 を用いて観測する場合は、往路及 び復路の測点数を１点とするこ とができる。</cell>
+    <cell col="2" row="2">mm</cell>
+    <cell col="3" row="2">往復の較差 ３mm</cell>
+  </row>
+</table>

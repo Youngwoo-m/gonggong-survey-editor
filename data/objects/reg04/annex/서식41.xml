@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식41" gubun="서식" no="41" title="측량업 등록사항 변경신고서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454663">
+  <table rows="33" cols="28">
+    <row>
+      <cell col="0" row="0" colspan="28">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별지 제41호서식] &lt;개정 2024. 4. 23.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="28">측량업 등록사항 변경신고서</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="21">※ 색상이 어두운 란은 적지 않습니다.</cell>
+      <cell col="21" row="2" colspan="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">접수번호</cell>
+      <cell col="1" row="3" colspan="3"></cell>
+      <cell col="4" row="3" colspan="3">접수일</cell>
+      <cell col="7" row="3" colspan="4"></cell>
+      <cell col="11" row="3" colspan="6">발급일</cell>
+      <cell col="17" row="3" colspan="5"></cell>
+      <cell col="22" row="3" colspan="4">처리기간</cell>
+      <cell col="26" row="3" colspan="2">20일</cell>
+    </row>
+    <row>
+      <cell col="0" row="4"></cell>
+      <cell col="1" row="4" colspan="3"></cell>
+      <cell col="4" row="4" colspan="3"></cell>
+      <cell col="7" row="4" colspan="4"></cell>
+      <cell col="11" row="4" colspan="6"></cell>
+      <cell col="17" row="4" colspan="5"></cell>
+      <cell col="22" row="4" colspan="4"></cell>
+      <cell col="26" row="4" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" rowspan="3">신고인</cell>
+      <cell col="1" row="5" colspan="13">성명 :</cell>
+      <cell col="14" row="5" colspan="14">법인등록번호 :
+사업자등록번호 :</cell>
+    </row>
+    <row>
+      <cell col="1" row="6" colspan="13">전화번호 :
+SMS수신번호 :</cell>
+      <cell col="14" row="6" colspan="14">전자우편 주소 :
+FAX번호 :</cell>
+    </row>
+    <row>
+      <cell col="1" row="7" colspan="27">주소 :</cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="28"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9" rowspan="4">등록사항
+□ 본점 
+□ 지점</cell>
+      <cell col="1" row="9" colspan="8">상  호 :</cell>
+      <cell col="9" row="9" colspan="10">대표자 :</cell>
+      <cell col="19" row="9" colspan="5">지적측량</cell>
+      <cell col="24" row="9" colspan="3">일반측량</cell>
+      <cell col="27" row="9">공공측량</cell>
+    </row>
+    <row>
+      <cell col="1" row="10" colspan="18">소재지 :</cell>
+      <cell col="19" row="10" colspan="5">등록번호
+(등록일자)</cell>
+      <cell col="24" row="10" colspan="3"></cell>
+      <cell col="27" row="10"></cell>
+    </row>
+    <row>
+      <cell col="1" row="11" colspan="2">측지측량</cell>
+      <cell col="3" row="11" colspan="3">연안측량</cell>
+      <cell col="6" row="11" colspan="2">지하측량</cell>
+      <cell col="8" row="11" colspan="8">영상도화</cell>
+      <cell col="16" row="11" colspan="3">영상처리</cell>
+      <cell col="19" row="11" colspan="5">수치지도</cell>
+      <cell col="24" row="11" colspan="3">지도제작</cell>
+      <cell col="27" row="11">항공측량</cell>
+    </row>
+    <row>
+      <cell col="1" row="12" colspan="2"></cell>
+      <cell col="3" row="12" colspan="3"></cell>
+      <cell col="6" row="12" colspan="2"></cell>
+      <cell col="8" row="12" colspan="8"></cell>
+      <cell col="16" row="12" colspan="3"></cell>
+      <cell col="19" row="12" colspan="5"></cell>
+      <cell col="24" row="12" colspan="3"></cell>
+      <cell col="27" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="28"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14" rowspan="3">변경사항</cell>
+      <cell col="1" row="14" colspan="27">변경내용</cell>
+    </row>
+    <row>
+      <cell col="1" row="15" colspan="11">변경 전</cell>
+      <cell col="12" row="15" colspan="16">변경 후</cell>
+    </row>
+    <row>
+      <cell col="1" row="16" colspan="27">사유</cell>
+    </row>
+    <row>
+      <cell col="0" row="17" colspan="28"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18" colspan="28">「공간정보의 구축 및 관리 등에 관한 법률」 제44조제5항, 같은 법 시행령 제37조 및 같은 법 시행규칙 제48조에 따라 등록사항의 변경을 신고합니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="19" colspan="28">년          월          일</cell>
+    </row>
+    <row>
+      <cell col="0" row="20" colspan="10"></cell>
+      <cell col="10" row="20" colspan="8">신고인</cell>
+      <cell col="18" row="20" colspan="5"></cell>
+      <cell col="23" row="20" colspan="5">(서명 또는 인)</cell>
+    </row>
+    <row>
+      <cell col="0" row="21" colspan="28">국토지리정보원장
+                    시ㆍ도지사    귀하
+                    대도시 시장</cell>
+    </row>
+    <row>
+      <cell col="0" row="22" colspan="28"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23" colspan="4">구 분</cell>
+      <cell col="4" row="23" colspan="9">신고인 제출서류</cell>
+      <cell col="13" row="23" colspan="13">국토지리정보원장, 시ㆍ도지사 
+또는 대도시 시장 확인사항</cell>
+      <cell col="26" row="23" colspan="2">수수료</cell>
+    </row>
+    <row>
+      <cell col="0" row="24" colspan="4">주된 영업소 또는 지점의 소재지 변경 및 상호 변경의 경우</cell>
+      <cell col="4" row="24" colspan="9">없음</cell>
+      <cell col="13" row="24" colspan="13">변경사항이 기재된 사업자등록증명 또는 법인 등기사항증명서(법인인 경우만 해당)</cell>
+      <cell col="26" row="24" colspan="2" rowspan="4">없음</cell>
+    </row>
+    <row>
+      <cell col="0" row="25" colspan="4">법인 대표자 변경의 경우</cell>
+      <cell col="4" row="25" colspan="9">없음</cell>
+      <cell col="13" row="25" colspan="13">법인 등기사항증명서</cell>
+    </row>
+    <row>
+      <cell col="0" row="26" colspan="4">측량업용 장비 변경의 경우</cell>
+      <cell col="4" row="26" colspan="9">1. 변경된 장비의 명세서 및 그 장비의 성능검사서 사본
+2. 소유권 또는 사용권을 보유한 사실을 증명할 수 있는 서류</cell>
+      <cell col="13" row="26" colspan="13">없음</cell>
+    </row>
+    <row>
+      <cell col="0" row="27" colspan="4">보유하고 있는 측량기술인력 변경의 경우</cell>
+      <cell col="4" row="27" colspan="9">1. 입사하거나 퇴사한 기술인력의 명단
+2. 입사한 기술인력의 측량기술 경력증명서
+3. 입사ㆍ퇴사한 기술인력의 재직ㆍ퇴직증명서</cell>
+      <cell col="13" row="27" colspan="13">「국가기술자격법」에 따른 국가기술자격증(정보처리기사만 해당합니다)</cell>
+    </row>
+    <row>
+      <cell col="0" row="28" colspan="28"></cell>
+    </row>
+    <row>
+      <cell col="0" row="29" colspan="28">행정정보 공동이용 동의서</cell>
+    </row>
+    <row>
+      <cell col="0" row="30" colspan="28">본인은 이 건 업무처리와 관련하여 국토지리정보원장, 시ㆍ도지사 또는 대도시 시장이 「전자정부법」 제36조제1항에 따른 행정정보의 공동이용을 통하여 사업자등록증명 또는 국가기술자격증을 확인하는 것에 동의합니다.   *동의하지 않는 경우에는 신고인이 직접 해당 서류(국가기술자격증의 경우에는 그 사본)를 제출해야 합니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="31" colspan="2"></cell>
+      <cell col="2" row="31" colspan="3"></cell>
+      <cell col="5" row="31" colspan="10">신고인(대표자)</cell>
+      <cell col="15" row="31" colspan="5"></cell>
+      <cell col="20" row="31" colspan="5"></cell>
+      <cell col="25" row="31" colspan="3">(서명 또는 인)</cell>
+    </row>
+    <row>
+      <cell col="0" row="32" colspan="28">210㎜×297㎜[백상지(80g/㎡) 또는 중질지(80g/㎡)]</cell>
+    </row>
+  </table>
+  <table rows="28" cols="13">
+    <row>
+      <cell col="0" row="0" colspan="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="13">(뒤쪽)</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="13">처 리 절 차</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="7"></cell>
+      <cell col="7" row="4" colspan="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="4" rowspan="2">신고인</cell>
+      <cell col="4" row="5" colspan="9">처리기관</cell>
+    </row>
+    <row>
+      <cell col="4" row="6" colspan="9">관할기관 담당부서</cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="4"></cell>
+      <cell col="4" row="7" colspan="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8"></cell>
+      <cell col="1" row="8" rowspan="2">신고서 작성</cell>
+      <cell col="2" row="8" colspan="2"></cell>
+      <cell col="4" row="8"></cell>
+      <cell col="5" row="8" rowspan="2">▶</cell>
+      <cell col="6" row="8" colspan="6" rowspan="2">접수</cell>
+      <cell col="12" row="8" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9"></cell>
+      <cell col="2" row="9" colspan="2"></cell>
+      <cell col="4" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="4" rowspan="14"></cell>
+      <cell col="4" row="10" colspan="2"></cell>
+      <cell col="6" row="10" colspan="2"></cell>
+      <cell col="8" row="10"></cell>
+      <cell col="9" row="10"></cell>
+      <cell col="10" row="10"></cell>
+      <cell col="11" row="10"></cell>
+      <cell col="12" row="10"></cell>
+    </row>
+    <row>
+      <cell col="4" row="11" colspan="2"></cell>
+      <cell col="6" row="11" colspan="3"></cell>
+      <cell col="9" row="11" colspan="2">▼</cell>
+      <cell col="11" row="11"></cell>
+      <cell col="12" row="11"></cell>
+    </row>
+    <row>
+      <cell col="4" row="12" colspan="2"></cell>
+      <cell col="6" row="12" colspan="6" rowspan="2">민원사무처리부 등재</cell>
+      <cell col="12" row="12"></cell>
+    </row>
+    <row>
+      <cell col="4" row="13" colspan="2"></cell>
+      <cell col="12" row="13"></cell>
+    </row>
+    <row>
+      <cell col="4" row="14" colspan="2"></cell>
+      <cell col="6" row="14" colspan="2"></cell>
+      <cell col="8" row="14"></cell>
+      <cell col="9" row="14"></cell>
+      <cell col="10" row="14"></cell>
+      <cell col="11" row="14"></cell>
+      <cell col="12" row="14"></cell>
+    </row>
+    <row>
+      <cell col="4" row="15" colspan="2"></cell>
+      <cell col="6" row="15" colspan="2"></cell>
+      <cell col="8" row="15"></cell>
+      <cell col="9" row="15" colspan="2">▼</cell>
+      <cell col="11" row="15"></cell>
+      <cell col="12" row="15"></cell>
+    </row>
+    <row>
+      <cell col="4" row="16" colspan="2"></cell>
+      <cell col="6" row="16" colspan="6" rowspan="2">서류심사 및 실태조사</cell>
+      <cell col="12" row="16"></cell>
+    </row>
+    <row>
+      <cell col="4" row="17" colspan="2"></cell>
+      <cell col="12" row="17"></cell>
+    </row>
+    <row>
+      <cell col="4" row="18" colspan="2"></cell>
+      <cell col="6" row="18" colspan="2"></cell>
+      <cell col="8" row="18"></cell>
+      <cell col="9" row="18"></cell>
+      <cell col="10" row="18"></cell>
+      <cell col="11" row="18"></cell>
+      <cell col="12" row="18"></cell>
+    </row>
+    <row>
+      <cell col="4" row="19" colspan="2"></cell>
+      <cell col="6" row="19" colspan="2"></cell>
+      <cell col="8" row="19"></cell>
+      <cell col="9" row="19" colspan="2">▼</cell>
+      <cell col="11" row="19"></cell>
+      <cell col="12" row="19"></cell>
+    </row>
+    <row>
+      <cell col="4" row="20" colspan="2"></cell>
+      <cell col="6" row="20" colspan="6" rowspan="2">기안 ㆍ 결재</cell>
+      <cell col="12" row="20"></cell>
+    </row>
+    <row>
+      <cell col="4" row="21" colspan="2"></cell>
+      <cell col="12" row="21"></cell>
+    </row>
+    <row>
+      <cell col="4" row="22" colspan="2"></cell>
+      <cell col="6" row="22" colspan="2"></cell>
+      <cell col="8" row="22"></cell>
+      <cell col="9" row="22"></cell>
+      <cell col="10" row="22"></cell>
+      <cell col="11" row="22"></cell>
+      <cell col="12" row="22"></cell>
+    </row>
+    <row>
+      <cell col="4" row="23" colspan="2"></cell>
+      <cell col="6" row="23" colspan="2"></cell>
+      <cell col="8" row="23"></cell>
+      <cell col="9" row="23" colspan="2">▼</cell>
+      <cell col="11" row="23"></cell>
+      <cell col="12" row="23"></cell>
+    </row>
+    <row>
+      <cell col="0" row="24"></cell>
+      <cell col="1" row="24" rowspan="2">발급 통보</cell>
+      <cell col="2" row="24" rowspan="2">◀</cell>
+      <cell col="3" row="24"></cell>
+      <cell col="4" row="24" colspan="2"></cell>
+      <cell col="6" row="24" colspan="6" rowspan="2">등록증 및 등록수첩 작성</cell>
+      <cell col="12" row="24" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="25"></cell>
+      <cell col="3" row="25"></cell>
+      <cell col="4" row="25" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="26" colspan="4"></cell>
+      <cell col="4" row="26" colspan="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="27" colspan="13">210mm×297mm[백상지(80g/㎡) 또는 중질지(80g/㎡)]</cell>
+    </row>
+  </table>
+</annex>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표7" gubun="별표" no="7" title="지하시설물(구조물형) 별 보조측량 위치 및 대상" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=38099209">
+  <text>[별표 7] 지하시설물(구조물형) 별 보조측량 위치 및 대상</text>
+  <table rows="5" cols="3">
+    <row>
+      <cell col="0" row="0">구분</cell>
+      <cell col="1" row="0">측량위치</cell>
+      <cell col="2" row="0">측량 대상</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">출입구</cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1">출입구 외형 상·하단</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">환기구</cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2">환기구 외형 상·하단</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">엘리
+베이터</cell>
+      <cell col="1" row="3"></cell>
+      <cell col="2" row="3">엘리베이터 외형 상·하단</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">기타시설</cell>
+      <cell col="1" row="4"></cell>
+      <cell col="2" row="4">기타 지상노출시설
+외형 상·하단</cell>
+    </row>
+  </table>
+</annex>

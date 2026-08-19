@@ -1,0 +1,1056 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표20" gubun="별표" no="20" title="라이넥스 도엽명코드" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=155729995">
+  <text>[별표 20] 라이넥스 도엽명코드</text>
+  <table rows="52" cols="19">
+    <row>
+      <cell col="0" row="0" colspan="19">라이넥스 도엽명코드(1/5만 지형도)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">가야</cell>
+      <cell col="1" row="1">G</cell>
+      <cell col="2" row="1">A</cell>
+      <cell col="3" row="1"></cell>
+      <cell col="4" row="1">당진</cell>
+      <cell col="5" row="1">D</cell>
+      <cell col="6" row="1">C</cell>
+      <cell col="7" row="1"></cell>
+      <cell col="8" row="1">서귀</cell>
+      <cell col="9" row="1">S</cell>
+      <cell col="10" row="1">F</cell>
+      <cell col="11" row="1"></cell>
+      <cell col="12" row="1">예미</cell>
+      <cell col="13" row="1">Y</cell>
+      <cell col="14" row="1">Q</cell>
+      <cell col="15" row="1"></cell>
+      <cell col="16" row="1">청도</cell>
+      <cell col="17" row="1">C</cell>
+      <cell col="18" row="1">D</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">간성</cell>
+      <cell col="1" row="2">G</cell>
+      <cell col="2" row="2">B</cell>
+      <cell col="3" row="2"></cell>
+      <cell col="4" row="2">대구</cell>
+      <cell col="5" row="2">D</cell>
+      <cell col="6" row="2">D</cell>
+      <cell col="7" row="2"></cell>
+      <cell col="8" row="2">서산</cell>
+      <cell col="9" row="2">S</cell>
+      <cell col="10" row="2">G</cell>
+      <cell col="11" row="2"></cell>
+      <cell col="12" row="2">예산</cell>
+      <cell col="13" row="2">Y</cell>
+      <cell col="14" row="2">R</cell>
+      <cell col="15" row="2"></cell>
+      <cell col="16" row="2">청산</cell>
+      <cell col="17" row="2">C</cell>
+      <cell col="18" row="2">E</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">갈담</cell>
+      <cell col="1" row="3">G</cell>
+      <cell col="2" row="3">C</cell>
+      <cell col="3" row="3"></cell>
+      <cell col="4" row="3">대보</cell>
+      <cell col="5" row="3">D</cell>
+      <cell col="6" row="3">E</cell>
+      <cell col="7" row="3"></cell>
+      <cell col="8" row="3">서울</cell>
+      <cell col="9" row="3">S</cell>
+      <cell col="10" row="3">H</cell>
+      <cell col="11" row="3"></cell>
+      <cell col="12" row="3">예안</cell>
+      <cell col="13" row="3">Y</cell>
+      <cell col="14" row="3">S</cell>
+      <cell col="15" row="3"></cell>
+      <cell col="16" row="3">청송</cell>
+      <cell col="17" row="3">C</cell>
+      <cell col="18" row="3">F</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">갈말</cell>
+      <cell col="1" row="4">G</cell>
+      <cell col="2" row="4">D</cell>
+      <cell col="3" row="4"></cell>
+      <cell col="4" row="4">대부</cell>
+      <cell col="5" row="4">D</cell>
+      <cell col="6" row="4">F</cell>
+      <cell col="7" row="4"></cell>
+      <cell col="8" row="4">서천</cell>
+      <cell col="9" row="4">S</cell>
+      <cell col="10" row="4">I</cell>
+      <cell col="11" row="4"></cell>
+      <cell col="12" row="4">예천</cell>
+      <cell col="13" row="4">Y</cell>
+      <cell col="14" row="4">T</cell>
+      <cell col="15" row="4"></cell>
+      <cell col="16" row="4">청양</cell>
+      <cell col="17" row="4">C</cell>
+      <cell col="18" row="4">G</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">감포</cell>
+      <cell col="1" row="5">G</cell>
+      <cell col="2" row="5">E</cell>
+      <cell col="3" row="5"></cell>
+      <cell col="4" row="5">대전</cell>
+      <cell col="5" row="5">D</cell>
+      <cell col="6" row="5">G</cell>
+      <cell col="7" row="5"></cell>
+      <cell col="8" row="5">서화</cell>
+      <cell col="9" row="5">S</cell>
+      <cell col="10" row="5">J</cell>
+      <cell col="11" row="5"></cell>
+      <cell col="12" row="5">오호</cell>
+      <cell col="13" row="5">O</cell>
+      <cell col="14" row="5">A</cell>
+      <cell col="15" row="5"></cell>
+      <cell col="16" row="5">청일</cell>
+      <cell col="17" row="5">C</cell>
+      <cell col="18" row="5">H</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">강릉</cell>
+      <cell col="1" row="6">G</cell>
+      <cell col="2" row="6">F</cell>
+      <cell col="3" row="6"></cell>
+      <cell col="4" row="6">대흑산</cell>
+      <cell col="5" row="6">D</cell>
+      <cell col="6" row="6">H</cell>
+      <cell col="7" row="6"></cell>
+      <cell col="8" row="6">석도</cell>
+      <cell col="9" row="6">S</cell>
+      <cell col="10" row="6">K</cell>
+      <cell col="11" row="6"></cell>
+      <cell col="12" row="6">와도</cell>
+      <cell col="13" row="6">W</cell>
+      <cell col="14" row="6">A</cell>
+      <cell col="15" row="6"></cell>
+      <cell col="16" row="6">청주</cell>
+      <cell col="17" row="6">C</cell>
+      <cell col="18" row="6">I</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">강화</cell>
+      <cell col="1" row="7">G</cell>
+      <cell col="2" row="7">G</cell>
+      <cell col="3" row="7"></cell>
+      <cell col="4" row="7">덕산</cell>
+      <cell col="5" row="7">D</cell>
+      <cell col="6" row="7">I</cell>
+      <cell col="7" row="7"></cell>
+      <cell col="8" row="7">선미</cell>
+      <cell col="9" row="7">S</cell>
+      <cell col="10" row="7">L</cell>
+      <cell col="11" row="7"></cell>
+      <cell col="12" row="7">완도</cell>
+      <cell col="13" row="7">W</cell>
+      <cell col="14" row="7">B</cell>
+      <cell col="15" row="7"></cell>
+      <cell col="16" row="7">청풍</cell>
+      <cell col="17" row="7">C</cell>
+      <cell col="18" row="7">J</cell>
+    </row>
+    <row>
+      <cell col="0" row="8">개성</cell>
+      <cell col="1" row="8">G</cell>
+      <cell col="2" row="8">H</cell>
+      <cell col="3" row="8"></cell>
+      <cell col="4" row="8">덕적</cell>
+      <cell col="5" row="8">D</cell>
+      <cell col="6" row="8">J</cell>
+      <cell col="7" row="8"></cell>
+      <cell col="8" row="8">설악</cell>
+      <cell col="9" row="8">S</cell>
+      <cell col="10" row="8">M</cell>
+      <cell col="11" row="8"></cell>
+      <cell col="12" row="8">왕징</cell>
+      <cell col="13" row="8">W</cell>
+      <cell col="14" row="8">C</cell>
+      <cell col="15" row="8"></cell>
+      <cell col="16" row="8">초도</cell>
+      <cell col="17" row="8">C</cell>
+      <cell col="18" row="8">K</cell>
+    </row>
+    <row>
+      <cell col="0" row="9">거금</cell>
+      <cell col="1" row="9">G</cell>
+      <cell col="2" row="9">I</cell>
+      <cell col="3" row="9"></cell>
+      <cell col="4" row="9">도암</cell>
+      <cell col="5" row="9">D</cell>
+      <cell col="6" row="9">K</cell>
+      <cell col="7" row="9"></cell>
+      <cell col="8" row="9">성동</cell>
+      <cell col="9" row="9">S</cell>
+      <cell col="10" row="9">N</cell>
+      <cell col="11" row="9"></cell>
+      <cell col="12" row="9">왜관</cell>
+      <cell col="13" row="9">W</cell>
+      <cell col="14" row="9">D</cell>
+      <cell col="15" row="9"></cell>
+      <cell col="16" row="9">추자</cell>
+      <cell col="17" row="9">C</cell>
+      <cell col="18" row="9">L</cell>
+    </row>
+    <row>
+      <cell col="0" row="10">거문</cell>
+      <cell col="1" row="10">G</cell>
+      <cell col="2" row="10">J</cell>
+      <cell col="3" row="10"></cell>
+      <cell col="4" row="10">도초</cell>
+      <cell col="5" row="10">D</cell>
+      <cell col="6" row="10">L</cell>
+      <cell col="7" row="10"></cell>
+      <cell col="8" row="10">성산</cell>
+      <cell col="9" row="10">S</cell>
+      <cell col="10" row="10">O</cell>
+      <cell col="11" row="10"></cell>
+      <cell col="12" row="10">외연</cell>
+      <cell col="13" row="10">W</cell>
+      <cell col="14" row="10">E</cell>
+      <cell col="15" row="10"></cell>
+      <cell col="16" row="10">춘양</cell>
+      <cell col="17" row="10">C</cell>
+      <cell col="18" row="10">M</cell>
+    </row>
+    <row>
+      <cell col="0" row="11">거제</cell>
+      <cell col="1" row="11">G</cell>
+      <cell col="2" row="11">K</cell>
+      <cell col="3" row="11"></cell>
+      <cell col="4" row="11">독도</cell>
+      <cell col="5" row="11">D</cell>
+      <cell col="6" row="11">M</cell>
+      <cell col="7" row="11"></cell>
+      <cell col="8" row="11">소리</cell>
+      <cell col="9" row="11">S</cell>
+      <cell col="10" row="11">P</cell>
+      <cell col="11" row="11"></cell>
+      <cell col="12" row="11">욕지</cell>
+      <cell col="13" row="11">Y</cell>
+      <cell col="14" row="11">U</cell>
+      <cell col="15" row="11"></cell>
+      <cell col="16" row="11">춘천</cell>
+      <cell col="17" row="11">C</cell>
+      <cell col="18" row="11">N</cell>
+    </row>
+    <row>
+      <cell col="0" row="12">거창</cell>
+      <cell col="1" row="12">G</cell>
+      <cell col="2" row="12">L</cell>
+      <cell col="3" row="12"></cell>
+      <cell col="4" row="12">독산</cell>
+      <cell col="5" row="12">D</cell>
+      <cell col="6" row="12">N</cell>
+      <cell col="7" row="12"></cell>
+      <cell col="8" row="12">소안</cell>
+      <cell col="9" row="12">S</cell>
+      <cell col="10" row="12">Q</cell>
+      <cell col="11" row="12"></cell>
+      <cell col="12" row="12">용두</cell>
+      <cell col="13" row="12">Y</cell>
+      <cell col="14" row="12">V</cell>
+      <cell col="15" row="12"></cell>
+      <cell col="16" row="12">충주</cell>
+      <cell col="17" row="12">C</cell>
+      <cell col="18" row="12">O</cell>
+    </row>
+    <row>
+      <cell col="0" row="13">경주</cell>
+      <cell col="1" row="13">G</cell>
+      <cell col="2" row="13">M</cell>
+      <cell col="3" row="13"></cell>
+      <cell col="4" row="13">돌산</cell>
+      <cell col="5" row="13">D</cell>
+      <cell col="6" row="13">O</cell>
+      <cell col="7" row="13"></cell>
+      <cell col="8" row="13">소천</cell>
+      <cell col="9" row="13">S</cell>
+      <cell col="10" row="13">R</cell>
+      <cell col="11" row="13"></cell>
+      <cell col="12" row="13">용유</cell>
+      <cell col="13" row="13">Y</cell>
+      <cell col="14" row="13">W</cell>
+      <cell col="15" row="13"></cell>
+      <cell col="16" row="13">태도</cell>
+      <cell col="17" row="13">T</cell>
+      <cell col="18" row="13">A</cell>
+    </row>
+    <row>
+      <cell col="0" row="14">고남</cell>
+      <cell col="1" row="14">G</cell>
+      <cell col="2" row="14">N</cell>
+      <cell col="3" row="14"></cell>
+      <cell col="4" row="14">동곡</cell>
+      <cell col="5" row="14">D</cell>
+      <cell col="6" row="14">P</cell>
+      <cell col="7" row="14"></cell>
+      <cell col="8" row="14">소청</cell>
+      <cell col="9" row="14">S</cell>
+      <cell col="10" row="14">S</cell>
+      <cell col="11" row="14"></cell>
+      <cell col="12" row="14">용인</cell>
+      <cell col="13" row="14">Y</cell>
+      <cell col="14" row="14">X</cell>
+      <cell col="15" row="14"></cell>
+      <cell col="16" row="14">태백</cell>
+      <cell col="17" row="14">T</cell>
+      <cell col="18" row="14">B</cell>
+    </row>
+    <row>
+      <cell col="0" row="15">고성</cell>
+      <cell col="1" row="15">G</cell>
+      <cell col="2" row="15">O</cell>
+      <cell col="3" row="15"></cell>
+      <cell col="4" row="15">두미</cell>
+      <cell col="5" row="15">D</cell>
+      <cell col="6" row="15">Q</cell>
+      <cell col="7" row="15"></cell>
+      <cell col="8" row="15">소흑산</cell>
+      <cell col="9" row="15">S</cell>
+      <cell col="10" row="15">T</cell>
+      <cell col="11" row="15"></cell>
+      <cell col="12" row="15">운봉</cell>
+      <cell col="13" row="15">U</cell>
+      <cell col="14" row="15">A</cell>
+      <cell col="15" row="15"></cell>
+      <cell col="16" row="15">통영</cell>
+      <cell col="17" row="15">T</cell>
+      <cell col="18" row="15">C</cell>
+    </row>
+    <row>
+      <cell col="0" row="16">고창</cell>
+      <cell col="1" row="16">G</cell>
+      <cell col="2" row="16">P</cell>
+      <cell col="3" row="16"></cell>
+      <cell col="4" row="16">마산</cell>
+      <cell col="5" row="16">M</cell>
+      <cell col="6" row="16">A</cell>
+      <cell col="7" row="16"></cell>
+      <cell col="8" row="16">속리</cell>
+      <cell col="9" row="16">S</cell>
+      <cell col="10" row="16">U</cell>
+      <cell col="11" row="16"></cell>
+      <cell col="12" row="16">울릉</cell>
+      <cell col="13" row="16">U</cell>
+      <cell col="14" row="16">B</cell>
+      <cell col="15" row="16"></cell>
+      <cell col="16" row="16">평창</cell>
+      <cell col="17" row="16">P</cell>
+      <cell col="18" row="16">A</cell>
+    </row>
+    <row>
+      <cell col="0" row="17">고흥</cell>
+      <cell col="1" row="17">G</cell>
+      <cell col="2" row="17">Q</cell>
+      <cell col="3" row="17"></cell>
+      <cell col="4" row="17">만리포</cell>
+      <cell col="5" row="17">M</cell>
+      <cell col="6" row="17">B</cell>
+      <cell col="7" row="17"></cell>
+      <cell col="8" row="17">속초</cell>
+      <cell col="9" row="17">S</cell>
+      <cell col="10" row="17">V</cell>
+      <cell col="11" row="17"></cell>
+      <cell col="12" row="17">울산</cell>
+      <cell col="13" row="17">U</cell>
+      <cell col="14" row="17">C</cell>
+      <cell col="15" row="17"></cell>
+      <cell col="16" row="17">평택</cell>
+      <cell col="17" row="17">P</cell>
+      <cell col="18" row="17">B</cell>
+    </row>
+    <row>
+      <cell col="0" row="18">곤양</cell>
+      <cell col="1" row="18">G</cell>
+      <cell col="2" row="18">R</cell>
+      <cell col="3" row="18"></cell>
+      <cell col="4" row="18">매물</cell>
+      <cell col="5" row="18">M</cell>
+      <cell col="6" row="18">C</cell>
+      <cell col="7" row="18"></cell>
+      <cell col="8" row="18">손죽</cell>
+      <cell col="9" row="18">S</cell>
+      <cell col="10" row="18">W</cell>
+      <cell col="11" row="18"></cell>
+      <cell col="12" row="18">울진</cell>
+      <cell col="13" row="18">U</cell>
+      <cell col="14" row="18">D</cell>
+      <cell col="15" row="18"></cell>
+      <cell col="16" row="18">포천</cell>
+      <cell col="17" row="18">P</cell>
+      <cell col="18" row="18">C</cell>
+    </row>
+    <row>
+      <cell col="0" row="19">공주</cell>
+      <cell col="1" row="19">G</cell>
+      <cell col="2" row="19">S</cell>
+      <cell col="3" row="19"></cell>
+      <cell col="4" row="19">매원</cell>
+      <cell col="5" row="19">M</cell>
+      <cell col="6" row="19">D</cell>
+      <cell col="7" row="19"></cell>
+      <cell col="8" row="19">수원</cell>
+      <cell col="9" row="19">S</cell>
+      <cell col="10" row="19">X</cell>
+      <cell col="11" row="19"></cell>
+      <cell col="12" row="19">원주</cell>
+      <cell col="13" row="19">W</cell>
+      <cell col="14" row="19">F</cell>
+      <cell col="15" row="19"></cell>
+      <cell col="16" row="19">포항</cell>
+      <cell col="17" row="19">P</cell>
+      <cell col="18" row="19">D</cell>
+    </row>
+    <row>
+      <cell col="0" row="20">관기</cell>
+      <cell col="1" row="20">G</cell>
+      <cell col="2" row="20">T</cell>
+      <cell col="3" row="20"></cell>
+      <cell col="4" row="20">맹골</cell>
+      <cell col="5" row="20">M</cell>
+      <cell col="6" row="20">E</cell>
+      <cell col="7" row="20"></cell>
+      <cell col="8" row="20">순창</cell>
+      <cell col="9" row="20">S</cell>
+      <cell col="10" row="20">Y</cell>
+      <cell col="11" row="20"></cell>
+      <cell col="12" row="20">위도</cell>
+      <cell col="13" row="20">W</cell>
+      <cell col="14" row="20">G</cell>
+      <cell col="15" row="20"></cell>
+      <cell col="16" row="20">표선</cell>
+      <cell col="17" row="20">P</cell>
+      <cell col="18" row="20">E</cell>
+    </row>
+    <row>
+      <cell col="0" row="21">관매</cell>
+      <cell col="1" row="21">G</cell>
+      <cell col="2" row="21">U</cell>
+      <cell col="3" row="21"></cell>
+      <cell col="4" row="21">모괴</cell>
+      <cell col="5" row="21">M</cell>
+      <cell col="6" row="21">F</cell>
+      <cell col="7" row="21"></cell>
+      <cell col="8" row="21">순천</cell>
+      <cell col="9" row="21">S</cell>
+      <cell col="10" row="21">Z</cell>
+      <cell col="11" row="21"></cell>
+      <cell col="12" row="21">음성</cell>
+      <cell col="13" row="21">E</cell>
+      <cell col="14" row="21">E</cell>
+      <cell col="15" row="21"></cell>
+      <cell col="16" row="21">하동</cell>
+      <cell col="17" row="21">H</cell>
+      <cell col="18" row="21">A</cell>
+    </row>
+    <row>
+      <cell col="0" row="22">광도</cell>
+      <cell col="1" row="22">G</cell>
+      <cell col="2" row="22">V</cell>
+      <cell col="3" row="22"></cell>
+      <cell col="4" row="22">모슬포</cell>
+      <cell col="5" row="22">M</cell>
+      <cell col="6" row="22">G</cell>
+      <cell col="7" row="22"></cell>
+      <cell col="8" row="22">신시</cell>
+      <cell col="9" row="22">X</cell>
+      <cell col="10" row="22">A</cell>
+      <cell col="11" row="22"></cell>
+      <cell col="12" row="22">의성</cell>
+      <cell col="13" row="22">E</cell>
+      <cell col="14" row="22">F</cell>
+      <cell col="15" row="22"></cell>
+      <cell col="16" row="22">하의</cell>
+      <cell col="17" row="22">H</cell>
+      <cell col="18" row="22">B</cell>
+    </row>
+    <row>
+      <cell col="0" row="23">광양</cell>
+      <cell col="1" row="23">G</cell>
+      <cell col="2" row="23">W</cell>
+      <cell col="3" row="23"></cell>
+      <cell col="4" row="23">목포</cell>
+      <cell col="5" row="23">M</cell>
+      <cell col="6" row="23">H</cell>
+      <cell col="7" row="23"></cell>
+      <cell col="8" row="23">신온</cell>
+      <cell col="9" row="23">X</cell>
+      <cell col="10" row="23">B</cell>
+      <cell col="11" row="23"></cell>
+      <cell col="12" row="23">이원</cell>
+      <cell col="13" row="23">I</cell>
+      <cell col="14" row="23">A</cell>
+      <cell col="15" row="23"></cell>
+      <cell col="16" row="23">한림</cell>
+      <cell col="17" row="23">H</cell>
+      <cell col="18" row="23">C</cell>
+    </row>
+    <row>
+      <cell col="0" row="24">광주</cell>
+      <cell col="1" row="24">G</cell>
+      <cell col="2" row="24">X</cell>
+      <cell col="3" row="24"></cell>
+      <cell col="4" row="24">무주</cell>
+      <cell col="5" row="24">M</cell>
+      <cell col="6" row="24">I</cell>
+      <cell col="7" row="24"></cell>
+      <cell col="8" row="24">신지</cell>
+      <cell col="9" row="24">X</cell>
+      <cell col="10" row="24">C</cell>
+      <cell col="11" row="24"></cell>
+      <cell col="12" row="24">이천</cell>
+      <cell col="13" row="24">I</cell>
+      <cell col="14" row="24">B</cell>
+      <cell col="15" row="24"></cell>
+      <cell col="16" row="24">한산</cell>
+      <cell col="17" row="24">H</cell>
+      <cell col="18" row="24">D</cell>
+    </row>
+    <row>
+      <cell col="0" row="25">교동</cell>
+      <cell col="1" row="25">G</cell>
+      <cell col="2" row="25">Y</cell>
+      <cell col="3" row="25"></cell>
+      <cell col="4" row="25">무풍</cell>
+      <cell col="5" row="25">M</cell>
+      <cell col="6" row="25">J</cell>
+      <cell col="7" row="25"></cell>
+      <cell col="8" row="25">아산</cell>
+      <cell col="9" row="25">A</cell>
+      <cell col="10" row="25">A</cell>
+      <cell col="11" row="25"></cell>
+      <cell col="12" row="25">익산</cell>
+      <cell col="13" row="25">I</cell>
+      <cell col="14" row="25">C</cell>
+      <cell col="15" row="25"></cell>
+      <cell col="16" row="25">함안</cell>
+      <cell col="17" row="25">H</cell>
+      <cell col="18" row="25">E</cell>
+    </row>
+    <row>
+      <cell col="0" row="26">구례</cell>
+      <cell col="1" row="26">G</cell>
+      <cell col="2" row="26">Z</cell>
+      <cell col="3" row="26"></cell>
+      <cell col="4" row="26">묵호</cell>
+      <cell col="5" row="26">M</cell>
+      <cell col="6" row="26">K</cell>
+      <cell col="7" row="26"></cell>
+      <cell col="8" row="26">안계</cell>
+      <cell col="9" row="26">A</cell>
+      <cell col="10" row="26">B</cell>
+      <cell col="11" row="26"></cell>
+      <cell col="12" row="26">인제</cell>
+      <cell col="13" row="26">I</cell>
+      <cell col="14" row="26">D</cell>
+      <cell col="15" row="26"></cell>
+      <cell col="16" row="26">함양</cell>
+      <cell col="17" row="26">H</cell>
+      <cell col="18" row="26">F</cell>
+    </row>
+    <row>
+      <cell col="0" row="27">구미</cell>
+      <cell col="1" row="27">K</cell>
+      <cell col="2" row="27">A</cell>
+      <cell col="3" row="27"></cell>
+      <cell col="4" row="27">문경</cell>
+      <cell col="5" row="27">M</cell>
+      <cell col="6" row="27">L</cell>
+      <cell col="7" row="27"></cell>
+      <cell col="8" row="27">안동</cell>
+      <cell col="9" row="27">A</cell>
+      <cell col="10" row="27">C</cell>
+      <cell col="11" row="27"></cell>
+      <cell col="12" row="27">인천</cell>
+      <cell col="13" row="27">I</cell>
+      <cell col="14" row="27">E</cell>
+      <cell col="15" row="27"></cell>
+      <cell col="16" row="27">합천</cell>
+      <cell col="17" row="27">H</cell>
+      <cell col="18" row="27">G</cell>
+    </row>
+    <row>
+      <cell col="0" row="28">구정</cell>
+      <cell col="1" row="28">K</cell>
+      <cell col="2" row="28">B</cell>
+      <cell col="3" row="28"></cell>
+      <cell col="4" row="28">문산</cell>
+      <cell col="5" row="28">M</cell>
+      <cell col="6" row="28">M</cell>
+      <cell col="7" row="28"></cell>
+      <cell col="8" row="28">안마</cell>
+      <cell col="9" row="28">A</cell>
+      <cell col="10" row="28">D</cell>
+      <cell col="11" row="28"></cell>
+      <cell col="12" row="28">일동</cell>
+      <cell col="13" row="28">I</cell>
+      <cell col="14" row="28">F</cell>
+      <cell col="15" row="28"></cell>
+      <cell col="16" row="28">해남</cell>
+      <cell col="17" row="28">H</cell>
+      <cell col="18" row="28">H</cell>
+    </row>
+    <row>
+      <cell col="0" row="29">군산</cell>
+      <cell col="1" row="29">K</cell>
+      <cell col="2" row="29">C</cell>
+      <cell col="3" row="29"></cell>
+      <cell col="4" row="29">미원</cell>
+      <cell col="5" row="29">M</cell>
+      <cell col="6" row="29">N</cell>
+      <cell col="7" row="29"></cell>
+      <cell col="8" row="29">안성</cell>
+      <cell col="9" row="29">A</cell>
+      <cell col="10" row="29">E</cell>
+      <cell col="11" row="29"></cell>
+      <cell col="12" row="29">임계</cell>
+      <cell col="13" row="29">I</cell>
+      <cell col="14" row="29">G</cell>
+      <cell col="15" row="29"></cell>
+      <cell col="16" row="29">현리</cell>
+      <cell col="17" row="29">H</cell>
+      <cell col="18" row="29">I</cell>
+    </row>
+    <row>
+      <cell col="0" row="30">군위</cell>
+      <cell col="1" row="30">K</cell>
+      <cell col="2" row="30">D</cell>
+      <cell col="3" row="30"></cell>
+      <cell col="4" row="30">밀양</cell>
+      <cell col="5" row="30">M</cell>
+      <cell col="6" row="30">O</cell>
+      <cell col="7" row="30"></cell>
+      <cell col="8" row="30">안양</cell>
+      <cell col="9" row="30">A</cell>
+      <cell col="10" row="30">F</cell>
+      <cell col="11" row="30"></cell>
+      <cell col="12" row="30">임실</cell>
+      <cell col="13" row="30">I</cell>
+      <cell col="14" row="30">H</cell>
+      <cell col="15" row="30"></cell>
+      <cell col="16" row="30">홍도</cell>
+      <cell col="17" row="30">H</cell>
+      <cell col="18" row="30">J</cell>
+    </row>
+    <row>
+      <cell col="0" row="31">근흥</cell>
+      <cell col="1" row="31">K</cell>
+      <cell col="2" row="31">E</cell>
+      <cell col="3" row="31"></cell>
+      <cell col="4" row="31">방산</cell>
+      <cell col="5" row="31">B</cell>
+      <cell col="6" row="31">A</cell>
+      <cell col="7" row="31"></cell>
+      <cell col="8" row="31">안흥</cell>
+      <cell col="9" row="31">A</cell>
+      <cell col="10" row="31">G</cell>
+      <cell col="11" row="31"></cell>
+      <cell col="12" row="31">임자</cell>
+      <cell col="13" row="31">I</cell>
+      <cell col="14" row="31">I</cell>
+      <cell col="15" row="31"></cell>
+      <cell col="16" row="31">홍성</cell>
+      <cell col="17" row="31">H</cell>
+      <cell col="18" row="31">K</cell>
+    </row>
+    <row>
+      <cell col="0" row="32">금산</cell>
+      <cell col="1" row="32">K</cell>
+      <cell col="2" row="32">F</cell>
+      <cell col="3" row="32"></cell>
+      <cell col="4" row="32">방어진</cell>
+      <cell col="5" row="32">B</cell>
+      <cell col="6" row="32">B</cell>
+      <cell col="7" row="32"></cell>
+      <cell col="8" row="32">양구</cell>
+      <cell col="9" row="32">Y</cell>
+      <cell col="10" row="32">A</cell>
+      <cell col="11" row="32"></cell>
+      <cell col="12" row="32">자은</cell>
+      <cell col="13" row="32">J</cell>
+      <cell col="14" row="32">A</cell>
+      <cell col="15" row="32"></cell>
+      <cell col="16" row="32">홍천</cell>
+      <cell col="17" row="32">H</cell>
+      <cell col="18" row="32">L</cell>
+    </row>
+    <row>
+      <cell col="0" row="33">금성</cell>
+      <cell col="1" row="33">K</cell>
+      <cell col="2" row="33">G</cell>
+      <cell col="3" row="33"></cell>
+      <cell col="4" row="33">백령</cell>
+      <cell col="5" row="33">B</cell>
+      <cell col="6" row="33">C</cell>
+      <cell col="7" row="33"></cell>
+      <cell col="8" row="33">양산</cell>
+      <cell col="9" row="33">Y</cell>
+      <cell col="10" row="33">B</cell>
+      <cell col="11" row="33"></cell>
+      <cell col="12" row="33">장성</cell>
+      <cell col="13" row="33">J</cell>
+      <cell col="14" row="33">B</cell>
+      <cell col="15" row="33"></cell>
+      <cell col="16" row="33">화북</cell>
+      <cell col="17" row="33">H</cell>
+      <cell col="18" row="33">M</cell>
+    </row>
+    <row>
+      <cell col="0" row="34">기계</cell>
+      <cell col="1" row="34">K</cell>
+      <cell col="2" row="34">H</cell>
+      <cell col="3" row="34"></cell>
+      <cell col="4" row="34">백아</cell>
+      <cell col="5" row="34">B</cell>
+      <cell col="6" row="34">D</cell>
+      <cell col="7" row="34"></cell>
+      <cell col="8" row="34">양수</cell>
+      <cell col="9" row="34">Y</cell>
+      <cell col="10" row="34">C</cell>
+      <cell col="11" row="34"></cell>
+      <cell col="12" row="34">장호원</cell>
+      <cell col="13" row="34">J</cell>
+      <cell col="14" row="34">C</cell>
+      <cell col="15" row="34"></cell>
+      <cell col="16" row="34">화원</cell>
+      <cell col="17" row="34">H</cell>
+      <cell col="18" row="34">N</cell>
+    </row>
+    <row>
+      <cell col="0" row="35">길안</cell>
+      <cell col="1" row="35">K</cell>
+      <cell col="2" row="35">I</cell>
+      <cell col="3" row="35"></cell>
+      <cell col="4" row="35">법성</cell>
+      <cell col="5" row="35">B</cell>
+      <cell col="6" row="35">E</cell>
+      <cell col="7" row="35"></cell>
+      <cell col="8" row="35">어론</cell>
+      <cell col="9" row="35">E</cell>
+      <cell col="10" row="35">A</cell>
+      <cell col="11" row="35"></cell>
+      <cell col="12" row="35">장흥</cell>
+      <cell col="13" row="35">J</cell>
+      <cell col="14" row="35">D</cell>
+      <cell col="15" row="35"></cell>
+      <cell col="16" row="35">화천</cell>
+      <cell col="17" row="35">H</cell>
+      <cell col="18" row="35">O</cell>
+    </row>
+    <row>
+      <cell col="0" row="36">김천</cell>
+      <cell col="1" row="36">K</cell>
+      <cell col="2" row="36">J</cell>
+      <cell col="3" row="36"></cell>
+      <cell col="4" row="36">병곡</cell>
+      <cell col="5" row="36">B</cell>
+      <cell col="6" row="36">F</cell>
+      <cell col="7" row="36"></cell>
+      <cell col="8" row="36">어청</cell>
+      <cell col="9" row="36">E</cell>
+      <cell col="10" row="36">B</cell>
+      <cell col="11" row="36"></cell>
+      <cell col="12" row="36">전의</cell>
+      <cell col="13" row="36">J</cell>
+      <cell col="14" row="36">E</cell>
+      <cell col="15" row="36"></cell>
+      <cell col="16" row="36">회천</cell>
+      <cell col="17" row="36">H</cell>
+      <cell col="18" row="36">P</cell>
+    </row>
+    <row>
+      <cell col="0" row="37">김포</cell>
+      <cell col="1" row="37">K</cell>
+      <cell col="2" row="37">K</cell>
+      <cell col="3" row="37"></cell>
+      <cell col="4" row="37">보령</cell>
+      <cell col="5" row="37">B</cell>
+      <cell col="6" row="37">G</cell>
+      <cell col="7" row="37"></cell>
+      <cell col="8" row="37">언양</cell>
+      <cell col="9" row="37">E</cell>
+      <cell col="10" row="37">C</cell>
+      <cell col="11" row="37"></cell>
+      <cell col="12" row="37">전주</cell>
+      <cell col="13" row="37">J</cell>
+      <cell col="14" row="37">F</cell>
+      <cell col="15" row="37"></cell>
+      <cell col="16" row="37"></cell>
+      <cell col="17" row="37"></cell>
+      <cell col="18" row="37"></cell>
+    </row>
+    <row>
+      <cell col="0" row="38">김해</cell>
+      <cell col="1" row="38">K</cell>
+      <cell col="2" row="38">L</cell>
+      <cell col="3" row="38"></cell>
+      <cell col="4" row="38">보은</cell>
+      <cell col="5" row="38">B</cell>
+      <cell col="6" row="38">H</cell>
+      <cell col="7" row="38"></cell>
+      <cell col="8" row="38">엄정</cell>
+      <cell col="9" row="38">E</cell>
+      <cell col="10" row="38">D</cell>
+      <cell col="11" row="38"></cell>
+      <cell col="12" row="38">정선</cell>
+      <cell col="13" row="38">J</cell>
+      <cell col="14" row="38">G</cell>
+      <cell col="15" row="38"></cell>
+      <cell col="16" row="38" colspan="3">1차통합기준점</cell>
+    </row>
+    <row>
+      <cell col="0" row="39">김화</cell>
+      <cell col="1" row="39">K</cell>
+      <cell col="2" row="39">M</cell>
+      <cell col="3" row="39"></cell>
+      <cell col="4" row="39">복내</cell>
+      <cell col="5" row="39">B</cell>
+      <cell col="6" row="39">I</cell>
+      <cell col="7" row="39"></cell>
+      <cell col="8" row="39">여수</cell>
+      <cell col="9" row="39">Y</cell>
+      <cell col="10" row="39">D</cell>
+      <cell col="11" row="39"></cell>
+      <cell col="12" row="39">정읍</cell>
+      <cell col="13" row="39">J</cell>
+      <cell col="14" row="39">H</cell>
+      <cell col="15" row="39"></cell>
+      <cell col="16" row="39" colspan="3">U0000 ~ U1200</cell>
+    </row>
+    <row>
+      <cell col="0" row="40">나주</cell>
+      <cell col="1" row="40">N</cell>
+      <cell col="2" row="40">A</cell>
+      <cell col="3" row="40"></cell>
+      <cell col="4" row="40">볼음</cell>
+      <cell col="5" row="40">B</cell>
+      <cell col="6" row="40">J</cell>
+      <cell col="7" row="40"></cell>
+      <cell col="8" row="40">여주</cell>
+      <cell col="9" row="40">Y</cell>
+      <cell col="10" row="40">E</cell>
+      <cell col="11" row="40"></cell>
+      <cell col="12" row="40">제주</cell>
+      <cell col="13" row="40">J</cell>
+      <cell col="14" row="40">I</cell>
+      <cell col="15" row="40"></cell>
+      <cell col="16" row="40" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="41">난지</cell>
+      <cell col="1" row="41">N</cell>
+      <cell col="2" row="41">B</cell>
+      <cell col="3" row="41"></cell>
+      <cell col="4" row="41">봉평</cell>
+      <cell col="5" row="41">B</cell>
+      <cell col="6" row="41">K</cell>
+      <cell col="7" row="41"></cell>
+      <cell col="8" row="41">연곡</cell>
+      <cell col="9" row="41">Y</cell>
+      <cell col="10" row="41">F</cell>
+      <cell col="11" row="41"></cell>
+      <cell col="12" row="41">제천</cell>
+      <cell col="13" row="41">J</cell>
+      <cell col="14" row="41">J</cell>
+      <cell col="15" row="41"></cell>
+      <cell col="16" row="41" colspan="3">예시) U0100</cell>
+    </row>
+    <row>
+      <cell col="0" row="42">남양</cell>
+      <cell col="1" row="42">N</cell>
+      <cell col="2" row="42">C</cell>
+      <cell col="3" row="42"></cell>
+      <cell col="4" row="42">부남</cell>
+      <cell col="5" row="42">B</cell>
+      <cell col="6" row="42">L</cell>
+      <cell col="7" row="42"></cell>
+      <cell col="8" row="42">연도</cell>
+      <cell col="9" row="42">Y</cell>
+      <cell col="10" row="42">G</cell>
+      <cell col="11" row="42"></cell>
+      <cell col="12" row="42">조도</cell>
+      <cell col="13" row="42">J</cell>
+      <cell col="14" row="42">K</cell>
+      <cell col="15" row="42"></cell>
+      <cell col="16" row="42" colspan="3">관측ID) 0100</cell>
+    </row>
+    <row>
+      <cell col="0" row="43">남원</cell>
+      <cell col="1" row="43">N</cell>
+      <cell col="2" row="43">D</cell>
+      <cell col="3" row="43"></cell>
+      <cell col="4" row="43">부산</cell>
+      <cell col="5" row="43">B</cell>
+      <cell col="6" row="43">M</cell>
+      <cell col="7" row="43"></cell>
+      <cell col="8" row="43">연안</cell>
+      <cell col="9" row="43">Y</cell>
+      <cell col="10" row="43">H</cell>
+      <cell col="11" row="43"></cell>
+      <cell col="12" row="43">죽굴</cell>
+      <cell col="13" row="43">J</cell>
+      <cell col="14" row="43">L</cell>
+      <cell col="15" row="43"></cell>
+      <cell col="16" row="43"></cell>
+      <cell col="17" row="43"></cell>
+      <cell col="18" row="43"></cell>
+    </row>
+    <row>
+      <cell col="0" row="44">남지</cell>
+      <cell col="1" row="44">N</cell>
+      <cell col="2" row="44">E</cell>
+      <cell col="3" row="44"></cell>
+      <cell col="4" row="44">부안</cell>
+      <cell col="5" row="44">B</cell>
+      <cell col="6" row="44">N</cell>
+      <cell col="7" row="44"></cell>
+      <cell col="8" row="44">연평</cell>
+      <cell col="9" row="44">Y</cell>
+      <cell col="10" row="44">I</cell>
+      <cell col="11" row="44"></cell>
+      <cell col="12" row="44">죽변</cell>
+      <cell col="13" row="44">J</cell>
+      <cell col="14" row="44">M</cell>
+      <cell col="15" row="44"></cell>
+      <cell col="16" row="44"></cell>
+      <cell col="17" row="44"></cell>
+      <cell col="18" row="44"></cell>
+    </row>
+    <row>
+      <cell col="0" row="45">남해</cell>
+      <cell col="1" row="45">N</cell>
+      <cell col="2" row="45">F</cell>
+      <cell col="3" row="45"></cell>
+      <cell col="4" row="45">불국사</cell>
+      <cell col="5" row="45">B</cell>
+      <cell col="6" row="45">O</cell>
+      <cell col="7" row="45"></cell>
+      <cell col="8" row="45">영덕</cell>
+      <cell col="9" row="45">Y</cell>
+      <cell col="10" row="45">J</cell>
+      <cell col="11" row="45"></cell>
+      <cell col="12" row="45">진도</cell>
+      <cell col="13" row="45">J</cell>
+      <cell col="14" row="45">N</cell>
+      <cell col="15" row="45"></cell>
+      <cell col="16" row="45" colspan="3">2차통합기준점</cell>
+    </row>
+    <row>
+      <cell col="0" row="46">내문</cell>
+      <cell col="1" row="46">N</cell>
+      <cell col="2" row="46">G</cell>
+      <cell col="3" row="46"></cell>
+      <cell col="4" row="46">비금</cell>
+      <cell col="5" row="46">B</cell>
+      <cell col="6" row="46">P</cell>
+      <cell col="7" row="46"></cell>
+      <cell col="8" row="46">영동</cell>
+      <cell col="9" row="46">Y</cell>
+      <cell col="10" row="46">K</cell>
+      <cell col="11" row="46"></cell>
+      <cell col="12" row="46">진안</cell>
+      <cell col="13" row="46">J</cell>
+      <cell col="14" row="46">O</cell>
+      <cell col="15" row="46"></cell>
+      <cell col="16" row="46" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="47">내평</cell>
+      <cell col="1" row="47">N</cell>
+      <cell col="2" row="47">H</cell>
+      <cell col="3" row="47"></cell>
+      <cell col="4" row="47">사천</cell>
+      <cell col="5" row="47">S</cell>
+      <cell col="6" row="47">A</cell>
+      <cell col="7" row="47"></cell>
+      <cell col="8" row="47">영암</cell>
+      <cell col="9" row="47">Y</cell>
+      <cell col="10" row="47">L</cell>
+      <cell col="11" row="47"></cell>
+      <cell col="12" row="47">진주</cell>
+      <cell col="13" row="47">J</cell>
+      <cell col="14" row="47">P</cell>
+      <cell col="15" row="47"></cell>
+      <cell col="16" row="47" colspan="3">도엽명+점번호</cell>
+    </row>
+    <row>
+      <cell col="0" row="48">논산</cell>
+      <cell col="1" row="48">N</cell>
+      <cell col="2" row="48">I</cell>
+      <cell col="3" row="48"></cell>
+      <cell col="4" row="48">산청</cell>
+      <cell col="5" row="48">S</cell>
+      <cell col="6" row="48">B</cell>
+      <cell col="7" row="48"></cell>
+      <cell col="8" row="48">영양</cell>
+      <cell col="9" row="48">Y</cell>
+      <cell col="10" row="48">M</cell>
+      <cell col="11" row="48"></cell>
+      <cell col="12" row="48">진천</cell>
+      <cell col="13" row="48">J</cell>
+      <cell col="14" row="48">Q</cell>
+      <cell col="15" row="48"></cell>
+      <cell col="16" row="48" colspan="3">예시) U고성01</cell>
+    </row>
+    <row>
+      <cell col="0" row="49">놀옥</cell>
+      <cell col="1" row="49">N</cell>
+      <cell col="2" row="49">J</cell>
+      <cell col="3" row="49"></cell>
+      <cell col="4" row="49">삼가</cell>
+      <cell col="5" row="49">S</cell>
+      <cell col="6" row="49">C</cell>
+      <cell col="7" row="49"></cell>
+      <cell col="8" row="49">영월</cell>
+      <cell col="9" row="49">Y</cell>
+      <cell col="10" row="49">N</cell>
+      <cell col="11" row="49"></cell>
+      <cell col="12" row="49">창녕</cell>
+      <cell col="13" row="49">C</cell>
+      <cell col="14" row="49">A</cell>
+      <cell col="15" row="49"></cell>
+      <cell col="16" row="49" colspan="3">관측ID) GOJ1</cell>
+    </row>
+    <row>
+      <cell col="0" row="50">단양</cell>
+      <cell col="1" row="50">D</cell>
+      <cell col="2" row="50">A</cell>
+      <cell col="3" row="50"></cell>
+      <cell col="4" row="50">삼척</cell>
+      <cell col="5" row="50">S</cell>
+      <cell col="6" row="50">D</cell>
+      <cell col="7" row="50"></cell>
+      <cell col="8" row="50">영주</cell>
+      <cell col="9" row="50">Y</cell>
+      <cell col="10" row="50">O</cell>
+      <cell col="11" row="50"></cell>
+      <cell col="12" row="50">창원</cell>
+      <cell col="13" row="50">C</cell>
+      <cell col="14" row="50">B</cell>
+      <cell col="15" row="50"></cell>
+      <cell col="16" row="50" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="51">담양</cell>
+      <cell col="1" row="51">D</cell>
+      <cell col="2" row="51">B</cell>
+      <cell col="3" row="51"></cell>
+      <cell col="4" row="51">상주</cell>
+      <cell col="5" row="51">S</cell>
+      <cell col="6" row="51">E</cell>
+      <cell col="7" row="51"></cell>
+      <cell col="8" row="51">영천</cell>
+      <cell col="9" row="51">Y</cell>
+      <cell col="10" row="51">P</cell>
+      <cell col="11" row="51"></cell>
+      <cell col="12" row="51">철원</cell>
+      <cell col="13" row="51">C</cell>
+      <cell col="14" row="51">C</cell>
+      <cell col="15" row="51"></cell>
+      <cell col="16" row="51" colspan="3"></cell>
+    </row>
+  </table>
+</annex>

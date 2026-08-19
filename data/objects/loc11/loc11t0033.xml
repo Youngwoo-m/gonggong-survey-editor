@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0033" article="제64조(観測の実施)" rows="16" cols="6" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">許 容 範 囲</cell>
+    <cell col="1" row="0" header="1">0.3mm</cell>
+    <cell col="2" row="0" header="1">0.3mm</cell>
+    <cell col="3" row="0" header="1">３mm</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">測量方法 項 目</cell>
+    <cell col="1" row="1"></cell>
+    <cell col="2" row="1"></cell>
+    <cell col="3" row="1">交 互 法</cell>
+    <cell col="4" row="1">経緯儀法</cell>
+    <cell col="5" row="1">俯仰ねじ法</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">観 測 距 離（Ｓ）</cell>
+    <cell col="1" row="2"></cell>
+    <cell col="2" row="2"></cell>
+    <cell col="3" row="2">0.3km（0.45km）まで</cell>
+    <cell col="4" row="2">１km まで</cell>
+    <cell col="5" row="2">２km まで</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">使用機器の性能</cell>
+    <cell col="1" row="3"></cell>
+    <cell col="2" row="3"></cell>
+    <cell col="3" row="3">１級レベル １級標尺</cell>
+    <cell col="4" row="3">１級トータルステーション １級セオドライト １級レベル、１級標尺 （２級レベル）</cell>
+    <cell col="5" row="3">俯仰ねじを有する １級レベル １級標尺</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">使用機器の数量</cell>
+    <cell col="1" row="4"></cell>
+    <cell col="2" row="4"></cell>
+    <cell col="3" row="4">１式</cell>
+    <cell col="4" row="4">２式</cell>
+    <cell col="5" row="4"></cell>
+  </row>
+  <row>
+    <cell col="0" row="5">観 測 条 件</cell>
+    <cell col="1" row="5"></cell>
+    <cell col="2" row="5"></cell>
+    <cell col="3" row="5">―――</cell>
+    <cell col="4" row="5">両岸で同時観測</cell>
+    <cell col="5" row="5"></cell>
+  </row>
+  <row>
+    <cell col="0" row="6">目標板白線の太さ</cell>
+    <cell col="1" row="6"></cell>
+    <cell col="2" row="6"></cell>
+    <cell col="3" row="6">40mm×Ｓ</cell>
+    <cell col="4" row="6">―――</cell>
+    <cell col="5" row="6">40mm×Ｓ</cell>
+  </row>
+  <row>
+    <cell col="0" row="7">観 測 時 間 帯</cell>
+    <cell col="1" row="7"></cell>
+    <cell col="2" row="7"></cell>
+    <cell col="3" row="7">観測地点の南中時前３時間、後４時間の間に行う</cell>
+    <cell col="4" row="7"></cell>
+    <cell col="5" row="7"></cell>
+  </row>
+  <row>
+    <cell col="0" row="8">セット数（ｎ）</cell>
+    <cell col="1" row="8"></cell>
+    <cell col="2" row="8"></cell>
+    <cell col="3" row="8">60×Ｓ</cell>
+    <cell col="4" row="8">80×Ｓ</cell>
+    <cell col="5" row="8"></cell>
+  </row>
+  <row>
+    <cell col="0" row="9">観 測 日 数</cell>
+    <cell col="1" row="9"></cell>
+    <cell col="2" row="9"></cell>
+    <cell col="3" row="9">ｎ／25</cell>
+    <cell col="4" row="9">ｎ／40</cell>
+    <cell col="5" row="9"></cell>
+  </row>
+  <row>
+    <cell col="0" row="10">目標（標尺） の読定単位</cell>
+    <cell col="1" row="10"></cell>
+    <cell col="2" row="10">自岸</cell>
+    <cell col="3" row="10">0.1mm（１mm）</cell>
+    <cell col="4" row="10">１″</cell>
+    <cell col="5" row="10">0.1mm（１mm）</cell>
+  </row>
+  <row>
+    <cell col="0" row="11"></cell>
+    <cell col="1" row="11"></cell>
+    <cell col="2" row="11">対岸</cell>
+    <cell col="3" row="11">１mm</cell>
+    <cell col="4" row="11">１″ 距離１mm</cell>
+    <cell col="5" row="11">俯仰ねじ目盛の 1/10</cell>
+  </row>
+  <row>
+    <cell col="0" row="12">計算 単位</cell>
+    <cell col="1" row="12">自岸器械高</cell>
+    <cell col="2" row="12"></cell>
+    <cell col="3" row="12">―――</cell>
+    <cell col="4" row="12">0.1mm（１mm）</cell>
+    <cell col="5" row="12">―――</cell>
+  </row>
+  <row>
+    <cell col="0" row="13"></cell>
+    <cell col="1" row="13">対岸目標高</cell>
+    <cell col="2" row="13"></cell>
+    <cell col="3" row="13">―――</cell>
+    <cell col="4" row="13">0.1mm（１mm）</cell>
+    <cell col="5" row="13">0.1mm（１mm）</cell>
+  </row>
+  <row>
+    <cell col="0" row="14">高度定数の較差の 許容範囲</cell>
+    <cell col="1" row="14"></cell>
+    <cell col="2" row="14"></cell>
+    <cell col="3" row="14">―――</cell>
+    <cell col="4" row="14">５″ （７″）</cell>
+    <cell col="5" row="14">―――</cell>
+  </row>
+  <row>
+    <cell col="0" row="15">距 離 の 測 定</cell>
+    <cell col="1" row="15"></cell>
+    <cell col="2" row="15"></cell>
+    <cell col="3" row="15">―――</cell>
+    <cell col="4" row="15">第３７条及び第３８条を準 用する</cell>
+    <cell col="5" row="15">―――</cell>
+  </row>
+</table>

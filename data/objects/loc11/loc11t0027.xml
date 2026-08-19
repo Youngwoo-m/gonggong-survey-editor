@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0027" article="제48조(既知点の種類等)" rows="3" cols="6" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">区 分 項 目</cell>
+    <cell col="1" row="0" header="1">１級水準測量</cell>
+    <cell col="2" row="0" header="1">２級水準測量</cell>
+    <cell col="3" row="0" header="1">３級水準測量</cell>
+    <cell col="4" row="0" header="1">４級水準測量</cell>
+    <cell col="5" row="0" header="1">簡易水準測量</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">既知点の種類</cell>
+    <cell col="1" row="1">電子基準点付属標 一等水準点 １級水準点</cell>
+    <cell col="2" row="1">電子基準点付属標 一～二等水準点 １～２級水準点</cell>
+    <cell col="3" row="1">電子基準点付属標 一～三等水準点 １～３級水準点</cell>
+    <cell col="4" row="1">電子基準点付属標 一～三等水準点 １～４級水準点</cell>
+    <cell col="5" row="1">電子基準点付属標 一～三等水準点 １～４級水準点</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">既知点間の路線長</cell>
+    <cell col="1" row="2">150km 以下</cell>
+    <cell col="2" row="2">150km 以下</cell>
+    <cell col="3" row="2">50km 以下</cell>
+    <cell col="4" row="2">50km 以下</cell>
+    <cell col="5" row="2">50km 以下</cell>
+  </row>
+</table>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식4의4" gubun="서식" no="4의4" title="측량용역 수행실적 명세서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454335">
+  <table rows="8" cols="6">
+    <row>
+      <cell col="0" row="0" rowspan="2">구 분</cell>
+      <cell col="1" row="0" rowspan="2">전문분야</cell>
+      <cell col="2" row="0" colspan="3">실   적</cell>
+      <cell col="5" row="0" rowspan="2">비  고</cell>
+    </row>
+    <row>
+      <cell col="2" row="1">건  수</cell>
+      <cell col="3" row="1" colspan="2">금  액(백만원)</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" rowspan="2">①국내분</cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2"></cell>
+      <cell col="3" row="2" colspan="2"></cell>
+      <cell col="5" row="2" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="1" row="3">국 내 분  계</cell>
+      <cell col="2" row="3"></cell>
+      <cell col="3" row="3" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4" rowspan="3">②국외분</cell>
+      <cell col="1" row="4">전문분야</cell>
+      <cell col="2" row="4">건  수</cell>
+      <cell col="3" row="4">원화(백만원)</cell>
+      <cell col="4" row="4">US$</cell>
+      <cell col="5" row="4" rowspan="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="5"></cell>
+      <cell col="2" row="5"></cell>
+      <cell col="3" row="5"></cell>
+      <cell col="4" row="5"></cell>
+    </row>
+    <row>
+      <cell col="1" row="6">국 외 분  계</cell>
+      <cell col="2" row="6"></cell>
+      <cell col="3" row="6"></cell>
+      <cell col="4" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="2">합            계</cell>
+      <cell col="2" row="7"></cell>
+      <cell col="3" row="7" colspan="2"></cell>
+      <cell col="5" row="7"></cell>
+    </row>
+  </table>
+  <table rows="20" cols="33">
+    <row>
+      <cell col="0" row="0" colspan="33">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별지 제4호의4서식] &lt;개정 2021. 8. 27.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="33">측량용역 수행실적 명세서</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="14" rowspan="2">사업자등록번호</cell>
+      <cell col="14" row="2" colspan="2" rowspan="2">본사
+소재지</cell>
+      <cell col="16" row="2" rowspan="4"></cell>
+      <cell col="17" row="2" colspan="2" rowspan="2">접수
+번호</cell>
+      <cell col="19" row="2" rowspan="4"></cell>
+      <cell col="20" row="2" colspan="3" rowspan="2">매 수</cell>
+      <cell col="23" row="2" colspan="2" rowspan="4"></cell>
+      <cell col="25" row="2" colspan="3">상    호:</cell>
+      <cell col="28" row="2" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="25" row="3" colspan="3">대 표 자:</cell>
+      <cell col="28" row="3" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4" rowspan="2"></cell>
+      <cell col="1" row="4" rowspan="2"></cell>
+      <cell col="2" row="4" colspan="2" rowspan="2"></cell>
+      <cell col="4" row="4" rowspan="2">-</cell>
+      <cell col="5" row="4" rowspan="2"></cell>
+      <cell col="6" row="4" rowspan="2"></cell>
+      <cell col="7" row="4" colspan="2" rowspan="2">-</cell>
+      <cell col="9" row="4" rowspan="2"></cell>
+      <cell col="10" row="4" rowspan="2"></cell>
+      <cell col="11" row="4" rowspan="2"></cell>
+      <cell col="12" row="4" rowspan="2"></cell>
+      <cell col="13" row="4" rowspan="2"></cell>
+      <cell col="14" row="4" rowspan="2"></cell>
+      <cell col="15" row="4" rowspan="2"></cell>
+      <cell col="17" row="4" colspan="2" rowspan="2"></cell>
+      <cell col="20" row="4" colspan="3" rowspan="2"></cell>
+      <cell col="25" row="4" colspan="3">소 재 지:</cell>
+      <cell col="28" row="4" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="25" row="5" colspan="3">전화번호:</cell>
+      <cell col="28" row="5" colspan="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6" colspan="33">1. 측량용역 수행실적 집계(      . 1. 1. ～     . 12. 31 까지의 실적)
+2. 측량용역 수행실적 국내명세서
+                                                                      (단위 : 백만원)</cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="3" rowspan="2">일련
+번호</cell>
+      <cell col="3" row="7" colspan="5" rowspan="2">전문분야</cell>
+      <cell col="8" row="7" colspan="10" rowspan="2">용   역   명</cell>
+      <cell col="18" row="7" colspan="3" rowspan="2">발주자</cell>
+      <cell col="21" row="7" rowspan="2">입찰
+방식1)</cell>
+      <cell col="22" row="7" colspan="2" rowspan="2">계약종류</cell>
+      <cell col="24" row="7" colspan="2" rowspan="2">대가
+산출
+방식2)</cell>
+      <cell col="26" row="7" rowspan="2">계약
+기간</cell>
+      <cell col="27" row="7" colspan="2" rowspan="2">업무   범위3)</cell>
+      <cell col="29" row="7" rowspan="2">계약금액</cell>
+      <cell col="30" row="7" colspan="2">지분액 및 비율</cell>
+      <cell col="32" row="7" rowspan="2">비 고</cell>
+    </row>
+    <row>
+      <cell col="30" row="8">비율</cell>
+      <cell col="31" row="8">지분액</cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="3"></cell>
+      <cell col="3" row="9" colspan="5"></cell>
+      <cell col="8" row="9" colspan="10"></cell>
+      <cell col="18" row="9" colspan="3"></cell>
+      <cell col="21" row="9"></cell>
+      <cell col="22" row="9" colspan="2"></cell>
+      <cell col="24" row="9" colspan="2"></cell>
+      <cell col="26" row="9"></cell>
+      <cell col="27" row="9" colspan="2"></cell>
+      <cell col="29" row="9"></cell>
+      <cell col="30" row="9"></cell>
+      <cell col="31" row="9"></cell>
+      <cell col="32" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="3"></cell>
+      <cell col="3" row="10" colspan="5"></cell>
+      <cell col="8" row="10" colspan="10"></cell>
+      <cell col="18" row="10" colspan="3"></cell>
+      <cell col="21" row="10"></cell>
+      <cell col="22" row="10" colspan="2"></cell>
+      <cell col="24" row="10" colspan="2"></cell>
+      <cell col="26" row="10"></cell>
+      <cell col="27" row="10" colspan="2"></cell>
+      <cell col="29" row="10"></cell>
+      <cell col="30" row="10"></cell>
+      <cell col="31" row="10"></cell>
+      <cell col="32" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="3"></cell>
+      <cell col="3" row="11" colspan="26">소   계</cell>
+      <cell col="29" row="11"></cell>
+      <cell col="30" row="11"></cell>
+      <cell col="31" row="11"></cell>
+      <cell col="32" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="33">3. 측량용역 수행실적 국외명세서
+                                                                      (단위 : 백만원)</cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="3" rowspan="2">일련
+번호</cell>
+      <cell col="3" row="13" colspan="5" rowspan="2">전문분야</cell>
+      <cell col="8" row="13" colspan="10" rowspan="2">용   역   명</cell>
+      <cell col="18" row="13" colspan="3" rowspan="2">발주자</cell>
+      <cell col="21" row="13" rowspan="2">입찰방식1)</cell>
+      <cell col="22" row="13" colspan="2" rowspan="2">계약종류</cell>
+      <cell col="24" row="13" colspan="2" rowspan="2">대가
+산출
+방식2)</cell>
+      <cell col="26" row="13" rowspan="2">계약
+기간</cell>
+      <cell col="27" row="13" colspan="2" rowspan="2">업무   범위3)</cell>
+      <cell col="29" row="13" rowspan="2">계약금액</cell>
+      <cell col="30" row="13" colspan="2">지분액 및 비율</cell>
+      <cell col="32" row="13" rowspan="2">비 고</cell>
+    </row>
+    <row>
+      <cell col="30" row="14">비율</cell>
+      <cell col="31" row="14">지분액</cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="3"></cell>
+      <cell col="3" row="15" colspan="5"></cell>
+      <cell col="8" row="15" colspan="10"></cell>
+      <cell col="18" row="15" colspan="3"></cell>
+      <cell col="21" row="15"></cell>
+      <cell col="22" row="15" colspan="2"></cell>
+      <cell col="24" row="15" colspan="2"></cell>
+      <cell col="26" row="15"></cell>
+      <cell col="27" row="15" colspan="2"></cell>
+      <cell col="29" row="15"></cell>
+      <cell col="30" row="15"></cell>
+      <cell col="31" row="15"></cell>
+      <cell col="32" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="3"></cell>
+      <cell col="3" row="16" colspan="5"></cell>
+      <cell col="8" row="16" colspan="10"></cell>
+      <cell col="18" row="16" colspan="3"></cell>
+      <cell col="21" row="16"></cell>
+      <cell col="22" row="16" colspan="2"></cell>
+      <cell col="24" row="16" colspan="2"></cell>
+      <cell col="26" row="16"></cell>
+      <cell col="27" row="16" colspan="2"></cell>
+      <cell col="29" row="16"></cell>
+      <cell col="30" row="16"></cell>
+      <cell col="31" row="16"></cell>
+      <cell col="32" row="16"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17" colspan="3"></cell>
+      <cell col="3" row="17" colspan="26">소 계</cell>
+      <cell col="29" row="17"></cell>
+      <cell col="30" row="17"></cell>
+      <cell col="31" row="17"></cell>
+      <cell col="32" row="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18" colspan="33">210mm×297mm(일반용지60g/㎡)</cell>
+    </row>
+    <row>
+      <cell col="0" row="19" colspan="33">작성방법 
+  1. 1) 입찰방식 : 일반경쟁, 제한경쟁, 지명경쟁, 수의계약, 기술제안서평가방식, 하도급계약, 사업수행능력평가방식(PQ), 설계시공일괄입찰방식(턴키), 기타
+     2) 대가산출방식 : 일괄지급방식, 공사비 비율방식, 실비정액 가산방식, 혼합방식(2개이상), 기타 
+       ※ 2개에 해당 될 경우 1개만 입력
+     3) 업무범위는 공공측량 작업규정에 따른 주요 과업내용을 기재합니다.
+  2. 계약기간은 년 월 일부터 년 월 일까지로 일단위까지 기재합니다. 
+  3. 전문분야(기본측량, 공공측량, 지적측량, 일반측량)별 계약일자 순으로 기재합니다. 
+  4. 측량용역의 발주자 또는 수급인이 발행한 실적증명서류를 첨부하여야 합니다.</cell>
+    </row>
+  </table>
+</annex>

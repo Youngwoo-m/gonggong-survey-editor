@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지1" gubun="별지" no="1" title="공공측량 작업계획서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296347">
+  <table rows="32" cols="8">
+    <row>
+      <cell col="0" row="0" colspan="8">[별지 제1호서식]</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="8">공공측량 작업계획서</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">공공측량 사업명</cell>
+      <cell col="1" row="2" colspan="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">공공측량의 목적 및 활용범위</cell>
+      <cell col="1" row="3" colspan="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4">공공측량의 위치</cell>
+      <cell col="1" row="4" colspan="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5">사업량</cell>
+      <cell col="1" row="5" colspan="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">공공측량 작업기간</cell>
+      <cell col="1" row="6" colspan="3">.  .  .  ∼  .  .  .</cell>
+      <cell col="4" row="6" colspan="3">공공측량 용역비</cell>
+      <cell col="7" row="6">원</cell>
+    </row>
+    <row>
+      <cell col="0" row="7" rowspan="2">공공측량
+시행자</cell>
+      <cell col="1" row="7" colspan="3">기관명(부서명)</cell>
+      <cell col="4" row="7" colspan="3">담당자명</cell>
+      <cell col="7" row="7">전화번호</cell>
+    </row>
+    <row>
+      <cell col="1" row="8" colspan="3"></cell>
+      <cell col="4" row="8" colspan="3"></cell>
+      <cell col="7" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9" rowspan="8">공공측량
+수행자</cell>
+      <cell col="1" row="9" colspan="3">업체명</cell>
+      <cell col="4" row="9" colspan="3">담당자명</cell>
+      <cell col="7" row="9">전화번호</cell>
+    </row>
+    <row>
+      <cell col="1" row="10" colspan="3"></cell>
+      <cell col="4" row="10" colspan="3"></cell>
+      <cell col="7" row="10"></cell>
+    </row>
+    <row>
+      <cell col="1" row="11" colspan="5">측량업종</cell>
+      <cell col="6" row="11" colspan="2">등록번호</cell>
+    </row>
+    <row>
+      <cell col="1" row="12" colspan="5"></cell>
+      <cell col="6" row="12" colspan="2">제  -  호</cell>
+    </row>
+    <row>
+      <cell col="1" row="13" colspan="5"></cell>
+      <cell col="6" row="13" colspan="2">제  -  호</cell>
+    </row>
+    <row>
+      <cell col="1" row="14" colspan="2" rowspan="3">참여기술자</cell>
+      <cell col="3" row="14" colspan="3">성명</cell>
+      <cell col="6" row="14" colspan="2">기술자격 및 등급</cell>
+    </row>
+    <row>
+      <cell col="3" row="15" colspan="3"></cell>
+      <cell col="6" row="15" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="3" row="16" colspan="3"></cell>
+      <cell col="6" row="16" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17" rowspan="11">공공측량 작업방법</cell>
+      <cell col="1" row="17" colspan="4">구분</cell>
+      <cell col="5" row="17" colspan="3">작업방법</cell>
+    </row>
+    <row>
+      <cell col="1" row="18" colspan="4">공공삼각점측량</cell>
+      <cell col="5" row="18" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="19" colspan="4">공공수준점측량</cell>
+      <cell col="5" row="19" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="20" colspan="4">지상현황측량</cell>
+      <cell col="5" row="20" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="21" colspan="4">항공사진측량</cell>
+      <cell col="5" row="21" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="22" colspan="4">수치지도제작</cell>
+      <cell col="5" row="22" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="23" rowspan="2">지하시설물측량</cell>
+      <cell col="2" row="23" colspan="3">신설·변경관로</cell>
+      <cell col="5" row="23" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="2" row="24" colspan="3">기존 매설관로</cell>
+      <cell col="5" row="24" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="25" colspan="4">영상지도제작</cell>
+      <cell col="5" row="25" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="26" colspan="4">수치표고모델제작</cell>
+      <cell col="5" row="26" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="27" colspan="4">기타</cell>
+      <cell col="5" row="27" colspan="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="28">사용할 측량기기의 종류 및 성능</cell>
+      <cell col="1" row="28" colspan="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="29">사용할 측량성과의 명칭, 종류 및 내용</cell>
+      <cell col="1" row="29" colspan="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="30">그 밖에 작업에 필요한 사항</cell>
+      <cell col="1" row="30" colspan="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="31" colspan="8">첨부 1. 공공측량 작업위치도
+     2. 용역수행대리인 설정계
+     3. 측량기기 성능검사서 또는 교정검사서류(공간정보관리법 제92조제1항)
+     4. 과업지시서(지하시설물측량에 한함)</cell>
+    </row>
+  </table>
+</annex>

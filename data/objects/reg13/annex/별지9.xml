@@ -1,0 +1,1476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지9" gubun="별지" no="9" title="표준적용 확인서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=118668831">
+  <text>[별지 제9호서식] 표준적용 확인서
+□ 메타데이터에 대한 표준적용 확인서
+(4쪽 중 제1쪽)</text>
+  <table rows="23" cols="5">
+    <row>
+      <cell col="0" row="0" colspan="4">항목</cell>
+      <cell col="4" row="0">작성 내용</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="13">1. 메타데이터 연락정보
+   (contact)</cell>
+      <cell col="1" row="1" colspan="3">담당(기관)유형
+(role)</cell>
+      <cell col="4" row="1"></cell>
+    </row>
+    <row>
+      <cell col="1" row="2" colspan="3">담당(기관)이름
+(name)</cell>
+      <cell col="4" row="2"></cell>
+    </row>
+    <row>
+      <cell col="1" row="3" colspan="3">서비스시간
+(houseOfService)</cell>
+      <cell col="4" row="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="4" colspan="3">연락지침
+(contactInstruction)</cell>
+      <cell col="4" row="4"></cell>
+    </row>
+    <row>
+      <cell col="1" row="5" colspan="3">전화번호
+(number)</cell>
+      <cell col="4" row="5"></cell>
+    </row>
+    <row>
+      <cell col="1" row="6" colspan="3">상세주소
+(deliveryPoint)</cell>
+      <cell col="4" row="6"></cell>
+    </row>
+    <row>
+      <cell col="1" row="7" colspan="3">행정구역
+(administrativeArea)</cell>
+      <cell col="4" row="7"></cell>
+    </row>
+    <row>
+      <cell col="1" row="8" colspan="3">우편번호
+(postalCode)</cell>
+      <cell col="4" row="8"></cell>
+    </row>
+    <row>
+      <cell col="1" row="9" colspan="3">국가
+(country)</cell>
+      <cell col="4" row="9"></cell>
+    </row>
+    <row>
+      <cell col="1" row="10" colspan="3">이메일주소
+(electronicMailAddress)</cell>
+      <cell col="4" row="10"></cell>
+    </row>
+    <row>
+      <cell col="1" row="11" colspan="3">온라인 지원 URL
+(linkage)</cell>
+      <cell col="4" row="11"></cell>
+    </row>
+    <row>
+      <cell col="1" row="12" colspan="3">온라인지원 기능
+(function)</cell>
+      <cell col="4" row="12"></cell>
+    </row>
+    <row>
+      <cell col="1" row="13" colspan="3">담당부서
+(positionName)</cell>
+      <cell col="4" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14" rowspan="2">2. 메타데이터 일자정보
+   (dateInfo)</cell>
+      <cell col="1" row="14" colspan="3">일자
+(date)</cell>
+      <cell col="4" row="14"></cell>
+    </row>
+    <row>
+      <cell col="1" row="15" colspan="3">일자 유형
+(dateType)</cell>
+      <cell col="4" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16" rowspan="7">3. 데이터 식별정보
+(identificationInfo)</cell>
+      <cell col="1" row="16" rowspan="3">사용된 언어
+(defaultLocale)</cell>
+      <cell col="2" row="16" colspan="2">언어코드
+(language)</cell>
+      <cell col="4" row="16"></cell>
+    </row>
+    <row>
+      <cell col="2" row="17" colspan="2">국가코드
+(country)</cell>
+      <cell col="4" row="17"></cell>
+    </row>
+    <row>
+      <cell col="2" row="18" colspan="2">문자인코딩
+(characterEncoding)</cell>
+      <cell col="4" row="18"></cell>
+    </row>
+    <row>
+      <cell col="1" row="19" rowspan="4">데이터 참조
+(citation)</cell>
+      <cell col="2" row="19" colspan="2">데이터이름
+(title)</cell>
+      <cell col="4" row="19"></cell>
+    </row>
+    <row>
+      <cell col="2" row="20" rowspan="2">참조일자
+(date)</cell>
+      <cell col="3" row="20">일자
+(date)</cell>
+      <cell col="4" row="20"></cell>
+    </row>
+    <row>
+      <cell col="3" row="21">일자유형
+(dateType)</cell>
+      <cell col="4" row="21"></cell>
+    </row>
+    <row>
+      <cell col="2" row="22" colspan="2">데이터 에디션
+(edition)</cell>
+      <cell col="4" row="22"></cell>
+    </row>
+  </table>
+  <text>(4쪽 중 제2쪽)</text>
+  <table rows="24" cols="5">
+    <row>
+      <cell col="0" row="0" colspan="4">항목</cell>
+      <cell col="4" row="0">작성 내용</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="21">3. 데이터 식별정보
+(identificationInfo)</cell>
+      <cell col="1" row="1" rowspan="6">데이터 참조
+(citation)</cell>
+      <cell col="2" row="1" colspan="2">데이터 에디션 일자
+(editionDate)</cell>
+      <cell col="4" row="1"></cell>
+    </row>
+    <row>
+      <cell col="2" row="2" colspan="2">담당(기관)유형
+(role)</cell>
+      <cell col="4" row="2"></cell>
+    </row>
+    <row>
+      <cell col="2" row="3" colspan="2">담당(기관)이름
+(name)</cell>
+      <cell col="4" row="3"></cell>
+    </row>
+    <row>
+      <cell col="2" row="4" colspan="2">데이터 표현형태
+(presentationForm)</cell>
+      <cell col="4" row="4"></cell>
+    </row>
+    <row>
+      <cell col="2" row="5" colspan="2">데이터 기타 참조 정보
+(otherCitedDetails)</cell>
+      <cell col="4" row="5"></cell>
+    </row>
+    <row>
+      <cell col="2" row="6" colspan="2">온라인자원 URL
+(linkage)</cell>
+      <cell col="4" row="6"></cell>
+    </row>
+    <row>
+      <cell col="1" row="7" colspan="3">데이터 요약
+(abstract)</cell>
+      <cell col="4" row="7"></cell>
+    </row>
+    <row>
+      <cell col="1" row="8" colspan="3">데이터 신뢰도에 대한 설명
+(credit)</cell>
+      <cell col="4" row="8"></cell>
+    </row>
+    <row>
+      <cell col="1" row="9" rowspan="2">데이터관련 연락처
+(pointOfContact)</cell>
+      <cell col="2" row="9" colspan="2">담당(기관)유형
+(role)</cell>
+      <cell col="4" row="9"></cell>
+    </row>
+    <row>
+      <cell col="2" row="10" colspan="2">담당(기관)이름
+(name)</cell>
+      <cell col="4" row="10"></cell>
+    </row>
+    <row>
+      <cell col="1" row="11" colspan="3">데이터 공간표현유형
+(spatialRepresentationType)</cell>
+      <cell col="4" row="11"></cell>
+    </row>
+    <row>
+      <cell col="1" row="12">데이터 공간해상도
+(spatialResolution)</cell>
+      <cell col="2" row="12" colspan="2">정거도법의 거리
+(distance)</cell>
+      <cell col="4" row="12"></cell>
+    </row>
+    <row>
+      <cell col="1" row="13" colspan="3">데이터 활용 주제
+(topicCategory)</cell>
+      <cell col="4" row="13"></cell>
+    </row>
+    <row>
+      <cell col="1" row="14" rowspan="6">데이터의
+시공간적 범위
+(extent)</cell>
+      <cell col="2" row="14" rowspan="4">지리적 요소
+(geographicElement)</cell>
+      <cell col="3" row="14">서쪽끝 경도좌표
+(westBoundLongtitude)</cell>
+      <cell col="4" row="14"></cell>
+    </row>
+    <row>
+      <cell col="3" row="15">동쪽끝 경도좌표
+(eastBoundLongtitude)</cell>
+      <cell col="4" row="15"></cell>
+    </row>
+    <row>
+      <cell col="3" row="16">남쪽끝 위도좌표
+(southBoundLatitude)</cell>
+      <cell col="4" row="16"></cell>
+    </row>
+    <row>
+      <cell col="3" row="17">북쪽끝 위도좌표
+(nouthBoundLatitude)</cell>
+      <cell col="4" row="17"></cell>
+    </row>
+    <row>
+      <cell col="2" row="18" rowspan="2">시간적 요소
+(temporalElement)</cell>
+      <cell col="3" row="18">시작일자
+(beginPosition)</cell>
+      <cell col="4" row="18"></cell>
+    </row>
+    <row>
+      <cell col="3" row="19">종료일자
+(endPosition)</cell>
+      <cell col="4" row="19"></cell>
+    </row>
+    <row>
+      <cell col="1" row="20" rowspan="2">데이터 제약
+(resourceConstraints)</cell>
+      <cell col="2" row="20" colspan="2">접근제약
+(accessConstraints)</cell>
+      <cell col="4" row="20"></cell>
+    </row>
+    <row>
+      <cell col="2" row="21" colspan="2">사용제약
+(useConstraints)</cell>
+      <cell col="4" row="21"></cell>
+    </row>
+    <row>
+      <cell col="0" row="22" rowspan="2">4. 메타데이터 제약
+(metadataConstraints)</cell>
+      <cell col="1" row="22" colspan="3">접근제약
+(accessConstraints)</cell>
+      <cell col="4" row="22"></cell>
+    </row>
+    <row>
+      <cell col="1" row="23" colspan="3">사용제약
+(useConstraints)</cell>
+      <cell col="4" row="23"></cell>
+    </row>
+  </table>
+  <text>(4쪽 중 제3쪽)</text>
+  <table rows="25" cols="4">
+    <row>
+      <cell col="0" row="0" colspan="3">항목</cell>
+      <cell col="3" row="0">작성 내용</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="5">5. 메타데이터 유지관리
+(metadataMaintenance)</cell>
+      <cell col="1" row="1" colspan="2">유지관리 및 갱신 주기
+(maintenanceAndUpdateFrequency)</cell>
+      <cell col="3" row="1"></cell>
+    </row>
+    <row>
+      <cell col="1" row="2" rowspan="2">유지관리 연락처
+(contact)</cell>
+      <cell col="2" row="2">담당(기관)유형
+(role)</cell>
+      <cell col="3" row="2"></cell>
+    </row>
+    <row>
+      <cell col="2" row="3">담당(기관)이름
+(name)</cell>
+      <cell col="3" row="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="4" rowspan="2">유지관리 일자
+(maintennaceDate)</cell>
+      <cell col="2" row="4">일자
+(date)</cell>
+      <cell col="3" row="4"></cell>
+    </row>
+    <row>
+      <cell col="2" row="5">일자유형
+(dateType)</cell>
+      <cell col="3" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6" rowspan="14">6. 데이터의 공간표현
+(spatialRepresentationInfo)</cell>
+      <cell col="1" row="6" colspan="2">시공간 차원의 수
+(numberofDimension)</cell>
+      <cell col="3" row="6"></cell>
+    </row>
+    <row>
+      <cell col="1" row="7" rowspan="4">첫 번째 시공간 차원에 대한 속성
+(axisDimensionProperties)</cell>
+      <cell col="2" row="7">축의 이름
+(dimesionName)</cell>
+      <cell col="3" row="7"></cell>
+    </row>
+    <row>
+      <cell col="2" row="8">축의 크기
+(dimensionSize)</cell>
+      <cell col="3" row="8"></cell>
+    </row>
+    <row>
+      <cell col="2" row="9">차원이름의 확장/수정자
+(dimensionTitle)</cell>
+      <cell col="3" row="9"></cell>
+    </row>
+    <row>
+      <cell col="2" row="10">축의 설명
+(dimensionDescription)</cell>
+      <cell col="3" row="10"></cell>
+    </row>
+    <row>
+      <cell col="1" row="11" rowspan="4">두 번째 시공간 차원에 대한 속성
+(axisDimensionProperties)</cell>
+      <cell col="2" row="11">축의 이름
+(dimesionName)</cell>
+      <cell col="3" row="11"></cell>
+    </row>
+    <row>
+      <cell col="2" row="12">축의 크기
+(dimensionSize)</cell>
+      <cell col="3" row="12"></cell>
+    </row>
+    <row>
+      <cell col="2" row="13">차원이름의 확장/수정자
+(dimensionTitle)</cell>
+      <cell col="3" row="13"></cell>
+    </row>
+    <row>
+      <cell col="2" row="14">축의 설명
+(dimensionDescription)</cell>
+      <cell col="3" row="14"></cell>
+    </row>
+    <row>
+      <cell col="1" row="15" colspan="2">격자구성 셀기하
+(cellGeometry)</cell>
+      <cell col="3" row="15"></cell>
+    </row>
+    <row>
+      <cell col="1" row="16" colspan="2">사진좌표와 지도좌표간의 변환을 위한 매개변수의 존재여부
+(transformationParameterAvailability)</cell>
+      <cell col="3" row="16"></cell>
+    </row>
+    <row>
+      <cell col="1" row="17" colspan="2">기준점의 존재 여부
+(controlPointAvailability)</cell>
+      <cell col="3" row="17"></cell>
+    </row>
+    <row>
+      <cell col="1" row="18" colspan="2">방위파라미터의 취득가능 여부
+(orientationParameterAvailability)</cell>
+      <cell col="3" row="18"></cell>
+    </row>
+    <row>
+      <cell col="1" row="19" colspan="2">지리참조 매개변수
+(georeferencedParameters)</cell>
+      <cell col="3" row="19"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20" rowspan="5">7. 데이터 참조체계
+(referenceSystemInfo)</cell>
+      <cell col="1" row="20" rowspan="4">참조체계 식별자
+(referenceSystemIdentifier)</cell>
+      <cell col="2" row="20">코드
+(code)</cell>
+      <cell col="3" row="20"></cell>
+    </row>
+    <row>
+      <cell col="2" row="21">코드 스페이스
+(codeSpace)</cell>
+      <cell col="3" row="21"></cell>
+    </row>
+    <row>
+      <cell col="2" row="22">식별자 버전
+(version)</cell>
+      <cell col="3" row="22"></cell>
+    </row>
+    <row>
+      <cell col="2" row="23">참조체계 식별자에 대한 설명
+(description)</cell>
+      <cell col="3" row="23"></cell>
+    </row>
+    <row>
+      <cell col="1" row="24" colspan="2">참조체계 유형
+(referenceSystemType)</cell>
+      <cell col="3" row="24"></cell>
+    </row>
+  </table>
+  <text>(4쪽 중 제4쪽)</text>
+  <table rows="22" cols="4">
+    <row>
+      <cell col="0" row="0" colspan="3">항목</cell>
+      <cell col="3" row="0">작성 내용</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="11">8. 내용정보(커버리지)
+(contentInfo)</cell>
+      <cell col="1" row="1" rowspan="3">첫 번째 축 밴드
+(dimensions)</cell>
+      <cell col="2" row="1">밴드 경계 정의
+(bandBoundaryDefinition)</cell>
+      <cell col="3" row="1"></cell>
+    </row>
+    <row>
+      <cell col="2" row="2">공간 해상도
+(nominalSpatialResolution)</cell>
+      <cell col="3" row="2"></cell>
+    </row>
+    <row>
+      <cell col="2" row="3">전달 함수 유형
+(transferFunctionType)</cell>
+      <cell col="3" row="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="4" rowspan="3">두 번째 축 밴드
+(dimensions)</cell>
+      <cell col="2" row="4">밴드 경계 정의
+(bandBoundaryDefinition)</cell>
+      <cell col="3" row="4"></cell>
+    </row>
+    <row>
+      <cell col="2" row="5">공간 해상도
+(nominalSpatialResolution)</cell>
+      <cell col="3" row="5"></cell>
+    </row>
+    <row>
+      <cell col="2" row="6">전달 함수 유형
+(transferFunctionType)</cell>
+      <cell col="3" row="6"></cell>
+    </row>
+    <row>
+      <cell col="1" row="7" colspan="2">이름
+(name)</cell>
+      <cell col="3" row="7"></cell>
+    </row>
+    <row>
+      <cell col="1" row="8" colspan="2">정의
+(definition)</cell>
+      <cell col="3" row="8"></cell>
+    </row>
+    <row>
+      <cell col="1" row="9" colspan="2">범위요소
+(rangeElement)</cell>
+      <cell col="3" row="9"></cell>
+    </row>
+    <row>
+      <cell col="1" row="10" rowspan="2">해상도
+(resolution)</cell>
+      <cell col="2" row="10">스캐닝 해상도
+(scanningResolution)</cell>
+      <cell col="3" row="10"></cell>
+    </row>
+    <row>
+      <cell col="2" row="11">지상 해상도
+(groundResolution)</cell>
+      <cell col="3" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12" rowspan="4">9. 배포정보
+(distributionInfo)</cell>
+      <cell col="1" row="12" rowspan="3">배포자
+(distributor)</cell>
+      <cell col="2" row="12">담당(기관)이름
+(name)</cell>
+      <cell col="3" row="12"></cell>
+    </row>
+    <row>
+      <cell col="2" row="13">담당(기관)유형
+(role)</cell>
+      <cell col="3" row="13"></cell>
+    </row>
+    <row>
+      <cell col="2" row="14">전화번호
+(number)</cell>
+      <cell col="3" row="14"></cell>
+    </row>
+    <row>
+      <cell col="1" row="15">배포포맷
+(distributionFormat)</cell>
+      <cell col="2" row="15">참조제목
+(title)</cell>
+      <cell col="3" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16" rowspan="6">10. 획득정보
+   (acquisitionInformation)</cell>
+      <cell col="1" row="16" rowspan="3">플랫폼 식별자
+(platformIdentifier)</cell>
+      <cell col="2" row="16">코드
+(code)</cell>
+      <cell col="3" row="16"></cell>
+    </row>
+    <row>
+      <cell col="2" row="17">유형
+(type)</cell>
+      <cell col="3" row="17"></cell>
+    </row>
+    <row>
+      <cell col="2" row="18">설명
+(description)</cell>
+      <cell col="3" row="18"></cell>
+    </row>
+    <row>
+      <cell col="1" row="19" rowspan="3">장비 식별자
+(instrumentIdentifier)</cell>
+      <cell col="2" row="19">코드
+(code)</cell>
+      <cell col="3" row="19"></cell>
+    </row>
+    <row>
+      <cell col="2" row="20">유형
+(type)</cell>
+      <cell col="3" row="20"></cell>
+    </row>
+    <row>
+      <cell col="2" row="21">설명
+(description)</cell>
+      <cell col="3" row="21"></cell>
+    </row>
+  </table>
+  <table rows="3" cols="1">
+    <row>
+      <cell col="0" row="0">메타데이터에 대한 표준적용 확인서 작성 방법</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">메타데이터의 연락정보(contact)
+담당(기관) 유형은 메타데이터를 제공하는 기관의 유형을 기재합니다.
+담당(기관) 이름은 메타데이터를 제공하는 기관의 이름을 기재합니다.
+서비스시간은 메타데이터를 제공하는 기관의 업무시간을 기재합니다.
+연락지침은 메타데이터의 제공기관에 연락할 경우 참고해야하는 사항을 기재합니다.
+전화번호는 메타데이터를 제공하는 기관의 연락처를 기재합니다.
+상세주소는 메타데이터를 제공하는 기관의 주소를 기재합니다.
+행정구역은 메타데이터를 제공하는 기관이 소재하는 행정구역을 기재합니다.
+우편번호는 메타데이터를 제공하는 기관의 우편번호를 기재합니다.
+국가는 메타데이터를 제공하는 기관이 소재하는 국가를 기재합니다.
+이메일주소는 메타데이터를 제공하는 기관(또는 담당자)의 이메일 주소로, 이메일 주소 형태로 자유롭게 기재합니다.
+온라인자원 URL은 메타데이터를 제공하는 기관의 웹페이지를 기재합니다.
+온라인자원 기능은 상기 메타데이터 제공 URL의 목적을 기재합니다.
+담당 부서는 메타데이터를 제공하는 기관 내 부서의 이름을 기재합니다. 문자열 형태로 자유롭게 기입하되, 해당 사항이 없는 경우 기재하지 않습니다.
+메타데이터 일자정보(dateInfo)
+일자는 메타데이터를 생성한 일자(검수일자)를 기재합니다. YYYY-MM-DD 형식으로 작성합니다.
+일자 유형은 상기 기입된 메타데이터 작성 일자의 유형을 기재합니다.
+데이터 식별정보(identificationInfo)
+사용된 언어 중 언어코드는 데이터가 한국어로 기술된 내용을 포함하고 있는 경우, 사용된 언어의 코드를 문자열로 기재합니다.
+사용된 언어 중 국가코드는 데이터가 한국어로 기술된 내용을 포함하고 있는 경우, 사용된 언어에 대한 국가코드(정수)를 기재합니다.
+사용된 언어 중 문자인코딩은 데이터가 한국어로 기술된 내용을 포함하고 있는 경우, 사용된 언어의 인코딩 값을 기재합니다.
+데이터 참조 중 데이터 이름은 데이터의 이름으로, 문자열 형식으로 자유롭게 기재합니다.
+데이터 참조 중 참조일자의 일자는 데이터 구축 일자를 기재합니다. YYYY-MM-DD 형식으로 작성합니다.
+데이터 참조 중 참조일자의 일자유형은 상기 날짜의 유형을 기재합니다.
+데이터 참조 중 데이터 에디션은 데이터의 발생횟수(에디션) 정보가 있는 경우, 그 연도를 YYYY 형태로 기합니다. 해당 사항이 없는 경우 기재하지 않습니다.
+데이터 참조 중 데이터 에디션 일자는 데이터 에디션의 생성 일자를 기재합니다. YYYY-MM-DD 형식으로 작성합니다. 해당 사항이 없는 경우 기재하지 않습니다.
+데이터 참조 중 담당(기관) 유형은 구축된 데이터에 대한 책임자의 유형을 기재합니다.
+데이터 참조 중 담당(기관) 이름은 구축된 데이터의 책임 기관 이름을 기재합니다.
+데이터 참조 중 데이터 표현형태는 구축된 데이터가 표현되는 형태로서, 다음 사항에서 선택합니다.
+디지털 문서 (documentDigital), 인쇄 문서 (documentHardcopy), 디지털 영상 (imageDigital), 인쇄 영상 (imageHardcopy), 디지털 지도 (mapDigital), 종이지도 (mapHardcopy), 디지털 모델 (modelDigital), 하드카피 모델 (modelHardcopy), 디지털 종단면 (profileDigial), 하드카피 종단면 (profileHardcopy), 디지털 표 (tableDigital), 하드카피 표 (tableHardcopy), 디지털 비디오 (videoDigital), 하드카피 비디오 (videoHardcopy), 디지털 오디오 (audioDigital), 하드카피 오디오 (audioHardcopy), 디지털 멀티미디어 (multimediaDigital), 하드카피 멀티미디어 (multimediaHardcopy), 물리적 객체 (physicalObject), 디지털 도식그림 (diagramDigital), 하드카피 도식그림 (diagram hardcopy)
+데이터 참조 중 데이터 기타 참조 정보는 구축된 데이터에 대한 기타 참조정보를 기재합니다. 문자열 형태로 자유롭게 기재하되, 해당 사항이 없는 경우 작성하지 않습니다.
+데이터 요약은 데이터에 대한 요약사항을 기재합니다. 문자열 형태로 자유롭게 기재합니다.
+데이터 신뢰도에 대한 설명은 데이터의 신뢰성에 대한 설명을 기재합니다. 문자열 형태로 자유롭게 기재하되, 해당 사항이 없는 경우 작성하지 않습니다.
+데이터관련 연락처 중 담당(기관) 유형은 데이터 제공자의 유형을 기재합니다.
+데이터관련 연락처 중 담당(기관) 이름은 구축된 데이터를 제공하는 기관 또는 제공자의 이름을 기재합니다. 문자열 형태로 자유롭게 기재하되, 해당 사항이 없는 경우 작성하지 않습니다.
+데이터 공간표현유형은 데이터에서 공간표현을 위해 사용하는 유형을 기재합니다.
+데이터 공간해상도 중 정거도법의 거리는 데이터가 구축된 거리를 기재합니다. Km 단위의 숫자값으로 기재하되, 해당 사항이 없는 경우 작성하지 않습니다.
+데이터 활용 주제는 데이터를 활용할 수 있는 주제 및 분야로서, 다음 사항에서 선택합니다.
+농업 (farming), 생태 (biota), 경계 (boundaries), 기후기상대기 (climatologyMeteorologyAtmosphere), 경제 (economy), 고도 (elevation), 환경 (environment), 지구과학정보 (geoscienticInformation), 건강 (health), 영상기본도지구관측 (imageryBaseMapsEarthCover), 군사정보 (IntelligenceMilitary), 담수 (inlandWaters), 위치 (location), 해양 (oceans), 토지계획 (planningCadastre)
+데이터의 시공간적 범위 중 지리적 요소의 서쪽끝 경도좌표는 데이터의 지리적인 범위 중 서쪽 끝의 경도좌표를 기재합니다. -180~180 사이의 소수로 작성합니다.
+데이터의 시공간적 범위 중 지리적 요소의 동쪽끝 경도좌표는 데이터의 지리적인 범위 중 동쪽 끝의 경도좌표를 기재합니다. -180~180 사이의 소수로 작성합니다.
+데이터의 시공간적 범위 중 지리적 요소의 남쪽끝 위도좌표는 데이터의 지리적인 범위 중 남쪽 끝의 위도좌표를 기재합니다. -90~90 사이의 소수로 작성합니다.
+데이터의 시공간적 범위 중 지리적 요소의 북쪽끝 위도좌표는 데이터의 지리적인 범위 중 북쪽 끝의 위도좌표를 기재합니다. -90~90 사이의 소수로 작성합니다.
+데이터의 시공간적 범위 중 시간적 요소의 시작일자는 데이터 구축 시작 일자를 기재합니다. YYYY-MM-DD 형식으로 작성합니다.
+데이터의 시공간적 범위 중 시간적 요소의 종료일자는 데이터 구축 종료 일자를 기재합니다. YYYY-MM-DD 형식으로 작성합니다.
+데이터 제약 중 접근제약은 데이터에 대한 접근제약의 내용으로, 다음 목록에서 선택합니다.
+제한되지 않음 (unrestricted), 기타제한 (otherRestrictions), 비공개(private)
+데이터 제약 중 사용제약은 데이터에 대한 사용제약의 내용으로, 다음 목록에서 선택합니다.
+제한되지 않음 (unrestricted), 기타제한 (otherRestrictions), 비공개(private)
+메타데이터 제약(metadataConstraints)
+접근제약은 데이터에 대한 접근제약의 내용으로, 다음 목록에서 선택합니다.
+제한되지 않음 (unrestricted), 기타제한 (otherRestrictions), 비공개(private)
+사용제약은 데이터에 대한 사용제약의 내용으로, 다음 목록에서 선택합니다.
+제한되지 않음 (unrestricted), 기타제한 (otherRestrictions), 비공개(private)
+메타데이터 유지관리(metadataMaintenance)
+유지관리 및 갱신 주기는 데이터의 유지관리 및 갱신주기로, 다음 목록에서 선택합니다.
+지속적 (continual), 매일 (daily), 주간 (weekly), 2주간 (fornightly), 매월 (monthly), 분기 (quaterly), 연2회 (biannually), 연간 (yearly), 필요시 (asNeeded), 불규칙 (irregularly), 무계획 (notplanned), 알려지지않음 (unknown), 주기적 (periodic), 월2회 (semimonthly), 격년 (biennially)
+유지관리 연락처 중 담당(기관) 이름은 데이터를 유지관리 및 갱신하는 기관의 이름을 기재합니다. 해당 사항이 없는 경우 작성하지 않습니다.
+유지관리 연락처 중 담당(기관) 유형은 데이터를 유지관리 및 갱신하는 담당자의 유형을 기재합니다.
+유지관리 일자 중 일자는 데이터의 유지관리 및 갱신이 이뤄지는 일자를 기재합니다. YYYY-MM-DD 형식으로 작성합니다.
+유지관리 일자 중 일자 유형은 상기 데이터의 유지관리 날짜의 유형을 기재합니다.
+데이터의 공간표현(spatialRepresentationInfo)
+시공간 차원의 수는 데이터의 공간 표현을 구성하는 축의 개수로써, 정수 형태로 0~2 사이의 정수를 기재합니다.
+첫 번째 시공간 차원에 대한 속성 중 축의 이름은 첫 번째 축의 이름으로, 다음 목록에서 선택합니다.
+횡렬 (row), 종렬 (column), 수직 (vertical), 트랙 (track), 교차트랙 (crossTrack), 선 (line), 샘플 (sample), 시간 (time)
+첫 번째 시공간 차원에 대한 속성 중 축의 크기는 첫 번째 축의 픽셀 개수를 기재합니다. 정수 값으로 기재합니다.
+첫 번째 시공간 차원에 대한 속성 중 차원이름의 확장/수정자는 첫 번째 축 이름의 확장 또는 수정자를 기재합니다. 문자열 형태로 자유롭게 기재하되, 해당 사항이 없는 경우 작성하지 않습니다.
+첫 번째 시공간 차원에 대한 속성 중 첫 번째 축에 대한 설명을 기재합니다. 문자열 형태로 자유롭게 기재하되, 해당 사항이 없는 경우 작성하지 않습니다.
+두 번째 시공간 차원에 대한 속성 중 축의 이름은 두 번째 축의 이름으로, 다음 목록에서 선택합니다.
+횡렬 (row), 종렬 (column), 수직 (vertical), 트랙 (track), 교차트랙 (crossTrack), 선 (line), 샘플 (sample), 시간 (time)
+두 번째 시공간 차원에 대한 속성 중 축의 크기는 두 번째 축의 픽셀 개수를 기재합니다. 정수 값으로 기재합니다.
+두 번째 시공간 차원에 대한 속성 중 차원이름의 확장/수정자는 두 번째 축 이름의 확장 또는 수정자를 기재합니다. 문자열 형태로 자유롭게 기재하되, 해당 사항이 없는 경우 작성하지 않습니다.
+두 번째 시공간 차원에 대한 속성 중 두 번째 축에 대한 설명을 기재합니다. 문자열 형태로 자유롭게 기재하되, 해당 사항이 없는 경우 작성하지 않습니다.
+격자구성 셀기하는 데이터를 구성하는 셀의 기하유형으로, 다음 목록에서 선택합니다.
+점 (point), 영역 (area), 복셀 (voxel), 층 (stratum)
+사진좌표와 지도좌표간의 변환을 위한 매개변수의 존재여부는 데이터의 격자 좌표와 지리적 좌표 사이의 변환을 위한 매개변수가 존재하는 지의 여부로써, 존재한다면 1, 존재하지 않는다면 0을 선택합니다.
+기준점의 존재 여부는 데이터 획득에 있어 사용되었던 제어점의 여부로써, 존재한다면 1, 존재하지 않는다면 0을 목록에서 선택합니다.
+방위파라미터의 취득가능 여부는 데이터 획득에 있어 사용된 표정 매개변수의 존재여부로써, 존재한다면 1, 존재하지 않는다면 0을 선택합니다.
+지리참조 매개변수는 데이터의 가공에 있어 매핑되거나 참조에 활용되는 매개변수를 기재합니다.
+데이터 참조체계(referenceSystem)
+참조체계 식별자 중 코드는 데이터가 따르고 있는 참조체계의 식별자로써, 다음 목록에서 선택합니다.
+EPSG:4737 (Korea 2000), EPSG:5185 (Korea 2000 Korea West Belt 2010), EPSG:5186 (Korea 2000 Korea Central Belt 2010), EPSG:5187 (Korea 2000 Korea East Belt 2010), EPSG:5188 (Korea 2000 Korea East Sea Belt 2010), EPSG:102080 (Korea 2000 Korea Unified Coordinate System), EPSG:102081 (Korea 2000 Korea West Belt 2010), EPSG:102082 (Korea 2000 Korea Central Belt 2010), EPSG:102083 (Korea 2000 Korea East Belt 2010), EPSG:102084 (Korea 2000 Korea East Sea Belt 2010)
+참조체계 식별자 중 코드 스페이스는 데이터가 따르고 있는 참조체계의 코드 스페이스로써, 문자열 형태로 기재하되, 해당 사항이 없는 경우 작성하지 않습니다.
+참조체계 식별자 중 식별자 버전은 데이터가 따르고 있는 참조체계 식별자의 버전으로, 문자열 형태로 자유롭게 기입하되, 해당 사항이 없는 경우 작성하지 않습니다.
+참조체계 식별자 중 참조체계 식별자에 대한 설명은 데이터가 따르고 있는 참조체계에 대한 기타 설명으로, 문자열 형태로 자유롭게 기재하되, 해당 사항이 없는 경우 작성하지 않습니다.
+참조체계 유형은 데이터가 따르고 있는 참조체계의 유형으로써, 다음 목록에서 선택합니다.
+공학파라메트릭합성 (compoundEngineeringParametric), 공학파라메트릭시간합성 (compoundEngineeringParametricTemporal), 공학시간합성 (compoundEngineeringTemporal), 공학수직합성 (compoundEngineeringVertical), 공학수직시간합성 (compoundEngineeringVerticalTemporal), 지리2D파라매트릭합성 (compoundGeographic2DParametric), 지리2D파라매트릭시간합성 (compoundGeographic2DParametricTemporal), 지리2D시간합성 (compoundGeographic2DTemporal), 지리2D수직합성 (compoundGeographic2DVertical), 지리2D수직시간합성 (compoundGeographic2DVerticalTemporal), 지리3D시간합성 (compoundGeographic3DTemporal), 투영2D파라매트릭합성 (compoundProjected2DParametric), 투영2D파라매트릭시간합성 (compoundProjected2DParametricTemporal), 투영시간합성 (compoundProjectedTemporal), 투영수직합성 (compoundProjectedVertical), 투영수직시간합성 (compoundProjectedVerticalTemporal), 공학 (engineering), 공학설계 (engineeringDesign), 공학영상 (engineeringImage), 측지지구중심 (geodeticGeocentric), 측지지리2D (geodeticGeographic2D), 측지지리3D (geodeticGeographic3D), 공간식별자 (geographicIdentifier), 선형 (linear), 파라매트릭 (parametric), 투영 (projected), 시간 (temporal), 수직 (vertical)
+내용정보(커버리지)(contentInfo)
+첫번째 축 밴드 중 밴드 경계 정의는 데이터를 구성하는 첫 번째 축에 대한 밴드의 경계로써, 다음 목록에서 선택합니다.
+3dB, halfMaximum, fiftyPercent, oneOverE, equivalentWidth
+첫번째 축 밴드 중 공간 해상도는 데이터를 구성하는 첫 번째 축의 공간 해상도입니다. cm 단위의 숫자로 기재합니다.
+첫번째 축 밴드 중 전달 함수 유형은 데이터를 구성하는 첫 번째 축에 대한 전달함수 유형으로써, 다음 목록에서 선택합니다.
+linear, logarithmic, exponential
+두번째 축 밴드 중 밴드 경계 정의는 데이터를 구성하는 두 번째 축에 대한 밴드의 경계로써, 다음 목록에서 선택합니다.
+3dB, halfMaximum, fiftyPercent, oneOverE, equivalentWidth
+두번째 축 밴드 중 공간 해상도는 데이터를 구성하는 두 번째 축의 공간 해상도입니다. cm 단위의 숫자로 기재합니다.
+두번째 축 밴드 중 전달 함수 유형은 데이터를 구성하는 두 번째 축에 대한 전달함수 유형으로써, 다음 목록에서 선택합니다.
+linear, logarithmic, exponential
+이름은 데이터 내용(커버리지)에 대한 이름으로, 문자열 형태로 자유롭게 기재합니다.
+정의는 데이터 내용(커버리지)에 대한 정의로써, 문자열 형태로 자유롭게 기재합니다.
+범위요소는 데이터 내용(커버리지)을 구성하는 범위적 요소로써, 문자열 형태로 자유롭게 기재합니다.
+해상도 중 스캐닝 해상도는 데이터의 품질 해상도 정보 중, 스캐닝 해상도를 기재합니다.
+해상도 중 지상 해상도는 데이터의 품질 해상도 정보 중, 지상 해상도로써, cm 단위의 숫자로 기재합니다.
+배포정보(distributionInfo)
+배포자 중 담당(기관) 이름은 데이터를 배포하는 담당기관의 이름을 기재합니다.
+배포자 중 담당(기관) 유형은 상기 데이터 배포 기관의 유형을 기재합니다.
+배포자 중 전화번호는 데이터를 배포하는 기관에 대한 연락처를 기재합니다.
+배포포맷 중 참조제목은 데이터의 포맷을 기술하는 관련자료의 제목을 기재합니다. 데이터 포맷이름을 기입할 수 있습니다. 문자열 형태로 자유롭게 작성합니다.
+획득정보(acquisitionInformation)
+플랫폼 식별자 중 코드는 데이터(항공사진) 촬영에 사용된 비행기의 호출부호(편명)를 기재합니다.
+플랫폼 식별자 중 유형은 데이터(항공사진) 촬영에 사용된 비행기의 기종을 기재합니다.
+플랫폼 식별자 중 설명은 데이터(항공사진) 촬영에 사용된 비행기에 대한 기타 설명으로, 문자열 형태로 자유롭게 기재하되, 해당 사항이 없는 경우 작성하지 않습니다.
+장비 식별자 중 코드는 데이터(항공사진) 촬영에 사용된 장비(카메라)를 식별하기 위한 정보로, 카메라 모델명(시리얼번호)을 문자열 형태로 기재합니다.
+장비 식별자 중 유형은 데이터(항공사진)의 촬영방식으로, 다음 목록에서 선택합니다.
+면형방식 (frameType), 선형방식 (lineType)
+장비 식별자 중 설명은 데이터(항공사진) 촬영에 사용된 장비(카메라)에 대한 기타 설명으로, 문자열 형태로 자유롭게 기재하되, 해당 사항이 없는 경우 작성하지 않습니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="2"></cell>
+    </row>
+  </table>
+  <text>□ 데이터품질에 대한 표준적용 확인서
+(6쪽 중 제1쪽)</text>
+  <table rows="24" cols="6">
+    <row>
+      <cell col="0" row="0" colspan="5">항목</cell>
+      <cell col="5" row="0">작성 내용</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="2">1. 데이터 품질 범위
+   (scope)</cell>
+      <cell col="1" row="1">레벨
+(level)</cell>
+      <cell col="2" row="1" colspan="3">기술하는 품질 자료의 특성</cell>
+      <cell col="5" row="1"></cell>
+    </row>
+    <row>
+      <cell col="1" row="2">레벨설명
+(levelDescription)</cell>
+      <cell col="2" row="2" colspan="3">데이터 셋인가?</cell>
+      <cell col="5" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" rowspan="15">2-1. 품질 보고서
+     (report)</cell>
+      <cell col="1" row="3" rowspan="9">품질측정항목
+(measure)</cell>
+      <cell col="2" row="3" rowspan="2">측정항목 식별자
+(measureIdentifier)</cell>
+      <cell col="3" row="3" colspan="2">코드
+(code)</cell>
+      <cell col="5" row="3"></cell>
+    </row>
+    <row>
+      <cell col="3" row="4" colspan="2">코드값에 대한 설명
+(description)</cell>
+      <cell col="5" row="4"></cell>
+    </row>
+    <row>
+      <cell col="2" row="5" colspan="3">측정항목이름
+(name)</cell>
+      <cell col="5" row="5"></cell>
+    </row>
+    <row>
+      <cell col="2" row="6" colspan="3">항목명
+(elementName)</cell>
+      <cell col="5" row="6"></cell>
+    </row>
+    <row>
+      <cell col="2" row="7" colspan="3">항목정의
+(definition)</cell>
+      <cell col="5" row="7"></cell>
+    </row>
+    <row>
+      <cell col="2" row="8" colspan="3">항목유형
+(valueType)</cell>
+      <cell col="5" row="8"></cell>
+    </row>
+    <row>
+      <cell col="2" row="9" colspan="2" rowspan="3">측정인자
+(parameter)</cell>
+      <cell col="4" row="9">인자이름
+(name)</cell>
+      <cell col="5" row="9"></cell>
+    </row>
+    <row>
+      <cell col="4" row="10">인자정의
+(definition)</cell>
+      <cell col="5" row="10"></cell>
+    </row>
+    <row>
+      <cell col="4" row="11">인자유형
+(valueType)</cell>
+      <cell col="5" row="11"></cell>
+    </row>
+    <row>
+      <cell col="1" row="12" rowspan="4">품질평가방법
+(evaluationMethod)</cell>
+      <cell col="2" row="12" colspan="3">품질평가일자
+(dateTime)</cell>
+      <cell col="5" row="12"></cell>
+    </row>
+    <row>
+      <cell col="2" row="13" colspan="3">품질평가방법설명
+(evaluationMethodDescription)</cell>
+      <cell col="5" row="13"></cell>
+    </row>
+    <row>
+      <cell col="2" row="14" colspan="3">품질평가절차
+(evaluationProcedure)</cell>
+      <cell col="5" row="14"></cell>
+    </row>
+    <row>
+      <cell col="2" row="15" colspan="3">품질평가 참조문서
+(referenceDoc)</cell>
+      <cell col="5" row="15"></cell>
+    </row>
+    <row>
+      <cell col="1" row="16" rowspan="2">품질측정결과
+(result)</cell>
+      <cell col="2" row="16" colspan="3">결과값
+(value)</cell>
+      <cell col="5" row="16"></cell>
+    </row>
+    <row>
+      <cell col="2" row="17" colspan="3">측정값단위
+(valueUnit)</cell>
+      <cell col="5" row="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18" rowspan="6">2-2. 품질 보고서
+     (report)</cell>
+      <cell col="1" row="18" rowspan="6">품질측정항목
+(measure)</cell>
+      <cell col="2" row="18" colspan="2" rowspan="2">측정항목 식별자
+(measureIdentifier)</cell>
+      <cell col="4" row="18">코드
+(code)</cell>
+      <cell col="5" row="18"></cell>
+    </row>
+    <row>
+      <cell col="4" row="19">코드값에 대한 설명
+(description)</cell>
+      <cell col="5" row="19"></cell>
+    </row>
+    <row>
+      <cell col="2" row="20" colspan="3">측정항목이름
+(name)</cell>
+      <cell col="5" row="20"></cell>
+    </row>
+    <row>
+      <cell col="2" row="21" colspan="3">항목명
+(elementName)</cell>
+      <cell col="5" row="21"></cell>
+    </row>
+    <row>
+      <cell col="2" row="22" colspan="3">항목정의
+(definition)</cell>
+      <cell col="5" row="22"></cell>
+    </row>
+    <row>
+      <cell col="2" row="23" colspan="3">항목유형
+(valueType)</cell>
+      <cell col="5" row="23"></cell>
+    </row>
+  </table>
+  <text>(6쪽 중 제2쪽)</text>
+  <table rows="25" cols="5">
+    <row>
+      <cell col="0" row="0" colspan="4">항목</cell>
+      <cell col="4" row="0">작성 내용</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="9">2-2. 품질 보고서
+     (report)</cell>
+      <cell col="1" row="1" rowspan="3">품질측정항목
+(measure)</cell>
+      <cell col="2" row="1" rowspan="3">측정인자
+(parameter)</cell>
+      <cell col="3" row="1">인자이름
+(name)</cell>
+      <cell col="4" row="1"></cell>
+    </row>
+    <row>
+      <cell col="3" row="2">인자정의
+(definition)</cell>
+      <cell col="4" row="2"></cell>
+    </row>
+    <row>
+      <cell col="3" row="3">인자유형
+(valueType)</cell>
+      <cell col="4" row="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="4" rowspan="4">품질평가방법
+(evaluationMethod)</cell>
+      <cell col="2" row="4" colspan="2">품질평가일자
+(dateTime)</cell>
+      <cell col="4" row="4"></cell>
+    </row>
+    <row>
+      <cell col="2" row="5" colspan="2">품질평가방법설명
+(evaluationMethodDescription)</cell>
+      <cell col="4" row="5"></cell>
+    </row>
+    <row>
+      <cell col="2" row="6" colspan="2">품질평가절차
+(evaluationProcedure)</cell>
+      <cell col="4" row="6"></cell>
+    </row>
+    <row>
+      <cell col="2" row="7" colspan="2">품질평가 참조문서
+(referenceDoc)</cell>
+      <cell col="4" row="7"></cell>
+    </row>
+    <row>
+      <cell col="1" row="8" rowspan="2">품질측정결과
+(result)</cell>
+      <cell col="2" row="8" colspan="2">적합여부
+(pass)</cell>
+      <cell col="4" row="8"></cell>
+    </row>
+    <row>
+      <cell col="2" row="9">참조정보
+(specification)</cell>
+      <cell col="3" row="9">참조이름
+(title)</cell>
+      <cell col="4" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" rowspan="15">2-3. 품질 보고서
+     (report)</cell>
+      <cell col="1" row="10" rowspan="9">품질측정항목
+(measure)</cell>
+      <cell col="2" row="10" rowspan="2">측정항목 식별자
+(measureIdentifier)</cell>
+      <cell col="3" row="10">코드
+(code)</cell>
+      <cell col="4" row="10"></cell>
+    </row>
+    <row>
+      <cell col="3" row="11">코드값에 대한 설명
+(description)</cell>
+      <cell col="4" row="11"></cell>
+    </row>
+    <row>
+      <cell col="2" row="12" colspan="2">측정항목이름
+(name)</cell>
+      <cell col="4" row="12"></cell>
+    </row>
+    <row>
+      <cell col="2" row="13" colspan="2">항목명
+(elementName)</cell>
+      <cell col="4" row="13"></cell>
+    </row>
+    <row>
+      <cell col="2" row="14" colspan="2">항목정의
+(definition)</cell>
+      <cell col="4" row="14"></cell>
+    </row>
+    <row>
+      <cell col="2" row="15" colspan="2">항목유형
+(valueType)</cell>
+      <cell col="4" row="15"></cell>
+    </row>
+    <row>
+      <cell col="2" row="16" rowspan="3">측정인자
+(parameter)</cell>
+      <cell col="3" row="16">인자이름
+(name)</cell>
+      <cell col="4" row="16"></cell>
+    </row>
+    <row>
+      <cell col="3" row="17">인자정의
+(definition)</cell>
+      <cell col="4" row="17"></cell>
+    </row>
+    <row>
+      <cell col="3" row="18">인자유형
+(valueType)</cell>
+      <cell col="4" row="18"></cell>
+    </row>
+    <row>
+      <cell col="1" row="19" rowspan="4">품질평가방법
+(evaluationMethod)</cell>
+      <cell col="2" row="19" colspan="2">품질평가일자
+(dateTime)</cell>
+      <cell col="4" row="19"></cell>
+    </row>
+    <row>
+      <cell col="2" row="20" colspan="2">품질평가방법설명
+(evaluationMethodDescription)</cell>
+      <cell col="4" row="20"></cell>
+    </row>
+    <row>
+      <cell col="2" row="21" colspan="2">품질평가절차
+(evaluationProcedure)</cell>
+      <cell col="4" row="21"></cell>
+    </row>
+    <row>
+      <cell col="2" row="22" colspan="2">품질평가 참조문서
+(referenceDoc)</cell>
+      <cell col="4" row="22"></cell>
+    </row>
+    <row>
+      <cell col="1" row="23" rowspan="2">품질측정결과
+(result)</cell>
+      <cell col="2" row="23" colspan="2">적합여부
+(pass)</cell>
+      <cell col="4" row="23"></cell>
+    </row>
+    <row>
+      <cell col="2" row="24">참조정보
+(specification)</cell>
+      <cell col="3" row="24">참조이름
+(title)</cell>
+      <cell col="4" row="24"></cell>
+    </row>
+  </table>
+  <text>(6쪽 중 제3쪽)</text>
+  <table rows="25" cols="5">
+    <row>
+      <cell col="0" row="0" colspan="4">항목</cell>
+      <cell col="4" row="0">작성 내용</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="15">2-4. 품질 보고서
+     (report)</cell>
+      <cell col="1" row="1" rowspan="9">품질측정항목
+(measure)</cell>
+      <cell col="2" row="1" rowspan="2">측정항목 식별자
+(measureIdentifier)</cell>
+      <cell col="3" row="1">코드
+(code)</cell>
+      <cell col="4" row="1"></cell>
+    </row>
+    <row>
+      <cell col="3" row="2">코드값에 대한 설명
+(description)</cell>
+      <cell col="4" row="2"></cell>
+    </row>
+    <row>
+      <cell col="2" row="3" colspan="2">측정항목이름
+(name)</cell>
+      <cell col="4" row="3"></cell>
+    </row>
+    <row>
+      <cell col="2" row="4" colspan="2">항목명
+(elementName)</cell>
+      <cell col="4" row="4"></cell>
+    </row>
+    <row>
+      <cell col="2" row="5" colspan="2">항목정의
+(definition)</cell>
+      <cell col="4" row="5"></cell>
+    </row>
+    <row>
+      <cell col="2" row="6" colspan="2">항목유형
+(valueType)</cell>
+      <cell col="4" row="6"></cell>
+    </row>
+    <row>
+      <cell col="2" row="7" rowspan="3">측정인자
+(parameter)</cell>
+      <cell col="3" row="7">인자이름
+(name)</cell>
+      <cell col="4" row="7"></cell>
+    </row>
+    <row>
+      <cell col="3" row="8">인자정의
+(definition)</cell>
+      <cell col="4" row="8"></cell>
+    </row>
+    <row>
+      <cell col="3" row="9">인자유형
+(valueType)</cell>
+      <cell col="4" row="9"></cell>
+    </row>
+    <row>
+      <cell col="1" row="10" rowspan="4">품질평가방법
+(evaluationMethod)</cell>
+      <cell col="2" row="10" colspan="2">품질평가일자
+(dateTime)</cell>
+      <cell col="4" row="10"></cell>
+    </row>
+    <row>
+      <cell col="2" row="11" colspan="2">품질평가방법설명
+(evaluationMethodDescription)</cell>
+      <cell col="4" row="11"></cell>
+    </row>
+    <row>
+      <cell col="2" row="12" colspan="2">품질평가절차
+(evaluationProcedure)</cell>
+      <cell col="4" row="12"></cell>
+    </row>
+    <row>
+      <cell col="2" row="13" colspan="2">품질평가 참조문서
+(referenceDoc)</cell>
+      <cell col="4" row="13"></cell>
+    </row>
+    <row>
+      <cell col="1" row="14" rowspan="2">품질측정결과
+(result)</cell>
+      <cell col="2" row="14" colspan="2">적합여부
+(pass)</cell>
+      <cell col="4" row="14"></cell>
+    </row>
+    <row>
+      <cell col="2" row="15">참조정보
+(specification)</cell>
+      <cell col="3" row="15">참조이름
+(title)</cell>
+      <cell col="4" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16" rowspan="9">2-5. 품질 보고서
+     (report)</cell>
+      <cell col="1" row="16" rowspan="9">품질측정항목
+(measure)</cell>
+      <cell col="2" row="16" rowspan="2">측정항목 식별자
+(measureIdentifier)</cell>
+      <cell col="3" row="16">코드
+(code)</cell>
+      <cell col="4" row="16"></cell>
+    </row>
+    <row>
+      <cell col="3" row="17">코드값에 대한 설명
+(description)</cell>
+      <cell col="4" row="17"></cell>
+    </row>
+    <row>
+      <cell col="2" row="18" colspan="2">측정항목이름
+(name)</cell>
+      <cell col="4" row="18"></cell>
+    </row>
+    <row>
+      <cell col="2" row="19" colspan="2">항목명
+(elementName)</cell>
+      <cell col="4" row="19"></cell>
+    </row>
+    <row>
+      <cell col="2" row="20" colspan="2">항목정의
+(definition)</cell>
+      <cell col="4" row="20"></cell>
+    </row>
+    <row>
+      <cell col="2" row="21" colspan="2">항목유형
+(valueType)</cell>
+      <cell col="4" row="21"></cell>
+    </row>
+    <row>
+      <cell col="2" row="22" rowspan="3">측정인자
+(parameter)</cell>
+      <cell col="3" row="22">인자이름
+(name)</cell>
+      <cell col="4" row="22"></cell>
+    </row>
+    <row>
+      <cell col="3" row="23">인자정의
+(definition)</cell>
+      <cell col="4" row="23"></cell>
+    </row>
+    <row>
+      <cell col="3" row="24">인자유형
+(valueType)</cell>
+      <cell col="4" row="24"></cell>
+    </row>
+  </table>
+  <text>(6쪽 중 제4쪽)</text>
+  <table rows="27" cols="5">
+    <row>
+      <cell col="0" row="0" colspan="4">항목</cell>
+      <cell col="4" row="0">작성 내용</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="6">2-5. 품질 보고서
+     (report)</cell>
+      <cell col="1" row="1" rowspan="4">품질평가방법
+(evaluationMethod)</cell>
+      <cell col="2" row="1" colspan="2">품질평가일자
+(dateTime)</cell>
+      <cell col="4" row="1"></cell>
+    </row>
+    <row>
+      <cell col="2" row="2" colspan="2">품질평가방법설명
+(evaluationMethodDescription)</cell>
+      <cell col="4" row="2"></cell>
+    </row>
+    <row>
+      <cell col="2" row="3" colspan="2">품질평가절차
+(evaluationProcedure)</cell>
+      <cell col="4" row="3"></cell>
+    </row>
+    <row>
+      <cell col="2" row="4" colspan="2">품질평가 참조문서
+(referenceDoc)</cell>
+      <cell col="4" row="4"></cell>
+    </row>
+    <row>
+      <cell col="1" row="5" rowspan="2">품질측정결과
+(result)</cell>
+      <cell col="2" row="5" colspan="2">적합여부
+(pass)</cell>
+      <cell col="4" row="5"></cell>
+    </row>
+    <row>
+      <cell col="2" row="6">참조정보
+(specification)</cell>
+      <cell col="3" row="6">참조이름
+(title)</cell>
+      <cell col="4" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7" rowspan="15">2-6. 품질 보고서
+     (report)</cell>
+      <cell col="1" row="7" rowspan="9">품질측정항목
+(measure)</cell>
+      <cell col="2" row="7" rowspan="2">측정항목 식별자
+(measureIdentifier)</cell>
+      <cell col="3" row="7">코드
+(code)</cell>
+      <cell col="4" row="7"></cell>
+    </row>
+    <row>
+      <cell col="3" row="8">코드값에 대한 설명
+(description)</cell>
+      <cell col="4" row="8"></cell>
+    </row>
+    <row>
+      <cell col="2" row="9" colspan="2">측정항목이름
+(name)</cell>
+      <cell col="4" row="9"></cell>
+    </row>
+    <row>
+      <cell col="2" row="10" colspan="2">항목명
+(elementName)</cell>
+      <cell col="4" row="10"></cell>
+    </row>
+    <row>
+      <cell col="2" row="11" colspan="2">항목정의
+(definition)</cell>
+      <cell col="4" row="11"></cell>
+    </row>
+    <row>
+      <cell col="2" row="12" colspan="2">항목유형
+(valueType)</cell>
+      <cell col="4" row="12"></cell>
+    </row>
+    <row>
+      <cell col="2" row="13" rowspan="3">측정인자
+(parameter)</cell>
+      <cell col="3" row="13">인자이름
+(name)</cell>
+      <cell col="4" row="13"></cell>
+    </row>
+    <row>
+      <cell col="3" row="14">인자정의
+(definition)</cell>
+      <cell col="4" row="14"></cell>
+    </row>
+    <row>
+      <cell col="3" row="15">인자유형
+(valueType)</cell>
+      <cell col="4" row="15"></cell>
+    </row>
+    <row>
+      <cell col="1" row="16" rowspan="4">품질평가방법
+(evaluationMethod)</cell>
+      <cell col="2" row="16" colspan="2">품질평가일자
+(dateTime)</cell>
+      <cell col="4" row="16"></cell>
+    </row>
+    <row>
+      <cell col="2" row="17" colspan="2">품질평가방법설명
+(evaluationMethodDescription)</cell>
+      <cell col="4" row="17"></cell>
+    </row>
+    <row>
+      <cell col="2" row="18" colspan="2">품질평가절차
+(evaluationProcedure)</cell>
+      <cell col="4" row="18"></cell>
+    </row>
+    <row>
+      <cell col="2" row="19" colspan="2">품질평가 참조문서
+(referenceDoc)</cell>
+      <cell col="4" row="19"></cell>
+    </row>
+    <row>
+      <cell col="1" row="20" rowspan="2">품질측정결과
+(result)</cell>
+      <cell col="2" row="20" colspan="2">결과값
+(value)</cell>
+      <cell col="4" row="20"></cell>
+    </row>
+    <row>
+      <cell col="2" row="21" colspan="2">측정값단위
+(valueUnit)</cell>
+      <cell col="4" row="21"></cell>
+    </row>
+    <row>
+      <cell col="0" row="22" rowspan="5">2-7. 품질 보고서
+     (report)</cell>
+      <cell col="1" row="22" rowspan="5">품질측정항목
+(measure)</cell>
+      <cell col="2" row="22" rowspan="2">측정항목 식별자
+(measureIdentifier)</cell>
+      <cell col="3" row="22">코드
+(code)</cell>
+      <cell col="4" row="22"></cell>
+    </row>
+    <row>
+      <cell col="3" row="23">코드값에 대한 설명
+(description)</cell>
+      <cell col="4" row="23"></cell>
+    </row>
+    <row>
+      <cell col="2" row="24" colspan="2">측정항목이름
+(name)</cell>
+      <cell col="4" row="24"></cell>
+    </row>
+    <row>
+      <cell col="2" row="25" colspan="2">항목명
+(elementName)</cell>
+      <cell col="4" row="25"></cell>
+    </row>
+    <row>
+      <cell col="2" row="26" colspan="2">항목정의
+(definition)</cell>
+      <cell col="4" row="26"></cell>
+    </row>
+  </table>
+  <text>(6쪽 중 제5쪽)</text>
+  <table rows="26" cols="5">
+    <row>
+      <cell col="0" row="0" colspan="4">항목</cell>
+      <cell col="4" row="0">작성 내용</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="10">2-7. 품질 보고서
+     (report)</cell>
+      <cell col="1" row="1" rowspan="4">품질측정항목
+(measure)</cell>
+      <cell col="2" row="1" colspan="2">항목유형
+(valueType)</cell>
+      <cell col="4" row="1"></cell>
+    </row>
+    <row>
+      <cell col="2" row="2" rowspan="3">측정인자
+(parameter)</cell>
+      <cell col="3" row="2">인자이름
+(name)</cell>
+      <cell col="4" row="2"></cell>
+    </row>
+    <row>
+      <cell col="3" row="3">인자정의
+(definition)</cell>
+      <cell col="4" row="3"></cell>
+    </row>
+    <row>
+      <cell col="3" row="4">인자유형
+(valueType)</cell>
+      <cell col="4" row="4"></cell>
+    </row>
+    <row>
+      <cell col="1" row="5" rowspan="4">품질평가방법
+(evaluationMethod)</cell>
+      <cell col="2" row="5" colspan="2">품질평가일자
+(dateTime)</cell>
+      <cell col="4" row="5"></cell>
+    </row>
+    <row>
+      <cell col="2" row="6" colspan="2">품질평가방법설명
+(evaluationMethodDescription)</cell>
+      <cell col="4" row="6"></cell>
+    </row>
+    <row>
+      <cell col="2" row="7" colspan="2">품질평가절차
+(evaluationProcedure)</cell>
+      <cell col="4" row="7"></cell>
+    </row>
+    <row>
+      <cell col="2" row="8" colspan="2">품질평가 참조문서
+(referenceDoc)</cell>
+      <cell col="4" row="8"></cell>
+    </row>
+    <row>
+      <cell col="1" row="9" rowspan="2">품질측정결과
+(result)</cell>
+      <cell col="2" row="9" colspan="2">적합여부
+(pass)</cell>
+      <cell col="4" row="9"></cell>
+    </row>
+    <row>
+      <cell col="2" row="10">참조정보
+(specification)</cell>
+      <cell col="3" row="10">참조이름
+(title)</cell>
+      <cell col="4" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11" rowspan="15">2-8. 품질 보고서
+     (report)</cell>
+      <cell col="1" row="11" rowspan="9">품질측정항목
+(measure)</cell>
+      <cell col="2" row="11" rowspan="2">측정항목 식별자
+(measureIdentifier)</cell>
+      <cell col="3" row="11">코드
+(code)</cell>
+      <cell col="4" row="11"></cell>
+    </row>
+    <row>
+      <cell col="3" row="12">코드값에 대한 설명
+(description)</cell>
+      <cell col="4" row="12"></cell>
+    </row>
+    <row>
+      <cell col="2" row="13" colspan="2">측정항목이름
+(name)</cell>
+      <cell col="4" row="13"></cell>
+    </row>
+    <row>
+      <cell col="2" row="14" colspan="2">항목명
+(elementName)</cell>
+      <cell col="4" row="14"></cell>
+    </row>
+    <row>
+      <cell col="2" row="15" colspan="2">항목정의
+(definition)</cell>
+      <cell col="4" row="15"></cell>
+    </row>
+    <row>
+      <cell col="2" row="16" colspan="2">항목유형
+(valueType)</cell>
+      <cell col="4" row="16"></cell>
+    </row>
+    <row>
+      <cell col="2" row="17" rowspan="3">측정인자
+(parameter)</cell>
+      <cell col="3" row="17">인자이름
+(name)</cell>
+      <cell col="4" row="17"></cell>
+    </row>
+    <row>
+      <cell col="3" row="18">인자정의
+(definition)</cell>
+      <cell col="4" row="18"></cell>
+    </row>
+    <row>
+      <cell col="3" row="19">인자유형
+(valueType)</cell>
+      <cell col="4" row="19"></cell>
+    </row>
+    <row>
+      <cell col="1" row="20" rowspan="4">품질평가방법
+(evaluationMethod)</cell>
+      <cell col="2" row="20" colspan="2">품질평가일자
+(dateTime)</cell>
+      <cell col="4" row="20"></cell>
+    </row>
+    <row>
+      <cell col="2" row="21" colspan="2">품질평가방법설명
+(evaluationMethodDescription)</cell>
+      <cell col="4" row="21"></cell>
+    </row>
+    <row>
+      <cell col="2" row="22" colspan="2">품질평가절차
+(evaluationProcedure)</cell>
+      <cell col="4" row="22"></cell>
+    </row>
+    <row>
+      <cell col="2" row="23" colspan="2">품질평가 참조문서
+(referenceDoc)</cell>
+      <cell col="4" row="23"></cell>
+    </row>
+    <row>
+      <cell col="1" row="24" rowspan="2">품질측정결과
+(result)</cell>
+      <cell col="2" row="24" colspan="2">적합여부
+(pass)</cell>
+      <cell col="4" row="24"></cell>
+    </row>
+    <row>
+      <cell col="2" row="25">참조정보
+(specification)</cell>
+      <cell col="3" row="25">참조이름
+(title)</cell>
+      <cell col="4" row="25"></cell>
+    </row>
+  </table>
+  <table rows="3" cols="1">
+    <row>
+      <cell col="0" row="0">데이터품질에 대한 표준적용 확인서 작성 방법</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">데이터의 품질 범위(scope)
+레벨은 데이터를 구성하는 형태 및 특성으로, 다음 목록에서 선택합니다. 
+속성 (attribute), 속성 유형 (attributeType), 자료취득 기기 (collectionHardware), 자료취득 영역 (collectionSession), 데이터 셋 (dataset), 데이터 시리즈 (series), 지리정보가 아닌 데이터 셋 (nonGeographicDataset), 차원 그룹 (dimensionGroup), 지형지물 (feature), 지형지물 타입 (featureType), 속성값 타입 (propertyType), 필드 영역 (fieldSession), 소프트웨어 (software), 서비스 (service), 모형 (model), 타일 (tile), 메타데이터 (metadata), 프로젝트 추진동력 (initiative), 샘플 예제 (sample), 문서 (document), 등록소 (repository), 집합 (aggregate), 제품 (product), 모음 (collection), 커버리지 (coverage), 응용시스템 (application)
+레벨설명은 Y/N만 기재합니다.
+품질 보고서(report)
+품질측정항목 중 측정항목 식별자의 코드는 측정항목을 식별하기 위한 식별번호 또는 인덱스 번호를 작성합니다.
+품질측정항목 중 측정항목 식별자의 코드값에 대한 설명은 상기 식별코드를 설명하기 위한 정보를 작성합니다.
+품질측정항목 중 측청항목이름은 데이터 품질을 구성하는 요소를 이용하여 데이터 품질 측정의 이름을 작성합니다.
+품질측정항목 중 항목명은 데이터 품질의 세부 측정항목의 이름을 작성합니다. (초과, 영역일관성 등)
+품질측정항목 중 항목정의는 상기 세부 측정항목을 측정하는 방법에 대한 정의를 작성합니다.
+품질측정항목 중 항목유형은 상기 세부 측정항목의 측정결과가 제시되는 값의 유형을 작성합니다.
+품질측정항목 중 측정인자의 인자이름은 데이터의 품질 측정에 사용되는 변수(인자)의 이름을 작성합니다.
+품질측정항목 중 측정인자의 인자정의는 데이터 품질 측정에 사용되는 변수(인자)의 정의를 작성합니다.
+품질측정항목 중 측정인자의 인자유형은 데이터 품질 측정에 사용되는 변수(인자) 값의 유형을 작성합니다.
+품질평가방법 중 품질평가일자는 상기 측정 항목의 평가를 수행한 일자를 YYYY-MM-DD 형식으로 작성합니다.
+품질평가방법 중 품질평가방법설명은 측정 항목의 평가 방법에 대한 설명을 작성합니다.
+품질평가방법 중 품질평가절차는 측정 항목의 평가 절차를 작성합니다.
+품질평가방법 중 품질평가 참조문서는 측정 항목의 평가방법에 참조할 수 있는 자료를 작성합니다.
+품질측정결과 중 결과값은 측정 항목의 평가결과를 정량적 수치로 작성합니다.
+품질측정결과 중 측정값단위는 상기 정량적 수치의 단위를 작성합니다.
+품질측정결과 중 적합여부는 측정 항목의 평가결과가 적합한지를 선택합니다. 적합하면 1, 적합하지 않는다면 0을 선택합니다.
+품질측정결과 중 참조정보의 참조이름은 측정항목의 평가결과와 관련하여 참조할 수 있는 자료를 작성합니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="2"></cell>
+    </row>
+  </table>
+</annex>

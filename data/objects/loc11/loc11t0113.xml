@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0113" article="제643조(方法)" rows="6" cols="3" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">種 別</cell>
+    <cell col="1" row="0" header="1"></cell>
+    <cell col="2" row="0" header="1">間 隔</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">道 路</cell>
+    <cell col="1" row="1">計画調査</cell>
+    <cell col="2" row="1">100ｍ又は50ｍ</cell>
+  </row>
+  <row>
+    <cell col="0" row="2"></cell>
+    <cell col="1" row="2">実施設計</cell>
+    <cell col="2" row="2">20ｍ</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">河 川</cell>
+    <cell col="1" row="3">計画調査</cell>
+    <cell col="2" row="3">100ｍ又は50ｍ</cell>
+  </row>
+  <row>
+    <cell col="0" row="4"></cell>
+    <cell col="1" row="4">実施設計</cell>
+    <cell col="2" row="4">20ｍ又は50ｍ</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">海 岸</cell>
+    <cell col="1" row="5">実施設計</cell>
+    <cell col="2" row="5">20ｍ又は50ｍ</cell>
+  </row>
+</table>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc19t018" article="핵심 안전기준ž절차 및 법적 근거 요약" rows="5" cols="2" source="측량 안전관리 매뉴얼 (2026.1)">
+  <row>
+    <cell col="0" row="0" header="1">근거</cell>
+    <cell col="1" row="0" header="1">관련 조항</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">산업안전보건기준에 관한 규칙 제38조 (사전조사 및 작업계획서의 작성 등)</cell>
+    <cell col="1" row="1">위험작업 시 사전조사 및 작업계획서 작성 의무</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">산업안전보건기준에 관한 규칙 별표 4</cell>
+    <cell col="1" row="2">작업계획서에 포함되어야 할 항목(작업순서, 사용기계, 안전조치 등) 명시</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">건설기술진흥법 제62조 (안전관리계획의 수립)</cell>
+    <cell col="1" row="3">건설현장 내 측량 편입 시 안전관리계획에 포함 해야 함</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">공간정보법 시행규칙 제30조</cell>
+    <cell col="1" row="4">공공측량 수행 시 안전관리계획 포함 필요사항 명시</cell>
+  </row>
+</table>

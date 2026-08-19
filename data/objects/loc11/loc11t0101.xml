@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0101" article="제614조(フィルタリング点検図の作成)" rows="3" cols="3" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">等高線種類</cell>
+    <cell col="1" row="0" header="1">間 隔</cell>
+    <cell col="2" row="0" header="1">色 区 分</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">計 曲 線</cell>
+    <cell col="1" row="1">５ｍ</cell>
+    <cell col="2" row="1">黄 色</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">主 曲 線</cell>
+    <cell col="1" row="2">１ｍ</cell>
+    <cell col="2" row="2">赤 色</cell>
+  </row>
+</table>

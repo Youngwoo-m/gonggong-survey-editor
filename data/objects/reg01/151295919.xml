@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="151295919" article="제67조" rows="5" cols="4" source="공공측량 작업규정.2025.04.23_수식수정.오류표시.hwpx">
+  <row>
+    <cell col="0" row="0" colspan="4">10,000m²당 배점 밀도</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">지역
+축척</cell>
+    <cell col="1" row="1">시가지</cell>
+    <cell col="2" row="1">시가지근교</cell>
+    <cell col="3" row="1">산지</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">1/250</cell>
+    <cell col="1" row="2">7점</cell>
+    <cell col="2" row="2">6점</cell>
+    <cell col="3" row="2">7점</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">1/500</cell>
+    <cell col="1" row="3">6점</cell>
+    <cell col="2" row="3">5점</cell>
+    <cell col="3" row="3">6점</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">1/1,000</cell>
+    <cell col="1" row="4">5점</cell>
+    <cell col="2" row="4">4점</cell>
+    <cell col="3" row="4">4점</cell>
+  </row>
+</table>

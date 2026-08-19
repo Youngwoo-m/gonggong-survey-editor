@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0035" article="제66조(検測)" rows="4" cols="3" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">区 分 項 目</cell>
+    <cell col="1" row="0" header="1">１級水準測量</cell>
+    <cell col="2" row="0" header="1">２級水準測量</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">前回の観測高低差との較差</cell>
+    <cell col="1" row="1">2.5mm√S</cell>
+    <cell col="2" row="1">５mm√S</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">測量成果の高低差との較差</cell>
+    <cell col="1" row="2">15mm√S</cell>
+    <cell col="2" row="2"></cell>
+  </row>
+  <row>
+    <cell col="0" row="3">備 考</cell>
+    <cell col="1" row="3">Ｓは観測距離（片道、km単位）とする。</cell>
+    <cell col="2" row="3"></cell>
+  </row>
+</table>

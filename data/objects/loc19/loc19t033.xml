@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc19t033" article="사전준비 및 작업계획" rows="3" cols="3" source="측량 안전관리 매뉴얼 (2026.1)">
+  <row>
+    <cell col="0" row="0" header="1">구분</cell>
+    <cell col="1" row="0" header="1">수량</cell>
+    <cell col="2" row="0" header="1">성능기준</cell>
+  </row>
+  <row>
+    <cell col="0" row="1"></cell>
+    <cell col="1" row="1"></cell>
+    <cell col="2" row="1">◦ 점군 데이터의 점밀도는 10m 거리 이내의 지면에서 1m2 당 400점 이상이 확보되어야 함. 다만, 센서의 한계로 인 하여 동일 구간을 반복 측량해야 하는 경우에는 데이터 간 의 위치편차를 효과적으로 소거 할 수 있는 방안이 소프트 웨어 또는 하드웨어적으로 구현되어 있어야 함 ◦ 점군 데이터의 반사강도(Intensity)는 정밀도로지도 세 부도화 항목의 식별이 가능하여야 함</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">디지털카메라</cell>
+    <cell col="1" row="2">1대 이상</cell>
+    <cell col="2" row="2">◦ 3ms 이하의 셔터속도로 사진을 촬영할 수 있어야 함 ◦ 일출 이후, 일몰 이전의 양호한 기상상태에서 촬영한 사진 에서 정밀도로지도 세부도화 항목의 식별이 가능하여야 함</cell>
+  </row>
+</table>

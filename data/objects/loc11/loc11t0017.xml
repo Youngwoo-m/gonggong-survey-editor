@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0017" article="제42조(点検計算及び再測)" rows="7" cols="6" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">区 分 項 目</cell>
+    <cell col="1" row="0" header="1"></cell>
+    <cell col="2" row="0" header="1">１級基準点測量</cell>
+    <cell col="3" row="0" header="1">２級基準点測量</cell>
+    <cell col="4" row="0" header="1">３級基準点測量</cell>
+    <cell col="5" row="0" header="1">４級基準点測量</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">・ 単 路 線 結 合 多 角</cell>
+    <cell col="1" row="1">水平位置の 閉 合 差</cell>
+    <cell col="2" row="1">100mm+20mm√NΣS</cell>
+    <cell col="3" row="1">100mm＋30mm√NΣS</cell>
+    <cell col="4" row="1">150mm＋50mm√NΣS</cell>
+    <cell col="5" row="1">150mm＋100mm√NΣS</cell>
+  </row>
+  <row>
+    <cell col="0" row="2"></cell>
+    <cell col="1" row="2">標 高 の 閉 合 差</cell>
+    <cell col="2" row="2">200mm＋50mmΣS/√N</cell>
+    <cell col="3" row="2">200mm＋100mmΣS/√N</cell>
+    <cell col="4" row="2">200mm＋150mmΣS/√N</cell>
+    <cell col="5" row="2">200mm＋300mmΣS/√N</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">多 角 形 単 位</cell>
+    <cell col="1" row="3">水平位置の 閉 合 差</cell>
+    <cell col="2" row="3">10mm√NΣS</cell>
+    <cell col="3" row="3">15mm√NΣS</cell>
+    <cell col="4" row="3">25mm√NΣS</cell>
+    <cell col="5" row="3">50mm√NΣS</cell>
+  </row>
+  <row>
+    <cell col="0" row="4"></cell>
+    <cell col="1" row="4">標 高 の 閉 合 差</cell>
+    <cell col="2" row="4">50mm ΣS/√N</cell>
+    <cell col="3" row="4">100mm ΣS/√N</cell>
+    <cell col="4" row="4">150mm ΣS/√N</cell>
+    <cell col="5" row="4">300mm ΣS/√N</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">標高差の正反較差</cell>
+    <cell col="1" row="5"></cell>
+    <cell col="2" row="5">300mm</cell>
+    <cell col="3" row="5">200mm</cell>
+    <cell col="4" row="5">150mm</cell>
+    <cell col="5" row="5">100mm</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">備 考</cell>
+    <cell col="1" row="6"></cell>
+    <cell col="2" row="6">Ｎは辺数、ΣS は路線長（km 単位）とする。</cell>
+    <cell col="3" row="6"></cell>
+    <cell col="4" row="6"></cell>
+    <cell col="5" row="6"></cell>
+  </row>
+</table>

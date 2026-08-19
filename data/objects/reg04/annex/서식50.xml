@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식50" gubun="서식" no="50" title="과징금(납부기한 연기, 분할 납부)신청서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454721">
+  <table rows="25" cols="20">
+    <row>
+      <cell col="0" row="0" colspan="20">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별지 제50호서식] &lt;신설 2023. 11. 27.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="6">과징금</cell>
+      <cell col="6" row="1" colspan="8">[  ]납부기한 연기
+ [  ]분할 납부</cell>
+      <cell col="14" row="1" colspan="6">신청서</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="20">※ 색상이 어두운 칸은 신청인이 적지 않으며, [ ]에는 해당되는 곳에 √표를 합니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">접수번호</cell>
+      <cell col="1" row="3" colspan="4"></cell>
+      <cell col="5" row="3" colspan="5">접수일시</cell>
+      <cell col="10" row="3" colspan="5"></cell>
+      <cell col="15" row="3" colspan="2">처리기간</cell>
+      <cell col="17" row="3" colspan="3">10일</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="2" rowspan="2">신청인</cell>
+      <cell col="2" row="5" colspan="10">성명</cell>
+      <cell col="12" row="5" colspan="8">사업자등록번호(법인등록번호)</cell>
+    </row>
+    <row>
+      <cell col="2" row="6" colspan="10">주소</cell>
+      <cell col="12" row="6" colspan="8">전화번호</cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="2" rowspan="3">과징금
+부과
+내용</cell>
+      <cell col="2" row="8" colspan="18">납부통지서 발행번호</cell>
+    </row>
+    <row>
+      <cell col="2" row="9" colspan="18">과징금 부과금액</cell>
+    </row>
+    <row>
+      <cell col="2" row="10" colspan="18">납부기한</cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="2">신청
+사유</cell>
+      <cell col="2" row="12" colspan="18"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13" colspan="2">신청
+내용</cell>
+      <cell col="2" row="13" colspan="18"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14" colspan="20">「공간정보의 구축 및 관리 등에 관한 법률 시행령」 제47조제3항, 제99조의2제3항 및 같은 법 시행규칙 제53조제2항 및 제108조제2항에 따라 과징금 납부기한 연기 또는 분할 납부를 신청합니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="20">년         월         일
+신청인                             (서명 또는 인)</cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="8">국토지리정보원장
+시ㆍ도지사
+대도시 시장</cell>
+      <cell col="8" row="16" colspan="12">귀하</cell>
+    </row>
+    <row>
+      <cell col="0" row="17" colspan="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18" colspan="2">첨부서류</cell>
+      <cell col="2" row="18" colspan="17">「행정기본법」 제29조 각 호의 어느 하나에 해당하는 과징금 납부기한 연기 또는 분할 납부 사유를 증명할 수 있는 서류 1부</cell>
+      <cell col="19" row="18">수수료 
+없  음</cell>
+    </row>
+    <row>
+      <cell col="0" row="19" colspan="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20" colspan="20">처 리 절 차</cell>
+    </row>
+    <row>
+      <cell col="0" row="21" colspan="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="22" colspan="3">신청서</cell>
+      <cell col="3" row="22"></cell>
+      <cell col="4" row="22" colspan="3">접수</cell>
+      <cell col="7" row="22" colspan="2"></cell>
+      <cell col="9" row="22" colspan="2">확인</cell>
+      <cell col="11" row="22" colspan="2"></cell>
+      <cell col="13" row="22" colspan="3">결재</cell>
+      <cell col="16" row="22" colspan="2"></cell>
+      <cell col="18" row="22" colspan="2">통보</cell>
+    </row>
+    <row>
+      <cell col="0" row="23" colspan="3">신청인</cell>
+      <cell col="3" row="23"></cell>
+      <cell col="4" row="23" colspan="16">처리기관: 국토지리정보원장, 시ㆍ도지사, 대도시 시장</cell>
+    </row>
+    <row>
+      <cell col="0" row="24" colspan="20">210mm×297mm[백상지(80g/㎡) 또는 중질지(80g/㎡)]</cell>
+    </row>
+  </table>
+</annex>

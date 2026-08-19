@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표34" gubun="별표" no="34" title="밀폐공간작업 안전장비의 종류" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296277">
+  <text>[ 별표 34 ]
+밀폐공간작업 안전장비의 종류</text>
+  <table rows="9" cols="5">
+    <row>
+      <cell col="0" row="0">분야</cell>
+      <cell col="1" row="0">장비명</cell>
+      <cell col="2" row="0">사용용도</cell>
+      <cell col="3" row="0">사용방법</cell>
+      <cell col="4" row="0">사진(예)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="2">산소 및 유해가스농도
+측정</cell>
+      <cell col="1" row="1">산소농도
+측정기</cell>
+      <cell col="2" row="1">산소(O2)농도 측정</cell>
+      <cell col="3" row="1">밀폐공간 안으로
+휴대하여 들어가서 측정</cell>
+      <cell col="4" row="1"></cell>
+    </row>
+    <row>
+      <cell col="1" row="2">혼합가스농도
+측정기</cell>
+      <cell col="2" row="2">산소농도측정
+황화수소농도 측정
+일산화탄소농도 측정
+가연성가스(메탄) 측정</cell>
+      <cell col="3" row="2">밀폐공간 외부에서 흡입용 호스를 이용하여 측정</cell>
+      <cell col="4" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">환기</cell>
+      <cell col="1" row="3">공기치환용
+환기팬</cell>
+      <cell col="2" row="3">밀폐공간내를 신선한 
+외부공기로 치환</cell>
+      <cell col="3" row="3">플렉시블 덕트를 연결하여 급기 또는 배기 방식으로 환기</cell>
+      <cell col="4" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4" rowspan="2">호흡용
+보호구</cell>
+      <cell col="1" row="4">공기호흡기</cell>
+      <cell col="2" row="4" rowspan="2">구조자 구조시 착용
+환기가 어려운 장소 사용</cell>
+      <cell col="3" row="4">공기압축용기로부터 안면마스크로 공기를 이송하는 호흡</cell>
+      <cell col="4" row="4"></cell>
+    </row>
+    <row>
+      <cell col="1" row="5">송기마스크</cell>
+      <cell col="3" row="5">외부공기를 전동공기펌프로 흡입하고 공기이송관으로 연결된 마스크로 호흡</cell>
+      <cell col="4" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">출입통제</cell>
+      <cell col="1" row="6">관계자외
+출입금지
+표지판</cell>
+      <cell col="2" row="6">밀폐공간작업장소에서의
+작업자 이외 출입을 통제</cell>
+      <cell col="3" row="6">밀폐공간작업장소
+출입구에 게시</cell>
+      <cell col="4" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7" rowspan="2">기타안전장비</cell>
+      <cell col="1" row="7">무전기</cell>
+      <cell col="2" row="7">감시자와 밀폐공간내 작업
+자와의 상호연락</cell>
+      <cell col="3" row="7">밀폐공간작업시
+휴대</cell>
+      <cell col="4" row="7"></cell>
+    </row>
+    <row>
+      <cell col="1" row="8">휴대용 랜턴</cell>
+      <cell col="2" row="8">어두운 밀폐 공간작업장소를 
+밝히기 위해 사용</cell>
+      <cell col="3" row="8">밀폐공간작업시
+휴대</cell>
+      <cell col="4" row="8"></cell>
+    </row>
+  </table>
+</annex>

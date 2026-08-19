@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지7" gubun="별지" no="7" title="데이터품질에 대한 표준적용 확인서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=118722799">
+  <text>[별 지 제7호]데이터품질에 대한 표준적용 확인서
+(6쪽 중 제1쪽)</text>
+  <table rows="24" cols="6">
+    <row>
+      <cell col="0" row="0" colspan="5">항목</cell>
+      <cell col="5" row="0">작성 내용</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="2">1. 데이터 품질 범위
+   (scope)</cell>
+      <cell col="1" row="1">레벨
+(level)</cell>
+      <cell col="2" row="1" colspan="3">기술하는 품질 자료의 특성</cell>
+      <cell col="5" row="1"></cell>
+    </row>
+    <row>
+      <cell col="1" row="2">레벨설명
+(levelDescription)</cell>
+      <cell col="2" row="2" colspan="3">데이터 셋인가?</cell>
+      <cell col="5" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" rowspan="15">2-1. 품질 보고서
+     (report)</cell>
+      <cell col="1" row="3" rowspan="9">품질측정항목
+(measure)</cell>
+      <cell col="2" row="3" rowspan="2">측정항목 식별자
+(measureIdentifier)</cell>
+      <cell col="3" row="3" colspan="2">코드
+(code)</cell>
+      <cell col="5" row="3"></cell>
+    </row>
+    <row>
+      <cell col="3" row="4" colspan="2">코드값에 대한 설명
+(description)</cell>
+      <cell col="5" row="4"></cell>
+    </row>
+    <row>
+      <cell col="2" row="5" colspan="3">측정항목이름
+(name)</cell>
+      <cell col="5" row="5"></cell>
+    </row>
+    <row>
+      <cell col="2" row="6" colspan="3">항목명
+(elementName)</cell>
+      <cell col="5" row="6"></cell>
+    </row>
+    <row>
+      <cell col="2" row="7" colspan="3">항목정의
+(definition)</cell>
+      <cell col="5" row="7"></cell>
+    </row>
+    <row>
+      <cell col="2" row="8" colspan="3">항목유형
+(valueType)</cell>
+      <cell col="5" row="8"></cell>
+    </row>
+    <row>
+      <cell col="2" row="9" colspan="2" rowspan="3">측정인자
+(parameter)</cell>
+      <cell col="4" row="9">인자이름
+(name)</cell>
+      <cell col="5" row="9"></cell>
+    </row>
+    <row>
+      <cell col="4" row="10">인자정의
+(definition)</cell>
+      <cell col="5" row="10"></cell>
+    </row>
+    <row>
+      <cell col="4" row="11">인자유형
+(valuType)</cell>
+      <cell col="5" row="11"></cell>
+    </row>
+    <row>
+      <cell col="1" row="12" rowspan="4">품질평가방법
+(evaluationMethod)</cell>
+      <cell col="2" row="12" colspan="3">품질평가일자
+(dateTime)</cell>
+      <cell col="5" row="12"></cell>
+    </row>
+    <row>
+      <cell col="2" row="13" colspan="3">품질평가방법설명
+(evaluationMethodDescription)</cell>
+      <cell col="5" row="13"></cell>
+    </row>
+    <row>
+      <cell col="2" row="14" colspan="3">품질평가절차
+(evaluationProcedure)</cell>
+      <cell col="5" row="14"></cell>
+    </row>
+    <row>
+      <cell col="2" row="15" colspan="3">품질평가 참조문서
+(referenceDoc)</cell>
+      <cell col="5" row="15"></cell>
+    </row>
+    <row>
+      <cell col="1" row="16" rowspan="2">품질측정결과
+(result)</cell>
+      <cell col="2" row="16" colspan="3">결과값
+(value)</cell>
+      <cell col="5" row="16"></cell>
+    </row>
+    <row>
+      <cell col="2" row="17" colspan="3">측정값단위
+(valueUnit)</cell>
+      <cell col="5" row="17"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18" rowspan="6">2-2. 품질 보고서
+     (report)</cell>
+      <cell col="1" row="18" rowspan="6">품질측정항목
+(measure)</cell>
+      <cell col="2" row="18" colspan="2" rowspan="2">측정항목 식별자
+(measureIdentifier)</cell>
+      <cell col="4" row="18">코드
+(code)</cell>
+      <cell col="5" row="18"></cell>
+    </row>
+    <row>
+      <cell col="4" row="19">코드값에 대한 설명
+(description)</cell>
+      <cell col="5" row="19"></cell>
+    </row>
+    <row>
+      <cell col="2" row="20" colspan="3">측정항목이름
+(name)</cell>
+      <cell col="5" row="20"></cell>
+    </row>
+    <row>
+      <cell col="2" row="21" colspan="3">항목명
+(elementName)</cell>
+      <cell col="5" row="21"></cell>
+    </row>
+    <row>
+      <cell col="2" row="22" colspan="3">항목정의
+(definition)</cell>
+      <cell col="5" row="22"></cell>
+    </row>
+    <row>
+      <cell col="2" row="23" colspan="3">항목유형
+(valueType)</cell>
+      <cell col="5" row="23"></cell>
+    </row>
+  </table>
+  <text>(6쪽 중 제2쪽)</text>
+  <table rows="25" cols="5">
+    <row>
+      <cell col="0" row="0" colspan="4">항목</cell>
+      <cell col="4" row="0">작성 내용</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="9">2-2. 품질 보고서
+     (report)</cell>
+      <cell col="1" row="1" rowspan="3">품질측정항목
+(measure)</cell>
+      <cell col="2" row="1" rowspan="3">측정인자
+(parameter)</cell>
+      <cell col="3" row="1">인자이름
+(name)</cell>
+      <cell col="4" row="1"></cell>
+    </row>
+    <row>
+      <cell col="3" row="2">인자정의
+(definition)</cell>
+      <cell col="4" row="2"></cell>
+    </row>
+    <row>
+      <cell col="3" row="3">인자유형
+(valuType)</cell>
+      <cell col="4" row="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="4" rowspan="4">품질평가방법
+(evaluationMethod)</cell>
+      <cell col="2" row="4" colspan="2">품질평가일자
+(dateTime)</cell>
+      <cell col="4" row="4"></cell>
+    </row>
+    <row>
+      <cell col="2" row="5" colspan="2">품질평가방법설명
+(evaluationMethodDescription)</cell>
+      <cell col="4" row="5"></cell>
+    </row>
+    <row>
+      <cell col="2" row="6" colspan="2">품질평가절차
+(evaluationProcedure)</cell>
+      <cell col="4" row="6"></cell>
+    </row>
+    <row>
+      <cell col="2" row="7" colspan="2">품질평가 참조문서
+(referenceDoc)</cell>
+      <cell col="4" row="7"></cell>
+    </row>
+    <row>
+      <cell col="1" row="8" rowspan="2">품질측정결과
+(result)</cell>
+      <cell col="2" row="8" colspan="2">적합여부
+(pass)</cell>
+      <cell col="4" row="8"></cell>
+    </row>
+    <row>
+      <cell col="2" row="9">참조정보
+(specification)</cell>
+      <cell col="3" row="9">참조이름
+(title)</cell>
+      <cell col="4" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" rowspan="15">2-3. 품질 보고서
+     (report)</cell>
+      <cell col="1" row="10" rowspan="9">품질측정항목
+(measure)</cell>
+      <cell col="2" row="10" rowspan="2">측정항목 식별자
+(measureIdentifier)</cell>
+      <cell col="3" row="10">코드
+(code)</cell>
+      <cell col="4" row="10"></cell>
+    </row>
+    <row>
+      <cell col="3" row="11">코드값에 대한 설명
+(description)</cell>
+      <cell col="4" row="11"></cell>
+    </row>
+    <row>
+      <cell col="2" row="12" colspan="2">측정항목이름
+(name)</cell>
+      <cell col="4" row="12"></cell>
+    </row>
+    <row>
+      <cell col="2" row="13" colspan="2">항목명
+(elementName)</cell>
+      <cell col="4" row="13"></cell>
+    </row>
+    <row>
+      <cell col="2" row="14" colspan="2">항목정의
+(definition)</cell>
+      <cell col="4" row="14"></cell>
+    </row>
+    <row>
+      <cell col="2" row="15" colspan="2">항목유형
+(valueType)</cell>
+      <cell col="4" row="15"></cell>
+    </row>
+    <row>
+      <cell col="2" row="16" rowspan="3">측정인자
+(parameter)</cell>
+      <cell col="3" row="16">인자이름
+(name)</cell>
+      <cell col="4" row="16"></cell>
+    </row>
+    <row>
+      <cell col="3" row="17">인자정의
+(definition)</cell>
+      <cell col="4" row="17"></cell>
+    </row>
+    <row>
+      <cell col="3" row="18">인자유형
+(valuType)</cell>
+      <cell col="4" row="18"></cell>
+    </row>
+    <row>
+      <cell col="1" row="19" rowspan="4">품질평가방법
+(evaluationMethod)</cell>
+      <cell col="2" row="19" colspan="2">품질평가일자
+(dateTime)</cell>
+      <cell col="4" row="19"></cell>
+    </row>
+    <row>
+      <cell col="2" row="20" colspan="2">품질평가방법설명
+(evaluationMethodDescription)</cell>
+      <cell col="4" row="20"></cell>
+    </row>
+    <row>
+      <cell col="2" row="21" colspan="2">품질평가절차
+(evaluationProcedure)</cell>
+      <cell col="4" row="21"></cell>
+    </row>
+    <row>
+      <cell col="2" row="22" colspan="2">품질평가 참조문서
+(referenceDoc)</cell>
+      <cell col="4" row="22"></cell>
+    </row>
+    <row>
+      <cell col="1" row="23" rowspan="2">품질측정결과
+(result)</cell>
+      <cell col="2" row="23" colspan="2">적합여부
+(pass)</cell>
+      <cell col="4" row="23"></cell>
+    </row>
+    <row>
+      <cell col="2" row="24">참조정보
+(specification)</cell>
+      <cell col="3" row="24">참조이름
+(title)</cell>
+      <cell col="4" row="24"></cell>
+    </row>
+  </table>
+  <text>(6쪽 중 제3쪽)</text>
+  <table rows="25" cols="5">
+    <row>
+      <cell col="0" row="0" colspan="4">항목</cell>
+      <cell col="4" row="0">작성 내용</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="15">2-4. 품질 보고서
+     (report)</cell>
+      <cell col="1" row="1" rowspan="9">품질측정항목
+(measure)</cell>
+      <cell col="2" row="1" rowspan="2">측정항목 식별자
+(measureIdentifier)</cell>
+      <cell col="3" row="1">코드
+(code)</cell>
+      <cell col="4" row="1"></cell>
+    </row>
+    <row>
+      <cell col="3" row="2">코드값에 대한 설명
+(description)</cell>
+      <cell col="4" row="2"></cell>
+    </row>
+    <row>
+      <cell col="2" row="3" colspan="2">측정항목이름
+(name)</cell>
+      <cell col="4" row="3"></cell>
+    </row>
+    <row>
+      <cell col="2" row="4" colspan="2">항목명
+(elementName)</cell>
+      <cell col="4" row="4"></cell>
+    </row>
+    <row>
+      <cell col="2" row="5" colspan="2">항목정의
+(definition)</cell>
+      <cell col="4" row="5"></cell>
+    </row>
+    <row>
+      <cell col="2" row="6" colspan="2">항목유형
+(valueType)</cell>
+      <cell col="4" row="6"></cell>
+    </row>
+    <row>
+      <cell col="2" row="7" rowspan="3">측정인자
+(parameter)</cell>
+      <cell col="3" row="7">인자이름
+(name)</cell>
+      <cell col="4" row="7"></cell>
+    </row>
+    <row>
+      <cell col="3" row="8">인자정의
+(definition)</cell>
+      <cell col="4" row="8"></cell>
+    </row>
+    <row>
+      <cell col="3" row="9">인자유형
+(valuType)</cell>
+      <cell col="4" row="9"></cell>
+    </row>
+    <row>
+      <cell col="1" row="10" rowspan="4">품질평가방법
+(evaluationMethod)</cell>
+      <cell col="2" row="10" colspan="2">품질평가일자
+(dateTime)</cell>
+      <cell col="4" row="10"></cell>
+    </row>
+    <row>
+      <cell col="2" row="11" colspan="2">품질평가방법설명
+(evaluationMethodDescription)</cell>
+      <cell col="4" row="11"></cell>
+    </row>
+    <row>
+      <cell col="2" row="12" colspan="2">품질평가절차
+(evaluationProcedure)</cell>
+      <cell col="4" row="12"></cell>
+    </row>
+    <row>
+      <cell col="2" row="13" colspan="2">품질평가 참조문서
+(referenceDoc)</cell>
+      <cell col="4" row="13"></cell>
+    </row>
+    <row>
+      <cell col="1" row="14" rowspan="2">품질측정결과
+(result)</cell>
+      <cell col="2" row="14" colspan="2">적합여부
+(pass)</cell>
+      <cell col="4" row="14"></cell>
+    </row>
+    <row>
+      <cell col="2" row="15">참조정보
+(specification)</cell>
+      <cell col="3" row="15">참조이름
+(title)</cell>
+      <cell col="4" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16" rowspan="9">2-5. 품질 보고서
+     (report)</cell>
+      <cell col="1" row="16" rowspan="9">품질측정항목
+(measure)</cell>
+      <cell col="2" row="16" rowspan="2">측정항목 식별자
+(measureIdentifier)</cell>
+      <cell col="3" row="16">코드
+(code)</cell>
+      <cell col="4" row="16"></cell>
+    </row>
+    <row>
+      <cell col="3" row="17">코드값에 대한 설명
+(description)</cell>
+      <cell col="4" row="17"></cell>
+    </row>
+    <row>
+      <cell col="2" row="18" colspan="2">측정항목이름
+(name)</cell>
+      <cell col="4" row="18"></cell>
+    </row>
+    <row>
+      <cell col="2" row="19" colspan="2">항목명
+(elementName)</cell>
+      <cell col="4" row="19"></cell>
+    </row>
+    <row>
+      <cell col="2" row="20" colspan="2">항목정의
+(definition)</cell>
+      <cell col="4" row="20"></cell>
+    </row>
+    <row>
+      <cell col="2" row="21" colspan="2">항목유형
+(valueType)</cell>
+      <cell col="4" row="21"></cell>
+    </row>
+    <row>
+      <cell col="2" row="22" rowspan="3">측정인자
+(parameter)</cell>
+      <cell col="3" row="22">인자이름
+(name)</cell>
+      <cell col="4" row="22"></cell>
+    </row>
+    <row>
+      <cell col="3" row="23">인자정의
+(definition)</cell>
+      <cell col="4" row="23"></cell>
+    </row>
+    <row>
+      <cell col="3" row="24">인자유형
+(valuType)</cell>
+      <cell col="4" row="24"></cell>
+    </row>
+  </table>
+  <text>(6쪽 중 제4쪽)</text>
+  <table rows="25" cols="5">
+    <row>
+      <cell col="0" row="0" colspan="4">항목</cell>
+      <cell col="4" row="0">작성 내용</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="6">2-5. 품질 보고서
+     (report)</cell>
+      <cell col="1" row="1" rowspan="4">품질평가방법
+(evaluationMethod)</cell>
+      <cell col="2" row="1" colspan="2">품질평가일자
+(dateTime)</cell>
+      <cell col="4" row="1"></cell>
+    </row>
+    <row>
+      <cell col="2" row="2" colspan="2">품질평가방법설명
+(evaluationMethodDescription)</cell>
+      <cell col="4" row="2"></cell>
+    </row>
+    <row>
+      <cell col="2" row="3" colspan="2">품질평가절차
+(evaluationProcedure)</cell>
+      <cell col="4" row="3"></cell>
+    </row>
+    <row>
+      <cell col="2" row="4" colspan="2">품질평가 참조문서
+(referenceDoc)</cell>
+      <cell col="4" row="4"></cell>
+    </row>
+    <row>
+      <cell col="1" row="5" rowspan="2">품질측정결과
+(result)</cell>
+      <cell col="2" row="5" colspan="2">적합여부
+(pass)</cell>
+      <cell col="4" row="5"></cell>
+    </row>
+    <row>
+      <cell col="2" row="6">참조정보
+(specification)</cell>
+      <cell col="3" row="6">참조이름
+(title)</cell>
+      <cell col="4" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7" rowspan="15">2-6. 품질 보고서
+     (report)</cell>
+      <cell col="1" row="7" rowspan="9">품질측정항목
+(measure)</cell>
+      <cell col="2" row="7" rowspan="2">측정항목 식별자
+(measureIdentifier)</cell>
+      <cell col="3" row="7">코드
+(code)</cell>
+      <cell col="4" row="7"></cell>
+    </row>
+    <row>
+      <cell col="3" row="8">코드값에 대한 설명
+(description)</cell>
+      <cell col="4" row="8"></cell>
+    </row>
+    <row>
+      <cell col="2" row="9" colspan="2">측정항목이름
+(name)</cell>
+      <cell col="4" row="9"></cell>
+    </row>
+    <row>
+      <cell col="2" row="10" colspan="2">항목명
+(elementName)</cell>
+      <cell col="4" row="10"></cell>
+    </row>
+    <row>
+      <cell col="2" row="11" colspan="2">항목정의
+(definition)</cell>
+      <cell col="4" row="11"></cell>
+    </row>
+    <row>
+      <cell col="2" row="12" colspan="2">항목유형
+(valueType)</cell>
+      <cell col="4" row="12"></cell>
+    </row>
+    <row>
+      <cell col="2" row="13" rowspan="3">측정인자
+(parameter)</cell>
+      <cell col="3" row="13">인자이름
+(name)</cell>
+      <cell col="4" row="13"></cell>
+    </row>
+    <row>
+      <cell col="3" row="14">인자정의
+(definition)</cell>
+      <cell col="4" row="14"></cell>
+    </row>
+    <row>
+      <cell col="3" row="15">인자유형
+(valuType)</cell>
+      <cell col="4" row="15"></cell>
+    </row>
+    <row>
+      <cell col="1" row="16" rowspan="4">품질평가방법
+(evaluationMethod)</cell>
+      <cell col="2" row="16" colspan="2">품질평가일자
+(dateTime)</cell>
+      <cell col="4" row="16"></cell>
+    </row>
+    <row>
+      <cell col="2" row="17" colspan="2">품질평가방법설명
+(evaluationMethodDescription)</cell>
+      <cell col="4" row="17"></cell>
+    </row>
+    <row>
+      <cell col="2" row="18" colspan="2">품질평가절차
+(evaluationProcedure)</cell>
+      <cell col="4" row="18"></cell>
+    </row>
+    <row>
+      <cell col="2" row="19" colspan="2">품질평가 참조문서
+(referenceDoc)</cell>
+      <cell col="4" row="19"></cell>
+    </row>
+    <row>
+      <cell col="1" row="20" rowspan="2">품질측정결과
+(result)</cell>
+      <cell col="2" row="20" colspan="2">결과값
+(value)</cell>
+      <cell col="4" row="20"></cell>
+    </row>
+    <row>
+      <cell col="2" row="21" colspan="2">측정값단위
+(valueUnit)</cell>
+      <cell col="4" row="21"></cell>
+    </row>
+    <row>
+      <cell col="0" row="22" rowspan="3">2-7. 품질 보고서
+     (report)</cell>
+      <cell col="1" row="22" rowspan="3">품질측정항목
+(measure)</cell>
+      <cell col="2" row="22" rowspan="2">측정항목 식별자
+(measureIdentifier)</cell>
+      <cell col="3" row="22">코드
+(code)</cell>
+      <cell col="4" row="22"></cell>
+    </row>
+    <row>
+      <cell col="3" row="23">코드값에 대한 설명
+(description)</cell>
+      <cell col="4" row="23"></cell>
+    </row>
+    <row>
+      <cell col="2" row="24" colspan="2">측정항목이름
+(name)</cell>
+      <cell col="4" row="24"></cell>
+    </row>
+  </table>
+  <text>(6쪽 중 제5쪽)</text>
+  <table rows="25" cols="5">
+    <row>
+      <cell col="0" row="0" colspan="4">항목</cell>
+      <cell col="4" row="0">작성 내용</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="12">2-7. 품질 보고서
+     (report)</cell>
+      <cell col="1" row="1" rowspan="6">품질측정항목
+(measure)</cell>
+      <cell col="2" row="1" colspan="2">항목명
+(elementName)</cell>
+      <cell col="4" row="1"></cell>
+    </row>
+    <row>
+      <cell col="2" row="2" colspan="2">항목정의
+(definition)</cell>
+      <cell col="4" row="2"></cell>
+    </row>
+    <row>
+      <cell col="2" row="3" colspan="2">항목유형
+(valueType)</cell>
+      <cell col="4" row="3"></cell>
+    </row>
+    <row>
+      <cell col="2" row="4" rowspan="3">측정인자
+(parameter)</cell>
+      <cell col="3" row="4">인자이름
+(name)</cell>
+      <cell col="4" row="4"></cell>
+    </row>
+    <row>
+      <cell col="3" row="5">인자정의
+(definition)</cell>
+      <cell col="4" row="5"></cell>
+    </row>
+    <row>
+      <cell col="3" row="6">인자유형
+(valuType)</cell>
+      <cell col="4" row="6"></cell>
+    </row>
+    <row>
+      <cell col="1" row="7" rowspan="4">품질평가방법
+(evaluationMethod)</cell>
+      <cell col="2" row="7" colspan="2">품질평가일자
+(dateTime)</cell>
+      <cell col="4" row="7"></cell>
+    </row>
+    <row>
+      <cell col="2" row="8" colspan="2">품질평가방법설명
+(evaluationMethodDescription)</cell>
+      <cell col="4" row="8"></cell>
+    </row>
+    <row>
+      <cell col="2" row="9" colspan="2">품질평가절차
+(evaluationProcedure)</cell>
+      <cell col="4" row="9"></cell>
+    </row>
+    <row>
+      <cell col="2" row="10" colspan="2">품질평가 참조문서
+(referenceDoc)</cell>
+      <cell col="4" row="10"></cell>
+    </row>
+    <row>
+      <cell col="1" row="11" rowspan="2">품질측정결과
+(result)</cell>
+      <cell col="2" row="11" colspan="2">적합여부
+(pass)</cell>
+      <cell col="4" row="11"></cell>
+    </row>
+    <row>
+      <cell col="2" row="12">참조정보
+(specification)</cell>
+      <cell col="3" row="12">참조이름
+(title)</cell>
+      <cell col="4" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13" rowspan="12">2-8. 품질 보고서
+     (report)</cell>
+      <cell col="1" row="13" rowspan="9">품질측정항목
+(measure)</cell>
+      <cell col="2" row="13" rowspan="2">측정항목 식별자
+(measureIdentifier)</cell>
+      <cell col="3" row="13">코드
+(code)</cell>
+      <cell col="4" row="13"></cell>
+    </row>
+    <row>
+      <cell col="3" row="14">코드값에 대한 설명
+(description)</cell>
+      <cell col="4" row="14"></cell>
+    </row>
+    <row>
+      <cell col="2" row="15" colspan="2">측정항목이름
+(name)</cell>
+      <cell col="4" row="15"></cell>
+    </row>
+    <row>
+      <cell col="2" row="16" colspan="2">항목명
+(elementName)</cell>
+      <cell col="4" row="16"></cell>
+    </row>
+    <row>
+      <cell col="2" row="17" colspan="2">항목정의
+(definition)</cell>
+      <cell col="4" row="17"></cell>
+    </row>
+    <row>
+      <cell col="2" row="18" colspan="2">항목유형
+(valueType)</cell>
+      <cell col="4" row="18"></cell>
+    </row>
+    <row>
+      <cell col="2" row="19" rowspan="3">측정인자
+(parameter)</cell>
+      <cell col="3" row="19">인자이름
+(name)</cell>
+      <cell col="4" row="19"></cell>
+    </row>
+    <row>
+      <cell col="3" row="20">인자정의
+(definition)</cell>
+      <cell col="4" row="20"></cell>
+    </row>
+    <row>
+      <cell col="3" row="21">인자유형
+(valuType)</cell>
+      <cell col="4" row="21"></cell>
+    </row>
+    <row>
+      <cell col="1" row="22" rowspan="3">품질평가방법
+(evaluationMethod)</cell>
+      <cell col="2" row="22" colspan="2">품질평가일자
+(dateTime)</cell>
+      <cell col="4" row="22"></cell>
+    </row>
+    <row>
+      <cell col="2" row="23" colspan="2">품질평가방법설명
+(evaluationMethodDescription)</cell>
+      <cell col="4" row="23"></cell>
+    </row>
+    <row>
+      <cell col="2" row="24" colspan="2">품질평가절차
+(evaluationProcedure)</cell>
+      <cell col="4" row="24"></cell>
+    </row>
+  </table>
+  <text>(6쪽 중 제6쪽)</text>
+  <table rows="4" cols="5">
+    <row>
+      <cell col="0" row="0" colspan="4">항목</cell>
+      <cell col="4" row="0">작성 내용</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="3">2-8. 품질 보고서
+     (report)</cell>
+      <cell col="1" row="1">품질평가방법
+(evaluationMethod)</cell>
+      <cell col="2" row="1" colspan="2">품질평가 참조문서
+(referenceDoc)</cell>
+      <cell col="4" row="1"></cell>
+    </row>
+    <row>
+      <cell col="1" row="2" rowspan="2">품질측정결과
+(result)</cell>
+      <cell col="2" row="2" colspan="2">적합여부
+(pass)</cell>
+      <cell col="4" row="2"></cell>
+    </row>
+    <row>
+      <cell col="2" row="3">참조정보
+(specification)</cell>
+      <cell col="3" row="3">참조이름
+(title)</cell>
+      <cell col="4" row="3"></cell>
+    </row>
+  </table>
+  <table rows="3" cols="1">
+    <row>
+      <cell col="0" row="0">데이터품질에 대한 표준적용 확인서 작성 방법</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">데이터의 품질 범위(scope)
+레벨은 데이터를 구성하는 형태 및 특성으로, 다음 목록에서 선택합니다. 
+속성 (attribute), 속성 유형 (attributeType), 자료취득 기기 (collectionHardware), 자료취득 영역 (collectionSession), 데이터 셋 (dataset), 데이터 시리즈 (series), 지리정보가 아닌 데이터 셋 (nonGeographicDataset), 차원 그룹 (dimensionGroup), 지형지물 (feature), 지형지물 타입 (featureType), 속성값 타입 (propertyType), 필드 영역 (fieldSession), 소프트웨어 (software), 서비스 (service), 모형 (model), 타일 (tile), 메타데이터 (metadata), 프로젝트 추진동력 (initiative), 샘플, 예제 (sample), 문서 (document), 등록소 (repository), 집합 (aggregate), 제품 (product), 모음 (collection), 커버리지 (coverage), 응용시스템 (application)
+레벨설명은 Y/N만 기재합니다.
+품질 보고서(report)
+품질측정항목 중 측정항목 식별자의 코드는 측정항목을 식별하기 위한 식별번호 또는 인덱스 번호를 작성합니다.
+품질측정항목 중 측정항목 식별자의 코드값에 대한 설명은 상기 식별코드를 설명하기 위한 정보를 작성합니다.
+품질측정항목 중 측청항목이름은 데이터 품질을 구성하는 요소를 이용하여 데이터 품질 측정의 이름을 작성합니다.
+품질측정항목 중 항목명은 데이터 품질의 세부 측정항목의 이름을 작성합니다. (초과, 영역일관성 등)
+품질측정항목 중 항목정의는 상기 세부 측정항목을 측정하는 방법에 대한 정의를 작성합니다.
+품질측정항목 중 항목유형은 상기 세부 측정항목의 측정결과가 제시되는 값의 유형을 작성합니다.
+품질측정항목 중 측정인자의 인자이름은 데이터의 품질 측정에 사용되는 변수(인자)의 이름을 작성합니다.
+품질측정항목 중 측정인자의 인자정의는 데이터 품질 측정에 사용되는 변수(인자)의 정의를 작성합니다.
+품질측정항목 중 측정인자의 인자유형은 데이터 품질 측정에 사용되는 변수(인자) 값의 유형을 작성합니다.
+품질평가방법 중 품질평가일자는 상기 측정 항목의 평가를 수행한 일자를 YYYY-MM-DD 형식으로 작성합니다.
+품질평가방법 중 품질평가방법설명은 측정 항목의 평가 방법에 대한 설명을 작성합니다.
+품질평가방법 중 품질평가절차는 측정 항목의 평가 절차를 작성합니다.
+품질평가방법 중 품질평가 참조문서는 측정 항목의 평가방법에 참조할 수 있는 자료를 작성합니다.
+품질측정결과 중 결과값은 측정 항목의 평가결과를 정량적 수치로 작성합니다.
+품질측정결과 중 측정값단위는 상기 정량적 수치의 단위를 작성합니다.
+품질측정결과 중 적합여부는 측정 항목의 평가결과가 적합한지를 선택합니다. 적합하면 1, 적합하지 않는다면 0을 선택합니다.
+품질측정결과 중 참조정보의 참조이름은 측정항목의 평가결과와 관련하여 참조할 수 있는 자료를 작성합니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="2"></cell>
+    </row>
+  </table>
+</annex>

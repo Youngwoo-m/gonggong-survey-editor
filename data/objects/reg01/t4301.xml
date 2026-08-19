@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="t4301" article="[표 4-3] 현행 체계와 개편안의 편별 구성 (개편안에서 세어 만든 표)" rows="10" cols="5" source="2025년 전략수립 연구보고서">
+  <row>
+    <cell col="0" row="0" header="1">개편안 편</cell>
+    <cell col="1" row="0" header="1">조문 수</cell>
+    <cell col="2" row="0" header="1">현행에서 옮겨 온 것</cell>
+    <cell col="3" row="0" header="1">신설</cell>
+    <cell col="4" row="0" header="1">주요 변화</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">제1편 총칙</cell>
+    <cell col="1" row="1">28조</cell>
+    <cell col="2" row="1">16조</cell>
+    <cell col="3" row="1">12조</cell>
+    <cell col="4" row="1">용어 재정의, 품질요소 도입, 제품사양서 규정, 전자성과 원칙, 기술중립성 명시</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">제2편 기준점측량</cell>
+    <cell col="1" row="2">55조</cell>
+    <cell col="2" row="2">50조</cell>
+    <cell col="3" row="2">5조</cell>
+    <cell col="4" row="2">공공삼각점·공공수준점 공통조문 통합, 네트워크 RTK, GNSS 수준측량 정비</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">제3편 지형측량</cell>
+    <cell col="1" row="3">24조</cell>
+    <cell col="2" row="3">22조</cell>
+    <cell col="3" row="3">2조</cell>
+    <cell col="4" row="3">항공사진측량 현대화, 영상지도 품질기준, 지상현황측량 정비</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">제4편 3차원 공간정보 구축</cell>
+    <cell col="1" row="4">16조</cell>
+    <cell col="2" row="4">6조</cell>
+    <cell col="3" row="4">10조</cell>
+    <cell col="4" row="4">무인비행장치 사진점군·레이저측량, 차량기반 이동측량, 항공레이저측량, 지하공간통합지도</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">제5편 응용측량</cell>
+    <cell col="1" row="5">82조</cell>
+    <cell col="2" row="5">77조</cell>
+    <cell col="3" row="5">5조</cell>
+    <cell col="4" row="5">노선·하천·용지·토지구획정리·지하시설물 통합, 수치주제도 제작</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">제6편 안전관리</cell>
+    <cell col="1" row="6">28조</cell>
+    <cell col="2" row="6">10조</cell>
+    <cell col="3" row="6">18조</cell>
+    <cell col="4" row="6">작업환경별 안전기준, 안전관리비 계상·정산, 안전교육 및 훈련 신설</cell>
+  </row>
+  <row>
+    <cell col="0" row="7">제7편 보칙</cell>
+    <cell col="1" row="7">1조</cell>
+    <cell col="2" row="7">1조</cell>
+    <cell col="3" row="7">0조</cell>
+    <cell col="4" row="7">재검토 기한 등 규정의 시행·관리 사항</cell>
+  </row>
+  <row>
+    <cell col="0" row="8">별표·별지</cell>
+    <cell col="1" row="8">별지 5종 · 별표 57종</cell>
+    <cell col="2" row="8">별지 2종 · 별표 43종 (현행)</cell>
+    <cell col="3" row="8"></cell>
+    <cell col="4" row="8">성과 유형별 품질요소, 제품사양서 서식, 안전관리 서식 등</cell>
+  </row>
+  <row>
+    <cell col="0" row="9">합계</cell>
+    <cell col="1" row="9">234조</cell>
+    <cell col="2" row="9">182조</cell>
+    <cell col="3" row="9">52조</cell>
+    <cell col="4" row="9">현행 5편 217조 → 개편안 7편 234조 (약 1.1배)</cell>
+  </row>
+</table>

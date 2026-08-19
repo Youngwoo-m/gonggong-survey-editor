@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표3" gubun="별표" no="3" title="지하시설물(구조물형) 및 지반정보 세밀도 제작 기준" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=38099155">
+  <text>[별표 3] 지하시설물(구조물형) 및 지반정보 세밀도 제작 기준</text>
+  <table rows="6" cols="4">
+    <row>
+      <cell col="0" row="0" rowspan="2">세밀도</cell>
+      <cell col="1" row="0" rowspan="2">제작기준</cell>
+      <cell col="2" row="0" colspan="2">제작 예</cell>
+    </row>
+    <row>
+      <cell col="2" row="1">지하시설물
+(구조물형)</cell>
+      <cell col="3" row="1">지반</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">LOD 1</cell>
+      <cell col="1" row="2">▪ 단순화된 3차원 심볼
+▪ 단색 텍스처</cell>
+      <cell col="2" row="2"></cell>
+      <cell col="3" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">LOD 2</cell>
+      <cell col="1" row="3">▪ 단순화된 3차원 심볼
+▪ 색깔 텍스처</cell>
+      <cell col="2" row="3"></cell>
+      <cell col="3" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4">LOD 3</cell>
+      <cell col="1" row="4">▪ 3차원 심볼
+▪ 가상 영상 텍스처</cell>
+      <cell col="2" row="4"></cell>
+      <cell col="3" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5">LOD 4</cell>
+      <cell col="1" row="5">▪ 3차원 실사모델
+▪ 실사 영상 텍스처</cell>
+      <cell col="2" row="5"></cell>
+      <cell col="3" row="5"></cell>
+    </row>
+  </table>
+</annex>

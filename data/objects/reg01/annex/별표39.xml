@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표39" gubun="별표" no="39" title="네트워크 RTK 체크리스트" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296309">
+  <text>[ 별표 39 ]
+네트워크 RTK 체크리스트</text>
+  <table rows="15" cols="6">
+    <row>
+      <cell col="0" row="0" colspan="2">측점번호</cell>
+      <cell col="2" row="0" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="2">관측시작시간</cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1">관측종료시간</cell>
+      <cell col="4" row="1" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2">번호</cell>
+      <cell col="1" row="2" colspan="3">항목</cell>
+      <cell col="4" row="2">확인</cell>
+      <cell col="5" row="2">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">1</cell>
+      <cell col="1" row="3" colspan="3">네트워크 RTK 서버 접속은 정상적으로 이루어 졌는가?</cell>
+      <cell col="4" row="3"></cell>
+      <cell col="5" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4">2</cell>
+      <cell col="1" row="4" colspan="3">측정지역에서 GNSS 신호 수신이 정상적으로 이루어질 수 있도록 상공시계가 확보되어 있는가?</cell>
+      <cell col="4" row="4"></cell>
+      <cell col="5" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5">3</cell>
+      <cell col="1" row="5" colspan="3">주변에 다중경로 및 전자기적 방해 요소가 제거 되었는가?</cell>
+      <cell col="4" row="5"></cell>
+      <cell col="5" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">4</cell>
+      <cell col="1" row="6" colspan="3">이동점 안테나의 높이 측정방법(사거리/수직거리)을 확인하고 정확히 측정한 후 GNSS 수신기에 정상적으로 입력했는가?</cell>
+      <cell col="4" row="6"></cell>
+      <cell col="5" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">5</cell>
+      <cell col="1" row="7" colspan="3">서버로부터 정상적인 보정신호를 지속적으로 수신하고 있는가?</cell>
+      <cell col="4" row="7"></cell>
+      <cell col="5" row="7"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8">6</cell>
+      <cell col="1" row="8" colspan="3">최소 GNSS 위성 수 이상의 신호를 수신하고 있는가?
+(GPS 및 다중GNSS 최소 위성수 고려)</cell>
+      <cell col="4" row="8"></cell>
+      <cell col="5" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9">7</cell>
+      <cell col="1" row="9" colspan="3">PDOP은 3.0 이하인가?</cell>
+      <cell col="4" row="9"></cell>
+      <cell col="5" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10">8</cell>
+      <cell col="1" row="10" colspan="3">수신한 GNSS 신호와 서버로부터 전송한 보정신호를 이용하여 측정 위치에 고정해를 결정하는가?</cell>
+      <cell col="4" row="10"></cell>
+      <cell col="5" row="10"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11">9</cell>
+      <cell col="1" row="11" colspan="3">중복관측 점검시 네트워크 RTK 시스템을 초기화하고 재측정한 결과가 요구사항을 만족하는가?</cell>
+      <cell col="4" row="11"></cell>
+      <cell col="5" row="11"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12">10</cell>
+      <cell col="1" row="12" colspan="3">위성 수, PDOP, 관측시간, Epoch 수, 측량정밀도 등을 명확히 관측기록부에 입력했는가?</cell>
+      <cell col="4" row="12"></cell>
+      <cell col="5" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13">11</cell>
+      <cell col="1" row="13" colspan="3">전체 작업 중 네트워크 RTK의 해가 지속적으로 고정해로 표시되었는가?</cell>
+      <cell col="4" row="13"></cell>
+      <cell col="5" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14">12</cell>
+      <cell col="1" row="14" colspan="3">전체 측정시간 동안 측량정밀도의 품질이 요구수준 이내를 유지했는가?</cell>
+      <cell col="4" row="14"></cell>
+      <cell col="5" row="14"></cell>
+    </row>
+  </table>
+</annex>

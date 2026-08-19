@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지2" gubun="별지" no="2" title="표준적용 확인서(메타데이터)" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=164725453">
+  <text>[별지 2] 표준적용 확인서(메타데이터)
+(4쪽 중 제1쪽)</text>
+  <table rows="23" cols="5">
+    <row>
+      <cell col="0" row="0" colspan="4">항목</cell>
+      <cell col="4" row="0">작성 내용</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="13">1. 메타데이터 연락정보
+   (contact)</cell>
+      <cell col="1" row="1" colspan="3">담당(기관)유형
+(role)</cell>
+      <cell col="4" row="1"></cell>
+    </row>
+    <row>
+      <cell col="1" row="2" colspan="3">담당(기관)이름
+(name)</cell>
+      <cell col="4" row="2"></cell>
+    </row>
+    <row>
+      <cell col="1" row="3" colspan="3">서비스시간
+(houseOfService)</cell>
+      <cell col="4" row="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="4" colspan="3">연락지침
+(contactInstruction)</cell>
+      <cell col="4" row="4"></cell>
+    </row>
+    <row>
+      <cell col="1" row="5" colspan="3">전화번호
+(number)</cell>
+      <cell col="4" row="5"></cell>
+    </row>
+    <row>
+      <cell col="1" row="6" colspan="3">상세주소
+(deliveryPoint)</cell>
+      <cell col="4" row="6"></cell>
+    </row>
+    <row>
+      <cell col="1" row="7" colspan="3">행정구역
+(administrativeArea)</cell>
+      <cell col="4" row="7"></cell>
+    </row>
+    <row>
+      <cell col="1" row="8" colspan="3">우편번호
+(postalCode)</cell>
+      <cell col="4" row="8"></cell>
+    </row>
+    <row>
+      <cell col="1" row="9" colspan="3">국가
+(country)</cell>
+      <cell col="4" row="9"></cell>
+    </row>
+    <row>
+      <cell col="1" row="10" colspan="3">이메일주소
+(electronicMailAddress)</cell>
+      <cell col="4" row="10"></cell>
+    </row>
+    <row>
+      <cell col="1" row="11" colspan="3">온라인 지원 URL
+(linkage)</cell>
+      <cell col="4" row="11"></cell>
+    </row>
+    <row>
+      <cell col="1" row="12" colspan="3">온라인지원 기능
+(function)</cell>
+      <cell col="4" row="12"></cell>
+    </row>
+    <row>
+      <cell col="1" row="13" colspan="3">담당부서
+(positionName)</cell>
+      <cell col="4" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14" rowspan="2">2. 메타데이터 일자정보
+   (dateInfo)</cell>
+      <cell col="1" row="14" colspan="3">일자
+(date)</cell>
+      <cell col="4" row="14"></cell>
+    </row>
+    <row>
+      <cell col="1" row="15" colspan="3">일자 유형
+(dateType)</cell>
+      <cell col="4" row="15"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16" rowspan="7">3. 데이터 식별정보
+(identificationInfo)</cell>
+      <cell col="1" row="16" rowspan="3">사용된 언어
+(defaultLocale)</cell>
+      <cell col="2" row="16" colspan="2">언어코드
+(language)</cell>
+      <cell col="4" row="16"></cell>
+    </row>
+    <row>
+      <cell col="2" row="17" colspan="2">국가코드
+(country)</cell>
+      <cell col="4" row="17"></cell>
+    </row>
+    <row>
+      <cell col="2" row="18" colspan="2">문자인코딩
+(characterEncoding)</cell>
+      <cell col="4" row="18"></cell>
+    </row>
+    <row>
+      <cell col="1" row="19" rowspan="4">데이터 참조
+(citation)</cell>
+      <cell col="2" row="19" colspan="2">데이터이름
+(title)</cell>
+      <cell col="4" row="19"></cell>
+    </row>
+    <row>
+      <cell col="2" row="20" rowspan="2">참조일자
+(date)</cell>
+      <cell col="3" row="20">일자
+(date)</cell>
+      <cell col="4" row="20"></cell>
+    </row>
+    <row>
+      <cell col="3" row="21">일자유형
+(dateType)</cell>
+      <cell col="4" row="21"></cell>
+    </row>
+    <row>
+      <cell col="2" row="22" colspan="2">데이터 표현형태
+(presentationForm)</cell>
+      <cell col="4" row="22"></cell>
+    </row>
+  </table>
+  <text>(4쪽 중 제2쪽)</text>
+  <table rows="18" cols="5">
+    <row>
+      <cell col="0" row="0" colspan="4">항목</cell>
+      <cell col="4" row="0">작성 내용</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="14">3. 데이터 식별정보
+(identificationInfo)</cell>
+      <cell col="1" row="1">데이터 참조
+(citation)</cell>
+      <cell col="2" row="1" colspan="2">기타 참조 정보
+(otherCitedDetails)</cell>
+      <cell col="4" row="1"></cell>
+    </row>
+    <row>
+      <cell col="1" row="2" colspan="3">온라인 자원
+(onlineResource)</cell>
+      <cell col="4" row="2"></cell>
+    </row>
+    <row>
+      <cell col="1" row="3" colspan="3">데이터 요약
+(abstract)</cell>
+      <cell col="4" row="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="4" rowspan="2">데이터관련 연락처
+(pointOfContact)</cell>
+      <cell col="2" row="4" colspan="2">담당(기관)유형
+(role)</cell>
+      <cell col="4" row="4"></cell>
+    </row>
+    <row>
+      <cell col="2" row="5" colspan="2">담당(기관)이름
+(name)</cell>
+      <cell col="4" row="5"></cell>
+    </row>
+    <row>
+      <cell col="1" row="6" colspan="3">데이터 공간표현유형
+(spatialRepresentationType)</cell>
+      <cell col="4" row="6"></cell>
+    </row>
+    <row>
+      <cell col="1" row="7">데이터 공간해상도
+(spatialResolution)</cell>
+      <cell col="2" row="7" colspan="2">축척의 분모
+(denominator)</cell>
+      <cell col="4" row="7"></cell>
+    </row>
+    <row>
+      <cell col="1" row="8" colspan="3">데이터 활용 주제
+(topicCategory)</cell>
+      <cell col="4" row="8"></cell>
+    </row>
+    <row>
+      <cell col="1" row="9" rowspan="6">데이터의
+시공간적 범위
+(extent)</cell>
+      <cell col="2" row="9" rowspan="4">지리적 요소
+(geographicElement)</cell>
+      <cell col="3" row="9">서쪽끝 경도좌표
+(westBoundLongtitude)</cell>
+      <cell col="4" row="9"></cell>
+    </row>
+    <row>
+      <cell col="3" row="10">동쪽끝 경도좌표
+(eastBoundLongtitude)</cell>
+      <cell col="4" row="10"></cell>
+    </row>
+    <row>
+      <cell col="3" row="11">남쪽끝 위도좌표
+(southBoundLatitude)</cell>
+      <cell col="4" row="11"></cell>
+    </row>
+    <row>
+      <cell col="3" row="12">북쪽끝 위도좌표
+(nouthBoundLatitude)</cell>
+      <cell col="4" row="12"></cell>
+    </row>
+    <row>
+      <cell col="2" row="13" rowspan="2">시간적 요소
+(temporalElement)</cell>
+      <cell col="3" row="13">시작일자
+(beginPosition)</cell>
+      <cell col="4" row="13"></cell>
+    </row>
+    <row>
+      <cell col="3" row="14">종료일자
+(endPosition)</cell>
+      <cell col="4" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15" rowspan="3">4. 메타데이터 제약
+(metadataConstraints)</cell>
+      <cell col="1" row="15" colspan="3">접근제약
+(accessConstraints)</cell>
+      <cell col="4" row="15"></cell>
+    </row>
+    <row>
+      <cell col="1" row="16" colspan="3">사용제약
+(useConstraints)</cell>
+      <cell col="4" row="16"></cell>
+    </row>
+    <row>
+      <cell col="1" row="17" colspan="3">기타제약
+(otherConstraints)</cell>
+      <cell col="4" row="17"></cell>
+    </row>
+  </table>
+  <text>(4쪽 중 제3쪽)</text>
+  <table rows="20" cols="5">
+    <row>
+      <cell col="0" row="0" colspan="4">항목</cell>
+      <cell col="4" row="0">작성 내용</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="4">5. 메타데이터 유지관리
+(metadataMaintenance)</cell>
+      <cell col="1" row="1" colspan="3">유지관리 및 갱신 주기
+(maintenanceAndUpdateFrequency)</cell>
+      <cell col="4" row="1"></cell>
+    </row>
+    <row>
+      <cell col="1" row="2" rowspan="2">유지관리 일자
+(maintennaceDate)</cell>
+      <cell col="2" row="2" colspan="2">일자
+(date)</cell>
+      <cell col="4" row="2" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="2" row="3" colspan="2">일자유형
+(dateType)</cell>
+    </row>
+    <row>
+      <cell col="1" row="4" colspan="3">유지관리노트
+(maintenanceNote)</cell>
+      <cell col="4" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" rowspan="5">6. 참조체계정보
+(referenceSystemInfo)</cell>
+      <cell col="1" row="5" rowspan="4">참조체계 식별자
+(referenceSystemIdentifier)</cell>
+      <cell col="2" row="5" colspan="2">코드
+(code)</cell>
+      <cell col="4" row="5"></cell>
+    </row>
+    <row>
+      <cell col="2" row="6" colspan="2">코드 스페이스
+(codeSpace)</cell>
+      <cell col="4" row="6"></cell>
+    </row>
+    <row>
+      <cell col="2" row="7" colspan="2">식별자 버전
+(version)</cell>
+      <cell col="4" row="7"></cell>
+    </row>
+    <row>
+      <cell col="2" row="8" colspan="2">참조체계 식별자에 대한 설명
+(description)</cell>
+      <cell col="4" row="8"></cell>
+    </row>
+    <row>
+      <cell col="1" row="9" colspan="3">참조체계 유형
+(referenceSystemType)</cell>
+      <cell col="4" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" rowspan="10">7. 내용정보
+(contentInfo)</cell>
+      <cell col="1" row="10" colspan="3">부합코드
+(complianceCode)</cell>
+      <cell col="4" row="10"></cell>
+    </row>
+    <row>
+      <cell col="1" row="11" rowspan="3">사용된 언어
+(locale)</cell>
+      <cell col="2" row="11" colspan="2">언어코드
+(language)</cell>
+      <cell col="4" row="11"></cell>
+    </row>
+    <row>
+      <cell col="2" row="12" colspan="2">국가코드
+(country)</cell>
+      <cell col="4" row="12"></cell>
+    </row>
+    <row>
+      <cell col="2" row="13" colspan="2">문자인코딩
+(characterEncoding)</cell>
+      <cell col="4" row="13"></cell>
+    </row>
+    <row>
+      <cell col="1" row="14" colspan="3">데이터셋 포함여부
+(includeWithDataset)</cell>
+      <cell col="4" row="14"></cell>
+    </row>
+    <row>
+      <cell col="1" row="15" rowspan="5">피처 카탈로드
+참조자료
+(featureCatalogueCitation)</cell>
+      <cell col="2" row="15" colspan="2">참조제목
+(title)</cell>
+      <cell col="4" row="15"></cell>
+    </row>
+    <row>
+      <cell col="2" row="16" rowspan="2">참조일자
+(date)</cell>
+      <cell col="3" row="16">일자
+(date)</cell>
+      <cell col="4" row="16"></cell>
+    </row>
+    <row>
+      <cell col="3" row="17">일자유형
+(dateType)</cell>
+      <cell col="4" row="17"></cell>
+    </row>
+    <row>
+      <cell col="2" row="18" colspan="2">데이터 표현형태
+(presentationForm)</cell>
+      <cell col="4" row="18"></cell>
+    </row>
+    <row>
+      <cell col="2" row="19" colspan="2">온라인 자원
+(onlineResource)</cell>
+      <cell col="4" row="19"></cell>
+    </row>
+  </table>
+  <text>(4쪽 중 제4쪽)</text>
+  <table rows="14" cols="5">
+    <row>
+      <cell col="0" row="0" colspan="4">항목</cell>
+      <cell col="4" row="0">작성 내용</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="5">8. 배포정보
+(distributionInfo)</cell>
+      <cell col="1" row="1" rowspan="3">배포자
+(distributor)</cell>
+      <cell col="2" row="1" colspan="2">담당(기관)이름
+(name)</cell>
+      <cell col="4" row="1"></cell>
+    </row>
+    <row>
+      <cell col="2" row="2" colspan="2">담당(기관)유형
+(role)</cell>
+      <cell col="4" row="2"></cell>
+    </row>
+    <row>
+      <cell col="2" row="3" colspan="2">전화번호
+(number)</cell>
+      <cell col="4" row="3"></cell>
+    </row>
+    <row>
+      <cell col="1" row="4" rowspan="2">배포포맷
+(distributionFormat)</cell>
+      <cell col="2" row="4" colspan="2">참조제목
+(title)</cell>
+      <cell col="4" row="4" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="2" row="5" colspan="2">기타인용자료
+(otherCitationDetails)</cell>
+    </row>
+    <row>
+      <cell col="0" row="6" rowspan="3">9. 공간표현정보
+(spatialRepresentationInfo)</cell>
+      <cell col="1" row="6" colspan="3">위상레벨
+(topologyLevel)</cell>
+      <cell col="4" row="6"></cell>
+    </row>
+    <row>
+      <cell col="1" row="7" rowspan="2">기하 객체
+(geometricObjects)</cell>
+      <cell col="2" row="7" colspan="2">기하객체유형
+(geometricObjectType)</cell>
+      <cell col="4" row="7"></cell>
+    </row>
+    <row>
+      <cell col="2" row="8" colspan="2">기하객체개수
+(geometricObjectCount)</cell>
+      <cell col="4" row="8"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9" rowspan="5">10 묘화
+(portrayal)</cell>
+      <cell col="1" row="9" rowspan="5">묘화 카탈로그
+참조자료
+(portrayalCatalogueCitation)</cell>
+      <cell col="2" row="9" colspan="2">참조제목
+(title)</cell>
+      <cell col="4" row="9"></cell>
+    </row>
+    <row>
+      <cell col="2" row="10" rowspan="2">참조일자
+(date)</cell>
+      <cell col="3" row="10">일자
+(date)</cell>
+      <cell col="4" row="10"></cell>
+    </row>
+    <row>
+      <cell col="3" row="11">일자유형
+(dateType)</cell>
+      <cell col="4" row="11"></cell>
+    </row>
+    <row>
+      <cell col="2" row="12" colspan="2">데이터 표현형태
+(presentationForm)</cell>
+      <cell col="4" row="12"></cell>
+    </row>
+    <row>
+      <cell col="2" row="13" colspan="2">온라인 자원
+(onlineResource)</cell>
+      <cell col="4" row="13"></cell>
+    </row>
+  </table>
+  <table rows="3" cols="1">
+    <row>
+      <cell col="0" row="0">메타데이터에 대한 표준적용 확인서 작성 방법</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">메타데이터의 연락정보(contact)
+담당(기관) 유형은 메타데이터를 제공하는 기관의 유형을 기재합니다.
+담당(기관) 이름은 메타데이터를 제공하는 기관의 이름을 기재합니다.
+서비스시간은 메타데이터를 제공하는 기관의 업무시간을 기재합니다.
+연락지침은 메타데이터의 제공기관에 연락할 경우 참고해야하는 사항을 기재합니다.
+전화번호는 메타데이터를 제공하는 기관의 연락처를 기재합니다.
+상세주소는 메타데이터를 제공하는 기관의 주소를 기재합니다.
+행정구역은 메타데이터를 제공하는 기관이 소재하는 행정구역을 기재합니다.
+우편번호는 메타데이터를 제공하는 기관의 우편번호를 기재합니다.
+국가는 메타데이터를 제공하는 기관이 소재하는 국가를 기재합니다.
+이메일주소는 메타데이터를 제공하는 기관(또는 담당자)의 이메일 주소로, 이메일 주소 형태로 자유롭게 기재합니다.
+온라인자원 URL은 메타데이터를 제공하는 기관의 웹페이지를 기재합니다.
+온라인자원 기능은 상기 메타데이터 제공 URL의 목적을 기재합니다.
+담당 부서는 메타데이터를 제공하는 기관 내 부서의 이름을 기재합니다. 문자열 형태로 자유롭게 기입하되, 해당 상항이 없는 경우 기재하지 않습니다.
+메타데이터 일자정보(dateInfo)
+일자는 메타데이터를 생성한 일자(검수일자)를 기재합니다. YYYY-MM-DD 형식으로 작성합니다.
+일자 유형은 상기 기입된 메타데이터 작성 일자의 유형을 기재합니다.
+데이터 식별정보(identificationInfo)
+사용된 언어 중 언어코드는 데이터가 한국어로 기술된 내용을 포함하고 있는 경우, 사용된 언어의 코드를 문자열로 기재합니다.
+사용된 언어 중 국가코드는 데이터가 한국어로 기술된 내용을 포함하고 있는 경우, 사용된 언어에 대한 국가코드(정수)를 기재합니다.
+사용된 언어 중 문자인코딩은 데이터가 한국어로 기술된 내용을 포함하고 있는 경우, 사용된 언어의 인코딩 값을 기재합니다.
+데이터 참조 중 데이터 이름은 데이터의 이름으로, 문자열 형식으로 자유롭게 기재합니다.
+데이터 참조 중 참조일자의 일자는 데이터 구축 일자를 기재합니다. YYYY-MM-DD 형식으로 작성합니다.
+데이터 참조 중 참조일자의 일자유형은 상기 날짜의 유형을 기재합니다.
+데이터 참조 중 데이터 표현형태는 구축된 데이터가 표현되는 형태로서, 다음 사항에서 선택합니다.
+디지털 문서 (documentDigital), 인쇄 문서 (documentHardcopy), 디지털 영상 (imageDigital), 인쇄 영상 (imageHardcopy), 디지털 지도 (mapDigital), 종이지도 (mapHardcopy), 디지털 모델 (modelDigital), 하드카피 모델 (modelHardcopy), 디지털 종단면 (profileDigial), 하드카피 종단면 (profileHardcopy), 디지털 표 (tableDigital), 하드카피 표 (tableHardcopy), 디지털 비디오 (videoDigital), 하드카피 비디오 (videoHardcopy), 디지털 오디오 (audioDigital), 하드카피 오디오 (audioHardcopy), 디지털 멀티미디어 (multimediaDigital), 하드카피 멀티미디어 (multimediaHardcopy), 물리적 객체 (physicalObject), 디지털 도식그림 (diagramDigital), 하드카피 도식그림 (diagram hardcopy)
+데이터 참조 중 데이터 기타 참조 정보는 구축된 데이터에 대한 기타 참조정보를 기재합니다. 문자열 형태로 자유롭게 기재하되, 해당 사항이 없는 경우 작성하지 않습니다.
+온라인 자원은 데이터를 제공하는 웹서시스에 대한 정보를 작성합니다.
+데이터 요약은 데이터에 대한 요약사항을 기재합니다. 문자열 형태로 자유롭게 기재합니다.
+데이터 참조 중 담당(기관) 유형은 구축된 데이터에 대한 책임자의 유형을 기재합니다.
+데이터 참조 중 담당(기관) 이름은 구축된 데이터의 책임 기관 이름을 기재합니다.
+데이터 공간표현유형은 데이터에서 공간표현을 위해 사용하는 유형을 기재합니다.
+데이터 공간해상도를 축척으로 표현한 값을 작성합니다.
+데이터 활용 주제는 데이터를 활용할 수 있는 주제 및 분야로서, 다음 사항에서 선택합니다.
+농업 (farming), 생태 (biota), 경계 (boundaries), 기후기상대기 (climatologyMeteorologyAtmosphere), 
+경제 (economy), 고도 (elevation), 환경 (environment), 지구과학정보 (geoscienticInformation), 건강 (health),
+영상기본도지구관측 (imageryBaseMapsEarthCover), 군사정보 (IntelligenceMilitary), 담수 (inlandWaters),
+위치 (location), 해양 (oceans), 토지계획 (planningCadastre)
+데이터의 시공간적 범위 중 지리적 요소의 서쪽끝 경도좌표는 데이터의 지리적인 범위 중 서쪽 끝의 경도좌표를 기재합니다. -180~180 사이의 소수로 작성합니다.
+데이터의 시공간적 범위 중 지리적 요소의 동쪽끝 경도좌표는 데이터의 지리적인 범위 중 동쪽 끝의 경도좌표를 기재합니다. -180~180 사이의 소수로 작성합니다.
+데이터의 시공간적 범위 중 지리적 요소의 남쪽끝 위도좌표는 데이터의 지리적인 범위 중 남쪽 끝의 위도좌표를 기재합니다. -90~90 사이의 소수로 작성합니다.
+데이터의 시공간적 범위 중 지리적 요소의 북쪽끝 위도좌표는 데이터의 지리적인 범위 중 북쪽 끝의 위도좌표를 기재합니다. -90~90 사이의 소수로 작성합니다.
+데이터의 시공간적 범위 중 시간적 요소의 시작일자는 데이터 구축 시작 일자를 기재합니다. YYYY-MM-DD 형식으로 작성합니다.
+데이터의 시공간적 범위 중 시간적 요소의 종료일자는 데이터 구축 종료 일자를 기재합니다. YYYY-MM-DD 형식으로 작성합니다.
+메타데이터 제약(metadataConstraints)
+데이터 제약 중 접근제약은 데이터에 대한 접근제약의 내용으로, 다음 목록에서 선택합니다.
+제한되지 않음 (unrestricted), 기타제한 (otherRestrictions), 비공개(private)
+데이터 제약 중 사용제약은 데이터에 대한 사용제약의 내용으로, 다음 목록에서 선택합니다.
+제한되지 않음 (unrestricted), 기타제한 (otherRestrictions), 비공개(private)
+데이터 제약 중 기타제약은 기타제약 내용을 자유롭게 작성합니다.
+메타데이터 유지관리(metadataMaintenance)
+유지관리 및 갱신 주기는 데이터의 유지관리 및 갱신주기로, 다음 목록에서 선택합니다.
+지속적 (continual), 매일 (daily), 주간 (weekly), 2주간 (fornightly), 매월 (monthly), 분기 (quaterly), 연2회 (biannually), 연간 (yearly), 필요시 (asNeeded), 불규칙 (irregularly), 무계획 (notplanned), 알려지지않음 (unknown), 주기적 (periodic), 월2회 (semimonthly), 격년 (biennially)
+유지관리 일자 중 일자는 데이터의 유지관리 및 갱신이 이뤄지는 일자를 기재합니다. YYYY-MM-DD 형식으로 작성합니다.
+유지관리 일자 중 일자 유형은 상기 데이터의 유지관리 날짜의 유형을 기재합니다.
+유지관리 노트는 기타 메타데이터 유지관리에 대한 내용을 자유롭게 작성합니다.
+참초체계정보(spatialRepresentationInfo)
+참조체계 식별자 중 코드는 데이터가 따르고 있는 참조체계의 식별자로써, 다음 목록에서 선택합니다.
+EPSG:4737 (Korea 2000), EPSG:5185 (Korea 2000 Korea West Belt 2010), EPSG:5186 (Korea 2000 Korea Central Belt 2010), EPSG:5187 (Korea 2000 Korea East Belt 2010), EPSG:5188 (Korea 2000 Korea East Sea Belt 2010), EPSG:102080 (Korea 2000 Korea Unified Coordinate System), EPSG:102081 (Korea 2000 Korea West Belt 2010), EPSG:102082 (Korea 2000 Korea Central Belt 2010), EPSG:102083 (Korea 2000 Korea East Belt 2010), EPSG:102084 (Korea 2000 Korea East Sea Belt 2010)
+참조체계 식별자 중 코드 스페이스는 데이터가 따르고 있는 참조체계의 코드 스페이스로써, 문자열 형태로 기재하되, 해당 사항이 없는 경우 작성하지 않습니다.
+참조체계 식별자 중 식별자 버전은 데이터가 따르고 있는 참조체계 식별자의 버전으로, 문자열 형태로 자유롭게 기입하되, 해당 사항이 없는 경우 작성하지 않습니다.
+참조체계 식별자 중 참조체계 식별자에 대한 설명은 데이터가 따르고 있는 참조체계에 대한 기타 설명으로, 문자열 형태로 자유롭게 기재하되, 해당 사항이 없는 경우 작성하지 않습니다.
+참조체계 유형은 데이터가 따르고 있는 참조체계의 유형으로써, 다음 목록에서 선택합니다.
+공학파라메트릭합성 (compoundEngineeringParametric), 공학파라메트릭시간합성 (compoundEngineeringParametricTemporal), 공학시간합성 (compoundEngineeringTemporal), 공학수직합성 (compoundEngineeringVertical), 공학수직시간합성 (compoundEngineeringVerticalTemporal), 지리2D파라매트릭합성 (compoundGeographic2DParametric), 지리2D파라매트릭시간합성 (compoundGeographic2DParametricTemporal), 지리2D시간합성 (compoundGeographic2DTemporal), 지리2D수직합성 (compoundGeographic2DVertical), 지리2D수직시간합성 (compoundGeographic2DVerticalTemporal), 지리3D시간합성 (compoundGeographic3DTemporal), 투영2D파라매트릭합성 (compoundProjected2DParametric), 투영2D파라매트릭시간합성 (compoundProjected2DParametricTemporal), 투영시간합성 (compoundProjectedTemporal), 투영수직합성 (compoundProjectedVertical), 투영수직시간합성 (compoundProjectedVerticalTemporal), 공학 (engineering), 공학설계 (engineeringDesign), 공학영상 (engineeringImage), 측지지구중심 (geodeticGeocentric), 측지지리2D (geodeticGeographic2D), 측지지리3D (geodeticGeographic3D), 공간식별자 (geographicIdentifier), 선형 (linear), 파라매트릭 (parametric), 투영 (projected), 시간 (temporal), 수직 (vertical)
+내용정보(contentInfo)
+부합코드는 피처 카탈로그의 ISO 19110 부합여부를 선택합니다.
+사용된 언어 중 언어코드는 데이터가 한국어로 기술된 내용을 포함하고 있는 경우, 사용된 언어의 코드를 문자열로 기재합니다.
+사용된 언어 중 국가코드는 데이터가 한국어로 기술된 내용을 포함하고 있는 경우, 사용된 언어에 대한 국가코드(정수)를 기재합니다.
+사용된 언어 중 문자인코딩은 데이터가 한국어로 기술된 내을 포함하고 있는 경우, 사용된 언어의 인코딩 값을 기재합니다.
+데이터셋 포함여부는 피처 카탈로그가 데이터셋과 함께 포함되는지 여부를 선택합니다.
+피처 카탈로그 참조자료 중 참조제목은 피처 카탈로그의 제목을 작성합니다.
+피처 카탈로그 참조자료 중 일자는 참조되는 피처 카탈로그와 관련된 일자 정보를 작성합니다.
+피처 카탈로그 참조자료 중 일자유형은 참조일자의 유형을 선택합니다.
+피처 카탈로그 참조자료 중 표현형태는 참조자료가 표현되는 형태로서 주어진 목록에서 선택합니다.
+디지털 문서 (documentDigital), 인쇄 문서 (documentHardcopy), 디지털 영상 (imageDigital), 인쇄 영상 (imageHardcopy), 디지털 지도 (mapDigital), 종이지도 (mapHardcopy), 디지털 모델 (modelDigital), 하드카피 모델 (modelHardcopy), 디지털 종단면 (profileDigial), 하드카피 종단면 (profileHardcopy), 디지털 표 (tableDigital), 하드카피 표 (tableHardcopy), 디지털 비디오 (videoDigital), 하드카피 비디오 (videoHardcopy), 디지털 오디오 (audioDigital), 하드카피 오디오 (audioHardcopy), 디지털 멀티미디어 (multimediaDigital), 하드카피 멀티미디어 (multimediaHardcopy), 물리적 객체 (physicalObject), 디지털 도식그림 (diagramDigital), 하드카피 도식그림 (diagram hardcopy)
+온라인 자원은 데이터를 제공하는 웹서시스에 대한 정보를 작성합니다.
+배포정보(distributionInfo)
+배포자 중 담당(기관) 이름은 데이터를 배포하는 담당기관의 이름을 기재합니다.
+배포자 중 담당(기관) 유형은 상기 데이터 배포 기관의 유형을 기재합니다.
+배포자 중 전화번호는 데이터를 배포하는 기관에 대한 연락처를 기재합니다.
+배포포맷 중 참조제목은 데이터의 포맷을 기술하는 관련자료의 제목을 기재합니다. 데이터 포맷이름을 기입할 수 있습니다. 문자열 형태로 자유롭게 작성합니다.
+배포포맷 중 기타인용자료는 데이터의 포못에 대한 정보를 간략하게 작성합니다.
+공간표현정보(spatialRepresentationInfo)
+위상레벨은 데이터의 공간적 관계의 복잡성 정도를 선택합니다.
+단순기하(geometryOnly), 1차원위상(topology1D), 평면그래프(PlanarGraph), 전체평면그래프(fullPlanarGraph)
+면그래프(surfaceGraph), 전체면그래프(fullSurfaceGraph), 3차원위상(topology3D), 
+3차원전체위상(fullTopology3D), 추상(abstract)
+기하객체 중 기하객체유형은 데이터에 사용하는 객체의 유형을 목록에서 선택합니다.
+복합체(complex), 합성체(composite), 곡선(curve), 점(point), 입방체(solid), 표면(surface)
+기하객체 중 기하객체개수는 데이터 내에 포함되어 있는 상기 객체 유형의 총 수를 작성합니다.
+묘화 카탈로그 참조자료 중 참조제목은 묘화 카탈로그의 제목을 작성합니다.
+묘화 카탈로그 참조자료 중 일자는 참조되는 묘화 카탈로그와 관련된 일자 정보를 작성합니다.
+묘화 카탈로그 참조자료 중 일자유형은 참조일자의 유형을 선택합니다.
+묘화 카탈로그 참조자료 중 표현형태는 참조자료가 표현되는 형태로서 주어진 목록에서 선택합니다.
+디지털 문서 (documentDigital), 인쇄 문서 (documentHardcopy), 디지털 영상 (imageDigital), 인쇄 영상 (imageHardcopy), 디지털 지도 (mapDigital), 종이지도 (mapHardcopy), 디지털 모델 (modelDigital), 하드카피 모델 (modelHardcopy), 디지털 종단면 (profileDigial), 하드카피 종단면 (profileHardcopy), 디지털 표 (tableDigital), 하드카피 표 (tableHardcopy), 디지털 비디오 (videoDigital), 하드카피 비디오 (videoHardcopy), 디지털 오디오 (audioDigital), 하드카피 오디오 (audioHardcopy), 디지털 멀티미디어 (multimediaDigital), 하드카피 멀티미디어 (multimediaHardcopy), 물리적 객체 (physicalObject), 디지털 도식그림 (diagramDigital), 하드카피 도식그림 (diagram hardcopy)
+온라인 자원은 데이터를 제공하는 웹서시스에 대한 정보를 작성합니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="2"></cell>
+    </row>
+  </table>
+</annex>

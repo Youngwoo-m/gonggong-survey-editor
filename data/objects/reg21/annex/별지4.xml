@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지4" gubun="별지" no="4" title="검측요청서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=59323037">
+  <text>[별지 제4호 서식]</text>
+  <table rows="1" cols="1">
+    <row>
+      <cell col="0" row="0">검 측 요 청 서
+                                                                    20     .     .  
+   번호 : 
+   수신 : 책임감리원
+   제목 : 검측 요청
+          다음 사항에 대하여 검사측량을 요청하오니 검사 후 승인하여 주시기 바랍니다.
+―   내     용   ―
+          (1) 대상 :
+          (2) 위치 :
+          (3) 일시 :
+          (4) 내용 :
+   첨부 : (1) 구조물 도면
+          (2) 구조물 위치좌표 산출 기록부
+          (3) 시공자 확인측량성과 기록부
+          (4) 사용 기지점 성과
+                                 ○○○공사
+                                 ○○○회사
+                                                  현장대리인               인</cell>
+    </row>
+  </table>
+  <text>210mm×297mm(일반용지 60g/㎡)</text>
+</annex>

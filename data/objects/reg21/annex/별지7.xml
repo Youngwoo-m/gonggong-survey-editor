@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지7" gubun="별지" no="7" title="배수구조물 시공좌표 산출서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=59323107">
+  <text>[별지 제7호 서식]
+배수구조물 시공좌표 산출서
+¤ 대상구조물 : 예) 집수정 (상행선 좌측) 또는 통로암거                                 단위 : m</text>
+  <table rows="49" cols="8">
+    <row>
+      <cell col="0" row="0">측점(STA)</cell>
+      <cell col="1" row="0">구조물명</cell>
+      <cell col="2" row="0">좌표전개도</cell>
+      <cell col="3" row="0" colspan="3">상부면 시공좌표</cell>
+      <cell col="6" row="0">도로표고</cell>
+      <cell col="7" row="0">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="12">예)
+0+000</cell>
+      <cell col="1" row="1" rowspan="12">예)
+타입-00</cell>
+      <cell col="2" row="1" rowspan="12">예)
+상행선 좌측
+↑
+(상부면 좌표)</cell>
+      <cell col="3" row="1" rowspan="3">P1</cell>
+      <cell col="4" row="1">X</cell>
+      <cell col="5" row="1"></cell>
+      <cell col="6" row="1" rowspan="12"></cell>
+      <cell col="7" row="1" rowspan="12">예)
+1. 집수정 치수 : 
+   가로×세로×높이
+2. 사용 기지점 :</cell>
+    </row>
+    <row>
+      <cell col="4" row="2">Y</cell>
+      <cell col="5" row="2"></cell>
+    </row>
+    <row>
+      <cell col="4" row="3">H</cell>
+      <cell col="5" row="3"></cell>
+    </row>
+    <row>
+      <cell col="3" row="4" rowspan="3">P2</cell>
+      <cell col="4" row="4">X</cell>
+      <cell col="5" row="4"></cell>
+    </row>
+    <row>
+      <cell col="4" row="5">Y</cell>
+      <cell col="5" row="5"></cell>
+    </row>
+    <row>
+      <cell col="4" row="6">H</cell>
+      <cell col="5" row="6"></cell>
+    </row>
+    <row>
+      <cell col="3" row="7" rowspan="3">P3</cell>
+      <cell col="4" row="7">X</cell>
+      <cell col="5" row="7"></cell>
+    </row>
+    <row>
+      <cell col="4" row="8">Y</cell>
+      <cell col="5" row="8"></cell>
+    </row>
+    <row>
+      <cell col="4" row="9">H</cell>
+      <cell col="5" row="9"></cell>
+    </row>
+    <row>
+      <cell col="3" row="10" rowspan="3">P4</cell>
+      <cell col="4" row="10">X</cell>
+      <cell col="5" row="10"></cell>
+    </row>
+    <row>
+      <cell col="4" row="11">Y</cell>
+      <cell col="5" row="11"></cell>
+    </row>
+    <row>
+      <cell col="4" row="12">H</cell>
+      <cell col="5" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13" rowspan="12">예)
+0+000</cell>
+      <cell col="1" row="13" rowspan="12">예)
+배수암거</cell>
+      <cell col="2" row="13" rowspan="12">예)
+상행선
+↑
+(상부면 좌표)</cell>
+      <cell col="3" row="13" rowspan="3">P1</cell>
+      <cell col="4" row="13">X</cell>
+      <cell col="5" row="13"></cell>
+      <cell col="6" row="13" rowspan="12"></cell>
+      <cell col="7" row="13" rowspan="12">예)
+1. 통로암거 외부치수 :
+   가로×세로×높이
+2. 터파기면 표고
+   1) P1/P3 :
+   2) P2/P4 :
+3. 사용 기지점 :</cell>
+    </row>
+    <row>
+      <cell col="4" row="14">Y</cell>
+      <cell col="5" row="14"></cell>
+    </row>
+    <row>
+      <cell col="4" row="15">H</cell>
+      <cell col="5" row="15"></cell>
+    </row>
+    <row>
+      <cell col="3" row="16" rowspan="3">P2</cell>
+      <cell col="4" row="16">X</cell>
+      <cell col="5" row="16"></cell>
+    </row>
+    <row>
+      <cell col="4" row="17">Y</cell>
+      <cell col="5" row="17"></cell>
+    </row>
+    <row>
+      <cell col="4" row="18">H</cell>
+      <cell col="5" row="18"></cell>
+    </row>
+    <row>
+      <cell col="3" row="19" rowspan="3">P3</cell>
+      <cell col="4" row="19">X</cell>
+      <cell col="5" row="19"></cell>
+    </row>
+    <row>
+      <cell col="4" row="20">Y</cell>
+      <cell col="5" row="20"></cell>
+    </row>
+    <row>
+      <cell col="4" row="21">H</cell>
+      <cell col="5" row="21"></cell>
+    </row>
+    <row>
+      <cell col="3" row="22" rowspan="3">P4</cell>
+      <cell col="4" row="22">X</cell>
+      <cell col="5" row="22"></cell>
+    </row>
+    <row>
+      <cell col="4" row="23">Y</cell>
+      <cell col="5" row="23"></cell>
+    </row>
+    <row>
+      <cell col="4" row="24">H</cell>
+      <cell col="5" row="24"></cell>
+    </row>
+    <row>
+      <cell col="0" row="25" rowspan="12"></cell>
+      <cell col="1" row="25" rowspan="12"></cell>
+      <cell col="2" row="25" rowspan="12"></cell>
+      <cell col="3" row="25" rowspan="3">P1</cell>
+      <cell col="4" row="25">X</cell>
+      <cell col="5" row="25"></cell>
+      <cell col="6" row="25" rowspan="12"></cell>
+      <cell col="7" row="25" rowspan="12"></cell>
+    </row>
+    <row>
+      <cell col="4" row="26">Y</cell>
+      <cell col="5" row="26"></cell>
+    </row>
+    <row>
+      <cell col="4" row="27">H</cell>
+      <cell col="5" row="27"></cell>
+    </row>
+    <row>
+      <cell col="3" row="28" rowspan="3">P2</cell>
+      <cell col="4" row="28">X</cell>
+      <cell col="5" row="28"></cell>
+    </row>
+    <row>
+      <cell col="4" row="29">Y</cell>
+      <cell col="5" row="29"></cell>
+    </row>
+    <row>
+      <cell col="4" row="30">H</cell>
+      <cell col="5" row="30"></cell>
+    </row>
+    <row>
+      <cell col="3" row="31" rowspan="3">P3</cell>
+      <cell col="4" row="31">X</cell>
+      <cell col="5" row="31"></cell>
+    </row>
+    <row>
+      <cell col="4" row="32">Y</cell>
+      <cell col="5" row="32"></cell>
+    </row>
+    <row>
+      <cell col="4" row="33">H</cell>
+      <cell col="5" row="33"></cell>
+    </row>
+    <row>
+      <cell col="3" row="34" rowspan="3">P4</cell>
+      <cell col="4" row="34">X</cell>
+      <cell col="5" row="34"></cell>
+    </row>
+    <row>
+      <cell col="4" row="35">Y</cell>
+      <cell col="5" row="35"></cell>
+    </row>
+    <row>
+      <cell col="4" row="36">H</cell>
+      <cell col="5" row="36"></cell>
+    </row>
+    <row>
+      <cell col="0" row="37" rowspan="12"></cell>
+      <cell col="1" row="37" rowspan="12"></cell>
+      <cell col="2" row="37" rowspan="12"></cell>
+      <cell col="3" row="37" rowspan="3">P1</cell>
+      <cell col="4" row="37">X</cell>
+      <cell col="5" row="37"></cell>
+      <cell col="6" row="37" rowspan="12"></cell>
+      <cell col="7" row="37" rowspan="12"></cell>
+    </row>
+    <row>
+      <cell col="4" row="38">Y</cell>
+      <cell col="5" row="38"></cell>
+    </row>
+    <row>
+      <cell col="4" row="39">H</cell>
+      <cell col="5" row="39"></cell>
+    </row>
+    <row>
+      <cell col="3" row="40" rowspan="3">P2</cell>
+      <cell col="4" row="40">X</cell>
+      <cell col="5" row="40"></cell>
+    </row>
+    <row>
+      <cell col="4" row="41">Y</cell>
+      <cell col="5" row="41"></cell>
+    </row>
+    <row>
+      <cell col="4" row="42">H</cell>
+      <cell col="5" row="42"></cell>
+    </row>
+    <row>
+      <cell col="3" row="43" rowspan="3">P3</cell>
+      <cell col="4" row="43">X</cell>
+      <cell col="5" row="43"></cell>
+    </row>
+    <row>
+      <cell col="4" row="44">Y</cell>
+      <cell col="5" row="44"></cell>
+    </row>
+    <row>
+      <cell col="4" row="45">H</cell>
+      <cell col="5" row="45"></cell>
+    </row>
+    <row>
+      <cell col="3" row="46" rowspan="3">P4</cell>
+      <cell col="4" row="46">X</cell>
+      <cell col="5" row="46"></cell>
+    </row>
+    <row>
+      <cell col="4" row="47">Y</cell>
+      <cell col="5" row="47"></cell>
+    </row>
+    <row>
+      <cell col="4" row="48">H</cell>
+      <cell col="5" row="48"></cell>
+    </row>
+  </table>
+  <text>210mm×297mm(일반용지 60g/㎡)</text>
+</annex>

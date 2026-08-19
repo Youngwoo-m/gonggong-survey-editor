@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식15" gubun="서식" no="15" title="지적측량 의뢰서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454449">
+  <table rows="33" cols="26">
+    <row>
+      <cell col="0" row="0" colspan="26">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별지 제15호서식] &lt;개정 2017. 1. 31.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="26">지적측량 의뢰서</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="15"></cell>
+      <cell col="15" row="2" colspan="11">(앞쪽)</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="3">상담번호</cell>
+      <cell col="3" row="3" colspan="2"></cell>
+      <cell col="5" row="3" colspan="4">상담일</cell>
+      <cell col="9" row="3" colspan="5"></cell>
+      <cell col="14" row="3" colspan="4">측량 예정일</cell>
+      <cell col="18" row="3" colspan="3"></cell>
+      <cell col="21" row="3" colspan="3">처리기간</cell>
+      <cell col="24" row="3" colspan="2">아래참조</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="26"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="2" rowspan="4">의뢰인</cell>
+      <cell col="2" row="5" colspan="17">성명</cell>
+      <cell col="19" row="5" colspan="7">생년월일(사업자등록번호)</cell>
+    </row>
+    <row>
+      <cell col="2" row="6" colspan="17">전화번호</cell>
+      <cell col="19" row="6" colspan="7">소유자와의 관계</cell>
+    </row>
+    <row>
+      <cell col="2" row="7" colspan="24">전자우편</cell>
+    </row>
+    <row>
+      <cell col="2" row="8" colspan="24">주소</cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="26"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="4">토지소재</cell>
+      <cell col="4" row="10" colspan="2" rowspan="2">지번</cell>
+      <cell col="6" row="10" colspan="2" rowspan="2">지목</cell>
+      <cell col="8" row="10" colspan="2" rowspan="2">원면적
+(㎡)</cell>
+      <cell col="10" row="10" colspan="2" rowspan="2">분할후 예정
+면적</cell>
+      <cell col="12" row="10" colspan="4" rowspan="2">축척</cell>
+      <cell col="16" row="10" colspan="3" rowspan="2">측량
+종목</cell>
+      <cell col="19" row="10" colspan="2" rowspan="2">필지 수</cell>
+      <cell col="21" row="10" colspan="2" rowspan="2">단가</cell>
+      <cell col="23" row="10" colspan="2" rowspan="2">수수료</cell>
+      <cell col="25" row="10" rowspan="2">용도지역</cell>
+    </row>
+    <row>
+      <cell col="0" row="11">구ㆍ읍ㆍ면</cell>
+      <cell col="1" row="11" colspan="3">동ㆍ리</cell>
+    </row>
+    <row>
+      <cell col="0" row="12"></cell>
+      <cell col="1" row="12" colspan="3"></cell>
+      <cell col="4" row="12" colspan="2"></cell>
+      <cell col="6" row="12" colspan="2"></cell>
+      <cell col="8" row="12" colspan="2"></cell>
+      <cell col="10" row="12" colspan="2"></cell>
+      <cell col="12" row="12" colspan="4"></cell>
+      <cell col="16" row="12" colspan="3"></cell>
+      <cell col="19" row="12" colspan="2"></cell>
+      <cell col="21" row="12" colspan="2"></cell>
+      <cell col="23" row="12" colspan="2"></cell>
+      <cell col="25" row="12"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13"></cell>
+      <cell col="1" row="13" colspan="3"></cell>
+      <cell col="4" row="13" colspan="2"></cell>
+      <cell col="6" row="13" colspan="2"></cell>
+      <cell col="8" row="13" colspan="2"></cell>
+      <cell col="10" row="13" colspan="2"></cell>
+      <cell col="12" row="13" colspan="4"></cell>
+      <cell col="16" row="13" colspan="3"></cell>
+      <cell col="19" row="13" colspan="2"></cell>
+      <cell col="21" row="13" colspan="2"></cell>
+      <cell col="23" row="13" colspan="2"></cell>
+      <cell col="25" row="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14">계</cell>
+      <cell col="1" row="14" colspan="3"></cell>
+      <cell col="4" row="14" colspan="2"></cell>
+      <cell col="6" row="14" colspan="2"></cell>
+      <cell col="8" row="14" colspan="2"></cell>
+      <cell col="10" row="14" colspan="2"></cell>
+      <cell col="12" row="14" colspan="4"></cell>
+      <cell col="16" row="14" colspan="3"></cell>
+      <cell col="19" row="14" colspan="2"></cell>
+      <cell col="21" row="14" colspan="2"></cell>
+      <cell col="23" row="14" colspan="2"></cell>
+      <cell col="25" row="14"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15" colspan="26"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16" colspan="26">측량목적 또는 요망사항</cell>
+    </row>
+    <row>
+      <cell col="0" row="17" colspan="26"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18" colspan="7">신청 방법</cell>
+      <cell col="7" row="18" colspan="6">영수증 발급 구분</cell>
+      <cell col="13" row="18" colspan="8">측량성과도 받는 방법</cell>
+      <cell col="21" row="18" colspan="5">신청대행</cell>
+    </row>
+    <row>
+      <cell col="0" row="19" colspan="7">[  ]방문   [  ]전화 [  ]팩스
+[  ]인터넷 [  ]우편 [  ]기타</cell>
+      <cell col="7" row="19" colspan="6">[  ]현금영수증
+[  ]세금계산서</cell>
+      <cell col="13" row="19" colspan="8">[  ]본인수령 [  ]우송
+[  ]전자우편 [  ]기타</cell>
+      <cell col="21" row="19" colspan="5">[  ]공부정리신청
+[  ]등본신청     대장  통</cell>
+    </row>
+    <row>
+      <cell col="0" row="20" colspan="26"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21" colspan="26">「공간정보의 구축 및 관리 등에 관한 법률」 제24조제1항 및 같은 법 시행규칙 제25조제1항에 따라 위와 같이 의뢰합니다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="22" colspan="26">년          월          일</cell>
+    </row>
+    <row>
+      <cell col="0" row="23" colspan="11">의뢰인</cell>
+      <cell col="11" row="23" colspan="6"></cell>
+      <cell col="17" row="23" colspan="5"></cell>
+      <cell col="22" row="23" colspan="4">(서명 또는 인)</cell>
+    </row>
+    <row>
+      <cell col="0" row="24" colspan="11">상담자</cell>
+      <cell col="11" row="24" colspan="6"></cell>
+      <cell col="17" row="24" colspan="5"></cell>
+      <cell col="22" row="24" colspan="4">(서명 또는 인)</cell>
+    </row>
+    <row>
+      <cell col="0" row="25" colspan="26">귀하</cell>
+    </row>
+    <row>
+      <cell col="0" row="26" colspan="26"></cell>
+    </row>
+    <row>
+      <cell col="0" row="27" colspan="3" rowspan="2">첨부서류</cell>
+      <cell col="3" row="27" colspan="17" rowspan="2">의뢰 사유를 증명하는 서류</cell>
+      <cell col="20" row="27" colspan="6">수수료</cell>
+    </row>
+    <row>
+      <cell col="20" row="28" colspan="6">국토교통부장관의 고시에 따름</cell>
+    </row>
+    <row>
+      <cell col="0" row="29" colspan="26"></cell>
+    </row>
+    <row>
+      <cell col="0" row="30" colspan="26">처리기간</cell>
+    </row>
+    <row>
+      <cell col="0" row="31" colspan="26">1. 일반업무
+  ○ 측량 5일, 검사 4일(지적측량기준점 설치 시 15점 이하는 4일, 15점을 초과할 때는 4점마다 1일 가산)
+2. 계약업무
+  ○ 계약에 의한 경우에는 협의 또는 계약에 의한 기간</cell>
+    </row>
+    <row>
+      <cell col="0" row="32" colspan="26">210mm×297mm[백상지(80g/㎡) 또는 중질지(80g/㎡)]</cell>
+    </row>
+  </table>
+  <table rows="25" cols="13">
+    <row>
+      <cell col="0" row="0" colspan="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="13">(뒤쪽)</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" colspan="13"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="13">처 리 절 차</cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="7"></cell>
+      <cell col="7" row="4" colspan="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5" colspan="4" rowspan="2">의뢰인</cell>
+      <cell col="4" row="5" colspan="9">처리기관</cell>
+    </row>
+    <row>
+      <cell col="4" row="6" colspan="9">지적소관청 또는 지적측량수행자</cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="4"></cell>
+      <cell col="4" row="7" colspan="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8"></cell>
+      <cell col="1" row="8" rowspan="2">의뢰서 작성</cell>
+      <cell col="2" row="8" colspan="2"></cell>
+      <cell col="4" row="8"></cell>
+      <cell col="5" row="8" rowspan="2">▶</cell>
+      <cell col="6" row="8" colspan="6" rowspan="2">접수</cell>
+      <cell col="12" row="8" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9"></cell>
+      <cell col="2" row="9" colspan="2"></cell>
+      <cell col="4" row="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10" colspan="4" rowspan="11"></cell>
+      <cell col="4" row="10" colspan="2"></cell>
+      <cell col="6" row="10" colspan="2"></cell>
+      <cell col="8" row="10"></cell>
+      <cell col="9" row="10"></cell>
+      <cell col="10" row="10"></cell>
+      <cell col="11" row="10"></cell>
+      <cell col="12" row="10"></cell>
+    </row>
+    <row>
+      <cell col="4" row="11" colspan="2"></cell>
+      <cell col="6" row="11" colspan="3"></cell>
+      <cell col="9" row="11" colspan="2">▼</cell>
+      <cell col="11" row="11"></cell>
+      <cell col="12" row="11"></cell>
+    </row>
+    <row>
+      <cell col="4" row="12" colspan="2"></cell>
+      <cell col="6" row="12" colspan="6" rowspan="2">확 인</cell>
+      <cell col="12" row="12"></cell>
+    </row>
+    <row>
+      <cell col="4" row="13" colspan="2"></cell>
+      <cell col="12" row="13"></cell>
+    </row>
+    <row>
+      <cell col="4" row="14" colspan="2"></cell>
+      <cell col="6" row="14" colspan="2"></cell>
+      <cell col="8" row="14"></cell>
+      <cell col="9" row="14"></cell>
+      <cell col="10" row="14"></cell>
+      <cell col="11" row="14"></cell>
+      <cell col="12" row="14"></cell>
+    </row>
+    <row>
+      <cell col="4" row="15" colspan="2"></cell>
+      <cell col="6" row="15" colspan="2"></cell>
+      <cell col="8" row="15"></cell>
+      <cell col="9" row="15" colspan="2">▼</cell>
+      <cell col="11" row="15"></cell>
+      <cell col="12" row="15"></cell>
+    </row>
+    <row>
+      <cell col="4" row="16" colspan="2"></cell>
+      <cell col="6" row="16" colspan="6" rowspan="2">측 량</cell>
+      <cell col="12" row="16"></cell>
+    </row>
+    <row>
+      <cell col="4" row="17" colspan="2"></cell>
+      <cell col="12" row="17"></cell>
+    </row>
+    <row>
+      <cell col="4" row="18" colspan="2"></cell>
+      <cell col="6" row="18" colspan="2" rowspan="2"></cell>
+      <cell col="8" row="18" rowspan="2"></cell>
+      <cell col="9" row="18" rowspan="2"></cell>
+      <cell col="10" row="18" rowspan="2"></cell>
+      <cell col="11" row="18" rowspan="2"></cell>
+      <cell col="12" row="18"></cell>
+    </row>
+    <row>
+      <cell col="4" row="19" colspan="2"></cell>
+      <cell col="12" row="19"></cell>
+    </row>
+    <row>
+      <cell col="4" row="20" colspan="2"></cell>
+      <cell col="6" row="20" colspan="2"></cell>
+      <cell col="8" row="20"></cell>
+      <cell col="9" row="20" colspan="2">▼</cell>
+      <cell col="11" row="20"></cell>
+      <cell col="12" row="20"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21"></cell>
+      <cell col="1" row="21" rowspan="2">발급 통보</cell>
+      <cell col="2" row="21" rowspan="2">◀</cell>
+      <cell col="3" row="21"></cell>
+      <cell col="4" row="21" colspan="2"></cell>
+      <cell col="6" row="21" colspan="6" rowspan="2">측량성과 검사</cell>
+      <cell col="12" row="21" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="22"></cell>
+      <cell col="3" row="22"></cell>
+      <cell col="4" row="22" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="23" colspan="4"></cell>
+      <cell col="4" row="23" colspan="9"></cell>
+    </row>
+    <row>
+      <cell col="0" row="24" colspan="13"></cell>
+    </row>
+  </table>
+</annex>

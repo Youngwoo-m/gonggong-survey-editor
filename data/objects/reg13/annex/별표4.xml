@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표4" gubun="별표" no="4" title="대공표지 표준양식" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=118668767">
+  <text>[별표 4] 대공표지 표준양식</text>
+  <table rows="1" cols="1">
+    <row>
+      <cell col="0" row="0">A형                B형               C형</cell>
+    </row>
+    <row>
+      <cell col="283" row="283" colspan="283" rowspan="283">R</cell>
+      <cell col="283" row="283" colspan="283" rowspan="283">R
+                D형                             E형
+           페인트로 표시
+         A, B, C형 : 지상 점
+         D형 : 지상 점 또는 옥상 점
+         E형 : 수목 위 설치 점
+         R : 촬영축척에 따라 결정</cell>
+    </row>
+  </table>
+</annex>

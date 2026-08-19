@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0039" article="제76조(ＧＮＳＳ標高測量の方式)" rows="10" cols="2" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">区 分 項 目</cell>
+    <cell col="1" row="0" header="1">３級水準測量</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">測 量 方 式</cell>
+    <cell col="1" row="1">結合多角方式</cell>
+  </row>
+  <row>
+    <cell col="0" row="2"></cell>
+    <cell col="1" row="2">地形の状況等によりやむを得ないときは、単路線方式とすることが できる。</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">既 知 点 数</cell>
+    <cell col="1" row="3">３点以上</cell>
+  </row>
+  <row>
+    <cell col="0" row="4"></cell>
+    <cell col="1" row="4">単路線方式の場合は、２点とすることができる。</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">路線の辺数</cell>
+    <cell col="1" row="5">５辺以下</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">路 線 図 形</cell>
+    <cell col="1" row="6">新点は、外周路線に属する隣接既知点を結ぶ直線の内側に選点する ものとする。ただし、地形の状況等によりやむを得ないときは、この 限りでない。</cell>
+  </row>
+  <row>
+    <cell col="0" row="7">観測楕円体比高</cell>
+    <cell col="1" row="7">700ｍ以下を標準とし、700ｍを超える場合は日を変えて点検観測を 行うものとする。</cell>
+  </row>
+  <row>
+    <cell col="0" row="8">偏心距離の制限 （ 新 点 ）</cell>
+    <cell col="1" row="8">250ｍ未満</cell>
+  </row>
+  <row>
+    <cell col="0" row="9">備 考</cell>
+    <cell col="1" row="9">１．｢路線の辺数｣は、既知点から他の既知点まで、既知点から交点ま</cell>
+  </row>
+</table>

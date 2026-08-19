@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="151295857" article="제49조" rows="5" cols="3" source="공공측량 작업규정.2025.04.23_수식수정.오류표시.hwpx">
+  <row>
+    <cell col="0" row="0" colspan="2">구분</cell>
+    <cell col="2" row="0">GNSS 높이측량</cell>
+  </row>
+  <row>
+    <cell col="0" row="1" rowspan="2">기지점의 종류</cell>
+    <cell col="1" row="1">3급</cell>
+    <cell col="2" row="1">1~2등 수준점, 통합기준점,
+위성기준점, 1~2급 공공수준점</cell>
+  </row>
+  <row>
+    <cell col="1" row="2">4급</cell>
+    <cell col="2" row="2">1~2등 수준점, 통합기준점,
+위성기준점, 1~3급 공공수준점</cell>
+  </row>
+  <row>
+    <cell col="0" row="3" colspan="2">기지점의 수</cell>
+    <cell col="2" row="3">3점 이상을 기준으로 한다.</cell>
+  </row>
+  <row>
+    <cell col="0" row="4" colspan="2">기지점 간의 거리</cell>
+    <cell col="2" row="4">기지점간 기선거리는 4km 이상 20km 이하를 표준으로 한다.</cell>
+  </row>
+</table>

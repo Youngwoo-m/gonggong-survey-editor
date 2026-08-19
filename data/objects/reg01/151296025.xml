@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<equation id="151296025" article="제209조" font="HYhwpEQ" source="공공측량 작업규정.2025.04.23_수식수정.오류표시.hwpx">
+  <script>TRIANGLE  X _{m} `=`( SIGMA  _{1}^{-1} + SIGMA  _{2}^{-1} + BULLET  BULLET  BULLET  + SIGMA  _{N}^{-1} ) ^{-1} ( SIGMA  _{1}^{-1} ( TRIANGLE  X _{1} )`+` SIGMA  _{2}^{-1} ( TRIANGLE  X _{2} )+ BULLET  BULLET  BULLET  + SIGMA  _{N}^{-1} ( TRIANGLE  X _{N} ))</script>
+  <readable>Δ X _m = ( Σ _1^-1 + Σ _2^-1 + BULLET BULLET BULLET + Σ _N^-1 ) ^-1 ( Σ _1^-1 ( Δ X _1 ) + Σ _2^-1 ( Δ X _2 )+ BULLET BULLET BULLET + Σ _N^-1 ( Δ X _N ))</readable>
+  <latex>\triangle X _{m} = ( \Sigma _{1}^{-1} + \Sigma _{2}^{-1} + BULLET BULLET BULLET + \Sigma _{N}^{-1} ) ^{-1} ( \Sigma _{1}^{-1} ( \triangle X _{1} ) + \Sigma _{2}^{-1} ( \triangle X _{2} )+ BULLET BULLET BULLET + \Sigma _{N}^{-1} ( \triangle X _{N} ))</latex>
+</equation>

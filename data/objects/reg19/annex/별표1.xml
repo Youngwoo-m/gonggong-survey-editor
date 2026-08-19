@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표1" gubun="별표" no="1" title="실내공간정보 세밀도 정의" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=110999983">
+  <text>[별표 1] 실내공간정보 세밀도 정의
+1. 정의</text>
+  <table rows="5" cols="3">
+    <row>
+      <cell col="0" row="0">구분</cell>
+      <cell col="1" row="0">실내공간정보 세밀도 정의</cell>
+      <cell col="2" row="0">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">LOD0</cell>
+      <cell col="1" row="1">실내공간을 2차원으로 표현 
+다층구조로 여러 층을 별도로 표현</cell>
+      <cell col="2" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2">LOD1</cell>
+      <cell col="1" row="2">실내객체는 상자형태의 단순화된 3차원 모형으로 표현
+수직구조물은 자동화 도구를 이용하여 높이값 부여</cell>
+      <cell col="2" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">LOD2</cell>
+      <cell col="1" row="3">실내객체를 세부적인 3차원 모형으로 묘사
+벽면, 천장, 바닥을 별도로 표현
+벽면, 천장, 바닥에 존재하는 실내객체를 벽면, 천장, 바닥과 연관시켜 묘사</cell>
+      <cell col="2" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4">LOD3</cell>
+      <cell col="1" row="4">LOD2에 추가적으로 실사이미지를 텍스처 매핑하여 묘사</cell>
+      <cell col="2" row="4"></cell>
+    </row>
+  </table>
+  <text>2. 구축범위</text>
+  <table rows="7" cols="7">
+    <row>
+      <cell col="0" row="0" rowspan="3">상세도</cell>
+      <cell col="1" row="0" colspan="6">세부 구축 항목</cell>
+    </row>
+    <row>
+      <cell col="1" row="1" rowspan="2">차원
+(Dimension)</cell>
+      <cell col="2" row="1" rowspan="2">기하 및 속성정보</cell>
+      <cell col="3" row="1" colspan="2">공간 분류</cell>
+      <cell col="5" row="1" rowspan="2">시설물
+정보</cell>
+      <cell col="6" row="1" rowspan="2">가시화
+정보</cell>
+    </row>
+    <row>
+      <cell col="3" row="2">공간</cell>
+      <cell col="4" row="2">시설물</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">LOD0</cell>
+      <cell col="1" row="3">2차원
+평면도</cell>
+      <cell col="2" row="3">개별층 단위공간 기하
+수평이동공간 기하
+- 바닥면</cell>
+      <cell col="3" row="3">개별층단위공간 수평이동공간</cell>
+      <cell col="4" row="3">해당
+없음</cell>
+      <cell col="5" row="3">해당
+없음</cell>
+      <cell col="6" row="3">해당
+없음</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">LOD1</cell>
+      <cell col="1" row="4">3차원
+입체도
+(단순)</cell>
+      <cell col="2" row="4">개별층 단위공간 기하 및 기하속성 
+수평이동공간 기하 및 기하속성
+(기하는 바닥면에서 확장된 단순 3차원 객체)
+- 바닥면</cell>
+      <cell col="3" row="4">개별층단위공간
+수평이동공간</cell>
+      <cell col="4" row="4">2차원
+점형</cell>
+      <cell col="5" row="4">표현:포인트
+위치: X, Y</cell>
+      <cell col="6" row="4">가상
+이미지</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">LOD2</cell>
+      <cell col="1" row="5">3차원
+입체도</cell>
+      <cell col="2" row="5">개별층 단위공간 기하 및 기하속성
+수평이동공간 기하 및 기하속성
+수직이동공간 기하 및 기하속성
+- 바닥면, 벽면, 천장, 출입문/창호</cell>
+      <cell col="3" row="5">개별층단위공간
+수평이동공간
+수직이동공간</cell>
+      <cell col="4" row="5">3차원 도형</cell>
+      <cell col="5" row="5">표현:포인트
+위치: X,Y,H</cell>
+      <cell col="6" row="5">가상
+이미지</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">LOD3</cell>
+      <cell col="1" row="6">3차원
+입체도</cell>
+      <cell col="2" row="6">개별층 단위공간 기하 및 기하속성
+수평이동공간 기하 및 기하속성
+수직이동공간 기하 및 기하속성
+- 바닥면, 벽면, 천장, 출입문/창호</cell>
+      <cell col="3" row="6">개별층단위공간
+수평이동공간
+수직이동공간</cell>
+      <cell col="4" row="6">3차원 도형</cell>
+      <cell col="5" row="6">표현:포인트
+위치: X, Y, H</cell>
+      <cell col="6" row="6">실사
+이미지</cell>
+    </row>
+  </table>
+</annex>

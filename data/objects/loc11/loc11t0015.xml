@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0015" article="제41조(計算の方法等)" rows="4" cols="7" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">項目 表示</cell>
+    <cell col="1" row="0" header="1">直角座標 ※</cell>
+    <cell col="2" row="0" header="1">経緯度</cell>
+    <cell col="3" row="0" header="1">標 高</cell>
+    <cell col="4" row="0" header="1">ジオイド高</cell>
+    <cell col="5" row="0" header="1">角 度</cell>
+    <cell col="6" row="0" header="1">辺 長</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">単 位</cell>
+    <cell col="1" row="1">ｍ</cell>
+    <cell col="2" row="1">秒</cell>
+    <cell col="3" row="1">ｍ</cell>
+    <cell col="4" row="1">ｍ</cell>
+    <cell col="5" row="1">秒</cell>
+    <cell col="6" row="1">ｍ</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">位</cell>
+    <cell col="1" row="2">0.001</cell>
+    <cell col="2" row="2">0.0001</cell>
+    <cell col="3" row="2">0.001</cell>
+    <cell col="4" row="2">0.001</cell>
+    <cell col="5" row="2">１</cell>
+    <cell col="6" row="2">0.001</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">備 考</cell>
+    <cell col="1" row="3">※ 平面直角座標系に規定する世界測地系に従う直角座標</cell>
+    <cell col="2" row="3"></cell>
+    <cell col="3" row="3"></cell>
+    <cell col="4" row="3"></cell>
+    <cell col="5" row="3"></cell>
+    <cell col="6" row="3"></cell>
+  </row>
+</table>

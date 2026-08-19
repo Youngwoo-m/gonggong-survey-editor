@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표7" gubun="별표" no="7" title="3차원 국토공간정보 품질평가 기준" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=118782565">
+  <text>[별표7] 3차원 국토공간정보 품질평가 기준</text>
+  <table rows="10" cols="4">
+    <row>
+      <cell col="0" row="0">품질
+요소</cell>
+      <cell col="1" row="0">세부요소</cell>
+      <cell col="2" row="0">세세부
+요소</cell>
+      <cell col="3" row="0">품질평가 기준</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="2">완전성</cell>
+      <cell col="1" row="1" rowspan="2">누락</cell>
+      <cell col="2" row="1">대상영역
+누락</cell>
+      <cell col="3" row="1">◦ 공간적 범위에서 누락된 영역 확인
+ - 제10조(작업시행계획서 작성)</cell>
+    </row>
+    <row>
+      <cell col="2" row="2">대상객체
+누락</cell>
+      <cell col="3" row="2">◦ 표준데이터셋의 누락된 객체 확인
+ - 제10조(작업시행계획서 작성)</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" rowspan="4">논리
+일관성</cell>
+      <cell col="1" row="3" rowspan="2">개념
+일관성</cell>
+      <cell col="2" row="3">세밀도
+일관성</cell>
+      <cell col="3" row="3">◦ 표준데이터셋이 세밀도 규정에 맞게 제작되었는지 확인
+ - 제15조(3차원 교통데이터 제작방법)
+ - 제16조(3차원 건물데이터 제작방법)  
+ - 제17조(3차원 수자원데이터 제작방법)</cell>
+    </row>
+    <row>
+      <cell col="2" row="4">가시화
+일관성</cell>
+      <cell col="3" row="4">◦ 가시화정보가 세밀도 규정에 맞게 제작되었는지 확인
+ - 제20조(가시화정보 제작방법)</cell>
+    </row>
+    <row>
+      <cell col="1" row="5" rowspan="2">위상
+일관성</cell>
+      <cell col="2" row="5">2차원정보 구조화
+일관성</cell>
+      <cell col="3" row="5">◦ 기초자료의 위상관계 확인
+ - 제13조(기초자료 편집)
+ - 별표2(3차원 국토공간정보 기본 기하 제약조건)</cell>
+    </row>
+    <row>
+      <cell col="2" row="6">3차원정보
+구조화
+일관성</cell>
+      <cell col="3" row="6">◦ 표준데이터셋의 위상관계 확인
+ - 별표2(3차원 국토공간정보 기본 기하 제약조건)
+ - 별표3(3차원 국토공간정보 공간객체 기본 제약조건)</cell>
+    </row>
+    <row>
+      <cell col="0" row="7" rowspan="3">위치
+정확성</cell>
+      <cell col="1" row="7" rowspan="3">절대적
+또는 
+외적 정확성</cell>
+      <cell col="2" row="7">기준좌표계
+정확성</cell>
+      <cell col="3" row="7">◦ 3차원 국토공간정보 기준좌표계의 정확성 확인
+ - 제4조(위치기준)</cell>
+    </row>
+    <row>
+      <cell col="2" row="8">2차원
+위치정보 정확성</cell>
+      <cell col="3" row="8">◦ 편집된 자료의 위치정확성 확인
+ - 제4조(위치기준)
+ - 제12조(기초자료 취득)
+ - 제13조(기초자료 편집)</cell>
+    </row>
+    <row>
+      <cell col="2" row="9">3차원
+위치정보 정확성</cell>
+      <cell col="3" row="9">◦ 표준데이터셋의 위치정확성 확인
+ - 제4조(위치기준)
+ - 제12조(기초자료 취득)
+ - 제14조(3차원 국토공간정보 제작기준)</cell>
+    </row>
+  </table>
+  <table rows="10" cols="4">
+    <row>
+      <cell col="0" row="0">품질
+요소</cell>
+      <cell col="1" row="0">세부요소</cell>
+      <cell col="2" row="0">세세부
+요소</cell>
+      <cell col="3" row="0">품질평가 기준</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="4">위치 정확성</cell>
+      <cell col="1" row="1" rowspan="3">상대적
+또는 
+내적 정확성</cell>
+      <cell col="2" row="1">2차원정보 경계인접</cell>
+      <cell col="3" row="1">◦ 편집된 기초자료의 경계 인접부 정확성 확인
+ - 제12조(기초자료 취득)  
+ - 제13조(기초자료 편집)</cell>
+    </row>
+    <row>
+      <cell col="2" row="2">3차원정보 경계인접</cell>
+      <cell col="3" row="2">◦ 표준데이터셋 각각의 경계인접부 정확성 확인
+ - 제12조(기초자료 취득)  
+ - 제13조(기초자료 편집) 
+ - 제14조(3차원 국토공간정보 제작기준)</cell>
+    </row>
+    <row>
+      <cell col="2" row="3">가시화정보 정합</cell>
+      <cell col="3" row="3">◦ 가시화정보 정합여부 확인
+ - 제20조(가시화정보 제작방법)
+ - 제21조(가시화정보 지상표본거리)</cell>
+    </row>
+    <row>
+      <cell col="1" row="4">그리드
+데이터 위치
+정확성</cell>
+      <cell col="2" row="4">3차원 지형데이터 위치정확성</cell>
+      <cell col="3" row="4">◦ 수치표고모델의 격자간격 정확도 확인
+◦ 정사영상의 위치정확도 확인
+◦ 3차원 지형데이터의 지형지물 왜곡 및 오류 확인
+ - 제18조(3차원 지형데이터 편집방법)</cell>
+    </row>
+    <row>
+      <cell col="0" row="5" rowspan="3">주제 정확성</cell>
+      <cell col="1" row="5">분류 
+정확성</cell>
+      <cell col="2" row="5">항목 분류 정확성</cell>
+      <cell col="3" row="5">◦ 표준데이터셋 항목의 분류 정확성 확인
+ - 별표 1(3차원 국토공간정보 표준데이터셋)</cell>
+    </row>
+    <row>
+      <cell col="1" row="6" rowspan="2">속성
+정확성</cell>
+      <cell col="2" row="6">속성내용 불일치</cell>
+      <cell col="3" row="6">◦ 표준데이터셋의 속성내용 불일치 확인</cell>
+    </row>
+    <row>
+      <cell col="2" row="7">속성내용 누락</cell>
+      <cell col="3" row="7">◦ 표준데이터셋의 속성내용 누락 확인</cell>
+    </row>
+    <row>
+      <cell col="0" row="8" rowspan="2">기타</cell>
+      <cell col="1" row="8">관리파일 작성오류</cell>
+      <cell col="2" row="8">메타데이터 누락</cell>
+      <cell col="3" row="8">◦ 메타데이터의 작성여부, 오류 및 누락 확인
+ - 제28조(메타데이터 작성)</cell>
+    </row>
+    <row>
+      <cell col="1" row="9">성과품 누락</cell>
+      <cell col="2" row="9">성과품 누락</cell>
+      <cell col="3" row="9">◦ 최종성과품들의 누락여부 확인
+ - 제29조(성과품)</cell>
+    </row>
+  </table>
+</annex>

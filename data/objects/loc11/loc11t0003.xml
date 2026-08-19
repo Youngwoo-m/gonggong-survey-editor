@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0003" article="제23조(基準点測量の方式)" rows="14" cols="6" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">区 分 項 目</cell>
+    <cell col="1" row="0" header="1">１級基準点測量</cell>
+    <cell col="2" row="0" header="1">２級基準点測量</cell>
+    <cell col="3" row="0" header="1">３級基準点測量</cell>
+    <cell col="4" row="0" header="1">４級基準点測量</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">結 合 多 角 方 式</cell>
+    <cell col="1" row="1">１個の多角網にお ける既知点数</cell>
+    <cell col="2" row="1">２＋新点数 ５ 以上 （端数切上げ）</cell>
+    <cell col="3" row="1"></cell>
+    <cell col="4" row="1">３点以上</cell>
+    <cell col="5" row="1"></cell>
+  </row>
+  <row>
+    <cell col="0" row="2"></cell>
+    <cell col="1" row="2"></cell>
+    <cell col="2" row="2">電子基準点のみを既知点とする場合は３点以上とする。</cell>
+    <cell col="3" row="2"></cell>
+    <cell col="4" row="2"></cell>
+    <cell col="5" row="2">―――</cell>
+  </row>
+  <row>
+    <cell col="0" row="3"></cell>
+    <cell col="1" row="3">単位多角形の辺数</cell>
+    <cell col="2" row="3">10 辺以下</cell>
+    <cell col="3" row="3">12 辺以下</cell>
+    <cell col="4" row="3">―――</cell>
+    <cell col="5" row="3">―――</cell>
+  </row>
+  <row>
+    <cell col="0" row="4"></cell>
+    <cell col="1" row="4">路 線 の 辺 数</cell>
+    <cell col="2" row="4">５辺以下</cell>
+    <cell col="3" row="4">６辺以下</cell>
+    <cell col="4" row="4">７辺以下</cell>
+    <cell col="5" row="4">10 辺以下 （15 辺以下）</cell>
+  </row>
+  <row>
+    <cell col="0" row="5"></cell>
+    <cell col="1" row="5"></cell>
+    <cell col="2" row="5">伐採樹木及び地形の状況等によって は、計画機関の承認を得て辺数を増や すことができる。</cell>
+    <cell col="3" row="5"></cell>
+    <cell col="4" row="5"></cell>
+    <cell col="5" row="5"></cell>
+  </row>
+  <row>
+    <cell col="0" row="6"></cell>
+    <cell col="1" row="6">節点間の距離</cell>
+    <cell col="2" row="6">250ｍ以上</cell>
+    <cell col="3" row="6">150ｍ以上</cell>
+    <cell col="4" row="6">70ｍ以上</cell>
+    <cell col="5" row="6">20ｍ以上</cell>
+  </row>
+  <row>
+    <cell col="0" row="7"></cell>
+    <cell col="1" row="7">路 線 長</cell>
+    <cell col="2" row="7">３km 以下</cell>
+    <cell col="3" row="7">２km 以下</cell>
+    <cell col="4" row="7">１km 以下</cell>
+    <cell col="5" row="7">500ｍ以下 （700ｍ以下）</cell>
+  </row>
+  <row>
+    <cell col="0" row="8"></cell>
+    <cell col="1" row="8"></cell>
+    <cell col="2" row="8">ＧＮＳＳ測量機を使用する場合は５km 以下とする。ただし、電子基準点のみを 既知点とする場合はこの限りでない。</cell>
+    <cell col="3" row="8"></cell>
+    <cell col="4" row="8">電子基準点のみ を既知点とする 場合はこの限り でない。</cell>
+    <cell col="5" row="8"></cell>
+  </row>
+  <row>
+    <cell col="0" row="9"></cell>
+    <cell col="1" row="9">偏心距離の制限</cell>
+    <cell col="2" row="9">ｅ≦Ｓ／６ Ｓ：測点間距離 ｅ：偏心距離</cell>
+    <cell col="3" row="9"></cell>
+    <cell col="4" row="9"></cell>
+    <cell col="5" row="9"></cell>
+  </row>
+  <row>
+    <cell col="0" row="10"></cell>
+    <cell col="1" row="10"></cell>
+    <cell col="2" row="10">電子基準点のみを既知点とする場合は、Ｓを新点間の距離 とし、新点を１点設置する場合の偏心距離は、この式によ らず100ｍ以内を標準とする。</cell>
+    <cell col="3" row="10"></cell>
+    <cell col="4" row="10"></cell>
+    <cell col="5" row="10">―――</cell>
+  </row>
+  <row>
+    <cell col="0" row="11"></cell>
+    <cell col="1" row="11">路 線 図 形</cell>
+    <cell col="2" row="11">多角網の外周路線に属する新点は、外 周路線に属する隣接既知点を結ぶ直線 から外側40°以下の地域内に選点する ものとし、路線の中の夾 きょう 角は、60°以 上とする。ただし、地形の状況等により やむを得ないときは、この限りでない。</cell>
+    <cell col="3" row="11"></cell>
+    <cell col="4" row="11">同 左 50゜以下 同 左 60゜以上</cell>
+    <cell col="5" row="11"></cell>
+  </row>
+  <row>
+    <cell col="0" row="12"></cell>
+    <cell col="1" row="12">平 均 次 数</cell>
+    <cell col="2" row="12">―――</cell>
+    <cell col="3" row="12"></cell>
+    <cell col="4" row="12">簡易水平網平均計算を行う場合は 平均次数を２次までとする。</cell>
+    <cell col="5" row="12"></cell>
+  </row>
+  <row>
+    <cell col="0" row="13">備 考</cell>
+    <cell col="1" row="13"></cell>
+    <cell col="2" row="13">１．「路線」とは、既知点から他の既知点まで、既知点から交点まで又は交 点から他の交点までをいう。 ２．「単位多角形」とは、路線によって多角形が形成され、その内部に路線 をもたない多角形をいう。 ３．３～４級基準点測量において、条件式による簡易水平網平均計算を行う 場合は、方向角の取付を行うものとする。 ４．４級基準点測量のうち、電子基準点のみを既知点として設置した一～四 等三角点及び１～３級基準点並びに電子基準点及び電子基準点付属標を 既知点とし、かつ、第３５条第２項による機器を使用する場合は、路線の 辺数及び路線長について（ ）内を標準とすることができる。</cell>
+    <cell col="3" row="13"></cell>
+    <cell col="4" row="13"></cell>
+    <cell col="5" row="13"></cell>
+  </row>
+</table>

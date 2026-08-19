@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0010" article="제38조(観測値の点検及び再測)" rows="9" cols="7" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">区 分 項 目</cell>
+    <cell col="1" row="0" header="1"></cell>
+    <cell col="2" row="0" header="1">１級基準点測量</cell>
+    <cell col="3" row="0" header="1">２級基準点測量</cell>
+    <cell col="4" row="0" header="1"></cell>
+    <cell col="5" row="0" header="1">３級基準点測量</cell>
+    <cell col="6" row="0" header="1">４級基準点測量</cell>
+  </row>
+  <row>
+    <cell col="0" row="1"></cell>
+    <cell col="1" row="1"></cell>
+    <cell col="2" row="1"></cell>
+    <cell col="3" row="1">１級トータルス テーション、 １級セオドライ ト</cell>
+    <cell col="4" row="1">２級トータルス テーション、 ２級セオドライ ト</cell>
+    <cell col="5" row="1"></cell>
+    <cell col="6" row="1"></cell>
+  </row>
+  <row>
+    <cell col="0" row="2">水 平 角 観 測</cell>
+    <cell col="1" row="2">倍 角 差</cell>
+    <cell col="2" row="2">15″</cell>
+    <cell col="3" row="2">20″</cell>
+    <cell col="4" row="2">30″</cell>
+    <cell col="5" row="2">30″</cell>
+    <cell col="6" row="2">60″</cell>
+  </row>
+  <row>
+    <cell col="0" row="3"></cell>
+    <cell col="1" row="3">観 測 差</cell>
+    <cell col="2" row="3">８″</cell>
+    <cell col="3" row="3">10″</cell>
+    <cell col="4" row="3">20″</cell>
+    <cell col="5" row="3">20″</cell>
+    <cell col="6" row="3">40″</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">鉛 直 角 観 測</cell>
+    <cell col="1" row="4">高度定数の 較 差</cell>
+    <cell col="2" row="4">10″</cell>
+    <cell col="3" row="4">15″</cell>
+    <cell col="4" row="4">30″</cell>
+    <cell col="5" row="4">30″</cell>
+    <cell col="6" row="4">60″</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">距 離 測 定</cell>
+    <cell col="1" row="5">１セット内の 測定値の較差</cell>
+    <cell col="2" row="5">20mm</cell>
+    <cell col="3" row="5">20mm</cell>
+    <cell col="4" row="5">20mm</cell>
+    <cell col="5" row="5">20mm</cell>
+    <cell col="6" row="5">20mm</cell>
+  </row>
+  <row>
+    <cell col="0" row="6"></cell>
+    <cell col="1" row="6">各セットの 平均値の較差</cell>
+    <cell col="2" row="6">20mm</cell>
+    <cell col="3" row="6">20mm</cell>
+    <cell col="4" row="6">20mm</cell>
+    <cell col="5" row="6">20mm</cell>
+    <cell col="6" row="6">20mm</cell>
+  </row>
+  <row>
+    <cell col="0" row="7">測 標 水 準</cell>
+    <cell col="1" row="7">往復観測値の 較 差</cell>
+    <cell col="2" row="7">20mm√S</cell>
+    <cell col="3" row="7">20mm√S</cell>
+    <cell col="4" row="7">20mm√S</cell>
+    <cell col="5" row="7">20mm√S</cell>
+    <cell col="6" row="7">20mm√S</cell>
+  </row>
+  <row>
+    <cell col="0" row="8">備 考</cell>
+    <cell col="1" row="8"></cell>
+    <cell col="2" row="8">Ｓは観測距離（片道、km 単位）とする。</cell>
+    <cell col="3" row="8"></cell>
+    <cell col="4" row="8"></cell>
+    <cell col="5" row="8"></cell>
+    <cell col="6" row="8"></cell>
+  </row>
+</table>

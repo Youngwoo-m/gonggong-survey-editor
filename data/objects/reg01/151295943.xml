@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="151295943" article="제69조" rows="5" cols="5" source="공공측량 작업규정.2025.04.23_수식수정.오류표시.hwpx">
+  <row>
+    <cell col="0" row="0">축척</cell>
+    <cell col="1" row="0">기기 시스템 구분</cell>
+    <cell col="2" row="0">수평각 관측대회수</cell>
+    <cell col="3" row="0">거리 관측횟수</cell>
+    <cell col="4" row="0">방사거리의 제한</cell>
+  </row>
+  <row>
+    <cell col="0" row="1" rowspan="2">1/500 이상</cell>
+    <cell col="1" row="1">토털스테이션 2급</cell>
+    <cell col="2" row="1">0.5</cell>
+    <cell col="3" row="1">1</cell>
+    <cell col="4" row="1">150m 이내</cell>
+  </row>
+  <row>
+    <cell col="1" row="2">토털스테이션 3급</cell>
+    <cell col="2" row="2">0.5</cell>
+    <cell col="3" row="2">1</cell>
+    <cell col="4" row="2">100m 이내</cell>
+  </row>
+  <row>
+    <cell col="0" row="3" rowspan="2">1/1,000 이하</cell>
+    <cell col="1" row="3">토털스테이션 2급</cell>
+    <cell col="2" row="3">0.5</cell>
+    <cell col="3" row="3">1</cell>
+    <cell col="4" row="3">200m 이내</cell>
+  </row>
+  <row>
+    <cell col="1" row="4">토털스테이션 3급</cell>
+    <cell col="2" row="4">0.5</cell>
+    <cell col="3" row="4">1</cell>
+    <cell col="4" row="4">150m 이내</cell>
+  </row>
+</table>

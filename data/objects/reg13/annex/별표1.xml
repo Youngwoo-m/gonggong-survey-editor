@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표1" gubun="별표" no="1" title="해상도 분석 도형" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=118668751">
+  <text>[별표 1] 해상도 분석 도형
+1. 공간해상도 분석 도형</text>
+  <table rows="1" cols="1">
+    <row>
+      <cell col="0" row="0"></cell>
+    </row>
+  </table>
+  <text>※ 공간해상도 분석 도형 설치기준</text>
+  <table rows="3" cols="3">
+    <row>
+      <cell col="0" row="0">GSD 크기</cell>
+      <cell col="1" row="0">직경</cell>
+      <cell col="2" row="0">내부 흑백선쌍 갯수</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">GSD] 10cm
+(해상도 낮음)</cell>
+      <cell col="1" row="1">4m</cell>
+      <cell col="2" row="1">16개</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">GSD ≤ 10cm
+(해상도 높음)</cell>
+      <cell col="1" row="2">2m</cell>
+      <cell col="2" row="2">16개</cell>
+    </row>
+  </table>
+  <text>2. 방사해상도 분석도형</text>
+  <table rows="1" cols="1">
+    <row>
+      <cell col="0" row="0"></cell>
+    </row>
+  </table>
+  <text>※ 방사해상도 분석 도형 설치기준</text>
+  <table rows="3" cols="3">
+    <row>
+      <cell col="0" row="0">GSD 크기</cell>
+      <cell col="1" row="0">1칸당 크기</cell>
+      <cell col="2" row="0">색상간 이격거리</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">GSD] 10cm
+(해상도 낮음)</cell>
+      <cell col="1" row="1">1m</cell>
+      <cell col="2" row="1">1m</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">GSD ≤ 10cm
+(해상도 높음)</cell>
+      <cell col="1" row="2">50cm</cell>
+      <cell col="2" row="2">50cm</cell>
+    </row>
+  </table>
+  <text>* 5pixel 기준</text>
+</annex>

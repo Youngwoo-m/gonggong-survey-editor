@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="151295881" article="제24조" rows="9" cols="7" source="공공측량 작업규정.2025.04.23_수식수정.오류표시.hwpx">
+  <row>
+    <cell col="0" row="0" colspan="2" rowspan="2">구분
+(기기)
+항목</cell>
+    <cell col="2" row="0">1급
+공공삼각점 측량</cell>
+    <cell col="3" row="0" colspan="2">2급 공공삼각점측량</cell>
+    <cell col="5" row="0">3급
+공공삼각점측량</cell>
+    <cell col="6" row="0">4급
+공공삼각점측량</cell>
+  </row>
+  <row>
+    <cell col="2" row="1">1급 TS</cell>
+    <cell col="3" row="1">1급 TS</cell>
+    <cell col="4" row="1">2급 TS</cell>
+    <cell col="5" row="1">2급 TS</cell>
+    <cell col="6" row="1">3급 TS</cell>
+  </row>
+  <row>
+    <cell col="0" row="2" rowspan="3">수평각 측정</cell>
+    <cell col="1" row="2">읽음 단위</cell>
+    <cell col="2" row="2">1˝</cell>
+    <cell col="3" row="2">1˝</cell>
+    <cell col="4" row="2">10˝</cell>
+    <cell col="5" row="2">10˝</cell>
+    <cell col="6" row="2">20˝</cell>
+  </row>
+  <row>
+    <cell col="1" row="3">대회 수</cell>
+    <cell col="2" row="3">2</cell>
+    <cell col="3" row="3">2</cell>
+    <cell col="4" row="3">3</cell>
+    <cell col="5" row="3">2</cell>
+    <cell col="6" row="3">2</cell>
+  </row>
+  <row>
+    <cell col="1" row="4">수평눈금위치</cell>
+    <cell col="2" row="4">0°, 90°</cell>
+    <cell col="3" row="4">0°, 90°</cell>
+    <cell col="4" row="4">0°,
+120°</cell>
+    <cell col="5" row="4">0°, 90°</cell>
+    <cell col="6" row="4">0°, 90°</cell>
+  </row>
+  <row>
+    <cell col="0" row="5" rowspan="2">연직각 측정</cell>
+    <cell col="1" row="5">읽음 단위</cell>
+    <cell col="2" row="5">1˝</cell>
+    <cell col="3" row="5">1˝</cell>
+    <cell col="4" row="5">10˝</cell>
+    <cell col="5" row="5">10˝</cell>
+    <cell col="6" row="5">20˝</cell>
+  </row>
+  <row>
+    <cell col="1" row="6">대회 수</cell>
+    <cell col="2" row="6" colspan="5">1</cell>
+  </row>
+  <row>
+    <cell col="0" row="7" rowspan="2">거리
+측정</cell>
+    <cell col="1" row="7">읽음 단위</cell>
+    <cell col="2" row="7" colspan="5">1mm</cell>
+  </row>
+  <row>
+    <cell col="1" row="8">세트 수</cell>
+    <cell col="2" row="8" colspan="5">2</cell>
+  </row>
+</table>

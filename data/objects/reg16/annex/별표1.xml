@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표1" gubun="별표" no="1" title="품질관리기준(제7조제1항 관련)" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=161554085">
+  <text>■ 수치표고모형의 구축 및 관리 등에 관한 규정 [별표 1]
+품질관리기준(제7조제1항 관련)</text>
+  <table rows="2" cols="2">
+    <row>
+      <cell col="0" row="0">규격</cell>
+      <cell col="1" row="0">점수/m2</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">1m×1m</cell>
+      <cell col="1" row="1">2.5점</cell>
+    </row>
+  </table>
+  <table rows="3" cols="3">
+    <row>
+      <cell col="0" row="0">규격</cell>
+      <cell col="1" row="0">표준편차</cell>
+      <cell col="2" row="0">최대오차</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">1m×1m</cell>
+      <cell col="1" row="1">±0.5m</cell>
+      <cell col="2" row="1">±0.75m</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">5m×5m</cell>
+      <cell col="1" row="2">±1.0m</cell>
+      <cell col="2" row="2">±2.0m</cell>
+    </row>
+  </table>
+  <table rows="24" cols="9">
+    <row>
+      <cell col="0" row="0" rowspan="2">작업공정</cell>
+      <cell col="1" row="0" rowspan="2">대상데이터</cell>
+      <cell col="2" row="0" rowspan="2">품질요소</cell>
+      <cell col="3" row="0" colspan="2">검증항목</cell>
+      <cell col="5" row="0" colspan="2">검증방법</cell>
+      <cell col="7" row="0" rowspan="2">검증기준</cell>
+      <cell col="8" row="0" rowspan="2">표본
+추출법</cell>
+    </row>
+    <row>
+      <cell col="3" row="1">항목명</cell>
+      <cell col="4" row="1">세부검증사항</cell>
+      <cell col="5" row="1">구분</cell>
+      <cell col="6" row="1">방법</cell>
+    </row>
+    <row>
+      <cell col="0" row="2" rowspan="8">항공레이저측량</cell>
+      <cell col="1" row="2">켈리브레이션 리포트</cell>
+      <cell col="2" row="2">논리적일관성</cell>
+      <cell col="3" row="2">검정여부</cell>
+      <cell col="4" row="2">· 검정 보고서 적정성(검정방법, 장비S/N 등) 확인</cell>
+      <cell col="5" row="2">실내</cell>
+      <cell col="6" row="2">수동평가</cell>
+      <cell col="7" row="2">적합/부적합</cell>
+      <cell col="8" row="2">전수</cell>
+    </row>
+    <row>
+      <cell col="1" row="3">촬영궤적도</cell>
+      <cell col="2" row="3">시간적품질</cell>
+      <cell col="3" row="3">촬영적절성</cell>
+      <cell col="4" row="3">· 항공LiDAR 측량 시 GNSS/INS 단절 및 촬영궤도의 적절성 검증</cell>
+      <cell col="5" row="3">실내</cell>
+      <cell col="6" row="3">수동/
+자동평가</cell>
+      <cell col="7" row="3">적합/부적합</cell>
+      <cell col="8" row="3">전수</cell>
+    </row>
+    <row>
+      <cell col="1" row="4">지상기지국 데이터</cell>
+      <cell col="2" row="4">시간적품질</cell>
+      <cell col="3" row="4">측량시간 적절성</cell>
+      <cell col="4" row="4">· 지상기지국의 운영시간 및 배치에 대한 적절성 검증</cell>
+      <cell col="5" row="4">실내</cell>
+      <cell col="6" row="4">수동/
+자동평가</cell>
+      <cell col="7" row="4">적합/부적합</cell>
+      <cell col="8" row="4">전수</cell>
+    </row>
+    <row>
+      <cell col="1" row="5">촬영코스도</cell>
+      <cell col="2" row="5">완전성</cell>
+      <cell col="3" row="5">촬영중복도 평가</cell>
+      <cell col="4" row="5">· 코스별 항공LiDAR 측량 성과의 중복율의 적절성 검증</cell>
+      <cell col="5" row="5">실내</cell>
+      <cell col="6" row="5">수동/
+자동평가</cell>
+      <cell col="7" row="5">최소 30% 미만이 전체 1/4 미만</cell>
+      <cell col="8" row="5">전수</cell>
+    </row>
+    <row>
+      <cell col="1" row="6">기준점 배치도</cell>
+      <cell col="2" row="6">완전성</cell>
+      <cell col="3" row="6">기준점배치 적절성</cell>
+      <cell col="4" row="6">· 4~5㎞ 간격으로 10점 이상 배치 및 적합성 여부</cell>
+      <cell col="5" row="6">실내</cell>
+      <cell col="6" row="6">수동평가</cell>
+      <cell col="7" row="6">적합/부적합</cell>
+      <cell col="8" row="6">전수</cell>
+    </row>
+    <row>
+      <cell col="1" row="7" rowspan="3">점군데이터</cell>
+      <cell col="2" row="7">완전성</cell>
+      <cell col="3" row="7">촬영누락 여부</cell>
+      <cell col="4" row="7">· 사업지역 내 누락 여부 검토</cell>
+      <cell col="5" row="7">실내</cell>
+      <cell col="6" row="7">수동/
+자동평가</cell>
+      <cell col="7" row="7">결측률 10% 미만</cell>
+      <cell col="8" row="7">전수</cell>
+    </row>
+    <row>
+      <cell col="2" row="8">위치 정확성</cell>
+      <cell col="3" row="8">점군데이터 정확도</cell>
+      <cell col="4" row="8">· 기준점 성과와 비교 평가를 통한 상대적 위치정확도 검증</cell>
+      <cell col="5" row="8">실내</cell>
+      <cell col="6" row="8">수동</cell>
+      <cell col="7" row="8">RMSE(높이) :  0.25m</cell>
+      <cell col="8" row="8">전수
+(기준점 30%)</cell>
+    </row>
+    <row>
+      <cell col="2" row="9">유용성 요소</cell>
+      <cell col="3" row="9">점밀도 적절성</cell>
+      <cell col="4" row="9">· 원시성과의 점밀도가 작업규정에 적합 여부 검증</cell>
+      <cell col="5" row="9">실내</cell>
+      <cell col="6" row="9">자동평가</cell>
+      <cell col="7" row="9">2.5점/㎡</cell>
+      <cell col="8" row="9">판단추출
+(30%)</cell>
+    </row>
+    <row>
+      <cell col="0" row="10" rowspan="9">수치표고
+-
+지형자료 추출</cell>
+      <cell col="1" row="10" rowspan="4">항공LiDAR 측량 원시성과의 지형 분류 점군 데이터 / 영상매칭 Cloud point의 지형 분류 점군 데이터</cell>
+      <cell col="2" row="10">완전성</cell>
+      <cell col="3" row="10">추출된 데이터가 사업지역을 충족여부</cell>
+      <cell col="4" row="10">· 추출된 데이터 범위가 사업지역을 충족하는지 여부</cell>
+      <cell col="5" row="10">실내</cell>
+      <cell col="6" row="10">수동 평가</cell>
+      <cell col="7" row="10">적합/부적합</cell>
+      <cell col="8" row="10">전수</cell>
+    </row>
+    <row>
+      <cell col="2" row="11">논리적일관성</cell>
+      <cell col="3" row="11">영역일관성</cell>
+      <cell col="4" row="11">· 추출된 자료가 적절한 좌표계로 구축 되었는지 여부</cell>
+      <cell col="5" row="11">실내</cell>
+      <cell col="6" row="11">수동/
+자동평가</cell>
+      <cell col="7" row="11">적합/부적합</cell>
+      <cell col="8" row="11">전수</cell>
+    </row>
+    <row>
+      <cell col="2" row="12">주제정확성</cell>
+      <cell col="3" row="12">원시자료의 지형분류 적합성</cell>
+      <cell col="4" row="12">· 점군 데이터 중 지형자료로 분류된 성과의 적절성을 검토</cell>
+      <cell col="5" row="12">실내</cell>
+      <cell col="6" row="12">수동평가</cell>
+      <cell col="7" row="12">적합/부적합</cell>
+      <cell col="8" row="12">판단추출
+(30%)</cell>
+    </row>
+    <row>
+      <cell col="2" row="13">주제정확성</cell>
+      <cell col="3" row="13">불연속선
+설정</cell>
+      <cell col="4" row="13">· 지형 불연속선의 적정 설정 여부를 검토</cell>
+      <cell col="5" row="13">실내</cell>
+      <cell col="6" row="13">수동평가</cell>
+      <cell col="7" row="13">적합/부적합</cell>
+      <cell col="8" row="13">판단추출
+(30%)</cell>
+    </row>
+    <row>
+      <cell col="1" row="14" rowspan="5">수치도화 지형 Layer /
+변화지역 수정도화 데이터</cell>
+      <cell col="2" row="14">완전성</cell>
+      <cell col="3" row="14">추출된 layer가 사업지역을 충족여부</cell>
+      <cell col="4" row="14">· 추출된 layer 범위가 사업지역을 충족 하는지 여부</cell>
+      <cell col="5" row="14">실내</cell>
+      <cell col="6" row="14">수동평가</cell>
+      <cell col="7" row="14">적합/부적합</cell>
+      <cell col="8" row="14">전수</cell>
+    </row>
+    <row>
+      <cell col="2" row="15">논리적일관성</cell>
+      <cell col="3" row="15">영역일관성</cell>
+      <cell col="4" row="15">· 수치표고모형이 적절한 좌표계로 구축 되었는지 여부</cell>
+      <cell col="5" row="15">실내</cell>
+      <cell col="6" row="15">수동/
+자동평가</cell>
+      <cell col="7" row="15">적합/부적합</cell>
+      <cell col="8" row="15">전수</cell>
+    </row>
+    <row>
+      <cell col="2" row="16">위치정확성</cell>
+      <cell col="3" row="16">수치도화 허용오차의 적절성</cell>
+      <cell col="4" row="16">· 수치도화의 허용오차가 구축하는 수치 표고모형의 정확도를 충족하는지 여부</cell>
+      <cell col="5" row="16">실내</cell>
+      <cell col="6" row="16">수동평가</cell>
+      <cell col="7" row="16">적합/부적합</cell>
+      <cell col="8" row="16">전수</cell>
+    </row>
+    <row>
+      <cell col="2" row="17">주제정확성</cell>
+      <cell col="3" row="17">추출된 지형 layer의 적절성</cell>
+      <cell col="4" row="17">· 수치표고모형을 생성하기 위해 적절한 layer를 추출하였는지 검토</cell>
+      <cell col="5" row="17">실내</cell>
+      <cell col="6" row="17">수동평가</cell>
+      <cell col="7" row="17">적합/부적합</cell>
+      <cell col="8" row="17">전수</cell>
+    </row>
+    <row>
+      <cell col="2" row="18">주제정확성</cell>
+      <cell col="3" row="18">불연속선 설정</cell>
+      <cell col="4" row="18">· 지형 불연속선의 적정 설정 여부를 검토</cell>
+      <cell col="5" row="18">실내</cell>
+      <cell col="6" row="18">수동평가</cell>
+      <cell col="7" row="18">적합/부적합</cell>
+      <cell col="8" row="18">판단추출
+(30%)</cell>
+    </row>
+    <row>
+      <cell col="0" row="19" rowspan="5">수치표고
+모형  제작</cell>
+      <cell col="1" row="19" rowspan="5">수치표고모형</cell>
+      <cell col="2" row="19">완전성</cell>
+      <cell col="3" row="19">구축지역 누락</cell>
+      <cell col="4" row="19">· 사업지역 내 미 구축 여부 검토</cell>
+      <cell col="5" row="19">실내</cell>
+      <cell col="6" row="19">수동평가</cell>
+      <cell col="7" row="19">적합/부적합</cell>
+      <cell col="8" row="19">전수</cell>
+    </row>
+    <row>
+      <cell col="2" row="20" rowspan="2">논리적일관성</cell>
+      <cell col="3" row="20">영역일관성</cell>
+      <cell col="4" row="20">· 수치표고모형이 적절한 좌표계로 구축 되었는지 여부</cell>
+      <cell col="5" row="20">실내</cell>
+      <cell col="6" row="20">수동/
+자동평가</cell>
+      <cell col="7" row="20">적합/부적합</cell>
+      <cell col="8" row="20">전수</cell>
+    </row>
+    <row>
+      <cell col="3" row="21">보간방법의 적절성</cell>
+      <cell col="4" row="21">· 추출된 지형자료를 수치표고모형으로 변환하기 위한 보간방법의 적절성 검토</cell>
+      <cell col="5" row="21">실내</cell>
+      <cell col="6" row="21">수동평가</cell>
+      <cell col="7" row="21">적합/부적합</cell>
+      <cell col="8" row="21">전수</cell>
+    </row>
+    <row>
+      <cell col="2" row="22">위치정확성</cell>
+      <cell col="3" row="22">수치표고모형의 높이 정확도</cell>
+      <cell col="4" row="22">· 구축된 수치표고모형의 높이값이 검사점(도엽당 5점) 대비 허용오차 이내 여부 검증</cell>
+      <cell col="5" row="22">실외</cell>
+      <cell col="6" row="22">재측/
+수동평가</cell>
+      <cell col="7" row="22">RMSE(높이) : 0.50m, 
+최대오차 : 0.75m</cell>
+      <cell col="8" row="22">판단추출
+(기준점 30%)</cell>
+    </row>
+    <row>
+      <cell col="2" row="23">주제정확성</cell>
+      <cell col="3" row="23">지형의 연속성</cell>
+      <cell col="4" row="23">· 수치표고모형 도엽 내부 및 인접도엽 간에 지형 표현의 적절성 검증</cell>
+      <cell col="5" row="23">실내</cell>
+      <cell col="6" row="23">수동평가</cell>
+      <cell col="7" row="23">적합/부적합</cell>
+      <cell col="8" row="23">전수</cell>
+    </row>
+  </table>
+</annex>

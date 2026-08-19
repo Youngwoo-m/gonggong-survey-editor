@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0096" article="제569조(フィルタリング点検図の作成)" rows="5" cols="2" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">項 目</cell>
+    <cell col="1" row="0" header="1">色 区 分</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">オリジナルデータでグラウンドデータとして採用された点</cell>
+    <cell col="1" row="1">赤 色</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">オリジナルデータでフィルタリングにより削除された点</cell>
+    <cell col="1" row="2">黄 色</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">水部ポリゴンの境界線</cell>
+    <cell col="1" row="3">紺 色</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">低密度ポリゴンの境界線</cell>
+    <cell col="1" row="4">緑 色</cell>
+  </row>
+</table>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식39" gubun="서식" no="39" title="측량업등록수첩" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454639">
+  <table rows="5" cols="3">
+    <row>
+      <cell col="0" row="0" colspan="2">[별지 제39호서식]</cell>
+      <cell col="2" row="0">(1쪽)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1"></cell>
+      <cell col="1" row="1">측량업등록수첩</cell>
+      <cell col="2" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2"></cell>
+      <cell col="1" row="2">측량업 등록기관 로고</cell>
+      <cell col="2" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3"></cell>
+      <cell col="1" row="3">측량업 등록기관명</cell>
+      <cell col="2" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4" colspan="3">80㎜×130㎜(보존용지(1종) 120g/㎡)</cell>
+    </row>
+  </table>
+  <table rows="13" cols="5">
+    <row>
+      <cell col="0" row="0" colspan="4"></cell>
+      <cell col="4" row="0">(2쪽)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="5">등록번호 제     호
+측량업등록수첩</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">상호 및 명칭</cell>
+      <cell col="1" row="2" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">업종</cell>
+      <cell col="1" row="3" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4">등록연월일</cell>
+      <cell col="1" row="4" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5">성명
+(대표자)</cell>
+      <cell col="1" row="5"></cell>
+      <cell col="2" row="5">사업자
+등록번호</cell>
+      <cell col="3" row="5" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">주된 영업소 소재지</cell>
+      <cell col="1" row="6" colspan="4">(전화번호 :          )</cell>
+    </row>
+    <row>
+      <cell col="0" row="7" rowspan="4">지점 소재지</cell>
+      <cell col="1" row="7" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="1" row="8" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="1" row="9" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="1" row="10" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11" colspan="5">위와 같이 등록하였음을 증명함
+년      월      일
+   ○○기관장  󰃡</cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="5">80㎜×130㎜(보존용지(1종) 120g/㎡)</cell>
+    </row>
+  </table>
+  <table rows="22" cols="6">
+    <row>
+      <cell col="0" row="0" colspan="5">변동사항</cell>
+      <cell col="5" row="0">(3쪽)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">변경연월일</cell>
+      <cell col="1" row="1">변경구분</cell>
+      <cell col="2" row="1">변경내용</cell>
+      <cell col="3" row="1">신고연월일</cell>
+      <cell col="4" row="1" colspan="2">확인</cell>
+    </row>
+    <row>
+      <cell col="0" row="2"></cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2"></cell>
+      <cell col="3" row="2"></cell>
+      <cell col="4" row="2" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3"></cell>
+      <cell col="1" row="3"></cell>
+      <cell col="2" row="3"></cell>
+      <cell col="3" row="3"></cell>
+      <cell col="4" row="3" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4"></cell>
+      <cell col="1" row="4"></cell>
+      <cell col="2" row="4"></cell>
+      <cell col="3" row="4"></cell>
+      <cell col="4" row="4" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5"></cell>
+      <cell col="1" row="5"></cell>
+      <cell col="2" row="5"></cell>
+      <cell col="3" row="5"></cell>
+      <cell col="4" row="5" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6"></cell>
+      <cell col="1" row="6"></cell>
+      <cell col="2" row="6"></cell>
+      <cell col="3" row="6"></cell>
+      <cell col="4" row="6" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7"></cell>
+      <cell col="1" row="7"></cell>
+      <cell col="2" row="7"></cell>
+      <cell col="3" row="7"></cell>
+      <cell col="4" row="7" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="8"></cell>
+      <cell col="1" row="8"></cell>
+      <cell col="2" row="8"></cell>
+      <cell col="3" row="8"></cell>
+      <cell col="4" row="8" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="9"></cell>
+      <cell col="1" row="9"></cell>
+      <cell col="2" row="9"></cell>
+      <cell col="3" row="9"></cell>
+      <cell col="4" row="9" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="10"></cell>
+      <cell col="1" row="10"></cell>
+      <cell col="2" row="10"></cell>
+      <cell col="3" row="10"></cell>
+      <cell col="4" row="10" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="11"></cell>
+      <cell col="1" row="11"></cell>
+      <cell col="2" row="11"></cell>
+      <cell col="3" row="11"></cell>
+      <cell col="4" row="11" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="12"></cell>
+      <cell col="1" row="12"></cell>
+      <cell col="2" row="12"></cell>
+      <cell col="3" row="12"></cell>
+      <cell col="4" row="12" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="13"></cell>
+      <cell col="1" row="13"></cell>
+      <cell col="2" row="13"></cell>
+      <cell col="3" row="13"></cell>
+      <cell col="4" row="13" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="14"></cell>
+      <cell col="1" row="14"></cell>
+      <cell col="2" row="14"></cell>
+      <cell col="3" row="14"></cell>
+      <cell col="4" row="14" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="15"></cell>
+      <cell col="1" row="15"></cell>
+      <cell col="2" row="15"></cell>
+      <cell col="3" row="15"></cell>
+      <cell col="4" row="15" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="16"></cell>
+      <cell col="1" row="16"></cell>
+      <cell col="2" row="16"></cell>
+      <cell col="3" row="16"></cell>
+      <cell col="4" row="16" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="17"></cell>
+      <cell col="1" row="17"></cell>
+      <cell col="2" row="17"></cell>
+      <cell col="3" row="17"></cell>
+      <cell col="4" row="17" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="18"></cell>
+      <cell col="1" row="18"></cell>
+      <cell col="2" row="18"></cell>
+      <cell col="3" row="18"></cell>
+      <cell col="4" row="18" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="19"></cell>
+      <cell col="1" row="19"></cell>
+      <cell col="2" row="19"></cell>
+      <cell col="3" row="19"></cell>
+      <cell col="4" row="19" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="20"></cell>
+      <cell col="1" row="20"></cell>
+      <cell col="2" row="20"></cell>
+      <cell col="3" row="20"></cell>
+      <cell col="4" row="20" colspan="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="21" colspan="6">80㎜×130㎜(보존용지(1종) 120g/㎡)</cell>
+    </row>
+  </table>
+</annex>

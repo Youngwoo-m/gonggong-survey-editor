@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표7" gubun="별표" no="7" title="지적서고의 기준면적(제65조제2항제2호 관련)" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162454217">
+  <table rows="9" cols="2">
+    <row>
+      <cell col="0" row="0" colspan="2">■ 공간정보의 구축 및 관리 등에 관한 법률 시행규칙 [별표 7]</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" colspan="2">지적서고의 기준면적(제65조제2항제2호 관련)</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">지적공부 등록 필지 수</cell>
+      <cell col="1" row="2">지적서고의 기준면적</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">10만필지 이하</cell>
+      <cell col="1" row="3">80제곱미터</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">10만필지 초과
+20만필지 이하</cell>
+      <cell col="1" row="4">110제곱미터</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">20만필지 초과
+30만필지 이하</cell>
+      <cell col="1" row="5">130제곱미터</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">30만필지 초과
+40만필지 이하</cell>
+      <cell col="1" row="6">150제곱미터</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">40만필지 초과
+50만필지 이하</cell>
+      <cell col="1" row="7">165제곱미터</cell>
+    </row>
+    <row>
+      <cell col="0" row="8">50만필지 초과</cell>
+      <cell col="1" row="8">180제곱미터에 60만필지를 초과하는 10만필지 마다 10제곱미터를 가산한 면적</cell>
+    </row>
+  </table>
+</annex>

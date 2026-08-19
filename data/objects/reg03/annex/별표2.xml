@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표2" gubun="별표" no="2" title="직각좌표의 기준(제7조제3항 관련)" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=166005099">
+  <table rows="7" cols="5">
+    <row>
+      <cell col="0" row="0" colspan="5">■ 공간정보의 구축 및 관리 등에 관한 법률 시행령 [별표 2] &lt;개정 2015.6.1.&gt;
+직각좌표의 기준(제7조제3항 관련)
+1. 직각좌표계 원점</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">명칭</cell>
+      <cell col="1" row="1">원점의 경위도</cell>
+      <cell col="2" row="1">투영원점의 가산(加算)수치</cell>
+      <cell col="3" row="1">원점축척계수</cell>
+      <cell col="4" row="1">적용 구역</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">서부좌표계</cell>
+      <cell col="1" row="2">경도: 동경 125° 00′
+위도: 북위 38° 00′</cell>
+      <cell col="2" row="2">X(N) 600,000m
+ Y(E) 200,000m</cell>
+      <cell col="3" row="2">1.0000</cell>
+      <cell col="4" row="2">동경 124°~126°</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">중부좌표계</cell>
+      <cell col="1" row="3">경도: 동경 127° 00′
+위도: 북위 38° 00′</cell>
+      <cell col="2" row="3">X(N) 600,000m
+ Y(E) 200,000m</cell>
+      <cell col="3" row="3">1.0000</cell>
+      <cell col="4" row="3">동경 126°~128°</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">동부좌표계</cell>
+      <cell col="1" row="4">경도: 동경 129° 00′
+위도: 북위 38° 00′</cell>
+      <cell col="2" row="4">X(N) 600,000m
+ Y(E) 200,000m</cell>
+      <cell col="3" row="4">1.0000</cell>
+      <cell col="4" row="4">동경 128°~130°</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">동해좌표계</cell>
+      <cell col="1" row="5">경도: 동경 131° 00′
+위도: 북위 38° 00′</cell>
+      <cell col="2" row="5">X(N) 600,000m
+ Y(E) 200,000m</cell>
+      <cell col="3" row="5">1.0000</cell>
+      <cell col="4" row="5">동경 130°~132°</cell>
+    </row>
+    <row>
+      <cell col="0" row="6" colspan="5">비고
+  가. 각 좌표계에서의 직각좌표는 다음의 조건에 따라 TㆍM(Transverse Mercator, 횡단 머케이터) 방법으로 표시하고, 원점의 좌표는 (X=0, Y=0)으로 한다.
+    1) X축은 좌표계 원점의 자오선에 일치하여야 하고, 진북방향을 정(+)으로 표시하며, Y축은 X축에 직교하는 축으로서 진동방향을 정(+)으로 한다.
+    2) 세계측지계에 따르지 아니하는 지적측량의 경우에는 가우스상사이중투영법으로 표시하되, 직각좌표계 투영원점의 가산(加算)수치를 각각 X(N) 500,000미터(제주도지역 550,000미터), Y(E) 200,000m로 하여 사용할 수 있다.
+  나. 국토교통부장관은 지리정보의 위치측정을 위하여 필요하다고 인정할 때에는 직각좌표의 기준을 따로 정할 수 있다. 이 경우 국토교통부장관은 그 내용을 고시하여야 한다.
+2. 지적측량에 사용되는 구소삼각지역의 직각좌표계 원점</cell>
+    </row>
+  </table>
+  <table rows="13" cols="2">
+    <row>
+      <cell col="0" row="0">명칭</cell>
+      <cell col="1" row="0">원점의 경위도</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">망산원점</cell>
+      <cell col="1" row="1">경도: 동경 126°22′24&quot;. 596 
+위도: 북위 37°43′07&quot;. 060</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">계양원점</cell>
+      <cell col="1" row="2">경도: 동경 126°42′49&quot;. 685
+위도: 북위 37°33′01&quot;. 124</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">조본원점</cell>
+      <cell col="1" row="3">경도: 동경 127°14′07&quot;. 397
+위도: 북위 37°26′35&quot;. 262</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">가리원점</cell>
+      <cell col="1" row="4">경도: 동경 126°51′59&quot;. 430
+위도: 북위 37°25′30&quot;. 532</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">등경원점</cell>
+      <cell col="1" row="5">경도: 동경 126°51′32&quot;. 845
+위도: 북위 37°11′52&quot;. 885</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">고초원점</cell>
+      <cell col="1" row="6">경도: 동경 127°14′41&quot;. 585
+위도: 북위 37°09′03&quot;. 530</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">율곡원점</cell>
+      <cell col="1" row="7">경도: 동경 128°57′30&quot;. 916
+위도: 북위 35°57′21&quot;. 322</cell>
+    </row>
+    <row>
+      <cell col="0" row="8">현창원점</cell>
+      <cell col="1" row="8">경도: 동경 128°46′03&quot;. 947
+위도: 북위 35°51′46&quot;. 967</cell>
+    </row>
+    <row>
+      <cell col="0" row="9">구암원점</cell>
+      <cell col="1" row="9">경도: 동경 128°35′46&quot;. 186
+위도: 북위 35°51′30&quot;. 878</cell>
+    </row>
+    <row>
+      <cell col="0" row="10">금산원점</cell>
+      <cell col="1" row="10">경도: 동경 128°17′26&quot;. 070
+위도: 북위 35°43′46&quot;. 532</cell>
+    </row>
+    <row>
+      <cell col="0" row="11">소라원점</cell>
+      <cell col="1" row="11">경도: 동경 128°43′36&quot;. 841
+위도: 북위 35°39′58&quot;. 199</cell>
+    </row>
+    <row>
+      <cell col="0" row="12" colspan="2">비고
+  가. 조본원점ㆍ고초원점ㆍ율곡원점ㆍ현창원점 및 소라원점의 평면직각종횡선수치의 단위는 미터로 하고, 망산원점ㆍ계양원점ㆍ가리원점ㆍ등경원점ㆍ구암원점 및 금산원점의 평면직각종횡선수치의 단위는 간(間)으로 한다. 이 경우 각각의 원점에 대한 평면직각종횡선수치는 0으로 한다.
+  나. 특별소삼각측량지역[전주, 강경, 마산, 진주, 광주(光州), 나주(羅州), 목포, 군산, 울릉도 등]에 분포된 소삼각측량지역은 별도의 원점을 사용할 수 있다.</cell>
+    </row>
+  </table>
+  <table rows="1" cols="1">
+    <row>
+      <cell col="0" row="0"></cell>
+    </row>
+  </table>
+</annex>

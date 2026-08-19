@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="서식97" gubun="서식" no="97" title="측량 및 토지이동조사 허가증" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=162455091">
+  <table rows="4" cols="3">
+    <row>
+      <cell col="0" row="0" colspan="3">제    호 
+측량 및 토지이동조사 허가증</cell>
+    </row>
+    <row>
+      <cell col="0" row="1" rowspan="2"></cell>
+      <cell col="1" row="1">사  진
+3㎝×4㎝
+(모자를 쓰지 않은 상반신으로 뒤 그림 없이  6개월 이내에 촬영한 것)</cell>
+      <cell col="2" row="1" rowspan="2"></cell>
+    </row>
+    <row>
+      <cell col="1" row="2">성   명 
+○○기 관 명</cell>
+    </row>
+    <row>
+      <cell col="0" row="3" colspan="3">55㎜×85㎜(보존용지(1종) 120g/㎡)</cell>
+    </row>
+  </table>
+  <table rows="1" cols="2">
+    <row>
+      <cell col="0" row="0">○ ○ 기 관 장</cell>
+      <cell col="1" row="0">직인</cell>
+    </row>
+  </table>
+  <table rows="3" cols="1">
+    <row>
+      <cell col="0" row="0">(뒤 쪽)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">측량 및 토지이동조사 허가증
+소속  /  직급:
+성         명:      (생년월일:        )
+측량업의 종류: 
+   위 사람은「공간정보의 구축 및 관리 등에 관한 법률」 제101조제1항에 따라  토지ㆍ건물ㆍ공유수면 출입 및 일시 사용 등이 가능함을 허가합니다.
+년     월    일</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">1. 다른 사람에게 대여하거나 목적 외 사용을 할 수 없습니다.
+2. 측량 및 토지이동조사 시에 반드시 이 허가증을 패용하여야 합니다.</cell>
+    </row>
+  </table>
+  <table rows="2" cols="1">
+    <row>
+      <cell col="0" row="0">[별지 제97호서식] &lt;개정 2021. 8. 27.&gt;</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">(앞 쪽)</cell>
+    </row>
+  </table>
+</annex>
