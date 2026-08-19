@@ -6,7 +6,7 @@
    여기서는 그 XML 을 읽어 화면에 진짜 표로 그린다.
    ============================================================ */
 
-import { toMathML } from "./eqmath.js?v=20260823f";
+import { toMathML } from "./eqmath.js?v=20260823g";
 
 const RE_IMG = /<img\s+id="([\w.-]+)"\s*>(?:<\/img>)?/gi;
 // 본문이 인용하는 다른 규정 — 「…」 / 『…』
@@ -157,6 +157,16 @@ export function linkSelfRefs(html, hasJo) {
  * @param {string} html 이미 escape 된 글
  * @param {(gubun:string, no:string)=>boolean} hasAnx 그 별표가 있는가
  */
+/* 서식의 보기값 — 〔 〕 안에 든 것은 규범이 아니라 '이렇게 적으라' 는 본보기다.
+   규정 문언과 한눈에 갈라 보이도록 붉은 이탤릭으로 보인다(css .ex).
+   괄호는 지우지 아니한다 — 글로 내려받거나 붙여 넣어도 보기값임이 남는다. */
+const RE_SAMPLE = /〔([^〕]{1,300})〕/g;
+
+export function markSamples(html) {
+  return String(html).replace(RE_SAMPLE, (m, inner) =>
+    `<span class="ex" title="보기값입니다 — 규정 문언이 아닙니다">〔${inner}〕</span>`);
+}
+
 export function linkAnnexRefs(html, hasAnx) {
   if (!hasAnx) return html;
   /* 조와 마찬가지로, 앞의 법령 이름이 미치는 자리의 별표는 그 법령의
@@ -352,7 +362,8 @@ export function toHtml(obj) {
         continue;
       }
       flush(); row = null;
-      out.push(it.kind === "text" ? `<div class="bd-text">${esc(it.text)}</div>` : toHtml(it));
+      out.push(it.kind === "text"
+        ? `<div class="bd-text">${markSamples(esc(it.text))}</div>` : toHtml(it));
     }
     flush();
     return out.join("");
@@ -412,6 +423,7 @@ export async function renderBody(text, regId, store,
       h = linkLawRefs(h, resolveLaw);
       h = linkSelfRefs(h, hasJo);          // 같은 규정 안의 제○조 인용
       h = linkAnnexRefs(h, hasAnx);        // 별표·별지 인용
+      h = markSamples(h);                  // 서식의 보기값 〔…〕
       d.innerHTML = h;
       d.querySelectorAll("a.cite").forEach((a) => {
         a.onclick = (e) => {
@@ -421,6 +433,9 @@ export async function renderBody(text, regId, store,
           else onCite?.(a.dataset.reg, a.textContent, a.dataset.jo || "");
         };
       });
+    } else if (RE_SAMPLE.test(plain)) {
+      RE_SAMPLE.lastIndex = 0;
+      d.innerHTML = markSamples(esc(plain));
     } else {
       d.textContent = plain;
     }

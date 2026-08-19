@@ -819,3 +819,10 @@ a.cite.anx:hover { background: #FDF6E7; }
 .chip.tm-pick span { cursor: pointer; }
 .chip.tm-pick:has(span.on) { outline: 2px solid var(--ink); outline-offset: 1px; }
 .cmp-bar2 button:disabled { opacity: .45; cursor: default; }
+
+/* ---------- 서식의 보기값 ---------- */
+/* 〔 〕 안은 규범이 아니라 '이렇게 적으라' 는 본보기다. 규정 문언과
+   한눈에 갈라 보이도록 붉은 이탤릭으로 둔다. 인쇄에서도 살아야 하므로
+   빛깔만이 아니라 글꼴 기울기로도 가른다. */
+.ex { color: #C1502E; font-style: italic; }
+.bd-text .ex, .cmp-body .ex, td .ex, th .ex { color: #C1502E; font-style: italic; }
