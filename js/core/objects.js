@@ -6,7 +6,7 @@
    여기서는 그 XML 을 읽어 화면에 진짜 표로 그린다.
    ============================================================ */
 
-import { toMathML } from "./eqmath.js?v=20260823d";
+import { toMathML } from "./eqmath.js?v=20260823e";
 
 const RE_IMG = /<img\s+id="([\w.-]+)"\s*>(?:<\/img>)?/gi;
 // 본문이 인용하는 다른 규정 — 「…」 / 『…』
@@ -64,13 +64,22 @@ const RE_JO = /(?<!<[^>]{0,80})(?<![가-힣A-Za-z])(제\s*(\d+)\s*조(?:의\s*\d
 /* 앞의 법령 이름이 어디까지 미치는가 —
    「도로법」 제2조 및 제5조, 제7조 처럼 이음말로 이어진 조는 모두 그 법의 조이다.
    이음말과 조문 나열을 규칙 안에 넣어, 나열이 아무리 길어도 놓치지 않는다. */
-const CONN = "[\\s및과와,·’”\\)\\]]";
+/* 가운뎃점은 글자가 여럿이다 — 한글 가운뎃점(ㆍ U+318D)이 법령문에서
+   가장 흔한데 여기 빠져 있어, 「공공측량 작업규정」 제17조ㆍ제18조 의
+   제18조가 이 규정의 조로 이어졌다. 반각ㆍ전각 가운뎃점도 함께 넣는다. */
+const CONN = "[\\s및과와,·ㆍ∙•･・’”\\)\\]]";
 /* 범위로 이은 것도 그 법의 조다 — 「도로법」제2조부터 제5조까지.
    이음말 글자(CONN)만으로는 '부터·까지·내지' 를 넘지 못해, 그 제5조를 이 규정의
    제5조로 이어 링크를 걸고 검증에서도 없는 조라고 짚고 있었다. */
 const RANGE = "(?:부터|까지|내지)";
 const CONN2 = `(?:${CONN}|${RANGE})`;
-const CHAIN = `(?:${CONN2}*제\\s*\\d+\\s*조(?:의\\s*\\d+)?(?:\\s*제\\s*\\d+\\s*[항호])*)*${CONN2}*$`;
+/* 앞의 법령 이름이 미치는 자리에는 조뿐 아니라 별표ㆍ별지도 들어온다 —
+   「…법률 시행규칙」 제115조제2항 별표 13. 조만 사슬로 보면 그 별표를
+   이 규정의 별표로 이어 엉뚱한 곳으로 보낸다. */
+const ITEM = "(?:제\\s*\\d+\\s*조(?:의\\s*\\d+)?(?:\\s*제\\s*\\d+\\s*[항호])*|(?:별표|별지)\\s*제?\\s*\\d+\\s*(?:호(?:\\s*서식)?)?)";
+const CHAIN = `(?:${CONN2}*${ITEM})*${CONN2}*$`;
+/* 검증(core/validate.js)도 같은 사슬을 쓴다 — 두 벌을 두지 아니한다 */
+export const CITE_CHAIN = CHAIN;
 /* 법령 이름 뒤에 약칭을 괄호로 다는 자리 — 「…법률」(이하 "법"이라 한다) 제2조제3호.
    이 괄호를 넘기지 못해 그 제2조를 이 규정의 제2조로 잇고 있었다. 괄호 안에는
    따옴표와 한글이 들어 이음말 규칙(CONN)으로는 넘을 수 없다. */
@@ -150,10 +159,17 @@ export function linkSelfRefs(html, hasJo) {
  */
 export function linkAnnexRefs(html, hasAnx) {
   if (!hasAnx) return html;
+  /* 조와 마찬가지로, 앞의 법령 이름이 미치는 자리의 별표는 그 법령의
+     별표이지 이 규정의 별표가 아니다. 잣대 없이 걸었더니 성과심사 규정의
+     별표 13에서 「…법률 시행규칙」 별표 13 이 제 규정의 별표로 이어졌다. */
+  let lawBefore = false;
   return String(html).split(new RegExp('(<a[^]*?<\/a>)')).map((seg) => {
-    if (seg.startsWith("<a")) return seg;
-    return seg.replace(RE_ANNEX, (m, open, gubun, no, tail, close) => {
+    if (seg.startsWith("<a")) { lawBefore = /class="cite/.test(seg); return seg; }
+    const afterLaw = lawBefore;
+    lawBefore = false;
+    return seg.replace(RE_ANNEX, (m, open, gubun, no, tail, close, off, whole) => {
       if (!hasAnx(gubun, no)) return m;
+      if (!isSelfCite(whole.slice(0, off), afterLaw)) return m;
       const label = `${gubun} ${no}`;
       return `${open || ""}<a class="cite anx" href="#" data-anx="${esc(gubun)}"`
         + ` data-no="${esc(no)}" title="${esc(label)} 로 갑니다">${gubun} ${no}${tail || ""}</a>`
@@ -163,7 +179,9 @@ export function linkAnnexRefs(html, hasAnx) {
 }
 
 /* 별표 22 · 별표 제22호 · 「별표 22」 · 별지 제3호 서식 — 앞뒤 「」 는 남긴다 */
-const RE_ANNEX = /(&lt;|「)?(별표|별지)\s*제?\s*(\d+)\s*(호(?:\s*서식)?)?(&gt;|」)?/g;
+/* '호'가 붙지 아니한 때에는 뒤의 빈칸을 물지 아니한다 — 물면 링크 글에
+   빈칸이 딸려 '별표 13 ' 처럼 보인다. */
+const RE_ANNEX = /(&lt;|「)?(별표|별지)\s*제?\s*(\d+)(?:\s*(호(?:\s*서식)?))?(&gt;|」)?/g;
 
 /** 본문에 박혀 있는 이미지 표식들의 id */
 export function imgIdsIn(text) {

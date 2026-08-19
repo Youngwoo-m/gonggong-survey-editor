@@ -1,30 +1,30 @@
 /* ============================================================
    main.js — 앱 조립 (1단계 프로토타입)
    ============================================================ */
-import * as M from "./core/model.js?v=20260823d";
-import { Project } from "./core/project.js?v=20260823d";
-import * as FS from "./adapters/fileio.js?v=20260823d";
-import * as AUTO from "./adapters/autosave.js?v=20260823d";
-import { TreeView } from "./ui/tree.js?v=20260823d";
-import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260823d";
-import { CompareView } from "./ui/compare.js?v=20260823d";
-import { VersionsView } from "./ui/versions.js?v=20260823d";
-import { HistoryView } from "./ui/history.js?v=20260823d";
-import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260823d";
-import { ValidateView } from "./ui/validate.js?v=20260823d";
-import { RefPicker } from "./ui/refpicker.js?v=20260823d";
-import { AIView } from "./ui/ai.js?v=20260823d";
-import { CiteCheckView } from "./ui/citecheck.js?v=20260823d";
-import { TermsView } from "./ui/terms.js?v=20260823d";
-import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260823d";
-import * as GH from "./adapters/github.js?v=20260823d";
-import { extractLines } from "./core/importer.js?v=20260823d";
-import { buildAuto } from "./core/structure.js?v=20260823d";
-import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260823d";
-import { ObjectStore, fitTable } from "./core/objects.js?v=20260823d";
-import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260823d";
-import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260823d";
-import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260823d";
+import * as M from "./core/model.js?v=20260823e";
+import { Project } from "./core/project.js?v=20260823e";
+import * as FS from "./adapters/fileio.js?v=20260823e";
+import * as AUTO from "./adapters/autosave.js?v=20260823e";
+import { TreeView } from "./ui/tree.js?v=20260823e";
+import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260823e";
+import { CompareView } from "./ui/compare.js?v=20260823e";
+import { VersionsView } from "./ui/versions.js?v=20260823e";
+import { HistoryView } from "./ui/history.js?v=20260823e";
+import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260823e";
+import { ValidateView } from "./ui/validate.js?v=20260823e";
+import { RefPicker } from "./ui/refpicker.js?v=20260823e";
+import { AIView } from "./ui/ai.js?v=20260823e";
+import { CiteCheckView } from "./ui/citecheck.js?v=20260823e";
+import { TermsView } from "./ui/terms.js?v=20260823e";
+import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260823e";
+import * as GH from "./adapters/github.js?v=20260823e";
+import { extractLines } from "./core/importer.js?v=20260823e";
+import { buildAuto } from "./core/structure.js?v=20260823e";
+import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260823e";
+import { ObjectStore, fitTable } from "./core/objects.js?v=20260823e";
+import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260823e";
+import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260823e";
+import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260823e";
 
 const $ = (s) => document.querySelector(s);
 const NL = "\n";

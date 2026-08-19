@@ -6,9 +6,10 @@
      경고 : 사람이 판단해야 하는 것
      정보 : 알아두면 좋은 것
    ============================================================ */
-import * as M from "./model.js?v=20260823d";
-import { checkCrossRefs, checkTerms, checkAnnexClash } from "./xrefs.js?v=20260823d";
-import { QUALITY_ELEMENTS, elementsOf } from "./quality.js?v=20260823d";
+import * as M from "./model.js?v=20260823e";
+import { CITE_CHAIN } from "./objects.js?v=20260823e";
+import { checkCrossRefs, checkTerms, checkAnnexClash } from "./xrefs.js?v=20260823e";
+import { QUALITY_ELEMENTS, elementsOf } from "./quality.js?v=20260823e";
 
 export const LEVELS_OF = { 오류: 0, 경고: 1, 정보: 2 };
 
@@ -40,13 +41,10 @@ const RE_ALIAS = /\((?:이하|약칭)[^()]*\)/g;
 
 /* 앞의 법령·규정 이름이 미치는 자리인가 — 그 조는 이 규정의 조가 아니다.
    본문 링크를 거는 규칙(core/objects.js)과 같은 잣대를 쓴다. */
-const CONN = "[\\s및과와,·’”\\)\\]]";
-/* 범위로 이은 것도 그 법의 조다 — 「도로법」제2조부터 제5조까지.
-   core/objects.js 에 같은 규칙이 있다. 둘이 갈라지면 화면에 걸린 링크와
-   검증 결과가 서로 어긋난다 — 한 곳으로 모으는 일은 코드 정리(3단계)에서 한다. */
-const RANGE = "(?:부터|까지|내지)";
-const CONN2 = `(?:${CONN}|${RANGE})`;
-const CHAIN = `(?:${CONN2}*제\\s*\\d+\\s*조(?:의\\s*\\d+)?(?:\\s*제\\s*\\d+\\s*[항호])*)*${CONN2}*$`;
+/* 규칙을 베끼지 아니하고 본문 링크와 같은 것을 가져다 쓴다. 두 벌을 두었더니
+   한쪽만 고칠 때마다 화면의 링크와 검증 결과가 어긋났다 —
+   가운뎃점(ㆍ)과 별표 사슬이 그렇게 갈라졌다. */
+const CHAIN = CITE_CHAIN;
 const OTHER_LAW = [
   new RegExp(`[」』]${CHAIN}`),                                   // 「도로법」 제2조 및 제5조
   new RegExp(`(?<![가-힣A-Za-z])(?:시행규칙|시행령|법률|법|영|규칙)${CHAIN}`),
