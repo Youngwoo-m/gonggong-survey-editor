@@ -1,11 +1,12 @@
 /* ============================================================
    ui/compare.js — 개정 전후 비교표 화면
    ============================================================ */
-import { buildComparison, KIND_LIST } from "../core/diff.js?v=20260822e";
-import { writeXlsx } from "../core/xlsx.js?v=20260822e";
-import * as M from "../core/model.js?v=20260822e";
-import { regFingerprint } from "../core/xrefs.js?v=20260822e";
-import { stripImgTags } from "../core/objects.js?v=20260822e";
+import { buildComparison, KIND_LIST } from "../core/diff.js?v=20260822h";
+import { writeXlsx } from "../core/xlsx.js?v=20260822h";
+import * as M from "../core/model.js?v=20260822h";
+import { regFingerprint } from "../core/xrefs.js?v=20260822h";
+import { buildAmendment } from "../core/amend.js?v=20260822h";
+import { stripImgTags } from "../core/objects.js?v=20260822h";
 
 const KIND_CLASS = {
   "신설": "k-new", "삭제": "k-del", "이동": "k-mov", "이관": "k-xfer",
@@ -17,7 +18,8 @@ export class CompareView {
     this.project = project;
     this.el = null;
     this.opts = { onlyChanged: true, joOnly: false, excludePureMove: false };
-    this.form = "official";   // "official" 신구조문 대비표 · "detail" 상세 비교표
+    this.form = "official";   // "official" 신구조문 대비표 · "detail" 상세 비교표 · "amend" 개정문
+    this.whole = false;       // 전부개정으로 적을 것인가
     this.result = null;
     this.fromId = null;
     this.toId = null;
@@ -106,6 +108,8 @@ export class CompareView {
     this.el.querySelector("#cmpNoPureMove").onchange = (e) => {
       this.opts.excludePureMove = e.target.checked; this.refresh();
     };
+    this.el.querySelector("#cmpWhole").onchange = (e) => { this.whole = e.target.checked; this.refresh(); };
+    this.el.querySelector('[data-x="copy"]').onclick = () => this.copyAmend();
     this.el.querySelector('[data-x="xlsx"]').onclick = () => this.exportXlsx();
     this.el.querySelector('[data-x="html"]').onclick = () => this.exportHtml();
     this.el.querySelector('[data-x="print"]').onclick = () => window.print();
@@ -157,9 +161,22 @@ export class CompareView {
       `<span class="chip total">변경 <b>${summary.변경}</b></span>` + chips;
 
     this.el.querySelector("#cmpCount").textContent = `${rows.length}행 표시`;
-    this.el.querySelector("#cmpTable").innerHTML =
-      this.form === "official" ? this._officialTable(rows) : this._table(rows);
-    this.el.querySelector("#cmpTable").className = this.form === "official" ? "official" : "";
+    const tbl = this.el.querySelector("#cmpTable");
+    const amd = this.el.querySelector("#cmpAmend");
+    const isAmend = this.form === "amend";
+    tbl.classList.toggle("hidden", isAmend);
+    amd.classList.toggle("hidden", !isAmend);
+    this.el.querySelector("#cmpWholeWrap").classList.toggle("hidden", !isAmend);
+    this.el.querySelector("#btnCmpCopy").classList.toggle("hidden", !isAmend);
+    this.el.querySelector("#btnCmpXlsx").classList.toggle("hidden", isAmend);
+    if (isAmend) {
+      this.amend = buildAmendment(rows, { regName: this._regTitle(), whole: this.whole });
+      amd.innerHTML = this._amendHtml(this.amend);
+      this.el.querySelector("#cmpCount").textContent = `${this.amend.items.length}개 지시문`;
+    } else {
+      tbl.innerHTML = this.form === "official" ? this._officialTable(rows) : this._table(rows);
+      tbl.className = this.form === "official" ? "official" : "";
+    }
   }
 
   /* ============================================================
@@ -314,19 +331,75 @@ export class CompareView {
       양식 <select id="cmpForm">
         <option value="official">신구조문 대비표</option>
         <option value="detail">상세 비교표 (변경 사유 포함)</option>
+        <option value="amend">개정문 (개정 지시문)</option>
       </select></label>
     <label><input type="checkbox" id="cmpOnlyChanged" checked> 변경된 항목만</label>
     <label><input type="checkbox" id="cmpJoOnly"> 조문만 (편·장 제외)</label>
     <label title="본문·제목 변경 없이 편제 위치만 바뀐 항목을 숨깁니다 ('이동·수정'은 남습니다)"><input type="checkbox" id="cmpNoPureMove"> 내용 변경 없는 이동 제외</label>
+    <label id="cmpWholeWrap" class="hidden" title="머리말을 '전부를 다음과 같이 개정한다' 로 적습니다"><input type="checkbox" id="cmpWhole"> 전부개정</label>
     <span id="cmpCount" class="hint"></span>
     <div class="spacer"></div>
-    <button data-x="xlsx" class="primary">엑셀(.xlsx) 내보내기</button>
+    <button data-x="copy" id="btnCmpCopy" class="hidden">개정문 복사</button>
+    <button data-x="xlsx" id="btnCmpXlsx" class="primary">엑셀(.xlsx) 내보내기</button>
     <button data-x="html">HTML 내보내기</button>
     <button data-x="print">인쇄</button>
   </div>
 
-  <div class="cmp-body"><table id="cmpTable"></table></div>
+  <div class="cmp-body"><table id="cmpTable"></table><div id="cmpAmend" class="amend hidden"></div></div>
 </div>`;
+  }
+
+  /** 개정문에 적을 규정 이름 — 「…」 안에 들어갈 이름 */
+  _regTitle() {
+    const n = this.project.regNodes.find((x) => x.targetId === this.targetId);
+    if (n) return n.title;
+    const m = this.project.baseMeta || {};
+    return (m.targets || []).map((t) => t.name).join("」·「") || this.project.baseName || "이 규정";
+  }
+
+  /**
+   * 개정문 — 고시에 실제로 실리는 글.
+   * 지시문 한 줄이 한 덩이이고, 전문을 붙이는 것(신설·전문개정)은 들여쓴다.
+   */
+  _amendHtml(am) {
+    if (!am.items.length) {
+      return `<div class="amend-head">${esc(am.head)}</div>`
+        + `<div class="none">고칠 것이 없습니다. 개정 전후를 다시 골라 보세요.</div>`;
+    }
+    const KIND = { 자구: "자구", 제목: "제목", 전문개정: "전문개정",
+                   신설: "신설", 삭제: "삭제", 이동: "이동" };
+    const body = am.items.map((it) => `
+      <div class="amend-item ${KIND_CLASS[it.kind] || ""}">
+        <span class="amend-tag">${esc(KIND[it.kind] || it.kind)}</span>
+        <div class="amend-text">${esc(it.text)}${
+          it.body ? `<div class="amend-body">${esc(it.body)}</div>` : ""}</div>
+      </div>`).join("");
+    return `<div class="amend-head">${esc(am.head)}</div>${body}`;
+  }
+
+  /** 개정문을 글자 그대로 클립보드에 — 한/글에 그대로 붙여 넣는다 */
+  async copyAmend() {
+    const text = this.amend ? this.amend.text : "";
+    try {
+      await navigator.clipboard.writeText(text);
+      this._flash("개정문을 복사했습니다 — 한/글에 그대로 붙여 넣으십시오.");
+    } catch {
+      // 클립보드를 막아 둔 브라우저에서는 골라 둔다
+      const ta = document.createElement("textarea");
+      ta.value = text; ta.style.position = "fixed"; ta.style.left = "-9999px";
+      document.body.appendChild(ta); ta.select();
+      try { document.execCommand("copy"); this._flash("개정문을 복사했습니다."); }
+      catch { this._flash("복사하지 못했습니다 — 글을 직접 골라 복사하십시오."); }
+      ta.remove();
+    }
+  }
+
+  _flash(msg) {
+    const el = this.el && this.el.querySelector("#cmpCount");
+    if (!el) return;
+    const old = el.textContent;
+    el.textContent = msg;
+    setTimeout(() => { if (el.textContent === msg) el.textContent = old; }, 2600);
   }
 
   /** 신구조문 대비표 — 현행 · 개정안 두 칸 */
@@ -474,6 +547,24 @@ export class CompareView {
     download(blob, this._fileBase() + ".xlsx");
   }
 
+  /** 개정문 — 인쇄해서 그대로 올리는 꼴 (A4 세로) */
+  _exportHtmlAmend(pt) {
+    const am = this.amend || buildAmendment(this.result.rows,
+      { regName: this._regTitle(), whole: this.whole });
+    const css = `@page{size:A4 portrait;margin:25mm 22mm}
+body{font-family:"맑은 고딕",sans-serif;font-size:11pt;line-height:2;margin:0;color:#000}
+h1{font-size:14pt;margin:0 0 18px;font-weight:700}
+p.it{margin:0 0 10px;text-indent:0}
+pre.bd{font-family:inherit;font-size:10.5pt;margin:4px 0 12px 16px;white-space:pre-wrap;line-height:1.9}`;
+    const items = am.items.map((it) =>
+      `<p class="it">${esc(it.text)}</p>${it.body ? `<pre class="bd">${esc(it.body)}</pre>` : ""}`).join("");
+    const html = `<!doctype html><html lang="ko"><meta charset="utf-8">
+<title>개정문 — ${esc(this._targetName())}</title><style>${css}</style>
+<h1>${esc(am.head)}</h1>${items}</html>`;
+    download(new Blob([html], { type: "text/html;charset=utf-8" }),
+      this._fileBase().replace("개정전후_비교표", "개정문") + ".html");
+  }
+
   /** 신구조문 대비표 — 인쇄해서 붙임으로 쓰는 꼴 (A4 세로, 두 칸) */
   _exportHtmlOfficial(rows, pt) {
     const css = `@page{size:A4 portrait;margin:20mm 18mm}
@@ -502,6 +593,7 @@ u.mk{text-decoration:underline}
   exportHtml() {
     const { rows, summary } = this.result;
     const pt = this._pairText();
+    if (this.form === "amend") return this._exportHtmlAmend(pt);
     if (this.form === "official") return this._exportHtmlOfficial(rows, pt);
     const css = `body{font-family:"맑은 고딕",sans-serif;font-size:11pt;margin:24px;color:#1F2C35}
 h1{font-size:17pt;margin:0 0 4px}p.sub{color:#7B8A92;font-size:9.5pt;margin:0 0 14px;line-height:1.6}

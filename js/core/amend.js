@@ -69,6 +69,25 @@ export function addrOf(label, at) {
   return s;
 }
 
+/* ---------- 조사 ----------
+   법령문은 조사를 가려 쓴다. "을/를" 은 받침 유무로, "으로/로" 는 받침이
+   있되 'ㄹ' 이 아닐 때만 '으로' 를 쓴다. 마지막 글자로 가린다.
+   조문 번호에도 쓴다 — 제5조'를', 제1장'을'. */
+
+/** 마지막 글자에 받침이 있는가 — 없으면 null, 있으면 종성 번호 */
+function jong(word) {
+  const ch = String(word || "").trim().slice(-1);
+  const c = ch.charCodeAt(0);
+  if (!(c >= 0xac00 && c <= 0xd7a3)) return null;   // 한글이 아니면 알 수 없다
+  return (c - 0xac00) % 28;                          // 0 이면 받침 없음
+}
+export const eul = (w) => { const j = jong(w); return j === null ? "을(를)" : (j ? "을" : "를"); };
+export const ro = (w) => {
+  const j = jong(w);
+  if (j === null) return "(으)로";
+  return (j === 0 || j === 8) ? "로" : "으로";       // 8 = ㄹ
+};
+
 /* ---------- 자구변경 짝짓기 ---------- */
 
 /**
@@ -97,9 +116,45 @@ export function pairChanges(runs, before) {
     i -= 1;
     from = from.trim(); to = to.trim();
     if (!from && !to) continue;
+
+    /* 한쪽만 있는 것 — 넣기만 하거나 빼기만 한 자리.
+       개정문은 "…을 넣는다" 라고 적지 않는다. 이웃한 말을 함께 물어
+       갈음하는 꼴로 적는다 — 그래야 어디에 넣는지가 글에 드러난다.
+
+         제1조 중 "필요한"을 "필요한 작업방법, 장비기준"으로 한다
+
+       앞말이 없으면 뒷말을 문다. 둘 다 없으면 (조문 전체가 새 글이면)
+       그대로 두고 전문개정 쪽에서 다룬다. */
+    if (!from || !to) {
+      const prev = lastWord(runs, i);
+      const next = firstWord(runs, i);
+      if (prev) { from = `${prev} ${from}`.trim(); to = `${prev} ${to}`.trim(); }
+      else if (next) { from = `${from} ${next}`.trim(); to = `${to} ${next}`.trim(); }
+    }
     out.push({ from, to, at });
   }
   return out;
+}
+
+
+/** 이 자리 앞의 마지막 어절 (= 도막에서) */
+function lastWord(runs, idx) {
+  for (let k = idx; k >= 0; k -= 1) {
+    if (runs[k].t !== "=") continue;
+    const w = runs[k].s.trim().split(/\s+/).filter(Boolean).pop();
+    if (w) return w;
+  }
+  return "";
+}
+
+/** 이 자리 뒤의 첫 어절 (= 도막에서) */
+function firstWord(runs, idx) {
+  for (let k = idx + 1; k < runs.length; k += 1) {
+    if (runs[k].t !== "=") continue;
+    const w = runs[k].s.trim().split(/\s+/).filter(Boolean)[0];
+    if (w) return w;
+  }
+  return "";
 }
 
 /**
@@ -155,27 +210,47 @@ export function buildAmendment(rows, opts = {}) {
     ? `「${regName}」 전부를 다음과 같이 개정한다.`
     : `「${regName}」 일부를 다음과 같이 개정한다.`;
 
+  /* 같은 번호가 삭제와 신설로 함께 나오는 자리 — 마디를 통째로 다시 쓴 것이다.
+     조문 마디(편·장·절)는 트리에서 새로 만들면 id 가 달라져, 견주기에서는
+     '옛것 삭제 + 새것 신설' 로 잡힌다. 그대로 적으면
+       제1장을 삭제한다.  제1장을 다음과 같이 신설한다.
+     가 되어 말이 되지 않는다. 한 줄로 묶어 전문개정으로 적는다. */
+  const gone = new Set(), born = new Map();
+  for (const r of rows || []) {
+    if (r.kind === "삭제" && r.before) gone.add(r.before.label);
+    if (r.kind === "신설" && r.after) born.set(r.after.label, r);
+  }
+  const remade = new Set([...gone].filter((k) => born.has(k)));
+
   const items = [];
   for (const r of rows || []) {
     const b = r.before, a = r.after;
     if (r.kind === "유지") continue;
 
+    if (r.kind === "삭제" && b && remade.has(b.label)) continue;   // 짝이 아래에서 적힌다
+    if (r.kind === "신설" && a && remade.has(a.label)) {
+      items.push({ kind: "전문개정", label: a.label,
+        text: `${a.label}${eul(a.label)} 다음과 같이 한다.`,
+        body: fullText(a), order: a.label });
+      continue;
+    }
+
     if (r.kind === "신설") {
       items.push({ kind: "신설", label: a ? a.label : "",
-        text: `${a ? a.label : ""}를 다음과 같이 신설한다.`,
+        text: `${a ? a.label : ""}${eul(a ? a.label : "")} 다음과 같이 신설한다.`,
         body: fullText(a), order: a ? a.label : "" });
       continue;
     }
     if (r.kind === "삭제") {
       items.push({ kind: "삭제", label: b ? b.label : "",
-        text: `${b ? b.label : ""}를 삭제한다.`, order: b ? b.label : "" });
+        text: `${b ? b.label : ""}${eul(b ? b.label : "")} 삭제한다.`, order: b ? b.label : "" });
       continue;
     }
     if (r.kind === "이동") {
       // 자리만 옮긴 것 — 번호가 바뀌었을 때만 적는다
       if (b && a && b.label !== a.label) {
         items.push({ kind: "이동", label: b.label,
-          text: `${b.label}를 ${a.label}로 한다.`, order: b.label });
+          text: `${b.label}${eul(b.label)} ${a.label}${ro(a.label)} 한다.`, order: b.label });
       }
       continue;
     }
@@ -185,13 +260,13 @@ export function buildAmendment(rows, opts = {}) {
     const numberMoved = b && a && b.label !== a.label;
     if (numberMoved) {
       items.push({ kind: "이동", label: b.label,
-        text: `${b.label}를 ${a.label}로 한다.`, order: b.label });
+        text: `${b.label}${eul(b.label)} ${a.label}${ro(a.label)} 한다.`, order: b.label });
     }
     const label = a ? a.label : (b ? b.label : "");
 
     if (whole) {
       items.push({ kind: "전문개정", label,
-        text: `${label}를 다음과 같이 한다.`, body: fullText(a), order: label });
+        text: `${label}${eul(label)} 다음과 같이 한다.`, body: fullText(a), order: label });
       continue;
     }
 
@@ -222,28 +297,11 @@ function groupByAddr(pairs, label) {
   return [...map];
 }
 
-/* ---------- 조사 ----------
-   법령문은 조사를 가려 쓴다. "을/를" 은 받침 유무로, "으로/로" 는 받침이
-   있되 'ㄹ' 이 아닐 때만 '으로' 를 쓴다. 따옴표 안 마지막 글자로 가린다. */
-
-/** 마지막 글자에 받침이 있는가 — 없으면 null, 있으면 종성 번호 */
-function jong(word) {
-  const ch = String(word || "").trim().slice(-1);
-  const c = ch.charCodeAt(0);
-  if (!(c >= 0xac00 && c <= 0xd7a3)) return null;   // 한글이 아니면 알 수 없다
-  return (c - 0xac00) % 28;                          // 0 이면 받침 없음
-}
-const eul = (w) => { const j = jong(w); return j === null ? "을(를)" : (j ? "을" : "를"); };
-const ro = (w) => {
-  const j = jong(w);
-  if (j === null) return "(으)로";
-  return (j === 0 || j === 8) ? "로" : "으로";       // 8 = ㄹ
-};
-
 /** "가"를 "나"로 하고, "다"를 "라"로 한다 */
 function joinPairs(pairs) {
   const parts = pairs.map((p) => {
     if (p.from && p.to) return { s: `“${p.from}”${eul(p.from)} “${p.to}”${ro(p.to)}`, verb: "하" };
+    // 이웃 말을 물리지 못한 자리 (조문 첫머리·끝) 는 넣거나 빼는 꼴로 적는다
     if (!p.from) return { s: `“${p.to}”${eul(p.to)}`, verb: "넣" };
     return { s: `“${p.from}”${eul(p.from)}`, verb: "빼" };
   });

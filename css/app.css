@@ -754,3 +754,22 @@ button.mini2.apply:disabled{background:var(--panel2);color:var(--muted);
 
 /* 신구조문 대비표 — 현행 칸에서 앞으로 바뀔 대목 (개정안 칸의 붉은 밑줄과 짝) */
 #cmpTable.official u.mk-old { text-decoration: underline; color: #1C6FB8; font-weight: 700; }
+
+/* ── 개정문 (개정 지시문) ──────────────────────────────────
+   고시에 실제로 실리는 글이므로 표가 아니라 글줄로 보인다.
+   지시문 한 줄이 한 덩이이고, 전문을 붙이는 것은 들여쓴다. */
+.cmp-body .amend { padding: 18px 22px; line-height: 2; font-size: 13px; color: #1F2C35; }
+.cmp-body .amend.hidden, #cmpTable.hidden { display: none; }
+.amend-head { font-weight: 700; font-size: 14px; margin: 0 0 18px; }
+.amend-item { display: flex; gap: 10px; align-items: flex-start; margin: 0 0 9px; }
+.amend-tag { flex: 0 0 auto; font-size: 10px; padding: 2px 7px; border-radius: 9px;
+             background: #B9C5CB; color: #fff; margin-top: 4px; white-space: nowrap; }
+.amend-item.k-new .amend-tag { background: #2E7D6B; }
+.amend-item.k-del .amend-tag { background: #C1502E; }
+.amend-item.k-mov .amend-tag { background: #B07A1E; }
+.amend-item.k-edit .amend-tag { background: #44585F; }
+.amend-text { flex: 1 1 auto; min-width: 0; }
+.amend-body { margin: 5px 0 2px 6px; padding: 7px 10px; background: #F7F9FA;
+              border-left: 2px solid #C7D2D8; white-space: pre-wrap; font-size: 12px;
+              line-height: 1.85; color: #33454F; }
+#cmpWholeWrap { white-space: nowrap; }

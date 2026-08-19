@@ -22,8 +22,8 @@
 
    DOM 을 모른다.
    ============================================================ */
-import * as M from "./model.js?v=20260822e";
-import { isSelfCite, RE_JO_G } from "./objects.js?v=20260822e";
+import * as M from "./model.js?v=20260822h";
+import { isSelfCite, RE_JO_G } from "./objects.js?v=20260822h";
 
 /** 「규정 이름」 뒤에 붙은 조 — 규정 밖을 가리키는 인용 */
 const RE_CROSS = /[「『]([^」』]{2,60})[」』]\s*(?:[（(][^()（）]{0,40}[)）])?\s*제\s*(\d+)\s*조(?:의\s*(\d+))?/g;

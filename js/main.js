@@ -1,27 +1,27 @@
 /* ============================================================
    main.js — 앱 조립 (1단계 프로토타입)
    ============================================================ */
-import * as M from "./core/model.js?v=20260822e";
-import { Project } from "./core/project.js?v=20260822e";
-import * as FS from "./adapters/fileio.js?v=20260822e";
-import * as AUTO from "./adapters/autosave.js?v=20260822e";
-import { TreeView } from "./ui/tree.js?v=20260822e";
-import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260822e";
-import { CompareView } from "./ui/compare.js?v=20260822e";
-import { VersionsView } from "./ui/versions.js?v=20260822e";
-import { HistoryView } from "./ui/history.js?v=20260822e";
-import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260822e";
-import { ValidateView } from "./ui/validate.js?v=20260822e";
-import { RefPicker } from "./ui/refpicker.js?v=20260822e";
-import { AIView } from "./ui/ai.js?v=20260822e";
-import * as GH from "./adapters/github.js?v=20260822e";
-import { extractLines } from "./core/importer.js?v=20260822e";
-import { buildAuto } from "./core/structure.js?v=20260822e";
-import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260822e";
-import { ObjectStore, fitTable } from "./core/objects.js?v=20260822e";
-import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260822e";
-import { regFingerprint } from "./core/xrefs.js?v=20260822e";
-import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260822e";
+import * as M from "./core/model.js?v=20260822h";
+import { Project } from "./core/project.js?v=20260822h";
+import * as FS from "./adapters/fileio.js?v=20260822h";
+import * as AUTO from "./adapters/autosave.js?v=20260822h";
+import { TreeView } from "./ui/tree.js?v=20260822h";
+import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260822h";
+import { CompareView } from "./ui/compare.js?v=20260822h";
+import { VersionsView } from "./ui/versions.js?v=20260822h";
+import { HistoryView } from "./ui/history.js?v=20260822h";
+import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260822h";
+import { ValidateView } from "./ui/validate.js?v=20260822h";
+import { RefPicker } from "./ui/refpicker.js?v=20260822h";
+import { AIView } from "./ui/ai.js?v=20260822h";
+import * as GH from "./adapters/github.js?v=20260822h";
+import { extractLines } from "./core/importer.js?v=20260822h";
+import { buildAuto } from "./core/structure.js?v=20260822h";
+import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260822h";
+import { ObjectStore, fitTable } from "./core/objects.js?v=20260822h";
+import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260822h";
+import { regFingerprint } from "./core/xrefs.js?v=20260822h";
+import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260822h";
 
 const $ = (s) => document.querySelector(s);
 const NL = "\n";
