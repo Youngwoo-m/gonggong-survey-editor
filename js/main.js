@@ -1,29 +1,30 @@
 /* ============================================================
    main.js — 앱 조립 (1단계 프로토타입)
    ============================================================ */
-import * as M from "./core/model.js?v=20260823a";
-import { Project } from "./core/project.js?v=20260823a";
-import * as FS from "./adapters/fileio.js?v=20260823a";
-import * as AUTO from "./adapters/autosave.js?v=20260823a";
-import { TreeView } from "./ui/tree.js?v=20260823a";
-import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260823a";
-import { CompareView } from "./ui/compare.js?v=20260823a";
-import { VersionsView } from "./ui/versions.js?v=20260823a";
-import { HistoryView } from "./ui/history.js?v=20260823a";
-import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260823a";
-import { ValidateView } from "./ui/validate.js?v=20260823a";
-import { RefPicker } from "./ui/refpicker.js?v=20260823a";
-import { AIView } from "./ui/ai.js?v=20260823a";
-import { CiteCheckView } from "./ui/citecheck.js?v=20260823a";
-import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260823a";
-import * as GH from "./adapters/github.js?v=20260823a";
-import { extractLines } from "./core/importer.js?v=20260823a";
-import { buildAuto } from "./core/structure.js?v=20260823a";
-import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260823a";
-import { ObjectStore, fitTable } from "./core/objects.js?v=20260823a";
-import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260823a";
-import { regFingerprint } from "./core/xrefs.js?v=20260823a";
-import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260823a";
+import * as M from "./core/model.js?v=20260823d";
+import { Project } from "./core/project.js?v=20260823d";
+import * as FS from "./adapters/fileio.js?v=20260823d";
+import * as AUTO from "./adapters/autosave.js?v=20260823d";
+import { TreeView } from "./ui/tree.js?v=20260823d";
+import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260823d";
+import { CompareView } from "./ui/compare.js?v=20260823d";
+import { VersionsView } from "./ui/versions.js?v=20260823d";
+import { HistoryView } from "./ui/history.js?v=20260823d";
+import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260823d";
+import { ValidateView } from "./ui/validate.js?v=20260823d";
+import { RefPicker } from "./ui/refpicker.js?v=20260823d";
+import { AIView } from "./ui/ai.js?v=20260823d";
+import { CiteCheckView } from "./ui/citecheck.js?v=20260823d";
+import { TermsView } from "./ui/terms.js?v=20260823d";
+import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260823d";
+import * as GH from "./adapters/github.js?v=20260823d";
+import { extractLines } from "./core/importer.js?v=20260823d";
+import { buildAuto } from "./core/structure.js?v=20260823d";
+import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260823d";
+import { ObjectStore, fitTable } from "./core/objects.js?v=20260823d";
+import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260823d";
+import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260823d";
+import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260823d";
 
 const $ = (s) => document.querySelector(s);
 const NL = "\n";
@@ -67,6 +68,20 @@ const ai = new AIView(project, {
 const citecheck = new CiteCheckView({
   onJump: (id) => jumpToNode(id),
   onOpenRef: (regId) => { $("#refSelect2").value = regId; setRefDoc("ref2", regId); },
+});
+/* 용어 통일 결과 창 — 무엇이 어디서 어떻게 바뀌는지 보이고 나서 묻는다.
+   맞추는 일은 project.unifyTerms() 가 한다. */
+const termsView = new TermsView({
+  onJump: (id) => jumpToNode(id),
+  onApply: (canons) => {
+    const r = project.unifyTerms({ only: canons });
+    toast(r.count
+      ? `용어를 맞췄습니다 — ${r.count}곳 · 조문 ${r.nodes}개
+`
+        + "조문마다 변경 사유에 근거를 남겼습니다."
+      : "읽기 전용 판이라 맞추지 못했습니다 — 새 개정안을 만든 뒤 다시 하십시오.", 6000);
+    return r;
+  },
 });
 const history = new HistoryView(project, {
   onJump: (nodeId, versionId) => {
@@ -1439,23 +1454,11 @@ ${r.warning}` : ""),
        남기므로, 그것이 그대로 개정사유서와 신구대조표 비고란으로 간다. */
     case "terms": {
       const dry = project.unifyTerms({ dryRun: true });
-      if (!dry.count) { toast("규정 사이에서 갈린 말이 없습니다.", 3000); break; }
-      const NL = "\n";
-      const by = Object.entries(dry.byRule).map(([k, v]) => `  · ${k} — ${v}곳`).join(NL);
-      const some = dry.plan.slice(0, 8).flatMap((f) => f.samples.slice(0, 1)
-        .map((x) => `  ${M.shortLabel(f.reg)} ${M.shortLabel(f.node)} : ${x.from} → ${x.to}`)).join(NL);
-      const ask = [
-        `용어를 맞춥니다 — ${dry.count}곳 · 조문 ${dry.nodes}개`, "", by, "", some,
-        dry.count > 8 ? "  …" : "", "",
-        "고친 조문마다 근거를 남깁니다 —",
-        "  현행 고시 명칭 · 국가공간정보 표준용어집 인용표준번호(KS X ISO).",
-        "그 사유가 그대로 개정사유서와 신구대조표 비고란으로 갑니다.", "",
-        "되돌리려면 Ctrl+Z.",
-      ].join(NL);
-      if (!confirm(ask)) break;
-      const r = project.unifyTerms();
-      toast(`용어를 맞췄습니다 — ${r.count}곳 · 조문 ${r.nodes}개` + NL
-            + "조문마다 변경 사유에 근거를 남겼습니다.", 6000);
+      if (!dry.count) {
+        toast("규정 사이에서 갈린 말이 없습니다 — 이미 다 맞춰져 있습니다.", 4000);
+        break;
+      }
+      termsView.open(dry, TERM_RULES);
       break;
     }
 

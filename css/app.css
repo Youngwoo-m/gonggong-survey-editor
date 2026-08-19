@@ -800,3 +800,22 @@ tr.g-must td { background: #FDF6F4; } tr.g-check td { background: #FDFAF3; }
 /* 본문 속 별표·별지 링크 — 조문 링크(푸른)와 갈라 보이게 */
 a.cite.anx { color: #B07A1E; border-bottom: 1px dotted #B07A1E; cursor: pointer; }
 a.cite.anx:hover { background: #FDF6E7; }
+
+/* ---------- 용어 통일 결과 창 ---------- */
+.tm-tbl th { position: sticky; top: 0; background: #1F2C35; color: #fff; font-size: 12px; }
+.tm-tbl td { border: 1px solid #E4EBEE; padding: 7px 9px; font-size: 12px; vertical-align: top; line-height: 1.65; }
+.tm-tbl tbody tr { cursor: pointer; }
+.tm-tbl tbody tr:hover td { background: #F7F9FA; }
+.tm-tbl .none { text-align: center; color: #8C9BA3; padding: 26px; }
+.tm-w { display: block; margin: 1px 0; }
+.tm-w s { color: #C1502E; text-decoration-thickness: 1px; }
+.tm-w b { color: #1F5C4E; }
+.tm-w i { color: #8C9BA3; font-style: normal; font-size: 10.5px; }
+.tm-b { margin: 2px 0; color: #51646D; }
+.tm-n { color: #8C9BA3; font-size: 10.5px; margin-top: 1px; }
+.chip.tm-pick { display: inline-flex; align-items: center; gap: 5px; cursor: pointer; }
+.chip.tm-pick input { margin: 0; cursor: pointer; }
+.chip.tm-pick input:not(:checked) + span { opacity: .45; text-decoration: line-through; }
+.chip.tm-pick span { cursor: pointer; }
+.chip.tm-pick:has(span.on) { outline: 2px solid var(--ink); outline-offset: 1px; }
+.cmp-bar2 button:disabled { opacity: .45; cursor: default; }
