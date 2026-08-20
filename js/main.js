@@ -1,31 +1,32 @@
 /* ============================================================
    main.js — 앱 조립 (1단계 프로토타입)
    ============================================================ */
-import * as M from "./core/model.js?v=20260820d";
-import { Project } from "./core/project.js?v=20260820d";
-import * as FS from "./adapters/fileio.js?v=20260820d";
-import * as AUTO from "./adapters/autosave.js?v=20260820d";
-import { TreeView } from "./ui/tree.js?v=20260820d";
-import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260820d";
-import { CompareView } from "./ui/compare.js?v=20260820d";
-import { VersionsView } from "./ui/versions.js?v=20260820d";
-import { HistoryView } from "./ui/history.js?v=20260820d";
-import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260820d";
-import { ValidateView } from "./ui/validate.js?v=20260820d";
-import { RefPicker } from "./ui/refpicker.js?v=20260820d";
-import { AIView } from "./ui/ai.js?v=20260820d";
-import { CiteCheckView } from "./ui/citecheck.js?v=20260820d";
-import { TermsView } from "./ui/terms.js?v=20260820d";
-import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260820d";
-import * as GH from "./adapters/github.js?v=20260820d";
-import { extractLines } from "./core/importer.js?v=20260820d";
-import { buildAuto } from "./core/structure.js?v=20260820d";
-import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260820d";
-import { ObjectStore, fitTable } from "./core/objects.js?v=20260820d";
-import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260820d";
-import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260820d";
-import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260820d";
-import { fmtDate } from "./ui/html.js?v=20260820d";
+import * as M from "./core/model.js?v=20260820h";
+import { Project } from "./core/project.js?v=20260820h";
+import * as FS from "./adapters/fileio.js?v=20260820h";
+import * as AUTO from "./adapters/autosave.js?v=20260820h";
+import { TreeView } from "./ui/tree.js?v=20260820h";
+import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260820h";
+import { CompareView } from "./ui/compare.js?v=20260820h";
+import { VersionsView } from "./ui/versions.js?v=20260820h";
+import { HistoryView } from "./ui/history.js?v=20260820h";
+import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260820h";
+import { ValidateView } from "./ui/validate.js?v=20260820h";
+import { RefPicker } from "./ui/refpicker.js?v=20260820h";
+import { AIView } from "./ui/ai.js?v=20260820h";
+import { CiteCheckView } from "./ui/citecheck.js?v=20260820h";
+import { TermsView } from "./ui/terms.js?v=20260820h";
+import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260820h";
+import * as GH from "./adapters/github.js?v=20260820h";
+import { extractLines } from "./core/importer.js?v=20260820h";
+import { buildAuto } from "./core/structure.js?v=20260820h";
+import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260820h";
+import { ObjectStore, fitTable } from "./core/objects.js?v=20260820h";
+import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260820h";
+import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260820h";
+import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260820h";
+import { fmtDate } from "./ui/html.js?v=20260820h";
+import { printReg } from "./ui/printdoc.js?v=20260820h";
 
 const $ = (s) => document.querySelector(s);
 const NL = "\n";
@@ -112,6 +113,16 @@ const refPanes = [
   { key: "ref2", idx: 2, doc: null, tree: null, selectedId: null, hits: [], hitAt: -1, mode: "orig" },
 ];
 const paneOf = (key) => refPanes.find((p) => p.key === key);
+
+/** 참조 규정을 인쇄용 쪽으로 펼친다 — 인쇄 창에서 'PDF로 저장' 을 고르면 PDF 가 된다.
+    별표는 원본 파일이 있지만 참조 규정은 색인해 둔 조문뿐이라 내려받을 것이 없었다. */
+function printPane(key) {
+  const p = paneOf(key);
+  if (!p || !p.doc) { toast("먼저 참조할 규정을 고르십시오."); return; }
+  const n = (p.doc.stats && p.doc.stats["조"]) || 0;
+  toast(`${p.doc.name} 을(를) 인쇄용 쪽으로 폅니다${n ? ` — 조 ${n}개` : ""}.`, 3500);
+  printReg(p.doc);
+}
 let importedSeq = 0;                        // 파일로 불러온 규정 id 부여용
 
 /* ---------- 초기화 ---------- */
@@ -558,7 +569,19 @@ async function loadReg(id) {
   if (refCache.has(id)) return refCache.get(id);
   const meta = library.regulations.find((r) => r.id === id);
   if (!meta || !meta.file) throw new Error("규정을 찾을 수 없습니다: " + id);
-  const doc = await FS.loadJSON("data/" + meta.file);
+  let doc;
+  try {
+    doc = await FS.loadJSON("data/" + meta.file);
+  } catch (e) {
+    // 저작권이 있는 유료 표준은 색인을 저장소에 올리지 아니한다.
+    // 내려받아 쓰는 사람에게는 파일이 없으니, 까닭을 밝혀 준다.
+    if (meta.localOnly) {
+      throw new Error(`${meta.name} 은(는) 이 컴퓨터에만 두는 자료입니다 — `
+        + "저작권이 있는 유료 표준이라 저장소에 올리지 않았습니다. "
+        + "원본을 갖고 있다면 scripts/genintl_iso19157.py 로 다시 색인하십시오.");
+    }
+    throw e;
+  }
   refCache.set(id, doc);
   return doc;
 }
@@ -682,7 +705,7 @@ async function setRefDoc(key, id) {
   $(`#refMeta${idx}`).innerHTML =
     `${head}<br>${["편", "장", "절", "조"].filter((k) => s[k]).map((k) => `${k} ${s[k]}`).join(" · ")}` +
     (d.annex?.length ? ` · <b>별표·서식 ${d.annex.length}</b>` : "") +
-    (d.translated ? ` · <span style="color:var(--green)">한글 대역 (치환률 ${Math.round(d.translated.coverage * 100)}%)</span>` : "")
+    (d.translated ? ` · <span style="color:var(--green)" title="${esc(d.translated.by || "")}">한글 대역 (치환률 ${Math.round((d.translated.coverage || 0) * 100)}%)</span>` : "")
     // 조문을 공개 API 가 아니라 고시 원문 파일에서 읽은 규정임을 밝힌다
     + (d.textSource ? `<br><span class="mut" title="${esc(d.textSource)}">본문 출처 — 법제처 고시 원문 파일</span>` : "");
 
@@ -1362,6 +1385,8 @@ async function doCommand(cmd) {
     case "closeRef2": setRef2Visible(false); break;
     case "openFile1": await importFileIntoPane(paneOf("ref1")); break;
     case "openFile2": await importFileIntoPane(paneOf("ref2")); break;
+    case "printRef1": printPane("ref1"); break;
+    case "printRef2": printPane("ref2"); break;
     case "shareRef1": await shareImported(paneOf("ref1")); break;
     case "shareRef2": await shareImported(paneOf("ref2")); break;
     case "clearSel1": clearPaneSel("ref1"); break;

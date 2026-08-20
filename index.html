@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>공공측량 규정 개정 편집기</title>
-<link rel="stylesheet" href="css/app.css?v=20260820d" />
+<link rel="stylesheet" href="css/app.css?v=20260820h" />
 </head>
 <body>
 
@@ -49,6 +49,7 @@
           <div class="row">
             <select id="refSelect1"></select>
             <button class="mini2" data-cmd="openFile1" title="파일을 열어 색인화 (TXT·HWP·HWPX·PDF)">파일 열기</button>
+            <button class="mini2" data-cmd="printRef1" title="이 규정을 인쇄용 쪽으로 펼칩니다 — 인쇄 창에서 'PDF로 저장' 을 고르면 PDF 가 됩니다">PDF 내려받기</button>
             <button class="mini2 share hidden" id="refShare1" data-cmd="shareRef1" title="이 규정을 공유 저장소에 올려 다른 사람도 쓰게 합니다">↥ 공유</button>
             <button class="mini2 del hidden" id="refDel1" data-cmd="delRef1" title="불러온 이 규정을 프로젝트에서 제거">−</button>
           </div>
@@ -81,6 +82,7 @@
           <div class="row">
             <select id="refSelect2"></select>
             <button class="mini2" data-cmd="openFile2" title="파일을 열어 색인화 (TXT·HWP·HWPX·PDF)">파일 열기</button>
+            <button class="mini2" data-cmd="printRef2" title="이 규정을 인쇄용 쪽으로 펼칩니다 — 인쇄 창에서 'PDF로 저장' 을 고르면 PDF 가 됩니다">PDF 내려받기</button>
             <button class="mini2 share hidden" id="refShare2" data-cmd="shareRef2" title="이 규정을 공유 저장소에 올려 다른 사람도 쓰게 합니다">↥ 공유</button>
             <button class="mini2 del hidden" id="refDel2" data-cmd="delRef2" title="불러온 이 규정을 프로젝트에서 제거">−</button>
           </div>
@@ -197,6 +199,6 @@
 <div id="toast" class="toast hidden"></div>
 <div id="busy" class="busy hidden"><div class="busy-box"><div class="spin"></div><div id="busyMsg">처리 중…</div></div></div>
 
-<script type="module" src="js/main.js?v=20260820d"></script>
+<script type="module" src="js/main.js?v=20260820h"></script>
 </body>
 </html>

@@ -42,20 +42,23 @@ def safe(s):
     return re.sub(r"[^0-9A-Za-z가-힣_.-]", "_", s)
 
 
-def make_hwpx(title, subtitle, body, dst):
-    """본문 글로 HWPX 를 짓는다 — 별표는 제목 한 줄과 글줄로 이루어진 단순 문서다"""
-    from hwpx.document import HwpxDocument
-    doc = HwpxDocument.new()
-    doc.add_paragraph(title)
-    if subtitle:
-        doc.add_paragraph(subtitle)
-    doc.add_paragraph("")
-    for line in body.replace("\r\n", "\n").split("\n"):
-        doc.add_paragraph(line.rstrip())
-    doc.save_to_path(dst)
-    subprocess.run([sys.executable, os.path.join(SKILL, "scripts", "fix_namespaces.py"), dst],
+def fixns(path):
+    """네임스페이스 뒷손질 — 빠뜨리면 한글 뷰어에서 빈 쪽으로 보인다"""
+    subprocess.run([sys.executable, os.path.join(SKILL, "scripts", "fix_namespaces.py"), path],
                    check=True, capture_output=True)
-    return dst
+
+
+def make_hwpx(job, dst):
+    """본문 글을 덩이로 나누어 표는 표로, 마디는 들여쓰기로 세운다 (annexhwpx)"""
+    import annexhwpx
+    n = job["node"]
+    return annexhwpx.build(
+        dst,
+        gubun=job["gubun"], no=job["no"],
+        title=n.get("title") or "", regname=job["regname"],
+        body=n.get("body") or "",
+        objdir=os.path.join(DATA, "objects", job.get("objdir") or "reg01"),
+        fixns=fixns)
 
 
 def jobs_of(fname, regname, dirs):
@@ -70,9 +73,13 @@ def jobs_of(fname, regname, dirs):
         def w(ns):
             for n in ns:
                 a = n.get("annexRef")
+                # 이미 우리가 지은 것(gen)은 다시 짓는다 — 조판을 고치면
+                # 그때마다 다시 뽑아야 하기 때문이다. 남의 원본은 건드리지 않는다.
                 if (a and n.get("status") == "신설" and (n.get("body") or "").strip()
-                        and not (a.get("hwp") or a.get("pdf"))):
+                        and (a.get("gen") or not (a.get("hwp") or a.get("pdf")))):
                     out.append({"doc": path, "regname": regname, "where": where,
+                                # 본문 속 표는 지금 셋 다 작업규정에서 옮겨 온 것뿐이다
+                                "objdir": "reg01",
                                 "gubun": a.get("gubun") or "별표", "no": str(a.get("no")),
                                 "node": n, "annexRef": a})
                 w(n.get("children") or [])
@@ -113,14 +120,15 @@ if __name__ == "__main__":
             base = safe("%s%s" % (j["gubun"], j["no"]))
             j["base"], j["outdir"] = base, outdir
             src = os.path.join(outdir, base + ".hwp")
-            if os.path.exists(src):                       # 원본이 놓여 있으면 그것을 쓴다
+            # 남이 만든 원본이 놓여 있으면 그것을 쓴다.
+            # 우리가 지은 것(gen)이면 조판을 다시 하여야 하므로 새로 짓는다.
+            if os.path.exists(src) and not j["annexRef"].get("gen"):
                 j["src"] = "원본"
                 todo.append(src)
                 continue
             j["src"] = "본문 글"
             hwpx = os.path.join(outdir, base + ".hwpx")
-            title = "[%s %s] %s" % (j["gubun"], j["no"], j["node"].get("title") or "")
-            make_hwpx(title, j["regname"], j["node"].get("body") or "", hwpx)
+            make_hwpx(j, hwpx)
             todo.append(hwpx)
     print("   HWPX %d건을 지었다" % sum(1 for _, _, js in books for j in js if j["src"] == "본문 글"))
 

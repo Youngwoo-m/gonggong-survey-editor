@@ -1,10 +1,10 @@
 /* ============================================================
    ui/detail.js — 조문 상세 패널
    ============================================================ */
-import * as M from "../core/model.js?v=20260820d";
-import { wordDiff, beforeRuns, afterRuns, hasChange } from "../core/textdiff.js?v=20260820d";
+import * as M from "../core/model.js?v=20260820h";
+import { wordDiff, beforeRuns, afterRuns, hasChange } from "../core/textdiff.js?v=20260820h";
 import { imgIdsIn, renderBody, fitTable, toHtml, openTableOverlay, markAnnexEdits }
-  from "../core/objects.js?v=20260820d";
+  from "../core/objects.js?v=20260820h";
 
 /** 만들고 있는 안을 부르는 말 — 작업규정은 개정안, 성과심사 규정은 개정안 */
 /* 만들어 내는 안을 부르는 말 — 규정마다 다르다 (작업규정은 '개정안', 나머지는 '개정안').
@@ -75,8 +75,9 @@ function runsHtml(runs) {
   return runs.map((r) => (r.mark ? `<u class="mk">${esc(r.s)}</u>` : esc(r.s))).join("");
 }
 
-import { linkReason, wireReasonLinks } from "../core/reasonlink.js?v=20260820d";
-import { esc, fmtDT } from "./html.js?v=20260820d";
+import { linkReason, wireReasonLinks } from "../core/reasonlink.js?v=20260820h";
+import { esc, fmtDT } from "./html.js?v=20260820h";
+import { renderPdf } from "./pdfview.js?v=20260820h";
 
 /** 사유 글이 스스로 머리글을 달고 있는가 — 그러면 딱지를 겹쳐 붙이지 아니한다 */
 const RE_REASON_HEAD = /^\s*\[변경 사유\]/;
@@ -553,17 +554,19 @@ export class DetailPanel {
           pages ? `<span class="cnt">${pages}쪽</span>` : ""}
           <a class="btnlink lbl-right" href="${esc(url)}" target="_blank"
              rel="noopener">새 창에서 크게 보기</a></label>
-        <div class="annex-pdf"><object data="${esc(url)}#view=FitH&toolbar=1"
-             type="application/pdf" aria-label="${esc(node.title || "")} 미리보기">
-          <div class="annex-noimg">이 브라우저는 PDF 를 화면 안에 띄우지 못합니다 —
-            위의 <b>새 창에서 크게 보기</b> 나 <b>PDF 내려받기</b> 를 쓰십시오.</div>
-        </object></div>
+        <div class="annex-pdf" data-pdf="${esc(url)}"></div>
         ${shots ? `<details class="annex-shots"${shotsOpen ? " open" : ""}><summary>${
           esc(shotsLabel)} ${files.length}장 보기</summary><div class="annex-preview">${
           shots}</div></details>` : ""}`;
       wrap.querySelectorAll("img").forEach((img) => {
         img.onclick = () => window.open(img.src, "_blank", "noopener");
         img.onerror = () => { img.closest("figure").remove(); };
+      });
+      // 브라우저의 PDF 뷰어에 맡기지 아니하고 pdf.js 로 손수 그린다 —
+      // 뷰어가 없거나 막힌 자리에서는 <iframe>·<object> 가 까만 칸만 남긴다
+      renderPdf(wrap.querySelector(".annex-pdf"), url).then((n) => {
+        const cnt = wrap.querySelector("label .cnt");
+        if (n && cnt) cnt.textContent = `${n}쪽`;
       });
       return wrap;
     }
