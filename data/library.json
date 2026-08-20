@@ -2321,6 +2321,48 @@
    "file": "reg69.json",
    "hasFullText": true,
    "annexCount": 212
+  },
+  {
+   "id": "reg70",
+   "name": "고압가스 안전관리법 시행령",
+   "org": "산업통상부",
+   "kind": "대통령령",
+   "no": "36400",
+   "effective": "20260609",
+   "lang": "ko",
+   "category": "under",
+   "source": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=286839",
+   "stats": {
+    "편": 0,
+    "장": 0,
+    "절": 0,
+    "관": 0,
+    "조": 52
+   },
+   "file": "reg70.json",
+   "hasFullText": true,
+   "annexCount": 5
+  },
+  {
+   "id": "reg71",
+   "name": "고압가스 안전관리법 시행규칙",
+   "org": "산업통상부",
+   "kind": "산업통상부령",
+   "no": "00015",
+   "effective": "20260611",
+   "lang": "ko",
+   "category": "under",
+   "source": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=286887",
+   "stats": {
+    "편": 0,
+    "장": 0,
+    "절": 0,
+    "관": 0,
+    "조": 94
+   },
+   "file": "reg71.json",
+   "hasFullText": true,
+   "annexCount": 103
   }
  ],
  "citedUnmatched": [],
