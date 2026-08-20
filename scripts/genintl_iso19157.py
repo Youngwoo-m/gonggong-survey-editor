@@ -153,6 +153,11 @@ try:
     from iso19157_ko_8_11 import KO as KO_BODY
 except Exception:
     KO_BODY = {}
+try:
+    from iso19157_ko_norm import KO as KO_NORM, KO_TITLE as KO_NORM_T
+    KO_BODY = dict(KO_NORM, **KO_BODY)      # 제8~11조가 더 자세하므로 그것을 앞세운다
+except Exception:
+    KO_NORM_T = {}
 
 
 def clean(t):
@@ -247,7 +252,7 @@ if __name__ == "__main__":
         # 마디 번호(8.3.7)를 따로 지녀 둔다 — 규정 본문의
         # "ISO 19157-1의 8.3.7" 같은 인용이 이것을 보고 찾아온다
         # 옮겨 둔 한국어가 있으면 그것을 쓴다 — 색인을 다시 지어도 잃지 않게
-        ko_body = KO_BODY.get(num) or NOTE.get(num, "")
+        ko_body = KO_BODY.get(num) or KO_NORM_T.get(t) or NOTE.get(num, "")
         node = {"id": "iso19157-n%d" % seq, "clause": num,
                 "level": "장" if lv == 1 else "조",
                 "title": t, "transTitle": ko, "body": body,

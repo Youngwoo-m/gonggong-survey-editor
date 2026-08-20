@@ -462,13 +462,14 @@ if __name__ == "__main__":
     seen = set()
 
     def collect(ns):
+        # 마디 번호가 없는 것(머리말ㆍ부속서)도 함께 센다 — 번호 있는 것만 세면
+        # 옮긴 마디가 센 것보다 많아져 100%를 넘는 값이 나온다
         for n in ns:
-            if n.get("clause"):
-                seen.add(n["clause"])
+            seen.add(n.get("clause") or (n.get("title") or "")[:40])
             collect(n.get("children") or [])
 
     collect(doc["tree"])
-    miss = [c for c in KO if c not in seen]
+    miss = [c for c in KO if c not in seen]      # 옮긴 마디가 다 있는지
     assert not miss, "이 마디들을 찾지 못하였다 — %s" % ", ".join(miss)
 
     tr = doc.get("translated") or {}
