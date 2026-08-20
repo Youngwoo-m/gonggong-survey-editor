@@ -1,14 +1,14 @@
 /* ============================================================
    ui/compare.js — 개정 전후 비교표 화면
    ============================================================ */
-import { buildComparison, KIND_LIST } from "../core/diff.js?v=20260820h";
-import { writeXlsx } from "../core/xlsx.js?v=20260820h";
-import * as M from "../core/model.js?v=20260820h";
-import { regFingerprint } from "../core/xrefs.js?v=20260820h";
-import { buildAmendment } from "../core/amend.js?v=20260820h";
-import { buildSupplement, EFFECT_KINDS, topTitles } from "../core/supplement.js?v=20260820h";
-import { stripImgTags } from "../core/objects.js?v=20260820h";
-import { esc, fmtDate } from "./html.js?v=20260820h";
+import { buildComparison, KIND_LIST } from "../core/diff.js?v=20260820m";
+import { writeXlsx } from "../core/xlsx.js?v=20260820m";
+import * as M from "../core/model.js?v=20260820m";
+import { regFingerprint } from "../core/xrefs.js?v=20260820m";
+import { buildAmendment } from "../core/amend.js?v=20260820m";
+import { buildSupplement, EFFECT_KINDS, topTitles } from "../core/supplement.js?v=20260820m";
+import { stripImgTags } from "../core/objects.js?v=20260820m";
+import { esc, fmtDate } from "./html.js?v=20260820m";
 
 const KIND_CLASS = {
   "신설": "k-new", "삭제": "k-del", "이동": "k-mov", "이관": "k-xfer",

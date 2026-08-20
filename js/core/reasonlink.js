@@ -12,6 +12,8 @@
         다른 법령을 가리키는 것은 건드리지 아니한다
    ============================================================ */
 
+import { linkStdRefs } from "./objects.js?v=20260820m";
+
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g,
   (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
@@ -42,6 +44,7 @@ const SKIP_SECTION = "현행 규정";
 export function linkReason(text, nav = {}) {
   const hasJo = nav.hasJo || (() => true);
   const hasAnx = nav.hasAnx || (() => true);
+  const resolveStd = nav.resolveStd || null;
   let section = "";
 
   return String(text ?? "").split("\n").map((line) => {
@@ -72,6 +75,10 @@ export function linkReason(text, nav = {}) {
         + ` title="제${no}조로 갑니다">${m}</a>`;
     });
 
+    // ISO 19157-1:2023 처럼 맨몸으로 적힌 표준 — 참조규정 창에서 연다.
+    // 사유에 든 인용이 본문보다 훨씬 많아, 여기를 빼면 걸린 것이 거의 없다.
+    if (resolveStd) s = linkStdRefs(s, resolveStd);
+
     return s.replace(/\u0000(\d+)\u0000/g, (_, i) => keep[Number(i)]);
   }).join("\n");
 }
@@ -82,6 +89,12 @@ export function linkReason(text, nav = {}) {
  * @param {{onJo?:(no:number)=>void, onAnx?:(gubun:string,no:number)=>void}} nav
  */
 export function wireReasonLinks(host, nav = {}) {
+  host.querySelectorAll("a.cite.std[data-reg]").forEach((a) => {
+    a.onclick = (e) => {
+      e.preventDefault();
+      nav.onCite?.(a.dataset.reg, a.textContent, "", a.dataset.clause || "");
+    };
+  });
   host.querySelectorAll("a.cite[data-jo]").forEach((a) => {
     a.onclick = (e) => { e.preventDefault(); nav.onJo?.(Number(a.dataset.jo)); };
   });

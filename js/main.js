@@ -1,32 +1,32 @@
 /* ============================================================
    main.js — 앱 조립 (1단계 프로토타입)
    ============================================================ */
-import * as M from "./core/model.js?v=20260820h";
-import { Project } from "./core/project.js?v=20260820h";
-import * as FS from "./adapters/fileio.js?v=20260820h";
-import * as AUTO from "./adapters/autosave.js?v=20260820h";
-import { TreeView } from "./ui/tree.js?v=20260820h";
-import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260820h";
-import { CompareView } from "./ui/compare.js?v=20260820h";
-import { VersionsView } from "./ui/versions.js?v=20260820h";
-import { HistoryView } from "./ui/history.js?v=20260820h";
-import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260820h";
-import { ValidateView } from "./ui/validate.js?v=20260820h";
-import { RefPicker } from "./ui/refpicker.js?v=20260820h";
-import { AIView } from "./ui/ai.js?v=20260820h";
-import { CiteCheckView } from "./ui/citecheck.js?v=20260820h";
-import { TermsView } from "./ui/terms.js?v=20260820h";
-import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260820h";
-import * as GH from "./adapters/github.js?v=20260820h";
-import { extractLines } from "./core/importer.js?v=20260820h";
-import { buildAuto } from "./core/structure.js?v=20260820h";
-import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260820h";
-import { ObjectStore, fitTable } from "./core/objects.js?v=20260820h";
-import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260820h";
-import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260820h";
-import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260820h";
-import { fmtDate } from "./ui/html.js?v=20260820h";
-import { printReg } from "./ui/printdoc.js?v=20260820h";
+import * as M from "./core/model.js?v=20260820m";
+import { Project } from "./core/project.js?v=20260820m";
+import * as FS from "./adapters/fileio.js?v=20260820m";
+import * as AUTO from "./adapters/autosave.js?v=20260820m";
+import { TreeView } from "./ui/tree.js?v=20260820m";
+import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260820m";
+import { CompareView } from "./ui/compare.js?v=20260820m";
+import { VersionsView } from "./ui/versions.js?v=20260820m";
+import { HistoryView } from "./ui/history.js?v=20260820m";
+import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260820m";
+import { ValidateView } from "./ui/validate.js?v=20260820m";
+import { RefPicker } from "./ui/refpicker.js?v=20260820m";
+import { AIView } from "./ui/ai.js?v=20260820m";
+import { CiteCheckView } from "./ui/citecheck.js?v=20260820m";
+import { TermsView } from "./ui/terms.js?v=20260820m";
+import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260820m";
+import * as GH from "./adapters/github.js?v=20260820m";
+import { extractLines } from "./core/importer.js?v=20260820m";
+import { buildAuto } from "./core/structure.js?v=20260820m";
+import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260820m";
+import { ObjectStore, fitTable } from "./core/objects.js?v=20260820m";
+import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260820m";
+import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260820m";
+import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260820m";
+import { fmtDate } from "./ui/html.js?v=20260820m";
+import { printReg } from "./ui/printdoc.js?v=20260820m";
 
 const $ = (s) => document.querySelector(s);
 const NL = "\n";
@@ -186,6 +186,7 @@ async function init() {
   if (draftRegIdOf[APP.id]) detail.setDraftRegId(draftRegIdOf[APP.id]);
   detail.setObjectStore(objects);
   detail.setLawResolver((w) => resolveLawWord(w));
+  detail.setStdResolver((n) => resolveRegName(n));
   detail.setJoNav({ has: hasArticle, go: gotoArticle,
                     hasAnx: hasAnnex, goAnx: gotoAnnex });
   try { detail.setAnnexIndex(await FS.loadJSON("data/annex/index.json")); } catch { /* 미리보기 없음 */ }
@@ -665,7 +666,10 @@ function buildTrees() {
     getAsset: (fid) => project.asset(fid),
     onAnnexFile: (id, file) => uploadAnnexFile(id, file),
     resolveCite: (name) => resolveRegName(name),
-    onCite: (id, name, jo) => openInRef2(id, name, jo),
+    /* ISO 19157-1:2023 처럼 「」 없이 맨몸으로 적힌 표준도 잇는다 —
+       이름은 library.json 의 nameAlias 가 규정 id 로 풀어 준다 */
+    resolveStd: (name) => resolveRegName(name),
+    onCite: (id, name, jo, clause) => openInRef2(id, name, jo, clause),
   });
 }
 
@@ -875,7 +879,7 @@ function resolveLawWord(word) {
 }
 
 /** 참조규정 창에 그 규정을 띄운다 (조번호가 있으면 그 조문으로 이동) */
-async function openInRef2(id, name, joNo = "") {
+async function openInRef2(id, name, joNo = "", clause = "") {
   const pane = paneOf("ref2");
   const sel = $("#refSelect2");
   if (!sel) return;
@@ -887,8 +891,27 @@ async function openInRef2(id, name, joNo = "") {
     await setRefDoc("ref2", id);
   }
   const reg = library.regulations.find((r) => r.id === id);
-  const where = jumpRefTo(pane, joNo);
+  const where = clause ? jumpRefToClause(pane, clause) : jumpRefTo(pane, joNo);
   toast(`참조규정 창에 열었습니다 — ${reg ? reg.name : name}${where ? ` ${where}` : ""}`, 3500);
+}
+
+/** 참조 창에서 표준의 마디 번호(8.3.7)로 이동 —
+    국제표준은 '제N조' 가 아니라 점으로 이은 번호로 마디를 가리킨다 */
+function jumpRefToClause(pane, clause) {
+  if (!clause || !pane.tree) return "";
+  let hit = null;
+  M.walk(pane.tree, (n) => {
+    if (hit) return;
+    if (n.clause === clause) hit = n;
+  });
+  if (!hit) return "";
+  expandAncestors(pane.tree, hit.id);
+  pane.selectedId = hit.id;
+  const view = refTrees[pane.key];
+  view.setData(pane.tree, hit.id);
+  view.scrollToId?.(hit.id);
+  refreshRefDetail(pane);
+  return `${clause} ${hit.transTitle || hit.title || ""}`.trim();
 }
 
 /** 참조 창에서 제N조로 이동 */

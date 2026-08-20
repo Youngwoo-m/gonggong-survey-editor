@@ -1,10 +1,10 @@
 /* ============================================================
    ui/detail.js — 조문 상세 패널
    ============================================================ */
-import * as M from "../core/model.js?v=20260820h";
-import { wordDiff, beforeRuns, afterRuns, hasChange } from "../core/textdiff.js?v=20260820h";
+import * as M from "../core/model.js?v=20260820m";
+import { wordDiff, beforeRuns, afterRuns, hasChange } from "../core/textdiff.js?v=20260820m";
 import { imgIdsIn, renderBody, fitTable, toHtml, openTableOverlay, markAnnexEdits }
-  from "../core/objects.js?v=20260820h";
+  from "../core/objects.js?v=20260820m";
 
 /** 만들고 있는 안을 부르는 말 — 작업규정은 개정안, 성과심사 규정은 개정안 */
 /* 만들어 내는 안을 부르는 말 — 규정마다 다르다 (작업규정은 '개정안', 나머지는 '개정안').
@@ -75,9 +75,9 @@ function runsHtml(runs) {
   return runs.map((r) => (r.mark ? `<u class="mk">${esc(r.s)}</u>` : esc(r.s))).join("");
 }
 
-import { linkReason, wireReasonLinks } from "../core/reasonlink.js?v=20260820h";
-import { esc, fmtDT } from "./html.js?v=20260820h";
-import { renderPdf } from "./pdfview.js?v=20260820h";
+import { linkReason, wireReasonLinks } from "../core/reasonlink.js?v=20260820m";
+import { esc, fmtDT } from "./html.js?v=20260820m";
+import { renderPdf } from "./pdfview.js?v=20260820m";
 
 /** 사유 글이 스스로 머리글을 달고 있는가 — 그러면 딱지를 겹쳐 붙이지 아니한다 */
 const RE_REASON_HEAD = /^\s*\[변경 사유\]/;
@@ -127,6 +127,9 @@ export class DetailPanel {
   /** 약칭 법령 인용(법 제7조 …)을 풀 함수 */
   setLawResolver(fn) { this.resolveLaw = fn; }
 
+  /** 표준 인용(ISO 19157-1:2023 …)을 풀 함수 */
+  setStdResolver(fn) { this.resolveStd = fn; }
+
   /** 같은 규정 안의 제○조 인용을 오갈 함수 — {has(docId,no), go(docId,no)} */
   setJoNav(nav) { this.joNav = nav; }
 
@@ -134,7 +137,8 @@ export class DetailPanel {
     return {
       resolveCite: this.resolveCite,
       resolveLaw: this.resolveLaw,
-      onCite: (id, name, jo) => this.onCite?.(id, name, jo),
+      resolveStd: this.resolveStd,
+      onCite: (id, name, jo, clause) => this.onCite?.(id, name, jo, clause),
       hasJo: docId && this.joNav ? (no) => this.joNav.has(docId, no) : null,
       onJo: (no) => this.joNav?.go(docId, no),
       /* 본문 속 별표·별지도 눌러 갈 수 있게 한다. 지금까지는 변경 사유에서만
@@ -238,6 +242,8 @@ export class DetailPanel {
     return linkReason(text, {
       hasJo: (no) => !this.joNav || this.joNav.has(docId, no),
       hasAnx: (g, no) => !this.joNav?.hasAnx || this.joNav.hasAnx(docId, g, no),
+      // ISO 19157-1:2023 처럼 맨몸으로 적힌 표준 — 인용이 본문보다 사유에 훨씬 많다
+      resolveStd: this.resolveStd,
     });
   }
 
@@ -245,6 +251,7 @@ export class DetailPanel {
   _wireReason(host) {
     const docId = null;
     wireReasonLinks(host, {
+      onCite: (id, name, jo, clause) => this.onCite?.(id, name, jo, clause),
       onJo: (no) => this.joNav?.go(docId, no),
       onAnx: (g, no) => this.joNav?.goAnx?.(docId, g, no),
     });

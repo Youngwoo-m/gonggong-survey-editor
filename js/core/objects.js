@@ -6,7 +6,7 @@
    여기서는 그 XML 을 읽어 화면에 진짜 표로 그린다.
    ============================================================ */
 
-import { toMathML } from "./eqmath.js?v=20260820h";
+import { toMathML } from "./eqmath.js?v=20260820m";
 
 const RE_IMG = /<img\s+id="([\w.-]+)"\s*>(?:<\/img>)?/gi;
 // 본문이 인용하는 다른 규정 — 「…」 / 『…』
@@ -52,6 +52,36 @@ export function linkLawRefs(html, resolveLaw) {
     return `<a class="cite law" href="#" data-reg="${esc(hit.id)}" data-jo="${esc(no)}"`
       + ` title="${esc(hit.name)} ${esc(jo)} — 참조규정 창에서 엽니다">${word} ${jo}</a>`;
   });
+}
+
+/**
+ * 국제ㆍ국가 표준 인용 — 「」 없이 맨몸으로 적히는 일이 잦다.
+ *   ISO 19157-1:2023 · KS X ISO 19157-1 · ISO 19157-1의 8.3.7 · ISO 19131:2022
+ * 뒤에 마디 번호(8.3.7)가 붙으면 그 마디까지 데려간다.
+ */
+const RE_STD = /(?<![A-Za-z0-9-])((?:KS\s*[A-Z]\s*)?ISO(?:\/[A-Z]{2,4})?\s*\d{3,5}(?:-\d+)?(?:\s*:\s*\d{4})?)(\s*의\s*(\d+(?:\.\d+)+))?/g;
+
+/**
+ * 맨몸으로 적힌 표준 인용을 링크로 바꾼다.
+ * @param {string} html        이미 escape 된 글
+ * @param {(name:string)=>string|null} resolveStd  표준 이름 → 규정 id
+ */
+export function linkStdRefs(html, resolveStd) {
+  if (!resolveStd) return String(html);
+  /* 이미 링크가 걸린 자리는 건드리지 아니한다 — 「KS X ISO 19157-1」 은
+     linkCitations 가 벌써 <a> 로 감쌌으므로, 겹쳐 걸면 <a> 가 포개진다.
+     쪼갠 자리의 홀수 칸이 <a>…</a> 이다. */
+  return String(html).split(/(<a\b[^>]*>[\s\S]*?<\/a>)/g).map((part, i) => {
+    if (i % 2) return part;
+    return part.replace(RE_STD, (m, name, _tail, clause) => {
+      const id = resolveStd(String(name).replace(/\s+/g, " ").trim());
+      if (!id) return m;
+      const where = clause ? ` ${clause}` : "";
+      return `<a class="cite std" href="#" data-reg="${esc(id)}"`
+        + (clause ? ` data-clause="${esc(clause)}"` : "")
+        + ` title="${esc(name)}${where} — 참조규정 창에서 엽니다">${m}</a>`;
+    });
+  }).join("");
 }
 
 /**
@@ -405,6 +435,7 @@ export function toHtml(obj) {
  */
 export async function renderBody(text, regId, store,
                                 { onXml = null, resolveCite = null, resolveLaw = null,
+                                  resolveStd = null,
                                   onCite = null, hasJo = null, onJo = null,
                                   hasAnx = null, onAnx = null } = {}) {
   const frag = document.createDocumentFragment();
@@ -417,10 +448,11 @@ export async function renderBody(text, regId, store,
     const d = document.createElement("div");
     d.className = "bd-text";
     const plain = s.replace(/^\n+|\n+$/g, "");
-    if (resolveCite || resolveLaw || hasJo || hasAnx) {
+    if (resolveCite || resolveLaw || resolveStd || hasJo || hasAnx) {
       // 「…」 인용을 눌러 참조규정 창에서 열 수 있게 한다
       let h = linkCitations(esc(plain), resolveCite);
       h = linkLawRefs(h, resolveLaw);
+      h = linkStdRefs(h, resolveStd);      // ISO 19157-1:2023 처럼 맨몸으로 적힌 표준
       h = linkSelfRefs(h, hasJo);          // 같은 규정 안의 제○조 인용
       h = linkAnnexRefs(h, hasAnx);        // 별표·별지 인용
       h = markSamples(h);                  // 서식의 보기값 〔…〕
@@ -430,7 +462,8 @@ export async function renderBody(text, regId, store,
           e.preventDefault();
           if (a.classList.contains("anx")) onAnx?.(a.dataset.anx, a.dataset.no);
           else if (a.classList.contains("self")) onJo?.(+a.dataset.jo);
-          else onCite?.(a.dataset.reg, a.textContent, a.dataset.jo || "");
+          else onCite?.(a.dataset.reg, a.textContent, a.dataset.jo || "",
+                        a.dataset.clause || "");
         };
       });
     } else if (RE_SAMPLE.test(plain)) {

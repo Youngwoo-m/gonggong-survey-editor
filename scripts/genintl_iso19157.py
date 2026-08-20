@@ -146,11 +146,20 @@ NOTE = {
 }
 
 
+# 옮겨 둔 한국어 본문 — 제8~11조. 따로 둔 파일에서 읽어 온다.
+# (색인을 다시 지어도 옮긴 글을 잃지 않으려는 것이다)
+try:
+    sys.path.insert(0, HERE)
+    from iso19157_ko_8_11 import KO as KO_BODY
+except Exception:
+    KO_BODY = {}
+
+
 def clean(t):
     return re.sub(r"\s+", " ", t or "").strip()
 
 
-def text_of(doc, p0, p1):
+def page_text(doc, p0, p1):
     """p0쪽부터 p1쪽 앞까지의 글 (1부터 세는 쪽 번호)"""
     out = []
     for i in range(p0 - 1, min(p1 - 1, doc.page_count)):
@@ -161,6 +170,52 @@ def text_of(doc, p0, p1):
     s = re.sub(r"^\s*©\s*ISO 2023.*$", "", s, flags=re.M)
     s = re.sub(r"^\s*\d{1,3}\s*$", "", s, flags=re.M)
     return re.sub(r"\n{3,}", "\n\n", s).strip()
+
+
+def _find_head(s, title, start=0):
+    """글 안에서 그 마디의 머리글이 있는 자리를 찾는다 — (자리, 길이). 없으면 (-1, 0).
+
+    줄머리에 있는 것만 머리글로 본다. 본문 가운데에서 다른 마디를 가리키는
+    말('… see 8.3.4 Positional accuracy')을 머리글로 잘못 잡으면 그 마디의
+    글이 거기서 끊긴다 — 실제로 8.3.3 이 그렇게 잘려 있었다."""
+    t = clean(title)
+    pat = re.escape(t).replace(r"\ ", r"\s+")
+    for rx in (r"(?m)^[ \t]*" + pat, pat):          # 줄머리 먼저, 안 되면 아무 데나
+        m = re.compile(rx).search(s, start)
+        if m:
+            return m.start(), m.end() - m.start()
+    return -1, 0
+
+
+def text_of(doc, toc, i, ends):
+    """마디 하나의 글만 잘라 낸다.
+
+    쪽으로만 자르면 상위 마디와 첫 하위 마디가 같은 쪽에서 시작할 때 같은
+    글이 두세 번 담긴다 (4 · 4.1 · 4.2 가 모두 1,793자로 같았다).
+    그래서 쪽 글 안에서 제 머리글부터 다음 머리글 앞까지로 다시 자른다."""
+    lv, title, p = toc[i]
+    # 다음 마디가 시작하는 쪽까지 함께 읽는다 — 마지막 월이 쪽을 넘어가는 일이
+    # 잦아, 그 쪽을 빼면 글이 낱말 가운데에서 끊긴다 (8.3.3 이 그러하였다).
+    # 넘겨 읽은 몫은 아래에서 다음 머리글을 찾아 잘라 낸다.
+    s = page_text(doc, p, ends[i] + 1)
+    at, ln = _find_head(s, title)
+    a = 0 if at < 0 else at + ln
+    b = len(s)
+    if i + 1 < len(toc):
+        c, _ = _find_head(s, toc[i + 1][1], a)
+        if c > a:
+            b = c
+        else:
+            # 다음 머리글을 못 찾았으면 넘겨 읽은 쪽을 도로 뺀다
+            s = page_text(doc, p, ends[i])
+            at, ln = _find_head(s, title)
+            a = 0 if at < 0 else at + ln
+            b = len(s)
+    out = re.sub(r"\n{3,}", "\n\n", s[a:b]).strip()
+    # 머리글을 자르고 남은 외톨이 글자를 걷어낸다 — 쪽에 따라 글자 사이가
+    # 벌어져 있어 이름의 끝 글자 하나가 본문 첫머리에 남는 일이 있다
+    out = re.sub(r"^[A-Za-z]\s*\n", "", out)
+    return out.strip()
 
 
 if __name__ == "__main__":
@@ -186,12 +241,17 @@ if __name__ == "__main__":
         ko = KO.get(t, "")
         if ko:
             named += 1
-        body = text_of(doc, p, ends[i])
+        body = text_of(doc, toc, i, ends)
         num = (re.match(r"^(\d+(?:\.\d+)*)", t) or [None, ""])[1]
         seq += 1
-        node = {"id": "iso19157-n%d" % seq, "level": "장" if lv == 1 else "조",
+        # 마디 번호(8.3.7)를 따로 지녀 둔다 — 규정 본문의
+        # "ISO 19157-1의 8.3.7" 같은 인용이 이것을 보고 찾아온다
+        # 옮겨 둔 한국어가 있으면 그것을 쓴다 — 색인을 다시 지어도 잃지 않게
+        ko_body = KO_BODY.get(num) or NOTE.get(num, "")
+        node = {"id": "iso19157-n%d" % seq, "clause": num,
+                "level": "장" if lv == 1 else "조",
                 "title": t, "transTitle": ko, "body": body,
-                "transBody": NOTE.get(num, ""), "children": []}
+                "transBody": ko_body, "children": []}
         if lv == 1:
             node["no"] = len(tree) + 1
             tree.append(node)
