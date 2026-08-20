@@ -136,20 +136,35 @@ def build_tree(lines):
     return root["children"]
 
 
-def renumber(tree):
-    jo = [0]
+def renumber(tree, jo=False):
+    """편ㆍ장ㆍ절ㆍ관의 번호를 자리대로 다시 매긴다.
+
+    조는 건드리지 아니한다 — build_tree() 가 원문에서 읽은 번호가 옳다.
+    예전에는 조도 하나씩 세어 다시 매겼는데, 가지조(제N조의M)까지 한 칸씩
+    세는 바람에 그 뒤의 본조 번호가 모두 밀렸다. 「공간정보의 구축 및 관리
+    등에 관한 법률」의 제17조(공공측량의 실시 등)가 제20조로 들어와,
+    인용 검사가 엉뚱한 조를 찾아 주고 있었다.
+
+    jo=True 를 주면 옛 방식대로 조도 다시 매긴다 — 원문에 번호가 없는
+    자료를 들여올 때만 쓴다.
+    """
+    n_jo = [0]
 
     def rec(list_):
         c = {"편": 0, "장": 0, "절": 0, "관": 0}
         for n in list_:
             if n["level"] == "조":
-                jo[0] += 1
-                n["no"] = jo[0]
+                n_jo[0] += 1
+                if jo:
+                    n["no"] = n_jo[0]
+                    n["branch"] = 0
+                    n["legacyNo"] = f"제{n['no']}조"
             else:
                 c[n["level"]] += 1
                 n["no"] = c[n["level"]]
             rec(n["children"])
     rec(tree)
+    return n_jo[0]
 
 
 def count(ns, lv):

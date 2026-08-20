@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-16",
+ "generated": "2026-08-20",
  "categories": {
   "core": "핵심 규정",
   "law": "상위 법령",
@@ -2216,6 +2216,111 @@
     "coverage": 1,
     "by": "2023년 옮김본(서광항업)을 2025년판에 맞추어 정리"
    }
+  },
+  {
+   "id": "reg65",
+   "name": "전자정부법",
+   "org": "행정안전부",
+   "kind": "법률",
+   "no": "20654",
+   "effective": "20250708",
+   "lang": "ko",
+   "category": "under",
+   "source": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=268103",
+   "stats": {
+    "편": 0,
+    "장": 7,
+    "절": 5,
+    "관": 0,
+    "조": 99
+   },
+   "file": "reg65.json",
+   "hasFullText": true,
+   "annexCount": 0
+  },
+  {
+   "id": "reg66",
+   "name": "공공기록물 관리에 관한 법률",
+   "org": "행정안전부",
+   "kind": "법률",
+   "no": "21066",
+   "effective": "20251001",
+   "lang": "ko",
+   "category": "under",
+   "source": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=277313",
+   "stats": {
+    "편": 0,
+    "장": 13,
+    "절": 0,
+    "관": 0,
+    "조": 63
+   },
+   "file": "reg66.json",
+   "hasFullText": true,
+   "annexCount": 0
+  },
+  {
+   "id": "reg67",
+   "name": "공공기록물 관리에 관한 법률 시행령",
+   "org": "행정안전부",
+   "kind": "대통령령",
+   "no": "35506",
+   "effective": "20250520",
+   "lang": "ko",
+   "category": "under",
+   "source": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=271131",
+   "stats": {
+    "편": 0,
+    "장": 11,
+    "절": 8,
+    "관": 0,
+    "조": 97
+   },
+   "file": "reg67.json",
+   "hasFullText": true,
+   "annexCount": 6
+  },
+  {
+   "id": "reg68",
+   "name": "형법",
+   "org": "법무부",
+   "kind": "법률",
+   "no": "21450",
+   "effective": "20260312",
+   "lang": "ko",
+   "category": "under",
+   "source": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=284025",
+   "stats": {
+    "편": 2,
+    "장": 46,
+    "절": 13,
+    "관": 0,
+    "조": 402
+   },
+   "file": "reg68.json",
+   "hasFullText": true,
+   "annexCount": 0
+  },
+  {
+   "id": "reg69",
+   "name": "항공안전법 시행규칙",
+   "org": "국토교통부",
+   "kind": "국토교통부령",
+   "no": "01601",
+   "effective": "20260701",
+   "lang": "ko",
+   "category": "under",
+   "source": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=287951",
+   "stats": {
+    "편": 0,
+    "장": 11,
+    "절": 0,
+    "관": 0,
+    "조": 355
+   },
+   "file": "reg69.json",
+   "hasFullText": true,
+   "annexCount": 212
   }
  ],
  "citedUnmatched": [],
