@@ -158,6 +158,44 @@ try:
     KO_BODY = dict(KO_NORM, **KO_BODY)      # 제8~11조가 더 자세하므로 그것을 앞세운다
 except Exception:
     KO_NORM_T = {}
+try:
+    from iso19157_ko_annex_def import KO as KO_ANNEX   # 부속서 D ㆍ E ㆍ F
+    KO_BODY = dict(KO_BODY, **KO_ANNEX)
+except Exception:
+    pass
+
+
+# 마디로 갈라 담을 참고 부속서 — 우리 별표ㆍ별지 설계에 실제로 쓰인다
+SPLIT_ANNEX = ("D", "E", "F")
+
+
+def split_annex(letter, body, seq0):
+    """부속서 본문을 'D.3.1' 같은 머리글에서 갈라 마디 목록으로 돌려준다.
+
+    쪽 북마크에는 부속서 안의 마디가 없다. 그래서 글에서 줄머리에 있는
+    번호를 찾아 가른다. 번호 뒤에 이름이 없는 마디도 있으므로(E.4.2.1 따위)
+    이름은 있으면 쓰고 없으면 번호만 둔다."""
+    pat = re.compile(r"(?m)^[ \t]*(%s\.\d+(?:\.\d+)*)[ \t]*([^\n]*)$" % letter)
+    hits = [m for m in pat.finditer(body)]
+    if len(hits) < 3:
+        return [], body
+    head = body[:hits[0].start()].strip()
+    out = []
+    for i, m in enumerate(hits):
+        end = hits[i + 1].start() if i + 1 < len(hits) else len(body)
+        num = m.group(1)
+        name = clean(m.group(2))
+        text = body[m.end():end].strip()
+        out.append({"clause": num, "name": name, "body": text})
+    # 같은 번호가 두 번 나오면(본문에서 저를 가리키는 자리) 뒤엣것은 버린다
+    seen, uniq = set(), []
+    for x in out:
+        if x["clause"] in seen:
+            uniq[-1]["body"] += "\n" + x["clause"] + " " + x["name"] + "\n" + x["body"]
+            continue
+        seen.add(x["clause"])
+        uniq.append(x)
+    return uniq, head
 
 
 def clean(t):
@@ -259,6 +297,20 @@ if __name__ == "__main__":
                 "transBody": ko_body, "children": []}
         if lv == 1:
             node["no"] = len(tree) + 1
+            # 참고 부속서 D ㆍ E ㆍ F 는 마디로 갈라 담는다 — 통째로는 찾아 쓸 수 없다
+            mA = re.match(r"^Annex ([A-Z])\b", t)
+            if mA and mA.group(1) in SPLIT_ANNEX:
+                parts, head = split_annex(mA.group(1), body, seq)
+                if parts:
+                    node["body"] = head
+                    for k, prt in enumerate(parts, 1):
+                        kid = {"id": "iso19157-%s%d" % (mA.group(1).lower(), k),
+                               "clause": prt["clause"], "level": "조", "no": k,
+                               "title": ("%s %s" % (prt["clause"], prt["name"])).strip(),
+                               "transTitle": "", "body": prt["body"],
+                               "transBody": KO_BODY.get(prt["clause"], ""),
+                               "children": []}
+                        node["children"].append(kid)
             tree.append(node)
             cur1, cur2 = node, None
         else:

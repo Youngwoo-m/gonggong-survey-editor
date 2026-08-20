@@ -7,11 +7,11 @@
    · this.tree 는 항상 '현재 버전'의 트리 배열과 같은 객체를 가리킨다.
    · 모든 구조 변경은 run() 트랜잭션을 통해서만 일어난다.
    ============================================================ */
-import * as M from "./model.js?v=20260820n";
-import { revLabel, nextRevLabel, revValue, verPrefixOf } from "./targets.js?v=20260820n";
-import { regFingerprint } from "./xrefs.js?v=20260820n";
+import * as M from "./model.js?v=20260820o";
+import { revLabel, nextRevLabel, revValue, verPrefixOf } from "./targets.js?v=20260820o";
+import { regFingerprint } from "./xrefs.js?v=20260820o";
 import { numbersOf, planFrom, planStayed, remapCitations, articleIdsIn,
-         planTermFixes, TERM_RULES } from "./xrefs.js?v=20260820n";
+         planTermFixes, TERM_RULES } from "./xrefs.js?v=20260820o";
 
 const MAX_HISTORY = 100;
 const BASE_ID = "base";
