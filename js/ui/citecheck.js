@@ -4,7 +4,7 @@
    이 규정이 부르는 남의 조문이 아직 성한지 훑어 보인다.
    판정은 core/citecheck.js 가 하고, 여기는 보이고 짚어 주기만 한다.
    ============================================================ */
-import { GRADES } from "../core/citecheck.js?v=20260823g";
+import { GRADES } from "../core/citecheck.js?v=20260823h";
 
 const CLS = { [GRADES.OK]: "g-ok", [GRADES.MUST]: "g-must", [GRADES.CHECK]: "g-check" };
 
