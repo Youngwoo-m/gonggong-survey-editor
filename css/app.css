@@ -350,6 +350,15 @@ button{font-family:inherit}
 .vld-ok{font-size:11.5px;color:#1F5C4E;background:var(--green-bg);padding:3px 12px;border-radius:11px;font-weight:700}
 .vld-bad{font-size:11.5px;color:#8E3A20;background:var(--accent-bg);padding:3px 12px;border-radius:11px;font-weight:700}
 /* ---- 별표 미리보기 ---- */
+/* PDF 를 통째로 붙인다 — 한 쪽만 보이던 그림과 달리 끝까지 넘겨 볼 수 있다.
+   높이는 아래 모서리를 끌어 늘일 수 있게 두었다 (resize:vertical). */
+.annex-pdf{resize:vertical;overflow:hidden;height:74vh;min-height:280px;
+  border:1px solid var(--line);border-radius:5px;background:#fff;
+  box-shadow:0 1px 4px rgba(0,0,0,.06);margin:4px 0}
+.annex-pdf iframe,.annex-pdf object{width:100%;height:100%;border:0;display:block}
+.annex-shots{margin-top:8px}
+.annex-shots summary{font-size:11px;color:var(--slate);cursor:pointer;padding:4px 2px}
+.annex-shots summary:hover{color:var(--green)}
 .annex-preview{display:flex;flex-direction:column;gap:10px;padding:4px 0}
 .annex-preview figure{margin:0}
 .annex-preview img{width:100%;border:1px solid var(--line);border-radius:5px;background:#fff;

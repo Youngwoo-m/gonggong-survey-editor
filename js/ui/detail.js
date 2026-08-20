@@ -1,11 +1,10 @@
 /* ============================================================
    ui/detail.js — 조문 상세 패널
    ============================================================ */
-import * as M from "../core/model.js?v=20260823h";
-import { wordDiff, beforeRuns, afterRuns, hasChange } from "../core/textdiff.js?v=20260823h";
+import * as M from "../core/model.js?v=20260820d";
+import { wordDiff, beforeRuns, afterRuns, hasChange } from "../core/textdiff.js?v=20260820d";
 import { imgIdsIn, renderBody, fitTable, toHtml, openTableOverlay, markAnnexEdits }
-  from "../core/objects.js?v=20260823h";
-
+  from "../core/objects.js?v=20260820d";
 
 /** 만들고 있는 안을 부르는 말 — 작업규정은 개정안, 성과심사 규정은 개정안 */
 /* 만들어 내는 안을 부르는 말 — 규정마다 다르다 (작업규정은 '개정안', 나머지는 '개정안').
@@ -76,14 +75,8 @@ function runsHtml(runs) {
   return runs.map((r) => (r.mark ? `<u class="mk">${esc(r.s)}</u>` : esc(r.s))).join("");
 }
 
-function fmtDT(iso) {
-  const d = new Date(iso);
-  if (isNaN(d)) return "";
-  const p = (n) => String(n).padStart(2, "0");
-  return `${d.getFullYear()}.${p(d.getMonth() + 1)}.${p(d.getDate())} ${p(d.getHours())}:${p(d.getMinutes())}`;
-}
-
-import { linkReason, wireReasonLinks } from "../core/reasonlink.js?v=20260823h";
+import { linkReason, wireReasonLinks } from "../core/reasonlink.js?v=20260820d";
+import { esc, fmtDT } from "./html.js?v=20260820d";
 
 /** 사유 글이 스스로 머리글을 달고 있는가 — 그러면 딱지를 겹쳐 붙이지 아니한다 */
 const RE_REASON_HEAD = /^\s*\[변경 사유\]/;
@@ -494,7 +487,34 @@ export class DetailPanel {
     return el;
   }
 
-  /** 별표 미리보기 이미지 블록 */
+  /** 곁에 둔 파일인가 — 밖(law.go.kr)의 것과 갈라 본다 */
+  static _isLocal(p) { return !!p && !/^https?:/i.test(p); }
+
+  /** 길에 한글이 섞여 있으므로 마디마다 따로 감싼다 (‘/’ 는 살려 둔다) */
+  static _fileUrl(p) {
+    return String(p || "").split("/").map(encodeURIComponent).join("/");
+  }
+
+  /** 별표·별지의 내려받기 단추 — 곁의 것은 정말 내려받게 한다 */
+  _annexLinks(node) {
+    const a = node.annexRef || {};
+    const one = (p, label) => {
+      if (!p) return "";
+      const url = DetailPanel._fileUrl(p);
+      const name = decodeURIComponent(String(p).split("/").pop());
+      return DetailPanel._isLocal(p)
+        ? `<a class="btnlink" href="${esc(url)}" download="${esc(name)}">${label} 내려받기</a>`
+        : `<a class="btnlink" href="${esc(p)}" target="_blank" rel="noopener">${label} 내려받기</a>`;
+    };
+    const links = [one(a.hwp, "HWP"), one(a.pdf, "PDF")].filter(Boolean).join(" ");
+    const note = a.gen
+      ? `<span class="mut">본문 글로 지은 서식입니다 — 조판은 한글에서 다듬으십시오.</span>`
+      : a.src ? `<span class="mut">${esc(a.src)}</span>` : "";
+    return `<div class="annex-links">${
+      links || "<span class='mut'>제공되는 파일이 없습니다.</span>"}${note ? " " + note : ""}</div>`;
+  }
+
+  /** 별표 미리보기 — PDF 가 곁에 있으면 통째로, 없으면 그림으로 */
   _annexPreview(node, docId) {
     docId = docId || this.baseRegId;
     // 순서를 바꿔도 그림이 어긋나지 않도록 '현행 번호'로 찾는다
@@ -510,19 +530,52 @@ export class DetailPanel {
     const files = bin[where] && bin[where][key];
     const wrap = document.createElement("div");
     wrap.className = "fld";
-    if (!files || !files.length) {
+
+    const pdf = node.annexRef && node.annexRef.pdf;
+    const shots = (files || []).map((f, i) => `
+        <figure>
+          <img loading="lazy" src="data/${encodeURIComponent("annex")}/${
+            encodeURIComponent(where)}/${encodeURIComponent(f)}"
+               alt="${esc(node.title)} ${i + 1}쪽">
+          ${files.length > 1 ? `<figcaption>${i + 1} / ${files.length}</figcaption>` : ""}
+        </figure>`).join("");
+
+    // 그림이 PDF 와 다른 것을 담고 있을 때가 있다 — 이를테면 무인비행장치
+    // 별표 8 의 둘째 쪽은 연구보고서의 신구대조표다. 그래서 접어 두되 남긴다.
+    const shotsLabel = node.status === "신설" ? "연구보고서에 실린 쪽" : "원본 쪽 그림";
+    const shotsOpen = false;
+
+    if (DetailPanel._isLocal(pdf)) {
+      // PDF 를 통째로 붙인다 — 한 쪽만 보이던 그림과 달리 끝까지 넘겨 볼 수 있다
+      const url = DetailPanel._fileUrl(pdf);
+      const pages = Number(node.annexRef.pages) || 0;
+      wrap.innerHTML = `<label>미리보기 ${
+          pages ? `<span class="cnt">${pages}쪽</span>` : ""}
+          <a class="btnlink lbl-right" href="${esc(url)}" target="_blank"
+             rel="noopener">새 창에서 크게 보기</a></label>
+        <div class="annex-pdf"><object data="${esc(url)}#view=FitH&toolbar=1"
+             type="application/pdf" aria-label="${esc(node.title || "")} 미리보기">
+          <div class="annex-noimg">이 브라우저는 PDF 를 화면 안에 띄우지 못합니다 —
+            위의 <b>새 창에서 크게 보기</b> 나 <b>PDF 내려받기</b> 를 쓰십시오.</div>
+        </object></div>
+        ${shots ? `<details class="annex-shots"${shotsOpen ? " open" : ""}><summary>${
+          esc(shotsLabel)} ${files.length}장 보기</summary><div class="annex-preview">${
+          shots}</div></details>` : ""}`;
+      wrap.querySelectorAll("img").forEach((img) => {
+        img.onclick = () => window.open(img.src, "_blank", "noopener");
+        img.onerror = () => { img.closest("figure").remove(); };
+      });
+      return wrap;
+    }
+
+    if (!shots) {
       wrap.innerHTML = `<label>미리보기</label>
-        <div class="annex-noimg">미리보기 이미지가 준비되지 않은 별표입니다.
+        <div class="annex-noimg">미리보기가 준비되지 않은 별표입니다.
         위의 내려받기 단추로 원본을 확인하세요.</div>`;
       return wrap;
     }
     wrap.innerHTML = `<label>미리보기 <span class="cnt">${files.length}쪽</span></label>
-      <div class="annex-preview">${files.map((f, i) => `
-        <figure>
-          <img loading="lazy" src="data/annex/${encodeURIComponent(where)}/${encodeURIComponent(f)}"
-               alt="${esc(node.title)} ${i + 1}쪽">
-          ${files.length > 1 ? `<figcaption>${i + 1} / ${files.length}</figcaption>` : ""}
-        </figure>`).join("")}</div>`;
+      <div class="annex-preview">${shots}</div>`;
     wrap.querySelectorAll("img").forEach((img) => {
       img.onclick = () => window.open(img.src, "_blank", "noopener");
       img.onerror = () => { img.closest("figure").remove(); };
@@ -565,11 +618,7 @@ export class DetailPanel {
     if (node.annexRef) {
       const a = document.createElement("div");
       a.className = "fld";
-      const links = [
-        node.annexRef.hwp ? `<a class="btnlink" href="${esc(node.annexRef.hwp)}" target="_blank" rel="noopener">HWP 내려받기</a>` : "",
-        node.annexRef.pdf ? `<a class="btnlink" href="${esc(node.annexRef.pdf)}" target="_blank" rel="noopener">PDF 내려받기</a>` : "",
-      ].filter(Boolean).join(" ");
-      a.innerHTML = `<label>별표·서식 파일</label><div class="annex-links">${links || "<span class='mut'>제공되는 파일이 없습니다.</span>"}</div>`;
+      a.innerHTML = `<label>별표·서식 파일</label>${this._annexLinks(node)}`;
       el.appendChild(a);
       // 읽기 전용으로 볼 때에도 달라진 말을 짚어 보인다
       const ad = this._annexDiff(node);
@@ -592,8 +641,10 @@ export class DetailPanel {
       el.appendChild(this._annexPreview(node, docId));
     }
 
-    // 본문은 조문에, 그리고 원본 파일이 없는 신설 별표·별지(설명·표만 있는 것)에도 보인다
-    if (!node.annexRef || (node.body && !node.annexRef.hwp && !node.annexRef.pdf)) {
+    // 본문은 조문에, 그리고 글이 있는 별표·별지 모두에 보인다.
+    // 여태는 원본 파일이 걸리면 글이 사라졌는데, 서식 파일과 규정 문언은
+    // 서로 갈음하는 것이 아니라 나란히 보아야 하는 것이다.
+    if (!node.annexRef || node.body) {
       el.appendChild(this._bodyView(node, docId, node.annexRef ? "내용" : "본문"));
     }
 
@@ -759,12 +810,7 @@ export class DetailPanel {
       // 별표·별지 — 본문 대신 원본 파일과 미리보기를 보여 준다
       const a = document.createElement("div");
       a.className = "fld";
-      const links = [
-        node.annexRef.hwp ? `<a class="btnlink" href="${esc(node.annexRef.hwp)}" target="_blank" rel="noopener">HWP 내려받기</a>` : "",
-        node.annexRef.pdf ? `<a class="btnlink" href="${esc(node.annexRef.pdf)}" target="_blank" rel="noopener">PDF 내려받기</a>` : "",
-      ].filter(Boolean).join(" ");
-      a.innerHTML = `<label>원본 파일</label><div class="annex-links">${
-        links || "<span class='mut'>새로 만든 별표입니다. 서식 파일은 따로 관리하세요.</span>"}</div>`;
+      a.innerHTML = `<label>별표·서식 파일</label>${this._annexLinks(node)}`;
       el.appendChild(a);
       const ad = this._annexDiff(node);
       if (ad) el.appendChild(ad);
@@ -841,10 +887,6 @@ export class DetailPanel {
 }
 
 /* ---------- 헬퍼 ---------- */
-function esc(s) {
-  return String(s ?? "").replace(/[&<>"']/g, (c) =>
-    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-}
 function field(label, value, readonly, cls = "", ph = "") {
   const d = document.createElement("div");
   d.className = "fld";
