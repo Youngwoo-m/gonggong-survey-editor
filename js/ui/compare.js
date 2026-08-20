@@ -1,13 +1,14 @@
 /* ============================================================
    ui/compare.js — 개정 전후 비교표 화면
    ============================================================ */
-import { buildComparison, KIND_LIST } from "../core/diff.js?v=20260823h";
-import { writeXlsx } from "../core/xlsx.js?v=20260823h";
-import * as M from "../core/model.js?v=20260823h";
-import { regFingerprint } from "../core/xrefs.js?v=20260823h";
-import { buildAmendment } from "../core/amend.js?v=20260823h";
-import { buildSupplement, EFFECT_KINDS, topTitles } from "../core/supplement.js?v=20260823h";
-import { stripImgTags } from "../core/objects.js?v=20260823h";
+import { buildComparison, KIND_LIST } from "../core/diff.js?v=20260820d";
+import { writeXlsx } from "../core/xlsx.js?v=20260820d";
+import * as M from "../core/model.js?v=20260820d";
+import { regFingerprint } from "../core/xrefs.js?v=20260820d";
+import { buildAmendment } from "../core/amend.js?v=20260820d";
+import { buildSupplement, EFFECT_KINDS, topTitles } from "../core/supplement.js?v=20260820d";
+import { stripImgTags } from "../core/objects.js?v=20260820d";
+import { esc, fmtDate } from "./html.js?v=20260820d";
 
 const KIND_CLASS = {
   "신설": "k-new", "삭제": "k-del", "이동": "k-mov", "이관": "k-xfer",
@@ -705,16 +706,6 @@ function runsHtml(runs) {
   return runs.map((r) => (r.mark ? `<u class="mk">${esc(r.s)}</u>` : esc(r.s))).join("");
 }
 
-function esc(s) {
-  return String(s ?? "").replace(/[&<>"']/g, (c) =>
-    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-}
-
-function fmtDate(d) {
-  if (!d || d.length !== 8) return d || "";
-  return `${d.slice(0, 4)}. ${+d.slice(4, 6)}. ${+d.slice(6, 8)}.`;
-}
-
 function download(blob, name) {
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
@@ -722,7 +713,6 @@ function download(blob, name) {
   document.body.appendChild(a); a.click(); a.remove();
   setTimeout(() => URL.revokeObjectURL(url), 2000);
 }
-
 
 /** 글자 수만큼 줄표를 긋는다 — 공백은 세지 않는다 (신구조문 대비표 양식) */
 function dashes(text) {

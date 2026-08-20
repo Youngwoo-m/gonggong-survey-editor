@@ -17,6 +17,8 @@
    여기는 보이고 고르게 하는 일만 한다.
    ============================================================ */
 
+import { esc } from "./html.js?v=20260820d";
+
 export class TermsView {
   constructor(opts = {}) {
     this.onJump = opts.onJump || null;
@@ -216,7 +218,3 @@ function shortOf(n) {
   return `${no}${n.title ? `(${n.title})` : ""}`.trim() || (n.title || n.id || "");
 }
 
-function esc(s) {
-  return String(s ?? "").replace(/[&<>"']/g, (c) =>
-    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-}

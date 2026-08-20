@@ -1,7 +1,8 @@
 /* ============================================================
    ui/validate.js — 정합성 검증 결과 화면
    ============================================================ */
-import { validate } from "../core/validate.js?v=20260823h";
+import { validate } from "../core/validate.js?v=20260820d";
+import { esc } from "./html.js?v=20260820d";
 
 const CLS = { "오류": "k-del", "경고": "k-edit", "정보": "k-keep" };
 
@@ -126,7 +127,3 @@ export class ValidateView {
   }
 }
 
-function esc(s) {
-  return String(s ?? "").replace(/[&<>"']/g, (c) =>
-    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-}

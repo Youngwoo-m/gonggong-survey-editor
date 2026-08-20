@@ -1,7 +1,8 @@
 /* ============================================================
    ui/share.js — 공유 화면 (저장소 연결 · 프로젝트 목록 · 저장 이력)
    ============================================================ */
-import * as GH from "../adapters/github.js?v=20260823h";
+import * as GH from "../adapters/github.js?v=20260820d";
+import { esc, fmtDT } from "./html.js?v=20260820d";
 
 /** 파일 저장에 이어 저장소에도 올릴지 */
 export const AUTOPUSH = {
@@ -342,13 +343,3 @@ export class ShareView {
   }
 }
 
-function esc(s) {
-  return String(s ?? "").replace(/[&<>"']/g, (c) =>
-    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-}
-function fmtDT(iso) {
-  const d = new Date(iso);
-  if (isNaN(d)) return "";
-  const p = (n) => String(n).padStart(2, "0");
-  return `${d.getFullYear()}.${p(d.getMonth() + 1)}.${p(d.getDate())} ${p(d.getHours())}:${p(d.getMinutes())}`;
-}

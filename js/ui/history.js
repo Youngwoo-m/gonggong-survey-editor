@@ -1,6 +1,8 @@
 /* ============================================================
    ui/history.js — 버전 전체 변경 이력 화면
    ============================================================ */
+
+import { esc, fmtDT } from "./html.js?v=20260820d";
 const KIND_CLASS = {
   "신설": "k-new", "삭제": "k-del", "이동": "k-mov", "순서": "k-mov",
   "수정": "k-edit", "통합": "k-mrg", "참조삽입": "k-ref", "상태변경": "k-keep",
@@ -168,13 +170,3 @@ export class HistoryView {
   }
 }
 
-function esc(s) {
-  return String(s ?? "").replace(/[&<>"']/g, (c) =>
-    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-}
-function fmtDT(iso) {
-  const d = new Date(iso);
-  if (isNaN(d)) return "";
-  const p = (n) => String(n).padStart(2, "0");
-  return `${d.getFullYear()}.${p(d.getMonth() + 1)}.${p(d.getDate())} ${p(d.getHours())}:${p(d.getMinutes())}`;
-}

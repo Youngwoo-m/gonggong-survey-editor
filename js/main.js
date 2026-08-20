@@ -1,30 +1,31 @@
 /* ============================================================
    main.js — 앱 조립 (1단계 프로토타입)
    ============================================================ */
-import * as M from "./core/model.js?v=20260823h";
-import { Project } from "./core/project.js?v=20260823h";
-import * as FS from "./adapters/fileio.js?v=20260823h";
-import * as AUTO from "./adapters/autosave.js?v=20260823h";
-import { TreeView } from "./ui/tree.js?v=20260823h";
-import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260823h";
-import { CompareView } from "./ui/compare.js?v=20260823h";
-import { VersionsView } from "./ui/versions.js?v=20260823h";
-import { HistoryView } from "./ui/history.js?v=20260823h";
-import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260823h";
-import { ValidateView } from "./ui/validate.js?v=20260823h";
-import { RefPicker } from "./ui/refpicker.js?v=20260823h";
-import { AIView } from "./ui/ai.js?v=20260823h";
-import { CiteCheckView } from "./ui/citecheck.js?v=20260823h";
-import { TermsView } from "./ui/terms.js?v=20260823h";
-import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260823h";
-import * as GH from "./adapters/github.js?v=20260823h";
-import { extractLines } from "./core/importer.js?v=20260823h";
-import { buildAuto } from "./core/structure.js?v=20260823h";
-import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260823h";
-import { ObjectStore, fitTable } from "./core/objects.js?v=20260823h";
-import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260823h";
-import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260823h";
-import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260823h";
+import * as M from "./core/model.js?v=20260820d";
+import { Project } from "./core/project.js?v=20260820d";
+import * as FS from "./adapters/fileio.js?v=20260820d";
+import * as AUTO from "./adapters/autosave.js?v=20260820d";
+import { TreeView } from "./ui/tree.js?v=20260820d";
+import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260820d";
+import { CompareView } from "./ui/compare.js?v=20260820d";
+import { VersionsView } from "./ui/versions.js?v=20260820d";
+import { HistoryView } from "./ui/history.js?v=20260820d";
+import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260820d";
+import { ValidateView } from "./ui/validate.js?v=20260820d";
+import { RefPicker } from "./ui/refpicker.js?v=20260820d";
+import { AIView } from "./ui/ai.js?v=20260820d";
+import { CiteCheckView } from "./ui/citecheck.js?v=20260820d";
+import { TermsView } from "./ui/terms.js?v=20260820d";
+import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260820d";
+import * as GH from "./adapters/github.js?v=20260820d";
+import { extractLines } from "./core/importer.js?v=20260820d";
+import { buildAuto } from "./core/structure.js?v=20260820d";
+import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260820d";
+import { ObjectStore, fitTable } from "./core/objects.js?v=20260820d";
+import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260820d";
+import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260820d";
+import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260820d";
+import { fmtDate } from "./ui/html.js?v=20260820d";
 
 const $ = (s) => document.querySelector(s);
 const NL = "\n";
@@ -521,15 +522,36 @@ async function followActiveTarget() {
   paintEditHead();      // 창 머리 글자는 paintEditHead 한 곳에서만 적는다
 }
 
-/** 본문 속 표·수식 XML 목록 — 없으면 조용히 넘어간다 */
+/** 어느 규정에 표·수식 색인이 있는지 적어 둔 것 — 한 번만 읽는다.
+    null 이면 아직 안 읽었고, {} 이면 명세가 없어 옛 방식으로 돈다는 뜻이다. */
+let objManifest = null;
+
+async function objectManifest() {
+  if (objManifest) return objManifest;
+  try {
+    objManifest = await FS.loadJSON("data/objects/manifest.json") || {};
+  } catch { objManifest = {}; }
+  return objManifest;
+}
+
+/** 본문 속 표·수식 XML 목록 — 없으면 조용히 넘어간다.
+    명세를 먼저 보고 부른다: 없는 것을 부르면 콘솔이 404 로 뒤덮여
+    정작 봐야 할 오류가 묻힌다. */
 async function loadObjectIndex(regId) {
   if (objects.index[regId]) return;
-  try {
-    objects.setIndex(regId, await FS.loadJSON(`data/objects/${regId}/index.json`));
-  } catch { objects.setIndex(regId, {}); }
-  try {
-    objects.setAnnexIndex(regId, await FS.loadJSON(`data/objects/${regId}/annex-index.json`));
-  } catch { objects.setAnnexIndex(regId, {}); }
+  const man = await objectManifest();
+  const known = Object.keys(man).length ? man[regId] : { index: true, annex: true };
+  if (!known) { objects.setIndex(regId, {}); objects.setAnnexIndex(regId, {}); return; }
+  if (known.index) {
+    try {
+      objects.setIndex(regId, await FS.loadJSON(`data/objects/${regId}/index.json`));
+    } catch { objects.setIndex(regId, {}); }
+  } else objects.setIndex(regId, {});
+  if (known.annex) {
+    try {
+      objects.setAnnexIndex(regId, await FS.loadJSON(`data/objects/${regId}/annex-index.json`));
+    } catch { objects.setAnnexIndex(regId, {}); }
+  } else objects.setAnnexIndex(regId, {});
 }
 
 async function loadReg(id) {
@@ -1084,7 +1106,6 @@ const autosaveNow = AUTO.debounced(() => {
   if (el && !project.remote) el.textContent = `자동 저장됨 · ${autosaveAt}`;
   return project.toJSON();
 });
-
 
 function onProjectChange(p, msg) {
   // 고른 조문이 다른 규정이면 참조 창과 부르는 말이 그리로 따라간다
@@ -1999,13 +2020,6 @@ function setupSplitters() {
       document.addEventListener("mouseup", onUp);
     });
   });
-}
-
-function fmtDate(d) {
-  if (!d) return "";
-  if (d.length === 8) return `${d.slice(0, 4)}. ${+d.slice(4, 6)}. ${+d.slice(6, 8)}.`;
-  if (d.length === 6) return `${d.slice(0, 4)}. ${+d.slice(4, 6)}.`;
-  return d;
 }
 
 /**
