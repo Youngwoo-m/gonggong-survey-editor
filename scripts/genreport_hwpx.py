@@ -30,7 +30,58 @@ ROOT = os.path.dirname(HERE)
 DATA = os.path.join(ROOT, "data")
 
 import forms_hwp as HWP                                   # noqa: E402
-from genreport import esc, page, walk, body_html, preview_ok, RE_PROV, TH_STYLE  # noqa: E402
+from genreport import (esc, page, walk, body_html, table_html,   # noqa: E402
+                       preview_ok, RE_PROV, RE_IMG, TH_STYLE)
+
+
+# ─────────────────────────────────────── 고시 서식에 맞추기
+#
+# 현행 고시 원본(2020.무인비행장치 측량 작업규정.hwp)을 뜯어 견주었더니
+# 우리가 뽑던 글과 어긋나는 데가 있었다.
+#
+#   원본   국토지리정보원 고시 제2020-5670호      ← 고시 번호를 머리에 둔다
+#          무인비행장치 측량 작업규정
+#          제1장 총칙
+#          제1조(목적) 이 고시는 「공간정보의…      ← 조 제목과 본문이 한 줄
+#
+#   여태   무인비행장치 측량 작업규정 개정(안)
+#          제1조(목적)                            ← 제목만 한 줄
+#          이 고시는 「공간정보의…                  ← 본문은 다음 줄
+#
+# 조 제목 뒤에 첫 문장이 이어 붙는 것이 고시의 꼴이다. 그렇게 맞춘다.
+
+def body_lead(text, regid, lead):
+    """조문 본문 — 첫 줄을 조 제목(lead) 뒤에 이어 붙인다.
+
+    본문이 표로 시작하면 이어 붙일 글이 없으므로 제목만 한 줄로 둔다."""
+    t = RE_PROV.sub("", str(text or ""))
+    parts, last = [], 0
+    for m in RE_IMG.finditer(t):
+        parts.append(("t", t[last:m.start()]))
+        parts.append(("tbl", m.group(1)))
+        last = m.end()
+    parts.append(("t", t[last:]))
+
+    out, joined = [], False
+    for kind, v in parts:
+        if kind == "tbl":
+            if not joined:                       # 표가 먼저 오면 제목만 세운다
+                out.append(f"<div class='jo'>{lead}</div>")
+                joined = True
+            out.append(table_html(v, regid))
+            continue
+        for line in str(v).split("\n"):
+            line = line.strip()
+            if not line:
+                continue
+            if not joined:
+                out.append(f"<p class='jo'>{lead} {esc(line)}</p>")
+                joined = True
+            else:
+                out.append(f"<p>{esc(line)}</p>")
+    if not joined:
+        out.append(f"<div class='jo'>{lead}</div>")
+    return "".join(out)
 
 
 def arg(name, dflt=None):
@@ -43,8 +94,24 @@ def rj(p):
 
 
 # ─────────────────────────────────────────────────────── 본문 짓기
-def html_draft(tree, regname, regid):
-    L = [f"<h1>{esc(regname)} 개정(안)</h1>"]
+def html_draft(tree, regname, regid, meta):
+    """조문 전문 — 관련규정 폴더의 현행 원본과 같은 꼴로 세운다.
+
+        공공측량 작업규정
+        [시행 2025. 4. 23.] [국토지리정보원고시 제2025-2092호, 2025. 4. 23., 일부개정.]
+
+    개정안은 시행일과 고시 번호가 아직 없으므로 ○ 로 자리만 둔다 —
+    지어 넣으면 정해진 것처럼 읽힌다.
+
+    서식은 인라인으로 준다. page() 의 style 은 genreport.py 와 함께 쓰는
+    것이라, 여기서만 필요한 꾸밈을 넣자고 그것을 건드리지 아니한다."""
+    GS = "style=\"text-align:center;margin:0 0 4pt;font-size:9.5pt;color:#333\""
+    org = (meta.get("org") or "").replace(" ", "")
+    kind = meta.get("kind") or "고시"
+    L = [f"<h1>{esc(regname)}</h1>",
+         f"<p {GS}>[시행 ○○○○. ○. ○.] "
+         f"[{esc(org)}{esc(kind)} 제○○○○-○○○○호, ○○○○. ○. ○., 일부개정.]</p>",
+         f"<p {GS}>— 개정(안) —</p>"]
     for _d, x in walk(tree):
         if x.get("isDeleted") or x.get("status") == "삭제" or x.get("annexRef"):
             continue
@@ -57,37 +124,106 @@ def html_draft(tree, regname, regid):
             L.append(f"<h4>제{no}{lv} {esc(ti)}</h4>")
         elif lv == "조":
             br = f"의{x['branch']}" if x.get("branch") else ""
-            L.append(f"<div class='jo'>제{no}조{br}({esc(ti)})</div>")
-            L.append(body_html(x.get("body"), regid))
-    return page(f"{regname} 개정(안)", "".join(L))
+            L.append(body_lead(x.get("body"), regid, f"제{no}조{br}({esc(ti)})"))
+    return page(regname, "".join(L))
+
+
+TODO = ("<p style=\"color:#888\">〔이 마디는 사람이 씁니다 — 개정안 자료에 없는 "
+        "글입니다.〕</p>")
 
 
 def html_reason(tree, regname, regid):
-    L = [f"<h1>{esc(regname)} 개정사유서</h1>"]
+    """개정사유서 — 99.참고자료\\작업규정 개정안_개정사유서_양식.hwpx 의 짜임을 따른다.
+
+    양식은 일곱 절이다.
+      1. 개정 목적          2. 개정 배경 및 필요성   3. 주요 개정 내용
+      4. 조항별 개정 사유    5. 별표 개정 및 신설 사유
+      6. 기대 효과          7. 종합 의견
+
+    이 가운데 자료에서 지을 수 있는 것은 4와 5뿐이다 — 개정안에 조문마다ㆍ
+    별표마다 적어 둔 사유가 그것이다. 나머지 다섯은 사람이 쓰는 줄글이므로
+    지어내지 아니하고 자리만 세워 둔다.
+    """
+    L = [f"<h1>{esc(regname)} 개정사유서</h1>",
+         "<h2>1. 개정 목적</h2>", TODO,
+         "<h2>2. 개정 배경 및 필요성</h2>", TODO,
+         "<h2>3. 주요 개정 내용</h2>", TODO,
+         "<h2>4. 조항별 개정 사유</h2>",
+         "<table><thead><tr>"
+         f"<th width='14%'{TH_STYLE}>조항</th>"
+         f"<th width='26%'{TH_STYLE}>개정 항목</th>"
+         f"<th width='60%'{TH_STYLE}>개정 사유</th></tr></thead><tbody>"]
     n = 0
     for _d, x in walk(tree):
+        if x.get("annexRef") or x.get("level") != "조":
+            continue
         r = (x.get("reason") or "").strip()
         if not r:
             continue
         n += 1
-        if x.get("annexRef"):
-            a = x["annexRef"]
-            head = f"[{a.get('gubun') or '별표'} {a.get('no')}] {esc(x.get('title') or '')}"
-        else:
-            br = f"의{x['branch']}" if x.get("branch") else ""
-            head = f"제{x.get('no')}조{br}({esc(x.get('title') or '')})"
-        L.append(f"<div class='jo'>{head}"
-                 f"{' · ' + esc(x.get('status')) if x.get('status') else ''}</div>")
-        L.append(body_html(r, regid))
+        br = f"의{x['branch']}" if x.get("branch") else ""
+        L.append(f"<tr><td>제{x.get('no')}조{br}</td>"
+                 f"<td>{esc(x.get('title') or '')}</td>"
+                 f"<td>{reason_brief(r, x.get('status'))}</td></tr>")
+    L.append("</tbody></table>")
+
+    L.append("<h2>5. 별표 개정 및 신설 사유</h2>")
+    L.append("<table><thead><tr>"
+             f"<th width='12%'{TH_STYLE}>구분</th>"
+             f"<th width='30%'{TH_STYLE}>별표명</th>"
+             f"<th width='10%'{TH_STYLE}>조치</th>"
+             f"<th width='48%'{TH_STYLE}>개정 또는 신설 사유</th></tr></thead><tbody>")
+    for _d, x in walk(tree):
+        a = x.get("annexRef")
+        if not a:
+            continue
+        n += 1
+        L.append(f"<tr><td>{esc(a.get('gubun') or '별표')} {esc(a.get('no'))}</td>"
+                 f"<td>{esc(x.get('title') or '')}</td>"
+                 f"<td>{esc(x.get('status') or '유지')}</td>"
+                 f"<td>{reason_brief(x.get('reason'), None)}</td></tr>")
+    L.append("</tbody></table>")
+
+    L.append("<h2>6. 기대 효과</h2>")
+    L.append(TODO)
+    L.append("<h2>7. 종합 의견</h2>")
+    L.append(TODO)
     return page(f"{regname} 개정사유서", "".join(L)), n
 
 
+def reason_brief(reason, status):
+    """셋째 칸에 넣을 개정 사유 — 사유 글에서 '○ 개정 사유' 도막만 뽑는다.
+
+    사유 글은 다섯 도막(현행 규정ㆍ현행의 문제ㆍ관련 근거ㆍ개정 사유ㆍ개정 내용)
+    으로 되어 있다. 통째로 넣으면 칸이 몇 쪽씩 늘어나므로 '개정 사유' 만 쓰고,
+    그것이 없으면 상태 낱말만 둔다."""
+    out = []
+    if reason:
+        keep = False
+        for ln in str(reason).split("\n"):
+            s = ln.strip()
+            if s.startswith("○"):
+                keep = "개정 사유" in s
+                continue
+            if keep and s:
+                out.append(re.sub(r"^\*\s*", "", s))
+    head = f"<b>{esc(status)}</b>" if status else ""
+    if not out:
+        return head or "&nbsp;"
+    return head + "".join(f"<p>{esc(x)}</p>" for x in out[:6])
+
+
 def html_compare(tree, regname, regid):
-    L = [f"<h1>{esc(regname)} 개정(안) 신구대조표</h1>",
-         "<table><tr>"
-         f"<th width='45%'{TH_STYLE}>현 행</th>"
-         f"<th width='45%'{TH_STYLE}>개정(안)</th>"
-         f"<th width='10%'{TH_STYLE}>비고</th></tr>"]
+    """신구대조표 — 99.참고자료\\규정.신구대조표_양식.hwpx 의 꼴을 따른다.
+
+    양식은 세 칸이다 — 현  행 · 수정(안) · 개정 사유. 셋째 칸에는 상태 낱말이
+    아니라 개정 사유가 들어간다. 칸 너비도 양식의 몫(대략 36:37:27)에 맞춘다.
+    """
+    L = [f"<h1>[붙임] {esc(regname)} 일부 개정(안) 신·구대조표</h1>",
+         "<table><thead><tr>"
+         f"<th width='36%'{TH_STYLE}>현  행</th>"
+         f"<th width='37%'{TH_STYLE}>수정(안)</th>"
+         f"<th width='27%'{TH_STYLE}>개정 사유</th></tr></thead><tbody>"]
     n = 0
     for _d, x in walk(tree):
         if x.get("level") != "조" or x.get("annexRef"):
@@ -98,23 +234,27 @@ def html_compare(tree, regname, regid):
         if st == "유지" and not x.get("legacyNo"):
             continue
         n += 1
-        old_head = esc(x.get("legacyNo")) if x.get("legacyNo") else "&lt;신 설&gt;"
         br = f"의{x['branch']}" if x.get("branch") else ""
+        old_head = esc(x.get("legacyNo")) if x.get("legacyNo") else "&lt;신 설&gt;"
         new_head = f"제{x.get('no')}조{br}({esc(x.get('title') or '')})"
         L.append("<tr><td>" + (f"<b>{old_head}</b>" if was or x.get("legacyNo") else old_head)
                  + (body_html(was, regid) if was else "")
                  + f"</td><td><b>{new_head}</b>" + body_html(now, regid)
-                 + f"</td><td>{esc(st)}</td></tr>")
-    L.append("</table>")
-    return page(f"{regname} 신구대조표", "".join(L)), n
+                 + "</td><td>" + reason_brief(x.get("reason"), st) + "</td></tr>")
+    L.append("</tbody></table>")
+    return page(f"{regname} 신·구대조표", "".join(L)), n
 
 
 # ─────────────────────────────────────────── 별표ㆍ별지 모으기
 BAD = re.compile(r'[\\/:*?"<>|]')
 
 
-def gather_annex(tree, dest):
-    """개정안에 적힌 파일 길 그대로 모은다 → (담은 것, 못 담은 것)"""
+def gather_annex(tree, dest, regname=""):
+    """개정안에 적힌 파일 길 그대로 모은다 → (담은 것, 못 담은 것)
+
+    이름은 현행 고시의 별표 파일이 쓰는 꼴을 그대로 따른다 —
+      [별표 1] 지상기준점의 배치(무인비행장치 측량 작업규정).hwp
+    """
     os.makedirs(dest, exist_ok=True)
     got, miss = [], []
     for _d, x in walk(tree):
@@ -123,7 +263,8 @@ def gather_annex(tree, dest):
             continue
         gu, no = a.get("gubun") or "별표", str(a.get("no"))
         ti = (x.get("title") or "").strip()
-        stem = BAD.sub("·", f"{gu} {no}_{ti}")[:110]
+        stem = BAD.sub("·", f"[{gu} {no}] {ti}({regname})" if regname
+                       else f"[{gu} {no}] {ti}")[:150]
         one = False
         for key in ("hwp", "pdf"):
             src = a.get(key) or ""
@@ -186,7 +327,7 @@ def main():
     os.makedirs(stage)
     made, bad = [], []
     try:
-        jobs = [("개정(안)", html_draft(tree, regname, regid), None)]
+        jobs = [("개정(안)", html_draft(tree, regname, regid, meta), None)]
         h, nr = html_reason(tree, regname, regid)
         jobs.append(("개정사유서", h, f"사유를 담은 항목 {nr}개"))
         h, nc = html_compare(tree, regname, regid)
@@ -223,7 +364,7 @@ def main():
         if hwp is not None:
             hwp.close()
 
-        got, miss = gather_annex(tree, os.path.join(stage, "별표및별지모음"))
+        got, miss = gather_annex(tree, os.path.join(stage, "별표및별지모음"), regname)
 
         today = _dt.datetime.now().strftime("%Y%m%d_%H%M")
         short = BAD.sub("_", t.get("short") or want)
