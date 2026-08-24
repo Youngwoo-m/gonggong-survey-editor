@@ -1,32 +1,32 @@
 /* ============================================================
    main.js — 앱 조립 (1단계 프로토타입)
    ============================================================ */
-import * as M from "./core/model.js?v=20260824d";
-import { Project } from "./core/project.js?v=20260824d";
-import * as FS from "./adapters/fileio.js?v=20260824d";
-import * as AUTO from "./adapters/autosave.js?v=20260824d";
-import { TreeView } from "./ui/tree.js?v=20260824d";
-import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260824d";
-import { CompareView } from "./ui/compare.js?v=20260824d";
-import { VersionsView } from "./ui/versions.js?v=20260824d";
-import { HistoryView } from "./ui/history.js?v=20260824d";
-import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260824d";
-import { ValidateView } from "./ui/validate.js?v=20260824d";
-import { RefPicker } from "./ui/refpicker.js?v=20260824d";
-import { AIView } from "./ui/ai.js?v=20260824d";
-import { CiteCheckView } from "./ui/citecheck.js?v=20260824d";
-import { TermsView } from "./ui/terms.js?v=20260824d";
-import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260824d";
-import * as GH from "./adapters/github.js?v=20260824d";
-import { extractLines } from "./core/importer.js?v=20260824d";
-import { buildAuto } from "./core/structure.js?v=20260824d";
-import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260824d";
-import { ObjectStore, fitTable } from "./core/objects.js?v=20260824d";
-import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260824d";
-import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260824d";
-import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260824d";
-import { fmtDate } from "./ui/html.js?v=20260824d";
-import { printReg } from "./ui/printdoc.js?v=20260824d";
+import * as M from "./core/model.js?v=20260824f";
+import { Project } from "./core/project.js?v=20260824f";
+import * as FS from "./adapters/fileio.js?v=20260824f";
+import * as AUTO from "./adapters/autosave.js?v=20260824f";
+import { TreeView } from "./ui/tree.js?v=20260824f";
+import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260824f";
+import { CompareView } from "./ui/compare.js?v=20260824f";
+import { VersionsView } from "./ui/versions.js?v=20260824f";
+import { HistoryView } from "./ui/history.js?v=20260824f";
+import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260824f";
+import { ValidateView } from "./ui/validate.js?v=20260824f";
+import { RefPicker } from "./ui/refpicker.js?v=20260824f";
+import { AIView } from "./ui/ai.js?v=20260824f";
+import { CiteCheckView } from "./ui/citecheck.js?v=20260824f";
+import { TermsView } from "./ui/terms.js?v=20260824f";
+import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260824f";
+import * as GH from "./adapters/github.js?v=20260824f";
+import { extractLines } from "./core/importer.js?v=20260824f";
+import { buildAuto } from "./core/structure.js?v=20260824f";
+import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260824f";
+import { ObjectStore, fitTable } from "./core/objects.js?v=20260824f";
+import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260824f";
+import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260824f";
+import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260824f";
+import { fmtDate } from "./ui/html.js?v=20260824f";
+import { printReg } from "./ui/printdoc.js?v=20260824f";
 
 const $ = (s) => document.querySelector(s);
 const NL = "\n";
@@ -1468,11 +1468,17 @@ async function doCommand(cmd) {
          여태는 미리 만들어 둔 zip 을 내려받기만 하여, 만든 날 뒤에 고친 것이
          하나도 담기지 아니하였다 (날짜가 여러 날 뒤처져 있었다).
          한/글(HWPX)만은 브라우저가 만들 수 없어 genreport.py 로 남는다 —
-         꾸러미 안 읽어보기.txt 에 그렇게 적어 둔다. */
-      busy("보고서를 짓는 중…");
+         꾸러미 안 읽어보기.txt 에 그렇게 적어 둔다.
+
+         담는 것은 지금 ③ 창이 보이는 규정 하나뿐이다. 세 규정을 다 담으면
+         3MB 가 넘어 무엇을 보라는 것인지 흐려진다. [⊞전체] 로 셋을 펼쳐 둔
+         때에만 (scopedTargetId() 가 null 이다) 세 규정을 함께 담는다. */
+      const only = scopedTargetId();
+      const onlyName = only ? (project.regNode(only)?.short || "") : "";
+      busy(`${onlyName || "개정 대상 세 규정"} 보고서를 짓는 중…`);
       try {
-        const { buildReport } = await import("./ui/report.js?v=20260824d");
-        const r = await buildReport(project);
+        const { buildReport } = await import("./ui/report.js?v=20260824f");
+        const r = await buildReport(project, { targetId: only });
         const url = URL.createObjectURL(r.blob);
         const a = document.createElement("a");
         a.href = url; a.download = r.name;

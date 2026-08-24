@@ -25,13 +25,13 @@
      그렇게 적어 둔다.
    ============================================================ */
 
-import { buildComparison, KIND_LIST } from "../core/diff.js?v=20260824d";
-import { buildAmendment } from "../core/amend.js?v=20260824d";
-import { writeXlsx } from "../core/xlsx.js?v=20260824d";
-import { createZip } from "../core/zip.js?v=20260824d";
-import { stripImgTags } from "../core/objects.js?v=20260824d";
-import { officialCells, cellsHtml } from "./compare.js?v=20260824d";
-import { esc } from "./html.js?v=20260824d";
+import { buildComparison, KIND_LIST } from "../core/diff.js?v=20260824f";
+import { buildAmendment } from "../core/amend.js?v=20260824f";
+import { writeXlsx } from "../core/xlsx.js?v=20260824f";
+import { createZip } from "../core/zip.js?v=20260824f";
+import { stripImgTags } from "../core/objects.js?v=20260824f";
+import { officialCells, cellsHtml } from "./compare.js?v=20260824f";
+import { esc } from "./html.js?v=20260824f";
 
 const nl2br = (s) => esc(s).replace(/\n/g, "<br>");
 /** 파일 이름에 쓸 수 없는 글자를 걷어낸다 */
@@ -303,7 +303,14 @@ export async function buildReport(project, opt = {}) {
     ].join("\r\n"),
   });
 
-  const one = opt.targetId ? safe(regs[0].short || regs[0].title) + "_" : "";
+  /* 규정 하나만 담을 때에는 그 규정의 개정안 이름(vC-1.01 따위)도 파일 이름에
+     넣는다. 개정안이 여러 벌인 규정이 있어(무인비행장치가 그렇다) 넣지
+     아니하면 판만 다른 꾸러미가 같은 이름으로 나온다. */
+  let one = "";
+  if (opt.targetId) {
+    one = safe(regs[0].short || regs[0].title) + "_";
+    if (regs[0].revLabel) one += safe(regs[0].revLabel) + "_";
+  }
   return {
     blob: createZip(files),
     name: `개정보고서_${one}${stamp(now)}.zip`,
