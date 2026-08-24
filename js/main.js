@@ -1,32 +1,32 @@
 /* ============================================================
    main.js — 앱 조립 (1단계 프로토타입)
    ============================================================ */
-import * as M from "./core/model.js?v=20260820o";
-import { Project } from "./core/project.js?v=20260820o";
-import * as FS from "./adapters/fileio.js?v=20260820o";
-import * as AUTO from "./adapters/autosave.js?v=20260820o";
-import { TreeView } from "./ui/tree.js?v=20260820o";
-import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260820o";
-import { CompareView } from "./ui/compare.js?v=20260820o";
-import { VersionsView } from "./ui/versions.js?v=20260820o";
-import { HistoryView } from "./ui/history.js?v=20260820o";
-import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260820o";
-import { ValidateView } from "./ui/validate.js?v=20260820o";
-import { RefPicker } from "./ui/refpicker.js?v=20260820o";
-import { AIView } from "./ui/ai.js?v=20260820o";
-import { CiteCheckView } from "./ui/citecheck.js?v=20260820o";
-import { TermsView } from "./ui/terms.js?v=20260820o";
-import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260820o";
-import * as GH from "./adapters/github.js?v=20260820o";
-import { extractLines } from "./core/importer.js?v=20260820o";
-import { buildAuto } from "./core/structure.js?v=20260820o";
-import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260820o";
-import { ObjectStore, fitTable } from "./core/objects.js?v=20260820o";
-import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260820o";
-import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260820o";
-import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260820o";
-import { fmtDate } from "./ui/html.js?v=20260820o";
-import { printReg } from "./ui/printdoc.js?v=20260820o";
+import * as M from "./core/model.js?v=20260824a";
+import { Project } from "./core/project.js?v=20260824a";
+import * as FS from "./adapters/fileio.js?v=20260824a";
+import * as AUTO from "./adapters/autosave.js?v=20260824a";
+import { TreeView } from "./ui/tree.js?v=20260824a";
+import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260824a";
+import { CompareView } from "./ui/compare.js?v=20260824a";
+import { VersionsView } from "./ui/versions.js?v=20260824a";
+import { HistoryView } from "./ui/history.js?v=20260824a";
+import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260824a";
+import { ValidateView } from "./ui/validate.js?v=20260824a";
+import { RefPicker } from "./ui/refpicker.js?v=20260824a";
+import { AIView } from "./ui/ai.js?v=20260824a";
+import { CiteCheckView } from "./ui/citecheck.js?v=20260824a";
+import { TermsView } from "./ui/terms.js?v=20260824a";
+import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260824a";
+import * as GH from "./adapters/github.js?v=20260824a";
+import { extractLines } from "./core/importer.js?v=20260824a";
+import { buildAuto } from "./core/structure.js?v=20260824a";
+import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260824a";
+import { ObjectStore, fitTable } from "./core/objects.js?v=20260824a";
+import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260824a";
+import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260824a";
+import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260824a";
+import { fmtDate } from "./ui/html.js?v=20260824a";
+import { printReg } from "./ui/printdoc.js?v=20260824a";
 
 const $ = (s) => document.querySelector(s);
 const NL = "\n";
@@ -231,6 +231,23 @@ async function init() {
   if (first && project.regNode(first.id)) {
     project.activeTargetId = first.id;
     editScope = null;
+  }
+
+  /* 주소로 규정 하나를 지목할 수 있게 한다 — ?reg=uav
+     세 규정을 한 벌로 합치면서 review/ · uav/ 로 갈려 있던 주소가 없어졌다.
+     그 바람에 '무인비행장치 규정만 보라' 고 건넬 링크가 사라졌으므로 되살린다.
+     id(uav)로도, 줄임 이름(무인비행장치 규정)으로도 받는다. */
+  const want = new URLSearchParams(location.search).get("reg");
+  if (want) {
+    const key = decodeURIComponent(want).trim();
+    const hit = allTargets().find((t) => t.id === key || t.short === key || t.base === key);
+    if (hit && project.regNode(hit.id)) {
+      project.activeTargetId = hit.id;
+      editScope = hit.id;               // 그 규정에 붙박아 연다
+      _bootReg = hit;                   // 트리를 세운 뒤 그리로 데려간다
+    } else {
+      toast(`주소가 가리키는 규정을 찾지 못했습니다 — ?reg=${esc(key)}`, 5000);
+    }
   }
 
   project.onChange(onProjectChange);
@@ -493,6 +510,8 @@ function askTransferReason(info) {
    조문 하나를 고르면 그 조문의 규정으로 저절로 옮겨 간다.
    ============================================================ */
 let _followingTarget = null;
+/* 주소(?reg=…)가 지목한 규정 — 트리를 다 세운 뒤 한 번만 그리로 데려간다 */
+let _bootReg = null;
 
 async function followActiveTarget() {
   const id = project.activeTargetId;
@@ -1154,6 +1173,12 @@ const autosaveNow = AUTO.debounced(() => {
 });
 
 function onProjectChange(p, msg) {
+  // 주소(?reg=…)가 지목한 규정으로 한 번만 데려간다 — 트리가 다 선 뒤라야 한다
+  if (_bootReg) {
+    const go = _bootReg;
+    _bootReg = null;
+    if (showTargetInEditTree(go.id)) return;   // 그 안에서 다시 이 함수를 부른다
+  }
   // 고른 조문이 다른 규정이면 참조 창과 부르는 말이 그리로 따라간다
   followActiveTarget().catch((e) => console.warn("규정 따라가기:", e));
   editTree.opts.editable = !p.isReadonly;
