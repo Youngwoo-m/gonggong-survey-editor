@@ -1,14 +1,14 @@
 /* ============================================================
    ui/compare.js — 개정 전후 비교표 화면
    ============================================================ */
-import { buildComparison, KIND_LIST } from "../core/diff.js?v=20260824a";
-import { writeXlsx } from "../core/xlsx.js?v=20260824a";
-import * as M from "../core/model.js?v=20260824a";
-import { regFingerprint } from "../core/xrefs.js?v=20260824a";
-import { buildAmendment } from "../core/amend.js?v=20260824a";
-import { buildSupplement, EFFECT_KINDS, topTitles } from "../core/supplement.js?v=20260824a";
-import { stripImgTags } from "../core/objects.js?v=20260824a";
-import { esc, fmtDate } from "./html.js?v=20260824a";
+import { buildComparison, KIND_LIST } from "../core/diff.js?v=20260824d";
+import { writeXlsx } from "../core/xlsx.js?v=20260824d";
+import * as M from "../core/model.js?v=20260824d";
+import { regFingerprint } from "../core/xrefs.js?v=20260824d";
+import { buildAmendment } from "../core/amend.js?v=20260824d";
+import { buildSupplement, EFFECT_KINDS, topTitles } from "../core/supplement.js?v=20260824d";
+import { stripImgTags } from "../core/objects.js?v=20260824d";
+import { esc, fmtDate } from "./html.js?v=20260824d";
 
 const KIND_CLASS = {
   "신설": "k-new", "삭제": "k-del", "이동": "k-mov", "이관": "k-xfer",
@@ -226,70 +226,10 @@ export class CompareView {
    * 바뀌지 않은 대목을 줄표로 — 글자 수만큼 그어 자리를 가늠하게 한다.
    * core/textdiff.js 의 afterRuns 는 {mark, s} 를 돌려준다 (mark 가 바뀐 대목).
    */
-  _dashify(runs, fallback) {
-    if (!runs || !runs.length) return [{ t: "=", s: dashes(fallback || "") }];
-    return runs.map((r) => r.mark ? { t: "+", s: r.s } : { t: "=", s: dashes(r.s) });
-  }
+  _dashify(runs, fallback) { return dashify(runs, fallback); }
 
   /** 한 줄을 현행·개정안 두 칸으로 — 공식 양식의 표기법대로 */
-  _officialCells(r) {
-    const b = r.before, a = r.after;
-    const head = (x) => x ? `${x.label}${x.title ? `(${x.title})` : ""}` : "";
-    // 본문의 표·수식 표식은 글이 아니므로 자리만 남긴다
-    const txt = (v) => stripImgTags(v || "", (i) => `[표 ${i}]`);
-    const full = (x) => [{ t: "=", s: head(x) },
-                         ...(x && x.body ? [{ t: "=", s: NLC + txt(x.body) }] : [])];
-    /* 현행 칸 — 앞으로 바뀔 대목을 파랗게 짚는다.
-       개정안 칸이 새로 쓴 대목을 붉게 짚는 것과 짝을 이룬다. */
-    const curMarked = (x, runs) => {
-      const parts = [{ t: "=", s: head(x) }];
-      if (!x || !x.body) return parts;
-      parts.push({ t: "=", s: NLC });
-      if (!runs || !runs.length) { parts.push({ t: "=", s: txt(x.body) }); return parts; }
-      parts.push(...runs.map((g) => ({ t: g.mark ? "-" : "=", s: g.s })));
-      return parts;
-    };
-
-    if (r.kind === "신설") {
-      // 표시는 번호만 적는다 — <제7조의2 신설> (신구 조문 대비표_샘플.pdf)
-      return { cur: [{ t: "mark", s: `<${a ? a.label : ""} 신설>` }], rev: full(a) };
-    }
-    if (r.kind === "삭제") {
-      // 통째로 없애는 것이므로 본문 전부가 바뀔 대목이다
-      return { cur: [{ t: "=", s: head(b) }, { t: "=", s: NLC },
-                     { t: "-", s: b && b.body ? txt(b.body) : "" }],
-               rev: [{ t: "mark", s: "삭제" }] };
-    }
-    if (r.kind === "유지") {
-      return { cur: [{ t: "=", s: head(b) }, { t: "omit", s: " (생략)" }],
-               rev: [{ t: "=", s: head(a) }, { t: "omit", s: " (현행과 같음)" }] };
-    }
-    if (r.kind === "이동") {
-      // 자리만 옮긴 것 — 글은 그대로이므로 되풀이하지 않는다
-      return { cur: [{ t: "=", s: head(b) }, { t: "omit", s: " (생략)" }],
-               rev: [{ t: "=", s: head(a) }, { t: "omit", s: " (현행과 같음)" }] };
-    }
-    // 수정 · 이동·수정 · 통합 — 같은 대목은 줄표로, 바뀐 대목만 글로
-    /* 항이 여럿인 조문은 바뀐 항만 적고 나머지는 접는다 (샘플 1쪽)
-         현행   제8조(보안성 검토 및 보안관리) ①∼③(생략)
-         개정안 제8조(보안성 검토 및 보안관리) ①∼③(현행과 같음) */
-    const folded = foldByHang(b && b.body, a && a.body, r.bodyDiff);
-    if (folded) {
-      return {
-        cur: [{ t: "=", s: head(b) }, { t: "=", s: NLC }, ...folded.cur],
-        rev: [{ t: "=", s: head(a) }, { t: "=", s: NLC }, ...folded.rev],
-      };
-    }
-    const titleSame = !r.afterTitleRuns || !r.afterTitleRuns.some((x) => x.mark);
-    const rev = titleSame
-      ? [{ t: "=", s: head(a) }]
-      : [{ t: "=", s: a ? a.label : "" }, ...(this._dashify(r.afterTitleRuns, b && b.title))];
-    if (a && (a.body || (b && b.body))) {
-      rev.push({ t: "=", s: NLC });
-      rev.push(...this._dashify(r.afterBodyRuns, b && b.body));
-    }
-    return { cur: curMarked(b, r.beforeBodyRuns), rev };
-  }
+  _officialCells(r) { return officialCells(r); }
 
   /* ---------- 렌더 ---------- */
   /** 견주고 있는 규정의 이름·고시 정보 */
@@ -721,8 +661,75 @@ function dashes(text) {
 }
 const NLC = "\n";
 
+/** 바뀌지 아니한 대목은 줄표로, 새로 쓴 대목만 글로 */
+export function dashify(runs, fallback) {
+  if (!runs || !runs.length) return [{ t: "=", s: dashes(fallback || "") }];
+  return runs.map((r) => r.mark ? { t: "+", s: r.s } : { t: "=", s: dashes(r.s) });
+}
+
+/**
+ * 한 줄을 현행ㆍ개정안 두 칸으로 — 공식 양식의 표기법대로.
+ *
+ * 화면(CompareView)과 보고서(ui/report.js)가 함께 쓴다. 두 벌을 두면
+ * 화면에서 본 대비표와 내려받은 대비표가 서로 달라진다.
+ */
+export function officialCells(r) {
+  const b = r.before, a = r.after;
+  const head = (x) => x ? `${x.label}${x.title ? `(${x.title})` : ""}` : "";
+  // 본문의 표·수식 표식은 글이 아니므로 자리만 남긴다
+  const txt = (v) => stripImgTags(v || "", (i) => `[표 ${i}]`);
+  const full = (x) => [{ t: "=", s: head(x) },
+                       ...(x && x.body ? [{ t: "=", s: NLC + txt(x.body) }] : [])];
+  /* 현행 칸 — 앞으로 바뀔 대목을 파랗게 짚는다.
+     개정안 칸이 새로 쓴 대목을 붉게 짚는 것과 짝을 이룬다. */
+  const curMarked = (x, runs) => {
+    const parts = [{ t: "=", s: head(x) }];
+    if (!x || !x.body) return parts;
+    parts.push({ t: "=", s: NLC });
+    if (!runs || !runs.length) { parts.push({ t: "=", s: txt(x.body) }); return parts; }
+    parts.push(...runs.map((g) => ({ t: g.mark ? "-" : "=", s: g.s })));
+    return parts;
+  };
+
+  if (r.kind === "신설") {
+    // 표시는 번호만 적는다 — <제7조의2 신설>
+    return { cur: [{ t: "mark", s: `<${a ? a.label : ""} 신설>` }], rev: full(a) };
+  }
+  if (r.kind === "삭제") {
+    // 통째로 없애는 것이므로 본문 전부가 바뀔 대목이다
+    return { cur: [{ t: "=", s: head(b) }, { t: "=", s: NLC },
+                   { t: "-", s: b && b.body ? txt(b.body) : "" }],
+             rev: [{ t: "mark", s: "삭제" }] };
+  }
+  if (r.kind === "유지" || r.kind === "이동") {
+    // 이동은 자리만 옮긴 것 — 글은 그대로이므로 되풀이하지 않는다
+    return { cur: [{ t: "=", s: head(b) }, { t: "omit", s: " (생략)" }],
+             rev: [{ t: "=", s: head(a) }, { t: "omit", s: " (현행과 같음)" }] };
+  }
+  // 수정 · 이동·수정 · 통합 — 같은 대목은 줄표로, 바뀐 대목만 글로
+  /* 항이 여럿인 조문은 바뀐 항만 적고 나머지는 접는다
+       현행   제8조(보안성 검토 및 보안관리) ①∼③(생략)
+       개정안 제8조(보안성 검토 및 보안관리) ①∼③(현행과 같음) */
+  const folded = foldByHang(b && b.body, a && a.body, r.bodyDiff);
+  if (folded) {
+    return {
+      cur: [{ t: "=", s: head(b) }, { t: "=", s: NLC }, ...folded.cur],
+      rev: [{ t: "=", s: head(a) }, { t: "=", s: NLC }, ...folded.rev],
+    };
+  }
+  const titleSame = !r.afterTitleRuns || !r.afterTitleRuns.some((x) => x.mark);
+  const rev = titleSame
+    ? [{ t: "=", s: head(a) }]
+    : [{ t: "=", s: a ? a.label : "" }, ...dashify(r.afterTitleRuns, b && b.title)];
+  if (a && (a.body || (b && b.body))) {
+    rev.push({ t: "=", s: NLC });
+    rev.push(...dashify(r.afterBodyRuns, b && b.body));
+  }
+  return { cur: curMarked(b, r.beforeBodyRuns), rev };
+}
+
 /** 신구조문 대비표 한 칸 — 줄표·표시·본문을 갈라 그린다 */
-function cellsHtml(parts) {
+export function cellsHtml(parts) {
   return (parts || []).map((r) => {
     if (r.t === "mark") return `<span class="mk-new">${esc(r.s)}</span>`;
     if (r.t === "omit") return `<span class="mk-omit">${esc(r.s)}</span>`;

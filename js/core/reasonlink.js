@@ -12,7 +12,7 @@
         다른 법령을 가리키는 것은 건드리지 아니한다
    ============================================================ */
 
-import { linkStdRefs } from "./objects.js?v=20260824a";
+import { linkStdRefs } from "./objects.js?v=20260824d";
 
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g,
   (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));

@@ -13,7 +13,7 @@
 let _pdfjs = null;
 async function pdfjs() {
   if (_pdfjs) return _pdfjs;
-  const mod = await import("../../vendor/pdfjs/pdf.min.mjs?v=20260824a");
+  const mod = await import("../../vendor/pdfjs/pdf.min.mjs?v=20260824d");
   mod.GlobalWorkerOptions.workerSrc =
     new URL("../../vendor/pdfjs/pdf.worker.min.mjs", import.meta.url).href;
   _pdfjs = mod;

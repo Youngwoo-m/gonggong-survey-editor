@@ -1,32 +1,32 @@
 /* ============================================================
    main.js — 앱 조립 (1단계 프로토타입)
    ============================================================ */
-import * as M from "./core/model.js?v=20260824a";
-import { Project } from "./core/project.js?v=20260824a";
-import * as FS from "./adapters/fileio.js?v=20260824a";
-import * as AUTO from "./adapters/autosave.js?v=20260824a";
-import { TreeView } from "./ui/tree.js?v=20260824a";
-import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260824a";
-import { CompareView } from "./ui/compare.js?v=20260824a";
-import { VersionsView } from "./ui/versions.js?v=20260824a";
-import { HistoryView } from "./ui/history.js?v=20260824a";
-import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260824a";
-import { ValidateView } from "./ui/validate.js?v=20260824a";
-import { RefPicker } from "./ui/refpicker.js?v=20260824a";
-import { AIView } from "./ui/ai.js?v=20260824a";
-import { CiteCheckView } from "./ui/citecheck.js?v=20260824a";
-import { TermsView } from "./ui/terms.js?v=20260824a";
-import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260824a";
-import * as GH from "./adapters/github.js?v=20260824a";
-import { extractLines } from "./core/importer.js?v=20260824a";
-import { buildAuto } from "./core/structure.js?v=20260824a";
-import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260824a";
-import { ObjectStore, fitTable } from "./core/objects.js?v=20260824a";
-import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260824a";
-import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260824a";
-import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260824a";
-import { fmtDate } from "./ui/html.js?v=20260824a";
-import { printReg } from "./ui/printdoc.js?v=20260824a";
+import * as M from "./core/model.js?v=20260824d";
+import { Project } from "./core/project.js?v=20260824d";
+import * as FS from "./adapters/fileio.js?v=20260824d";
+import * as AUTO from "./adapters/autosave.js?v=20260824d";
+import { TreeView } from "./ui/tree.js?v=20260824d";
+import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260824d";
+import { CompareView } from "./ui/compare.js?v=20260824d";
+import { VersionsView } from "./ui/versions.js?v=20260824d";
+import { HistoryView } from "./ui/history.js?v=20260824d";
+import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260824d";
+import { ValidateView } from "./ui/validate.js?v=20260824d";
+import { RefPicker } from "./ui/refpicker.js?v=20260824d";
+import { AIView } from "./ui/ai.js?v=20260824d";
+import { CiteCheckView } from "./ui/citecheck.js?v=20260824d";
+import { TermsView } from "./ui/terms.js?v=20260824d";
+import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260824d";
+import * as GH from "./adapters/github.js?v=20260824d";
+import { extractLines } from "./core/importer.js?v=20260824d";
+import { buildAuto } from "./core/structure.js?v=20260824d";
+import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260824d";
+import { ObjectStore, fitTable } from "./core/objects.js?v=20260824d";
+import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260824d";
+import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260824d";
+import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260824d";
+import { fmtDate } from "./ui/html.js?v=20260824d";
+import { printReg } from "./ui/printdoc.js?v=20260824d";
 
 const $ = (s) => document.querySelector(s);
 const NL = "\n";
@@ -1464,26 +1464,28 @@ async function doCommand(cmd) {
      * 그것은 이 컴퓨터의 python scripts/genreport.py 가 한다. 여기서는 그렇게
      * 만들어 둔 꾸러미를 내려받는다 — 언제 만든 것인지 함께 알린다. */
     case "report": {
+      /* 누르는 그 자리에서 지금 편집 상태로 새로 짓는다.
+         여태는 미리 만들어 둔 zip 을 내려받기만 하여, 만든 날 뒤에 고친 것이
+         하나도 담기지 아니하였다 (날짜가 여러 날 뒤처져 있었다).
+         한/글(HWPX)만은 브라우저가 만들 수 없어 genreport.py 로 남는다 —
+         꾸러미 안 읽어보기.txt 에 그렇게 적어 둔다. */
+      busy("보고서를 짓는 중…");
       try {
-        const meta = await (await fetch("data/report/index.json?t=" + Date.now())).json();
+        const { buildReport } = await import("./ui/report.js?v=20260824d");
+        const r = await buildReport(project);
+        const url = URL.createObjectURL(r.blob);
         const a = document.createElement("a");
-        a.href = "data/report/개정보고서.zip?t=" + Date.now();
-        a.download = meta.file || "개정보고서.zip";
-        document.body.appendChild(a);
-        a.click();
-        a.remove();
-        const at = new Date(meta.at);
-        const stale = (Date.now() - at.getTime()) / 86400000;
-        toast(`보고서를 내려받습니다 — ${meta.file}
-${(meta.items || []).join(" · ")} · ${(meta.bytes / 1024 / 1024).toFixed(1)} MB
-만든 때 ${at.toLocaleString("ko-KR")}`
-          + (stale > 1 ? `
-이 뒤로 개정안을 고쳤다면 python scripts/genreport.py 로 다시 만드십시오.` : ""),
-          stale > 1 ? 9000 : 6000);
-      } catch {
-        toast(`아직 만들어 둔 보고서가 없습니다.
-python scripts/genreport.py 를 돌리면 만들어집니다.`, 7000);
-      }
+        a.href = url; a.download = r.name;
+        document.body.appendChild(a); a.click(); a.remove();
+        setTimeout(() => URL.revokeObjectURL(url), 4000);
+        toast(`보고서를 새로 지어 내려받습니다 — ${r.name}
+규정 ${r.regs}종 · ${(r.blob.size / 1024 / 1024).toFixed(1)} MB
+${r.items.join(" · ")}
+한/글(HWPX) 문서가 필요하면 python scripts/genreport.py 를 돌리십시오.`, 9000);
+      } catch (e) {
+        console.warn("보고서:", e);
+        toast(`보고서를 짓지 못했습니다 — ${e.message}`, 7000);
+      } finally { busy(false); }
       break;
     }
 
