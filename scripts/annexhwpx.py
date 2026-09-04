@@ -14,6 +14,7 @@
   보기값   〔 〕 는 글자 그대로 둔다 — 종이에서도 보기값임이 드러나야 한다
 """
 import os
+import re
 import annexdoc
 
 # 마디 깊이별 왼쪽 들여쓰기 (mm)
@@ -23,6 +24,65 @@ NOTE_PT = 9.0
 # 표의 너비 — A4 너비 210mm 에서 좌우 여백 40mm 를 뺀 170mm.
 # 한글의 자리단위(HWPUNIT)는 1인치가 7200 이다.
 TABLE_W = int(170.0 / 25.4 * 7200)
+
+
+# 머리글 한 글자의 어림 너비(mm). 9pt 함초롬돋움 한글 기준으로 잡았다.
+HEAD_CHAR_MM = 3.4
+HEAD_PAD_MM = 3.0
+TABLE_MM = 170.0
+
+
+# 접히면 안 되는 낱말의 길이를 여기까지만 센다. 긴 낱말 하나가 표를
+# 통째로 끌고 가지 못하게 하는 마개다.
+FLOOR_CAP = 6
+
+
+def _longest_word(xs):
+    """가장 긴 낱말의 글자 수 — 빈칸에서 끊기지 않는 덩어리를 잰다"""
+    n = 0
+    for t in xs:
+        for w in re.split(r"\s+", str(t or "")):
+            n = max(n, len(w))
+    return n
+
+
+def fit_head(w, head, rows=None, total_mm=TABLE_MM):
+    """칸 폭을 정한다 — 바닥을 먼저 채우고 남은 자리를 몫대로 나눈다.
+
+    처음에는 몫만 주었다. 표 전체 너비가 정해져 있어 몫이 작은 칸은 아주
+    좁아졌고, 「지속 시간」이 12mm 로 눌려 머리글이 옆 칸과 겹쳤다.
+
+    그 다음에는 머리글이 들어갈 만큼만 넓혔다. 그래도 「공사종류」 칸은
+    8mm 밖에 되지 않아 「특수건설공사」가 '특수/건설/공사' 로 접혔다.
+    머리글은 넉 자인데 칸 글이 여섯 자였기 때문이다. 게다가 머리글이 긴
+    표에서는 바닥의 합이 표를 넘어, 모두 비례로 줄면서 작은 칸이 다시
+    눌렸다.
+
+    그래서 두 걸음으로 나눈다.
+
+      바닥   그 칸에서 가장 긴 '낱말' 이 접히지 않을 만큼 (여섯 자까지)
+      나머지 남은 자리를 글자 수 몫대로
+
+    바닥의 합이 표의 아홉 할을 넘으면 바닥끼리 고르게 줄인다 — 넘칠 바에는
+    고르게 좁히는 편이 한 칸만 뭉개지는 것보다 낫다."""
+    n = len(head)
+    w = [float(x) for x in w]
+    floor = []
+    for i in range(n):
+        xs = [head[i]]
+        if rows:
+            xs += [r[i] for r in rows if i < len(r)]
+        c = min(_longest_word(xs), FLOOR_CAP)
+        floor.append(max(c, 2) * HEAD_CHAR_MM + HEAD_PAD_MM)
+    cap = total_mm * 0.9
+    if sum(floor) > cap:
+        k = cap / sum(floor)
+        floor = [x * k for x in floor]
+    rest = total_mm - sum(floor)
+    s = sum(w) or 1.0
+    mm = [floor[i] + rest * w[i] / s for i in range(n)]
+    # 몫으로 돌려준다 — 실제 너비는 한글이 이 몫대로 나눈다
+    return [max(1, int(round(x * 100.0 / total_mm))) for x in mm]
 
 
 class Builder:
@@ -64,7 +124,7 @@ class Builder:
 
     # ------------------------------------------------------------------ 글줄
     def para(self, text="", style="body", *, indent=0.0, align=None,
-             before=0.0, after=0.0, hanging=True):
+             before=0.0, after=0.0, hanging=True, keep=False):
         p = self.doc.add_paragraph(text, char_pr_id_ref=self.st[style])
         idx = len(self.doc.paragraphs) - 1
         # 정렬은 반드시 못박는다 — 빈 문서의 물림값이 가운데라, 맡겨 두면
@@ -72,6 +132,9 @@ class Builder:
         kw = {"paragraph_index": idx, "line_spacing_percent": 160,
               "alignment": align or "JUSTIFY",
               "spacing_before_pt": before, "spacing_after_pt": after}
+        # 표 이름은 표와 붙여 둔다 — 쪽이 갈리면 이름만 앞 쪽에 홀로 남는다
+        if keep:
+            kw["keep_with_next"] = True
         if indent:
             kw["indent_left_mm"] = indent
             # 글머리(1. 가.)가 왼쪽으로 걸리게 첫 줄만 내어 쓴다
@@ -94,7 +157,7 @@ class Builder:
     # -------------------------------------------------------------------- 표
     def table(self, head, rows, caption=""):
         if caption:
-            self.para(caption, "cap", before=4, after=1, hanging=False)
+            self.para(caption, "cap", before=4, after=1, hanging=False, keep=True)
         ncol = len(head)
         # (비고)처럼 첫 칸에만 글이 있는 줄은 표 밑의 주로 내린다 —
         # 표 안에 두면 한 칸이 길게 늘어져 나머지 칸이 빈 채로 벌어진다
@@ -123,13 +186,23 @@ class Builder:
             for c in range(ncol):
                 t.set_cell_text(r, c, str(row[c]) if c < len(row) else "",
                                 preserve_format=False)
-        # 칸너비 — 그 칸에 들어가는 가장 긴 글에 맞추어 저울질한다.
-        # (몫으로 주면 되고, 실제 너비는 한글이 나눈다)
+        # 칸너비 — 몫으로 준다 (실제 너비는 한글이 나눈다).
+        #
+        # 처음에는 그 칸의 '가장 긴 글' 에 맞추었다. 그러니 긴 칸 하나가 몫을
+        # 다 가져가, 짧은 칸이 지나치게 눌려 「1구역」이 「1 구 / 역」으로
+        # 접혔다(별지 4의 표본 표).
+        #
+        # 그래서 머리글 길이를 바닥으로 삼고 칸 글의 평균으로 저울질한다.
+        # 머리글이 접히면 표를 읽을 수 없으므로 그것이 바닥이 되어야 한다.
         try:
             w = []
             for c in range(ncol):
-                n = max([len(str(head[c]))] + [len(str(r[c])) for r in rows if c < len(r)])
-                w.append(max(4, min(36, n)))
+                xs = [len(str(r[c])) for r in rows if c < len(r) and str(r[c]).strip()]
+                avg = (sum(xs) / len(xs)) if xs else 0
+                n = max(len(str(head[c])), avg)
+                w.append(int(max(6, min(30, round(n)))))
+            # 머리글이 접히면 표를 읽을 수 없다 — 한 줄에 담기도록 넓힌다
+            w = fit_head(w, head, rows)
             t.set_column_widths(w)
         except Exception:
             pass
@@ -170,9 +243,129 @@ class Builder:
     def save(self, dst, fixns=None):
         self.doc.save_to_path(dst)
         _fix_orientation(dst)
+        _left_align_cells(dst, self.left_pr)
         if fixns:
             fixns(dst)
         return dst
+
+
+def _match_close(x, pos, open_tag, close_tag):
+    """짝이 맞는 닫는 태그 자리 — 칸 안에 또 표가 있어도 속지 않는다"""
+    depth, i = 0, pos
+    while True:
+        a = x.find(open_tag, i)
+        b = x.find(close_tag, i)
+        if b < 0:
+            return len(x)
+        if 0 <= a < b:
+            depth += 1
+            i = a + len(open_tag)
+            continue
+        if depth == 0:
+            return b
+        depth -= 1
+        i = b + len(close_tag)
+
+
+def _left_align_cells(path, left_pr):
+    """표 칸 안의 문단을 왼쪽 정렬로 바꾼다.
+
+    set_cell_text 는 칸 문단의 문단모양을 0번으로 되돌린다. 0번은 양쪽
+    정렬이라, 좁은 칸에서 'C-05' 한 낱말이 칸 너비만큼 늘어나
+    'C  -  0  5' 처럼 벌어졌다. add_table 에 왼쪽 정렬을 주어도 칸 글을
+    쓰는 순간 지워지므로, 다 쓴 뒤에 표 안의 문단만 골라 바꾼다."""
+    import re as _re
+    import shutil as _sh
+    import zipfile as _zip
+    if not left_pr:
+        return
+    with _zip.ZipFile(path) as z:
+        names = z.namelist()
+        blobs = {n: z.read(n) for n in names}
+    sec = next((n for n in names
+                if _re.match(r"Contents/section\d+\.xml$", n)), None)
+    if not sec:
+        return
+    x = blobs[sec].decode("utf-8")
+    out, i = [], 0
+    while True:
+        s = x.find("<hp:tbl ", i)
+        if s < 0:
+            out.append(x[i:])
+            break
+        e = _match_close(x, s + len("<hp:tbl "), "<hp:tbl ", "</hp:tbl>")
+        e += len("</hp:tbl>")
+        out.append(x[i:s])
+        out.append(_re.sub(r'(<hp:p [^>]*paraPrIDRef=")0(")',
+                           r"\g<1>%s\g<2>" % left_pr, x[s:e]))
+        i = e
+    blobs[sec] = "".join(out).encode("utf-8")
+    tmp = path + ".tmp"
+    with _zip.ZipFile(tmp, "w") as o:
+        for n in names:
+            o.writestr(n, blobs[n],
+                       _zip.ZIP_STORED if n == "mimetype" else _zip.ZIP_DEFLATED)
+    _sh.move(tmp, path)
+
+
+MIN_ROW = 2000          # 칸의 밑높이 (한 줄)
+# 글 한 줄의 높이. 10pt 글자에 줄 간격이 160% 이므로 16pt, 곧 1600 이다.
+# 처음에 1150 으로 잡았다가 세 줄짜리 칸의 마지막 줄이 잘렸다.
+LINE_H = 1700
+CHAR_W = 1000           # 한글 한 글자의 너비 (10pt)
+PAD = 1100              # 칸의 좌우 여백을 합한 것
+
+
+def _row_height(cells):
+    """한 행에 필요한 높이 — 칸마다 몇 줄로 접히는지 재어 가장 긴 것을 쓴다.
+
+    python-hwpx 는 칸 높이를 3600 으로 박아 넣고, 한/글은 열 때 그 값을 그대로
+    지킨다. 그래서 글이 길면 칸 밖으로 넘쳐 잘렸다(별지 4의 마지막 행에서
+    '뽑았다' 가 잘렸다). 낮게 적어 두어도 한/글이 늘려 주지 아니하였다.
+    그러니 필요한 높이를 우리가 재어 넣는다.
+
+    cells 는 [(칸 너비, 글)] 이다."""
+    import math
+    need = 1
+    for w, t in cells:
+        per = max(1, (w - PAD) / CHAR_W)
+        lines = 0
+        for seg in str(t).split("\n"):
+            lines += max(1, math.ceil(len(seg) / per))
+        need = max(need, lines)
+    return max(MIN_ROW, int(need * LINE_H + 350))
+
+
+def _loosen_rows(xml):
+    """표의 행 높이를 글에 맞추어 다시 잡는다"""
+    import re as _re
+
+    RE_T = _re.compile(r"<hp:t(?:\s[^>]*)?>(.*?)</hp:t>", _re.S)
+
+    def one_tbl(m):
+        s = m.group(0)
+        total = 0
+
+        def one_row(rm):
+            nonlocal total
+            row = rm.group(0)
+            cells = []
+            for tc in _re.finditer(r"<hp:tc\b.*?</hp:tc>", row, _re.S):
+                c = tc.group(0)
+                wm = _re.search(r'<hp:cellSz width="(\d+)"', c)
+                txt = "".join(t.group(1) for t in RE_T.finditer(c))
+                cells.append((int(wm.group(1)) if wm else 5000, txt))
+            h = _row_height(cells)
+            total += h
+            return _re.sub(r'(<hp:cellSz\b[^>]*\bheight=")\d+(")',
+                           r"\g<1>" + str(h) + r"\g<2>", row)
+
+        s = _re.sub(r"<hp:tr>.*?</hp:tr>", one_row, s, flags=_re.S)
+        return _re.sub(r'(<hp:sz\b[^>]*\bheight=")\d+(")',
+                       r"\g<1>" + str(max(total, MIN_ROW)) + r"\g<2>",
+                       s, count=1)
+
+    return _re.sub(r"<hp:tbl\s[^>]*>.*?</hp:tbl>", one_tbl, xml, flags=_re.S)
 
 
 def _fix_orientation(path):
@@ -197,6 +390,7 @@ def _fix_orientation(path):
                 t = data.decode("utf-8")
                 t = t.replace('landscape="PORTRAIT"', 'landscape="WIDELY"')
                 t = t.replace('landscape="NARROWLY"', 'landscape="WIDELY"')
+                t = _loosen_rows(t)
                 data = t.encode("utf-8")
             zout.writestr(it, data)
     _os.replace(tmp, path)

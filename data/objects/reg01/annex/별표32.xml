@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표32" gubun="별표" no="32" title="지하시설물 밀폐공간 작업허가서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296265">
+<annex id="별표32" gubun="별표" no="52" title="지하시설물 밀폐공간 작업허가서" source="data/annex/원본/work/[별표 32] 지하시설물 밀폐공간 작업허가서.hwpx">
   <table rows="13" cols="3">
     <row>
-      <cell col="0" row="0" colspan="3">NO.     
-지하시설물 밀폐공간 작업허가서
- 1. 작업수행기간 :      월   일   시    ∼      월   일   시
- 2. 작업장소 :  □ 상수맨홀  □ 하수맨홀  □ 기타 (                       )
- 3. 작업내용(간략히) : 
- 4. 작업인원 :      명
-  ㆍ 안전관리책임자명 :           (서명)
-  ㆍ 작업자명 :             (서명),               (서명),              (서명)
-  ㆍ 작업감시인 :                     (서명)
-  상기 작성된 내용에 따라 작업을 실시할 계획임
- 5. 안전조치 점검사항</cell>
+      <cell col="0" row="0" colspan="3">NO. 지하시설물 밀폐공간 작업허가서 1. 작업수행기간 : 월 일 시 ∼ 월 일 시 2. 작업장소 : □ 상수맨홀 □ 하수맨홀 □ 기타 ( ) 3. 작업내용(간략히) : 4. 작업인원 : 명 ㆍ 안전관리책임자명 : (서명) ㆍ 작업자명 : (서명), (서명), (서명) ㆍ 작업감시인 : (서명) 상기 작성된 내용에 따라 작업을 실시할 계획임 5. 안전조치 점검사항</cell>
     </row>
     <row>
       <cell col="0" row="1" colspan="2">항목</cell>
@@ -20,38 +10,31 @@
     </row>
     <row>
       <cell col="0" row="2" colspan="2">안전보건교육 실시 여부</cell>
-      <cell col="2" row="2">□ 미실시     □ 실시</cell>
+      <cell col="2" row="2">□ 미실시 □ 실시</cell>
     </row>
     <row>
       <cell col="0" row="3" colspan="2">안전장비 구비 여부</cell>
-      <cell col="2" row="3">□ 산소농도측정기
-  □ 유해가스(4-gas) 농도측정기
-  □ 환기팬
-  □ 공기호흡기(송기마스크) □ 무전기
-  □ 휴대용랜턴             □ 구조용로프
-  □ 기타(                                )</cell>
+      <cell col="2" row="3">□ 산소농도측정기 □ 유해가스(4-gas) 농도측정기 □ 환기팬 □ 공기호흡기(송기마스크)&lt;hp:fwSpace/&gt; □ 무전기 □ 휴대용랜턴 □ 구조용로프 □ 기타( )</cell>
     </row>
     <row>
       <cell col="0" row="4" colspan="2">산소(O2)농도 측정결과</cell>
-      <cell col="2" row="4">□ 18% 미만(    )   □ 18∼21%(     )</cell>
+      <cell col="2" row="4">□ 18% 미만( ) □ 18∼21%( )</cell>
     </row>
     <row>
       <cell col="0" row="5" colspan="2">황화수소(H2S) 농도 측정결과</cell>
-      <cell col="2" row="5">□ 10ppm이상(    )  □ 10ppm미만(     )</cell>
+      <cell col="2" row="5">□ 10ppm이상( ) □ 10ppm미만( )</cell>
     </row>
     <row>
       <cell col="0" row="6" colspan="2">탄산가스(CO2)</cell>
-      <cell col="2" row="6">□ 1.5% 이상(    )   □ 1.5% 미만(     )</cell>
+      <cell col="2" row="6">□ 1.5% 이상( ) □ 1.5% 미만( )</cell>
     </row>
     <row>
-      <cell col="0" row="7" colspan="2">일산화탄소(CO) 농도 측정결과
- ※ 양수작업시 확인</cell>
-      <cell col="2" row="7">□ 30ppm이상(    )  □ 30ppm미만(     )</cell>
+      <cell col="0" row="7" colspan="2">일산화탄소(CO) 농도 측정결과 ※ 양수작업시 확인</cell>
+      <cell col="2" row="7">□ 30ppm이상( ) □ 30ppm미만( )</cell>
     </row>
     <row>
       <cell col="0" row="8" colspan="2">작업전 환기실시 시간</cell>
-      <cell col="2" row="8">□ 미실시   □ 30분 미만   □ 30분 이상
-             ※ 하수도 작업은 계속환기 실시</cell>
+      <cell col="2" row="8">□ 미실시 □ 30분 미만 □ 30분 이상 ※ 하수도 작업은 계속환기 실시</cell>
     </row>
     <row>
       <cell col="0" row="9" colspan="3">※ 점검항목에서 “굵은 글씨 이탤릭체”에 해당하는 사항이 1개 이상 체크(√) 되는 경우 이를 모두 적정상태로 개선조치 한 후 작업을 실시하여야 함</cell>
@@ -61,12 +44,11 @@
     </row>
     <row>
       <cell col="0" row="11">작성자</cell>
-      <cell col="1" row="11" colspan="2">부서            직책             성명          (서명)</cell>
+      <cell col="1" row="11" colspan="2">부서 직책 성명 (서명)</cell>
     </row>
     <row>
-      <cell col="0" row="12">담당공무원
-(시행자, 시설관리기관)</cell>
-      <cell col="1" row="12" colspan="2">부서            직책             성명          (서명)</cell>
+      <cell col="0" row="12">담당공무원(시행자, 시설관리기관)</cell>
+      <cell col="1" row="12" colspan="2">부서 직책 성명 (서명)</cell>
     </row>
   </table>
 </annex>

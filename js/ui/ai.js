@@ -4,9 +4,9 @@
    AI 가 낸 것은 언제나 '제안'이다. 화면에서 확인하고 [적용] 을 눌러야
    트리에 들어가며, 들어간 뒤에는 여느 편집과 똑같이 되돌릴 수 있다.
    ============================================================ */
-import * as M from "../core/model.js?v=20260824f";
-import * as AI from "../adapters/ai.js?v=20260824f";
-import { TASKS, outline, withExtra } from "../core/aitasks.js?v=20260824f";
+import * as M from "../core/model.js?v=20260903a";
+import * as AI from "../adapters/ai.js?v=20260903a";
+import { TASKS, outline, withExtra } from "../core/aitasks.js?v=20260903a";
 
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) =>
   ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -58,12 +58,14 @@ export class AIView {
    * @param {import("../core/project.js").Project} project
    * @param {{getRef:()=>({name:string,tree:Array}|null), onToast:Function, onJump:Function}} opts
    */
-  constructor(project, { getRef, onToast, onJump, host = null } = {}) {
+  constructor(project, { getRef, onToast, onJump, onReport, host = null } = {}) {
     this.project = project;
     this.getRef = getRef;
     this.onToast = onToast || (() => {});
     this.onJump = onJump;
+    this.onReport = onReport;        // [보고서 생성] 을 누르면 부른다
     this.host = host;                // 있으면 별도 창이 아니라 그 자리에 붙인다
+    this.usedHost = false;           // 이번에 붙박이로 열었는지 (팝업과 가른다)
     this.el = null;
     this.taskKey = "polish";
     this.result = null;
@@ -74,13 +76,22 @@ export class AIView {
     this.picks = { node: true, subtree: false, outline: false, ref: false };
   }
 
-  open(taskKey) {
+  /**
+   * @param {string=} taskKey  열면서 고를 작업
+   * @param {{popup?:boolean}=} opt  popup 이면 붙박이 자리가 있어도 팝업으로 띄운다
+   */
+  open(taskKey, opt) {
     if (taskKey) this.taskKey = taskKey;
+    const popup = !!opt?.popup;
     if (this.el) {                      // 붙박이는 다시 누르면 접는다
-      if (this.host && !taskKey) { this.close(); return; }
+      const same = popup === !this.usedHost;
+      if (this.host && !taskKey && same) { this.close(); return; }
       this.close();
     }
-    if (this.host) {
+    // 상단 [보고서] 처럼 팝업으로 부르는 자리가 있다. 그때는 붙박이 자리를
+    // 쓰지 아니한다 — 화면 아래에 접혀 있으면 눌러도 안 보이기 때문이다.
+    this.usedHost = !!this.host && !popup;
+    if (this.usedHost) {
       this.el = this.host;
       this.host.classList.remove("hidden");
     } else {
@@ -102,12 +113,13 @@ export class AIView {
   close() {
     this.abort?.abort();
     if (this._esc) document.removeEventListener("keydown", this._esc, true);
-    if (this.host) {
+    if (this.usedHost) {
       this.host.classList.add("hidden");
       this.host.replaceChildren();
     } else {
       this.el?.remove();
     }
+    this.usedHost = false;
     this.el = null;
     this.result = null;
     this.busy = false;
@@ -124,7 +136,7 @@ export class AIView {
     const connected = AI.hasKey();
 
     this.el.innerHTML = `
-<div class="cmp ai${this.host ? " dock" : ""}">
+<div class="cmp ai${this.usedHost ? " dock" : ""}">
   <div class="cmp-head">
     <div>
       <div class="cmp-title">✦ AI 도우미</div>
@@ -147,6 +159,7 @@ export class AIView {
     <div class="spacer"></div>
     <span class="ai-conn ${connected ? "on" : ""}">${connected
       ? `연결됨 · ${esc(AI.keyHint())}` : "연결 안 됨"}</span>
+    <button data-x="report" title="지금 편집 상태 그대로 보고서 한 벌을 지어 zip 으로 내려받습니다 — 개정(안)·신구대조표·개정사유서·별표및별지목록">보고서 생성</button>
     <button data-x="setup">연결 설정</button>
     <button class="primary" data-x="run"${connected ? "" : " disabled"}>${t.free ? "물어보기" : "제안 받기"}</button>
   </div>
@@ -156,6 +169,20 @@ export class AIView {
 
     this.el.querySelector('[data-x="close"]').onclick = () => this.close();
     this.el.querySelector('[data-x="setup"]').onclick = () => this.setup();
+    // 보고서 짓기는 AI 와 상관이 없다. 다만 웹에 올렸을 때 여기가 가장 눈에
+    // 띄는 자리라 함께 둔다 — 상단 [보고서] 도 이 창을 띄운다.
+    const rb = this.el.querySelector('[data-x="report"]');
+    if (rb) {
+      rb.onclick = async () => {
+        rb.disabled = true;
+        const was = rb.textContent;
+        rb.textContent = "작성 중…";
+        try { await this.onReport?.(); } finally {
+          rb.disabled = false;
+          rb.textContent = was;
+        }
+      };
+    }
     this.el.querySelector('[data-x="run"]').onclick = () => this.run();
     this.el.querySelectorAll("[data-t]").forEach((c) => {
       c.onclick = () => { this.keepInputs(); this.taskKey = c.dataset.t; this.result = null; this.render(); };

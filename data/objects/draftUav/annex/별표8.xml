@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표8" gubun="별표" no="8" title="GNSS/INS 후처리 품질검사표" source="data/annex/gen/draftUav2/별표8.hwpx">
+  <table rows="7" cols="2">
+    <row>
+      <cell col="0" row="0">항목</cell>
+      <cell col="1" row="0">값</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">보정 방식</cell>
+      <cell col="1" row="1">PPK</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">기준국의 종류</cell>
+      <cell col="1" row="2">상시관측소</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">기준국의 이름과 성과 출처</cell>
+      <cell col="1" row="3">○○ 상시관측소 · 국토지리정보원 성과</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">작업지역에서 기준국까지의 거리</cell>
+      <cell col="1" row="4">00.0㎞ (작업계획서에서 정한 반경 안)</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">관측 간격과 관측 시간</cell>
+      <cell col="1" row="5">1초 · 3시간 20분</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">좌표계와 수직기준, 지오이드 모델</cell>
+      <cell col="1" row="6">GRS80 중부원점 · 정표고 · KNGeoid18</cell>
+    </row>
+  </table>
+  <table rows="8" cols="5">
+    <row>
+      <cell col="0" row="0">항목</cell>
+      <cell col="1" row="0">최소</cell>
+      <cell col="2" row="0">최대</cell>
+      <cell col="3" row="0">평균</cell>
+      <cell col="4" row="0">판정</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">위치 정밀도 동/북/수직</cell>
+      <cell col="1" row="1">0.000</cell>
+      <cell col="2" row="1">0.000</cell>
+      <cell col="3" row="1">0.000 m</cell>
+      <cell col="4" row="1">적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">자세 정밀도 롤/피치/헤딩</cell>
+      <cell col="1" row="2">0.000</cell>
+      <cell col="2" row="2">0.000</cell>
+      <cell col="3" row="2">0.000 °</cell>
+      <cell col="4" row="2">적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">위성 수</cell>
+      <cell col="1" row="3">00</cell>
+      <cell col="2" row="3">00</cell>
+      <cell col="3" row="3">00</cell>
+      <cell col="4" row="3">적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">PDOP</cell>
+      <cell col="1" row="4">0.0</cell>
+      <cell col="2" row="4">0.0</cell>
+      <cell col="3" row="4">0.0</cell>
+      <cell col="4" row="4">적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">모호정수 고정 비율(Fix율)</cell>
+      <cell col="1" row="5">00.0%</cell>
+      <cell col="2" row="5">−</cell>
+      <cell col="3" row="5">−</cell>
+      <cell col="4" row="5">적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">전방ㆍ후방 궤적의 차이</cell>
+      <cell col="1" row="6">0.000 m</cell>
+      <cell col="2" row="6">−</cell>
+      <cell col="3" row="6">−</cell>
+      <cell col="4" row="6">적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">기준국과의 기선장</cell>
+      <cell col="1" row="7">00.0㎞</cell>
+      <cell col="2" row="7">−</cell>
+      <cell col="3" row="7">−</cell>
+      <cell col="4" row="7">적합</cell>
+    </row>
+  </table>
+  <table rows="2" cols="5">
+    <row>
+      <cell col="0" row="0">구간(코스ㆍ시각)</cell>
+      <cell col="1" row="0">끊긴 까닭</cell>
+      <cell col="2" row="0">지속 시간</cell>
+      <cell col="3" row="0">그 구간의 처리 방법</cell>
+      <cell col="4" row="0">성과에 미친 영향</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">C-05 14:22:10~14:22:26</cell>
+      <cell col="1" row="1">교량 하부 통과로 위성 차폐</cell>
+      <cell col="2" row="1">16초</cell>
+      <cell col="3" row="1">전후방 결합 궤적으로 메움</cell>
+      <cell col="4" row="1">해당 구간 점군의 위치 정밀도가 0.000m로 낮아짐 — 제11호의 검사점으로 확인한 결과 허용범위 안</cell>
+    </row>
+  </table>
+</annex>

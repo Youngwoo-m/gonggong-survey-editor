@@ -43,8 +43,12 @@ RE_CITE = re.compile(
     r"(?:\s*제\s*(\d+)\s*항)?(?:\s*제\s*(\d+)\s*호)?)?")
 # 낫표 없이 쓴 법령 이름 — 앞말을 물고 들어오지 아니하게 이름만 잡는다
 RE_BARE = re.compile(r"(?<![「『\w\s])\s?([가-힣]{2,20}(?:법|법률))\s*제\s*\d+\s*조")
-# 약칭을 정의하는 자리 — (이하 "법"이라 한다)
+# 약칭을 정의하는 자리 — 꼴이 둘이다.
+#   (이하 "법"이라 한다)                        조문 안에서 곧바로
+#   26. "시행규칙"이란 「…」을 말한다.            정의 조문의 한 호로
+# 뒤엣것을 못 알아보아 「시행규칙」을 정의 없이 쓴다고 잘못 짚었다.
 RE_ABBR = re.compile(r"\(\s*이하\s*[\"“]([^\"”]{1,12})[\"”]\s*(?:라|이라)\s*한다\s*\)")
+RE_ABBR2 = re.compile(r"[\"“]([^\"”]{1,12})[\"”]\s*(?:이란|란)\s*「[^」]+」\s*(?:을|를)\s*말한다")
 # 약칭으로 쓴 것 — 법·영·규칙·시행령·시행규칙
 RE_SHORT = re.compile(r"(?<![「『가-힣])(같은\s*법\s*시행령|같은\s*법\s*시행규칙|같은\s*법"
                       r"|시행령|시행규칙|영|규칙|법)\s*제\s*\d+\s*조")
@@ -145,6 +149,8 @@ def main():
     abbr = {}
     for x in arts:
         for m in RE_ABBR.finditer(clean(x.get("body"))):
+            abbr.setdefault(m.group(1), f"제{x.get('no')}조")
+        for m in RE_ABBR2.finditer(clean(x.get("body"))):
             abbr.setdefault(m.group(1), f"제{x.get('no')}조")
 
     for x in arts:

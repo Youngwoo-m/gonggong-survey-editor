@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표9" gubun="별표" no="9" title="안테나고 관측기록부" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296125">
-  <text>[ 별표 9 ]
-안테나고 관측기록부</text>
+<annex id="별표9" gubun="별표" no="27" title="안테나고 관측기록부" source="data/annex/원본/work/[별표 9] 안테나고 관측기록부.hwpx">
   <table rows="14" cols="15">
     <row>
       <cell col="0" row="0" colspan="15">안테나고 관측기록부</cell>
@@ -17,11 +15,8 @@
     <row>
       <cell col="5" row="2" colspan="4">관측 전(m)</cell>
       <cell col="9" row="2" colspan="4">관측 후(m)</cell>
-      <cell col="13" row="2" rowspan="2">관측전후
-교차
-(A-B)</cell>
-      <cell col="14" row="2" rowspan="2">측정 안테나고
-(A+B)/2</cell>
+      <cell col="13" row="2" rowspan="2">관측전후교차(A-B)</cell>
+      <cell col="14" row="2" rowspan="2">측정 안테나고(A+B)/2</cell>
     </row>
     <row>
       <cell col="5" row="3">1회</cell>

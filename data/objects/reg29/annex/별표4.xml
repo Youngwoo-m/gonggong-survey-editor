@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표4" gubun="별표" no="4" title="표준작업방법서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151295089">
-  <text>[별표 4]
-표준작업방법서</text>
+<annex id="별표4" gubun="별표" no="8" title="표준작업방법서" source="data/annex/원본/review/[별표 4] 표준작업방법서.hwpx">
   <table rows="26" cols="5">
     <row>
       <cell col="0" row="0">① 간행물(지도)명칭</cell>
@@ -17,7 +15,7 @@
     </row>
     <row>
       <cell col="0" row="3">④ 간행기간</cell>
-      <cell col="1" row="3" colspan="4">.   .   .  ∼       .   .   . (    일간)</cell>
+      <cell col="1" row="3" colspan="4">. . . ∼ . . . ( 일간)</cell>
     </row>
     <row>
       <cell col="0" row="4">⑤ 간행물의 형태</cell>
@@ -35,8 +33,7 @@
       <cell col="0" row="7">축 척</cell>
       <cell col="1" row="7" colspan="2">도엽명</cell>
       <cell col="3" row="7">축 척</cell>
-      <cell col="4" row="7">쪽 번 호
-(책자인 경우)</cell>
+      <cell col="4" row="7">쪽 번 호(책자인 경우)</cell>
     </row>
     <row>
       <cell col="0" row="8">1:1,000</cell>
@@ -91,8 +88,7 @@
       <cell col="1" row="17" colspan="4"></cell>
     </row>
     <row>
-      <cell col="0" row="18">⑪ 색도별 표기내용
- (먹,적,갈,청,녹등)</cell>
+      <cell col="0" row="18">⑪ 색도별 표기내용 (먹,적,갈,청,녹등)</cell>
       <cell col="1" row="18" colspan="4"></cell>
     </row>
     <row>
@@ -100,33 +96,25 @@
       <cell col="1" row="19" colspan="4">(지형도와 다른 주제도로써의 특징을 명시)</cell>
     </row>
     <row>
-      <cell col="0" row="20">⑬ 지도 도식에  사용한 도식 및 기호</cell>
+      <cell col="0" row="20">⑬ 지도 도식에 사용한 도식 및 기호</cell>
       <cell col="1" row="20" colspan="4">(사용한 도식이나 기호를 명시)</cell>
     </row>
     <row>
-      <cell col="0" row="21">⑭ 지도 수록내용의  지형,지물의 표기내용</cell>
+      <cell col="0" row="21">⑭ 지도 수록내용의 지형,지물의 표기내용</cell>
       <cell col="1" row="21" colspan="4">(고속국도, 지하철 예정선등 발행자가 수집 조사한 것임을 명시하고 성과에 난외주기로 표기)</cell>
     </row>
     <row>
-      <cell col="0" row="22" rowspan="2">⑮ 지도발행자
-  및 제작자</cell>
+      <cell col="0" row="22" rowspan="2">⑮ 지도발행자 및 제작자</cell>
       <cell col="1" row="22">발행자</cell>
       <cell col="2" row="22" colspan="3">제작자</cell>
     </row>
     <row>
-      <cell col="1" row="23">ㆍ출판사(발행기관)명:
-ㆍ발행자 성명:</cell>
-      <cell col="2" row="23" colspan="3">ㆍ지도제작 등록업체 명:(개인은 성명)
-ㆍ등록(발급)번호:(개인 및 등록업체)
-ㆍ자격종목 및 기술등급:(개인인 경우)
-ㆍ자격증 및 경력증 발행처:(개인인 경우)</cell>
+      <cell col="1" row="23">ㆍ출판사(발행기관)명:ㆍ발행자 성명:</cell>
+      <cell col="2" row="23" colspan="3">ㆍ지도제작 등록업체 명:(개인은 성명)ㆍ등록(발급)번호:(개인 및 등록업체)ㆍ자격종목 및 기술등급:(개인인 경우)ㆍ자격증 및 경력증 발행처:(개인인 경우)</cell>
     </row>
     <row>
       <cell col="0" row="24">⑯ 성과물에 난외주기로 표기할 사항</cell>
-      <cell col="1" row="24" colspan="4">ㆍ 0000  심사필 제   호(    .   .   .)
-ㆍ 본 지도는 국토지리정보원 간행 1:  지형도를 기본지도로 사용
-ㆍ 제작자의 등록번호 및 성명(지도제작업자 포함)
-ㆍ 원장이 간행한 지도와 상이한 부분의 해명사항</cell>
+      <cell col="1" row="24" colspan="4">ㆍ 0000 심사필 제 호( . . .)ㆍ 본 지도는 국토지리정보원 간행 1: 지형도를 기본지도로 사용ㆍ 제작자의 등록번호 및 성명(지도제작업자 포함)ㆍ 원장이 간행한 지도와 상이한 부분의 해명사항</cell>
     </row>
     <row>
       <cell col="0" row="25">⑰ 기타사항</cell>

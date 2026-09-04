@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표4" gubun="별표" no="4" title="공공삼각점측량 정확도 관리표(2)" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296091">
-  <text>[ 별표 4 ]
-공공삼각점측량 정확도 관리표(2)</text>
+<annex id="별표4" gubun="별표" no="2" title="공공삼각점측량 정확도 관리표(2)" source="data/annex/원본/work/[별표 4] 공공삼각점측량 정확도 관리표(2).hwpx">
   <table rows="17" cols="25">
     <row>
       <cell col="0" row="0">작업명</cell>
@@ -12,19 +10,17 @@
       <cell col="14" row="0" colspan="2"></cell>
       <cell col="16" row="0" colspan="2">수행자명</cell>
       <cell col="18" row="0" colspan="4"></cell>
-      <cell col="22" row="0" colspan="2">현장
-책임자</cell>
+      <cell col="22" row="0" colspan="2">현장책임자</cell>
       <cell col="24" row="0">인</cell>
     </row>
     <row>
-      <cell col="0" row="1">목  적</cell>
+      <cell col="0" row="1">목 적</cell>
       <cell col="1" row="1" colspan="4"></cell>
-      <cell col="5" row="1" colspan="3">기  간</cell>
+      <cell col="5" row="1" colspan="3">기 간</cell>
       <cell col="8" row="1" colspan="4"></cell>
       <cell col="12" row="1" colspan="2">작 업 량</cell>
       <cell col="14" row="1" colspan="2"></cell>
-      <cell col="16" row="1" colspan="2">용역수행
-대리인</cell>
+      <cell col="16" row="1" colspan="2">용역수행대리인</cell>
       <cell col="18" row="1" colspan="4">인</cell>
       <cell col="22" row="1" colspan="3"></cell>
     </row>
@@ -43,8 +39,7 @@
     </row>
     <row>
       <cell col="0" row="5" colspan="3">측점명</cell>
-      <cell col="3" row="5" colspan="4" rowspan="2">변 장
-(사거리)</cell>
+      <cell col="3" row="5" colspan="4" rowspan="2">변 장(사거리)</cell>
       <cell col="7" row="5" colspan="4">△X</cell>
       <cell col="11" row="5" colspan="3">△Y</cell>
       <cell col="14" row="5" colspan="2">△Z</cell>
@@ -54,8 +49,7 @@
       <cell col="0" row="6">自:</cell>
       <cell col="1" row="6" colspan="2">至:</cell>
       <cell col="7" row="6" colspan="3">잔 차</cell>
-      <cell col="10" row="6">허용
-범위</cell>
+      <cell col="10" row="6">허용범위</cell>
       <cell col="11" row="6" colspan="2">잔 차</cell>
       <cell col="13" row="6">허용범위</cell>
       <cell col="14" row="6">잔 차</cell>
@@ -92,20 +86,16 @@
     <row>
       <cell col="0" row="11" colspan="9">신점위치의 표준편차</cell>
       <cell col="9" row="11" colspan="2" rowspan="6"></cell>
-      <cell col="11" row="11" colspan="9">점   검    측    량</cell>
+      <cell col="11" row="11" colspan="9">점 검 측 량</cell>
     </row>
     <row>
       <cell col="0" row="12" colspan="2" rowspan="3">신점번호</cell>
       <cell col="2" row="12" colspan="4">수평위치</cell>
-      <cell col="6" row="12" colspan="3">표   고</cell>
+      <cell col="6" row="12" colspan="3">표 고</cell>
       <cell col="11" row="12" colspan="3">측 점 명</cell>
-      <cell col="14" row="12" colspan="2" rowspan="3">점 검 치
-변    장
-(사거리)</cell>
-      <cell col="16" row="12" rowspan="3">채택값
-변  장
-(사거리)</cell>
-      <cell col="17" row="12" colspan="3" rowspan="3">교   차</cell>
+      <cell col="14" row="12" colspan="2" rowspan="3">점 검 치변 장(사거리)</cell>
+      <cell col="16" row="12" rowspan="3">채택값변 장(사거리)</cell>
+      <cell col="17" row="12" colspan="3" rowspan="3">교 차</cell>
     </row>
     <row>
       <cell col="2" row="13" colspan="2" rowspan="2">표준편차</cell>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표2" gubun="별표" no="2" title="점의조서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296079">
+<annex id="별표2" gubun="별표" no="23" title="공공기준점 점의 조서" source="data/annex/원본/work/[별표 2] 점의조서.hwpx">
   <table rows="22" cols="9">
     <row>
-      <cell col="0" row="0" colspan="9">점  의  조  서</cell>
+      <cell col="0" row="0" colspan="9">점 의 조 서</cell>
     </row>
     <row>
       <cell col="0" row="1">사업명</cell>
@@ -23,8 +23,7 @@
     <row>
       <cell col="0" row="3">시행자</cell>
       <cell col="1" row="3" colspan="3"></cell>
-      <cell col="4" row="3">도엽명
-(1/50,000)</cell>
+      <cell col="4" row="3">도엽명(1/50,000)</cell>
       <cell col="5" row="3"></cell>
       <cell col="6" row="3">상태</cell>
       <cell col="7" row="3" colspan="2"></cell>
@@ -95,7 +94,7 @@
       <cell col="6" row="14" colspan="3">m</cell>
     </row>
     <row>
-      <cell col="0" row="15" rowspan="3">경       로</cell>
+      <cell col="0" row="15" rowspan="3">경 로</cell>
       <cell col="1" row="15" colspan="8"></cell>
     </row>
     <row>
@@ -105,7 +104,7 @@
       <cell col="1" row="17" colspan="8"></cell>
     </row>
     <row>
-      <cell col="0" row="18" colspan="4">약    도</cell>
+      <cell col="0" row="18" colspan="4">약 도</cell>
       <cell col="4" row="18" colspan="5">시 준 도</cell>
     </row>
     <row>
@@ -113,8 +112,8 @@
       <cell col="4" row="19" colspan="5"></cell>
     </row>
     <row>
-      <cell col="0" row="20" colspan="4">근    경</cell>
-      <cell col="4" row="20" colspan="5">원    경</cell>
+      <cell col="0" row="20" colspan="4">근 경</cell>
+      <cell col="4" row="20" colspan="5">원 경</cell>
     </row>
     <row>
       <cell col="0" row="21" colspan="4"></cell>

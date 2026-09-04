@@ -1,107 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별지1" gubun="별지" no="1" title="성과심사 접수확인서" source="성과심사 규정 개정안 초안 (scripts/genforms_simsa.py)">
-  <text>[별지 제1호서식]
-성과심사 접수확인서 (제20조제1항 관련)</text>
-  <table rows="2" cols="4">
+<annex id="별지1" gubun="별지" no="1" title="성과심사 접수확인서" source="data/annex/gen/review/별지1.hwpx">
+  <table rows="9" cols="4">
     <row>
-      <cell col="0" row="0" header="1">접수번호</cell>
-      <cell col="1" row="0" header="1"></cell>
-      <cell col="2" row="0" header="1">접수일</cell>
-      <cell col="3" row="0" header="1"></cell>
+      <cell col="0" row="0">구분</cell>
+      <cell col="1" row="0">파일ㆍ문서의 이름</cell>
+      <cell col="2" row="0">수량ㆍ용량</cell>
+      <cell col="3" row="0">확인</cell>
     </row>
     <row>
-      <cell col="0" row="1">처리기간</cell>
-      <cell col="1" row="1" colspan="3">접수일부터 20일 (「공간정보의 구축 및 관리 등에 관한 법률 시행규칙」 제22조제3항). 제20조제2항에 따른 보완 기간은 넣지 아니한다</cell>
-    </row>
-  </table>
-  <table rows="5" cols="4">
-    <row>
-      <cell col="0" row="0" header="1">신청인</cell>
-      <cell col="1" row="0" header="1">기관명</cell>
-      <cell col="2" row="0" header="1"></cell>
-      <cell col="3" row="0" header="1">담당자</cell>
+      <cell col="0" row="1">가. 공공측량작업계획서</cell>
+      <cell col="1" row="1">PLN_전체_20260302_001.pdf</cell>
+      <cell col="2" row="1">1건 2.1MB</cell>
+      <cell col="3" row="1">○</cell>
     </row>
     <row>
-      <cell col="0" row="1"></cell>
-      <cell col="1" row="1">연락처</cell>
-      <cell col="2" row="1"></cell>
-      <cell col="3" row="1"></cell>
+      <cell col="0" row="2">나. 제품사양서</cell>
+      <cell col="1" row="2">SPC_전체_20260302_001.pdf</cell>
+      <cell col="2" row="2">1건 1.4MB</cell>
+      <cell col="3" row="2">○</cell>
     </row>
     <row>
-      <cell col="0" row="2">사업</cell>
-      <cell col="1" row="2">사업명</cell>
-      <cell col="2" row="2"></cell>
-      <cell col="3" row="2"></cell>
+      <cell col="0" row="3">다. 품질보고서</cell>
+      <cell col="1" row="3">QLT_전체_20260901_001.pdf</cell>
+      <cell col="2" row="3">1건 3.0MB</cell>
+      <cell col="3" row="3">○</cell>
     </row>
     <row>
-      <cell col="0" row="3"></cell>
-      <cell col="1" row="3">측량의 종류</cell>
-      <cell col="2" row="3">기준점측량 / 지형측량 / 3차원 공간정보 구축 / 응용측량</cell>
-      <cell col="3" row="3"></cell>
+      <cell col="0" row="4">라. 성과패키지</cell>
+      <cell col="1" row="4">RES_376120**_*.shp 외</cell>
+      <cell col="2" row="4">도엽 14매 1.2GB</cell>
+      <cell col="3" row="4">○</cell>
     </row>
     <row>
-      <cell col="0" row="4"></cell>
-      <cell col="1" row="4">성과심사 단위</cell>
-      <cell col="2" row="4">단위 구분과 수량 (별표 13)</cell>
-      <cell col="3" row="4"></cell>
-    </row>
-  </table>
-  <text>확인 결과 (별표 13의 접수 시 확인 항목)</text>
-  <table rows="5" cols="4">
-    <row>
-      <cell col="0" row="0" header="1">확인 항목</cell>
-      <cell col="1" row="0" header="1">근거</cell>
-      <cell col="2" row="0" header="1">결과</cell>
-      <cell col="3" row="0" header="1">확인 내용</cell>
+      <cell col="0" row="5">마. 정확도 관리표</cell>
+      <cell col="1" row="5">QCT_전체_20260901_001.xlsx</cell>
+      <cell col="2" row="5">1건</cell>
+      <cell col="3" row="5">○</cell>
     </row>
     <row>
-      <cell col="0" row="1">성과패키지의 구성</cell>
-      <cell col="1" row="1">제20조제1항제1호ㆍ별표 13</cell>
-      <cell col="2" row="1">적합 / 보완 필요</cell>
-      <cell col="3" row="1"></cell>
+      <cell col="0" row="6">바. 메타데이터</cell>
+      <cell col="1" row="6">MET_전체_20260910_001.xml</cell>
+      <cell col="2" row="6">1건</cell>
+      <cell col="3" row="6">○</cell>
     </row>
     <row>
-      <cell col="0" row="2">파일의 형식ㆍ이름ㆍ좌표계</cell>
-      <cell col="1" row="2">제20조제1항제2호</cell>
-      <cell col="2" row="2">적합 / 보완 필요</cell>
-      <cell col="3" row="2"></cell>
+      <cell col="0" row="7">사. 처리이력</cell>
+      <cell col="1" row="7">LOG_전체_20260910_001.txt</cell>
+      <cell col="2" row="7">1건</cell>
+      <cell col="3" row="7">○</cell>
     </row>
     <row>
-      <cell col="0" row="3">메타데이터와 품질보고서</cell>
-      <cell col="1" row="3">제20조제1항제3호</cell>
-      <cell col="2" row="3">적합 / 보완 필요</cell>
-      <cell col="3" row="3"></cell>
-    </row>
-    <row>
-      <cell col="0" row="4">자동검사로 갈음</cell>
-      <cell col="1" row="4">제20조제4항</cell>
-      <cell col="2" row="4">실시 / 미실시</cell>
-      <cell col="3" row="4">별지 제3호서식 붙임</cell>
+      <cell col="0" row="8">아. 안전관리 기록</cell>
+      <cell col="1" row="8">SAF_전체_20260925_001.pdf</cell>
+      <cell col="2" row="8">1건</cell>
+      <cell col="3" row="8">○ (제출 여부만 확인)</cell>
     </row>
   </table>
-  <table rows="3" cols="4">
+  <table rows="4" cols="3">
     <row>
-      <cell col="0" row="0" header="1">처리</cell>
-      <cell col="1" row="0" header="1">접수 / 보완 요구</cell>
-      <cell col="2" row="0" header="1"></cell>
-      <cell col="3" row="0" header="1"></cell>
+      <cell col="0" row="0">확인 항목</cell>
+      <cell col="1" row="0">결과 (맞음 / 빠짐 / 맞지 아니함)</cell>
+      <cell col="2" row="0">내용</cell>
     </row>
     <row>
-      <cell col="0" row="1">보완 요구</cell>
-      <cell col="1" row="1">요구일</cell>
-      <cell col="2" row="1"></cell>
-      <cell col="3" row="1">기한 (7일 이내)</cell>
+      <cell col="0" row="1">1. 성과패키지의 구성이 별표 5에 맞는지</cell>
+      <cell col="1" row="1">맞지 아니함</cell>
+      <cell col="2" row="1">2구역의 탐사 조서(작업규정의 GPR 탐사조서)가 빠졌다</cell>
     </row>
     <row>
-      <cell col="0" row="2"></cell>
-      <cell col="1" row="2">심사기간에서 빼는 기간</cell>
-      <cell col="2" row="2">     년 월 일 ~     년 월 일 (   일)</cell>
-      <cell col="3" row="2"></cell>
+      <cell col="0" row="2">2. 파일의 형식ㆍ이름 및 좌표계가 제품사양서에 맞는지</cell>
+      <cell col="1" row="2">맞지 아니함</cell>
+      <cell col="2" row="2">도엽 37612038 파일 이름에 빈칸이 있다(작업규정의 전자성과 제출 표준 규격 — 파일명 규칙)</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">3. 메타데이터와 품질보고서가 갖추어져 있는지</cell>
+      <cell col="1" row="3">맞음</cell>
+      <cell col="2" row="3">−</cell>
     </row>
   </table>
-  <text>위와 같이 공공측량성과의 심사 신청을 접수하였음을 확인합니다.
-
-년       월       일
-
-측량성과 심사수탁기관의 장          (직인)</text>
 </annex>

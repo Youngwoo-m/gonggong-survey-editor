@@ -1,0 +1,38 @@
+# 줄바꿈은 저장소 안에서 LF 하나로 맞춘다.
+#
+# 이 편집기의 자료와 코드는 파이썬 스크립트가 newline=chr(10) 으로 적는다.
+# 그런데 윈도우 git 은 core.autocrlf 로 CRLF 를 되돌려 놓으려 하므로,
+# 다음에 git 이 그 파일을 만질 때 줄바꿈만 바뀐 변경이 통째로 잡혀
+# 참말로 고친 자리가 묻힌다. 저장소에는 LF 로만 담는다.
+* text=auto eol=lf
+
+# 한/글과 문서 —— 손대면 열리지 아니한다
+*.hwp   binary
+*.hwpx  binary
+*.pdf   binary
+*.doc   binary
+*.docx  binary
+*.xls   binary
+*.xlsx  binary
+*.xlsm  binary
+*.ppt   binary
+*.pptx  binary
+*.pmproj binary
+
+# 그림과 소리와 묶음
+*.webp  binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.ico   binary
+*.bmp   binary
+*.mp4   binary
+*.zip   binary
+*.woff  binary
+*.woff2 binary
+*.ttf   binary
+*.otf   binary
+
+# 배치 파일은 윈도우가 CRLF 를 바란다
+*.bat   text eol=crlf

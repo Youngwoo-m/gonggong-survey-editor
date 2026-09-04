@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표13" gubun="별표" no="13" title="GNSS높이측량 성과표" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296149">
-  <text>[ 별표 13 ]
-GNSS높이측량 성과표</text>
+<annex id="별표13" gubun="별표" no="31" title="GNSS높이측량 성과표" source="data/annex/원본/work/[별표 13] GNSS높이측량 성과표.hwpx">
   <table rows="8" cols="8">
     <row>
       <cell col="0" row="0" rowspan="2">측점</cell>
@@ -11,15 +9,10 @@ GNSS높이측량 성과표</text>
     <row>
       <cell col="1" row="1">위도</cell>
       <cell col="2" row="1">경도</cell>
-      <cell col="3" row="1">보정
-타원체고
-[m]</cell>
-      <cell col="4" row="1">지오이드고
-[m]</cell>
-      <cell col="5" row="1">표고
-[m]</cell>
-      <cell col="6" row="1">표준편차
-[m]</cell>
+      <cell col="3" row="1">보정타원체고[m]</cell>
+      <cell col="4" row="1">지오이드고[m]</cell>
+      <cell col="5" row="1">표고[m]</cell>
+      <cell col="6" row="1">표준편차[m]</cell>
       <cell col="7" row="1">점검결과</cell>
     </row>
     <row>

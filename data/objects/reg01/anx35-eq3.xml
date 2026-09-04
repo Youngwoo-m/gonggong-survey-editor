@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<equation id="anx35-eq3" article="별표 35" font="HYhwpEQ" source="[별표 42] 투영변환식.hwpx">
+  <script>&amp;①~T=tan^2 φ   ## &amp;②~C= e^2 over{1-e^2 }cos^2 φ    ## &amp;③~A=(λ-λ_0 )cosφ (여기서, ~λ와~ λ_0 는 ~radian값임)  ## &amp;④~N(위도~φ에서의 ~묘유선의~곡률~반경)  = a over sqrt{1-e^2 sin^2 φ}  ## &amp;⑤~M(자오선장)=a․left{left(1- {e^2} over {4} - {3e^4 }over {64} - {5e^6 }over {256} right)φ - left( {3e^2 } over{8} + {3e^4 }over {32} + {45e^6 }over {1024} right)sin2φ ##&amp;~~~~~~~~~~~~~~+ left( {15e^4 } over{256} + {45e^6 }over{1024} right)sin4φ -  {35e^6} over {3072} sin6φ   right}  ## &amp;⑥~e^2 (제1이심률) = {a^2 - b^2} over a^2   ## &amp;⑦~e'^2 (제2이심률) = {a^2 - b^2} over b^2</script>
+</equation>

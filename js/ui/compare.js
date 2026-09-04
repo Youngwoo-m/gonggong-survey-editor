@@ -1,14 +1,15 @@
 /* ============================================================
    ui/compare.js — 개정 전후 비교표 화면
    ============================================================ */
-import { buildComparison, KIND_LIST } from "../core/diff.js?v=20260824f";
-import { writeXlsx } from "../core/xlsx.js?v=20260824f";
-import * as M from "../core/model.js?v=20260824f";
-import { regFingerprint } from "../core/xrefs.js?v=20260824f";
-import { buildAmendment } from "../core/amend.js?v=20260824f";
-import { buildSupplement, EFFECT_KINDS, topTitles } from "../core/supplement.js?v=20260824f";
-import { stripImgTags } from "../core/objects.js?v=20260824f";
-import { esc, fmtDate } from "./html.js?v=20260824f";
+import { buildComparison, KIND_LIST } from "../core/diff.js?v=20260903a";
+import { writeXlsx } from "../core/xlsx.js?v=20260903a";
+import * as M from "../core/model.js?v=20260903a";
+import { regFingerprint } from "../core/xrefs.js?v=20260903a";
+import { buildAmendment } from "../core/amend.js?v=20260903a";
+import { buildSupplement, EFFECT_KINDS, topTitles } from "../core/supplement.js?v=20260903a";
+import { stripImgTags, imgIdsIn, toHtml, fitTable }
+  from "../core/objects.js?v=20260903a";
+import { esc, fmtDate } from "./html.js?v=20260903a";
 
 const KIND_CLASS = {
   "신설": "k-new", "삭제": "k-del", "이동": "k-mov", "이관": "k-xfer",
@@ -126,6 +127,7 @@ export class CompareView {
     sup.querySelector("#supDate").onchange = (e) => { this.sup.date = e.target.value; this.refresh(); };
     this.el.querySelector('[data-x="copy"]').onclick = () => this.copyAmend();
     this.el.querySelector('[data-x="xlsx"]').onclick = () => this.exportXlsx();
+    this.el.querySelector('[data-x="hwpx"]').onclick = (e) => this.exportHwpx(e.target);
     this.el.querySelector('[data-x="html"]').onclick = () => this.exportHtml();
     this.el.querySelector('[data-x="print"]').onclick = () => window.print();
 
@@ -184,6 +186,9 @@ export class CompareView {
     this.el.querySelector("#cmpWholeWrap").classList.toggle("hidden", !isAmend);
     this.el.querySelector("#btnCmpCopy").classList.toggle("hidden", !isAmend);
     this.el.querySelector("#btnCmpXlsx").classList.toggle("hidden", isAmend);
+    // 한/글 내보내기는 신구조문 대비표에서만 — 양식이 그 꼴이다
+    this.el.querySelector("#btnCmpHwpx")
+      .classList.toggle("hidden", this.form !== "official");
     this.el.querySelector("#cmpSupBar").classList.toggle("hidden", !isAmend);
     if (isAmend) {
       this.amend = buildAmendment(rows, { regName: this._regTitle(), whole: this.whole });
@@ -204,6 +209,93 @@ export class CompareView {
     } else {
       tbl.innerHTML = this.form === "official" ? this._officialTable(rows) : this._table(rows);
       tbl.className = this.form === "official" ? "official" : "";
+      // 칸 안의 [표 N] 자리에 진짜 표를 끼워 넣는다 (뒤늦게 채운다)
+      if (this.form === "official") {
+        this._fillObjects(tbl, this._officialRows(rows));
+      }
+    }
+  }
+
+  /* ============================================================
+     칸 안에 표 넣기
+     ------------------------------------------------------------
+     조문 본문에는 표가 <img id="…"> 표식으로 박혀 있다. 대비표를 글로만
+     그리면 그 자리가 [표 1] 이라는 자리표시로만 남아, 무엇이 어떻게
+     바뀌었는지 볼 수 없었다.
+
+     자리표시의 번호는 그 칸의 본문에서 몇 번째 표인가를 가리킨다. 본문에서
+     표 id 를 차례대로 뽑아 두면 [표 3] 이 어느 id 인지 알 수 있다.
+
+     표 XML 은 data/objects/<규정>/<id>.xml 에 있다. 내려받아 그린 뒤
+     자리표시 자리에 바꾸어 넣는다. 한 번 내려받은 것은 저장소가 담아 둔다.
+     ============================================================ */
+
+  /** 비교표에 표 저장소를 물린다 — main.js 에서 부른다 */
+  setObjectStore(store, regIdOf = null) {
+    this.objects = store;
+    this.regIdOf = regIdOf || {};
+  }
+
+  /** 이 줄의 표가 어느 규정 것인가 */
+  _objRegId(imgId) {
+    return (this.targetId && this.regIdOf?.[this.targetId])
+      || this.objects?.regOf(imgId)
+      || null;
+  }
+
+  async _fillObjects(scope, rows) {
+    if (!this.objects) return;
+    const trs = [...scope.querySelectorAll("tbody tr")];
+    for (let i = 0; i < trs.length; i++) {
+      const r = rows[i];
+      if (!r) continue;
+      await this._fillCell(trs[i].children[0], r.before);
+      await this._fillCell(trs[i].children[1], r.after);
+    }
+    fitTable(scope);
+  }
+
+  /** 한 칸의 [표 N] 을 진짜 표로 */
+  async _fillCell(td, side) {
+    if (!td || !side) return;
+    // 자리표시의 번호는 날 본문에서 몇째 표인가를 가리킨다
+    const ids = imgIdsIn(side.raw || "");
+    if (!ids.length) return;
+    // 글 마디를 훑어 [표 N] 을 찾는다 — 자리표시는 글로 박혀 있다
+    const walker = document.createTreeWalker(td, NodeFilter.SHOW_TEXT);
+    const hits = [];
+    for (let n = walker.nextNode(); n; n = walker.nextNode()) {
+      if (/\[표\s*\d+\]/.test(n.nodeValue)) hits.push(n);
+    }
+    for (const node of hits) {
+      const parts = node.nodeValue.split(/(\[표\s*\d+\])/);
+      const frag = document.createDocumentFragment();
+      for (const p of parts) {
+        const m = p.match(/^\[표\s*(\d+)\]$/);
+        if (!m) { if (p) frag.appendChild(document.createTextNode(p)); continue; }
+        const id = ids[+m[1] - 1];
+        const box = document.createElement("div");
+        box.className = "cmp-obj";
+        box.textContent = p;                       // 못 그리면 자리표시 그대로
+        frag.appendChild(box);
+        if (!id) continue;
+        const regId = this._objRegId(id);
+        if (!regId) continue;
+        // 표도 수식도 아닌 도해는 XML 이 없다 — 원본 그림을 그대로 보인다
+        const meta = this.objects.meta(regId, id);
+        if (meta && meta.kind === "image") {
+          const url = `data/objects/${encodeURIComponent(regId)}/`
+            + encodeURIComponent(meta.file || `${id}.gif`);
+          box.innerHTML = `<img class="cmp-pic" loading="lazy" src="${esc(url)}"`
+            + ` alt="${esc(meta.article || "")} 그림">`;
+          box.classList.add("ok");
+          continue;
+        }
+        this.objects.get(regId, id).then((obj) => {
+          if (obj) { box.innerHTML = toHtml(obj); box.classList.add("ok"); }
+        }).catch(() => { /* 못 읽으면 자리표시로 둔다 */ });
+      }
+      node.parentNode.replaceChild(frag, node);
     }
   }
 
@@ -309,6 +401,7 @@ export class CompareView {
     <div class="spacer"></div>
     <button data-x="copy" id="btnCmpCopy" class="hidden">개정문 복사</button>
     <button data-x="xlsx" id="btnCmpXlsx" class="primary">엑셀(.xlsx) 내보내기</button>
+    <button data-x="hwpx" id="btnCmpHwpx">한/글(.hwpx) 내보내기</button>
     <button data-x="html">HTML 내보내기</button>
     <button data-x="print">인쇄</button>
   </div>
@@ -399,23 +492,48 @@ export class CompareView {
     setTimeout(() => { if (el.textContent === msg) el.textContent = old; }, 2600);
   }
 
-  /** 신구조문 대비표 — 현행 · 개정안 두 칸 */
-  _officialTable(rows) {
+  /* 신구조문 대비표에 싣는 것은 **조문뿐**이다.
+   *
+   * 양식(Form\02.신구대조표)이 조문 대비표이고, 한/글 생성기
+   * (scripts/formdocs.py 의 build_compare)도 조만 싣는다. 편ㆍ장 마디는
+   * 본문 자리에 개편 작업 메모가 들어 있어(제1편 총칙에는 연구보고서 요약
+   * 표 셋이 박혀 있다) 대비표에 넣으면 수정(안) 칸이 메모로 채워진다.
+   * 별표ㆍ별지는 따로 목록을 낸다.
+   */
+  _officialRows(rows) {
+    return (rows || []).filter((r) => r.level === "조" && !r.annex);
+  }
+
+  /** 신구조문 대비표 — 현 행 · 수정(안) · 개정 사유 세 칸
+   *
+   *  양식(Form\02.신구대조표)의 칸 폭 25510/26339/18981 에서 온 몫이다.
+   *  한/글 생성기도 이 세 칸으로 짓는다. */
+  _officialTable(allRows) {
+    const rows = this._officialRows(allRows);
+    const dropped = (allRows || []).length - rows.length;
     const head = `<thead><tr>
-      <th style="width:50%">현행</th>
-      <th style="width:50%">개정안</th>
+      <th style="width:36%">현 행</th>
+      <th style="width:37%">수정(안)</th>
+      <th style="width:27%">개정 사유</th>
     </tr></thead>`;
     if (!rows.length) {
-      return head + `<tbody><tr><td colspan="2" class="none">표시할 항목이 없습니다. 필터를 해제해 보세요.</td></tbody>`;
+      return head + `<tbody><tr><td colspan="3" class="none">표시할 항목이 없습니다. 필터를 해제해 보세요.</td></tbody>`;
     }
     const body = rows.map((r) => {
       const c = this._officialCells(r);
       return `<tr class="${KIND_CLASS[r.kind]}">
         <td>${cellsHtml(c.cur)}</td>
         <td>${cellsHtml(c.rev)}</td>
+        <td class="why">${whyHtml(r)}</td>
       </tr>`;
     }).join("");
-    return head + `<tbody>${body}</tbody>`;
+    const note = dropped
+      ? `<tfoot><tr><td colspan="3" class="none">`
+        + `편ㆍ장 마디와 별표ㆍ별지 ${dropped}개는 싣지 않았습니다 — `
+        + `양식이 조문 대비표입니다. 별표ㆍ별지는 [상세 비교표] 에서 보십시오.`
+        + `</td></tr></tfoot>`
+      : "";
+    return head + `<tbody>${body}</tbody>` + note;
   }
 
   _table(rows) {
@@ -495,18 +613,20 @@ export class CompareView {
     }]);
     sheetRows.push([]);
     if (this.form === "official") {
-      // 신구조문 대비표 — 두 칸뿐이다
-      sheetRows.push(["현행", "개정안"].map((v) => ({ v, s: S.HEAD })));
+      // 신구조문 대비표 — 양식대로 세 칸
+      sheetRows.push(["현 행", "수정(안)", "개정 사유"].map((v) => ({ v, s: S.HEAD })));
       for (const r of rows) {
         const c = this._officialCells(r);
         sheetRows.push([
           { runs: cellRunsOfficial(c.cur), s: S.CELL },
           { runs: cellRunsOfficial(c.rev), s: S.CELL },
+          { v: whyLines(r.reason, r.kind || r.status).map((s) => `- ${s}`).join("\n"),
+            s: S.CELL },
         ]);
       }
       const blobO = writeXlsx({
         name: `신구조문 대비표 (${this._targetName()})`.slice(0, 31),
-        cols: [{ w: 52 }, { w: 52 }],
+        cols: [{ w: 46 }, { w: 48 }, { w: 36 }],
         rows: sheetRows,
         freeze: 6,
       });
@@ -576,27 +696,70 @@ p.sub{text-align:center;color:#444;font-size:9pt;margin:0 0 12px;line-height:1.5
 table{border-collapse:collapse;width:100%;table-layout:fixed}
 th,td{border:1px solid #000;padding:6px 7px;vertical-align:top;font-size:9.5pt;line-height:1.7;word-break:break-all}
 th{text-align:center;font-weight:700;background:#f2f2f2}
-u.mk{text-decoration:underline}
+u.mk{text-decoration:underline;color:#C00000}
 .mk-new{font-weight:700}
-.mk-omit{color:#444}`;
+.mk-omit{color:#444}
+td.why{font-size:9pt;line-height:1.65;word-break:keep-all}
+.rule{border:1px solid #bbb;background:#FAFAF7;padding:6px 10px;font-size:9pt;
+      color:#444;margin:0 0 10px}`;
     const body = rows.map((r) => {
       const c = this._officialCells(r);
-      return `<tr><td>${cellsHtml(c.cur)}</td><td>${cellsHtml(c.rev)}</td></tr>`;
+      return `<tr><td>${cellsHtml(c.cur)}</td><td>${cellsHtml(c.rev)}</td>`
+        + `<td class="why">${whyHtml(r)}</td></tr>`;
     }).join("");
     const html = `<!doctype html><html lang="ko"><meta charset="utf-8">
 <title>신구조문 대비표 — ${esc(this._targetName())}</title><style>${css}</style>
 <h1>신구조문 대비표</h1>
 <p class="sub">${esc(pt.base)}<br>현행: ${esc(pt.from)} &nbsp;↔&nbsp; 개정안: ${esc(pt.to)}</p>
-<table><thead><tr><th style="width:50%">현행</th><th style="width:50%">개정안</th></tr></thead>
+<div class="rule"><b>표기 원칙</b> — 변경 없는 부분은 “_” 로 줄여 적고, 수정(안)의
+ 새 문구는 <u class="mk">붉은색 밑줄</u>로 표시하며, 개정 사유는 개조식으로 적습니다.</div>
+<table><thead><tr><th style="width:36%">현 행</th><th style="width:37%">수정(안)</th>
+<th style="width:27%">개정 사유</th></tr></thead>
 <tbody>${body}</tbody></table></html>`;
     download(new Blob([html], { type: "text/html;charset=utf-8" }), this._fileBase() + ".html");
+  }
+
+  /* ============================================================
+     한/글(.hwpx) 내보내기
+     ------------------------------------------------------------
+     HWPX 는 ZIP + XML 이라 브라우저에서도 지을 수 있다. 다만 손으로 조립한
+     꾸러미는 한/글이 '손상된 파일' 로 본다. 그래서 **양식 파일을 열어 글만
+     갈아 끼운다** — 파이썬 쪽(scripts/formfill.py)과 같은 방식이다.
+
+     견주기는 화면이 이미 한 것(officialCells)을 그대로 넘긴다. 두 벌을
+     두면 화면에서 본 대비표와 내려받은 문서가 서로 달라진다.
+     ============================================================ */
+  async exportHwpx(btn) {
+    const old = btn ? btn.textContent : "";
+    if (btn) { btn.disabled = true; btn.textContent = "짓는 중…"; }
+    try {
+      const { buildCompareHwpx } = await import("../core/hwpxcompare.js?v=20260903a");
+      // 대비표에 싣는 것은 조문뿐이다 — 양식이 조문 대비표다
+      const rows = this._officialRows(this.result.rows);
+      if (!rows.length) throw new Error("대비표에 실을 조문이 없습니다.");
+      const got = await buildCompareHwpx(rows, {
+        regname: this._targetName(),
+        cells: (r) => this._officialCells(r),
+        why: (r) => whyLines(r.reason, r.kind || r.status),
+      });
+      download(got.blob, got.name);
+      if (btn) btn.textContent = `${got.rows}개 조 · 내려받음`;
+      setTimeout(() => { if (btn) btn.textContent = old; }, 2500);
+    } catch (err) {
+      console.error(err);
+      alert(`한/글 파일을 짓지 못했습니다.\n\n${err.message}`);
+      if (btn) btn.textContent = old;
+    } finally {
+      if (btn) btn.disabled = false;
+    }
   }
 
   exportHtml() {
     const { rows, summary } = this.result;
     const pt = this._pairText();
     if (this.form === "amend") return this._exportHtmlAmend(pt);
-    if (this.form === "official") return this._exportHtmlOfficial(rows, pt);
+    if (this.form === "official")
+      return this._exportHtmlOfficial(this._officialRows(rows), pt);
     const css = `body{font-family:"맑은 고딕",sans-serif;font-size:11pt;margin:24px;color:#1F2C35}
 h1{font-size:17pt;margin:0 0 4px}p.sub{color:#7B8A92;font-size:9.5pt;margin:0 0 14px;line-height:1.6}
 table{border-collapse:collapse;width:100%}
@@ -654,10 +817,14 @@ function download(blob, name) {
   setTimeout(() => URL.revokeObjectURL(url), 2000);
 }
 
-/** 글자 수만큼 줄표를 긋는다 — 공백은 세지 않는다 (신구조문 대비표 양식) */
+/** 글자 수만큼 줄을 긋는다 — 공백은 세지 않는다 (신구조문 대비표 양식)
+ *
+ *  양식이 적어 둔 표기 원칙은 「변경 없는 부분은 "_" 로 생략」이다.
+ *  한/글 생성기(scripts/formdocs.py 의 diff_runs)도 밑줄(_)을 쓴다.
+ *  화면ㆍ웹 보고서ㆍ한/글 문서가 서로 달라 보이지 않도록 여기서도 맞춘다. */
 function dashes(text) {
   const n = String(text || "").replace(/\s+/g, "").length;
-  return n ? "-".repeat(Math.min(n, 400)) : "";
+  return n ? "_".repeat(Math.min(n, 400)) : "";
 }
 const NLC = "\n";
 
@@ -675,7 +842,16 @@ export function dashify(runs, fallback) {
  */
 export function officialCells(r) {
   const b = r.before, a = r.after;
-  const head = (x) => x ? `${x.label}${x.title ? `(${x.title})` : ""}` : "";
+  /* 「제193조 정의(제193조 정의)」처럼 겹쳐 적히는 줄이 있다 — 조 번호를
+     따로 두지 않고 제목에 통째로 담은 마디(삭제 자리표시 44개)가 그렇다.
+     이름표가 이미 제목을 담고 있으면 괄호를 붙이지 아니한다. */
+  const head = (x) => {
+    if (!x) return "";
+    const t = String(x.title || "").trim();
+    const lb = String(x.label || "").trim();
+    if (!t || lb === t || lb.endsWith(t)) return lb;
+    return `${lb}(${t})`;
+  };
   // 본문의 표·수식 표식은 글이 아니므로 자리만 남긴다
   const txt = (v) => stripImgTags(v || "", (i) => `[표 ${i}]`);
   const full = (x) => [{ t: "=", s: head(x) },
@@ -691,6 +867,11 @@ export function officialCells(r) {
     return parts;
   };
 
+  if (!b && r.splitFrom) {
+    /* 한 조를 여러 조로 나눈 것. 글은 현행에서 온 것이므로 신설이 아니다 —
+       어느 조에서 나왔는지 적어 두어야 대비표를 읽을 수 있다. */
+    return { cur: [{ t: "mark", s: `<현행 ${r.splitFrom}에서 나눔>` }], rev: full(a) };
+  }
   if (r.kind === "신설") {
     // 표시는 번호만 적는다 — <제7조의2 신설>
     return { cur: [{ t: "mark", s: `<${a ? a.label : ""} 신설>` }], rev: full(a) };
@@ -726,6 +907,78 @@ export function officialCells(r) {
     rev.push(...dashify(r.afterBodyRuns, b && b.body));
   }
   return { cur: curMarked(b, r.beforeBodyRuns), rev };
+}
+
+/* ------------------------------------------------- 셋째 칸에 넣을 개정 사유
+ *
+ * 한/글 생성기(scripts/genreport_hwpx.py 의 why_of)와 **같은 규칙**이라야
+ * 한다. 규칙이 둘이면 화면에서 본 대비표와 [한글문서만들기.bat] 이 지은
+ * 대비표의 셋째 칸이 서로 달라진다.
+ *
+ *   ○ 개정 내용: 을 먼저 쓰고, 없으면 ○ 개정 사유: 를 쓴다
+ *   자리만 채워 둔 줄은 걷어 낸다 (42개 조가 모두 같은 한 줄을 이고 있다)
+ *   겹치는 줄을 덜고 여섯 줄까지만 싣는다
+ */
+const SEC_WHY = "개정 사유";
+const SEC_WHAT = "개정 내용";
+const WHY_NOISE = /짚은 마디가 따로 없다|확인된 내용이 없다|해당 없음/;
+
+/** 사유 글 → [[머리, [항목…]]…] */
+function reasonSecs(reason) {
+  const secs = [];
+  let head = null;
+  let items = [];
+  for (const ln of String(reason || "").split("\n")) {
+    const s = ln.trim();
+    if (!s || s === "[변경 사유]") continue;
+    if (s.startsWith("○")) {
+      if (head !== null) secs.push([head, items]);
+      head = s.replace(/^○+/, "").trim().replace(/:$/, "").trim();
+      items = [];
+    } else if (head === null) {
+      secs.push(["", [s.replace(/^\*\s*/, "")]]);
+    } else {
+      items.push(s.replace(/^\*\s*/, ""));
+    }
+  }
+  if (head !== null) secs.push([head, items]);
+  return secs;
+}
+
+function pickSec(secs, ...names) {
+  const out = [];
+  for (const [head, items] of secs) {
+    if (names.some((n) => head.includes(n))) out.push(...items);
+  }
+  return out;
+}
+
+/** 차례는 그대로 두고 겹치는 줄만 덜어 낸다 */
+function uniqLines(xs) {
+  const seen = new Set();
+  const out = [];
+  for (const x of xs) {
+    const k = x.replace(/\s+/g, "");
+    if (k && !seen.has(k)) { seen.add(k); out.push(x); }
+  }
+  return out;
+}
+
+/** 대비표 셋째 칸에 넣을 개조식 줄들 */
+export function whyLines(reason, fallback) {
+  const secs = reasonSecs(reason);
+  const keep = (xs) => uniqLines(xs.filter((x) => !WHY_NOISE.test(x)));
+  const what = keep(pickSec(secs, SEC_WHAT));
+  const got = (what.length ? what : keep(pickSec(secs, SEC_WHY))).slice(0, 6);
+  return got.length ? got : (fallback ? [String(fallback)] : []);
+}
+
+/** 셋째 칸을 HTML 로 — 개조식 한 줄에 하나씩 */
+export function whyHtml(r) {
+  const w = whyLines(r.reason, r.kind || r.status);
+  return w.length
+    ? w.map((s) => `- ${esc(s)}`).join("<br>")
+    : `<span class="mk-omit">—</span>`;
 }
 
 /** 신구조문 대비표 한 칸 — 줄표·표시·본문을 갈라 그린다 */

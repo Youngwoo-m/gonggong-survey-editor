@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표11" gubun="별표" no="11" title="레이저측량 점군밀도 및 결측률 검사표" source="data/annex/gen/draftUav2/별표11.hwpx">
+  <table rows="5" cols="7">
+    <row>
+      <cell col="0" row="0">구역</cell>
+      <cell col="1" row="0">격자 수</cell>
+      <cell col="2" row="0">최소</cell>
+      <cell col="3" row="0">최대</cell>
+      <cell col="4" row="0">평균</cell>
+      <cell col="5" row="0">요구 밀도</cell>
+      <cell col="6" row="0">밑도는 격자의 수와 비율</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">제방 마루</cell>
+      <cell col="1" row="1">000,000</cell>
+      <cell col="2" row="1">0</cell>
+      <cell col="3" row="1">000</cell>
+      <cell col="4" row="1">00.0 점/㎡</cell>
+      <cell col="5" row="1">작업계획서가 정한 값</cell>
+      <cell col="6" row="1">0개 0%</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">비탈면</cell>
+      <cell col="1" row="2">000,000</cell>
+      <cell col="2" row="2">0</cell>
+      <cell col="3" row="2">000</cell>
+      <cell col="4" row="2">00.0 점/㎡</cell>
+      <cell col="5" row="2">같은 값</cell>
+      <cell col="6" row="2">000개 0.0%</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">둔치</cell>
+      <cell col="1" row="3">000,000</cell>
+      <cell col="2" row="3">0</cell>
+      <cell col="3" row="3">000</cell>
+      <cell col="4" row="3">00.0 점/㎡</cell>
+      <cell col="5" row="3">같은 값</cell>
+      <cell col="6" row="3">0개 0%</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">지면점 기준 비탈면</cell>
+      <cell col="1" row="4">000,000</cell>
+      <cell col="2" row="4">0</cell>
+      <cell col="3" row="4">00</cell>
+      <cell col="4" row="4">0.0 점/㎡</cell>
+      <cell col="5" row="4">같은 값</cell>
+      <cell col="6" row="4">0,000개 0.0%</cell>
+    </row>
+  </table>
+  <table rows="4" cols="5">
+    <row>
+      <cell col="0" row="0">구역</cell>
+      <cell col="1" row="0">결측 격자의 수</cell>
+      <cell col="2" row="0">결측률</cell>
+      <cell col="3" row="0">가장 큰 결측 덩어리</cell>
+      <cell col="4" row="0">결측의 까닭</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">둔치</cell>
+      <cell col="1" row="1">0,000</cell>
+      <cell col="2" row="1">0.0%</cell>
+      <cell col="3" row="1">000 ㎡</cell>
+      <cell col="4" row="1">수면 반사(웅덩이)</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">비탈면</cell>
+      <cell col="1" row="2">0,000</cell>
+      <cell col="2" row="2">0.0%</cell>
+      <cell col="3" row="2">000 ㎡</cell>
+      <cell col="4" row="2">식생 차폐</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">제방 마루</cell>
+      <cell col="1" row="3">000</cell>
+      <cell col="2" row="3">0.0%</cell>
+      <cell col="3" row="3">00 ㎡</cell>
+      <cell col="4" row="3">교량 하부 차폐</cell>
+    </row>
+  </table>
+</annex>

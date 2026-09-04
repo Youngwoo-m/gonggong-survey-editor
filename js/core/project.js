@@ -7,11 +7,11 @@
    · this.tree 는 항상 '현재 버전'의 트리 배열과 같은 객체를 가리킨다.
    · 모든 구조 변경은 run() 트랜잭션을 통해서만 일어난다.
    ============================================================ */
-import * as M from "./model.js?v=20260824f";
-import { revLabel, nextRevLabel, revValue, verPrefixOf } from "./targets.js?v=20260824f";
-import { regFingerprint } from "./xrefs.js?v=20260824f";
+import * as M from "./model.js?v=20260903a";
+import { revLabel, nextRevLabel, revValue, verPrefixOf } from "./targets.js?v=20260903a";
+import { regFingerprint } from "./xrefs.js?v=20260903a";
 import { numbersOf, planFrom, planStayed, remapCitations, articleIdsIn,
-         planTermFixes, TERM_RULES } from "./xrefs.js?v=20260824f";
+         planTermFixes, TERM_RULES } from "./xrefs.js?v=20260903a";
 
 const MAX_HISTORY = 100;
 const BASE_ID = "base";
@@ -240,6 +240,7 @@ export class Project {
           label: revLabel(pre, ri++), title: e.draft.title || `${e.target.word} 초안`,
           note: e.draft.note || "", readonly: e.draft.readonly !== false,
           tree: draftTreeOf(e.draft.tree, e.target),
+          supplement: e.draft.supplement || null,
         });
         for (const more of (Array.isArray(e.draft.next) ? e.draft.next : [])) {
           if (!Array.isArray(more.tree) || !more.tree.length) continue;
@@ -247,6 +248,7 @@ export class Project {
             label: revLabel(pre, ri++), title: more.title || `${e.target.word} 초안`,
             note: more.note || "", readonly: !!more.readonly,
             tree: draftTreeOf(more.tree, e.target),
+            supplement: more.supplement || null,
           });
         }
       }
@@ -1473,6 +1475,10 @@ function makeRegNode(target, rev, open) {
     revLabel: rev.label,
     revTitle: rev.title,
     revNote: rev.note || "",
+    /* 부칙은 규정 트리에 담지 아니한다 — 현행 규정 색인이 부칙을 걷어내므로
+       트리에 넣으면 조 번호가 어그러진다. 개정안 자료의 supplement 를 규정
+       노드가 지니고 있다가 보고서를 지을 때 내어 준다. */
+    supplement: rev.supplement || null,
     collapsed: !open,
     children: nsTree(rev.tree, target.id),
   };

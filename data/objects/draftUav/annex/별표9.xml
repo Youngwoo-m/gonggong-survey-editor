@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표9" gubun="별표" no="9" title="조준선 검정 성과표" source="data/annex/gen/draftUav2/별표9.hwpx">
+  <table rows="5" cols="5">
+    <row>
+      <cell col="0" row="0">성분</cell>
+      <cell col="1" row="0">검정 전</cell>
+      <cell col="2" row="0">검정 후</cell>
+      <cell col="3" row="0">차이</cell>
+      <cell col="4" row="0">표준편차</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">롤(Roll)</cell>
+      <cell col="1" row="1">0.0000°</cell>
+      <cell col="2" row="1">0.0000°</cell>
+      <cell col="3" row="1">0.0000°</cell>
+      <cell col="4" row="1">0.0000°</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">피치(Pitch)</cell>
+      <cell col="1" row="2">0.0000°</cell>
+      <cell col="2" row="2">0.0000°</cell>
+      <cell col="3" row="2">0.0000°</cell>
+      <cell col="4" row="2">0.0000°</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">헤딩(Yaw)</cell>
+      <cell col="1" row="3">0.0000°</cell>
+      <cell col="2" row="3">0.0000°</cell>
+      <cell col="3" row="3">0.0000°</cell>
+      <cell col="4" row="3">0.0000°</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">지렛대 팔 x/y/z</cell>
+      <cell col="1" row="4">0.000</cell>
+      <cell col="2" row="4">0.000</cell>
+      <cell col="3" row="4">0.000 m (검정 전후 같음 — 실측값)</cell>
+      <cell col="4" row="4"></cell>
+    </row>
+  </table>
+  <table rows="5" cols="4">
+    <row>
+      <cell col="0" row="0">항목</cell>
+      <cell col="1" row="0">보정 전</cell>
+      <cell col="2" row="0">보정 후</cell>
+      <cell col="3" row="0">줄어든 정도</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">교차 코스 사이의 수직 불일치</cell>
+      <cell col="1" row="1">0.000 m</cell>
+      <cell col="2" row="1">0.000 m</cell>
+      <cell col="3" row="1">00%</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">교차 코스 사이의 수평 불일치</cell>
+      <cell col="1" row="2">0.000 m</cell>
+      <cell col="2" row="2">0.000 m</cell>
+      <cell col="3" row="2">00%</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">중첩 구간 점군의 두께</cell>
+      <cell col="1" row="3">0.000 m</cell>
+      <cell col="2" row="3">0.000 m</cell>
+      <cell col="3" row="3">00%</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">평탄지에서의 점군 퍼짐</cell>
+      <cell col="1" row="4">0.000 m</cell>
+      <cell col="2" row="4">0.000 m</cell>
+      <cell col="3" row="4">00%</cell>
+    </row>
+  </table>
+</annex>

@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표22" gubun="별표" no="22" title="종단측량 정확도 관리표" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296203">
-  <text>[ 별표 22 ]
-종단측량 정확도 관리표</text>
+<annex id="별표22" gubun="별표" no="11" title="종단측량 정확도 관리표" source="data/annex/원본/work/[별표 22] 종단측량 정확도 관리표.hwpx">
   <table rows="2" cols="10">
     <row>
       <cell col="0" row="0">작업명</cell>
@@ -242,8 +240,6 @@
       <cell col="9" row="16"></cell>
     </row>
   </table>
-  <text>용지의 크기는 A4판으로 한다.
-종단측량 성과표</text>
   <table rows="25" cols="6">
     <row>
       <cell col="0" row="0">측점</cell>
@@ -446,5 +442,4 @@
       <cell col="5" row="24"></cell>
     </row>
   </table>
-  <text>용지의 크기는 A4판으로 한다.</text>
 </annex>

@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표20" gubun="별표" no="20" title="점의 조서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296191">
-  <text>[ 별표 20 ]
-점의 조서</text>
+<annex id="별표20" gubun="별표" no="37" title="노선측량 점의 조서" source="data/annex/원본/work/[별표 20] 점의 조서.hwpx">
   <table rows="8" cols="6">
     <row>
       <cell col="0" row="0">노선번호</cell>
@@ -56,5 +54,4 @@
       <cell col="3" row="7" colspan="3">약 도</cell>
     </row>
   </table>
-  <text>용지의 크기는 A4판으로 한다.</text>
 </annex>

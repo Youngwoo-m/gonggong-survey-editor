@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표5" gubun="별표" no="5" title="공공삼각점성과표(1)" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296097">
-  <text>[ 별표 5 ]
-공공삼각점성과표(1)
-년월일</text>
+<annex id="별표5" gubun="별표" no="24" title="공공삼각점성과표(1)" source="data/annex/원본/work/[별표 5] 공공삼각점성과표(1).hwpx">
   <table rows="6" cols="7">
     <row>
-      <cell col="0" row="0" colspan="7">공 공 삼 각 점 성 과 표
-       B                                X
-       L                                Y
-       N                                H
-                                        柱石長</cell>
+      <cell col="0" row="0" colspan="7">공 공 삼 각 점 성 과 표 B X L Y N H 柱石長</cell>
     </row>
     <row>
       <cell col="0" row="1" colspan="2" rowspan="2">시준점의 명칭</cell>
       <cell col="2" row="1" colspan="2" rowspan="2">평균방향각</cell>
-      <cell col="4" row="1" colspan="2">거     리</cell>
-      <cell col="6" row="1" rowspan="2">비     고</cell>
+      <cell col="4" row="1" colspan="2">거 리</cell>
+      <cell col="6" row="1" rowspan="2">비 고</cell>
     </row>
     <row>
       <cell col="4" row="2" colspan="2">축척계수</cell>
@@ -23,19 +16,16 @@
     <row>
       <cell col="0" row="3" colspan="2"></cell>
       <cell col="2" row="3" colspan="2"></cell>
-      <cell col="4" row="3" colspan="2">치     수
-m</cell>
+      <cell col="4" row="3" colspan="2">치 수m</cell>
       <cell col="6" row="3"></cell>
     </row>
     <row>
       <cell col="0" row="4">매표형식</cell>
-      <cell col="1" row="4">지  상</cell>
-      <cell col="2" row="4">지  중</cell>
-      <cell col="3" row="4">옥  상</cell>
-      <cell col="4" row="4">표 지
-번 호</cell>
-      <cell col="5" row="4">표 석
-금속표</cell>
+      <cell col="1" row="4">지 상</cell>
+      <cell col="2" row="4">지 중</cell>
+      <cell col="3" row="4">옥 상</cell>
+      <cell col="4" row="4">표 지번 호</cell>
+      <cell col="5" row="4">표 석금속표</cell>
       <cell col="6" row="4"></cell>
     </row>
     <row>

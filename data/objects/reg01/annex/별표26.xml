@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표26" gubun="별표" no="26" title="지구계점 측량성과 점검 기록부" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296229">
-  <text>[ 별표 26 ]
-지구계점 측량성과 점검 기록부</text>
+<annex id="별표26" gubun="별표" no="38" title="지구계점 측량성과 점검 기록부" source="data/annex/원본/work/[별표 26] 지구계점 측량성과 점검 기록부.hwpx">
   <table rows="20" cols="6">
     <row>
       <cell col="0" row="0">사업지구명</cell>
@@ -13,16 +11,16 @@
       <cell col="0" row="1">사용기계</cell>
       <cell col="1" row="1" colspan="2"></cell>
       <cell col="3" row="1">측량자</cell>
-      <cell col="4" row="1" colspan="2">기사    급       (인)</cell>
+      <cell col="4" row="1" colspan="2">기사 급 (인)</cell>
     </row>
     <row>
       <cell col="0" row="2">작업방법</cell>
       <cell col="1" row="2" colspan="2"></cell>
       <cell col="3" row="2">측량일</cell>
-      <cell col="4" row="2" colspan="2">.      .      .</cell>
+      <cell col="4" row="2" colspan="2">. . .</cell>
     </row>
     <row>
-      <cell col="0" row="3" colspan="6">성과점검</cell>
+      <cell col="0" row="3" colspan="6">&lt;hp:fwSpace/&gt;성과점검</cell>
     </row>
     <row>
       <cell col="0" row="4">점번호</cell>
@@ -140,12 +138,11 @@
       <cell col="0" row="18">점검기관</cell>
       <cell col="1" row="18" colspan="3">회사</cell>
       <cell col="4" row="18" rowspan="2">점검일</cell>
-      <cell col="5" row="18" rowspan="2">.   .   .</cell>
+      <cell col="5" row="18" rowspan="2">. . .</cell>
     </row>
     <row>
       <cell col="0" row="19">점검자</cell>
-      <cell col="1" row="19" colspan="3">기사      급              (인)</cell>
+      <cell col="1" row="19" colspan="3">기사 급 (인)</cell>
     </row>
   </table>
-  <text>용지의 크기는 A4판으로 한다.</text>
 </annex>

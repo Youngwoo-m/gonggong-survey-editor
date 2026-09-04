@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표14" gubun="별표" no="14" title="지형측량(지도 원판 등, 지도 수정 원도) 정확도 관리표" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296155">
-  <text>[ 별표 14 ]
-지형측량(지도 원판 등, 지도 수정 원도)
-정확도 관리표</text>
+<annex id="별표14" gubun="별표" no="4" title="지형측량(지도 원판 등, 지도 수정 원도) 정확도 관리표" source="data/annex/원본/work/[별표 14] 지형측량(지도 원판 등¸ 지도 수정 원도) 정확도 관리표.hwpx">
   <table rows="23" cols="15">
     <row>
       <cell col="0" row="0">사업명</cell>
@@ -19,8 +16,7 @@
       <cell col="12" row="1" colspan="3">인</cell>
     </row>
     <row>
-      <cell col="0" row="2">도엽명
-(도엽번호)</cell>
+      <cell col="0" row="2">도엽명(도엽번호)</cell>
       <cell col="1" row="2" colspan="2"></cell>
       <cell col="3" row="2" colspan="2"></cell>
       <cell col="5" row="2" colspan="2"></cell>
@@ -30,8 +26,7 @@
       <cell col="13" row="2" colspan="2"></cell>
     </row>
     <row>
-      <cell col="0" row="3">지적
-항목</cell>
+      <cell col="0" row="3">지적항목</cell>
       <cell col="1" row="3">오기</cell>
       <cell col="2" row="3">누락</cell>
       <cell col="3" row="3">오기</cell>
@@ -354,8 +349,7 @@
       <cell col="14" row="21"></cell>
     </row>
     <row>
-      <cell col="0" row="22">도곽ㆍ방안
-방법</cell>
+      <cell col="0" row="22">도곽ㆍ방안방법</cell>
       <cell col="1" row="22"></cell>
       <cell col="2" row="22"></cell>
       <cell col="3" row="22"></cell>
@@ -372,9 +366,4 @@
       <cell col="14" row="22"></cell>
     </row>
   </table>
-  <text>주  1. 사내검사자는 지적건수를 해당 항목에 기재한다. 「도곽」은 규정 규격보다 0.4mm 이상 차가 나타나는 것을 기재한다.
-2. 해당 항목에 집계하는 경우는, 도식 구분에 따라 집계한다.
-3. 착묵 또는 트레이싱시 어긋남, 선 굵기의 차이는 오기에 포함한다.
-4. 착묵 또는 트레이싱의 누락, 선의 농도가 나쁜 것은 누락에 포함한다.
-5. 도면에 해당항목이 없는 것은 사선으로 해당란을 삭제한다.</text>
 </annex>

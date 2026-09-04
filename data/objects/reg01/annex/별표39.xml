@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표39" gubun="별표" no="39" title="네트워크 RTK 체크리스트" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296309">
-  <text>[ 별표 39 ]
-네트워크 RTK 체크리스트</text>
+<annex id="별표39" gubun="별표" no="32" title="네트워크 RTK 체크리스트" source="data/annex/원본/work/[별표 39] 네트워크 RTK 체크리스트.hwpx">
   <table rows="15" cols="6">
     <row>
       <cell col="0" row="0" colspan="2">측점번호</cell>
@@ -51,8 +49,7 @@
     </row>
     <row>
       <cell col="0" row="8">6</cell>
-      <cell col="1" row="8" colspan="3">최소 GNSS 위성 수 이상의 신호를 수신하고 있는가?
-(GPS 및 다중GNSS 최소 위성수 고려)</cell>
+      <cell col="1" row="8" colspan="3">최소 GNSS 위성 수 이상의 신호를 수신하고 있는가?(GPS 및 다중GNSS 최소 위성수 고려)</cell>
       <cell col="4" row="8"></cell>
       <cell col="5" row="8"></cell>
     </row>

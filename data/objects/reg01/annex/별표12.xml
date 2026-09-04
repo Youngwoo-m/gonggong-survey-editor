@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표12" gubun="별표" no="12" title="높이 교차 점검표" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296143">
-  <text>[ 별표 12 ]
-높이 교차 점검표</text>
+<annex id="별표12" gubun="별표" no="30" title="높이 교차 점검표" source="data/annex/원본/work/[별표 12] 높이 교차 점검표.hwpx">
   <table rows="22" cols="8">
     <row>
       <cell col="0" row="0" colspan="8">높이 교차 점검표(높이정확도 3cm)</cell>
@@ -21,10 +19,8 @@
       <cell col="1" row="2" rowspan="2">→</cell>
       <cell col="2" row="2" rowspan="2">KW27</cell>
       <cell col="3" row="2">관측일자</cell>
-      <cell col="4" row="2">2019.01.01.
-13:00 ~ 17:00</cell>
-      <cell col="5" row="2">2019.01.02.
-09:00 ~ 13:00</cell>
+      <cell col="4" row="2">2019.01.01.13:00 ~ 17:00</cell>
+      <cell col="5" row="2">2019.01.02.09:00 ~ 13:00</cell>
       <cell col="6" row="2"></cell>
       <cell col="7" row="2" rowspan="2">O</cell>
     </row>

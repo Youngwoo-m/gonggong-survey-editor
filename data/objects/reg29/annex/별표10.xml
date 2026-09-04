@@ -1,32 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표10" gubun="별표" no="10" title="기기상각비 산정기준" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151295225">
-  <text>[별표 10]
-기기상각비 산정기준</text>
+<annex id="별표10" gubun="별표" no="14" title="기기상각비 산정기준" source="data/annex/원본/review/[별표 10] 기기상각비 산정기준.hwpx">
   <table rows="8" cols="11">
     <row>
-      <cell col="0" row="0" rowspan="2">품   명</cell>
-      <cell col="1" row="0" rowspan="2">규   격</cell>
-      <cell col="2" row="0" rowspan="2">상각
-년수</cell>
-      <cell col="3" row="0" rowspan="2">연간
-가동
-일수</cell>
-      <cell col="4" row="0" rowspan="2">상각
-비율</cell>
-      <cell col="5" row="0" rowspan="2">정비
-비율</cell>
-      <cell col="6" row="0" rowspan="2">연간
-관리
-비율</cell>
-      <cell col="7" row="0" colspan="4">일  당 ( 10-5 )</cell>
+      <cell col="0" row="0" rowspan="2">품 명</cell>
+      <cell col="1" row="0" rowspan="2">규 격</cell>
+      <cell col="2" row="0" rowspan="2">상각년수</cell>
+      <cell col="3" row="0" rowspan="2">연간가동일수</cell>
+      <cell col="4" row="0" rowspan="2">상각비율</cell>
+      <cell col="5" row="0" rowspan="2">정비비율</cell>
+      <cell col="6" row="0" rowspan="2">연간관리비율</cell>
+      <cell col="7" row="0" colspan="4">일 당 ( 10-5 )</cell>
     </row>
     <row>
-      <cell col="7" row="1">상각비
-계수</cell>
-      <cell col="8" row="1">정비비
-계수</cell>
-      <cell col="9" row="1">관리비
-계수</cell>
+      <cell col="7" row="1">상각비계수</cell>
+      <cell col="8" row="1">정비비계수</cell>
+      <cell col="9" row="1">관리비계수</cell>
       <cell col="10" row="1">계</cell>
     </row>
     <row>
@@ -43,8 +31,7 @@
       <cell col="10" row="2">49.5</cell>
     </row>
     <row>
-      <cell col="0" row="3">GPS
-측량기</cell>
+      <cell col="0" row="3">GPS측량기</cell>
       <cell col="1" row="3">1, 2주파수</cell>
       <cell col="2" row="3">8년</cell>
       <cell col="3" row="3">220</cell>
@@ -57,8 +44,7 @@
       <cell col="10" row="3">118.0</cell>
     </row>
     <row>
-      <cell col="0" row="4">광  파
-측거의</cell>
+      <cell col="0" row="4">광 파측거의</cell>
       <cell col="1" row="4">1~ 60 km</cell>
       <cell col="2" row="4">8년</cell>
       <cell col="3" row="4">220</cell>
@@ -71,8 +57,7 @@
       <cell col="10" row="4">118.0</cell>
     </row>
     <row>
-      <cell col="0" row="5">데오드
-라이트</cell>
+      <cell col="0" row="5">데오드라이트</cell>
       <cell col="1" row="5">0.2~10초독</cell>
       <cell col="2" row="5">8년</cell>
       <cell col="3" row="5">220</cell>
@@ -85,8 +70,7 @@
       <cell col="10" row="5">106.6</cell>
     </row>
     <row>
-      <cell col="0" row="6">정밀
-레벨</cell>
+      <cell col="0" row="6">정밀레벨</cell>
       <cell col="1" row="6">1, 2등용</cell>
       <cell col="2" row="6">8년</cell>
       <cell col="3" row="6">220</cell>
@@ -102,8 +86,7 @@
       <cell col="0" row="7">금속관로 탐 지 기</cell>
       <cell col="1" row="7">-</cell>
       <cell col="2" row="7">5년</cell>
-      <cell col="3" row="7">278
-(365)</cell>
+      <cell col="3" row="7">278(365)</cell>
       <cell col="4" row="7">0.9</cell>
       <cell col="5" row="7">0.1</cell>
       <cell col="6" row="7">-</cell>

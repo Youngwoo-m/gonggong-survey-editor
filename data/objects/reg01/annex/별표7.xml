@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표7" gubun="별표" no="7" title="공공수준점측량 정확도 관리표" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296109">
-  <text>[ 별표 7 ]
-공공수준점측량 정확도 관리표</text>
+<annex id="별표7" gubun="별표" no="3" title="공공수준점측량 정확도 관리표" source="data/annex/원본/work/[별표 7] 공공수준점측량 정확도 관리표.hwpx">
   <table rows="13" cols="27">
     <row>
       <cell col="0" row="0">작업명</cell>
@@ -12,19 +10,17 @@
       <cell col="11" row="0" colspan="2"></cell>
       <cell col="13" row="0" colspan="2">수행자명</cell>
       <cell col="15" row="0" colspan="5"></cell>
-      <cell col="20" row="0" colspan="3">현장
-책임자</cell>
+      <cell col="20" row="0" colspan="3">현장책임자</cell>
       <cell col="23" row="0" colspan="4">인</cell>
     </row>
     <row>
-      <cell col="0" row="1">목  적</cell>
+      <cell col="0" row="1">목 적</cell>
       <cell col="1" row="1" colspan="3"></cell>
-      <cell col="4" row="1" colspan="2">기  간</cell>
+      <cell col="4" row="1" colspan="2">기 간</cell>
       <cell col="6" row="1" colspan="3"></cell>
-      <cell col="9" row="1" colspan="2">작  업 량</cell>
+      <cell col="9" row="1" colspan="2">작 업 량</cell>
       <cell col="11" row="1" colspan="2"></cell>
-      <cell col="13" row="1" colspan="2">용역수행
-대리인</cell>
+      <cell col="13" row="1" colspan="2">용역수행대리인</cell>
       <cell col="15" row="1" colspan="5">인</cell>
       <cell col="20" row="1" colspan="7"></cell>
     </row>
@@ -38,14 +34,13 @@
       <cell col="5" row="3" colspan="2">허용범위</cell>
       <cell col="7" row="3">관측자</cell>
       <cell col="8" row="3" colspan="2">거리</cell>
-      <cell col="10" row="3" colspan="2">관측자별
-표준오차</cell>
+      <cell col="10" row="3" colspan="2">관측자별표준오차</cell>
       <cell col="12" row="3" colspan="2">정 횟수</cell>
       <cell col="14" row="3" colspan="2">부 횟수</cell>
       <cell col="16" row="3">0(零)횟수</cell>
       <cell col="17" row="3" colspan="2">정 합계</cell>
       <cell col="19" row="3" colspan="3">부 합계</cell>
-      <cell col="22" row="3" colspan="3">적  요</cell>
+      <cell col="22" row="3" colspan="3">적 요</cell>
       <cell col="25" row="3" colspan="2">특기사항</cell>
     </row>
     <row>
@@ -75,23 +70,23 @@
     </row>
     <row>
       <cell col="0" row="7" colspan="8">주 요 기 기 명 칭 번 호</cell>
-      <cell col="8" row="7" colspan="9">관   측   노   선   도</cell>
-      <cell col="17" row="7" colspan="10">재      측      률</cell>
+      <cell col="8" row="7" colspan="9">관 측 노 선 도</cell>
+      <cell col="17" row="7" colspan="10">재 측 률</cell>
     </row>
     <row>
       <cell col="0" row="8" colspan="8" rowspan="2"></cell>
       <cell col="8" row="8" colspan="9" rowspan="5"></cell>
-      <cell col="17" row="8" colspan="10">점   검    측   량</cell>
+      <cell col="17" row="8" colspan="10">점 검 측 량</cell>
     </row>
     <row>
       <cell col="17" row="9" rowspan="2">구간</cell>
       <cell col="18" row="9" colspan="3" rowspan="2">거 리</cell>
       <cell col="21" row="9" colspan="3" rowspan="2">점검치</cell>
       <cell col="24" row="9" colspan="2" rowspan="2">채택치</cell>
-      <cell col="26" row="9" rowspan="2">교  차</cell>
+      <cell col="26" row="9" rowspan="2">교 차</cell>
     </row>
     <row>
-      <cell col="0" row="10" colspan="8" rowspan="2">영  구  표  식  종  병  등</cell>
+      <cell col="0" row="10" colspan="8" rowspan="2">영 구 표 식 종 병 등</cell>
     </row>
     <row>
       <cell col="17" row="11" rowspan="2"></cell>
@@ -104,7 +99,6 @@
       <cell col="0" row="12" colspan="8"></cell>
     </row>
   </table>
-  <text>4급공공수준점측량 정확도 관리표</text>
   <table rows="21" cols="11">
     <row>
       <cell col="0" row="0" colspan="2">사업명</cell>
@@ -301,9 +295,7 @@
       <cell col="10" row="19"></cell>
     </row>
     <row>
-      <cell col="0" row="20">기
-계
-명</cell>
+      <cell col="0" row="20">기계명</cell>
       <cell col="1" row="20" colspan="5"></cell>
       <cell col="6" row="20" colspan="2">비고</cell>
       <cell col="8" row="20" colspan="3"></cell>

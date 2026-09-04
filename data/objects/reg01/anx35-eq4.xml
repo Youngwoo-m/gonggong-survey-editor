@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<equation id="anx35-eq4" article="별표 35" font="HYhwpEQ" source="[별표 42] 투영변환식.hwpx">
+  <script>&amp;  phi `:~위도,~~ lambda ~:~경도,~~ phi   _{0} `:~투영원점~위도,~` lambda   _{0} `:~투영원점~경도,#
+#
+&amp; a~:~타원체~장반경,~~f`:~편평률,#
+#
+&amp; b~:~타원체~단반경(=a(1-f)),#
+#
+&amp; k  _{0} `:~원점축척계수,#
+#
+&amp; rm  DELTA Y`:~Y축(East)`원점~가산값,#
+#
+&amp; rm  DELTA X~:~X축(North)~원점~가산값</script>
+</equation>

@@ -1,35 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표6" gubun="별표" no="6" title="오류 정정표(수치표면자료/수치표면모델, 수치지면자료/수치표고모델 등)" source="[별표 6] 오류 정정표(수치표면자료_수치표면모델¸ 수치지면자료_수치표고모델 등)(무인비행장치 측량 작업규정).hwp">
-  <text>[별표 6] 오류 정정표(수치표면자료/수치표면모델, 수치지면자료/수치표고모델 등)</text>
-  <table rows="6" cols="4">
+<annex id="별표6" gubun="별표" no="6" title="오류 정정표(수치표면자료/수치표면모형, 수치지면자료/수치표고모형 등)" source="data/annex/form/uav/별표6.hwpx">
+  <table rows="12" cols="6">
     <row>
-      <cell col="0" row="0">지구명</cell>
-      <cell col="1" row="0"></cell>
-      <cell col="2" row="0">작업자</cell>
-      <cell col="3" row="0"></cell>
+      <cell col="0" row="0" colspan="2">지구명</cell>
+      <cell col="2" row="0"></cell>
+      <cell col="3" row="0" colspan="2">작업자</cell>
+      <cell col="5" row="0"></cell>
     </row>
     <row>
-      <cell col="0" row="1">오류정정자료</cell>
-      <cell col="1" row="1"></cell>
-      <cell col="2" row="1">작업일자</cell>
-      <cell col="3" row="1"></cell>
+      <cell col="0" row="1" colspan="2">오류정정자료</cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1" colspan="2">작업일자</cell>
+      <cell col="5" row="1"></cell>
     </row>
     <row>
-      <cell col="0" row="2">위치</cell>
-      <cell col="1" row="2" colspan="3">X :                       Y :</cell>
+      <cell col="0" row="2" colspan="2">성과물 유형</cell>
+      <cell col="2" row="2">정사영상, 레이저측량 점군, DTM, DSM, 수치도화 등</cell>
+      <cell col="3" row="2" colspan="2">오류번호</cell>
+      <cell col="5" row="2"></cell>
     </row>
     <row>
-      <cell col="0" row="3" colspan="2">오류 내용</cell>
-      <cell col="2" row="3" colspan="2">조치 내용</cell>
+      <cell col="0" row="3" colspan="2">위치</cell>
+      <cell col="2" row="3" colspan="4">X(m) : Y(m) :</cell>
     </row>
     <row>
-      <cell col="0" row="4" colspan="2">* 오류내용을 서술</cell>
-      <cell col="2" row="4" colspan="2">* 오류를 정정한 내용을 서술</cell>
+      <cell col="0" row="4" colspan="2">오류 유형</cell>
+      <cell col="2" row="4" colspan="4">위치오차, 표고오차, 분류오류, 결측, 노이즈, 위상오류, 속성오류 등</cell>
     </row>
     <row>
-      <cell col="0" row="5" colspan="2">* 오류내용이 나타난 그림을 첨부</cell>
-      <cell col="2" row="5" colspan="2">* 정정한 후의 그림을 첨부</cell>
+      <cell col="0" row="5" colspan="2">영향 범위</cell>
+      <cell col="2" row="5" colspan="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6" colspan="3">오류 내용</cell>
+      <cell col="3" row="6" colspan="3">조치 내용</cell>
+    </row>
+    <row>
+      <cell col="0" row="7" colspan="3">* 오류내용을 서술</cell>
+      <cell col="3" row="7" colspan="3">* 오류를 정정한 내용을 서술</cell>
+    </row>
+    <row>
+      <cell col="0" row="8" colspan="3">올류 전 자료</cell>
+      <cell col="3" row="8" colspan="3">정정 후 자료</cell>
+    </row>
+    <row>
+      <cell col="0" row="9" colspan="3">* 오류가 확인된 영상, 도면, 점군 단면, 표고모형 등</cell>
+      <cell col="3" row="9" colspan="3">* 정정 후 영상, 도면, 점군 단면, 표고모형 등</cell>
+    </row>
+    <row>
+      <cell col="0" row="10">처리 로그</cell>
+      <cell col="1" row="10" colspan="2">보완 처리일, 처리자, 소프트웨어, 파라미터, 변경 이력</cell>
+      <cell col="3" row="10">승인 기록</cell>
+      <cell col="4" row="10" colspan="2">검수자, 승인자, 승인일자</cell>
+    </row>
+    <row>
+      <cell col="0" row="11">재검사 결과</cell>
+      <cell col="1" row="11" colspan="2"></cell>
+      <cell col="3" row="11">최종 판정</cell>
+      <cell col="4" row="11" colspan="2"></cell>
     </row>
   </table>
-  <text>가. 필요한 경우에는 오류내용 그림 부분에 대상지역의 영상자료를 첨부하여 작성한다.</text>
 </annex>

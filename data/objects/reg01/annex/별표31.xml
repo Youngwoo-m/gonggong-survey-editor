@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표31" gubun="별표" no="31" title="지목별 토지이용현황" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296259">
-  <text>[ 별표 31 ]
-지목별 토지이용현황</text>
+<annex id="별표31" gubun="별표" no="43" title="지목별 토지이용현황" source="data/annex/원본/work/[별표 31] 지목별 토지이용현황.hwpx">
   <table rows="22" cols="8">
     <row>
       <cell col="0" row="0" rowspan="2">지목명</cell>
@@ -211,8 +209,7 @@
     </row>
     <row>
       <cell col="0" row="21">차이</cell>
-      <cell col="1" row="21" colspan="7">시행전 (        ㎡) - 시행후 (        ㎡) =</cell>
+      <cell col="1" row="21" colspan="7">시행전 ( ㎡) - 시행후 ( ㎡) =</cell>
     </row>
   </table>
-  <text>용지의 크기는 A4판으로 한다.</text>
 </annex>

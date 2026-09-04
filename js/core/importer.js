@@ -4,7 +4,7 @@
    지원 : .txt .md  /  .hwp(HWPML XML)  /  .hwpx  /  .pdf  /  .json(자체 형식)
    미지원: 구형 이진 HWP(OLE2) — 안내 후 변환 요청
    ============================================================ */
-import { readZip } from "./zipreader.js?v=20260824f";
+import { readZip } from "./zipreader.js?v=20260903a";
 
 const dec = (b, enc = "utf-8") => new TextDecoder(enc).decode(b);
 
@@ -63,14 +63,7 @@ async function fromHwpx(buf) {
 }
 
 /* ---------- PDF (내장 pdf.js) ---------- */
-let _pdfjs = null;
-async function pdfjs() {
-  if (_pdfjs) return _pdfjs;
-  const mod = await import("../../vendor/pdfjs/pdf.min.mjs?v=20260824f");
-  mod.GlobalWorkerOptions.workerSrc = new URL("../../vendor/pdfjs/pdf.worker.min.mjs", import.meta.url).href;
-  _pdfjs = mod;
-  return mod;
-}
+import { loadPdfjs as pdfjs } from "./pdfjs.js?v=20260903a";
 
 async function fromPdf(buf, onProgress) {
   const pdf = await pdfjs();

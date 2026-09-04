@@ -1,7 +1,20 @@
 /* ============================================================
    ui/tree.js — 트리 렌더링 + 드래그 앤 드롭
    ============================================================ */
-import * as M from "../core/model.js?v=20260824f";
+import * as M from "../core/model.js?v=20260903a";
+
+/* 상태 이름 → CSS 클래스에 쓸 이름. 가운데점은 클래스에 못 쓴다. */
+const statusKey = (s) => String(s || "").replace(/[^가-힣A-Za-z0-9]/g, "");
+
+const STATUS_HINT = {
+  "신설": "현행에 없던 조문을 새로 둔 것입니다.",
+  "수정": "자리는 그대로 두고 문언을 고친 것입니다.",
+  "이동": "문언은 그대로 두고 자리만 옮긴 것입니다.",
+  "이동·수정": "자리를 옮기고 문언도 고친 것입니다.",
+  "삭제": "현행 조문을 없앤 것입니다.",
+  "통합": "여러 조문을 하나로 합친 것입니다.",
+  "통합·신설": "흩어져 있던 현행 조문 여럿을 합쳐 새 조문으로 둔 것입니다.",
+};
 
 const INDENT = 15;
 
@@ -127,8 +140,16 @@ export class TreeView {
 
     if (n.status && n.status !== "유지") {
       const b = document.createElement("span");
-      b.className = `badge b-${n.status}`;
-      b.textContent = n.status;
+      /* 클래스 이름에는 가운데점을 넣지 아니한다. '이동·수정' 이 그대로
+         클래스가 되면 CSS 가 그것을 집지 못해 배지가 흰 글자만 남아
+         보이지 않았다 — statusKey 가 기호를 걷어 낸다. */
+      /* 여러 조문을 합쳐 새로 둔 것은 「통합·신설」 로 적는다. 상태는
+         「신설」 그대로 두고 유래(origin)만 따로 지녀, 신설을 세는 자리와
+         개정문을 짓는 자리가 그대로 돌게 한다. */
+      const label = n.origin === "통합" ? `통합·${n.status}` : n.status;
+      b.className = `badge b-${statusKey(label)}`;
+      b.textContent = label;
+      b.title = STATUS_HINT[label] || STATUS_HINT[n.status] || label;
       row.appendChild(b);
     }
     if (n.sourceRef) {

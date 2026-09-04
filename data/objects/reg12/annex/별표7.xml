@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표7" gubun="별표" no="7" title="정사영상 검사표" source="[별표 7] 정사영상 검사표(무인비행장치 측량 작업규정).hwp">
-  <text>[별표 7] 정사영상 검사표</text>
-  <table rows="24" cols="9">
+<annex id="별표7" gubun="별표" no="7" title="정사영상 및 다중센서 정합 검사표" source="data/annex/form/uav/별표7.hwpx">
+  <table rows="27" cols="9">
     <row>
       <cell col="0" row="0" rowspan="2">점이름</cell>
       <cell col="1" row="0" rowspan="2">구분</cell>
       <cell col="2" row="0" colspan="2">기준점/검사점 좌표</cell>
       <cell col="4" row="0" colspan="2">정사영상 좌표</cell>
-      <cell col="6" row="0" rowspan="2">X-X’
-(m)</cell>
-      <cell col="7" row="0" rowspan="2">Y-Y’
-(m)</cell>
-      <cell col="8" row="0" rowspan="2">평면
-오차</cell>
+      <cell col="6" row="0" rowspan="2">X-X’(m)</cell>
+      <cell col="7" row="0" rowspan="2">Y-Y’(m)</cell>
+      <cell col="8" row="0" rowspan="2">평면오차</cell>
     </row>
     <row>
       <cell col="2" row="1">X</cell>
@@ -22,7 +18,7 @@
     </row>
     <row>
       <cell col="0" row="2"></cell>
-      <cell col="1" row="2"></cell>
+      <cell col="1" row="2">기준점 또는 검사점</cell>
       <cell col="2" row="2"></cell>
       <cell col="3" row="2"></cell>
       <cell col="4" row="2"></cell>
@@ -219,27 +215,82 @@
       <cell col="8" row="19"></cell>
     </row>
     <row>
-      <cell col="0" row="20" colspan="2" rowspan="4">분 석</cell>
-      <cell col="2" row="20" colspan="4">최대</cell>
+      <cell col="0" row="20" colspan="2" rowspan="7">분 석</cell>
+      <cell col="2" row="20" colspan="4">최대 평면오차</cell>
       <cell col="6" row="20"></cell>
       <cell col="7" row="20"></cell>
       <cell col="8" row="20"></cell>
     </row>
     <row>
-      <cell col="2" row="21" colspan="4">최소</cell>
+      <cell col="2" row="21" colspan="4">최소 평면오차</cell>
       <cell col="6" row="21"></cell>
       <cell col="7" row="21"></cell>
       <cell col="8" row="21"></cell>
     </row>
     <row>
-      <cell col="2" row="22" colspan="4">평균</cell>
+      <cell col="2" row="22" colspan="4">평균 평면오차</cell>
       <cell col="6" row="22"></cell>
       <cell col="7" row="22"></cell>
       <cell col="8" row="22"></cell>
     </row>
     <row>
-      <cell col="2" row="23" colspan="4">RMSE</cell>
-      <cell col="6" row="23" colspan="3"></cell>
+      <cell col="2" row="23" colspan="4">RMSEr</cell>
+      <cell col="6" row="23"></cell>
+      <cell col="7" row="23"></cell>
+      <cell col="8" row="23"></cell>
+    </row>
+    <row>
+      <cell col="2" row="24" colspan="4">최대 수직오차</cell>
+      <cell col="6" row="24"></cell>
+      <cell col="7" row="24"></cell>
+      <cell col="8" row="24"></cell>
+    </row>
+    <row>
+      <cell col="2" row="25" colspan="4">RMSEz</cell>
+      <cell col="6" row="25"></cell>
+      <cell col="7" row="25"></cell>
+      <cell col="8" row="25"></cell>
+    </row>
+    <row>
+      <cell col="2" row="26" colspan="4">종합 판정</cell>
+      <cell col="6" row="26" colspan="3"></cell>
+    </row>
+  </table>
+  <table rows="5" cols="5">
+    <row>
+      <cell col="0" row="0">다중센서 정합 검사항목</cell>
+      <cell col="1" row="0">검토 대상</cell>
+      <cell col="2" row="0">검토 방법</cell>
+      <cell col="3" row="0">잔차 또는 편차</cell>
+      <cell col="4" row="0">판정</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">정사영상과 레이저측량 점군 위치정합</cell>
+      <cell col="1" row="1">도로, 건물, 제방, 하천 등 객체 경계</cell>
+      <cell col="2" row="1">중첩검토, 단면검토, 검사점 비교</cell>
+      <cell col="3" row="1"></cell>
+      <cell col="4" row="1">적합 또는 보완</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">DSM과 레이저측량 점군 표면고도 정합</cell>
+      <cell col="1" row="2">건물, 지표면, 구조물 표면</cell>
+      <cell col="2" row="2">동일 위치 표고 비교</cell>
+      <cell col="3" row="2"></cell>
+      <cell col="4" row="2">적합 또는 보완</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">DTM과 검사점 수직정합</cell>
+      <cell col="1" row="3">지면점, 평탄면, 검사점</cell>
+      <cell col="2" row="3">RMSEz 산정</cell>
+      <cell col="3" row="3"></cell>
+      <cell col="4" row="3">적합 또는 보완</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">광학영상 객체와 레이저측량 객체 형상정합</cell>
+      <cell col="1" row="4">건물, 도로, 제방, 식생 경계</cell>
+      <cell col="2" row="4">객체 경계 비교</cell>
+      <cell col="3" row="4"></cell>
+      <cell col="4" row="4">적합 또는 보완</cell>
     </row>
   </table>
 </annex>

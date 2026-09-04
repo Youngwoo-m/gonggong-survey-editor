@@ -1,20 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표2" gubun="별표" no="2" title="지상기준점 및 검사점 성과표" source="[별표 2] 지상기준점 및 검사점 성과표(무인비행장치 측량 작업규정).hwp">
-  <text>[별표 2] 지상기준점 및 검사점 성과표</text>
-  <table rows="22" cols="5">
+<annex id="별표2" gubun="별표" no="2" title="지상기준점 및 검사점 성과표" source="data/annex/form/uav/별표2.hwpx">
+  <table rows="22" cols="11">
     <row>
       <cell col="0" row="0">점번호</cell>
-      <cell col="1" row="0">X(m)</cell>
-      <cell col="2" row="0">Y(m)</cell>
-      <cell col="3" row="0">정표고(m)</cell>
-      <cell col="4" row="0">구분</cell>
+      <cell col="1" row="0">점명</cell>
+      <cell col="2" row="0">구분</cell>
+      <cell col="3" row="0">X(m)</cell>
+      <cell col="4" row="0">Y(m)</cell>
+      <cell col="5" row="0">정표고(m)</cell>
+      <cell col="6" row="0">수직기준</cell>
+      <cell col="7" row="0">관측방법</cell>
+      <cell col="8" row="0">관측일자</cell>
+      <cell col="9" row="0">사용구분</cell>
+      <cell col="10" row="0">구분</cell>
     </row>
     <row>
       <cell col="0" row="1"></cell>
       <cell col="1" row="1"></cell>
-      <cell col="2" row="1"></cell>
+      <cell col="2" row="1">기준점 또는 검사점</cell>
       <cell col="3" row="1"></cell>
       <cell col="4" row="1"></cell>
+      <cell col="5" row="1"></cell>
+      <cell col="6" row="1"></cell>
+      <cell col="7" row="1">GNSS 정지측량, RTK, 수준측량 등</cell>
+      <cell col="8" row="1"></cell>
+      <cell col="9" row="1">항공삼각측량, 정확도 검증, 레이저측량 검수 등</cell>
+      <cell col="10" row="1"></cell>
     </row>
     <row>
       <cell col="0" row="2"></cell>
@@ -22,6 +33,12 @@
       <cell col="2" row="2"></cell>
       <cell col="3" row="2"></cell>
       <cell col="4" row="2"></cell>
+      <cell col="5" row="2"></cell>
+      <cell col="6" row="2"></cell>
+      <cell col="7" row="2"></cell>
+      <cell col="8" row="2"></cell>
+      <cell col="9" row="2"></cell>
+      <cell col="10" row="2"></cell>
     </row>
     <row>
       <cell col="0" row="3"></cell>
@@ -29,6 +46,12 @@
       <cell col="2" row="3"></cell>
       <cell col="3" row="3"></cell>
       <cell col="4" row="3"></cell>
+      <cell col="5" row="3"></cell>
+      <cell col="6" row="3"></cell>
+      <cell col="7" row="3"></cell>
+      <cell col="8" row="3"></cell>
+      <cell col="9" row="3"></cell>
+      <cell col="10" row="3"></cell>
     </row>
     <row>
       <cell col="0" row="4"></cell>
@@ -36,6 +59,12 @@
       <cell col="2" row="4"></cell>
       <cell col="3" row="4"></cell>
       <cell col="4" row="4"></cell>
+      <cell col="5" row="4"></cell>
+      <cell col="6" row="4"></cell>
+      <cell col="7" row="4"></cell>
+      <cell col="8" row="4"></cell>
+      <cell col="9" row="4"></cell>
+      <cell col="10" row="4"></cell>
     </row>
     <row>
       <cell col="0" row="5"></cell>
@@ -43,6 +72,12 @@
       <cell col="2" row="5"></cell>
       <cell col="3" row="5"></cell>
       <cell col="4" row="5"></cell>
+      <cell col="5" row="5"></cell>
+      <cell col="6" row="5"></cell>
+      <cell col="7" row="5"></cell>
+      <cell col="8" row="5"></cell>
+      <cell col="9" row="5"></cell>
+      <cell col="10" row="5"></cell>
     </row>
     <row>
       <cell col="0" row="6"></cell>
@@ -50,6 +85,12 @@
       <cell col="2" row="6"></cell>
       <cell col="3" row="6"></cell>
       <cell col="4" row="6"></cell>
+      <cell col="5" row="6"></cell>
+      <cell col="6" row="6"></cell>
+      <cell col="7" row="6"></cell>
+      <cell col="8" row="6"></cell>
+      <cell col="9" row="6"></cell>
+      <cell col="10" row="6"></cell>
     </row>
     <row>
       <cell col="0" row="7"></cell>
@@ -57,6 +98,12 @@
       <cell col="2" row="7"></cell>
       <cell col="3" row="7"></cell>
       <cell col="4" row="7"></cell>
+      <cell col="5" row="7"></cell>
+      <cell col="6" row="7"></cell>
+      <cell col="7" row="7"></cell>
+      <cell col="8" row="7"></cell>
+      <cell col="9" row="7"></cell>
+      <cell col="10" row="7"></cell>
     </row>
     <row>
       <cell col="0" row="8"></cell>
@@ -64,6 +111,12 @@
       <cell col="2" row="8"></cell>
       <cell col="3" row="8"></cell>
       <cell col="4" row="8"></cell>
+      <cell col="5" row="8"></cell>
+      <cell col="6" row="8"></cell>
+      <cell col="7" row="8"></cell>
+      <cell col="8" row="8"></cell>
+      <cell col="9" row="8"></cell>
+      <cell col="10" row="8"></cell>
     </row>
     <row>
       <cell col="0" row="9"></cell>
@@ -71,6 +124,12 @@
       <cell col="2" row="9"></cell>
       <cell col="3" row="9"></cell>
       <cell col="4" row="9"></cell>
+      <cell col="5" row="9"></cell>
+      <cell col="6" row="9"></cell>
+      <cell col="7" row="9"></cell>
+      <cell col="8" row="9"></cell>
+      <cell col="9" row="9"></cell>
+      <cell col="10" row="9"></cell>
     </row>
     <row>
       <cell col="0" row="10"></cell>
@@ -78,6 +137,12 @@
       <cell col="2" row="10"></cell>
       <cell col="3" row="10"></cell>
       <cell col="4" row="10"></cell>
+      <cell col="5" row="10"></cell>
+      <cell col="6" row="10"></cell>
+      <cell col="7" row="10"></cell>
+      <cell col="8" row="10"></cell>
+      <cell col="9" row="10"></cell>
+      <cell col="10" row="10"></cell>
     </row>
     <row>
       <cell col="0" row="11"></cell>
@@ -85,6 +150,12 @@
       <cell col="2" row="11"></cell>
       <cell col="3" row="11"></cell>
       <cell col="4" row="11"></cell>
+      <cell col="5" row="11"></cell>
+      <cell col="6" row="11"></cell>
+      <cell col="7" row="11"></cell>
+      <cell col="8" row="11"></cell>
+      <cell col="9" row="11"></cell>
+      <cell col="10" row="11"></cell>
     </row>
     <row>
       <cell col="0" row="12"></cell>
@@ -92,6 +163,12 @@
       <cell col="2" row="12"></cell>
       <cell col="3" row="12"></cell>
       <cell col="4" row="12"></cell>
+      <cell col="5" row="12"></cell>
+      <cell col="6" row="12"></cell>
+      <cell col="7" row="12"></cell>
+      <cell col="8" row="12"></cell>
+      <cell col="9" row="12"></cell>
+      <cell col="10" row="12"></cell>
     </row>
     <row>
       <cell col="0" row="13"></cell>
@@ -99,6 +176,12 @@
       <cell col="2" row="13"></cell>
       <cell col="3" row="13"></cell>
       <cell col="4" row="13"></cell>
+      <cell col="5" row="13"></cell>
+      <cell col="6" row="13"></cell>
+      <cell col="7" row="13"></cell>
+      <cell col="8" row="13"></cell>
+      <cell col="9" row="13"></cell>
+      <cell col="10" row="13"></cell>
     </row>
     <row>
       <cell col="0" row="14"></cell>
@@ -106,6 +189,12 @@
       <cell col="2" row="14"></cell>
       <cell col="3" row="14"></cell>
       <cell col="4" row="14"></cell>
+      <cell col="5" row="14"></cell>
+      <cell col="6" row="14"></cell>
+      <cell col="7" row="14"></cell>
+      <cell col="8" row="14"></cell>
+      <cell col="9" row="14"></cell>
+      <cell col="10" row="14"></cell>
     </row>
     <row>
       <cell col="0" row="15"></cell>
@@ -113,6 +202,12 @@
       <cell col="2" row="15"></cell>
       <cell col="3" row="15"></cell>
       <cell col="4" row="15"></cell>
+      <cell col="5" row="15"></cell>
+      <cell col="6" row="15"></cell>
+      <cell col="7" row="15"></cell>
+      <cell col="8" row="15"></cell>
+      <cell col="9" row="15"></cell>
+      <cell col="10" row="15"></cell>
     </row>
     <row>
       <cell col="0" row="16"></cell>
@@ -120,6 +215,12 @@
       <cell col="2" row="16"></cell>
       <cell col="3" row="16"></cell>
       <cell col="4" row="16"></cell>
+      <cell col="5" row="16"></cell>
+      <cell col="6" row="16"></cell>
+      <cell col="7" row="16"></cell>
+      <cell col="8" row="16"></cell>
+      <cell col="9" row="16"></cell>
+      <cell col="10" row="16"></cell>
     </row>
     <row>
       <cell col="0" row="17"></cell>
@@ -127,6 +228,12 @@
       <cell col="2" row="17"></cell>
       <cell col="3" row="17"></cell>
       <cell col="4" row="17"></cell>
+      <cell col="5" row="17"></cell>
+      <cell col="6" row="17"></cell>
+      <cell col="7" row="17"></cell>
+      <cell col="8" row="17"></cell>
+      <cell col="9" row="17"></cell>
+      <cell col="10" row="17"></cell>
     </row>
     <row>
       <cell col="0" row="18"></cell>
@@ -134,6 +241,12 @@
       <cell col="2" row="18"></cell>
       <cell col="3" row="18"></cell>
       <cell col="4" row="18"></cell>
+      <cell col="5" row="18"></cell>
+      <cell col="6" row="18"></cell>
+      <cell col="7" row="18"></cell>
+      <cell col="8" row="18"></cell>
+      <cell col="9" row="18"></cell>
+      <cell col="10" row="18"></cell>
     </row>
     <row>
       <cell col="0" row="19"></cell>
@@ -141,6 +254,12 @@
       <cell col="2" row="19"></cell>
       <cell col="3" row="19"></cell>
       <cell col="4" row="19"></cell>
+      <cell col="5" row="19"></cell>
+      <cell col="6" row="19"></cell>
+      <cell col="7" row="19"></cell>
+      <cell col="8" row="19"></cell>
+      <cell col="9" row="19"></cell>
+      <cell col="10" row="19"></cell>
     </row>
     <row>
       <cell col="0" row="20"></cell>
@@ -148,6 +267,12 @@
       <cell col="2" row="20"></cell>
       <cell col="3" row="20"></cell>
       <cell col="4" row="20"></cell>
+      <cell col="5" row="20"></cell>
+      <cell col="6" row="20"></cell>
+      <cell col="7" row="20"></cell>
+      <cell col="8" row="20"></cell>
+      <cell col="9" row="20"></cell>
+      <cell col="10" row="20"></cell>
     </row>
     <row>
       <cell col="0" row="21"></cell>
@@ -155,7 +280,12 @@
       <cell col="2" row="21"></cell>
       <cell col="3" row="21"></cell>
       <cell col="4" row="21"></cell>
+      <cell col="5" row="21"></cell>
+      <cell col="6" row="21"></cell>
+      <cell col="7" row="21"></cell>
+      <cell col="8" row="21"></cell>
+      <cell col="9" row="21"></cell>
+      <cell col="10" row="21"></cell>
     </row>
   </table>
-  <text>가. 구분에는 기준점 또는 검사점으로 기입한다.</text>
 </annex>

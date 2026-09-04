@@ -61,8 +61,11 @@ def make_hwpx(job, dst):
         fixns=fixns)
 
 
-def jobs_of(fname, regname, dirs):
-    """신설이면서 본문이 있고 아직 파일이 없는 별표ㆍ별지"""
+def jobs_of(fname, regname, dirs, force=False):
+    """신설이면서 본문이 있는 별표ㆍ별지 — 아직 파일이 없는 것만.
+
+    force 를 주면 이미 파일이 있어도 고른다. 양식에서 잘라 온 것을 본문
+    글로 갈아 치울 때 쓴다."""
     path = os.path.join(DATA, fname)
     doc = json.load(io.open(path, encoding="utf-8"))
     revs = [(doc["tree"], dirs[0])] + [
@@ -75,8 +78,11 @@ def jobs_of(fname, regname, dirs):
                 a = n.get("annexRef")
                 # 이미 우리가 지은 것(gen)은 다시 짓는다 — 조판을 고치면
                 # 그때마다 다시 뽑아야 하기 때문이다. 남의 원본은 건드리지 않는다.
+                # keepSrc 는 '남에게서 받은 원본이니 덮지 말라' 는 표시다
                 if (a and n.get("status") == "신설" and (n.get("body") or "").strip()
-                        and (a.get("gen") or not (a.get("hwp") or a.get("pdf")))):
+                        and not a.get("keepSrc")
+                        and (force or a.get("gen")
+                             or not (a.get("hwp") or a.get("pdf")))):
                     out.append({"doc": path, "regname": regname, "where": where,
                                 # 본문 속 표는 지금 셋 다 작업규정에서 옮겨 온 것뿐이다
                                 "objdir": "reg01",
@@ -91,10 +97,11 @@ if __name__ == "__main__":
     only = sys.argv[sys.argv.index("--only") + 1] if "--only" in sys.argv else None
     listing = "--list" in sys.argv
     wire = "--no-wire" not in sys.argv
+    force = "--force" in sys.argv
 
     books = []
     for fname, regname, dirs in TARGETS:
-        doc, js = jobs_of(fname, regname, dirs)
+        doc, js = jobs_of(fname, regname, dirs, force)
         if only:
             js = [j for j in js if only in ("%s:%s:%s" % (j["where"], j["gubun"], j["no"]),
                                             "%s:%s:%s" % (regname, j["gubun"], j["no"]))]
@@ -122,7 +129,7 @@ if __name__ == "__main__":
             src = os.path.join(outdir, base + ".hwp")
             # 남이 만든 원본이 놓여 있으면 그것을 쓴다.
             # 우리가 지은 것(gen)이면 조판을 다시 하여야 하므로 새로 짓는다.
-            if os.path.exists(src) and not j["annexRef"].get("gen"):
+            if os.path.exists(src) and not j["annexRef"].get("gen") and not force:
                 j["src"] = "원본"
                 todo.append(src)
                 continue
@@ -133,7 +140,7 @@ if __name__ == "__main__":
     print("   HWPX %d건을 지었다" % sum(1 for _, _, js in books for j in js if j["src"] == "본문 글"))
 
     # ------------------------------------------------ 한글로 HWP ㆍ PDF 뽑기
-    pages, bad = render(todo, also_hwp=True)
+    pages, bad = render(todo)          # .hwp 는 더 뽑지 아니한다
     print("   한글로 뽑음 — 된 것 %d · 안 된 것 %d" % (len(pages), len(bad)))
     for k, m in bad:
         print("      실패 %-16s %s" % (k, m))
@@ -146,7 +153,17 @@ if __name__ == "__main__":
                 rel = "data/annex/gen/%s/%s" % (j["where"], j["base"])
                 if not os.path.exists(os.path.join(ROOT, rel + ".pdf")):
                     continue
-                j["annexRef"]["hwp"] = rel + ".hwp"
+                a0 = j["annexRef"]
+                # 양식에서 잘라 온 것을 갈아 치우는 것이면 그 길을 남겨 둔다 —
+                # 기관 서식ㆍ연구결과 원본이라 되짚어 볼 일이 있다
+                if a0.get("hwp") and not a0.get("gen") and not a0.get("formSrc"):
+                    a0["formSrc"] = {k: a0.get(k) for k in ("hwp", "hwpx", "pdf")
+                                     if a0.get(k)}
+                    if a0.get("src"):
+                        a0["formSrc"]["note"] = a0["src"]
+                # 원본을 모두 .hwpx 로 쓰기로 하였으므로 .hwp 는 걸지 않는다
+                j["annexRef"]["hwpx"] = rel + ".hwpx"
+                j["annexRef"].pop("hwp", None)
                 j["annexRef"]["pdf"] = rel + ".pdf"
                 j["annexRef"]["gen"] = True          # 본문 글로 지은 것임을 밝힌다
                 j["annexRef"]["pages"] = pages.get(j["base"], 1)

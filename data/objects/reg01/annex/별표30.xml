@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표30" gubun="별표" no="30" title="획지면적 대비표" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296253">
-  <text>[ 별표 30 ]
-획지면적 대비표
-토지구획사업정리지구
-가구번호 :                                                                (단위 : ㎡)</text>
+<annex id="별표30" gubun="별표" no="42" title="획지면적 대비표" source="data/annex/원본/work/[별표 30] 획지면적 대비표.hwpx">
   <table rows="21" cols="4">
     <row>
       <cell col="0" row="0">획지번호</cell>
@@ -260,5 +256,4 @@
       <cell col="3" row="20"></cell>
     </row>
   </table>
-  <text>용지의 크기는 A4판으로 한다.</text>
 </annex>

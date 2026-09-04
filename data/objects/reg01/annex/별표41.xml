@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표41" gubun="별표" no="41" title="성과표" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296321">
-  <text>[ 별표 41 ]
-성과표</text>
+<annex id="별표41" gubun="별표" no="34" title="성과표" source="data/annex/원본/work/[별표 41] 성과표.hwpx">
   <table rows="26" cols="6">
     <row>
       <cell col="0" row="0" rowspan="3">측점</cell>
@@ -14,8 +12,8 @@
       <cell col="4" row="1" colspan="2">투영평면좌표</cell>
     </row>
     <row>
-      <cell col="4" row="2">X(N)  좌표 [m]</cell>
-      <cell col="5" row="2">Y(E)  좌표 [m]</cell>
+      <cell col="4" row="2">X(N) 좌표 [m]</cell>
+      <cell col="5" row="2">Y(E) 좌표 [m]</cell>
     </row>
     <row>
       <cell col="0" row="3"></cell>

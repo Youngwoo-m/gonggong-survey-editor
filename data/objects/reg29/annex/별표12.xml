@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표12" gubun="별표" no="12" title="간행심사수수료 명세서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151295245">
-  <text>[별표 12]
-간행심사수수료 명세서</text>
+<annex id="별표12" gubun="별표" no="17" title="간행심사수수료 명세서" source="data/annex/원본/review/[별표 12] 간행심사수수료 명세서.hwpx">
   <table rows="23" cols="9">
     <row>
       <cell col="0" row="0" colspan="9"></cell>
@@ -30,18 +28,13 @@
       <cell col="0" row="5" colspan="9">수수료산출근거</cell>
     </row>
     <row>
-      <cell col="0" row="6">구분
-적용축척</cell>
+      <cell col="0" row="6">구분적용축척</cell>
       <cell col="1" row="6">도엽명</cell>
-      <cell col="2" row="6">면적
-(연장)
-적용율</cell>
-      <cell col="3" row="6">축척별
-적용율</cell>
-      <cell col="4" row="6" colspan="2">단  가
-중급기술자</cell>
+      <cell col="2" row="6">면적(연장)적용율</cell>
+      <cell col="3" row="6">축척별적용율</cell>
+      <cell col="4" row="6" colspan="2">단 가중급기술자</cell>
       <cell col="6" row="6" colspan="2">금 액</cell>
-      <cell col="8" row="6">비      고</cell>
+      <cell col="8" row="6">비 고</cell>
     </row>
     <row>
       <cell col="0" row="7"></cell>
@@ -161,8 +154,7 @@
       <cell col="0" row="20" colspan="2">수수료</cell>
       <cell col="2" row="20" colspan="4"></cell>
       <cell col="6" row="20" colspan="2"></cell>
-      <cell col="8" row="20" rowspan="3">** 수수료 산정
-담당자:       (인)</cell>
+      <cell col="8" row="20" rowspan="3">** 수수료 산정담당자: (인)</cell>
     </row>
     <row>
       <cell col="0" row="21" colspan="2">부가세</cell>
@@ -170,7 +162,7 @@
       <cell col="6" row="21" colspan="2"></cell>
     </row>
     <row>
-      <cell col="0" row="22" colspan="2">합   계</cell>
+      <cell col="0" row="22" colspan="2">합 계</cell>
       <cell col="2" row="22" colspan="4"></cell>
       <cell col="6" row="22" colspan="2"></cell>
     </row>

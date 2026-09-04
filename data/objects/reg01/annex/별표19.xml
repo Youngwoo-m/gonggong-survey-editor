@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표19" gubun="별표" no="19" title="IP점 설치측량 정확도 관리표" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296185">
-  <text>[ 별표 19 ]
-IP점 설치측량 정확도 관리표</text>
+<annex id="별표19" gubun="별표" no="9" title="IP점 설치측량 정확도 관리표" source="data/annex/원본/work/[별표 19] IP점 설치측량 정확도 관리표.hwpx">
   <table rows="2" cols="10">
     <row>
       <cell col="0" row="0">작업명</cell>
@@ -230,5 +228,4 @@ IP점 설치측량 정확도 관리표</text>
       <cell col="11" row="14"></cell>
     </row>
   </table>
-  <text>용지의 크기는 A4판으로 한다.</text>
 </annex>

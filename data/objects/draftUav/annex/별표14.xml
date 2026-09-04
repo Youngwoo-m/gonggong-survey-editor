@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표14" gubun="별표" no="14" title="성과품 표준 포맷 및 납품 폴더구조" source="data/annex/gen/draftUav2/별표14.hwpx">
+  <table rows="7" cols="2">
+    <row>
+      <cell col="0" row="0">성과품 유형</cell>
+      <cell col="1" row="0">표준 포맷</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">정사영상</cell>
+      <cell col="1" row="1">GeoTIFF 또는 측량시행자가 승인한 공간참조 영상포맷</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">DSM, DTM, DEM</cell>
+      <cell col="1" row="2">GeoTIFF, GRID, ASCII Grid 또는 측량시행자가 승인한 격자포맷</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">레이저측량 점군</cell>
+      <cell col="1" row="3">LAS 또는 LAZ</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">수치도화ㆍ객체기반 갱신자료</cell>
+      <cell col="1" row="4">SHP, GPKG, DXF 또는 측량시행자가 승인한 벡터포맷</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">품질평가 보고서</cell>
+      <cell col="1" row="5">PDF 또는 문서형식</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">메타데이터 및 처리이력</cell>
+      <cell col="1" row="6">XML, CSV, TXT 또는 측량시행자가 승인한 형식</cell>
+    </row>
+  </table>
+</annex>

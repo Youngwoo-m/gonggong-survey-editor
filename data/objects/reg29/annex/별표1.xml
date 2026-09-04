@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표1" gubun="별표" no="1" title="심사수탁기관 업무수행능력 심사기준" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151294971">
-  <text>[별표 1]
-심사수탁기관 업무수행능력 심사기준</text>
+<annex id="별표1" gubun="별표" no="3" title="심사수탁기관 업무수행능력 심사기준" source="data/annex/원본/review/[별표 1] 심사수탁기관 업무수행능력 심사기준.hwpx">
   <table rows="41" cols="6">
     <row>
       <cell col="0" row="0">구 분</cell>
       <cell col="1" row="0">심 사 항 목</cell>
-      <cell col="2" row="0" colspan="2">심  사  내  용</cell>
+      <cell col="2" row="0" colspan="2">심 사 내 용</cell>
       <cell col="4" row="0">배 점</cell>
       <cell col="5" row="0">점 수</cell>
     </row>
     <row>
-      <cell col="0" row="1" rowspan="14">일
-반
-현
-황
-(서류)</cell>
+      <cell col="0" row="1" rowspan="14">일반현황(서류)</cell>
       <cell col="1" row="1" rowspan="8">1. 조직 운영</cell>
       <cell col="2" row="1" rowspan="2">가. 법인 설립 목적의 적정성</cell>
       <cell col="3" row="1">공정성 등 확보</cell>
@@ -89,16 +83,12 @@
       <cell col="5" row="14"></cell>
     </row>
     <row>
-      <cell col="0" row="15" colspan="4">소  계</cell>
+      <cell col="0" row="15" colspan="4">소 계</cell>
       <cell col="4" row="15">30</cell>
       <cell col="5" row="15"></cell>
     </row>
     <row>
-      <cell col="0" row="16" rowspan="17">운
-영
-계
-획
-서</cell>
+      <cell col="0" row="16" rowspan="17">운영계획서</cell>
       <cell col="1" row="16" rowspan="10">1. 운영계획서</cell>
       <cell col="2" row="16" rowspan="2">가. 업무수행 목표, 전략, 범위 및 절차의 적절성</cell>
       <cell col="3" row="16">공정성 등 확보</cell>
@@ -186,16 +176,12 @@
       <cell col="5" row="32"></cell>
     </row>
     <row>
-      <cell col="0" row="33" colspan="4">소  계</cell>
+      <cell col="0" row="33" colspan="4">소 계</cell>
       <cell col="4" row="33">50</cell>
       <cell col="5" row="33"></cell>
     </row>
     <row>
-      <cell col="0" row="34" rowspan="5">업
-무
-환
-경
-(현장)</cell>
+      <cell col="0" row="34" rowspan="5">업무환경(현장)</cell>
       <cell col="1" row="34" colspan="2" rowspan="2">1. 심사업무 수행에 필요한 사무공간 확보</cell>
       <cell col="3" row="34">공정성 등 확보</cell>
       <cell col="4" row="34">7</cell>
@@ -221,15 +207,14 @@
       <cell col="5" row="38"></cell>
     </row>
     <row>
-      <cell col="0" row="39" colspan="4">소  계</cell>
+      <cell col="0" row="39" colspan="4">소 계</cell>
       <cell col="4" row="39">20</cell>
       <cell col="5" row="39"></cell>
     </row>
     <row>
-      <cell col="0" row="40" colspan="4">총  계</cell>
+      <cell col="0" row="40" colspan="4">총 계</cell>
       <cell col="4" row="40">100</cell>
       <cell col="5" row="40"></cell>
     </row>
   </table>
-  <text>* 공정성 등 확보(미흡) 여부는 공정성, 전문성, 정책기여도, 투명성 등을 반영하여 평가할 것</text>
 </annex>

@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표40" gubun="별표" no="40" title="네트워크 RTK 관측기록부" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296315">
-  <text>[ 별표 40 ]
-네트워크 RTK 관측기록부</text>
+<annex id="별표40" gubun="별표" no="33" title="네트워크 RTK 관측기록부" source="data/annex/원본/work/[별표 40] 네트워크 RTK 관측기록부.hwpx">
   <table rows="7" cols="6">
     <row>
       <cell col="0" row="0">작업명</cell>
@@ -9,7 +7,7 @@
     </row>
     <row>
       <cell col="0" row="1">관측일자</cell>
-      <cell col="1" row="1">20     .       .</cell>
+      <cell col="1" row="1">20 . .</cell>
       <cell col="2" row="1">GNSS 수신기 제조사/모델</cell>
       <cell col="3" row="1" colspan="3"></cell>
     </row>
@@ -37,7 +35,7 @@
       <cell col="0" row="5">작업종료시간</cell>
       <cell col="1" row="5"></cell>
       <cell col="2" row="5">안테나고</cell>
-      <cell col="3" row="5" colspan="3">□ 수직   □ 사거리    (                  m)</cell>
+      <cell col="3" row="5" colspan="3">□ 수직 □ 사거리 ( m)</cell>
     </row>
     <row>
       <cell col="0" row="6">비고</cell>
@@ -46,22 +44,16 @@
   </table>
   <table rows="8" cols="12">
     <row>
-      <cell col="0" row="0" rowspan="2">관측
-ID</cell>
+      <cell col="0" row="0" rowspan="2">관측ID</cell>
       <cell col="1" row="0" rowspan="2">세션번호</cell>
-      <cell col="2" row="0" rowspan="2">관측
-시작</cell>
-      <cell col="3" row="0" rowspan="2">관측
-종료</cell>
+      <cell col="2" row="0" rowspan="2">관측시작</cell>
+      <cell col="3" row="0" rowspan="2">관측종료</cell>
       <cell col="4" row="0" rowspan="2">PDOP</cell>
       <cell col="5" row="0" rowspan="2">위성수</cell>
       <cell col="6" row="0" colspan="3">정밀도(cm)</cell>
-      <cell col="9" row="0" rowspan="2">관측값(m)
-ENh/BLh/dXYZ</cell>
-      <cell col="10" row="0" rowspan="2">세션평균(m)
-ENh/BLh/dXYZ</cell>
-      <cell col="11" row="0" rowspan="2">비고
-(수신 위성 종류 등)</cell>
+      <cell col="9" row="0" rowspan="2">관측값(m)ENh/BLh/dXYZ</cell>
+      <cell col="10" row="0" rowspan="2">세션평균(m)ENh/BLh/dXYZ</cell>
+      <cell col="11" row="0" rowspan="2">비고(수신 위성 종류 등)</cell>
     </row>
     <row>
       <cell col="6" row="1">E/X</cell>

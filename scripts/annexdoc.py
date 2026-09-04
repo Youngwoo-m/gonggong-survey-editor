@@ -48,8 +48,13 @@ def _level(line):
 
 
 def _split_row(s):
-    """한 줄을 칸으로 가른다 — 가름표는 ' · ' 이고, 칸 안의 'ㆍ' 는 건드리지 않는다"""
-    return [c.strip() for c in re.split(r"\s+·\s+", s.strip()) if c.strip() != ""]
+    """한 줄을 칸으로 가른다 — 가름표는 ' · ' 이고, 칸 안의 'ㆍ' 는 건드리지 않는다.
+
+    줄 맨 앞의 글머리(·)는 가름표가 아니라 벌임표다. 앞에 빈칸이 없어
+    가름표로 잡히지 아니하므로 첫 칸에 그대로 남는다 — '· C-01/C-02'.
+    가르기 전에 떼어 낸다."""
+    s = re.sub(r"^[·•ㆍ]\s*", "", s.strip())
+    return [c.strip() for c in re.split(r"\s+·\s+", s) if c.strip() != ""]
 
 
 def _split_row_sp(s):
@@ -61,13 +66,34 @@ def _split_row_sp(s):
     return [c.strip() for c in re.split(r"\s{2,}", s) if c.strip() != ""]
 
 
+def _split_row_lbl(s):
+    """앞의 이름칸을 떼고, 나머지를 빗금ㆍ가운뎃점ㆍ화살표 어느 것으로든 가른다.
+
+    무인비행장치 별표들이 이 꼴이다 — 이름칸은 빈칸으로 벌려 놓고, 값은
+    빗금이나 화살표로 잇는다.
+
+        · 롤(Roll)      0.0000° / 0.0000° / 0.0000° / 0.0000°
+        · 교차 코스 사이의 수직 불일치  0.000 m → 0.000 m · 00%
+
+    이 꼴을 가르지 못해 별표 9ㆍ10ㆍ15 는 표가 하나도 서지 못하고 글줄로
+    흘렀다. 붙여 쓴 빗금(x/y/z)은 건드리지 않도록 앞뒤 빈칸을 요구한다.
+    """
+    s = re.sub(r"^[·•ㆍ]\s*", "", s.strip())
+    m = re.split(r"\s{2,}", s, maxsplit=1)
+    if len(m) < 2:
+        return [s]
+    tail = [c.strip() for c in re.split(r"\s+[/·ㆍ→]\s+", m[1])
+            if c.strip() != ""]
+    return [m[0].strip()] + tail
+
+
 def _cells_of(rows_raw, ncol):
     """줄들을 칸으로 가른다 — 가름표 꼴을 먼저 보고, 안 맞으면 빈칸 꼴로 본다.
 
     칸이 머리보다 모자란 줄은 빈 칸을 채워 맞춘다 (줄 끝에 가름표가 남아
     마지막 칸이 비는 일이 잦다). 머리보다 넘치는 줄이 하나라도 있으면
     표로 세우지 아니한다 — 글이 엉뚱한 칸으로 밀려 뜻이 달라진다."""
-    for f in (_split_row, _split_row_sp):
+    for f in (_split_row, _split_row_sp, _split_row_lbl):
         cells = [f(r) for r in rows_raw]
         if not cells or any(len(c) > ncol for c in cells):
             continue
@@ -86,7 +112,11 @@ def _gather_head(lines, i):
     head = [c.strip() for c in re.split(r"[├└]", s.lstrip("┌")) if c.strip()]
     j = i + 1
     while j < len(lines) and lines[j].strip()[:1] in ("├", "└"):
-        head.append(lines[j].strip()[1:].strip())
+        # 이어짐 줄에도 칸이 여럿 들어 있다. 통째로 한 칸으로 담으면 머리
+        # 칸 수가 모자라 본문 행과 어긋나고, 표가 통째로 글자로 찍힌다.
+        #   ├ 오류의 무게 ├ 어떻게 고쳐야 하는지 ├ 언제까지   ← 세 칸이다
+        head += [c.strip() for c in re.split(r"[├└]", lines[j].strip())
+                 if c.strip()]
         j += 1
     return head, j
 
@@ -131,7 +161,23 @@ def _gather_rows(lines, i):
         ind = len(ln) - len(ln.lstrip())
         if base is None:
             base = ind
-        if cur and ind > base + 2:
+        # 이어짐으로 볼 문턱. 처음에는 base + 2 를 '넘을' 때로 두었는데, 실제
+        # 자료의 이어짐 줄이 꼭 base + 2 만큼만 들여쓰여 있어 걸러지지 못했다.
+        #   〔1구역 · 맨홀 640개소 · …          ← base = 3
+        #      늘림(별표 7 제4호나목) — …       ← 5, 곧 base + 2
+        # 그 바람에 이어짐 줄이 새 행으로 잡혀 칸 수가 어긋나고, 표가 통째로
+        # 글자로 찍혔다(별지 4). 문턱을 base + 2 '이상' 으로 낮추니 표가
+        # 16개에서 19개로 늘고 칸 수가 어긋난 행은 그대로 0이었다.
+        # 앞줄이 가름표로 끝났으면 그 줄은 아직 끝나지 않은 것이다. 들여쓰기가
+        # 한 칸밖에 안 되어 문턱에 걸리지 못하는 자리가 많았다.
+        #
+        #   〔2026-05-18 09:20 · 구간 B 맨홀 내부 조사 · … ·   ← base = 3
+        #     정□□(안전관리책임자) · 맨홀 개방 후 강제 환기 …   ← 4, 문턱은 5
+        #
+        # 그 바람에 여덟 칸짜리 한 행이 네 행으로 쪼개져 표가 서지 못했다.
+        # 들여쓰기만 보지 아니하고 '앞줄이 가름표로 끝났는가' 도 함께 본다.
+        hangs = bool(cur) and cur.rstrip()[-1:] in "·ㆍ/→,"
+        if cur and (hangs or ind >= base + 2):
             cur += " " + ln.strip()          # 접힌 줄 — 앞줄에 잇는다
         else:
             if cur:

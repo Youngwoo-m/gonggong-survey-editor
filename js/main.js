@@ -1,32 +1,32 @@
 /* ============================================================
    main.js — 앱 조립 (1단계 프로토타입)
    ============================================================ */
-import * as M from "./core/model.js?v=20260824f";
-import { Project } from "./core/project.js?v=20260824f";
-import * as FS from "./adapters/fileio.js?v=20260824f";
-import * as AUTO from "./adapters/autosave.js?v=20260824f";
-import { TreeView } from "./ui/tree.js?v=20260824f";
-import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260824f";
-import { CompareView } from "./ui/compare.js?v=20260824f";
-import { VersionsView } from "./ui/versions.js?v=20260824f";
-import { HistoryView } from "./ui/history.js?v=20260824f";
-import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260824f";
-import { ValidateView } from "./ui/validate.js?v=20260824f";
-import { RefPicker } from "./ui/refpicker.js?v=20260824f";
-import { AIView } from "./ui/ai.js?v=20260824f";
-import { CiteCheckView } from "./ui/citecheck.js?v=20260824f";
-import { TermsView } from "./ui/terms.js?v=20260824f";
-import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260824f";
-import * as GH from "./adapters/github.js?v=20260824f";
-import { extractLines } from "./core/importer.js?v=20260824f";
-import { buildAuto } from "./core/structure.js?v=20260824f";
-import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260824f";
-import { ObjectStore, fitTable } from "./core/objects.js?v=20260824f";
-import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260824f";
-import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260824f";
-import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260824f";
-import { fmtDate } from "./ui/html.js?v=20260824f";
-import { printReg } from "./ui/printdoc.js?v=20260824f";
+import * as M from "./core/model.js?v=20260903a";
+import { Project } from "./core/project.js?v=20260903a";
+import * as FS from "./adapters/fileio.js?v=20260903a";
+import * as AUTO from "./adapters/autosave.js?v=20260903a";
+import { TreeView } from "./ui/tree.js?v=20260903a";
+import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260903a";
+import { CompareView } from "./ui/compare.js?v=20260903a";
+import { VersionsView } from "./ui/versions.js?v=20260903a";
+import { HistoryView } from "./ui/history.js?v=20260903a";
+import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260903a";
+import { ValidateView } from "./ui/validate.js?v=20260903a";
+import { RefPicker } from "./ui/refpicker.js?v=20260903a";
+import { AIView } from "./ui/ai.js?v=20260903a";
+import { CiteCheckView } from "./ui/citecheck.js?v=20260903a";
+import { TermsView } from "./ui/terms.js?v=20260903a";
+import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260903a";
+import * as GH from "./adapters/github.js?v=20260903a";
+import { extractLines } from "./core/importer.js?v=20260903a";
+import { buildAuto } from "./core/structure.js?v=20260903a";
+import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260903a";
+import { ObjectStore, fitTable } from "./core/objects.js?v=20260903a";
+import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260903a";
+import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260903a";
+import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260903a";
+import { fmtDate } from "./ui/html.js?v=20260903a";
+import { printReg } from "./ui/printdoc.js?v=20260903a";
 
 const $ = (s) => document.querySelector(s);
 const NL = "\n";
@@ -65,6 +65,7 @@ const ai = new AIView(project, {
   getRef: () => { const p = paneOf("ref2"); return p && p.doc ? { name: p.doc.name, tree: p.tree } : null; },
   onToast: (m, ms) => toast(m, ms),
   onJump: (id) => jumpToNode(id),
+  onReport: () => doCommand("reportRun"),   // 창 안의 [보고서 생성]
   host: $("#aiDock"),          // 별도 창이 아니라 개정안 창 아래에 붙인다
 });
 const citecheck = new CiteCheckView({
@@ -185,10 +186,13 @@ async function init() {
   }
   if (draftRegIdOf[APP.id]) detail.setDraftRegId(draftRegIdOf[APP.id]);
   detail.setObjectStore(objects);
+  // 비교표도 같은 저장소를 쓴다 — 칸 안에 진짜 표를 끼워 넣으려면 있어야 한다
+  compare.setObjectStore(objects, baseRegIdOf);
   detail.setLawResolver((w) => resolveLawWord(w));
   detail.setStdResolver((n) => resolveRegName(n));
   detail.setJoNav({ has: hasArticle, go: gotoArticle,
                     hasAnx: hasAnnex, goAnx: gotoAnnex });
+  detail.setMovedNav((jo) => showLegacyArticle(jo));
   try { detail.setAnnexIndex(await FS.loadJSON("data/annex/index.json")); } catch { /* 미리보기 없음 */ }
   loadSharedRefs();
   wire();
@@ -952,6 +956,43 @@ function jumpRefTo(pane, joNo) {
   return `제${no}조`;
 }
 
+/**
+ * 현행규정 창(①)에서 그 조문을 펴 보인다.
+ *
+ * 개정안 제2조(정의)에는 현행 조문 곳곳에 흩어져 있던 약칭을 거두어 모았다.
+ * 본문에 <현행 제5조에서 옮김> 이라 적어 두었고, 그것을 누르면 여기로 온다.
+ *
+ * @param {string} jo '제5조' · '제5조의2' 처럼 적힌 현행 조 번호
+ */
+function showLegacyArticle(jo) {
+  const pane = paneOf("ref1");
+  if (!pane || !pane.tree || !pane.doc) {
+    toast("현행규정 창이 열려 있지 않습니다.", 2600);
+    return;
+  }
+  const key = String(jo || "").replace(/\s+/g, "");
+  const m = key.match(/^제(\d+)조(?:의(\d+))?$/);
+  let hit = null;
+  M.walk(pane.tree, (n) => {
+    if (hit || n.level !== "조") return;
+    // 현행 규정에서는 조 번호가 그대로 no 이다. legacyNo 로도 한 번 더 본다.
+    const byNo = m && String(n.no) === m[1]
+      && String(n.branch || 0) === String(m[2] || 0);
+    if (byNo || String(n.legacyNo || "").replace(/\s+/g, "") === key) hit = n;
+  });
+  if (!hit) {
+    toast(`현행규정에서 ${key} 를 찾지 못했습니다.`, 3000);
+    return;
+  }
+  expandAncestors(pane.tree, hit.id);
+  pane.selectedId = hit.id;
+  const view = refTrees[pane.key];
+  view.setData(pane.tree, hit.id);
+  view.scrollToId?.(hit.id);
+  refreshRefDetail();
+  toast(`현행 ${key} 를 현행규정 창에서 폈습니다.`, 2400);
+}
+
 /** 개정안에서 고른 조문의 '현행 조문' 을 현행규정 창에서 함께 골라 준다 */
 function syncRefToDraft(draftId) {
   const pane = paneOf("ref1");
@@ -1036,7 +1077,7 @@ function refreshRefDetail() {
     if (!node) continue;
     items.push({
       key: p.key,
-      badge: p.key === "ref1" ? "현행규정" : "참조규정",
+      badge: p.key === "ref1" ? "현행규정" : "참조규정및연구보고서",
       node, docName: p.doc.name, docId: p.doc.id,
       trail: M.pathOf(p.tree, p.selectedId).map(M.displayLabel).join(" › "),
       editable: false,
@@ -1463,7 +1504,12 @@ async function doCommand(cmd) {
      * '손상된 파일' 로 보므로(forms_hwp.py 주석) 한/글에게 저장을 맡겨야 하고,
      * 그것은 이 컴퓨터의 python scripts/genreport.py 가 한다. 여기서는 그렇게
      * 만들어 둔 꾸러미를 내려받는다 — 언제 만든 것인지 함께 알린다. */
-    case "report": {
+    /* 상단 [보고서] 는 곧바로 짓지 아니하고 AI 창을 팝업으로 띄운다.
+       웹에 올렸을 때 보고서를 짓는 자리가 그 창이기 때문이다 — 무엇이 담기는지
+       읽고 누르게 하려는 것이다. 실제로 짓는 것은 아래 reportRun 이다. */
+    case "report": ai.open(null, { popup: true }); break;
+
+    case "reportRun": {
       /* 누르는 그 자리에서 지금 편집 상태로 새로 짓는다.
          여태는 미리 만들어 둔 zip 을 내려받기만 하여, 만든 날 뒤에 고친 것이
          하나도 담기지 아니하였다 (날짜가 여러 날 뒤처져 있었다).
@@ -1475,9 +1521,9 @@ async function doCommand(cmd) {
          때에만 (scopedTargetId() 가 null 이다) 세 규정을 함께 담는다. */
       const only = scopedTargetId();
       const onlyName = only ? (project.regNode(only)?.short || "") : "";
-      busy(`${onlyName || "개정 대상 세 규정"} 보고서를 짓는 중…`);
+      busy(`${onlyName || "개정 대상 세 규정"} 보고서를 작성 중…`);
       try {
-        const { buildReport } = await import("./ui/report.js?v=20260824f");
+        const { buildReport } = await import("./ui/report.js?v=20260903a");
         const r = await buildReport(project, { targetId: only });
         const url = URL.createObjectURL(r.blob);
         const a = document.createElement("a");
@@ -1487,7 +1533,9 @@ async function doCommand(cmd) {
         toast(`보고서를 새로 지어 내려받습니다 — ${r.name}
 규정 ${r.regs}종 · ${(r.blob.size / 1024 / 1024).toFixed(1)} MB
 ${r.items.join(" · ")}
-한/글(HWPX) 문서가 필요하면 python scripts/genreport.py 를 돌리십시오.`, 9000);
+이것은 웹에서 지은 HTML·XLSX 한 벌입니다. Form 폴더의 양식을 그대로 입힌
+한/글(HWPX) 한 벌이 필요하면 그 PC 에서 다음을 돌리십시오 —
+  python scripts/genreport_hwpx.py --reg <규정> --out <폴더>`, 11000);
       } catch (e) {
         console.warn("보고서:", e);
         toast(`보고서를 짓지 못했습니다 — ${e.message}`, 7000);
@@ -1548,7 +1596,7 @@ ${r.warning}` : ""),
       if (!reg) break;
       const cites = scanCitations(reg);
       if (!cites.length) { toast("이 규정에는 조 번호까지 적은 인용이 없습니다.", 3500); break; }
-      busy(`인용 ${cites.length}건을 견주는 중…`);
+      busy(`인용 ${cites.length}건을 비교하는 중…`);
       const ids = neededDocs(cites, library.regulations);
       const docs = new Map();
       for (const id of ids) {
@@ -1793,6 +1841,9 @@ function baseGroupOf(r) {
   if (r.category === "review") return "review";
   if (r.category === "under") return "under";
   if (r.category === "safety") return "safety";
+  // 연구보고서는 인용 여부보다 먼저 제 묶음으로 보낸다 — 규정이 아니라
+  // 규정을 고칠 근거가 되는 문서다
+  if (r.category === "research") return "research";
   if (isKdsKcs(r)) return "kds";
   if (r.citedIn && r.citedIn.length) return "cited";
   if (r.category === "law") return "law";
@@ -1878,6 +1929,9 @@ function buildRefOptions(idx) {
 /** 단추 이름 → 그 상태인가 (이동·수정 은 '수정' 에 든다) */
 const FILTERS = {
   "수정": (n) => String(n.status || "").includes("수정"),
+  // 자리만 옮긴 것 — 문언을 고친 것과 갈라서 본다. 둘 다인 것
+  // (이동·수정)은 '수정' 에 들어 있으므로 여기서는 뺀다.
+  "이동": (n) => String(n.status || "") === "이동",
   "신설": (n) => String(n.status || "").includes("신설"),
   // 용어를 바로잡은 것만 — 공청회에서 다툴 것과 다투지 아니할 것을 가른다.
   // gendraft2025.py 가 연구 검토의 '용어 오류·불일치' 지적이 걸린 조문에 표시해 둔다
@@ -2110,9 +2164,16 @@ function setupSplitters() {
 function metaLine(d) {
   const no = d.no && d.no !== "-" ? String(d.no) : "";
   const dt = fmtDate(d.effective);
+  // 원문 파일이 함께 담긴 문서는 머리글에서 바로 열 수 있게 한다
+  // (연구보고서처럼 법령정보센터에 없는 것들이다)
+  const file = d.docFile
+    ? ` · <a class="btnlink" href="${encodeURI(d.docFile)}" target="_blank"
+         rel="noopener" title="원문 PDF 를 새 창에서 엽니다">원문 PDF</a>`
+    : "";
   return `${d.org} ${d.kind}`
     + (no ? ` 제${no}호` : "")
-    + (dt ? ` · ${no ? "시행 " : ""}${dt}` : "");
+    + (dt ? ` · ${no ? "시행 " : ""}${dt}` : "")
+    + file;
 }
 
 let toastTimer;

@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표6" gubun="별표" no="6" title="공공삼각점성과표(2)" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296103">
-  <text>[ 별표 6 ]
-공공삼각점성과표(2)
-주 호선(1)에 따라 순서대로 기재하고, 호선이 변하는 곳에 1행 다음에 기선을 기재한다.</text>
+<annex id="별표6" gubun="별표" no="25" title="공공삼각점성과표(2)" source="data/annex/원본/work/[별표 6] 공공삼각점성과표(2).hwpx">
   <table rows="27" cols="6">
     <row>
-      <cell col="0" row="0" rowspan="2">점  의
-번  호</cell>
+      <cell col="0" row="0" rowspan="2">점 의번 호</cell>
       <cell col="1" row="0" rowspan="2">X</cell>
       <cell col="2" row="0" rowspan="2">Y</cell>
       <cell col="3" row="0">연 장</cell>
       <cell col="4" row="0">방 향 각</cell>
-      <cell col="5" row="0">표   고</cell>
+      <cell col="5" row="0">표 고</cell>
     </row>
     <row>
       <cell col="3" row="1">S</cell>
@@ -20,23 +16,18 @@
     </row>
     <row>
       <cell col="0" row="2"></cell>
-      <cell col="1" row="2">m
-.</cell>
-      <cell col="2" row="2">m
-.</cell>
-      <cell col="3" row="2">m
-.</cell>
-      <cell col="4" row="2">°  ′  ″
-   -   -</cell>
-      <cell col="5" row="2">m
-.</cell>
+      <cell col="1" row="2">m.</cell>
+      <cell col="2" row="2">m.</cell>
+      <cell col="3" row="2">m.</cell>
+      <cell col="4" row="2">° ′ ″ - -</cell>
+      <cell col="5" row="2">m.</cell>
     </row>
     <row>
       <cell col="0" row="3"></cell>
       <cell col="1" row="3">.</cell>
       <cell col="2" row="3">.</cell>
       <cell col="3" row="3">.</cell>
-      <cell col="4" row="3">-   -</cell>
+      <cell col="4" row="3">- -</cell>
       <cell col="5" row="3">.</cell>
     </row>
     <row>
@@ -44,7 +35,7 @@
       <cell col="1" row="4">.</cell>
       <cell col="2" row="4">.</cell>
       <cell col="3" row="4">.</cell>
-      <cell col="4" row="4">-   -</cell>
+      <cell col="4" row="4">- -</cell>
       <cell col="5" row="4">.</cell>
     </row>
     <row>
@@ -52,7 +43,7 @@
       <cell col="1" row="5">.</cell>
       <cell col="2" row="5">.</cell>
       <cell col="3" row="5">.</cell>
-      <cell col="4" row="5">-   -</cell>
+      <cell col="4" row="5">- -</cell>
       <cell col="5" row="5">.</cell>
     </row>
     <row>
@@ -60,7 +51,7 @@
       <cell col="1" row="6">.</cell>
       <cell col="2" row="6">.</cell>
       <cell col="3" row="6">.</cell>
-      <cell col="4" row="6">-   -</cell>
+      <cell col="4" row="6">- -</cell>
       <cell col="5" row="6">.</cell>
     </row>
     <row>
@@ -68,7 +59,7 @@
       <cell col="1" row="7">.</cell>
       <cell col="2" row="7">.</cell>
       <cell col="3" row="7">.</cell>
-      <cell col="4" row="7">-   -</cell>
+      <cell col="4" row="7">- -</cell>
       <cell col="5" row="7">.</cell>
     </row>
     <row>
@@ -76,7 +67,7 @@
       <cell col="1" row="8">.</cell>
       <cell col="2" row="8">.</cell>
       <cell col="3" row="8">.</cell>
-      <cell col="4" row="8">-   -</cell>
+      <cell col="4" row="8">- -</cell>
       <cell col="5" row="8">.</cell>
     </row>
     <row>
@@ -84,7 +75,7 @@
       <cell col="1" row="9">.</cell>
       <cell col="2" row="9">.</cell>
       <cell col="3" row="9">.</cell>
-      <cell col="4" row="9">-   -</cell>
+      <cell col="4" row="9">- -</cell>
       <cell col="5" row="9">.</cell>
     </row>
     <row>
@@ -92,7 +83,7 @@
       <cell col="1" row="10">.</cell>
       <cell col="2" row="10">.</cell>
       <cell col="3" row="10">.</cell>
-      <cell col="4" row="10">-   -</cell>
+      <cell col="4" row="10">- -</cell>
       <cell col="5" row="10">.</cell>
     </row>
     <row>
@@ -100,7 +91,7 @@
       <cell col="1" row="11">.</cell>
       <cell col="2" row="11">.</cell>
       <cell col="3" row="11">.</cell>
-      <cell col="4" row="11">-   -</cell>
+      <cell col="4" row="11">- -</cell>
       <cell col="5" row="11">.</cell>
     </row>
     <row>
@@ -108,7 +99,7 @@
       <cell col="1" row="12">.</cell>
       <cell col="2" row="12">.</cell>
       <cell col="3" row="12">.</cell>
-      <cell col="4" row="12">-   -</cell>
+      <cell col="4" row="12">- -</cell>
       <cell col="5" row="12">.</cell>
     </row>
     <row>
@@ -116,7 +107,7 @@
       <cell col="1" row="13">.</cell>
       <cell col="2" row="13">.</cell>
       <cell col="3" row="13">.</cell>
-      <cell col="4" row="13">-   -</cell>
+      <cell col="4" row="13">- -</cell>
       <cell col="5" row="13">.</cell>
     </row>
     <row>
@@ -124,7 +115,7 @@
       <cell col="1" row="14">.</cell>
       <cell col="2" row="14">.</cell>
       <cell col="3" row="14">.</cell>
-      <cell col="4" row="14">-   -</cell>
+      <cell col="4" row="14">- -</cell>
       <cell col="5" row="14">.</cell>
     </row>
     <row>
@@ -132,7 +123,7 @@
       <cell col="1" row="15">.</cell>
       <cell col="2" row="15">.</cell>
       <cell col="3" row="15">.</cell>
-      <cell col="4" row="15">-   -</cell>
+      <cell col="4" row="15">- -</cell>
       <cell col="5" row="15">.</cell>
     </row>
     <row>
@@ -140,7 +131,7 @@
       <cell col="1" row="16">.</cell>
       <cell col="2" row="16">.</cell>
       <cell col="3" row="16">.</cell>
-      <cell col="4" row="16">-   -</cell>
+      <cell col="4" row="16">- -</cell>
       <cell col="5" row="16">.</cell>
     </row>
     <row>
@@ -148,7 +139,7 @@
       <cell col="1" row="17">.</cell>
       <cell col="2" row="17">.</cell>
       <cell col="3" row="17">.</cell>
-      <cell col="4" row="17">-   -</cell>
+      <cell col="4" row="17">- -</cell>
       <cell col="5" row="17">.</cell>
     </row>
     <row>
@@ -156,7 +147,7 @@
       <cell col="1" row="18">.</cell>
       <cell col="2" row="18">.</cell>
       <cell col="3" row="18">.</cell>
-      <cell col="4" row="18">-   -</cell>
+      <cell col="4" row="18">- -</cell>
       <cell col="5" row="18">.</cell>
     </row>
     <row>
@@ -164,7 +155,7 @@
       <cell col="1" row="19">.</cell>
       <cell col="2" row="19">.</cell>
       <cell col="3" row="19">.</cell>
-      <cell col="4" row="19">-   -</cell>
+      <cell col="4" row="19">- -</cell>
       <cell col="5" row="19">.</cell>
     </row>
     <row>
@@ -172,7 +163,7 @@
       <cell col="1" row="20">.</cell>
       <cell col="2" row="20">.</cell>
       <cell col="3" row="20">.</cell>
-      <cell col="4" row="20">-   -</cell>
+      <cell col="4" row="20">- -</cell>
       <cell col="5" row="20">.</cell>
     </row>
     <row>
@@ -180,7 +171,7 @@
       <cell col="1" row="21">.</cell>
       <cell col="2" row="21">.</cell>
       <cell col="3" row="21">.</cell>
-      <cell col="4" row="21">-   -</cell>
+      <cell col="4" row="21">- -</cell>
       <cell col="5" row="21">.</cell>
     </row>
     <row>
@@ -188,7 +179,7 @@
       <cell col="1" row="22">.</cell>
       <cell col="2" row="22">.</cell>
       <cell col="3" row="22">.</cell>
-      <cell col="4" row="22">-   -</cell>
+      <cell col="4" row="22">- -</cell>
       <cell col="5" row="22">.</cell>
     </row>
     <row>
@@ -196,7 +187,7 @@
       <cell col="1" row="23">.</cell>
       <cell col="2" row="23">.</cell>
       <cell col="3" row="23">.</cell>
-      <cell col="4" row="23">-   -</cell>
+      <cell col="4" row="23">- -</cell>
       <cell col="5" row="23">.</cell>
     </row>
     <row>
@@ -204,7 +195,7 @@
       <cell col="1" row="24">.</cell>
       <cell col="2" row="24">.</cell>
       <cell col="3" row="24">.</cell>
-      <cell col="4" row="24">-   -</cell>
+      <cell col="4" row="24">- -</cell>
       <cell col="5" row="24">.</cell>
     </row>
     <row>
@@ -212,7 +203,7 @@
       <cell col="1" row="25">.</cell>
       <cell col="2" row="25">.</cell>
       <cell col="3" row="25">.</cell>
-      <cell col="4" row="25">-   -</cell>
+      <cell col="4" row="25">- -</cell>
       <cell col="5" row="25">.</cell>
     </row>
     <row>
@@ -220,7 +211,7 @@
       <cell col="1" row="26">.</cell>
       <cell col="2" row="26">.</cell>
       <cell col="3" row="26">.</cell>
-      <cell col="4" row="26">-   -</cell>
+      <cell col="4" row="26">- -</cell>
       <cell col="5" row="26">.</cell>
     </row>
   </table>

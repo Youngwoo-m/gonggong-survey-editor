@@ -6,7 +6,7 @@
    여기서는 그 XML 을 읽어 화면에 진짜 표로 그린다.
    ============================================================ */
 
-import { toMathML } from "./eqmath.js?v=20260824f";
+import { toMathML } from "./eqmath.js?v=20260903a";
 
 const RE_IMG = /<img\s+id="([\w.-]+)"\s*>(?:<\/img>)?/gi;
 // 본문이 인용하는 다른 규정 — 「…」 / 『…』
@@ -197,6 +197,28 @@ export function markSamples(html) {
     `<span class="ex" title="보기값입니다 — 규정 문언이 아닙니다">〔${inner}〕</span>`);
 }
 
+/* 개정안 제2조(정의)에는 현행 조문 곳곳에 흩어져 있던 약칭을 거두어 모았다.
+   그 자리마다 어느 조문에서 온 것인지 적어 두었으므로(scripts/movedfrom.py)
+   눌러서 현행규정 창의 그 조문으로 갈 수 있게 한다.
+
+     25. "시행자"란 … <현행 제5조에서 옮김>
+
+   글은 이미 escape 되었으므로 꺾쇠는 &lt; &gt; 로 온다. */
+const RE_MOVED = /&lt;현행\s*제(\d+)조(?:의(\d+))?에서\s*옮김&gt;/g;
+
+/**
+ * <현행 제N조에서 옮김> 을 링크로 바꾼다.
+ * @param {string} html 이미 escape 된 글
+ */
+export function linkMoved(html) {
+  return String(html).replace(RE_MOVED, (m, no, br) => {
+    const jo = `제${no}조${br ? `의${br}` : ""}`;
+    return `<a class="cite moved" href="#" data-legacy="${esc(jo)}"`
+      + ` title="현행 ${esc(jo)} 에 있던 약칭입니다 —`
+      + ` 눌러 현행규정 창에서 봅니다">현행 ${esc(jo)}에서 옮김</a>`;
+  });
+}
+
 export function linkAnnexRefs(html, hasAnx) {
   if (!hasAnx) return html;
   /* 조와 마찬가지로, 앞의 법령 이름이 미치는 자리의 별표는 그 법령의
@@ -248,6 +270,18 @@ export class ObjectStore {
   setIndex(regId, idx) { this.index[regId] = idx || {}; }
   meta(regId, imgId) { return (this.index[regId] || {})[imgId] || null; }
   has(regId, imgId) { return !!this.meta(regId, imgId); }
+
+  /** 어느 규정에 실린 표인지 모를 때 찾아 준다.
+   *
+   *  비교표는 세 규정을 한꺼번에 늘어놓을 수 있어 줄마다 규정이 다르다.
+   *  표 id 로 거꾸로 찾으면 규정을 몰라도 그림을 끌어올 수 있다. */
+  regOf(imgId) {
+    if (!imgId) return null;
+    for (const regId of Object.keys(this.index)) {
+      if (this.index[regId] && this.index[regId][imgId]) return regId;
+    }
+    return null;
+  }
 
   setAnnexIndex(regId, idx) { this.annex[regId] = idx || {}; }
   /** node.legacyNo("별표 1") 또는 "별표1" 로 찾는다 */
@@ -437,7 +471,8 @@ export async function renderBody(text, regId, store,
                                 { onXml = null, resolveCite = null, resolveLaw = null,
                                   resolveStd = null,
                                   onCite = null, hasJo = null, onJo = null,
-                                  hasAnx = null, onAnx = null } = {}) {
+                                  hasAnx = null, onAnx = null,
+                                  onMoved = null } = {}) {
   const frag = document.createDocumentFragment();
   const src = String(text || "");
   RE_IMG.lastIndex = 0;
@@ -448,19 +483,21 @@ export async function renderBody(text, regId, store,
     const d = document.createElement("div");
     d.className = "bd-text";
     const plain = s.replace(/^\n+|\n+$/g, "");
-    if (resolveCite || resolveLaw || resolveStd || hasJo || hasAnx) {
+    if (resolveCite || resolveLaw || resolveStd || hasJo || hasAnx || onMoved) {
       // 「…」 인용을 눌러 참조규정 창에서 열 수 있게 한다
       let h = linkCitations(esc(plain), resolveCite);
       h = linkLawRefs(h, resolveLaw);
       h = linkStdRefs(h, resolveStd);      // ISO 19157-1:2023 처럼 맨몸으로 적힌 표준
       h = linkSelfRefs(h, hasJo);          // 같은 규정 안의 제○조 인용
       h = linkAnnexRefs(h, hasAnx);        // 별표·별지 인용
+      h = linkMoved(h);                    // <현행 제N조에서 옮김>
       h = markSamples(h);                  // 서식의 보기값 〔…〕
       d.innerHTML = h;
       d.querySelectorAll("a.cite").forEach((a) => {
         a.onclick = (e) => {
           e.preventDefault();
           if (a.classList.contains("anx")) onAnx?.(a.dataset.anx, a.dataset.no);
+          else if (a.classList.contains("moved")) onMoved?.(a.dataset.legacy);
           else if (a.classList.contains("self")) onJo?.(+a.dataset.jo);
           else onCite?.(a.dataset.reg, a.textContent, a.dataset.jo || "",
                         a.dataset.clause || "");

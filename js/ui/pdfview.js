@@ -10,15 +10,9 @@
    쪽이 많은 별표가 있으므로 화면에 들어올 때에 그린다(IntersectionObserver).
    ============================================================ */
 
-let _pdfjs = null;
-async function pdfjs() {
-  if (_pdfjs) return _pdfjs;
-  const mod = await import("../../vendor/pdfjs/pdf.min.mjs?v=20260824f");
-  mod.GlobalWorkerOptions.workerSrc =
-    new URL("../../vendor/pdfjs/pdf.worker.min.mjs", import.meta.url).href;
-  _pdfjs = mod;
-  return mod;
-}
+/* pdf.js 를 부르는 일은 core/pdfjs.js 에 모아 두었다 — 서버가 .mjs 를
+   text/plain 으로 내주면 모듈이 막히는데, 그것을 넘기는 수가 들어 있다. */
+import { loadPdfjs } from "../core/pdfjs.js?v=20260903a";
 
 /**
  * PDF 를 쪽마다 그려 넣는다.
@@ -31,7 +25,7 @@ export async function renderPdf(box, url, opt = {}) {
   box.innerHTML = `<div class="pv-wait">PDF 를 여는 중…</div>`;
   let doc;
   try {
-    const pdf = await pdfjs();
+    const pdf = await loadPdfjs();
     doc = await pdf.getDocument({ url, isEvalSupported: false }).promise;
   } catch (e) {
     box.innerHTML = `<div class="pv-fail">PDF 를 열지 못했습니다 —

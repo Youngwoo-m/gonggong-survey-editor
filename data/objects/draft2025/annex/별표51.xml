@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표51" gubun="별표" no="51" title="안전관리비 계상 요율" source="data/annex/gen/work/별표51.hwpx">
+  <table rows="4" cols="4">
+    <row>
+      <cell col="0" row="0">대상액</cell>
+      <cell col="1" row="0">적용비율(%)</cell>
+      <cell col="2" row="0">기초액(원)</cell>
+      <cell col="3" row="0">계상액</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">5억원 미만</cell>
+      <cell col="1" row="1">2.07</cell>
+      <cell col="2" row="1">—</cell>
+      <cell col="3" row="1">대상액 × 2.07%</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">5억원 이상 50억원 미만</cell>
+      <cell col="1" row="2">1.59</cell>
+      <cell col="2" row="2">2,450,000</cell>
+      <cell col="3" row="2">대상액 × 1.59% + 2,450,000원</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">50억원 이상</cell>
+      <cell col="1" row="3">1.64</cell>
+      <cell col="2" row="3">—</cell>
+      <cell col="3" row="3">대상액 × 1.64%</cell>
+    </row>
+  </table>
+  <table rows="5" cols="6">
+    <row>
+      <cell col="0" row="0">공사종류</cell>
+      <cell col="1" row="0">대상액 5억원 미만인 경우 적용비율(%)</cell>
+      <cell col="2" row="0">대상액 5억원 이상 50억원 미만인 경우 — 적용비율(%)</cell>
+      <cell col="3" row="0">대상액 5억원 이상 50억원 미만인 경우 — 기초액(원)</cell>
+      <cell col="4" row="0">대상액 50억원 이상인 경우 적용비율(%)</cell>
+      <cell col="5" row="0">보건관리자 선임대상 건설공사의 적용비율(%)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">건축공사</cell>
+      <cell col="1" row="1">3.11</cell>
+      <cell col="2" row="1">2.28</cell>
+      <cell col="3" row="1">4,325,000</cell>
+      <cell col="4" row="1">2.37</cell>
+      <cell col="5" row="1">2.64</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">토목공사</cell>
+      <cell col="1" row="2">3.15</cell>
+      <cell col="2" row="2">2.53</cell>
+      <cell col="3" row="2">3,300,000</cell>
+      <cell col="4" row="2">2.60</cell>
+      <cell col="5" row="2">2.73</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">중건설공사</cell>
+      <cell col="1" row="3">3.64</cell>
+      <cell col="2" row="3">3.05</cell>
+      <cell col="3" row="3">2,975,000</cell>
+      <cell col="4" row="3">3.11</cell>
+      <cell col="5" row="3">3.39</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">특수건설공사</cell>
+      <cell col="1" row="4">2.07</cell>
+      <cell col="2" row="4">1.59</cell>
+      <cell col="3" row="4">2,450,000</cell>
+      <cell col="4" row="4">1.64</cell>
+      <cell col="5" row="4">1.78</cell>
+    </row>
+  </table>
+  <table rows="8" cols="5">
+    <row>
+      <cell col="0" row="0">위험등급</cell>
+      <cell col="1" row="0">현장작업 환경</cell>
+      <cell col="2" row="0">핵심 위험</cell>
+      <cell col="3" row="0">가산율(%)</cell>
+      <cell col="4" row="0">가산율의 근거</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">Ⅰ (일반)</cell>
+      <cell col="1" row="1">도심·주거 및 일반 개활지</cell>
+      <cell col="2" row="1">보행자·차량 혼재, 장비 전도</cell>
+      <cell col="3" row="1">0</cell>
+      <cell col="4" row="1">기준 요율(특수건설공사 요율)을 그대로 적용한다</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">Ⅱ (주의)</cell>
+      <cell col="1" row="2">건설·산업시설 환경</cell>
+      <cell col="2" row="2">중장비 협착, 추락, 개구부</cell>
+      <cell col="3" row="2">45</cell>
+      <cell col="4" row="2">고시의 건축공사 요율이 기준 요율보다 45퍼센트 높은 것에 준한다</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">Ⅱ (주의)</cell>
+      <cell col="1" row="3">무인비행장치 운용 환경</cell>
+      <cell col="2" row="3">기체 추락, 제3자 피해, 비행 규제</cell>
+      <cell col="3" row="3">45</cell>
+      <cell col="4" row="3">고시의 건축공사 요율이 기준 요율보다 45퍼센트 높은 것에 준한다</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">Ⅲ (경계)</cell>
+      <cell col="1" row="4">도로·교통 인접 환경</cell>
+      <cell col="2" row="4">주행차량 침범, 이차사고</cell>
+      <cell col="3" row="4">60</cell>
+      <cell col="4" row="4">고시의 토목공사 요율이 기준 요율보다 59퍼센트 높은 것에 준한다</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">Ⅲ (경계)</cell>
+      <cell col="1" row="5">산악·급경사 및 원격지</cell>
+      <cell col="2" row="5">추락·낙석, 구조 지연, 통신 두절</cell>
+      <cell col="3" row="5">60</cell>
+      <cell col="4" row="5">고시의 토목공사 요율이 기준 요율보다 59퍼센트 높은 것에 준한다</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">Ⅲ (경계)</cell>
+      <cell col="1" row="6">하천·수변 환경</cell>
+      <cell col="2" row="6">익수, 급격한 수위 변화</cell>
+      <cell col="3" row="6">60</cell>
+      <cell col="4" row="6">고시의 토목공사 요율이 기준 요율보다 59퍼센트 높은 것에 준한다</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">Ⅳ (위험)</cell>
+      <cell col="1" row="7">지하·밀폐공간 환경</cell>
+      <cell col="2" row="7">산소결핍, 유해가스, 구조 곤란</cell>
+      <cell col="3" row="7">90</cell>
+      <cell col="4" row="7">고시의 중건설공사(터널신설공사 등) 요율이 기준 요율보다 90퍼센트 높은 것에 준한다</cell>
+    </row>
+  </table>
+</annex>

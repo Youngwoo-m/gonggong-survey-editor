@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지4" gubun="별지" no="4" title="안전관리비 사용내역서" source="data/annex/gen/work/별지4.hwpx">
+  <table rows="7" cols="7">
+    <row>
+      <cell col="0" row="0">용도 구분 (제1호부터 제9호까지)</cell>
+      <cell col="1" row="0">세부 항목</cell>
+      <cell col="2" row="0">규격ㆍ수량ㆍ단가</cell>
+      <cell col="3" row="0">사용 금액</cell>
+      <cell col="4" row="0">사용 시기</cell>
+      <cell col="5" row="0">사용 구간ㆍ작업</cell>
+      <cell col="6" row="0">증빙의 종류와 번호</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">1호</cell>
+      <cell col="1" row="1">감시인 인건비</cell>
+      <cell col="2" row="1">2명 × 42일 × 000,000원</cell>
+      <cell col="3" row="1">0,000,000원</cell>
+      <cell col="4" row="1">2026-04-06~06-30</cell>
+      <cell col="5" row="1">구간 A 도로 탐사</cell>
+      <cell col="6" row="1">노무비 대장 및 이체증 No.12</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">2호</cell>
+      <cell col="1" row="2">안전모ㆍ안전조끼</cell>
+      <cell col="2" row="2">15조 × 00,000원</cell>
+      <cell col="3" row="2">000,000원</cell>
+      <cell col="4" row="2">2026-03-20</cell>
+      <cell col="5" row="2">전 구간</cell>
+      <cell col="6" row="2">거래명세서 No.3</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">3호</cell>
+      <cell col="1" row="3">라바콘ㆍ차선규제봉</cell>
+      <cell col="2" row="3">120개 × 0,000원</cell>
+      <cell col="3" row="3">000,000원</cell>
+      <cell col="4" row="3">2026-04-01</cell>
+      <cell col="5" row="3">구간 A</cell>
+      <cell col="6" row="3">세금계산서 No.7</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">4호</cell>
+      <cell col="1" row="4">가스농도측정기 임차ㆍ검교정</cell>
+      <cell col="2" row="4">2대 × 21일</cell>
+      <cell col="3" row="4">0,000,000원</cell>
+      <cell col="4" row="4">2026-05-11~05-31</cell>
+      <cell col="5" row="4">구간 B 맨홀 내부</cell>
+      <cell col="6" row="4">임차계약서 No.9, 검교정 성적서 No.9-1</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">5호</cell>
+      <cell col="1" row="5">밀폐공간 안전교육</cell>
+      <cell col="2" row="5">15명 × 4시간</cell>
+      <cell col="3" row="5">000,000원</cell>
+      <cell col="4" row="5">2026-05-08</cell>
+      <cell col="5" row="5">전 구간</cell>
+      <cell col="6" row="5">교육 이수증 15부</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">8호</cell>
+      <cell col="1" row="6">위험성평가 작성</cell>
+      <cell col="2" row="6">1식</cell>
+      <cell col="3" row="6">000,000원</cell>
+      <cell col="4" row="6">2026-03-25</cell>
+      <cell col="5" row="6">전 구간</cell>
+      <cell col="6" row="6">용역 계약서 No.2</cell>
+    </row>
+  </table>
+</annex>

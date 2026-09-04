@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표10" gubun="별표" no="10" title="블록 조정 결과표" source="data/annex/gen/draftUav2/별표10.hwpx">
+  <table rows="4" cols="7">
+    <row>
+      <cell col="0" row="0">코스 짝</cell>
+      <cell col="1" row="0">중첩 구간</cell>
+      <cell col="2" row="0">보정 전 수평</cell>
+      <cell col="3" row="0">보정 전 수직</cell>
+      <cell col="4" row="0">보정 후 수평</cell>
+      <cell col="5" row="0">보정 후 수직</cell>
+      <cell col="6" row="0">판정</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">C-01/C-02</cell>
+      <cell col="1" row="1">0.9㎞</cell>
+      <cell col="2" row="1">0.000 m</cell>
+      <cell col="3" row="1">0.000 m</cell>
+      <cell col="4" row="1">0.000 m</cell>
+      <cell col="5" row="1">0.000 m</cell>
+      <cell col="6" row="1">적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">C-02/C-03</cell>
+      <cell col="1" row="2">1.1㎞</cell>
+      <cell col="2" row="2">0.000 m</cell>
+      <cell col="3" row="2">0.000 m</cell>
+      <cell col="4" row="2">0.000 m</cell>
+      <cell col="5" row="2">0.000 m</cell>
+      <cell col="6" row="2">적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">C-05/C-06</cell>
+      <cell col="1" row="3">0.7㎞</cell>
+      <cell col="2" row="3">0.000 m</cell>
+      <cell col="3" row="3">0.000 m</cell>
+      <cell col="4" row="3">0.000 m</cell>
+      <cell col="5" row="3">0.000 m</cell>
+      <cell col="6" row="3">적합</cell>
+    </row>
+  </table>
+  <table rows="4" cols="5">
+    <row>
+      <cell col="0" row="0">항목</cell>
+      <cell col="1" row="0">잰 값</cell>
+      <cell col="2" row="0">요구 기준</cell>
+      <cell col="3" row="0">근거</cell>
+      <cell col="4" row="0">판정</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">검사점 수평 어긋남</cell>
+      <cell col="1" row="1">RMSE 0.000 m</cell>
+      <cell col="2" row="1">최대 0.000 m</cell>
+      <cell col="3" row="1">제11조제5항이 가리키는 규정과 작업계획서가 정한 값</cell>
+      <cell col="4" row="1">적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">검사점 수직 어긋남</cell>
+      <cell col="1" row="2">RMSE 0.000 m</cell>
+      <cell col="2" row="2">최대 0.000 m</cell>
+      <cell col="3" row="2">같은 근거</cell>
+      <cell col="4" row="2">적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">기준점 잔차</cell>
+      <cell col="1" row="3">−</cell>
+      <cell col="2" row="3">최대 0.000 m</cell>
+      <cell col="3" row="3">같은 근거</cell>
+      <cell col="4" row="3">적합</cell>
+    </row>
+  </table>
+</annex>

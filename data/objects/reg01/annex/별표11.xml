@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표11" gubun="별표" no="11" title="기지점 성과 점검표" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296137">
-  <text>[ 별표 11 ]
-기지점 성과 점검표</text>
+<annex id="별표11" gubun="별표" no="29" title="기지점 성과 점검표" source="data/annex/원본/work/[별표 11] 기지점 성과 점검표.hwpx">
   <table rows="12" cols="10">
     <row>
       <cell col="0" row="0" colspan="10">기지점 성과 점검표 (높이정확도 3cm)</cell>
@@ -98,9 +96,7 @@
       <cell col="9" row="10"></cell>
     </row>
     <row>
-      <cell col="0" row="11" colspan="10">＊ 교차 : 1일차와 2일차 차이가 2cm 이내일 경우 O, 2cm 이상일 경우 X
-＊ 고시성과 차이가 5cm 이내일 경우 O, 5cm 이상일 경우 X
-＊ 최종적으로 교차와 고시성과 차이가 둘다 만족하는 경우 O</cell>
+      <cell col="0" row="11" colspan="10">＊ 교차 : 1일차와 2일차 차이가 2cm 이내일 경우 O, 2cm 이상일 경우 X＊ 고시성과 차이가 5cm 이내일 경우 O, 5cm 이상일 경우 X＊ 최종적으로 교차와 고시성과 차이가 둘다 만족하는 경우 O</cell>
     </row>
   </table>
 </annex>

@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표8" gubun="별표" no="8" title="지도 등의 수정간행 지형ㆍ지물변동사항" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151295201">
-  <text>[별표 8]
-지도 등의 수정간행 지형ㆍ지물변동사항</text>
+<annex id="별표8" gubun="별표" no="12" title="지도 등의 수정간행 지형ㆍ지물변동사항" source="data/annex/원본/review/[별표 8] 지도 등의 수정간행 지형ㆍ지물변동사항.hwpx">
   <table rows="3" cols="8">
     <row>
-      <cell col="0" row="0" colspan="8">년   월   일
-수신                                               발신       인
-심사필번호
-제목 지도수정간행 지형ㆍ지물변동사항</cell>
+      <cell col="0" row="0" colspan="8">년 월 일수신 발신 인심사필번호제목 지도수정간행 지형ㆍ지물변동사항</cell>
     </row>
     <row>
       <cell col="0" row="1">일련번호</cell>
       <cell col="1" row="1">도엽명</cell>
-      <cell col="2" row="1">소재지
-(행정구역)</cell>
+      <cell col="2" row="1">소재지(행정구역)</cell>
       <cell col="3" row="1">직각좌표</cell>
       <cell col="4" row="1">변경대상</cell>
       <cell col="5" row="1">변경전</cell>
@@ -31,5 +25,4 @@
       <cell col="7" row="2"></cell>
     </row>
   </table>
-  <text>* 별표 5의 지도 등의 간행심사 사항에 한하여 변동사항 기록</text>
 </annex>

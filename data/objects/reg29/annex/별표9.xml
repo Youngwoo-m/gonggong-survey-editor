@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표9" gubun="별표" no="9" title="성과심사수수료 명세서" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151295215">
-  <text>[별표 9]
-성과심사수수료 명세서
-공공측량명 :</text>
+<annex id="별표9" gubun="별표" no="13" title="성과심사수수료 명세서" source="data/annex/원본/review/[별표 9] 성과심사수수료 명세서.hwpx">
   <table rows="29" cols="9">
     <row>
       <cell col="0" row="0" colspan="3">심 사 내 용</cell>
@@ -14,10 +11,8 @@
       <cell col="8" row="0">비고</cell>
     </row>
     <row>
-      <cell col="0" row="1" colspan="2" rowspan="2">공공
-기준점</cell>
-      <cell col="2" row="1">공공
-삼각점</cell>
+      <cell col="0" row="1" colspan="2" rowspan="2">공공기준점</cell>
+      <cell col="2" row="1">공공삼각점</cell>
       <cell col="3" row="1">점</cell>
       <cell col="4" row="1"></cell>
       <cell col="5" row="1"></cell>
@@ -26,8 +21,7 @@
       <cell col="8" row="1"></cell>
     </row>
     <row>
-      <cell col="2" row="2">공공
-수준점</cell>
+      <cell col="2" row="2">공공수준점</cell>
       <cell col="3" row="2">km</cell>
       <cell col="4" row="2"></cell>
       <cell col="5" row="2"></cell>
@@ -126,8 +120,7 @@
       <cell col="8" row="12"></cell>
     </row>
     <row>
-      <cell col="0" row="13" rowspan="2">수치
-지도</cell>
+      <cell col="0" row="13" rowspan="2">수치지도</cell>
       <cell col="1" row="13" colspan="2">정위치 편집</cell>
       <cell col="3" row="13">도엽</cell>
       <cell col="4" row="13"></cell>
@@ -166,7 +159,7 @@
       <cell col="8" row="17"></cell>
     </row>
     <row>
-      <cell col="4" row="18" colspan="3">소   계</cell>
+      <cell col="4" row="18" colspan="3">소 계</cell>
       <cell col="7" row="18"></cell>
       <cell col="8" row="18"></cell>
     </row>
@@ -197,7 +190,7 @@
       <cell col="8" row="23"></cell>
     </row>
     <row>
-      <cell col="4" row="24" colspan="3">소   계</cell>
+      <cell col="4" row="24" colspan="3">소 계</cell>
       <cell col="7" row="24"></cell>
       <cell col="8" row="24"></cell>
     </row>
@@ -207,18 +200,17 @@
       <cell col="8" row="25"></cell>
     </row>
     <row>
-      <cell col="0" row="26" colspan="7">부  가  세 (10%)</cell>
+      <cell col="0" row="26" colspan="7">부 가 세 (10%)</cell>
       <cell col="7" row="26"></cell>
       <cell col="8" row="26"></cell>
     </row>
     <row>
-      <cell col="0" row="27" colspan="7">합     계</cell>
+      <cell col="0" row="27" colspan="7">합 계</cell>
       <cell col="7" row="27"></cell>
       <cell col="8" row="27"></cell>
     </row>
     <row>
-      <cell col="0" row="28" colspan="9">작 성 년 월 일        년    월    일</cell>
+      <cell col="0" row="28" colspan="9">작 성 년 월 일 년 월 일</cell>
     </row>
   </table>
-  <text>※ 현지 여비는 측량용역대가의 기준에 의한다.</text>
 </annex>

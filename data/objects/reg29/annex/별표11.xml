@@ -1,152 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표11" gubun="별표" no="11" title="공공측량성과심사 관리대장" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151295235">
-  <text>[별표 11]
-공공측량성과심사 관리대장</text>
+<annex id="별표11" gubun="별표" no="16" title="공공측량성과심사 관리대장" source="data/annex/원본/review/[별표 11] 공공측량성과심사 관리대장.hwpx">
   <table rows="5" cols="27">
     <row>
-      <cell col="0" row="0" rowspan="3">접
-수
-번
-호</cell>
-      <cell col="1" row="0" rowspan="3">접
-수
-일
-자</cell>
-      <cell col="2" row="0" rowspan="3">공
-공
-측
-량
-시
-행
-자</cell>
-      <cell col="3" row="0" rowspan="3">공
-공
-측
-량
-수
-행
-자</cell>
-      <cell col="4" row="0" rowspan="3">사
-업
-명
-또
-는
-측
-량
-목
-적</cell>
+      <cell col="0" row="0" rowspan="3">접수번호</cell>
+      <cell col="1" row="0" rowspan="3">접수일자</cell>
+      <cell col="2" row="0" rowspan="3">공공측량시행자</cell>
+      <cell col="3" row="0" rowspan="3">공공측량수행자</cell>
+      <cell col="4" row="0" rowspan="3">사업명또는측량목적</cell>
       <cell col="5" row="0" colspan="16">공 공 측 량 성 과 심 사 내 역</cell>
-      <cell col="21" row="0" rowspan="3">측
-량
-용
-역
-계
-약
-금
-액</cell>
-      <cell col="22" row="0" colspan="2">심사
-수수료</cell>
+      <cell col="21" row="0" rowspan="3">측량용역계약금액</cell>
+      <cell col="22" row="0" colspan="2">심사수수료</cell>
       <cell col="24" row="0" colspan="3">심사결과</cell>
     </row>
     <row>
-      <cell col="5" row="1" rowspan="2">구
-분</cell>
-      <cell col="6" row="1" colspan="2">공공
-기준점</cell>
-      <cell col="8" row="1" rowspan="2">사
-진
-기
-준
-점</cell>
-      <cell col="9" row="1" rowspan="2">지
-형
-현
-황
-도</cell>
-      <cell col="10" row="1" rowspan="2">항
-공
-사
-진</cell>
-      <cell col="11" row="1" rowspan="2">공
-간
-영
-상
-도
-화</cell>
-      <cell col="12" row="1" rowspan="2">수
-치
-지
-도</cell>
-      <cell col="13" row="1" rowspan="2">지
-하
-도
-로
-시
-설
-물
-도</cell>
-      <cell col="14" row="1" rowspan="2">영
-상
-지
-도</cell>
-      <cell col="15" row="1" rowspan="2">수
-치
-표
-고
-자
-료</cell>
-      <cell col="16" row="1" rowspan="2">수
-치
-주
-제
-도</cell>
-      <cell col="17" row="1" rowspan="2">3
-차
-원
-공
-간
-정
-보</cell>
-      <cell col="18" row="1" rowspan="2">실
-내
-공
-간
-정
-보</cell>
-      <cell col="19" row="1" rowspan="2">좌
-표
-계
-변
-환</cell>
-      <cell col="20" row="1" rowspan="2">수
-심
-측
-량</cell>
-      <cell col="22" row="1" rowspan="2">금
-액</cell>
-      <cell col="23" row="1">고
-지
-일</cell>
-      <cell col="24" row="1" rowspan="2">적
-정
-여
-부</cell>
-      <cell col="25" row="1">완
-료
-일</cell>
-      <cell col="26" row="1" rowspan="2">심
-사
-자</cell>
+      <cell col="5" row="1" rowspan="2">구분</cell>
+      <cell col="6" row="1" colspan="2">공공기준점</cell>
+      <cell col="8" row="1" rowspan="2">사진기준점</cell>
+      <cell col="9" row="1" rowspan="2">지형현황도</cell>
+      <cell col="10" row="1" rowspan="2">항공사진</cell>
+      <cell col="11" row="1" rowspan="2">공간영상도화</cell>
+      <cell col="12" row="1" rowspan="2">수치지도</cell>
+      <cell col="13" row="1" rowspan="2">지하도로시설물도</cell>
+      <cell col="14" row="1" rowspan="2">영상지도</cell>
+      <cell col="15" row="1" rowspan="2">수치표고자료</cell>
+      <cell col="16" row="1" rowspan="2">수치주제도</cell>
+      <cell col="17" row="1" rowspan="2">3차원공간정보</cell>
+      <cell col="18" row="1" rowspan="2">실내공간정보</cell>
+      <cell col="19" row="1" rowspan="2">좌표계변환</cell>
+      <cell col="20" row="1" rowspan="2">수심측량</cell>
+      <cell col="22" row="1" rowspan="2">금액</cell>
+      <cell col="23" row="1">고지일</cell>
+      <cell col="24" row="1" rowspan="2">적정여부</cell>
+      <cell col="25" row="1">완료일</cell>
+      <cell col="26" row="1" rowspan="2">심사자</cell>
     </row>
     <row>
       <cell col="6" row="2">공공삼각점</cell>
       <cell col="7" row="2">공공수준점</cell>
-      <cell col="23" row="2">징
-수
-일</cell>
-      <cell col="25" row="2">보
-고
-일</cell>
+      <cell col="23" row="2">징수일</cell>
+      <cell col="25" row="2">보고일</cell>
     </row>
     <row>
       <cell col="0" row="3" rowspan="2"></cell>
@@ -154,10 +46,7 @@
       <cell col="2" row="3" rowspan="2"></cell>
       <cell col="3" row="3" rowspan="2"></cell>
       <cell col="4" row="3" rowspan="2"></cell>
-      <cell col="5" row="3">실
-내
-심
-사</cell>
+      <cell col="5" row="3">실내심사</cell>
       <cell col="6" row="3"></cell>
       <cell col="7" row="3"></cell>
       <cell col="8" row="3"></cell>
@@ -181,10 +70,7 @@
       <cell col="26" row="3" rowspan="2"></cell>
     </row>
     <row>
-      <cell col="5" row="4">현
-지
-심
-사</cell>
+      <cell col="5" row="4">현지심사</cell>
       <cell col="6" row="4"></cell>
       <cell col="7" row="4"></cell>
       <cell col="8" row="4"></cell>
@@ -204,5 +90,4 @@
       <cell col="25" row="4"></cell>
     </row>
   </table>
-  <text>※ 측량용역금액을 확인할 수 없을 때에는 생략할 수 있음</text>
 </annex>

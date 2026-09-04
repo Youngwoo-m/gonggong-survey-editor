@@ -1,196 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표4" gubun="별표" no="4" title="촬영코스별 검사표" source="[별표 4] 촬영코스별 검사표(무인비행장치 측량 작업규정).hwp">
-  <text>[별표 4] 촬영코스별 검사표</text>
-  <table rows="20" cols="20">
+<annex id="별표4" gubun="별표" no="4" title="촬영코스별 검사표" source="data/annex/form/uav/별표4.hwpx">
+  <table rows="2" cols="6">
     <row>
       <cell col="0" row="0">사업명</cell>
-      <cell col="1" row="0" colspan="8"></cell>
-      <cell col="9" row="0" colspan="2">촬영
-지구</cell>
-      <cell col="11" row="0" colspan="4"></cell>
-      <cell col="15" row="0" colspan="3">작성자</cell>
-      <cell col="18" row="0" colspan="2"></cell>
+      <cell col="1" row="0">촬영지구</cell>
+      <cell col="2" row="0">작성자</cell>
+      <cell col="3" row="0">촬영일자</cell>
+      <cell col="4" row="0">기체명</cell>
+      <cell col="5" row="0">센서구성</cell>
     </row>
     <row>
-      <cell col="0" row="1">촬영일자</cell>
-      <cell col="1" row="1" colspan="3">20  년  월  일</cell>
-      <cell col="4" row="1" colspan="2">촬영
-코스 수</cell>
-      <cell col="6" row="1" colspan="3">코스</cell>
-      <cell col="9" row="1" colspan="2">기체명</cell>
-      <cell col="11" row="1" colspan="4"></cell>
-      <cell col="15" row="1" colspan="4">카메라</cell>
-      <cell col="19" row="1"></cell>
+      <cell col="0" row="1"></cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1"></cell>
+      <cell col="4" row="1"></cell>
+      <cell col="5" row="1">광학영상, 레이저측량, GNSS/INS 등</cell>
+    </row>
+  </table>
+  <table rows="4" cols="13">
+    <row>
+      <cell col="0" row="0">촬영코스번호</cell>
+      <cell col="1" row="0">촬영코스방향</cell>
+      <cell col="2" row="0">계획고도(m)</cell>
+      <cell col="3" row="0">실제고도(m)</cell>
+      <cell col="4" row="0">계획GSD(cm)</cell>
+      <cell col="5" row="0">실제GSD(cm)</cell>
+      <cell col="6" row="0">진행방향 중복도(%)</cell>
+      <cell col="7" row="0">인접촬영코스 중복도(%)</cell>
+      <cell col="8" row="0">영상매수</cell>
+      <cell col="9" row="0">불량영상매수</cell>
+      <cell col="10" row="0">레이저측량 점군밀도(pts/㎡)</cell>
+      <cell col="11" row="0">스캔누락</cell>
+      <cell col="12" row="0">조치</cell>
     </row>
     <row>
-      <cell col="0" row="2" rowspan="2">촬영 해상도
-(GSD)</cell>
-      <cell col="1" row="2">계 획</cell>
-      <cell col="2" row="2" colspan="3">cm</cell>
-      <cell col="5" row="2" colspan="2" rowspan="2">비 행
-고 도</cell>
-      <cell col="7" row="2" colspan="6">계  획</cell>
-      <cell col="13" row="2" colspan="7">m</cell>
+      <cell col="0" row="1"></cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1"></cell>
+      <cell col="4" row="1"></cell>
+      <cell col="5" row="1"></cell>
+      <cell col="6" row="1"></cell>
+      <cell col="7" row="1"></cell>
+      <cell col="8" row="1"></cell>
+      <cell col="9" row="1"></cell>
+      <cell col="10" row="1"></cell>
+      <cell col="11" row="1">있음 또는 없음</cell>
+      <cell col="12" row="1">재촬영, 재스캔, 적합 등</cell>
     </row>
     <row>
-      <cell col="1" row="3">실 시</cell>
-      <cell col="2" row="3" colspan="3">cm</cell>
-      <cell col="7" row="3" colspan="6">실  시</cell>
-      <cell col="13" row="3" colspan="7">m</cell>
+      <cell col="0" row="2"></cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2"></cell>
+      <cell col="3" row="2"></cell>
+      <cell col="4" row="2"></cell>
+      <cell col="5" row="2"></cell>
+      <cell col="6" row="2"></cell>
+      <cell col="7" row="2"></cell>
+      <cell col="8" row="2"></cell>
+      <cell col="9" row="2"></cell>
+      <cell col="10" row="2"></cell>
+      <cell col="11" row="2"></cell>
+      <cell col="12" row="2"></cell>
     </row>
     <row>
-      <cell col="0" row="4" rowspan="2">촬 영
-시 간</cell>
-      <cell col="1" row="4">시 작</cell>
-      <cell col="2" row="4" colspan="3">시    분</cell>
-      <cell col="5" row="4" colspan="2" rowspan="2">진행방향
-중복도
-(O.L)</cell>
-      <cell col="7" row="4" colspan="5" rowspan="2">%</cell>
-      <cell col="12" row="4" colspan="4" rowspan="2">촬영선
-중복도
-(S.L)</cell>
-      <cell col="16" row="4" colspan="4" rowspan="2">%</cell>
+      <cell col="0" row="3"></cell>
+      <cell col="1" row="3"></cell>
+      <cell col="2" row="3"></cell>
+      <cell col="3" row="3"></cell>
+      <cell col="4" row="3"></cell>
+      <cell col="5" row="3"></cell>
+      <cell col="6" row="3"></cell>
+      <cell col="7" row="3"></cell>
+      <cell col="8" row="3"></cell>
+      <cell col="9" row="3"></cell>
+      <cell col="10" row="3"></cell>
+      <cell col="11" row="3"></cell>
+      <cell col="12" row="3"></cell>
+    </row>
+  </table>
+  <table rows="20" cols="3">
+    <row>
+      <cell col="0" row="0">불량 유형</cell>
+      <cell col="1" row="0">확인 항목</cell>
+      <cell col="2" row="0">판정</cell>
     </row>
     <row>
-      <cell col="1" row="5">종 료</cell>
-      <cell col="2" row="5" colspan="3">시    분</cell>
+      <cell col="0" row="1" rowspan="6">영상 품질</cell>
+      <cell col="1" row="1">블러</cell>
+      <cell col="2" row="1">적합 또는 보완</cell>
     </row>
     <row>
-      <cell col="0" row="6" rowspan="2">코스
-번호</cell>
-      <cell col="1" row="6" colspan="2" rowspan="2">코스별 
-영상 매수</cell>
-      <cell col="3" row="6" colspan="2" rowspan="2">코스별 불량
-영상 매수</cell>
-      <cell col="5" row="6" colspan="15">코스별 불량영상</cell>
+      <cell col="1" row="2">노출과다</cell>
+      <cell col="2" row="2">적합 또는 보완</cell>
     </row>
     <row>
-      <cell col="5" row="7" colspan="3">불량영상번호</cell>
-      <cell col="8" row="7" colspan="2">보안지역 처리</cell>
-      <cell col="10" row="7" colspan="4">Blurring</cell>
-      <cell col="14" row="7" colspan="3">판독 불가</cell>
-      <cell col="17" row="7" colspan="3">기 타</cell>
+      <cell col="1" row="3">노출과소</cell>
+      <cell col="2" row="3">적합 또는 보완</cell>
     </row>
     <row>
-      <cell col="0" row="8"></cell>
-      <cell col="1" row="8" colspan="2"></cell>
-      <cell col="3" row="8" colspan="2"></cell>
-      <cell col="5" row="8" colspan="3"></cell>
-      <cell col="8" row="8" colspan="2"></cell>
-      <cell col="10" row="8" colspan="4"></cell>
-      <cell col="14" row="8" colspan="3"></cell>
-      <cell col="17" row="8" colspan="3"></cell>
+      <cell col="1" row="4">그림자</cell>
+      <cell col="2" row="4">적합 또는 보완</cell>
     </row>
     <row>
-      <cell col="0" row="9"></cell>
-      <cell col="1" row="9" colspan="2"></cell>
-      <cell col="3" row="9" colspan="2"></cell>
-      <cell col="5" row="9" colspan="3"></cell>
-      <cell col="8" row="9" colspan="2"></cell>
-      <cell col="10" row="9" colspan="4"></cell>
-      <cell col="14" row="9" colspan="3"></cell>
-      <cell col="17" row="9" colspan="3"></cell>
+      <cell col="1" row="5">구름</cell>
+      <cell col="2" row="5">적합 또는 보완</cell>
     </row>
     <row>
-      <cell col="0" row="10"></cell>
-      <cell col="1" row="10" colspan="2"></cell>
-      <cell col="3" row="10" colspan="2"></cell>
-      <cell col="5" row="10" colspan="3"></cell>
-      <cell col="8" row="10" colspan="2"></cell>
-      <cell col="10" row="10" colspan="4"></cell>
-      <cell col="14" row="10" colspan="3"></cell>
-      <cell col="17" row="10" colspan="3"></cell>
+      <cell col="1" row="6">판독불가</cell>
+      <cell col="2" row="6">적합 또는 보완</cell>
     </row>
     <row>
-      <cell col="0" row="11"></cell>
-      <cell col="1" row="11" colspan="2"></cell>
-      <cell col="3" row="11" colspan="2"></cell>
-      <cell col="5" row="11" colspan="3"></cell>
-      <cell col="8" row="11" colspan="2"></cell>
-      <cell col="10" row="11" colspan="4"></cell>
-      <cell col="14" row="11" colspan="3"></cell>
-      <cell col="17" row="11" colspan="3"></cell>
+      <cell col="0" row="7" rowspan="4">촬영 코스 품질</cell>
+      <cell col="1" row="7">중복도 부족</cell>
+      <cell col="2" row="7">적합 또는 보완</cell>
     </row>
     <row>
-      <cell col="0" row="12"></cell>
-      <cell col="1" row="12" colspan="2"></cell>
-      <cell col="3" row="12" colspan="2"></cell>
-      <cell col="5" row="12" colspan="3"></cell>
-      <cell col="8" row="12" colspan="2"></cell>
-      <cell col="10" row="12" colspan="4"></cell>
-      <cell col="14" row="12" colspan="3"></cell>
-      <cell col="17" row="12" colspan="3"></cell>
+      <cell col="1" row="8">코스 이탈</cell>
+      <cell col="2" row="8">적합 또는 보완</cell>
     </row>
     <row>
-      <cell col="0" row="13"></cell>
-      <cell col="1" row="13" colspan="2"></cell>
-      <cell col="3" row="13" colspan="2"></cell>
-      <cell col="5" row="13" colspan="3"></cell>
-      <cell col="8" row="13" colspan="2"></cell>
-      <cell col="10" row="13" colspan="4"></cell>
-      <cell col="14" row="13" colspan="3"></cell>
-      <cell col="17" row="13" colspan="3"></cell>
+      <cell col="1" row="9">누락구간</cell>
+      <cell col="2" row="9">적합 또는 보완</cell>
     </row>
     <row>
-      <cell col="0" row="14"></cell>
-      <cell col="1" row="14" colspan="2"></cell>
-      <cell col="3" row="14" colspan="2"></cell>
-      <cell col="5" row="14" colspan="3"></cell>
-      <cell col="8" row="14" colspan="2"></cell>
-      <cell col="10" row="14" colspan="4"></cell>
-      <cell col="14" row="14" colspan="3"></cell>
-      <cell col="17" row="14" colspan="3"></cell>
+      <cell col="1" row="10">고도변동</cell>
+      <cell col="2" row="10">적합 또는 보완</cell>
     </row>
     <row>
-      <cell col="0" row="15"></cell>
-      <cell col="1" row="15" colspan="2"></cell>
-      <cell col="3" row="15" colspan="2"></cell>
-      <cell col="5" row="15" colspan="3"></cell>
-      <cell col="8" row="15" colspan="2"></cell>
-      <cell col="10" row="15" colspan="4"></cell>
-      <cell col="14" row="15" colspan="3"></cell>
-      <cell col="17" row="15" colspan="3"></cell>
+      <cell col="0" row="11" rowspan="4">레이저측량 취득 품질</cell>
+      <cell col="1" row="11">점군밀도 부족</cell>
+      <cell col="2" row="11">적합 또는 보완</cell>
     </row>
     <row>
-      <cell col="0" row="16"></cell>
-      <cell col="1" row="16" colspan="2"></cell>
-      <cell col="3" row="16" colspan="2"></cell>
-      <cell col="5" row="16" colspan="3"></cell>
-      <cell col="8" row="16" colspan="2"></cell>
-      <cell col="10" row="16" colspan="4"></cell>
-      <cell col="14" row="16" colspan="3"></cell>
-      <cell col="17" row="16" colspan="3"></cell>
+      <cell col="1" row="12">스캔 공백</cell>
+      <cell col="2" row="12">적합 또는 보완</cell>
     </row>
     <row>
-      <cell col="0" row="17"></cell>
-      <cell col="1" row="17" colspan="2"></cell>
-      <cell col="3" row="17" colspan="2"></cell>
-      <cell col="5" row="17" colspan="3"></cell>
-      <cell col="8" row="17" colspan="2"></cell>
-      <cell col="10" row="17" colspan="4"></cell>
-      <cell col="14" row="17" colspan="3"></cell>
-      <cell col="17" row="17" colspan="3"></cell>
+      <cell col="1" row="13">과도한 노이즈</cell>
+      <cell col="2" row="13">적합 또는 보완</cell>
     </row>
     <row>
-      <cell col="0" row="18"></cell>
-      <cell col="1" row="18" colspan="2"></cell>
-      <cell col="3" row="18" colspan="2"></cell>
-      <cell col="5" row="18" colspan="3"></cell>
-      <cell col="8" row="18" colspan="2"></cell>
-      <cell col="10" row="18" colspan="4"></cell>
-      <cell col="14" row="18" colspan="3"></cell>
-      <cell col="17" row="18" colspan="3"></cell>
+      <cell col="1" row="14">촬영 코스 간 불일치</cell>
+      <cell col="2" row="14">적합 또는 보완</cell>
     </row>
     <row>
-      <cell col="0" row="19"></cell>
-      <cell col="1" row="19" colspan="2"></cell>
-      <cell col="3" row="19" colspan="2"></cell>
-      <cell col="5" row="19" colspan="3"></cell>
-      <cell col="8" row="19" colspan="2"></cell>
-      <cell col="10" row="19" colspan="4"></cell>
-      <cell col="14" row="19" colspan="3"></cell>
-      <cell col="17" row="19" colspan="3"></cell>
+      <cell col="0" row="15" rowspan="4">GNSS/INS 품질</cell>
+      <cell col="1" row="15">Fix 저하</cell>
+      <cell col="2" row="15">적합 또는 보완</cell>
+    </row>
+    <row>
+      <cell col="1" row="16">DOP 불량</cell>
+      <cell col="2" row="16">적합 또는 보완</cell>
+    </row>
+    <row>
+      <cell col="1" row="17">시간동기 이상</cell>
+      <cell col="2" row="17">적합 또는 보완</cell>
+    </row>
+    <row>
+      <cell col="1" row="18">궤적 단절</cell>
+      <cell col="2" row="18">적합 또는 보완</cell>
+    </row>
+    <row>
+      <cell col="0" row="19">보안 처리</cell>
+      <cell col="1" row="19">보안지역 포함 여부 및 처리 상태</cell>
+      <cell col="2" row="19">적합 또는 보완</cell>
     </row>
   </table>
 </annex>

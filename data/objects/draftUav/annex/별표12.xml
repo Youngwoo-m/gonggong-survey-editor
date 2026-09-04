@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표12" gubun="별표" no="12" title="점군분류 성과 및 정확도 평가표" source="data/annex/gen/draftUav2/별표12.hwpx">
+  <table rows="9" cols="5">
+    <row>
+      <cell col="0" row="0">코드</cell>
+      <cell col="1" row="0">갈래 이름</cell>
+      <cell col="2" row="0">무엇을 이 갈래로 넣는가</cell>
+      <cell col="3" row="0">점의 수</cell>
+      <cell col="4" row="0">비율</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">2</cell>
+      <cell col="1" row="1">지면</cell>
+      <cell col="2" row="1">지표면으로 판단되는 점</cell>
+      <cell col="3" row="1">000,000,000</cell>
+      <cell col="4" row="1">00.0%</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">3</cell>
+      <cell col="1" row="2">낮은 식생</cell>
+      <cell col="2" row="2">높이 0.0~0.0m</cell>
+      <cell col="3" row="2">000,000,000</cell>
+      <cell col="4" row="2">00.0%</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">5</cell>
+      <cell col="1" row="3">높은 식생</cell>
+      <cell col="2" row="3">높이 0.0m 초과</cell>
+      <cell col="3" row="3">000,000,000</cell>
+      <cell col="4" row="3">00.0%</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">6</cell>
+      <cell col="1" row="4">건물</cell>
+      <cell col="2" row="4">지붕ㆍ벽면</cell>
+      <cell col="3" row="4">000,000,000</cell>
+      <cell col="4" row="4">00.0%</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">9</cell>
+      <cell col="1" row="5">수면</cell>
+      <cell col="2" row="5">하천 수면</cell>
+      <cell col="3" row="5">000,000,000</cell>
+      <cell col="4" row="5">00.0%</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">17</cell>
+      <cell col="1" row="6">교량</cell>
+      <cell col="2" row="6">교량 상판</cell>
+      <cell col="3" row="6">000,000,000</cell>
+      <cell col="4" row="6">00.0%</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">7</cell>
+      <cell col="1" row="7">노이즈</cell>
+      <cell col="2" row="7">공중 이상점ㆍ지하 이상점</cell>
+      <cell col="3" row="7">000,000</cell>
+      <cell col="4" row="7">0.0%</cell>
+    </row>
+    <row>
+      <cell col="0" row="8">1</cell>
+      <cell col="1" row="8">미분류</cell>
+      <cell col="2" row="8">위 갈래에 넣지 못한 점</cell>
+      <cell col="3" row="8">000,000</cell>
+      <cell col="4" row="8">0.0%</cell>
+    </row>
+  </table>
+  <table rows="5" cols="5">
+    <row>
+      <cell col="0" row="0">구역 이름</cell>
+      <cell col="1" row="0">갈래</cell>
+      <cell col="2" row="0">넓이</cell>
+      <cell col="3" row="0">확인 방법</cell>
+      <cell col="4" row="0">확인 결과</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">제방 비탈면 A</cell>
+      <cell col="1" row="1">급경사지</cell>
+      <cell col="2" row="1">0.0㎢</cell>
+      <cell col="3" row="1">단면 20개 육안 확인</cell>
+      <cell col="4" row="1">마루선 깎임 3곳 발견 → 수동편집</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">교량 4개소</cell>
+      <cell col="1" row="2">교량</cell>
+      <cell col="2" row="2">0.0㎢</cell>
+      <cell col="3" row="2">단면 및 평면 확인</cell>
+      <cell col="4" row="2">상판을 지면으로 넣은 것 2곳 → 재분류</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">둔치 식생부</cell>
+      <cell col="1" row="3">산림</cell>
+      <cell col="2" row="3">0.0㎢</cell>
+      <cell col="3" row="3">단면 12개 확인</cell>
+      <cell col="4" row="3">낮은 식생을 지면으로 넣음 → 매개변수 조정</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">제방 도로</cell>
+      <cell col="1" row="4">도심지</cell>
+      <cell col="2" row="4">0.0㎢</cell>
+      <cell col="3" row="4">정사영상과 대조</cell>
+      <cell col="4" row="4">이상 없음</cell>
+    </row>
+  </table>
+  <table rows="4" cols="7">
+    <row>
+      <cell col="0" row="0">갈래</cell>
+      <cell col="1" row="0">표본 수</cell>
+      <cell col="2" row="0">옳게</cell>
+      <cell col="3" row="0">잘못</cell>
+      <cell col="4" row="0">빠뜨림</cell>
+      <cell col="5" row="0">정확도</cell>
+      <cell col="6" row="0">재현율</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">지면</cell>
+      <cell col="1" row="1">000</cell>
+      <cell col="2" row="1">000</cell>
+      <cell col="3" row="1">0</cell>
+      <cell col="4" row="1">0</cell>
+      <cell col="5" row="1">00.0%</cell>
+      <cell col="6" row="1">00.0%</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">식생</cell>
+      <cell col="1" row="2">000</cell>
+      <cell col="2" row="2">000</cell>
+      <cell col="3" row="2">0</cell>
+      <cell col="4" row="2">0</cell>
+      <cell col="5" row="2">00.0%</cell>
+      <cell col="6" row="2">00.0%</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">건물</cell>
+      <cell col="1" row="3">000</cell>
+      <cell col="2" row="3">000</cell>
+      <cell col="3" row="3">0</cell>
+      <cell col="4" row="3">0</cell>
+      <cell col="5" row="3">00.0%</cell>
+      <cell col="6" row="3">00.0%</cell>
+    </row>
+  </table>
+  <table rows="3" cols="5">
+    <row>
+      <cell col="0" row="0">항목</cell>
+      <cell col="1" row="0">잰 값</cell>
+      <cell col="2" row="0">요구 기준</cell>
+      <cell col="3" row="0">근거</cell>
+      <cell col="4" row="0">판정</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">검사점 표고 어긋남</cell>
+      <cell col="1" row="1">RMSE 0.000 m</cell>
+      <cell col="2" row="1">최대 0.000 m</cell>
+      <cell col="3" row="1">제11조제5항이 가리키는 규정과 작업계획서가 정한 값</cell>
+      <cell col="4" row="1">적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">평탄지 지면점 퍼짐</cell>
+      <cell col="1" row="2">0.000 m</cell>
+      <cell col="2" row="2">같은 기준</cell>
+      <cell col="3" row="2">같은 근거</cell>
+      <cell col="4" row="2">적합</cell>
+    </row>
+  </table>
+</annex>

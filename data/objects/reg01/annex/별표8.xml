@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표8" gubun="별표" no="8" title="공공수준점측량관측성과표" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296117">
-  <text>[ 별표 8 ]
-공 공 수 준 점 측 량 관 측 성 과 표
-관측노선번호
-자(自)                                      지(至)</text>
+<annex id="별표8" gubun="별표" no="26" title="공공수준점측량관측성과표" source="data/annex/원본/work/[별표 8] 공공수준점측량관측성과표.hwpx">
   <table rows="45" cols="45">
     <row>
-      <cell col="0" row="0" colspan="19">수    준    차</cell>
+      <cell col="0" row="0" colspan="19">수 준 차</cell>
       <cell col="19" row="0" colspan="10" rowspan="2">관측의 표고</cell>
       <cell col="29" row="0" colspan="5" rowspan="2">보정수</cell>
-      <cell col="34" row="0" colspan="10" rowspan="2">결   과</cell>
+      <cell col="34" row="0" colspan="10" rowspan="2">결 과</cell>
       <cell col="44" row="0" rowspan="2">비고</cell>
     </row>
     <row>
-      <cell col="0" row="1" colspan="10">1  회</cell>
-      <cell col="10" row="1" colspan="5">2  회</cell>
-      <cell col="15" row="1" colspan="4">표 척
-보정수</cell>
+      <cell col="0" row="1" colspan="10">1 회</cell>
+      <cell col="10" row="1" colspan="5">2 회</cell>
+      <cell col="15" row="1" colspan="4">표 척보정수</cell>
     </row>
     <row>
       <cell col="0" row="2" rowspan="2"></cell>
@@ -1308,13 +1303,12 @@
   <table rows="26" cols="24">
     <row>
       <cell col="0" row="0" rowspan="2">관측자</cell>
-      <cell col="1" row="0" rowspan="2">1/50,000
-지  명</cell>
-      <cell col="2" row="0" colspan="3">소  재  지</cell>
+      <cell col="1" row="0" rowspan="2">1/50,000지 명</cell>
+      <cell col="2" row="0" colspan="3">소 재 지</cell>
       <cell col="5" row="0" rowspan="2">표척번호</cell>
       <cell col="6" row="0" rowspan="2">관측월일</cell>
       <cell col="7" row="0" colspan="7" rowspan="2">공공수준점 번호</cell>
-      <cell col="14" row="0" colspan="6" rowspan="2">거  리</cell>
+      <cell col="14" row="0" colspan="6" rowspan="2">거 리</cell>
       <cell col="20" row="0" colspan="4" rowspan="2">측점수</cell>
     </row>
     <row>
@@ -1878,21 +1872,15 @@
       <cell col="23" row="25"></cell>
     </row>
   </table>
-  <text>지반침하조사공공수준점측량성과표(변동계산부)
-관측 기준일      년  월   일</text>
   <table rows="33" cols="7">
     <row>
-      <cell col="0" row="0">지  구</cell>
-      <cell col="1" row="0">노 선 번 호
-공공수준점번호</cell>
-      <cell col="2" row="0">거  리</cell>
-      <cell col="3" row="0">결  과
-I</cell>
-      <cell col="4" row="0">舊년도성과
-II</cell>
-      <cell col="5" row="0">변동량
-I - II</cell>
-      <cell col="6" row="0">비  고</cell>
+      <cell col="0" row="0">지 구</cell>
+      <cell col="1" row="0">노 선 번 호공공수준점번호</cell>
+      <cell col="2" row="0">거 리</cell>
+      <cell col="3" row="0">결 과I</cell>
+      <cell col="4" row="0">舊년도성과II</cell>
+      <cell col="5" row="0">변동량I - II</cell>
+      <cell col="6" row="0">비 고</cell>
     </row>
     <row>
       <cell col="0" row="1" rowspan="32"></cell>

@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표28" gubun="별표" no="28" title="가구점계산 점검부" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296241">
-  <text>[ 별표 28 ]
-가구점계산 점검부</text>
+<annex id="별표28" gubun="별표" no="40" title="가구점계산 점검부" source="data/annex/원본/work/[별표 28] 가구점계산 점검부.hwpx">
   <table rows="33" cols="16">
     <row>
       <cell col="0" row="0" colspan="3">사업지구명</cell>
@@ -11,9 +9,9 @@
     </row>
     <row>
       <cell col="0" row="1" colspan="3">측량자</cell>
-      <cell col="3" row="1" colspan="6">기사    급        (인)</cell>
+      <cell col="3" row="1" colspan="6">기사 급 (인)</cell>
       <cell col="9" row="1" colspan="4">측량일</cell>
-      <cell col="13" row="1" colspan="3">.    .    .</cell>
+      <cell col="13" row="1" colspan="3">. . .</cell>
     </row>
     <row>
       <cell col="0" row="2" colspan="5">기준점 번호(측점)</cell>
@@ -22,16 +20,14 @@
     </row>
     <row>
       <cell col="0" row="3">측점</cell>
-      <cell col="1" row="3">가구
-번호</cell>
+      <cell col="1" row="3">가구번호</cell>
       <cell col="2" row="3" colspan="2">가구점번호</cell>
       <cell col="4" row="3" colspan="3">방향각</cell>
       <cell col="7" row="3">거리</cell>
       <cell col="8" row="3" colspan="3">점검좌표</cell>
       <cell col="11" row="3" colspan="3">성과좌표</cell>
       <cell col="14" row="3">교차</cell>
-      <cell col="15" row="3">성과
-결과</cell>
+      <cell col="15" row="3">성과결과</cell>
     </row>
     <row>
       <cell col="0" row="4" rowspan="2"></cell>
@@ -247,10 +243,9 @@
       <cell col="0" row="32">점검기관</cell>
       <cell col="1" row="32" colspan="3"></cell>
       <cell col="4" row="32" colspan="2">점검자</cell>
-      <cell col="6" row="32" colspan="6">기사    급           (인)</cell>
+      <cell col="6" row="32" colspan="6">기사 급 (인)</cell>
       <cell col="12" row="32" colspan="2">점검일</cell>
-      <cell col="14" row="32" colspan="2">.   .   .</cell>
+      <cell col="14" row="32" colspan="2">. . .</cell>
     </row>
   </table>
-  <text>용지의 크기는 A4판으로 한다.</text>
 </annex>

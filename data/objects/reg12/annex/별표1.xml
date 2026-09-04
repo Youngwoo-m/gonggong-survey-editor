@@ -1,7 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표1" gubun="별표" no="1" title="지상기준점의 배치" source="[별표 1] 지상기준점의 배치(무인비행장치 측량 작업규정).hwp">
-  <text>[별표 1] 지상기준점의 배치</text>
-  <image src="data/objects/reg12/annex/별표1_img1.webp" w="279" h="274" row="1" alt="별표1 지상기준점의 배치 그림 1"/>
-  <image src="data/objects/reg12/annex/별표1_img2.webp" w="503" h="170" row="1" alt="별표1 지상기준점의 배치 그림 2"/>
-  <image src="data/objects/reg12/annex/별표1_img3.webp" w="290" h="42" row="2" alt="별표1 지상기준점의 배치 그림 3"/>
+<annex id="별표1" gubun="별표" no="1" title="지상기준점의 배치" source="data/annex/form/uav/별표1.hwpx">
+  <table rows="1" cols="2">
+    <row>
+      <cell col="0" row="0"></cell>
+      <cell col="1" row="0"></cell>
+    </row>
+  </table>
+  <table rows="6" cols="4">
+    <row>
+      <cell col="0" row="0">구분</cell>
+      <cell col="1" row="0">배치 기준</cell>
+      <cell col="2" row="0">적용 대상</cell>
+      <cell col="3" row="0">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">지상기준점</cell>
+      <cell col="1" row="1">작업지역 외곽 및 내부에 균등 배치</cell>
+      <cell col="2" row="1">광학영상, 레이저측량, 정사영상, 수치도화</cell>
+      <cell col="3" row="1">대상지역 형상, 촬영 코스 방향, 지형기복 고려</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">검사점</cell>
+      <cell col="1" row="2">지상기준점과 독립적으로 배치</cell>
+      <cell col="2" row="2">최종 성과 정확도 검증</cell>
+      <cell col="3" row="2">조정계산, 항공삼각측량, 블록 조정, 점군분류 보정에 사용 금지</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">영상식별 검사점</cell>
+      <cell col="1" row="3">광학영상에서 명확히 식별 가능한 점</cell>
+      <cell col="2" row="3">정사영상 및 수치도화 검수</cell>
+      <cell col="3" row="3">도로 교차부, 포장면 표식 등</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">레이저측량 검사점</cell>
+      <cell col="1" row="4">평탄하고 반사특성이 안정적인 지점 또는 검사면</cell>
+      <cell col="2" row="4">레이저측량 점군, DTM, DSM 검수</cell>
+      <cell col="3" row="4">포장면, 평탄지, 구조물 상단 등</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">추가 배치 대상</cell>
+      <cell col="1" row="5">산림, 급경사지, 하천, 제방, 도심협곡, 차폐지역</cell>
+      <cell col="2" row="5">정확도 저하 예상지역</cell>
+      <cell col="3" row="5">필요 시 추가 기준점 또는 검사점 설치</cell>
+    </row>
+  </table>
 </annex>

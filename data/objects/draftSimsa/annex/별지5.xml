@@ -1,84 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별지5" gubun="별지" no="5" title="성과심사 결과 이의신청서" source="성과심사 규정 개정안 초안 (scripts/genforms_simsa.py)">
-  <text>[별지 제5호서식]
-성과심사 결과 이의신청서 (제30조제1항 관련)</text>
-  <table rows="2" cols="4">
+<annex id="별지5" gubun="별지" no="5" title="성과심사 결과 이의신청서" source="data/annex/gen/review/별지5.hwpx">
+  <table rows="3" cols="7">
     <row>
-      <cell col="0" row="0" header="1">접수번호</cell>
-      <cell col="1" row="0" header="1"></cell>
-      <cell col="2" row="0" header="1">접수일</cell>
-      <cell col="3" row="0" header="1"></cell>
-    </row>
-    <row>
-      <cell col="0" row="1">처리기간</cell>
-      <cell col="1" row="1" colspan="3">14일 (제30조제2항)</cell>
-    </row>
-  </table>
-  <table rows="5" cols="4">
-    <row>
-      <cell col="0" row="0" header="1">신청인</cell>
-      <cell col="1" row="0" header="1">기관명</cell>
-      <cell col="2" row="0" header="1"></cell>
-      <cell col="3" row="0" header="1">담당자</cell>
-    </row>
-    <row>
-      <cell col="0" row="1"></cell>
-      <cell col="1" row="1">연락처</cell>
-      <cell col="2" row="1"></cell>
-      <cell col="3" row="1"></cell>
-    </row>
-    <row>
-      <cell col="0" row="2">대상 심사</cell>
-      <cell col="1" row="2">사업명</cell>
-      <cell col="2" row="2"></cell>
-      <cell col="3" row="2"></cell>
-    </row>
-    <row>
-      <cell col="0" row="3"></cell>
-      <cell col="1" row="3">심사결과서 문서번호</cell>
-      <cell col="2" row="3"></cell>
-      <cell col="3" row="3">통지받은 날</cell>
-    </row>
-    <row>
-      <cell col="0" row="4"></cell>
-      <cell col="1" row="4">이의를 제기하는 판정</cell>
-      <cell col="2" row="4">적합 / 조건부적합 / 부적합</cell>
-      <cell col="3" row="4"></cell>
-    </row>
-  </table>
-  <text>이의신청의 사유</text>
-  <table rows="3" cols="5">
-    <row>
-      <cell col="0" row="0" header="1">연번</cell>
-      <cell col="1" row="0" header="1">이의를 제기하는 항목</cell>
-      <cell col="2" row="0" header="1">심사기관의 판정</cell>
-      <cell col="3" row="0" header="1">신청인의 의견</cell>
-      <cell col="4" row="0" header="1">붙임 자료</cell>
+      <cell col="0" row="0">번호</cell>
+      <cell col="1" row="0">단위</cell>
+      <cell col="2" row="0">심사 항목</cell>
+      <cell col="3" row="0">심사기관의 판정과 근거</cell>
+      <cell col="4" row="0">신청인의 의견</cell>
+      <cell col="5" row="0">근거</cell>
+      <cell col="6" row="0">붙임</cell>
     </row>
     <row>
       <cell col="0" row="1">1</cell>
-      <cell col="1" row="1"></cell>
-      <cell col="2" row="1"></cell>
-      <cell col="3" row="1"></cell>
-      <cell col="4" row="1"></cell>
+      <cell col="1" row="1">2구역</cell>
+      <cell col="2" row="1">평면위치 정확도</cell>
+      <cell col="3" row="1">검사점 60점 중 4점이 허용범위를 벗어나 조건부적합</cell>
+      <cell col="4" row="1">벗어난 4점은 모두 되메우기 뒤 재포장으로 지표가 낮아진 구간이다. 작업규정 제194조제6항은 심도가 바뀌면 수정하도록 하고 있고, 그 수정은 마쳤다</cell>
+      <cell col="5" row="1">작업규정 제194조제6항</cell>
+      <cell col="6" row="1">붙임 1(재포장 이력), 붙임 2(수정 전후 대비표)</cell>
     </row>
     <row>
       <cell col="0" row="2">2</cell>
-      <cell col="1" row="2"></cell>
-      <cell col="2" row="2"></cell>
-      <cell col="3" row="2"></cell>
-      <cell col="4" row="2"></cell>
+      <cell col="1" row="2">2구역</cell>
+      <cell col="2" row="2">위상(관로 끊김)</cell>
+      <cell col="3" row="2">끊김 5곳으로 조건부적합</cell>
+      <cell col="4" row="2">5곳 중 2곳은 제수변에서 관로를 끊은 것으로 작업규정 제191조제1항제4호에 따른 것이다</cell>
+      <cell col="5" row="2">작업규정 제191조제1항제4호</cell>
+      <cell col="6" row="2">붙임 3(해당 지점 도면)</cell>
     </row>
   </table>
-  <text>「측량성과 심사수탁기관의 심사업무 및 지정절차 등에 관한 규정」 제30조제1항에 따라 위와 같이 이의를 신청합니다.
-
-년       월       일
-
-신청인                    (서명 또는 인)
-
-측량성과 심사수탁기관의 장  귀하</text>
-  <text>알려 드립니다
-1. 이의신청은 심사 결과를 통지받은 날부터 14일 이내에 하여야 합니다.
-2. 이의신청의 처리에는 수수료를 받지 아니합니다(제30조제4항).
-3. 처리 결과에도 이의가 있으면 국토지리정보원장에게 판단을 요청할 수 있습니다(제30조제3항).</text>
 </annex>

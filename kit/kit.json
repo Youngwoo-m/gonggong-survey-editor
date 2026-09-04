@@ -1,0 +1,65 @@
+{
+ "note": "이 목록은 scripts/synckit.py 가 씁니다. 손으로 고치지 마십시오.",
+ "files": [
+  {
+   "path": "도구/make_hwpx.py",
+   "size": 5261
+  },
+  {
+   "path": "도구/formfill.py",
+   "size": 15170
+  },
+  {
+   "path": "도구/formdocs.py",
+   "size": 25209
+  },
+  {
+   "path": "도구/forms_hwp.py",
+   "size": 10359
+  },
+  {
+   "path": "도구/genreport.py",
+   "size": 17387
+  },
+  {
+   "path": "도구/genreport_hwpx.py",
+   "size": 33281
+  },
+  {
+   "path": "도구/hwpx/scripts/fix_namespaces.py",
+   "size": 2663
+  },
+  {
+   "path": "도구/hwpx/scripts/validate_hwpx_package.py",
+   "size": 1774
+  },
+  {
+   "path": "도구/hwpx/scripts/render_hwpx_to_pdf.ps1",
+   "size": 1306
+  },
+  {
+   "path": "도구/hwpx/scripts/render_pdf_pages.py",
+   "size": 577
+  },
+  {
+   "path": "양식/01.개정안/[양식] 규정 개정(안).hwpx",
+   "size": 64330
+  },
+  {
+   "path": "양식/02.신구대조표/[양식] 규정.신구대조표.hwpx",
+   "size": 128101
+  },
+  {
+   "path": "양식/03.개정사유서/[양식] 작업규정 개정안_개정사유서.hwpx",
+   "size": 100308
+  },
+  {
+   "path": "양식/04.별표별지/[양식] 별표수정(안).hwpx",
+   "size": 157828
+  },
+  {
+   "path": "한글문서만들기.bat",
+   "size": 1360
+  }
+ ]
+}

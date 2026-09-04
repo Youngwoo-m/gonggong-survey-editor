@@ -1,10 +1,10 @@
 /* ============================================================
    ui/detail.js — 조문 상세 패널
    ============================================================ */
-import * as M from "../core/model.js?v=20260824f";
-import { wordDiff, beforeRuns, afterRuns, hasChange } from "../core/textdiff.js?v=20260824f";
+import * as M from "../core/model.js?v=20260903a";
+import { wordDiff, beforeRuns, afterRuns, hasChange } from "../core/textdiff.js?v=20260903a";
 import { imgIdsIn, renderBody, fitTable, toHtml, openTableOverlay, markAnnexEdits }
-  from "../core/objects.js?v=20260824f";
+  from "../core/objects.js?v=20260903a";
 
 /** 만들고 있는 안을 부르는 말 — 작업규정은 개정안, 성과심사 규정은 개정안 */
 /* 만들어 내는 안을 부르는 말 — 규정마다 다르다 (작업규정은 '개정안', 나머지는 '개정안').
@@ -75,9 +75,9 @@ function runsHtml(runs) {
   return runs.map((r) => (r.mark ? `<u class="mk">${esc(r.s)}</u>` : esc(r.s))).join("");
 }
 
-import { linkReason, wireReasonLinks } from "../core/reasonlink.js?v=20260824f";
-import { esc, fmtDT } from "./html.js?v=20260824f";
-import { renderPdf } from "./pdfview.js?v=20260824f";
+import { linkReason, wireReasonLinks } from "../core/reasonlink.js?v=20260903a";
+import { esc, fmtDT } from "./html.js?v=20260903a";
+import { renderPdf } from "./pdfview.js?v=20260903a";
 
 /** 사유 글이 스스로 머리글을 달고 있는가 — 그러면 딱지를 겹쳐 붙이지 아니한다 */
 const RE_REASON_HEAD = /^\s*\[변경 사유\]/;
@@ -146,8 +146,14 @@ export class DetailPanel {
          개정안 트리에서 찾으므로 docId 는 넘기지 않는다(null). */
       hasAnx: this.joNav?.hasAnx ? (g, no) => this.joNav.hasAnx(null, g, no) : null,
       onAnx: (g, no) => this.joNav?.goAnx?.(null, g, no),
+      /* <현행 제N조에서 옮김> — 개정안 제2조에 거두어 모은 약칭이 본디
+         어느 조문에 있었는지. 눌러 현행규정 창에서 그 조문을 편다. */
+      onMoved: (jo) => this.onMoved?.(jo),
     };
   }
+
+  /** <현행 제N조에서 옮김> 을 눌렀을 때 부를 함수 */
+  setMovedNav(fn) { this.onMoved = fn; }
 
   /**
    * 조문이 현행과 달라진 곳 — 바뀐 말을 푸르게 짚어 보인다.
@@ -514,7 +520,10 @@ export class DetailPanel {
         ? `<a class="btnlink" href="${esc(url)}" download="${esc(name)}">${label} 내려받기</a>`
         : `<a class="btnlink" href="${esc(p)}" target="_blank" rel="noopener">${label} 내려받기</a>`;
     };
-    const links = [one(a.hwp, "HWP"), one(a.pdf, "PDF")].filter(Boolean).join(" ");
+    /* 원본을 모두 .hwpx 로 바꾸었다. .hwp 를 이고 있는 옛 자료도 있을 수
+       있으므로 둘 다 보되, 같은 문서를 두 번 내주지는 아니한다. */
+    const links = [one(a.hwpx, "HWPX"), one(a.hwpx ? "" : a.hwp, "HWP"),
+                   one(a.pdf, "PDF")].filter(Boolean).join(" ");
     const note = a.gen
       ? `<span class="mut">본문 글로 지은 서식입니다 — 조판은 한글에서 다듬으십시오.</span>`
       : a.src ? `<span class="mut">${esc(a.src)}</span>` : "";
@@ -525,14 +534,23 @@ export class DetailPanel {
   /** 별표 미리보기 — PDF 가 곁에 있으면 통째로, 없으면 그림으로 */
   _annexPreview(node, docId) {
     docId = docId || this.baseRegId;
-    // 순서를 바꿔도 그림이 어긋나지 않도록 '현행 번호'로 찾는다
-    const key = (node.legacyNo || `${node.annexRef.gubun}${node.annexRef.no}`).replace(/\s+/g, "");
-    // 신설 별표는 현행 별표와 번호가 겹치므로 개정안 전용 자리를 먼저 본다
-    // (개정안 자리 이름은 초안마다 다르다 — draft2025 · draftUav …)
     const bin = this.annexIndex || {};
     const mine = this.draftRegId || "draft2025";
     // 판마다 별표 번호가 겹치므로, 노드가 제 미리보기 자리를 들고 있으면 그것을 쓴다
     const own = node.annexRef && node.annexRef.previewDir;
+    const self = `${node.annexRef.gubun}${node.annexRef.no}`.replace(/\s+/g, "");
+    /* 열쇠를 무엇으로 삼는가
+     *
+     *   제 미리보기 자리가 있으면  → **제 번호**로 찾는다.
+     *     그 자리의 그림은 그 마디의 번호로 지어 두었다(별표15_1.webp).
+     *   그렇지 않으면            → 현행 번호(legacyNo)로 찾는다.
+     *     자리를 옮긴 별표는 현행 규정의 자리에 현행 번호로 담겨 있다.
+     *
+     * 신설 별표에 legacyNo 가 붙어 있는 일이 있다 — 앞선 초안에서 쓰던
+     * 번호다(별표 15 ← 별표 46). 그것을 열쇠로 삼으면 옛 번호가 찍힌
+     * 그림을 보여 주므로, 제 자리가 있을 때에는 제 번호를 앞세운다. */
+    const legacy = (node.legacyNo || self).replace(/\s+/g, "");
+    const key = (own && bin[own] && bin[own][self]) ? self : legacy;
     const where = (own && bin[own] && bin[own][key]) ? own
       : ((node.status === "신설" && bin[mine] && bin[mine][key]) ? mine : docId);
     const files = bin[where] && bin[where][key];
@@ -637,14 +655,15 @@ export class DetailPanel {
 
     // 원본 서식이 있는 별표는 '현행 서식 표' 를, 신설 별표는 개정안 전용 자리에
     // 서식이 있을 때에만 붙인다 (_annexTables 가 가려낸다)
-    if (node.annexRef && (node.annexRef.hwp || node.annexRef.pdf || node.status === "신설")) {
+    if (node.annexRef && (node.annexRef.hwpx || node.annexRef.hwp || node.annexRef.pdf
+        || node.status === "신설")) {
       const at = this._annexTables(node, docId);
       if (at) el.appendChild(at);
       const ax = this._annexExtra(node);
       if (ax) el.appendChild(ax);
     }
     // 미리보기는 신설 별표에도 붙인다 — 개정안 전용 자리에 그림이 있다
-    if (node.annexRef && (node.annexRef.hwp || node.annexRef.pdf
+    if (node.annexRef && (node.annexRef.hwpx || node.annexRef.hwp || node.annexRef.pdf
         || this.annexIndex?.[node.annexRef.previewDir]
         || this.annexIndex?.[this.draftRegId || "draft2025"]?.[
              (node.legacyNo || `${node.annexRef.gubun}${node.annexRef.no}`).replace(/\s+/g, "")])) {
@@ -779,7 +798,8 @@ export class DetailPanel {
           .then((frag) => { host.replaceChildren(frag); fitTable(host); });
       }
 
-      if (it.node.annexRef && (it.node.annexRef.hwp || it.node.annexRef.pdf)) {
+      if (it.node.annexRef && (it.node.annexRef.hwpx || it.node.annexRef.hwp
+                               || it.node.annexRef.pdf)) {
         const t = this._annexTables(it.node, it.docId);
         if (t) box.appendChild(t);
       }

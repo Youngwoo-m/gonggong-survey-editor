@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표10" gubun="별표" no="10" title="GNSS높이측량 관측기록부" source="https://www.law.go.kr/LSW/flDownload.do?flSeq=151296131">
-  <text>[ 별표 10 ]
-GNSS높이측량 관측기록부</text>
+<annex id="별표10" gubun="별표" no="28" title="GNSS높이측량 관측기록부" source="data/annex/원본/work/[별표 10] GNSS높이측량 관측기록부.hwpx">
   <table rows="23" cols="14">
     <row>
       <cell col="0" row="0" colspan="14">GNSS높이측량 관측기록부</cell>
@@ -9,19 +7,13 @@ GNSS높이측량 관측기록부</text>
     <row>
       <cell col="0" row="1" rowspan="2">세 션</cell>
       <cell col="1" row="1" rowspan="2">점번호</cell>
-      <cell col="2" row="1" rowspan="2">측 점
-I D</cell>
-      <cell col="3" row="1" rowspan="2">관측시간
-( K S T )</cell>
-      <cell col="4" row="1" rowspan="2">RINEX
-파일명</cell>
-      <cell col="5" row="1" colspan="2">최소 
-위성수</cell>
-      <cell col="7" row="1" rowspan="2">안테나
-종  류</cell>
+      <cell col="2" row="1" rowspan="2">측 점I D</cell>
+      <cell col="3" row="1" rowspan="2">관측시간( K S T )</cell>
+      <cell col="4" row="1" rowspan="2">RINEX파일명</cell>
+      <cell col="5" row="1" colspan="2">최소 위성수</cell>
+      <cell col="7" row="1" rowspan="2">안테나종 류</cell>
       <cell col="8" row="1" rowspan="2">제조사</cell>
-      <cell col="9" row="1" rowspan="2">측 정
-안테나고</cell>
+      <cell col="9" row="1" rowspan="2">측 정안테나고</cell>
       <cell col="10" row="1" rowspan="2">A.R.P</cell>
       <cell col="11" row="1" rowspan="2">점의 상태</cell>
       <cell col="12" row="1" rowspan="2">관측자</cell>
@@ -29,8 +21,7 @@ I D</cell>
     </row>
     <row>
       <cell col="5" row="2">GPS</cell>
-      <cell col="6" row="2">다중
-GNSS</cell>
+      <cell col="6" row="2">다중GNSS</cell>
     </row>
     <row>
       <cell col="0" row="3" rowspan="10">1</cell>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표15" gubun="별표" no="15" title="품질 부적합 및 보완조치 판정 기준" source="data/annex/gen/draftUav2/별표15.hwpx">
+  <table rows="12" cols="5">
+    <row>
+      <cell col="0" row="0">번호</cell>
+      <cell col="1" row="0">품질관리 항목</cell>
+      <cell col="2" row="0">부적합으로 보는 경우</cell>
+      <cell col="3" row="0">확인하는 서식</cell>
+      <cell col="4" row="0">보완조치</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">1</cell>
+      <cell col="1" row="1">좌표계 및 수직기준 적용 여부</cell>
+      <cell col="2" row="1">성과품의 좌표계ㆍ수직기준ㆍ지오이드 모델이 작업계획서와 다른 경우 / 성과품끼리 서로 다른 기준을 쓴 경우</cell>
+      <cell col="3" row="1">메타데이터(별표 13)</cell>
+      <cell col="4" row="1">재처리</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">2</cell>
+      <cell col="1" row="2">GCP/CP 및 검사점 성과 적정성</cell>
+      <cell col="2" row="2">검사점이 조정ㆍ분류 보정에 쓰인 경우 (제11조제4항) / 검사점의 수가 지상기준점의 1/3에 미치지 못하거나 3점보다 적은 경우 (제11조제1항) / 검사점이 지상기준점 인근에 몰려 있는 경우 (제11조제2항)</cell>
+      <cell col="3" row="2">지상기준점 및 검사점 성과표(별표 2)</cell>
+      <cell col="4" row="2">검사점 재선정 및 재검증</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">3</cell>
+      <cell col="1" row="3">검사점 기반 RMSE</cell>
+      <cell col="2" row="3">요구 기준을 넘는 경우</cell>
+      <cell col="3" row="3">각 성과품의 검사표</cell>
+      <cell col="4" row="3">재처리, 보완측량, 재취득</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">4</cell>
+      <cell col="1" row="4">정사영상 위치정확도 및 영상품질</cell>
+      <cell col="2" row="4">위치정확도가 요구 기준을 넘는 경우 / 이음선이 어긋나거나 색조가 고르지 아니한 경우 (제26조제3항)</cell>
+      <cell col="3" row="4">정사영상 및 다중센서 정합 검사표(별표 12)</cell>
+      <cell col="4" row="4">재제작, 색보정, 이음선 재설정</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">5</cell>
+      <cell col="1" row="5">DSM, DTM 또는 DEM 수직정확도</cell>
+      <cell col="2" row="5">요구 기준을 넘는 경우 / 지형 불연속면이 뭉개진 경우 (제23조제4항)</cell>
+      <cell col="3" row="5">검사표(별표 9), 오류 정정표(별표 10)</cell>
+      <cell col="4" row="5">보간방법 조정, 불연속선 보정, 재분류</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">6</cell>
+      <cell col="1" row="6">레이저측량 점군밀도 및 결측률</cell>
+      <cell col="2" row="6">요구 밀도에 미치지 못하는 격자가 허용 범위를 넘는 경우 / 결측이 허용 범위를 넘거나, 한 덩어리의 결측이 큰 경우</cell>
+      <cell col="3" row="6">점군밀도 및 결측률 검사표(별표 11)</cell>
+      <cell col="4" row="6">보완측량, 코스 추가, 재취득</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">7</cell>
+      <cell col="1" row="7">블록 조정 전후 촬영 코스 간 정합오차</cell>
+      <cell col="2" row="7">보정 뒤에도 코스 사이의 정합오차가 요구 기준을 넘는 경우</cell>
+      <cell col="3" row="7">블록 조정 결과표(별표 7)</cell>
+      <cell col="4" row="7">궤적 재처리, 조준선 재검정, 재조정</cell>
+    </row>
+    <row>
+      <cell col="0" row="8">8</cell>
+      <cell col="1" row="8">점군분류 정확도</cell>
+      <cell col="2" row="8">갈래별 정확도가 요구 기준에 미치지 못하는 경우 / 검수구역에서 지면분류 오류가 확인된 경우 (제22조제3항)</cell>
+      <cell col="3" row="8">점군분류 성과 및 정확도 평가표(별표 8)</cell>
+      <cell col="4" row="8">재분류, 수동편집</cell>
+    </row>
+    <row>
+      <cell col="0" row="9">9</cell>
+      <cell col="1" row="9">객체 경계ㆍ형상ㆍ위치 및 속성 정확도</cell>
+      <cell col="2" row="9">객체의 자리나 형상이 요구 기준을 넘어 어긋난 경우 / 필수 속성이 비었거나 값이 코드에 맞지 아니한 경우</cell>
+      <cell col="3" row="9">성과품과 그 검사 기록</cell>
+      <cell col="4" row="9">객체편집, 속성 보완</cell>
+    </row>
+    <row>
+      <cell col="0" row="10">10</cell>
+      <cell col="1" row="10">표준 포맷 및 메타데이터 완성도</cell>
+      <cell col="2" row="10">제39조제2항의 표준 포맷이 아닌 경우 / 별표 13의 필수 항목이 빠진 경우 / 폴더구조가 별표 14와 다른 경우</cell>
+      <cell col="3" row="10">메타데이터(별표 13), 폴더구조(별표 14)</cell>
+      <cell col="4" row="10">형식 변환, 메타데이터 보완, 재정리</cell>
+    </row>
+    <row>
+      <cell col="0" row="11">11</cell>
+      <cell col="1" row="11">처리로그 및 품질평가 보고서 작성 여부</cell>
+      <cell col="2" row="11">처리로그가 없어 같은 결과를 다시 낼 수 없는 경우 / 품질평가 보고서가 없거나 그 값이 검사표와 다른 경우</cell>
+      <cell col="3" row="11">품질평가 보고서</cell>
+      <cell col="4" row="11">로그 보완, 보고서 재작성</cell>
+    </row>
+  </table>
+  <table rows="6" cols="7">
+    <row>
+      <cell col="0" row="0">항목</cell>
+      <cell col="1" row="0">잰 값</cell>
+      <cell col="2" row="0">요구 기준(출처)</cell>
+      <cell col="3" row="0">판정</cell>
+      <cell col="4" row="0">조치</cell>
+      <cell col="5" row="0">조치 뒤의 값</cell>
+      <cell col="6" row="0">조치 뒤의 판정</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">6 점군밀도(둔치)</cell>
+      <cell col="1" row="1">지면점 0.0점/㎡</cell>
+      <cell col="2" row="1">작업계획서 4.1항</cell>
+      <cell col="3" row="1">조건부적합</cell>
+      <cell col="4" row="1">매개변수 조정 후 재분류</cell>
+      <cell col="5" row="1">0.0점/㎡</cell>
+      <cell col="6" row="1">적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">6 결측(교량 하부)</cell>
+      <cell col="1" row="2">000㎡</cell>
+      <cell col="2" row="2">같은 항</cell>
+      <cell col="3" row="2">조건부적합</cell>
+      <cell col="4" row="2">지상 레이저측량으로 보완</cell>
+      <cell col="5" row="2">0㎡</cell>
+      <cell col="6" row="2">적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">7 코스 정합오차(C-05/C-06)</cell>
+      <cell col="1" row="3">수직 0.000m</cell>
+      <cell col="2" row="3">같은 항</cell>
+      <cell col="3" row="3">조건부적합</cell>
+      <cell col="4" row="3">궤적 재처리</cell>
+      <cell col="5" row="3">0.000m</cell>
+      <cell col="6" row="3">적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">8 점군분류(교량)</cell>
+      <cell col="1" row="4">상판을 지면으로 넣음 2곳</cell>
+      <cell col="2" row="4">제22조제3항</cell>
+      <cell col="3" row="4">조건부적합</cell>
+      <cell col="4" row="4">재분류</cell>
+      <cell col="5" row="4">0곳</cell>
+      <cell col="6" row="4">적합</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">3 검사점 RMSE(수직)</cell>
+      <cell col="1" row="5">0.000m</cell>
+      <cell col="2" row="5">같은 항</cell>
+      <cell col="3" row="5">적합</cell>
+      <cell col="4" row="5">−</cell>
+      <cell col="5" row="5">−</cell>
+      <cell col="6" row="5">−</cell>
+    </row>
+  </table>
+</annex>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지3" gubun="별지" no="3" title="현장 위험성평가서" source="data/annex/gen/work/별지3.hwpx">
+  <table rows="6" cols="4">
+    <row>
+      <cell col="0" row="0">작업 단계</cell>
+      <cell col="1" row="0">유해ㆍ위험요인</cell>
+      <cell col="2" row="0">관련되는 현장작업 환경</cell>
+      <cell col="3" row="0">이미 하고 있는 안전조치</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">① 장비 하차ㆍ설치</cell>
+      <cell col="1" row="1">차량 통행 중 접촉</cell>
+      <cell col="2" row="1">도로ㆍ교통 인접</cell>
+      <cell col="3" row="1">라바콘 설치, 안전조끼 착용</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">② 노면 탐사(GPR 견인)</cell>
+      <cell col="1" row="2">뒤에서 오는 차량과의 접촉</cell>
+      <cell col="2" row="2">도로ㆍ교통 인접</cell>
+      <cell col="3" row="2">감시인 1명 배치</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">③ 맨홀 개방ㆍ내부 조사</cell>
+      <cell col="1" row="3">산소결핍ㆍ유해가스</cell>
+      <cell col="2" row="3">지하ㆍ밀폐공간</cell>
+      <cell col="3" row="3">가스농도 측정 후 진입</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">④ 맨홀 개방 상태 유지</cell>
+      <cell col="1" row="4">보행자 추락</cell>
+      <cell col="2" row="4">도심ㆍ주거</cell>
+      <cell col="3" row="4">개구부 덮개와 울타리 설치</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">⑤ 인접 굴착부 근접 작업</cell>
+      <cell col="1" row="5">토사 붕괴</cell>
+      <cell col="2" row="5">건설ㆍ산업시설</cell>
+      <cell col="3" row="5">(조치 없음 — 제5호에서 정한다)</cell>
+    </row>
+  </table>
+  <table rows="6" cols="5">
+    <row>
+      <cell col="0" row="0">번호</cell>
+      <cell col="1" row="0">일어날 가능성</cell>
+      <cell col="2" row="0">다칠 정도</cell>
+      <cell col="3" row="0">위험성 (가능성 × 정도)</cell>
+      <cell col="4" row="0">판정</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">①</cell>
+      <cell col="1" row="1">2</cell>
+      <cell col="2" row="1">3</cell>
+      <cell col="3" row="1">6</cell>
+      <cell col="4" row="1">낮추어야 함</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">②</cell>
+      <cell col="1" row="2">2</cell>
+      <cell col="2" row="2">4</cell>
+      <cell col="3" row="2">8</cell>
+      <cell col="4" row="2">낮추어야 함</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">③</cell>
+      <cell col="1" row="3">2</cell>
+      <cell col="2" row="3">5</cell>
+      <cell col="3" row="3">10</cell>
+      <cell col="4" row="3">낮추어야 함</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">④</cell>
+      <cell col="1" row="4">3</cell>
+      <cell col="2" row="4">3</cell>
+      <cell col="3" row="4">9</cell>
+      <cell col="4" row="4">낮추어야 함</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">⑤</cell>
+      <cell col="1" row="5">3</cell>
+      <cell col="2" row="5">5</cell>
+      <cell col="3" row="5">15</cell>
+      <cell col="4" row="5">작업 불가</cell>
+    </row>
+  </table>
+  <table rows="6" cols="4">
+    <row>
+      <cell col="0" row="0">조치 내용 (없애기 → 바꾸기 → 공학적 조치 → 관리적 조치 → 보호구의 순서로 고른다)</cell>
+      <cell col="1" row="0">맡은 사람</cell>
+      <cell col="2" row="0">마칠 때</cell>
+      <cell col="3" row="0">조치한 뒤의 위험성</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">① 작업 구간 앞뒤 30m 라바콘ㆍ전광표지</cell>
+      <cell col="1" row="1">박□□</cell>
+      <cell col="2" row="1">작업 착수 전</cell>
+      <cell col="3" row="1">2 × 2 = 4</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">② 감시인 1명 증원(2명)</cell>
+      <cell col="1" row="2">정□□</cell>
+      <cell col="2" row="2">작업 착수 전</cell>
+      <cell col="3" row="2">1 × 4 = 4</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">③ 진입 전 산소ㆍ황화수소 측정, 송기마스크 착용, 구조장비 대기</cell>
+      <cell col="1" row="3">이□□</cell>
+      <cell col="2" row="3">진입 전</cell>
+      <cell col="3" row="3">1 × 5 = 5</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">④ 개구부 덮개 상시 거치, 작업 종료 시 즉시 복구</cell>
+      <cell col="1" row="4">박□□</cell>
+      <cell col="2" row="4">작업 중</cell>
+      <cell col="3" row="4">1 × 3 = 3</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">⑤ 굴착부에서 3m 밖으로 측선을 옮긴다 — 옮길 수 없으면 굴착 공정이 끝난 뒤로 미룬다</cell>
+      <cell col="1" row="5">정□□</cell>
+      <cell col="2" row="5">착수 전</cell>
+      <cell col="3" row="5">1 × 5 = 5</cell>
+    </row>
+  </table>
+</annex>

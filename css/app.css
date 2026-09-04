@@ -4,6 +4,7 @@
   --panel:#EEF2F4; --panel2:#F7F9FA; --white:#fff;
   --accent:#C1502E; --accent-bg:#FBF2EF; --accent-line:#E8C4B6;
   --green:#2E7D6B; --green-bg:#EAF3F0;
+  --blue:#2F6690;  --violet:#6B4E8C;   /* 이동 · 이동수정 배지 */
   --amber:#B07A1E; --amber-bg:#FBF4E6;
   --font:"맑은 고딕","Malgun Gothic",system-ui,sans-serif;
 }
@@ -149,7 +150,21 @@ button{font-family:inherit}
 .node.anx-row .tt{color:var(--slate)}
 .node.anx-row.lv-편 .tt{color:var(--amber);font-weight:700}
 .node .badge{flex:none;font-size:9px;padding:1px 5px;border-radius:8px;color:#fff;margin-left:4px}
-.b-신설{background:var(--green)} .b-수정{background:var(--amber)} .b-이동{background:var(--amber)}
+/* 상태마다 색을 달리한다 — 여태 이동과 수정이 같은 색이라 단순히 자리만
+   옮긴 조문과 문언을 고친 조문을 가릴 수 없었다.
+   이동수정 은 클래스 이름에 가운데점을 쓸 수 없어 붙여 쓴다. */
+/* <현행 제N조에서 옮김> — 약칭을 거두어 온 자리. 눌러 현행규정 창으로 간다.
+   본문 인용과 달리 규범이 아니라 이력을 적은 것이므로 흐리게 둔다. */
+a.cite.moved{color:var(--muted);border-bottom:1px dotted var(--muted);
+  font-size:.92em;text-decoration:none}
+a.cite.moved:hover{color:var(--slate);border-bottom-color:var(--slate)}
+
+.b-신설{background:var(--green)}
+/* 통합·신설 —— 신설의 초록에 테두리를 둘러 순수 신설과 가른다 */
+.b-통합신설{background:var(--green);box-shadow:inset 0 0 0 1.5px var(--muted)}
+.b-수정{background:var(--amber)}
+.b-이동{background:var(--blue)}
+.b-이동수정{background:var(--violet)}
 .b-통합{background:var(--muted)} .b-삭제{background:var(--accent)} .b-참조{background:var(--slate)}
 .node.dragging{opacity:.42}
 .node.drop-into{outline:1.5px dashed var(--accent);outline-offset:-2px;background:var(--accent-bg)}
@@ -771,6 +786,16 @@ button.mini2.apply:disabled{background:var(--panel2);color:var(--muted);
 
 /* 신구조문 대비표 — 현행 칸에서 앞으로 바뀔 대목 (개정안 칸의 붉은 밑줄과 짝) */
 #cmpTable.official u.mk-old { text-decoration: underline; color: #1C6FB8; font-weight: 700; }
+
+/* 칸 안에 넣은 진짜 표 — 자리표시([표 N])를 바꾸어 넣은 것 */
+#cmpTable.official td.why { font-size: 12px; line-height: 1.6; word-break: keep-all; }
+.cmp-obj { margin: 6px 0; color: var(--muted); font-size: 12px; }
+.cmp-obj.ok { margin: 8px 0; color: inherit; }
+.cmp-obj .obj-tbl-wrap { overflow-x: auto; border: 1px solid var(--line); }
+.cmp-obj table.obj-tbl { font-size: 10px; min-width: 0; table-layout: auto; }
+.cmp-obj table.obj-tbl th, .cmp-obj table.obj-tbl td { padding: 2px 4px; word-break: keep-all; }
+.cmp-obj table.obj-tbl td:first-child { white-space: normal; }
+.cmp-obj img.cmp-pic { max-width: 100%; height: auto; border: 1px solid var(--line); }
 
 /* ── 개정문 (개정 지시문) ──────────────────────────────────
    고시에 실제로 실리는 글이므로 표가 아니라 글줄로 보인다.
