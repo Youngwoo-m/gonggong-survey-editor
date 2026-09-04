@@ -1,8 +1,8 @@
 /* ============================================================
    ui/share.js — 공유 화면 (저장소 연결 · 프로젝트 목록 · 저장 이력)
    ============================================================ */
-import * as GH from "../adapters/github.js?v=20260904i";
-import { esc, fmtDT } from "./html.js?v=20260904i";
+import * as GH from "../adapters/github.js?v=20260904j";
+import { esc, fmtDT } from "./html.js?v=20260904j";
 
 /** 파일 저장에 이어 저장소에도 올릴지 */
 export const AUTOPUSH = {

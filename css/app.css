@@ -6,6 +6,9 @@
   --green:#2E7D6B; --green-bg:#EAF3F0;
   --blue:#2F6690;  --violet:#6B4E8C;   /* 이동 · 이동수정 배지 */
   --amber:#B07A1E; --amber-bg:#FBF4E6;
+  /* 링크는 파랑, 바뀐 본문은 빨강 —— 두 뜻이 섞이지 아니하게 가른다 */
+  --link:#1552B0; --link-bg:#EDF3FB;
+  --chg:#C00000;
   --font:"맑은 고딕","Malgun Gothic",system-ui,sans-serif;
 }
 *{box-sizing:border-box}
@@ -160,9 +163,9 @@ button{font-family:inherit}
    이동수정 은 클래스 이름에 가운데점을 쓸 수 없어 붙여 쓴다. */
 /* <현행 제N조에서 옮김> — 약칭을 거두어 온 자리. 눌러 현행규정 창으로 간다.
    본문 인용과 달리 규범이 아니라 이력을 적은 것이므로 흐리게 둔다. */
-a.cite.moved{color:var(--muted);border-bottom:1px dotted var(--muted);
+a.cite.moved{color:#5B7FA6;border-bottom:1px dotted #5B7FA6;
   font-size:.92em;text-decoration:none}
-a.cite.moved:hover{color:var(--slate);border-bottom-color:var(--slate)}
+a.cite.moved:hover{color:var(--link);border-bottom-color:var(--link)}
 
 .b-신설{background:var(--green)}
 /* 통합·신설 —— 신설의 초록에 테두리를 둘러 순수 신설과 가른다 */
@@ -290,7 +293,7 @@ a.cite.moved:hover{color:var(--slate);border-bottom-color:var(--slate)}
 .cmp-body .lbl{font-weight:700;margin-bottom:2px}
 .cmp-body .ttl{font-weight:400}
 .cmp-body .bd{white-space:pre-wrap;color:#33454F}
-.cmp-body u.mk{text-decoration:underline;color:var(--accent);font-weight:700}
+.cmp-body u.mk{text-decoration:underline;color:var(--chg);font-weight:700}
 .cmp-body td.none{text-align:center;color:var(--muted);padding:26px}
 .cmp-body tr.k-new td{background:#F4FAF8}
 .cmp-body tr.k-del td{background:#FCF5F2}
@@ -399,7 +402,7 @@ a.cite.moved:hover{color:var(--slate);border-bottom-color:var(--slate)}
   border-radius:8px;padding:0 6px;font-size:9.5px;font-weight:400}
 /* ---- 참조 ① ↔ ② 조문 비교 ---- */
 .ref-cmp{container-type:inline-size}
-.ref-cmp u.mk{text-decoration:underline;text-decoration-thickness:2px;color:var(--accent);font-weight:700}
+.ref-cmp u.mk{text-decoration:underline;text-decoration-thickness:2px;color:var(--chg);font-weight:700}
 .rc-head{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px}
 .rc-col{padding:7px 9px;background:var(--panel2);border:1px solid var(--line);border-radius:5px;font-size:11px;min-width:0}
 .rc-col b{display:block;margin-top:3px;font-size:12px;word-break:break-all}
@@ -575,9 +578,9 @@ label .lbl-right{float:right;font-weight:400}
 .rp-none{padding:14px;text-align:center;font-size:11px;color:var(--muted)}
 
 /* 본문 속 규정 인용 링크 */
-a.cite{color:var(--accent);text-decoration:underline;text-underline-offset:2px;cursor:pointer}
-a.cite.self{color:var(--ink);text-decoration-style:dotted}   /* 같은 규정 안의 조문 */
-a.cite:hover{background:var(--accent);color:#fff;text-decoration:none;border-radius:2px}
+a.cite{color:var(--link);text-decoration:underline;text-underline-offset:2px;cursor:pointer}
+a.cite.self{color:var(--link);text-decoration-style:dotted}  /* 같은 규정 안의 조문 —— 점선으로 가른다 */
+a.cite:hover{background:var(--link);color:#fff;text-decoration:none;border-radius:2px}
 
 /* 가운데 창 툴바 — 한 줄에 들어가게 */
 .pane-edit .pane-toolbar{flex-wrap:nowrap;overflow:hidden;gap:1px;padding:3px 4px}
@@ -694,7 +697,7 @@ a.cite.law{white-space:nowrap}
 .dt-title{padding:4px 8px;font-size:12.5px;font-weight:700;word-break:break-word}
 .dt-body{padding:0 8px 8px;font-size:12px;line-height:1.75;max-height:280px;overflow:auto}
 .dt-body.pre{white-space:pre-wrap;word-break:break-word}
-.dt-body u.mk{text-decoration:underline;text-decoration-thickness:2px;color:var(--accent);font-weight:700}
+.dt-body u.mk{text-decoration:underline;text-decoration-thickness:2px;color:var(--chg);font-weight:700}
 .dt-reason{white-space:pre-line;margin:0 8px 8px;padding:6px 8px;background:var(--panel);border:1px solid var(--line);
   border-radius:4px;font-size:11px;line-height:1.7}
 .dt-reason b{color:var(--muted);margin-right:4px}
@@ -744,17 +747,17 @@ button.mini2.apply:disabled{background:var(--panel2);color:var(--muted);
 .anx-diff .anx-row{display:flex;gap:8px;align-items:baseline;padding:2px 0;line-height:1.7}
 .anx-diff .anx-tag{flex:none;min-width:44px;font-size:11px;color:var(--muted);
   border:1px solid var(--line);border-radius:3px;padding:1px 5px;text-align:center}
-.anx-diff .anx-tag.new{color:#B3261E;border-color:#E7B4AF}
-.anx-diff u.mk{color:#B3261E;text-decoration:underline;text-decoration-thickness:2px;font-weight:700}
+.anx-diff .anx-tag.new{color:var(--chg);border-color:#E7B4AF}
+.anx-diff u.mk{color:var(--chg);text-decoration:underline;text-decoration-thickness:2px;font-weight:700}
 
-/* 조문에서 현행과 달라진 말 — 푸르게 짚는다 (별표는 붉게) */
+/* 조문에서 현행과 달라진 말 —— 빨간 밑줄로 짚는다 (링크의 파랑과 가른다) */
 .body-diff .bd-row{display:flex;gap:8px;align-items:flex-start;padding:4px 0;line-height:1.75}
 .body-diff .bd-row + .bd-row{border-top:1px dashed var(--line)}
 .body-diff .bd-tag{flex:none;min-width:44px;font-size:11px;color:var(--muted);
   border:1px solid var(--line);border-radius:3px;padding:1px 5px;text-align:center;margin-top:3px}
-.body-diff .bd-tag.new{color:#1552B0;border-color:#B4C8E7}
+.body-diff .bd-tag.new{color:var(--chg);border-color:#E7B4AF}
 .body-diff .bd-txt{white-space:pre-wrap;min-width:0}
-.body-diff u.mk{color:#1552B0;text-decoration:underline;text-decoration-thickness:2px;font-weight:700}
+.body-diff u.mk{color:var(--chg);text-decoration:underline;text-decoration-thickness:2px;font-weight:700}
 
 /* 개정으로 새로 더하는 심사표 — 현행 서식에 없던 표 */
 .anx-extra > label{color:#C81E1E}
@@ -783,14 +786,14 @@ button.mini2.apply:disabled{background:var(--panel2);color:var(--muted);
 #cmpTable.official th { text-align: center; }
 #cmpTable.official td { vertical-align: top; line-height: 1.75; word-break: break-all; }
 #cmpTable.official .sm { color: #33454F; }
-#cmpTable.official u.mk { text-decoration: underline; color: #C1502E; font-weight: 700; }
+#cmpTable.official u.mk { text-decoration: underline; color: var(--chg); font-weight: 700; }
 #cmpTable.official .mk-new { color: #2E7D6B; font-weight: 700; }
 #cmpTable.official .mk-omit { color: #7B8A92; }
 #cmpTable.official tr.k-new td, #cmpTable.official tr.k-del td { background: transparent; }
 .cmp-bar2 #cmpForm { font-size: 12px; margin-left: 4px; }
 
-/* 신구조문 대비표 — 현행 칸에서 앞으로 바뀔 대목 (개정안 칸의 붉은 밑줄과 짝) */
-#cmpTable.official u.mk-old { text-decoration: underline; color: #1C6FB8; font-weight: 700; }
+/* 신구조문 대비표 — 현행 칸에서 앞으로 바뀔 대목. 개정안 칸과 같이 빨간 밑줄로 짚는다 */
+#cmpTable.official u.mk-old { text-decoration: underline; color: var(--chg); font-weight: 700; }
 
 /* 칸 안에 넣은 진짜 표 — 자리표시([표 N])를 바꾸어 넣은 것 */
 #cmpTable.official td.why { font-size: 12px; line-height: 1.6; word-break: keep-all; }
@@ -845,8 +848,8 @@ button.mini2.apply:disabled{background:var(--panel2);color:var(--muted);
 tr.g-must td { background: #FDF6F4; } tr.g-check td { background: #FDFAF3; }
 
 /* 본문 속 별표·별지 링크 — 조문 링크(푸른)와 갈라 보이게 */
-a.cite.anx { color: #B07A1E; border-bottom: 1px dotted #B07A1E; cursor: pointer; }
-a.cite.anx:hover { background: #FDF6E7; }
+a.cite.anx { color: var(--link); border-bottom: 1px dotted var(--link); cursor: pointer; }
+a.cite.anx:hover { background: var(--link-bg); }
 
 /* ---------- 용어 통일 결과 창 ---------- */
 .tm-tbl th { position: sticky; top: 0; background: #1F2C35; color: #fff; font-size: 12px; }
