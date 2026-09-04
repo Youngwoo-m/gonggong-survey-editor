@@ -76,7 +76,12 @@ button{font-family:inherit}
 #refBlock2.hidden,#refSplit.hidden{display:none}
 .splitter-h{height:5px;background:var(--panel);cursor:row-resize;flex:none;transition:background .12s}
 .splitter-h:hover,.splitter-h.dragging{background:var(--muted)}
-.pane-head.edit{background:var(--accent)}
+/* 개정안 창 머리 —— 셈이 길어 제목과 한 줄에 들어가지 아니한다.
+   (v2 ㆍ 편 7 ㆍ 장 49 ㆍ 절 5 ㆍ 조 333 ㆍ 별표 89 ㆍ 별지 11 ㆍ 변경 412)
+   줄을 바꾸어 제목 아래에 둔다. 높이는 못박지 아니하고 늘어나게 한다. */
+.pane-head.edit{background:var(--accent);flex-wrap:wrap;
+                height:auto;min-height:26px;padding-top:3px;padding-bottom:3px}
+.pane-head.edit .pane-sub{flex:0 0 100%;margin-left:0;line-height:1.4}
 .pane-head.detail{background:var(--green)}
 .pane-head.edit.ro{background:var(--slate)}
 .pane-title{font-weight:700}
@@ -868,3 +873,6 @@ a.cite.anx:hover { background: #FDF6E7; }
    빛깔만이 아니라 글꼴 기울기로도 가른다. */
 .ex { color: #C1502E; font-style: italic; }
 .bd-text .ex, .cmp-body .ex, td .ex, th .ex { color: #C1502E; font-style: italic; }
+
+/* 자료 파일이 브라우저 작업본보다 새로울 때 [자료에서 다시 읽기] 를 돋운다 */
+.menu button.warn{background:var(--accent);color:#fff;font-weight:700}

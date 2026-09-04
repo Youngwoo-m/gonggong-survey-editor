@@ -7,11 +7,11 @@
    · this.tree 는 항상 '현재 버전'의 트리 배열과 같은 객체를 가리킨다.
    · 모든 구조 변경은 run() 트랜잭션을 통해서만 일어난다.
    ============================================================ */
-import * as M from "./model.js?v=20260903a";
-import { revLabel, nextRevLabel, revValue, verPrefixOf } from "./targets.js?v=20260903a";
-import { regFingerprint } from "./xrefs.js?v=20260903a";
+import * as M from "./model.js?v=20260904h";
+import { revLabel, nextRevLabel, revValue, verPrefixOf } from "./targets.js?v=20260904h";
+import { regFingerprint } from "./xrefs.js?v=20260904h";
 import { numbersOf, planFrom, planStayed, remapCitations, articleIdsIn,
-         planTermFixes, TERM_RULES } from "./xrefs.js?v=20260903a";
+         planTermFixes, TERM_RULES } from "./xrefs.js?v=20260904h";
 
 const MAX_HISTORY = 100;
 const BASE_ID = "base";
@@ -587,6 +587,10 @@ ${line}` : line;
       savedAt: new Date().toISOString(),
       currentId: this.currentId,
       targetIds: this.targetIds || [],
+      /* 이 작업본을 세울 때 쓴 자료 파일의 지문. 다음에 이어받을 때
+         파일의 지문과 견주어, 스크립트가 자료를 고쳤는지 가린다.
+         (core/srcfp.js) */
+      srcFp: this.srcFp || {},
       activeTargetId: this.activeTargetId || null,
       currentByTarget: this.currentByTarget || {},
       author: this.author || "",
@@ -613,6 +617,7 @@ ${line}` : line;
     this.ui = Object.assign({ ref1: null, ref2: null }, o.ui || {});
     if (o.author && !this.author) this.author = o.author;
     this.targetIds = Array.isArray(o.targetIds) ? o.targetIds : [];
+    this.srcFp = (o.srcFp && typeof o.srcFp === "object") ? { ...o.srcFp } : {};
     this.activeTargetId = o.activeTargetId || null;
     this.currentByTarget = (o.currentByTarget && typeof o.currentByTarget === "object")
       ? { ...o.currentByTarget } : {};

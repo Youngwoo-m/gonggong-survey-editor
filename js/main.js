@@ -1,32 +1,33 @@
 /* ============================================================
    main.js — 앱 조립 (1단계 프로토타입)
    ============================================================ */
-import * as M from "./core/model.js?v=20260903a";
-import { Project } from "./core/project.js?v=20260903a";
-import * as FS from "./adapters/fileio.js?v=20260903a";
-import * as AUTO from "./adapters/autosave.js?v=20260903a";
-import { TreeView } from "./ui/tree.js?v=20260903a";
-import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260903a";
-import { CompareView } from "./ui/compare.js?v=20260903a";
-import { VersionsView } from "./ui/versions.js?v=20260903a";
-import { HistoryView } from "./ui/history.js?v=20260903a";
-import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260903a";
-import { ValidateView } from "./ui/validate.js?v=20260903a";
-import { RefPicker } from "./ui/refpicker.js?v=20260903a";
-import { AIView } from "./ui/ai.js?v=20260903a";
-import { CiteCheckView } from "./ui/citecheck.js?v=20260903a";
-import { TermsView } from "./ui/terms.js?v=20260903a";
-import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260903a";
-import * as GH from "./adapters/github.js?v=20260903a";
-import { extractLines } from "./core/importer.js?v=20260903a";
-import { buildAuto } from "./core/structure.js?v=20260903a";
-import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260903a";
-import { ObjectStore, fitTable } from "./core/objects.js?v=20260903a";
-import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260903a";
-import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260903a";
-import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260903a";
-import { fmtDate } from "./ui/html.js?v=20260903a";
-import { printReg } from "./ui/printdoc.js?v=20260903a";
+import * as M from "./core/model.js?v=20260904h";
+import { Project } from "./core/project.js?v=20260904h";
+import * as FS from "./adapters/fileio.js?v=20260904h";
+import * as AUTO from "./adapters/autosave.js?v=20260904h";
+import { TreeView } from "./ui/tree.js?v=20260904h";
+import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260904h";
+import { CompareView } from "./ui/compare.js?v=20260904h";
+import { VersionsView } from "./ui/versions.js?v=20260904h";
+import { HistoryView } from "./ui/history.js?v=20260904h";
+import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260904h";
+import { ValidateView } from "./ui/validate.js?v=20260904h";
+import { RefPicker } from "./ui/refpicker.js?v=20260904h";
+import { AIView } from "./ui/ai.js?v=20260904h";
+import { CiteCheckView } from "./ui/citecheck.js?v=20260904h";
+import { TermsView } from "./ui/terms.js?v=20260904h";
+import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260904h";
+import * as GH from "./adapters/github.js?v=20260904h";
+import { extractLines } from "./core/importer.js?v=20260904h";
+import { buildAuto } from "./core/structure.js?v=20260904h";
+import * as SRC from "./core/srcfp.js?v=20260904h";
+import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260904h";
+import { ObjectStore, fitTable } from "./core/objects.js?v=20260904h";
+import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260904h";
+import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260904h";
+import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260904h";
+import { fmtDate } from "./ui/html.js?v=20260904h";
+import { printReg, regHtml } from "./ui/printdoc.js?v=20260904h";
 
 const $ = (s) => document.querySelector(s);
 const NL = "\n";
@@ -122,11 +123,115 @@ function printPane(key) {
   if (!p || !p.doc) { toast("먼저 참조할 규정을 고르십시오."); return; }
   const n = (p.doc.stats && p.doc.stats["조"]) || 0;
   toast(`${p.doc.name} 을(를) 인쇄용 쪽으로 폅니다${n ? ` — 조 ${n}개` : ""}.`, 3500);
-  printReg(p.doc);
+  printReg(p.doc, { mode: p.mode || "both" });
+}
+
+/** 파일 하나를 내려받게 한다 */
+function dropFile(blob, name) {
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url; a.download = name;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 4000);
+}
+
+/**
+ * 참조 창의 규정을 파일로 내려받는다.
+ *
+ * 두 갈래가 있다.
+ *
+ *   ㉠ 원문 파일이 서고에 딸려 있으면(docFile) 그 파일을 그대로 준다.
+ *      발행처가 낸 것이므로 이것이 참말 원문이다.
+ *
+ *   ㉡ 없으면 색인한 조문으로 한 장을 지어 준다. 이때 화면에서 고른
+ *      원문ㆍ번역ㆍ대역을 그대로 따른다 —— 국외 규정을 번역으로 보다가
+ *      내려받으면 번역이 나와야 한다.
+ *
+ * ㉡ 은 발행처의 원본이 아니므로 파일 이름에 「색인본」 을 밝힌다.
+ */
+/**
+ * 지금 보고 있는 개정안을 파일로 내려받는다.
+ *
+ * 참조 창의 [원문 내려받기] 와 같은 길을 쓴다 —— 화면과 파일이 어긋나지
+ * 아니하려면 한 자리에서 지어야 한다(ui/printdoc.js 의 regHtml).
+ *
+ * 개정안은 서고의 규정과 달리 발행처의 원본이 없다. 짓고 있는 문안이므로
+ * 파일 이름과 문서 머리에 판 이름(vA-1.10 따위)을 함께 적어, 어느 판을
+ * 뽑은 것인지 뒤에도 알 수 있게 한다.
+ */
+function downloadEdit() {
+  const reg = project.activeReg;
+  if (!reg) { toast("개정안을 찾지 못했습니다."); return; }
+  const t = targetById(reg.targetId) || {};
+  const rev = project.current;
+  const base = library?.regulations?.find((r) => r.name === t.base) || {};
+  const st = M.stats(reg.children || []);
+  /* 판 이름은 규정마다 따로 지닌다(revLabel — vA-1.10 따위). 프로젝트 전체의
+     판 이름(v2)은 세 규정을 아우른 것이라 규정 하나만 놓고 보면 뜻이 옅다.
+     규정 제 것이 있으면 그것을 앞세운다. */
+  const label = reg.revLabel ? ` ${reg.revLabel}`
+              : (rev?.label ? ` ${rev.label}` : "");
+  const doc = {
+    name: `${t.base || reg.title || "규정"} ${t.word || "개정안"}${label}`,
+    org: base.org || "", kind: base.kind || "", no: "",
+    effective: "",
+    stats: st,
+    tree: reg.children || [],
+    annexTree: [],
+    source: `공공측량 규정 개정 편집기 — ${rev?.title || ""}`.trim(),
+    copyright: "행정예고를 거치지 아니한 작성 중 문안입니다. "
+             + "공식 개정안으로 인용하여서는 아니 됩니다.",
+  };
+  const safe = doc.name.replace(/[\\/:*?"<>|]/g, "_").slice(0, 90);
+  dropFile(new Blob([regHtml(doc, { mode: "both" })],
+                    { type: "text/html;charset=utf-8" }), safe + ".html");
+  toast(`${doc.name} 을(를) 내려받습니다 — 조 ${st.조}개 · 변경 ${st.변경}개.
+`
+        + `행정예고 전 문안이므로 공식 개정안으로 인용하지 마십시오.`, 5200);
+}
+
+async function downloadRef(key) {
+  const p = paneOf(key);
+  if (!p || !p.doc) { toast("먼저 참조할 규정을 고르십시오."); return; }
+  const doc = p.doc;
+  const safe = String(doc.name || "규정").replace(/[\\/:*?"<>|]/g, "_").slice(0, 80);
+
+  if (doc.docFile) {
+    try {
+      const r = await fetch(doc.docFile);
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      const blob = await r.blob();
+      const ext = (doc.docFile.match(/\.[a-z0-9]+$/i) || [".pdf"])[0];
+      dropFile(blob, safe + ext);
+      toast(`${doc.name} 의 원문 파일을 내려받습니다.`, 3500);
+      return;
+    } catch (e) {
+      toast(`원문 파일을 가져오지 못했습니다 (${e.message}). 색인본으로 냅니다.`, 4500);
+    }
+  }
+
+  const mode = p.mode || "both";
+  const NAME = { orig: "원문", trans: "번역", both: "대역" };
+  const hasT = !!(p.doc.hasTrans ?? /transBody/.test(JSON.stringify(doc.tree || []).slice(0, 200000)));
+  const tag = hasT ? `, ${NAME[mode] || "대역"}` : "";
+  const html = regHtml(doc, { mode });
+  dropFile(new Blob([html], { type: "text/html;charset=utf-8" }),
+           `${safe}(색인본${tag}).html`);
+  const n = (doc.stats && doc.stats["조"]) || 0;
+  toast(`${doc.name} 을(를) 색인본으로 내려받습니다${n ? ` — 조 ${n}개` : ""}${tag}.
+`
+        + `발행처의 원본이 아니라 이 편집기가 색인한 조문으로 지은 것입니다.`, 5200);
 }
 let importedSeq = 0;                        // 파일로 불러온 규정 id 부여용
 
 /* ---------- 초기화 ---------- */
+/* 자료 파일의 지문 —— 담아 둔 작업본과 견주어 어긋남을 가린다 (core/srcfp.js).
+   init() 이 곧바로 도므로 선언은 그보다 위에 있어야 한다. */
+let fileFp = {};
+let staleTargets = [];
+
 init().catch((e) => { console.error(e); toast("초기화 실패: " + e.message, 5000); });
 
 async function init() {
@@ -155,6 +260,11 @@ async function init() {
   if (!entries.length) throw new Error("개정 대상 규정을 하나도 불러오지 못했습니다.");
   M.setRootLevel(APP.top);
   project.loadFromTargets(entries);
+  /* 파일에서 읽은 자료의 지문을 적어 둔다. 아래에서 담아 둔 작업본을
+     이어받으면 그쪽 지문으로 덮이므로, 견주려고 따로도 들고 있는다. */
+  fileFp = {};
+  for (const e of entries) fileFp[e.target.id] = SRC.fingerprint(e.draft);
+  project.srcFp = { ...fileFp };
 
   const base = { id: baseRegIdOf[APP.id] };
   baseRegId = base.id;
@@ -263,9 +373,41 @@ async function init() {
           + `세 규정이 이제 한 트리에 있습니다.`, 7000);
   } else if (resumed) {
     const at = new Date(resumed);
-    toast(`지난 작업을 이어서 엽니다 — ${isNaN(at) ? "" : at.toLocaleString("ko-KR")}
+    /* 담아 둔 작업본이 자료 파일보다 뒤에 있는가.
+       이 편집기의 자료는 화면에서만 고치는 것이 아니라 scripts\ 의 연장들이
+       data\draft*.json 을 직접 고친다. 그것을 모른 채 옛 작업본을 이어받아
+       무엇을 고쳐 내보내면 스크립트로 한 일이 덮인다. */
+    const hadFp = project.srcFp && Object.keys(project.srcFp).length;
+    staleTargets = hadFp ? SRC.drifted(project.srcFp, fileFp) : [];
+    if (!hadFp) {
+      /* 지문을 적기 시작한 것보다 앞서 담긴 작업본이다. 파일과 견줄 수가
+         없으므로 어긋났다고도 아니라고도 하지 아니한다. 다만 견줄 수
+         없다는 사실은 알린다 —— 조용히 넘어가면 옛 상태를 보면서
+         최신인 줄 알게 된다. */
+      const btn = $('[data-cmd="reload"]');
+      if (btn) {
+        btn.classList.add("warn");
+        btn.title = "이 작업본은 자료 파일과 견줄 수 있는 지문이 없습니다."
+                  + " 한 번 눌러 파일의 것으로 맞추면 다음부터는 저절로 가립니다.";
+      }
+      toast(`지난 작업을 이어서 엽니다 — ${isNaN(at) ? "" : at.toLocaleString("ko-KR")}
 `
-          + `처음부터 다시 하려면 [현행으로 초기화] 를 누르세요.`, 5200);
+            + `이 작업본은 자료 파일과 견줄 지문이 없어, 파일이 더 새로운지 `
+            + `가릴 수 없습니다. [자료에서 다시 읽기] 를 한 번 누르면 `
+            + `다음부터는 저절로 알립니다.`, 9000);
+    } else if (staleTargets.length) {
+      const names = staleTargets.map((id) => targetById(id)?.short || id).join(" · ");
+      toast(`자료 파일이 이 브라우저에 담아 둔 것보다 새롭습니다 — ${names}
+`
+            + `[자료에서 다시 읽기] 를 누르면 파일의 것으로 갈아 끼웁니다. `
+            + `지금 담긴 것은 갈아 끼우기 전에 따로 갈무리합니다.`, 12000);
+      const btn = $('[data-cmd="reload"]');
+      if (btn) { btn.classList.add("warn"); btn.title = `자료 파일이 더 새롭습니다 — ${names}`; }
+    } else {
+      toast(`지난 작업을 이어서 엽니다 — ${isNaN(at) ? "" : at.toLocaleString("ko-KR")}
+`
+            + `처음부터 다시 하려면 [현행으로 초기화] 를 누르세요.`, 5200);
+    }
   } else {
     const st = M.stats(project.tree);
     toast(`개정 대상 ${project.regNodes.length}종 · 조문 ${st.조}개를 불러왔습니다.`, 3200);
@@ -1249,8 +1391,10 @@ function onProjectChange(p, msg) {
 
   const st = M.stats(p.tree);
   const anx = [st.별표 ? `별표 ${st.별표}` : "", st.별지 ? `별지 ${st.별지}` : ""].filter(Boolean).join(" · ");
+  /* 머리 둘째 줄에 홀로 서므로 무엇을 센 것인지 앞에 밝힌다 —
+     「요약:」 이 없으면 그저 숫자 늘어놓은 줄로 보인다. */
   $("#editStats").textContent =
-    `${p.current ? p.current.label + " · " : ""}편 ${st.편} · 장 ${st.장}${st.절 ? ` · 절 ${st.절}` : ""} · 조 ${st.조}` +
+    `요약: ${p.current ? p.current.label + " · " : ""}편 ${st.편} · 장 ${st.장}${st.절 ? ` · 절 ${st.절}` : ""} · 조 ${st.조}` +
     `${anx ? ` · ${anx}` : ""} · 변경 ${st.변경}`;
   $("#stCount").textContent = `편 ${st.편} / 장 ${st.장} / 조 ${st.조}${anx ? ` / ${anx}` : ""} · 변경 ${st.변경}`;
   scheduleValidate();
@@ -1476,6 +1620,9 @@ async function doCommand(cmd) {
     case "openFile2": await importFileIntoPane(paneOf("ref2")); break;
     case "printRef1": printPane("ref1"); break;
     case "printRef2": printPane("ref2"); break;
+    case "dlRef1": await downloadRef("ref1"); break;
+    case "dlRef2": await downloadRef("ref2"); break;
+    case "dlEdit": downloadEdit(); break;
     case "shareRef1": await shareImported(paneOf("ref1")); break;
     case "shareRef2": await shareImported(paneOf("ref2")); break;
     case "clearSel1": clearPaneSel("ref1"); break;
@@ -1523,7 +1670,7 @@ async function doCommand(cmd) {
       const onlyName = only ? (project.regNode(only)?.short || "") : "";
       busy(`${onlyName || "개정 대상 세 규정"} 보고서를 작성 중…`);
       try {
-        const { buildReport } = await import("./ui/report.js?v=20260903a");
+        const { buildReport } = await import("./ui/report.js?v=20260904h");
         const r = await buildReport(project, { targetId: only });
         const url = URL.createObjectURL(r.blob);
         const a = document.createElement("a");
@@ -1617,6 +1764,56 @@ ${r.warning}` : ""),
         break;
       }
       termsView.open(dry, TERM_RULES);
+      break;
+    }
+
+    /* 자료 파일에서 다시 읽기 —— ㉭
+       화면은 브라우저에 담아 둔 작업본을 파일보다 먼저 이어받는다. 그런데
+       이 편집기의 자료는 scripts\ 의 연장들이 직접 고치므로, 그것을 화면에
+       들이려면 갈아 끼워야 한다. [현행으로 초기화] 도 파일에서 읽기는 하나
+       이름과 안내문이 「현행에서 다시 시작」 이라 개정안까지 날아가는 줄
+       알게 되어 아무도 누르지 못하였다. 하는 일을 이름 그대로 적은 명령을
+       따로 둔다. 갈아 끼우기 전에 지금 것을 갈무리하므로 잃는 것이 없다. */
+    case "reload": {
+      const names = staleTargets.length
+        ? staleTargets.map((id) => targetById(id)?.short || id).join(" · ")
+        : "";
+      const NL2 = "\n\n";
+      if (!confirm(
+        "자료 파일(data 폴더의 draft*.json)에서 개정안을 다시 읽습니다." + NL2
+        + (names ? `파일이 더 새로운 규정 — ${names}` + NL2 : "")
+        + "지금 화면의 작업본은 갈아 끼우기 전에 따로 갈무리하므로 사라지지 "
+        + "않습니다. 다만 화면에서만 고치고 파일에 옮기지 아니한 것이 있으면 "
+        + "그것은 화면에서 보이지 않게 됩니다." + NL2
+        + "계속할까요?")) break;
+
+      let kept = null;
+      try { kept = await AUTO.backup(project.toJSON()); } catch { /* 못 담아도 간다 */ }
+
+      const entries = [];
+      for (const t of allTargets()) {
+        const regId = baseRegIdOf[t.id];
+        if (!regId) continue;
+        let draft = null;
+        if (t.draft) { try { draft = await FS.loadJSON(t.draft); } catch { /* 없으면 현행에서 */ } }
+        entries.push({ target: t, doc: await loadReg(regId), draft, regId });
+      }
+      if (!entries.length) { toast("자료를 하나도 읽지 못했습니다.", 4000); break; }
+
+      project.loadFromTargets(entries);
+      fileFp = {};
+      for (const e of entries) fileFp[e.target.id] = SRC.fingerprint(e.draft);
+      project.srcFp = { ...fileFp };
+      staleTargets = [];
+      const btn = $('[data-cmd="reload"]');
+      if (btn) { btn.classList.remove("warn"); btn.title = ""; }
+
+      _followingTarget = null;
+      await followActiveTarget();
+      const st = M.stats(project.tree);
+      toast(`자료에서 다시 읽었습니다 — 개정 대상 ${project.regNodes.length}종 · 조문 ${st.조}개
+`
+            + (kept ? "이 브라우저에 있던 것은 갈무리해 두었습니다." : ""), 5200);
       break;
     }
 

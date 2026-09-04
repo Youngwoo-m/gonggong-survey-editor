@@ -110,6 +110,38 @@ export async function save(data) {
   }
 }
 
+/**
+ * 지금 담긴 것을 날짜를 붙여 따로 갈무리한다.
+ *
+ * [자료에서 다시 읽기] 는 화면의 작업본을 파일의 것으로 갈아 끼운다.
+ * 화면에서만 고친 것이 있으면 그것이 사라지므로, 갈아 끼우기 전에
+ * 한 벌을 남긴다. 자리는 지우지 아니하므로 뒤에 꺼내 볼 수 있다.
+ *
+ * @returns {Promise<string|null>} 갈무리한 자리 이름
+ */
+export async function backup(data) {
+  const at = new Date().toISOString().replace(/[:.]/g, "-");
+  const key = `${KEY}:백업:${at}`;
+  try {
+    await run("readwrite", (s) => s.put(
+      { data, at: new Date().toISOString(), name: data && data.name }, key));
+    return key;
+  } catch {
+    return null;
+  }
+}
+
+/** 갈무리해 둔 것의 자리 이름들 (새것부터) */
+export async function listBackups() {
+  try {
+    const all = await run("readonly", (s) => s.getAllKeys());
+    return (all || []).filter((k) => String(k).startsWith(`${KEY}:백업:`))
+      .sort().reverse();
+  } catch {
+    return [];
+  }
+}
+
 export async function clear() {
   try {
     await run("readwrite", (s) => s.delete(KEY));
