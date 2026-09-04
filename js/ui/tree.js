@@ -1,7 +1,7 @@
 /* ============================================================
    ui/tree.js — 트리 렌더링 + 드래그 앤 드롭
    ============================================================ */
-import * as M from "../core/model.js?v=20260904j";
+import * as M from "../core/model.js?v=20260904m";
 
 /* 상태 이름 → CSS 클래스에 쓸 이름. 가운데점은 클래스에 못 쓴다. */
 const statusKey = (s) => String(s || "").replace(/[^가-힣A-Za-z0-9]/g, "");
@@ -17,6 +17,9 @@ const STATUS_HINT = {
 };
 
 const INDENT = 15;
+
+/** 같은 마디를 이 사이 안에 다시 누르면 두 번 누른 것으로 본다 (밀리초) */
+const DBL_MS = 420;
 
 export class TreeView {
   /**
@@ -170,20 +173,27 @@ export class TreeView {
   _bind() {
     const el = this.el;
 
+    /* 두 번 누름을 여기에서 센다 —— 브라우저의 dblclick 을 쓰지 아니한다.
+       한 번 누를 때마다 트리를 다시 그리므로(setSelected → render) 두 번째
+       누름이 첫 번째와 다른 요소에 떨어져, 브라우저가 dblclick 을 내지
+       아니한다. 같은 마디를 짧은 사이에 두 번 누른 것으로 갈음한다. */
     el.addEventListener("click", (e) => {
       const row = this._rowOf(e.target);
       if (!row) return;
       if (e.target.dataset.role === "twisty") { this.opts.onToggle?.(row.dataset.id); return; }
-      this.selectedId = row.dataset.id;
-      this.opts.onSelect?.(row.dataset.id);
-    });
-
-    el.addEventListener("dblclick", (e) => {
-      const row = this._rowOf(e.target);
-      if (!row) return;
-      // 두 번 누름을 따로 받는 곳이 있으면 그쪽에 넘기고, 없으면 펴고 접는다
-      if (this.opts.onDblSelect) this.opts.onDblSelect(row.dataset.id);
-      else this.opts.onToggle?.(row.dataset.id);
+      const id = row.dataset.id;
+      const now = Date.now();
+      const twice = this._lastId === id && now - this._lastAt < DBL_MS;
+      this._lastId = id;
+      this._lastAt = twice ? 0 : now;      // 세 번째 누름이 또 두 번이 되지 아니하게
+      this.selectedId = id;
+      if (twice) {
+        // 두 번 누름을 따로 받는 곳이 있으면 그쪽에 넘기고, 없으면 펴고 접는다
+        if (this.opts.onDblSelect) this.opts.onDblSelect(id);
+        else this.opts.onToggle?.(id);
+        return;
+      }
+      this.opts.onSelect?.(id);
     });
 
     if (!(this.opts.editable || this.opts.dragSource)) return;

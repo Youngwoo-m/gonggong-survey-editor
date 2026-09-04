@@ -1,33 +1,33 @@
 /* ============================================================
    main.js — 앱 조립 (1단계 프로토타입)
    ============================================================ */
-import * as M from "./core/model.js?v=20260904j";
-import { Project } from "./core/project.js?v=20260904j";
-import * as FS from "./adapters/fileio.js?v=20260904j";
-import * as AUTO from "./adapters/autosave.js?v=20260904j";
-import { TreeView } from "./ui/tree.js?v=20260904j";
-import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260904j";
-import { CompareView } from "./ui/compare.js?v=20260904j";
-import { VersionsView } from "./ui/versions.js?v=20260904j";
-import { HistoryView } from "./ui/history.js?v=20260904j";
-import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260904j";
-import { ValidateView } from "./ui/validate.js?v=20260904j";
-import { RefPicker } from "./ui/refpicker.js?v=20260904j";
-import { AIView } from "./ui/ai.js?v=20260904j";
-import { CiteCheckView } from "./ui/citecheck.js?v=20260904j";
-import { TermsView } from "./ui/terms.js?v=20260904j";
-import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260904j";
-import * as GH from "./adapters/github.js?v=20260904j";
-import { extractLines } from "./core/importer.js?v=20260904j";
-import { buildAuto } from "./core/structure.js?v=20260904j";
-import * as SRC from "./core/srcfp.js?v=20260904j";
-import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260904j";
-import { ObjectStore, fitTable } from "./core/objects.js?v=20260904j";
-import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260904j";
-import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260904j";
-import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260904j";
-import { fmtDate } from "./ui/html.js?v=20260904j";
-import { printReg, regHtml } from "./ui/printdoc.js?v=20260904j";
+import * as M from "./core/model.js?v=20260904m";
+import { Project } from "./core/project.js?v=20260904m";
+import * as FS from "./adapters/fileio.js?v=20260904m";
+import * as AUTO from "./adapters/autosave.js?v=20260904m";
+import { TreeView } from "./ui/tree.js?v=20260904m";
+import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260904m";
+import { CompareView } from "./ui/compare.js?v=20260904m";
+import { VersionsView } from "./ui/versions.js?v=20260904m";
+import { HistoryView } from "./ui/history.js?v=20260904m";
+import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260904m";
+import { ValidateView } from "./ui/validate.js?v=20260904m";
+import { RefPicker } from "./ui/refpicker.js?v=20260904m";
+import { AIView } from "./ui/ai.js?v=20260904m";
+import { CiteCheckView } from "./ui/citecheck.js?v=20260904m";
+import { TermsView } from "./ui/terms.js?v=20260904m";
+import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260904m";
+import * as GH from "./adapters/github.js?v=20260904m";
+import { extractLines } from "./core/importer.js?v=20260904m";
+import { buildAuto } from "./core/structure.js?v=20260904m";
+import * as SRC from "./core/srcfp.js?v=20260904m";
+import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260904m";
+import { ObjectStore, fitTable } from "./core/objects.js?v=20260904m";
+import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260904m";
+import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260904m";
+import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260904m";
+import { fmtDate } from "./ui/html.js?v=20260904m";
+import { printReg, regHtml } from "./ui/printdoc.js?v=20260904m";
 
 const $ = (s) => document.querySelector(s);
 const NL = "\n";
@@ -776,12 +776,7 @@ const refTrees = {};   // key -> TreeView
 function buildTrees() {
   editTree = new TreeView($("#editTree"), {
     editable: true,
-    onSelect: (id) => {
-      if (project.selectedId === id) { project.select(null); return; }
-      project.select(id);
-      // 현행규정 창에서도 짝이 되는 현행 조문을 함께 골라 준다
-      syncRefToDraft(id, { quiet: true });
-    },
+    onSelect: (id) => project.select(project.selectedId === id ? null : id),
     // 두 번 누르면 현행규정 창에서 그 조문의 현행 조문을 함께 골라 준다
     onDblSelect: (id) => {
       const node = M.findNode(project.tree, id);
@@ -820,7 +815,21 @@ function buildTrees() {
         pane.selectedId = id;
         refTrees[pane.key].setSelected(id);
         refreshRefDetail(pane);
-        // 현행규정 창에서 고르면 개정안의 짝도 함께 골라 준다
+      },
+      /* 두 번 누르면 개정안 창에서 짝이 되는 조문을 골라 가운데 조문
+         상세에 띄운다. 한 번 누름은 이 창 안에서 고르는 것으로 그친다 ——
+         훑어보는 동안 가운데 창이 따라 움직이면 읽던 자리를 잃는다. */
+      onDblSelect: (id) => {
+        const n = M.findNode(pane.tree, id);
+        if (!n || n.level !== "조" || n.annexRef) {
+          if (n) { n.collapsed = !n.collapsed; refTrees[pane.key].setData(pane.tree, pane.selectedId); }
+          return;
+        }
+        if (pane.selectedId !== id) {
+          pane.selectedId = id;
+          refTrees[pane.key].setSelected(id);
+          refreshRefDetail(pane);
+        }
         syncDraftToRef(pane, id);
       },
       onToggle: (id) => {
@@ -1198,7 +1207,10 @@ function syncDraftToRef(pane, refId) {
     if (hit || n.level !== "조") return;
     if (String(n.legacyNo || "").replace(/\s+/g, "") === key) hit = n;
   });
-  if (!hit) return;                       // 삭제된 조문은 개정안에 짝이 없다
+  if (!hit) {                             // 삭제된 조문은 개정안에 짝이 없다
+    toast(`개정안에서 ${key} 에 짝이 되는 조문을 찾지 못했습니다.`, 2600);
+    return;
+  }
   if (project.selectedId === hit.id) return;
   jumpToNode(hit.id);
 }
@@ -1704,7 +1716,7 @@ async function doCommand(cmd) {
       const onlyName = only ? (project.regNode(only)?.short || "") : "";
       busy(`${onlyName || "개정 대상 세 규정"} 보고서를 작성 중…`);
       try {
-        const { buildReport } = await import("./ui/report.js?v=20260904j");
+        const { buildReport } = await import("./ui/report.js?v=20260904m");
         const r = await buildReport(project, { targetId: only });
         const url = URL.createObjectURL(r.blob);
         const a = document.createElement("a");
