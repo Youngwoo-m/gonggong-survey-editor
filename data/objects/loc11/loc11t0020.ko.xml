@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0020" article="제43조(망조정 계산)" rows="4" cols="5" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">구분 항목</cell>
+    <cell col="1" row="0" header="1">1급기준점측량</cell>
+    <cell col="2" row="0" header="1">2급기준점측량</cell>
+    <cell col="3" row="0" header="1">3급기준점측량</cell>
+    <cell col="4" row="0" header="1">4급기준점측량</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">기선벡터의 각 성분의 잔차</cell>
+    <cell col="1" row="1">20mm</cell>
+    <cell col="2" row="1">20mm</cell>
+    <cell col="3" row="1">20mm</cell>
+    <cell col="4" row="1">20mm</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">수평위치의 폐합차</cell>
+    <cell col="1" row="2">Δs =100mm+40mm√N Δs: 기지점의 성과값 및 가정 3차원망조정 계산 결과에서 구한 거리 N: 기지점까지의 최소 변수(변수가 같은 경우에는 노선장이 가장 짧은 것)</cell>
+    <cell col="2" row="2"></cell>
+    <cell col="3" row="2"></cell>
+    <cell col="4" row="2"></cell>
+  </row>
+  <row>
+    <cell col="0" row="3">표고의 폐합차</cell>
+    <cell col="1" row="3">250mm+45mm√N 을 표준으로 함 N: 변수</cell>
+    <cell col="2" row="3"></cell>
+    <cell col="3" row="3"></cell>
+    <cell col="4" row="3"></cell>
+  </row>
+</table>

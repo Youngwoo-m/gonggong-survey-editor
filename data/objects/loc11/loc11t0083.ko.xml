@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0083" article="제444조(성과품요구사양서의 작성)" rows="3" cols="4" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">성과품목</cell>
+    <cell col="1" row="0" header="1">점밀도</cell>
+    <cell col="2" row="0" header="1">요구 정확도 (표준값)</cell>
+    <cell col="3" row="0" header="1">요구 정확도 (대상)</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">지면데이터 그리드데이터 등고선데이터</cell>
+    <cell col="1" row="1">10~100 점/㎡</cell>
+    <cell col="2" row="1">0.1m(RMS 오차)</cell>
+    <cell col="3" row="1">표고</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">비고 식생의 영향이 큰 곳에서 지면데이터, 그리드데이터, 등고선데이터의 작성을 목적으로 하는 경우의 원시데이터의 점밀도는 2배로 한다.</cell>
+    <cell col="1" row="2"></cell>
+    <cell col="2" row="2"></cell>
+    <cell col="3" row="2"></cell>
+  </row>
+</table>

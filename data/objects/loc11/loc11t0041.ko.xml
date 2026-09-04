@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0041" article="제89조(GNSS 관측의 실시)" rows="7" cols="3" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">구분 항목</cell>
+    <cell col="1" row="0" header="1"></cell>
+    <cell col="2" row="0" header="1">3급수준측량</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">관 측 시 간</cell>
+    <cell col="1" row="1"></cell>
+    <cell col="2" row="1">5시간 이상</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">데이터 취득간격</cell>
+    <cell col="1" row="2"></cell>
+    <cell col="2" row="2">30초 이하</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">최 저 고 도 각</cell>
+    <cell col="1" row="3"></cell>
+    <cell col="2" row="3">15°를 표준</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">안테나고 측정단위</cell>
+    <cell col="1" row="4"></cell>
+    <cell col="2" row="4">mm</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">사용위성 수</cell>
+    <cell col="1" row="5">GPSㆍ준천정위성</cell>
+    <cell col="2" row="5">5위성 이상</cell>
+  </row>
+  <row>
+    <cell col="0" row="6"></cell>
+    <cell col="1" row="6">GPSㆍ준천정위성 및 GLONASS 위성</cell>
+    <cell col="2" row="6">6위성 이상</cell>
+  </row>
+</table>

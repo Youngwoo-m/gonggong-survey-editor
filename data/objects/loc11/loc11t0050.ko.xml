@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0050" article="제105조(수치지형도 데이터의 정확도)" rows="7" cols="4" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">지도정보 수준</cell>
+    <cell col="1" row="0" header="1">수평위치의 표준편차</cell>
+    <cell col="2" row="0" header="1">표고점의 표준편차</cell>
+    <cell col="3" row="0" header="1">등고선의 표준편차</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">250</cell>
+    <cell col="1" row="1">0.12m 이내</cell>
+    <cell col="2" row="1">0.25m 이내</cell>
+    <cell col="3" row="1">0.5m 이내</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">500</cell>
+    <cell col="1" row="2">0.25m 이내</cell>
+    <cell col="2" row="2">0.25m 이내</cell>
+    <cell col="3" row="2">0.5m 이내</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">1000</cell>
+    <cell col="1" row="3">0.70m 이내</cell>
+    <cell col="2" row="3">0.33m 이내</cell>
+    <cell col="3" row="3">0.5m 이내</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">2500</cell>
+    <cell col="1" row="4">1.75m 이내</cell>
+    <cell col="2" row="4">0.66m 이내</cell>
+    <cell col="3" row="4">1.0m 이내</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">5000</cell>
+    <cell col="1" row="5">3.50m 이내</cell>
+    <cell col="2" row="5">1.66m 이내</cell>
+    <cell col="3" row="5">2.5m 이내</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">10000</cell>
+    <cell col="1" row="6">7.00m 이내</cell>
+    <cell col="2" row="6">3.33m 이내</cell>
+    <cell col="3" row="6">5.0m 이내</cell>
+  </row>
+</table>

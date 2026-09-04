@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0036" article="제69조(점검계산 및 재측)" rows="5" cols="6" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">비 고</cell>
+    <cell col="1" row="0" header="1">1. S는 관측거리(km 단위), 관측일수 칸의 숫자는 하루당 표준 세트 수로 한다. 2. 관측 세트 수 및 일수의 산정에서 관측거리(km 단위)를 소수점 이하 1자리까지 구하고, 곱한 후의 끝수는 올려 정수로 한다. 3. 짝수 세트의 관측을 하고 관측일수가 하루에 미치지 아니하는 경우에는 하루로 올린다. 4. 표 안의 ( ) 안은 2~4급수준측량에 적용한다.</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">구분 항목</cell>
+    <cell col="1" row="1">1급수준측량</cell>
+    <cell col="2" row="1">2급수준측량</cell>
+    <cell col="3" row="1">3급수준측량</cell>
+    <cell col="4" row="1">4급수준측량</cell>
+    <cell col="5" row="1">간이수준측량</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">환 폐 합 차</cell>
+    <cell col="1" row="2">2mm√S</cell>
+    <cell col="2" row="2">5mm√S</cell>
+    <cell col="3" row="2">10mm√S</cell>
+    <cell col="4" row="2">20mm√S</cell>
+    <cell col="5" row="2">40mm√S</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">기지점에서 기지점까지의 폐 합 차</cell>
+    <cell col="1" row="3">15mm√S</cell>
+    <cell col="2" row="3">15mm√S</cell>
+    <cell col="3" row="3">15mm√S</cell>
+    <cell col="4" row="3">25mm√S</cell>
+    <cell col="5" row="3">50mm√S</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">비 고</cell>
+    <cell col="1" row="4">S는 관측거리(편도, km 단위)로 한다.</cell>
+    <cell col="2" row="4"></cell>
+    <cell col="3" row="4"></cell>
+    <cell col="4" row="4"></cell>
+    <cell col="5" row="4"></cell>
+  </row>
+</table>

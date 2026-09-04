@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0114" article="제643조(방법)" rows="3" cols="4" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">구분 거리</cell>
+    <cell col="1" row="0" header="1">평 지</cell>
+    <cell col="2" row="0" header="1">산 지</cell>
+    <cell col="3" row="0" header="1">비 고</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">20m 미만</cell>
+    <cell col="1" row="1">10 ㎜</cell>
+    <cell col="2" row="1">20 ㎜</cell>
+    <cell col="3" row="1">점간거리를 측정할 수 있는 경우 S는 좌표차에서 구한 거리로 한다. 점간거리를 측정할 수 없는 경우 S는 기지점 또는 기설점에서 중심점등까지의 거리 중 짧은 쪽으로 한다.</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">20m 이상</cell>
+    <cell col="1" row="2">S/2,000</cell>
+    <cell col="2" row="2">S/1,000</cell>
+    <cell col="3" row="2"></cell>
+  </row>
+</table>

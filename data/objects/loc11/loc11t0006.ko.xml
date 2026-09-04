@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0006" article="제35조(기기)" rows="9" cols="3" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">1급 GNSS 측량기</cell>
+    <cell col="1" row="0" header="1"></cell>
+    <cell col="2" row="0" header="1">1~4급기준점측량</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">2급 GNSS 측량기</cell>
+    <cell col="1" row="1"></cell>
+    <cell col="2" row="1">1~4급기준점측량</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">1급 데오드라이트</cell>
+    <cell col="1" row="2"></cell>
+    <cell col="2" row="2">1~4급기준점측량</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">2급 데오드라이트</cell>
+    <cell col="1" row="3"></cell>
+    <cell col="2" row="3">2~4급기준점측량</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">3급 데오드라이트</cell>
+    <cell col="1" row="4"></cell>
+    <cell col="2" row="4">4 급 기 준 점 측 량</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">측 거 의</cell>
+    <cell col="1" row="5"></cell>
+    <cell col="2" row="5">1~4급기준점측량</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">3급 레벨</cell>
+    <cell col="1" row="6"></cell>
+    <cell col="2" row="6">측 표 수 준 측 량</cell>
+  </row>
+  <row>
+    <cell col="0" row="7">2급 표척</cell>
+    <cell col="1" row="7"></cell>
+    <cell col="2" row="7">측 표 수 준 측 량</cell>
+  </row>
+  <row>
+    <cell col="0" row="8">강제 줄자(광폭 줄자)</cell>
+    <cell col="1" row="8">JIS 1급</cell>
+    <cell col="2" row="8">편 심 요 소 의 측 정</cell>
+  </row>
+</table>

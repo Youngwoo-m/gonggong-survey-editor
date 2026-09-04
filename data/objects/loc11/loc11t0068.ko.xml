@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0068" article="제193조(GNSS/IMU 해석결과의 점검)" rows="2" cols="3" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">위치의 표준편차의 평균값</cell>
+    <cell col="1" row="0" header="1">0.10m 이내</cell>
+    <cell col="2" row="0" header="1">각 축 모두</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">위치의 표준편차의 최대값</cell>
+    <cell col="1" row="1">0.15m 이내</cell>
+    <cell col="2" row="1">각 축 모두</cell>
+  </row>
+</table>

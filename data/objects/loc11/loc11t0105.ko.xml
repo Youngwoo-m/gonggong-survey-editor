@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0105" article="제631조(기기)" rows="14" cols="3" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">기 기</cell>
+    <cell col="1" row="0" header="1">성 능</cell>
+    <cell col="2" row="0" header="1">비 고</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">3급 토털스테이션</cell>
+    <cell col="1" row="1">별표 1에 따름</cell>
+    <cell col="2" row="1"></cell>
+  </row>
+  <row>
+    <cell col="0" row="2">2급 GNSS 측량기</cell>
+    <cell col="1" row="2"></cell>
+    <cell col="2" row="2"></cell>
+  </row>
+  <row>
+    <cell col="0" row="3">3급 데오드라이트</cell>
+    <cell col="1" row="3"></cell>
+    <cell col="2" row="3"></cell>
+  </row>
+  <row>
+    <cell col="0" row="4">측 거 의</cell>
+    <cell col="1" row="4"></cell>
+    <cell col="2" row="4"></cell>
+  </row>
+  <row>
+    <cell col="0" row="5">3급 레벨</cell>
+    <cell col="1" row="5"></cell>
+    <cell col="2" row="5"></cell>
+  </row>
+  <row>
+    <cell col="0" row="6">2 급 표 척</cell>
+    <cell col="1" row="6"></cell>
+    <cell col="2" row="6"></cell>
+  </row>
+  <row>
+    <cell col="0" row="7">수준측량 작업용 계산기</cell>
+    <cell col="1" row="7">――――</cell>
+    <cell col="2" row="7"></cell>
+  </row>
+  <row>
+    <cell col="0" row="8">강제 줄자(광폭 줄자)</cell>
+    <cell col="1" row="8">JIS 1급</cell>
+    <cell col="2" row="8"></cell>
+  </row>
+  <row>
+    <cell col="0" row="9">유리섬유제 줄자</cell>
+    <cell col="1" row="9">JIS 1종 1급</cell>
+    <cell col="2" row="9"></cell>
+  </row>
+  <row>
+    <cell col="0" row="10">상 자 표 척</cell>
+    <cell col="1" row="10"></cell>
+    <cell col="2" row="10">눈금이 뚜렷하고 접합이 정확할 것</cell>
+  </row>
+  <row>
+    <cell col="0" row="11">음향측심기</cell>
+    <cell col="1" row="11">측심 정확도 ±(3cm+수심×1/1000) 이상</cell>
+    <cell col="2" row="11"></cell>
+  </row>
+  <row>
+    <cell col="0" row="12">레드</cell>
+    <cell col="1" row="12"></cell>
+    <cell col="2" row="12">1kg (표준)</cell>
+  </row>
+  <row>
+    <cell col="0" row="13">로드</cell>
+    <cell col="1" row="13"></cell>
+    <cell col="2" row="13">2m (표준) 이어 붙일 수 있음</cell>
+  </row>
+</table>

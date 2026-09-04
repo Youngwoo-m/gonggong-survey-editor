@@ -1,10 +1,10 @@
 /* ============================================================
    ui/detail.js — 조문 상세 패널
    ============================================================ */
-import * as M from "../core/model.js?v=20260904h";
-import { wordDiff, beforeRuns, afterRuns, hasChange } from "../core/textdiff.js?v=20260904h";
+import * as M from "../core/model.js?v=20260904i";
+import { wordDiff, beforeRuns, afterRuns, hasChange } from "../core/textdiff.js?v=20260904i";
 import { imgIdsIn, renderBody, fitTable, toHtml, openTableOverlay, markAnnexEdits }
-  from "../core/objects.js?v=20260904h";
+  from "../core/objects.js?v=20260904i";
 
 /** 만들고 있는 안을 부르는 말 — 작업규정은 개정안, 성과심사 규정은 개정안 */
 /* 만들어 내는 안을 부르는 말 — 규정마다 다르다 (작업규정은 '개정안', 나머지는 '개정안').
@@ -75,9 +75,9 @@ function runsHtml(runs) {
   return runs.map((r) => (r.mark ? `<u class="mk">${esc(r.s)}</u>` : esc(r.s))).join("");
 }
 
-import { linkReason, wireReasonLinks } from "../core/reasonlink.js?v=20260904h";
-import { esc, fmtDT } from "./html.js?v=20260904h";
-import { renderPdf } from "./pdfview.js?v=20260904h";
+import { linkReason, wireReasonLinks } from "../core/reasonlink.js?v=20260904i";
+import { esc, fmtDT } from "./html.js?v=20260904i";
+import { renderPdf } from "./pdfview.js?v=20260904i";
 
 /** 사유 글이 스스로 머리글을 달고 있는가 — 그러면 딱지를 겹쳐 붙이지 아니한다 */
 const RE_REASON_HEAD = /^\s*\[변경 사유\]/;
@@ -190,15 +190,33 @@ export class DetailPanel {
    * 손본 글만 보이면 무엇을 건드린 것인지 알 수 없다. 옛 문구를 함께 담아
    * 두었으므로(transWasBody) 조문의 개정 표시와 같은 방식으로 짚어 보인다.
    */
-  _transView(node) {
+  /**
+   * 한글 대역. 원문에 표·수식이 있으면 **번역에도 그대로 끼워 그린다.**
+   *
+   * 여태는 글자만 내보내어 `<img id="loc11t0007">` 가 글로 드러났다.
+   * 원문 쪽(_bodyView)과 똑같이 renderBody 로 개체를 풀어 준다.
+   */
+  _transView(node, regId) {
+    regId = regId || this.baseRegId;
     const b = document.createElement("div");
     const was = node.transWasBody || "";
     const now = node.transBody || "";
+    const n = imgIdsIn(now).length;
     const runs = was && was !== now ? wordDiff(noImg(was), noImg(now)) : null;
+    const draw = (host) => {
+      // ko: true —— 표도 우리말로 옮긴 것을 그린다 (없으면 원문 표)
+      renderBody(now, regId, this.objects,
+                 { ...this._citeOpts(regId), ko: true }).then((frag) => {
+        host.replaceChildren(frag);
+        fitTable(host);
+      });
+    };
     if (!runs || !hasChange(runs)) {
       b.className = "fld";
-      b.innerHTML = `<label>본문 (한글 대역)</label>`
-        + `<div class="body-view ko">${esc(now)}</div>`;
+      b.innerHTML = `<label>본문 (한글 대역)${
+        n ? ` <span class="cnt">표·수식 ${n}</span>` : ""}</label>`
+        + `<div class="body-rich ko"></div>`;
+      draw(b.querySelector(".body-rich"));
       return b;
     }
     b.className = "fld body-diff";
@@ -209,7 +227,9 @@ export class DetailPanel {
           runsHtml(beforeRuns(runs))}</div></div>
         <div class="bd-row"><span class="bd-tag new">손봄</span><div class="bd-txt">${
           runsHtml(afterRuns(runs))}</div></div>
-      </div>`;
+      </div>${n ? `<div class="body-rich ko"></div>` : ""}`;
+    // 견줌 표시는 글자만 다루므로 개체가 빠진다. 표는 아래에 따로 그린다.
+    if (n) draw(b.querySelector(".body-rich"));
     return b;
   }
 
@@ -683,7 +703,7 @@ export class DetailPanel {
     }
 
     if (node.transBody) {
-      el.appendChild(this._transView(node));
+      el.appendChild(this._transView(node, docId));
     }
 
     const note = document.createElement("div");

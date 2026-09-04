@@ -833,7 +833,7 @@ def make_previews_v2():
 def build_v2(base):
     tables = []
     body = hwpx_lines(os.path.join(F2025, HWPX_BODY), tables)
-    # 고시 머리와 부칙은 뺀다 — 다른 규정 63종과 같은 얼개로 둔다
+    # 고시 머리와 부칙은 뺀다 — 다른 규정 63종과 같은 구조로 둔다
     start = next(i for i, l in enumerate(body) if re.match(r"^제\s*1\s*장", l))
     end = next((i for i, l in enumerate(body) if re.match(r"^부\s*칙", l)), len(body))
     tree = G.build_tree(body[start:end])
@@ -995,7 +995,7 @@ def main(dry=False):
     read = G.build_tree([fix(l) for l in lines])
     G.renumber(read)
     same, diff, layout = H.compare(base["tree"], read)
-    print(f"\n  기준 대조 (2020년 고시 원본) — 글자까지 같음 {same} · 줄 얼개만 다름 {layout}"
+    print(f"\n  기준 대조 (2020년 고시 원본) — 글자까지 같음 {same} · 줄 구조만 다름 {layout}"
           f" · 글자가 다름 {len(diff)}")
     if diff:
         raise SystemExit("  [멈춤] 기준과 글자가 다릅니다.")

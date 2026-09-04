@@ -6,7 +6,7 @@
    여기서는 그 XML 을 읽어 화면에 진짜 표로 그린다.
    ============================================================ */
 
-import { toMathML } from "./eqmath.js?v=20260904h";
+import { toMathML } from "./eqmath.js?v=20260904i";
 
 const RE_IMG = /<img\s+id="([\w.-]+)"\s*>(?:<\/img>)?/gi;
 // 본문이 인용하는 다른 규정 — 「…」 / 『…』
@@ -305,20 +305,30 @@ export class ObjectStore {
     return p;
   }
 
-  /** XML 을 읽어 구조로 바꾼다 (한 번만 내려받고 담아 둔다) */
-  async get(regId, imgId) {
-    const key = `${regId}/${imgId}`;
+  /**
+   * XML 을 읽어 구조로 바꾼다 (한 번만 내려받고 담아 둔다).
+   *
+   * @param ko 우리말로 옮긴 표를 찾는다 —— `<id>.ko.xml`.
+   *   국외 규정은 본문뿐 아니라 표도 옮겨야 대역이 온전하다. 옮긴 표는
+   *   원본 옆에 따로 두고, 없으면 원문 표를 그대로 보인다.
+   */
+  async get(regId, imgId, ko = false) {
+    const key = `${regId}/${imgId}${ko ? "/ko" : ""}`;
     if (this.cache.has(key)) return this.cache.get(key);
-    const p = fetch(this.url(regId, imgId), { cache: "no-cache" })
+    const pull = (u) => fetch(u, { cache: "no-cache" })
       .then((r) => { if (!r.ok) throw new Error(String(r.status)); return r.text(); })
-      .then((t) => parseXml(t))
-      .catch(() => null);
+      .then((t) => parseXml(t));
+    let p = pull(this.url(regId, imgId, ko));
+    // 옮긴 표가 아직 없으면 원문 표로 갈음한다
+    if (ko) p = p.catch(() => pull(this.url(regId, imgId)));
+    p = p.catch(() => null);
     this.cache.set(key, p);
     return p;
   }
 
-  url(regId, imgId) {
-    return `data/objects/${encodeURIComponent(regId)}/${encodeURIComponent(imgId)}.xml`;
+  url(regId, imgId, ko = false) {
+    return `data/objects/${encodeURIComponent(regId)}/${
+      encodeURIComponent(imgId)}${ko ? ".ko" : ""}.xml`;
   }
 }
 
@@ -472,7 +482,7 @@ export async function renderBody(text, regId, store,
                                   resolveStd = null,
                                   onCite = null, hasJo = null, onJo = null,
                                   hasAnx = null, onAnx = null,
-                                  onMoved = null } = {}) {
+                                  onMoved = null, ko = false } = {}) {
   const frag = document.createDocumentFragment();
   const src = String(text || "");
   RE_IMG.lastIndex = 0;
@@ -539,13 +549,13 @@ export async function renderBody(text, regId, store,
            · 원문 이미지 id ${id}</span>
            <div class="spacer"></div>
            ${meta.kind === "table" ? `<button class="mini2 obj-zoom-btn" type="button">크게 보기</button>` : ""}
-           <a class="btnlink" href="${store.url(regId, id)}" download="${id}.xml">XML</a></div>`
+           <a class="btnlink" href="${store.url(regId, id, ko)}" download="${id}${ko ? ".ko" : ""}.xml">XML</a></div>`
       : `<div class="obj-fail">원문에 그림으로 들어 있는 표·수식입니다.
            아직 XML 로 바꾸지 못했습니다. (이미지 id ${id})</div>`;
     frag.appendChild(box);
 
     if (meta) {
-      store.get(regId, id).then((o) => {
+      store.get(regId, id, ko).then((o) => {
         const slot = box.querySelector(".obj-body");
         slot.innerHTML = toHtml(o);
         fitTable(slot);

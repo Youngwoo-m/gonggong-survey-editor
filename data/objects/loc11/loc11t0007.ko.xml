@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0007" article="제37조(관측의 실시)" rows="9" cols="7" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">구분 항목</cell>
+    <cell col="1" row="0" header="1"></cell>
+    <cell col="2" row="0" header="1">1급기준점측량</cell>
+    <cell col="3" row="0" header="1">2급기준점측량</cell>
+    <cell col="4" row="0" header="1"></cell>
+    <cell col="5" row="0" header="1">3급기준점측량</cell>
+    <cell col="6" row="0" header="1">4급기준점측량</cell>
+  </row>
+  <row>
+    <cell col="0" row="1"></cell>
+    <cell col="1" row="1"></cell>
+    <cell col="2" row="1"></cell>
+    <cell col="3" row="1">1급 토털스테이션, 1급 데오드라이트</cell>
+    <cell col="4" row="1">2급 토털스테이션, 2급 데오드라이트</cell>
+    <cell col="5" row="1"></cell>
+    <cell col="6" row="1"></cell>
+  </row>
+  <row>
+    <cell col="0" row="2">수 평 각 관 측</cell>
+    <cell col="1" row="2">읽음 단위</cell>
+    <cell col="2" row="2">1″</cell>
+    <cell col="3" row="2">1″</cell>
+    <cell col="4" row="2">10″</cell>
+    <cell col="5" row="2">10″</cell>
+    <cell col="6" row="2">20″</cell>
+  </row>
+  <row>
+    <cell col="0" row="3"></cell>
+    <cell col="1" row="3">대회수</cell>
+    <cell col="2" row="3">2</cell>
+    <cell col="3" row="3">2</cell>
+    <cell col="4" row="3">3</cell>
+    <cell col="5" row="3">2</cell>
+    <cell col="6" row="3">2</cell>
+  </row>
+  <row>
+    <cell col="0" row="4"></cell>
+    <cell col="1" row="4">수평눈금 위치</cell>
+    <cell col="2" row="4">0°、90°</cell>
+    <cell col="3" row="4">0°、90°</cell>
+    <cell col="4" row="4">0°、60°、 120°</cell>
+    <cell col="5" row="4">0°、90°</cell>
+    <cell col="6" row="4">0°、90°</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">연 직 각 관 측</cell>
+    <cell col="1" row="5">읽음 단위</cell>
+    <cell col="2" row="5">1″</cell>
+    <cell col="3" row="5">1″</cell>
+    <cell col="4" row="5">10″</cell>
+    <cell col="5" row="5">10″</cell>
+    <cell col="6" row="5">20″</cell>
+  </row>
+  <row>
+    <cell col="0" row="6"></cell>
+    <cell col="1" row="6">대회수</cell>
+    <cell col="2" row="6">1</cell>
+    <cell col="3" row="6">1</cell>
+    <cell col="4" row="6">1</cell>
+    <cell col="5" row="6">1</cell>
+    <cell col="6" row="6">1</cell>
+  </row>
+  <row>
+    <cell col="0" row="7">거 리 측 정</cell>
+    <cell col="1" row="7">읽음 단위</cell>
+    <cell col="2" row="7">1mm</cell>
+    <cell col="3" row="7">1mm</cell>
+    <cell col="4" row="7">1mm</cell>
+    <cell col="5" row="7">1mm</cell>
+    <cell col="6" row="7">1mm</cell>
+  </row>
+  <row>
+    <cell col="0" row="8"></cell>
+    <cell col="1" row="8">세트 수</cell>
+    <cell col="2" row="8">2</cell>
+    <cell col="3" row="8">2</cell>
+    <cell col="4" row="8">2</cell>
+    <cell col="5" row="8">2</cell>
+    <cell col="6" row="8">2</cell>
+  </row>
+</table>

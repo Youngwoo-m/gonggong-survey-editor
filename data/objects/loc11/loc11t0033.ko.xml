@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0033" article="제64조(관측의 실시)" rows="16" cols="6" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">허 용 범 위</cell>
+    <cell col="1" row="0" header="1">0.3mm</cell>
+    <cell col="2" row="0" header="1">0.3mm</cell>
+    <cell col="3" row="0" header="1">3mm</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">측량방법 항 목</cell>
+    <cell col="1" row="1"></cell>
+    <cell col="2" row="1"></cell>
+    <cell col="3" row="1">교 호 법</cell>
+    <cell col="4" row="1">경위의법</cell>
+    <cell col="5" row="1">부앙나사법</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">관 측 거 리(S)</cell>
+    <cell col="1" row="2"></cell>
+    <cell col="2" row="2"></cell>
+    <cell col="3" row="2">0.3km(0.45km)까지</cell>
+    <cell col="4" row="2">1km 까지</cell>
+    <cell col="5" row="2">2km 까지</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">사용기기의 성능</cell>
+    <cell col="1" row="3"></cell>
+    <cell col="2" row="3"></cell>
+    <cell col="3" row="3">1급 레벨 1급 표척</cell>
+    <cell col="4" row="3">1급 토털스테이션 1급 데오드라이트 1급 레벨, 1급 표척 (2급 레벨)</cell>
+    <cell col="5" row="3">부앙나사를 갖춘 1급 레벨 1급 표척</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">사용기기의 수량</cell>
+    <cell col="1" row="4"></cell>
+    <cell col="2" row="4"></cell>
+    <cell col="3" row="4">1식</cell>
+    <cell col="4" row="4">2식</cell>
+    <cell col="5" row="4"></cell>
+  </row>
+  <row>
+    <cell col="0" row="5">관 측 조 건</cell>
+    <cell col="1" row="5"></cell>
+    <cell col="2" row="5"></cell>
+    <cell col="3" row="5">―――</cell>
+    <cell col="4" row="5">양안에서 동시관측</cell>
+    <cell col="5" row="5"></cell>
+  </row>
+  <row>
+    <cell col="0" row="6">목표판 흰 선의 굵기</cell>
+    <cell col="1" row="6"></cell>
+    <cell col="2" row="6"></cell>
+    <cell col="3" row="6">40mm×S</cell>
+    <cell col="4" row="6">―――</cell>
+    <cell col="5" row="6">40mm×S</cell>
+  </row>
+  <row>
+    <cell col="0" row="7">관 측 시 간 대</cell>
+    <cell col="1" row="7"></cell>
+    <cell col="2" row="7"></cell>
+    <cell col="3" row="7">관측지점의 남중시 전 3시간, 후 4시간 사이에 한다</cell>
+    <cell col="4" row="7"></cell>
+    <cell col="5" row="7"></cell>
+  </row>
+  <row>
+    <cell col="0" row="8">세트 수(n)</cell>
+    <cell col="1" row="8"></cell>
+    <cell col="2" row="8"></cell>
+    <cell col="3" row="8">60×S</cell>
+    <cell col="4" row="8">80×S</cell>
+    <cell col="5" row="8"></cell>
+  </row>
+  <row>
+    <cell col="0" row="9">관 측 일 수</cell>
+    <cell col="1" row="9"></cell>
+    <cell col="2" row="9"></cell>
+    <cell col="3" row="9">n/25</cell>
+    <cell col="4" row="9">n/40</cell>
+    <cell col="5" row="9"></cell>
+  </row>
+  <row>
+    <cell col="0" row="10">목표(표척)의 읽음 단위</cell>
+    <cell col="1" row="10"></cell>
+    <cell col="2" row="10">자안</cell>
+    <cell col="3" row="10">0.1mm(1mm)</cell>
+    <cell col="4" row="10">1″</cell>
+    <cell col="5" row="10">0.1mm(1mm)</cell>
+  </row>
+  <row>
+    <cell col="0" row="11"></cell>
+    <cell col="1" row="11"></cell>
+    <cell col="2" row="11">대안</cell>
+    <cell col="3" row="11">1mm</cell>
+    <cell col="4" row="11">1″ 거리 1mm</cell>
+    <cell col="5" row="11">부앙나사 눈금의 1/10</cell>
+  </row>
+  <row>
+    <cell col="0" row="12">계산 단위</cell>
+    <cell col="1" row="12">자안 기계고</cell>
+    <cell col="2" row="12"></cell>
+    <cell col="3" row="12">―――</cell>
+    <cell col="4" row="12">0.1mm(1mm)</cell>
+    <cell col="5" row="12">―――</cell>
+  </row>
+  <row>
+    <cell col="0" row="13"></cell>
+    <cell col="1" row="13">대안 목표고</cell>
+    <cell col="2" row="13"></cell>
+    <cell col="3" row="13">―――</cell>
+    <cell col="4" row="13">0.1mm(1mm)</cell>
+    <cell col="5" row="13">0.1mm(1mm)</cell>
+  </row>
+  <row>
+    <cell col="0" row="14">고도정수의 교차의 허용범위</cell>
+    <cell col="1" row="14"></cell>
+    <cell col="2" row="14"></cell>
+    <cell col="3" row="14">―――</cell>
+    <cell col="4" row="14">5″ (7″)</cell>
+    <cell col="5" row="14">―――</cell>
+  </row>
+  <row>
+    <cell col="0" row="15">거 리 의 측 정</cell>
+    <cell col="1" row="15"></cell>
+    <cell col="2" row="15"></cell>
+    <cell col="3" row="15">―――</cell>
+    <cell col="4" row="15">제37조 및 제38조를 준용한다</cell>
+    <cell col="5" row="15">―――</cell>
+  </row>
+</table>

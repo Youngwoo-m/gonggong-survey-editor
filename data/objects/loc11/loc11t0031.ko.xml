@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0031" article="제64조(관측의 실시)" rows="4" cols="6" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">5위성 이상</cell>
+    <cell col="1" row="0" header="1">FIX해를 얻은 후 10에포크 이상을 2세트</cell>
+    <cell col="2" row="0" header="1">1초</cell>
+    <cell col="3" row="0" header="1">ΔN ΔE</cell>
+    <cell col="4" row="0" header="1">100mm</cell>
+    <cell col="5" row="0" header="1">ΔN: 수평면의 남북성분의 세트 사이 교차 ΔE: 수평면의 동서성분의 세트 사이 교차 다만, 평면직각좌표로 견줄 수 있다.</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">구분 항목</cell>
+    <cell col="1" row="1">1급수준측량</cell>
+    <cell col="2" row="1">2급수준측량</cell>
+    <cell col="3" row="1">3급수준측량</cell>
+    <cell col="4" row="1">4급수준측량</cell>
+    <cell col="5" row="1">간이수준측량</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">시준거리</cell>
+    <cell col="1" row="2">최대 50m</cell>
+    <cell col="2" row="2">최대 60m</cell>
+    <cell col="3" row="2">최대 70m</cell>
+    <cell col="4" row="2">최대 70m</cell>
+    <cell col="5" row="2">최대 80m</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">읽음 단위</cell>
+    <cell col="1" row="3">0.1mm</cell>
+    <cell col="2" row="3">1mm</cell>
+    <cell col="3" row="3">1mm</cell>
+    <cell col="4" row="3">1mm</cell>
+    <cell col="5" row="3">1mm</cell>
+  </row>
+</table>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0094" article="제566조(지면데이터의 작성)" rows="9" cols="3" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">교통시설</cell>
+    <cell col="1" row="0" header="1">도로시설 등</cell>
+    <cell col="2" row="0" header="1">도로교(길이 5m 이상), 고가교, 횡단보도교, 조명등, 신호등, 도로정보판 등</cell>
+  </row>
+  <row>
+    <cell col="0" row="1"></cell>
+    <cell col="1" row="1">철도시설</cell>
+    <cell col="2" row="1">철도교(길이 5m 이상), 고가교(모노레일의 고가교를 포함한다), 과선교, 승강장, 승강장 지붕, 가선 지주, 신호등 지주</cell>
+  </row>
+  <row>
+    <cell col="0" row="2"></cell>
+    <cell col="1" row="2">이 동 체</cell>
+    <cell col="2" row="2">주차차량, 철도차량, 선박</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">건물 등</cell>
+    <cell col="1" row="3">건물 및 부속시설 등</cell>
+    <cell col="2" row="3">일반주택, 공장, 창고, 공공시설, 역사, 무벽사, 온실, 비닐하우스, 경기장의 스탠드, 문, 수영장(토대 부분을 포함한다), 담</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">소물체</cell>
+    <cell col="1" row="4"></cell>
+    <cell col="2" row="4">기념비, 도리이, 저수조, 비료조, 급수탑, 기중기, 굴뚝, 고탑, 전파탑, 등대, 등표, 수송관(지상, 공간), 송전선</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">수부 등</cell>
+    <cell col="1" row="5">수부에 관한 구 조 물</cell>
+    <cell col="2" row="5">부잔교, 수위관측시설, 하천표시판</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">식 생</cell>
+    <cell col="1" row="6"></cell>
+    <cell col="2" row="6">수목※1, 대숲※1, 생울타리※1</cell>
+  </row>
+  <row>
+    <cell col="0" row="7">그 밖의 것</cell>
+    <cell col="1" row="7">그 밖 의 것</cell>
+    <cell col="2" row="7">큰 규모의 개변공사 중인 지역※2, 지하철 공사 등의 개착부, 자재 야적장 등의 재료, 자재</cell>
+  </row>
+  <row>
+    <cell col="0" row="8">비 고</cell>
+    <cell col="1" row="8">※1 지표면으로 판단할 수 있는 부분은 될 수 있는 대로 채용하는 것으로 한다. ※2 지표면으로서 거의 항구적이라고 판단할 수 있는 것은 채용하는 것으로 한다.</cell>
+    <cell col="2" row="8"></cell>
+  </row>
+</table>

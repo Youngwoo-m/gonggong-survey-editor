@@ -4,7 +4,7 @@
 
 addregs.py 의 검색은 '현행' 만 골라 오기 때문에, 폐지되었거나 이름이 바뀐
 규정은 이름으로 찾을 수 없다. 국가법령정보센터 웹에서 확인한 일련번호를
-직접 넣어 같은 얼개로 색인한다.
+직접 넣어 같은 구조로 색인한다.
 
 사용:  python scripts/addseq.py admrul 65959 sub
        python scripts/addseq.py law   123456 under

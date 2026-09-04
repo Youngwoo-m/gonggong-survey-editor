@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0108" article="제640조(방법)" rows="3" cols="4" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">구 분</cell>
+    <cell col="1" row="0" header="1">수평각관측</cell>
+    <cell col="2" row="0" header="1">연직각관측</cell>
+    <cell col="3" row="0" header="1">거리측정</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">방 법</cell>
+    <cell col="1" row="1">1대회</cell>
+    <cell col="2" row="1">0.5 대회</cell>
+    <cell col="3" row="1">2회 측정</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">교차의 허용범위</cell>
+    <cell col="1" row="2">40″</cell>
+    <cell col="2" row="2">―</cell>
+    <cell col="3" row="2">5mm</cell>
+  </row>
+</table>

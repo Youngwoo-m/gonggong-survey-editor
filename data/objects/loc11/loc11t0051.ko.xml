@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0051" article="제105조(수치지형도 데이터의 정확도)" rows="7" cols="2" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">지도정보 수준</cell>
+    <cell col="1" row="0" header="1">상당 축척</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">250</cell>
+    <cell col="1" row="1">1/250</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">500</cell>
+    <cell col="1" row="2">1/500</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">1000</cell>
+    <cell col="1" row="3">1/1,000</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">2500</cell>
+    <cell col="1" row="4">1/2,500</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">5000</cell>
+    <cell col="1" row="5">1/5,000</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">10000</cell>
+    <cell col="1" row="6">1/10,000</cell>
+  </row>
+</table>

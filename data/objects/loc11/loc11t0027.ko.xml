@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0027" article="제48조(기지점의 종류 등)" rows="3" cols="6" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">구분 항목</cell>
+    <cell col="1" row="0" header="1">1급수준측량</cell>
+    <cell col="2" row="0" header="1">2급수준측량</cell>
+    <cell col="3" row="0" header="1">3급수준측량</cell>
+    <cell col="4" row="0" header="1">4급수준측량</cell>
+    <cell col="5" row="0" header="1">간이수준측량</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">기지점의 종류</cell>
+    <cell col="1" row="1">위성기준점 부속표 1등수준점 1급수준점</cell>
+    <cell col="2" row="1">위성기준점 부속표 1~2등수준점 1~2급수준점</cell>
+    <cell col="3" row="1">위성기준점 부속표 1~3등수준점 1~3급수준점</cell>
+    <cell col="4" row="1">위성기준점 부속표 1~3등수준점 1~4급수준점</cell>
+    <cell col="5" row="1">위성기준점 부속표 1~3등수준점 1~4급수준점</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">기지점 사이의 노선장</cell>
+    <cell col="1" row="2">150km 이하</cell>
+    <cell col="2" row="2">150km 이하</cell>
+    <cell col="3" row="2">50km 이하</cell>
+    <cell col="4" row="2">50km 이하</cell>
+    <cell col="5" row="2">50km 이하</cell>
+  </row>
+</table>

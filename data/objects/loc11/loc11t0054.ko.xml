@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0054" article="제116조(TS점의 설치)" rows="4" cols="3" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">정 확 도 지도정보 수준</cell>
+    <cell col="1" row="0" header="1">수 평 위 치 (표 준 편 차)</cell>
+    <cell col="2" row="0" header="1">표 고 (표 준 편 차)</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">250</cell>
+    <cell col="1" row="1">0.1m 이내</cell>
+    <cell col="2" row="1">0.1m 이내</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">500</cell>
+    <cell col="1" row="2">0.1m 이내</cell>
+    <cell col="2" row="2">0.1m 이내</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">1000</cell>
+    <cell col="1" row="3">0.1m 이내</cell>
+    <cell col="2" row="3">0.1m 이내</cell>
+  </row>
+</table>

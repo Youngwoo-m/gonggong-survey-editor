@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0030" article="제63조(기기의 점검 및 조정)" rows="2" cols="4" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">구분 항목</cell>
+    <cell col="1" row="0" header="1">1급 레벨</cell>
+    <cell col="2" row="0" header="1">2급 레벨</cell>
+    <cell col="3" row="0" header="1">3급 레벨</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">읽 음 단 위</cell>
+    <cell col="1" row="1">0.01mm</cell>
+    <cell col="2" row="1">0.1mm</cell>
+    <cell col="3" row="1">1mm</cell>
+  </row>
+</table>

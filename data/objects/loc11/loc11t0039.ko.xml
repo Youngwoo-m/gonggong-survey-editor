@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0039" article="제76조(GNSS 표고측량의 방식)" rows="10" cols="2" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">구분 항목</cell>
+    <cell col="1" row="0" header="1">3급수준측량</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">측 량 방 식</cell>
+    <cell col="1" row="1">결합다각방식</cell>
+  </row>
+  <row>
+    <cell col="0" row="2"></cell>
+    <cell col="1" row="2">지형의 상황 등으로 부득이한 때에는 단노선방식으로 할 수 있다.</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">기 지 점 수</cell>
+    <cell col="1" row="3">3점 이상</cell>
+  </row>
+  <row>
+    <cell col="0" row="4"></cell>
+    <cell col="1" row="4">단노선방식인 경우에는 2점으로 할 수 있다.</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">노선의 변수</cell>
+    <cell col="1" row="5">5변 이하</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">노 선 도 형</cell>
+    <cell col="1" row="6">신점은 외주 노선에 속하는 이웃한 기지점을 잇는 직선의 안쪽에 선점하는 것으로 한다. 다만, 지형의 상황 등으로 부득이한 때에는 그러하지 아니하다.</cell>
+  </row>
+  <row>
+    <cell col="0" row="7">관측 타원체 비고</cell>
+    <cell col="1" row="7">700m 이하를 표준으로 하고, 700m를 넘는 경우에는 날을 바꾸어 점검관측을 하는 것으로 한다.</cell>
+  </row>
+  <row>
+    <cell col="0" row="8">편심거리의 제한 ( 신 점 )</cell>
+    <cell col="1" row="8">250m 미만</cell>
+  </row>
+  <row>
+    <cell col="0" row="9">비 고</cell>
+    <cell col="1" row="9">1. "노선의 변수"는 기지점에서 다른 기지점까지, 기지점에서 교점까</cell>
+  </row>
+</table>

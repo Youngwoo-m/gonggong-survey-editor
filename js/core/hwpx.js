@@ -1,7 +1,7 @@
 /* ============================================================
    core/hwpx.js — 양식 파일에 글만 갈아 끼워 한/글 문서를 짓는다
    ------------------------------------------------------------
-   scripts/formfill.py 를 브라우저로 옮긴 것이다. 같은 얼개라야 웹에서 받은
+   scripts/formfill.py 를 브라우저로 옮긴 것이다. 같은 구조라야 웹에서 받은
    문서와 [한글문서만들기.bat] 이 지은 문서가 같아진다.
 
    ■ 브라우저가 HWPX 를 지을 수 있는가
@@ -22,8 +22,8 @@
        깊이를 세어 짝을 찾는다(matchClose).
    ============================================================ */
 
-import { readZip } from "./zipreader.js?v=20260904h";
-import { createZip } from "./zip.js?v=20260904h";
+import { readZip } from "./zipreader.js?v=20260904i";
+import { createZip } from "./zip.js?v=20260904i";
 
 const RE_T = /<hp:t(?:\s[^>]*)?>([^]*?)<\/hp:t>/g;
 const RE_SEG = /<hp:linesegarray>[^]*?<\/hp:linesegarray>|<hp:linesegarray\s*\/>/g;

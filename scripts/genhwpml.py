@@ -4,7 +4,7 @@
 
 국가법령정보센터의 [한글] 내려받기는 이름만 .hwp 이고 속은 HWPML 2.1 (XML) 이다.
 공개 API 와 견주면 이 파일이 낫다 — API 는 조문을 한 줄로 주어 항·호의 줄바꿈이
-사라지지만, 원문 파일은 항과 호가 저마다 한 문단이다. 얼개를 추측으로 되살릴
+사라지지만, 원문 파일은 항과 호가 저마다 한 문단이다. 구조를 추측으로 되살릴
 까닭이 없어진다. 본문에 박힌 도해도 파일 안에 그대로 들어 있다.
 
 사용:
@@ -175,7 +175,7 @@ bare = lambda s: re.sub(r"\s+", "", RE_IMG.sub("", s or "")).translate(QUOTE)
 
 
 def compare(old, new):
-    """(글자까지 같은 조문 수, 다른 조문 목록, 줄 얼개만 달라진 조문 수)"""
+    """(글자까지 같은 조문 수, 다른 조문 목록, 줄 구조만 달라진 조문 수)"""
     o = {x["legacyNo"]: x for x in flat(old)}
     n = {x["legacyNo"]: x for x in flat(new)}
     diff, layout, same = [], 0, 0
@@ -213,10 +213,10 @@ def main(sid, path, dry=False):
 
     print(f"\n  {doc['name']} — {os.path.basename(path)}")
     print(f"  원문 문단 {len(lines)}줄 · 그림 {len(made)}개 (부칙 {len(bochik)}줄은 넣지 않습니다)")
-    print("  얼개 " + " · ".join(f"{k} {stats[k]}" for k in G.LEVELS if stats[k])
+    print("  구조 " + " · ".join(f"{k} {stats[k]}" for k in G.LEVELS if stats[k])
           + "   (지금 자료: "
           + " · ".join(f"{k} {doc['stats'][k]}" for k in G.LEVELS if doc["stats"].get(k)) + ")")
-    print(f"  대조  글자까지 같음 {same} · 줄 얼개만 달라짐 {layout} · 글자가 다름 {len(diff)}")
+    print(f"  대조  글자까지 같음 {same} · 줄 구조만 달라짐 {layout} · 글자가 다름 {len(diff)}")
     for k, why in diff[:40]:
         print(f"        {k}  {why}")
     if len(diff) > 40:
@@ -256,7 +256,7 @@ def main(sid, path, dry=False):
             e["textSource"] = doc["textSource"]
     with io.open(lp, "w", encoding="utf-8") as f:
         json.dump(lib, f, ensure_ascii=False, indent=1)
-    print("  library.json 의 얼개·출처도 함께 고쳤습니다.")
+    print("  library.json 의 구조·출처도 함께 고쳤습니다.")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0042" article="제91조(편심요소의 측정)" rows="3" cols="4" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">편심거리</cell>
+    <cell col="1" row="0" header="1">3급수준측량</cell>
+    <cell col="2" row="0" header="1"></cell>
+    <cell col="3" row="0" header="1"></cell>
+  </row>
+  <row>
+    <cell col="0" row="1"></cell>
+    <cell col="1" row="1">기기 및 측정방법</cell>
+    <cell col="2" row="1">측정단위</cell>
+    <cell col="3" row="1">점검항목 및 허용범위</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">100m 미만</cell>
+    <cell col="1" row="2">레벨 등에 따른 수준측량 중 3급수준측량에 준하여 측정한다. 다만, 후시 및 전시에 같은 표척을 사용하여 관측하는 경우에는 왕로 및 복로의 측점 수를 1점으로 할 수 있다.</cell>
+    <cell col="2" row="2">mm</cell>
+    <cell col="3" row="2">왕복의 교차 3mm</cell>
+  </row>
+</table>

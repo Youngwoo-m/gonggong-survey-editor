@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0009" article="제37조(관측의 실시)" rows="4" cols="4" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">관측방법 GNSS 위성의 조합</cell>
+    <cell col="1" row="0" header="1"></cell>
+    <cell col="2" row="0" header="1">정지측위법</cell>
+    <cell col="3" row="0" header="1">단축정지측위법 이동측위법 RTK법 네트워크형 RTK법</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">GPSㆍ준천정위성</cell>
+    <cell col="1" row="1"></cell>
+    <cell col="2" row="1">4위성 이상</cell>
+    <cell col="3" row="1">5위성 이상</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">GPSㆍ준천정위성 및 GLONASS 위성</cell>
+    <cell col="1" row="2"></cell>
+    <cell col="2" row="2">5위성 이상</cell>
+    <cell col="3" row="2">6위성 이상</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">비 고</cell>
+    <cell col="1" row="3">1. GLONASS 위성을 사용하여 관측하는 경우에는 GPSㆍ준천정위성 및 GLONASS 위성을 각각 2위성 이상 사용할 것 2. 정지측위법에 따른 10km 이상의 관측에서는 GPSㆍ준천정위성을 사용하여 관측하는 경우에는 5위성 이상으로 하고, GPSㆍ준천정위성 및 GLONASS 위성을 사용하여 관측하는 경우에는 6위성 이상으로 한다.</cell>
+    <cell col="2" row="3"></cell>
+    <cell col="3" row="3"></cell>
+  </row>
+</table>

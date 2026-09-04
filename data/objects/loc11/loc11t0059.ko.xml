@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0059" article="제122조(이동측위법 또는 RTK법에 따른 지형, 지물 등의 측정)" rows="3" cols="4" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">항 목</cell>
+    <cell col="1" row="0" header="1"></cell>
+    <cell col="2" row="0" header="1">허용범위</cell>
+    <cell col="3" row="0" header="1">비 고</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">세트 사이 교차</cell>
+    <cell col="1" row="1">ΔN ΔE</cell>
+    <cell col="2" row="1">20mm</cell>
+    <cell col="3" row="1">ΔN: 수평면의 남북성분의 세트 사이 교차 ΔE: 수평면의 동서성분의 세트 사이 교차 ΔU: 수평면에서의 높이성분의 세트 사이 교차 다만, 평면직각좌표값으로 견줄 수 있다.</cell>
+  </row>
+  <row>
+    <cell col="0" row="2"></cell>
+    <cell col="1" row="2">ΔU</cell>
+    <cell col="2" row="2">30mm</cell>
+    <cell col="3" row="2"></cell>
+  </row>
+</table>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0093" article="제553조(항공레이저계측의 점검)" rows="7" cols="3" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">점검항목</cell>
+    <cell col="1" row="0" header="1">표준값</cell>
+    <cell col="2" row="0" header="1">비고</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">최소 위성 수</cell>
+    <cell col="1" row="1">제37조제2항제2호라목의 규정에 따름</cell>
+    <cell col="2" row="1"></cell>
+  </row>
+  <row>
+    <cell col="0" row="2">DOP 값</cell>
+    <cell col="1" row="2">3 이하</cell>
+    <cell col="2" row="2">PDOP</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">위치의 왕복차의 평균값과 그 절대값의 최대값</cell>
+    <cell col="1" row="3">0.3m 이내</cell>
+    <cell col="2" row="3">각 축 모두</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">해의 품질</cell>
+    <cell col="1" row="4">FIX해</cell>
+    <cell col="2" row="4">고정국과의 기선거리를 확보할 수 없는 경우에는 안정 플로트해도 가능한 것으로 한다.</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">위치의 표준편차의 평균값</cell>
+    <cell col="1" row="5">0.10m 이내</cell>
+    <cell col="2" row="5">각 축 모두</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">위치의 표준편차의 최대값</cell>
+    <cell col="1" row="6">0.15m 이내</cell>
+    <cell col="2" row="6">각 축 모두</cell>
+  </row>
+</table>

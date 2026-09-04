@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0013" article="제39조(편심요소의 측정)" rows="7" cols="4" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">편심거리</cell>
+    <cell col="1" row="0" header="1">기기 및 측정방법</cell>
+    <cell col="2" row="0" header="1">측정단위</cell>
+    <cell col="3" row="0" header="1">점검항목 및 허용범위</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">30cm 미만</cell>
+    <cell col="1" row="1">자로 측정한다.</cell>
+    <cell col="2" row="1">mm</cell>
+    <cell col="3" row="1">―――</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">30cm 이상 2m 미만</cell>
+    <cell col="1" row="2">강제 줄자(광폭 줄자)로 2읽음, 1왕복을 측정한다.</cell>
+    <cell col="2" row="2">mm</cell>
+    <cell col="3" row="2">왕복의 교차 5mm</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">2m 이상 50m 미만</cell>
+    <cell col="1" row="3"></cell>
+    <cell col="2" row="3"></cell>
+    <cell col="3" row="3"></cell>
+  </row>
+  <row>
+    <cell col="0" row="4"></cell>
+    <cell col="1" row="4">토털스테이션 또는 측거의를 사용하여 제37조를 준용한다.</cell>
+    <cell col="2" row="4">mm</cell>
+    <cell col="3" row="4">제38조를 준용한다</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">50m 이상</cell>
+    <cell col="1" row="5"></cell>
+    <cell col="2" row="5"></cell>
+    <cell col="3" row="5"></cell>
+  </row>
+  <row>
+    <cell col="0" row="6">비 고</cell>
+    <cell col="1" row="6">1. 편심거리가 5mm 미만이고 아울러 변장이 1km를 넘는 경우에는 편심보정계산을 생략할 수 있다. 2. 편심거리가 10m 이하인 경우에는 경사보정 외의 보정은 생략할 수 있다.</cell>
+    <cell col="2" row="6"></cell>
+    <cell col="3" row="6"></cell>
+  </row>
+</table>

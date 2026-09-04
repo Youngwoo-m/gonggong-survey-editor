@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0011" article="제39조(편심요소의 측정)" rows="4" cols="4" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">편심거리</cell>
+    <cell col="1" row="0" header="1">기기 및 측정방법</cell>
+    <cell col="2" row="0" header="1">측정단위</cell>
+    <cell col="3" row="0" header="1">점검항목 및 허용범위</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">30cm 미만</cell>
+    <cell col="1" row="1">편심측정지에 방향선을 긋고 각도기로 편심각을 측정한다.</cell>
+    <cell col="2" row="1">1°</cell>
+    <cell col="3" row="1">―――</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">30cm 이상 2m 미만</cell>
+    <cell col="1" row="2">편심측정지에 방향선을 긋고 계산으로 편심각을 산출한다.</cell>
+    <cell col="2" row="2">10′</cell>
+    <cell col="3" row="2">―――</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">2m 이상 10m 미만</cell>
+    <cell col="1" row="3">토털스테이션 또는 데오드라이트를 사용하여 제37조를 준용한다.</cell>
+    <cell col="2" row="3">1′</cell>
+    <cell col="3" row="3">배각차 2′ 관측차 1.5′</cell>
+  </row>
+</table>

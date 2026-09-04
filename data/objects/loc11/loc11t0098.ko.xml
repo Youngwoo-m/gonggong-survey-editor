@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0098" article="제575조(등고선데이터의 작성)" rows="6" cols="6" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">지도정보 수준</cell>
+    <cell col="1" row="0" header="1">주곡선</cell>
+    <cell col="2" row="0" header="1">계곡선</cell>
+    <cell col="3" row="0" header="1">지면데이터, 그리드데이터</cell>
+    <cell col="4" row="0" header="1"></cell>
+    <cell col="5" row="0" header="1"></cell>
+  </row>
+  <row>
+    <cell col="0" row="1"></cell>
+    <cell col="1" row="1"></cell>
+    <cell col="2" row="1"></cell>
+    <cell col="3" row="1">약 1m</cell>
+    <cell col="4" row="1">약 2m</cell>
+    <cell col="5" row="1">약 5m</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">500</cell>
+    <cell col="1" row="2">1m</cell>
+    <cell col="2" row="2">5m</cell>
+    <cell col="3" row="2">○</cell>
+    <cell col="4" row="2">―</cell>
+    <cell col="5" row="2">―</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">1000</cell>
+    <cell col="1" row="3">1m</cell>
+    <cell col="2" row="3">5m</cell>
+    <cell col="3" row="3">○</cell>
+    <cell col="4" row="3">―</cell>
+    <cell col="5" row="3">―</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">2500</cell>
+    <cell col="1" row="4">2m</cell>
+    <cell col="2" row="4">10m</cell>
+    <cell col="3" row="4">○</cell>
+    <cell col="4" row="4">○</cell>
+    <cell col="5" row="4">―</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">5000</cell>
+    <cell col="1" row="5">5m</cell>
+    <cell col="2" row="5">25m</cell>
+    <cell col="3" row="5">○</cell>
+    <cell col="4" row="5">○</cell>
+    <cell col="5" row="5">○</cell>
+  </row>
+</table>

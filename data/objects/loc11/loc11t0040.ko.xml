@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0040" article="제87조(기기)" rows="7" cols="3" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1"></cell>
+    <cell col="1" row="0" header="1">지 또는 교점에서 다른 교점까지를 대상으로 한다. 2. 관측 타원체 비고가 700m를 넘는 등 오차 요인이 될 가능성이 높은 관측점에서는 점검관측을 하여 좋고 나쁨을 판정하는 것으로 한다. 이 점검관측은 점검측량을 겸할 수 있는 것으로 한다.</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">기 기</cell>
+    <cell col="1" row="1">성 능</cell>
+    <cell col="2" row="1">적 요</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">1급 GNSS 측량기</cell>
+    <cell col="1" row="2">별표 1에 따름</cell>
+    <cell col="2" row="2">―――</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">2급 GNSS 측량기</cell>
+    <cell col="1" row="3"></cell>
+    <cell col="2" row="3">관측거리가 10km 미만인 경우에 사용할 수 있다.</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">3 급 레 벨</cell>
+    <cell col="1" row="4"></cell>
+    <cell col="2" row="4">편심요소의 측정</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">2 급 표 척</cell>
+    <cell col="1" row="5"></cell>
+    <cell col="2" row="5"></cell>
+  </row>
+  <row>
+    <cell col="0" row="6">강 제 줄 자</cell>
+    <cell col="1" row="6">J I S 1급</cell>
+    <cell col="2" row="6">안테나고의 측정(컨벡스 자 등)</cell>
+  </row>
+</table>

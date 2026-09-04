@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0081" article="제415조(표정점 및 검증점의 배치)" rows="4" cols="3" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">위치정확도</cell>
+    <cell col="1" row="0" header="1">이웃한 바깥쪽 표정점 사이의 거리</cell>
+    <cell col="2" row="0" header="1">임의의 안쪽 표정점과 그 점을 둘러싼 각 표정점 사이의 거리</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">0.05m 이내</cell>
+    <cell col="1" row="1">100m 이내</cell>
+    <cell col="2" row="1">200m 이내</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">0.10m 이내</cell>
+    <cell col="1" row="2">100m 이내</cell>
+    <cell col="2" row="2">400m 이내</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">0.20m 이내</cell>
+    <cell col="1" row="3">200m 이내</cell>
+    <cell col="2" row="3">600m 이내</cell>
+  </row>
+</table>

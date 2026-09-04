@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0025" article="제43조(망조정 계산)" rows="4" cols="3" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">구분 항목</cell>
+    <cell col="1" row="0" header="1">3급기준점측량</cell>
+    <cell col="2" row="0" header="1">4급기준점측량</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">노선방향각의 잔차</cell>
+    <cell col="1" row="1">50″</cell>
+    <cell col="2" row="1">120″</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">노선좌표차의 잔차</cell>
+    <cell col="1" row="2">300mm</cell>
+    <cell col="2" row="2">300mm</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">노선고저차의 잔차</cell>
+    <cell col="1" row="3">300mm</cell>
+    <cell col="2" row="3">300mm</cell>
+  </row>
+</table>

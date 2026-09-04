@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0057" article="제121조(TS 등을 사용하는 지형, 지물 등의 측정)" rows="4" cols="5" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">지도정보 수준</cell>
+    <cell col="1" row="0" header="1">기 기</cell>
+    <cell col="2" row="0" header="1">수평각 관측 대회수</cell>
+    <cell col="3" row="0" header="1">거 리 측정횟수</cell>
+    <cell col="4" row="0" header="1">측정거리의 허용범위</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">500 이하</cell>
+    <cell col="1" row="1">2급 토털스테이션 3급 토털스테이션</cell>
+    <cell col="2" row="1">0.5 0.5</cell>
+    <cell col="3" row="1">1 1</cell>
+    <cell col="4" row="1">150m 100m</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">1000 이상</cell>
+    <cell col="1" row="2">2급 토털스테이션 3급 토털스테이션</cell>
+    <cell col="2" row="2">0.5 0.5</cell>
+    <cell col="3" row="2">1 1</cell>
+    <cell col="4" row="2">200m 150m</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">비 고</cell>
+    <cell col="1" row="3">논프리즘 측거 기능을 갖추고 논프리즘에 따른 공칭 측정정확도가 2급 단거리형 측거의의 성능을 갖춘 경우에는 반사경을 사용하지 아니하고 측정할 수 있다.</cell>
+    <cell col="2" row="3"></cell>
+    <cell col="3" row="3"></cell>
+    <cell col="4" row="3"></cell>
+  </row>
+</table>

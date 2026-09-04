@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0084" article="제444조(성과품요구사양서의 작성)" rows="5" cols="4" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">성과품목</cell>
+    <cell col="1" row="0" header="1">점밀도</cell>
+    <cell col="2" row="0" header="1">요구 정확도 (표준값)</cell>
+    <cell col="3" row="0" header="1">요구 정확도 (대상)</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">수치지형도 데이터 (지도정보 수준 500)</cell>
+    <cell col="1" row="1">400 점/㎡ 이상</cell>
+    <cell col="2" row="1">0.15m 이내</cell>
+    <cell col="3" row="1">수평위치</cell>
+  </row>
+  <row>
+    <cell col="0" row="2"></cell>
+    <cell col="1" row="2"></cell>
+    <cell col="2" row="2">0.2m 이내</cell>
+    <cell col="3" row="2">표고</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">수치지형도 데이터 (지도정보 수준 1000)</cell>
+    <cell col="1" row="3">100 점/㎡ 이상</cell>
+    <cell col="2" row="3">0.3m 이내</cell>
+    <cell col="3" row="3">수평위치</cell>
+  </row>
+  <row>
+    <cell col="0" row="4"></cell>
+    <cell col="1" row="4"></cell>
+    <cell col="2" row="4">0.3m 이내</cell>
+    <cell col="3" row="4">표고</cell>
+  </row>
+</table>

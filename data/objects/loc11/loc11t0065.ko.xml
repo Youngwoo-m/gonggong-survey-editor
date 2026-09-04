@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0065" article="제183조(GNSS/IMU장치)" rows="8" cols="3" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">항 목</cell>
+    <cell col="1" row="0" header="1"></cell>
+    <cell col="2" row="0" header="1">성 능</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">GNSS 측량기</cell>
+    <cell col="1" row="1">수평위치</cell>
+    <cell col="2" row="1">0.3m</cell>
+  </row>
+  <row>
+    <cell col="0" row="2"></cell>
+    <cell col="1" row="2">높이</cell>
+    <cell col="2" row="2">0.3m</cell>
+  </row>
+  <row>
+    <cell col="0" row="3"></cell>
+    <cell col="1" row="3">데이터 취득간격</cell>
+    <cell col="2" row="3">1 초</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">IMU</cell>
+    <cell col="1" row="4">롤링각</cell>
+    <cell col="2" row="4">0.015°</cell>
+  </row>
+  <row>
+    <cell col="0" row="5"></cell>
+    <cell col="1" row="5">피칭각</cell>
+    <cell col="2" row="5">0.015°</cell>
+  </row>
+  <row>
+    <cell col="0" row="6"></cell>
+    <cell col="1" row="6">헤딩각</cell>
+    <cell col="2" row="6">0.035°</cell>
+  </row>
+  <row>
+    <cell col="0" row="7"></cell>
+    <cell col="1" row="7">데이터 취득간격</cell>
+    <cell col="2" row="7">0.016 초</cell>
+  </row>
+</table>

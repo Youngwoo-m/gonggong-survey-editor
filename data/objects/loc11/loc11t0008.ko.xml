@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0008" article="제37조(관측의 실시)" rows="8" cols="4" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">관 측 방 법</cell>
+    <cell col="1" row="0" header="1">관측시간</cell>
+    <cell col="2" row="0" header="1">데이터 취득간격</cell>
+    <cell col="3" row="0" header="1">적 요</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">정지측위법</cell>
+    <cell col="1" row="1">120분 이상</cell>
+    <cell col="2" row="1">30초 이하</cell>
+    <cell col="3" row="1">1~3급기준점측량(10km 이상)</cell>
+  </row>
+  <row>
+    <cell col="0" row="2"></cell>
+    <cell col="1" row="2">60분 이상</cell>
+    <cell col="2" row="2">30초 이하</cell>
+    <cell col="3" row="2">1~3급기준점측량(10km 미만) 4급기준점측량</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">단축정지측위법 ※1</cell>
+    <cell col="1" row="3">20분 이상</cell>
+    <cell col="2" row="3">15초 이하</cell>
+    <cell col="3" row="3">3 ~ 4 급 기 준 점 측 량</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">이동측위법</cell>
+    <cell col="1" row="4">10초 이상※2</cell>
+    <cell col="2" row="4">5초 이하</cell>
+    <cell col="3" row="4">3 ~ 4 급 기 준 점 측 량</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">RTK법 ※4</cell>
+    <cell col="1" row="5">10초 이상※3</cell>
+    <cell col="2" row="5">1초</cell>
+    <cell col="3" row="5">3 ~ 4 급 기 준 점 측 량</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">네트워크형 RTK법 ※4</cell>
+    <cell col="1" row="6">10초 이상※3</cell>
+    <cell col="2" row="6">1초</cell>
+    <cell col="3" row="6">3 ~ 4 급 기 준 점 측 량</cell>
+  </row>
+  <row>
+    <cell col="0" row="7">비 고</cell>
+    <cell col="1" row="7">※1 위성기준점만을 기지점으로 하는 경우에는 적용하지 아니하는 것으로 한다. ※2 10에포크 이상의 데이터를 취득할 수 있는 시간으로 한다. ※3 FIX해를 얻은 후 10에포크 이상의 데이터를 취득할 수 있는 시간으로 한다. ※4 후처리로 해석을 하는 경우도 포함하는 것으로 한다.</cell>
+    <cell col="2" row="7"></cell>
+    <cell col="3" row="7"></cell>
+  </row>
+</table>

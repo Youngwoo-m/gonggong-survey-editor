@@ -1,33 +1,33 @@
 /* ============================================================
    main.js — 앱 조립 (1단계 프로토타입)
    ============================================================ */
-import * as M from "./core/model.js?v=20260904h";
-import { Project } from "./core/project.js?v=20260904h";
-import * as FS from "./adapters/fileio.js?v=20260904h";
-import * as AUTO from "./adapters/autosave.js?v=20260904h";
-import { TreeView } from "./ui/tree.js?v=20260904h";
-import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260904h";
-import { CompareView } from "./ui/compare.js?v=20260904h";
-import { VersionsView } from "./ui/versions.js?v=20260904h";
-import { HistoryView } from "./ui/history.js?v=20260904h";
-import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260904h";
-import { ValidateView } from "./ui/validate.js?v=20260904h";
-import { RefPicker } from "./ui/refpicker.js?v=20260904h";
-import { AIView } from "./ui/ai.js?v=20260904h";
-import { CiteCheckView } from "./ui/citecheck.js?v=20260904h";
-import { TermsView } from "./ui/terms.js?v=20260904h";
-import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260904h";
-import * as GH from "./adapters/github.js?v=20260904h";
-import { extractLines } from "./core/importer.js?v=20260904h";
-import { buildAuto } from "./core/structure.js?v=20260904h";
-import * as SRC from "./core/srcfp.js?v=20260904h";
-import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260904h";
-import { ObjectStore, fitTable } from "./core/objects.js?v=20260904h";
-import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260904h";
-import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260904h";
-import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260904h";
-import { fmtDate } from "./ui/html.js?v=20260904h";
-import { printReg, regHtml } from "./ui/printdoc.js?v=20260904h";
+import * as M from "./core/model.js?v=20260904i";
+import { Project } from "./core/project.js?v=20260904i";
+import * as FS from "./adapters/fileio.js?v=20260904i";
+import * as AUTO from "./adapters/autosave.js?v=20260904i";
+import { TreeView } from "./ui/tree.js?v=20260904i";
+import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260904i";
+import { CompareView } from "./ui/compare.js?v=20260904i";
+import { VersionsView } from "./ui/versions.js?v=20260904i";
+import { HistoryView } from "./ui/history.js?v=20260904i";
+import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260904i";
+import { ValidateView } from "./ui/validate.js?v=20260904i";
+import { RefPicker } from "./ui/refpicker.js?v=20260904i";
+import { AIView } from "./ui/ai.js?v=20260904i";
+import { CiteCheckView } from "./ui/citecheck.js?v=20260904i";
+import { TermsView } from "./ui/terms.js?v=20260904i";
+import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260904i";
+import * as GH from "./adapters/github.js?v=20260904i";
+import { extractLines } from "./core/importer.js?v=20260904i";
+import { buildAuto } from "./core/structure.js?v=20260904i";
+import * as SRC from "./core/srcfp.js?v=20260904i";
+import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260904i";
+import { ObjectStore, fitTable } from "./core/objects.js?v=20260904i";
+import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260904i";
+import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260904i";
+import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260904i";
+import { fmtDate } from "./ui/html.js?v=20260904i";
+import { printReg, regHtml } from "./ui/printdoc.js?v=20260904i";
 
 const $ = (s) => document.querySelector(s);
 const NL = "\n";
@@ -1670,7 +1670,7 @@ async function doCommand(cmd) {
       const onlyName = only ? (project.regNode(only)?.short || "") : "";
       busy(`${onlyName || "개정 대상 세 규정"} 보고서를 작성 중…`);
       try {
-        const { buildReport } = await import("./ui/report.js?v=20260904h");
+        const { buildReport } = await import("./ui/report.js?v=20260904i");
         const r = await buildReport(project, { targetId: only });
         const url = URL.createObjectURL(r.blob);
         const a = document.createElement("a");

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0106" article="제633조(계산결과의 표시단위)" rows="3" cols="5" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">구 분</cell>
+    <cell col="1" row="0" header="1">방향각</cell>
+    <cell col="2" row="0" header="1">거 리</cell>
+    <cell col="3" row="0" header="1">표 고</cell>
+    <cell col="4" row="0" header="1">좌표값</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">단 위</cell>
+    <cell col="1" row="1">초</cell>
+    <cell col="2" row="1">m</cell>
+    <cell col="3" row="1">m</cell>
+    <cell col="4" row="1">m</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">자리</cell>
+    <cell col="1" row="2">1</cell>
+    <cell col="2" row="2">0.001</cell>
+    <cell col="3" row="2">0.001</cell>
+    <cell col="4" row="2">0.001</cell>
+  </row>
+</table>

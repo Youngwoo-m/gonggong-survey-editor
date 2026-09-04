@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0078" article="제371조(표정점의 정확도)" rows="3" cols="3" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">거리</cell>
+    <cell col="1" row="0" header="1">허용범위</cell>
+    <cell col="2" row="0" header="1">비 고</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">20m 미만</cell>
+    <cell col="1" row="1">10mm</cell>
+    <cell col="2" row="1">S는 점간거리의 계산값(m 단위)을 말한다.</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">20m 이상</cell>
+    <cell col="1" row="2">S/2,000</cell>
+    <cell col="2" row="2"></cell>
+  </row>
+</table>

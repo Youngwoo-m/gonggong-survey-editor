@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0022" article="제43조(망조정 계산)" rows="2" cols="2" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">수평위치의 폐합차</cell>
+    <cell col="1" row="0" header="1">Δs =100mm+40mm√N Δs: 기지점의 성과값 및 가정 3차원망조정 계산 결과에서 구한 거리 N: 기지점까지의 최소 변수(변수가 같은 경우에는 노선장이 가장 짧은 것)</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">표고의 폐합차</cell>
+    <cell col="1" row="1">250mm+45mm√N 을 표준으로 함 N: 변수</cell>
+  </row>
+</table>

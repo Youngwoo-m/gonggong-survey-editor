@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0069" article="제196조(항공사진의 수치화에 사용하는 기기 등)" rows="5" cols="2" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">항목</cell>
+    <cell col="1" row="0" header="1">성능</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">광학 분해능</cell>
+    <cell col="1" row="1">0.01mm 이내</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">스캔 크기</cell>
+    <cell col="1" row="2">240mm×240mm 이상</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">디지털 사진의 색계조</cell>
+    <cell col="1" row="3">각 색 8bit(풀컬러) 이상</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">디지털 사진의 기하정확도</cell>
+    <cell col="1" row="4">0.002mm(표준편차) 이내</cell>
+  </row>
+</table>

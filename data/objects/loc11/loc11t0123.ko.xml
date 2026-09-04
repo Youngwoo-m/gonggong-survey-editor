@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0123" article="제679조(성과등)" rows="4" cols="9" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">성과등의 정리</cell>
+    <cell col="1" row="0" header="1">해당하는 측량의 종류</cell>
+    <cell col="2" row="0" header="1"></cell>
+    <cell col="3" row="0" header="1"></cell>
+    <cell col="4" row="0" header="1"></cell>
+    <cell col="5" row="0" header="1"></cell>
+    <cell col="6" row="0" header="1"></cell>
+    <cell col="7" row="0" header="1"></cell>
+    <cell col="8" row="0" header="1"></cell>
+  </row>
+  <row>
+    <cell col="0" row="1"></cell>
+    <cell col="1" row="1">거리표 설 치 측 량</cell>
+    <cell col="2" row="1">수 준 기 표 측 량</cell>
+    <cell col="3" row="1">정 기 종 단 측 량</cell>
+    <cell col="4" row="1">정 기 횡 단 측 량</cell>
+    <cell col="5" row="1">심 천 측 량</cell>
+    <cell col="6" row="1">법 선 측 량</cell>
+    <cell col="7" row="1">해 빈 측 량</cell>
+    <cell col="8" row="1">정 선 측 량</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">관측수부</cell>
+    <cell col="1" row="2">○</cell>
+    <cell col="2" row="2">○</cell>
+    <cell col="3" row="2">○</cell>
+    <cell col="4" row="2">○</cell>
+    <cell col="5" row="2">○</cell>
+    <cell col="6" row="2">○</cell>
+    <cell col="7" row="2">○</cell>
+    <cell col="8" row="2">○</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">기록지</cell>
+    <cell col="1" row="3"></cell>
+    <cell col="2" row="3"></cell>
+    <cell col="3" row="3"></cell>
+    <cell col="4" row="3"></cell>
+    <cell col="5" row="3">○</cell>
+    <cell col="6" row="3"></cell>
+    <cell col="7" row="3"></cell>
+    <cell col="8" row="3"></cell>
+  </row>
+</table>

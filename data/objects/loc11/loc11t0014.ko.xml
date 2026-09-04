@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0014" article="제39조(편심요소의 측정)" rows="7" cols="4" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">편심거리</cell>
+    <cell col="1" row="0" header="1">기기 및 측정방법</cell>
+    <cell col="2" row="0" header="1">측정단위</cell>
+    <cell col="3" row="0" header="1">점검항목 및 허용범위</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">30cm 미만</cell>
+    <cell col="1" row="1">독립수준기를 사용하여 편심점을 본점과 같은 표고에 설치한다.</cell>
+    <cell col="2" row="1">―</cell>
+    <cell col="3" row="1">―――</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">30cm 이상 100m 미만</cell>
+    <cell col="1" row="2">4급수준측량에 준하여 측정한다. 다만, 후시 및 전시에 같은 표척을 사용하여 편도관측의 측점 수를 1점으로 할 수 있다.</cell>
+    <cell col="2" row="2">mm</cell>
+    <cell col="3" row="2">왕복의 교차 20mm√S</cell>
+  </row>
+  <row>
+    <cell col="0" row="3"></cell>
+    <cell col="1" row="3">4급기준점측량의 연직각관측에 준하여 측정한다. 다만, 정방향, 반방향의 연직각관측을 갈음하여 기계고가 다른 한 방향에 따른 2대회의 연직각관측으로 할 수 있다.</cell>
+    <cell col="2" row="3">20″</cell>
+    <cell col="3" row="3">고도정수의 교차 60″ 고저차의 정반 교차 100mm</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">100m 이상 250m 미만</cell>
+    <cell col="1" row="4">4급수준측량에 준하여 측정한다.</cell>
+    <cell col="2" row="4">mm</cell>
+    <cell col="3" row="4">왕복의 교차 20mm√S</cell>
+  </row>
+  <row>
+    <cell col="0" row="5"></cell>
+    <cell col="1" row="5">2~3급기준점측량의 연직각관측에 준하여 측정한다.</cell>
+    <cell col="2" row="5">10″</cell>
+    <cell col="3" row="5">고도정수의 교차 30″ 고저차의 정반 교차 150mm</cell>
+  </row>
+  <row>
+    <cell col="0" row="6">비 고</cell>
+    <cell col="1" row="6">S는 측정거리(km 단위)로 한다.</cell>
+    <cell col="2" row="6"></cell>
+    <cell col="3" row="6"></cell>
+  </row>
+</table>

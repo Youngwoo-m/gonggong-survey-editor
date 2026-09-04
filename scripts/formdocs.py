@@ -721,7 +721,7 @@ def benefits(tree, walk, st, fds, regid=None):
     if not out:
         out += part_changes(tree, walk, regid)
 
-    # ㉢ 어느 경우에나 얼개가 얼마나 달라지는지는 세어 적을 수 있다
+    # ㉢ 어느 경우에나 구조가 얼마나 달라지는지는 세어 적을 수 있다
     n_new = st.get("신설", 0)
     n_edit = st.get("수정", 0) + st.get("이동·수정", 0)
     n_anx = st.get("별표신설", 0) + st.get("별표수정", 0)

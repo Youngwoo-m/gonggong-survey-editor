@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0113" article="제643조(방법)" rows="6" cols="3" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">종 별</cell>
+    <cell col="1" row="0" header="1"></cell>
+    <cell col="2" row="0" header="1">간 격</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">도 로</cell>
+    <cell col="1" row="1">계획조사</cell>
+    <cell col="2" row="1">100m 또는 50m</cell>
+  </row>
+  <row>
+    <cell col="0" row="2"></cell>
+    <cell col="1" row="2">실시설계</cell>
+    <cell col="2" row="2">20m</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">하 천</cell>
+    <cell col="1" row="3">계획조사</cell>
+    <cell col="2" row="3">100m 또는 50m</cell>
+  </row>
+  <row>
+    <cell col="0" row="4"></cell>
+    <cell col="1" row="4">실시설계</cell>
+    <cell col="2" row="4">20m 또는 50m</cell>
+  </row>
+  <row>
+    <cell col="0" row="5">해 안</cell>
+    <cell col="1" row="5">실시설계</cell>
+    <cell col="2" row="5">20m 또는 50m</cell>
+  </row>
+</table>

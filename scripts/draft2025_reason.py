@@ -84,7 +84,7 @@ class Reason:
         return bool(self.cur or self.base or self.why or self.what_ or self.prob)
 
     def render(self):
-        """네 도막을 같은 얼개로 — 도막마다 머리글, 빈 줄, '*' 항목"""
+        """네 도막을 같은 구조로 — 도막마다 머리글, 빈 줄, '*' 항목"""
         out = ["[변경 사유]"]
         for head, items in ((HEAD_CUR, [self.cur or NEW_CUR]),
                             (HEAD_PROB, self.prob),

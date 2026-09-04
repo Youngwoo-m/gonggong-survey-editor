@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0003" article="제23조(기준점측량의 방식)" rows="14" cols="6" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">구분 항목</cell>
+    <cell col="1" row="0" header="1">1급기준점측량</cell>
+    <cell col="2" row="0" header="1">2급기준점측량</cell>
+    <cell col="3" row="0" header="1">3급기준점측량</cell>
+    <cell col="4" row="0" header="1">4급기준점측량</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">결 합 다 각 방 식</cell>
+    <cell col="1" row="1">1개의 다각망에서의 기지점 수</cell>
+    <cell col="2" row="1">2+신점 수 5 이상 (끝수 올림)</cell>
+    <cell col="3" row="1"></cell>
+    <cell col="4" row="1">3점 이상</cell>
+    <cell col="5" row="1"></cell>
+  </row>
+  <row>
+    <cell col="0" row="2"></cell>
+    <cell col="1" row="2"></cell>
+    <cell col="2" row="2">위성기준점만을 기지점으로 하는 경우에는 3점 이상으로 한다.</cell>
+    <cell col="3" row="2"></cell>
+    <cell col="4" row="2"></cell>
+    <cell col="5" row="2">―――</cell>
+  </row>
+  <row>
+    <cell col="0" row="3"></cell>
+    <cell col="1" row="3">단위다각형의 변수</cell>
+    <cell col="2" row="3">10변 이하</cell>
+    <cell col="3" row="3">12변 이하</cell>
+    <cell col="4" row="3">―――</cell>
+    <cell col="5" row="3">―――</cell>
+  </row>
+  <row>
+    <cell col="0" row="4"></cell>
+    <cell col="1" row="4">노 선 의 변 수</cell>
+    <cell col="2" row="4">5변 이하</cell>
+    <cell col="3" row="4">6변 이하</cell>
+    <cell col="4" row="4">7변 이하</cell>
+    <cell col="5" row="4">10변 이하 (15변 이하)</cell>
+  </row>
+  <row>
+    <cell col="0" row="5"></cell>
+    <cell col="1" row="5"></cell>
+    <cell col="2" row="5">벌채 수목 및 지형의 상황 등에 따라서는 계획기관의 승인을 얻어 변수를 늘릴 수 있다.</cell>
+    <cell col="3" row="5"></cell>
+    <cell col="4" row="5"></cell>
+    <cell col="5" row="5"></cell>
+  </row>
+  <row>
+    <cell col="0" row="6"></cell>
+    <cell col="1" row="6">절점 사이의 거리</cell>
+    <cell col="2" row="6">250m 이상</cell>
+    <cell col="3" row="6">150m 이상</cell>
+    <cell col="4" row="6">70m 이상</cell>
+    <cell col="5" row="6">20m 이상</cell>
+  </row>
+  <row>
+    <cell col="0" row="7"></cell>
+    <cell col="1" row="7">노 선 장</cell>
+    <cell col="2" row="7">3km 이하</cell>
+    <cell col="3" row="7">2km 이하</cell>
+    <cell col="4" row="7">1km 이하</cell>
+    <cell col="5" row="7">500m 이하 (700m 이하)</cell>
+  </row>
+  <row>
+    <cell col="0" row="8"></cell>
+    <cell col="1" row="8"></cell>
+    <cell col="2" row="8">GNSS 측량기를 사용하는 경우에는 5km 이하로 한다. 다만, 위성기준점만을 기지점으로 하는 경우에는 그러하지 아니하다.</cell>
+    <cell col="3" row="8"></cell>
+    <cell col="4" row="8">위성기준점만을 기지점으로 하는 경우에는 그러하지 아니하다.</cell>
+    <cell col="5" row="8"></cell>
+  </row>
+  <row>
+    <cell col="0" row="9"></cell>
+    <cell col="1" row="9">편심거리의 제한</cell>
+    <cell col="2" row="9">e≦S/6 S: 측점 사이 거리 e: 편심거리</cell>
+    <cell col="3" row="9"></cell>
+    <cell col="4" row="9"></cell>
+    <cell col="5" row="9"></cell>
+  </row>
+  <row>
+    <cell col="0" row="10"></cell>
+    <cell col="1" row="10"></cell>
+    <cell col="2" row="10">위성기준점만을 기지점으로 하는 경우에는 S를 신점 사이의 거리로 하고, 신점을 1점 설치하는 경우의 편심거리는 이 식에 따르지 아니하고 100m 이내를 표준으로 한다.</cell>
+    <cell col="3" row="10"></cell>
+    <cell col="4" row="10"></cell>
+    <cell col="5" row="10">―――</cell>
+  </row>
+  <row>
+    <cell col="0" row="11"></cell>
+    <cell col="1" row="11">노 선 도 형</cell>
+    <cell col="2" row="11">다각망의 외주 노선에 속하는 신점은 외주 노선에 속하는 이웃한 기지점을 잇는 직선에서 바깥쪽 40° 이하의 지역 안에 선점하는 것으로 하고, 노선 안의 협각은 60° 이상으로 한다. 다만, 지형의 상황 등으로 부득이한 때에는 그러하지 아니하다.</cell>
+    <cell col="3" row="11"></cell>
+    <cell col="4" row="11">왼쪽과 같음 50° 이하 왼쪽과 같음 60° 이상</cell>
+    <cell col="5" row="11"></cell>
+  </row>
+  <row>
+    <cell col="0" row="12"></cell>
+    <cell col="1" row="12">평 균 차 수</cell>
+    <cell col="2" row="12">―――</cell>
+    <cell col="3" row="12"></cell>
+    <cell col="4" row="12">간이수평망조정 계산을 하는 경우에는 평균차수를 2차까지로 한다.</cell>
+    <cell col="5" row="12"></cell>
+  </row>
+  <row>
+    <cell col="0" row="13">비 고</cell>
+    <cell col="1" row="13"></cell>
+    <cell col="2" row="13">1. "노선"이란 기지점에서 다른 기지점까지, 기지점에서 교점까지 또는 교점에서 다른 교점까지를 말한다. 2. "단위다각형"이란 노선으로 다각형이 형성되고 그 안에 노선을 가지지 아니하는 다각형을 말한다. 3. 3~4급기준점측량에서 조건식에 따른 간이수평망조정 계산을 하는 경우에는 방향각의 접속을 하는 것으로 한다. 4. 4급기준점측량 중 위성기준점만을 기지점으로 하여 설치한 1~4등삼각점 및 1~3급기준점과 아울러 위성기준점 및 위성기준점 부속표를 기지점으로 하고, 아울러 제35조제2항에 따른 기기를 사용하는 경우에는 노선의 변수 및 노선장에 대하여 ( ) 안을 표준으로 할 수 있다.</cell>
+    <cell col="3" row="13"></cell>
+    <cell col="4" row="13"></cell>
+    <cell col="5" row="13"></cell>
+  </row>
+</table>

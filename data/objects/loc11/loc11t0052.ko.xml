@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0052" article="제112조(기기 및 시스템)" rows="11" cols="3" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">기 기</cell>
+    <cell col="1" row="0" header="1">성 능</cell>
+    <cell col="2" row="0" header="1">판 독 범 위</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">3급 토털스테이션</cell>
+    <cell col="1" row="1">별표 1에 따름</cell>
+    <cell col="2" row="1">―――</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">2급 GNSS 측량기</cell>
+    <cell col="1" row="2"></cell>
+    <cell col="2" row="2"></cell>
+  </row>
+  <row>
+    <cell col="0" row="3">3급 데오드라이트</cell>
+    <cell col="1" row="3"></cell>
+    <cell col="2" row="3"></cell>
+  </row>
+  <row>
+    <cell col="0" row="4">측거의</cell>
+    <cell col="1" row="4"></cell>
+    <cell col="2" row="4"></cell>
+  </row>
+  <row>
+    <cell col="0" row="5">3급 레벨</cell>
+    <cell col="1" row="5"></cell>
+    <cell col="2" row="5"></cell>
+  </row>
+  <row>
+    <cell col="0" row="6">2급 표척</cell>
+    <cell col="1" row="6"></cell>
+    <cell col="2" row="6"></cell>
+  </row>
+  <row>
+    <cell col="0" row="7">디지타이저</cell>
+    <cell col="1" row="7">분해능 0.1mm 이내 판독정확도 0.3mm 이내</cell>
+    <cell col="2" row="7">계측 기본도의 도곽 안을 읽을 수 있을 것</cell>
+  </row>
+  <row>
+    <cell col="0" row="8">스캐너</cell>
+    <cell col="1" row="8">분해능 0.1mm 이내 판독정확도 0.25% 이내(임의의 두 점 사이)</cell>
+    <cell col="2" row="8">계측 기본도의 도곽 안을 읽을 수 있을 것</cell>
+  </row>
+  <row>
+    <cell col="0" row="9">자동제도기(프린터 등)</cell>
+    <cell col="1" row="9">묘화 정확도 0.1mm 이내 위치정확도 0.2mm 이내</cell>
+    <cell col="2" row="9">―――</cell>
+  </row>
+  <row>
+    <cell col="0" row="10">도형편집장치</cell>
+    <cell col="1" row="10">전자계산기 및 화면 모니터, 필요에 따라 디지타이저로 구성되는 것</cell>
+    <cell col="2" row="10"></cell>
+  </row>
+</table>

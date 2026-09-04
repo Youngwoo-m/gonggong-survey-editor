@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0018" article="제42조(점검계산 및 재측)" rows="5" cols="4" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">항 목</cell>
+    <cell col="1" row="0" header="1"></cell>
+    <cell col="2" row="0" header="1">허용범위</cell>
+    <cell col="3" row="0" header="1">비 고</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">기선벡터의 환폐합차</cell>
+    <cell col="1" row="1">수평(ΔN, ΔE)</cell>
+    <cell col="2" row="1">20mm√N</cell>
+    <cell col="3" row="1">N: 변수 ΔN: 수평면의 남북성분의 폐합차 또는 교차 ΔE: 수평면의 동서성분의 폐합차 또는 교차 ΔU: 높이성분의 폐합차 또는 교차</cell>
+  </row>
+  <row>
+    <cell col="0" row="2"></cell>
+    <cell col="1" row="2">높이(ΔU)</cell>
+    <cell col="2" row="2">30mm√N</cell>
+    <cell col="3" row="2"></cell>
+  </row>
+  <row>
+    <cell col="0" row="3">중복하는 기선벡터의 교차</cell>
+    <cell col="1" row="3">수평(ΔN, ΔE)</cell>
+    <cell col="2" row="3">20mm</cell>
+    <cell col="3" row="3"></cell>
+  </row>
+  <row>
+    <cell col="0" row="4"></cell>
+    <cell col="1" row="4">높이(ΔU)</cell>
+    <cell col="2" row="4">30mm</cell>
+    <cell col="3" row="4"></cell>
+  </row>
+</table>

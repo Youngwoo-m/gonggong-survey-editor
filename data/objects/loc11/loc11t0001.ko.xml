@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0001" article="제13조(정확도관리)" rows="2" cols="2" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">측량 종별</cell>
+    <cell col="1" row="0" header="1">율</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">1ㆍ2급기준점측량 3ㆍ4급기준점측량 위성기준점만을 기지점으로 하는 3급기준점측량 레벨 등에 따른 1~4급수준측량 레벨 등에 따른 간이수준측량 GNSS 표고측량 지형측량 및 사진측량(수치지형도 데이터 작성) 지형측량 및 사진측량(3차원 점군데이터 작성) 선형결정 중심선측량 종단측량 횡단측량</cell>
+    <cell col="1" row="1">10% 5% 10% 5% 5% 10% 2% 5% 5% 5% 5% 5%</cell>
+  </row>
+</table>

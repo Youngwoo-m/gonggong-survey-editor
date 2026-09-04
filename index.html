@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>공공측량 규정 개정 편집기</title>
-<link rel="stylesheet" href="css/app.css?v=20260904h" />
+<link rel="stylesheet" href="css/app.css?v=20260904i" />
 </head>
 <body>
 
@@ -132,6 +132,8 @@
         <span class="pane-sub" id="editStats">—</span>
       </div>
   <div class="pane-toolbar">
+        <button data-cmd="branch" title="지금 것을 밑그림 삼아 새 버전을 만든다 (Ctrl+Shift+V)">⑂<span class="lbl">새버전</span></button>
+        <span class="sep"></span>
         <button data-cmd="addSibling" title="같은 자리에 마디 하나를 더한다 (Ctrl+N)">＋<span class="lbl">추가</span></button>
         <button data-cmd="addChild" title="하위 신설 (Ctrl+Shift+N)">＋<span class="lbl">하위</span></button>
         <span class="sep"></span>
@@ -147,7 +149,6 @@
         <span class="sep"></span>
         <button data-cmd="validate" title="정합성 검증 (F5)">✓<span class="lbl">검증</span></button>
         <button data-cmd="ai" class="ai" title="AI 도우미 (Ctrl+I)">✦AI</button>
-        <button data-cmd="branch" title="새 버전으로 분기 (Ctrl+Shift+V)">⑂<span class="lbl">분기</span></button>
         <button data-cmd="dlEdit" title="지금 보고 있는 개정안을 파일로 내려받습니다 — 조문과 별표ㆍ별지를 한 장에 담습니다">⤓<span class="lbl">내려받기</span></button>
         <button data-cmd="scopeAll" id="btnScopeAll" class="hidden"
                 title="세 규정을 모두 펼칩니다 — 규정을 넘어 조문을 옮기려면 필요합니다">⊞<span class="lbl">전체</span></button>
@@ -204,6 +205,6 @@
 <div id="toast" class="toast hidden"></div>
 <div id="busy" class="busy hidden"><div class="busy-box"><div class="spin"></div><div id="busyMsg">처리 중…</div></div></div>
 
-<script type="module" src="js/main.js?v=20260904h"></script>
+<script type="module" src="js/main.js?v=20260904i"></script>
 </body>
 </html>

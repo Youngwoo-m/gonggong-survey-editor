@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0058" article="제122조(이동측위법 또는 RTK법에 따른 지형, 지물 등의 측정)" rows="3" cols="3" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">사용위성 수</cell>
+    <cell col="1" row="0" header="1">관 측 횟 수</cell>
+    <cell col="2" row="0" header="1">데이터 취득간격</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">5위성 이상</cell>
+    <cell col="1" row="1">FIX해를 얻은 후 10에포크 이상</cell>
+    <cell col="2" row="1">1초(다만, 이동측위법은 5초 이하)</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">적 요</cell>
+    <cell col="1" row="2">GLONASS 위성을 사용하여 관측하는 경우에는 사용위성 수를 6위성 이상으로 한다. 다만, GPSㆍ준천정위성 및 GLONASS 위성을 각각 2위성 이상 사용할 것</cell>
+    <cell col="2" row="2"></cell>
+  </row>
+</table>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0045" article="제94조(점검계산 및 재측)" rows="6" cols="4" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">100m 이상 250m 미만</cell>
+    <cell col="1" row="0" header="1">레벨 등에 따른 수준측량 중 3급수준측량에 준하여 측정한다.</cell>
+    <cell col="2" row="0" header="1">mm</cell>
+    <cell col="3" row="0" header="1">왕복의 교차 5mm</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">구분 항목</cell>
+    <cell col="1" row="1"></cell>
+    <cell col="2" row="1">허용범위</cell>
+    <cell col="3" row="1">비 고</cell>
+  </row>
+  <row>
+    <cell col="0" row="2"></cell>
+    <cell col="1" row="2"></cell>
+    <cell col="2" row="2">3급수준측량</cell>
+    <cell col="3" row="2"></cell>
+  </row>
+  <row>
+    <cell col="0" row="3">기선벡터의 교 차</cell>
+    <cell col="1" row="3">수평(ΔN, ΔE)</cell>
+    <cell col="2" row="3">20mm</cell>
+    <cell col="3" row="3">ΔN: 수평면의 남북성분의 교차 ΔE: 수평면의 동서성분의 교차 ΔU: 높이성분의 교차 (제3항제2호에도 적용)</cell>
+  </row>
+  <row>
+    <cell col="0" row="4"></cell>
+    <cell col="1" row="4">높이(ΔU)</cell>
+    <cell col="2" row="4">40mm</cell>
+    <cell col="3" row="4"></cell>
+  </row>
+  <row>
+    <cell col="0" row="5">기지점 사이의 타원체고의 폐합차</cell>
+    <cell col="1" row="5"></cell>
+    <cell col="2" row="5">15mm√</cell>
+    <cell col="3" row="5">ΣS: 노선장(km 단위)</cell>
+  </row>
+</table>

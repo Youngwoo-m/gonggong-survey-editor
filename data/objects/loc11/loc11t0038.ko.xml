@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0038" article="제75조(기지점의 종류 등)" rows="6" cols="2" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">구분 항목</cell>
+    <cell col="1" row="0" header="1">3급수준측량</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">기지점의 종류</cell>
+    <cell col="1" row="1">위성기준점</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">신점 사이의 거리</cell>
+    <cell col="1" row="2">6,000m 이상</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">기지점과 신점 사이의 거리</cell>
+    <cell col="1" row="3"></cell>
+  </row>
+  <row>
+    <cell col="0" row="4">기설점과 신점 사이의 거리</cell>
+    <cell col="1" row="4"></cell>
+  </row>
+  <row>
+    <cell col="0" row="5">비 고</cell>
+    <cell col="1" row="5">다만, 신점 사이 거리, 기지점과 신점 사이 또는 기설점에서 신점까지의 거리가 6,000m 미만이 되는 경우라도 가파른 지형이나 하천 등이 있어 두 점 사이의 레벨 등에 따른 수준측량의 관측거리가 6,000m 이상이 되는 것이 분명한 경우에는 계획기관의 승인을 얻어 실시할 수 있는 것으로 한다.</cell>
+  </row>
+</table>

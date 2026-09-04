@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0034" article="제65조(재측)" rows="3" cols="5" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">구분 항목</cell>
+    <cell col="1" row="0" header="1">1급수준측량</cell>
+    <cell col="2" row="0" header="1">2급수준측량</cell>
+    <cell col="3" row="0" header="1">3급수준측량</cell>
+    <cell col="4" row="0" header="1">4급수준측량</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">왕복관측값의 교차</cell>
+    <cell col="1" row="1">2.5mm√S</cell>
+    <cell col="2" row="1">5mm√S</cell>
+    <cell col="3" row="1">10mm√S</cell>
+    <cell col="4" row="1">20mm√S</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">비 고</cell>
+    <cell col="1" row="2">S는 관측거리(편도, km 단위)로 한다.</cell>
+    <cell col="2" row="2"></cell>
+    <cell col="3" row="2"></cell>
+    <cell col="4" row="2"></cell>
+  </row>
+</table>

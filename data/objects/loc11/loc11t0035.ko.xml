@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0035" article="제66조(검측)" rows="4" cols="3" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">구분 항목</cell>
+    <cell col="1" row="0" header="1">1급수준측량</cell>
+    <cell col="2" row="0" header="1">2급수준측량</cell>
+  </row>
+  <row>
+    <cell col="0" row="1">지난번 관측 고저차와의 교차</cell>
+    <cell col="1" row="1">2.5mm√S</cell>
+    <cell col="2" row="1">5mm√S</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">측량성과의 고저차와의 교차</cell>
+    <cell col="1" row="2">15mm√S</cell>
+    <cell col="2" row="2"></cell>
+  </row>
+  <row>
+    <cell col="0" row="3">비 고</cell>
+    <cell col="1" row="3">S는 관측거리(편도, km 단위)로 한다.</cell>
+    <cell col="2" row="3"></cell>
+  </row>
+</table>

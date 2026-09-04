@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table id="loc11t0053" article="제114조(요지)" rows="5" cols="4" source="作業規程の準則 (일본 국토지리원 2025)">
+  <row>
+    <cell col="0" row="0" header="1">10,000㎡당 배점밀도</cell>
+    <cell col="1" row="0" header="1"></cell>
+    <cell col="2" row="0" header="1"></cell>
+    <cell col="3" row="0" header="1"></cell>
+  </row>
+  <row>
+    <cell col="0" row="1">지 역 지도정보 수준</cell>
+    <cell col="1" row="1">시가지</cell>
+    <cell col="2" row="1">시가지 근교</cell>
+    <cell col="3" row="1">산 지</cell>
+  </row>
+  <row>
+    <cell col="0" row="2">250</cell>
+    <cell col="1" row="2">7 점</cell>
+    <cell col="2" row="2">6 점</cell>
+    <cell col="3" row="2">7 점</cell>
+  </row>
+  <row>
+    <cell col="0" row="3">500</cell>
+    <cell col="1" row="3">6 점</cell>
+    <cell col="2" row="3">5 점</cell>
+    <cell col="3" row="3">6 점</cell>
+  </row>
+  <row>
+    <cell col="0" row="4">1000</cell>
+    <cell col="1" row="4">5 점</cell>
+    <cell col="2" row="4">4 점</cell>
+    <cell col="3" row="4">4 점</cell>
+  </row>
+</table>
