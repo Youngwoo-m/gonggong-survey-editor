@@ -209,6 +209,7 @@ def fetch_lines(target, seq):
         c = text_of(u.get("조문내용"), "조문내용")
         if c:
             lines.append(c.strip())
+        mark = len(lines)
         for h in as_list(u.get("항")):
             hc = text_of(h, "항내용") if not isinstance(h, dict) else text_of(h.get("항내용"), "항내용")
             if hc:
@@ -218,6 +219,14 @@ def fetch_lines(target, seq):
                     hoc = text_of(ho, "호내용") if not isinstance(ho, dict) else text_of(ho.get("호내용"), "호내용")
                     if hoc:
                         lines.append(hoc.strip())
+        # 번호만 있고 속이 빈 조 —— 법이 그 자리를 비워 둔 것이다.
+        # 어디로 갔는지는 <조문참고자료> 에만 적혀 있으므로 그것을 본문으로 삼는다.
+        #   제39조  →  [종전 제39조는 제17조의4로 이동 <2020.2.18>]
+        # 담지 아니하면 화면에 번호만 남아 색인이 빠뜨린 것처럼 보인다.
+        if len(lines) == mark and re.fullmatch(r"제\d+조(?:의\d+)?", c.strip()):
+            ref = text_of(u.get("조문참고자료"), "조문참고자료").strip()
+            if ref:
+                lines.append(ref)
     byl = (svc.get("별표") or {}).get("별표단위") or []
     return lines, byl
 
