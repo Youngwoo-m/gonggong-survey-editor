@@ -1,19 +1,21 @@
 /* ============================================================
    ui/compare.js — 개정 전후 비교표 화면
    ============================================================ */
-import { buildComparison, KIND_LIST } from "../core/diff.js?v=20260904m";
-import { writeXlsx } from "../core/xlsx.js?v=20260904m";
-import * as M from "../core/model.js?v=20260904m";
-import { regFingerprint } from "../core/xrefs.js?v=20260904m";
-import { buildAmendment } from "../core/amend.js?v=20260904m";
-import { buildSupplement, EFFECT_KINDS, topTitles } from "../core/supplement.js?v=20260904m";
+import { buildComparison, KIND_LIST, kindLabel } from "../core/diff.js?v=20260904n";
+import { writeXlsx } from "../core/xlsx.js?v=20260904n";
+import * as M from "../core/model.js?v=20260904n";
+import { regFingerprint } from "../core/xrefs.js?v=20260904n";
+import { buildAmendment } from "../core/amend.js?v=20260904n";
+import { buildSupplement, EFFECT_KINDS, topTitles } from "../core/supplement.js?v=20260904n";
 import { stripImgTags, imgIdsIn, toHtml, fitTable }
-  from "../core/objects.js?v=20260904m";
-import { esc, fmtDate } from "./html.js?v=20260904m";
+  from "../core/objects.js?v=20260904n";
+import { esc, fmtDate } from "./html.js?v=20260904n";
 
 const KIND_CLASS = {
   "신설": "k-new", "삭제": "k-del", "이동": "k-mov", "이관": "k-xfer",
   "이동·수정": "k-mov", "수정": "k-edit", "통합": "k-mrg", "유지": "k-keep",
+  // 통합·신설 —— 현행 조문 여럿을 합쳐 새로 둔 것. 새 조문이므로 신설의 빛깔을 쓴다.
+  "통합·신설": "k-new",
 };
 
 export class CompareView {
@@ -168,7 +170,7 @@ export class CompareView {
       `<b>개정 전</b> ${esc(label(from))} &nbsp;→&nbsp; <b>개정 후</b> ${esc(label(to))}`;
     this.el.querySelector("#cmpBase").innerHTML = esc(this._baseText());
 
-    const chips = ["신설", "삭제", "이관", "이동", "이동·수정", "수정", "통합", "유지"]
+    const chips = ["신설", "통합·신설", "삭제", "이관", "이동", "이동·수정", "수정", "통합", "유지"]
       .filter((k) => summary[k])
       .map((k) => `<span class="chip ${KIND_CLASS[k]}">${k} <b>${summary[k]}</b></span>`).join("");
     this.el.querySelector("#cmpSummary").innerHTML =
@@ -565,7 +567,7 @@ export class CompareView {
 
       return `<tr class="${KIND_CLASS[r.kind]}">
         <td class="c">${r.seq}</td>
-        <td class="c"><span class="tag ${KIND_CLASS[r.kind]}">${esc(r.kind)}</span></td>
+        <td class="c"><span class="tag ${KIND_CLASS[r.kind]}">${esc(kindLabel(r))}</span></td>
         <td class="${b ? "" : "empty"}">${b ? `<div class="lbl">${esc(b.label)}${b.title ? ` <span class="ttl">${bTitle}</span>` : ""}</div>${bBody ? `<div class="bd">${bBody}</div>` : ""}` : "— (해당 조문 없음)"}</td>
         <td class="${a ? "" : "empty"}">${a ? `<div class="lbl">${esc(a.label)}${a.title ? ` <span class="ttl">${aTitle}</span>` : ""}</div>${aBody ? `<div class="bd">${aBody}</div>` : ""}` : "— (삭제)"}</td>
         <td class="note">${note.join("<br>") || ""}</td>
@@ -647,7 +649,7 @@ export class CompareView {
       if (r.reason) note.push(r.reason);
       sheetRows.push([
         { v: r.seq, s: S.CEN },
-        { v: r.kind, s: S.KIND },
+        { v: kindLabel(r), s: S.KIND },
         { runs: beforeRuns, s: S.CELL },
         { runs: afterRuns, s: S.CELL },
         { v: note.join("\n"), s: S.CELL },
@@ -733,14 +735,14 @@ td.why{font-size:9pt;line-height:1.65;word-break:keep-all}
     const old = btn ? btn.textContent : "";
     if (btn) { btn.disabled = true; btn.textContent = "짓는 중…"; }
     try {
-      const { buildCompareHwpx } = await import("../core/hwpxcompare.js?v=20260904m");
+      const { buildCompareHwpx } = await import("../core/hwpxcompare.js?v=20260904n");
       // 대비표에 싣는 것은 조문뿐이다 — 양식이 조문 대비표다
       const rows = this._officialRows(this.result.rows);
       if (!rows.length) throw new Error("대비표에 실을 조문이 없습니다.");
       const got = await buildCompareHwpx(rows, {
         regname: this._targetName(),
         cells: (r) => this._officialCells(r),
-        why: (r) => whyLines(r.reason, r.kind || r.status),
+        why: (r) => whyLines(r.reason, kindLabel(r) || r.status),
       });
       download(got.blob, got.name);
       if (btn) btn.textContent = `${got.rows}개 조 · 내려받음`;
@@ -975,7 +977,7 @@ export function whyLines(reason, fallback) {
 
 /** 셋째 칸을 HTML 로 — 개조식 한 줄에 하나씩 */
 export function whyHtml(r) {
-  const w = whyLines(r.reason, r.kind || r.status);
+  const w = whyLines(r.reason, kindLabel(r) || r.status);
   return w.length
     ? w.map((s) => `- ${esc(s)}`).join("<br>")
     : `<span class="mk-omit">—</span>`;

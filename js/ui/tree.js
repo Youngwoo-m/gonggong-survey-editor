@@ -1,7 +1,7 @@
 /* ============================================================
    ui/tree.js — 트리 렌더링 + 드래그 앤 드롭
    ============================================================ */
-import * as M from "../core/model.js?v=20260904m";
+import * as M from "../core/model.js?v=20260904n";
 
 /* 상태 이름 → CSS 클래스에 쓸 이름. 가운데점은 클래스에 못 쓴다. */
 const statusKey = (s) => String(s || "").replace(/[^가-힣A-Za-z0-9]/g, "");
@@ -148,8 +148,8 @@ export class TreeView {
          보이지 않았다 — statusKey 가 기호를 걷어 낸다. */
       /* 여러 조문을 합쳐 새로 둔 것은 「통합·신설」 로 적는다. 상태는
          「신설」 그대로 두고 유래(origin)만 따로 지녀, 신설을 세는 자리와
-         개정문을 짓는 자리가 그대로 돌게 한다. */
-      const label = n.origin === "통합" ? `통합·${n.status}` : n.status;
+         개정문을 짓는 자리가 그대로 돌게 한다 (model.js 의 statusLabel). */
+      const label = M.statusLabel(n);
       b.className = `badge b-${statusKey(label)}`;
       b.textContent = label;
       b.title = STATUS_HINT[label] || STATUS_HINT[n.status] || label;

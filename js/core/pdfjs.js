@@ -54,7 +54,7 @@ async function servedAsJs(url) {
 export async function loadPdfjs() {
   if (_mod) return _mod;
 
-  const main = new URL("pdf.min.mjs?v=20260904m", BASE).href;
+  const main = new URL("pdf.min.mjs?v=20260904n", BASE).href;
   let mod;
   try {
     mod = await import(/* @vite-ignore */ main);

@@ -258,6 +258,24 @@ export function search(nodes, q) {
 export const STATUSES = ["유지", "수정", "신설", "이동", "이동·수정", "통합", "삭제"];
 
 /**
+ * 화면에 적을 상태 이름표 —— 유래(origin)를 얹어 짓는다.
+ *
+ * 흩어져 있던 현행 조문 여럿을 합쳐 새로 둔 조문은 상태를 「신설」 그대로 두고
+ * 마디에 `origin: "통합"` 만 지닌다. 상태 낱말을 늘리면 신설을 세는 자리와
+ * 개정문을 짓는 자리 스무 곳 남짓이 이 조문을 신설이 아니라고 보게 되므로,
+ * 세는 것은 상태로 하고 보이는 이름만 「통합·신설」 로 적는다.
+ *
+ * 트리ㆍ비교표ㆍ조문 상세가 모두 이 함수를 쓴다.
+ * @param {{status?:string, origin?:string}} node
+ * @returns {string} 이름표. 상태가 없으면 빈 글.
+ */
+export function statusLabel(node) {
+  const st = (node && node.status) || "";
+  if (!st) return "";
+  return node.origin === "통합" ? `통합·${st}` : st;
+}
+
+/**
  * 편집 동작에 따라 조문 상태를 자동으로 올린다.
  *  · 신설된 조문은 무엇을 해도 '신설' 로 남는다
  *  · 이동 + 수정 이 겹치면 '이동·수정'

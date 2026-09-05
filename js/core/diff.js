@@ -7,11 +7,13 @@
      · work 에만 있음  → 신설
      · 둘 다 있음      → 부모 체인 변화(이동) / 제목·본문 변화(수정) 판정
    ============================================================ */
-import * as M from "./model.js?v=20260904m";
-import { stripImgTags } from "./objects.js?v=20260904m";
-import { wordDiff, afterRuns, beforeRuns, hasChange } from "./textdiff.js?v=20260904m";
+import * as M from "./model.js?v=20260904n";
+import { stripImgTags } from "./objects.js?v=20260904n";
+import { wordDiff, afterRuns, beforeRuns, hasChange } from "./textdiff.js?v=20260904n";
 
-export const KIND_LIST = ["신설", "삭제", "이동", "이동·수정", "수정", "통합", "유지"];
+/* 「통합·신설」 은 makeRow 가 매기는 kind 가 아니라 요약에서만 쓰는 이름이다.
+   현행 여럿을 합쳐 새로 둔 조문(origin="통합")을 신설에서 갈라 세려는 것이다. */
+export const KIND_LIST = ["신설", "통합·신설", "삭제", "이동", "이동·수정", "수정", "통합", "유지"];
 
 /** 별표·별지는 '서식 변경 내용' 아래에 올린 파일 이름까지 붙여 견준다 */
 function bodyOf(n) {
@@ -114,6 +116,8 @@ function makeRow(b, w, note = null, splitFrom = "") {
     afterBodyRuns: bRuns ? afterRuns(bRuns) : null,
     reason: (note && note.reason) || owner.node.reason || "",
     status: (note && note.status) || owner.node.status || "",
+    // 유래 — 현행 조문 여럿을 합쳐 새로 둔 것이면 "통합"
+    origin: owner.node.origin || "",
     source: src ? `${src.doc} ${src.label}` : "",
     numberChanged: !!(b && w && b.label !== w.label),
     splitFrom,
@@ -203,6 +207,10 @@ export function buildComparison(baseTree, workTree, opts = {}) {
     별표: merged.filter((r) => r.annex).length,
   };
   for (const k of KIND_LIST) summary[k] = merged.filter((r) => r.kind === k).length;
+  /* 신설 가운데 현행 여럿을 합쳐 둔 것을 갈라 센다 — 두 수를 더하면 신설 전체다 */
+  const mergedNew = merged.filter((r) => r.kind === "신설" && r.origin === "통합").length;
+  summary["통합·신설"] = mergedNew;
+  summary["신설"] -= mergedNew;
   summary.변경 = merged.length - summary.유지;
 
   // 4) 필터
@@ -214,6 +222,17 @@ export function buildComparison(baseTree, workTree, opts = {}) {
   out = out.map((r, i) => Object.assign({}, r, { seq: i + 1 }));
 
   return { rows: out, summary, all: merged };
+}
+
+/**
+ * 비교표에 적을 갈래 이름표 —— 유래를 얹는다.
+ * 신설 가운데 현행 조문 여럿을 합쳐 둔 것은 「통합·신설」 로 적는다.
+ * 세는 자리(kind)는 그대로 「신설」 이다 (model.js 의 statusLabel 과 같은 뜻).
+ * @param {{kind:string, origin?:string}} row
+ */
+export function kindLabel(row) {
+  if (!row) return "";
+  return row.kind === "신설" && row.origin === "통합" ? "통합·신설" : row.kind;
 }
 
 /** 런 배열 → 순수 텍스트 */
