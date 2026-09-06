@@ -1,33 +1,33 @@
 /* ============================================================
    main.js — 앱 조립 (1단계 프로토타입)
    ============================================================ */
-import * as M from "./core/model.js?v=20260907f";
-import { Project } from "./core/project.js?v=20260907f";
-import * as FS from "./adapters/fileio.js?v=20260907f";
-import * as AUTO from "./adapters/autosave.js?v=20260907f";
-import { TreeView } from "./ui/tree.js?v=20260907f";
-import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260907f";
-import { CompareView } from "./ui/compare.js?v=20260907f";
-import { VersionsView } from "./ui/versions.js?v=20260907f";
-import { HistoryView } from "./ui/history.js?v=20260907f";
-import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260907f";
-import { ValidateView } from "./ui/validate.js?v=20260907f";
-import { RefPicker } from "./ui/refpicker.js?v=20260907f";
-import { AIView } from "./ui/ai.js?v=20260907f";
-import { CiteCheckView } from "./ui/citecheck.js?v=20260907f";
-import { TermsView } from "./ui/terms.js?v=20260907f";
-import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260907f";
-import * as GH from "./adapters/github.js?v=20260907f";
-import { extractLines } from "./core/importer.js?v=20260907f";
-import { buildAuto } from "./core/structure.js?v=20260907f";
-import * as SRC from "./core/srcfp.js?v=20260907f";
-import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260907f";
-import { ObjectStore, fitTable } from "./core/objects.js?v=20260907f";
-import { loadTargets, allTargets, targetById, firstTarget, nextRevLabel, verPrefixOf } from "./core/targets.js?v=20260907f";
-import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260907f";
-import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260907f";
-import { fmtDate } from "./ui/html.js?v=20260907f";
-import { printReg, regHtml } from "./ui/printdoc.js?v=20260907f";
+import * as M from "./core/model.js?v=20260907k";
+import { Project } from "./core/project.js?v=20260907k";
+import * as FS from "./adapters/fileio.js?v=20260907k";
+import * as AUTO from "./adapters/autosave.js?v=20260907k";
+import { TreeView } from "./ui/tree.js?v=20260907k";
+import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260907k";
+import { CompareView } from "./ui/compare.js?v=20260907k";
+import { VersionsView } from "./ui/versions.js?v=20260907k";
+import { HistoryView } from "./ui/history.js?v=20260907k";
+import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260907k";
+import { ValidateView } from "./ui/validate.js?v=20260907k";
+import { RefPicker } from "./ui/refpicker.js?v=20260907k";
+import { AIView } from "./ui/ai.js?v=20260907k";
+import { CiteCheckView } from "./ui/citecheck.js?v=20260907k";
+import { TermsView } from "./ui/terms.js?v=20260907k";
+import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260907k";
+import * as GH from "./adapters/github.js?v=20260907k";
+import { extractLines } from "./core/importer.js?v=20260907k";
+import { buildAuto } from "./core/structure.js?v=20260907k";
+import * as SRC from "./core/srcfp.js?v=20260907k";
+import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260907k";
+import { ObjectStore, fitTable } from "./core/objects.js?v=20260907k";
+import { loadTargets, allTargets, targetById, firstTarget, nextRevLabel, verPrefixOf } from "./core/targets.js?v=20260907k";
+import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260907k";
+import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260907k";
+import { fmtDate } from "./ui/html.js?v=20260907k";
+import { printReg, regHtml } from "./ui/printdoc.js?v=20260907k";
 
 const $ = (s) => document.querySelector(s);
 const NL = "\n";
@@ -617,10 +617,8 @@ function treeMenu(id, x, y) {
   menu.className = "ctx-menu";
   menu.innerHTML = `
     <div class="ctx-head">${esc(label)} ${esc(node.title || "")}</div>
-    <button data-x="save">조각으로 따로 저장…</button>
-    <button data-x="load">조각을 불러와 이 마디를 바꾸기…</button>
-    <div class="ctx-line"></div>
-    <button data-x="hwpxOut">한/글 문서로 내보내기…</button>
+
+    <button data-x="hwpxOut">한/글로 저장…</button>
     <button data-x="hwpxIn">한/글에서 고친 것 들여오기…</button>`;
   menu.style.left = Math.min(x, innerWidth - 260) + "px";
   menu.style.top = Math.min(y, innerHeight - 110) + "px";
@@ -634,14 +632,12 @@ function treeMenu(id, x, y) {
     const b = e.target.closest("[data-x]");
     if (!b) return;
     menu.remove(); document.removeEventListener("mousedown", away, true);
-    if (b.dataset.x === "save") await savePart(node, reg);
-    else if (b.dataset.x === "hwpxOut") await partToHwpx(node, reg);
+    if (b.dataset.x === "hwpxOut") await partToHwpx(node, reg);
     else if (b.dataset.x === "hwpxIn") await partFromHwpx(node, reg);
-    else await loadPart(node, reg);
   });
 }
 
-/** 고른 마디만 한/글 문서로 —— 개정안 전체를 내는 길에 마디 하나만 넘긴다 */
+/** 고른 마디만 한/글 문서로 —— 제목과 본문만 담는다 */
 async function partToHwpx(node, reg) {
   if (!reg) { toast("이 마디가 어느 규정의 것인지 알 수 없습니다.", 4000); return; }
   const label = node.level === "조"
@@ -649,7 +645,7 @@ async function partToHwpx(node, reg) {
     : `제${node.no}${node.level}`;
   busy("한/글 문서를 짓는 중…");
   try {
-    const { buildDraftHwpx } = await import("./core/hwpxdraft.js?v=20260907f");
+    const { buildDraftHwpx } = await import("./core/hwpxdraft.js?v=20260907k");
     const url = new URL("kit/양식/01.개정안/[양식] 규정 개정(안).hwpx", document.baseURI).href;
     /* 마디 하나를 규정인 척 감싸 넘긴다 —— 제목 줄에 어디를 떼어 온
        것인지 적어 두어야 한/글에서 보고도 알 수 있다. */
@@ -657,14 +653,20 @@ async function partToHwpx(node, reg) {
       title: `${reg.title || ""} ${label} ${node.title || ""}`.trim(),
       org: reg.org, kind: reg.kind, children: [node],
     };
-    const got = await buildDraftHwpx(shim, url, { org: reg.org, kind: reg.kind });
+    const got = await buildDraftHwpx(shim, url, {
+      org: reg.org, kind: reg.kind,
+      regId: reg.targetId === "work" ? "draft2025"
+           : reg.targetId === "review" ? "draftSimsa"
+           : reg.targetId === "uav" ? "draftUav" : "",
+    });
     const a = document.createElement("a");
     a.href = URL.createObjectURL(got.blob);
     a.download = got.name;
     document.body.appendChild(a); a.click(); a.remove();
     setTimeout(() => URL.revokeObjectURL(a.href), 3000);
-    toast(`${got.name} 을(를) 내려받습니다 — 조 ${got.조}개`
-      + `${NL}한/글에서 고친 뒤 [한/글에서 고친 것 들여오기] 로 되받습니다.`, 7000);
+    toast(`${a.download} 을(를) 내려받습니다 — 조 ${got.조}개`
+      + (got.표 || got.수식 || got.그림 ? ` ㆍ 표 ${got.표}개 ㆍ 수식 ${got.수식}개 ㆍ 그림 ${got.그림}개` : "")
+      + `${NL}한/글에서 고친 뒤 [한/글에서 고친 것 들여오기] 로 되받습니다.`, 8000);
   } catch (e) {
     toast("한/글 문서를 짓지 못했습니다: " + e.message, 6000);
   } finally { busy(false); }
@@ -680,7 +682,7 @@ async function partFromHwpx(node, reg) {
     input.onchange = () => res(input.files && input.files[0]);
     input.click();
   });
-  input.accept = ".pmproj,.json,.pmpart";
+  input.accept = ".pmproj,.json";
   if (!file) return;
   busy("한/글 문서를 읽는 중…");
   try {
@@ -692,14 +694,29 @@ async function partFromHwpx(node, reg) {
     const got = new Map();
     M.walk(built.tree, (x) => {
       if (x.level === "조" && x.no) {
-        got.set(`${x.no}/${x.branch || ""}`, { title: x.title || "", body: x.body || "" });
+        /* 예전 주고받기본에 붙던 〔조각〕ㆍ〔사유〕ㆍ〔이력〕 줄은 걷어 낸다 */
+        const body = String(x.body || "").split(NL)
+          .filter((ln) => !/^\s*〔(조각|사유|이력)〕/.test(ln)).join(NL).trim();
+        got.set(`${x.no}/${x.branch || ""}`, { title: x.title || "", body });
       }
     });
-    if (!got.size) { toast("그 문서에서 조문을 찾지 못했습니다.", 5000); return; }
+    if (!got.size) {
+      /* 무엇을 읽었는지 밝혀 두어야 무엇이 어긋났는지 알 수 있다 */
+      const seen = (got0.lines || []).filter((t) => String(t).trim());
+      toast(`그 문서에서 조문을 찾지 못했습니다 —— ${got0.kind} 로 읽어 글 ${seen.length}줄.`
+        + (seen.length ? `${NL}첫 줄: ${seen[0].slice(0, 40)}` : "")
+        + `${NL}「제1조(…)」 처럼 조 번호로 시작하는 줄이 있어야 합니다.`, 8000);
+      return;
+    }
     const mine = [];
     M.walk([node], (x) => { if (x.level === "조" && x.no) mine.push(x); });
+    /* 표ㆍ수식ㆍ그림이 든 조문은 되받지 아니한다 —— 한/글에서는 그것이
+       참말 표로 앉으므로, 글로만 읽으면 표가 풀려 본문이 뒤엉킨다. */
+    const HASOBJ = /<img\s+id="[\w.-]+"\s*>/;
     const hit = mine.filter((x) => got.has(`${x.no}/${x.branch || ""}`));
+    const held = hit.filter((x) => HASOBJ.test(x.body || ""));
     const diff = hit.filter((x) => {
+      if (HASOBJ.test(x.body || "")) return false;
       const g = got.get(`${x.no}/${x.branch || ""}`);
       return g.title !== (x.title || "") || g.body !== (x.body || "");
     });
@@ -707,6 +724,7 @@ async function partFromHwpx(node, reg) {
       `그 문서에 조문 ${got.size}개, 이 마디에 ${mine.length}개가 있습니다.`,
       `짝이 맞는 것 ${hit.length}개 가운데 ${diff.length}개가 달라졌습니다.`,
       "제목과 본문만 가져옵니다 —— 상태ㆍ변경 사유ㆍ이력은 지금 것을 그대로 둡니다.",
+      ...(held.length ? [`표ㆍ수식ㆍ그림이 든 조문 ${held.length}개는 그대로 둡니다.`] : []),
     ], "되받기");
     if (!ok) return;
     let n = 0;
@@ -715,75 +733,18 @@ async function partFromHwpx(node, reg) {
         const g = got.get(`${x.no}/${x.branch || ""}`);
         x.title = g.title;
         x.body = g.body;
+
         project.note(x, "수정", `한/글 문서에서 되받음 (${file.name})`, "수정");
         n += 1;
       }
       return n > 0;
     });
-    toast(done ? `조문 ${n}개를 되받았습니다. (Ctrl+Z 로 되돌릴 수 있습니다)`
-                : "달라진 조문이 없습니다.", 5000);
+    toast((done ? `조문 ${n}개를 되받았습니다. (Ctrl+Z 로 되돌릴 수 있습니다)`
+                : "달라진 조문이 없습니다.")
+      + (held.length ? `${NL}표ㆍ수식ㆍ그림이 든 조문 ${held.length}개는 그대로 두었습니다.` : ""), 6000);
   } catch (e) {
     toast("한/글 문서를 읽지 못했습니다: " + e.message, 6000);
   } finally { busy(false); }
-}
-/** 고른 마디를 조각 파일로 내려받는다 */
-async function savePart(node, reg) {
-  if (!reg) { toast("이 마디가 어느 규정의 것인지 알 수 없습니다.", 4000); return; }
-  const { makePart } = await import("./core/part.js?v=20260907f");
-  const got = makePart(node, reg, {
-    by: GH.getAuthor(), versionLabel: project.current?.label || "",
-  });
-  const blob = new Blob([JSON.stringify(got.json)], { type: "application/json" });
-  const a = document.createElement("a");
-  a.href = URL.createObjectURL(blob);
-  a.download = got.name;
-  document.body.appendChild(a); a.click(); a.remove();
-  setTimeout(() => URL.revokeObjectURL(a.href), 3000);
-  toast(`${got.name} 을(를) 내려받습니다`
-    + (got.별표 ? `${NL}딸린 별표ㆍ별지 ${got.별표}개를 함께 담았습니다.` : ""), 5000);
-}
-
-/** 조각을 골라 이 마디를 갈아 끼운다 */
-async function loadPart(node, reg) {
-  if (project.isReadonly) { toast("읽기 전용 판입니다.", 4000); return; }
-  try {
-    const { isPart, applyPart } = await import("./core/part.js?v=20260907f");
-    const got = await FS.openProject();
-    const part = got && got.data;
-    if (!isPart(part)) { toast("이 파일은 조각(.pmpart)이 아닙니다.", 5000); return; }
-    const who = part.from || {};
-    const ok = await askYesNo(`「${got.name}」 을(를) 넣습니다`, [
-      `${who.regTitle || ""} ${who.revLabel || ""} 에서 꺼낸 조각입니다.`,
-      "같은 번호의 마디를 찾아 그 자리를 갈아 끼웁니다 —— 번호는 조각의 것을 그대로 씁니다.",
-      (part.annex || []).length
-        ? `딸린 별표ㆍ별지 ${(part.annex || []).length}개도 함께 갱신합니다.`
-        : "딸린 별표ㆍ별지는 없습니다.",
-    ], "넣기");
-    if (!ok) return;
-    /* run() 은 되돌리기 자리를 남기고 참ㆍ거짓만 돌려주므로, 셈은 밖에 담는다.
-       run() 이 끝에 renumber() 를 부르나, 짝을 번호로 찾았으므로 그 자리의
-       번호와 조각의 번호가 같아 달라지는 것이 없다. */
-    let out = null;
-    const ok2 = project.run(`조각 넣기: ${got.name}`, (tree) => {
-      const target = tree.find((n) => M.isRegNode(n) && n.targetId === reg.targetId)
-        || { children: tree };
-      out = applyPart(target.children, part);
-      return out.바꾼것.length > 0;      // 하나도 못 찾았으면 되돌린다
-    });
-    if (!ok2 && (!out || !out.바꾼것.length)) {
-      toast(`짝이 되는 마디를 찾지 못했습니다 — ${(out?.못찾은것 || []).slice(0, 3).join(" ㆍ ")}`, 8000);
-      return;
-    }
-    const done = (out && out.바꾼것) || [];
-    const miss = (out && out.못찾은것) || [];
-    toast(`조각을 넣었습니다 — 바꾼 것 ${done.length}개`
-      + (miss.length ? `${NL}짝을 찾지 못한 것 ${miss.length}개 — ${miss.slice(0, 3).join(" ㆍ ")}` : ""),
-      miss.length ? 9000 : 4500);
-  } catch (err) {
-    if (err && err.name !== "AbortError" && err.message !== "취소") {
-      toast("조각을 넣지 못했습니다: " + err.message, 6000);
-    }
-  }
 }
 function paintEditHead() {
   const id = scopedTargetId();
@@ -2011,7 +1972,7 @@ async function doCommand(cmd) {
       const onlyName = only ? (project.regNode(only)?.short || "") : "";
       busy(`${onlyName || "개정 대상 세 규정"} 보고서를 작성 중…`);
       try {
-        const { buildReport } = await import("./ui/report.js?v=20260907f");
+        const { buildReport } = await import("./ui/report.js?v=20260907k");
         const r = await buildReport(project, { targetId: only });
         const url = URL.createObjectURL(r.blob);
         const a = document.createElement("a");
@@ -2148,11 +2109,14 @@ ${r.warning}` : ""),
       if (!reg) { toast("이 판에는 그 규정의 개정안이 없습니다.", 4000); break; }
       busy("한/글 문서를 짓는 중…");
       try {
-        const { buildDraftHwpx } = await import("./core/hwpxdraft.js?v=20260907f");
+        const { buildDraftHwpx } = await import("./core/hwpxdraft.js?v=20260907k");
         const url = new URL("kit/양식/01.개정안/[양식] 규정 개정(안).hwpx",
                             document.baseURI).href;
         const got = await buildDraftHwpx(reg, url, {
           org: reg.org, kind: reg.kind, supp: ver?.supplement || reg.supplement,
+          regId: tid === "work" ? "draft2025"
+               : tid === "review" ? "draftSimsa"
+               : tid === "uav" ? "draftUav" : "",
         });
         const a = document.createElement("a");
         a.href = URL.createObjectURL(got.blob);
@@ -2160,6 +2124,7 @@ ${r.warning}` : ""),
         document.body.appendChild(a); a.click(); a.remove();
         setTimeout(() => URL.revokeObjectURL(a.href), 3000);
         toast(`${a.download} 을(를) 내려받습니다 — 조 ${got.조}개`
+      + (got.표 || got.수식 || got.그림 ? ` ㆍ 표 ${got.표}개 ㆍ 수식 ${got.수식}개 ㆍ 그림 ${got.그림}개` : "")
           + (got.뺀개체 ? `${NL}표ㆍ수식 ${got.뺀개체}자리는 담지 않았습니다.`
                            + ` 온전한 문서는 [보고서] 로 받으십시오.` : ""),
           got.뺀개체 ? 8000 : 4000);

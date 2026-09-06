@@ -22,8 +22,8 @@
        깊이를 세어 짝을 찾는다(matchClose).
    ============================================================ */
 
-import { readZip } from "./zipreader.js?v=20260907f";
-import { createZip } from "./zip.js?v=20260907f";
+import { readZip } from "./zipreader.js?v=20260907k";
+import { createZip } from "./zip.js?v=20260907k";
 
 const RE_T = /<hp:t(?:\s[^>]*)?>([^]*?)<\/hp:t>/g;
 const RE_SEG = /<hp:linesegarray>[^]*?<\/hp:linesegarray>|<hp:linesegarray\s*\/>/g;
@@ -304,6 +304,28 @@ export class RowProto {
     return out.join("");
   }
 }
+
+/**
+ * 칸마다 병합과 폭을 달리하여 한 줄을 찍는다 (formdocs 의 make_spec).
+ * @param {number} rowNo 몇째 줄인가
+ * @param {Array<{body:string,col:number,cs:number,rs:number,w:number}>} spec
+ */
+RowProto.prototype.makeSpec = function makeSpec(rowNo, spec) {
+  const out = ["<hp:tr>"];
+  for (const c of spec) {
+    const tc = this.tcs[Math.min(c.col, this.tcs.length - 1)];
+    const head = tc.slice(0, tc.indexOf(">") + 1);
+    const sl = /<hp:subList\b[^>]*>/.exec(tc)[0];
+    const mg = /<hp:cellMargin\b[^>]*\/>/.exec(tc);
+    out.push(head + sl + c.body + "</hp:subList>"
+      + `<hp:cellAddr colAddr="${c.col}" rowAddr="${rowNo}"/>`
+      + `<hp:cellSpan colSpan="${c.cs || 1}" rowSpan="${c.rs || 1}"/>`
+      + `<hp:cellSz width="${c.w || 5000}" height="2000"/>`
+      + (mg ? mg[0] : "") + "</hp:tc>");
+  }
+  out.push("</hp:tr>");
+  return out.join("");
+};
 
 /** n 번째 겉 <hp:tbl> 의 [시작, 끝] */
 export function tableSpan(xml, n = 0) {

@@ -12,7 +12,7 @@
 
 /* pdf.js 를 부르는 일은 core/pdfjs.js 에 모아 두었다 — 서버가 .mjs 를
    text/plain 으로 내주면 모듈이 막히는데, 그것을 넘기는 수가 들어 있다. */
-import { loadPdfjs } from "../core/pdfjs.js?v=20260907f";
+import { loadPdfjs } from "../core/pdfjs.js?v=20260907k";
 
 /**
  * PDF 를 쪽마다 그려 넣는다.
