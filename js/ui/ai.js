@@ -4,9 +4,9 @@
    AI 가 낸 것은 언제나 '제안'이다. 화면에서 확인하고 [적용] 을 눌러야
    트리에 들어가며, 들어간 뒤에는 여느 편집과 똑같이 되돌릴 수 있다.
    ============================================================ */
-import * as M from "../core/model.js?v=20260907b";
-import * as AI from "../adapters/ai.js?v=20260907b";
-import { TASKS, outline, withExtra } from "../core/aitasks.js?v=20260907b";
+import * as M from "../core/model.js?v=20260907c";
+import * as AI from "../adapters/ai.js?v=20260907c";
+import { TASKS, outline, withExtra } from "../core/aitasks.js?v=20260907c";
 
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) =>
   ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -313,12 +313,31 @@ export class AIView {
     }
 
     if (r.kind === "reasons") {
+      /* 조문마다 따로 적용한다. 열 건 가운데 셋만 마음에 들 때 그 셋만
+         담을 수 있어야 한다. 이미 사유가 적힌 조문은 그렇다고 밝히되
+         덮어쓸지는 사람이 고른다. */
+      const rows = r.items.map((it, i) => {
+        const node = M.findNode(this.project.tree, it.id);
+        const label = node ? M.displayLabel(node) : it.id;
+        const had = !!(node && (node.reason || "").trim());
+        return `<div class="ai-one" data-i="${i}">
+          <div class="ai-one-head">
+            <b>${esc(label)}</b>${node ? ` <span class="mut">${esc(node.title || "")}</span>` : ""}
+            ${had ? '<span class="tag k-edit">이미 사유가 있음</span>' : ""}
+            ${node ? "" : '<span class="tag k-del">그 조문을 찾지 못함</span>'}
+            <div class="spacer"></div>
+            <button data-apply="one:${i}" class="mini2"${node ? "" : " disabled"}>
+              ${had ? "덮어쓰기" : "적용"}</button>
+          </div>
+          <div class="ai-one-body">${esc(it.reason)}</div>
+        </div>`;
+      }).join("");
       return `<div class="ai-summary">${r.items.length}개 조문의 개정 사유를 만들었습니다.</div>
-        ${notes}
+        <div class="ai-ones">${rows}</div>
         <div class="ai-actions">
           <button data-apply="reasons" class="primary"${r.items.length ? "" : " disabled"}>
-            변경 사유 ${r.items.length}건 한꺼번에 적용</button>
-          <span class="mut">이미 적어 둔 사유는 덮어쓰지 않습니다.</span>
+            아직 사유가 없는 조문에 한꺼번에 적용</button>
+          <span class="mut">한꺼번에 적용은 이미 적어 둔 사유를 덮어쓰지 않습니다.</span>
         </div>`;
     }
 
@@ -414,6 +433,23 @@ ${sel.body || "(본문 없음)"}`;
   /* ---------- 적용 ---------- */
   apply(what) {
     const p = this.project;
+    /* 조문 하나만 —— 창을 닫지 아니한다. 나머지를 마저 보아야 하기 때문이다. */
+    if (String(what).startsWith("one:")) {
+      const i = +String(what).slice(4);
+      const it = (this.result?.items || [])[i];
+      if (!it) return;
+      const node = M.findNode(p.tree, it.id);
+      if (!node) { this.onToast("그 조문을 찾지 못했습니다.", 4000); return; }
+      const ok = p.updateFields(it.id, { reason: it.reason });
+      const row = this.el?.querySelector(`.ai-one[data-i="${i}"]`);
+      const btn = row?.querySelector("[data-apply]");
+      if (btn) { btn.disabled = true; btn.textContent = ok ? "적용함" : "그대로"; }
+      row?.classList.add("done");
+      this.onToast(ok
+        ? `${M.displayLabel(node)} 에 사유를 적었습니다. (Ctrl+Z 로 되돌릴 수 있습니다)`
+        : "바뀐 내용이 없습니다.", 4000);
+      return;
+    }
     if (what === "patch") {
       const sel = p.selected;
       if (!sel || !this.result?.patch) return;

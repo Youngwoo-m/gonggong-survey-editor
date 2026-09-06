@@ -605,6 +605,16 @@ a.cite:hover{background:var(--link);color:#fff;text-decoration:none;border-radiu
 .pane-edit .pane-toolbar button.ai{border-color:var(--accent);color:var(--accent);font-weight:700}
 .pane-edit .pane-toolbar button.ai:hover{background:var(--accent);color:#fff}
 
+/* ---- AI 제안을 조문마다 ---- */
+.ai-ones{margin:10px 0 4px;display:flex;flex-direction:column;gap:7px}
+.ai-one{border:1px solid var(--line);border-radius:5px;background:var(--panel2)}
+.ai-one.done{opacity:.6}
+.ai-one-head{display:flex;align-items:center;gap:6px;padding:6px 9px;
+  border-bottom:1px solid var(--line);font-size:11.5px}
+.ai-one-head .spacer{flex:1}
+.ai-one-body{padding:7px 10px;font-size:11.5px;line-height:1.7;
+  white-space:pre-wrap;color:var(--slate);max-height:180px;overflow:auto}
+
 /* ---- 트리 우클릭 자리 ---- */
 .ctx-menu{position:fixed;z-index:60;min-width:236px;background:#fff;
   border:1px solid var(--line);border-radius:6px;box-shadow:0 8px 24px rgba(0,0,0,.18);

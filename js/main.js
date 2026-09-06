@@ -1,33 +1,33 @@
 /* ============================================================
    main.js — 앱 조립 (1단계 프로토타입)
    ============================================================ */
-import * as M from "./core/model.js?v=20260907b";
-import { Project } from "./core/project.js?v=20260907b";
-import * as FS from "./adapters/fileio.js?v=20260907b";
-import * as AUTO from "./adapters/autosave.js?v=20260907b";
-import { TreeView } from "./ui/tree.js?v=20260907b";
-import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260907b";
-import { CompareView } from "./ui/compare.js?v=20260907b";
-import { VersionsView } from "./ui/versions.js?v=20260907b";
-import { HistoryView } from "./ui/history.js?v=20260907b";
-import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260907b";
-import { ValidateView } from "./ui/validate.js?v=20260907b";
-import { RefPicker } from "./ui/refpicker.js?v=20260907b";
-import { AIView } from "./ui/ai.js?v=20260907b";
-import { CiteCheckView } from "./ui/citecheck.js?v=20260907b";
-import { TermsView } from "./ui/terms.js?v=20260907b";
-import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260907b";
-import * as GH from "./adapters/github.js?v=20260907b";
-import { extractLines } from "./core/importer.js?v=20260907b";
-import { buildAuto } from "./core/structure.js?v=20260907b";
-import * as SRC from "./core/srcfp.js?v=20260907b";
-import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260907b";
-import { ObjectStore, fitTable } from "./core/objects.js?v=20260907b";
-import { loadTargets, allTargets, targetById, firstTarget, nextRevLabel, verPrefixOf } from "./core/targets.js?v=20260907b";
-import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260907b";
-import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260907b";
-import { fmtDate } from "./ui/html.js?v=20260907b";
-import { printReg, regHtml } from "./ui/printdoc.js?v=20260907b";
+import * as M from "./core/model.js?v=20260907c";
+import { Project } from "./core/project.js?v=20260907c";
+import * as FS from "./adapters/fileio.js?v=20260907c";
+import * as AUTO from "./adapters/autosave.js?v=20260907c";
+import { TreeView } from "./ui/tree.js?v=20260907c";
+import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260907c";
+import { CompareView } from "./ui/compare.js?v=20260907c";
+import { VersionsView } from "./ui/versions.js?v=20260907c";
+import { HistoryView } from "./ui/history.js?v=20260907c";
+import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260907c";
+import { ValidateView } from "./ui/validate.js?v=20260907c";
+import { RefPicker } from "./ui/refpicker.js?v=20260907c";
+import { AIView } from "./ui/ai.js?v=20260907c";
+import { CiteCheckView } from "./ui/citecheck.js?v=20260907c";
+import { TermsView } from "./ui/terms.js?v=20260907c";
+import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260907c";
+import * as GH from "./adapters/github.js?v=20260907c";
+import { extractLines } from "./core/importer.js?v=20260907c";
+import { buildAuto } from "./core/structure.js?v=20260907c";
+import * as SRC from "./core/srcfp.js?v=20260907c";
+import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260907c";
+import { ObjectStore, fitTable } from "./core/objects.js?v=20260907c";
+import { loadTargets, allTargets, targetById, firstTarget, nextRevLabel, verPrefixOf } from "./core/targets.js?v=20260907c";
+import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260907c";
+import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260907c";
+import { fmtDate } from "./ui/html.js?v=20260907c";
+import { printReg, regHtml } from "./ui/printdoc.js?v=20260907c";
 
 const $ = (s) => document.querySelector(s);
 const NL = "\n";
@@ -639,7 +639,7 @@ function treeMenu(id, x, y) {
 /** 고른 마디를 조각 파일로 내려받는다 */
 async function savePart(node, reg) {
   if (!reg) { toast("이 마디가 어느 규정의 것인지 알 수 없습니다.", 4000); return; }
-  const { makePart } = await import("./core/part.js?v=20260907b");
+  const { makePart } = await import("./core/part.js?v=20260907c");
   const got = makePart(node, reg, {
     by: GH.getAuthor(), versionLabel: project.current?.label || "",
   });
@@ -657,7 +657,7 @@ async function savePart(node, reg) {
 async function loadPart(node, reg) {
   if (project.isReadonly) { toast("읽기 전용 판입니다.", 4000); return; }
   try {
-    const { isPart, applyPart } = await import("./core/part.js?v=20260907b");
+    const { isPart, applyPart } = await import("./core/part.js?v=20260907c");
     const got = await FS.openProject();
     const part = got && got.data;
     if (!isPart(part)) { toast("이 파일은 조각(.pmpart)이 아닙니다.", 5000); return; }
@@ -1921,7 +1921,7 @@ async function doCommand(cmd) {
       const onlyName = only ? (project.regNode(only)?.short || "") : "";
       busy(`${onlyName || "개정 대상 세 규정"} 보고서를 작성 중…`);
       try {
-        const { buildReport } = await import("./ui/report.js?v=20260907b");
+        const { buildReport } = await import("./ui/report.js?v=20260907c");
         const r = await buildReport(project, { targetId: only });
         const url = URL.createObjectURL(r.blob);
         const a = document.createElement("a");
@@ -2058,7 +2058,7 @@ ${r.warning}` : ""),
       if (!reg) { toast("이 판에는 그 규정의 개정안이 없습니다.", 4000); break; }
       busy("한/글 문서를 짓는 중…");
       try {
-        const { buildDraftHwpx } = await import("./core/hwpxdraft.js?v=20260907b");
+        const { buildDraftHwpx } = await import("./core/hwpxdraft.js?v=20260907c");
         const url = new URL("kit/양식/01.개정안/[양식] 규정 개정(안).hwpx",
                             document.baseURI).href;
         const got = await buildDraftHwpx(reg, url, {

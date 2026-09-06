@@ -21,7 +21,7 @@
      개정(안)은 고시에 실리는 글이다. 변경 사유는 개정사유서에 실린다.
    ============================================================ */
 
-import { Form, remake, retext, esc } from "./hwpx.js?v=20260907b";
+import { Form, remake, retext, esc } from "./hwpx.js?v=20260907c";
 
 const NL = "\n";
 const RE_IMG = /<img\s+id="([\w.-]+)"\s*>(?:<\/img>)?/gi;
