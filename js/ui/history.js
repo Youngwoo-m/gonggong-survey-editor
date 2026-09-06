@@ -2,7 +2,8 @@
    ui/history.js — 버전 전체 변경 이력 화면
    ============================================================ */
 
-import { esc, fmtDT } from "./html.js?v=20260907m";
+import { esc, fmtDT } from "./html.js?v=20260907p";
+import { askYesNo } from "./ask.js?v=20260907p";
 const KIND_CLASS = {
   "신설": "k-new", "삭제": "k-del", "이동": "k-mov", "순서": "k-mov",
   "수정": "k-edit", "통합": "k-mrg", "참조삽입": "k-ref", "상태변경": "k-keep",
@@ -136,7 +137,7 @@ export class HistoryView {
    * 변경 이력 비우기 — 시험 삼아 돌려 본 자취를 걷어 낸다.
    * 되돌릴 수 없으므로 먼저 묻고, 무엇이 지워지는지 세어 보인다.
    */
-  wipe() {
+  async wipe() {
     const p = this.project;
     const nEv = p.versions.reduce((a, v) => a + ((v.events || []).length), 0);
     const ask = [
@@ -146,7 +147,8 @@ export class HistoryView {
       "  조문마다 달린 이력도 함께 지웁니다.", "",
       "되돌릴 수 없습니다. 조문 본문과 개정안은 그대로 남습니다.",
     ].join("\n");
-    if (!confirm(ask)) return;
+    if (!await askYesNo("변경 이력을 비웁니다", String(ask).split(String.fromCharCode(10)).filter(Boolean),
+      "되돌리기")) return;
     const r = p.clearHistory();
     this.close();
     this.open();

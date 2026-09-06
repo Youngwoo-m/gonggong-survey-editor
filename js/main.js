@@ -1,33 +1,34 @@
 /* ============================================================
    main.js — 앱 조립 (1단계 프로토타입)
    ============================================================ */
-import * as M from "./core/model.js?v=20260907m";
-import { Project } from "./core/project.js?v=20260907m";
-import * as FS from "./adapters/fileio.js?v=20260907m";
-import * as AUTO from "./adapters/autosave.js?v=20260907m";
-import { TreeView } from "./ui/tree.js?v=20260907m";
-import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260907m";
-import { CompareView } from "./ui/compare.js?v=20260907m";
-import { VersionsView } from "./ui/versions.js?v=20260907m";
-import { HistoryView } from "./ui/history.js?v=20260907m";
-import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260907m";
-import { ValidateView } from "./ui/validate.js?v=20260907m";
-import { RefPicker } from "./ui/refpicker.js?v=20260907m";
-import { AIView } from "./ui/ai.js?v=20260907m";
-import { CiteCheckView } from "./ui/citecheck.js?v=20260907m";
-import { TermsView } from "./ui/terms.js?v=20260907m";
-import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260907m";
-import * as GH from "./adapters/github.js?v=20260907m";
-import { extractLines } from "./core/importer.js?v=20260907m";
-import { buildAuto, buildStructure } from "./core/structure.js?v=20260907m";
-import * as SRC from "./core/srcfp.js?v=20260907m";
-import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260907m";
-import { ObjectStore, fitTable } from "./core/objects.js?v=20260907m";
-import { loadTargets, allTargets, targetById, firstTarget, nextRevLabel, verPrefixOf } from "./core/targets.js?v=20260907m";
-import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260907m";
-import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260907m";
-import { fmtDate } from "./ui/html.js?v=20260907m";
-import { printReg, regHtml } from "./ui/printdoc.js?v=20260907m";
+import * as M from "./core/model.js?v=20260907p";
+import { Project } from "./core/project.js?v=20260907p";
+import * as FS from "./adapters/fileio.js?v=20260907p";
+import * as AUTO from "./adapters/autosave.js?v=20260907p";
+import { TreeView } from "./ui/tree.js?v=20260907p";
+import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260907p";
+import { CompareView } from "./ui/compare.js?v=20260907p";
+import { VersionsView } from "./ui/versions.js?v=20260907p";
+import { HistoryView } from "./ui/history.js?v=20260907p";
+import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260907p";
+import { ValidateView } from "./ui/validate.js?v=20260907p";
+import { RefPicker } from "./ui/refpicker.js?v=20260907p";
+import { AIView } from "./ui/ai.js?v=20260907p";
+import { CiteCheckView } from "./ui/citecheck.js?v=20260907p";
+import { TermsView } from "./ui/terms.js?v=20260907p";
+import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260907p";
+import * as GH from "./adapters/github.js?v=20260907p";
+import { extractLines } from "./core/importer.js?v=20260907p";
+import { buildAuto, buildStructure } from "./core/structure.js?v=20260907p";
+import * as SRC from "./core/srcfp.js?v=20260907p";
+import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260907p";
+import { ObjectStore, fitTable, imgIdsIn } from "./core/objects.js?v=20260907p";
+import { loadTargets, allTargets, targetById, firstTarget, nextRevLabel, verPrefixOf } from "./core/targets.js?v=20260907p";
+import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260907p";
+import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260907p";
+import { fmtDate } from "./ui/html.js?v=20260907p";
+import { printReg, regHtml } from "./ui/printdoc.js?v=20260907p";
+import { askYesNo, askBox } from "./ui/ask.js?v=20260907p";
 
 const $ = (s) => document.querySelector(s);
 const NL = "\n";
@@ -163,7 +164,56 @@ function dropFile(blob, name) {
  * 파일 이름과 문서 머리에 판 이름(작업-1.10 따위)을 함께 적어, 어느 판을
  * 뽑은 것인지 뒤에도 알 수 있게 한다.
  */
-function downloadEdit() {
+/**
+ * 내려받기에 실을 것을 모은다 —— 본문 속 개체와 별표ㆍ별지 서식.
+ *
+ * 개체는 data/objects 에 XML 로 있고, 별표는 그 아래 annex 에 있다.
+ * 사람이 [바뀐 서식 파일] 로 한/글 파일을 올렸으면 그것이 갈음하므로
+ * 그 파일에서 표를 뽑는다.
+ * @returns {Promise<{objects:Map, annexes:Map}>}
+ */
+async function gatherForDownload(reg) {
+  const objMap = new Map();
+  const annexes = new Map();
+  const regId = baseRegIdOf[reg.targetId];
+  const draftId = draftRegIdOf[reg.targetId];
+  const nodes = [];
+  M.walk(reg.children || [], (n) => nodes.push(n));
+
+  /* 개체 —— 어느 규정 자리에 있는지 모르므로 개정안 자리를 먼저 본다 */
+  const ids = new Set();
+  for (const n of nodes) for (const id of imgIdsIn(n.body || "")) ids.add(id);
+  await Promise.all([...ids].map(async (id) => {
+    for (const rid of [draftId, regId].filter(Boolean)) {
+      const o = await objects.get(rid, id);
+      if (o) { objMap.set(id, o); return; }
+    }
+  }));
+
+  /* 별표ㆍ별지 */
+  await Promise.all(nodes.filter((n) => n.annexRef).map(async (n) => {
+    const up = project.asset(n.annexRef.newFileId);
+    if (up && /\.hwpx?$/i.test(up.name || "")) {
+      try {
+        const [{ annexXmlFromHwpx, assetBuffer }, { parseXml }] = await Promise.all([
+          import("./core/annexhwpx.js?v=20260907p"), import("./core/objects.js?v=20260907p"),
+        ]);
+        const o = parseXml(await annexXmlFromHwpx(await assetBuffer(up), {
+          key: n.legacyNo || "", gubun: n.annexRef.gubun || "별표",
+          no: n.annexRef.no || "", title: n.title || "", source: up.name,
+        }));
+        if (o && o.items.length) { annexes.set(n.id, o); return; }
+      } catch { /* 못 읽으면 본디 서식으로 */ }
+    }
+    const key = n.legacyNo || `${n.annexRef.gubun}${n.annexRef.no}`;
+    const rid = n.status === "신설" ? draftId : regId;
+    const o = rid ? await objects.getAnnex(rid, key) : null;
+    if (o) annexes.set(n.id, o);
+  }));
+  return { objects: objMap, annexes };
+}
+
+async function downloadEdit() {
   const reg = project.activeReg;
   if (!reg) { toast("개정안을 찾지 못했습니다."); return; }
   const t = targetById(reg.targetId) || {};
@@ -175,6 +225,14 @@ function downloadEdit() {
      규정 제 것이 있으면 그것을 앞세운다. */
   const label = reg.revLabel ? ` ${reg.revLabel}`
               : (rev?.label ? ` ${rev.label}` : "");
+  /* 본문 속 표ㆍ수식과 별표ㆍ별지 서식을 미리 받아 함께 넘긴다 ——
+     그러지 아니하면 한 장에 조문 글만 남고 표 자리에는 <img id=…> 라는
+     자리표가 그대로 실린다. */
+  busy("표와 별표를 모으는 중…");
+  const { objects: objMap, annexes } = await gatherForDownload(reg);
+  let axAll = 0;
+  M.walk(reg.children || [], (n) => { if (n.annexRef) axAll += 1; });
+  busy(false);
   const doc = {
     name: `${t.base || reg.title || "규정"} ${t.word || "개정안"}${label}`,
     org: base.org || "", kind: base.kind || "", no: "",
@@ -182,6 +240,8 @@ function downloadEdit() {
     stats: st,
     tree: reg.children || [],
     annexTree: [],
+    objects: objMap,
+    annexes,
     source: `공공측량 규정 개정 편집기 — ${rev?.title || ""}`.trim(),
     copyright: "행정예고를 거치지 아니한 작성 중 문안입니다. "
              + "공식 개정안으로 인용하여서는 아니 됩니다.",
@@ -189,7 +249,8 @@ function downloadEdit() {
   const safe = doc.name.replace(/[\\/:*?"<>|]/g, "_").slice(0, 90);
   dropFile(new Blob([regHtml(doc, { mode: "both" })],
                     { type: "text/html;charset=utf-8" }), safe + ".html");
-  toast(`${doc.name} 을(를) 내려받습니다 — 조 ${st.조}개 · 변경 ${st.변경}개.
+  toast(`${doc.name} 을(를) 내려받습니다 — 조 ${st.조}개 · 변경 ${st.변경}개`
+        + ` ㆍ 표ㆍ수식 ${objMap.size}개 ㆍ 별표ㆍ별지 ${annexes.size}/${axAll}개.
 `
         + `행정예고 전 문안이므로 공식 개정안으로 인용하지 마십시오.`, 5200);
 }
@@ -505,97 +566,6 @@ function setEditTree(selId) {
 }
 
 /** 창 머리에 어느 규정을 보고 있는지 적는다 */
-/* 화면 안에서 묻는 작은 칸.
-
-   prompt() 은 브라우저가 막을 수 있다 —— 한 화면에서 대화상자를 되풀이해
-   띄우면 「이 페이지가 더 이상 대화상자를 표시하지 않도록」 이 뜨고, 그 뒤로
-   prompt() 은 묻지도 않고 null 을 돌려준다. 그러면 단추를 눌러도 아무 일이
-   없는 것처럼 보인다. 그래서 화면 안에 칸을 띄운다.
-
-   @param {string} title 무엇을 하는 자리인가
-   @param {Array<{key,label,value,hint}>} fields 물을 칸들
-   @returns {Promise<object|null>} 취소하면 null */
-/* 화면 안에서 묻는 확인창 —— confirm() 을 갈음한다.
-   confirm() 도 prompt() 와 같이 브라우저가 막을 수 있고, 막히면 늘
-   「취소」를 돌려주므로 단추가 죽은 것처럼 보인다.
-   @param {string} title 무엇을 하는가
-   @param {Array<string>} lines 알려 줄 줄들
-   @param {string} okText 확인 단추에 적을 말
-   @returns {Promise<boolean>} */
-function askYesNo(title, lines, okText = "계속") {
-  return new Promise((done) => {
-    const back = document.createElement("div");
-    back.className = "overlay ask-back";
-    back.innerHTML = `
-      <div class="cmp sm ask">
-        <div class="cmp-head"><div class="cmp-title">${esc(title)}</div>
-          <button class="x" data-x="no" title="닫기 (Esc)">✕</button></div>
-        <div class="ask-body ask-say">${lines.map((t) =>
-          `<p>${esc(t)}</p>`).join("")}</div>
-        <div class="detail-actions">
-          <button data-x="no">취소</button>
-          <button class="primary" data-x="yes">${esc(okText)}</button></div>
-      </div>`;
-    document.body.appendChild(back);
-    back.querySelector('[data-x="yes"]').focus();
-    const close = (v) => {
-      document.removeEventListener("keydown", onKey, true);
-      back.remove(); done(v);
-    };
-    const onKey = (e) => {
-      if (e.key === "Escape") { e.preventDefault(); close(false); }
-      if (e.key === "Enter") { e.preventDefault(); close(true); }
-    };
-    document.addEventListener("keydown", onKey, true);
-    back.addEventListener("click", (e) => {
-      if (e.target === back) return close(false);
-      const x = e.target.closest("[data-x]");
-      if (x) close(x.dataset.x === "yes");
-    });
-  });
-}
-function askBox(title, fields) {
-  return new Promise((done) => {
-    const back = document.createElement("div");
-    back.className = "overlay ask-back";
-    back.innerHTML = `
-      <div class="cmp sm ask">
-        <div class="cmp-head"><div class="cmp-title">${esc(title)}</div>
-          <button class="x" data-x="cancel" title="닫기 (Esc)">✕</button></div>
-        <div class="ask-body">${fields.map((f) => `
-          <div class="fld"><label>${esc(f.label)}</label>
-            <input data-k="${esc(f.key)}" value="${esc(f.value || "")}"
-                   placeholder="${esc(f.hint || "")}"></div>`).join("")}</div>
-        <div class="detail-actions">
-          <button data-x="cancel">취소</button>
-          <button class="primary" data-x="ok">확인</button></div>
-      </div>`;
-    document.body.appendChild(back);
-    const first = back.querySelector("input");
-    if (first) { first.focus(); first.select(); }
-    const close = (val) => {
-      document.removeEventListener("keydown", onKey, true);
-      back.remove();
-      done(val);
-    };
-    const take = () => {
-      const out = {};
-      back.querySelectorAll("input[data-k]").forEach((i) => { out[i.dataset.k] = i.value.trim(); });
-      close(out);
-    };
-    const onKey = (e) => {
-      if (e.key === "Escape") { e.preventDefault(); close(null); }
-      if (e.key === "Enter") { e.preventDefault(); take(); }
-    };
-    document.addEventListener("keydown", onKey, true);
-    back.addEventListener("click", (e) => {
-      if (e.target === back) close(null);
-      const x = e.target.closest("[data-x]");
-      if (!x) return;
-      if (x.dataset.x === "ok") take(); else close(null);
-    });
-  });
-}
 /* ============================================================
    조각(.pmpart) —— 편ㆍ장ㆍ조 한 덩이를 따로 두고 도로 넣기
    ------------------------------------------------------------
@@ -619,7 +589,7 @@ function treeMenu(id, x, y) {
     <div class="ctx-head">${esc(label)} ${esc(node.title || "")}</div>
 
     <button data-x="hwpxOut">한/글로 저장…</button>
-    <button data-x="hwpxIn">한/글에서 고친 것 들여오기…</button>`;
+    <button data-x="hwpxIn">한/글가져오기…</button>`;
   menu.style.left = Math.min(x, innerWidth - 260) + "px";
   menu.style.top = Math.min(y, innerHeight - 110) + "px";
   document.body.appendChild(menu);
@@ -683,7 +653,7 @@ async function partToHwpx(node, reg) {
     : `제${node.no}${node.level}`;
   busy("한/글 문서를 짓는 중…");
   try {
-    const { buildDraftHwpx } = await import("./core/hwpxdraft.js?v=20260907m");
+    const { buildDraftHwpx } = await import("./core/hwpxdraft.js?v=20260907p");
     const url = new URL("kit/양식/01.개정안/[양식] 규정 개정(안).hwpx", document.baseURI).href;
     /* 마디 하나를 규정인 척 감싸 넘긴다 —— 제목 줄에 어디를 떼어 온
        것인지 적어 두어야 한/글에서 보고도 알 수 있다. */
@@ -704,7 +674,7 @@ async function partToHwpx(node, reg) {
     setTimeout(() => URL.revokeObjectURL(a.href), 3000);
     toast(`${a.download} 을(를) 내려받습니다 — 조 ${got.조}개`
       + (got.표 || got.수식 || got.그림 ? ` ㆍ 표 ${got.표}개 ㆍ 수식 ${got.수식}개 ㆍ 그림 ${got.그림}개` : "")
-      + `${NL}한/글에서 고친 뒤 [한/글에서 고친 것 들여오기] 로 되받습니다.`, 8000);
+      + `${NL}한/글에서 고친 뒤 [한/글가져오기] 로 되받습니다.`, 8000);
   } catch (e) {
     toast("한/글 문서를 짓지 못했습니다: " + e.message, 6000);
   } finally { busy(false); }
@@ -940,26 +910,16 @@ function showAllTargets() {
  * 규정 안의 이동은 번호만 바뀌지만 규정을 넘으면 근거 법령이 바뀐다.
  * 여기서 적은 사유가 그대로 개정사유서와 개정 전후 비교표의 비고란으로 간다.
  */
-function askTransferReason(info) {
+async function askTransferReason(info) {
   const what = M.shortLabel(info.node) + (info.node.title ? ` (${info.node.title})` : "");
   const kids = M.countBy(info.node.children || [], "조");
-  return prompt(
-    `규정을 넘는 이동입니다 — 이관
-
-`
-    + `  ${what}
-`
-    + `  「${info.fromName}」
-`
-    + `    → 「${info.toName}」
-`
-    + (kids ? `  하위 ${kids}개 조문이 함께 옮겨 갑니다.
-` : "")
-    + `
-근거 법령이 바뀌는 일이므로 사유를 남깁니다.
-`
-    + `여기 적은 사유가 개정사유서와 신구대조표 비고란으로 갑니다.`,
-    "");
+  const got = await askBox("규정을 넘는 이동입니다 —— 이관", [{
+    key: "why", label: `${what}${kids ? ` (하위 조 ${kids}개)` : ""}`
+      + ` 「${info.fromName}」 → 「${info.toName}」`,
+    value: "",
+    hint: "왜 옮기는지 —— 개정사유서와 비교표의 비고란으로 그대로 갑니다",
+  }]);
+  return got ? got.why : null;
 }
 
 /* ============================================================
@@ -1100,10 +1060,25 @@ function buildTrees() {
     onToggle: (id) => project.toggleCollapse(id),
     // 우클릭 —— 조각으로 따로 저장하거나, 조각을 불러와 그 마디를 바꾼다
     onContext: (id, x, y) => treeMenu(id, x, y),
-    onMove: (dragId, targetId, pos) => project.move(dragId, targetId, pos, {
-      // 규정을 넘는 이동이면 사유를 묻는다 — core 는 화면을 모르므로 여기서 묻는다
-      onNeedReason: (info) => askTransferReason(info),
-    }),
+    /* 규정을 넘는 이동이면 사유를 먼저 묻는다 —— core 의 move 는 동기이고
+       화면 물음창은 기다려야 하므로, 여기서 받아 두고 넘긴다. */
+    onMove: async (dragId, targetId, pos) => {
+      const t = M.findNode(project.tree, targetId);
+      const from = project.regionOf(dragId);
+      const to = (t && M.isRegNode(t) && pos === "into") ? t : project.regionOf(targetId);
+      let reason = "";
+      if (from && to && from.id !== to.id) {
+        reason = await askTransferReason({
+          node: M.findNode(project.tree, dragId),
+          fromName: from.title, toName: to.title,
+        }) || "";
+        if (!reason.trim()) {
+          toast("이관 사유를 적지 않아 옮기지 않았습니다.", 4000);
+          return;
+        }
+      }
+      project.move(dragId, targetId, pos, { reason });
+    },
     onExternalDrop: (payload, targetId, pos) => {
       const pane = paneOf(payload.source);
       if (!pane || !pane.tree) return;
@@ -1955,7 +1930,9 @@ async function doCommand(cmd) {
       const sel = project.selected;
       if (!sel) break;
       const cnt = M.flatten([sel]).length - 1;
-      if (cnt > 0 && !confirm(`${M.shortLabel(sel)} 와 하위 ${cnt}개 항목을 삭제합니다. 계속할까요?`)) break;
+      if (cnt > 0 && !await askYesNo(`${M.shortLabel(sel)} 을(를) 지웁니다`,
+        [`하위 ${cnt}개 항목이 함께 지워집니다.`, "Ctrl+Z 로 되돌릴 수 있습니다."],
+        "지우기")) break;
       project.remove();
       break;
     }
@@ -1986,7 +1963,7 @@ async function doCommand(cmd) {
     case "printRef2": printPane("ref2"); break;
     case "dlRef1": await downloadRef("ref1"); break;
     case "dlRef2": await downloadRef("ref2"); break;
-    case "dlEdit": downloadEdit(); break;
+    case "dlEdit": await downloadEdit(); break;
     case "shareRef1": await shareImported(paneOf("ref1")); break;
     case "shareRef2": await shareImported(paneOf("ref2")); break;
     case "clearSel1": clearPaneSel("ref1"); break;
@@ -2000,9 +1977,13 @@ async function doCommand(cmd) {
     case "next2": stepRefHit(paneOf("ref2"), 1); break;
     case "branch": {
       const src = project.current;
-      const title = prompt("새 버전 설명을 입력하세요.", `${src ? src.label : ""} 에서 분기`);
-      if (title === null) break;
-      const v = project.createVersion({ title: title.trim() });
+      const got = await askBox("새 버전 만들기", [{
+        key: "title", label: "새 버전 설명",
+        value: `${src ? src.label : ""} 에서 분기`,
+        hint: "무엇을 달리 해 보는 판인지 적습니다",
+      }]);
+      if (!got) break;
+      const v = project.createVersion({ title: (got.title || "").trim() });
       if (v) toast(`${v.label} 을(를) 만들었습니다. 이제 ${v.label} 을(를) 편집합니다.`, 3000);
       break;
     }
@@ -2034,7 +2015,7 @@ async function doCommand(cmd) {
       const onlyName = only ? (project.regNode(only)?.short || "") : "";
       busy(`${onlyName || "개정 대상 규정(3종)"} 보고서를 작성 중…`);
       try {
-        const { buildReport } = await import("./ui/report.js?v=20260907m");
+        const { buildReport } = await import("./ui/report.js?v=20260907p");
         const r = await buildReport(project, { targetId: only });
         const url = URL.createObjectURL(r.blob);
         const a = document.createElement("a");
@@ -2171,7 +2152,7 @@ ${r.warning}` : ""),
       if (!reg) { toast("이 판에는 그 규정의 개정안이 없습니다.", 4000); break; }
       busy("한/글 문서를 짓는 중…");
       try {
-        const { buildDraftHwpx } = await import("./core/hwpxdraft.js?v=20260907m");
+        const { buildDraftHwpx } = await import("./core/hwpxdraft.js?v=20260907p");
         const url = new URL("kit/양식/01.개정안/[양식] 규정 개정(안).hwpx",
                             document.baseURI).href;
         const got = await buildDraftHwpx(reg, url, {
@@ -2195,6 +2176,18 @@ ${r.warning}` : ""),
       } finally { busy(false); }
       break;
     }
+    /* 한/글에서 고친 문서를 이 개정안으로 되받는다 —— 우클릭 차림의
+       [한/글가져오기] 와 같은 길이되, 마디를 고르지 아니하고
+       규정 한 벌을 통째로 잡는다. */
+    case "revHwpxIn": {
+      const tid = scopedTargetId();
+      if (!tid) { toast("규정을 먼저 고르십시오.", 3000); break; }
+      const reg = project.regNode(tid);
+      if (!reg) { toast("이 판에는 그 규정의 개정안이 없습니다.", 4000); break; }
+      await partFromHwpx(reg, reg);
+      break;
+    }
+
     case "delRev": {
       const tid = scopedTargetId();
       if (!tid) { toast("규정을 먼저 고르십시오.", 3000); break; }
@@ -2290,14 +2283,12 @@ ${r.warning}` : ""),
       const names = staleTargets.length
         ? staleTargets.map((id) => targetById(id)?.short || id).join(" · ")
         : "";
-      const NL2 = "\n\n";
-      if (!confirm(
-        "자료 파일(data 폴더의 draft*.json)에서 개정안을 다시 읽습니다." + NL2
-        + (names ? `파일이 더 새로운 규정 — ${names}` + NL2 : "")
-        + "지금 화면의 작업본은 갈아 끼우기 전에 따로 갈무리하므로 사라지지 "
-        + "않습니다. 다만 화면에서만 고치고 파일에 옮기지 아니한 것이 있으면 "
-        + "그것은 화면에서 보이지 않게 됩니다." + NL2
-        + "계속할까요?")) break;
+      if (!await askYesNo("자료 파일에서 개정안을 다시 읽습니다", [
+        "data 폴더의 draft*.json 을 읽어 화면을 갈아 끼웁니다.",
+        ...(names ? [`파일이 더 새로운 규정 — ${names}`] : []),
+        "지금 작업본은 갈아 끼우기 전에 따로 갈무리하므로 사라지지 않습니다.",
+        "다만 화면에서만 고치고 파일에 옮기지 아니한 것은 보이지 않게 됩니다.",
+      ], "다시 읽기")) break;
 
       let kept = null;
       try { kept = await AUTO.backup(project.toJSON()); } catch { /* 못 담아도 간다 */ }
@@ -2330,8 +2321,10 @@ ${r.warning}` : ""),
     }
 
     case "reset": {
-      if (!confirm("지금까지 고친 내용이 모두 사라지고 현행 규정에서 다시 시작합니다. "
-                   + "이 브라우저에 담아 둔 것도 함께 지웁니다. 계속할까요?")) break;
+      if (!await askYesNo("현행 규정에서 다시 시작합니다", [
+        "지금까지 고친 내용이 모두 사라집니다.",
+        "이 브라우저에 담아 둔 것도 함께 지웁니다.",
+      ], "초기화")) break;
       await AUTO.clear();
       FS.resetTarget();
       const entries = [];
@@ -2502,10 +2495,11 @@ async function importFileIntoPane(pane) {
   }
 }
 
-function removeImported(pane) {
+async function removeImported(pane) {
   const d = pane.doc && project.refDoc(pane.doc.id);
   if (!d) return;
-  if (!confirm(`불러온 참조 규정 「${d.name}」 을(를) 프로젝트에서 제거합니다.\n계속할까요?`)) return;
+  if (!await askYesNo(`「${d.name}」 을(를) 프로젝트에서 뺍니다`,
+    ["불러온 참조 규정입니다 —— 목록에서 사라집니다."], "빼기")) return;
   project.removeRefDoc(d.id);
   library.regulations = library.regulations.filter((r) => r.id !== d.id);
   refCache.delete(d.id);
@@ -2730,8 +2724,8 @@ async function shareImported(pane) {
     toast("먼저 [공유 저장소] 에서 저장소를 연결하세요.", 4500);
     return;
   }
-  if (!confirm(`「${d.name}」 을(를) 공유 저장소에 올립니다.
-같은 이름이 있으면 갱신됩니다. 계속할까요?`)) return;
+  if (!await askYesNo(`「${d.name}」 을(를) 공유 저장소에 올립니다`,
+    ["같은 이름이 있으면 갱신됩니다."], "올리기")) return;
   busy("공유 저장소에 올리는 중…");
   try {
     const r = await GH.writeRef(d);

@@ -1,8 +1,9 @@
 /* ============================================================
    ui/versions.js — 버전 관리 화면 (목록 · 계보 · 생성/전환/삭제)
    ============================================================ */
-import * as M from "../core/model.js?v=20260907m";
-import { esc } from "./html.js?v=20260907m";
+import * as M from "../core/model.js?v=20260907p";
+import { esc } from "./html.js?v=20260907p";
+import { askYesNo, askBox } from "./ask.js?v=20260907p";
 
 export class VersionsView {
   constructor(project, { onCompare } = {}) {
@@ -136,24 +137,33 @@ export class VersionsView {
   }
 
   /* ---------- 동작 ---------- */
-  _newVersion() {
-    const title = prompt("새 버전 설명을 입력하세요.", `${this.project.current?.label || ""} 에서 분기`);
-    if (title === null) return;
-    this.project.createVersion({ title: title.trim() });
+  async _newVersion() {
+    const got = await askBox("새 버전 만들기", [{
+      key: "title", label: "새 버전 설명",
+      value: `${this.project.current?.label || ""} 에서 분기`,
+      hint: "무엇을 달리 해 보는 판인지 적습니다",
+    }]);
+    if (!got) return;
+    this.project.createVersion({ title: (got.title || "").trim() });
     this.render();
   }
 
-  _act(act, id) {
+  async _act(act, id) {
     const p = this.project;
     const v = p.version(id);
     if (act === "switch") { p.switchVersion(id); this.render(); }
     else if (act === "branch") {
-      const title = prompt("새 버전 설명을 입력하세요.", `${v.label} 에서 분기`);
-      if (title === null) return;
-      p.createVersion({ fromId: id, title: title.trim() });
+      const got = await askBox("이 버전에서 새 버전 만들기", [{
+        key: "title", label: "새 버전 설명",
+        value: `${v.label} 에서 분기`,
+        hint: "무엇을 달리 해 보는 판인지 적습니다",
+      }]);
+      if (!got) return;
+      p.createVersion({ fromId: id, title: (got.title || "").trim() });
       this.render();
     } else if (act === "del") {
-      if (!confirm(`버전 ${v.label} (${v.title || ""}) 을(를) 삭제합니다.\n되돌릴 수 없습니다. 계속할까요?`)) return;
+      if (!await askYesNo(`버전 ${v.label} 을(를) 지웁니다`,
+        [`${v.title || ""}`, "이것은 되돌릴 수 없습니다."], "지우기")) return;
       p.deleteVersion(id);
       this.render();
     }

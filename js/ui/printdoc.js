@@ -11,7 +11,8 @@
    국외 규정처럼 한글 대역이 있는 것은 원문 아래에 대역을 함께 싣는다.
    ============================================================ */
 
-import { esc, fmtDate } from "./html.js?v=20260907m";
+import { esc, fmtDate } from "./html.js?v=20260907p";
+import { toHtml } from "../core/objects.js?v=20260907p";
 
 /**
  * 조문 하나를 인쇄용 마디로.
@@ -27,7 +28,33 @@ import { esc, fmtDate } from "./html.js?v=20260907m";
  * 번역만 고른 자리에 번역이 없으면 원문을 싣는다 — 빈 쪽을 내주는 것보다
  * 낫고, 대역이 없는 국내 규정에서도 그대로 돈다.
  */
-function nodeHtml(n, depth, mode = "both") {
+/* 본문 속 <img id="…"> 자리를 참말 표ㆍ수식으로 바꾼다.
+   objs 는 {id → 파싱한 개체} —— 지을 때 미리 받아 온 것이다. */
+const RE_IMG = /<img\s+id="([\w.-]+)"\s*>(?:<\/img>)?/gi;
+function bodyHtml(text, objs) {
+  const t = String(text || "");
+  if (!objs || !RE_IMG.test(t)) {
+    RE_IMG.lastIndex = 0;
+    return esc(t).replace(/\n/g, "<br>");
+  }
+  RE_IMG.lastIndex = 0;
+  const out = [];
+  let last = 0;
+  let m;
+  while ((m = RE_IMG.exec(t))) {
+    const before = t.slice(last, m.index);
+    if (before.trim()) out.push(esc(before).replace(/\n/g, "<br>"));
+    const o = objs.get(m[1]);
+    out.push(o ? `<div class="obj">${toHtml(o)}</div>`
+               : `<div class="obj mut">[개체 ${esc(m[1])}]</div>`);
+    last = m.index + m[0].length;
+  }
+  const rest = t.slice(last);
+  if (rest.trim()) out.push(esc(rest).replace(/\n/g, "<br>"));
+  return out.join("");
+}
+
+function nodeHtml(n, depth, mode = "both", doc = {}) {
   const lv = n.level || "";
   const no = n.no
     ? `제${n.no}${lv || "조"}${n.branch ? `의${n.branch}` : ""}`
@@ -49,7 +76,7 @@ function nodeHtml(n, depth, mode = "both") {
     h += `</div>`;
   }
   const bd = (t, ko) =>
-    `<div class="bd${ko ? " ko" : ""}">${esc(t).replace(/\n/g, "<br>")}</div>`;
+    `<div class="bd${ko ? " ko" : ""}">${bodyHtml(t, doc.objects)}</div>`;
   if (only) {
     if (n.transBody) h += bd(n.transBody, true);
     else if (n.body) h += bd(n.body, false);
@@ -57,7 +84,13 @@ function nodeHtml(n, depth, mode = "both") {
     if (n.body) h += bd(n.body, false);
     if (mode === "both" && n.transBody) h += bd(n.transBody, true);
   }
-  for (const c of n.children || []) h += nodeHtml(c, depth + 1, mode);
+  /* 별표ㆍ별지는 본문이 없고 서식 표가 알맹이다 —— 실어 온 것을 붙인다 */
+  if (n.annexRef && doc.annexes) {
+    const a = doc.annexes.get(n.id);
+    if (a) h += `<div class="anx-t">${toHtml(a)}</div>`;
+    else h += `<div class="bd mut">[서식 표가 아직 만들어지지 않았습니다]</div>`;
+  }
+  for (const c of n.children || []) h += nodeHtml(c, depth + 1, mode, doc);
   return h;
 }
 
@@ -113,10 +146,10 @@ export function regHtml(doc, opt = {}) {
   const counts = ["편", "장", "절", "관", "조"]
     .filter((k) => stat[k]).map((k) => `${k} ${stat[k]}`).join(" · ");
 
-  const body = (doc.tree || []).map((n) => nodeHtml(n, 0, mode)).join("");
+  const body = (doc.tree || []).map((n) => nodeHtml(n, 0, mode, doc)).join("");
   const anx = (doc.annexTree && doc.annexTree.length)
     ? `<h2 class="anx-h">별표ㆍ별지</h2>`
-      + doc.annexTree.map((n) => nodeHtml(n, 0, mode)).join("")
+      + doc.annexTree.map((n) => nodeHtml(n, 0, mode, doc)).join("")
     : "";
   const MODE_NAME = { orig: "원문", trans: "번역", both: "대역" };
   const hasT = /"trans(Title|Body)"/.test(JSON.stringify(doc.tree || []).slice(0, 200000));
@@ -140,6 +173,12 @@ export function regHtml(doc, opt = {}) {
   .anx-h { font-size:13pt; margin-top:26px; border-top:1px solid #999; padding-top:10px; }
   .foot { margin-top:20px; border-top:1px solid #bbb; padding-top:6px;
           font-size:8.5pt; color:#666; }
+  .obj, .anx-t { margin:8px 0 10px 10px; overflow-x:auto; }
+  .obj table, .anx-t table { border-collapse:collapse; font-size:8.5pt; width:100%; }
+  .obj td, .obj th, .anx-t td, .anx-t th {
+    border:0.5px solid #666; padding:2px 4px; vertical-align:middle; }
+  .anx-t { page-break-inside:avoid; }
+  .mut { color:#888; }
   @media print { .noprint { display:none } }
 </style></head><body>
 ${opt.bar ? `<div class="noprint" style="background:#F4F6F5;border:1px solid #ccc;padding:8px 12px;

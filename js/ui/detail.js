@@ -1,10 +1,10 @@
 /* ============================================================
    ui/detail.js — 조문 상세 패널
    ============================================================ */
-import * as M from "../core/model.js?v=20260907m";
-import { wordDiff, beforeRuns, afterRuns, hasChange } from "../core/textdiff.js?v=20260907m";
+import * as M from "../core/model.js?v=20260907p";
+import { wordDiff, beforeRuns, afterRuns, hasChange } from "../core/textdiff.js?v=20260907p";
 import { imgIdsIn, renderBody, fitTable, toHtml, openTableOverlay, markAnnexEdits }
-  from "../core/objects.js?v=20260907m";
+  from "../core/objects.js?v=20260907p";
 
 /** 만들고 있는 안을 부르는 말 — 작업규정은 개정안, 성과심사 규정은 개정안 */
 /* 만들어 내는 안을 부르는 말 — 규정마다 다르다 (작업규정은 '개정안', 나머지는 '개정안').
@@ -75,9 +75,10 @@ function runsHtml(runs) {
   return runs.map((r) => (r.mark ? `<u class="mk">${esc(r.s)}</u>` : esc(r.s))).join("");
 }
 
-import { linkReason, wireReasonLinks } from "../core/reasonlink.js?v=20260907m";
-import { esc, fmtDT } from "./html.js?v=20260907m";
-import { renderPdf } from "./pdfview.js?v=20260907m";
+import { linkReason, wireReasonLinks } from "../core/reasonlink.js?v=20260907p";
+import { esc, fmtDT } from "./html.js?v=20260907p";
+import { renderPdf } from "./pdfview.js?v=20260907p";
+import { askYesNo } from "./ask.js?v=20260907p";
 
 /** 사유 글이 스스로 머리글을 달고 있는가 — 그러면 딱지를 겹쳐 붙이지 아니한다 */
 const RE_REASON_HEAD = /^\s*\[변경 사유\]/;
@@ -409,7 +410,9 @@ export class DetailPanel {
     };
     const del = wrap.querySelector('[data-up="del"]');
     if (del) del.onclick = () => {
-      if (confirm(`「${a.name}」 첨부를 뗍니다. 계속할까요?`)) this.onAnnexFile?.(node.id, null);
+      askYesNo(`「${a.name}」 붙임을 뗍니다`,
+        ["올린 서식 파일이 사라지고 현행 서식으로 돌아갑니다."], "떼기")
+        .then((ok) => { if (ok) this.onAnnexFile?.(node.id, null); });
     };
     return wrap;
   }
@@ -432,8 +435,8 @@ export class DetailPanel {
     (async () => {
       try {
         const [{ annexXmlFromHwpx, assetBuffer }, { parseXml }] = await Promise.all([
-          import("../core/annexhwpx.js?v=20260907m"),
-          import("../core/objects.js?v=20260907m"),
+          import("../core/annexhwpx.js?v=20260907p"),
+          import("../core/objects.js?v=20260907p"),
         ]);
         const buf = await assetBuffer(a);
         const xml = await annexXmlFromHwpx(buf, {
