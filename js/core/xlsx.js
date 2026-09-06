@@ -2,7 +2,7 @@
    core/xlsx.js — 최소 XLSX 작성기 (외부 라이브러리 없음)
    inlineStr + 런(run) 을 써서 변경 어절에 밑줄·색을 넣는다.
    ============================================================ */
-import { createZip } from "./zip.js?v=20260906q";
+import { createZip } from "./zip.js?v=20260906r";
 
 function esc(s) {
   const str = String(s ?? "");

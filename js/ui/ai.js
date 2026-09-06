@@ -4,9 +4,9 @@
    AI 가 낸 것은 언제나 '제안'이다. 화면에서 확인하고 [적용] 을 눌러야
    트리에 들어가며, 들어간 뒤에는 여느 편집과 똑같이 되돌릴 수 있다.
    ============================================================ */
-import * as M from "../core/model.js?v=20260906q";
-import * as AI from "../adapters/ai.js?v=20260906q";
-import { TASKS, outline, withExtra } from "../core/aitasks.js?v=20260906q";
+import * as M from "../core/model.js?v=20260906r";
+import * as AI from "../adapters/ai.js?v=20260906r";
+import { TASKS, outline, withExtra } from "../core/aitasks.js?v=20260906r";
 
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) =>
   ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));

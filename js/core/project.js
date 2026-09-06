@@ -7,11 +7,11 @@
    · this.tree 는 항상 '현재 버전'의 트리 배열과 같은 객체를 가리킨다.
    · 모든 구조 변경은 run() 트랜잭션을 통해서만 일어난다.
    ============================================================ */
-import * as M from "./model.js?v=20260906q";
-import { revLabel, nextRevLabel, revValue, verPrefixOf } from "./targets.js?v=20260906q";
-import { regFingerprint } from "./xrefs.js?v=20260906q";
+import * as M from "./model.js?v=20260906r";
+import { revLabel, nextRevLabel, revValue, verPrefixOf } from "./targets.js?v=20260906r";
+import { regFingerprint } from "./xrefs.js?v=20260906r";
 import { numbersOf, planFrom, planStayed, remapCitations, articleIdsIn,
-         planTermFixes, TERM_RULES } from "./xrefs.js?v=20260906q";
+         planTermFixes, TERM_RULES } from "./xrefs.js?v=20260906r";
 
 const MAX_HISTORY = 100;
 const BASE_ID = "base";
@@ -271,7 +271,9 @@ export class Project {
       this.versions.push({
         id: r === 0 ? BASE_ID : newVersionId(),
         label: r === 0 ? "기준" : `v${r}`,
-        title: r === 0 ? "현행규정 3종" : `개정안 초안 ${r > 1 ? `(${r}판)` : ""}`.trim(),
+        /* 판은 세 규정을 한 벌로 묶은 것이다. 규정 하나의 개정안(작업-1.00)과
+           갈리도록 「3종」 을 적는다 —— 기준 판의 「현행규정 3종」 과 짝이 맞는다. */
+        title: r === 0 ? "현행규정 3종" : `개정안 3종 초안 ${r > 1 ? `(${r}판)` : ""}`.trim(),
         parentId: r === 0 ? null : this.versions[r - 1].id,
         createdAt: now, author: "", note,
         // 판 전체를 잠그지 않는다 — 잠금은 규정 노드가 저마다 지닌다
