@@ -1,33 +1,33 @@
 /* ============================================================
    main.js — 앱 조립 (1단계 프로토타입)
    ============================================================ */
-import * as M from "./core/model.js?v=20260906r";
-import { Project } from "./core/project.js?v=20260906r";
-import * as FS from "./adapters/fileio.js?v=20260906r";
-import * as AUTO from "./adapters/autosave.js?v=20260906r";
-import { TreeView } from "./ui/tree.js?v=20260906r";
-import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260906r";
-import { CompareView } from "./ui/compare.js?v=20260906r";
-import { VersionsView } from "./ui/versions.js?v=20260906r";
-import { HistoryView } from "./ui/history.js?v=20260906r";
-import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260906r";
-import { ValidateView } from "./ui/validate.js?v=20260906r";
-import { RefPicker } from "./ui/refpicker.js?v=20260906r";
-import { AIView } from "./ui/ai.js?v=20260906r";
-import { CiteCheckView } from "./ui/citecheck.js?v=20260906r";
-import { TermsView } from "./ui/terms.js?v=20260906r";
-import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260906r";
-import * as GH from "./adapters/github.js?v=20260906r";
-import { extractLines } from "./core/importer.js?v=20260906r";
-import { buildAuto } from "./core/structure.js?v=20260906r";
-import * as SRC from "./core/srcfp.js?v=20260906r";
-import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260906r";
-import { ObjectStore, fitTable } from "./core/objects.js?v=20260906r";
-import { loadTargets, allTargets, targetById, firstTarget, nextRevLabel, verPrefixOf } from "./core/targets.js?v=20260906r";
-import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260906r";
-import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260906r";
-import { fmtDate } from "./ui/html.js?v=20260906r";
-import { printReg, regHtml } from "./ui/printdoc.js?v=20260906r";
+import * as M from "./core/model.js?v=20260906t";
+import { Project } from "./core/project.js?v=20260906t";
+import * as FS from "./adapters/fileio.js?v=20260906t";
+import * as AUTO from "./adapters/autosave.js?v=20260906t";
+import { TreeView } from "./ui/tree.js?v=20260906t";
+import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260906t";
+import { CompareView } from "./ui/compare.js?v=20260906t";
+import { VersionsView } from "./ui/versions.js?v=20260906t";
+import { HistoryView } from "./ui/history.js?v=20260906t";
+import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260906t";
+import { ValidateView } from "./ui/validate.js?v=20260906t";
+import { RefPicker } from "./ui/refpicker.js?v=20260906t";
+import { AIView } from "./ui/ai.js?v=20260906t";
+import { CiteCheckView } from "./ui/citecheck.js?v=20260906t";
+import { TermsView } from "./ui/terms.js?v=20260906t";
+import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260906t";
+import * as GH from "./adapters/github.js?v=20260906t";
+import { extractLines } from "./core/importer.js?v=20260906t";
+import { buildAuto } from "./core/structure.js?v=20260906t";
+import * as SRC from "./core/srcfp.js?v=20260906t";
+import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260906t";
+import { ObjectStore, fitTable } from "./core/objects.js?v=20260906t";
+import { loadTargets, allTargets, targetById, firstTarget, nextRevLabel, verPrefixOf } from "./core/targets.js?v=20260906t";
+import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260906t";
+import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260906t";
+import { fmtDate } from "./ui/html.js?v=20260906t";
+import { printReg, regHtml } from "./ui/printdoc.js?v=20260906t";
 
 const $ = (s) => document.querySelector(s);
 const NL = "\n";
@@ -1780,7 +1780,7 @@ async function doCommand(cmd) {
       const onlyName = only ? (project.regNode(only)?.short || "") : "";
       busy(`${onlyName || "개정 대상 세 규정"} 보고서를 작성 중…`);
       try {
-        const { buildReport } = await import("./ui/report.js?v=20260906r");
+        const { buildReport } = await import("./ui/report.js?v=20260906t");
         const r = await buildReport(project, { targetId: only });
         const url = URL.createObjectURL(r.blob);
         const a = document.createElement("a");
@@ -1800,6 +1800,43 @@ ${r.items.join(" · ")}
       break;
     }
 
+    /* 불러오기 —— 내 컴퓨터의 .pmproj 를 연다.
+
+       여는 것은 지금 작업본을 통째로 갈아 끼우는 일이다. 자동저장에 담긴
+       것도 그 파일의 것으로 덮이므로, 무엇이 사라지는지 밝히고 묻는다.
+       공유 저장소에서 여는 길(ui/share.js)과 같은 자리를 쓴다. */
+    case "import": {
+      try {
+        const got = await FS.openProject();
+        const data = got && got.data;
+        if (!data || data.format !== "pmproj" || !Array.isArray(data.versions)) {
+          toast("이 파일은 개정안 작업본(.pmproj)이 아닙니다.", 5000);
+          break;
+        }
+        const vs = data.versions.length;
+        const when = data.savedAt ? fmtDate(data.savedAt.slice(0, 10)) : "";
+        if (!confirm(`「${got.name}」 을(를) 엽니다.` + NL
+            + `판 ${vs}개${when ? ` · ${when} 에 저장한 것` : ""}` + NL + NL
+            + "지금 이 브라우저에서 고치던 것은 이 파일의 것으로 갈립니다." + NL
+            + "이어서 하려면 먼저 [내보내기] 로 갈무리해 두십시오." + NL + NL
+            + "계속할까요?")) break;
+        project.fromJSON(data);
+        project.remote = null;
+        project.author = GH.getAuthor();
+        syncRefLibrary();
+        restorePaneStates();
+        project.dirty = false;
+        project.emit(`${got.name} 을(를) 열었습니다.`);
+        $("#editRevSelect").dataset.sig = "";
+        paintEditHead();
+        toast(`${got.name} 을(를) 열었습니다 — 판 ${vs}개`, 4000);
+      } catch (err) {
+        if (err && err.name !== "AbortError" && err.message !== "취소") {
+          toast("불러오기 실패: " + err.message, 5000);
+        }
+      }
+      break;
+    }
     case "export": {
       try {
         const payload = project.toJSON();

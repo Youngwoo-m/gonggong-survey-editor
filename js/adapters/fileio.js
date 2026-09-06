@@ -134,13 +134,20 @@ export async function saveProject(data, { forceDialog = false } = {}) {
 
 export async function openProject() {
   if (hasFSA) {
-    const [h] = await window.showOpenFilePicker({ types: TYPES, multiple: false });
-    const f = await h.getFile();
-    const data = JSON.parse(await f.text());
-    // 열기로 얻은 핸들은 읽기 전용일 수 있다 — 저장 시점에 권한을 확인한다
-    _handle = h;
-    _handleWritable = false;
-    return { name: h.name, data };
+    try {
+      const [h] = await window.showOpenFilePicker({ types: TYPES, multiple: false });
+      const f = await h.getFile();
+      const data = JSON.parse(await f.text());
+      // 열기로 얻은 핸들은 읽기 전용일 수 있다 — 저장 시점에 권한을 확인한다
+      _handle = h;
+      _handleWritable = false;
+      return { name: h.name, data };
+    } catch (e) {
+      /* 사람이 취소한 것은 그대로 알린다. 그 밖의 탈(끼워진 창이라 고르개가
+         막혔다든지, 브라우저가 그 자리를 허락하지 아니한다든지)은 숨은
+         고르개로 되돈다 —— 열 길이 아주 없어지는 것보다 낫다. */
+      if (e && e.name === "AbortError") throw e;
+    }
   }
   return new Promise((resolve, reject) => {
     const input = document.getElementById("filePicker");
