@@ -7,11 +7,11 @@
    · this.tree 는 항상 '현재 버전'의 트리 배열과 같은 객체를 가리킨다.
    · 모든 구조 변경은 run() 트랜잭션을 통해서만 일어난다.
    ============================================================ */
-import * as M from "./model.js?v=20260907l";
-import { revLabel, nextRevLabel, revValue, verPrefixOf } from "./targets.js?v=20260907l";
-import { regFingerprint } from "./xrefs.js?v=20260907l";
+import * as M from "./model.js?v=20260907m";
+import { revLabel, nextRevLabel, revValue, verPrefixOf } from "./targets.js?v=20260907m";
+import { regFingerprint } from "./xrefs.js?v=20260907m";
 import { numbersOf, planFrom, planStayed, remapCitations, articleIdsIn,
-         planTermFixes, TERM_RULES } from "./xrefs.js?v=20260907l";
+         planTermFixes, TERM_RULES } from "./xrefs.js?v=20260907m";
 
 const MAX_HISTORY = 100;
 const BASE_ID = "base";
@@ -408,12 +408,29 @@ ${line}` : line;
    * 판 이름을 규정마다 매기기 전에 담아 둔 프로젝트가 있다. 열 때 한 번
    * 갈아 준다. 판 차례대로 매기되 기준(현행)은 건드리지 않는다.
    */
+  /* 판 이름에 남은 옛 말을 옮긴다 —— 2026-09-06 에 사람이 「세 규정」ㆍ
+     「세 종」 을 「3종」 으로 바꾸었다. 손수 붙인 이름은 건드리지 아니한다. */
+  _migrateTitles() {
+    const fix = (t) => String(t || "")
+      .replace(/현행 ?규정 세 종/g, "현행규정 3종")
+      .replace(/세 규정/g, "규정(3종)")
+      .replace(/규정 세 종/g, "규정 3종");
+    for (const v of this.versions) {
+      const t = fix(v.title);
+      if (t !== v.title) v.title = t;
+    }
+  }
+
   _normalizeRevLabels() {
     /* 머리글자는 등록부에서 가져온다 — 예전에 담아 둔 규정 노드에는 ver 가
        없어 X 로 앉는다. 여기서 채워 넣어 분기할 때에도 쓰이게 한다. */
     for (const v of this.versions) {
       for (const reg of (v.tree || []).filter(M.isRegNode)) {
-        if (!reg.ver) reg.ver = verPrefixOf(reg.targetId);
+        /* 등록부의 머리글자로 늘 맞춘다 —— 2026-09-06 에 AㆍBㆍC 를
+           작업ㆍ심사ㆍ드론 으로 바꾸었으므로, 그 앞에 담아 둔 판은
+           A-1.01 처럼 옛 머리글자를 지니고 있다. */
+        const ver = verPrefixOf(reg.targetId);
+        if (ver && reg.ver !== ver) reg.ver = ver;
       }
     }
     /* 번호는 그 규정의 내용이 실제로 달라질 때만 올라간다.
@@ -668,6 +685,7 @@ ${line}` : line;
     }
     this.tree = this.current.tree;
     this.selectedId = null;
+    this._migrateTitles();
     this._normalizeRevLabels();
     // 담고 있는 대상을 트리에서 다시 읽어 둔다 (예전 파일에는 targetIds 가 없다)
     const regs = this.regNodes;

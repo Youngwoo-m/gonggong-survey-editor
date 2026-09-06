@@ -839,6 +839,12 @@ button.mini2.apply:disabled{background:var(--panel2);color:var(--muted);
   padding:0 5px;font-size:10px;font-weight:700;vertical-align:1px}
 .anx-new-note{margin:0 0 6px;font-size:10.5px;color:#C81E1E}
 
+/* 올린 서식 파일이 갈음하는 표 —— 신설(붉은 빛)과 갈라 보이게 푸르게 두른다 */
+.anx-swap > label{color:#1F5FA8}
+.anx-swap .anx-badge{background:#1F5FA8}
+.anx-swap .anx-new-note{color:#1F5FA8}
+.anx-swap .annex-tbl{border-color:#B7CCE6;background:#F7FAFD}
+
 /* 이관 — 규정을 넘어 옮긴 조문. 규정 안의 이동(k-mov)과 눈으로 갈라 보인다 */
 .k-xfer, .st-이관 { background: #f6e7e1; color: #8a3a1f; border-color: #c1502e; }
 .tree .row.xfer > .lbl { color: #c1502e; }

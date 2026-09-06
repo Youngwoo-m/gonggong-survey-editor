@@ -1,10 +1,10 @@
 /* ============================================================
    ui/detail.js — 조문 상세 패널
    ============================================================ */
-import * as M from "../core/model.js?v=20260907l";
-import { wordDiff, beforeRuns, afterRuns, hasChange } from "../core/textdiff.js?v=20260907l";
+import * as M from "../core/model.js?v=20260907m";
+import { wordDiff, beforeRuns, afterRuns, hasChange } from "../core/textdiff.js?v=20260907m";
 import { imgIdsIn, renderBody, fitTable, toHtml, openTableOverlay, markAnnexEdits }
-  from "../core/objects.js?v=20260907l";
+  from "../core/objects.js?v=20260907m";
 
 /** 만들고 있는 안을 부르는 말 — 작업규정은 개정안, 성과심사 규정은 개정안 */
 /* 만들어 내는 안을 부르는 말 — 규정마다 다르다 (작업규정은 '개정안', 나머지는 '개정안').
@@ -75,9 +75,9 @@ function runsHtml(runs) {
   return runs.map((r) => (r.mark ? `<u class="mk">${esc(r.s)}</u>` : esc(r.s))).join("");
 }
 
-import { linkReason, wireReasonLinks } from "../core/reasonlink.js?v=20260907l";
-import { esc, fmtDT } from "./html.js?v=20260907l";
-import { renderPdf } from "./pdfview.js?v=20260907l";
+import { linkReason, wireReasonLinks } from "../core/reasonlink.js?v=20260907m";
+import { esc, fmtDT } from "./html.js?v=20260907m";
+import { renderPdf } from "./pdfview.js?v=20260907m";
 
 /** 사유 글이 스스로 머리글을 달고 있는가 — 그러면 딱지를 겹쳐 붙이지 아니한다 */
 const RE_REASON_HEAD = /^\s*\[변경 사유\]/;
@@ -414,9 +414,59 @@ export class DetailPanel {
     return wrap;
   }
 
+  /**
+   * 올린 서식 파일에서 표를 뽑아 그린다 —— 없으면 null.
+   * 사람이 [바뀐 서식 파일] 로 새 한/글 파일을 올렸으면 그것이 현행
+   * 서식을 갈음한다. 그림ㆍPDF 는 표를 뽑을 수 없으므로 미리보기로 둔다.
+   */
+  _annexUploaded(node) {
+    const a = this.getAsset?.(node.annexRef?.newFileId);
+    if (!a || !/\.hwpx?$/i.test(a.name || "")) return null;
+    const ref = node.annexRef || {};
+    const wrap = document.createElement("div");
+    wrap.className = "fld anx-swap";
+    wrap.innerHTML = `<label>서식 표 <span class="anx-badge">올린 파일</span></label>
+      <div class="anx-new-note">${esc(a.name)} 의 표입니다 —— 현행 서식을 갈음합니다.</div>
+      <div class="annex-tbl"><span class="mut">읽는 중…</span></div>`;
+    const host = wrap.querySelector(".annex-tbl");
+    (async () => {
+      try {
+        const [{ annexXmlFromHwpx, assetBuffer }, { parseXml }] = await Promise.all([
+          import("../core/annexhwpx.js?v=20260907m"),
+          import("../core/objects.js?v=20260907m"),
+        ]);
+        const buf = await assetBuffer(a);
+        const xml = await annexXmlFromHwpx(buf, {
+          key: node.legacyNo || "", gubun: ref.gubun || "별표",
+          no: ref.no || "", title: node.title || "", source: a.name,
+        });
+        const o = parseXml(xml);
+        if (!o || !o.items.length) {
+          host.innerHTML = `<div class="obj-fail">올린 파일에서 표를 찾지 못했습니다 —— 파일은 그대로 딸려 갑니다.</div>`;
+          return;
+        }
+        host.innerHTML = toHtml(o);
+        fitTable(host);
+        const zoom = document.createElement("button");
+        zoom.className = "mini2";
+        zoom.type = "button";
+        zoom.textContent = "크게 보기";
+        zoom.onclick = () => openTableOverlay(
+          host.innerHTML.replace(/<button[^>]*>.*?<\/button>/gi, ""),
+          `${node.legacyNo || ""} ${node.title || ""}`.trim());
+        host.appendChild(zoom);
+      } catch (e) {
+        host.innerHTML = `<div class="obj-fail">올린 파일을 읽지 못했습니다 — ${esc(e.message)}</div>`;
+      }
+    })();
+    return wrap;
+  }
+
   /** 별표·별지 원본 표 — HWP 에서 뽑아 둔 XML 을 진짜 표로 그린다 */
   _annexTables(node, regId) {
     regId = regId || this.baseRegId;
+    /* 올린 파일이 갈음하고 있으면 현행 표는 「고치기 전」 으로 밝힌다 */
+    const swapped = !!this.getAsset?.(node.annexRef?.newFileId);
     const key = node.legacyNo || `${node.annexRef.gubun}${node.annexRef.no}`;
     // 신설 별표는 개정안 전용 자리에서만 찾는다 —
     // 번호로만 찾으면 같은 번호의 현행 별표를 끌어온다
@@ -431,7 +481,7 @@ export class DetailPanel {
     const isNew = node.status === "신설";
     const wrap = document.createElement("div");
     wrap.className = isNew ? "fld anx-new" : "fld";
-    wrap.innerHTML = `<label>서식 표 ${
+    wrap.innerHTML = `<label>${swapped ? "고치기 전 서식 표" : "서식 표"} ${
         isNew ? `<span class="anx-badge">신설</span> ` : ""}<span class="cnt">${meta.tables}개</span>
         <a class="btnlink lbl-right" href="${esc(this.objects.annexUrl(regId, key))}"
            download="${esc(meta.file)}">XML</a></label>${
@@ -878,6 +928,9 @@ export class DetailPanel {
       if (ad) el.appendChild(ad);
       el.appendChild(textareaField("서식 변경 내용", node.body || "", "f-body", 6,
         "바뀐 항목·칸·단위 등을 적어 두면 개정 전후 비교표에 그대로 실립니다."));
+      /* 올린 파일이 있으면 그것을 먼저 보인다 —— 그것이 갈음할 서식이다 */
+      const up = this._annexUploaded(node);
+      if (up) el.appendChild(up);
       const at = this._annexTables(node, this.baseRegId);
       if (at) el.appendChild(at);
       const ax = this._annexExtra(node);

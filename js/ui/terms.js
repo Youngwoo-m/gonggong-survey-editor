@@ -17,7 +17,7 @@
    여기는 보이고 고르게 하는 일만 한다.
    ============================================================ */
 
-import { esc } from "./html.js?v=20260907l";
+import { esc } from "./html.js?v=20260907m";
 
 export class TermsView {
   constructor(opts = {}) {
