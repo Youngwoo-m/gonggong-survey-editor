@@ -598,7 +598,12 @@ a.cite:hover{background:var(--link);color:#fff;text-decoration:none;border-radiu
 /* ---- AI 도우미 ---- */
 .cmp.ai{width:min(1000px,94vw)}
 .cmp.sm{width:min(520px,92vw)}
-.chips.ai-tasks .chip{cursor:pointer}
+/* 일감 단추 —— 머리가 어두운 빛이라 옅은 딱지는 눌리는 자리로 보이지
+   아니하였다. 진한 바탕에 흰 글씨로 두고, 고른 것은 초록으로 밝힌다. */
+.chips.ai-tasks .chip{cursor:pointer;background:var(--slate);color:#fff;
+  font-weight:700;padding:4px 12px;border:1px solid transparent;transition:background .12s}
+.chips.ai-tasks .chip:hover{background:var(--ink)}
+.chips.ai-tasks .chip.on{background:var(--green);color:#fff;border-color:#fff}
 .ai-conn{font-size:10px;color:var(--muted);padding:2px 6px;border:1px solid var(--line);border-radius:3px}
 .ai-conn.on{color:var(--green,#3f8f5f);border-color:var(--green,#3f8f5f)}
 .ai-body{padding:12px 14px}

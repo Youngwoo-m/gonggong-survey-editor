@@ -28,8 +28,8 @@
 
    DOM 을 모른다.
    ============================================================ */
-import * as M from "./model.js?v=20260906m";
-import { eul, ro, iga } from "./amend.js?v=20260906m";
+import * as M from "./model.js?v=20260906n";
+import { eul, ro, iga } from "./amend.js?v=20260906n";
 
 /* ---------- 시행일 ---------- */
 
