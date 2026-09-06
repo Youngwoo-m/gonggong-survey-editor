@@ -22,7 +22,7 @@
    ============================================================ */
 
 import { Form, remake, retext, esc, RowProto, tableSpan, topRows, retable }
-  from "./hwpx.js?v=20260907s";
+  from "./hwpx.js?v=20260907u";
 
 const NL = "\n";
 const RE_IMG = /<img\s+id="([\w.-]+)"\s*>(?:<\/img>)?/gi;

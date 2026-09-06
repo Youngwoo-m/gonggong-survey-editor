@@ -1,15 +1,15 @@
 /* ============================================================
    ui/compare.js — 개정 전후 비교표 화면
    ============================================================ */
-import { buildComparison, KIND_LIST, kindLabel } from "../core/diff.js?v=20260907s";
-import { writeXlsx } from "../core/xlsx.js?v=20260907s";
-import * as M from "../core/model.js?v=20260907s";
-import { regFingerprint } from "../core/xrefs.js?v=20260907s";
-import { buildAmendment } from "../core/amend.js?v=20260907s";
-import { buildSupplement, EFFECT_KINDS, topTitles } from "../core/supplement.js?v=20260907s";
+import { buildComparison, KIND_LIST, kindLabel } from "../core/diff.js?v=20260907u";
+import { writeXlsx } from "../core/xlsx.js?v=20260907u";
+import * as M from "../core/model.js?v=20260907u";
+import { regFingerprint } from "../core/xrefs.js?v=20260907u";
+import { buildAmendment } from "../core/amend.js?v=20260907u";
+import { buildSupplement, EFFECT_KINDS, topTitles } from "../core/supplement.js?v=20260907u";
 import { stripImgTags, imgIdsIn, toHtml, fitTable }
-  from "../core/objects.js?v=20260907s";
-import { esc, fmtDate } from "./html.js?v=20260907s";
+  from "../core/objects.js?v=20260907u";
+import { esc, fmtDate } from "./html.js?v=20260907u";
 
 const KIND_CLASS = {
   "신설": "k-new", "삭제": "k-del", "이동": "k-mov", "이관": "k-xfer",
@@ -735,7 +735,7 @@ td.why{font-size:9pt;line-height:1.65;word-break:keep-all}
     const old = btn ? btn.textContent : "";
     if (btn) { btn.disabled = true; btn.textContent = "짓는 중…"; }
     try {
-      const { buildCompareHwpx } = await import("../core/hwpxcompare.js?v=20260907s");
+      const { buildCompareHwpx } = await import("../core/hwpxcompare.js?v=20260907u");
       // 대비표에 싣는 것은 조문뿐이다 — 양식이 조문 대비표다
       const rows = this._officialRows(this.result.rows);
       if (!rows.length) throw new Error("대비표에 실을 조문이 없습니다.");
