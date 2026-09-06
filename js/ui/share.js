@@ -1,8 +1,8 @@
 /* ============================================================
    ui/share.js — 공유 화면 (저장소 연결 · 프로젝트 목록 · 저장 이력)
    ============================================================ */
-import * as GH from "../adapters/github.js?v=20260906e";
-import { esc, fmtDT } from "./html.js?v=20260906e";
+import * as GH from "../adapters/github.js?v=20260906f";
+import { esc, fmtDT } from "./html.js?v=20260906f";
 
 /** 파일 저장에 이어 저장소에도 올릴지 */
 export const AUTOPUSH = {
@@ -222,13 +222,23 @@ export class ShareView {
           밖으로 나가면 아니 되는 것은 [내보내기] 로 파일을 만들어 건네십시오.</div>
       </div>
 
+      <div class="sh-fixed">모두가 같은 자리를 보아야 하므로 <b>저장소는 정해져 있습니다</b>.
+        어디에 올라가는지 알 수 있게 보이기만 하고 고치지는 못합니다.</div>
       <div class="row2">
-        <div class="fld"><label>GitHub 계정/조직 (owner) <span class="mut">— 기본값이 들어 있음</span></label><input class="s-owner" value="${esc(cfg.owner)}" placeholder="Youngwoo-m"></div>
-        <div class="fld"><label>저장소 이름 (repo)</label><input class="s-repo" value="${esc(cfg.repo)}" placeholder="gonggong-survey-editor"></div>
+        <div class="fld"><label>GitHub 계정/조직 (owner)</label>
+          <input class="s-owner" value="${esc(cfg.owner)}" readonly tabindex="-1"
+                 title="정해진 값입니다"></div>
+        <div class="fld"><label>저장소 이름 (repo)</label>
+          <input class="s-repo" value="${esc(cfg.repo)}" readonly tabindex="-1"
+                 title="정해진 값입니다"></div>
       </div>
       <div class="row2">
-        <div class="fld"><label>브랜치</label><input class="s-branch" value="${esc(cfg.branch)}" placeholder="main"></div>
-        <div class="fld"><label>저장 폴더</label><input class="s-dir" value="${esc(cfg.dir)}" placeholder="projects"></div>
+        <div class="fld"><label>브랜치</label>
+          <input class="s-branch" value="${esc(cfg.branch)}" readonly tabindex="-1"
+                 title="정해진 값입니다"></div>
+        <div class="fld"><label>저장 폴더</label>
+          <input class="s-dir" value="${esc(cfg.dir)}" readonly tabindex="-1"
+                 title="정해진 값입니다"></div>
       </div>
       <div class="fld"><label>내 이름 (변경 이력에 기록됩니다)</label>
         <input class="s-author" value="${esc(GH.getAuthor())}" placeholder="홍길동"></div>
@@ -256,10 +266,9 @@ export class ShareView {
   bindSetup() {
     const q = (c) => this.el.querySelector("." + c);
     this.el.querySelector('[data-x="verify"]')?.addEventListener("click", async () => {
-      GH.setConfig({
-        owner: q("s-owner").value.trim(), repo: q("s-repo").value.trim(),
-        branch: q("s-branch").value.trim() || "main", dir: q("s-dir").value.trim(),
-      });
+      /* 저장소는 정해진 값이다(GH.DEFAULT_CFG). 칸에서 읽지 아니한다 —— 
+         읽으면 화면에 보이는 것과 담기는 것이 어긋날 틈이 생긴다. */
+      GH.setConfig({ ...GH.DEFAULT_CFG });
       GH.setAuthor(q("s-author").value.trim());
       AUTOPUSH.on = !!q("s-autopush")?.checked;
       this.project.author = GH.getAuthor();
