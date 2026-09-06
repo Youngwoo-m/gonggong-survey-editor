@@ -1,10 +1,10 @@
 /* ============================================================
    ui/detail.js — 조문 상세 패널
    ============================================================ */
-import * as M from "../core/model.js?v=20260907x";
-import { wordDiff, beforeRuns, afterRuns, hasChange } from "../core/textdiff.js?v=20260907x";
+import * as M from "../core/model.js?v=20260907y";
+import { wordDiff, beforeRuns, afterRuns, hasChange } from "../core/textdiff.js?v=20260907y";
 import { imgIdsIn, renderBody, fitTable, toHtml, openTableOverlay, markAnnexEdits }
-  from "../core/objects.js?v=20260907x";
+  from "../core/objects.js?v=20260907y";
 
 /** 만들고 있는 안을 부르는 말 — 작업규정은 개정안, 성과심사 규정은 개정안 */
 /* 만들어 내는 안을 부르는 말 — 규정마다 다르다 (작업규정은 '개정안', 나머지는 '개정안').
@@ -75,10 +75,10 @@ function runsHtml(runs) {
   return runs.map((r) => (r.mark ? `<u class="mk">${esc(r.s)}</u>` : esc(r.s))).join("");
 }
 
-import { linkReason, wireReasonLinks } from "../core/reasonlink.js?v=20260907x";
-import { esc, fmtDT } from "./html.js?v=20260907x";
-import { renderPdf } from "./pdfview.js?v=20260907x";
-import { askYesNo } from "./ask.js?v=20260907x";
+import { linkReason, wireReasonLinks } from "../core/reasonlink.js?v=20260907y";
+import { esc, fmtDT } from "./html.js?v=20260907y";
+import { renderPdf } from "./pdfview.js?v=20260907y";
+import { askYesNo } from "./ask.js?v=20260907y";
 
 /** 사유 글이 스스로 머리글을 달고 있는가 — 그러면 딱지를 겹쳐 붙이지 아니한다 */
 const RE_REASON_HEAD = /^\s*\[변경 사유\]/;
@@ -435,8 +435,8 @@ export class DetailPanel {
     (async () => {
       try {
         const [{ annexXmlFromHwpx, assetBuffer }, { parseXml }] = await Promise.all([
-          import("../core/annexhwpx.js?v=20260907x"),
-          import("../core/objects.js?v=20260907x"),
+          import("../core/annexhwpx.js?v=20260907y"),
+          import("../core/objects.js?v=20260907y"),
         ]);
         const buf = await assetBuffer(a);
         const xml = await annexXmlFromHwpx(buf, {
@@ -465,17 +465,35 @@ export class DetailPanel {
     return wrap;
   }
 
+  /**
+   * 신설 별표ㆍ별지의 서식을 어느 열쇠로 찾을 것인가 —— 개정안 번호뿐이다.
+   *
+   * 현행 번호로 되짚지 아니한다. 개정안에서 번호를 다시 매겼으므로 현행 번호는
+   * 다른 별표의 것이 되어 있다 —— 개정안 별표 18(전자성과 제출 표준 규격)을
+   * 현행 번호 「별표 48」 로 되짚으면 「지하시설물 종류별 표시 색상」 이 붙는다.
+   * 서식이 아직 없으면 없는 채로 두는 편이 엉뚱한 표를 보이는 것보다 낫다.
+   */
+  _annexKey(node, regId) {
+    const ref = node.annexRef || {};
+    const key = `${ref.gubun}${ref.no}`;
+    return (this.objects && this.objects.annexMeta(regId, key)) ? key : null;
+  }
+
   /** 별표·별지 원본 표 — HWP 에서 뽑아 둔 XML 을 진짜 표로 그린다 */
   _annexTables(node, regId) {
     regId = regId || this.baseRegId;
     /* 올린 파일이 갈음하고 있으면 현행 표는 「고치기 전」 으로 밝힌다 */
     const swapped = !!this.getAsset?.(node.annexRef?.newFileId);
-    const key = node.legacyNo || `${node.annexRef.gubun}${node.annexRef.no}`;
-    // 신설 별표는 개정안 전용 자리에서만 찾는다 —
-    // 번호로만 찾으면 같은 번호의 현행 별표를 끌어온다
+    /* 신설 별표는 개정안 전용 자리에서만 찾는다 —— 번호로만 찾으면 같은
+       번호의 현행 별표를 끌어온다. 그 자리의 XML 은 개정안 번호로 이름을
+       지었으므로 개정안 번호를 먼저 쓰고, 없을 때에만 현행 번호로 되짚는다.
+       (현행 번호를 앞세웠더니 개정안 별표 18에 현행 별표 48의 표가 붙었다) */
+    let key = node.legacyNo || `${node.annexRef.gubun}${node.annexRef.no}`;
     if (node.status === "신설") {
       if (!this.draftRegId) return null;
       regId = this.draftRegId;
+      key = this._annexKey(node, regId);
+      if (!key) return null;
     }
     const meta = this.objects && this.objects.annexMeta(regId, key);
     if (!meta) return null;

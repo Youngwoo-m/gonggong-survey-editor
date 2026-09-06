@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annex id="별표16" gubun="별표" no="16" title="심사자 교육과정 및 이수기준" source="성과심사 규정 개정안 초안 (scripts/genannex_simsa.py)">
-  <text>[별표 16]
+<annex id="별표4" gubun="별표" no="4" title="심사자 교육과정 및 이수기준" source="성과심사 규정 개정안 초안 (scripts/genannex_simsa.py)">
+  <text>[별표 4]
 심사자 교육과정 및 이수기준 (제12조제3항 관련)</text>
   <table rows="7" cols="4">
     <row>
@@ -42,7 +42,7 @@
     <row>
       <cell col="0" row="6">자동검사</cell>
       <cell col="1" row="6">자동검사를 실행하거나 그 결과를 확인하는 자</cell>
-      <cell col="2" row="6">별표 14의 검사 항목과 판정 논리, 검사 도구의 갱신</cell>
+      <cell col="2" row="6">별표 6의 검사 항목과 판정 논리, 검사 도구의 갱신</cell>
       <cell col="3" row="6">2시간</cell>
     </row>
   </table>

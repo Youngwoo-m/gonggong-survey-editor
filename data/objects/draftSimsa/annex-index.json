@@ -6,36 +6,36 @@
   "rows": 78,
   "cols": 8
  },
- "별표13": {
-  "file": "별표13.xml",
-  "title": "성과심사 단위 및 성과패키지의 구성",
-  "tables": 1,
-  "rows": 5,
-  "cols": 5
- },
- "별표14": {
-  "file": "별표14.xml",
-  "title": "자동검사 항목",
-  "tables": 1,
-  "rows": 19,
-  "cols": 4
- },
- "별표15": {
-  "file": "별표15.xml",
-  "title": "판정 구분 및 보완 요구 기준",
-  "tables": 2,
-  "rows": 8,
-  "cols": 5
- },
- "별표16": {
-  "file": "별표16.xml",
+ "별표4": {
+  "file": "별표4.xml",
   "title": "심사자 교육과정 및 이수기준",
   "tables": 1,
   "rows": 7,
   "cols": 4
  },
- "별표17": {
-  "file": "별표17.xml",
+ "별표5": {
+  "file": "별표5.xml",
+  "title": "성과심사 단위 및 성과패키지의 구성",
+  "tables": 1,
+  "rows": 5,
+  "cols": 5
+ },
+ "별표6": {
+  "file": "별표6.xml",
+  "title": "자동검사 항목",
+  "tables": 1,
+  "rows": 19,
+  "cols": 4
+ },
+ "별표7": {
+  "file": "별표7.xml",
+  "title": "판정 구분 및 보완 요구 기준",
+  "tables": 2,
+  "rows": 8,
+  "cols": 5
+ },
+ "별표15": {
+  "file": "별표15.xml",
   "title": "기본수수료 및 최저 심사비 산정기준",
   "tables": 2,
   "rows": 10,
