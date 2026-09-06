@@ -1,33 +1,33 @@
 /* ============================================================
    main.js — 앱 조립 (1단계 프로토타입)
    ============================================================ */
-import * as M from "./core/model.js?v=20260906a";
-import { Project } from "./core/project.js?v=20260906a";
-import * as FS from "./adapters/fileio.js?v=20260906a";
-import * as AUTO from "./adapters/autosave.js?v=20260906a";
-import { TreeView } from "./ui/tree.js?v=20260906a";
-import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260906a";
-import { CompareView } from "./ui/compare.js?v=20260906a";
-import { VersionsView } from "./ui/versions.js?v=20260906a";
-import { HistoryView } from "./ui/history.js?v=20260906a";
-import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260906a";
-import { ValidateView } from "./ui/validate.js?v=20260906a";
-import { RefPicker } from "./ui/refpicker.js?v=20260906a";
-import { AIView } from "./ui/ai.js?v=20260906a";
-import { CiteCheckView } from "./ui/citecheck.js?v=20260906a";
-import { TermsView } from "./ui/terms.js?v=20260906a";
-import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260906a";
-import * as GH from "./adapters/github.js?v=20260906a";
-import { extractLines } from "./core/importer.js?v=20260906a";
-import { buildAuto } from "./core/structure.js?v=20260906a";
-import * as SRC from "./core/srcfp.js?v=20260906a";
-import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260906a";
-import { ObjectStore, fitTable } from "./core/objects.js?v=20260906a";
-import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260906a";
-import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260906a";
-import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260906a";
-import { fmtDate } from "./ui/html.js?v=20260906a";
-import { printReg, regHtml } from "./ui/printdoc.js?v=20260906a";
+import * as M from "./core/model.js?v=20260906b";
+import { Project } from "./core/project.js?v=20260906b";
+import * as FS from "./adapters/fileio.js?v=20260906b";
+import * as AUTO from "./adapters/autosave.js?v=20260906b";
+import { TreeView } from "./ui/tree.js?v=20260906b";
+import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260906b";
+import { CompareView } from "./ui/compare.js?v=20260906b";
+import { VersionsView } from "./ui/versions.js?v=20260906b";
+import { HistoryView } from "./ui/history.js?v=20260906b";
+import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260906b";
+import { ValidateView } from "./ui/validate.js?v=20260906b";
+import { RefPicker } from "./ui/refpicker.js?v=20260906b";
+import { AIView } from "./ui/ai.js?v=20260906b";
+import { CiteCheckView } from "./ui/citecheck.js?v=20260906b";
+import { TermsView } from "./ui/terms.js?v=20260906b";
+import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260906b";
+import * as GH from "./adapters/github.js?v=20260906b";
+import { extractLines } from "./core/importer.js?v=20260906b";
+import { buildAuto } from "./core/structure.js?v=20260906b";
+import * as SRC from "./core/srcfp.js?v=20260906b";
+import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260906b";
+import { ObjectStore, fitTable } from "./core/objects.js?v=20260906b";
+import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260906b";
+import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260906b";
+import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260906b";
+import { fmtDate } from "./ui/html.js?v=20260906b";
+import { printReg, regHtml } from "./ui/printdoc.js?v=20260906b";
 
 const $ = (s) => document.querySelector(s);
 const NL = "\n";
@@ -67,7 +67,9 @@ const ai = new AIView(project, {
   onToast: (m, ms) => toast(m, ms),
   onJump: (id) => jumpToNode(id),
   onReport: () => doCommand("reportRun"),   // 창 안의 [보고서 생성]
-  host: $("#aiDock"),          // 별도 창이 아니라 개정안 창 아래에 붙인다
+  /* 붙박이 자리는 그대로 두되, 메뉴의 [✦AI] 와 Ctrl+I 는 큰 창으로 부른다
+     (doCommand 의 "ai"). 붙박이는 다른 자리에서 필요할 때 쓴다. */
+  host: $("#aiDock"),
 });
 const citecheck = new CiteCheckView({
   onJump: (id) => jumpToNode(id),
@@ -1655,7 +1657,10 @@ async function doCommand(cmd) {
     }
     case "versions": versions.open(); break;
     case "history": history.open(); break;
-    case "ai": ai.open(); break;
+    /* [✦AI] 는 화면 가운데 큰 창으로 띄운다. 개정안 창 아래 붙박이(#aiDock)에
+       붙이면 화면이 좁을 때 접혀 보이지 아니하여, 눌러도 뜨지 아니한 줄 안다.
+       [보고서] 가 쓰던 길(popup)을 그대로 쓴다. */
+    case "ai": ai.open(null, { popup: true }); break;
     case "startEdit": startEditing(); break;
     case "apply": applyDetail(); break;
     case "validate": validator.open(); break;
@@ -1716,7 +1721,7 @@ async function doCommand(cmd) {
       const onlyName = only ? (project.regNode(only)?.short || "") : "";
       busy(`${onlyName || "개정 대상 세 규정"} 보고서를 작성 중…`);
       try {
-        const { buildReport } = await import("./ui/report.js?v=20260906a");
+        const { buildReport } = await import("./ui/report.js?v=20260906b");
         const r = await buildReport(project, { targetId: only });
         const url = URL.createObjectURL(r.blob);
         const a = document.createElement("a");
