@@ -4,8 +4,8 @@
    이 규정이 부르는 남의 조문이 아직 성한지 훑어 보인다.
    판정은 core/citecheck.js 가 하고, 여기는 보이고 짚어 주기만 한다.
    ============================================================ */
-import { GRADES } from "../core/citecheck.js?v=20260906p";
-import { esc } from "./html.js?v=20260906p";
+import { GRADES } from "../core/citecheck.js?v=20260906q";
+import { esc } from "./html.js?v=20260906q";
 
 const CLS = { [GRADES.OK]: "g-ok", [GRADES.MUST]: "g-must", [GRADES.CHECK]: "g-check" };
 
