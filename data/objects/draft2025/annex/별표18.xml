@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표18" gubun="별표" no="18" title="전자성과 제출 표준 규격" source="작업규정 개정안 초안 (scripts/genannex2025.py)">
+  <text>[별표 18]
+전자성과 제출 표준 규격 (제17조제7항 관련)</text>
+  <text>1. 폴더 구조</text>
+  <table rows="8" cols="4">
+    <row>
+      <cell col="0" row="0" header="1">층</cell>
+      <cell col="1" row="0" header="1">폴더 이름</cell>
+      <cell col="2" row="0" header="1">담는 것</cell>
+      <cell col="3" row="0" header="1">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">1</cell>
+      <cell col="1" row="1">&lt;사업명&gt;_&lt;준공연도&gt;</cell>
+      <cell col="2" row="1">성과패키지 전체</cell>
+      <cell col="3" row="1">맨 바깥 폴더</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">2</cell>
+      <cell col="1" row="2">01_성과데이터</cell>
+      <cell col="2" row="2">원시자료와 처리 결과물</cell>
+      <cell col="3" row="2">제17조제2항</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">2</cell>
+      <cell col="1" row="3">02_메타데이터</cell>
+      <cell col="2" row="3">성과별 메타데이터 파일</cell>
+      <cell col="3" row="3">「KS X ISO 19115-1」</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">2</cell>
+      <cell col="1" row="4">03_품질보고서</cell>
+      <cell col="2" row="4">정확도 관리표, 품질평가표, 검증 성적서</cell>
+      <cell col="3" row="4">제17조제3항제5호</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">2</cell>
+      <cell col="1" row="5">04_처리이력</cell>
+      <cell col="2" row="5">관측ㆍ처리 로그, 보정 이력, 사용 소프트웨어와 판</cell>
+      <cell col="3" row="5"></cell>
+    </row>
+    <row>
+      <cell col="0" row="6">2</cell>
+      <cell col="1" row="6">05_그밖의자료</cell>
+      <cell col="2" row="6">작업계획서, 점의 조서, 현황사진 등</cell>
+      <cell col="3" row="6"></cell>
+    </row>
+    <row>
+      <cell col="0" row="7">3</cell>
+      <cell col="1" row="7">&lt;측량의 종류&gt;</cell>
+      <cell col="2" row="7">측량의 종류가 둘 이상인 경우에만 둔다</cell>
+      <cell col="3" row="7">이름은 별표 17의 종류 이름을 쓴다</cell>
+    </row>
+  </table>
+  <text>2. 파일명 규칙
+    &lt;측량의 종류&gt;_&lt;성과의 유형&gt;_&lt;취득 연월일&gt;_&lt;판&gt;.&lt;확장자&gt;
+    보기) 기준점측량_성과표_20260401_v1.csv</text>
+  <table rows="6" cols="3">
+    <row>
+      <cell col="0" row="0" header="1">자리</cell>
+      <cell col="1" row="0" header="1">적는 법</cell>
+      <cell col="2" row="0" header="1">보기</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">측량의 종류</cell>
+      <cell col="1" row="1">별표 17의 종류 이름</cell>
+      <cell col="2" row="1">기준점측량, 지형측량</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">성과의 유형</cell>
+      <cell col="1" row="2">제품사양서에 적은 유형 이름</cell>
+      <cell col="2" row="2">성과표, 점군, 정사영상</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">취득 연월일</cell>
+      <cell col="1" row="3">YYYYMMDD 여덟 자리</cell>
+      <cell col="2" row="3">20260401</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">판</cell>
+      <cell col="1" row="4">v 와 일련번호. 고쳐 낼 때마다 올린다</cell>
+      <cell col="2" row="4">v1, v2</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">확장자</cell>
+      <cell col="1" row="5">3에서 정한 형식의 확장자</cell>
+      <cell col="2" row="5">csv, las, tif</cell>
+    </row>
+  </table>
+  <text>3. 성과 유형별 파일 형식</text>
+  <table rows="7" cols="4">
+    <row>
+      <cell col="0" row="0" header="1">성과의 유형</cell>
+      <cell col="1" row="0" header="1">표준 형식</cell>
+      <cell col="2" row="0" header="1">함께 쓸 수 있는 형식</cell>
+      <cell col="3" row="0" header="1">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">점군</cell>
+      <cell col="1" row="1">LAS 또는 LAZ</cell>
+      <cell col="2" row="1">E57</cell>
+      <cell col="3" row="1">좌표계와 점밀도를 헤더에 적는다</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">정사영상ㆍ수치표면모델ㆍ수치표고모델</cell>
+      <cell col="1" row="2">GeoTIFF</cell>
+      <cell col="2" row="2">IMGㆍCOG</cell>
+      <cell col="3" row="2">좌표계 정보를 파일 안에 담는다</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">벡터 성과</cell>
+      <cell col="1" row="3">SHP</cell>
+      <cell col="2" row="3">GMLㆍGeoPackage</cell>
+      <cell col="3" row="3">속성 코드는 제품사양서에 따른다</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">성과표ㆍ계산부ㆍ관측기록부</cell>
+      <cell col="1" row="4">CSV 또는 XLSX</cell>
+      <cell col="2" row="4">PDF(원본과 함께 낸다)</cell>
+      <cell col="3" row="4">글자는 UTF-8 로 적는다</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">메타데이터</cell>
+      <cell col="1" row="5">XML</cell>
+      <cell col="2" row="5">JSON</cell>
+      <cell col="3" row="5">「KS X ISO 19115-1」의 항목 이름을 쓴다</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">도면</cell>
+      <cell col="1" row="6">PDF</cell>
+      <cell col="2" row="6">DWGㆍDXF</cell>
+      <cell col="3" row="6">축척과 도곽을 적는다</cell>
+    </row>
+  </table>
+  <text>비고
+1. 이 표의 형식은 성과를 주고받는 데 두루 쓰이는 것을 적은 것이다. 제품사양서(별표 16)에서 달리 정한 경우에는 그에 따른다.
+2. 표준 형식이 기술의 변화로 쓰이지 아니하게 된 경우에는 시행자의 승인을 받아 다른 형식으로 낼 수 있다. 이 경우 그 형식과 까닭을 메타데이터에 적는다.
+3. 글자는 UTF-8 로 적고, 파일 이름에는 빈칸과 특수문자를 쓰지 아니한다.
+4. 좌표계는 성과 파일 안에 담는 것을 원칙으로 하고, 담을 수 없는 형식은 메타데이터에 적는다.
+5. 「측량성과 심사수탁기관의 심사업무 및 지정절차 등에 관한 규정」의 자동검사는 이 표의 형식과 이름 규칙을 확인한다.</text>
+</annex>

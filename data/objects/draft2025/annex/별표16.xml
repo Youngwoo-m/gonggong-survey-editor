@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표16" gubun="별표" no="16" title="제품사양서 서식" source="작업규정 개정안 초안 (scripts/genannex2025.py)">
+  <text>[별표 16]
+제품사양서 서식 (제16조제4항 관련)</text>
+  <table rows="3" cols="4">
+    <row>
+      <cell col="0" row="0" header="1">사업명</cell>
+      <cell col="1" row="0" colspan="3" header="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1">시행자</cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1">작성연월일</cell>
+      <cell col="3" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2">수행자</cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2">작성자</cell>
+      <cell col="3" row="2"></cell>
+    </row>
+  </table>
+  <text>1. 성과의 범위와 유형 (제16조제2항제1호)</text>
+  <table rows="2" cols="4">
+    <row>
+      <cell col="0" row="0" header="1">측량의 종류</cell>
+      <cell col="1" row="0" header="1">성과의 유형</cell>
+      <cell col="2" row="0" header="1">공간적 범위</cell>
+      <cell col="3" row="0" header="1">수량ㆍ단위</cell>
+    </row>
+    <row>
+      <cell col="0" row="1"></cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1"></cell>
+    </row>
+  </table>
+  <text>2. 좌표계와 측량기준 (제2호)</text>
+  <table rows="2" cols="4">
+    <row>
+      <cell col="0" row="0" header="1">평면직각좌표계ㆍ원점</cell>
+      <cell col="1" row="0" header="1">높이 기준</cell>
+      <cell col="2" row="0" header="1">측량기준점</cell>
+      <cell col="3" row="0" header="1">단위</cell>
+    </row>
+    <row>
+      <cell col="0" row="1"></cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1"></cell>
+    </row>
+  </table>
+  <text>3. 품질요소별 요구 수준과 판정 기준 (제3호)</text>
+  <table rows="6" cols="4">
+    <row>
+      <cell col="0" row="0" header="1">품질요소</cell>
+      <cell col="1" row="0" header="1">요구 수준</cell>
+      <cell col="2" row="0" header="1">재는 방법</cell>
+      <cell col="3" row="0" header="1">판정 기준</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">위치정확도</cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1">RMSEㆍCE90ㆍLE90</cell>
+      <cell col="3" row="1">별표 15에 따른다</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">완전성</cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2">누락률ㆍ검출률</cell>
+      <cell col="3" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3">논리일관성</cell>
+      <cell col="1" row="3"></cell>
+      <cell col="2" row="3">위상오류율</cell>
+      <cell col="3" row="3"></cell>
+    </row>
+    <row>
+      <cell col="0" row="4">주제품질</cell>
+      <cell col="1" row="4"></cell>
+      <cell col="2" row="4">속성 표본 검증</cell>
+      <cell col="3" row="4"></cell>
+    </row>
+    <row>
+      <cell col="0" row="5">시간품질</cell>
+      <cell col="1" row="5"></cell>
+      <cell col="2" row="5">취득 일자 검증</cell>
+      <cell col="3" row="5"></cell>
+    </row>
+  </table>
+  <text>4. 자료 구조와 파일 형식 (제4호)</text>
+  <table rows="2" cols="4">
+    <row>
+      <cell col="0" row="0" header="1">성과의 유형</cell>
+      <cell col="1" row="0" header="1">파일 형식</cell>
+      <cell col="2" row="0" header="1">레이어ㆍ속성 구조</cell>
+      <cell col="3" row="0" header="1">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="1"></cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1">별표 18에 따른다</cell>
+    </row>
+  </table>
+  <text>5. 메타데이터 항목 (제5호)</text>
+  <table rows="2" cols="3">
+    <row>
+      <cell col="0" row="0" header="1">필수 항목</cell>
+      <cell col="1" row="0" header="1">적는 방법</cell>
+      <cell col="2" row="0" header="1">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">좌표계, 취득 일시, 사용 장비, 정확도 등급, 처리 이력</cell>
+      <cell col="1" row="1">「KS X ISO 19115-1」의 항목 이름을 쓴다</cell>
+      <cell col="2" row="1">제18조제1항</cell>
+    </row>
+  </table>
+  <text>6. 납품 단위와 제출 방법 (제6호)</text>
+  <table rows="2" cols="4">
+    <row>
+      <cell col="0" row="0" header="1">납품 단위</cell>
+      <cell col="1" row="0" header="1">제출 방법</cell>
+      <cell col="2" row="0" header="1">제출 기한</cell>
+      <cell col="3" row="0" header="1">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="1"></cell>
+      <cell col="1" row="1">전자성과(별표 18의 표준 규격)</cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1">성과패키지로 낸다(제17조)</cell>
+    </row>
+  </table>
+  <text>비고
+1. 이 서식은 발주 전에 시행자가 작성하며(제16조제1항), 성과심사는 이 제품사양서를 기준으로 한다(제16조제3항).
+2. 칸이 모자라면 붙임으로 적을 수 있다. 붙임에 적은 것도 제품사양서의 한 부분으로 본다.
+3. 성과의 유형이 둘 이상인 경우에는 유형별로 1부터 6까지를 나누어 적는다.</text>
+</annex>

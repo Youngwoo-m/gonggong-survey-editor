@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표15" gubun="별표" no="15" title="성과 유형별 품질요소 평가기준" source="작업규정 개정안 초안 (scripts/genannex2025.py)">
+  <text>[별표 15]
+성과 유형별 품질요소 평가기준 (제15조제2항 관련)</text>
+  <table rows="6" cols="5">
+    <row>
+      <cell col="0" row="0" header="1">품질요소</cell>
+      <cell col="1" row="0" header="1">무엇을 보는가</cell>
+      <cell col="2" row="0" header="1">정량 평가 방식</cell>
+      <cell col="3" row="0" header="1">주로 적용하는 성과</cell>
+      <cell col="4" row="0" header="1">확인 항목</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">위치정확도</cell>
+      <cell col="1" row="1">성과의 수평ㆍ수직 좌표 오차. 기준점에 견준 절대정확도와 성과 안의 상대정확도를 나누어 본다</cell>
+      <cell col="2" row="1">RMSEㆍCE90ㆍLE90</cell>
+      <cell col="3" row="1">정사영상, 점군, 수치지형도, 기준점성과</cell>
+      <cell col="4" row="1">검증점의 수와 배치, 기준점 성과의 출처, 좌표계와 원점</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">완전성</cell>
+      <cell col="1" row="2">담겨야 할 지형ㆍ지물이 빠지거나 더 들어갔는지</cell>
+      <cell col="2" row="2">누락률ㆍ검출률ㆍ오탐율</cell>
+      <cell col="3" row="2">수치지형도, 지하시설물도, 정밀도로지도</cell>
+      <cell col="4" row="2">시설물 목록 대비 수록률, 현지대조 결과, 도곽 접합</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">논리일관성</cell>
+      <cell col="1" row="3">위상 구조ㆍ자료 형식ㆍ관계의 잘못</cell>
+      <cell col="2" row="3">위상오류율ㆍ스키마 불일치율</cell>
+      <cell col="3" row="3">벡터 자료, 점군 분류, 정밀도로지도</cell>
+      <cell col="4" row="3">레이어와 속성 코드, 위상(topology) 오류, 파일 형식과 인코딩</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">주제품질</cell>
+      <cell col="1" row="4">속성값이 맞는지와 분류가 알맞은지</cell>
+      <cell col="2" row="4">속성 표본 검증ㆍ분류 정확도(%)</cell>
+      <cell col="3" row="4">점군 분류, 정밀도로지도 객체, 수치주제도</cell>
+      <cell col="4" row="4">속성 표본의 크기, 분류 기준, 코드값의 유효성</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">시간품질</cell>
+      <cell col="1" row="5">취득 시점이 알맞은지와 갱신 주기를 지켰는지</cell>
+      <cell col="2" row="5">촬영ㆍ관측 일자 검증ㆍ갱신 주기 준수율</cell>
+      <cell col="3" row="5">정사영상, 도로현황도, 수치지형도</cell>
+      <cell col="4" row="5">메타데이터의 취득 일시, 현지 상황과의 시차</cell>
+    </row>
+  </table>
+  <text>판정 기준</text>
+  <table rows="4" cols="3">
+    <row>
+      <cell col="0" row="0" header="1">표본 가운데 허용범위를 벗어난 비율</cell>
+      <cell col="1" row="0" header="1">판정</cell>
+      <cell col="2" row="0" header="1">근거</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">10% 이하</cell>
+      <cell col="1" row="1">적합</cell>
+      <cell col="2" row="1">현행 정확도 관리표의 '규정 이내(90% 이상)' 기준과 같다</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">10% 초과 30% 이하</cell>
+      <cell col="1" row="2">조건부적합</cell>
+      <cell col="2" row="2">자료를 고쳐 다시 낼 수 있는 범위로 본다</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">30% 초과</cell>
+      <cell col="1" row="3">부적합</cell>
+      <cell col="2" row="3">다시 측량하여야 하는 정도로 본다</cell>
+    </row>
+  </table>
+  <text>비고
+1. 품질요소의 체계는 「KS X ISO 19157-1」(지리정보 — 데이터 품질 — 제1부: 일반적인 요구사항)에 따른다(제15조제3항).
+2. 성과 유형별로 어느 요소를 어느 수준으로 요구할 것인지는 제16조의 제품사양서에서 정하며, 이 표는 그 요소와 재는 방법을 정한 것이다.
+3. 판정 기준의 경계값은 「측량성과 심사수탁기관의 심사업무 및 지정절차 등에 관한 규정」 별표 7과 같다 —— 두 규정이 다른 잣대를 두면 같은 성과가 달리 판정된다.
+4. 메타데이터 필수 항목의 충족률은 각 요소의 확인 항목에서 함께 본다. 메타데이터를 내지 아니한 성과는 제18조제2항에 따라 접수하지 아니한다.
+5. 품질요소별 평가 결과에는 신뢰성ㆍ대표성ㆍ동질성에 관한 사항을 함께 적을 수 있다(제15조제4항).</text>
+</annex>

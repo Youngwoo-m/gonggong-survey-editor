@@ -40,5 +40,40 @@
   "tables": 3,
   "rows": 9,
   "cols": 8
+ },
+ "별표15": {
+  "file": "별표15.xml",
+  "title": "성과 유형별 품질요소 평가기준",
+  "tables": 2,
+  "rows": 10,
+  "cols": 5
+ },
+ "별표16": {
+  "file": "별표16.xml",
+  "title": "제품사양서 서식",
+  "tables": 7,
+  "rows": 19,
+  "cols": 4
+ },
+ "별표18": {
+  "file": "별표18.xml",
+  "title": "전자성과 제출 표준 규격",
+  "tables": 3,
+  "rows": 21,
+  "cols": 4
+ },
+ "별표19": {
+  "file": "별표19.xml",
+  "title": "공공측량성과 심사ㆍ재심사의 절차 및 기한",
+  "tables": 1,
+  "rows": 11,
+  "cols": 6
+ },
+ "별표57": {
+  "file": "별표57.xml",
+  "title": "정확도 관리표(통합안)",
+  "tables": 1,
+  "rows": 8,
+  "cols": 3
  }
 }

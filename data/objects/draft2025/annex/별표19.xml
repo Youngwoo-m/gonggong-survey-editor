@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표19" gubun="별표" no="19" title="공공측량성과 심사ㆍ재심사의 절차 및 기한" source="작업규정 개정안 초안 (scripts/genannex2025.py)">
+  <text>[별표 19]
+공공측량성과 심사ㆍ재심사의 절차 및 기한 (제20조제4항 관련)</text>
+  <table rows="11" cols="6">
+    <row>
+      <cell col="0" row="0" header="1">차례</cell>
+      <cell col="1" row="0" header="1">무엇을 하는가</cell>
+      <cell col="2" row="0" header="1">누가</cell>
+      <cell col="3" row="0" header="1">기한</cell>
+      <cell col="4" row="0" header="1">심사규정의 서식</cell>
+      <cell col="5" row="0" header="1">근거</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">1</cell>
+      <cell col="1" row="1">성과패키지를 갖추어 심사를 요청한다</cell>
+      <cell col="2" row="1">공공측량시행자</cell>
+      <cell col="3" row="1">—</cell>
+      <cell col="4" row="1">—</cell>
+      <cell col="5" row="1">심사규정 제19조</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">2</cell>
+      <cell col="1" row="2">성과패키지의 구성ㆍ형식ㆍ메타데이터를 확인한다</cell>
+      <cell col="2" row="2">심사수탁기관</cell>
+      <cell col="3" row="2">접수한 때</cell>
+      <cell col="4" row="2">별지 제1호서식</cell>
+      <cell col="5" row="2">심사규정 제20조제1항</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">3</cell>
+      <cell col="1" row="3">빠지거나 맞지 아니한 것의 보완을 요구한다</cell>
+      <cell col="2" row="3">심사수탁기관</cell>
+      <cell col="3" row="3">7일 이내의 기간을 정하여</cell>
+      <cell col="4" row="3">별지 제2호서식</cell>
+      <cell col="5" row="3">심사규정 제20조제2항</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">4</cell>
+      <cell col="1" row="4">자동검사를 한다</cell>
+      <cell col="2" row="4">심사수탁기관</cell>
+      <cell col="3" row="4">—</cell>
+      <cell col="4" row="4">별지 제3호서식</cell>
+      <cell col="5" row="4">심사규정 제24조</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">5</cell>
+      <cell col="1" row="5">품질요소별로 심사하고 판정한다</cell>
+      <cell col="2" row="5">심사수탁기관</cell>
+      <cell col="3" row="5">—</cell>
+      <cell col="4" row="5">별지 제4호서식</cell>
+      <cell col="5" row="5">심사규정 제27조ㆍ이 규정 별표 15</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">6</cell>
+      <cell col="1" row="6">조건부적합으로 판정한 경우 보완을 요구한다</cell>
+      <cell col="2" row="6">심사수탁기관</cell>
+      <cell col="3" row="6">—</cell>
+      <cell col="4" row="6">별지 제2호서식</cell>
+      <cell col="5" row="6">심사규정 제27조제3항</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">7</cell>
+      <cell col="1" row="7">보완한 성과를 낸다</cell>
+      <cell col="2" row="7">공공측량시행자</cell>
+      <cell col="3" row="7">통지받은 날부터 30일 이내</cell>
+      <cell col="4" row="7">—</cell>
+      <cell col="5" row="7">심사규정 제29조제1항</cell>
+    </row>
+    <row>
+      <cell col="0" row="8">8</cell>
+      <cell col="1" row="8">보완한 부분을 다시 심사한다(재심사)</cell>
+      <cell col="2" row="8">심사수탁기관</cell>
+      <cell col="3" row="8">—</cell>
+      <cell col="4" row="8">별지 제4호서식</cell>
+      <cell col="5" row="8">심사규정 제29조</cell>
+    </row>
+    <row>
+      <cell col="0" row="9">9</cell>
+      <cell col="1" row="9">심사 결과에 이의를 신청한다</cell>
+      <cell col="2" row="9">공공측량시행자</cell>
+      <cell col="3" row="9">통지받은 날부터 14일 이내</cell>
+      <cell col="4" row="9">별지 제5호서식</cell>
+      <cell col="5" row="9">심사규정 제30조제1항</cell>
+    </row>
+    <row>
+      <cell col="0" row="10">10</cell>
+      <cell col="1" row="10">이의신청을 재검토하여 결과를 알린다</cell>
+      <cell col="2" row="10">심사수탁기관</cell>
+      <cell col="3" row="10">—</cell>
+      <cell col="4" row="10">별지 제6호서식</cell>
+      <cell col="5" row="10">심사규정 제30조제2항</cell>
+    </row>
+  </table>
+  <text>비고
+1. 이 표에서 '심사규정' 이란 「측량성과 심사수탁기관의 심사업무 및 지정절차 등에 관한 규정」을 말한다.
+2. **이 표는 절차와 기한을 새로 정하는 것이 아니라 심사규정이 정한 것을 한눈에 보이게 모은 것이다.** 심사규정이 개정되면 그에 따르며, 이 표와 다를 때에는 심사규정에 따른다.
+3. 보완에 오랜 기간이 걸리는 등 부득이한 경우의 기간 연장은 심사규정 제29조제1항 단서에 따른다.
+4. 재심사수수료는 심사규정 제46조에 따라 따로 받을 수 있다.
+5. 판정의 구분과 보완을 요구하는 범위는 심사규정 별표 7에 따르며, 품질요소별 정량 기준은 이 규정 별표 15에 따른다.</text>
+</annex>
