@@ -1,33 +1,33 @@
 /* ============================================================
    main.js — 앱 조립 (1단계 프로토타입)
    ============================================================ */
-import * as M from "./core/model.js?v=20260904n";
-import { Project } from "./core/project.js?v=20260904n";
-import * as FS from "./adapters/fileio.js?v=20260904n";
-import * as AUTO from "./adapters/autosave.js?v=20260904n";
-import { TreeView } from "./ui/tree.js?v=20260904n";
-import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260904n";
-import { CompareView } from "./ui/compare.js?v=20260904n";
-import { VersionsView } from "./ui/versions.js?v=20260904n";
-import { HistoryView } from "./ui/history.js?v=20260904n";
-import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260904n";
-import { ValidateView } from "./ui/validate.js?v=20260904n";
-import { RefPicker } from "./ui/refpicker.js?v=20260904n";
-import { AIView } from "./ui/ai.js?v=20260904n";
-import { CiteCheckView } from "./ui/citecheck.js?v=20260904n";
-import { TermsView } from "./ui/terms.js?v=20260904n";
-import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260904n";
-import * as GH from "./adapters/github.js?v=20260904n";
-import { extractLines } from "./core/importer.js?v=20260904n";
-import { buildAuto } from "./core/structure.js?v=20260904n";
-import * as SRC from "./core/srcfp.js?v=20260904n";
-import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260904n";
-import { ObjectStore, fitTable } from "./core/objects.js?v=20260904n";
-import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260904n";
-import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260904n";
-import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260904n";
-import { fmtDate } from "./ui/html.js?v=20260904n";
-import { printReg, regHtml } from "./ui/printdoc.js?v=20260904n";
+import * as M from "./core/model.js?v=20260906a";
+import { Project } from "./core/project.js?v=20260906a";
+import * as FS from "./adapters/fileio.js?v=20260906a";
+import * as AUTO from "./adapters/autosave.js?v=20260906a";
+import { TreeView } from "./ui/tree.js?v=20260906a";
+import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260906a";
+import { CompareView } from "./ui/compare.js?v=20260906a";
+import { VersionsView } from "./ui/versions.js?v=20260906a";
+import { HistoryView } from "./ui/history.js?v=20260906a";
+import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260906a";
+import { ValidateView } from "./ui/validate.js?v=20260906a";
+import { RefPicker } from "./ui/refpicker.js?v=20260906a";
+import { AIView } from "./ui/ai.js?v=20260906a";
+import { CiteCheckView } from "./ui/citecheck.js?v=20260906a";
+import { TermsView } from "./ui/terms.js?v=20260906a";
+import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260906a";
+import * as GH from "./adapters/github.js?v=20260906a";
+import { extractLines } from "./core/importer.js?v=20260906a";
+import { buildAuto } from "./core/structure.js?v=20260906a";
+import * as SRC from "./core/srcfp.js?v=20260906a";
+import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260906a";
+import { ObjectStore, fitTable } from "./core/objects.js?v=20260906a";
+import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260906a";
+import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260906a";
+import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260906a";
+import { fmtDate } from "./ui/html.js?v=20260906a";
+import { printReg, regHtml } from "./ui/printdoc.js?v=20260906a";
 
 const $ = (s) => document.querySelector(s);
 const NL = "\n";
@@ -1716,7 +1716,7 @@ async function doCommand(cmd) {
       const onlyName = only ? (project.regNode(only)?.short || "") : "";
       busy(`${onlyName || "개정 대상 세 규정"} 보고서를 작성 중…`);
       try {
-        const { buildReport } = await import("./ui/report.js?v=20260904n");
+        const { buildReport } = await import("./ui/report.js?v=20260906a");
         const r = await buildReport(project, { targetId: only });
         const url = URL.createObjectURL(r.blob);
         const a = document.createElement("a");
@@ -2407,12 +2407,18 @@ function setupSplitters() {
 function metaLine(d) {
   const no = d.no && d.no !== "-" ? String(d.no) : "";
   const dt = fmtDate(d.effective);
-  // 원문 파일이 함께 담긴 문서는 머리글에서 바로 열 수 있게 한다
-  // (연구보고서처럼 법령정보센터에 없는 것들이다)
-  const file = d.docFile
-    ? ` · <a class="btnlink" href="${encodeURI(d.docFile)}" target="_blank"
-         rel="noopener" title="원문 PDF 를 새 창에서 엽니다">원문 PDF</a>`
-    : "";
+  /* 원문 파일이 함께 담긴 문서는 머리글에서 바로 열 수 있게 한다.
+     서고 101종에 한/글과 PDF 를 들였으므로(scripts/putdocs.py), 딱지는
+     꼴에 따라 「원문 한/글」ㆍ「원문 PDF」 로 적고 둘 다 있으면 둘 다 건다. */
+  const kindOf = (u) => (/\.hwpx?$/i.test(u) ? "한/글"
+    : /\.pdf$/i.test(u) ? "PDF"
+    : /\.docx?$/i.test(u) ? "워드" : "파일");
+  const links = (d.docFiles && d.docFiles.length ? d.docFiles
+    : d.docFile ? [d.docFile] : [])
+    .map((u) => ` · <a class="btnlink" href="${encodeURI(u)}" target="_blank"
+         rel="noopener" title="원문을 새 창에서 엽니다">원문 ${kindOf(u)}</a>`)
+    .join("");
+  const file = links;
   return `${d.org} ${d.kind}`
     + (no ? ` 제${no}호` : "")
     + (dt ? ` · ${no ? "시행 " : ""}${dt}` : "")

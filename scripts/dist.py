@@ -123,6 +123,7 @@ READ_ME = r"""공공측량 규정 개정 편집기 — 인터넷 없이 쓰기
         data\draft*.json    개정안 세 벌
         data\annex\        별표ㆍ별지의 원본(hwpx ㆍ pdf)과 미리보기(webp)
         data\objects\      조문 본문에 딸린 표
+        data\원문\         참조규정 101종의 원문(hwpx ㆍ pdf) —— [원문 내려받기] 가 내주는 파일
       kit\                 화면에서 보고서를 내려받을 때 그 안에 함께 담기는 재료
       docs\  sample\       개정 메모와 보기 파일
       README.md           만든 사람을 위한 글 — 안 보셔도 됩니다
