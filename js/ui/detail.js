@@ -1,10 +1,10 @@
 /* ============================================================
    ui/detail.js — 조문 상세 패널
    ============================================================ */
-import * as M from "../core/model.js?v=20260907q";
-import { wordDiff, beforeRuns, afterRuns, hasChange } from "../core/textdiff.js?v=20260907q";
+import * as M from "../core/model.js?v=20260907s";
+import { wordDiff, beforeRuns, afterRuns, hasChange } from "../core/textdiff.js?v=20260907s";
 import { imgIdsIn, renderBody, fitTable, toHtml, openTableOverlay, markAnnexEdits }
-  from "../core/objects.js?v=20260907q";
+  from "../core/objects.js?v=20260907s";
 
 /** 만들고 있는 안을 부르는 말 — 작업규정은 개정안, 성과심사 규정은 개정안 */
 /* 만들어 내는 안을 부르는 말 — 규정마다 다르다 (작업규정은 '개정안', 나머지는 '개정안').
@@ -75,10 +75,10 @@ function runsHtml(runs) {
   return runs.map((r) => (r.mark ? `<u class="mk">${esc(r.s)}</u>` : esc(r.s))).join("");
 }
 
-import { linkReason, wireReasonLinks } from "../core/reasonlink.js?v=20260907q";
-import { esc, fmtDT } from "./html.js?v=20260907q";
-import { renderPdf } from "./pdfview.js?v=20260907q";
-import { askYesNo } from "./ask.js?v=20260907q";
+import { linkReason, wireReasonLinks } from "../core/reasonlink.js?v=20260907s";
+import { esc, fmtDT } from "./html.js?v=20260907s";
+import { renderPdf } from "./pdfview.js?v=20260907s";
+import { askYesNo } from "./ask.js?v=20260907s";
 
 /** 사유 글이 스스로 머리글을 달고 있는가 — 그러면 딱지를 겹쳐 붙이지 아니한다 */
 const RE_REASON_HEAD = /^\s*\[변경 사유\]/;
@@ -435,8 +435,8 @@ export class DetailPanel {
     (async () => {
       try {
         const [{ annexXmlFromHwpx, assetBuffer }, { parseXml }] = await Promise.all([
-          import("../core/annexhwpx.js?v=20260907q"),
-          import("../core/objects.js?v=20260907q"),
+          import("../core/annexhwpx.js?v=20260907s"),
+          import("../core/objects.js?v=20260907s"),
         ]);
         const buf = await assetBuffer(a);
         const xml = await annexXmlFromHwpx(buf, {

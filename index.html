@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>공공측량 규정 개정 편집기</title>
-<link rel="stylesheet" href="css/app.css?v=20260907q" />
+<link rel="stylesheet" href="css/app.css?v=20260907s" />
 </head>
 <body>
 
@@ -159,17 +159,17 @@
         <div class="row rev hidden" id="editRevRow">
           <span class="lbl">개정안</span>
           <select id="editRevSelect" title="이 규정의 개정안이 여러 벌입니다 — 볼 것을 고릅니다"></select>
-          <button class="mini2" data-cmd="renameRev"
-                  title="이 규정의 개정안 이름을 바꿉니다">이름변경</button>
+          <button class="mini2 two" data-cmd="renameRev"
+                  title="이 규정의 개정안 이름을 바꿉니다">이름<br>변경</button>
           <button class="mini2" data-cmd="addRev"
                   title="이 규정의 개정안을 한 벌 더 둡니다 — 지금 것을 그대로 떠서
  다음 이름(작업-1.02 따위)을 붙입니다">(안)추가</button>
           <button class="mini2" data-cmd="delRev"
                   title="지금 고른 개정안을 지웁니다 —— 그 개정안이 담긴 판이 통째로 지워지므로 같은 판에 든 다른 규정의 개정안도 함께 사라집니다">(안)삭제</button>
-          <button class="mini2" data-cmd="revHwpx"
-                  title="고른 개정안 하나를 한/글 개정(안) 문서로 내려받습니다 — 조문 전문과 부칙. 별표ㆍ별지와 표는 [보고서] 쪽이 온전합니다">한/글저장</button>
-          <button class="mini2" data-cmd="revHwpxIn"
-                  title="한/글에서 고친 문서를 읽어 이 개정안의 조문을 갈아 끼웁니다 — 제목과 본문만 가져오고, 표ㆍ수식ㆍ그림이 든 조문은 그대로 둡니다">한/글가져오기</button>
+          <button class="mini2 two" data-cmd="revHwpx"
+                  title="고른 개정안 하나를 한/글 개정(안) 문서로 내려받습니다 — 조문 전문과 부칙. 별표ㆍ별지와 표는 [보고서] 쪽이 온전합니다">한/글<br>저장</button>
+          <button class="mini2 two" data-cmd="revHwpxIn"
+                  title="한/글에서 고친 문서를 읽어 이 개정안의 조문을 갈아 끼웁니다 — 제목과 본문만 가져오고, 표ㆍ수식ㆍ그림이 든 조문은 그대로 둡니다">한/글<br>가져오기</button>
           <span id="editRevNote" class="hint"></span>
         </div>
         <div class="row">
@@ -216,6 +216,6 @@
 <div id="toast" class="toast hidden"></div>
 <div id="busy" class="busy hidden"><div class="busy-box"><div class="spin"></div><div id="busyMsg">처리 중…</div></div></div>
 
-<script type="module" src="js/main.js?v=20260907q"></script>
+<script type="module" src="js/main.js?v=20260907s"></script>
 </body>
 </html>

@@ -98,6 +98,11 @@ button{font-family:inherit}
   padding:4px 7px;font-size:10.5px;font-family:inherit;cursor:pointer;white-space:nowrap;flex:none}
 .mini2:hover{border-color:var(--slate);color:var(--ink)}
 .mini2.nav{padding:3px 6px;font-size:12px;line-height:1}
+/* 두 줄로 적는 단추 —— 「이름 / 변경」 처럼 폭을 줄이고 줄을 나눈다.
+   한 줄짜리 단추와 높이를 맞추어야 줄이 들쭉날쭉하지 아니한다. */
+.mini2.two{padding:2px 7px;line-height:1.18;text-align:center}
+.row.rev{align-items:stretch}
+#editRevRow .mini2{align-self:stretch}
 .mini2.del{color:var(--accent);padding:3px 8px;font-size:13px;line-height:1}
 .mini2.del:hover{border-color:var(--accent)}
 /* 선택취소 — 창 머리글은 좁아 글자가 잘리므로 검색줄 오른쪽 끝에 둔다 */
