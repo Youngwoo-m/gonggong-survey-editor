@@ -1,9 +1,9 @@
 /* ============================================================
    ui/versions.js — 버전 관리 화면 (목록 · 계보 · 생성/전환/삭제)
    ============================================================ */
-import * as M from "../core/model.js?v=20260907p";
-import { esc } from "./html.js?v=20260907p";
-import { askYesNo, askBox } from "./ask.js?v=20260907p";
+import * as M from "../core/model.js?v=20260907q";
+import { esc } from "./html.js?v=20260907q";
+import { askYesNo, askBox } from "./ask.js?v=20260907q";
 
 export class VersionsView {
   constructor(project, { onCompare } = {}) {

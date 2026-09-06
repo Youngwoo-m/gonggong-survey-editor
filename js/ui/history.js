@@ -2,8 +2,8 @@
    ui/history.js — 버전 전체 변경 이력 화면
    ============================================================ */
 
-import { esc, fmtDT } from "./html.js?v=20260907p";
-import { askYesNo } from "./ask.js?v=20260907p";
+import { esc, fmtDT } from "./html.js?v=20260907q";
+import { askYesNo } from "./ask.js?v=20260907q";
 const KIND_CLASS = {
   "신설": "k-new", "삭제": "k-del", "이동": "k-mov", "순서": "k-mov",
   "수정": "k-edit", "통합": "k-mrg", "참조삽입": "k-ref", "상태변경": "k-keep",
@@ -76,7 +76,7 @@ export class HistoryView {
   <div class="cmp-bar2">
     <label>버전
       <select id="hvVer">${p.versions.map((v) =>
-        `<option value="${v.id}"${v.id === this.filter.versionId ? " selected" : ""}>${v.label}${v.title ? ` · ${v.title}` : ""}</option>`).join("")}</select>
+        `<option value="${v.id}"${v.id === this.filter.versionId ? " selected" : ""}>${v.label}${v.title ? `: ${v.title}` : ""}</option>`).join("")}</select>
     </label>
     <label><input type="checkbox" id="hvCascade" ${this.filter.hideCascade ? "checked" : ""}> 상위 항목과 함께 옮겨진 하위 조문 숨기기</label>
     <input id="hvQ" class="search" type="search" placeholder="조문·내용·작성자 검색" value="${esc(this.filter.q)}">

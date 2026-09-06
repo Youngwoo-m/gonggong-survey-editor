@@ -1,34 +1,34 @@
 /* ============================================================
    main.js — 앱 조립 (1단계 프로토타입)
    ============================================================ */
-import * as M from "./core/model.js?v=20260907p";
-import { Project } from "./core/project.js?v=20260907p";
-import * as FS from "./adapters/fileio.js?v=20260907p";
-import * as AUTO from "./adapters/autosave.js?v=20260907p";
-import { TreeView } from "./ui/tree.js?v=20260907p";
-import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260907p";
-import { CompareView } from "./ui/compare.js?v=20260907p";
-import { VersionsView } from "./ui/versions.js?v=20260907p";
-import { HistoryView } from "./ui/history.js?v=20260907p";
-import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260907p";
-import { ValidateView } from "./ui/validate.js?v=20260907p";
-import { RefPicker } from "./ui/refpicker.js?v=20260907p";
-import { AIView } from "./ui/ai.js?v=20260907p";
-import { CiteCheckView } from "./ui/citecheck.js?v=20260907p";
-import { TermsView } from "./ui/terms.js?v=20260907p";
-import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260907p";
-import * as GH from "./adapters/github.js?v=20260907p";
-import { extractLines } from "./core/importer.js?v=20260907p";
-import { buildAuto, buildStructure } from "./core/structure.js?v=20260907p";
-import * as SRC from "./core/srcfp.js?v=20260907p";
-import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260907p";
-import { ObjectStore, fitTable, imgIdsIn } from "./core/objects.js?v=20260907p";
-import { loadTargets, allTargets, targetById, firstTarget, nextRevLabel, verPrefixOf } from "./core/targets.js?v=20260907p";
-import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260907p";
-import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260907p";
-import { fmtDate } from "./ui/html.js?v=20260907p";
-import { printReg, regHtml } from "./ui/printdoc.js?v=20260907p";
-import { askYesNo, askBox } from "./ui/ask.js?v=20260907p";
+import * as M from "./core/model.js?v=20260907q";
+import { Project } from "./core/project.js?v=20260907q";
+import * as FS from "./adapters/fileio.js?v=20260907q";
+import * as AUTO from "./adapters/autosave.js?v=20260907q";
+import { TreeView } from "./ui/tree.js?v=20260907q";
+import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260907q";
+import { CompareView } from "./ui/compare.js?v=20260907q";
+import { VersionsView } from "./ui/versions.js?v=20260907q";
+import { HistoryView } from "./ui/history.js?v=20260907q";
+import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260907q";
+import { ValidateView } from "./ui/validate.js?v=20260907q";
+import { RefPicker } from "./ui/refpicker.js?v=20260907q";
+import { AIView } from "./ui/ai.js?v=20260907q";
+import { CiteCheckView } from "./ui/citecheck.js?v=20260907q";
+import { TermsView } from "./ui/terms.js?v=20260907q";
+import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260907q";
+import * as GH from "./adapters/github.js?v=20260907q";
+import { extractLines } from "./core/importer.js?v=20260907q";
+import { buildAuto, buildStructure } from "./core/structure.js?v=20260907q";
+import * as SRC from "./core/srcfp.js?v=20260907q";
+import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260907q";
+import { ObjectStore, fitTable, imgIdsIn } from "./core/objects.js?v=20260907q";
+import { loadTargets, allTargets, targetById, firstTarget, nextRevLabel, verPrefixOf } from "./core/targets.js?v=20260907q";
+import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260907q";
+import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260907q";
+import { fmtDate } from "./ui/html.js?v=20260907q";
+import { printReg, regHtml } from "./ui/printdoc.js?v=20260907q";
+import { askYesNo, askBox } from "./ui/ask.js?v=20260907q";
 
 const $ = (s) => document.querySelector(s);
 const NL = "\n";
@@ -196,7 +196,7 @@ async function gatherForDownload(reg) {
     if (up && /\.hwpx?$/i.test(up.name || "")) {
       try {
         const [{ annexXmlFromHwpx, assetBuffer }, { parseXml }] = await Promise.all([
-          import("./core/annexhwpx.js?v=20260907p"), import("./core/objects.js?v=20260907p"),
+          import("./core/annexhwpx.js?v=20260907q"), import("./core/objects.js?v=20260907q"),
         ]);
         const o = parseXml(await annexXmlFromHwpx(await assetBuffer(up), {
           key: n.legacyNo || "", gubun: n.annexRef.gubun || "별표",
@@ -653,7 +653,7 @@ async function partToHwpx(node, reg) {
     : `제${node.no}${node.level}`;
   busy("한/글 문서를 짓는 중…");
   try {
-    const { buildDraftHwpx } = await import("./core/hwpxdraft.js?v=20260907p");
+    const { buildDraftHwpx } = await import("./core/hwpxdraft.js?v=20260907q");
     const url = new URL("kit/양식/01.개정안/[양식] 규정 개정(안).hwpx", document.baseURI).href;
     /* 마디 하나를 규정인 척 감싸 넘긴다 —— 제목 줄에 어디를 떼어 온
        것인지 적어 두어야 한/글에서 보고도 알 수 있다. */
@@ -800,7 +800,7 @@ function paintDocName(targetId) {
   const reg = targetId ? project.regNode(targetId) : null;
   const names = project.regNodes.map((r) => "· " + r.title).join(NL);
   el.textContent = t
-    ? `${t.base}${reg && reg.revLabel && !reg.readonly ? ` · ${reg.revLabel}` : ""}`
+    ? `${t.base}${reg && reg.revLabel && !reg.readonly ? `: ${reg.revLabel}` : ""}`
     : `개정 대상 ${project.regNodes.length}종`;
   el.title = t
     ? `개정 대상 ${project.regNodes.length}종 가운데 지금 고치는 규정입니다${NL}${names}`
@@ -865,7 +865,7 @@ function paintRevPicker(targetId) {
     sel.innerHTML = revs.map((r) => {
       const tail = (dup[r.label] > 1 && r.versionLabel !== r.label) ? ` [${esc(r.versionLabel)}]` : "";
       return `<option value="${r.versionId}">${esc(r.label)}`
-        + `${r.title ? ` · ${esc(r.title)}` : ""}${tail}</option>`;
+        + `${r.title ? `: ${esc(r.title)}` : ""}${tail}</option>`;
     }).join("");
   }
   const now = revs.find((r) => r.versionId === project.currentId);
@@ -1710,7 +1710,7 @@ function onProjectChange(p, msg) {
   if (vs.dataset.sig !== want) {
     vs.dataset.sig = want;
     vs.innerHTML = p.versions.map((v) =>
-      `<option value="${v.id}">${v.label}${v.readonly ? " (읽기 전용)" : ""}${v.title ? ` · ${v.title}` : ""}</option>`).join("");
+      `<option value="${v.id}">${v.label}${v.readonly ? " (읽기 전용)" : ""}${v.title ? `: ${v.title}` : ""}</option>`).join("");
   }
   vs.value = p.currentId;
   $(".pane-edit .pane-head").classList.toggle("ro", p.isReadonly);
@@ -1730,7 +1730,7 @@ function onProjectChange(p, msg) {
   /* 머리 둘째 줄에 홀로 서므로 무엇을 센 것인지 앞에 밝힌다 —
      「요약:」 이 없으면 그저 숫자 늘어놓은 줄로 보인다. */
   $("#editStats").textContent =
-    `요약: ${p.current ? p.current.label + " · " : ""}편 ${st.편} · 장 ${st.장}${st.절 ? ` · 절 ${st.절}` : ""} · 조 ${st.조}` +
+    `요약: ${p.current ? p.current.label + ": " : ""}편 ${st.편} · 장 ${st.장}${st.절 ? ` · 절 ${st.절}` : ""} · 조 ${st.조}` +
     `${anx ? ` · ${anx}` : ""} · 변경 ${st.변경}`;
   $("#stCount").textContent = `편 ${st.편} / 장 ${st.장} / 조 ${st.조}${anx ? ` / ${anx}` : ""} · 변경 ${st.변경}`;
   scheduleValidate();
@@ -2015,7 +2015,7 @@ async function doCommand(cmd) {
       const onlyName = only ? (project.regNode(only)?.short || "") : "";
       busy(`${onlyName || "개정 대상 규정(3종)"} 보고서를 작성 중…`);
       try {
-        const { buildReport } = await import("./ui/report.js?v=20260907p");
+        const { buildReport } = await import("./ui/report.js?v=20260907q");
         const r = await buildReport(project, { targetId: only });
         const url = URL.createObjectURL(r.blob);
         const a = document.createElement("a");
@@ -2152,7 +2152,7 @@ ${r.warning}` : ""),
       if (!reg) { toast("이 판에는 그 규정의 개정안이 없습니다.", 4000); break; }
       busy("한/글 문서를 짓는 중…");
       try {
-        const { buildDraftHwpx } = await import("./core/hwpxdraft.js?v=20260907p");
+        const { buildDraftHwpx } = await import("./core/hwpxdraft.js?v=20260907q");
         const url = new URL("kit/양식/01.개정안/[양식] 규정 개정(안).hwpx",
                             document.baseURI).href;
         const got = await buildDraftHwpx(reg, url, {
@@ -2206,7 +2206,7 @@ ${r.warning}` : ""),
         break;
       }
       const gone = (cur.tree || []).filter((n) => M.isRegNode(n))
-        .map((n) => `${n.revLabel || cur.label} · ${n.revTitle || n.title || ""}`);
+        .map((n) => `${n.revLabel || cur.label}: ${n.revTitle || n.title || ""}`);
       const ok = await askYesNo(`개정안을 지웁니다`, [
         `판 ${cur.label} 을(를) 통째로 지웁니다.`,
         "이 판에 담긴 개정안이 모두 사라집니다 —— " + gone.join(" ㆍ "),

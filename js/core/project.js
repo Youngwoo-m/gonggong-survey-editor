@@ -7,11 +7,11 @@
    · this.tree 는 항상 '현재 버전'의 트리 배열과 같은 객체를 가리킨다.
    · 모든 구조 변경은 run() 트랜잭션을 통해서만 일어난다.
    ============================================================ */
-import * as M from "./model.js?v=20260907p";
-import { revLabel, nextRevLabel, revValue, verPrefixOf } from "./targets.js?v=20260907p";
-import { regFingerprint } from "./xrefs.js?v=20260907p";
+import * as M from "./model.js?v=20260907q";
+import { revLabel, nextRevLabel, revValue, verPrefixOf } from "./targets.js?v=20260907q";
+import { regFingerprint } from "./xrefs.js?v=20260907q";
 import { numbersOf, planFrom, planStayed, remapCitations, articleIdsIn,
-         planTermFixes, TERM_RULES } from "./xrefs.js?v=20260907p";
+         planTermFixes, TERM_RULES } from "./xrefs.js?v=20260907q";
 
 const MAX_HISTORY = 100;
 const BASE_ID = "base";
@@ -392,13 +392,13 @@ ${line}` : line;
     if (!v) return false;
     const reg = (v.tree || []).find((n) => M.isRegNode(n) && n.targetId === targetId);
     if (!reg) return false;
-    const was = `${reg.revLabel || ""} · ${reg.revTitle || ""}`.trim();
+    const was = `${reg.revLabel || ""}: ${reg.revTitle || ""}`.trim();
     if (label !== null && label !== undefined) reg.revLabel = String(label).trim() || reg.revLabel;
     if (title !== null && title !== undefined) reg.revTitle = String(title).trim();
     this.dirty = true;
     this._log.push({ at: new Date().toISOString(), v: v.label,
-      label: `개정안 이름: ${was} → ${reg.revLabel} · ${reg.revTitle || ""}`.trim() });
-    this.emit(`개정안 이름을 바꿨습니다 — ${reg.revLabel}${reg.revTitle ? ` · ${reg.revTitle}` : ""}`);
+      label: `개정안 이름: ${was} → ${reg.revLabel}: ${reg.revTitle || ""}`.trim() });
+    this.emit(`개정안 이름을 바꿨습니다 — ${reg.revLabel}${reg.revTitle ? `: ${reg.revTitle}` : ""}`);
     return true;
   }
 
