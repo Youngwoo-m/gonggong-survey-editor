@@ -12,7 +12,7 @@ import sys
 import webbrowser
 
 PORT = int(sys.argv[1]) if len(sys.argv) > 1 else 8765
-# 편집기는 한 벌이다. 개정 대상 세 규정은 화면 안 트리 최상위에 나란히 선다
+# 편집기는 한 벌이다. 개정 대상 규정(3종)은 화면 안 트리 최상위에 나란히 선다
 # (data/targets.json). 예전에는 review/ · uav/ 로 화면이 갈라져 있었다.
 PAGE = ""
 ROOT = os.path.dirname(os.path.abspath(__file__))

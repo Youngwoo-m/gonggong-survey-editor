@@ -1,33 +1,33 @@
 /* ============================================================
    main.js — 앱 조립 (1단계 프로토타입)
    ============================================================ */
-import * as M from "./core/model.js?v=20260907k";
-import { Project } from "./core/project.js?v=20260907k";
-import * as FS from "./adapters/fileio.js?v=20260907k";
-import * as AUTO from "./adapters/autosave.js?v=20260907k";
-import { TreeView } from "./ui/tree.js?v=20260907k";
-import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260907k";
-import { CompareView } from "./ui/compare.js?v=20260907k";
-import { VersionsView } from "./ui/versions.js?v=20260907k";
-import { HistoryView } from "./ui/history.js?v=20260907k";
-import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260907k";
-import { ValidateView } from "./ui/validate.js?v=20260907k";
-import { RefPicker } from "./ui/refpicker.js?v=20260907k";
-import { AIView } from "./ui/ai.js?v=20260907k";
-import { CiteCheckView } from "./ui/citecheck.js?v=20260907k";
-import { TermsView } from "./ui/terms.js?v=20260907k";
-import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260907k";
-import * as GH from "./adapters/github.js?v=20260907k";
-import { extractLines } from "./core/importer.js?v=20260907k";
-import { buildAuto } from "./core/structure.js?v=20260907k";
-import * as SRC from "./core/srcfp.js?v=20260907k";
-import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260907k";
-import { ObjectStore, fitTable } from "./core/objects.js?v=20260907k";
-import { loadTargets, allTargets, targetById, firstTarget, nextRevLabel, verPrefixOf } from "./core/targets.js?v=20260907k";
-import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260907k";
-import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260907k";
-import { fmtDate } from "./ui/html.js?v=20260907k";
-import { printReg, regHtml } from "./ui/printdoc.js?v=20260907k";
+import * as M from "./core/model.js?v=20260907l";
+import { Project } from "./core/project.js?v=20260907l";
+import * as FS from "./adapters/fileio.js?v=20260907l";
+import * as AUTO from "./adapters/autosave.js?v=20260907l";
+import { TreeView } from "./ui/tree.js?v=20260907l";
+import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260907l";
+import { CompareView } from "./ui/compare.js?v=20260907l";
+import { VersionsView } from "./ui/versions.js?v=20260907l";
+import { HistoryView } from "./ui/history.js?v=20260907l";
+import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260907l";
+import { ValidateView } from "./ui/validate.js?v=20260907l";
+import { RefPicker } from "./ui/refpicker.js?v=20260907l";
+import { AIView } from "./ui/ai.js?v=20260907l";
+import { CiteCheckView } from "./ui/citecheck.js?v=20260907l";
+import { TermsView } from "./ui/terms.js?v=20260907l";
+import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260907l";
+import * as GH from "./adapters/github.js?v=20260907l";
+import { extractLines } from "./core/importer.js?v=20260907l";
+import { buildAuto, buildStructure } from "./core/structure.js?v=20260907l";
+import * as SRC from "./core/srcfp.js?v=20260907l";
+import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260907l";
+import { ObjectStore, fitTable } from "./core/objects.js?v=20260907l";
+import { loadTargets, allTargets, targetById, firstTarget, nextRevLabel, verPrefixOf } from "./core/targets.js?v=20260907l";
+import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260907l";
+import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260907l";
+import { fmtDate } from "./ui/html.js?v=20260907l";
+import { printReg, regHtml } from "./ui/printdoc.js?v=20260907l";
 
 const $ = (s) => document.querySelector(s);
 const NL = "\n";
@@ -171,7 +171,7 @@ function downloadEdit() {
   const base = library?.regulations?.find((r) => r.name === t.base) || {};
   const st = M.stats(reg.children || []);
   /* 판 이름은 규정마다 따로 지닌다(revLabel — 작업-1.10 따위). 프로젝트 전체의
-     판 이름(v2)은 세 규정을 아우른 것이라 규정 하나만 놓고 보면 뜻이 옅다.
+     판 이름(v2)은 규정(3종)을 아우른 것이라 규정 하나만 놓고 보면 뜻이 옅다.
      규정 제 것이 있으면 그것을 앞세운다. */
   const label = reg.revLabel ? ` ${reg.revLabel}`
               : (rev?.label ? ` ${rev.label}` : "");
@@ -237,7 +237,7 @@ let staleTargets = [];
 init().catch((e) => { console.error(e); toast("초기화 실패: " + e.message, 5000); });
 
 async function init() {
-  AUTO.setScope("all");             // 세 규정을 한 벌로 담는다 (합치기 1단계)
+  AUTO.setScope("all");             // 규정(3종)을 한 벌로 담는다 (합치기 1단계)
   library = await FS.loadJSON("data/library.json");
   await loadTargets(FS.loadJSON);   // 개정 대상 등록부 — data/targets.json
   APP = firstTarget();
@@ -350,7 +350,7 @@ async function init() {
   }
 
   /* 주소로 규정 하나를 지목할 수 있게 한다 — ?reg=uav
-     세 규정을 한 벌로 합치면서 review/ · uav/ 로 갈려 있던 주소가 없어졌다.
+     규정(3종)을 한 벌로 합치면서 review/ · uav/ 로 갈려 있던 주소가 없어졌다.
      그 바람에 '무인비행장치 규정만 보라' 고 건넬 링크가 사라졌으므로 되살린다.
      id(uav)로도, 줄임 이름(무인비행장치 규정)으로도 받는다. */
   const want = new URLSearchParams(location.search).get("reg");
@@ -372,7 +372,7 @@ async function init() {
     toast(`편집기 세 벌이 따로 담아 두었던 작업을 한 벌로 옮겨 담았습니다 — `
           + `${moved.map((id) => targetById(id)?.short || id).join(" · ")}
 `
-          + `세 규정이 이제 한 트리에 있습니다.`, 7000);
+          + `규정(3종)이 이제 한 트리에 있습니다.`, 7000);
   } else if (resumed) {
     const at = new Date(resumed);
     /* 담아 둔 작업본이 자료 파일보다 뒤에 있는가.
@@ -473,14 +473,14 @@ function mergeSplitProjects(saved) {
 /**
  * ③ 개정안 구조 창을 그 규정으로 옮긴다 — ① 창에서 규정을 골랐을 때.
  *
- * 세 규정이 이미 한 트리에 있으므로 새로 불러올 것은 없다. 그 규정 줄을
+ * 규정(3종)이 이미 한 트리에 있으므로 새로 불러올 것은 없다. 그 규정 줄을
  * 펴서 눈앞에 놓고, 손대는 규정을 그리로 옮긴다. 개정안이 읽기 전용이면
  * (작업규정·성과심사 초안이 그렇다) 그대로 읽기 전용으로 열린다 —
  * 고치려면 [⑂분기] 로 새 판을 만든다.
  */
 /* ③ 창이 무엇을 보이는가
      null   ① 에서 고른 규정을 따라간다 (기본)
-     "*"    세 규정을 모두 편다 — [⊞전체]. 규정을 넘는 이관을 하려면 필요하다
+     "*"    규정(3종)을 모두 편다 — [⊞전체]. 규정을 넘는 이관을 하려면 필요하다
      id     그 규정에 붙박아 둔다 */
 let editScope = null;
 
@@ -637,15 +637,42 @@ function treeMenu(id, x, y) {
   });
 }
 
+/** 별표ㆍ별지의 원본 한/글 파일을 그대로 내려받는다 */
+async function annexToHwpx(node) {
+  const ref = node.annexRef || {};
+  const src = ref.hwpx || ref.pdf;
+  if (!src) {
+    toast("이 별표에는 원본 파일이 딸려 있지 않습니다.", 5000);
+    return;
+  }
+  busy("원본 파일을 가져오는 중…");
+  try {
+    const r = await fetch(new URL(src, document.baseURI).href, { cache: "no-cache" });
+    if (!r.ok) throw new Error(`${r.status} — ${src}`);
+    const blob = await r.blob();
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = src.slice(src.lastIndexOf("/") + 1);
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 3000);
+    toast(`${a.download} 을(를) 내려받습니다 — 별표는 원본 파일 그대로입니다.`
+      + `${NL}고친 것은 상세 창의 [바뀐 서식 파일] 에 올리십시오.`, 7000);
+  } catch (e) {
+    toast("원본 파일을 가져오지 못했습니다: " + e.message, 6000);
+  } finally { busy(false); }
+}
 /** 고른 마디만 한/글 문서로 —— 제목과 본문만 담는다 */
 async function partToHwpx(node, reg) {
   if (!reg) { toast("이 마디가 어느 규정의 것인지 알 수 없습니다.", 4000); return; }
+  /* 별표ㆍ별지는 편집기가 본문을 담고 있지 아니하다 —— 원본 한/글 파일을
+     가리킬 뿐이다. 그러므로 그 파일을 그대로 내려받게 한다. */
+  if (node.annexRef) { await annexToHwpx(node); return; }
   const label = node.level === "조"
     ? `제${node.no}조${node.branch ? `의${node.branch}` : ""}`
     : `제${node.no}${node.level}`;
   busy("한/글 문서를 짓는 중…");
   try {
-    const { buildDraftHwpx } = await import("./core/hwpxdraft.js?v=20260907k");
+    const { buildDraftHwpx } = await import("./core/hwpxdraft.js?v=20260907l");
     const url = new URL("kit/양식/01.개정안/[양식] 규정 개정(안).hwpx", document.baseURI).href;
     /* 마디 하나를 규정인 척 감싸 넘긴다 —— 제목 줄에 어디를 떼어 온
        것인지 적어 두어야 한/글에서 보고도 알 수 있다. */
@@ -675,6 +702,11 @@ async function partToHwpx(node, reg) {
 /** 한/글에서 고친 것을 되받는다 —— 제목과 본문만 갈아 끼운다 */
 async function partFromHwpx(node, reg) {
   if (project.isReadonly) { toast("읽기 전용 판입니다.", 4000); return; }
+  if (node.annexRef) {
+    toast("별표ㆍ별지는 조문이 아니므로 이 길로 되받지 못합니다."
+      + `${NL}상세 창의 [바뀐 서식 파일] 에 올리십시오.`, 6000);
+    return;
+  }
   const input = document.getElementById("filePicker");
   input.value = "";
   input.accept = ".hwpx,.hwp";
@@ -688,17 +720,28 @@ async function partFromHwpx(node, reg) {
   try {
     /* extractLines 는 {lines, kind} 를 돌려준다 —— 배열이 아니다 */
     const got0 = await extractLines(file);
-    const built = buildAuto(got0.lines || []);
+    /* buildAuto 는 조가 다섯 보다 적으면 목차로 보고 조를 하나도 내지
+       아니한다 —— 조 하나를 내어 고친 문서가 그러하다. 되받는 것은
+       조문임이 분명하므로 조문으로만 읽는다. */
+    const built = buildStructure(got0.lines || [], { keepRepeated: true });
     /* 읽어 온 나무에서 조문만 거두어 번호로 짝을 짓는다. 한/글에는 상태ㆍ
-       변경 사유ㆍ이력이 실리지 아니하므로 제목과 본문만 가져온다. */
+       변경 사유ㆍ이력이 실리지 아니하므로 제목과 본문만 가져온다.
+
+       번호는 legacyNo —— 문서에 적힌 것을 쓴다. buildStructure 는 읽은
+       자리대로 no 를 다시 매기므로(조 하나만 낸 문서는 제9조가 1이 된다)
+       no 로 짝을 지으면 엉뚱한 조를 덮어쓴다. */
     const got = new Map();
     M.walk(built.tree, (x) => {
-      if (x.level === "조" && x.no) {
-        /* 예전 주고받기본에 붙던 〔조각〕ㆍ〔사유〕ㆍ〔이력〕 줄은 걷어 낸다 */
-        const body = String(x.body || "").split(NL)
-          .filter((ln) => !/^\s*〔(조각|사유|이력)〕/.test(ln)).join(NL).trim();
-        got.set(`${x.no}/${x.branch || ""}`, { title: x.title || "", body });
-      }
+      if (x.level !== "조") return;
+      const m = /^제\s*(\d+)\s*조(?:\s*의\s*(\d+))?/.exec(x.legacyNo || "");
+      if (!m) return;
+      /* 예전 주고받기본에 붙던 〔조각〕ㆍ〔사유〕ㆍ〔이력〕 줄은 걷어 낸다 */
+      const body = String(x.body || "").split(NL)
+        .filter((ln) => !/^\s*〔(조각|사유|이력)〕/.test(ln)).join(NL).trim();
+      /* 같은 번호가 두 번 나오면 먼저 것을 남긴다 —— 본문 가운데 「제4조를
+         준용한다」 처럼 조 번호로 시작하는 줄이 새 조로 읽힐 수 있다. */
+      const k = `${+m[1]}/${m[2] ? +m[2] : ""}`;
+      if (!got.has(k)) got.set(k, { title: x.title || "", body });
     });
     if (!got.size) {
       /* 무엇을 읽었는지 밝혀 두어야 무엇이 어긋났는지 알 수 있다 */
@@ -751,7 +794,7 @@ function paintEditHead() {
   const t = id ? targetById(id) : null;
   const el = document.querySelector(".pane-edit .pane-title");
   if (el) el.textContent = t ? `${t.short} ${t.word} 구조 · 드래그 편집`
-                             : "개정안 구조 · 드래그 편집 (세 규정)";
+                             : "개정안 구조 · 드래그 편집 (규정(3종))";
   const btn = $("#btnScopeAll");
   if (btn) btn.classList.toggle("hidden", editScope === "*");
   paintRevPicker(id);
@@ -759,7 +802,7 @@ function paintEditHead() {
 }
 
 /* 메뉴바에는 지금 고치고 있는 규정 하나만 적는다.
-   세 규정 이름을 죄다 늘어놓으면 두 줄로 넘치고, 정작 무엇을 고치는 중인지가
+   규정(3종) 이름을 죄다 늘어놓으면 두 줄로 넘치고, 정작 무엇을 고치는 중인지가
    보이지 않는다. 셋을 다 담고 있다는 것은 ① 창과 [⊞전체] 가 보여 준다. */
 function paintDocName(targetId) {
   const el = $("#docName");
@@ -780,7 +823,7 @@ function paintDocName(targetId) {
    ------------------------------------------------------------
    연구가 해를 달리하여 나온 규정이 있다. 무인비행장치 측량 작업규정은
    v1(2024년 연구성과) · v2(2025년 연구결과 · 다중센서) 두 벌이다.
-   판(버전) 고르개는 세 규정을 한꺼번에 갈아 끼우므로, 지금 보고 있는
+   판(버전) 고르개는 규정(3종)을 한꺼번에 갈아 끼우므로, 지금 보고 있는
    규정의 개정안만 고를 수 있게 여기 따로 둔다.
 
    판마다 규정이 어느 개정안을 담고 있는지는 규정 노드가 revLabel 로
@@ -789,7 +832,7 @@ function paintDocName(targetId) {
    없다.
    ============================================================ */
 function revsOfTarget(targetId) {
-  /* 내용이 같은 판은 하나로 접는다 — 판은 세 규정을 한꺼번에 담으므로
+  /* 내용이 같은 판은 하나로 접는다 — 판은 규정(3종)을 한꺼번에 담으므로
      한 규정만 놓고 보면 여러 판이 글자 하나 다르지 않을 수 있다.
      (작업규정은 v1·v2·이어받음 세 판에서 같다) */
   const by = new Map();
@@ -864,12 +907,12 @@ function showTargetInEditTree(targetId) {
   return true;
 }
 
-/** 세 규정을 모두 편다 — 규정을 넘는 이관을 하려면 둘이 함께 보여야 한다 */
+/** 규정(3종)을 모두 편다 — 규정을 넘는 이관을 하려면 둘이 함께 보여야 한다 */
 function showAllTargets() {
   editScope = "*";
   for (const r of project.regNodes) r.collapsed = false;
   setEditTree(project.selectedId);
-  toast("세 규정을 모두 폈습니다 — 규정을 넘어 조문을 끌어 옮길 수 있습니다.", 3000);
+  toast("규정(3종)을 모두 폈습니다 — 규정을 넘어 조문을 끌어 옮길 수 있습니다.", 3000);
 }
 
 /**
@@ -1752,7 +1795,7 @@ function wire() {
     if (b && !b.disabled) doCommand(b.dataset.cmd);
   });
 
-  // 메뉴바 판 고르개는 세 규정을 한꺼번에 옮긴다 (규정 하나만 옮기려면 ③ 창의 개정안 고르개)
+  // 메뉴바 판 고르개는 규정(3종)을 한꺼번에 옮긴다 (규정 하나만 옮기려면 ③ 창의 개정안 고르개)
   $("#versionSelect").addEventListener("change", (e) => project.switchVersion(e.target.value));
   // 그 규정의 개정안 고르개 — 그 개정안을 담은 판으로 옮겨 간다
   $("#editRevSelect").addEventListener("change", (e) => {
@@ -1965,14 +2008,14 @@ async function doCommand(cmd) {
          한/글(HWPX)만은 브라우저가 만들 수 없어 genreport.py 로 남는다 —
          꾸러미 안 읽어보기.txt 에 그렇게 적어 둔다.
 
-         담는 것은 지금 ③ 창이 보이는 규정 하나뿐이다. 세 규정을 다 담으면
+         담는 것은 지금 ③ 창이 보이는 규정 하나뿐이다. 규정(3종)을 다 담으면
          3MB 가 넘어 무엇을 보라는 것인지 흐려진다. [⊞전체] 로 셋을 펼쳐 둔
-         때에만 (scopedTargetId() 가 null 이다) 세 규정을 함께 담는다. */
+         때에만 (scopedTargetId() 가 null 이다) 규정(3종)을 함께 담는다. */
       const only = scopedTargetId();
       const onlyName = only ? (project.regNode(only)?.short || "") : "";
-      busy(`${onlyName || "개정 대상 세 규정"} 보고서를 작성 중…`);
+      busy(`${onlyName || "개정 대상 규정(3종)"} 보고서를 작성 중…`);
       try {
-        const { buildReport } = await import("./ui/report.js?v=20260907k");
+        const { buildReport } = await import("./ui/report.js?v=20260907l");
         const r = await buildReport(project, { targetId: only });
         const url = URL.createObjectURL(r.blob);
         const a = document.createElement("a");
@@ -2051,12 +2094,12 @@ ${r.warning}` : ""),
 
     case "scopeAll": showAllTargets(); break;
 
-    /* 개정안 이름 바꾸기 — 판 이름은 세 규정을 아우른 것이라 규정 하나만
+    /* 개정안 이름 바꾸기 — 판 이름은 규정(3종)을 아우른 것이라 규정 하나만
        놓고 보면 뜻이 없다. 작업규정으로는 둘째 판인데 판 이름이 v4 인 일이
        생긴다. 규정마다 지닌 제 이름을 고친다. */
     /* 개정안 한 벌 더 두기 —— 판을 갈라 내고, 지금 보고 있는 규정의
        개정안 이름을 한 칸 올린다(작업-1.01 → 작업-1.02). 판 이름(v1ㆍv2)은
-       세 규정을 아우른 것이라 규정 하나만 놓고 보면 뜻이 없으므로,
+       규정(3종)을 아우른 것이라 규정 하나만 놓고 보면 뜻이 없으므로,
        고르개에는 규정마다의 이름이 선다. */
     case "addRev": {
       const tid = scopedTargetId();
@@ -2087,7 +2130,7 @@ ${r.warning}` : ""),
       break;
     }
     /* 개정안 지우기 —— 개정안은 판에 담겨 있으므로 판을 지우는 일이다.
-       판 하나에 세 규정의 개정안이 함께 들었으니 다른 규정의 것도 사라진다.
+       판 하나에 규정(3종)의 개정안이 함께 들었으니 다른 규정의 것도 사라진다.
        무인비행장치는 2024년 판과 2025년 판이 서로 다른 판에 담겨 있어
        한 판을 지우면 한 해치가 통째로 없어진다 —— 그 일을 겪었으므로
        무엇이 사라지는지 낱낱이 보이고 묻는다. */
@@ -2109,7 +2152,7 @@ ${r.warning}` : ""),
       if (!reg) { toast("이 판에는 그 규정의 개정안이 없습니다.", 4000); break; }
       busy("한/글 문서를 짓는 중…");
       try {
-        const { buildDraftHwpx } = await import("./core/hwpxdraft.js?v=20260907k");
+        const { buildDraftHwpx } = await import("./core/hwpxdraft.js?v=20260907l");
         const url = new URL("kit/양식/01.개정안/[양식] 규정 개정(안).hwpx",
                             document.baseURI).href;
         const got = await buildDraftHwpx(reg, url, {
@@ -2528,9 +2571,9 @@ function buildRefOptions(idx) {
   const pool = library.regulations.filter((r) => !r.imported && !r.shared);
 
   if (idx === 1) {
-    /* ① 창에는 개정 대상 세 규정을 모두 띄운다.
+    /* ① 창에는 개정 대상 규정(3종)을 모두 띄운다.
        예전에는 이 편집기가 고치는 규정 하나만 있었다. 편집기를 합친 뒤로는
-       세 규정을 오가므로, 여기서 규정을 고르면 ③ 창이 그 규정의 개정안으로
+       규정(3종)을 오가므로, 여기서 규정을 고르면 ③ 창이 그 규정의 개정안으로
        따라간다 (③ 에서 고르면 ① 이 따라오는 것과 짝을 이룬다). */
     const byId = new Map(pool.map((r) => [r.id, r]));
     const opts = [];

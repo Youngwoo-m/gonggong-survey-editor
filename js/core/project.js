@@ -7,11 +7,11 @@
    · this.tree 는 항상 '현재 버전'의 트리 배열과 같은 객체를 가리킨다.
    · 모든 구조 변경은 run() 트랜잭션을 통해서만 일어난다.
    ============================================================ */
-import * as M from "./model.js?v=20260907k";
-import { revLabel, nextRevLabel, revValue, verPrefixOf } from "./targets.js?v=20260907k";
-import { regFingerprint } from "./xrefs.js?v=20260907k";
+import * as M from "./model.js?v=20260907l";
+import { revLabel, nextRevLabel, revValue, verPrefixOf } from "./targets.js?v=20260907l";
+import { regFingerprint } from "./xrefs.js?v=20260907l";
 import { numbersOf, planFrom, planStayed, remapCitations, articleIdsIn,
-         planTermFixes, TERM_RULES } from "./xrefs.js?v=20260907k";
+         planTermFixes, TERM_RULES } from "./xrefs.js?v=20260907l";
 
 const MAX_HISTORY = 100;
 const BASE_ID = "base";
@@ -38,7 +38,7 @@ export class Project {
     this.targetIds = [];         // 담고 있는 개정 대상 (등록부의 id)
     this.activeTargetId = null;  // 지금 손대고 있는 규정 — 참조 창이 이걸 따라온다
     /* 규정마다 제 판을 가리킨다 — 작업규정은 vA-1.01 을 보면서 무인비행장치는
-       vC-1.00 을 볼 수 있다. 판 하나가 세 규정을 함께 담고 있으므로, 트리는
+       vC-1.00 을 볼 수 있다. 판 하나가 규정(3종)을 함께 담고 있으므로, 트리는
        규정마다 제 판에서 그 규정 가지만 꺼내 모아 세운다. */
     this.currentByTarget = {};   // 대상 id -> 판 id
     this._undoByV = new Map();   // versionId -> {undo:[], redo:[]}
@@ -271,7 +271,7 @@ export class Project {
       this.versions.push({
         id: r === 0 ? BASE_ID : newVersionId(),
         label: r === 0 ? "기준" : `v${r}`,
-        /* 판은 세 규정을 한 벌로 묶은 것이다. 규정 하나의 개정안(작업-1.00)과
+        /* 판은 규정(3종)을 한 벌로 묶은 것이다. 규정 하나의 개정안(작업-1.00)과
            갈리도록 「3종」 을 적는다 —— 기준 판의 「현행규정 3종」 과 짝이 맞는다. */
         title: r === 0 ? "현행규정 3종" : `개정안 3종 초안 ${r > 1 ? `(${r}판)` : ""}`.trim(),
         parentId: r === 0 ? null : this.versions[r - 1].id,
@@ -383,7 +383,7 @@ ${line}` : line;
   /**
    * 개정안 이름 바꾸기 — 규정 하나의, 판 하나에서.
    *
-   * 판 이름(v1·v2·v4…)은 세 규정을 아우른 것이라 규정 하나만 놓고 보면 뜻이
+   * 판 이름(v1·v2·v4…)은 규정(3종)을 아우른 것이라 규정 하나만 놓고 보면 뜻이
    * 없다. 작업규정으로는 두 번째 판인데 판 이름이 v4 인 일이 생긴다.
    * 그래서 규정마다 제 개정안 이름을 따로 지닌다(revLabel) — 그것을 고친다.
    */
@@ -417,7 +417,7 @@ ${line}` : line;
       }
     }
     /* 번호는 그 규정의 내용이 실제로 달라질 때만 올라간다.
-       판은 세 규정을 한꺼번에 담으므로, 작업규정만 놓고 보면 여러 판이 글자
+       판은 규정(3종)을 한꺼번에 담으므로, 작업규정만 놓고 보면 여러 판이 글자
        하나 다르지 않다. 판마다 번호를 올리면 작업규정 개정안이 두 벌뿐인데
        vA-1.03 까지 가 버린다. 같은 내용이면 같은 이름을 쓴다.
 
@@ -718,7 +718,7 @@ ${line}` : line;
     M.walk(v.tree, (n) => { if (M.isRegNode(n)) n.readonly = false; });
 
     /* 손대는 규정의 개정안 이름을 한 판 올린다.
-       판 이름(v1·v2·v4…)은 세 규정을 아우른 것이라 규정 하나만 놓고 보면
+       판 이름(v1·v2·v4…)은 규정(3종)을 아우른 것이라 규정 하나만 놓고 보면
        뜻이 없다. 작업규정에서 갈라 나왔으면 작업규정으로는 두 번째 판이므로
        그 규정의 개정안 이름을 v2 로 적는다 — 그래야 고르개에서 갈린다. */
     const act = this.activeTargetId;
@@ -756,7 +756,7 @@ ${line}` : line;
     return v;
   }
 
-  /** 판 전체 전환 — 세 규정을 모두 이 판으로 옮긴다 (메뉴바 판 고르개) */
+  /** 판 전체 전환 — 규정(3종)을 모두 이 판으로 옮긴다 (메뉴바 판 고르개) */
   switchVersion(id, msg = null) {
     const v = this.version(id);
     if (!v || id === this.currentId) return false;
@@ -1410,8 +1410,8 @@ export { BASE_ID };
 /* ============================================================
    규정 노드 만들기 — 합치기 1단계에서 새로 생긴 자리
    ------------------------------------------------------------
-   조문 id 는 규정마다 따로 매겨져 있어 세 규정을 한 트리에 담으면
-   부딪친다 (a3 · a7 · a22 … 가 세 규정 모두에 있다). 담을 때
+   조문 id 는 규정마다 따로 매겨져 있어 규정(3종)을 한 트리에 담으면
+   부딪친다 (a3 · a7 · a22 … 가 규정(3종) 모두에 있다). 담을 때
    규정 id 를 앞에 붙여 갈라 준다 — work:a3 · uav:a3.
    ============================================================ */
 

@@ -1,15 +1,15 @@
 /* ============================================================
    ui/compare.js — 개정 전후 비교표 화면
    ============================================================ */
-import { buildComparison, KIND_LIST, kindLabel } from "../core/diff.js?v=20260907k";
-import { writeXlsx } from "../core/xlsx.js?v=20260907k";
-import * as M from "../core/model.js?v=20260907k";
-import { regFingerprint } from "../core/xrefs.js?v=20260907k";
-import { buildAmendment } from "../core/amend.js?v=20260907k";
-import { buildSupplement, EFFECT_KINDS, topTitles } from "../core/supplement.js?v=20260907k";
+import { buildComparison, KIND_LIST, kindLabel } from "../core/diff.js?v=20260907l";
+import { writeXlsx } from "../core/xlsx.js?v=20260907l";
+import * as M from "../core/model.js?v=20260907l";
+import { regFingerprint } from "../core/xrefs.js?v=20260907l";
+import { buildAmendment } from "../core/amend.js?v=20260907l";
+import { buildSupplement, EFFECT_KINDS, topTitles } from "../core/supplement.js?v=20260907l";
 import { stripImgTags, imgIdsIn, toHtml, fitTable }
-  from "../core/objects.js?v=20260907k";
-import { esc, fmtDate } from "./html.js?v=20260907k";
+  from "../core/objects.js?v=20260907l";
+import { esc, fmtDate } from "./html.js?v=20260907l";
 
 const KIND_CLASS = {
   "신설": "k-new", "삭제": "k-del", "이동": "k-mov", "이관": "k-xfer",
@@ -30,7 +30,7 @@ export class CompareView {
     this.result = null;
     this.fromId = null;
     this.toId = null;
-    this.targetId = null;      // 어느 개정 대상 규정을 견주는가 (null 이면 세 규정 모두)
+    this.targetId = null;      // 어느 개정 대상 규정을 견주는가 (null 이면 규정(3종) 모두)
   }
 
   /* ---------- 개정 대상 규정 ---------- */
@@ -63,7 +63,7 @@ export class CompareView {
 
   /**
    * 이 규정을 담고 있는 판들 — 내용이 같은 판은 하나로 접는다.
-   * 판은 세 규정을 한꺼번에 담으므로, 한 규정만 놓고 보면 여러 판이 똑같다.
+   * 판은 규정(3종)을 한꺼번에 담으므로, 한 규정만 놓고 보면 여러 판이 똑같다.
    * 마지막 것을 남긴다 — 뒤엣것이 그 개정안의 최종 모습이다.
    */
   _versions() {
@@ -357,14 +357,14 @@ export class CompareView {
 
   _shell() {
     const { from, to } = this._resolve();
-    /* 판 목록을 그 규정의 개정안 이름으로 보인다 — 판 이름(v1·v2)은 세 규정을
+    /* 판 목록을 그 규정의 개정안 이름으로 보인다 — 판 이름(v1·v2)은 규정(3종)을
        아우른 것이라, 어느 개정안을 견주는지가 드러나지 않는다. */
     const opts = (sel) => this._versionOptions(sel);
     const tOpts = [
       ...this.project.regNodes.map((n) =>
         `<option value="${esc(n.targetId)}"${n.targetId === this.targetId ? " selected" : ""}>`
         + `${esc(n.short || n.title)}</option>`),
-      `<option value=""${this.targetId ? "" : " selected"}>개정 대상 전체 (세 규정)</option>`,
+      `<option value=""${this.targetId ? "" : " selected"}>개정 대상 전체 (규정(3종))</option>`,
     ].join("");
     return `
 <div class="cmp">
@@ -735,7 +735,7 @@ td.why{font-size:9pt;line-height:1.65;word-break:keep-all}
     const old = btn ? btn.textContent : "";
     if (btn) { btn.disabled = true; btn.textContent = "짓는 중…"; }
     try {
-      const { buildCompareHwpx } = await import("../core/hwpxcompare.js?v=20260907k");
+      const { buildCompareHwpx } = await import("../core/hwpxcompare.js?v=20260907l");
       // 대비표에 싣는 것은 조문뿐이다 — 양식이 조문 대비표다
       const rows = this._officialRows(this.result.rows);
       if (!rows.length) throw new Error("대비표에 실을 조문이 없습니다.");

@@ -48,7 +48,7 @@ r"""규정마다 개정안 한 세트를 지어 **판(버전) 폴더**에 담는
   없으면 통짜 원고는 마지막 판에만 쓴다. 그러지 아니하면 2024년 판에
   2025년 사유서가 들어간다.
 
-  python scripts\weekly_set.py                  세 규정의 모든 판 (바뀐 것만)
+  python scripts\weekly_set.py                  규정(3종)의 모든 판 (바뀐 것만)
   python scripts\weekly_set.py --only uav       한 규정만
   python scripts\weekly_set.py --last           마지막 판만
   python scripts\weekly_set.py --force          바뀐 것이 없어도 짓는다

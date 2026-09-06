@@ -203,7 +203,7 @@ def cmd_in(path):
         hit = 0
         for rev in revs_of(doc):
             for n in walk(rev.get("tree") or []):
-                # 마디 id 는 규정마다 겹친다 (a3 가 세 규정에 다 있다).
+                # 마디 id 는 규정마다 겹친다 (a3 가 규정(3종)에 다 있다).
                 # 규정 이름을 앞에 붙여야 엉뚱한 규정을 덮지 아니한다.
                 key = "%s|%s" % (name, n.get("id"))
                 if key not in want:

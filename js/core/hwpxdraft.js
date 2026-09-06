@@ -22,7 +22,7 @@
    ============================================================ */
 
 import { Form, remake, retext, esc, RowProto, tableSpan, topRows, retable }
-  from "./hwpx.js?v=20260907k";
+  from "./hwpx.js?v=20260907l";
 
 const NL = "\n";
 const RE_IMG = /<img\s+id="([\w.-]+)"\s*>(?:<\/img>)?/gi;
@@ -392,9 +392,14 @@ export async function buildDraftHwpx(reg, tplUrl, opt = {}) {
     const br = x.branch ? `의${x.branch}` : "";
     const lead = `제${no}조${br}(${ti})`;
     const lines = bodyLines(x.body, true);
-    // 조 제목 뒤에 첫 줄을 이어 붙인다 — 고시의 꼴이다
+    /* 조 제목 뒤에 첫 줄을 이어 붙인다 — 고시의 꼴이다. 다만 첫 줄이
+       호(1.)나 항(①)이면 붙이지 아니한다 —— 붙이면 되받을 때 그 줄이
+       제목의 꼬리로 읽혀 본문에서 사라진다. */
+    const LIST0 = /^(?:[0-9]+\s*[.)]|[가-힣]\s*[.)]|[①-⑳]|[０-９])/;
     let first = "";
-    if (lines.length && typeof lines[0] === "string") first = lines.shift();
+    if (lines.length && typeof lines[0] === "string" && !LIST0.test(lines[0])) {
+      first = lines.shift();
+    }
     const runs = [[null, lead]];
     if (first) runs.push([bodyChar, " " + first]);
     out.push(remake(P.art, runs));

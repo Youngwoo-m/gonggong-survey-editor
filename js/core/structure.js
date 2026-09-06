@@ -2,7 +2,7 @@
    core/structure.js — 텍스트 줄 목록 → 편·장·절·관·조 트리 (색인화)
    한국어(제N편/제N조) · 일본어(第N編/第N条) 표기를 함께 인식한다.
    ============================================================ */
-import * as M from "./model.js?v=20260907k";
+import * as M from "./model.js?v=20260907l";
 
 /* ---------- 패턴 ---------- */
 const NN = "[0-9０-９一二三四五六七八九十百]+";
@@ -40,7 +40,13 @@ function num(s) {
 const matchAny = (line, list) => { for (const re of list) { const m = line.match(re); if (m) return m; } return null; };
 
 /* ---------- 잡음 제거 ---------- */
-function cleanLines(lines) {
+/**
+ * 쪽번호ㆍ머리말 따위를 걷어 낸다.
+ * @param {boolean} keepRepeated 되풀이되는 줄을 남길 것인가 —— 우리가 낸
+ *   한/글 문서를 되받을 때에는 남겨야 한다. 「1. 작업수행계획」 처럼 여러
+ *   조에 똑같이 나오는 호가 머리말로 몰려 사라진다.
+ */
+function cleanLines(lines, keepRepeated) {
   const counts = new Map();
   for (const l of lines) {
     const k = l.trim();
@@ -55,7 +61,8 @@ function cleanLines(lines) {
       if (!t) return false;
       if (/^-?\s*\d{1,4}\s*-?$/.test(t)) return false;               // 쪽번호
       if (/^(page|Page)\s*\d+/.test(t)) return false;
-      if (repeated.has(t) && !/^제\s*\d|^第\s*\d/.test(t)) return false; // 머리말·꼬리말
+      if (!keepRepeated && repeated.has(t)
+        && !/^제\s*\d|^第\s*\d/.test(t)) return false;                   // 머리말·꼬리말
       return true;
     });
 }
@@ -284,7 +291,7 @@ export function buildAuto(lines) {
  */
 export function buildStructure(lines, opts = {}) {
   // 목차를 먼저 걷어내야 목차 안의 '부칙' 항목에 속지 않는다
-  const cleaned = attachParenTitles(cleanLines(lines));
+  const cleaned = attachParenTitles(cleanLines(lines, !!opts.keepRepeated));
   const t = stripToc(cleaned);
   const a = splitAddenda(t.lines);
   const src = a.lines;

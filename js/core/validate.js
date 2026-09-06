@@ -6,10 +6,10 @@
      경고 : 사람이 판단해야 하는 것
      정보 : 알아두면 좋은 것
    ============================================================ */
-import * as M from "./model.js?v=20260907k";
-import { CITE_CHAIN } from "./objects.js?v=20260907k";
-import { checkCrossRefs, checkTerms, checkAnnexClash } from "./xrefs.js?v=20260907k";
-import { QUALITY_ELEMENTS, elementsOf } from "./quality.js?v=20260907k";
+import * as M from "./model.js?v=20260907l";
+import { CITE_CHAIN } from "./objects.js?v=20260907l";
+import { checkCrossRefs, checkTerms, checkAnnexClash } from "./xrefs.js?v=20260907l";
+import { QUALITY_ELEMENTS, elementsOf } from "./quality.js?v=20260907l";
 
 export const LEVELS_OF = { 오류: 0, 경고: 1, 정보: 2 };
 
@@ -61,8 +61,8 @@ const norm = (s) => String(s || "").replace(/\s+/g, " ").trim();
  */
 /**
  * 검증은 규정 한 종을 놓고 도는 규칙들이다 — 조번호 중복·끊김, 별표 인용 따위.
- * 편집기를 합치면서 트리에 규정이 셋 들어왔으므로, 세 규정을 한 덩이로 돌리면
- * 세 규정 모두에 있는 제1조가 '조번호 중복' 으로 잡힌다.
+ * 편집기를 합치면서 트리에 규정이 셋 들어왔으므로, 규정(3종)을 한 덩이로 돌리면
+ * 규정(3종) 모두에 있는 제1조가 '조번호 중복' 으로 잡힌다.
  * 그래서 규정마다 따로 돌리고 결과를 합친다 — 규칙 자체는 손대지 않는다.
  *
  * 규정 사이를 가로지르는 검증(끊어진 인용·용어 불일치·별표 번호 충돌)은
@@ -348,7 +348,7 @@ function validateTree(tree, opts = {}, ctx = {}) {
 
 
 /* ============================================================
-   규정 사이 검증 — 세 규정이 한 트리에 모여야만 돌 수 있는 것들
+   규정 사이 검증 — 규정(3종)이 한 트리에 모여야만 돌 수 있는 것들
    ------------------------------------------------------------
    편집기가 세 벌이던 동안에는 scripts/checkcites.py 를 밖에서 따로 돌려야
    했고 그 결과는 화면으로 돌아오지 않았다. 합치기 2단계에서 안으로 들인다.
