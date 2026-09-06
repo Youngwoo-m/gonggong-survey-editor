@@ -1,8 +1,8 @@
 /* ============================================================
    ui/share.js — 공유 화면 (저장소 연결 · 프로젝트 목록 · 저장 이력)
    ============================================================ */
-import * as GH from "../adapters/github.js?v=20260906d";
-import { esc, fmtDT } from "./html.js?v=20260906d";
+import * as GH from "../adapters/github.js?v=20260906e";
+import { esc, fmtDT } from "./html.js?v=20260906e";
 
 /** 파일 저장에 이어 저장소에도 올릴지 */
 export const AUTOPUSH = {
@@ -204,21 +204,27 @@ export class ShareView {
     const connected = GH.hasToken();
     return `<div class="sh-setup">
       <div class="sh-guide">
-        <b>준비물</b> — GitHub 계정과, 프로젝트를 담을 <b>비공개 저장소</b> 하나.
-        앱이 올라간 공개 저장소와는 <b>다른 저장소</b>를 쓰십시오. 작업물이 공개되지 않습니다.
+        <b>읽기만 할 사람은 아무것도 넣지 않아도 됩니다.</b>
+        저장소가 이미 정해져 있어 [프로젝트 목록] 에서 남이 올린 작업본을 바로 열 수 있습니다.
+        <b>올리려는 사람만</b> 아래에 자기 토큰을 넣으십시오.
         <ol>
-          <li>GitHub 에서 비공개 저장소를 만듭니다 (예: <code>gonggong-projects</code>).</li>
-          <li><a href="https://github.com/settings/personal-access-tokens" target="_blank" rel="noopener">Settings → Developer settings → Personal access tokens → Fine-grained</a> 에서 토큰을 만듭니다.
-              <br>Repository access = 그 저장소만, Permissions → <b>Contents: Read and write</b>.</li>
-          <li>아래에 저장소와 토큰을 넣고 [연결 확인] 을 누릅니다.</li>
+          <li><a href="https://github.com/settings/personal-access-tokens" target="_blank" rel="noopener">Settings → Developer settings → Personal access tokens → Fine-grained</a>
+              에서 <b>Generate new token</b> 을 누릅니다.</li>
+          <li>Repository access = <b>Only select repositories</b> → 위에 적힌 그 저장소를 고르고,
+              Permissions → Repository permissions → <b>Contents: Read and write</b> 하나만 켭니다.</li>
+          <li>만들면 <code>github_pat_…</code> 가 <b>한 번만</b> 보입니다. 그 자리에서 복사하여
+              아래 토큰 칸에 붙여 넣고 [연결 확인 후 저장] 을 누릅니다.</li>
+          <li><b>내 이름</b> 을 꼭 적으십시오 — 누가 고친 것인지 그것으로 가립니다.</li>
         </ol>
         <div class="sh-warn">토큰은 <b>이 브라우저에만</b> 저장되며 GitHub 외에는 전송되지 않습니다.
-          공용 PC 에서는 사용 후 [연결 해제] 를 누르세요.</div>
+          공용 PC 에서는 사용 후 [연결 해제] 를 누르세요.
+          <br>이 저장소는 <b>공개</b> 입니다 —— 올린 개정안 작업본은 누구나 볼 수 있습니다.
+          밖으로 나가면 아니 되는 것은 [내보내기] 로 파일을 만들어 건네십시오.</div>
       </div>
 
       <div class="row2">
-        <div class="fld"><label>GitHub 계정/조직 (owner)</label><input class="s-owner" value="${esc(cfg.owner)}" placeholder="Youngwoo-m"></div>
-        <div class="fld"><label>저장소 이름 (repo)</label><input class="s-repo" value="${esc(cfg.repo)}" placeholder="gonggong-projects"></div>
+        <div class="fld"><label>GitHub 계정/조직 (owner) <span class="mut">— 기본값이 들어 있음</span></label><input class="s-owner" value="${esc(cfg.owner)}" placeholder="Youngwoo-m"></div>
+        <div class="fld"><label>저장소 이름 (repo)</label><input class="s-repo" value="${esc(cfg.repo)}" placeholder="gonggong-survey-editor"></div>
       </div>
       <div class="row2">
         <div class="fld"><label>브랜치</label><input class="s-branch" value="${esc(cfg.branch)}" placeholder="main"></div>
