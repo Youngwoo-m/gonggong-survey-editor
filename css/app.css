@@ -370,8 +370,6 @@ a.cite.moved:hover{color:var(--link);border-bottom-color:var(--link)}
 .vld-table tr.jump{cursor:pointer}
 .vld-table tr.jump:hover td{background:var(--panel2)}
 .vld-none{text-align:center;color:var(--muted);padding:44px 10px;font-size:12.5px}
-.vld .chip{cursor:pointer}
-.vld .chip.on{outline:2px solid var(--ink);outline-offset:1px}
 .vld-ok{font-size:11.5px;color:#1F5C4E;background:var(--green-bg);padding:3px 12px;border-radius:11px;font-weight:700}
 .vld-bad{font-size:11.5px;color:#8E3A20;background:var(--accent-bg);padding:3px 12px;border-radius:11px;font-weight:700}
 /* ---- 별표 미리보기 ---- */
@@ -595,15 +593,42 @@ a.cite:hover{background:var(--link);color:#fff;text-decoration:none;border-radiu
 .pane-edit .pane-toolbar button.ai{border-color:var(--accent);color:var(--accent);font-weight:700}
 .pane-edit .pane-toolbar button.ai:hover{background:var(--accent);color:#fff}
 
+/* ---- 화면 안에서 묻는 작은 칸 (askBox) ---- */
+.cmp.ask{width:min(460px,92vw)}
+.ask-body{padding:12px 14px}
+.ask-body .fld{margin-bottom:10px}
+
 /* ---- AI 도우미 ---- */
 .cmp.ai{width:min(1000px,94vw)}
 .cmp.sm{width:min(520px,92vw)}
-/* 일감 단추 —— 머리가 어두운 빛이라 옅은 딱지는 눌리는 자리로 보이지
-   아니하였다. 진한 바탕에 흰 글씨로 두고, 고른 것은 초록으로 밝힌다. */
-.chips.ai-tasks .chip{cursor:pointer;background:var(--slate);color:#fff;
-  font-weight:700;padding:4px 12px;border:1px solid transparent;transition:background .12s}
-.chips.ai-tasks .chip:hover{background:var(--ink)}
-.chips.ai-tasks .chip.on{background:var(--green);color:#fff;border-color:#fff}
+/* ---- 눌리는 딱지 ----------------------------------------------------
+   옅은 딱지는 눌러서 고르는 자리로 보이지 아니한다. 진한 바탕에 흰
+   글씨로 채운다. 뜻을 지닌 빛깔(오류는 붉음, 경고는 주황)은 지우지
+   아니하고 그 빛깔의 진한 쪽으로 채운다.
+   세는 딱지(비교표의 「신설 85」 따위)는 누르는 것이 아니므로 그대로 둔다. */
+.chips.ai-tasks .chip,
+.vld .chips .chip,
+.cc .chips .chip{cursor:pointer;background:var(--slate);color:#fff;
+  font-weight:700;padding:4px 12px;border:1px solid transparent;
+  transition:background .12s,box-shadow .12s}
+.chips.ai-tasks .chip b,
+.vld .chips .chip b,
+.cc .chips .chip b{color:#fff}
+.chips.ai-tasks .chip:hover,
+.vld .chips .chip:hover,
+.cc .chips .chip:hover{background:var(--ink)}
+
+/* 뜻을 지닌 빛깔 —— 옅은 바탕을 진한 쪽으로 */
+.vld .chips .chip.k-del,.cc .chips .chip.k-del{background:var(--accent)}
+.vld .chips .chip.k-edit,.cc .chips .chip.k-edit,
+.vld .chips .chip.k-mov,.cc .chips .chip.k-mov{background:var(--amber)}
+.vld .chips .chip.k-new,.cc .chips .chip.k-new{background:var(--green)}
+.vld .chips .chip.total,.cc .chips .chip.total{background:var(--ink)}
+
+/* 고른 것 —— 흰 테를 둘러 밝힌다 */
+.chips.ai-tasks .chip.on{background:var(--green);border-color:#fff}
+.vld .chips .chip.on,.cc .chips .chip.on{
+  box-shadow:0 0 0 2px #fff,0 0 0 3.5px var(--ink)}
 .ai-conn{font-size:10px;color:var(--muted);padding:2px 6px;border:1px solid var(--line);border-radius:3px}
 .ai-conn.on{color:var(--green,#3f8f5f);border-color:var(--green,#3f8f5f)}
 .ai-body{padding:12px 14px}

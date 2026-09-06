@@ -1,33 +1,33 @@
 /* ============================================================
    main.js — 앱 조립 (1단계 프로토타입)
    ============================================================ */
-import * as M from "./core/model.js?v=20260906n";
-import { Project } from "./core/project.js?v=20260906n";
-import * as FS from "./adapters/fileio.js?v=20260906n";
-import * as AUTO from "./adapters/autosave.js?v=20260906n";
-import { TreeView } from "./ui/tree.js?v=20260906n";
-import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260906n";
-import { CompareView } from "./ui/compare.js?v=20260906n";
-import { VersionsView } from "./ui/versions.js?v=20260906n";
-import { HistoryView } from "./ui/history.js?v=20260906n";
-import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260906n";
-import { ValidateView } from "./ui/validate.js?v=20260906n";
-import { RefPicker } from "./ui/refpicker.js?v=20260906n";
-import { AIView } from "./ui/ai.js?v=20260906n";
-import { CiteCheckView } from "./ui/citecheck.js?v=20260906n";
-import { TermsView } from "./ui/terms.js?v=20260906n";
-import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260906n";
-import * as GH from "./adapters/github.js?v=20260906n";
-import { extractLines } from "./core/importer.js?v=20260906n";
-import { buildAuto } from "./core/structure.js?v=20260906n";
-import * as SRC from "./core/srcfp.js?v=20260906n";
-import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260906n";
-import { ObjectStore, fitTable } from "./core/objects.js?v=20260906n";
-import { loadTargets, allTargets, targetById, firstTarget, nextRevLabel, verPrefixOf } from "./core/targets.js?v=20260906n";
-import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260906n";
-import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260906n";
-import { fmtDate } from "./ui/html.js?v=20260906n";
-import { printReg, regHtml } from "./ui/printdoc.js?v=20260906n";
+import * as M from "./core/model.js?v=20260906p";
+import { Project } from "./core/project.js?v=20260906p";
+import * as FS from "./adapters/fileio.js?v=20260906p";
+import * as AUTO from "./adapters/autosave.js?v=20260906p";
+import { TreeView } from "./ui/tree.js?v=20260906p";
+import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260906p";
+import { CompareView } from "./ui/compare.js?v=20260906p";
+import { VersionsView } from "./ui/versions.js?v=20260906p";
+import { HistoryView } from "./ui/history.js?v=20260906p";
+import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260906p";
+import { ValidateView } from "./ui/validate.js?v=20260906p";
+import { RefPicker } from "./ui/refpicker.js?v=20260906p";
+import { AIView } from "./ui/ai.js?v=20260906p";
+import { CiteCheckView } from "./ui/citecheck.js?v=20260906p";
+import { TermsView } from "./ui/terms.js?v=20260906p";
+import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260906p";
+import * as GH from "./adapters/github.js?v=20260906p";
+import { extractLines } from "./core/importer.js?v=20260906p";
+import { buildAuto } from "./core/structure.js?v=20260906p";
+import * as SRC from "./core/srcfp.js?v=20260906p";
+import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260906p";
+import { ObjectStore, fitTable } from "./core/objects.js?v=20260906p";
+import { loadTargets, allTargets, targetById, firstTarget, nextRevLabel, verPrefixOf } from "./core/targets.js?v=20260906p";
+import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260906p";
+import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260906p";
+import { fmtDate } from "./ui/html.js?v=20260906p";
+import { printReg, regHtml } from "./ui/printdoc.js?v=20260906p";
 
 const $ = (s) => document.querySelector(s);
 const NL = "\n";
@@ -505,6 +505,58 @@ function setEditTree(selId) {
 }
 
 /** 창 머리에 어느 규정을 보고 있는지 적는다 */
+/* 화면 안에서 묻는 작은 칸.
+
+   prompt() 은 브라우저가 막을 수 있다 —— 한 화면에서 대화상자를 되풀이해
+   띄우면 「이 페이지가 더 이상 대화상자를 표시하지 않도록」 이 뜨고, 그 뒤로
+   prompt() 은 묻지도 않고 null 을 돌려준다. 그러면 단추를 눌러도 아무 일이
+   없는 것처럼 보인다. 그래서 화면 안에 칸을 띄운다.
+
+   @param {string} title 무엇을 하는 자리인가
+   @param {Array<{key,label,value,hint}>} fields 물을 칸들
+   @returns {Promise<object|null>} 취소하면 null */
+function askBox(title, fields) {
+  return new Promise((done) => {
+    const back = document.createElement("div");
+    back.className = "overlay ask-back";
+    back.innerHTML = `
+      <div class="cmp sm ask">
+        <div class="cmp-head"><div class="cmp-title">${esc(title)}</div>
+          <button class="x" data-x="cancel" title="닫기 (Esc)">✕</button></div>
+        <div class="ask-body">${fields.map((f) => `
+          <div class="fld"><label>${esc(f.label)}</label>
+            <input data-k="${esc(f.key)}" value="${esc(f.value || "")}"
+                   placeholder="${esc(f.hint || "")}"></div>`).join("")}</div>
+        <div class="detail-actions">
+          <button data-x="cancel">취소</button>
+          <button class="primary" data-x="ok">확인</button></div>
+      </div>`;
+    document.body.appendChild(back);
+    const first = back.querySelector("input");
+    if (first) { first.focus(); first.select(); }
+    const close = (val) => {
+      document.removeEventListener("keydown", onKey, true);
+      back.remove();
+      done(val);
+    };
+    const take = () => {
+      const out = {};
+      back.querySelectorAll("input[data-k]").forEach((i) => { out[i.dataset.k] = i.value.trim(); });
+      close(out);
+    };
+    const onKey = (e) => {
+      if (e.key === "Escape") { e.preventDefault(); close(null); }
+      if (e.key === "Enter") { e.preventDefault(); take(); }
+    };
+    document.addEventListener("keydown", onKey, true);
+    back.addEventListener("click", (e) => {
+      if (e.target === back) close(null);
+      const x = e.target.closest("[data-x]");
+      if (!x) return;
+      if (x.dataset.x === "ok") take(); else close(null);
+    });
+  });
+}
 function paintEditHead() {
   const id = scopedTargetId();
   const t = id ? targetById(id) : null;
@@ -1728,7 +1780,7 @@ async function doCommand(cmd) {
       const onlyName = only ? (project.regNode(only)?.short || "") : "";
       busy(`${onlyName || "개정 대상 세 규정"} 보고서를 작성 중…`);
       try {
-        const { buildReport } = await import("./ui/report.js?v=20260906n");
+        const { buildReport } = await import("./ui/report.js?v=20260906p");
         const r = await buildReport(project, { targetId: only });
         const url = URL.createObjectURL(r.blob);
         const a = document.createElement("a");
@@ -1780,10 +1832,12 @@ ${r.warning}` : ""),
       const tid = scopedTargetId();
       if (!tid) { toast("규정을 먼저 고르십시오.", 3000); break; }
       const short = targetById(tid)?.short || "";
-      const title = prompt(
-        `${short} 개정안을 한 벌 더 둡니다. 무엇이 달라지는지 적으십시오.`,
-        `${short} 개정안`);
-      if (title === null) break;
+      const got = await askBox(`${short} 개정안을 한 벌 더 두기`, [
+        { key: "title", label: "무엇이 달라지는지 적으십시오",
+          value: `${short} 개정안`, hint: "보기 — 용어를 다시 다듬은 안" },
+      ]);
+      if (!got) break;
+      const title = got.title || `${short} 개정안`;
       /* 이름은 **판을 갈라 내기 전에** 세어 둔다. createVersion 이
          activeTargetId 를 보고 한 칸 올려 두는데, 그 뒤에 다시 세면 그것까지
          쓰인 것으로 잡혀 작업-1.01 을 건너뛰고 작업-1.02 가 된다. */
@@ -1810,14 +1864,14 @@ ${r.warning}` : ""),
       const cur = project.version(vid);
       const r = cur ? (cur.tree || []).find((n) => M.isRegNode(n) && n.targetId === tid) : null;
       if (!r) break;
-      const label = prompt(
-        `개정안 이름을 적으십시오 — ${targetById(tid)?.short || ""}` + NL
-        + `(판 이름 '${cur.label}' 은 세 규정을 아우른 것이라 그대로 둡니다)`,
-        r.revLabel || "");
-      if (label === null) break;
-      const title = prompt("설명을 적으십시오 (비워 두어도 됩니다).", r.revTitle || "");
-      if (title === null) break;
-      project.renameRev(tid, vid, label, title);
+      const got = await askBox(
+        `${targetById(tid)?.short || ""} 개정안 이름 바꾸기`, [
+          { key: "label", label: "개정안 이름", value: r.revLabel || "",
+            hint: "보기 — 작업-1.01" },
+          { key: "title", label: "설명 (비워 두어도 됩니다)", value: r.revTitle || "" },
+        ]);
+      if (!got || !got.label) break;
+      project.renameRev(tid, vid, got.label, got.title);
       $("#editRevSelect").dataset.sig = "";     // 목록을 다시 세운다
       paintEditHead();
       break;
