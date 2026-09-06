@@ -44,44 +44,44 @@
  "별지1": {
   "file": "별지1.xml",
   "title": "성과심사 접수확인서",
-  "tables": 2,
-  "rows": 9,
+  "tables": 4,
+  "rows": 15,
   "cols": 4
  },
  "별지2": {
   "file": "별지2.xml",
   "title": "성과 보완요구서",
-  "tables": 1,
-  "rows": 4,
-  "cols": 8
+  "tables": 2,
+  "rows": 8,
+  "cols": 5
  },
  "별지3": {
   "file": "별지3.xml",
   "title": "자동검사 결과서",
-  "tables": 2,
+  "tables": 3,
   "rows": 13,
-  "cols": 7
+  "cols": 6
  },
  "별지4": {
   "file": "별지4.xml",
   "title": "성과심사 판정조서",
   "tables": 4,
-  "rows": 7,
-  "cols": 8
+  "rows": 14,
+  "cols": 7
  },
  "별지5": {
   "file": "별지5.xml",
   "title": "성과심사 결과 이의신청서",
-  "tables": 1,
-  "rows": 3,
-  "cols": 7
+  "tables": 3,
+  "rows": 10,
+  "cols": 5
  },
  "별지6": {
   "file": "별지6.xml",
   "title": "이의신청 처리결과 통지서",
-  "tables": 2,
-  "rows": 3,
-  "cols": 6
+  "tables": 4,
+  "rows": 12,
+  "cols": 5
  },
  "별표10새서식": {
   "file": "별표10새서식.xml",
