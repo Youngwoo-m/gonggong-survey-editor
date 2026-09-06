@@ -1,10 +1,10 @@
 /* ============================================================
    ui/detail.js — 조문 상세 패널
    ============================================================ */
-import * as M from "../core/model.js?v=20260907w";
-import { wordDiff, beforeRuns, afterRuns, hasChange } from "../core/textdiff.js?v=20260907w";
+import * as M from "../core/model.js?v=20260907x";
+import { wordDiff, beforeRuns, afterRuns, hasChange } from "../core/textdiff.js?v=20260907x";
 import { imgIdsIn, renderBody, fitTable, toHtml, openTableOverlay, markAnnexEdits }
-  from "../core/objects.js?v=20260907w";
+  from "../core/objects.js?v=20260907x";
 
 /** 만들고 있는 안을 부르는 말 — 작업규정은 개정안, 성과심사 규정은 개정안 */
 /* 만들어 내는 안을 부르는 말 — 규정마다 다르다 (작업규정은 '개정안', 나머지는 '개정안').
@@ -75,10 +75,10 @@ function runsHtml(runs) {
   return runs.map((r) => (r.mark ? `<u class="mk">${esc(r.s)}</u>` : esc(r.s))).join("");
 }
 
-import { linkReason, wireReasonLinks } from "../core/reasonlink.js?v=20260907w";
-import { esc, fmtDT } from "./html.js?v=20260907w";
-import { renderPdf } from "./pdfview.js?v=20260907w";
-import { askYesNo } from "./ask.js?v=20260907w";
+import { linkReason, wireReasonLinks } from "../core/reasonlink.js?v=20260907x";
+import { esc, fmtDT } from "./html.js?v=20260907x";
+import { renderPdf } from "./pdfview.js?v=20260907x";
+import { askYesNo } from "./ask.js?v=20260907x";
 
 /** 사유 글이 스스로 머리글을 달고 있는가 — 그러면 딱지를 겹쳐 붙이지 아니한다 */
 const RE_REASON_HEAD = /^\s*\[변경 사유\]/;
@@ -435,8 +435,8 @@ export class DetailPanel {
     (async () => {
       try {
         const [{ annexXmlFromHwpx, assetBuffer }, { parseXml }] = await Promise.all([
-          import("../core/annexhwpx.js?v=20260907w"),
-          import("../core/objects.js?v=20260907w"),
+          import("../core/annexhwpx.js?v=20260907x"),
+          import("../core/objects.js?v=20260907x"),
         ]);
         const buf = await assetBuffer(a);
         const xml = await annexXmlFromHwpx(buf, {
@@ -525,7 +525,10 @@ export class DetailPanel {
   }
 
   /**
-   * 개정으로 새로 더하는 심사표 — 현행 서식에는 없던 표다.
+   * 개정으로 새로 짓는 표 — 현행 서식에는 없던 것이다.
+   *
+   * 이름은 무엇을 짓는가에 따라 달리 적는다. 심사표는 현행 표에 덧붙이는
+   * 것이고(별표 3), 서식은 현행 서식을 통째로 갈음하는 것이다(별표 10ㆍ11ㆍ17).
    * 문구 교체로는 담을 수 없어 표를 통째로 새로 짓는다 (별표 3 의 레이저측량 심사표).
    */
   _annexExtra(node) {
@@ -536,7 +539,8 @@ export class DetailPanel {
 
     const wrap = document.createElement("div");
     wrap.className = "fld anx-extra";
-    wrap.innerHTML = `<label>새로 더하는 심사표 <span class="cnt">${meta.tables}개</span>
+    const what = /새서식/.test(key) ? "개정안 서식" : "새로 더하는 심사표";
+    wrap.innerHTML = `<label>${what} <span class="cnt">${meta.tables}개</span>
         <a class="btnlink lbl-right" href="${esc(this.objects.annexUrl(this.draftRegId, key))}"
            download="${esc(meta.file)}">XML</a></label>
       <div class="annex-tbl"><span class="mut">읽는 중…</span></div>`;
@@ -550,7 +554,7 @@ export class DetailPanel {
       zoom.className = "mini2";
       zoom.type = "button";
       zoom.textContent = "크게 보기";
-      zoom.onclick = () => openTableOverlay(toHtml(o), `${node.legacyNo || ""} 새로 더하는 심사표`.trim());
+      zoom.onclick = () => openTableOverlay(toHtml(o), `${node.legacyNo || ""} ${what}`.trim());
       host.appendChild(zoom);
     });
     return wrap;

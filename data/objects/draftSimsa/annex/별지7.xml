@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별지7" gubun="별지" no="7" title="심사필증" source="간행심사 연구보고서 부록 1의 서식 (scripts/genforms_ganhaeng.py)">
+  <text>[별지 제7호서식]
+심 사 필 증</text>
+  <table rows="4" cols="4">
+    <row>
+      <cell col="0" row="0" header="1">증서번호</cell>
+      <cell col="1" row="0" header="1">제 ○○○○-○○○○ 호</cell>
+      <cell col="2" row="0" header="1">심사일자</cell>
+      <cell col="3" row="0" header="1">○○○○년 ○○월 ○○일</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">간행물명</cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1">발행자</cell>
+      <cell col="3" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2">심사필 번호</cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2">간행종류</cell>
+      <cell col="3" row="2">최초간행 (    ) / 수정간행 (    )</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">비고</cell>
+      <cell col="1" row="3" colspan="3">지도의 보안사항, 주요 지형ㆍ지물의 위치 및 표현 적정성, 행정경계 검토 완료</cell>
+    </row>
+  </table>
+  <text>이 지도등은 「공간정보의 구축 및 관리 등에 관한 법률」 제15조 및 제15조의2에 따라 관련 법령과 제반 절차를 지켜 공정하게 심사되었음을 증명하며, 이 심사필증을 발급합니다.
+
+                                  년        월        일
+
+                                        ○ ○ 기관장       직인</text>
+  <text>비고
+1. 이 서식은 「공간정보의 구축 및 관리 등에 관한 법률 시행규칙」 제17조에 심사필증의 발급 근거(제4항ㆍ제5항)가 신설된 뒤에 쓴다.
+2. 수정간행으로 새 심사필 번호를 부여한 경우에는 종전 번호를 비고란에 함께 적는다(제35조제7항).</text>
+</annex>

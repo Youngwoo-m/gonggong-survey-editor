@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표11새서식" gubun="별표" no="11" title="지도등의 간행심사 관리대장 (개정안)" source="간행심사 연구보고서 부록 1의 서식 (scripts/genforms_ganhaeng.py)">
+  <text>[별표 11]
+지도등의 간행심사 관리대장 (제35조제3항 및 제50조 관련)</text>
+  <table rows="4" cols="8">
+    <row>
+      <cell col="0" row="0" header="1">연번</cell>
+      <cell col="1" row="0" header="1">접수일</cell>
+      <cell col="2" row="0" header="1">심사필 번호</cell>
+      <cell col="3" row="0" header="1">심사완료일</cell>
+      <cell col="4" row="0" header="1">간행물의 명칭</cell>
+      <cell col="5" row="0" header="1">신청인(발행자)</cell>
+      <cell col="6" row="0" header="1">지도제작자</cell>
+      <cell col="7" row="0" header="1">수수료(원)</cell>
+    </row>
+    <row>
+      <cell col="0" row="1"></cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1"></cell>
+      <cell col="4" row="1"></cell>
+      <cell col="5" row="1"></cell>
+      <cell col="6" row="1"></cell>
+      <cell col="7" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2"></cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2"></cell>
+      <cell col="3" row="2"></cell>
+      <cell col="4" row="2"></cell>
+      <cell col="5" row="2"></cell>
+      <cell col="6" row="2"></cell>
+      <cell col="7" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3"></cell>
+      <cell col="1" row="3"></cell>
+      <cell col="2" row="3"></cell>
+      <cell col="3" row="3"></cell>
+      <cell col="4" row="3"></cell>
+      <cell col="5" row="3"></cell>
+      <cell col="6" row="3"></cell>
+      <cell col="7" row="3"></cell>
+    </row>
+  </table>
+  <text>비고 — 현행 서식에서 달라진 것
+1. 문서명을 '지도등의 간행심사 관리대장'으로 하여 다른 서식과 이름의 결을 맞춘다.
+2. '신청자'를 '신청인(발행자)'로, '지도(간행물명칭)'을 '간행물의 명칭'으로 적는다.
+3. '지도제작자' 열을 새로 두어 누가 만든 간행물인지 대장만으로 가려지게 한다.
+4. 종이지도를 전제한 '사용 및 심사 도엽수'(1:5천~1:25만) 열과 '주요 심사내용' 열은 없앤다 — 심사 내용은 별표 10의 결과 통보서에 적히고, 전자지도는 도엽으로 세지 아니한다.
+5. 제35조제7항에 따라 수정간행으로 새 심사필 번호를 부여한 경우에는 종전 번호를 '심사필 번호' 칸에 함께 적어 연관 관계를 남긴다.</text>
+</annex>

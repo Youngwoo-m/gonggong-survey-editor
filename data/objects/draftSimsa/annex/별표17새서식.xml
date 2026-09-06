@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표17새서식" gubun="별표" no="17" title="지도등의 간행심사수수료 명세서 (개정안)" source="간행심사 연구보고서 부록 1의 서식 (scripts/genforms_ganhaeng.py)">
+  <text>[별표 17]
+지도등의 간행심사수수료 명세서 (제47조제1항 관련)</text>
+  <table rows="3" cols="4">
+    <row>
+      <cell col="0" row="0" header="1">작성연월일</cell>
+      <cell col="1" row="0" header="1"></cell>
+      <cell col="2" row="0" header="1">신청인(발행자)</cell>
+      <cell col="3" row="0" header="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="1">제작자</cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1">지도의 명칭</cell>
+      <cell col="3" row="1"></cell>
+    </row>
+    <row>
+      <cell col="0" row="2">수수료 (부가세 포함)</cell>
+      <cell col="1" row="2" colspan="3"></cell>
+    </row>
+  </table>
+  <text>수수료 산출근거 — 종이지도ㆍ전자지도</text>
+  <table rows="4" cols="4">
+    <row>
+      <cell col="0" row="0" header="1">관심지점정보(POI) 개수</cell>
+      <cell col="1" row="0" header="1">단가</cell>
+      <cell col="2" row="0" header="1">금액</cell>
+      <cell col="3" row="0" header="1">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="1"></cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1">산출액</cell>
+      <cell col="3" row="1">백원 미만의 금액은 절사</cell>
+    </row>
+    <row>
+      <cell col="0" row="2"></cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2">부가세</cell>
+      <cell col="3" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3"></cell>
+      <cell col="1" row="3"></cell>
+      <cell col="2" row="3">합계</cell>
+      <cell col="3" row="3"></cell>
+    </row>
+  </table>
+  <text>수수료 산출근거 — 정밀도로지도</text>
+  <table rows="4" cols="5">
+    <row>
+      <cell col="0" row="0" header="1">도로연장(km)</cell>
+      <cell col="1" row="0" header="1">단가</cell>
+      <cell col="2" row="0" header="1">수수료 요율(%)</cell>
+      <cell col="3" row="0" header="1">금액</cell>
+      <cell col="4" row="0" header="1">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="1"></cell>
+      <cell col="1" row="1"></cell>
+      <cell col="2" row="1"></cell>
+      <cell col="3" row="1">산출액</cell>
+      <cell col="4" row="1">백원 미만의 금액은 절사</cell>
+    </row>
+    <row>
+      <cell col="0" row="2"></cell>
+      <cell col="1" row="2"></cell>
+      <cell col="2" row="2"></cell>
+      <cell col="3" row="2">부가세</cell>
+      <cell col="4" row="2"></cell>
+    </row>
+    <row>
+      <cell col="0" row="3"></cell>
+      <cell col="1" row="3"></cell>
+      <cell col="2" row="3"></cell>
+      <cell col="3" row="3">합계</cell>
+      <cell col="4" row="3"></cell>
+    </row>
+  </table>
+  <text>비고
+1. 수수료는 「공간정보의 구축 및 관리 등에 관한 법률 시행규칙」 별표 12에서 정한 바에 따른다.
+2. 종이지도와 전자지도는 관심지점정보의 개수로, 정밀도로지도는 노선길이로 산출한다.
+3. 이 서식은 시행규칙 별표 12가 관심지점정보 개수와 노선길이를 산정 기준으로 삼도록 개정된 뒤에 쓴다. 그 전에는 종전 서식에 따른다.</text>
+</annex>
