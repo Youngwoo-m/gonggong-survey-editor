@@ -1,33 +1,33 @@
 /* ============================================================
    main.js — 앱 조립 (1단계 프로토타입)
    ============================================================ */
-import * as M from "./core/model.js?v=20260907a";
-import { Project } from "./core/project.js?v=20260907a";
-import * as FS from "./adapters/fileio.js?v=20260907a";
-import * as AUTO from "./adapters/autosave.js?v=20260907a";
-import { TreeView } from "./ui/tree.js?v=20260907a";
-import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260907a";
-import { CompareView } from "./ui/compare.js?v=20260907a";
-import { VersionsView } from "./ui/versions.js?v=20260907a";
-import { HistoryView } from "./ui/history.js?v=20260907a";
-import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260907a";
-import { ValidateView } from "./ui/validate.js?v=20260907a";
-import { RefPicker } from "./ui/refpicker.js?v=20260907a";
-import { AIView } from "./ui/ai.js?v=20260907a";
-import { CiteCheckView } from "./ui/citecheck.js?v=20260907a";
-import { TermsView } from "./ui/terms.js?v=20260907a";
-import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260907a";
-import * as GH from "./adapters/github.js?v=20260907a";
-import { extractLines } from "./core/importer.js?v=20260907a";
-import { buildAuto } from "./core/structure.js?v=20260907a";
-import * as SRC from "./core/srcfp.js?v=20260907a";
-import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260907a";
-import { ObjectStore, fitTable } from "./core/objects.js?v=20260907a";
-import { loadTargets, allTargets, targetById, firstTarget, nextRevLabel, verPrefixOf } from "./core/targets.js?v=20260907a";
-import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260907a";
-import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260907a";
-import { fmtDate } from "./ui/html.js?v=20260907a";
-import { printReg, regHtml } from "./ui/printdoc.js?v=20260907a";
+import * as M from "./core/model.js?v=20260907b";
+import { Project } from "./core/project.js?v=20260907b";
+import * as FS from "./adapters/fileio.js?v=20260907b";
+import * as AUTO from "./adapters/autosave.js?v=20260907b";
+import { TreeView } from "./ui/tree.js?v=20260907b";
+import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260907b";
+import { CompareView } from "./ui/compare.js?v=20260907b";
+import { VersionsView } from "./ui/versions.js?v=20260907b";
+import { HistoryView } from "./ui/history.js?v=20260907b";
+import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260907b";
+import { ValidateView } from "./ui/validate.js?v=20260907b";
+import { RefPicker } from "./ui/refpicker.js?v=20260907b";
+import { AIView } from "./ui/ai.js?v=20260907b";
+import { CiteCheckView } from "./ui/citecheck.js?v=20260907b";
+import { TermsView } from "./ui/terms.js?v=20260907b";
+import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260907b";
+import * as GH from "./adapters/github.js?v=20260907b";
+import { extractLines } from "./core/importer.js?v=20260907b";
+import { buildAuto } from "./core/structure.js?v=20260907b";
+import * as SRC from "./core/srcfp.js?v=20260907b";
+import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260907b";
+import { ObjectStore, fitTable } from "./core/objects.js?v=20260907b";
+import { loadTargets, allTargets, targetById, firstTarget, nextRevLabel, verPrefixOf } from "./core/targets.js?v=20260907b";
+import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260907b";
+import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260907b";
+import { fmtDate } from "./ui/html.js?v=20260907b";
+import { printReg, regHtml } from "./ui/printdoc.js?v=20260907b";
 
 const $ = (s) => document.querySelector(s);
 const NL = "\n";
@@ -596,6 +596,105 @@ function askBox(title, fields) {
     });
   });
 }
+/* ============================================================
+   조각(.pmpart) —— 편ㆍ장ㆍ조 한 덩이를 따로 두고 도로 넣기
+   ------------------------------------------------------------
+   여럿이 나누어 손볼 때 쓴다. 한 사람은 제2편, 다른 사람은 제5편을 맡아
+   고치고 조각만 주고받는다.
+
+   사람이 정한 잣대 —— 번호는 조각에 적힌 것을 그대로 쓰고, 새로 덧붙이는
+   것이 아니라 있던 마디를 갈아 끼우며, 별표ㆍ별지도 함께 담아 갱신한다.
+   ============================================================ */
+function treeMenu(id, x, y) {
+  document.querySelector(".ctx-menu")?.remove();
+  const node = M.findNode(project.tree, id);
+  if (!node) return;
+  const reg = project.regNodes.find((r) => M.findNode([r], id));
+  const label = node.level === "조"
+    ? `제${node.no}조${node.branch ? `의${node.branch}` : ""}`
+    : `제${node.no}${node.level}`;
+  const menu = document.createElement("div");
+  menu.className = "ctx-menu";
+  menu.innerHTML = `
+    <div class="ctx-head">${esc(label)} ${esc(node.title || "")}</div>
+    <button data-x="save">조각으로 따로 저장…</button>
+    <button data-x="load">조각을 불러와 이 마디를 바꾸기…</button>`;
+  menu.style.left = Math.min(x, innerWidth - 260) + "px";
+  menu.style.top = Math.min(y, innerHeight - 110) + "px";
+  document.body.appendChild(menu);
+  const away = (e) => {
+    if (menu.contains(e.target)) return;
+    menu.remove(); document.removeEventListener("mousedown", away, true);
+  };
+  document.addEventListener("mousedown", away, true);
+  menu.addEventListener("click", async (e) => {
+    const b = e.target.closest("[data-x]");
+    if (!b) return;
+    menu.remove(); document.removeEventListener("mousedown", away, true);
+    if (b.dataset.x === "save") await savePart(node, reg);
+    else await loadPart(node, reg);
+  });
+}
+
+/** 고른 마디를 조각 파일로 내려받는다 */
+async function savePart(node, reg) {
+  if (!reg) { toast("이 마디가 어느 규정의 것인지 알 수 없습니다.", 4000); return; }
+  const { makePart } = await import("./core/part.js?v=20260907b");
+  const got = makePart(node, reg, {
+    by: GH.getAuthor(), versionLabel: project.current?.label || "",
+  });
+  const blob = new Blob([JSON.stringify(got.json)], { type: "application/json" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = got.name;
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 3000);
+  toast(`${got.name} 을(를) 내려받습니다`
+    + (got.별표 ? `${NL}딸린 별표ㆍ별지 ${got.별표}개를 함께 담았습니다.` : ""), 5000);
+}
+
+/** 조각을 골라 이 마디를 갈아 끼운다 */
+async function loadPart(node, reg) {
+  if (project.isReadonly) { toast("읽기 전용 판입니다.", 4000); return; }
+  try {
+    const { isPart, applyPart } = await import("./core/part.js?v=20260907b");
+    const got = await FS.openProject();
+    const part = got && got.data;
+    if (!isPart(part)) { toast("이 파일은 조각(.pmpart)이 아닙니다.", 5000); return; }
+    const who = part.from || {};
+    const ok = await askYesNo(`「${got.name}」 을(를) 넣습니다`, [
+      `${who.regTitle || ""} ${who.revLabel || ""} 에서 꺼낸 조각입니다.`,
+      "같은 번호의 마디를 찾아 그 자리를 갈아 끼웁니다 —— 번호는 조각의 것을 그대로 씁니다.",
+      (part.annex || []).length
+        ? `딸린 별표ㆍ별지 ${(part.annex || []).length}개도 함께 갱신합니다.`
+        : "딸린 별표ㆍ별지는 없습니다.",
+    ], "넣기");
+    if (!ok) return;
+    /* run() 은 되돌리기 자리를 남기고 참ㆍ거짓만 돌려주므로, 셈은 밖에 담는다.
+       run() 이 끝에 renumber() 를 부르나, 짝을 번호로 찾았으므로 그 자리의
+       번호와 조각의 번호가 같아 달라지는 것이 없다. */
+    let out = null;
+    const ok2 = project.run(`조각 넣기: ${got.name}`, (tree) => {
+      const target = tree.find((n) => M.isRegNode(n) && n.targetId === reg.targetId)
+        || { children: tree };
+      out = applyPart(target.children, part);
+      return out.바꾼것.length > 0;      // 하나도 못 찾았으면 되돌린다
+    });
+    if (!ok2 && (!out || !out.바꾼것.length)) {
+      toast(`짝이 되는 마디를 찾지 못했습니다 — ${(out?.못찾은것 || []).slice(0, 3).join(" ㆍ ")}`, 8000);
+      return;
+    }
+    const done = (out && out.바꾼것) || [];
+    const miss = (out && out.못찾은것) || [];
+    toast(`조각을 넣었습니다 — 바꾼 것 ${done.length}개`
+      + (miss.length ? `${NL}짝을 찾지 못한 것 ${miss.length}개 — ${miss.slice(0, 3).join(" ㆍ ")}` : ""),
+      miss.length ? 9000 : 4500);
+  } catch (err) {
+    if (err && err.name !== "AbortError" && err.message !== "취소") {
+      toast("조각을 넣지 못했습니다: " + err.message, 6000);
+    }
+  }
+}
 function paintEditHead() {
   const id = scopedTargetId();
   const t = id ? targetById(id) : null;
@@ -886,6 +985,8 @@ function buildTrees() {
       syncRefToDraft(id);
     },
     onToggle: (id) => project.toggleCollapse(id),
+    // 우클릭 —— 조각으로 따로 저장하거나, 조각을 불러와 그 마디를 바꾼다
+    onContext: (id, x, y) => treeMenu(id, x, y),
     onMove: (dragId, targetId, pos) => project.move(dragId, targetId, pos, {
       // 규정을 넘는 이동이면 사유를 묻는다 — core 는 화면을 모르므로 여기서 묻는다
       onNeedReason: (info) => askTransferReason(info),
@@ -1820,7 +1921,7 @@ async function doCommand(cmd) {
       const onlyName = only ? (project.regNode(only)?.short || "") : "";
       busy(`${onlyName || "개정 대상 세 규정"} 보고서를 작성 중…`);
       try {
-        const { buildReport } = await import("./ui/report.js?v=20260907a");
+        const { buildReport } = await import("./ui/report.js?v=20260907b");
         const r = await buildReport(project, { targetId: only });
         const url = URL.createObjectURL(r.blob);
         const a = document.createElement("a");
@@ -1957,7 +2058,7 @@ ${r.warning}` : ""),
       if (!reg) { toast("이 판에는 그 규정의 개정안이 없습니다.", 4000); break; }
       busy("한/글 문서를 짓는 중…");
       try {
-        const { buildDraftHwpx } = await import("./core/hwpxdraft.js?v=20260907a");
+        const { buildDraftHwpx } = await import("./core/hwpxdraft.js?v=20260907b");
         const url = new URL("kit/양식/01.개정안/[양식] 규정 개정(안).hwpx",
                             document.baseURI).href;
         const got = await buildDraftHwpx(reg, url, {

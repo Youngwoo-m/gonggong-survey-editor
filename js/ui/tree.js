@@ -1,7 +1,7 @@
 /* ============================================================
    ui/tree.js — 트리 렌더링 + 드래그 앤 드롭
    ============================================================ */
-import * as M from "../core/model.js?v=20260907a";
+import * as M from "../core/model.js?v=20260907b";
 
 /* 상태 이름 → CSS 클래스에 쓸 이름. 가운데점은 클래스에 못 쓴다. */
 const statusKey = (s) => String(s || "").replace(/[^가-힣A-Za-z0-9]/g, "");
@@ -194,6 +194,16 @@ export class TreeView {
         return;
       }
       this.opts.onSelect?.(id);
+    });
+
+    /* 우클릭 —— 무엇을 눌렀는지만 위로 넘긴다. 무엇을 보일지는 화면이 정한다.
+       받는 곳이 없으면 브라우저의 본디 메뉴를 그대로 둔다. */
+    el.addEventListener("contextmenu", (e) => {
+      const row = this._rowOf(e.target);
+      if (!row || !this.opts.onContext) return;
+      e.preventDefault();
+      this.selectedId = row.dataset.id;
+      this.opts.onContext(row.dataset.id, e.clientX, e.clientY);
     });
 
     if (!(this.opts.editable || this.opts.dragSource)) return;
