@@ -89,8 +89,10 @@ def main():
 
         # ㉲ 이력과 실제 폴더가 서로 맞는가
         regdir = os.path.join(W.OUT, name)
+        # 판 폴더는 「개정안_작업-1.16」 처럼 적는다. 2026-09-06 에 머리글자를
+        # vA 에서 작업으로 바꾸었으므로 「개정안_v」 로만 세면 하나도 잡지 못한다.
         onwall = {f for f in os.listdir(regdir)
-                  if f.startswith("개정안_v")} if os.path.isdir(regdir) else set()
+                  if f.startswith("개정안_") and f != "개정안_"} if os.path.isdir(regdir) else set()
         inbook = {h.get("폴더") for h in hist}
         for f in sorted(onwall - inbook):
             bad.append((name, f, "폴더는 있는데 이력에 없음"))

@@ -1,33 +1,33 @@
 /* ============================================================
    main.js — 앱 조립 (1단계 프로토타입)
    ============================================================ */
-import * as M from "./core/model.js?v=20260906j";
-import { Project } from "./core/project.js?v=20260906j";
-import * as FS from "./adapters/fileio.js?v=20260906j";
-import * as AUTO from "./adapters/autosave.js?v=20260906j";
-import { TreeView } from "./ui/tree.js?v=20260906j";
-import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260906j";
-import { CompareView } from "./ui/compare.js?v=20260906j";
-import { VersionsView } from "./ui/versions.js?v=20260906j";
-import { HistoryView } from "./ui/history.js?v=20260906j";
-import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260906j";
-import { ValidateView } from "./ui/validate.js?v=20260906j";
-import { RefPicker } from "./ui/refpicker.js?v=20260906j";
-import { AIView } from "./ui/ai.js?v=20260906j";
-import { CiteCheckView } from "./ui/citecheck.js?v=20260906j";
-import { TermsView } from "./ui/terms.js?v=20260906j";
-import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260906j";
-import * as GH from "./adapters/github.js?v=20260906j";
-import { extractLines } from "./core/importer.js?v=20260906j";
-import { buildAuto } from "./core/structure.js?v=20260906j";
-import * as SRC from "./core/srcfp.js?v=20260906j";
-import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260906j";
-import { ObjectStore, fitTable } from "./core/objects.js?v=20260906j";
-import { loadTargets, allTargets, targetById, firstTarget, nextRevLabel, verPrefixOf } from "./core/targets.js?v=20260906j";
-import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260906j";
-import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260906j";
-import { fmtDate } from "./ui/html.js?v=20260906j";
-import { printReg, regHtml } from "./ui/printdoc.js?v=20260906j";
+import * as M from "./core/model.js?v=20260906m";
+import { Project } from "./core/project.js?v=20260906m";
+import * as FS from "./adapters/fileio.js?v=20260906m";
+import * as AUTO from "./adapters/autosave.js?v=20260906m";
+import { TreeView } from "./ui/tree.js?v=20260906m";
+import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260906m";
+import { CompareView } from "./ui/compare.js?v=20260906m";
+import { VersionsView } from "./ui/versions.js?v=20260906m";
+import { HistoryView } from "./ui/history.js?v=20260906m";
+import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260906m";
+import { ValidateView } from "./ui/validate.js?v=20260906m";
+import { RefPicker } from "./ui/refpicker.js?v=20260906m";
+import { AIView } from "./ui/ai.js?v=20260906m";
+import { CiteCheckView } from "./ui/citecheck.js?v=20260906m";
+import { TermsView } from "./ui/terms.js?v=20260906m";
+import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260906m";
+import * as GH from "./adapters/github.js?v=20260906m";
+import { extractLines } from "./core/importer.js?v=20260906m";
+import { buildAuto } from "./core/structure.js?v=20260906m";
+import * as SRC from "./core/srcfp.js?v=20260906m";
+import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260906m";
+import { ObjectStore, fitTable } from "./core/objects.js?v=20260906m";
+import { loadTargets, allTargets, targetById, firstTarget, nextRevLabel, verPrefixOf } from "./core/targets.js?v=20260906m";
+import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260906m";
+import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260906m";
+import { fmtDate } from "./ui/html.js?v=20260906m";
+import { printReg, regHtml } from "./ui/printdoc.js?v=20260906m";
 
 const $ = (s) => document.querySelector(s);
 const NL = "\n";
@@ -160,7 +160,7 @@ function dropFile(blob, name) {
  * 아니하려면 한 자리에서 지어야 한다(ui/printdoc.js 의 regHtml).
  *
  * 개정안은 서고의 규정과 달리 발행처의 원본이 없다. 짓고 있는 문안이므로
- * 파일 이름과 문서 머리에 판 이름(vA-1.10 따위)을 함께 적어, 어느 판을
+ * 파일 이름과 문서 머리에 판 이름(작업-1.10 따위)을 함께 적어, 어느 판을
  * 뽑은 것인지 뒤에도 알 수 있게 한다.
  */
 function downloadEdit() {
@@ -170,7 +170,7 @@ function downloadEdit() {
   const rev = project.current;
   const base = library?.regulations?.find((r) => r.name === t.base) || {};
   const st = M.stats(reg.children || []);
-  /* 판 이름은 규정마다 따로 지닌다(revLabel — vA-1.10 따위). 프로젝트 전체의
+  /* 판 이름은 규정마다 따로 지닌다(revLabel — 작업-1.10 따위). 프로젝트 전체의
      판 이름(v2)은 세 규정을 아우른 것이라 규정 하나만 놓고 보면 뜻이 옅다.
      규정 제 것이 있으면 그것을 앞세운다. */
   const label = reg.revLabel ? ` ${reg.revLabel}`
@@ -557,7 +557,7 @@ function revsOfTarget(targetId) {
     const reg = (v.tree || []).find((n) => M.isRegNode(n) && n.targetId === targetId);
     if (!reg) continue;
     /* 접는 열쇠에 개정안 이름을 함께 넣는다. 갓 갈라 낸 판은 글자 하나
-       다르지 않으나 이름이 다르므로(vA-1.01) 고르개에 서야 한다 —— 그러지
+       다르지 않으나 이름이 다르므로(작업-1.01) 고르개에 서야 한다 —— 그러지
        아니하면 [＋개정안] 을 눌러도 고를 것이 늘지 아니한 것처럼 보인다. */
     by.set(regFingerprint(reg) + "|" + (reg.revLabel || v.label), { label: reg.revLabel || v.label,
       title: reg.revTitle || v.title || "", versionId: v.id, versionLabel: v.label });
@@ -1728,7 +1728,7 @@ async function doCommand(cmd) {
       const onlyName = only ? (project.regNode(only)?.short || "") : "";
       busy(`${onlyName || "개정 대상 세 규정"} 보고서를 작성 중…`);
       try {
-        const { buildReport } = await import("./ui/report.js?v=20260906j");
+        const { buildReport } = await import("./ui/report.js?v=20260906m");
         const r = await buildReport(project, { targetId: only });
         const url = URL.createObjectURL(r.blob);
         const a = document.createElement("a");
@@ -1773,7 +1773,7 @@ ${r.warning}` : ""),
        놓고 보면 뜻이 없다. 작업규정으로는 둘째 판인데 판 이름이 v4 인 일이
        생긴다. 규정마다 지닌 제 이름을 고친다. */
     /* 개정안 한 벌 더 두기 —— 판을 갈라 내고, 지금 보고 있는 규정의
-       개정안 이름을 한 칸 올린다(vA-1.01 → vA-1.02). 판 이름(v1ㆍv2)은
+       개정안 이름을 한 칸 올린다(작업-1.01 → 작업-1.02). 판 이름(v1ㆍv2)은
        세 규정을 아우른 것이라 규정 하나만 놓고 보면 뜻이 없으므로,
        고르개에는 규정마다의 이름이 선다. */
     case "addRev": {
@@ -1786,7 +1786,7 @@ ${r.warning}` : ""),
       if (title === null) break;
       /* 이름은 **판을 갈라 내기 전에** 세어 둔다. createVersion 이
          activeTargetId 를 보고 한 칸 올려 두는데, 그 뒤에 다시 세면 그것까지
-         쓰인 것으로 잡혀 vA-1.01 을 건너뛰고 vA-1.02 가 된다. */
+         쓰인 것으로 잡혀 작업-1.01 을 건너뛰고 작업-1.02 가 된다. */
       const used = [];
       for (const ov of project.versions) {
         const r = (ov.tree || []).find((n) => M.isRegNode(n) && n.targetId === tid);

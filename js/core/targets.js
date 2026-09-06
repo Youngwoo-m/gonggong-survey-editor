@@ -134,16 +134,26 @@ export function topLevelOf(target) {
 
 const HUNDREDTH = 100;
 
-/** n 번째 판 이름 (n = 0 이면 첫 판 vA-1.00) */
+/** n 번째 판 이름 (n = 0 이면 첫 판 작업-1.00) */
+/* 예전 이름의 머리글자 —— 「vA-1.00」 을 아직 읽을 수 있어야 한다.
+   2026-09-06 에 사람이 vA→작업 ㆍ vB→심사 ㆍ vC→드론 으로 바꾸었다. */
+const OLD_PREFIX = { "작업": "A", "심사": "B", "드론": "C" };
+
 export function revLabel(prefix, n) {
   const cents = HUNDREDTH + Math.max(0, n | 0);
-  return `v${prefix}-${(cents / HUNDREDTH).toFixed(2)}`;
+  return `${prefix}-${(cents / HUNDREDTH).toFixed(2)}`;
 }
 
 /** 이 이름이 그 규정의 판 이름인가 — 맞으면 1/100 단위 값, 아니면 null */
 export function revValue(prefix, label) {
-  const m = new RegExp(`^v${prefix}-(\\d+)\\.(\\d{2})$`).exec(String(label || "").trim());
-  return m ? (+m[1]) * HUNDREDTH + (+m[2]) : null;
+  const txt = String(label || "").trim();
+  const heads = [prefix];
+  if (OLD_PREFIX[prefix]) heads.push("v" + OLD_PREFIX[prefix]);   // 옛 이름도 읽는다
+  for (const h of heads) {
+    const m = new RegExp(`^${h}-(\\d+)\\.(\\d{2})$`).exec(txt);
+    if (m) return (+m[1]) * HUNDREDTH + (+m[2]);
+  }
+  return null;
 }
 
 /** 이미 쓰인 이름들 다음 판 */
@@ -154,7 +164,7 @@ export function nextRevLabel(prefix, used) {
     if (v !== null && v > max) max = v;
   }
   const cents = max + 1;
-  return `v${prefix}-${(cents / HUNDREDTH).toFixed(2)}`;
+  return `${prefix}-${(cents / HUNDREDTH).toFixed(2)}`;
 }
 
 /** 대상 id 로 머리글자 (등록부에 없으면 이름 첫 글자) */

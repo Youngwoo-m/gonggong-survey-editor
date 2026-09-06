@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 r"""규정마다 개정안 한 세트를 지어 **판(버전) 폴더**에 담는다.
 
-  App\개정안\<규정>\개정안_vA-1.00\
+  App\개정안\<규정>\개정안_작업-1.00\
       개정(안).hwpx                 Form\01.개정안 양식에 얹은 조문 전문과 부칙
       개정(안)_신구대조표.hwpx        Form\02.신구대조표 양식에 얹은 세 칸 대조표
       개정사유서.hwpx                Form\03.개정사유서 양식에 얹은 일곱 절
@@ -11,7 +11,7 @@ r"""규정마다 개정안 한 세트를 지어 **판(버전) 폴더**에 담는
 
 ■ 판 이름
 
-  vA-2.01 처럼 적는다.
+  작업-2.01 처럼 적는다.
 
       A     등록부(targets.json)가 규정마다 준 머리글자 — 작업규정 A ㆍ
             성과심사 B ㆍ 무인비행장치 C.
@@ -185,7 +185,7 @@ def next_tag(hist, letter, major):
     used = [int(h.get("작은번호", 0)) for h in hist
             if int(h.get("판번호", 0)) == major]
     minor = (max(used) + 1) if used else 0
-    return "v%s-%d.%02d" % (letter, major, minor), minor
+    return "%s-%d.%02d" % (letter, major, minor), minor
 
 
 def days_since(iso):
@@ -328,7 +328,7 @@ def main():
             # 같은 판을 같은 지문으로 이미 지었는가
             mine = [h for h in hist if int(h.get("판번호", 0)) == major]
             # 지문이 같은 것이 여럿이면 가장 나중 것을 든다 — 앞의 것을
-            # 집으면 vB-1.01 을 지어 두고도 vB-1.00 이라 알리게 된다
+            # 집으면 심사-1.01 을 지어 두고도 심사-1.00 이라 알리게 된다
             same = next((h for h in reversed(mine) if h.get("지문") == fp), None)
             print("   %d째 판 「%s」" % (major, revname[:44]))
 

@@ -736,7 +736,7 @@ def main():
         today = _dt.datetime.now().strftime("%Y%m%d_%H%M")
         short = BAD.sub("_", t.get("short") or want)
         # 판 이름은 화면과 같은 규칙으로 짓는다 — 등록부의 ver 를 머리글자로
-        # 삼아 1.00 에서 0.01 씩 올린다 (vC-1.00 · vC-1.01).
+        # 삼아 1.00 에서 0.01 씩 올린다 (드론-1.00 · 드론-1.01).
         # 초안 파일의 제목은 두 판이 모두 '개정안 초안…' 으로 시작하여
         # 그대로 쓰면 판이 갈리지 아니한다.
         tag = f"v{t.get('ver') or 'X'}-1.{ri:02d}" if len(revs) > 1 else ""
