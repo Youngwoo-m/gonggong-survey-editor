@@ -21,19 +21,23 @@ button{font-family:inherit}
 #app{display:flex;flex-direction:column;height:100vh}
 
 /* ---- 메뉴바 ---- */
-.menubar{display:flex;align-items:center;gap:14px;height:34px;padding:0 12px;background:var(--ink);color:#D3DDE2;flex:none}
-.menubar .brand{font-size:12.5px;letter-spacing:-.2px}
+/* 메뉴바는 창 너비를 따라간다 —— 좁아지면 줄을 바꾸어 접히고 띠 높이도
+   담긴 것만큼 늘어난다. 높이를 34px 로 못박아 두었더니 창을 좁힐 때
+   단추가 잘리고 판 고르개가 밀려 나갔다. */
+.menubar{display:flex;align-items:center;flex-wrap:wrap;gap:6px 14px;min-height:34px;padding:3px 12px;background:var(--ink);color:#D3DDE2;flex:none}
+.menubar .brand{font-size:12.5px;letter-spacing:-.2px;white-space:nowrap}
 .menubar .brand b{color:#fff}
-.menubar .menu{display:flex;align-items:center;gap:2px}
-.menubar .menu button{background:none;border:0;color:#C3D0D6;padding:4px 9px;border-radius:4px;cursor:pointer;font-size:12px}
+.menubar .menu{display:flex;align-items:center;flex-wrap:wrap;gap:2px;min-width:0}
+.menubar .menu button{background:none;border:0;color:#C3D0D6;padding:4px 9px;border-radius:4px;cursor:pointer;font-size:12px;white-space:nowrap;min-height:26px;display:inline-flex;align-items:center;justify-content:center}
 .menubar .menu button:hover{background:#33454F;color:#fff}
 .menubar .sep{width:1px;height:15px;background:#3E525C;margin:0 4px}
 /* 다른 편집기로 건너가는 링크 (작업규정 ↔ 성과심사 규정) */
 .menubar .menu a.applink{color:#9FD2C4;text-decoration:none;padding:4px 9px;border-radius:4px;font-size:12px;border:1px solid #3E525C}
 .menubar .menu a.applink:hover{background:#33454F;color:#fff}
-.menubar .docname{margin-left:auto;font-size:12px;color:#93A6AF;display:flex;align-items:center;gap:8px}
+.menubar .docname{margin-left:auto;font-size:12px;color:#93A6AF;display:flex;align-items:center;flex-wrap:wrap;gap:4px 8px;min-width:0}
 #versionSelect{background:#2E3F49;color:#E4EBEE;border:1px solid #44585F;border-radius:4px;
-  padding:3px 6px;font-size:11.5px;font-family:inherit;max-width:280px}
+  padding:3px 6px;font-size:11.5px;font-family:inherit;
+  max-width:min(280px, 40vw);min-width:90px}
 #versionSelect:focus{outline:none;border-color:var(--accent)}
 .dirty{color:var(--accent);font-size:14px;line-height:1}
 
@@ -964,3 +968,14 @@ a.cite.anx:hover { background: var(--link-bg); }
 
 /* 자료 파일이 브라우저 작업본보다 새로울 때 [자료에서 다시 읽기] 를 돋운다 */
 .menu button.warn{background:var(--accent);color:#fff;font-weight:700}
+
+/* 아주 좁은 창 —— 메뉴바 글을 조금 줄여 줄 수를 아낀다 */
+@media (max-width: 1100px) {
+  .menubar{gap:4px 10px}
+  .menubar .menu button{padding:4px 7px;font-size:11.5px}
+  .menubar .brand{font-size:11.5px}
+}
+@media (max-width: 820px) {
+  .menubar .brand b{display:inline}
+  .menubar .menu button{padding:3px 6px;font-size:11px}
+}
