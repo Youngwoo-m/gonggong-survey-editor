@@ -7,11 +7,11 @@
    · this.tree 는 항상 '현재 버전'의 트리 배열과 같은 객체를 가리킨다.
    · 모든 구조 변경은 run() 트랜잭션을 통해서만 일어난다.
    ============================================================ */
-import * as M from "./model.js?v=20260906t";
-import { revLabel, nextRevLabel, revValue, verPrefixOf } from "./targets.js?v=20260906t";
-import { regFingerprint } from "./xrefs.js?v=20260906t";
+import * as M from "./model.js?v=20260906w";
+import { revLabel, nextRevLabel, revValue, verPrefixOf } from "./targets.js?v=20260906w";
+import { regFingerprint } from "./xrefs.js?v=20260906w";
 import { numbersOf, planFrom, planStayed, remapCitations, articleIdsIn,
-         planTermFixes, TERM_RULES } from "./xrefs.js?v=20260906t";
+         planTermFixes, TERM_RULES } from "./xrefs.js?v=20260906w";
 
 const MAX_HISTORY = 100;
 const BASE_ID = "base";
@@ -283,7 +283,9 @@ export class Project {
     }
 
     this.baseName = list.map((e) => e.target.base).join(" · ");
-    this.name = opts.name || "규정 개정안 (세 종)";
+    /* 내보낸 파일 이름이 되는 자리다. 띄어쓰기가 있으면 주소로 옮길 때
+       %20 으로 늘어지고, 손으로 적을 때에도 성가시다. 붙여 적는다. */
+    this.name = opts.name || "규정개정안(3종)";
     this.baseMeta = {
       name: this.name,
       targets: list.map((e) => ({
@@ -608,9 +610,13 @@ ${line}` : line;
     };
   }
 
+  /* 예전 기본 이름 —— 파일 이름이 되는 자리라 띄어쓰기를 걷어 냈다.
+     사람이 손수 붙인 이름은 그대로 두고, 옛 기본값일 때만 갈아 끼운다. */
+  static OLD_NAME = "규정 개정안 (세 종)";
+
   fromJSON(o) {
     if (!o || o.format !== "pmproj") throw new Error("프로젝트 파일 형식이 아닙니다.");
-    this.name = o.name || "개정안";
+    this.name = o.name === Project.OLD_NAME ? "규정개정안(3종)" : (o.name || "개정안");
     this.baseName = o.baseName || "";
     this.baseMeta = o.baseMeta || null;
     this._log = o.log || [];
