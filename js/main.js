@@ -1,33 +1,33 @@
 /* ============================================================
    main.js — 앱 조립 (1단계 프로토타입)
    ============================================================ */
-import * as M from "./core/model.js?v=20260906f";
-import { Project } from "./core/project.js?v=20260906f";
-import * as FS from "./adapters/fileio.js?v=20260906f";
-import * as AUTO from "./adapters/autosave.js?v=20260906f";
-import { TreeView } from "./ui/tree.js?v=20260906f";
-import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260906f";
-import { CompareView } from "./ui/compare.js?v=20260906f";
-import { VersionsView } from "./ui/versions.js?v=20260906f";
-import { HistoryView } from "./ui/history.js?v=20260906f";
-import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260906f";
-import { ValidateView } from "./ui/validate.js?v=20260906f";
-import { RefPicker } from "./ui/refpicker.js?v=20260906f";
-import { AIView } from "./ui/ai.js?v=20260906f";
-import { CiteCheckView } from "./ui/citecheck.js?v=20260906f";
-import { TermsView } from "./ui/terms.js?v=20260906f";
-import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260906f";
-import * as GH from "./adapters/github.js?v=20260906f";
-import { extractLines } from "./core/importer.js?v=20260906f";
-import { buildAuto } from "./core/structure.js?v=20260906f";
-import * as SRC from "./core/srcfp.js?v=20260906f";
-import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260906f";
-import { ObjectStore, fitTable } from "./core/objects.js?v=20260906f";
-import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260906f";
-import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260906f";
-import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260906f";
-import { fmtDate } from "./ui/html.js?v=20260906f";
-import { printReg, regHtml } from "./ui/printdoc.js?v=20260906f";
+import * as M from "./core/model.js?v=20260906j";
+import { Project } from "./core/project.js?v=20260906j";
+import * as FS from "./adapters/fileio.js?v=20260906j";
+import * as AUTO from "./adapters/autosave.js?v=20260906j";
+import { TreeView } from "./ui/tree.js?v=20260906j";
+import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260906j";
+import { CompareView } from "./ui/compare.js?v=20260906j";
+import { VersionsView } from "./ui/versions.js?v=20260906j";
+import { HistoryView } from "./ui/history.js?v=20260906j";
+import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260906j";
+import { ValidateView } from "./ui/validate.js?v=20260906j";
+import { RefPicker } from "./ui/refpicker.js?v=20260906j";
+import { AIView } from "./ui/ai.js?v=20260906j";
+import { CiteCheckView } from "./ui/citecheck.js?v=20260906j";
+import { TermsView } from "./ui/terms.js?v=20260906j";
+import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260906j";
+import * as GH from "./adapters/github.js?v=20260906j";
+import { extractLines } from "./core/importer.js?v=20260906j";
+import { buildAuto } from "./core/structure.js?v=20260906j";
+import * as SRC from "./core/srcfp.js?v=20260906j";
+import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260906j";
+import { ObjectStore, fitTable } from "./core/objects.js?v=20260906j";
+import { loadTargets, allTargets, targetById, firstTarget, nextRevLabel, verPrefixOf } from "./core/targets.js?v=20260906j";
+import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260906j";
+import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260906j";
+import { fmtDate } from "./ui/html.js?v=20260906j";
+import { printReg, regHtml } from "./ui/printdoc.js?v=20260906j";
 
 const $ = (s) => document.querySelector(s);
 const NL = "\n";
@@ -556,7 +556,10 @@ function revsOfTarget(targetId) {
     if (v.readonly) continue;          // 기준(현행) 은 개정안이 아니다 — 판 고르개에 있다
     const reg = (v.tree || []).find((n) => M.isRegNode(n) && n.targetId === targetId);
     if (!reg) continue;
-    by.set(regFingerprint(reg), { label: reg.revLabel || v.label,
+    /* 접는 열쇠에 개정안 이름을 함께 넣는다. 갓 갈라 낸 판은 글자 하나
+       다르지 않으나 이름이 다르므로(vA-1.01) 고르개에 서야 한다 —— 그러지
+       아니하면 [＋개정안] 을 눌러도 고를 것이 늘지 아니한 것처럼 보인다. */
+    by.set(regFingerprint(reg) + "|" + (reg.revLabel || v.label), { label: reg.revLabel || v.label,
       title: reg.revTitle || v.title || "", versionId: v.id, versionLabel: v.label });
   }
   return [...by.values()];
@@ -566,13 +569,17 @@ function paintRevPicker(targetId) {
   const row = $("#editRevRow"), sel = $("#editRevSelect"), note = $("#editRevNote");
   if (!row || !sel) return;
   const revs = targetId ? revsOfTarget(targetId) : [];
-  // 개정안이 한 벌뿐이면 고를 것이 없다
-  if (revs.length < 2) {
-    row.classList.add("hidden");
+  /* 개정안이 한 벌뿐이면 고를 것이 없다. 다만 줄을 통째로 숨기면 [＋개정안]
+     단추까지 사라져 새 개정안을 둘 길이 없어진다 —— 고르개와 [이름] 만 숨긴다. */
+  row.classList.remove("hidden");
+  const solo = revs.length < 2;
+  sel.classList.toggle("hidden", solo);
+  row.querySelector('[data-cmd="renameRev"]')?.classList.toggle("hidden", solo);
+  if (solo) {
     sel.innerHTML = ""; sel.dataset.sig = "";   // 옛 목록을 남기지 않는다
+    if (note) note.textContent = revs.length ? "개정안 한 벌" : "";
     return;
   }
-  row.classList.remove("hidden");
   const sig = revs.map((r) => r.versionId + "|" + r.label).join("~") + "@" + targetId;
   if (sel.dataset.sig !== sig) {
     sel.dataset.sig = sig;
@@ -1721,7 +1728,7 @@ async function doCommand(cmd) {
       const onlyName = only ? (project.regNode(only)?.short || "") : "";
       busy(`${onlyName || "개정 대상 세 규정"} 보고서를 작성 중…`);
       try {
-        const { buildReport } = await import("./ui/report.js?v=20260906f");
+        const { buildReport } = await import("./ui/report.js?v=20260906j");
         const r = await buildReport(project, { targetId: only });
         const url = URL.createObjectURL(r.blob);
         const a = document.createElement("a");
@@ -1765,6 +1772,36 @@ ${r.warning}` : ""),
     /* 개정안 이름 바꾸기 — 판 이름은 세 규정을 아우른 것이라 규정 하나만
        놓고 보면 뜻이 없다. 작업규정으로는 둘째 판인데 판 이름이 v4 인 일이
        생긴다. 규정마다 지닌 제 이름을 고친다. */
+    /* 개정안 한 벌 더 두기 —— 판을 갈라 내고, 지금 보고 있는 규정의
+       개정안 이름을 한 칸 올린다(vA-1.01 → vA-1.02). 판 이름(v1ㆍv2)은
+       세 규정을 아우른 것이라 규정 하나만 놓고 보면 뜻이 없으므로,
+       고르개에는 규정마다의 이름이 선다. */
+    case "addRev": {
+      const tid = scopedTargetId();
+      if (!tid) { toast("규정을 먼저 고르십시오.", 3000); break; }
+      const short = targetById(tid)?.short || "";
+      const title = prompt(
+        `${short} 개정안을 한 벌 더 둡니다. 무엇이 달라지는지 적으십시오.`,
+        `${short} 개정안`);
+      if (title === null) break;
+      /* 이름은 **판을 갈라 내기 전에** 세어 둔다. createVersion 이
+         activeTargetId 를 보고 한 칸 올려 두는데, 그 뒤에 다시 세면 그것까지
+         쓰인 것으로 잡혀 vA-1.01 을 건너뛰고 vA-1.02 가 된다. */
+      const used = [];
+      for (const ov of project.versions) {
+        const r = (ov.tree || []).find((n) => M.isRegNode(n) && n.targetId === tid);
+        if (r && r.revLabel) used.push(r.revLabel);
+      }
+      const nextLabel = nextRevLabel(verPrefixOf(tid), used);
+      const v = project.createVersion({ title: title.trim() });
+      if (!v) { toast("개정안을 새로 두지 못하였습니다.", 3500); break; }
+      const reg = (v.tree || []).find((n) => M.isRegNode(n) && n.targetId === tid);
+      if (reg) project.renameRev(tid, v.id, nextLabel, title.trim());
+      $("#editRevSelect").dataset.sig = "";      // 목록을 다시 세운다
+      paintEditHead();
+      toast(`${short} 개정안 ${reg?.revLabel || v.label} 을(를) 두었습니다.`, 3500);
+      break;
+    }
     case "renameRev": {
       const tid = scopedTargetId();
       const reg = tid ? project.regNode(tid) : null;

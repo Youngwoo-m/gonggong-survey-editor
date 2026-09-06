@@ -1,10 +1,10 @@
 /* ============================================================
    ui/detail.js — 조문 상세 패널
    ============================================================ */
-import * as M from "../core/model.js?v=20260906f";
-import { wordDiff, beforeRuns, afterRuns, hasChange } from "../core/textdiff.js?v=20260906f";
+import * as M from "../core/model.js?v=20260906j";
+import { wordDiff, beforeRuns, afterRuns, hasChange } from "../core/textdiff.js?v=20260906j";
 import { imgIdsIn, renderBody, fitTable, toHtml, openTableOverlay, markAnnexEdits }
-  from "../core/objects.js?v=20260906f";
+  from "../core/objects.js?v=20260906j";
 
 /** 만들고 있는 안을 부르는 말 — 작업규정은 개정안, 성과심사 규정은 개정안 */
 /* 만들어 내는 안을 부르는 말 — 규정마다 다르다 (작업규정은 '개정안', 나머지는 '개정안').
@@ -75,9 +75,9 @@ function runsHtml(runs) {
   return runs.map((r) => (r.mark ? `<u class="mk">${esc(r.s)}</u>` : esc(r.s))).join("");
 }
 
-import { linkReason, wireReasonLinks } from "../core/reasonlink.js?v=20260906f";
-import { esc, fmtDT } from "./html.js?v=20260906f";
-import { renderPdf } from "./pdfview.js?v=20260906f";
+import { linkReason, wireReasonLinks } from "../core/reasonlink.js?v=20260906j";
+import { esc, fmtDT } from "./html.js?v=20260906j";
+import { renderPdf } from "./pdfview.js?v=20260906j";
 
 /** 사유 글이 스스로 머리글을 달고 있는가 — 그러면 딱지를 겹쳐 붙이지 아니한다 */
 const RE_REASON_HEAD = /^\s*\[변경 사유\]/;
