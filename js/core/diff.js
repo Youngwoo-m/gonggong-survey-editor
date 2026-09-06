@@ -7,9 +7,9 @@
      · work 에만 있음  → 신설
      · 둘 다 있음      → 부모 체인 변화(이동) / 제목·본문 변화(수정) 판정
    ============================================================ */
-import * as M from "./model.js?v=20260906x";
-import { stripImgTags } from "./objects.js?v=20260906x";
-import { wordDiff, afterRuns, beforeRuns, hasChange } from "./textdiff.js?v=20260906x";
+import * as M from "./model.js?v=20260906y";
+import { stripImgTags } from "./objects.js?v=20260906y";
+import { wordDiff, afterRuns, beforeRuns, hasChange } from "./textdiff.js?v=20260906y";
 
 /* 「통합·신설」 은 makeRow 가 매기는 kind 가 아니라 요약에서만 쓰는 이름이다.
    현행 여럿을 합쳐 새로 둔 조문(origin="통합")을 신설에서 갈라 세려는 것이다. */

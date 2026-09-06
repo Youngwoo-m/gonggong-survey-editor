@@ -1,33 +1,33 @@
 /* ============================================================
    main.js — 앱 조립 (1단계 프로토타입)
    ============================================================ */
-import * as M from "./core/model.js?v=20260906x";
-import { Project } from "./core/project.js?v=20260906x";
-import * as FS from "./adapters/fileio.js?v=20260906x";
-import * as AUTO from "./adapters/autosave.js?v=20260906x";
-import { TreeView } from "./ui/tree.js?v=20260906x";
-import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260906x";
-import { CompareView } from "./ui/compare.js?v=20260906x";
-import { VersionsView } from "./ui/versions.js?v=20260906x";
-import { HistoryView } from "./ui/history.js?v=20260906x";
-import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260906x";
-import { ValidateView } from "./ui/validate.js?v=20260906x";
-import { RefPicker } from "./ui/refpicker.js?v=20260906x";
-import { AIView } from "./ui/ai.js?v=20260906x";
-import { CiteCheckView } from "./ui/citecheck.js?v=20260906x";
-import { TermsView } from "./ui/terms.js?v=20260906x";
-import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260906x";
-import * as GH from "./adapters/github.js?v=20260906x";
-import { extractLines } from "./core/importer.js?v=20260906x";
-import { buildAuto } from "./core/structure.js?v=20260906x";
-import * as SRC from "./core/srcfp.js?v=20260906x";
-import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260906x";
-import { ObjectStore, fitTable } from "./core/objects.js?v=20260906x";
-import { loadTargets, allTargets, targetById, firstTarget, nextRevLabel, verPrefixOf } from "./core/targets.js?v=20260906x";
-import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260906x";
-import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260906x";
-import { fmtDate } from "./ui/html.js?v=20260906x";
-import { printReg, regHtml } from "./ui/printdoc.js?v=20260906x";
+import * as M from "./core/model.js?v=20260906y";
+import { Project } from "./core/project.js?v=20260906y";
+import * as FS from "./adapters/fileio.js?v=20260906y";
+import * as AUTO from "./adapters/autosave.js?v=20260906y";
+import { TreeView } from "./ui/tree.js?v=20260906y";
+import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260906y";
+import { CompareView } from "./ui/compare.js?v=20260906y";
+import { VersionsView } from "./ui/versions.js?v=20260906y";
+import { HistoryView } from "./ui/history.js?v=20260906y";
+import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260906y";
+import { ValidateView } from "./ui/validate.js?v=20260906y";
+import { RefPicker } from "./ui/refpicker.js?v=20260906y";
+import { AIView } from "./ui/ai.js?v=20260906y";
+import { CiteCheckView } from "./ui/citecheck.js?v=20260906y";
+import { TermsView } from "./ui/terms.js?v=20260906y";
+import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260906y";
+import * as GH from "./adapters/github.js?v=20260906y";
+import { extractLines } from "./core/importer.js?v=20260906y";
+import { buildAuto } from "./core/structure.js?v=20260906y";
+import * as SRC from "./core/srcfp.js?v=20260906y";
+import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260906y";
+import { ObjectStore, fitTable } from "./core/objects.js?v=20260906y";
+import { loadTargets, allTargets, targetById, firstTarget, nextRevLabel, verPrefixOf } from "./core/targets.js?v=20260906y";
+import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260906y";
+import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260906y";
+import { fmtDate } from "./ui/html.js?v=20260906y";
+import { printReg, regHtml } from "./ui/printdoc.js?v=20260906y";
 
 const $ = (s) => document.querySelector(s);
 const NL = "\n";
@@ -666,6 +666,7 @@ function paintRevPicker(targetId) {
   const solo = revs.length < 2;
   sel.classList.toggle("hidden", solo);
   row.querySelector('[data-cmd="renameRev"]')?.classList.toggle("hidden", solo);
+  row.querySelector('[data-cmd="delRev"]')?.classList.toggle("hidden", solo);
   if (solo) {
     sel.innerHTML = ""; sel.dataset.sig = "";   // 옛 목록을 남기지 않는다
     if (note) note.textContent = revs.length ? "개정안 한 벌" : "";
@@ -1819,7 +1820,7 @@ async function doCommand(cmd) {
       const onlyName = only ? (project.regNode(only)?.short || "") : "";
       busy(`${onlyName || "개정 대상 세 규정"} 보고서를 작성 중…`);
       try {
-        const { buildReport } = await import("./ui/report.js?v=20260906x");
+        const { buildReport } = await import("./ui/report.js?v=20260906y");
         const r = await buildReport(project, { targetId: only });
         const url = URL.createObjectURL(r.blob);
         const a = document.createElement("a");
@@ -1931,6 +1932,42 @@ ${r.warning}` : ""),
       $("#editRevSelect").dataset.sig = "";      // 목록을 다시 세운다
       paintEditHead();
       toast(`${short} 개정안 ${reg?.revLabel || v.label} 을(를) 두었습니다.`, 3500);
+      break;
+    }
+    /* 개정안 지우기 —— 개정안은 판에 담겨 있으므로 판을 지우는 일이다.
+       판 하나에 세 규정의 개정안이 함께 들었으니 다른 규정의 것도 사라진다.
+       무인비행장치는 2024년 판과 2025년 판이 서로 다른 판에 담겨 있어
+       한 판을 지우면 한 해치가 통째로 없어진다 —— 그 일을 겪었으므로
+       무엇이 사라지는지 낱낱이 보이고 묻는다. */
+    case "delRev": {
+      const tid = scopedTargetId();
+      if (!tid) { toast("규정을 먼저 고르십시오.", 3000); break; }
+      const vid = $("#editRevSelect")?.value || project.currentId;
+      const cur = project.version(vid);
+      if (!cur || cur.readonly) { toast("기준(현행)은 지울 수 없습니다.", 3500); break; }
+      if (project.editableVersions.length <= 1) {
+        toast("마지막 남은 판입니다 —— 지울 수 없습니다.", 4000); break;
+      }
+      /* 이 규정의 개정안이 다른 판에도 있는가 —— 없으면 지우지 아니한다 */
+      const others = project.versions.filter((v) => !v.readonly && v.id !== vid)
+        .filter((v) => (v.tree || []).some((n) => M.isRegNode(n) && n.targetId === tid));
+      if (!others.length) {
+        toast(`${targetById(tid)?.short || ""} 의 마지막 개정안입니다 —— 지우면 그 규정이 빕니다.`,
+              5000);
+        break;
+      }
+      const gone = (cur.tree || []).filter((n) => M.isRegNode(n))
+        .map((n) => `${n.revLabel || cur.label} · ${n.revTitle || n.title || ""}`);
+      const ok = await askYesNo(`개정안을 지웁니다`, [
+        `판 ${cur.label} 을(를) 통째로 지웁니다.`,
+        "이 판에 담긴 개정안이 모두 사라집니다 —— " + gone.join(" ㆍ "),
+        "되돌릴 수 없습니다.",
+      ], "지움");
+      if (!ok) break;
+      project.deleteVersion(vid);
+      $("#editRevSelect").dataset.sig = "";
+      paintEditHead();
+      toast(`판 ${cur.label} 을(를) 지웠습니다.`, 3500);
       break;
     }
     case "renameRev": {
