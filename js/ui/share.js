@@ -1,8 +1,8 @@
 /* ============================================================
    ui/share.js — 공유 화면 (저장소 연결 · 프로젝트 목록 · 저장 이력)
    ============================================================ */
-import * as GH from "../adapters/github.js?v=20260906b";
-import { esc, fmtDT } from "./html.js?v=20260906b";
+import * as GH from "../adapters/github.js?v=20260906d";
+import { esc, fmtDT } from "./html.js?v=20260906d";
 
 /** 파일 저장에 이어 저장소에도 올릴지 */
 export const AUTOPUSH = {
@@ -28,7 +28,9 @@ export class ShareView {
   async open(tab = null) {
     if (this.el) this.close();
     if (tab) this.tab = tab;
-    if (!GH.hasToken() || !GH.getConfig().owner) this.tab = "setup";
+    /* 토큰이 없어도 공개 저장소의 목록과 이력은 읽을 수 있다.
+       저장소조차 정해지지 아니한 때에만 「연결」 칸을 먼저 보인다. */
+    if (!GH.getConfig().owner) this.tab = "setup";
     this.el = document.createElement("div");
     this.el.className = "overlay";
     document.body.appendChild(this.el);
@@ -80,6 +82,9 @@ export class ShareView {
   render() {
     const cfg = GH.getConfig();
     const connected = GH.hasToken() && cfg.owner && cfg.repo;
+    /* 토큰이 없어도 공개 저장소는 읽을 수 있다. 목록과 이력을 보이되,
+       저장하는 단추는 내걸지 아니한다. */
+    const readOnly = !GH.hasToken() && cfg.owner && cfg.repo;
     const cur = this.project.remote;
 
     this.el.innerHTML = `
@@ -91,7 +96,10 @@ export class ShareView {
         ${connected
           ? `<b>${esc(cfg.owner)}/${esc(cfg.repo)}</b> · ${esc(cfg.branch)} · <code>${esc(cfg.dir || "/")}</code>
              &nbsp;|&nbsp; 저장할 때마다 커밋이 남아 버전이 관리됩니다.`
-          : "저장소를 연결하면 프로젝트를 함께 쓰고, 저장할 때마다 버전이 남습니다."}
+          : readOnly
+            ? `<b>${esc(cfg.owner)}/${esc(cfg.repo)}</b> · ${esc(cfg.branch)} · <code>${esc(cfg.dir || "/")}</code>
+               &nbsp;|&nbsp; 남이 올린 작업본을 <b>열어 볼 수 있습니다</b>. 저장하려면 [연결 설정] 에서 토큰을 넣으십시오.`
+            : "저장소를 연결하면 프로젝트를 함께 쓰고, 저장할 때마다 버전이 남습니다."}
       </div>
     </div>
     <button class="x" data-x="close" title="닫기 (Esc)">✕</button>
@@ -104,8 +112,12 @@ export class ShareView {
     <span id="shBusy" class="hint hidden"></span>
     <div class="spacer"></div>
     ${cur ? `<span class="hint">현재 연결: <b>${esc(cur.name)}</b></span>` : `<span class="hint">서버에 저장된 프로젝트가 아닙니다</span>`}
-    ${connected && this.tab === "list" ? `<button data-x="reload">새로 고침</button>
-      <button class="primary" data-x="saveNew">현재 작업을 서버에 저장</button>` : ""}
+    ${(connected || readOnly) && this.tab === "list"
+      ? `<button data-x="reload">새로 고침</button>`
+      : ""}
+    ${connected && this.tab === "list"
+      ? `<button class="primary" data-x="saveNew">현재 작업을 서버에 저장</button>`
+      : ""}
   </div>
 
   <div class="cmp-body share-body">${
@@ -131,7 +143,11 @@ export class ShareView {
 
   /* ----- 목록 ----- */
   viewList(connected) {
-    if (!connected) return `<div class="sh-none">연결 설정 탭에서 저장소와 토큰을 먼저 지정하세요.</div>`;
+    // 토큰이 없어도 공개 저장소의 목록은 읽는다 —— 저장소가 정해졌으면 보인다
+    const cfg = GH.getConfig();
+    if (!connected && !(cfg.owner && cfg.repo)) {
+      return `<div class="sh-none">연결 설정 탭에서 저장소를 먼저 지정하세요.</div>`;
+    }
     if (!this.items.length) {
       return `<div class="sh-none">저장된 프로젝트가 없습니다.<br>
         위의 <b>[현재 작업을 서버에 저장]</b> 으로 첫 프로젝트를 올려보세요.</div>`;

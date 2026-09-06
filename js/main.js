@@ -1,33 +1,33 @@
 /* ============================================================
    main.js — 앱 조립 (1단계 프로토타입)
    ============================================================ */
-import * as M from "./core/model.js?v=20260906b";
-import { Project } from "./core/project.js?v=20260906b";
-import * as FS from "./adapters/fileio.js?v=20260906b";
-import * as AUTO from "./adapters/autosave.js?v=20260906b";
-import { TreeView } from "./ui/tree.js?v=20260906b";
-import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260906b";
-import { CompareView } from "./ui/compare.js?v=20260906b";
-import { VersionsView } from "./ui/versions.js?v=20260906b";
-import { HistoryView } from "./ui/history.js?v=20260906b";
-import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260906b";
-import { ValidateView } from "./ui/validate.js?v=20260906b";
-import { RefPicker } from "./ui/refpicker.js?v=20260906b";
-import { AIView } from "./ui/ai.js?v=20260906b";
-import { CiteCheckView } from "./ui/citecheck.js?v=20260906b";
-import { TermsView } from "./ui/terms.js?v=20260906b";
-import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260906b";
-import * as GH from "./adapters/github.js?v=20260906b";
-import { extractLines } from "./core/importer.js?v=20260906b";
-import { buildAuto } from "./core/structure.js?v=20260906b";
-import * as SRC from "./core/srcfp.js?v=20260906b";
-import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260906b";
-import { ObjectStore, fitTable } from "./core/objects.js?v=20260906b";
-import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260906b";
-import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260906b";
-import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260906b";
-import { fmtDate } from "./ui/html.js?v=20260906b";
-import { printReg, regHtml } from "./ui/printdoc.js?v=20260906b";
+import * as M from "./core/model.js?v=20260906d";
+import { Project } from "./core/project.js?v=20260906d";
+import * as FS from "./adapters/fileio.js?v=20260906d";
+import * as AUTO from "./adapters/autosave.js?v=20260906d";
+import { TreeView } from "./ui/tree.js?v=20260906d";
+import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260906d";
+import { CompareView } from "./ui/compare.js?v=20260906d";
+import { VersionsView } from "./ui/versions.js?v=20260906d";
+import { HistoryView } from "./ui/history.js?v=20260906d";
+import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260906d";
+import { ValidateView } from "./ui/validate.js?v=20260906d";
+import { RefPicker } from "./ui/refpicker.js?v=20260906d";
+import { AIView } from "./ui/ai.js?v=20260906d";
+import { CiteCheckView } from "./ui/citecheck.js?v=20260906d";
+import { TermsView } from "./ui/terms.js?v=20260906d";
+import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260906d";
+import * as GH from "./adapters/github.js?v=20260906d";
+import { extractLines } from "./core/importer.js?v=20260906d";
+import { buildAuto } from "./core/structure.js?v=20260906d";
+import * as SRC from "./core/srcfp.js?v=20260906d";
+import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260906d";
+import { ObjectStore, fitTable } from "./core/objects.js?v=20260906d";
+import { loadTargets, allTargets, targetById, firstTarget } from "./core/targets.js?v=20260906d";
+import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260906d";
+import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260906d";
+import { fmtDate } from "./ui/html.js?v=20260906d";
+import { printReg, regHtml } from "./ui/printdoc.js?v=20260906d";
 
 const $ = (s) => document.querySelector(s);
 const NL = "\n";
@@ -1721,7 +1721,7 @@ async function doCommand(cmd) {
       const onlyName = only ? (project.regNode(only)?.short || "") : "";
       busy(`${onlyName || "개정 대상 세 규정"} 보고서를 작성 중…`);
       try {
-        const { buildReport } = await import("./ui/report.js?v=20260906b");
+        const { buildReport } = await import("./ui/report.js?v=20260906d");
         const r = await buildReport(project, { targetId: only });
         const url = URL.createObjectURL(r.blob);
         const a = document.createElement("a");
@@ -2286,7 +2286,8 @@ async function shareImported(pane) {
 /** 저장소에 올라와 있는 참조 규정을 목록에 반영 */
 let sharedRefs = [];
 async function loadSharedRefs() {
-  if (!GH.hasToken() || !GH.getConfig().owner) return;
+  // 읽기는 토큰이 없어도 된다 —— 공개 저장소이기 때문이다
+  if (!GH.getConfig().owner) return;
   try { sharedRefs = await GH.listRefs(); } catch { sharedRefs = []; }
   for (const p of refPanes) {
     const sel = $(`#refSelect${p.idx}`);

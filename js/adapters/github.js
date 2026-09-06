@@ -12,11 +12,20 @@ const K_CFG = "pm.gh.cfg";
 const K_AUTHOR = "pm.author";
 
 /* ---------- 설정 ---------- */
+/* 기본 공유 저장소 —— 이 편집기가 개정안 작업본(.pmproj)을 두는 자리.
+   아무 설정도 하지 아니한 사람도 목록을 보고 남의 작업본을 열 수 있게
+   기본값으로 둔다. 공개 저장소이므로 읽기는 토큰이 없어도 된다.
+   저장(쓰기)에는 토큰이 있어야 한다. */
+export const DEFAULT_CFG = {
+  owner: "Youngwoo-m", repo: "gonggong-survey-editor",
+  branch: "main", dir: "projects",
+};
+
 export function getConfig() {
   try {
     const c = JSON.parse(localStorage.getItem(K_CFG) || "{}");
-    return { owner: "", repo: "", branch: "main", dir: "projects", ...c };
-  } catch { return { owner: "", repo: "", branch: "main", dir: "projects" }; }
+    return { ...DEFAULT_CFG, ...c };
+  } catch { return { ...DEFAULT_CFG }; }
 }
 export function setConfig(cfg) {
   localStorage.setItem(K_CFG, JSON.stringify({ ...getConfig(), ...cfg }));
@@ -38,24 +47,38 @@ export function tokenHint() {
 }
 
 /* ---------- 공통 ---------- */
+const COMMON = {
+  Accept: "application/vnd.github+json",
+  "X-GitHub-Api-Version": "2022-11-28",
+};
+
+/** 쓰기에 쓰는 머리 —— 토큰이 있어야 한다 */
 function authHeaders(extra = {}) {
   const t = localStorage.getItem(K_TOKEN);
   if (!t) throw new Error("연결되지 않았습니다. [공유] 에서 저장소와 토큰을 설정하세요.");
-  return {
-    Authorization: `Bearer ${t}`,
-    Accept: "application/vnd.github+json",
-    "X-GitHub-Api-Version": "2022-11-28",
-    ...extra,
-  };
+  return { Authorization: `Bearer ${t}`, ...COMMON, ...extra };
+}
+
+/** 읽기에 쓰는 머리 —— 토큰이 있으면 쓰고, 없으면 그냥 읽는다.
+    공개 저장소는 인증 없이 읽을 수 있다(다만 시간당 60번으로 묶인다). */
+function readHeaders(extra = {}) {
+  const t = localStorage.getItem(K_TOKEN);
+  return t ? { Authorization: `Bearer ${t}`, ...COMMON, ...extra }
+           : { ...COMMON, ...extra };
 }
 
 async function api(path, opts = {}) {
-  const r = await fetch(API + path, { ...opts, headers: authHeaders(opts.headers) });
+  const write = !!opts.method && opts.method !== "GET";
+  const head = write ? authHeaders(opts.headers) : readHeaders(opts.headers);
+  const r = await fetch(API + path, { ...opts, headers: head });
   if (r.status === 401) throw new Error("토큰이 유효하지 않습니다. 다시 연결해 주세요.");
   if (r.status === 403) {
     const rem = r.headers.get("x-ratelimit-remaining");
-    throw new Error(rem === "0" ? "GitHub API 호출 한도를 넘었습니다. 잠시 후 다시 시도하세요."
-                                : "권한이 없습니다. 토큰에 Contents 읽기·쓰기 권한이 있는지 확인하세요.");
+    const noTok = !localStorage.getItem(K_TOKEN);
+    throw new Error(rem === "0"
+      ? (noTok ? "GitHub 호출 한도를 넘었습니다. [공유 저장소] 에서 토큰을 넣으면 한도가 크게 늘어납니다."
+               : "GitHub API 호출 한도를 넘었습니다. 잠시 후 다시 시도하세요.")
+      : "권한이 없습니다. 토큰에 Contents 읽기·쓰기 권한이 있는지 확인하세요.");
   }
   if (r.status === 404) { const e = new Error("찾을 수 없습니다."); e.code = 404; throw e; }
   if (r.status === 409 || r.status === 422) {
