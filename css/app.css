@@ -489,7 +489,19 @@ table.obj-tbl td:first-child{white-space:nowrap}
 .obj-foot .mut{color:var(--muted)}
 .obj-tbl-wrap.shrunk::after{content:"창 폭에 맞춰 글자를 줄였습니다";display:block;
   margin-top:3px;font-size:9px;color:var(--muted);text-align:right}
-label .bd-toggle{float:right;font-weight:400}
+/* 고치기 단추 —— 본문과 변경 사유가 같은 자리, 같은 빛깔이라야 짝으로 보인다.
+   예전에는 본문의 것만 오른쪽 끝에 띄웠다(float:right). 라벨 옆으로 옮긴다. */
+/* 고치는 동안 서는 [저장] —— 초록으로 두어 담는 자리임을 밝힌다 */
+label .fld-save{font-weight:700;margin-left:4px;
+  background:var(--green);color:#fff;border-color:var(--green)}
+label .fld-save:hover{filter:brightness(1.08)}
+
+label .bd-toggle,label .rs-toggle{font-weight:700;margin-left:6px;
+  background:var(--slate);color:#fff;border-color:var(--slate)}
+label .bd-toggle:hover,label .rs-toggle:hover{background:var(--ink);border-color:var(--ink);color:#fff}
+/* 고치는 중에는 초록으로 —— 지금 손대고 있는 자리임을 밝힌다 */
+.body-edit.editing label .bd-toggle,.reason-edit.editing label .rs-toggle{
+  background:var(--green);border-color:var(--green)}
 
 /* 좁은 칸에 맞춰 글자를 줄일 때는 여백도 함께 줄인다 */
 .obj-tbl-wrap.shrunk table.obj-tbl{min-width:0;table-layout:auto}

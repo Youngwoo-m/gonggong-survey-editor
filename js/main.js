@@ -1,33 +1,33 @@
 /* ============================================================
    main.js — 앱 조립 (1단계 프로토타입)
    ============================================================ */
-import * as M from "./core/model.js?v=20260906y";
-import { Project } from "./core/project.js?v=20260906y";
-import * as FS from "./adapters/fileio.js?v=20260906y";
-import * as AUTO from "./adapters/autosave.js?v=20260906y";
-import { TreeView } from "./ui/tree.js?v=20260906y";
-import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260906y";
-import { CompareView } from "./ui/compare.js?v=20260906y";
-import { VersionsView } from "./ui/versions.js?v=20260906y";
-import { HistoryView } from "./ui/history.js?v=20260906y";
-import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260906y";
-import { ValidateView } from "./ui/validate.js?v=20260906y";
-import { RefPicker } from "./ui/refpicker.js?v=20260906y";
-import { AIView } from "./ui/ai.js?v=20260906y";
-import { CiteCheckView } from "./ui/citecheck.js?v=20260906y";
-import { TermsView } from "./ui/terms.js?v=20260906y";
-import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260906y";
-import * as GH from "./adapters/github.js?v=20260906y";
-import { extractLines } from "./core/importer.js?v=20260906y";
-import { buildAuto } from "./core/structure.js?v=20260906y";
-import * as SRC from "./core/srcfp.js?v=20260906y";
-import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260906y";
-import { ObjectStore, fitTable } from "./core/objects.js?v=20260906y";
-import { loadTargets, allTargets, targetById, firstTarget, nextRevLabel, verPrefixOf } from "./core/targets.js?v=20260906y";
-import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260906y";
-import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260906y";
-import { fmtDate } from "./ui/html.js?v=20260906y";
-import { printReg, regHtml } from "./ui/printdoc.js?v=20260906y";
+import * as M from "./core/model.js?v=20260907a";
+import { Project } from "./core/project.js?v=20260907a";
+import * as FS from "./adapters/fileio.js?v=20260907a";
+import * as AUTO from "./adapters/autosave.js?v=20260907a";
+import { TreeView } from "./ui/tree.js?v=20260907a";
+import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260907a";
+import { CompareView } from "./ui/compare.js?v=20260907a";
+import { VersionsView } from "./ui/versions.js?v=20260907a";
+import { HistoryView } from "./ui/history.js?v=20260907a";
+import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260907a";
+import { ValidateView } from "./ui/validate.js?v=20260907a";
+import { RefPicker } from "./ui/refpicker.js?v=20260907a";
+import { AIView } from "./ui/ai.js?v=20260907a";
+import { CiteCheckView } from "./ui/citecheck.js?v=20260907a";
+import { TermsView } from "./ui/terms.js?v=20260907a";
+import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260907a";
+import * as GH from "./adapters/github.js?v=20260907a";
+import { extractLines } from "./core/importer.js?v=20260907a";
+import { buildAuto } from "./core/structure.js?v=20260907a";
+import * as SRC from "./core/srcfp.js?v=20260907a";
+import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260907a";
+import { ObjectStore, fitTable } from "./core/objects.js?v=20260907a";
+import { loadTargets, allTargets, targetById, firstTarget, nextRevLabel, verPrefixOf } from "./core/targets.js?v=20260907a";
+import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260907a";
+import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260907a";
+import { fmtDate } from "./ui/html.js?v=20260907a";
+import { printReg, regHtml } from "./ui/printdoc.js?v=20260907a";
 
 const $ = (s) => document.querySelector(s);
 const NL = "\n";
@@ -1820,7 +1820,7 @@ async function doCommand(cmd) {
       const onlyName = only ? (project.regNode(only)?.short || "") : "";
       busy(`${onlyName || "개정 대상 세 규정"} 보고서를 작성 중…`);
       try {
-        const { buildReport } = await import("./ui/report.js?v=20260906y");
+        const { buildReport } = await import("./ui/report.js?v=20260907a");
         const r = await buildReport(project, { targetId: only });
         const url = URL.createObjectURL(r.blob);
         const a = document.createElement("a");
@@ -1939,6 +1939,44 @@ ${r.warning}` : ""),
        무인비행장치는 2024년 판과 2025년 판이 서로 다른 판에 담겨 있어
        한 판을 지우면 한 해치가 통째로 없어진다 —— 그 일을 겪었으므로
        무엇이 사라지는지 낱낱이 보이고 묻는다. */
+    /* 고른 개정안 하나를 한/글 개정(안) 문서로.
+
+       꾸러미에 든 양식(kit/양식/01.개정안)에 글만 갈아 끼운다. 신구대조표를
+       짓는 길(core/hwpxcompare.js)과 같은 방식이고, 파이썬 쪽
+       formdocs.build_draft 와 같은 차례로 얹으므로 [한글문서만들기.bat] 이
+       지은 것과 같아진다.
+
+       별표ㆍ별지와 표ㆍ수식은 담지 아니한다 —— 그것까지 온전히 담으려면
+       개체 XML 을 다시 짜야 하고, 그 일은 [보고서] 꾸러미의 도구가 한다. */
+    case "revHwpx": {
+      const tid = scopedTargetId();
+      if (!tid) { toast("규정을 먼저 고르십시오.", 3000); break; }
+      const vid = $("#editRevSelect")?.value || project.currentId;
+      const ver = project.version(vid) || project.current;
+      const reg = (ver?.tree || []).find((n) => M.isRegNode(n) && n.targetId === tid);
+      if (!reg) { toast("이 판에는 그 규정의 개정안이 없습니다.", 4000); break; }
+      busy("한/글 문서를 짓는 중…");
+      try {
+        const { buildDraftHwpx } = await import("./core/hwpxdraft.js?v=20260907a");
+        const url = new URL("kit/양식/01.개정안/[양식] 규정 개정(안).hwpx",
+                            document.baseURI).href;
+        const got = await buildDraftHwpx(reg, url, {
+          org: reg.org, kind: reg.kind, supp: ver?.supplement || reg.supplement,
+        });
+        const a = document.createElement("a");
+        a.href = URL.createObjectURL(got.blob);
+        a.download = `${reg.revLabel ? reg.revLabel + " " : ""}${got.name}`;
+        document.body.appendChild(a); a.click(); a.remove();
+        setTimeout(() => URL.revokeObjectURL(a.href), 3000);
+        toast(`${a.download} 을(를) 내려받습니다 — 조 ${got.조}개`
+          + (got.뺀개체 ? `${NL}표ㆍ수식 ${got.뺀개체}자리는 담지 않았습니다.`
+                           + ` 온전한 문서는 [보고서] 로 받으십시오.` : ""),
+          got.뺀개체 ? 8000 : 4000);
+      } catch (e) {
+        toast("한/글 문서를 짓지 못했습니다: " + e.message, 6000);
+      } finally { busy(false); }
+      break;
+    }
     case "delRev": {
       const tid = scopedTargetId();
       if (!tid) { toast("규정을 먼저 고르십시오.", 3000); break; }

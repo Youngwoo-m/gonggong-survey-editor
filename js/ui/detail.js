@@ -1,10 +1,10 @@
 /* ============================================================
    ui/detail.js — 조문 상세 패널
    ============================================================ */
-import * as M from "../core/model.js?v=20260906y";
-import { wordDiff, beforeRuns, afterRuns, hasChange } from "../core/textdiff.js?v=20260906y";
+import * as M from "../core/model.js?v=20260907a";
+import { wordDiff, beforeRuns, afterRuns, hasChange } from "../core/textdiff.js?v=20260907a";
 import { imgIdsIn, renderBody, fitTable, toHtml, openTableOverlay, markAnnexEdits }
-  from "../core/objects.js?v=20260906y";
+  from "../core/objects.js?v=20260907a";
 
 /** 만들고 있는 안을 부르는 말 — 작업규정은 개정안, 성과심사 규정은 개정안 */
 /* 만들어 내는 안을 부르는 말 — 규정마다 다르다 (작업규정은 '개정안', 나머지는 '개정안').
@@ -75,9 +75,9 @@ function runsHtml(runs) {
   return runs.map((r) => (r.mark ? `<u class="mk">${esc(r.s)}</u>` : esc(r.s))).join("");
 }
 
-import { linkReason, wireReasonLinks } from "../core/reasonlink.js?v=20260906y";
-import { esc, fmtDT } from "./html.js?v=20260906y";
-import { renderPdf } from "./pdfview.js?v=20260906y";
+import { linkReason, wireReasonLinks } from "../core/reasonlink.js?v=20260907a";
+import { esc, fmtDT } from "./html.js?v=20260907a";
+import { renderPdf } from "./pdfview.js?v=20260907a";
 
 /** 사유 글이 스스로 머리글을 달고 있는가 — 그러면 딱지를 겹쳐 붙이지 아니한다 */
 const RE_REASON_HEAD = /^\s*\[변경 사유\]/;
@@ -291,7 +291,8 @@ export class DetailPanel {
     const wrap = document.createElement("div");
     wrap.className = "fld reason-edit";
     wrap.innerHTML = `<label>변경 사유
-        <button class="mini2 rs-toggle" type="button">고치기</button></label>
+        <button class="mini2 rs-toggle" type="button">고치기</button>
+        <button class="mini2 fld-save hidden" type="button">저장</button></label>
       <div class="reason-view body-view"></div>`;
     const host = wrap.querySelector(".reason-view");
     const btn = wrap.querySelector(".rs-toggle");
@@ -303,9 +304,14 @@ export class DetailPanel {
     };
     draw();
 
+    const save = wrap.querySelector(".fld-save");
+    /* 고치는 동안만 [저장] 을 세운다. 담는 단추가 패널 맨 아래에만 있으면
+       고쳐 놓고 그 자리를 떠나 사라진 줄 안다. */
+    save.onclick = () => { this.applyNow(); };
     btn.onclick = () => {
       const editing = wrap.classList.toggle("editing");
       btn.textContent = editing ? "미리보기" : "고치기";
+      save.classList.toggle("hidden", !editing);
       if (editing) {
         const ta = document.createElement("textarea");
         ta.className = "f-reason";
@@ -328,7 +334,8 @@ export class DetailPanel {
     wrap.className = "fld body-edit";
     const n = imgIdsIn(node.body).length;
     wrap.innerHTML = `<label>본문${n ? ` <span class="cnt">표·수식 ${n}</span>` : ""}
-        <button class="mini2 bd-toggle" type="button">고치기</button></label>
+        <button class="mini2 bd-toggle" type="button">고치기</button>
+        <button class="mini2 fld-save hidden" type="button">저장</button></label>
       <div class="body-rich"></div>`;
     const host = wrap.querySelector(".body-rich");
     const btn = wrap.querySelector(".bd-toggle");
@@ -343,9 +350,14 @@ export class DetailPanel {
     };
     draw();
 
+    const save = wrap.querySelector(".fld-save");
+    /* 고치는 동안만 [저장] 을 세운다. 담는 단추가 패널 맨 아래에만 있으면
+       고쳐 놓고 그 자리를 떠나 사라진 줄 안다. */
+    save.onclick = () => { this.applyNow(); };
     btn.onclick = () => {
       const editing = wrap.classList.toggle("editing");
       btn.textContent = editing ? "미리보기" : "고치기";
+      save.classList.toggle("hidden", !editing);
       if (editing) {
         const ta = document.createElement("textarea");
         ta.className = "f-body";
