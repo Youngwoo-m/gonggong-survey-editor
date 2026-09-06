@@ -21,7 +21,7 @@
    ============================================================ */
 
 import { Form, RowProto, remake, retext, splitParas, tableSpan, topRows, retable }
-  from "./hwpx.js?v=20260907c";
+  from "./hwpx.js?v=20260907f";
 
 export const TPL_COMPARE =
   "kit/양식/02.신구대조표/[양식] 규정.신구대조표.hwpx";

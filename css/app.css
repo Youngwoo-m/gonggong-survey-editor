@@ -626,6 +626,7 @@ a.cite:hover{background:var(--link);color:#fff;text-decoration:none;border-radiu
   padding:7px 9px;border-radius:4px;font-family:inherit;font-size:12px;
   color:var(--ink);cursor:pointer}
 .ctx-menu button:hover{background:var(--panel)}
+.ctx-line{height:1px;background:var(--line);margin:4px 6px}
 
 /* ---- 화면 안에서 묻는 작은 칸 (askBox) ---- */
 .cmp.ask{width:min(460px,92vw)}

@@ -22,8 +22,8 @@
        깊이를 세어 짝을 찾는다(matchClose).
    ============================================================ */
 
-import { readZip } from "./zipreader.js?v=20260907c";
-import { createZip } from "./zip.js?v=20260907c";
+import { readZip } from "./zipreader.js?v=20260907f";
+import { createZip } from "./zip.js?v=20260907f";
 
 const RE_T = /<hp:t(?:\s[^>]*)?>([^]*?)<\/hp:t>/g;
 const RE_SEG = /<hp:linesegarray>[^]*?<\/hp:linesegarray>|<hp:linesegarray\s*\/>/g;
@@ -186,6 +186,11 @@ export class Form {
  * @param {Array<[string|null,string]>} runs [글자모양 id 또는 null, 글]
  */
 export function remake(proto, runs) {
+  /* 본이 없으면 여는 태그 없는 문단을 내어 문서가 통째로 깨진다.
+     조용히 깨지는 것보다 그 자리에서 멈추는 것이 낫다. */
+  if (!proto || typeof proto !== "string" || proto.indexOf("<hp:p") < 0) {
+    throw new Error("문단 본을 뜨지 못했습니다 — 양식이 바뀌었는지 보십시오.");
+  }
   proto = stripSeg(proto);
   const i = proto.indexOf(">") + 1;
   const openP = proto.slice(0, i);

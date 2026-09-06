@@ -21,12 +21,16 @@
      개정(안)은 고시에 실리는 글이다. 변경 사유는 개정사유서에 실린다.
    ============================================================ */
 
-import { Form, remake, retext, esc } from "./hwpx.js?v=20260907c";
+import { Form, remake, retext, esc } from "./hwpx.js?v=20260907f";
 
 const NL = "\n";
 const RE_IMG = /<img\s+id="([\w.-]+)"\s*>(?:<\/img>)?/gi;
 const RE_PROV = /<현행[^<>]*>|<신설[^<>]*>/g;      // 출처 표시는 고시에 싣지 아니한다
-const RE_CHAP = /^제\s*\d+\s*(편|장|절|관)\b/;
+/* 자바스크립트의 \b 는 낱말 글자를 [A-Za-z0-9_] 로만 본다. 한글은 낱말
+   글자가 아니어서 「제1장 통칙」 의 장과 빈칸 사이에 경계가 서지 아니하고,
+   그래서 이 자가 하나도 걸리지 아니하였다 —— 본을 못 뜨면 remake 가 여는
+   태그 없는 문단을 내어 문서가 깨진다. */
+const RE_CHAP = /^제\s*\d+\s*(편|장|절|관)(?:\s|$)/;
 const RE_ART = /^제\s*\d+\s*조/;
 const RE_ITEM = /^\s*\d{1,2}\s*\./;
 const RE_CLAUSE = /^\s*[①-⑳]/;

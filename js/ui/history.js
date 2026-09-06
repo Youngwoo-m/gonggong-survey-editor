@@ -2,7 +2,7 @@
    ui/history.js — 버전 전체 변경 이력 화면
    ============================================================ */
 
-import { esc, fmtDT } from "./html.js?v=20260907c";
+import { esc, fmtDT } from "./html.js?v=20260907f";
 const KIND_CLASS = {
   "신설": "k-new", "삭제": "k-del", "이동": "k-mov", "순서": "k-mov",
   "수정": "k-edit", "통합": "k-mrg", "참조삽입": "k-ref", "상태변경": "k-keep",
