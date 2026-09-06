@@ -1,33 +1,33 @@
 /* ============================================================
    main.js — 앱 조립 (1단계 프로토타입)
    ============================================================ */
-import * as M from "./core/model.js?v=20260906w";
-import { Project } from "./core/project.js?v=20260906w";
-import * as FS from "./adapters/fileio.js?v=20260906w";
-import * as AUTO from "./adapters/autosave.js?v=20260906w";
-import { TreeView } from "./ui/tree.js?v=20260906w";
-import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260906w";
-import { CompareView } from "./ui/compare.js?v=20260906w";
-import { VersionsView } from "./ui/versions.js?v=20260906w";
-import { HistoryView } from "./ui/history.js?v=20260906w";
-import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260906w";
-import { ValidateView } from "./ui/validate.js?v=20260906w";
-import { RefPicker } from "./ui/refpicker.js?v=20260906w";
-import { AIView } from "./ui/ai.js?v=20260906w";
-import { CiteCheckView } from "./ui/citecheck.js?v=20260906w";
-import { TermsView } from "./ui/terms.js?v=20260906w";
-import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260906w";
-import * as GH from "./adapters/github.js?v=20260906w";
-import { extractLines } from "./core/importer.js?v=20260906w";
-import { buildAuto } from "./core/structure.js?v=20260906w";
-import * as SRC from "./core/srcfp.js?v=20260906w";
-import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260906w";
-import { ObjectStore, fitTable } from "./core/objects.js?v=20260906w";
-import { loadTargets, allTargets, targetById, firstTarget, nextRevLabel, verPrefixOf } from "./core/targets.js?v=20260906w";
-import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260906w";
-import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260906w";
-import { fmtDate } from "./ui/html.js?v=20260906w";
-import { printReg, regHtml } from "./ui/printdoc.js?v=20260906w";
+import * as M from "./core/model.js?v=20260906x";
+import { Project } from "./core/project.js?v=20260906x";
+import * as FS from "./adapters/fileio.js?v=20260906x";
+import * as AUTO from "./adapters/autosave.js?v=20260906x";
+import { TreeView } from "./ui/tree.js?v=20260906x";
+import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20260906x";
+import { CompareView } from "./ui/compare.js?v=20260906x";
+import { VersionsView } from "./ui/versions.js?v=20260906x";
+import { HistoryView } from "./ui/history.js?v=20260906x";
+import { ShareView, AUTOPUSH } from "./ui/share.js?v=20260906x";
+import { ValidateView } from "./ui/validate.js?v=20260906x";
+import { RefPicker } from "./ui/refpicker.js?v=20260906x";
+import { AIView } from "./ui/ai.js?v=20260906x";
+import { CiteCheckView } from "./ui/citecheck.js?v=20260906x";
+import { TermsView } from "./ui/terms.js?v=20260906x";
+import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20260906x";
+import * as GH from "./adapters/github.js?v=20260906x";
+import { extractLines } from "./core/importer.js?v=20260906x";
+import { buildAuto } from "./core/structure.js?v=20260906x";
+import * as SRC from "./core/srcfp.js?v=20260906x";
+import { translateTree, DICT_SIZE } from "./core/translate.js?v=20260906x";
+import { ObjectStore, fitTable } from "./core/objects.js?v=20260906x";
+import { loadTargets, allTargets, targetById, firstTarget, nextRevLabel, verPrefixOf } from "./core/targets.js?v=20260906x";
+import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20260906x";
+import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20260906x";
+import { fmtDate } from "./ui/html.js?v=20260906x";
+import { printReg, regHtml } from "./ui/printdoc.js?v=20260906x";
 
 const $ = (s) => document.querySelector(s);
 const NL = "\n";
@@ -515,6 +515,45 @@ function setEditTree(selId) {
    @param {string} title 무엇을 하는 자리인가
    @param {Array<{key,label,value,hint}>} fields 물을 칸들
    @returns {Promise<object|null>} 취소하면 null */
+/* 화면 안에서 묻는 확인창 —— confirm() 을 갈음한다.
+   confirm() 도 prompt() 와 같이 브라우저가 막을 수 있고, 막히면 늘
+   「취소」를 돌려주므로 단추가 죽은 것처럼 보인다.
+   @param {string} title 무엇을 하는가
+   @param {Array<string>} lines 알려 줄 줄들
+   @param {string} okText 확인 단추에 적을 말
+   @returns {Promise<boolean>} */
+function askYesNo(title, lines, okText = "계속") {
+  return new Promise((done) => {
+    const back = document.createElement("div");
+    back.className = "overlay ask-back";
+    back.innerHTML = `
+      <div class="cmp sm ask">
+        <div class="cmp-head"><div class="cmp-title">${esc(title)}</div>
+          <button class="x" data-x="no" title="닫기 (Esc)">✕</button></div>
+        <div class="ask-body ask-say">${lines.map((t) =>
+          `<p>${esc(t)}</p>`).join("")}</div>
+        <div class="detail-actions">
+          <button data-x="no">취소</button>
+          <button class="primary" data-x="yes">${esc(okText)}</button></div>
+      </div>`;
+    document.body.appendChild(back);
+    back.querySelector('[data-x="yes"]').focus();
+    const close = (v) => {
+      document.removeEventListener("keydown", onKey, true);
+      back.remove(); done(v);
+    };
+    const onKey = (e) => {
+      if (e.key === "Escape") { e.preventDefault(); close(false); }
+      if (e.key === "Enter") { e.preventDefault(); close(true); }
+    };
+    document.addEventListener("keydown", onKey, true);
+    back.addEventListener("click", (e) => {
+      if (e.target === back) return close(false);
+      const x = e.target.closest("[data-x]");
+      if (x) close(x.dataset.x === "yes");
+    });
+  });
+}
 function askBox(title, fields) {
   return new Promise((done) => {
     const back = document.createElement("div");
@@ -1780,7 +1819,7 @@ async function doCommand(cmd) {
       const onlyName = only ? (project.regNode(only)?.short || "") : "";
       busy(`${onlyName || "개정 대상 세 규정"} 보고서를 작성 중…`);
       try {
-        const { buildReport } = await import("./ui/report.js?v=20260906w");
+        const { buildReport } = await import("./ui/report.js?v=20260906x");
         const r = await buildReport(project, { targetId: only });
         const url = URL.createObjectURL(r.blob);
         const a = document.createElement("a");
@@ -1815,11 +1854,12 @@ ${r.items.join(" · ")}
         }
         const vs = data.versions.length;
         const when = data.savedAt ? fmtDate(data.savedAt.slice(0, 10)) : "";
-        if (!confirm(`「${got.name}」 을(를) 엽니다.` + NL
-            + `판 ${vs}개${when ? ` · ${when} 에 저장한 것` : ""}` + NL + NL
-            + "지금 이 브라우저에서 고치던 것은 이 파일의 것으로 갈립니다." + NL
-            + "이어서 하려면 먼저 [내보내기] 로 갈무리해 두십시오." + NL + NL
-            + "계속할까요?")) break;
+        const ok = await askYesNo(`「${got.name}」 을(를) 엽니다`, [
+          `판 ${vs}개${when ? ` · ${when} 에 저장한 것` : ""}`,
+          "지금 이 브라우저에서 고치던 것은 이 파일의 것으로 갈립니다.",
+          "이어서 하려면 먼저 [내보내기] 로 갈무리해 두십시오.",
+        ], "열기");
+        if (!ok) break;
         project.fromJSON(data);
         project.remote = null;
         project.author = GH.getAuthor();

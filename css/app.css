@@ -597,6 +597,8 @@ a.cite:hover{background:var(--link);color:#fff;text-decoration:none;border-radiu
 .cmp.ask{width:min(460px,92vw)}
 .ask-body{padding:12px 14px}
 .ask-body .fld{margin-bottom:10px}
+.ask-say p{margin:0 0 7px;font-size:12.5px;line-height:1.7;color:var(--slate)}
+.ask-say p:first-child{color:var(--ink);font-weight:700}
 
 /* ---- AI 도우미 ---- */
 .cmp.ai{width:min(1000px,94vw)}

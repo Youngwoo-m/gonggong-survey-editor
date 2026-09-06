@@ -22,8 +22,8 @@
        깊이를 세어 짝을 찾는다(matchClose).
    ============================================================ */
 
-import { readZip } from "./zipreader.js?v=20260906w";
-import { createZip } from "./zip.js?v=20260906w";
+import { readZip } from "./zipreader.js?v=20260906x";
+import { createZip } from "./zip.js?v=20260906x";
 
 const RE_T = /<hp:t(?:\s[^>]*)?>([^]*?)<\/hp:t>/g;
 const RE_SEG = /<hp:linesegarray>[^]*?<\/hp:linesegarray>|<hp:linesegarray\s*\/>/g;
