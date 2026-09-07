@@ -705,6 +705,12 @@ def main():
     revname, tree, rev = revs[ri]
     regname = t.get("base") or t.get("short")
     regid = meta["id"]                          # 본문 속 표·수식을 찾을 자리
+    # 개정안이 새로 지은 별표 서식은 개정안 이름의 자리에 있다
+    # (data\draft_simsa.json → data\objects\draftSimsa\annex\).
+    annexid = re.sub(r"_(\w)", lambda m: m.group(1).upper(),
+                     os.path.splitext(os.path.basename(t["draft"]))[0])
+    if not os.path.isdir(os.path.join(DATA, "objects", annexid)):
+        annexid = None
 
     print(f"규정 : {regname}")
     print(f"판   : {revname}  ({ri + 1}/{len(revs)})")
@@ -764,15 +770,16 @@ def main():
             add("개정사유서", dst, "사람이 쓴 원고 — " + os.path.basename(src))
         else:
             # 원고가 없으면 자료에서 뽑을 수 있는 데까지 채워 양식에 얹는다.
-            # 6ㆍ7절(기대 효과ㆍ종합 의견)은 줄글이라 자리만 세워 둔다.
+            # 6ㆍ7절(기대 효과ㆍ종합 의견)도 사유의 [이익]ㆍ[예상 반론] 을
+            # 모아 줄글로 짓는다 — 재료가 없는 규정만 자리표시가 남는다.
             p, nr = FD.build_reason(
                 os.path.join(stage, "개정사유서.hwpx"),
                 tree, regname, walk, sys.modules[__name__],
-                rev.get("supplement"), regid)
+                rev.get("supplement"), regid, annexid)
             add("개정사유서", p, f"자료에서 지음 · 항목 {nr}개")
             print("  [알림] 사람이 쓴 개정사유서가 없어 자료에서 지었습니다"
-                  " — 6ㆍ7절은 사유의 [이익]ㆍ[예상 반론] 로 뼈대를 세웠으니"
-                  " 줄글로 다듬으십시오")
+                  " — 6ㆍ7절은 사유의 [이익]ㆍ[예상 반론] 을 모아 줄글로"
+                  " 지었으니 읽어 보고 손보십시오")
 
         got, miss = gather_annex(tree, os.path.join(stage, "별표및별지모음"), regname)
 

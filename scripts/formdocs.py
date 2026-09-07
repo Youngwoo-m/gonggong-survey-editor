@@ -510,8 +510,9 @@ def build_compare(dst, tree, regname, regid, walk, reason_lines):
 #     표 4개                  (2절ㆍ3절ㆍ4절ㆍ5절)
 #
 # 사람이 쓴 원고가 있으면 그것을 얹는 편이 낫다(Report\scripts\build_from_form.py).
-# 여기서 짓는 것은 원고가 아직 없을 때 — 자료에서 뽑을 수 있는 데까지 채우고,
-# 줄글로 써야 하는 6ㆍ7절은 무엇을 쓸 자리인지 적어 둔다.
+# 여기서 짓는 것은 원고가 아직 없을 때 — 자료에서 뽑을 수 있는 데까지 채운다.
+# 6ㆍ7절도 사유에 적어 둔 [이익]ㆍ[예상 반론] 을 모아 줄글로 짓는다.
+# 재료가 없는 규정에서만 '사람이 씁니다' 라는 자리표시가 남는다.
 
 REASON_PP = {"title": "71", "sec": "8", "sub": "2",
              "body": "42", "bullet": "7", "blank": "1"}
@@ -692,8 +693,55 @@ def part_changes(tree, walk, regid):
     return out
 
 
+# 「음」 으로 끝나되 '는다' 가 아니라 '다' 로 맺는 것들 — 형용사와 존재사다.
+_PLAIN_UM = ("있음", "없음", "적음", "작음", "많음", "높음", "낮음", "같음",
+             "좋음", "옳음", "넓음", "밝음", "굵음", "얕음", "깊음")
+# 규칙으로 풀리지 아니하는 것들 — ㅂ불규칙과 르불규칙, 그리고 「…함」 이
+# 동사가 아니라 형용사인 것들이다(확보함→확보한다 이지만 분명함→분명하다).
+_IRREG = {"쉬움": "쉽다", "어려움": "어렵다", "가벼움": "가볍다",
+          "무거움": "무겁다", "다름": "다르다", "빠름": "빠르다",
+          "분명함": "분명하다", "명확함": "명확하다", "가능함": "가능하다",
+          "필요함": "필요하다", "충분함": "충분하다", "적절함": "적절하다",
+          "동일함": "동일하다", "유리함": "유리하다", "편리함": "편리하다",
+          "안전함": "안전하다", "간편함": "간편하다", "정확함": "정확하다",
+          "확실함": "확실하다", "무리함": "무리하다", "타당함": "타당하다"}
+
+
+def _narrate(s):
+    """개조식 명사형 종결을 서술형으로 바꾼다 — 「…정해짐」 을 「…정해진다」 로.
+
+    받침이 ㅁ 이나 ㄻ 이면 그것을 ㄴ 으로 갈고 '다' 를 붙인다(됨→된다,
+    짐→진다, 듦→든다, 함→한다, 앎→안다, 섬→선다). 「음」 으로 끝나는 것은
+    형용사와 존재사면 '다', 그 밖에는 '는다' 로 맺는다.
+    규칙에 맞지 아니하는 것은 손대지 아니한다 — 어설피 고치는 것보다 낫다."""
+    t = str(s or "").strip()
+    if not t:
+        return t
+    dot = t.endswith(".")
+    if dot:
+        t = t[:-1].rstrip()
+    if not t:
+        return str(s or "").strip()
+    for w, v in _IRREG.items():
+        if t.endswith(w):
+            return t[:-len(w)] + v + "."
+    for w in _PLAIN_UM:
+        if t.endswith(w):
+            return t[:-1] + "다."
+    if t.endswith("음"):
+        return t[:-1] + "는다."
+    ch = t[-1]
+    if not ("가" <= ch <= "힣"):
+        return t + ("." if dot else "")
+    code = ord(ch) - 0xAC00
+    jong = code % 28
+    if jong not in (16, 10):               # 16 = ㅁ, 10 = ㄻ
+        return t + ("." if dot else "")
+    return t[:-1] + chr(0xAC00 + code - jong + 4) + "다."     # 4 = ㄴ
+
+
 def benefits(tree, walk, st, fds, regid=None):
-    """6. 기대 효과 — 개조식 줄들"""
+    """6. 기대 효과 — 대상마다 한 문단씩 줄글로"""
     out = []
     # ㉠ 조문 사유에 적어 둔 [이익] — 누구에게 돌아가는지로 묶는다
     box, order = {}, []
@@ -706,45 +754,111 @@ def benefits(tree, walk, st, fds, regid=None):
             box[who] = []
             order.append(who)
         box[who].append(what)
+    # 대상마다 한 문단으로 묶는다 — 「대상 — 내용」 줄이 스무 개 넘게 늘어서면
+    # 무엇이 누구에게 돌아가는지가 되레 보이지 아니한다.
     for who in order:
-        for what in box[who][:4]:          # 한 대상에 넷까지
-            out.append(("%s — %s" % (who, what)) if who else what)
+        bits = [_narrate(x) for x in box[who][:4]]      # 한 대상에 넷까지
+        bits = [b for b in bits if b]
+        if not bits:
+            continue
+        # 「국토지리정보원에게는」 은 말이 되지 아니한다 — 「에게」 는 사람에게만
+        # 걸린다. 「(으)로서는」 은 사람에게도 기관에게도 걸린다.
+        nm = who.replace("/", ", ")
+        out.append(("%s%s서는 다음과 같은 이익이 있다. %s"
+                    % (nm, _ro(nm[-1:]), " ".join(bits)))
+                   if who else " ".join(bits))
 
     # ㉡ [이익] 이 없으면 분야별 주요 개정 내용으로 적는다
     if not out:
         for name, desc, _ns in fds:
             if name == "그 밖의 조문 정비" or not desc:
                 continue
-            out.append("%s — %s" % (name, desc))
+            out.append(_narrate("%s 분야에서는 %s" % (name, desc)))
 
     # ㉡′ 분야도 적혀 있지 아니하면 편별 '주요 변화' 표를 끌어온다
     if not out:
-        out += part_changes(tree, walk, regid)
+        out += [_narrate(x) for x in part_changes(tree, walk, regid)]
 
-    # ㉢ 어느 경우에나 구조가 얼마나 달라지는지는 세어 적을 수 있다
+    # ㉢ 어느 경우에나 구조가 얼마나 달라지는지는 세어 적을 수 있다.
+    #    셋을 따로 늘어놓지 아니하고 마지막 한 문단으로 모은다.
     n_new = st.get("신설", 0)
     n_edit = st.get("수정", 0) + st.get("이동·수정", 0)
     n_anx = st.get("별표신설", 0) + st.get("별표수정", 0)
+    tail = []
     # 0인 항목은 빼고 쓴다 — "조문 0개를 새로 두고" 는 읽히지 아니한다
     if n_new and n_edit:
-        out.append("조문 %d개를 새로 두고 %d개를 고쳐, 흩어져 있던 기준을 "
-                   "한 체계로 모음." % (n_new, n_edit))
+        tail.append("조문 %d개를 새로 두고 %d개를 고쳐, 흩어져 있던 기준을 "
+                    "한 체계로 모았다." % (n_new, n_edit))
     elif n_new:
-        out.append("조문 %d개를 새로 두어, 흩어져 있던 기준을 한 체계로 모음."
-                   % n_new)
+        tail.append("조문 %d개를 새로 두어, 흩어져 있던 기준을 한 체계로 "
+                    "모았다." % n_new)
     elif n_edit:
-        out.append("조문 %d개를 고쳐, 흩어져 있던 기준을 한 체계로 모음."
-                   % n_edit)
+        tail.append("조문 %d개를 고쳐, 흩어져 있던 기준을 한 체계로 모았다."
+                    % n_edit)
     if n_anx:
-        out.append("별표ㆍ별지 %d종을 새로 두거나 고쳐, 무엇을 재어 어디에 "
-                   "적고 어떻게 판정하는지를 서식으로 못박음." % n_anx)
+        tail.append("별표ㆍ별지 %d종을 새로 두거나 고쳐, 무엇을 재어 어디에 "
+                    "적고 어떻게 판정하는지를 서식으로 못박았다." % n_anx)
     if st.get("삭제"):
-        out.append("현행 %d개 조를 없애 겹치거나 실효한 규정을 걷어 냄."
-                   % st["삭제"])
+        tail.append("현행 %d개 조를 없애 겹치거나 실효한 규정을 걷어 냈다."
+                    % st["삭제"])
+    if tail:
+        out.append("규정의 구조로 보아도 달라지는 바가 뚜렷하다. "
+                   + " ".join(tail))
     return [_nomid(x) for x in out]
 
 
-def opinion(tree, walk, regname, st, fds, sup):
+def _nodename(x):
+    """조문이나 별표를 부르는 이름 — 「제32조」ㆍ「별표 8」"""
+    ref = x.get("annexRef") or {}
+    if ref.get("no"):
+        return "%s %s" % (ref.get("gubun") or "별표", ref.get("no"))
+    return "제%s조" % x.get("no")
+
+
+def _premises(tree, walk):
+    """상위법령의 개정을 전제로 삼은 자리를 거둔다.
+
+    사유에 「(전제)」 라 적어 두었거나 「… 개정이 전제」 라 한 줄이 있으면
+    그 조문은 이 고시만 고쳐서는 효력을 가지지 못한다. 7절에서 밝혀야
+    할 것이다 — 밝히지 아니하면 시행일을 정할 수 없다."""
+    out = []
+    for _d, x in walk(tree):
+        for ln in str(x.get("reason") or "").split(chr(10)):
+            t = ln.strip().lstrip("*·").strip()
+            if t.startswith("(전제)") or "전제임" in t or "이 전제" in t:
+                out.append(_nodename(x))
+                break
+    seen, uniq = set(), []
+    for n in out:
+        if n not in seen:
+            seen.add(n)
+            uniq.append(n)
+    return uniq
+
+
+def _annex_ready(tree, walk, regid=None):
+    """새로 두는 별표ㆍ별지 가운데 서식을 갖춘 것을 센다 → (갖춘 수, 모두)
+
+    서식은 마디의 본문에 글로 적혀 있기도 하고, 표로 지어
+    objects/<규정>/annex/ 에 XML 로 놓여 있기도 하다. 둘 가운데 하나만 있어도 갖춘 것이다
+    — 본문만 보면 별지 7 처럼 표로 지어 둔 것을 빠뜨린다."""
+    got = all_ = 0
+    for _d, x in walk(tree):
+        ref = x.get("annexRef") or {}
+        if not ref.get("no"):
+            continue
+        if (x.get("status") or "") not in ("신설", "별표신설"):
+            continue
+        all_ += 1
+        if str(x.get("body") or "").strip():
+            got += 1
+        elif regid and os.path.exists(os.path.join(
+                DATA, "objects", regid, "annex",
+                "%s%s.xml" % (ref.get("gubun") or "별표", ref.get("no")))):
+            got += 1
+    return got, all_
+
+def opinion(tree, walk, regname, st, fds, sup, regid=None):
     """7. 종합 의견 — 줄글 문단들"""
     out = []
     n_new = st.get("신설", 0)
@@ -775,6 +889,26 @@ def opinion(tree, walk, regname, st, fds, sup):
             "우려에는 그 기준이 상위법령과 어긋나 있던 것을 맞춘 것임을 밝혔다. "
             "따라서 이 개정안은 시행에 무리가 없다고 본다." % len(objs))
 
+    # 시행에 앞서 갖추어야 할 것 — 없는 말을 짓지 아니하고 자료에 적힌
+    # 「(전제)」 와 별표 서식의 채움 상태만 옮긴다.
+    pre = _premises(tree, walk)
+    ready, whole = _annex_ready(tree, walk, regid)
+    if pre:
+        out.append(
+            "다만 이 개정에는 상위법령이 함께 고쳐져야 효력을 가지는 것이 "
+            "%d건 있다 — %s. 이들은 근거가 서기 전에는 시행할 수 없으므로 "
+            "부칙에서 시행일을 따로 두고, 그때까지는 종전의 규정에 따르도록 "
+            "한다. 시행규칙 개정을 함께 건의한다."
+            % (len(pre), ", ".join(pre[:8])
+               + (" 등" if len(pre) > 8 else "")))
+    if whole:
+        out.append(
+            ("새로 두는 별표와 별지 %d건은 서식을 모두 갖추어 두었으므로, "
+             "시행일이 오면 곧바로 쓸 수 있다." % whole) if ready >= whole else
+            ("새로 두는 별표와 별지 %d건 가운데 %d건은 서식을 갖추었고 "
+             "%d건은 아직 비어 있다. 시행 전에 그 서식을 갖추어야 한다."
+             % (whole, ready, whole - ready)))
+
     if sup:
         lines = sup if isinstance(sup, list) else [str(sup)]
         head = " ".join(str(x) for x in lines)[:400]
@@ -795,11 +929,16 @@ TODO_7 = ("〔사람이 씁니다〕 개정의 전체 취지와 타당성 판단
           "적습니다. 시행일과 경과조치에 관한 의견도 함께 적습니다.")
 
 
-def build_reason(dst, tree, regname, walk, R, sup=None, regid=None):
+def build_reason(dst, tree, regname, walk, R, sup=None, regid=None,
+                 annexid=None):
     """개정사유서를 양식에 얹는다 → (만든 파일 길, 담은 항목 수)
 
     R 은 사유 글을 뜯는 도구를 담은 모듈이다(genreport_hwpx). 여기서 곧바로
-    들여오면 서로 물고 물리므로 부르는 쪽이 건네준다."""
+    들여오면 서로 물고 물리므로 부르는 쪽이 건네준다.
+
+    regid 는 현행 규정의 자리(reg29 …)라 본문 속 표와 수식을 거기서 찾는다.
+    annexid 는 개정안이 새로 지은 별표 서식이 놓인 자리(draftSimsa …)다.
+    둘이 다르므로 따로 받는다 — 하나로 묶으면 새 별표를 찾지 못한다."""
     f = FF.Form(TPL_REASON)
     P, TB, tops = reason_protos(f)
     if len(TB) < 4:
@@ -906,14 +1045,16 @@ def build_reason(dst, tree, regname, walk, R, sup=None, regid=None):
                       ["- " + z for z in why[:5]] or ["—"]])
     out.append(_tbl_of(TB[3], rows5))
 
-    # ── 6ㆍ7절은 줄글이라 자료에서 지을 수 없다
+    # ── 6ㆍ7절 — 조문 사유의 [이익]ㆍ[예상 반론] 을 모아 줄글로 짓는다.
+    #    여태 개조식 본(paraPr 7)에 얹었으나, 대상마다 한 문단으로 묶고
+    #    나서는 줄글이므로 본문 본에 얹는다.
     sec("6. 기대 효과")
     got6 = benefits(tree, walk, st, fds, regid)
     for t in (got6 or [TODO_6]):
-        out.append(FF.remake(P["bullet"], [(None, t)]))
+        body(t)
 
     sec("7. 종합 의견")
-    got7 = opinion(tree, walk, regname, st, fds, sup)
+    got7 = opinion(tree, walk, regname, st, fds, sup, annexid or regid)
     for t in (got7 or [TODO_7]):
         body(t)
 
