@@ -759,7 +759,7 @@ def main():
         # 아무 판에나 같은 원고를 넣으면 2024년 판에 2025년 사유서가 들어간다.
         #   ㆍ 판마다 따로 쓴 원고가 있으면 그것 (「… 개정사유서_1판.hwpx」)
         #   ㆍ 없으면 마지막 판에만 통짜 원고를 쓴다
-        HAND = os.path.join(BASE, "Report", "출력")
+        HAND = os.path.join(ROOT, "Report", "출력")
         cand = [os.path.join(HAND, f"{regname} 개정사유서_{ri + 1}판.hwpx")]
         if ri == len(revs) - 1:
             cand.append(os.path.join(HAND, f"{regname} 개정사유서.hwpx"))

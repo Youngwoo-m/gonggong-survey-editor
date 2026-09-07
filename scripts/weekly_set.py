@@ -132,7 +132,7 @@ def hand_docs(target, major, last=True):
     base = reg_base(target) if target else ""
     if not base:
         return []
-    d = os.path.join(BASE, "Report", "출력")
+    d = os.path.join(PROTO, "Report", "출력")
     out = []
     if major:
         out.append(os.path.join(d, "%s 개정사유서_%d판.hwpx" % (base, major)))

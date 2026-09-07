@@ -683,6 +683,10 @@ prototype/
       gen/{자리}/          본문 글로 지은 신설 별표 (hwpx·hwp·pdf)
       reg12/원본/          무인비행장치 현행 규정의 별표 원본
     report/                개정보고서 zip (scripts/genreport.py 가 만든다)
+  Report/                  사람이 쓰는 개정사유서
+    원고/*.md              규정마다의 원고 — 이것이 사람이 고쳐 쓰는 글이다
+    출력/*.hwpx·pdf        양식에 얹어 지은 것. genreport_hwpx 가 이것을 먼저 쓴다
+    scripts/build_from_form.py   원고를 양식 위에 얹는다
 ```
 
 ### 화면 파일의 캐시 꼬리표
