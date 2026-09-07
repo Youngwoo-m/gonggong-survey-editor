@@ -74,7 +74,18 @@ def main():
     # 본문의 인용도 함께 옮기므로(gendraft2025.py) 지금 번호로 확인한다.
     have_jo = {f"제{r['n'].get('no')}조" for r in arts}
     was_jo = {str(r["n"].get("legacyNo") or "").replace(" ", "") for r in arts}
-    have_anx = {str(r["n"].get("legacyNo") or "").replace(" ", "") for r in annex}
+    # 별표 인용도 조 인용과 마찬가지로 개편안 번호를 가리킨다. 여태 legacyNo
+    # 로 맞대어 보아, 현행에 짝이 없는 신설 별표(별표 58)를 「없는 별표」 라
+    # 짚었다. 개편안 번호로 맞대어 본다 — 화면에서 신설 별표에 엉뚱한 서식이
+    # 붙던 것도 같은 까닭이었다(㋌).
+    have_anx = set()
+    for r in annex:
+        a = r["n"].get("annexRef") or {}
+        if a.get("no"):
+            have_anx.add("%s%s" % (a.get("gubun") or "별표", a["no"]))
+        leg = str(r["n"].get("legacyNo") or "").replace(" ", "")
+        if leg:
+            have_anx.add(leg)
     bad = collections.OrderedDict()
     def add(k, s):
         bad.setdefault(k, []).append(s)
