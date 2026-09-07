@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표20" gubun="별표" no="20" title="측량기기의 종류별 요구 성능" source="작업규정 개정안 초안 (scripts/genannex2025.py)">
+  <text>[별표 20]
+측량기기의 종류별 요구 성능 (제24조제3항 관련)</text>
+  <table rows="11" cols="4">
+    <row>
+      <cell col="0" row="0" header="1">측량기기</cell>
+      <cell col="1" row="0" header="1">요구 성능</cell>
+      <cell col="2" row="0" header="1">무엇에 쓰는가</cell>
+      <cell col="3" row="0" header="1">근거</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">토털스테이션ㆍ데오드라이트ㆍ광파거리측량기</cell>
+      <cell col="1" row="1">「공간정보의 구축 및 관리 등에 관한 법률 시행규칙」 제102조의 측량기기별 성능기준에 따른다. 응용측량에는 2급 토털스테이션ㆍ3급 광파측거기ㆍ2급 데오드라이트 이상을 쓴다.</cell>
+      <cell col="2" row="1">기준점측량, 세부측량, 응용측량</cell>
+      <cell col="3" row="1">제23조ㆍ시행규칙 제102조</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">레벨</cell>
+      <cell col="1" row="2">1km 왕복 수준측량의 표준편차 1mm 이하</cell>
+      <cell col="2" row="2">공공수준점측량, 종ㆍ횡단측량</cell>
+      <cell col="3" row="2">제23조</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">GNSS 수신기 (정적ㆍ현황측량)</cell>
+      <cell col="1" row="3">2급 이상. 2주파(L1ㆍL2) 이상을 받을 것</cell>
+      <cell col="2" row="3">기준점측량, 현황측량</cell>
+      <cell col="3" row="3">제23조</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">GNSS 수신기 (네트워크 RTK)</cell>
+      <cell col="1" row="4">1급. 2주파(L1ㆍL2) 이상이고 ±(5mm + 1ppm×D) 이상의 정확도. 보정신호를 받는 통신장비와 컨트롤러를 갖출 것</cell>
+      <cell col="2" row="4">네트워크 RTK 측량</cell>
+      <cell col="3" row="4">제79조</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">강테이프ㆍ유리섬유테이프</cell>
+      <cell col="1" row="5">KS 1급(유리섬유는 1급 1종)</cell>
+      <cell col="2" row="5">거리 관측의 보조</cell>
+      <cell col="3" row="5">제23조</cell>
+    </row>
+    <row>
+      <cell col="0" row="6">해양측위기</cell>
+      <cell col="1" row="6">측위오차 (0.5m ± 100ppm×D) 이하</cell>
+      <cell col="2" row="6">심천측량</cell>
+      <cell col="3" row="6">제23조</cell>
+    </row>
+    <row>
+      <cell col="0" row="7">관로탐지기 (금속ㆍ비금속)</cell>
+      <cell col="1" row="7">별표 49의 허용범위를 낼 수 있을 것 —— 매설깊이 3.0m 이하에서 평면위치 ±20cmㆍ깊이 ±30cm. 탐사방법별로 갖출 것은 별표 50에 따른다.</cell>
+      <cell col="2" row="7">지하시설물측량</cell>
+      <cell col="3" row="7">제210조ㆍ별표 49ㆍ별표 50</cell>
+    </row>
+    <row>
+      <cell col="0" row="8">지상ㆍ항공ㆍ무인비행장치 레이저측량 장비</cell>
+      <cell col="1" row="8">성과가 요구하는 점밀도 등급(제121조제2항 —— 기본 4점/㎡, 고정밀 8점/㎡, 초고정밀 20점/㎡)을 낼 수 있을 것. 거리와 각의 정밀도를 제원으로 밝힐 것</cell>
+      <cell col="2" row="8">3차원 공간정보 구축</cell>
+      <cell col="3" row="8">제121조</cell>
+    </row>
+    <row>
+      <cell col="0" row="9">이동측량시스템 (차량기반)</cell>
+      <cell col="1" row="9">위치ㆍ자세 자료 취득장치와 지형지물 취득 센서의 상대 위치ㆍ자세를 검정할 수 있을 것. 검정 유효기간은 고정식 1년, 착탈식 6개월</cell>
+      <cell col="2" row="9">차량기반 이동측량</cell>
+      <cell col="3" row="9">제128조</cell>
+    </row>
+    <row>
+      <cell col="0" row="10">무인비행장치와 탑재 센서</cell>
+      <cell col="1" row="10">「항공안전법」에 따른 신고ㆍ승인을 마친 기체. 성과가 요구하는 지상표본거리와 점밀도를 낼 수 있는 센서</cell>
+      <cell col="2" row="10">무인비행장치 측량</cell>
+      <cell col="3" row="10">제104조ㆍ제125조</cell>
+    </row>
+  </table>
+  <text>비고
+1. 이 규정은 **특정 제조사나 모델을 지정하지 아니한다**(제24조제2항). 이 표는 갖추어야 할 성능을 적은 것이며, 그 성능을 내는 기기이면 종류를 가리지 아니한다.
+2. 성능검사를 받아야 하는 기기는 검사를 마친 것을 쓴다(제22조제1항). 검사 대상과 주기는 별표 21에 따른다.
+3. 이 표에 없는 기기나 새로운 방식의 기기는 제26조에 따라 성능을 입증하여 쓸 수 있다. 이 경우 입증 자료를 성과와 함께 낸다.
+4. 시행규칙 제102조의 성능기준이 개정된 경우에는 그 기준에 따른다.
+5. 성과의 유형별로 더 높은 성능이 필요한 경우에는 제품사양서(별표 16)에 적어 요구한다.</text>
+</annex>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표36" gubun="별표" no="36" title="차량기반 이동측량의 정합 허용범위 및 검증점 배치" source="작업규정 개정안 초안 (scripts/genannex2025.py)">
+  <text>[별표 36]
+차량기반 이동측량의 정합 허용범위 및 검증점 배치 (제131조제7항 관련)</text>
+  <text>1. 정합 정확도의 성분별 허용범위 (제131조제3항)</text>
+  <table rows="6" cols="4">
+    <row>
+      <cell col="0" row="0" header="1">무엇을 견주는가</cell>
+      <cell col="1" row="0" header="1">성분</cell>
+      <cell col="2" row="0" header="1">허용범위</cell>
+      <cell col="3" row="0" header="1">재는 방법</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">같은 구간을 되풀이하여 취득한 점군</cell>
+      <cell col="1" row="1">수평</cell>
+      <cell col="2" row="1">0.10m 이내</cell>
+      <cell col="3" row="1">중복 영역에서 같은 지물의 같은 자리를 골라 견준다</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">같은 구간을 되풀이하여 취득한 점군</cell>
+      <cell col="1" row="2">수직</cell>
+      <cell col="2" row="2">0.05m 이내</cell>
+      <cell col="3" row="2">평탄한 노면에서 견준다</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">인접한 경로에서 겹쳐 취득한 점군</cell>
+      <cell col="1" row="3">수평</cell>
+      <cell col="2" row="3">0.10m 이내</cell>
+      <cell col="3" row="3">겹친 폭의 가운데에서 견준다</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">인접한 경로에서 겹쳐 취득한 점군</cell>
+      <cell col="1" row="4">수직</cell>
+      <cell col="2" row="4">0.05m 이내</cell>
+      <cell col="3" row="4">평탄한 노면에서 견준다</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">점군과 사진</cell>
+      <cell col="1" row="5">수평</cell>
+      <cell col="2" row="5">화소 크기의 2배 이내</cell>
+      <cell col="3" row="5">사진에 점군을 투영하여 같은 지물의 어긋남을 본다</cell>
+    </row>
+  </table>
+  <text>2. 검증점의 배치와 수량 (제131조제5항)</text>
+  <table rows="5" cols="3">
+    <row>
+      <cell col="0" row="0" header="1">항목</cell>
+      <cell col="1" row="0" header="1">기준</cell>
+      <cell col="2" row="0" header="1">비고</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">수량</cell>
+      <cell col="1" row="1">취득 구간 2km 마다 1점 이상. 구간이 2km 미만이면 2점 이상</cell>
+      <cell col="2" row="1">조정점과는 따로 설치한다</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">배치</cell>
+      <cell col="1" row="2">구간의 시점ㆍ종점과 그 사이에 고르게 둔다. 음영구간에는 그 앞뒤에 각각 1점 이상을 더 둔다</cell>
+      <cell col="2" row="2">음영구간은 표류가 커지는 자리다(제130조제1항)</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">정확도</cell>
+      <cell col="1" row="3">수평위치와 표고 모두 표준편차 0.1m 이내</cell>
+      <cell col="2" row="3">조정점의 예에 따른다(제131조제5항ㆍ제130조제4항)</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">설치 방법</cell>
+      <cell col="1" row="4">점군과 사진에서 뚜렷이 확인할 수 있는 지물로 한다. 그러한 지물이 없으면 표지나 반사테이프를 설치한다</cell>
+      <cell col="2" row="4">조정점의 예에 따른다(제130조제3항)</cell>
+    </row>
+  </table>
+  <text>3. 판정</text>
+  <table rows="3" cols="2">
+    <row>
+      <cell col="0" row="0" header="1">결과</cell>
+      <cell col="1" row="0" header="1">어떻게 하는가</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">허용범위 안</cell>
+      <cell col="1" row="1">그대로 성과로 삼고, 얻은 값을 정확도 관리표에 적는다</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">허용범위를 벗어남</cell>
+      <cell col="1" row="2">서로 정합하여 위치편차를 없애거나(제131조제3항), 조정점으로 조정처리를 한다. 그래도 얻지 못하면 그 구간을 다시 취득한다(제131조제6항)</cell>
+    </row>
+  </table>
+  <text>비고
+1. 정합은 점군과 사진에 함께 적용하여 동기화를 유지한다(제131조제4항).
+2. 검증점은 **성과의 산정에 쓰지 아니하고 정확도를 밖에서 재는 데에만** 쓴다(제119조제1호). 조정점을 검증점으로 삼을 수 없다.
+3. 조정점의 수량과 배치는 제130조제2항에 따른다 —— 취득 구간마다 2점 이상.
+4. 점밀도가 제121조제2항의 등급을 충족하는지도 함께 점검한다(제131조제2항제3호).
+5. 이 표의 허용범위는 이 초안의 제안이다. 조정점의 정확도(표준편차 0.1m, 제130조제4항)를 바탕으로 삼되, 정밀도로지도를 제작하는 경우에는 그 규정에서 더 엄격한 값을 정할 수 있다(제127조제2항).</text>
+</annex>
