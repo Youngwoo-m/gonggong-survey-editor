@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표58" gubun="별표" no="58" title="RTK-GNSS 세부측량의 축척별 세트 간 교차 허용범위" source="작업규정 개정안 초안 (scripts/genannex2025.py)">
+  <text>[별표 58]
+RTK-GNSS 세부측량의 축척별 세트 간 교차 허용범위 (제98조제4항제3호 관련)</text>
+  <table rows="6" cols="5">
+    <row>
+      <cell col="0" row="0" header="1">축척</cell>
+      <cell col="1" row="0" header="1">도상 0.3mm 에 해당하는 지상거리</cell>
+      <cell col="2" row="0" header="1">ΔXㆍΔY (각 성분)</cell>
+      <cell col="3" row="0" header="1">수평위치 교차</cell>
+      <cell col="4" row="0" header="1">ΔH</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">1:500</cell>
+      <cell col="1" row="1">0.15m</cell>
+      <cell col="2" row="1">0.15m 이내</cell>
+      <cell col="3" row="1">0.15m 이내</cell>
+      <cell col="4" row="1">0.15m 이내</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">1:1,000</cell>
+      <cell col="1" row="2">0.30m</cell>
+      <cell col="2" row="2">0.30m 이내</cell>
+      <cell col="3" row="2">0.30m 이내</cell>
+      <cell col="4" row="2">0.30m 이내</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">1:2,500</cell>
+      <cell col="1" row="3">0.75m</cell>
+      <cell col="2" row="3">0.75m 이내</cell>
+      <cell col="3" row="3">0.75m 이내</cell>
+      <cell col="4" row="3">0.75m 이내</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">1:5,000</cell>
+      <cell col="1" row="4">1.50m</cell>
+      <cell col="2" row="4">1.50m 이내</cell>
+      <cell col="3" row="4">1.50m 이내</cell>
+      <cell col="4" row="4">1.50m 이내</cell>
+    </row>
+    <row>
+      <cell col="0" row="5">1:10,000</cell>
+      <cell col="1" row="5">3.00m</cell>
+      <cell col="2" row="5">3.00m 이내</cell>
+      <cell col="3" row="5">3.00m 이내</cell>
+      <cell col="4" row="5">3.00m 이내</cell>
+    </row>
+  </table>
+  <text>비고
+1. 이 표의 값은 제98조제6항의 「지형ㆍ지물 등의 측정정밀도는 도상 0.3mm 이내로 한다」 를 축척마다 지상거리로 환산한 것이다. **값을 새로 정한 것이 아니라** 이미 있는 기준을 벌여 놓은 것이다.
+2. 이 표에 없는 축척은 도상 0.3mm 에 그 축척의 분모를 곱하여 구한다.
+3. 세트 간 교차가 이 표의 값을 넘으면 재초기화하여 다시 관측한다(제98조제4항).
+4. 기준점측량의 세트 간 교차는 이 표를 쓰지 아니한다 —— 제46조제1항제3호의 표에 따른다.
+5. ΔH 는 표고의 교차다. 표고의 정밀도가 수평위치보다 낮은 장비를 쓰는 경우에는 제품사양서(별표 16)에서 따로 정할 수 있다.</text>
+</annex>

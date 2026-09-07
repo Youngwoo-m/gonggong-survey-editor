@@ -117,5 +117,12 @@
   "tables": 3,
   "rows": 14,
   "cols": 4
+ },
+ "별표58": {
+  "file": "별표58.xml",
+  "title": "RTK-GNSS 세부측량의 축척별 세트 간 교차 허용범위",
+  "tables": 1,
+  "rows": 6,
+  "cols": 5
  }
 }
