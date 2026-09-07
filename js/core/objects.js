@@ -6,7 +6,7 @@
    여기서는 그 XML 을 읽어 화면에 진짜 표로 그린다.
    ============================================================ */
 
-import { toMathML } from "./eqmath.js?v=20260907y";
+import { toMathML } from "./eqmath.js?v=20260907z";
 
 const RE_IMG = /<img\s+id="([\w.-]+)"\s*>(?:<\/img>)?/gi;
 // 본문이 인용하는 다른 규정 — 「…」 / 『…』
@@ -39,19 +39,39 @@ export function linkCitations(html, resolve) {
 const RE_LAW = /(?<![가-힣A-Za-z])(같은\s*법\s*시행규칙|같은법\s*시행규칙|같은\s*법\s*시행령|같은법\s*시행령|시행규칙|시행령|같은\s*법|같은법|법률|법|영|규칙)\s*(제\s*\d+\s*조(?:의\s*\d+)?(?:\s*제\s*\d+\s*항)?(?:\s*제\s*\d+\s*호)?)/g;
 
 /**
+ * 글자 자리에만 바꾸기를 건다 — 태그 안(속성값)과 이미 걸린 <a> 는 건너뛴다.
+ *
+ * 이 함수들은 차례로 걸리므로, 뒤엣것이 앞엣것이 만든 HTML 을 다시 훑는다.
+ * 그때 태그 안까지 훑으면 속성값 한복판에 <a> 를 박아 넣어 마크업이 깨진다.
+ * 「공간정보의 구축 및 관리 등에 관한 법률 시행규칙」 제17조 가 그러하였다 —
+ * linkCitations 가 title="… 시행규칙 제17조 — 참조규정 창에서 엽니다" 를 만들고,
+ * linkLawRefs 가 그 속성값 안의 「시행규칙 제17조」 를 또 링크로 감쌌다.
+ * @param {string} html
+ * @param {(text:string)=>string} fn 글자 자리에만 걸 바꾸기
+ */
+function onlyText(html, fn) {
+  // 홀수 칸이 <a>…</a> 통째 — 겹쳐 걸면 <a> 가 포개진다
+  return String(html).split(/(<a\b[^>]*>[\s\S]*?<\/a>)/g).map((chunk, i) => {
+    if (i % 2) return chunk;
+    // 다시 홀수 칸이 태그 하나 — 속성값이 여기 든다
+    return chunk.split(/(<[^>]*>)/g).map((part, k) => (k % 2 ? part : fn(part))).join("");
+  }).join("");
+}
+
+/**
  * 약칭 법령 인용을 링크로 바꾼다.
  * @param {string} html 이미 escape 된 글
  * @param {(word:string)=>{id:string,name:string}|null} resolveLaw 약칭 → 규정
  */
 export function linkLawRefs(html, resolveLaw) {
   if (!resolveLaw) return html;
-  return String(html).replace(RE_LAW, (m, word, jo) => {
+  return onlyText(html, (t) => t.replace(RE_LAW, (m, word, jo) => {
     const hit = resolveLaw(word.replace(/\s+/g, " ").trim());
     if (!hit) return m;
     const no = (jo.match(/제\s*(\d+)\s*조/) || [])[1] || "";
     return `<a class="cite law" href="#" data-reg="${esc(hit.id)}" data-jo="${esc(no)}"`
       + ` title="${esc(hit.name)} ${esc(jo)} — 참조규정 창에서 엽니다">${word} ${jo}</a>`;
-  });
+  }));
 }
 
 /**
@@ -68,20 +88,17 @@ const RE_STD = /(?<![A-Za-z0-9-])((?:KS\s*[A-Z]\s*)?ISO(?:\/[A-Z]{2,4})?\s*\d{3,
  */
 export function linkStdRefs(html, resolveStd) {
   if (!resolveStd) return String(html);
-  /* 이미 링크가 걸린 자리는 건드리지 아니한다 — 「KS X ISO 19157-1」 은
-     linkCitations 가 벌써 <a> 로 감쌌으므로, 겹쳐 걸면 <a> 가 포개진다.
-     쪼갠 자리의 홀수 칸이 <a>…</a> 이다. */
-  return String(html).split(/(<a\b[^>]*>[\s\S]*?<\/a>)/g).map((part, i) => {
-    if (i % 2) return part;
-    return part.replace(RE_STD, (m, name, _tail, clause) => {
-      const id = resolveStd(String(name).replace(/\s+/g, " ").trim());
-      if (!id) return m;
-      const where = clause ? ` ${clause}` : "";
-      return `<a class="cite std" href="#" data-reg="${esc(id)}"`
-        + (clause ? ` data-clause="${esc(clause)}"` : "")
-        + ` title="${esc(name)}${where} — 참조규정 창에서 엽니다">${m}</a>`;
-    });
-  }).join("");
+  /* 이미 링크가 걸린 자리와 태그 안(속성값)은 건드리지 아니한다 —
+     「KS X ISO 19157-1」 은 linkCitations 가 벌써 <a> 로 감쌌으므로,
+     겹쳐 걸면 <a> 가 포개진다. */
+  return onlyText(html, (t) => t.replace(RE_STD, (m, name, _tail, clause) => {
+    const id = resolveStd(String(name).replace(/\s+/g, " ").trim());
+    if (!id) return m;
+    const where = clause ? ` ${clause}` : "";
+    return `<a class="cite std" href="#" data-reg="${esc(id)}"`
+      + (clause ? ` data-clause="${esc(clause)}"` : "")
+      + ` title="${esc(name)}${where} — 참조규정 창에서 엽니다">${m}</a>`;
+  }));
 }
 
 /**
