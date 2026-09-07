@@ -150,6 +150,13 @@ def html_draft(tree, regname, regid, meta, supp=None):
     return page(regname, "".join(L))
 
 
+# 6ㆍ7절은 자료에서 뼈대만 세울 수 있다 —— 줄글로 다듬는 일은 사람이 한다.
+EFF_TODO = ("<p style=\"color:#888\">〔위 뼈대를 줄글로 다듬어 주십시오 —— "
+            "개정으로 누가 무엇을 덜 하게 되는지, 얼마나 줄어드는지를 적으면 "
+            "설득력이 생깁니다.〕</p>")
+OPI_TODO = ("<p style=\"color:#888\">〔종합 의견을 맺어 주십시오 —— 위 검토의견에 "
+            "더하여, 시행 시기와 하위 규정ㆍ서식의 준비 상태를 함께 적습니다.〕</p>")
+
 TODO = ("<p style=\"color:#888\">〔이 마디는 사람이 씁니다 — 개정안 자료에 없는 "
         "글입니다.〕</p>")
 
@@ -164,6 +171,9 @@ TODO = ("<p style=\"color:#888\">〔이 마디는 사람이 씁니다 — 개정
 
 SEC_NOW, SEC_ILL = "현행 규정", "현행의 문제"
 SEC_WHY, SEC_WHAT = "개정 사유", "개정 내용"
+# 뒤에 더한 두 도막 —— 모든 마디에 있지 아니하다(성과심사 규정 몇 마디뿐).
+# 6ㆍ7절을 채우는 데 쓴다.
+SEC_EFFECT, SEC_OPINION = "기대 효과", "검토의견"
 
 
 def reason_secs(reason):
@@ -536,10 +546,42 @@ def html_reason(tree, regname, regid):
                  "<td>" + kaejo(reason_secs(x.get("reason"))) + "</td></tr>")
     L.append("</tbody></table>")
 
+    # ── 6. 기대 효과 : 사유의 '기대 효과' 도막을 모은다. 그 도막이 없는
+    #    자료가 대부분이므로, 없으면 이번 개정의 크기와 분야를 세워 둔다.
     L.append("<h2>6. 기대 효과</h2>")
-    L.append(TODO)
+    eff = []
+    for _d, x in walk(tree):
+        eff += pick(reason_secs(x.get("reason")), SEC_EFFECT)
+    eff = uniq(clean(eff))
+    if eff:
+        L.append(kaejo_lines(eff))
+    else:
+        L.append("<p>- 흩어져 있던 기준을 한 체계로 모아, 무엇을 어느 잣대로 "
+                 "보는지가 조문만으로 드러난다.</p>")
+        L.append("<p>- 정비하는 분야 " + str(len(fds)) + "가지에서 "
+                 + esc("ㆍ".join(f[0] for f in fds)) + " 의 기준이 갖추어진다.</p>")
+        L.append("<p>- 고치는 조문 " + str(st.get("수정", 0)) + "개 조와 "
+                 "새로 두는 조문 " + str(st.get("신설", 0)) + "개 조가 "
+                 "시행되면, 별표 " + str(st["별표수정"] + st["별표신설"]) + "건이 "
+                 "그 잣대를 서식으로 받는다.</p>")
+        L.append(EFF_TODO)
+
+    # ── 7. 종합 의견 : 사유의 '검토의견' 도막(우려와 그 답)을 모은다.
+    #    개정을 다투게 되는 대목이 거기에 적혀 있다.
     L.append("<h2>7. 종합 의견</h2>")
-    L.append(TODO)
+    opi = []
+    for _d, x in walk(tree):
+        for ln in pick(reason_secs(x.get("reason")), SEC_OPINION):
+            lab = x.get("title") or ""
+            no = x.get("no")
+            head = ("제%s조" % no) if (x.get("level") == "조" and no) else lab
+            opi.append((head + (" " + lab if head != lab else "")).strip()
+                       + " — " + ln)
+    opi = uniq(clean(opi))
+    if opi:
+        L.append("<p>이 개정에서 다투어질 만한 것과 그에 대한 답은 다음과 같다.</p>")
+        L.append(kaejo_lines(opi))
+    L.append(OPI_TODO)
     return page(regname + " 개정사유서", "".join(L)), n
 
 
@@ -728,8 +770,9 @@ def main():
                 tree, regname, walk, sys.modules[__name__],
                 rev.get("supplement"), regid)
             add("개정사유서", p, f"자료에서 지음 · 항목 {nr}개")
-            print("  [주의] 사람이 쓴 개정사유서가 없어 자료에서 지었습니다"
-                  " — 6ㆍ7절은 직접 쓰셔야 합니다")
+            print("  [알림] 사람이 쓴 개정사유서가 없어 자료에서 지었습니다"
+                  " — 6ㆍ7절은 사유의 [이익]ㆍ[예상 반론] 로 뼈대를 세웠으니"
+                  " 줄글로 다듬으십시오")
 
         got, miss = gather_annex(tree, os.path.join(stage, "별표및별지모음"), regname)
 
