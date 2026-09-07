@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표50" gubun="별표" no="50" title="지하시설물 탐사장비의 성능 요건 및 탐사 세부 기준" source="작업규정 개정안 초안 (scripts/genannex2025.py)">
+  <text>[별표 50]
+지하시설물 탐사장비의 성능 요건 및 탐사 세부 기준 (제220조제4항 및 제221조제3항 관련)</text>
+  <text>1. 탐사방법별 장비의 성능 요건</text>
+  <table rows="5" cols="4">
+    <row>
+      <cell col="0" row="0" header="1">탐사방법</cell>
+      <cell col="1" row="0" header="1">무엇을 찾는가</cell>
+      <cell col="2" row="0" header="1">갖추어야 할 것</cell>
+      <cell col="3" row="0" header="1">성능 확인</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">전자유도</cell>
+      <cell col="1" row="1">금속관로</cell>
+      <cell col="2" row="1">송신기ㆍ수신기ㆍ시그널 크램프ㆍ공관로 탐사용 탐침ㆍ접지선과 접지봉. 관로의 종류에 맞는 송신ㆍ수신 주파수를 고를 수 있을 것</cell>
+      <cell col="3" row="1">「측량기기 성능검사 규정」 제10조제3항의 검사를 받은 것</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">지표투과레이더(GPR)</cell>
+      <cell col="1" row="2">비금속관로와 금속관로</cell>
+      <cell col="2" row="2">탐사 깊이에 맞는 주파수의 안테나. 위치 정보와 이어 붙일 수 있을 것(카트형은 GNSS 연동, 차량형은 주행거리계 연동). 유전상수를 재거나 넣을 수 있을 것</cell>
+      <cell col="3" row="2">같은 규정 제10조제4항의 검사를 받은 것</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">음향(초음파)</cell>
+      <cell col="1" row="3">비금속관로</cell>
+      <cell col="2" row="3">관로 안에 신호를 넣고 지표에서 받을 수 있을 것</cell>
+      <cell col="3" row="3">같은 규정 제10조제2항의 분류에 따른다</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">인입선 추적</cell>
+      <cell col="1" row="4">탐지선을 둔 비금속관로</cell>
+      <cell col="2" row="4">탐지선에 신호를 실을 수 있을 것</cell>
+      <cell col="3" row="4">전자유도의 예에 따른다</cell>
+    </row>
+  </table>
+  <text>2. 지표투과레이더 탐사의 세부 기준 (제220조제1항)</text>
+  <table rows="5" cols="3">
+    <row>
+      <cell col="0" row="0" header="1">항목</cell>
+      <cell col="1" row="0" header="1">기준</cell>
+      <cell col="2" row="0" header="1">적는 것</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">주파수</cell>
+      <cell col="1" row="1">탐사 깊이에 맞추어 고른다. 얕은 관로(1m 안팎)는 높은 주파수를, 깊은 관로는 낮은 주파수를 쓴다. 한 현장에서 깊이가 크게 다르면 둘 이상을 함께 쓴다.</cell>
+      <cell col="2" row="1">고른 주파수와 그 까닭</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">측선 간격</cell>
+      <cell col="1" row="2">관로의 방향에 직각으로 긋고, 관로의 직경과 깊이를 헤아려 관로를 지나치지 아니할 간격으로 한다. 방향을 모르는 구간은 격자로 긋는다.</cell>
+      <cell col="2" row="2">측선의 간격과 방향, 격자의 크기</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">취득 속도</cell>
+      <cell col="1" row="3">신호가 끊기지 아니하는 속도로 한다. 장비의 주사율과 측선을 따라 정한다.</cell>
+      <cell col="2" row="3">취득 속도와 주사율</cell>
+    </row>
+    <row>
+      <cell col="0" row="4">유전상수</cell>
+      <cell col="1" row="4">현장에서 재는 것을 원칙으로 하고, 재지 못한 경우에는 흙의 종류와 함수 상태에 맞는 값을 쓴다.</cell>
+      <cell col="2" row="4">쓴 값과 그것을 얻은 방법</cell>
+    </row>
+  </table>
+  <text>3. 탐사 성과의 평가 (제220조제3항)</text>
+  <table rows="3" cols="3">
+    <row>
+      <cell col="0" row="0" header="1">지표</cell>
+      <cell col="1" row="0" header="1">무엇인가</cell>
+      <cell col="2" row="0" header="1">적는 방법</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">탐지율</cell>
+      <cell col="1" row="1">찾아야 할 관로 가운데 찾은 것의 비율</cell>
+      <cell col="2" row="1">확인된 관로 수를 바탕으로 백분율로 적는다</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">오탐율</cell>
+      <cell col="1" row="2">관로가 아닌 것을 관로로 본 비율</cell>
+      <cell col="2" row="2">확인 굴착이나 도통테스트로 가린 결과로 적는다</cell>
+    </row>
+  </table>
+  <text>비고
+1. 이 별표는 제220조제4항의 「별표」와 제221조제3항의 「별표 50」을 함께 담은 것이다 —— 지표투과레이더는 비금속관 탐사의 주된 방법이므로 장비의 성능 요건과 탐사의 세부 기준을 한자리에 둔다.
+2. 장비의 성능은 「측량기기 성능검사 규정」의 성능검사로 확인한다. 관로탐지기는 3년마다 성능검사를 받아야 한다(별표 21).
+3. 이 별표는 특정 제조사나 모델을 지정하지 아니한다(제24조제2항). 성능을 입증한 새 방식의 장비는 제26조에 따라 쓸 수 있다.
+4. 주파수ㆍ측선 간격ㆍ취득 속도에 하나의 수치를 못박지 아니한 것은 현장의 흙과 관로의 깊이ㆍ직경에 따라 알맞은 값이 달라지기 때문이다. 고른 값과 그 까닭을 성과에 적게 하여 뒤에 확인할 수 있게 하였다.
+5. 탐사로 찾지 못한 구간은 그 범위와 까닭을 성과에 적는다(제221조제2항).
+6. 탐사 정확도의 허용범위는 별표 49에 따른다.</text>
+</annex>

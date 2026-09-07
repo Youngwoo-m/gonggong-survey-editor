@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annex id="별표49" gubun="별표" no="49" title="지하시설물 매설 상황별 측량방법 및 정확도 기준" source="작업규정 개정안 초안 (scripts/genannex2025.py)">
+  <text>[별표 49]
+지하시설물 매설 상황별 측량방법 및 정확도 기준 (제219조제2항 관련)</text>
+  <table rows="4" cols="6">
+    <row>
+      <cell col="0" row="0" header="1">상황</cell>
+      <cell col="1" row="0" header="1">어떤 경우인가</cell>
+      <cell col="2" row="0" header="1">측량방법</cell>
+      <cell col="3" row="0" header="1">평면위치 허용범위</cell>
+      <cell col="4" row="0" header="1">깊이 허용범위</cell>
+      <cell col="5" row="0" header="1">함께 남길 것</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">매설</cell>
+      <cell col="1" row="1">이미 묻혀 있는 시설물을 탐사하는 경우</cell>
+      <cell col="2" row="1">탐사(전자유도ㆍ지표투과레이더ㆍ음향 등)로 위치를 찾고, 맨홀ㆍ노출부에서 확인한다. 확인 굴착을 한 경우에는 지상측량으로 잰다.</cell>
+      <cell col="3" row="1">±20cm (매설깊이 3.0m 이하)</cell>
+      <cell col="4" row="1">±30cm (매설깊이 3.0m 이하)</cell>
+      <cell col="5" row="1">탐사방법과 장비, 탐지하지 못한 구간과 그 까닭</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">신설</cell>
+      <cell col="1" row="2">새로 묻는 시설물을 되메우기 전에 측량하는 경우</cell>
+      <cell col="2" row="2">노출된 상태에서 지상측량으로 잰다(제219조제3항). 되메운 뒤에 재는 것은 부득이한 경우로 한정한다.</cell>
+      <cell col="3" row="2">10cm 이내 (위치측량 정확도)</cell>
+      <cell col="4" row="2">10cm 이내 (위치측량 정확도)</cell>
+      <cell col="5" row="2">되메우기 전 사진, 측량 시각, 노출 상태</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">변경</cell>
+      <cell col="1" row="3">이미 묻힌 시설물의 위치나 형태가 바뀌는 경우</cell>
+      <cell col="2" row="3">바뀐 구간은 신설에 준하여 노출 상태에서 잰다. 바뀌지 아니한 구간과 이어 붙여 연결관계를 확인한다.</cell>
+      <cell col="3" row="3">10cm 이내 (노출 구간)</cell>
+      <cell col="4" row="3">10cm 이내 (노출 구간)</cell>
+      <cell col="5" row="3">종전 성과와의 대비, 바뀐 범위, 연결관계 확인 결과</cell>
+    </row>
+  </table>
+  <text>따로 정할 수 있는 경우 (제210조제2항제3호ㆍ제4항)</text>
+  <table rows="4" cols="2">
+    <row>
+      <cell col="0" row="0" header="1">어떤 경우인가</cell>
+      <cell col="1" row="0" header="1">어떻게 하는가</cell>
+    </row>
+    <row>
+      <cell col="0" row="1">매설깊이가 3.0m 를 넘는 경우</cell>
+      <cell col="1" row="1">시행자가 따로 정할 수 있다. 정하지 아니한 경우에는 이 표의 값을 쓰되, 얻은 정확도를 성과에 적는다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="2">직경 100mm 이하의 비금속관로</cell>
+      <cell col="1" row="2">시행자가 따로 정할 수 있다. 탐사가 어려운 까닭을 성과에 적는다.</cell>
+    </row>
+    <row>
+      <cell col="0" row="3">깊이 3.0m 를 넘는 고심도 노출관로의 위치측량</cell>
+      <cell col="1" row="3">작업여건을 헤아려 시설물 시행자가 따로 정할 수 있다.</cell>
+    </row>
+  </table>
+  <text>비고
+1. 이 표의 허용범위는 제210조제2항ㆍ제3항에서 정한 값을 상황별로 벌여 적은 것이다. 값을 새로 정한 것이 아니다.
+2. 허용오차에는 **탐사기기의 오차와 평면위치 오차를 함께** 넣는다(제210조제5항).
+3. 실시간 측량에서 관로의 허용오차는 되메우기 전 노출 상태를 기준으로 한다(제210조제6항).
+4. 높이와 좌표의 단위는 m 로 하고, 평면좌표는 소수 셋째자리까지, 높이는 소수 둘째자리까지 적는다(제210조제3항).
+5. 탐사로 찾지 못한 구간은 그 범위와 까닭을 성과에 적는다(제221조제2항).
+6. 연결관계ㆍ분기ㆍ단절ㆍ오접속의 확인은 도통테스트(제222조)로 하며, 이 표의 정확도 판정과는 별개다.</text>
+</annex>
