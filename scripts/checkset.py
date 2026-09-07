@@ -99,8 +99,11 @@ def main():
         for f in sorted(inbook - onwall):
             bad.append((name, f, "이력에는 있는데 폴더가 없음"))
 
-        for major, revname, rev, tree in revs:
-            fp = W.fingerprint(rev, tree)
+        # 지문은 weekly_set 과 똑같이 셈하여야 한다 —— 사람이 쓴 원고까지
+        # 함께 보므로, 마지막 판인지도 그대로 알려 준다.
+        for i, (major, revname, rev, tree) in enumerate(revs):
+            fp = W.fingerprint(rev, tree, target, major,
+                               last=(i == len(revs) - 1))
             mine = [h for h in hist if int(h.get("판번호", 0)) == major]
             if not mine:
                 bad.append((name, "%d째 판" % major, "지은 적이 없음"))

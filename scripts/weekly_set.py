@@ -30,6 +30,7 @@ r"""규정마다 개정안 한 세트를 지어 **판(버전) 폴더**에 담는
       ㆍ 그 판의 조문 나무(tree) 전부
       ㆍ 부칙(supplement)
       ㆍ 별표ㆍ별지 원본 파일의 길과 크기
+      ㆍ 사람이 쓴 개정사유서 원고의 크기 (Report\출력)
 
   자료는 그대로인데 문서를 짓는 코드를 고쳐 새로 지어야 한다면 --force 를
   준다. 지문이 같아도 짓고 작은 번호를 올린다.
@@ -109,6 +110,37 @@ def ver_letter(target):
     return "X"
 
 
+def reg_base(target):
+    """등록부가 적은 규정의 본이름 —— 사람이 쓴 원고 파일을 찾으려는 것이다"""
+    try:
+        tj = json.load(io.open(os.path.join(DATA, "targets.json"),
+                               encoding="utf-8"))
+    except Exception:
+        return ""
+    for t in (tj.get("targets") or tj):
+        if t.get("id") == target:
+            return str(t.get("base") or t.get("short") or "")
+    return ""
+
+
+def hand_docs(target, major, last=True):
+    """사람이 쓴 개정사유서 원고의 길 —— genreport_hwpx 가 찾는 것과 같다.
+
+    판마다 따로 쓴 원고가 있으면 그것을 쓰고, 통짜 원고는 마지막 판에만
+    쓴다. 지문도 똑같이 보아야 2024년 판이 2025년 원고 때문에 다시
+    지어지지 아니한다."""
+    base = reg_base(target) if target else ""
+    if not base:
+        return []
+    d = os.path.join(BASE, "Report", "출력")
+    out = []
+    if major:
+        out.append(os.path.join(d, "%s 개정사유서_%d판.hwpx" % (base, major)))
+    if last:
+        out.append(os.path.join(d, "%s 개정사유서.hwpx" % base))
+    return out
+
+
 def all_revs(draftfile):
     """개정안 자료의 판을 모두 → [(몇째 판, 판 이름, 판, 조문 나무), …]
 
@@ -144,10 +176,14 @@ def annex_files(tree):
     return out
 
 
-def fingerprint(rev, tree):
+def fingerprint(rev, tree, target=None, major=None, last=True):
     """이 판의 내용을 한 줄의 지문으로 줄인다.
 
-    조문이 한 글자라도 달라지거나 별표 원본이 갈리면 지문이 바뀐다."""
+    조문이 한 글자라도 달라지거나 별표 원본이 갈리면 지문이 바뀐다.
+
+    사람이 쓴 개정사유서 원고도 함께 본다. 그러지 아니하면 원고를 고쳐도
+    자료가 그대로라 하여 넘어가고, 꾸러미에는 옛 사유서가 남는다 ——
+    작업규정과 성과심사 규정의 원고를 처음 쓴 날 그러하였다."""
     h = hashlib.sha256()
     h.update(json.dumps(tree, ensure_ascii=False, sort_keys=True)
              .encode("utf-8"))
@@ -157,6 +193,12 @@ def fingerprint(rev, tree):
         f = os.path.join(PROTO, p)
         sz = os.path.getsize(f) if os.path.exists(f) else -1
         h.update(("%s|%d\n" % (p, sz)).encode("utf-8"))
+    # 없는 원고는 지문에 넣지 아니한다 —— 넣으면 원고를 쓴 적이 없는 판까지
+    # 지문이 달라져 같은 문서를 한 번씩 더 짓게 된다.
+    for f in hand_docs(target, major, last):
+        if os.path.exists(f):
+            h.update(("%s|%d\n" % (os.path.basename(f), os.path.getsize(f)))
+                     .encode("utf-8"))
     return h.hexdigest()
 
 
@@ -277,7 +319,7 @@ def migrate():
         hist = read_ledger(name)
         letter = ver_letter(target)
         major, revname, rev, tree = last_rev(draftfile)
-        fp = fingerprint(rev, tree)
+        fp = fingerprint(rev, tree, target, major)
         for old in olds:
             tag, minor = next_tag(hist, letter, major)
             src, dst = os.path.join(d, old), os.path.join(d, "개정안_" + tag)
@@ -323,8 +365,9 @@ def main():
         hist = read_ledger(name)
         print("━━ %s  — 판 %d개" % (name, len(revs)))
 
-        for major, revname, rev, tree in revs:
-            fp = fingerprint(rev, tree)
+        for i, (major, revname, rev, tree) in enumerate(revs):
+            fp = fingerprint(rev, tree, target, major,
+                             last=(i == len(revs) - 1))
             # 같은 판을 같은 지문으로 이미 지었는가
             mine = [h for h in hist if int(h.get("판번호", 0)) == major]
             # 지문이 같은 것이 여럿이면 가장 나중 것을 든다 — 앞의 것을
