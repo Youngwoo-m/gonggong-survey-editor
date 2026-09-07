@@ -62,3 +62,11 @@ data/report/
 할일.md
 KS표준인용.md
 파일짝짓기.md
+
+# ── 일하다 남은 것 ──────────────────────────────────
+# _handoff.md    이어받기 쪽지(2026-09-04). 할일.md 가 그 몫을 이어받았다.
+# _defsplit_move.json  defsplit.py 가 낸 번호 옮김표. 다시 돌리면 다시 난다.
+# *.bak          손보기 전에 떠 둔 사본. 이력은 git 에 있으니 저장소에 둘 것이 아니다.
+scripts/_handoff.md
+scripts/_defsplit_move.json
+*.bak
