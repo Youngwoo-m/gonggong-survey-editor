@@ -4,6 +4,7 @@ r"""인터넷이 닿지 아니하는 PC 에 옮겨 쓸 배포 꾸러미를 짓�
   python scripts\dist.py            무엇을 담을지 보여만 준다
   python scripts\dist.py --write    zip 을 짓는다
   python scripts\dist.py --write --out D:\어디에\
+  python scripts\dist.py --write --public    바깥에 낼 것 — 아래를 뺀다
 
 ■ 인터넷 없이 도는가
 
@@ -31,6 +32,15 @@ r"""인터넷이 닿지 아니하는 PC 에 옮겨 쓸 배포 꾸러미를 짓�
       __pycache__        파이썬이 남긴 것.
       할일.md ㆍ KS표준인용.md
                          안에서 보는 기록.
+
+■ --public 이 더 빼는 것 — 바깥에 낼 때
+
+      loc29              ISO 19157-1. 유상 표준이라 다시 배포할 수 없다.
+      loc30 ㆍ loc31     연구보고서 둘. 발주처 밖으로 내지 아니한다.
+
+  셋의 본문 색인(data\locNN.json) ㆍ 조문에 딸린 표(data\objects\locNN\) ㆍ
+  원문(data\원문\locNN\) 을 모두 뺀다. 서고 목록에는 이름이 남으므로 받는
+  사람이 무엇이 빠졌는지 알 수 있고, 읽어보세요.txt 에도 그렇게 적는다.
 """
 import datetime
 import io
@@ -51,17 +61,38 @@ TAKE_FILE = ["index.html", "serve.py", "실행.bat", "README.md"]
 DROP_PART = ["__pycache__", os.sep + "data" + os.sep + "report" + os.sep]
 DROP_EXT = [".pyc", ".pyo"]
 
+# --public 일 때 더 뺄 것 — 다시 배포할 수 없는 서고 세 종.
+#   loc29 ISO 19157-1 (유상 표준)
+#   loc30 디지털기반지도등 간행심사 연구보고서
+#   loc31 2025년 공공측량 작업규정 개정연구 최종보고서
+# 본문 색인(json) ㆍ 조문에 딸린 표(objects) ㆍ 원문(pdf) 을 모두 뺀다.
+# 뺀 자리는 서고 목록에 이름만 남고 본문이 빈 칸으로 보인다.
+CLOSED = ["loc29", "loc30", "loc31"]
 
-def wanted(rel):
+
+def drop_public():
+    """--public 에서 뺄 경로 조각"""
+    s = os.sep
+    out = []
+    for k in CLOSED:
+        out.append(s + "data" + s + k + ".json")
+        out.append(s + "data" + s + "objects" + s + k + s)
+        out.append(s + "data" + s + "원문" + s + k + s)
+    return out
+
+
+def wanted(rel, drop=()):
     p = os.sep + rel.replace("/", os.sep)
     if any(d in p for d in DROP_PART):
+        return False
+    if any(d in p for d in drop):
         return False
     if os.path.splitext(rel)[1].lower() in DROP_EXT:
         return False
     return True
 
 
-def gather():
+def gather(drop=()):
     """담을 것을 모은다 → [(실제 길, 꾸러미 안 이름)]"""
     out = []
     for f in TAKE_FILE:
@@ -77,7 +108,7 @@ def gather():
             for f in files:
                 p = os.path.join(cur, f)
                 rel = os.path.relpath(p, ROOT).replace(os.sep, "/")
-                if wanted(rel):
+                if wanted(rel, drop):
                     out.append((p, rel))
     return out
 
@@ -169,10 +200,14 @@ READ_ME = r"""공공측량 규정 개정 편집기 — 인터넷 없이 쓰기
 
 def main():
     write = "--write" in sys.argv
+    public = "--public" in sys.argv
     out = (sys.argv[sys.argv.index("--out") + 1]
            if "--out" in sys.argv else os.path.dirname(ROOT))
-    items = gather()
+    items = gather(drop_public() if public else ())
     total = sum(os.path.getsize(p) for p, _ in items)
+    if public:
+        print("공개용 — 서고 %s 을 뺍니다 (본문 ㆍ 표 ㆍ 원문)." % " ㆍ ".join(CLOSED))
+        print()
 
     # 무엇이 얼마나 담기는지
     by = {}
@@ -188,7 +223,8 @@ def main():
     print("\n".join(lines))
 
     day = datetime.date.today().isoformat()
-    zpath = os.path.join(out, "%s_%s.zip" % (NAME, day))
+    zpath = os.path.join(out, "%s_%s%s.zip"
+                        % (NAME, day, "_공개용" if public else ""))
     print()
     print("꾸러미 : %s" % zpath)
     if not write:
@@ -196,7 +232,21 @@ def main():
         print("시험만 한 것입니다. 지으려면 --write 를 붙이십시오.")
         return
 
+    note = ("""
+■ 빠진 것이 있습니다
+
+  다시 배포할 수 없는 자료 세 종은 이 꾸러미에서 뺐습니다. 서고 목록에
+  이름은 남아 있으나 본문을 누르면 빈 칸으로 보입니다.
+
+      ISO 19157-1                      유상 표준입니다.
+      디지털기반지도등 간행심사 연구보고서
+      2025년 공공측량 작업규정 개정연구 최종보고서
+
+  나머지 참조규정 100종은 본문과 원문이 그대로 들어 있습니다.
+""" if public else "")
     readme = READ_ME % {"list": "\n".join(lines), "day": day}
+    if note:
+        readme = readme.replace("\n■ 담긴 것", note + "\n■ 담긴 것", 1)
     os.makedirs(out, exist_ok=True)
     with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED, compresslevel=6) as z:
         z.writestr(NAME + "/읽어보세요.txt",

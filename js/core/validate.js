@@ -6,10 +6,10 @@
      경고 : 사람이 판단해야 하는 것
      정보 : 알아두면 좋은 것
    ============================================================ */
-import * as M from "./model.js?v=20260907z";
-import { CITE_CHAIN } from "./objects.js?v=20260907z";
-import { checkCrossRefs, checkTerms, checkAnnexClash } from "./xrefs.js?v=20260907z";
-import { QUALITY_ELEMENTS, elementsOf } from "./quality.js?v=20260907z";
+import * as M from "./model.js?v=20260915a";
+import { CITE_CHAIN } from "./objects.js?v=20260915a";
+import { checkCrossRefs, checkTerms, checkAnnexClash } from "./xrefs.js?v=20260915a";
+import { QUALITY_ELEMENTS, elementsOf } from "./quality.js?v=20260915a";
 
 export const LEVELS_OF = { 오류: 0, 경고: 1, 정보: 2 };
 
