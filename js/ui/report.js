@@ -28,14 +28,14 @@
      담을 것의 목록은 kit/kit.json 에 있다 (scripts/synckit.py 가 만든다).
    ============================================================ */
 
-import { buildComparison, KIND_LIST, kindLabel } from "../core/diff.js?v=20261009a";
-import { buildAmendment } from "../core/amend.js?v=20261009a";
-import { writeXlsx } from "../core/xlsx.js?v=20261009a";
-import { createZip } from "../core/zip.js?v=20261009a";
-import { stripImgTags } from "../core/objects.js?v=20261009a";
+import { buildComparison, KIND_LIST, kindLabel } from "../core/diff.js?v=20261009b";
+import { buildAmendment } from "../core/amend.js?v=20261009b";
+import { writeXlsx } from "../core/xlsx.js?v=20261009b";
+import { createZip } from "../core/zip.js?v=20261009b";
+import { stripImgTags } from "../core/objects.js?v=20261009b";
 import { officialCells, cellsHtml, whyLines, whyHtml }
-  from "./compare.js?v=20261009a";
-import { esc } from "./html.js?v=20261009a";
+  from "./compare.js?v=20261009b";
+import { esc } from "./html.js?v=20261009b";
 
 const nl2br = (s) => esc(s).replace(/\n/g, "<br>");
 /** 파일 이름에 쓸 수 없는 글자를 걷어낸다 */

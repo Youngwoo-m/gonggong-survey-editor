@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>공공측량 규정 개정 편집기</title>
-<link rel="stylesheet" href="css/app.css?v=20261009a" />
+<link rel="stylesheet" href="css/app.css?v=20261009b" />
 </head>
 <body>
 
@@ -132,28 +132,47 @@
         <span class="pane-title">개정안 구조 · 드래그 편집</span>
         <span class="pane-sub" id="editStats">—</span>
       </div>
+  <!-- 툴바는 갈래마다 한 덩이로 묶는다. 여태 단추 열다섯이 모두 따로 서고
+       갈래는 1px 금으로만 나뉘어, 무엇이 한 갈래인지 보이지 아니하였다.
+       또 한 줄에 못박아 두고 넘치는 것을 숨겨(overflow:hidden) 창이 좁으면
+       [내려받기]ㆍ[전체]ㆍ[편집] 셋에 아예 닿을 수 없었다. 이제 줄을 바꾼다.
+       단추의 차례는 그대로 둔다 —— 손에 익은 자리이고 매뉴얼이 그러하다. -->
   <div class="pane-toolbar">
-        <button data-cmd="branch" title="지금 것을 밑그림 삼아 새 버전을 만든다 (Ctrl+Shift+V)">⑂<span class="lbl">새버전</span></button>
-        <span class="sep"></span>
-        <button data-cmd="addSibling" title="같은 자리에 마디 하나를 더한다 (Ctrl+N)">＋<span class="lbl">추가</span></button>
-        <button data-cmd="addChild" title="하위 신설 (Ctrl+Shift+N)">＋<span class="lbl">하위</span></button>
-        <span class="sep"></span>
-        <button data-cmd="promote" title="승격 (Shift+Tab)">▲</button>
-        <button data-cmd="demote" title="강등 (Tab)">▼</button>
-        <button data-cmd="moveUp" title="위로 (Alt+↑)">↑</button>
-        <button data-cmd="moveDown" title="아래로 (Alt+↓)">↓</button>
-        <span class="sep"></span>
-        <button data-cmd="del" class="danger" title="삭제 (Delete)">×</button>
-        <span class="sep"></span>
-        <button data-cmd="undo" title="되돌리기 (Ctrl+Z)">◀</button>
-        <button data-cmd="redo" title="다시 실행 (Ctrl+Y)">▶</button>
-        <span class="sep"></span>
-        <button data-cmd="validate" title="정합성 검증 (F5)">✓<span class="lbl">검증</span></button>
-        <button data-cmd="ai" class="ai" title="AI 도우미 (Ctrl+I)">✦AI</button>
-        <button data-cmd="dlEdit" title="지금 보고 있는 개정안을 파일로 내려받습니다 — 조문과 별표ㆍ별지를 한 장에 담습니다">⤓<span class="lbl">내려받기</span></button>
-        <button data-cmd="scopeAll" id="btnScopeAll" class="hidden"
-                title="규정(3종)을 모두 펼칩니다 — 규정을 넘어 조문을 옮기려면 필요합니다">⊞<span class="lbl">전체</span></button>
-        <button id="btnStartEdit" class="go hidden" data-cmd="startEdit">✎<span class="lbl">편집</span></button>
+        <span class="tgrp" role="group" aria-label="버전">
+          <button data-cmd="branch" title="지금 것을 밑그림 삼아 새 버전을 만든다 (Ctrl+Shift+V)">⑂<span class="lbl">새버전</span></button>
+        </span>
+        <span class="tgrp" role="group" aria-label="마디 더하기">
+          <button data-cmd="addSibling" title="같은 자리에 마디 하나를 더한다 (Ctrl+N)">＋<span class="lbl">추가</span></button>
+          <button data-cmd="addChild" title="하위 신설 (Ctrl+Shift+N)">＋<span class="lbl">하위</span></button>
+        </span>
+        <span class="tgrp" role="group" aria-label="자리 옮기기">
+          <button data-cmd="promote" title="승격 (Shift+Tab)">▲</button>
+          <button data-cmd="demote" title="강등 (Tab)">▼</button>
+          <button data-cmd="moveUp" title="위로 (Alt+↑)">↑</button>
+          <button data-cmd="moveDown" title="아래로 (Alt+↓)">↓</button>
+        </span>
+        <span class="tgrp" role="group" aria-label="지우기">
+          <button data-cmd="del" class="danger" title="삭제 (Delete)">×</button>
+        </span>
+        <span class="tgrp" role="group" aria-label="되돌리기">
+          <button data-cmd="undo" title="되돌리기 (Ctrl+Z)">◀</button>
+          <button data-cmd="redo" title="다시 실행 (Ctrl+Y)">▶</button>
+        </span>
+        <span class="tgrp" role="group" aria-label="검사와 도움">
+          <button data-cmd="validate" title="정합성 검증 (F5)">✓<span class="lbl">검증</span></button>
+          <button data-cmd="ai" class="ai" title="AI 도우미 (Ctrl+I)">✦AI</button>
+        </span>
+        <span class="tgrp" role="group" aria-label="내기">
+          <button data-cmd="dlEdit" title="지금 보고 있는 개정안을 파일로 내려받습니다 — 조문과 별표ㆍ별지를 한 장에 담습니다">⤓<span class="lbl">내려받기</span></button>
+        </span>
+        <!-- 형편에 따라 섰다 사라지는 단추 둘 —— 늘 서 있는 것과 가른다.
+             [전체] 는 한 규정만 보고 있을 때, [편집] 은 읽기 전용일 때 선다.
+             둘 다 숨을 수 있으므로 이 덩이는 비면 저절로 사라진다. -->
+        <span class="tgrp when" role="group" aria-label="지금 할 수 있는 일">
+          <button data-cmd="scopeAll" id="btnScopeAll" class="hidden"
+                  title="규정(3종)을 모두 펼칩니다 — 규정을 넘어 조문을 옮기려면 필요합니다">⊞<span class="lbl">전체</span></button>
+          <button id="btnStartEdit" class="go hidden" data-cmd="startEdit">✎<span class="lbl">편집</span></button>
+        </span>
       </div>
       <div class="pane-tools">
         <div class="row rev hidden" id="editRevRow">
@@ -216,6 +235,6 @@
 <div id="toast" class="toast hidden"></div>
 <div id="busy" class="busy hidden"><div class="busy-box"><div class="spin"></div><div id="busyMsg">처리 중…</div></div></div>
 
-<script type="module" src="js/main.js?v=20261009a"></script>
+<script type="module" src="js/main.js?v=20261009b"></script>
 </body>
 </html>

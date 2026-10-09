@@ -1080,3 +1080,62 @@ a.cite.anx:hover { background: var(--link-bg); }
     transition-duration:.01ms !important}
   .mini2:active, .flt:active{transform:none}
 }
+
+/* ===== 직임새 — 툴바를 갈래대로 묶는다 (2026-10-09) =====================
+   창 자리는 그대로 두고 툴바 안쪽만 고친다.
+   ======================================================================== */
+
+/* ---- 넘치는 것을 숨기지 아니한다 ----
+   여태 한 줄에 못박고 overflow:hidden 이어서, 창이 440px 일 때 내용 551px 가
+   들어가 [내려받기]ㆍ[전체]ㆍ[편집] 셋에 아예 닿을 수 없었다. 알릴 길도 없고
+   밀어 볼 수도 없었다. 줄을 바꾸게 한다 —— 한 줄이 늘더라도 닿지 못하는
+   단추가 있는 것보다 낫다. */
+.pane-edit .pane-toolbar{flex-wrap:wrap;overflow:visible;gap:4px;padding:4px 5px}
+
+/* ---- 한 갈래는 한 덩이로 ----
+   단추마다 테를 두르면 열다섯 개가 모두 홀로 서서 무엇이 한 갈래인지
+   보이지 아니한다. 테는 덩이가 두르고, 안쪽은 금으로만 나눈다. */
+.tgrp{display:inline-flex;align-items:stretch;background:#fff;
+      border:1px solid var(--line2);border-radius:var(--r1);overflow:hidden}
+.tgrp:empty{display:none}
+.pane-edit .pane-toolbar .tgrp > button{
+  border:0;border-radius:0;background:none;margin:0;
+  padding:3px 7px;font-size:11px;line-height:1.5;white-space:nowrap;flex:none}
+.pane-edit .pane-toolbar .tgrp > button + button{border-left:1px solid var(--line)}
+.pane-edit .pane-toolbar .tgrp > button:hover:not(:disabled){background:var(--panel);color:var(--ink)}
+.pane-edit .pane-toolbar .tgrp > button:active:not(:disabled){background:var(--panel2);transform:none}
+.pane-edit .pane-toolbar .tgrp > button:disabled{opacity:.35;background:none}
+/* 덩이 안에서는 테가 아니라 바탕으로 포커스를 밝힌다 —— 테를 두르면
+   덩이 바깥으로 삐져나와 이웃 단추를 덮는다 */
+.pane-edit .pane-toolbar .tgrp > button:focus-visible{
+  outline:2px solid var(--focus);outline-offset:-2px;border-radius:0}
+
+/* 뜻을 지닌 단추는 덩이 안에서도 제 빛을 지킨다 */
+.pane-edit .pane-toolbar .tgrp > button.danger{color:var(--accent)}
+.pane-edit .pane-toolbar .tgrp > button.danger:hover{background:var(--accent);color:#fff}
+.pane-edit .pane-toolbar .tgrp > button.ai{color:var(--accent);font-weight:700}
+.pane-edit .pane-toolbar .tgrp > button.ai:hover{background:var(--accent);color:#fff}
+.pane-edit .pane-toolbar .tgrp > button.go{background:var(--accent);color:#fff;font-weight:700}
+.pane-edit .pane-toolbar .tgrp > button.go:hover{filter:brightness(1.1);color:#fff}
+/* 형편에 따라 서는 덩이 —— 늘 서 있는 것과 가르려 테를 점선으로 둔다 */
+.tgrp.when{border-style:dashed;border-color:var(--accent-line)}
+
+/* ---- 창 머리 ----
+   개정안 창 머리의 셈(편 7 ㆍ 장 49 ㆍ 조 349 …)은 자리가 늘 바뀌어
+   눈이 숫자를 따라가지 못하였다. 자릿수를 맞춘다. */
+.pane-sub{font-variant-numeric:tabular-nums}
+
+/* ---- 상태바 ----
+   검증 딱지는 눌러서 여는 자리인데 눌리는 것으로 보이지 아니하였다. */
+.statusbar .stv{border:1px solid transparent;transition:border-color .12s,filter .12s}
+.statusbar .stv:hover{filter:brightness(.95);border-color:currentColor}
+.statusbar .stv:focus-visible{outline:2px solid var(--focus);outline-offset:1px}
+.statusbar #stSel,.statusbar #stCount{font-variant-numeric:tabular-nums}
+/* 담기지 아니한 것이 있으면 상태바에서도 알아보게 한다 */
+.statusbar #stSaved{font-variant-numeric:tabular-nums}
+
+/* ---- 창이 아주 좁을 때 ----
+   글자를 떼고 기호만 남기는 자리는 그대로 두되, 덩이 테는 지키게 한다. */
+@container (max-width: 400px){
+  .pane-edit .pane-toolbar .tgrp > button{padding:3px 6px}
+}
