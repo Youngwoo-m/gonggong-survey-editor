@@ -28,6 +28,19 @@ r"""변경 사유에 적힌 「제 조 번호」를 지금 조 번호에 맞춘�
   고치고 나서 N 과 M 이 같아지는 줄도 문장이 거짓이 되므로 알리기만 한다.
   C ㆍ D 는 번호를 하나만 지니므로 맞대어 보고 알리기만 한다.
 
+■ 번호가 바뀐 까닭도 맞춘다 (2026-10-11)
+
+  B ㆍ D 앞에는 까닭이 붙는다.
+
+      * 다만 앞의 조문이 통합/삭제되어 조 번호가 제25조에서 제39조로 바뀜.
+      * 앞의 조문이 통합ㆍ삭제되어 현행 제39조의 번호를 그대로 둘 수 없음.
+
+  번호가 커졌으면 앞에 조문이 새로 들어와 밀린 것이므로 「통합/삭제되어」가
+  틀린다. 작업규정에서 B 27곳 가운데 26곳, D 5곳 모두가 그러하였다.
+  커졌으면 「앞에 조문을 새로 넣어」(성과심사가 쓰는 말), 작아졌으면 「앞의
+  조문이 통합/삭제되어」로 맞춘다. 이미 맞는 까닭은 그대로 둔다.
+  A 의 「통합/삭제되고 새 조문이 들어옴에 따라」는 두 쪽을 다 담으므로 둔다.
+
   조문 본문과 현행 자료(reg01.json)는 손대지 아니한다. 이미 맞는 줄은
   건드리지 아니하므로 두 번 돌려도 같다.
 
@@ -54,6 +67,15 @@ PAIR = {
 ONE = {
     "C": re.compile(r"조 번호는 " + J + r"로 현행과 같음"),
     "D": re.compile(r"현행 " + J + r"의 번호를 그대로 둘 수 없음"),
+}
+
+# 번호가 바뀐 까닭 —— 앞의 것은 줄었을 때, 뒤의 것은 늘었을 때
+DOWN = re.compile(r"앞의 조문이 통합[/ㆍ]삭제되어")
+UP = "앞에 조문을 새로 넣어"
+WHY = r"(앞의 조문이 통합[/ㆍ]삭제되어|앞에 조문을 새로 넣어)"
+CAUSE = {
+    "B": re.compile(WHY + r"( 조 번호가 )" + J + r"(에서 )" + J + r"(로 바(?:뀜|뀌))"),
+    "D": re.compile(WHY + r"( 현행 )" + J + r"(의 번호를 그대로 둘 수 없음)"),
 }
 
 
@@ -106,6 +128,22 @@ def fix(n, notes):
 
     for p in PAIR.values():
         r = p.sub(sub, r)
+
+    def why(m):
+        nonlocal hits
+        g = m.groups()
+        old = num(g[2], g[3])
+        new = num(g[5], g[6]) if len(g) > 5 else cur
+        if old == new:
+            return m.group(0)
+        want = UP if new > old else (g[0] if DOWN.fullmatch(g[0]) else "앞의 조문이 통합/삭제되어")
+        if want == g[0]:
+            return m.group(0)
+        hits += 1
+        return want + m.group(0)[len(g[0]):]
+
+    for p in CAUSE.values():
+        r = p.sub(why, r)
     for k, p in ONE.items():
         for m in p.finditer(r):
             N = num(*m.groups())
