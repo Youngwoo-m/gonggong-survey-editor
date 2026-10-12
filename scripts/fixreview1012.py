@@ -24,6 +24,9 @@ r"""2026-10-12 검토에서 확신이 높은 지적을 고친다.
 
   현행 자료(reg01.json)와 표ㆍ그림 개체는 손대지 아니한다.
 
+  제6편을 13개 조로 모은 뒤(merge6.py)에는 없어진 마디가 있어 멈춘다.
+  이 편집은 그 앞에 이미 들어갔으므로 다시 돌릴 까닭이 없다.
+
   python scripts\fixreview1012.py            보여만 준다
   python scripts\fixreview1012.py --write    고친다
 """
