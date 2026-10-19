@@ -15,7 +15,7 @@
 
    칸 안에 또 표가 있어도 속지 않도록 깊이를 세어 겉 표만 센다.
    ============================================================ */
-import { readZip } from "./zipreader.js?v=20261019a";
+import { readZip } from "./zipreader.js?v=20261019b";
 
 const RE_T = /<hp:t(?:\s[^>]*)?>([^]*?)<\/hp:t>/g;
 

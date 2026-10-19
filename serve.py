@@ -11,7 +11,8 @@
   으로 부른다. 쓰는 계정은 CLI 에 로그인한 계정이다.
 
     GET  /api/claude     CLI 가 있는지, 로그인했는지
-    POST /api/claude     {system, user, model} → {text}
+    POST /api/claude     {system, user, model, effort} → {text}
+                         effort 는 low(기본) ㆍ medium ㆍ high ㆍ xhigh ㆍ max —— 생각의 양
 
   ㆍ 빈 임시 폴더에서 도구를 모두 끄고(--tools "") 한 번만 묻는다. 세션을
     남기지 아니하고(--no-session-persistence) MCP 도 부르지 아니한다.
@@ -75,7 +76,11 @@ def cli_status():
     return val
 
 
-def cli_ask(system, user, model):
+EFFORT_OK = ("low", "medium", "high", "xhigh", "max")
+EFFORT_DEFAULT = "low"     # 생각을 줄여 빠르고 싸게. 측정: 조문 하나 다듬기 출력 1,483 → 1,029 토큰, 15.8 → 10.6초
+
+
+def cli_ask(system, user, model, effort=EFFORT_DEFAULT):
     """claude -p 로 한 번 묻고 답 글을 돌려준다"""
     if not CLAUDE:
         raise RuntimeError("claude 명령을 찾지 못했습니다. Claude Code 를 설치하십시오.")
@@ -87,6 +92,8 @@ def cli_ask(system, user, model):
                 "--tools", "", "--no-session-persistence", "--strict-mcp-config"]
         if model:
             args += ["--model", model]
+        if effort in EFFORT_OK:
+            args += ["--effort", effort]
         try:
             r = subprocess.run(args, input=(user or "").encode("utf-8"), capture_output=True,
                                timeout=ASK_TIMEOUT, env=clean_env(), cwd=wd)
@@ -147,7 +154,10 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             model = str(q.get("model") or "")
             if model and not MODEL_OK.match(model):
                 return self._json(400, {"error": "모델 이름이 올바르지 않습니다."})
-            text = cli_ask(str(q.get("system") or ""), str(q.get("user") or ""), model)
+            effort = str(q.get("effort") or EFFORT_DEFAULT)
+            if effort not in EFFORT_OK:
+                return self._json(400, {"error": "생각의 양이 올바르지 않습니다."})
+            text = cli_ask(str(q.get("system") or ""), str(q.get("user") or ""), model, effort)
             return self._json(200, {"text": text})
         except Exception as e:                      # noqa: BLE001
             return self._json(502, {"error": str(e)})
