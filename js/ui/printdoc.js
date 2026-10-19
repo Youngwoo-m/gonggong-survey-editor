@@ -11,8 +11,8 @@
    국외 규정처럼 한글 대역이 있는 것은 원문 아래에 대역을 함께 싣는다.
    ============================================================ */
 
-import { esc, fmtDate } from "./html.js?v=20261009b";
-import { toHtml } from "../core/objects.js?v=20261009b";
+import { esc, fmtDate } from "./html.js?v=20261019a";
+import { toHtml } from "../core/objects.js?v=20261019a";
 
 /**
  * 조문 하나를 인쇄용 마디로.

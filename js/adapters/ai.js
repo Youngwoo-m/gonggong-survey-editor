@@ -1,78 +1,86 @@
 /* ============================================================
-   adapters/ai.js — Claude API 연결
+   adapters/ai.js — Claude 연결 (Claude Code CLI)
    ------------------------------------------------------------
-   · 서버 없이 브라우저에서 바로 부른다 (Anthropic 이 허용하는 방식)
-   · API 키는 이 브라우저(localStorage)에만 있고 api.anthropic.com 말고는
-     아무 데도 보내지 않는다. 저장소 토큰과 같은 취급이다.
+   · API 키를 쓰지 아니한다. 로컬 서버(serve.py)가 이 컴퓨터의 `claude`
+     명령(Claude Code CLI)을 불러 묻고, 답만 화면에 돌려준다.
+     쓰는 계정은 CLI 에 로그인한 계정이다 (claude auth login).
+   · 그래서 실행.bat(serve.py)으로 띄웠을 때만 쓸 수 있다. 다른 정적 서버나
+     웹에 올린 화면에서는 [연결 안 됨] 으로 보인다.
    · 규정 원문은 국가법령정보센터 공개 자료다. 다만 아직 공개하지 않은
      개정안 초안이 함께 실려 나가므로 화면에서 미리 알린다.
    ============================================================ */
 
-const API = "https://api.anthropic.com/v1/messages";
-const K_KEY = "pm.ai.key";
+const API = "api/claude";
 const K_MODEL = "pm.ai.model";
 
+// CLI 의 모델 별칭 —— 늘 그 갈래의 최신 모델을 가리킨다
 export const MODELS = [
-  { id: "claude-sonnet-5", name: "Sonnet 5 — 균형 (권장)" },
-  { id: "claude-opus-5", name: "Opus 5 — 가장 꼼꼼함 (느리고 비쌈)" },
-  { id: "claude-haiku-4-5-20251001", name: "Haiku 4.5 — 가장 빠름" },
+  { id: "sonnet", name: "Sonnet — 균형 (권장)" },
+  { id: "opus", name: "Opus — 가장 꼼꼼함 (느림)" },
+  { id: "haiku", name: "Haiku — 가장 빠름" },
 ];
 
-export function hasKey() { return !!localStorage.getItem(K_KEY); }
-export function setKey(v) {
-  if (v) localStorage.setItem(K_KEY, v.trim());
-  else localStorage.removeItem(K_KEY);
+let status = null;          // {ok, email, method, error} —— refresh() 가 채운다
+
+/** CLI 연결 상태를 서버에 물어 새로 읽는다 */
+export async function refresh() {
+  try {
+    const r = await fetch(API, { headers: { accept: "application/json" } });
+    if (!r.ok) throw new Error(String(r.status));
+    status = await r.json();
+  } catch {
+    status = { ok: false, error: "AI 도우미는 실행.bat(serve.py)으로 띄운 화면에서만 쓸 수 있습니다." };
+  }
+  return status;
 }
-export function keyHint() {
-  const k = localStorage.getItem(K_KEY) || "";
-  return k ? `${k.slice(0, 12)}…${k.slice(-4)}` : "";
+
+/** 쓸 수 있는가 —— 아직 읽지 아니했으면 false */
+export function ready() { return !!(status && status.ok); }
+/** 아직 상태를 읽지 아니했는가 */
+export function unknown() { return status === null; }
+/** 연결 표시 글 */
+export function statusHint() {
+  if (!status) return "확인 중…";
+  if (status.ok) return `Claude Code CLI${status.email ? " · " + status.email : ""}`;
+  return status.error || "연결 안 됨";
 }
-export function getModel() { return localStorage.getItem(K_MODEL) || MODELS[0].id; }
+
+export function getModel() {
+  const m = localStorage.getItem(K_MODEL);
+  return MODELS.some((x) => x.id === m) ? m : MODELS[0].id;
+}
 export function setModel(v) { localStorage.setItem(K_MODEL, v || MODELS[0].id); }
 
 /**
  * @param {string} system 역할 지시
  * @param {string} user 물어볼 내용
  * @param {{maxTokens?:number, signal?:AbortSignal, model?:string}} opts
+ *        maxTokens 는 CLI 가 받지 아니하므로 쓰지 아니한다.
  * @returns {Promise<string>} 답변 글
  */
-export async function ask(system, user, { maxTokens = 4000, signal, model } = {}) {
-  const key = localStorage.getItem(K_KEY);
-  if (!key) throw new Error("API 키가 없습니다. [✦AI] → [연결 설정] 에서 넣어 주세요.");
-
+export async function ask(system, user, { signal, model } = {}) {
   let r;
   try {
     r = await fetch(API, {
       method: "POST",
       signal,
-      headers: {
-        "content-type": "application/json",
-        "x-api-key": key,
-        "anthropic-version": "2023-06-01",
-        "anthropic-dangerous-direct-browser-access": "true",
-      },
-      body: JSON.stringify({
-        model: model || getModel(),
-        max_tokens: maxTokens,
-        system,
-        messages: [{ role: "user", content: user }],
-      }),
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ system, user, model: model || getModel() }),
     });
   } catch (e) {
     if (e.name === "AbortError") throw e;
-    throw new Error("Claude 에 닿지 못했습니다. 인터넷 연결이나 방화벽을 확인해 주세요.");
+    throw new Error("로컬 서버에 닿지 못했습니다. 실행.bat 으로 띄웠는지 확인해 주세요.");
   }
-
-  if (r.status === 401) throw new Error("API 키가 올바르지 않습니다. 다시 넣어 주세요.");
-  if (r.status === 429) throw new Error("요청이 몰렸습니다. 잠시 뒤 다시 시도해 주세요.");
-  if (r.status === 400) {
-    const t = await r.text();
-    throw new Error(`요청이 거부되었습니다: ${t.slice(0, 200)}`);
+  let j = {};
+  try { j = await r.json(); } catch { /* 아래에서 알림 */ }
+  if (!r.ok) {
+    if (r.status === 404 || r.status === 501) {
+      throw new Error("이 화면은 AI 를 부를 수 없는 서버로 떠 있습니다. 실행.bat 으로 띄워 주세요.");
+    }
+    if (/로그인/.test(j.error || "")) status = { ok: false, error: j.error };
+    throw new Error(j.error || `Claude 오류 ${r.status}`);
   }
-  if (!r.ok) throw new Error(`Claude 오류 ${r.status}: ${(await r.text()).slice(0, 200)}`);
-
-  const j = await r.json();
-  return (j.content || []).filter((c) => c.type === "text").map((c) => c.text).join("").trim();
+  return String(j.text || "").trim();
 }
 
 /** 답변에서 JSON 만 끄집어낸다 (```json 울타리·앞뒤 설명 제거) */
@@ -105,6 +113,7 @@ export function pickJson(text) {
 
 /** 연결 확인 — 짧게 한 번 불러 본다 */
 export async function verify(model) {
-  const t = await ask("한 낱말로만 답하시오.", "확인", { maxTokens: 16, model });
+  const t = await ask("한 낱말로만 답하시오.", "확인", { model });
+  await refresh();
   return t.slice(0, 40);
 }

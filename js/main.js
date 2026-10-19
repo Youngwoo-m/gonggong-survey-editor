@@ -1,34 +1,34 @@
 /* ============================================================
    main.js — 앱 조립 (1단계 프로토타입)
    ============================================================ */
-import * as M from "./core/model.js?v=20261009b";
-import { Project } from "./core/project.js?v=20261009b";
-import * as FS from "./adapters/fileio.js?v=20261009b";
-import * as AUTO from "./adapters/autosave.js?v=20261009b";
-import { TreeView } from "./ui/tree.js?v=20261009b";
-import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20261009b";
-import { CompareView } from "./ui/compare.js?v=20261009b";
-import { VersionsView } from "./ui/versions.js?v=20261009b";
-import { HistoryView } from "./ui/history.js?v=20261009b";
-import { ShareView, AUTOPUSH } from "./ui/share.js?v=20261009b";
-import { ValidateView } from "./ui/validate.js?v=20261009b";
-import { RefPicker } from "./ui/refpicker.js?v=20261009b";
-import { AIView } from "./ui/ai.js?v=20261009b";
-import { CiteCheckView } from "./ui/citecheck.js?v=20261009b";
-import { TermsView } from "./ui/terms.js?v=20261009b";
-import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20261009b";
-import * as GH from "./adapters/github.js?v=20261009b";
-import { extractLines } from "./core/importer.js?v=20261009b";
-import { buildAuto, buildStructure } from "./core/structure.js?v=20261009b";
-import * as SRC from "./core/srcfp.js?v=20261009b";
-import { translateTree, DICT_SIZE } from "./core/translate.js?v=20261009b";
-import { ObjectStore, fitTable, imgIdsIn } from "./core/objects.js?v=20261009b";
-import { loadTargets, allTargets, targetById, firstTarget, nextRevLabel, verPrefixOf } from "./core/targets.js?v=20261009b";
-import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20261009b";
-import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20261009b";
-import { fmtDate } from "./ui/html.js?v=20261009b";
-import { printReg, regHtml } from "./ui/printdoc.js?v=20261009b";
-import { askYesNo, askBox } from "./ui/ask.js?v=20261009b";
+import * as M from "./core/model.js?v=20261019a";
+import { Project } from "./core/project.js?v=20261019a";
+import * as FS from "./adapters/fileio.js?v=20261019a";
+import * as AUTO from "./adapters/autosave.js?v=20261019a";
+import { TreeView } from "./ui/tree.js?v=20261019a";
+import { DetailPanel, MAX_MB, setWord } from "./ui/detail.js?v=20261019a";
+import { CompareView } from "./ui/compare.js?v=20261019a";
+import { VersionsView } from "./ui/versions.js?v=20261019a";
+import { HistoryView } from "./ui/history.js?v=20261019a";
+import { ShareView, AUTOPUSH } from "./ui/share.js?v=20261019a";
+import { ValidateView } from "./ui/validate.js?v=20261019a";
+import { RefPicker } from "./ui/refpicker.js?v=20261019a";
+import { AIView } from "./ui/ai.js?v=20261019a";
+import { CiteCheckView } from "./ui/citecheck.js?v=20261019a";
+import { TermsView } from "./ui/terms.js?v=20261019a";
+import { scanCitations, neededDocs, gradeAll } from "./core/citecheck.js?v=20261019a";
+import * as GH from "./adapters/github.js?v=20261019a";
+import { extractLines } from "./core/importer.js?v=20261019a";
+import { buildAuto, buildStructure } from "./core/structure.js?v=20261019a";
+import * as SRC from "./core/srcfp.js?v=20261019a";
+import { translateTree, DICT_SIZE } from "./core/translate.js?v=20261019a";
+import { ObjectStore, fitTable, imgIdsIn } from "./core/objects.js?v=20261019a";
+import { loadTargets, allTargets, targetById, firstTarget, nextRevLabel, verPrefixOf } from "./core/targets.js?v=20261019a";
+import { regFingerprint, TERM_RULES } from "./core/xrefs.js?v=20261019a";
+import { setRegulation as setAIRegulation } from "./core/aitasks.js?v=20261019a";
+import { fmtDate } from "./ui/html.js?v=20261019a";
+import { printReg, regHtml } from "./ui/printdoc.js?v=20261019a";
+import { askYesNo, askBox } from "./ui/ask.js?v=20261019a";
 
 const $ = (s) => document.querySelector(s);
 const NL = "\n";
@@ -196,7 +196,7 @@ async function gatherForDownload(reg) {
     if (up && /\.hwpx?$/i.test(up.name || "")) {
       try {
         const [{ annexXmlFromHwpx, assetBuffer }, { parseXml }] = await Promise.all([
-          import("./core/annexhwpx.js?v=20261009b"), import("./core/objects.js?v=20261009b"),
+          import("./core/annexhwpx.js?v=20261019a"), import("./core/objects.js?v=20261019a"),
         ]);
         const o = parseXml(await annexXmlFromHwpx(await assetBuffer(up), {
           key: n.legacyNo || "", gubun: n.annexRef.gubun || "별표",
@@ -671,7 +671,7 @@ async function partToHwpx(node, reg) {
     : `제${node.no}${node.level}`;
   busy("한/글 문서를 짓는 중…");
   try {
-    const { buildDraftHwpx } = await import("./core/hwpxdraft.js?v=20261009b");
+    const { buildDraftHwpx } = await import("./core/hwpxdraft.js?v=20261019a");
     const url = new URL("kit/양식/01.개정안/[양식] 규정 개정(안).hwpx", document.baseURI).href;
     /* 마디 하나를 규정인 척 감싸 넘긴다 —— 제목 줄에 어디를 떼어 온
        것인지 적어 두어야 한/글에서 보고도 알 수 있다. */
@@ -2047,7 +2047,7 @@ async function doCommand(cmd) {
       const onlyName = only ? (project.regNode(only)?.short || "") : "";
       busy(`${onlyName || "개정 대상 규정(3종)"} 보고서를 작성 중…`);
       try {
-        const { buildReport } = await import("./ui/report.js?v=20261009b");
+        const { buildReport } = await import("./ui/report.js?v=20261019a");
         const r = await buildReport(project, { targetId: only });
         const url = URL.createObjectURL(r.blob);
         const a = document.createElement("a");
@@ -2184,7 +2184,7 @@ ${r.warning}` : ""),
       if (!reg) { toast("이 판에는 그 규정의 개정안이 없습니다.", 4000); break; }
       busy("한/글 문서를 짓는 중…");
       try {
-        const { buildDraftHwpx } = await import("./core/hwpxdraft.js?v=20261009b");
+        const { buildDraftHwpx } = await import("./core/hwpxdraft.js?v=20261019a");
         const url = new URL("kit/양식/01.개정안/[양식] 규정 개정(안).hwpx",
                             document.baseURI).href;
         const got = await buildDraftHwpx(reg, url, {

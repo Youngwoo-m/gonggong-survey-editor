@@ -586,9 +586,18 @@ python scripts/gendraft_simsa.py
 
 ### 연결 설정
 
-Anthropic Console 에서 받은 API 키를 **[연결 설정]** 에 넣습니다.
-키는 **이 브라우저(localStorage)에만** 저장되고 `api.anthropic.com` 말고는 아무 데도 가지 않습니다.
-모델은 Sonnet 5(권장) · Opus 5 · Haiku 4.5 중에 고릅니다.
+AI 도우미는 **API 키를 쓰지 않고 이 컴퓨터의 Claude Code CLI(`claude`)로** 부릅니다.
+쓰는 계정은 CLI 에 로그인한 Claude 계정입니다.
+
+1. Claude Code 를 설치하고, 터미널에서 `claude auth login` 으로 로그인합니다.
+2. 편집기를 **`실행.bat`(`serve.py`)으로** 띄웁니다. `serve.py` 가 화면 대신 `claude -p` 를
+   부르므로, 다른 정적 서버나 웹에 올린 화면에서는 AI 도우미를 쓸 수 없습니다.
+3. **[연결 설정] → [연결 확인]** 으로 확인합니다. 모델은 Sonnet(권장) · Opus · Haiku 중에 고릅니다.
+
+- `serve.py` 는 빈 임시 폴더에서 도구를 모두 끈 채(`--tools ""`) 한 번만 묻고, 세션을 남기지 않습니다.
+- 환경변수의 `ANTHROPIC_*` · `CLAUDE*` 는 지우고 부릅니다. API 키가 환경에 있어도 쓰지 않습니다.
+- 다른 웹페이지가 이 주소로 몰래 묻지 못하도록, 같은 주소(127.0.0.1 · localhost)에서 온 JSON 요청만 받습니다.
+- 「로그인이 만료되었습니다」가 나오면 터미널에서 `claude auth login` 을 다시 실행합니다.
 
 > **주의** — 보내는 내용에 아직 공개하지 않은 **개정안 초안**이 들어갑니다.
 > 기관 보안 지침에 어긋나지 않는지 먼저 확인하세요. 규정 원문 자체는 국가법령정보센터 공개 자료입니다.

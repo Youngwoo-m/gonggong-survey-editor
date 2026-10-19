@@ -4,9 +4,9 @@
    AI 가 낸 것은 언제나 '제안'이다. 화면에서 확인하고 [적용] 을 눌러야
    트리에 들어가며, 들어간 뒤에는 여느 편집과 똑같이 되돌릴 수 있다.
    ============================================================ */
-import * as M from "../core/model.js?v=20261009b";
-import * as AI from "../adapters/ai.js?v=20261009b";
-import { TASKS, outline, withExtra } from "../core/aitasks.js?v=20261009b";
+import * as M from "../core/model.js?v=20261019a";
+import * as AI from "../adapters/ai.js?v=20261019a";
+import { TASKS, outline, withExtra } from "../core/aitasks.js?v=20261019a";
 
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) =>
   ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -26,25 +26,20 @@ function richText(t) {
     .replace(/<p>\s*<\/p>/g, "");
 }
 
-/** API 키 발급 안내 — 연결 전 화면과 [연결 설정] 양쪽에서 쓴다 */
+/** Claude Code CLI 로그인 안내 — 연결 전 화면과 [연결 설정] 양쪽에서 쓴다 */
 const KEYGUIDE = `
 <ol class="ai-steps">
-  <li><b>계정 만들기</b> —
-    <a href="https://console.anthropic.com/" target="_blank" rel="noopener">console.anthropic.com</a>
-    에서 가입합니다. 회사 메일로 가입하면 팀 단위로 쓰기 편합니다.</li>
-  <li><b>결제 수단 등록</b> — 왼쪽 메뉴 <b>Billing</b> 에서 카드를 넣고 크레딧을 채웁니다.
-    무료 크레딧이 없으면 키를 만들어도 호출이 막힙니다.
-    <span class="mut">처음에는 5~10달러면 충분합니다. 조문 다듬기 한 번이 수십 원 수준입니다.</span></li>
-  <li><b>키 만들기</b> — 왼쪽 메뉴 <b>API keys</b> → <b>Create Key</b> 를 누르고 이름을
-    (예: 공공측량-개정) 적습니다.</li>
-  <li><b>키 복사</b> — <code>sk-ant-…</code> 로 시작하는 문자열이 <b>이때 한 번만</b> 보입니다.
-    창을 닫으면 다시 볼 수 없으니 그 자리에서 복사하세요.</li>
-  <li><b>여기에 붙여넣기</b> — 오른쪽 위 <b>[연결 설정]</b> → <b>API 키</b> 칸에 붙여넣고
-    <b>[연결 확인]</b> 으로 확인한 뒤 <b>[저장]</b> 을 누릅니다.</li>
+  <li><b>Claude Code 설치</b> — 이 컴퓨터에 <code>claude</code> 명령이 있어야 합니다.
+    없으면 <a href="https://docs.claude.com/claude-code" target="_blank" rel="noopener">Claude Code 안내</a>
+    에 따라 설치합니다.</li>
+  <li><b>로그인</b> — 터미널(PowerShell)에서 <code>claude auth login</code> 을 실행하고,
+    열리는 브라우저에서 Claude 계정으로 로그인합니다. API 키는 필요 없습니다.</li>
+  <li><b>편집기를 실행.bat 으로 띄우기</b> — AI 도우미는 <code>serve.py</code> 가
+    <code>claude</code> 를 대신 불러 줍니다. 다른 방법으로 띄운 화면에서는 쓸 수 없습니다.</li>
+  <li><b>확인</b> — 오른쪽 위 <b>[연결 설정]</b> → <b>[연결 확인]</b> 을 누릅니다.</li>
 </ol>
-<p class="mut">키는 이 브라우저(localStorage)에만 저장되고 <code>api.anthropic.com</code> 말고는
-아무 데도 가지 않습니다. 다른 PC에서 쓰려면 그 PC에서 한 번 더 넣어야 합니다.
-키가 새어 나갔다고 판단되면 Console 의 <b>API keys</b> 에서 그 키를 지우고 새로 만드세요.</p>`;
+<p class="mut">물어보는 글은 이 컴퓨터의 Claude Code CLI 를 거쳐 그 계정으로 Claude 에 갑니다.
+화면은 API 키를 받지도 저장하지도 아니합니다.</p>`;
 
 const TAG_CLASS = {
   "고친 곳": "k-edit", "살필 점": "k-mov", "이동": "k-mov", "통합": "k-mrg",
@@ -133,7 +128,9 @@ export class AIView {
     const sel = p.selected;
     const ref = this.getRef?.();
     const t = this.task;
-    const connected = AI.hasKey();
+    const connected = AI.ready();
+    // 연결 상태를 아직 읽지 아니했으면 서버에 묻고 다시 그린다
+    if (AI.unknown()) AI.refresh().then(() => { if (this.el) this.render(); });
 
     this.el.innerHTML = `
 <div class="cmp ai${this.usedHost ? " dock" : ""}">
@@ -158,7 +155,7 @@ export class AIView {
     <span class="hint">${esc(t.hint)}</span>
     <div class="spacer"></div>
     <span class="ai-conn ${connected ? "on" : ""}">${connected
-      ? `연결됨 · ${esc(AI.keyHint())}` : "연결 안 됨"}</span>
+      ? `연결됨 · ${esc(AI.statusHint())}` : (AI.unknown() ? "확인 중…" : "연결 안 됨")}</span>
     <button data-x="report" title="지금 편집 상태 그대로 보고서 한 벌을 지어 zip 으로 내려받습니다 — 개정(안)·신구대조표·개정사유서·별표및별지목록">보고서 생성</button>
     <button data-x="setup">연결 설정</button>
     <button class="primary" data-x="run"${connected ? "" : " disabled"}>${t.free ? "물어보기" : "제안 받기"}</button>
@@ -224,9 +221,10 @@ export class AIView {
         <div>Claude 에게 물어보는 중입니다…</div>
         <div class="mut">규정이 크면 20초쯤 걸립니다.</div></div>`;
     }
-    if (!AI.hasKey()) {
+    if (!AI.ready()) {
+      if (AI.unknown()) return `<div class="ai-intro"><p class="mut">Claude Code CLI 연결을 확인하는 중입니다…</p></div>`;
       return `<div class="ai-intro">
-        <p><b>쓰기 전에 API 키를 넣어야 합니다.</b> 아래 순서로 5분이면 됩니다.</p>
+        <p><b>Claude Code CLI 에 연결되어 있지 않습니다.</b> ${esc(AI.statusHint())}</p>
         ${KEYGUIDE}
         <p class="warn">보내는 내용에 <b>아직 공개하지 않은 개정안 초안</b>이 들어갑니다.
            기관 보안 지침에 어긋나지 않는지 먼저 확인해 주세요.</p>
@@ -485,28 +483,24 @@ AIView.prototype.setup = function setup() {
 <div class="cmp sm">
   <div class="cmp-head">
     <div><div class="cmp-title">AI 연결 설정</div>
-      <div class="cmp-sub">키는 이 브라우저에만 저장되고 api.anthropic.com 말고는 아무 데도 보내지 않습니다.</div></div>
+      <div class="cmp-sub">이 컴퓨터의 Claude Code CLI(<code>claude</code>)로 부릅니다. API 키는 쓰지 아니합니다.</div></div>
     <button class="x" data-x="close">✕</button>
   </div>
   <div class="cmp-body">
-    <div class="fld"><label>Anthropic API 키</label>
-      <input class="f-key" type="password" placeholder="sk-ant-..." value="" autocomplete="off">
-      <div class="mut" style="margin-top:4px">
-        ${AI.hasKey() ? `지금 저장된 키 · <b>${esc(AI.keyHint())}</b>` : "아직 저장된 키가 없습니다."}
-        &nbsp;— console.anthropic.com 에서 발급합니다.</div>
+    <div class="fld"><label>연결</label>
+      <div class="ai-cli">${esc(AI.statusHint())}</div>
     </div>
     <div class="fld"><label>모델</label>
       <select class="f-model">${AI.MODELS.map((m) =>
         `<option value="${m.id}"${m.id === AI.getModel() ? " selected" : ""}>${esc(m.name)}</option>`).join("")}</select>
     </div>
     <details class="ai-guide">
-      <summary>API 키는 어디서 받나요?</summary>
+      <summary>Claude Code CLI 는 어떻게 준비하나요?</summary>
       ${KEYGUIDE}
     </details>
     <div class="ai-warn">보내는 내용에 <b>아직 공개하지 않은 개정안 초안</b>이 들어갑니다.
       기관 보안 지침을 먼저 확인해 주세요. 규정 원문은 국가법령정보센터 공개 자료입니다.</div>
     <div class="detail-actions">
-      <button data-x="clear">키 지우기</button>
       <button data-x="test">연결 확인</button>
       <button class="primary" data-x="save">저장</button>
     </div>
@@ -519,27 +513,23 @@ AIView.prototype.setup = function setup() {
   box.querySelector('[data-x="close"]').onclick = close;
   box.addEventListener("click", (e) => { if (e.target === box) close(); });
   box.querySelector('[data-x="save"]').onclick = () => {
-    const k = box.querySelector(".f-key").value.trim();
-    if (k) AI.setKey(k);
     AI.setModel(box.querySelector(".f-model").value);
     close();
     this.render();
   };
-  box.querySelector('[data-x="clear"]').onclick = () => {
-    AI.setKey(""); close(); this.render();
-    this.onToast("저장된 API 키를 지웠습니다.");
-  };
   const guide = box.querySelector(".ai-guide");
   box.querySelector('[data-x="test"]').onclick = async () => {
-    const k = box.querySelector(".f-key").value.trim();
-    if (k) AI.setKey(k);
-    msg("확인하는 중…");
+    msg("확인하는 중… (처음 한 번은 10초쯤 걸립니다)");
     try {
       await AI.verify(box.querySelector(".f-model").value);
+      box.querySelector(".ai-cli").textContent = AI.statusHint();
       msg("연결되었습니다.");
+      this.render();
     } catch (e) {
       msg(e.message);
-      if (guide) guide.open = true;      // 막히면 발급 안내를 펼쳐 준다
+      if (guide) guide.open = true;      // 막히면 준비 안내를 펼쳐 준다
+      box.querySelector(".ai-cli").textContent = AI.statusHint();
+      this.render();                     // 뒤 창의 [연결됨] 표시도 고침
     }
   };
 };
