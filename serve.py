@@ -79,7 +79,7 @@ def cli_ask(system, user, model):
     """claude -p 로 한 번 묻고 답 글을 돌려준다"""
     if not CLAUDE:
         raise RuntimeError("claude 명령을 찾지 못했습니다. Claude Code 를 설치하십시오.")
-    with tempfile.TemporaryDirectory(prefix="pm-ai-") as wd:
+    with tempfile.TemporaryDirectory(prefix="pm-ai-", ignore_cleanup_errors=True) as wd:
         sp = os.path.join(wd, "system.txt")
         with open(sp, "w", encoding="utf-8") as f:
             f.write(system or "")
