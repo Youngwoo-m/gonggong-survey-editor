@@ -1,10 +1,10 @@
 /* ============================================================
    ui/detail.js — 조문 상세 패널
    ============================================================ */
-import * as M from "../core/model.js?v=20261019b";
-import { wordDiff, beforeRuns, afterRuns, hasChange } from "../core/textdiff.js?v=20261019b";
+import * as M from "../core/model.js?v=20261103a";
+import { wordDiff, beforeRuns, afterRuns, hasChange } from "../core/textdiff.js?v=20261103a";
 import { imgIdsIn, renderBody, fitTable, toHtml, openTableOverlay, markAnnexEdits }
-  from "../core/objects.js?v=20261019b";
+  from "../core/objects.js?v=20261103a";
 
 /** 만들고 있는 안을 부르는 말 — 작업규정은 개정안, 성과심사 규정은 개정안 */
 /* 만들어 내는 안을 부르는 말 — 규정마다 다르다 (작업규정은 '개정안', 나머지는 '개정안').
@@ -75,10 +75,10 @@ function runsHtml(runs) {
   return runs.map((r) => (r.mark ? `<u class="mk">${esc(r.s)}</u>` : esc(r.s))).join("");
 }
 
-import { linkReason, wireReasonLinks } from "../core/reasonlink.js?v=20261019b";
-import { esc, fmtDT } from "./html.js?v=20261019b";
-import { renderPdf } from "./pdfview.js?v=20261019b";
-import { askYesNo } from "./ask.js?v=20261019b";
+import { linkReason, wireReasonLinks } from "../core/reasonlink.js?v=20261103a";
+import { esc, fmtDT } from "./html.js?v=20261103a";
+import { renderPdf } from "./pdfview.js?v=20261103a";
+import { askYesNo } from "./ask.js?v=20261103a";
 
 /** 사유 글이 스스로 머리글을 달고 있는가 — 그러면 딱지를 겹쳐 붙이지 아니한다 */
 const RE_REASON_HEAD = /^\s*\[변경 사유\]/;
@@ -435,8 +435,8 @@ export class DetailPanel {
     (async () => {
       try {
         const [{ annexXmlFromHwpx, assetBuffer }, { parseXml }] = await Promise.all([
-          import("../core/annexhwpx.js?v=20261019b"),
-          import("../core/objects.js?v=20261019b"),
+          import("../core/annexhwpx.js?v=20261103a"),
+          import("../core/objects.js?v=20261103a"),
         ]);
         const buf = await assetBuffer(a);
         const xml = await annexXmlFromHwpx(buf, {
@@ -897,7 +897,8 @@ export class DetailPanel {
                      it.docId || this.baseRegId, this.objects,
                      this._citeOpts(it.docId || this.baseRegId))
             .then((frag) => { extra.replaceChildren(frag); fitTable(extra); });
-          box.appendChild(extra);
+          // 표는 본문에 딸린 것이므로 변경 사유보다 앞에 둔다
+          box.insertBefore(extra, rs);
         }
       } else {
         renderBody(it.node.body, it.docId || this.baseRegId, this.objects,
@@ -908,7 +909,7 @@ export class DetailPanel {
       if (it.node.annexRef && (it.node.annexRef.hwpx || it.node.annexRef.hwp
                                || it.node.annexRef.pdf)) {
         const t = this._annexTables(it.node, it.docId);
-        if (t) box.appendChild(t);
+        if (t) box.insertBefore(t, rs);
       }
       wrap.appendChild(box);
     });
