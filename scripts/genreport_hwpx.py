@@ -741,10 +741,11 @@ def main():
         add("개정(안)", p, None)
 
         def why_of(x):
-            """셋째 칸에 넣을 사유 — 개조식 줄만"""
+            """셋째 칸에 넣을 사유 — 개조식 줄만. 항마다 나누어 싣도록 다 넘기고,
+            몇 줄 실을지는 build_compare 가 정한다."""
             rs = reason_secs(x.get("reason"))
             return (uniq(clean(pick(rs, SEC_WHAT)))
-                    or uniq(clean(pick(rs, SEC_WHY))))[:6]
+                    or uniq(clean(pick(rs, SEC_WHY))))
 
         p, nc = FD.build_compare(
             os.path.join(stage, "개정(안)_신구대조표.hwpx"), tree,

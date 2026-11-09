@@ -371,7 +371,7 @@ def _words(ts):
     return [t for t in ts if not t.isspace()]
 
 
-def _shrink(ts, first, last):
+def _shrink_line(ts, first, last):
     w = _words(ts)
     if len(w) <= LONG:
         return "".join(ts)
@@ -380,6 +380,23 @@ def _shrink(ts, first, last):
     head = "" if first else " ".join(w[:KEEP]) + " "
     tail = "" if last else " " + " ".join(w[-KEEP:])
     return lead + head + "_" + tail + rear
+
+
+def _shrink(ts, first, last):
+    """그대로인 도막을 _ 로 줄인다 —— 줄마다 따로 줄여 항 안의 호가 한 줄로 뭉치지 않게"""
+    if not any("\n" in t for t in ts):
+        return _shrink_line(ts, first, last)
+    out, cur, k = "", [], 0
+    for t in ts:
+        if "\n" in t:
+            out += _shrink_line(cur, first and k == 0, False) if cur else ""
+            out += t
+            cur, k = [], k + 1
+        else:
+            cur.append(t)
+    if cur:
+        out += _shrink_line(cur, False, last)
+    return out
 
 
 def _coalesce(ops, a):
@@ -434,8 +451,113 @@ def split_paras(runs):
     return [p for p in out if p] or [[]]
 
 
+CIRC = "".join(chr(c) for c in range(0x2460, 0x2474))      # ①…⑳
+RE_HANG_REF = re.compile(r"(?<!조)제(\d+)항")
+_REG = {}
+
+
+def _reg_index(regid):
+    """현행 규정의 조 → (제목, 본문). 개정안에 현행 본문(wasBody)을 담지 않은
+    조가 많아, 현행 칸을 채우려면 현행 규정 자료에서 조 번호로 찾아야 한다."""
+    if regid in _REG:
+        return _REG[regid]
+    idx = {}
+    p = os.path.join(DATA, "%s.json" % regid)
+    if regid and os.path.exists(p):
+        import json
+
+        def walk_(ns):
+            for n in ns:
+                yield n
+                yield from walk_(n.get("children") or [])
+        for n in walk_(json.load(io.open(p, encoding="utf-8")).get("tree") or []):
+            if n.get("level") == "조" and not n.get("annexRef"):
+                key = "제%s조%s" % (n.get("no"), "의%s" % n["branch"] if n.get("branch") else "")
+                idx.setdefault(key, (n.get("title") or "", n.get("body") or ""))
+    _REG[regid] = idx
+    return idx
+
+
+def _hangs(body):
+    """본문을 항(①…)마다 끊는다 → [(항 표시, 글)] —— 호(1. 2.)는 앞 항에 붙는다.
+    ① 앞의 글이나 항이 없는 조는 표시가 빈 한 덩이다."""
+    out = []
+    for ln in str(body or "").split("\n"):
+        if ln[:1] in CIRC or not out:
+            out.append([ln[:1] if ln[:1] in CIRC else "", ln])
+        else:
+            out[-1][1] += "\n" + ln
+    return [(m, t) for m, t in out if t.strip()]
+
+
+def _bare(t):
+    t = t.strip()
+    return re.sub(r"\s+", " ", t[1:] if t[:1] in CIRC else t).strip()
+
+
+def _pair(olds, news):
+    """현행 항과 개정안 항을 내용으로 짝짓는다 → [(현행 항|None, 개정안 항|None)]"""
+    a, b = [_bare(t) for _, t in olds], [_bare(t) for _, t in news]
+    out = []
+    for tag, i1, i2, j1, j2 in difflib.SequenceMatcher(None, a, b, autojunk=False).get_opcodes():
+        if tag == "equal":
+            out += [(olds[i], news[j]) for i, j in zip(range(i1, i2), range(j1, j2))]
+            continue
+        i, j = i1, j1
+        while i < i2 or j < j2:
+            if i < i2 and j < j2 and difflib.SequenceMatcher(
+                    None, a[i], b[j], autojunk=False).ratio() >= 0.4:
+                out.append((olds[i], news[j]))
+                i, j = i + 1, j + 1
+            elif i < i2 and (j >= j2 or i2 - i >= j2 - j):
+                out.append((olds[i], None))
+                i += 1
+            else:
+                out.append((None, news[j]))
+                j += 1
+    return out
+
+
+def _span(marks):
+    marks = [m for m in marks if m]
+    if not marks:
+        return ""
+    return marks[0] + " " if len(marks) == 1 else "%s ~ %s " % (marks[0], marks[-1])
+
+
+def _hanging(f, pid, width):
+    """있는 문단모양을 본떠 내어쓰기를 준 새것 → 새 id"""
+    m = re.search(r'<hh:paraPr\b[^>]*\bid="%s"[^>]*>.*?</hh:paraPr>' % pid, f.hdr, re.S)
+    blk = m.group(0)
+    ids = [int(i) for i in re.findall(r'<hh:paraPr\b[^>]*\bid="(\d+)"', f.hdr)]
+    new = str(max(ids) + 1)
+    blk = re.sub(r'(\bid=")\d+(")', r"\g<1>" + new + r"\g<2>", blk, count=1)
+    blk = re.sub(r'<hc:intent value="-?\d+"', '<hc:intent value="-%d"' % width, blk)
+    i = f.hdr.rfind("</hh:paraProperties>")
+    f.hdr = f.hdr[:i] + blk + f.hdr[i:]
+    f.hdr = re.sub(r'(<hh:paraProperties itemCnt=")(\d+)(")',
+                   lambda m2: m2.group(1) + str(int(m2.group(2)) + 1) + m2.group(3),
+                   f.hdr, count=1)
+    return new
+
+
+HEAD_WHY = 6        # 조 머리 행에 싣는 사유 줄 수
+HANG_WHY = 4        # 항 행마다 싣는 사유 줄 수
+
+
 def build_compare(dst, tree, regname, regid, walk, reason_lines):
-    """신구대조표를 양식에 얹는다 → (만든 파일 길, 대조한 조 수)"""
+    """신구대조표를 양식에 얹는다 → (만든 파일 길, 대조한 조 수)
+
+    조마다 머리 행(조 번호와 제목) 하나에 항마다 행 하나씩 짓는다. 셋째 칸에는
+    그 행의 개정 사유를 맞대어 적는다 —— 사유 가운데 「제N항」 을 가리키는 줄은
+    그 항의 행에, 나머지는 머리 행에 둔다.
+
+      ㆍ 현행 본문은 개정안에 담긴 것(wasBody)을 먼저, 없으면 현행 규정 자료에서
+        조 번호로 찾는다.
+      ㆍ 그대로인 항은 「(생략)」 과 「(현행과 같음)」 으로 줄이고, 잇따르면 묶는다.
+        번호만 바뀐 항은 「(현행 제N항과 같음)」.
+      ㆍ 조 전체가 그대로면 머리 행에 「(본문 생략)」 만 적는다.
+      ㆍ 삭제한 조는 현행 본문 전부와 「<삭 제>」."""
     f = FF.Form(TPL_COMPARE)
     tops = top_paras(f)
     title = tops[0][5]
@@ -453,48 +575,159 @@ def build_compare(dst, tree, regname, regid, walk, reason_lines):
     body_char = re.search(r'charPrIDRef="(\d+)"', data.para_proto(2)).group(1)
     head_char = re.search(r'charPrIDRef="(\d+)"', head_row).group(1)
     red = f.new_charpr(body_char, textColor="#FF0000")
+    red_head = f.new_charpr(head_char, textColor="#FF0000")
+    # 사유 칸 —— ○ 다음 줄이 글머리표 뒤에 맞도록 내어쓴다(11pt 에서 ○ 와 빈칸)
+    why_proto = data.para_proto(2)
+    pid = re.search(r'paraPrIDRef="(\d+)"', why_proto).group(1)
+    why_proto = why_proto.replace('paraPrIDRef="%s"' % pid,
+                                  'paraPrIDRef="%s"' % _hanging(f, pid, 1500), 1)
+    reg = _reg_index(regid)
 
-    rows, n = [head_row], 0
+    # 본으로 뜬 문단의 글자모양은 굵다 —— 양식에서 그 자리가 소제목이라
+    # 그렇다. 본문은 보통 글씨(개정 사유 칸의 글자모양)로 맞춘다.
+    def plainly(runs):
+        return [(cid or body_char, t) for cid, t in runs]
+
+    def paras(col, runs_list):
+        return "".join(FF.remake(data.para_proto(col), plainly(r)) for r in runs_list)
+
+    def text_paras(col, text, cid=None):
+        return paras(col, [[(cid, ln)] for ln in str(text).split("\n") if ln.strip()])
+
+    def why_paras(lines):
+        return "".join(FF.remake(why_proto, [(body_char, "○ " + s)]) for s in lines)
+
+    rows, n_art = [head_row], 0
+
+    def add(c0, c1, why):
+        # 칸에는 문단이 하나는 있어야 한다 —— 비면 한/글이 문서를 열지 못한다
+        cells = [c or FF.remake(data.para_proto(i), [])
+                 for i, c in enumerate([c0, c1, why_paras(why)])]
+        rows.append(data.make(len(rows), cells))
+
+    def clean(s):
+        return RE_IMG.sub("[표]", RE_PROV.sub("", s or ""))
+
     for _d, x in walk(tree):
         if x.get("level") != "조" or x.get("annexRef"):
             continue
         st = x.get("status") or "유지"
         if st == "유지" and not x.get("legacyNo"):
             continue
-        n += 1
+        n_art += 1
         br = "의%s" % x["branch"] if x.get("branch") else ""
         jo = "제%s조%s" % (x.get("no"), br)
-        old_head = x.get("legacyNo") or "<신 설>"
-        new_head = "%s(%s)" % (jo, x.get("title") or "")
-        w = RE_PROV.sub("", x.get("wasBody") or "")
-        m = RE_PROV.sub("", x.get("body") or "")
-        w, m = RE_IMG.sub("[표]", w), RE_IMG.sub("[표]", m)
-        ow, nw = diff_runs(w, m, red)
+        legacy = (x.get("legacyNo") or "").replace(" ", "")
+        old_title, old_body = reg.get(legacy, ("", ""))
+        was = clean(x.get("wasBody") or old_body)
+        now = clean(x.get("body"))
+        deleted = st == "삭제" or x.get("isDeleted")
 
-        # 본으로 뜬 문단의 글자모양은 굵다 — 양식에서 그 자리가 소제목이라
-        # 그렇다. 본문은 보통 글씨(개정 사유 칸의 글자모양)로 맞춘다.
-        def plainly(runs):
-            return [(cid or body_char, t) for cid, t in runs]
+        # 사유 —— 「제N항」 을 가리키는 줄은 그 항으로
+        why_all = list(reason_lines(x) or [st])
+        by_hang, head_why = {}, []
+        new_marks = {m for m, _ in _hangs(now)}
+        for s in why_all:
+            hit = next((CIRC[int(k) - 1] for k in RE_HANG_REF.findall(s)
+                        if 0 < int(k) <= len(CIRC) and CIRC[int(k) - 1] in new_marks), None)
+            if hit and not deleted:
+                by_hang.setdefault(hit, []).append(s)
+            else:
+                head_why.append(s)
 
-        c0 = [FF.remake(data.para_proto(0), [(head_char, old_head)])]
-        c0 += ([FF.remake(data.para_proto(0), plainly(r))
-                for r in split_paras(ow)] if w else [])
-        c1 = [FF.remake(data.para_proto(1),
-                        [(red if st == "신설" else head_char, new_head)])]
-        c1 += [FF.remake(data.para_proto(1), plainly(r)) for r in split_paras(nw)]
-        why = reason_lines(x) or [st]
-        c2 = [FF.remake(data.para_proto(2), [(body_char, "- " + s)]) for s in why]
-        rows.append(data.make(n, ["".join(c0), "".join(c1), "".join(c2)]))
+        # 머리 행
+        if legacy:
+            oh = [(head_char, "%s(%s)" % (legacy, old_title) if old_title else legacy)]
+        else:
+            oh = [(head_char, "<신 설>")]
+        if deleted:
+            nh = [(red_head, "<삭 제>")]
+        elif not legacy:
+            nh = [(red_head, "%s(%s)" % (jo, x.get("title") or ""))]
+        else:
+            nh = [(red_head if jo != legacy else head_char, jo), (head_char, "(")]
+            if old_title and old_title != (x.get("title") or ""):
+                nh.append((red_head, x.get("title") or ""))
+            else:
+                nh.append((head_char, x.get("title") or ""))
+            nh.append((head_char, ")"))
+
+        olds, news = _hangs(was), _hangs(now)
+        if deleted:
+            add(FF.remake(data.para_proto(0), oh) + text_paras(0, was),
+                FF.remake(data.para_proto(1), nh), head_why[:HEAD_WHY] or why_all[:HEAD_WHY])
+            continue
+        if legacy and not olds:          # 현행 본문을 찾지 못한 조 —— 짝을 짓지 아니한다
+            add(FF.remake(data.para_proto(0), oh) + text_paras(0, "(현행 본문을 자료에서 찾지 못함)"),
+                FF.remake(data.para_proto(1), nh) + text_paras(1, now),
+                why_all[:HEAD_WHY])
+            continue
+        pairs = _pair(olds, news) if legacy else [(None, h) for h in news]
+        same_all = legacy and pairs and all(
+            o and nw and o[0] == nw[0] and _bare(o[1]) == _bare(nw[1]) for o, nw in pairs)
+        if same_all or not pairs:
+            c0 = FF.remake(data.para_proto(0), oh)
+            c1 = FF.remake(data.para_proto(1), nh)
+            if same_all:
+                c0 += text_paras(0, "(본문 생략)")
+                c1 += text_paras(1, "(본문은 현행과 같음)")
+            add(c0, c1, (head_why + [s for v in by_hang.values() for s in v])[:HEAD_WHY])
+            continue
+        add(FF.remake(data.para_proto(0), oh), FF.remake(data.para_proto(1), nh),
+            head_why[:HEAD_WHY])
+
+        group = []                       # 잇따르는 그대로인 항
+
+        def flush():
+            if group:
+                add(text_paras(0, _span(group) + "(생략)"),
+                    text_paras(1, _span(group) + "(현행과 같음)"),
+                    [s for m in group for s in by_hang.get(m, [])][:HANG_WHY])
+                group.clear()
+
+        for o, nw in pairs:
+            if o and nw and _bare(o[1]) == _bare(nw[1]):
+                if o[0] == nw[0]:
+                    group.append(nw[0])
+                    continue
+                flush()                  # 번호만 바뀐 항
+                add(text_paras(0, (o[0] + " " if o[0] else "") + "(생략)"),
+                    FF.remake(data.para_proto(1), [(red, nw[0]), (body_char, " (현행 제%d항과 같음)"
+                                                              % (CIRC.index(o[0]) + 1))]),
+                    by_hang.get(nw[0], [])[:HANG_WHY])
+                continue
+            flush()
+            if o and nw:
+                # 항 번호는 떼어 견주고 앞에 다시 붙인다 —— 첫 줄이 「_」 로 줄어도
+                # 번호는 남아야 하고, 번호가 바뀌었으면 붉게 보여야 한다
+                ot, nt = o[1], nw[1]
+                if o[0]:
+                    ot = ot[1:].lstrip()
+                if nw[0]:
+                    nt = nt[1:].lstrip()
+                ow, nwr = diff_runs(ot, nt, red)
+                po, pn = split_paras(ow), split_paras(nwr)
+                if o[0]:
+                    po[0] = [(None, o[0] + " ")] + po[0]
+                if nw[0]:
+                    pn[0] = [(red if nw[0] != o[0] else None, nw[0]), (None, " ")] + pn[0]
+                add(paras(0, po), paras(1, pn), by_hang.get(nw[0], [])[:HANG_WHY])
+            elif o:
+                add(text_paras(0, o[1]), text_paras(1, (o[0] + " " if o[0] else "") + "<삭 제>", red), [])
+            else:
+                add(text_paras(0, "<신 설>"), text_paras(1, nw[1], red),
+                    by_hang.get(nw[0], [])[:HANG_WHY])
+        flush()
 
     newtbl = FF.retable(tbl, "".join(rows), len(rows))
-    # 제목 문단도 쪽 설정(가로쪽)을 이고 있다 — 글자만 바꾼다
-    body = (FF.retext(title, "[붙임] %s 일부 개정(안) 신·구대조표" % regname)
+    # 제목 문단도 쪽 설정(가로쪽)을 이고 있다 —— 글자만 바꾼다
+    body = (FF.retext(title, "[붙임] %s 일부 개정(안) 신ㆍ구대조표" % regname)
             + FF.remake(title, [(body_char,
-                                 "표기 원칙 — 변경 없는 부분은 “_”로 생략 표기, "
-                                 "개정안 문구는 붉은색 표시")])
+                                 "표기 원칙 — 항마다 칸을 나눔, 변경 없는 부분은 “_”로 생략 표기, "
+                                 "그대로인 항은 (생략)과 (현행과 같음), 개정안 문구는 붉은색 표시")])
             + tblp[:span[0]] + newtbl + tblp[span[1]:])
     f.xml = f.xml[:tops[0][0]] + body + f.xml[tops[-1][1]:]
-    return f.save(dst), n
+    return f.save(dst), n_art
 
 
 # ────────────────────────────────── 개정사유서
