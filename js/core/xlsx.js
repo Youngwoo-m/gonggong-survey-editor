@@ -2,7 +2,7 @@
    core/xlsx.js — 최소 XLSX 작성기 (외부 라이브러리 없음)
    inlineStr + 런(run) 을 써서 변경 어절에 밑줄·색을 넣는다.
    ============================================================ */
-import { createZip } from "./zip.js?v=20261103b";
+import { createZip } from "./zip.js?v=20261112a";
 
 function esc(s) {
   const str = String(s ?? "");
@@ -64,6 +64,7 @@ const STYLES = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </styleSheet>`;
 
 const RPR_MARK = `<rPr><u/><b/><color rgb="FFC1502E"/><rFont val="맑은 고딕"/><family val="2"/><sz val="10"/></rPr>`;
+const RPR_OLD = `<rPr><u/><color rgb="FF1B4F72"/><rFont val="맑은 고딕"/><family val="2"/><sz val="10"/></rPr>`;
 const RPR_PLAIN = `<rPr><color rgb="FF1F2C35"/><rFont val="맑은 고딕"/><family val="2"/><sz val="10"/></rPr>`;
 
 function cellXml(ref, cell) {
@@ -72,7 +73,7 @@ function cellXml(ref, cell) {
 
   if (typeof cell === "object" && Array.isArray(cell.runs)) {
     const runs = cell.runs.filter((r) => r.s !== "").map((r) =>
-      `<r>${r.mark ? RPR_MARK : RPR_PLAIN}<t xml:space="preserve">${esc(r.s)}</t></r>`).join("");
+      `<r>${r.mark === "old" ? RPR_OLD : r.mark ? RPR_MARK : RPR_PLAIN}<t xml:space="preserve">${esc(r.s)}</t></r>`).join("");
     return `<c r="${ref}" s="${s}" t="inlineStr"><is>${runs || `<r>${RPR_PLAIN}<t/></r>`}</is></c>`;
   }
   const v = typeof cell === "object" ? cell.v : cell;
@@ -82,7 +83,9 @@ function cellXml(ref, cell) {
 }
 
 /**
- * @param {object} sheet { name, cols:[{w}], rows:[[cell,...]], rowHeights:{idx:h}, freeze:number }
+ * @param {object} sheet { name, cols:[{w}], rows:[[cell,...]], rowHeights:{idx:h}, freeze:number,
+ *                         merges:["C5:C8",...], paper:9(A4)|8(A3) }
+ *   런의 mark 가 "old" 이면 현행에서 바뀔 대목(파란 밑줄), 참이면 새 문구(붉은 밑줄)
  * @returns {Blob} xlsx
  */
 export function writeXlsx(sheet) {
@@ -99,14 +102,19 @@ export function writeXlsx(sheet) {
     ? `<sheetView workbookViewId="0" showGridLines="0"><pane ySplit="${sheet.freeze}" topLeftCell="A${sheet.freeze + 1}" activePane="bottomLeft" state="frozen"/></sheetView>`
     : `<sheetView workbookViewId="0" showGridLines="0"/>`;
 
+  const mg = sheet.merges || [];
+  const merges = mg.length
+    ? `<mergeCells count="${mg.length}">${mg.map((r) => `<mergeCell ref="${r}"/>`).join("")}</mergeCells>
+` : "";
+
   const sheetXml = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
 <sheetViews>${freeze}</sheetViews>
 <sheetFormatPr defaultRowHeight="15"/>
 ${cols ? `<cols>${cols}</cols>` : ""}
 <sheetData>${rowsXml}</sheetData>
-<pageMargins left="0.4" right="0.4" top="0.6" bottom="0.6" header="0.3" footer="0.3"/>
-<pageSetup paperSize="9" orientation="landscape" fitToWidth="1" fitToHeight="0"/>
+${merges}<pageMargins left="0.4" right="0.4" top="0.6" bottom="0.6" header="0.3" footer="0.3"/>
+<pageSetup paperSize="${sheet.paper || 9}" orientation="landscape" fitToWidth="1" fitToHeight="0"/>
 </worksheet>`;
 
   const files = [

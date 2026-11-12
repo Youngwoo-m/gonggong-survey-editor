@@ -1139,3 +1139,10 @@ a.cite.anx:hover { background: var(--link-bg); }
 @container (max-width: 400px){
   .pane-edit .pane-toolbar .tgrp > button{padding:3px 6px}
 }
+
+/* ---- 항별 신구대조표 (ui/hangtable.js) ---- */
+#cmpTable tbody.hang u.mk-old { color: #1B4F72; font-weight: 400; }
+#cmpTable tbody.hang .mk-tag { color: #2E7D6B; font-weight: 700; }
+#cmpTable tbody.hang tr.jo-first td { border-top: 2px solid #44585F; }
+#cmpTable tbody.hang td { white-space: normal; }
+.cmp-bar2 label.topic input { margin-left: 4px; }

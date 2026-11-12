@@ -1,15 +1,17 @@
 /* ============================================================
-   ui/compare.js — 개정 전후 비교표 화면
+   ui/compare.js — 신구대조표 화면 (예전 이름: 개정 전후 비교표)
    ============================================================ */
-import { buildComparison, KIND_LIST, kindLabel } from "../core/diff.js?v=20261103b";
-import { writeXlsx } from "../core/xlsx.js?v=20261103b";
-import * as M from "../core/model.js?v=20261103b";
-import { regFingerprint } from "../core/xrefs.js?v=20261103b";
-import { buildAmendment } from "../core/amend.js?v=20261103b";
-import { buildSupplement, EFFECT_KINDS, topTitles } from "../core/supplement.js?v=20261103b";
+import { buildComparison, KIND_LIST, kindLabel } from "../core/diff.js?v=20261112a";
+import { writeXlsx } from "../core/xlsx.js?v=20261112a";
+import * as M from "../core/model.js?v=20261112a";
+import { regFingerprint } from "../core/xrefs.js?v=20261112a";
+import { buildAmendment } from "../core/amend.js?v=20261112a";
+import { buildSupplement, EFFECT_KINDS, topTitles } from "../core/supplement.js?v=20261112a";
 import { stripImgTags, imgIdsIn, toHtml, fitTable }
-  from "../core/objects.js?v=20261103b";
-import { esc, fmtDate } from "./html.js?v=20261103b";
+  from "../core/objects.js?v=20261112a";
+import { esc, fmtDate } from "./html.js?v=20261112a";
+import { pickByTopic, hangBlock, hangTbody, hangPageHtml, hangXlsx }
+  from "./hangtable.js?v=20261112a";
 
 const KIND_CLASS = {
   "신설": "k-new", "삭제": "k-del", "이동": "k-mov", "이관": "k-xfer",
@@ -23,7 +25,8 @@ export class CompareView {
     this.project = project;
     this.el = null;
     this.opts = { onlyChanged: true, joOnly: false, excludePureMove: false };
-    this.form = "official";   // "official" 신구조문 대비표 · "detail" 상세 비교표 · "amend" 개정문
+    this.form = "official";   // "official" 신구조문 대비표 · "hang" 항별 신구대조표 · "detail" 상세 비교표 · "amend" 개정문
+    this.topic = "";          // 주제 —— 낱말이나 조 번호로 실을 조를 고른다
     this.whole = false;       // 전부개정으로 적을 것인가
     // 부칙 — 시행일과 '다른 규정의 개정'
     this.sup = { on: true, kind: "promulgate", months: 6, date: "", others: true };
@@ -132,6 +135,12 @@ export class CompareView {
     this.el.querySelector('[data-x="hwpx"]').onclick = (e) => this.exportHwpx(e.target);
     this.el.querySelector('[data-x="html"]').onclick = () => this.exportHtml();
     this.el.querySelector('[data-x="print"]').onclick = () => window.print();
+    this.el.querySelector('[data-x="win"]').onclick = () => this.openWindow();
+    const tp = this.el.querySelector("#cmpTopic");
+    tp.value = this.topic;
+    tp.onkeydown = (e) => { if (e.key === "Enter") { this.topic = tp.value.trim(); this.refresh(); } };
+    tp.onchange = () => { this.topic = tp.value.trim(); this.refresh(); };
+    this.el.querySelector('[data-x="topicClear"]').onclick = () => { tp.value = ""; this.topic = ""; this.refresh(); };
 
     this.el.querySelector("#cmpTarget").onchange = (e) => {
       this.targetId = e.target.value || null;
@@ -163,6 +172,11 @@ export class CompareView {
   refresh() {
     const { from, to } = this._resolve();
     this.result = buildComparison(this._treeOf(from), this._treeOf(to), this.opts);
+    /* 주제를 적었으면 그 낱말이 든 조만 싣는다 —— 「드론」, 「제29조」 처럼 */
+    if (this.topic) {
+      const got = pickByTopic(this.result.rows.filter((r) => r.level === "조" && !r.annex), this.topic);
+      this.result = Object.assign({}, this.result, { rows: got.rows });
+    }
     const { rows, summary } = this.result;
 
     const label = (v) => this._revText(v);
@@ -179,7 +193,8 @@ export class CompareView {
       (summary.별표 ? `<span class="chip total">별표·별지 <b>${summary.별표}</b></span>` : "") +
       `<span class="chip total">변경 <b>${summary.변경}</b></span>` + chips;
 
-    this.el.querySelector("#cmpCount").textContent = `${rows.length}행 표시`;
+    this.el.querySelector("#cmpCount").textContent = this.topic
+      ? `「${this.topic}」 관련 ${rows.length}개 조` : `${rows.length}행 표시`;
     const tbl = this.el.querySelector("#cmpTable");
     const amd = this.el.querySelector("#cmpAmend");
     const isAmend = this.form === "amend";
@@ -191,6 +206,7 @@ export class CompareView {
     // 한/글 내보내기는 신구조문 대비표에서만 — 양식이 그 꼴이다
     this.el.querySelector("#btnCmpHwpx")
       .classList.toggle("hidden", this.form !== "official");
+    this.el.querySelector("#btnCmpWin").classList.toggle("hidden", isAmend || this.form === "detail");
     this.el.querySelector("#cmpSupBar").classList.toggle("hidden", !isAmend);
     if (isAmend) {
       this.amend = buildAmendment(rows, { regName: this._regTitle(), whole: this.whole });
@@ -209,8 +225,9 @@ export class CompareView {
       if (w) w.textContent = this.supText && this.supText.warnings.length
         ? `손으로 살필 것 ${this.supText.warnings.length}건` : "";
     } else {
-      tbl.innerHTML = this.form === "official" ? this._officialTable(rows) : this._table(rows);
-      tbl.className = this.form === "official" ? "official" : "";
+      tbl.innerHTML = this.form === "official" ? this._officialTable(rows)
+        : this.form === "hang" ? this._hangTable(rows) : this._table(rows);
+      tbl.className = this.form === "detail" ? "" : "official";
       // 칸 안의 [표 N] 자리에 진짜 표를 끼워 넣는다 (뒤늦게 채운다)
       if (this.form === "official") {
         this._fillObjects(tbl, this._officialRows(rows));
@@ -370,7 +387,7 @@ export class CompareView {
 <div class="cmp">
   <div class="cmp-head">
     <div>
-      <div class="cmp-title">개정 전후 비교표</div>
+      <div class="cmp-title">신구대조표</div>
       <div class="cmp-sub" id="cmpPair"></div>
       <div class="cmp-sub" id="cmpBase"></div>
     </div>
@@ -391,10 +408,14 @@ export class CompareView {
   <div class="cmp-bar2">
     <label title="공공기관이 쓰는 신구조문 대비표 양식 — 현행·개정안 두 칸, 같은 대목은 줄표">
       양식 <select id="cmpForm">
-        <option value="official">신구조문 대비표</option>
+        <option value="official">신구조문 대비표 (줄임)</option>
+        <option value="hang">항별 신구대조표 (전문)</option>
         <option value="detail">상세 비교표 (변경 사유 포함)</option>
         <option value="amend">개정문 (개정 지시문)</option>
       </select></label>
+    <label class="topic" title="이 낱말이 제목이나 본문에 든 조만 싣습니다. 쉼표나 띄어쓰기로 여럿을 적으면 그 가운데 하나라도 든 조를 싣고, 「제29조」 처럼 조 번호도 적을 수 있습니다. Enter 로 적용">
+      주제 <input type="search" id="cmpTopic" placeholder="예) 드론, 제29조" style="width:150px"></label>
+    <button data-x="topicClear" title="주제를 지우고 모든 조를 봅니다">✕</button>
     <label><input type="checkbox" id="cmpOnlyChanged" checked> 변경된 항목만</label>
     <label><input type="checkbox" id="cmpJoOnly"> 조문만 (편·장 제외)</label>
     <label title="본문·제목 변경 없이 편제 위치만 바뀐 항목을 숨깁니다 ('이동·수정'은 남습니다)"><input type="checkbox" id="cmpNoPureMove"> 내용 변경 없는 이동 제외</label>
@@ -402,7 +423,8 @@ export class CompareView {
     <span id="cmpCount" class="hint"></span>
     <div class="spacer"></div>
     <button data-x="copy" id="btnCmpCopy" class="hidden">개정문 복사</button>
-    <button data-x="xlsx" id="btnCmpXlsx" class="primary">엑셀(.xlsx) 내보내기</button>
+    <button data-x="win" id="btnCmpWin" class="primary" title="지금 표를 A3 가로 문서로 새 창에 엽니다 — 그 창에서 인쇄하거나 엑셀로 내려받습니다">새 창으로 열기</button>
+    <button data-x="xlsx" id="btnCmpXlsx">엑셀(.xlsx) 내보내기</button>
     <button data-x="hwpx" id="btnCmpHwpx">한/글(.hwpx) 내보내기</button>
     <button data-x="html">HTML 내보내기</button>
     <button data-x="print">인쇄</button>
@@ -577,6 +599,79 @@ export class CompareView {
     return head + `<tbody>${body}</tbody>`;
   }
 
+  /* ============================================================
+     항별 신구대조표 —— 항마다 행을 나누고 전문을 싣는다 (ui/hangtable.js)
+     ============================================================ */
+  _hangBlocks(rows) {
+    return this._officialRows(rows).map(hangBlock);
+  }
+
+  _hangWhy(r) { return whyLines(r.reason, kindLabel(r) || r.status); }
+
+  _hangTable(rows) {
+    const blocks = this._hangBlocks(rows);
+    const head = `<thead><tr><th style="width:38%">현 행</th>`
+      + `<th style="width:38%">개정(안)</th><th style="width:24%">개정 사유</th></tr></thead>`;
+    if (!blocks.length) {
+      return head + `<tbody><tr><td colspan="3" class="none">실을 조가 없습니다. `
+        + `주제나 필터를 바꾸어 보세요.</td></tr></tbody>`;
+    }
+    return head + `<tbody class="hang">${hangTbody(blocks, (r) => this._hangWhy(r))}</tbody>`;
+  }
+
+  /** 새 창과 엑셀이 함께 쓰는 문서 정보 */
+  _hangDoc(form = "hang") {
+    const pt = this._pairText();
+    const reg = this._regTitle();
+    const kind = form === "hang" ? "항별 신구대조표" : "신구조문 대비표";
+    const title = this.topic
+      ? `「${this.topic}」 관련 ${reg} 개정(안) ${kind}`
+      : `${reg} 개정(안) ${kind}`;
+    const rows = this._officialRows(this.result.rows);
+    const sub = [
+      `현행: ${pt.from}, 개정안: ${pt.to}`,
+      `${rows.length}개 조${this.topic ? ` · 주제 「${this.topic}」 의 낱말이 제목이나 본문에 든 조` : ""}`
+        + `${this.opts.onlyChanged ? " · 바뀐 조만" : " · 바뀌지 않은 조 포함"}`,
+    ];
+    const safe = (s) => String(s || "").replace(/[\\/:*?"<>|]/g, "_").replace(/\s+/g, "_");
+    const d = new Date();
+    const ymd = `${d.getFullYear()}${String(d.getMonth() + 1).padStart(2, "0")}${String(d.getDate()).padStart(2, "0")}`;
+    const name = `${this.topic ? `${safe(this.topic)}_관련_` : ""}${safe(this._targetName())}_${kind.replace(/\s/g, "")}_${ymd}`;
+    const why = (r) => this._hangWhy(r);
+    const blocks = form === "hang" ? this._hangBlocks(this.result.rows) : null;
+    return {
+      title, sub, name, rows, blocks, why,
+      xlsx: () => hangXlsx(blocks, why, { title, sub, sheet: kind }),
+    };
+  }
+
+  /**
+   * 지금 표를 새 창에 연다 —— 인쇄(A3 가로)와 엑셀 내려받기를 그 창에서 한다.
+   * 창은 누르는 그 자리에서 열어야 팝업 차단에 걸리지 아니한다. 그래서
+   * 기다림 없이 짓는다 (견주기는 이미 끝나 있다).
+   */
+  openWindow() {
+    let html;
+    if (this.form === "hang") {
+      const h = this._hangDoc("hang");
+      if (!h.blocks.length) { this._flash("실을 조가 없습니다."); return; }
+      const xurl = URL.createObjectURL(h.xlsx());
+      html = hangPageHtml(h.blocks, h.why, {
+        title: h.title, sub: h.sub, count: h.blocks.length,
+        xlsxUrl: xurl, xlsxName: `${h.name}.xlsx`,
+      });
+    } else {
+      const h = this._hangDoc("official");
+      if (!h.rows.length) { this._flash("실을 조가 없습니다."); return; }
+      html = this._officialHtml(h.rows, this._pairText(), h.title);
+    }
+    const url = URL.createObjectURL(new Blob([html], { type: "text/html;charset=utf-8" }));
+    const w = window.open(url, "_blank");
+    if (!w) this._flash("새 창이 막혔습니다 — 브라우저의 팝업 허용을 켜 주세요.");
+    // 엑셀 주소는 그 창이 계속 쓰므로 놓지 아니한다. 문서 주소만 나중에 놓는다
+    setTimeout(() => URL.revokeObjectURL(url), 60000);
+  }
+
   /* ---------- 내보내기 ---------- */
   _pairText() {
     const { from, to } = this._resolve();
@@ -595,18 +690,19 @@ export class CompareView {
     const { from, to } = this._resolve();
     const safe = (s) => String(s || "").replace(/[\\/:*?"<>|\s]/g, "_");
     // 규정마다 따로 내므로 파일 이름에 규정을 적는다
-    return `개정전후_비교표_${safe(this._targetName())}`
+    return `신구대조표_${safe(this._targetName())}`
       + `_${safe(this._revOf(from)?.label)}-${safe(this._revOf(to)?.label)}_${ymd}`;
   }
 
   exportXlsx() {
+    if (this.form === "hang") { const h = this._hangDoc(); download(h.xlsx(), h.name + ".xlsx"); return; }
     const { rows, summary } = this.result;
     const pt = this._pairText();
     const S = { HEAD: 1, CELL: 2, CEN: 3, TITLE: 4, SUB: 5, KIND: 6 };
 
     const sheetRows = [];
-    sheetRows.push([{ v: this.form === "official" ? "신구조문 대비표" : "개정 전후 비교표", s: S.TITLE }]);
-    sheetRows.push([{ v: `현행: ${pt.from}   ↔   개정안: ${pt.to}`, s: S.SUB }]);
+    sheetRows.push([{ v: this.form === "official" ? "신구조문 대비표" : "상세 비교표", s: S.TITLE }]);
+    sheetRows.push([{ v: `현행: ${pt.from}, 개정안: ${pt.to}`, s: S.SUB }]);
     sheetRows.push([{ v: `대상 규정: ${pt.base}`, s: S.SUB }]);
     sheetRows.push([{
       v: `전체 ${summary.총} · 조 ${summary.조}${summary.별표 ? ` · 별표·별지 ${summary.별표}` : ""} · 변경 ${summary.변경}   ` +
@@ -657,7 +753,7 @@ export class CompareView {
     }
 
     const blob = writeXlsx({
-      name: `개정전후 비교표 (${this._targetName()})`.slice(0, 31),
+      name: `상세 비교표 (${this._targetName()})`.slice(0, 31),
       cols: [{ w: 6 }, { w: 10 }, { w: 58 }, { w: 58 }, { w: 34 }],
       rows: sheetRows,
       rowHeights: { 0: 24 },
@@ -686,11 +782,16 @@ pre.bd{font-family:inherit;font-size:10.5pt;margin:4px 0 12px 16px;white-space:p
 <title>개정문 — ${esc(this._targetName())}</title><style>${css}</style>
 <h1>${esc(am.head)}</h1>${items}${sup}</html>`;
     download(new Blob([html], { type: "text/html;charset=utf-8" }),
-      this._fileBase().replace("개정전후_비교표", "개정문") + ".html");
+      this._fileBase().replace("신구대조표", "개정문") + ".html");
   }
 
   /** 신구조문 대비표 — 인쇄해서 붙임으로 쓰는 꼴 (A4 세로, 두 칸) */
   _exportHtmlOfficial(rows, pt) {
+    download(new Blob([this._officialHtml(rows, pt)], { type: "text/html;charset=utf-8" }),
+      this._fileBase() + ".html");
+  }
+
+  _officialHtml(rows, pt, title = "신구조문 대비표") {
     const css = `@page{size:A4 portrait;margin:20mm 18mm}
 body{font-family:"맑은 고딕",sans-serif;font-size:10pt;margin:0;color:#000}
 h1{font-size:15pt;text-align:center;margin:0 0 4px;letter-spacing:2px}
@@ -710,15 +811,15 @@ td.why{font-size:9pt;line-height:1.65;word-break:keep-all}
         + `<td class="why">${whyHtml(r)}</td></tr>`;
     }).join("");
     const html = `<!doctype html><html lang="ko"><meta charset="utf-8">
-<title>신구조문 대비표 — ${esc(this._targetName())}</title><style>${css}</style>
-<h1>신구조문 대비표</h1>
+<title>${esc(title)}</title><style>${css}</style>
+<h1>${esc(title)}</h1>
 <p class="sub">${esc(pt.base)}<br>현행: ${esc(pt.from)} &nbsp;↔&nbsp; 개정안: ${esc(pt.to)}</p>
 <div class="rule"><b>표기 원칙</b> — 변경 없는 부분은 “_” 로 줄여 적고, 수정(안)의
  새 문구는 <u class="mk">붉은색 밑줄</u>로 표시하며, 개정 사유는 개조식으로 적습니다.</div>
 <table><thead><tr><th style="width:36%">현 행</th><th style="width:37%">수정(안)</th>
 <th style="width:27%">개정 사유</th></tr></thead>
 <tbody>${body}</tbody></table></html>`;
-    download(new Blob([html], { type: "text/html;charset=utf-8" }), this._fileBase() + ".html");
+    return html;
   }
 
   /* ============================================================
@@ -735,7 +836,7 @@ td.why{font-size:9pt;line-height:1.65;word-break:keep-all}
     const old = btn ? btn.textContent : "";
     if (btn) { btn.disabled = true; btn.textContent = "짓는 중…"; }
     try {
-      const { buildCompareHwpx } = await import("../core/hwpxcompare.js?v=20261103b");
+      const { buildCompareHwpx } = await import("../core/hwpxcompare.js?v=20261112a");
       // 대비표에 싣는 것은 조문뿐이다 — 양식이 조문 대비표다
       const rows = this._officialRows(this.result.rows);
       if (!rows.length) throw new Error("대비표에 실을 조문이 없습니다.");
@@ -760,6 +861,12 @@ td.why{font-size:9pt;line-height:1.65;word-break:keep-all}
     const { rows, summary } = this.result;
     const pt = this._pairText();
     if (this.form === "amend") return this._exportHtmlAmend(pt);
+    if (this.form === "hang") {
+      const h = this._hangDoc();
+      const html = hangPageHtml(h.blocks, h.why, { title: h.title, sub: h.sub, count: h.blocks.length });
+      download(new Blob([html], { type: "text/html;charset=utf-8" }), h.name + ".html");
+      return;
+    }
     if (this.form === "official")
       return this._exportHtmlOfficial(this._officialRows(rows), pt);
     const css = `body{font-family:"맑은 고딕",sans-serif;font-size:11pt;margin:24px;color:#1F2C35}
@@ -779,8 +886,8 @@ tr.k-new td{background:#F2F8F6}tr.k-del td{background:#FBF3F1}
 .tag.k-edit{background:#B07A1E}.tag.k-mrg{background:#7B8A92}.tag.k-keep{background:#B9C5CB}
 @page{size:A4 landscape;margin:12mm}`;
     const html = `<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8">
-<title>개정 전후 비교표</title><style>${css}</style></head><body>
-<h1>개정 전후 비교표</h1>
+<title>상세 비교표</title><style>${css}</style></head><body>
+<h1>상세 비교표</h1>
 <p class="sub">개정 전: <b>${esc(pt.from)}</b> &nbsp;↔&nbsp; 개정 후: <b>${esc(pt.to)}</b><br>
 기준 규정: ${esc(pt.base)}<br>
 전체 ${summary.총} · 조 ${summary.조}${summary.별표 ? ` · 별표·별지 ${summary.별표}` : ""} · 변경 ${summary.변경} &nbsp;|&nbsp;
